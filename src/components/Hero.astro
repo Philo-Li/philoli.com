@@ -2,17 +2,37 @@
 import '../styles/hero.css';
 
 interface Props {
-  backgroundImage?: string;
+  photos?: { src: string; alt: string }[];
 }
 
-const { backgroundImage = '/images/hero.jpg' } = Astro.props;
+const { photos = [
+  { src: '/images/hero1.webp', alt: 'Artwork 1' },
+  { src: '/images/hero2.webp', alt: 'Artwork 2' },
+] } = Astro.props;
 ---
 
 <section class="hero">
-  <div class="hero__bg" style={`background-image: url('${backgroundImage}')`}></div>
-  <div class="hero__overlay"></div>
   <div class="hero__content">
-    <h1 class="hero__name">Philo Li</h1>
-    <p class="hero__tagline">I paint, photograph, write, and build things.</p>
+    <div class="hero__text">
+      <h1 class="hero__headline">
+        Create<span class="dot">.</span><br/>
+        Capture<span class="dot">.</span><br/>
+        Build<span class="dot">.</span>
+      </h1>
+      <p class="hero__tagline">
+        I paint, photograph, write, and build things.
+        This is what happens when curiosity meets
+        craft and code.
+      </p>
+    </div>
+    <div class="hero__photos">
+      {photos.map(photo => (
+        <a href="/art" class="hero__photo">
+          <img src={photo.src} alt={photo.alt} loading="eager" />
+        </a>
+      ))}
+    </div>
   </div>
+  <span class="hero__side-label hero__side-label--left">Artist</span>
+  <span class="hero__side-label hero__side-label--right">Developer</span>
 </section>

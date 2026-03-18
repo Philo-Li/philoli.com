@@ -1,34 +1,36 @@
 .art-page {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: calc(var(--nav-height) + var(--space-lg)) var(--space-md) var(--space-xl);
+  padding: calc(var(--nav-height) + var(--space-xl)) var(--space-lg) var(--space-xl);
 }
 
 .art-page__title {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color: var(--color-text-muted);
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: var(--space-md);
 }
 
 .gallery__filters {
   display: flex;
   gap: var(--space-sm);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
 }
 
 .gallery__filter-btn {
   background: none;
   border: 1px solid var(--color-border);
   color: var(--color-text-muted);
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0;
+  font-size: 0.7rem;
   cursor: pointer;
   transition: all 0.2s ease;
   font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .gallery__filter-btn:hover,
@@ -38,28 +40,28 @@
 }
 
 .gallery__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: var(--space-sm);
+  columns: 4;
+  column-gap: 4px;
 }
 
 .gallery__item {
-  border-radius: 8px;
+  break-inside: avoid;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.2s ease;
-  aspect-ratio: 4/3;
   background: var(--color-surface);
+  margin-bottom: 4px;
 }
 
-.gallery__item:hover {
-  transform: scale(1.02);
+.gallery__item:hover img {
+  transform: scale(1.03);
+  filter: brightness(1.1);
 }
 
 .gallery__item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .lightbox {
@@ -88,4 +90,40 @@
   color: white;
   font-size: 2rem;
   cursor: pointer;
+}
+
+.lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 20px;
+  transition: color 0.2s ease;
+  z-index: 1;
+}
+
+.lightbox__nav:hover {
+  color: white;
+}
+
+.lightbox__nav--prev {
+  left: 20px;
+}
+
+.lightbox__nav--next {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .art-page {
+    padding: calc(var(--nav-height) + var(--space-lg)) var(--space-md) var(--space-xl);
+  }
+
+  .gallery__grid {
+    columns: 2;
+  }
 }

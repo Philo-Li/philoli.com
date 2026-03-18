@@ -8,13 +8,14 @@ const posts = (await getCollection('blog'))
 
 <section class="recent-posts">
   <div class="recent-posts__header">
-    <h2 class="recent-posts__title">Recent Writing</h2>
+    <span class="recent-posts__label">Recent Writing</span>
     <a href="/blog" class="recent-posts__link">View all →</a>
   </div>
   <ul class="recent-posts__list">
-    {posts.map(post => (
+    {posts.map((post, i) => (
       <li class="recent-posts__item">
         <a href={`/blog/${post.id}`} class="recent-posts__item-link">
+          <span class="recent-posts__item-num">{String(i + 1).padStart(2, '0')}</span>
           <span class="recent-posts__item-title">{post.data.title}</span>
           <span class="recent-posts__item-date">
             {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
@@ -27,55 +28,95 @@ const posts = (await getCollection('blog'))
 
 <style>
   .recent-posts {
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-xl) var(--space-lg);
     max-width: var(--max-width);
     margin: 0 auto;
   }
+
   .recent-posts__header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: var(--space-md);
+    align-items: center;
+    margin-bottom: var(--space-lg);
   }
-  .recent-posts__title {
-    font-size: 0.75rem;
+
+  .recent-posts__label {
+    font-size: 0.65rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     color: var(--color-text-muted);
-    font-weight: 400;
+    font-weight: 500;
   }
+
   .recent-posts__link {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--color-text-muted);
+    letter-spacing: 1px;
     transition: color 0.2s ease;
   }
+
   .recent-posts__link:hover {
-    color: var(--color-white);
+    color: var(--color-accent);
   }
+
   .recent-posts__list {
     list-style: none;
   }
+
   .recent-posts__item {
     border-bottom: 1px solid var(--color-border);
   }
+
+  .recent-posts__item:first-child {
+    border-top: 1px solid var(--color-border);
+  }
+
   .recent-posts__item-link {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: var(--space-md);
     padding: var(--space-sm) 0;
     transition: color 0.2s ease;
     color: var(--color-text-subtle);
   }
+
   .recent-posts__item-link:hover {
     color: var(--color-white);
   }
-  .recent-posts__item-title {
-    font-size: 1rem;
+
+  .recent-posts__item-link:hover .recent-posts__item-num {
+    color: var(--color-accent);
   }
+
+  .recent-posts__item-num {
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .recent-posts__item-title {
+    font-size: 1.05rem;
+    font-weight: 500;
+    flex: 1;
+  }
+
   .recent-posts__item-date {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--color-text-muted);
     white-space: nowrap;
-    margin-left: var(--space-md);
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 768px) {
+    .recent-posts {
+      padding: var(--space-lg) var(--space-md);
+    }
+
+    .recent-posts__item-num {
+      display: none;
+    }
   }
 </style>

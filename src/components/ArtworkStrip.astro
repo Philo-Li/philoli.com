@@ -1,21 +1,14 @@
 ---
-import { getCollection } from 'astro:content';
+import { fetchRecentArtworks } from '../lib/philoart';
 
-const artworks = (await getCollection('art'))
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, 8);
+const artworks = await fetchRecentArtworks(12);
 ---
 
 <section class="artwork-strip">
-  <div class="artwork-strip__header">
-    <h2 class="artwork-strip__title">Recent Artworks</h2>
-    <a href="/art" class="artwork-strip__link">View all →</a>
-  </div>
   <div class="artwork-strip__scroll">
     {artworks.map(art => (
       <a href="/art" class="artwork-strip__item">
-        <img src={art.data.image} alt={art.data.title} loading="lazy" />
-        <span class="artwork-strip__label">{art.data.title}</span>
+        <img src={art.srcSmall} alt={art.title} loading="lazy" />
       </a>
     ))}
   </div>
@@ -23,71 +16,50 @@ const artworks = (await getCollection('art'))
 
 <style>
   .artwork-strip {
-    padding: var(--space-lg) var(--space-md);
-    max-width: var(--max-width);
-    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    padding: var(--space-xs) 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
   }
-  .artwork-strip__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: var(--space-md);
-  }
-  .artwork-strip__title {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--color-text-muted);
-    font-weight: 400;
-  }
-  .artwork-strip__link {
-    font-size: 0.8rem;
-    color: var(--color-text-muted);
-    transition: color 0.2s ease;
-  }
-  .artwork-strip__link:hover {
-    color: var(--color-white);
-  }
+
   .artwork-strip__scroll {
     display: flex;
-    gap: var(--space-sm);
+    gap: 4px;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    padding-bottom: var(--space-xs);
   }
+
   .artwork-strip__scroll::-webkit-scrollbar {
     display: none;
   }
+
   .artwork-strip__item {
-    flex: 0 0 200px;
-    height: 260px;
-    border-radius: 8px;
-    scroll-snap-align: start;
-    position: relative;
+    flex: 0 0 auto;
+    width: 280px;
+    height: 200px;
     overflow: hidden;
-    transition: transform 0.2s ease;
+    position: relative;
   }
-  .artwork-strip__item:hover {
-    transform: scale(1.02);
-  }
+
   .artwork-strip__item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: brightness(0.8);
   }
-  .artwork-strip__label {
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.6);
+
+  .artwork-strip__item:hover img {
+    transform: scale(1.05);
+    filter: brightness(1);
   }
+
   @media (max-width: 768px) {
     .artwork-strip__item {
-      flex: 0 0 160px;
-      height: 210px;
+      width: 200px;
+      height: 150px;
     }
   }
 </style>
