@@ -34,7 +34,7 @@
 .gallery__filter-btn:hover,
 .gallery__filter-btn.active {
   border-color: var(--color-accent);
-  color: var(--color-heading);
+  color: var(--color-white);
 }
 
 .gallery__grid {

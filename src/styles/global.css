@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --color-bg: #fafafa;
-  --color-surface: rgba(0, 0, 0, 0.03);
-  --color-border: rgba(0, 0, 0, 0.08);
-  --color-text: rgba(0, 0, 0, 0.85);
-  --color-text-muted: rgba(0, 0, 0, 0.4);
-  --color-text-subtle: rgba(0, 0, 0, 0.6);
-  --color-accent: #4f46e5;
-  --color-accent-hover: #4338ca;
+  --color-bg: #0a0a0a;
+  --color-surface: rgba(255, 255, 255, 0.05);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text: rgba(255, 255, 255, 0.85);
+  --color-text-muted: rgba(255, 255, 255, 0.4);
+  --color-text-subtle: rgba(255, 255, 255, 0.6);
+  --color-accent: #646cff;
+  --color-accent-hover: #747bff;
   --color-white: #ffffff;
-  --color-heading: #111111;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --nav-height: 56px;

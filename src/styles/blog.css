@@ -29,7 +29,7 @@
 }
 
 .blog-post-card__link:hover {
-  color: var(--color-heading);
+  color: var(--color-white);
 }
 
 .blog-post-card__title {
