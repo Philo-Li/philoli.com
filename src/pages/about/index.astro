@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SocialLinks from '../../components/SocialLinks.astro';
 ---
 
-<BaseLayout title="About — Philo Li" description="About Philo Li — artist, writer, and creator.">
+<BaseLayout title="About — Philo Li" description="About Philo Li — artist, writer, and developer.">
   <main class="about-page">
     <div class="about-page__hero">
       <img src="/images/avatar.jpg" alt="Philo Li" class="about-page__avatar" />
@@ -13,22 +13,92 @@ import SocialLinks from '../../components/SocialLinks.astro';
 
     <div class="about-page__bio">
       <p>
-        I paint, photograph, write, and build things. I'm the creator of
-        <a href="https://dopamind.app">Dopamind</a> (an AI ADHD Coach) and
-        <a href="https://philoart.io">PhiloArt</a> (a digital art gallery).
+        I'm a creator, a programmer, and a thinker.
+        I love building things from scratch — whether it's a painting, a piece of code, or a deep-dive essay.
       </p>
       <p>
-        I write about art, philosophy, investing, and the human experience in my newsletters
-        <a href="https://shuo.philoli.com">Philo 说会儿</a> (Chinese) and
-        <a href="https://reflections.philoli.com">Reflections</a> (English).
+        For the longest time, the biggest obstacle to this passion was my own brain: I have ADHD.
+        After trying nearly every productivity tool on the market, I realized they were all designed for a neurotypical mind.
+        I needed a "partner" — something that understood me and could give me a gentle nudge right when I needed it most.
+      </p>
+      <p>
+        I couldn't find it anywhere. So I decided to build it myself — for me, and for the millions of others with a "busy brain" just like mine.
+        That's how <a href="https://dopamind.app">Dopamind</a> was born.
       </p>
     </div>
 
-    <div class="about-page__links">
+    <div class="about-page__bio about-page__bio--zh">
+      <p>
+        我是一名创作者、程序员，也是一名思考者。
+        我热爱从零到一创造事物——无论是一幅画、一段代码，还是一篇深度思考的文章。
+      </p>
+      <p>
+        长久以来，这份热情最大的障碍，恰恰来自我的大脑——我有 ADHD。
+        在无数次尝试了市面上几乎所有的效率工具后，我发现它们大多是为"神经典型"大脑设计的。
+        我需要的不是又一个复杂的管理"系统"，而是一个能理解我、在我最需要的时候轻推我一把的"伙伴"。
+      </p>
+      <p>
+        在任何地方都找不到它。于是，我决定亲手为自己，也为像我一样的数百万"繁忙大脑"，打造这样一个工具。
+        <a href="https://dopamind.app">Dopamind</a> 由此诞生。
+      </p>
+    </div>
+
+    <div class="about-page__section">
+      <h2 class="about-page__section-title">Projects</h2>
+      <div class="about-page__projects">
+        <a href="https://dopamind.app" target="_blank" rel="noopener noreferrer" class="about-page__project">
+          <span class="about-page__project-name">Dopamind</span>
+          <span class="about-page__project-desc">AI ADHD Coach</span>
+        </a>
+        <a href="https://philoart.io" target="_blank" rel="noopener noreferrer" class="about-page__project">
+          <span class="about-page__project-name">PhiloArt</span>
+          <span class="about-page__project-desc">Digital Art Gallery</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="about-page__section">
+      <h2 class="about-page__section-title">Newsletter</h2>
+      <div class="about-page__projects">
+        <a href="https://shuo.philoli.com" target="_blank" rel="noopener noreferrer" class="about-page__project">
+          <span class="about-page__project-name">Philo 说会儿</span>
+          <span class="about-page__project-desc">中文</span>
+        </a>
+        <a href="https://reflections.philoli.com" target="_blank" rel="noopener noreferrer" class="about-page__project">
+          <span class="about-page__project-name">Reflections</span>
+          <span class="about-page__project-desc">English</span>
+        </a>
+        <a href="https://medium.com/@philo2018" target="_blank" rel="noopener noreferrer" class="about-page__project">
+          <span class="about-page__project-name">Medium</span>
+          <span class="about-page__project-desc">Essays</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="about-page__section">
+      <h2 class="about-page__section-title">Artworks</h2>
+      <p class="about-page__text">
+        I post my artworks at <a href="https://philoart.io/philo" target="_blank" rel="noopener noreferrer">philoart.io/philo</a>
+      </p>
+      <p class="about-page__text about-page__text--muted">
+        To purchase original paintings or photography prints, DM on <a href="https://x.com/philo2022" target="_blank" rel="noopener noreferrer">X</a> or email <a href="mailto:philo.li.official@gmail.com">philo.li.official@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="about-page__section">
+      <h2 class="about-page__section-title">Read More</h2>
+      <div class="about-page__projects">
+        <a href="/blog/the-world-as-i-see-it" class="about-page__project">
+          <span class="about-page__project-name">The World As I See It</span>
+          <span class="about-page__project-desc">我的世界观</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="about-page__section">
       <h2 class="about-page__section-title">Find me elsewhere</h2>
       <SocialLinks />
       <div class="about-page__extra-links">
-        <a href="https://medium.com/@philo2018" target="_blank" rel="noopener noreferrer">Medium</a>
         <a href="mailto:philo.li.official@gmail.com">Email</a>
       </div>
     </div>
@@ -64,7 +134,11 @@ import SocialLinks from '../../components/SocialLinks.astro';
     letter-spacing: 2px;
   }
   .about-page__bio {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+  .about-page__bio--zh {
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
   }
   .about-page__bio p {
     font-size: 1.05rem;
@@ -77,13 +151,60 @@ import SocialLinks from '../../components/SocialLinks.astro';
     text-decoration: underline;
     text-underline-offset: 3px;
   }
+  .about-page__section {
+    margin-top: var(--space-lg);
+  }
   .about-page__section-title {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     color: var(--color-text-muted);
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: var(--space-md);
+  }
+  .about-page__projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .about-page__project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-border);
+    transition: color 0.2s ease;
+    color: var(--color-text-subtle);
+  }
+  .about-page__project:first-child {
+    border-top: 1px solid var(--color-border);
+  }
+  .about-page__project:hover {
+    color: var(--color-white);
+  }
+  .about-page__project-name {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .about-page__project-desc {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.5px;
+  }
+  .about-page__text {
+    font-size: 0.95rem;
+    color: var(--color-text-subtle);
+    line-height: 1.6;
+    margin-bottom: var(--space-xs);
+  }
+  .about-page__text--muted {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+  .about-page__text a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
   .about-page__extra-links {
     margin-top: var(--space-sm);
