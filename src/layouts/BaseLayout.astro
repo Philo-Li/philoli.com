@@ -18,6 +18,14 @@ const { title, description, image, type } = Astro.props;
 <html lang="en">
   <head>
     <SEOHead title={title} description={description} image={image} type={type} />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V10E8BFFM0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(...args: unknown[]) { window.dataLayer.push(args); }
+      gtag('js', new Date());
+      gtag('config', 'G-V10E8BFFM0');
+    </script>
   </head>
   <body>
     <Navbar />
