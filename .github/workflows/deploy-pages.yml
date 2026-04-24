@@ -3,7 +3,7 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 concurrency:
@@ -37,4 +37,4 @@ jobs:
         run: npm run build
 
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler@4.84.1 pages deploy dist --project-name philoli --branch master
+        run: npx wrangler@4.84.1 pages deploy dist --project-name philoli --branch main
