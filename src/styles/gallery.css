@@ -36,7 +36,7 @@
 .gallery__filter-btn:hover,
 .gallery__filter-btn.active {
   border-color: var(--color-accent);
-  color: var(--color-white);
+  color: var(--color-heading);
 }
 
 .gallery__grid {
@@ -68,7 +68,7 @@
   position: fixed;
   inset: 0;
   z-index: 200;
-  background: rgba(0, 0, 0, 0.95);
+  background: var(--color-overlay);
   display: flex;
   align-items: center;
   justify-content: center;
