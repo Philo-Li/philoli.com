@@ -11,7 +11,9 @@ description: A 12-book 2025 reading list featuring standout titles in writing, a
 
 Last year, I read 47 books. Between various commitments, it was an incredibly hectic year, so I didn't quite hit the 100-book milestone I reached in 2024. Still, I managed to discover some truly remarkable works. My reading spanned across writing, art, psychology, social sciences, finance, and personal growth—many of which have stayed with me long after I closed the covers. To keep this list concise, I’ve narrowed it down to 12 titles that earned a solid four or five-star rating.
 
-![2025 Reading List Cover](/uploads/images/2025-reading-list/cover.jpg)
+<figure class="post-cover">
+  <img src="/uploads/images/2025-reading-list/cover.jpg" alt="2025 Reading List Cover" />
+</figure>
 
 The reviews below are the raw notes I jotted down immediately after finishing each book. I initially thought about polishing them for this post, but there’s a certain sincerity and "unfiltered" energy in those original reactions that I wanted to preserve.
 
@@ -21,13 +23,20 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 1 - George Soros: A Life in Full - Peter L.W. Osnos (ed.) (5 Stars | 2025-01-28)
 
-<img src="/uploads/images/2025-reading-list/george-soros-a-life-in-full.jpg" alt="George Soros: A Life in Full cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/george-soros-a-life-in-full.jpg" alt="George Soros: A Life in Full cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>Anyone interested in Soros or high-profile financial biographies.</li>
+    <li>Readers curious about how the roles of investor, philanthropist, and public intellectual can coexist in one life.</li>
+    <li>Fans of well-crafted, multi-perspective non-fiction.</li>
+  </ol>
+</div>
 
-1. Anyone interested in Soros or high-profile financial biographies.
-2. Readers curious about how the roles of investor, philanthropist, and public intellectual can coexist in one life.
-3. Fans of well-crafted, multi-perspective non-fiction.
+**Notes**
 
 - SURVIVOR, BILLIONAIRE, SPECULATOR, PHILANTHROPIST, PHILOSOPHER, POLITICAL ACTIVIST, NEMESIS OF THE FAR RIGHT, GLOBAL CITIZEN.
 - The prose here is exceptional. It captures every dimension of Soros—his history, the evolution of his philosophy, and the intimate details of his lifestyle—offering glimpses you won't find anywhere else. I came away even more fascinated by him. It’s written by five different authors; I think the first section was my favorite.
@@ -36,13 +45,20 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 2 - Write a Must-Read - A.J. Harper (5 Stars | 2025-03-10)
 
-<img src="/uploads/images/2025-reading-list/write-a-must-read.jpg" alt="Write a Must-Read cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/write-a-must-read.jpg" alt="Write a Must-Read cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>Aspiring non-fiction authors, or anyone writing manuscripts and long-form essays.</li>
+    <li>Those wanting to master audience positioning and structural clarity.</li>
+    <li>Writers who aren't satisfied with "just finishing," but want to create something truly impactful.</li>
+  </ol>
+</div>
 
-1. Aspiring non-fiction authors, or anyone writing manuscripts and long-form essays.
-2. Those wanting to master audience positioning and structural clarity.
-3. Writers who aren't satisfied with "just finishing," but want to create something truly impactful.
+**Notes**
 
 - This is a unique guide on how to write a great book—the kind people read again and again. It’s packed with practical advice on outlining, pushing through "writer's block," and pinpointing your target reader.
 - A book like this can’t be a vanity project; it has to be in service of the reader. By caring for the reader from the first page to the last, you create a sense of companionship that keeps them engaged. A truly "must-read" book changes the reader—they are not the same person they were before they started. Producing work of this caliber takes immense effort and likely years of iterative editing.
@@ -50,13 +66,20 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 3 - The Creative Act: A Way of Being - Rick Rubin (5 Stars | 2025-04-07)
 
-<img src="/uploads/images/2025-reading-list/the-creative-act.jpg" alt="The Creative Act cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/the-creative-act.jpg" alt="The Creative Act cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>Artists, writers, musicians, and serious creators.</li>
+    <li>Anyone fascinated by intuition, aesthetics, and the "flow state."</li>
+    <li>Creators who feel stuck and want to reconnect with the "why" of their work.</li>
+  </ol>
+</div>
 
-1. Artists, writers, musicians, and serious creators.
-2. Anyone fascinated by intuition, aesthetics, and the "flow state."
-3. Creators who feel stuck and want to reconnect with the "why" of their work.
+**Notes**
 
 - This was a sublime reading experience. I wanted to highlight every single sentence; each one felt like a profound aphorism. I was completely immersed. This is one of those rare books that explains why artists create from a high-level philosophical perspective. It seems to have a "magical" resonance for serious artists, though non-creators might find it elusive. I found myself slowing down because I didn’t want it to end.
 - It’s like spiritual nourishment.
@@ -64,13 +87,20 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 4 - Writing For Impact - Bill Birchard (5 Stars | 2025-07-18)
 
-<img src="/uploads/images/2025-reading-list/writing-for-impact.jpg" alt="Writing For Impact cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/writing-for-impact.jpg" alt="Writing For Impact cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>Writers looking to boost engagement and "stickiness."</li>
+    <li>Anyone interested in the intersection of neuroscience and psychology with writing.</li>
+    <li>Bloggers, newsletter creators, and copywriters.</li>
+  </ol>
+</div>
 
-1. Writers looking to boost engagement and "stickiness."
-2. Anyone interested in the intersection of neuroscience and psychology with writing.
-3. Bloggers, newsletter creators, and copywriters.
+**Notes**
 
 - **Core Premise:** Impactful writing isn't just an art; it’s a **science rooted in neuroscience**. The key is understanding how the human brain works and "rewarding" the reader to keep them hooked.
 - I loved this. It gave me a scientific framework to explain why we gravitate toward certain stories or articles. Once you internalize these principles, you can use them to reverse-engineer your own writing. It’s definitely worth a reread.
@@ -78,13 +108,20 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 5 - So Good They Can't Ignore You - Cal Newport (5 Stars | 2025-06-11)
 
-<img src="/uploads/images/2025-reading-list/so-good-they-cant-ignore-you.jpg" alt="So Good They Can't Ignore You cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/so-good-they-cant-ignore-you.jpg" alt="So Good They Can't Ignore You cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>People rethinking their career path who are skeptical of the "follow your passion" mantra.</li>
+    <li>Those looking to build "career capital" and gain more autonomy.</li>
+    <li>Readers interested in long-term career optimization.</li>
+  </ol>
+</div>
 
-1. People rethinking their career path who are skeptical of the "follow your passion" mantra.
-2. Those looking to build "career capital" and gain more autonomy.
-3. Readers interested in long-term career optimization.
+**Notes**
 
 - A fantastic read. I expected "self-help fluff," but found something much deeper. Newport, a professor, debunks the "passion hypothesis," arguing that passion alone is a shaky foundation for a career. The advice is highly grounded, using examples of high-performers across various fields. Most people don’t have a "calling" early on—great innovations often happen only after you’ve mastered a field. You earn autonomy by accumulating "career capital."
 - He shares stories of people who didn't find their "true north" until they were deep into their PhDs or professorships. They didn't start with a clear vision, but by consistently refining their path and putting in the work, they achieved a high level of career satisfaction.
@@ -93,15 +130,24 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 6 - The Nature Fix - Florence Williams (5 Stars | 2025-05-10)
 
-<img src="/uploads/images/2025-reading-list/the-nature-fix.jpg" alt="The Nature Fix cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/the-nature-fix.jpg" alt="The Nature Fix cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>Anyone curious about how nature impacts mental health and cognitive function.</li>
+    <li>City dwellers who spend too much time indoors.</li>
+    <li>Fans of non-fiction that blends scientific rigor with beautiful storytelling.</li>
+  </ol>
+</div>
 
-1. Anyone curious about how nature impacts mental health and cognitive function.
-2. City dwellers who spend too much time indoors.
-3. Fans of non-fiction that blends scientific rigor with beautiful storytelling.
+<figure class="book-figure">
+  <img src="/uploads/images/2025-reading-list/triptych-1-2-3.jpg" alt="Nature Fix triptych" />
+</figure>
 
-![Nature Fix triptych](/uploads/images/2025-reading-list/triptych-1-2-3.jpg)
+**Notes**
 
 - I was halfway through this book when I actually felt compelled to head into the forest!
 - It’s full of research on how natural environments improve focus, boost cognitive performance, and alleviate depression. Nature is truly powerful.
@@ -110,13 +156,20 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 7 - The Anxious Generation - Jonathan Haidt (5 Stars | 2025-09-15)
 
-<img src="/uploads/images/2025-reading-list/the-anxious-generation.jpg" alt="The Anxious Generation cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/the-anxious-generation.jpg" alt="The Anxious Generation cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>Those concerned about youth mental health and the impact of social media.</li>
+    <li>Parents, educators, and anyone working with Gen Z.</li>
+    <li>Readers seeking a systematic look at the modern anxiety epidemic.</li>
+  </ol>
+</div>
 
-1. Those concerned about youth mental health and the impact of social media.
-2. Parents, educators, and anyone working with Gen Z.
-3. Readers seeking a systematic look at the modern anxiety epidemic.
+**Notes**
 
 - A vital book. It explores how the "great rewiring" of childhood through social media has made Gen Z more prone to anxiety and depression. The impact is far more profound than just "wasted time." It deserves a feature article of its own.
 - Modern teens spend so much time online that face-to-face interaction has plummeted. We don't yet know the full cost of this on social skills and human connection, but it’s likely affecting how they form intimate bonds as adults.
@@ -124,13 +177,20 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 8 - Way of the Wolf - Jordan Belfort (5 Stars | 2025-11-27)
 
-<img src="/uploads/images/2025-reading-list/way-of-the-wolf.jpg" alt="Way of the Wolf cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/way-of-the-wolf.jpg" alt="Way of the Wolf cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>Anyone looking to sharpen their sales, persuasion, or closing skills.</li>
+    <li>Entrepreneurs and creators who need to understand the psychology of a "buy" decision.</li>
+    <li>Fans of practical, high-energy methodology.</li>
+  </ol>
+</div>
 
-1. Anyone looking to sharpen their sales, persuasion, or closing skills.
-2. Entrepreneurs and creators who need to understand the psychology of a "buy" decision.
-3. Fans of practical, high-energy methodology.
+**Notes**
 
 - Absolutely gripping. Belfort isn't just a sales master; he’s an incredibly engaging writer.
 - If you liked the movie, you'll find the book equally fascinating, if not more so.
@@ -140,26 +200,40 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 9 - Becoming Leonardo - Mike Lankford (4 Stars | 2025-04-01)
 
-<img src="/uploads/images/2025-reading-list/becoming-leonardo.jpg" alt="Becoming Leonardo cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/becoming-leonardo.jpg" alt="Becoming Leonardo cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>Fans of Da Vinci and the Renaissance era.</li>
+    <li>Readers who enjoy biographies with a more literary, imaginative flair.</li>
+    <li>Those looking for an evocative, "moody" look at a historical genius.</li>
+  </ol>
+</div>
 
-1. Fans of Da Vinci and the Renaissance era.
-2. Readers who enjoy biographies with a more literary, imaginative flair.
-3. Those looking for an evocative, "moody" look at a historical genius.
+**Notes**
 
 - This feels like a biography written by a fan. It takes historical facts and weaves them into a highly atmospheric narrative. It was a joy to read.
 - That said, it should be approached more as a work of "biographical fiction" or literature than a strict historical record, as many of the intimate details are clearly imagined. If you accept it on those terms, it's a wonderful read.
 
 ## 10 - The Lonely City - Olivia Laing (4 Stars | 2025-01-19)
 
-<img src="/uploads/images/2025-reading-list/the-lonely-city.jpg" alt="The Lonely City cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/the-lonely-city.jpg" alt="The Lonely City cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>People interested in the intersection of urban life, art, and the human condition.</li>
+    <li>Fans of lyrical, essay-style non-fiction.</li>
+    <li>Anyone who has navigated their own periods of isolation.</li>
+  </ol>
+</div>
 
-1. People interested in the intersection of urban life, art, and the human condition.
-2. Fans of lyrical, essay-style non-fiction.
-3. Anyone who has navigated their own periods of isolation.
+**Notes**
 
 - A very unique perspective. Laing explores loneliness by looking at the lives and works of various artists while navigating her own period of isolation in New York. She shows how many great artists used their work to heal and process their own solitude.
 - It’s rare to find a book that discusses loneliness so directly and through the lens of art criticism.
@@ -168,13 +242,20 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 11 - The Subtle Art of Not Giving a F*ck - Mark Manson (4 Stars | 2025-02-23)
 
-<img src="/uploads/images/2025-reading-list/the-subtle-art-of-not-giving-a-fck.jpg" alt="The Subtle Art of Not Giving a F*ck cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/the-subtle-art-of-not-giving-a-fck.jpg" alt="The Subtle Art of Not Giving a F*ck cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>People looking to audit their values and priorities.</li>
+    <li>Readers who want personal growth advice without the "toxic positivity."</li>
+    <li>Those who appreciate a blunt, honest approach to life’s problems.</li>
+  </ol>
+</div>
 
-1. People looking to audit their values and priorities.
-2. Readers who want personal growth advice without the "toxic positivity."
-3. Those who appreciate a blunt, honest approach to life’s problems.
+**Notes**
 
 - This was a solid, sincere read. Since my own outlook is already quite similar to Manson’s, it didn't feel revolutionary—it felt like reading something I might have written myself. But its massive popularity makes sense; it hits a nerve.
 - The core isn't about apathy; it's about being selective. It’s a counter-argument to the constant pursuit of "more" and "positive vibes," which often just leads to more anxiety.
@@ -184,13 +265,20 @@ Whether they expanded my worldview, provided high-value insights, or simply touc
 
 ## 12 - Clear Thinking - Shane Parrish (4 Stars | 2025-01-04)
 
-<img src="/uploads/images/2025-reading-list/clear-thinking.jpg" alt="Clear Thinking cover" width="150" />
+<div class="book-cover">
+  <img src="/uploads/images/2025-reading-list/clear-thinking.jpg" alt="Clear Thinking cover" />
+</div>
 
-**Recommended for:**
+<div class="book-fit">
+  <p><strong>Recommended for</strong></p>
+  <ol>
+    <li>Readers wanting to build a toolkit of mental models and decision-making habits.</li>
+    <li>Those new to cognitive science who want a high-level framework.</li>
+    <li>Anyone looking to recognize and override their own cognitive biases.</li>
+  </ol>
+</div>
 
-1. Readers wanting to build a toolkit of mental models and decision-making habits.
-2. Those new to cognitive science who want a high-level framework.
-3. Anyone looking to recognize and override their own cognitive biases.
+**Notes**
 
 - I started this book with a 5-star feeling—it’s a solid synthesis of mental models. But after reading some critical reviews on Goodreads, I noticed flaws I had initially overlooked and moved it down to a 4.
 - **The Core Theme:** Our lives are shaped not by grand strokes of genius, but by our ability to pause between "stimulus and response" in ordinary moments. Most people spend their lives on "autopilot."

@@ -102,4 +102,52 @@ const tagList = Array.isArray(tags) ? tags : tags ? [tags] : [];
     border-radius: 0;
     margin: var(--space-md) 0;
   }
+  .blog-post__content :global(.post-cover) {
+    margin: var(--space-md) 0 var(--space-lg);
+  }
+  .blog-post__content :global(.post-cover img) {
+    width: 100%;
+    margin: 0;
+  }
+  .blog-post__content :global(.book-cover) {
+    display: flex;
+    justify-content: center;
+    margin: var(--space-md) 0 var(--space-sm);
+  }
+  .blog-post__content :global(.book-cover img) {
+    width: 150px;
+    margin: 0;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+  }
+  .blog-post__content :global(.book-fit) {
+    margin: 0 0 var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+  }
+  .blog-post__content :global(.book-fit p) {
+    margin: 0 0 0.65rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+  .blog-post__content :global(.book-fit ol) {
+    margin: 0;
+    padding-left: 1.35rem;
+  }
+  .blog-post__content :global(.book-fit li) {
+    margin: 0.35rem 0;
+  }
+  .blog-post__content :global(.book-figure) {
+    margin: var(--space-sm) 0 var(--space-md);
+  }
+  .blog-post__content :global(.book-figure img) {
+    width: 100%;
+    border-radius: 12px;
+    margin: 0;
+  }
 </style>
