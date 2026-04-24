@@ -33,7 +33,7 @@
 }
 
 .blog-post-card__link:hover {
-  color: var(--color-white);
+  color: var(--color-heading);
 }
 
 .blog-post-card__title {

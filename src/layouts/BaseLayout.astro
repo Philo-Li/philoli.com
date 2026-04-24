@@ -18,6 +18,19 @@ const { title, description, image, type } = Astro.props;
 <html lang="en">
   <head>
     <SEOHead title={title} description={description} image={image} type={type} />
+    <script is:inline>
+      (() => {
+        const root = document.documentElement;
+        const storageKey = 'theme';
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          const theme = savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : 'dark';
+          root.dataset.theme = theme;
+        } catch {
+          root.dataset.theme = 'dark';
+        }
+      })();
+    </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V10E8BFFM0"></script>
     <script>
