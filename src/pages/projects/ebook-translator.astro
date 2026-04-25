@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EbookTranslator from '../../components/EbookTranslator.tsx';
+---
+
+<BaseLayout
+  title="Bilingual Ebook Translator — Philo Li"
+  description="Upload an EPUB and translate it into a bilingual edition with your own LLM API key. Runs entirely in your browser."
+>
+  <EbookTranslator client:only="react" />
+</BaseLayout>

@@ -3,15 +3,24 @@ interface Props {
   name: string;
   description: string;
   url: string;
+  cta?: string;
 }
 
-const { name, description, url } = Astro.props;
+const { name, description, url, cta } = Astro.props;
+
+const isExternal = /^https?:\/\//.test(url);
+const linkLabel = cta ?? (isExternal ? `${new URL(url).hostname} →` : 'Open →');
 ---
 
-<a href={url} target="_blank" rel="noopener noreferrer" class="project-card">
+<a
+  href={url}
+  target={isExternal ? '_blank' : undefined}
+  rel={isExternal ? 'noopener noreferrer' : undefined}
+  class="project-card"
+>
   <h3 class="project-card__name">{name}</h3>
   <p class="project-card__desc">{description}</p>
-  <span class="project-card__link">{new URL(url).hostname} →</span>
+  <span class="project-card__link">{linkLabel}</span>
 </a>
 
 <style>
