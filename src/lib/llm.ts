@@ -1,0 +1,274 @@
+export type ProviderId = 'openai' | 'anthropic' | 'gemini';
+
+export interface ModelOption {
+  id: string;
+  label: string;
+  hint?: string;
+}
+
+export interface ProviderConfig {
+  id: ProviderId;
+  label: string;
+  models: ModelOption[];
+  /** URL where the user can get an API key. */
+  keyHelp: string;
+}
+
+export const PROVIDERS: ProviderConfig[] = [
+  {
+    id: 'openai',
+    label: 'OpenAI',
+    keyHelp: 'https://platform.openai.com/api-keys',
+    models: [
+      { id: 'gpt-4o-mini', label: 'GPT-4o mini', hint: 'cheapest, fast' },
+      { id: 'gpt-4o', label: 'GPT-4o', hint: 'higher quality' },
+      { id: 'gpt-4.1', label: 'GPT-4.1', hint: 'best quality' },
+    ],
+  },
+  {
+    id: 'anthropic',
+    label: 'Anthropic',
+    keyHelp: 'https://console.anthropic.com/settings/keys',
+    models: [
+      { id: 'claude-haiku-4-5', label: 'Claude Haiku 4.5', hint: 'cheapest, fast' },
+      { id: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6', hint: 'higher quality' },
+      { id: 'claude-opus-4-7', label: 'Claude Opus 4.7', hint: 'best quality' },
+    ],
+  },
+  {
+    id: 'gemini',
+    label: 'Google Gemini',
+    keyHelp: 'https://aistudio.google.com/apikey',
+    models: [
+      { id: 'gemini-3-flash-preview', label: 'Gemini 3 Flash (preview)', hint: 'newest, fast' },
+      { id: 'gemini-3.1-flash-lite-preview', label: 'Gemini 3.1 Flash Lite (preview)', hint: 'cheapest' },
+      { id: 'gemini-2.5-pro', label: 'Gemini 2.5 Pro', hint: 'best quality, stable' },
+    ],
+  },
+];
+
+export function findProvider(id: ProviderId): ProviderConfig {
+  const p = PROVIDERS.find(x => x.id === id);
+  if (!p) throw new Error(`Unknown provider: ${id}`);
+  return p;
+}
+
+export interface ToneOption {
+  id: string;
+  label: string;
+  hint?: string;
+  /** Style instruction injected into the system prompt. */
+  guidance: string;
+  /** Sampling temperature passed to the model. Higher = more creative. */
+  temperature: number;
+}
+
+export const TONES: ToneOption[] = [
+  {
+    id: 'idiomatic',
+    label: 'Idiomatic',
+    hint: 'natural & fluent — most books',
+    temperature: 0.8,
+    guidance: `Translate freely and idiomatically. Your goal is prose that reads as if a native speaker wrote it from scratch — NOT a translation that preserves the source sentence structure.
+
+Specifically:
+- Re-craft each sentence in the target language. Reorder, split, or merge sentences when it sounds more natural.
+- Translate the MEANING and FEELING, not the words. If a literal translation would feel awkward or foreign, choose an idiomatic native expression that carries the same emotional weight.
+- Replace source-language idioms, metaphors, and cultural references with target-language equivalents the reader will instinctively understand.
+- Prefer vivid, specific, native vocabulary over neutral dictionary words.
+- Match the original's emotional register precisely (warm stays warm, dry stays dry, urgent stays urgent), but express it in the target language's natural way of conveying that register.
+
+Avoid: stiff word-for-word renderings, awkward calques, "translation-ese", overly formal phrasing where the original is casual.
+
+Best for non-fiction, business, popular science, essays, blog posts, light fiction, and most casual reading.`,
+  },
+  {
+    id: 'literary',
+    label: 'Literary',
+    hint: 'novels & literary works',
+    temperature: 0.7,
+    guidance: 'Translate with literary care for novels, essays, memoirs, and poetry. Preserve the author\'s voice, style, rhythm, metaphors, and figurative language. Read like a polished published translation by a careful human translator — not a mechanical or paraphrased one. Where the source uses a distinctive image, find a target-language image of equivalent power; do not flatten it into plain prose.',
+  },
+  {
+    id: 'technical',
+    label: 'Technical',
+    hint: 'professional & reference books',
+    temperature: 0.2,
+    guidance: 'Translate professional, technical, or reference books (programming, science, textbooks, academic). Prioritize accuracy and precision over flow. Use the conventional target-language form for technical terminology (e.g., "callback" → "回调"). Keep code, formulas, identifiers, product names, and proper nouns in their original form unless an established translation exists. Translate sentence-by-sentence faithfully — do not paraphrase or restructure for stylistic reasons.',
+  },
+];
+
+export function findTone(id: string): ToneOption {
+  return TONES.find(t => t.id === id) ?? TONES[0];
+}
+
+export interface TranslateOptions {
+  provider: ProviderId;
+  model: string;
+  apiKey: string;
+  sourceLang: string;
+  targetLang: string;
+  /** One of TONES[].id; defaults to 'literary' if missing/unknown. */
+  tone?: string;
+  signal?: AbortSignal;
+}
+
+const SYSTEM_PROMPT = (sourceLang: string, targetLang: string, toneId: string | undefined) => {
+  const tone = findTone(toneId ?? 'literary');
+  return `You are a professional translator. Translate the user's text from ${sourceLang} into ${targetLang}.
+
+Style: ${tone.guidance}
+
+Rules:
+- Output ONLY the translation. No explanations, no notes, no quotes around it.
+- Preserve paragraph breaks exactly as in the input.
+- Keep proper nouns and code/markup as-is unless idiomatic to translate.
+- CRITICAL: tokens like \`⟦M0⟧\`, \`⟦M1⟧\`, \`⟦M12⟧\` are placeholders for math formulas, code, or images. Copy them VERBATIM into the translation at semantically appropriate positions. Never alter, translate, renumber, or remove them. They must appear in the output exactly the same number of times as in the input.
+- The user will provide numbered passages. Reply with the SAME numbering, one translation per line, in the same order.
+
+Input format:
+[1] First passage.
+[2] Second passage.
+
+Output format (exact):
+[1] Translation of the first passage.
+[2] Translation of the second passage.`;
+};
+
+function buildBatchPrompt(passages: string[]): string {
+  return passages.map((text, i) => `[${i + 1}] ${text}`).join('\n\n');
+}
+
+function parseBatchResponse(response: string, expectedCount: number): string[] {
+  const out: string[] = new Array(expectedCount).fill('');
+  // Match "[N] ..." up to the next "[N+1]" or end of string.
+  const pattern = /\[(\d+)\]\s*([\s\S]*?)(?=\n\s*\[\d+\]|$)/g;
+  let m: RegExpExecArray | null;
+  while ((m = pattern.exec(response)) !== null) {
+    const idx = parseInt(m[1], 10) - 1;
+    if (idx >= 0 && idx < expectedCount) {
+      out[idx] = m[2].trim();
+    }
+  }
+  return out;
+}
+
+async function callOpenAI(
+  passages: string[],
+  opts: TranslateOptions,
+): Promise<string[]> {
+  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${opts.apiKey}`,
+    },
+    signal: opts.signal,
+    body: JSON.stringify({
+      model: opts.model,
+      temperature: findTone(opts.tone ?? '').temperature,
+      max_tokens: 16384,
+      messages: [
+        { role: 'system', content: SYSTEM_PROMPT(opts.sourceLang, opts.targetLang, opts.tone) },
+        { role: 'user', content: buildBatchPrompt(passages) },
+      ],
+    }),
+  });
+  if (!res.ok) throw new Error(`OpenAI ${res.status}: ${await res.text()}`);
+  const data = await res.json();
+  const text = data.choices?.[0]?.message?.content ?? '';
+  return parseBatchResponse(text, passages.length);
+}
+
+async function callAnthropic(
+  passages: string[],
+  opts: TranslateOptions,
+): Promise<string[]> {
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': opts.apiKey,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true',
+    },
+    signal: opts.signal,
+    body: JSON.stringify({
+      model: opts.model,
+      max_tokens: 8192,
+      temperature: findTone(opts.tone ?? '').temperature,
+      system: SYSTEM_PROMPT(opts.sourceLang, opts.targetLang, opts.tone),
+      messages: [{ role: 'user', content: buildBatchPrompt(passages) }],
+    }),
+  });
+  if (!res.ok) throw new Error(`Anthropic ${res.status}: ${await res.text()}`);
+  const data = await res.json();
+  const text = data.content?.[0]?.text ?? '';
+  return parseBatchResponse(text, passages.length);
+}
+
+async function callGemini(
+  passages: string[],
+  opts: TranslateOptions,
+): Promise<string[]> {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(opts.model)}:generateContent?key=${encodeURIComponent(opts.apiKey)}`;
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    signal: opts.signal,
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: SYSTEM_PROMPT(opts.sourceLang, opts.targetLang, opts.tone) }] },
+      contents: [{ role: 'user', parts: [{ text: buildBatchPrompt(passages) }] }],
+      generationConfig: {
+        temperature: findTone(opts.tone ?? '').temperature,
+        maxOutputTokens: 16384,
+      },
+    }),
+  });
+  if (!res.ok) throw new Error(`Gemini ${res.status}: ${await res.text()}`);
+  const data = await res.json();
+  const text = data.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
+  return parseBatchResponse(text, passages.length);
+}
+
+/**
+ * Translate a batch of passages. Returns translations indexed identically to input.
+ * Throws on network/auth failures (caller decides retry policy).
+ */
+export async function translateBatch(
+  passages: string[],
+  opts: TranslateOptions,
+): Promise<string[]> {
+  if (passages.length === 0) return [];
+  switch (opts.provider) {
+    case 'openai': return callOpenAI(passages, opts);
+    case 'anthropic': return callAnthropic(passages, opts);
+    case 'gemini': return callGemini(passages, opts);
+  }
+}
+
+/**
+ * Group passages into batches under a soft character budget so a single API
+ * call doesn't blow past the model's context or the response token cap.
+ */
+export function chunkPassages(
+  passages: { id: string; text: string }[],
+  maxChars = 12000,
+  maxItems = 200,
+): { id: string; text: string }[][] {
+  const out: { id: string; text: string }[][] = [];
+  let current: { id: string; text: string }[] = [];
+  let size = 0;
+  for (const p of passages) {
+    const len = p.text.length;
+    if (current.length > 0 && (size + len > maxChars || current.length >= maxItems)) {
+      out.push(current);
+      current = [];
+      size = 0;
+    }
+    current.push(p);
+    size += len;
+  }
+  if (current.length > 0) out.push(current);
+  return out;
+}
