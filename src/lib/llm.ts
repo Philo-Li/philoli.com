@@ -1,4 +1,11 @@
-export type ProviderId = 'openai' | 'anthropic' | 'gemini';
+export type ProviderId =
+  | 'openai'
+  | 'anthropic'
+  | 'gemini'
+  | 'deepseek'
+  | 'qwen'
+  | 'glm'
+  | 'kimi';
 
 export interface ModelOption {
   id: string;
@@ -6,18 +13,26 @@ export interface ModelOption {
   hint?: string;
 }
 
+/** API shape — most providers expose an OpenAI-compatible /chat/completions endpoint. */
+export type ApiShape = 'openai-compat' | 'anthropic' | 'gemini';
+
 export interface ProviderConfig {
   id: ProviderId;
   label: string;
   models: ModelOption[];
   /** URL where the user can get an API key. */
   keyHelp: string;
+  api: ApiShape;
+  /** Full chat-completions endpoint URL (for `openai-compat` only). */
+  endpoint?: string;
 }
 
 export const PROVIDERS: ProviderConfig[] = [
   {
     id: 'openai',
     label: 'OpenAI',
+    api: 'openai-compat',
+    endpoint: 'https://api.openai.com/v1/chat/completions',
     keyHelp: 'https://platform.openai.com/api-keys',
     models: [
       { id: 'gpt-4o-mini', label: 'GPT-4o mini', hint: 'cheapest, fast' },
@@ -27,7 +42,8 @@ export const PROVIDERS: ProviderConfig[] = [
   },
   {
     id: 'anthropic',
-    label: 'Anthropic',
+    label: 'Anthropic Claude',
+    api: 'anthropic',
     keyHelp: 'https://console.anthropic.com/settings/keys',
     models: [
       { id: 'claude-haiku-4-5', label: 'Claude Haiku 4.5', hint: 'cheapest, fast' },
@@ -38,11 +54,60 @@ export const PROVIDERS: ProviderConfig[] = [
   {
     id: 'gemini',
     label: 'Google Gemini',
+    api: 'gemini',
     keyHelp: 'https://aistudio.google.com/apikey',
     models: [
       { id: 'gemini-3-flash-preview', label: 'Gemini 3 Flash (preview)', hint: 'newest, fast' },
       { id: 'gemini-3.1-flash-lite-preview', label: 'Gemini 3.1 Flash Lite (preview)', hint: 'cheapest' },
       { id: 'gemini-2.5-pro', label: 'Gemini 2.5 Pro', hint: 'best quality, stable' },
+    ],
+  },
+  {
+    id: 'deepseek',
+    label: 'DeepSeek',
+    api: 'openai-compat',
+    endpoint: 'https://api.deepseek.com/v1/chat/completions',
+    keyHelp: 'https://platform.deepseek.com/api_keys',
+    models: [
+      { id: 'deepseek-v4-flash', label: 'DeepSeek V4 Flash', hint: 'cheapest, fast' },
+      { id: 'deepseek-v4-pro', label: 'DeepSeek V4 Pro', hint: 'best quality' },
+    ],
+  },
+  {
+    id: 'qwen',
+    label: 'Qwen 通义千问',
+    api: 'openai-compat',
+    // China region (DashScope). Mainland keys / mainland users.
+    endpoint: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
+    keyHelp: 'https://bailian.console.aliyun.com/?apiKey=1',
+    models: [
+      { id: 'qwen3.5-flash', label: 'Qwen 3.5 Flash', hint: 'cheapest, fast' },
+      { id: 'qwen3.5-plus', label: 'Qwen 3.5 Plus', hint: 'balanced' },
+      { id: 'qwen3-max', label: 'Qwen 3 Max', hint: 'best quality' },
+    ],
+  },
+  {
+    id: 'glm',
+    label: 'Zhipu GLM (智谱)',
+    api: 'openai-compat',
+    endpoint: 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
+    keyHelp: 'https://bigmodel.cn/usercenter/proj-mgmt/apikeys',
+    models: [
+      { id: 'glm-4.7-flash', label: 'GLM-4.7 Flash', hint: 'free tier, fast' },
+      { id: 'glm-4.7', label: 'GLM-4.7', hint: 'flagship coding/agentic' },
+      { id: 'glm-5', label: 'GLM-5', hint: 'best quality' },
+    ],
+  },
+  {
+    id: 'kimi',
+    label: 'Moonshot Kimi',
+    api: 'openai-compat',
+    endpoint: 'https://api.moonshot.ai/v1/chat/completions',
+    keyHelp: 'https://platform.moonshot.ai/console/api-keys',
+    models: [
+      { id: 'moonshot-v1-128k', label: 'Moonshot v1 128K', hint: 'long context, stable' },
+      { id: 'moonshot-v1-32k', label: 'Moonshot v1 32K', hint: 'cheaper' },
+      { id: 'kimi-k2-0925-preview', label: 'Kimi K2.6 (preview)', hint: 'latest, 256K context' },
     ],
   },
 ];
@@ -153,11 +218,17 @@ function parseBatchResponse(response: string, expectedCount: number): string[] {
   return out;
 }
 
-async function callOpenAI(
+/**
+ * Generic OpenAI-compatible chat-completions caller. Used by OpenAI, DeepSeek,
+ * Qwen, GLM, Kimi — all expose the same /chat/completions schema.
+ */
+async function callOpenAICompat(
   passages: string[],
   opts: TranslateOptions,
+  endpoint: string,
+  providerLabel: string,
 ): Promise<string[]> {
-  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+  const res = await fetch(endpoint, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -174,7 +245,7 @@ async function callOpenAI(
       ],
     }),
   });
-  if (!res.ok) throw new Error(`OpenAI ${res.status}: ${await res.text()}`);
+  if (!res.ok) throw new Error(`${providerLabel} ${res.status}: ${await res.text()}`);
   const data = await res.json();
   const text = data.choices?.[0]?.message?.content ?? '';
   return parseBatchResponse(text, passages.length);
@@ -240,10 +311,15 @@ export async function translateBatch(
   opts: TranslateOptions,
 ): Promise<string[]> {
   if (passages.length === 0) return [];
-  switch (opts.provider) {
-    case 'openai': return callOpenAI(passages, opts);
-    case 'anthropic': return callAnthropic(passages, opts);
-    case 'gemini': return callGemini(passages, opts);
+  const cfg = findProvider(opts.provider);
+  switch (cfg.api) {
+    case 'openai-compat':
+      if (!cfg.endpoint) throw new Error(`${cfg.label} missing endpoint config`);
+      return callOpenAICompat(passages, opts, cfg.endpoint, cfg.label);
+    case 'anthropic':
+      return callAnthropic(passages, opts);
+    case 'gemini':
+      return callGemini(passages, opts);
   }
 }
 
