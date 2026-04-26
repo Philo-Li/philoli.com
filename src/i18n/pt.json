@@ -1,5 +1,7 @@
 {
   "newsletterPage": {
+    "title": "Newsletter",
+    "subscribe": "Inscrever-se →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -11,8 +13,7 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    },
-    "title": "Newsletter"
+    }
   },
   "metadata": {
     "siteTitle": "Philo Li — Artista, Escritor, Criador",

@@ -94,6 +94,7 @@
   },
   "newsletterPage": {
     "title": "Newsletter",
+    "subscribe": "Subscribe →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
