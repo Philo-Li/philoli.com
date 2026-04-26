@@ -29,15 +29,26 @@ export interface ProviderConfig {
 
 export const PROVIDERS: ProviderConfig[] = [
   {
+    id: 'gemini',
+    label: 'Google Gemini',
+    api: 'gemini',
+    keyHelp: 'https://aistudio.google.com/apikey',
+    models: [
+      { id: 'gemini-3-flash-preview', label: 'Gemini 3 Flash (preview)', hint: 'newest, fast' },
+      { id: 'gemini-3.1-flash-lite-preview', label: 'Gemini 3.1 Flash Lite (preview)', hint: 'cheapest' },
+      { id: 'gemini-3.1-pro-preview', label: 'Gemini 3.1 Pro (preview)', hint: 'best quality' },
+    ],
+  },
+  {
     id: 'openai',
     label: 'OpenAI',
     api: 'openai-compat',
     endpoint: 'https://api.openai.com/v1/chat/completions',
     keyHelp: 'https://platform.openai.com/api-keys',
     models: [
-      { id: 'gpt-4o-mini', label: 'GPT-4o mini', hint: 'cheapest, fast' },
-      { id: 'gpt-4o', label: 'GPT-4o', hint: 'higher quality' },
-      { id: 'gpt-4.1', label: 'GPT-4.1', hint: 'best quality' },
+      { id: 'gpt-5.4-nano', label: 'GPT-5.4 nano', hint: 'cheapest, fast' },
+      { id: 'gpt-5.4-mini', label: 'GPT-5.4 mini', hint: 'balanced' },
+      { id: 'gpt-5.5', label: 'GPT-5.5', hint: 'best quality' },
     ],
   },
   {
@@ -49,17 +60,6 @@ export const PROVIDERS: ProviderConfig[] = [
       { id: 'claude-haiku-4-5', label: 'Claude Haiku 4.5', hint: 'cheapest, fast' },
       { id: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6', hint: 'higher quality' },
       { id: 'claude-opus-4-7', label: 'Claude Opus 4.7', hint: 'best quality' },
-    ],
-  },
-  {
-    id: 'gemini',
-    label: 'Google Gemini',
-    api: 'gemini',
-    keyHelp: 'https://aistudio.google.com/apikey',
-    models: [
-      { id: 'gemini-3-flash-preview', label: 'Gemini 3 Flash (preview)', hint: 'newest, fast' },
-      { id: 'gemini-3.1-flash-lite-preview', label: 'Gemini 3.1 Flash Lite (preview)', hint: 'cheapest' },
-      { id: 'gemini-2.5-pro', label: 'Gemini 2.5 Pro', hint: 'best quality, stable' },
     ],
   },
   {
@@ -81,9 +81,9 @@ export const PROVIDERS: ProviderConfig[] = [
     endpoint: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
     keyHelp: 'https://bailian.console.aliyun.com/?apiKey=1',
     models: [
-      { id: 'qwen3.5-flash', label: 'Qwen 3.5 Flash', hint: 'cheapest, fast' },
-      { id: 'qwen3.5-plus', label: 'Qwen 3.5 Plus', hint: 'balanced' },
-      { id: 'qwen3-max', label: 'Qwen 3 Max', hint: 'best quality' },
+      { id: 'qwen3.6-flash', label: 'Qwen 3.6 Flash', hint: 'cheapest, fast' },
+      { id: 'qwen3.6-plus', label: 'Qwen 3.6 Plus', hint: 'balanced' },
+      { id: 'qwen3.6-max-preview', label: 'Qwen 3.6 Max (preview)', hint: 'best quality' },
     ],
   },
   {
@@ -105,9 +105,9 @@ export const PROVIDERS: ProviderConfig[] = [
     endpoint: 'https://api.moonshot.ai/v1/chat/completions',
     keyHelp: 'https://platform.moonshot.ai/console/api-keys',
     models: [
+      { id: 'kimi-k2.6', label: 'Kimi K2.6', hint: 'latest flagship, 262K context' },
       { id: 'moonshot-v1-128k', label: 'Moonshot v1 128K', hint: 'long context, stable' },
       { id: 'moonshot-v1-32k', label: 'Moonshot v1 32K', hint: 'cheaper' },
-      { id: 'kimi-k2-0925-preview', label: 'Kimi K2.6 (preview)', hint: 'latest, 256K context' },
     ],
   },
 ];

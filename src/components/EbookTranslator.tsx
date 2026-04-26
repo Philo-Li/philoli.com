@@ -70,7 +70,7 @@ const CONCURRENT_BATCHES = 1;
 const CONCURRENT_CHAPTERS = 10;
 
 function loadSettings(): Settings {
-  const provider = (localStorage.getItem(STORAGE_PREFIX + 'provider') as ProviderId) || 'openai';
+  const provider = (localStorage.getItem(STORAGE_PREFIX + 'provider') as ProviderId) || 'gemini';
   const providerCfg = findProvider(provider);
   const savedModel = localStorage.getItem(STORAGE_PREFIX + 'model') || '';
   const model = providerCfg.models.some(m => m.id === savedModel) ? savedModel : providerCfg.models[0].id;
@@ -118,7 +118,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const [step, setStep] = useState<Step>('settings');
   const [settings, setSettings] = useState<Settings>(() =>
     typeof window === 'undefined'
-      ? { provider: 'openai', model: 'gpt-4o-mini', apiKey: '', rememberKey: true, sourceLang: 'English', targetLang: 'Chinese (Simplified)', tone: 'idiomatic' }
+      ? { provider: 'gemini', model: 'gemini-3-flash-preview', apiKey: '', rememberKey: true, sourceLang: 'English', targetLang: 'Chinese (Simplified)', tone: 'idiomatic' }
       : loadSettings()
   );
 
