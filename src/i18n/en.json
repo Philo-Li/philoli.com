@@ -63,7 +63,7 @@
     "sectionArtworks": "Artworks",
     "sectionReadMore": "Read More",
     "sectionFindMe": "Find me elsewhere",
-    "projectDopamindDesc": "AI ADHD Coach",
+    "projectDopamindDesc": "Your daily AI companion",
     "projectPhiloArtDesc": "Digital Art Gallery",
     "newsletterMediumDesc": "Essays",
     "artworksText": "I post my artworks at philoart.io/philo",
@@ -79,7 +79,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI-powered ADHD Coach. Helping people with ADHD build better habits and stay focused."
+        "description": "Your AI companion. By your side every day, helping you live a better life."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -87,7 +87,7 @@
       },
       "ebookTranslator": {
         "name": "Bilingual Ebook Translator",
-        "description": "Turn any EPUB into a bilingual edition — runs in your browser with your own LLM API key.",
+        "description": "Turn any e-book into a bilingual edition — runs in your browser with your own LLM API key.",
         "cta": "Open tool →"
       }
     }

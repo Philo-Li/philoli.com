@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "通讯",
     "headline": "保持好奇。",
-    "desc": "关于艺术、生活和创造的思考 —— 直接发送至您的收件箱。"
+    "desc": "关于艺术、生活和造物的思考 —— 送到你的收件箱。"
   },
   "blogPage": {
     "title": "博客"
   },
   "aboutPage": {
     "tagline": "艺术家 · 作家 · 开发者",
-    "bioP1": "我是一名创作者、程序员和思考者。我热爱从零开始创造事物 —— 无论是绘画、代码，还是深度文章。",
+    "bioP1": "我是创作者，是程序员，也是思考者。从零开始造物，是我最享受的事 —— 无论是一幅画、一段代码，还是一篇长文。",
     "bioP2": "长期以来，这种热情的最大障碍是我自己的大脑：我有 ADHD。在尝试了市面上几乎所有的生产力工具后，我意识到它们都是为神经典型大脑设计的。我需要一个“伙伴” —— 一个能理解我，并在我最需要的时候轻轻推我一把的东西。",
-    "bioP3": "我到处都找不到它。于是我决定亲手打造一个 —— 为了我自己，也为了数百万像我一样拥有“忙碌大脑”的人。这就是 Dopamind 的由来。",
+    "bioP3": "我到处都没找到。于是我决定自己动手 —— 为了我，也为了数百万和我一样拥有“忙碌大脑”的人。Dopamind 就这样诞生了。",
     "sectionProjects": "项目",
     "sectionNewsletter": "通讯",
     "sectionArtworks": "艺术作品",
     "sectionReadMore": "阅读更多",
     "sectionFindMe": "在其他地方关注我",
-    "projectDopamindDesc": "AI ADHD 教练",
+    "projectDopamindDesc": "你的 AI 助理",
     "projectPhiloArtDesc": "数字艺术画廊",
     "newsletterMediumDesc": "随笔",
-    "artworksText": "我在 philoart.io/philo 发布我的艺术作品",
-    "artworksContactText": "如需购买原画或摄影版画，请在 X 上私信或发送邮件至 philo.li.official@gmail.com",
+    "artworksText": "我的艺术作品都发布在 philoart.io/philo",
+    "artworksContactText": "想购买原画或摄影版画？X 上私信我，或发邮件到 philo.li.official@gmail.com",
     "extraEmail": "电子邮件"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI 驱动的 ADHD 教练。帮助 ADHD 群体建立更好的习惯并保持专注。"
+        "description": "你的 AI 助理。每天陪伴你，帮你把日子过得更好。"
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "双语电子书翻译器",
-        "description": "将任何 EPUB 转换为双语版本 —— 在浏览器中运行，使用您自己的 LLM API key。",
+        "description": "把任意电子书翻译成双语版本 —— 在你的浏览器里跑，用你自己的 LLM API key。",
         "cta": "打开工具 →"
       }
     }
