@@ -1,4 +1,5 @@
 ---
+import { DEFAULT_LOCALE, isLocale, useTranslations } from '../i18n';
 import '../styles/hero.css';
 
 interface Props {
@@ -9,20 +10,31 @@ const { photos = [
   { src: '/images/hero1.webp', alt: 'Artwork 1' },
   { src: '/images/hero2.webp', alt: 'Artwork 2' },
 ] } = Astro.props;
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+
+function splitDot(s: string): { text: string; dot: string } {
+  if (!s) return { text: '', dot: '' };
+  const last = s.slice(-1);
+  return /[.。．!?！？]/.test(last) ? { text: s.slice(0, -1), dot: last } : { text: s, dot: '' };
+}
+
+const line1 = splitDot(t('hero.line1'));
+const line2 = splitDot(t('hero.line2'));
+const line3 = splitDot(t('hero.line3'));
 ---
 
 <section class="hero">
   <div class="hero__content">
     <div class="hero__text">
       <h1 class="hero__headline">
-        Create<span class="dot">.</span><br/>
-        Capture<span class="dot">.</span><br/>
-        Build<span class="dot">.</span>
+        {line1.text}<span class="dot">{line1.dot}</span><br/>
+        {line2.text}<span class="dot">{line2.dot}</span><br/>
+        {line3.text}<span class="dot">{line3.dot}</span>
       </h1>
       <p class="hero__tagline">
-        I paint, photograph, write, and build things.
-        This is what happens when curiosity meets
-        craft and code.
+        {t('hero.tagline')}
       </p>
     </div>
     <div class="hero__photos">
@@ -33,6 +45,6 @@ const { photos = [
       ))}
     </div>
   </div>
-  <span class="hero__side-label hero__side-label--left">Artist</span>
-  <span class="hero__side-label hero__side-label--right">Developer</span>
+  <span class="hero__side-label hero__side-label--left">{t('hero.labelLeft')}</span>
+  <span class="hero__side-label hero__side-label--right">{t('hero.labelRight')}</span>
 </section>

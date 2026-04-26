@@ -1,26 +1,37 @@
 ---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import {
+  DEFAULT_LOCALE,
+  isLocale,
+  localizedPath,
+  unlocalizedPath,
+  useTranslations,
+} from '../i18n';
 import '../styles/navbar.css';
 
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+
 const navLinks = [
-  { href: '/blog', label: 'Blog' },
-  { href: '/art', label: 'Art' },
-  { href: '/projects', label: 'Projects' },
-  { href: '/newsletter', label: 'Newsletter' },
-  { href: '/about', label: 'About' },
+  { path: '/blog', label: t('nav.blog') },
+  { path: '/art', label: t('nav.art') },
+  { path: '/projects', label: t('nav.projects') },
+  { path: '/newsletter', label: t('nav.newsletter') },
+  { path: '/about', label: t('nav.about') },
 ];
 
-const currentPath = Astro.url.pathname;
+const currentBasePath = unlocalizedPath(Astro.url.pathname);
 ---
 
 <nav class="navbar" id="navbar">
-  <a href="/" class="navbar__logo">PHILO LI</a>
+  <a href={localizedPath('/', locale)} class="navbar__logo">PHILO LI</a>
 
   <ul class="navbar__links">
     {navLinks.map(link => (
       <li>
         <a
-          href={link.href}
-          class:list={['navbar__link', { active: currentPath.startsWith(link.href) }]}
+          href={localizedPath(link.path, locale)}
+          class:list={['navbar__link', { active: currentBasePath.startsWith(link.path) }]}
         >
           {link.label}
         </a>
@@ -29,12 +40,23 @@ const currentPath = Astro.url.pathname;
   </ul>
 
   <div class="navbar__actions">
-    <button class="navbar__theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">
+    <LanguageSwitcher />
+
+    <button
+      class="navbar__theme-toggle"
+      id="theme-toggle"
+      type="button"
+      aria-label={t('theme.toggleAria')}
+      data-label-light={t('theme.light')}
+      data-label-dark={t('theme.dark')}
+      data-aria-to-light={t('theme.toggleToLight')}
+      data-aria-to-dark={t('theme.toggleToDark')}
+    >
       <span class="navbar__theme-indicator" aria-hidden="true"></span>
-      <span class="navbar__theme-label" id="theme-toggle-label">Dark</span>
+      <span class="navbar__theme-label" id="theme-toggle-label">{t('theme.dark')}</span>
     </button>
 
-    <button class="navbar__hamburger" id="hamburger" type="button" aria-label="Toggle menu">
+    <button class="navbar__hamburger" id="hamburger" type="button" aria-label={t('nav.menuLabel')}>
       <span></span>
       <span></span>
       <span></span>
@@ -43,7 +65,7 @@ const currentPath = Astro.url.pathname;
 
   <ul class="navbar__mobile-menu" id="mobile-menu">
     {navLinks.map(link => (
-      <li><a href={link.href}>{link.label}</a></li>
+      <li><a href={localizedPath(link.path, locale)}>{link.label}</a></li>
     ))}
   </ul>
 </nav>
@@ -57,10 +79,15 @@ const currentPath = Astro.url.pathname;
   const root = document.documentElement;
   const storageKey = 'theme';
 
+  const labelLight = themeToggle.dataset.labelLight ?? 'Light';
+  const labelDark = themeToggle.dataset.labelDark ?? 'Dark';
+  const ariaToLight = themeToggle.dataset.ariaToLight ?? 'Switch to light mode';
+  const ariaToDark = themeToggle.dataset.ariaToDark ?? 'Switch to dark mode';
+
   const syncThemeToggle = () => {
     const theme = root.dataset.theme === 'light' ? 'light' : 'dark';
-    themeToggleLabel.textContent = theme === 'light' ? 'Light' : 'Dark';
-    themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+    themeToggleLabel.textContent = theme === 'light' ? labelLight : labelDark;
+    themeToggle.setAttribute('aria-label', theme === 'light' ? ariaToDark : ariaToLight);
   };
 
   window.addEventListener('scroll', () => {

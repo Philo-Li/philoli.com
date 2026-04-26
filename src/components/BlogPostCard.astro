@@ -1,4 +1,6 @@
 ---
+import { DEFAULT_LOCALE, formatDate, isLocale, localizedPath } from '../i18n';
+
 interface Props {
   title: string;
   date: Date;
@@ -7,12 +9,13 @@ interface Props {
 }
 
 const { title, date, slug, tags } = Astro.props;
-const formattedDate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const formattedDate = formatDate(date, locale, { year: 'numeric', month: 'short', day: 'numeric' });
 const tagList = Array.isArray(tags) ? tags : tags ? [tags] : [];
 ---
 
 <article class="blog-post-card">
-  <a href={`/blog/${slug}`} class="blog-post-card__link">
+  <a href={localizedPath(`/blog/${slug}`, locale)} class="blog-post-card__link">
     <h3 class="blog-post-card__title">{title}</h3>
     <div class="blog-post-card__meta">
       <time>{formattedDate}</time>

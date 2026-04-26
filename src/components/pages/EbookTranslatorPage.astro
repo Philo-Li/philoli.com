@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EbookTranslator from '../EbookTranslator.tsx';
+import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+---
+
+<BaseLayout
+  title={t('metadata.ebookTranslatorTitle')}
+  description={t('metadata.ebookTranslatorDescription')}
+>
+  <EbookTranslator client:only="react" locale={locale} />
+</BaseLayout>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Lightbox from './Lightbox';
+import { useTranslations } from '../i18n';
 
 interface Artwork {
   id: string;
@@ -12,11 +13,13 @@ interface Artwork {
 
 interface GalleryProps {
   artworks: Artwork[];
+  locale?: string;
 }
 
 const FILTER_ORDER = ['Photograph', 'Painting', 'Drawing', 'Digital Art'];
 
-export default function Gallery({ artworks }: GalleryProps) {
+export default function Gallery({ artworks, locale }: GalleryProps) {
+  const t = useTranslations(locale);
   const [filter, setFilter] = useState<string>(FILTER_ORDER[0]);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
@@ -39,13 +42,13 @@ export default function Gallery({ artworks }: GalleryProps) {
   return (
     <>
       <div className="gallery__filters">
-        {FILTER_ORDER.map(t => (
+        {FILTER_ORDER.map(f => (
           <button
-            key={t}
-            className={`gallery__filter-btn ${filter === t ? 'active' : ''}`}
-            onClick={() => setFilter(t)}
+            key={f}
+            className={`gallery__filter-btn ${filter === f ? 'active' : ''}`}
+            onClick={() => setFilter(f)}
           >
-            {t}
+            {t(`gallery.filters.${f}`)}
           </button>
         ))}
       </div>
@@ -63,6 +66,7 @@ export default function Gallery({ artworks }: GalleryProps) {
           onClose={() => setLightboxIndex(null)}
           onPrev={lightboxIndex! > 0 ? handlePrev : undefined}
           onNext={lightboxIndex! < filtered.length - 1 ? handleNext : undefined}
+          locale={locale}
         />
       )}
     </>

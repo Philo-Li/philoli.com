@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { DEFAULT_LOCALE, isLocale, localizedPath, useTranslations } from '../../i18n';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+
+const projects = [
+  {
+    name: t('projectsPage.items.dopamind.name'),
+    description: t('projectsPage.items.dopamind.description'),
+    url: 'https://dopamind.app',
+  },
+  {
+    name: t('projectsPage.items.philoart.name'),
+    description: t('projectsPage.items.philoart.description'),
+    url: 'https://philoart.io',
+  },
+  {
+    name: t('projectsPage.items.ebookTranslator.name'),
+    description: t('projectsPage.items.ebookTranslator.description'),
+    url: localizedPath('/projects/ebook-translator', locale),
+    cta: t('projectsPage.items.ebookTranslator.cta'),
+  },
+];
+
+const openLabel = t('projectsPage.openLink');
+---
+
+<BaseLayout title={t('metadata.projectsTitle')} description={t('metadata.projectsDescription')}>
+  <main class="projects-page">
+    <h1 class="projects-page__title">{t('projectsPage.title')}</h1>
+    <div class="projects-page__grid">
+      {projects.map(project => {
+        const isExternal = /^https?:\/\//.test(project.url);
+        const linkLabel = project.cta ?? (isExternal ? `${new URL(project.url).hostname} →` : openLabel);
+        return (
+          <a
+            href={project.url}
+            target={isExternal ? '_blank' : undefined}
+            rel={isExternal ? 'noopener noreferrer' : undefined}
+            class="project-card"
+          >
+            <h3 class="project-card__name">{project.name}</h3>
+            <p class="project-card__desc">{project.description}</p>
+            <span class="project-card__link">{linkLabel}</span>
+          </a>
+        );
+      })}
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .projects-page {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: calc(var(--nav-height) + var(--space-lg)) var(--space-md) var(--space-xl);
+  }
+  .projects-page__title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-text-muted);
+    font-weight: 400;
+    margin-bottom: var(--space-lg);
+  }
+  .projects-page__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-md);
+  }
+  .project-card {
+    display: block;
+    padding: var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 0;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  .project-card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+  }
+  .project-card__name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-heading);
+    margin-bottom: var(--space-xs);
+  }
+  .project-card__desc {
+    font-size: 0.85rem;
+    color: var(--color-text-subtle);
+    line-height: 1.5;
+    margin-bottom: var(--space-sm);
+  }
+  .project-card__link {
+    font-size: 0.8rem;
+    color: var(--color-accent);
+  }
+</style>

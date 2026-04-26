@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t('metadata.newsletterTitle')} description={t('metadata.newsletterDescription')}>
+  <main class="newsletter-page">
+    <h1 class="newsletter-page__title">{t('newsletterPage.title')}</h1>
+    <div class="newsletter-page__grid">
+      <div class="newsletter-card">
+        <h2 class="newsletter-card__name">{t('newsletterPage.shuo.name')}</h2>
+        <p class="newsletter-card__lang">{t('newsletterPage.shuo.lang')}</p>
+        <p class="newsletter-card__desc">{t('newsletterPage.shuo.desc')}</p>
+        <a href="https://shuo.philoli.com" target="_blank" rel="noopener noreferrer" class="newsletter-card__button">
+          {t('newsletterPage.shuo.subscribe')}
+        </a>
+      </div>
+      <div class="newsletter-card">
+        <h2 class="newsletter-card__name">{t('newsletterPage.reflections.name')}</h2>
+        <p class="newsletter-card__lang">{t('newsletterPage.reflections.lang')}</p>
+        <p class="newsletter-card__desc">{t('newsletterPage.reflections.desc')}</p>
+        <a href="https://reflections.philoli.com" target="_blank" rel="noopener noreferrer" class="newsletter-card__button">
+          {t('newsletterPage.reflections.subscribe')}
+        </a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .newsletter-page {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: calc(var(--nav-height) + var(--space-lg)) var(--space-md) var(--space-xl);
+  }
+  .newsletter-page__title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-text-muted);
+    font-weight: 400;
+    margin-bottom: var(--space-lg);
+  }
+  .newsletter-page__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-md);
+  }
+  .newsletter-card {
+    padding: var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 0;
+  }
+  .newsletter-card__name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-heading);
+    margin-bottom: var(--space-xs);
+  }
+  .newsletter-card__lang {
+    font-size: 0.75rem;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: var(--space-sm);
+  }
+  .newsletter-card__desc {
+    font-size: 0.9rem;
+    color: var(--color-text-subtle);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+  }
+  .newsletter-card__button {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: var(--color-accent);
+    color: var(--color-white);
+    border-radius: 0;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.2s ease;
+  }
+  .newsletter-card__button:hover {
+    background: var(--color-accent-hover);
+  }
+</style>

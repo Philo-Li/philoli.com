@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPostCard from '../BlogPostCard.astro';
+import { getCollection } from 'astro:content';
+import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
+import '../../styles/blog.css';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout title={t('metadata.blogTitle')} description={t('metadata.blogDescription')}>
+  <main class="blog-page">
+    <h1 class="blog-page__title">{t('blogPage.title')}</h1>
+    <ul class="blog-page__list">
+      {posts.map(post => (
+        <li>
+          <BlogPostCard
+            title={post.data.title}
+            date={post.data.date}
+            slug={post.id}
+            tags={post.data.tags}
+          />
+        </li>
+      ))}
+    </ul>
+  </main>
+</BaseLayout>

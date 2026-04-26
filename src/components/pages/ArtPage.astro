@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Gallery from '../Gallery.tsx';
+import { fetchAllArtworks } from '../../lib/philoart';
+import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
+import '../../styles/gallery.css';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+
+const artworks = await fetchAllArtworks();
+
+const galleryData = artworks.map(a => ({
+  id: a.id,
+  title: a.title,
+  type: a.type,
+  srcSmall: a.srcSmall,
+  srcLarge: a.srcLarge,
+  year: a.year,
+}));
+---
+
+<BaseLayout title={t('metadata.artTitle')} description={t('metadata.artDescription')}>
+  <main class="art-page">
+    <h1 class="art-page__title">{t('artPage.title')}</h1>
+    <Gallery client:load artworks={galleryData} locale={locale} />
+  </main>
+</BaseLayout>

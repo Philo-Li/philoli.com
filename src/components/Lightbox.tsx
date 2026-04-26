@@ -1,4 +1,5 @@
 import { useEffect, useCallback } from 'react';
+import { useTranslations } from '../i18n';
 
 interface LightboxProps {
   src: string;
@@ -6,9 +7,11 @@ interface LightboxProps {
   onClose: () => void;
   onPrev?: () => void;
   onNext?: () => void;
+  locale?: string;
 }
 
-export default function Lightbox({ src, alt, onClose, onPrev, onNext }: LightboxProps) {
+export default function Lightbox({ src, alt, onClose, onPrev, onNext, locale }: LightboxProps) {
+  const t = useTranslations(locale);
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.key === 'Escape') onClose();
     if (e.key === 'ArrowLeft' && onPrev) onPrev();
@@ -30,7 +33,7 @@ export default function Lightbox({ src, alt, onClose, onPrev, onNext }: Lightbox
         <button
           className="lightbox__nav lightbox__nav--prev"
           onClick={(e) => { e.stopPropagation(); onPrev(); }}
-          aria-label="Previous"
+          aria-label={t('lightbox.previous')}
         >
           ‹
         </button>
@@ -40,7 +43,7 @@ export default function Lightbox({ src, alt, onClose, onPrev, onNext }: Lightbox
         <button
           className="lightbox__nav lightbox__nav--next"
           onClick={(e) => { e.stopPropagation(); onNext(); }}
-          aria-label="Next"
+          aria-label={t('lightbox.next')}
         >
           ›
         </button>

@@ -2,6 +2,7 @@
 import SEOHead from '../components/SEOHead.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import { DEFAULT_LOCALE, LOCALES, RTL_LOCALES, isLocale } from '../i18n';
 import '../styles/global.css';
 
 interface Props {
@@ -12,11 +13,39 @@ interface Props {
 }
 
 const { title, description, image, type } = Astro.props;
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const dir = RTL_LOCALES.has(locale) ? 'rtl' : 'ltr';
+const isDefaultLocale = locale === DEFAULT_LOCALE;
+const supportedLocalesJson = JSON.stringify(LOCALES);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={locale} dir={dir}>
   <head>
+    {isDefaultLocale && (
+      <script is:inline set:html={`(() => {
+        try {
+          var SUPPORTED = ${supportedLocalesJson};
+          var DEFAULT = '${DEFAULT_LOCALE}';
+          var STORAGE_KEY = 'preferred-locale';
+          var saved = localStorage.getItem(STORAGE_KEY);
+          var target = null;
+          if (saved && SUPPORTED.indexOf(saved) !== -1) {
+            if (saved !== DEFAULT) target = saved;
+          } else {
+            var raw = (navigator.language || DEFAULT).toLowerCase();
+            var base = raw.split('-')[0];
+            if (base !== DEFAULT && SUPPORTED.indexOf(base) !== -1) target = base;
+            else if (SUPPORTED.indexOf(raw) !== -1 && raw !== DEFAULT) target = raw;
+          }
+          if (target) {
+            var path = location.pathname;
+            var newPath = path === '/' ? '/' + target + '/' : '/' + target + path;
+            location.replace(newPath + location.search + location.hash);
+          }
+        } catch (e) {}
+      })();`} />
+    )}
     <SEOHead title={title} description={description} image={image} type={type} />
     <script is:inline>
       (() => {

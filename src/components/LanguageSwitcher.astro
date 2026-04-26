@@ -1,0 +1,209 @@
+---
+import {
+  LOCALES,
+  LOCALE_NAMES,
+  DEFAULT_LOCALE,
+  isLocale,
+  unlocalizedPath,
+  useTranslations,
+} from '../i18n';
+
+const currentLocale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(currentLocale);
+const basePath = unlocalizedPath(Astro.url.pathname);
+
+const sortedLocales = [...LOCALES].sort((a, b) =>
+  LOCALE_NAMES[a].localeCompare(LOCALE_NAMES[b])
+);
+---
+
+<div class="lang-switcher" data-base-path={basePath} data-default-locale={DEFAULT_LOCALE}>
+  <button
+    type="button"
+    class="lang-switcher__trigger"
+    id="lang-trigger"
+    aria-haspopup="listbox"
+    aria-expanded="false"
+    aria-label={t('languageSwitcher.label')}
+    title={t('languageSwitcher.label')}
+  >
+    <span class="lang-switcher__icon" aria-hidden="true">🌐</span>
+    <span class="lang-switcher__current">{LOCALE_NAMES[currentLocale]}</span>
+    <span class="lang-switcher__caret" aria-hidden="true">▾</span>
+  </button>
+  <ul class="lang-switcher__menu" id="lang-menu" role="listbox" aria-label={t('languageSwitcher.label')}>
+    {sortedLocales.map(locale => (
+      <li role="presentation">
+        <button
+          type="button"
+          role="option"
+          class:list={['lang-switcher__option', { 'is-active': locale === currentLocale }]}
+          data-locale={locale}
+          aria-selected={locale === currentLocale}
+        >
+          {LOCALE_NAMES[locale]}
+          <span class="lang-switcher__code">{locale}</span>
+        </button>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<script>
+  const STORAGE_KEY = 'preferred-locale';
+  const root = document.querySelector<HTMLElement>('.lang-switcher');
+  if (root) {
+    const trigger = root.querySelector<HTMLButtonElement>('#lang-trigger')!;
+    const menu = root.querySelector<HTMLUListElement>('#lang-menu')!;
+    const basePath = root.dataset.basePath || '/';
+    const defaultLocale = root.dataset.defaultLocale || 'en';
+
+    const close = () => {
+      menu.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded', 'false');
+    };
+
+    trigger.addEventListener('click', e => {
+      e.stopPropagation();
+      const willOpen = !menu.classList.contains('is-open');
+      menu.classList.toggle('is-open', willOpen);
+      trigger.setAttribute('aria-expanded', String(willOpen));
+    });
+
+    document.addEventListener('click', e => {
+      if (!root.contains(e.target as Node)) close();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') close();
+    });
+
+    menu.querySelectorAll<HTMLButtonElement>('.lang-switcher__option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const locale = btn.dataset.locale!;
+        try { localStorage.setItem(STORAGE_KEY, locale); } catch {}
+        const target =
+          locale === defaultLocale
+            ? basePath
+            : basePath === '/'
+              ? `/${locale}/`
+              : `/${locale}${basePath}`;
+        window.location.href = target;
+      });
+    });
+  }
+</script>
+
+<style>
+  .lang-switcher {
+    position: relative;
+  }
+
+  .lang-switcher__trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: 0;
+    color: var(--color-text-subtle);
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .lang-switcher__trigger:hover {
+    border-color: var(--color-accent);
+    color: var(--color-heading);
+  }
+
+  .lang-switcher__icon {
+    font-size: 0.85rem;
+  }
+
+  .lang-switcher__current {
+    max-width: 10ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .lang-switcher__caret {
+    font-size: 0.6rem;
+    opacity: 0.6;
+  }
+
+  .lang-switcher__menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 200px;
+    max-height: 360px;
+    overflow-y: auto;
+    padding: 4px 0;
+    margin: 0;
+    list-style: none;
+    background: var(--color-bg-elevated, #111);
+    border: 1px solid var(--color-border);
+    border-radius: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s linear 0.15s;
+    z-index: 100;
+  }
+
+  .lang-switcher__menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s;
+  }
+
+  .lang-switcher__option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 12px;
+    background: transparent;
+    border: none;
+    color: var(--color-text-subtle);
+    font-size: 0.8rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .lang-switcher__option:hover {
+    background: var(--color-surface-hover, rgba(255, 255, 255, 0.04));
+    color: var(--color-heading);
+  }
+
+  .lang-switcher__option.is-active {
+    color: var(--color-accent);
+  }
+
+  .lang-switcher__code {
+    font-size: 0.65rem;
+    color: var(--color-text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* RTL: flip menu anchor */
+  :global(html[dir='rtl']) .lang-switcher__menu {
+    right: auto;
+    left: 0;
+  }
+
+  @media (max-width: 768px) {
+    .lang-switcher__current {
+      display: none;
+    }
+  }
+</style>
