@@ -14,7 +14,27 @@ import {
   chunkPassages,
   type ProviderId,
 } from '../lib/llm';
+import { LOCALES, LOCALE_NAMES, LOCALE_ENGLISH_NAMES, useTranslations } from '../i18n';
 import '../styles/ebook-translator.css';
+
+interface EbookTranslatorProps {
+  locale?: string;
+}
+
+const MODEL_HINT_KEYS: Record<string, string> = {
+  'cheapest, fast': 'ebookTranslator.modelHints.cheapestFast',
+  'higher quality': 'ebookTranslator.modelHints.higherQuality',
+  'best quality': 'ebookTranslator.modelHints.bestQuality',
+  'newest, fast': 'ebookTranslator.modelHints.newestFast',
+  'cheapest': 'ebookTranslator.modelHints.cheapest',
+  'best quality, stable': 'ebookTranslator.modelHints.bestQualityStable',
+  'balanced': 'ebookTranslator.modelHints.balanced',
+  'free tier, fast': 'ebookTranslator.modelHints.freeTierFast',
+  'flagship coding/agentic': 'ebookTranslator.modelHints.flagshipCoding',
+  'long context, stable': 'ebookTranslator.modelHints.longContext',
+  'cheaper': 'ebookTranslator.modelHints.cheaper',
+  'latest, 256K context': 'ebookTranslator.modelHints.latestLongContext',
+};
 
 type Step = 'settings' | 'upload' | 'browse';
 type ChapterStatus = 'pending' | 'translating' | 'done' | 'partial' | 'error';
@@ -34,10 +54,11 @@ interface NodeError {
   message: string;
 }
 
-const LANGS = [
-  'English', 'Chinese (Simplified)', 'Chinese (Traditional)', 'Japanese', 'Korean',
-  'Spanish', 'French', 'German', 'Italian', 'Portuguese', 'Russian', 'Arabic',
-];
+const LANG_OPTIONS = LOCALES.map(code => ({
+  value: LOCALE_ENGLISH_NAMES[code],
+  label: LOCALE_NAMES[code],
+}));
+const VALID_LANG_VALUES = new Set(LANG_OPTIONS.map(o => o.value));
 
 const STORAGE_PREFIX = 'bilingual-translator/';
 // Within one chapter (only matters for very long chapters that get split into
@@ -55,8 +76,10 @@ function loadSettings(): Settings {
   const model = providerCfg.models.some(m => m.id === savedModel) ? savedModel : providerCfg.models[0].id;
   const remember = localStorage.getItem(STORAGE_PREFIX + 'rememberKey') !== 'false';
   const apiKey = remember ? (localStorage.getItem(STORAGE_PREFIX + 'apiKey-' + provider) || '') : '';
-  const sourceLang = localStorage.getItem(STORAGE_PREFIX + 'sourceLang') || 'English';
-  const targetLang = localStorage.getItem(STORAGE_PREFIX + 'targetLang') || 'Chinese (Simplified)';
+  const savedSource = localStorage.getItem(STORAGE_PREFIX + 'sourceLang') || '';
+  const savedTarget = localStorage.getItem(STORAGE_PREFIX + 'targetLang') || '';
+  const sourceLang = VALID_LANG_VALUES.has(savedSource) ? savedSource : 'English';
+  const targetLang = VALID_LANG_VALUES.has(savedTarget) ? savedTarget : 'Chinese (Simplified)';
   const savedTone = localStorage.getItem(STORAGE_PREFIX + 'tone') || '';
   const tone = TONES.some(t => t.id === savedTone) ? savedTone : TONES[0].id;
   return { provider, model, apiKey, rememberKey: remember, sourceLang, targetLang, tone };
@@ -90,7 +113,8 @@ const STATUS_ICONS: Record<ChapterStatus, string> = {
   error: '✕',
 };
 
-export default function EbookTranslator() {
+export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
+  const t = useTranslations(locale);
   const [step, setStep] = useState<Step>('settings');
   const [settings, setSettings] = useState<Settings>(() =>
     typeof window === 'undefined'
@@ -152,7 +176,7 @@ export default function EbookTranslator() {
     setRunning(new Set());
     try {
       const result = await parseEpub(f);
-      if (result.chapters.length === 0) throw new Error('No readable chapters found in this EPUB.');
+      if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
       setParsed(result);
       // Initialize status: chapters with no translatable nodes are auto-"done"
       const initial = new Map<string, ChapterStatus>();
@@ -343,7 +367,7 @@ export default function EbookTranslator() {
       a.click();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
     } catch (e) {
-      alert('Failed to build EPUB: ' + (e instanceof Error ? e.message : String(e)));
+      alert(t('ebookTranslator.browse.buildFailed') + ' ' + (e instanceof Error ? e.message : String(e)));
     } finally {
       setBuilding(false);
     }
@@ -368,13 +392,9 @@ export default function EbookTranslator() {
   return (
     <div className={`bt bt--${step}`}>
       <header className="bt__header">
-        <div className="bt__eyebrow">Project</div>
-        <h1 className="bt__title">Bilingual Ebook Translator</h1>
-        <p className="bt__subtitle">
-          Upload an EPUB, bring your own LLM API key, and get back a bilingual edition with the
-          original and translated text interleaved paragraph by paragraph. The file is parsed
-          entirely in your browser — your book never touches any server.
-        </p>
+        <div className="bt__eyebrow">{t('ebookTranslator.eyebrow')}</div>
+        <h1 className="bt__title">{t('ebookTranslator.title')}</h1>
+        <p className="bt__subtitle">{t('ebookTranslator.subtitle')}</p>
       </header>
 
       <div className="bt__steps">
@@ -387,7 +407,7 @@ export default function EbookTranslator() {
               key={s}
               className={`bt__step ${active ? 'bt__step--active' : ''} ${done ? 'bt__step--done' : ''}`}
             >
-              {i + 1}. {s}
+              {i + 1}. {t(`ebookTranslator.steps.${s}`)}
             </div>
           );
         })}
@@ -396,11 +416,11 @@ export default function EbookTranslator() {
             <div className="bt__steps-spacer" />
             {anyRunning ? (
               <button type="button" className="bt__btn bt__btn--small" onClick={cancelAll}>
-                Cancel running
+                {t('ebookTranslator.actions.cancelRunning')}
               </button>
             ) : (
               <button type="button" className="bt__btn bt__btn--small bt__btn--primary" onClick={translateAll}>
-                Translate all remaining
+                {t('ebookTranslator.actions.translateAllRemaining')}
               </button>
             )}
             <button
@@ -409,7 +429,7 @@ export default function EbookTranslator() {
               onClick={downloadResult}
               disabled={building || translatedNodes === 0}
             >
-              {building ? 'Building…' : '⬇ Download EPUB'}
+              {building ? t('ebookTranslator.actions.building') : t('ebookTranslator.actions.downloadEpub')}
             </button>
             <div className="bt__progress-pair">
               <div className="bt__progress-bar" style={{ width: 140 }}>
@@ -423,6 +443,7 @@ export default function EbookTranslator() {
 
       {step === 'settings' && (
         <SettingsPanel
+          t={t}
           settings={settings}
           provider={provider}
           canStart={canStart}
@@ -433,11 +454,11 @@ export default function EbookTranslator() {
 
       {step === 'upload' && (
         <div className="bt__panel">
-          <DropZone onFile={handleFile} />
-          {parsing && <div className="bt__notice">Parsing EPUB…</div>}
+          <DropZone t={t} onFile={handleFile} />
+          {parsing && <div className="bt__notice">{t('ebookTranslator.upload.parsing')}</div>}
           {parseError && <div className="bt__notice bt__notice--error">{parseError}</div>}
           <div className="bt__actions">
-            <button type="button" className="bt__btn" onClick={() => setStep('settings')}>← Back</button>
+            <button type="button" className="bt__btn" onClick={() => setStep('settings')}>{t('ebookTranslator.actions.back')}</button>
           </div>
         </div>
       )}
@@ -447,13 +468,13 @@ export default function EbookTranslator() {
           <aside className={`bt__sidebar ${sidebarCollapsed ? 'bt__sidebar--collapsed' : ''}`}>
             <div className="bt__sidebar-header">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                <div className="bt__label" style={{ margin: 0 }}>Chapters</div>
+                <div className="bt__label" style={{ margin: 0 }}>{t('ebookTranslator.browse.chapters')}</div>
                 <button
                   type="button"
                   className="bt__sidebar-toggle"
                   onClick={() => setSidebarCollapsed(v => !v)}
                 >
-                  {sidebarCollapsed ? 'Show' : 'Hide'}
+                  {sidebarCollapsed ? t('ebookTranslator.actions.show') : t('ebookTranslator.actions.hide')}
                 </button>
               </div>
             </div>
@@ -481,7 +502,7 @@ export default function EbookTranslator() {
             </ul>
             <div className="bt__sidebar-footer">
               <button type="button" className="bt__btn bt__btn--small" onClick={() => setStep('settings')}>
-                ← Settings / model
+                {t('ebookTranslator.actions.settingsModel')}
               </button>
             </div>
           </aside>
@@ -495,17 +516,21 @@ export default function EbookTranslator() {
                     value={settings.tone}
                     onChange={e => updateSettings({ tone: e.target.value })}
                     disabled={chapterIsRunning}
-                    title="Translation tone — affects writing style"
+                    title={t('ebookTranslator.browse.toneTitle')}
                   >
-                    {TONES.map(t => (
-                      <option key={t.id} value={t.id}>
-                        {t.label}{t.hint ? ` · ${t.hint}` : ''}
-                      </option>
-                    ))}
+                    {TONES.map(tone => {
+                      const label = t(`ebookTranslator.tones.${tone.id}.label`);
+                      const hint = t(`ebookTranslator.tones.${tone.id}.hint`);
+                      return (
+                        <option key={tone.id} value={tone.id}>
+                          {label}{hint ? ` · ${hint}` : ''}
+                        </option>
+                      );
+                    })}
                   </select>
                   {chapterIsRunning ? (
                     <button type="button" className="bt__btn bt__btn--small" onClick={() => cancelChapter(chapter)}>
-                      Cancel
+                      {t('ebookTranslator.actions.cancel')}
                     </button>
                   ) : (
                     <button
@@ -513,7 +538,11 @@ export default function EbookTranslator() {
                       className="bt__btn bt__btn--small bt__btn--primary"
                       onClick={() => translateChapter(chapter, chapterStat === 'done')}
                     >
-                      {chapterStat === 'done' ? 'Re-translate' : chapterTranslations.size > 0 ? 'Resume' : 'Translate this chapter'}
+                      {chapterStat === 'done'
+                        ? t('ebookTranslator.actions.retranslate')
+                        : chapterTranslations.size > 0
+                          ? t('ebookTranslator.actions.resume')
+                          : t('ebookTranslator.actions.translateChapter')}
                     </button>
                   )}
                 </div>
@@ -521,21 +550,25 @@ export default function EbookTranslator() {
               <div className="bt__main-titlerow">
                 <h2 className="bt__main-title">{chapter.title}</h2>
                 <div className="bt__main-meta">
-                  {chapter.nodes.length} paragraphs · {chapterTranslations.size} translated
+                  {t('ebookTranslator.browse.paragraphCount')
+                    .replace('{nodes}', String(chapter.nodes.length))
+                    .replace('{translated}', String(chapterTranslations.size))}
                 </div>
               </div>
             </div>
 
             {chapterErrList.length > 0 && (
               <div className="bt__notice bt__notice--error">
-                {chapterErrList.length} paragraph{chapterErrList.length === 1 ? '' : 's'} failed.
-                You can re-translate to retry — already-done paragraphs are skipped.
+                {(chapterErrList.length === 1
+                  ? t('ebookTranslator.browse.errorOne')
+                  : t('ebookTranslator.browse.errorMany')
+                ).replace('{count}', String(chapterErrList.length))}
               </div>
             )}
 
             <div className="bt__chapter-content">
               {chapter.nodes.length === 0 ? (
-                <div className="bt__notice">This chapter has no translatable text (cover, front matter, etc).</div>
+                <div className="bt__notice">{t('ebookTranslator.browse.noTranslatableText')}</div>
               ) : (
                 chapter.nodes.map(node => {
                   const tr = chapterTranslations.get(node.id);
@@ -551,8 +584,8 @@ export default function EbookTranslator() {
                   } else if (chapterIsRunning) {
                     trNode = (
                       <p className="bt__bi-tr bt__bi-pending">
-                        <span className="bt__spinner" aria-label="Translating" />
-                        <span className="bt__spinner-label">translating…</span>
+                        <span className="bt__spinner" aria-label={t('ebookTranslator.browse.translatingAria')} />
+                        <span className="bt__spinner-label">{t('ebookTranslator.browse.translatingLabel')}</span>
                       </p>
                     );
                   }
@@ -572,24 +605,35 @@ export default function EbookTranslator() {
   );
 }
 
+type TFn = (key: string) => string;
+
+function translateModelHint(t: TFn, hint: string | undefined): string {
+  if (!hint) return '';
+  const key = MODEL_HINT_KEYS[hint];
+  return key ? t(key) : hint;
+}
+
 function SettingsPanel({
+  t,
   settings,
   provider,
   canStart,
   onChange,
   onContinue,
 }: {
+  t: TFn;
   settings: Settings;
   provider: ReturnType<typeof findProvider>;
   canStart: boolean;
   onChange: (patch: Partial<Settings>) => void;
   onContinue: () => void;
 }) {
+  const [showApiKey, setShowApiKey] = useState(false);
   return (
     <div className="bt__panel">
       <div className="bt__row">
         <div className="bt__field">
-          <label className="bt__label">Provider</label>
+          <label className="bt__label">{t('ebookTranslator.settings.provider')}</label>
           <select
             className="bt__select"
             value={settings.provider}
@@ -601,35 +645,83 @@ function SettingsPanel({
           </select>
         </div>
         <div className="bt__field">
-          <label className="bt__label">Model</label>
+          <label className="bt__label">{t('ebookTranslator.settings.model')}</label>
           <select
             className="bt__select"
             value={settings.model}
             onChange={e => onChange({ model: e.target.value })}
           >
-            {provider.models.map(m => (
-              <option key={m.id} value={m.id}>
-                {m.label}{m.hint ? ` — ${m.hint}` : ''}
-              </option>
-            ))}
+            {provider.models.map(m => {
+              const hint = translateModelHint(t, m.hint);
+              return (
+                <option key={m.id} value={m.id}>
+                  {m.label}{hint ? ` — ${hint}` : ''}
+                </option>
+              );
+            })}
           </select>
         </div>
       </div>
 
       <div className="bt__field">
-        <label className="bt__label">API Key</label>
-        <input
-          className="bt__input"
-          type="password"
-          autoComplete="off"
-          spellCheck={false}
-          value={settings.apiKey}
-          placeholder={`Paste your ${provider.label} key`}
-          onChange={e => onChange({ apiKey: e.target.value })}
-        />
+        <label className="bt__label">{t('ebookTranslator.settings.apiKey')}</label>
+        <div className="bt__input-wrap">
+          <input
+            className="bt__input bt__input--with-toggle"
+            type={showApiKey ? 'text' : 'password'}
+            autoComplete="off"
+            spellCheck={false}
+            value={settings.apiKey}
+            placeholder={t('ebookTranslator.settings.apiKeyPlaceholder').replace('{provider}', provider.label)}
+            onChange={e => onChange({ apiKey: e.target.value })}
+          />
+          <button
+            type="button"
+            className="bt__input-toggle"
+            onClick={() => setShowApiKey(v => !v)}
+            aria-label={showApiKey ? t('ebookTranslator.settings.hideApiKey') : t('ebookTranslator.settings.showApiKey')}
+            aria-pressed={showApiKey}
+          >
+            {showApiKey ? (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a19.77 19.77 0 0 1 5.06-5.94" />
+                <path d="M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a19.77 19.77 0 0 1-3.16 4.19" />
+                <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24" />
+                <line x1="1" y1="1" x2="23" y2="23" />
+              </svg>
+            ) : (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            )}
+          </button>
+        </div>
         <span className="bt__hint">
-          Get one at <a href={provider.keyHelp} target="_blank" rel="noopener noreferrer">{provider.keyHelp}</a>.
-          Your key is sent only to {provider.label}, never to philoli.com.
+          {(() => {
+            const raw = t('ebookTranslator.settings.apiKeyHint');
+            const linkAnchor = '{link}';
+            const provAnchor = '{provider}';
+            const parts: React.ReactNode[] = [];
+            let rest = raw;
+            let i = 0;
+            while (rest.length > 0) {
+              const lIdx = rest.indexOf(linkAnchor);
+              const pIdx = rest.indexOf(provAnchor);
+              if (lIdx === -1 && pIdx === -1) { parts.push(rest); break; }
+              const isLink = lIdx !== -1 && (pIdx === -1 || lIdx < pIdx);
+              const at = isLink ? lIdx : pIdx;
+              const anchor = isLink ? linkAnchor : provAnchor;
+              if (at > 0) parts.push(rest.slice(0, at));
+              if (isLink) {
+                parts.push(<a key={`a${i++}`} href={provider.keyHelp} target="_blank" rel="noopener noreferrer">{provider.keyHelp}</a>);
+              } else {
+                parts.push(<span key={`p${i++}`}>{provider.label}</span>);
+              }
+              rest = rest.slice(at + anchor.length);
+            }
+            return parts;
+          })()}
         </span>
         <label className="bt__checkbox">
           <input
@@ -637,43 +729,47 @@ function SettingsPanel({
             checked={settings.rememberKey}
             onChange={e => onChange({ rememberKey: e.target.checked })}
           />
-          Remember key in this browser only (localStorage). Uncheck for shared devices.
+          {t('ebookTranslator.settings.rememberKey')}
         </label>
       </div>
 
       <div className="bt__row">
         <div className="bt__field">
-          <label className="bt__label">Translate from</label>
+          <label className="bt__label">{t('ebookTranslator.settings.translateFrom')}</label>
           <select
             className="bt__select"
             value={settings.sourceLang}
             onChange={e => onChange({ sourceLang: e.target.value })}
           >
-            {LANGS.map(l => <option key={l} value={l}>{l}</option>)}
+            {LANG_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
         </div>
         <div className="bt__field">
-          <label className="bt__label">Translate to</label>
+          <label className="bt__label">{t('ebookTranslator.settings.translateTo')}</label>
           <select
             className="bt__select"
             value={settings.targetLang}
             onChange={e => onChange({ targetLang: e.target.value })}
           >
-            {LANGS.map(l => <option key={l} value={l}>{l}</option>)}
+            {LANG_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
         </div>
         <div className="bt__field">
-          <label className="bt__label">Tone</label>
+          <label className="bt__label">{t('ebookTranslator.settings.tone')}</label>
           <select
             className="bt__select"
             value={settings.tone}
             onChange={e => onChange({ tone: e.target.value })}
           >
-            {TONES.map(t => (
-              <option key={t.id} value={t.id}>
-                {t.label}{t.hint ? ` — ${t.hint}` : ''}
-              </option>
-            ))}
+            {TONES.map(tone => {
+              const label = t(`ebookTranslator.tones.${tone.id}.label`);
+              const hint = t(`ebookTranslator.tones.${tone.id}.hint`);
+              return (
+                <option key={tone.id} value={tone.id}>
+                  {label}{hint ? ` — ${hint}` : ''}
+                </option>
+              );
+            })}
           </select>
         </div>
       </div>
@@ -685,15 +781,15 @@ function SettingsPanel({
           disabled={!canStart}
           onClick={onContinue}
         >
-          Continue →
+          {t('ebookTranslator.actions.continue')}
         </button>
       </div>
-      {!canStart && <div className="bt__notice">Enter an API key to continue.</div>}
+      {!canStart && <div className="bt__notice">{t('ebookTranslator.settings.needApiKey')}</div>}
     </div>
   );
 }
 
-function DropZone({ onFile }: { onFile: (f: File) => void }) {
+function DropZone({ t, onFile }: { t: TFn; onFile: (f: File) => void }) {
   const [active, setActive] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -718,8 +814,8 @@ function DropZone({ onFile }: { onFile: (f: File) => void }) {
           if (f) onFile(f);
         }}
       />
-      <div className="bt__drop-title">Drop an EPUB here</div>
-      <div>or click to choose a file</div>
+      <div className="bt__drop-title">{t('ebookTranslator.upload.dropTitle')}</div>
+      <div>{t('ebookTranslator.upload.dropSubtitle')}</div>
     </label>
   );
 }

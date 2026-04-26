@@ -131,6 +131,43 @@
   border-color: var(--color-accent);
 }
 
+.bt__input-wrap {
+  position: relative;
+}
+
+.bt__input--with-toggle {
+  padding-right: 2.6rem;
+}
+
+.bt__input-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-radius: 0;
+  transition: color 0.15s ease;
+}
+
+.bt__input-toggle:hover,
+.bt__input-toggle:focus-visible {
+  color: var(--color-heading);
+}
+
+.bt__input-toggle:focus-visible {
+  outline: 1px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
 .bt__row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
