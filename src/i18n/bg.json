@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Бюлетин"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — Художник, писател, творец",
+    "blogTitle": "Блог — Philo Li",
+    "blogDescription": "Статии за изкуство, философия и създаване на неща.",
+    "aboutTitle": "За мен — Philo Li",
+    "aboutDescription": "За Philo Li — художник, писател и разработчик.",
+    "artTitle": "Изкуство — Philo Li",
+    "artDescription": "Фотография, живопис и дигитално изкуство от Philo Li.",
+    "projectsTitle": "Проекти — Philo Li",
+    "projectsDescription": "Проекти от Philo Li.",
+    "newsletterTitle": "Бюлетин — Philo Li",
+    "newsletterDescription": "Абонирайте се за бюлетините на Philo Li.",
+    "ebookTranslatorTitle": "Двуезичен преводач на електронни книги — Philo Li",
+    "ebookTranslatorDescription": "Качете EPUB и го преведете в двуезично издание със собствен LLM API key. Работи изцяло във вашия браузър."
+  },
+  "nav": {
+    "blog": "Блог",
+    "art": "Изкуство",
+    "projects": "Проекти",
+    "newsletter": "Бюлетин",
+    "about": "За мен",
+    "menuLabel": "Превключване на менюто"
+  },
+  "theme": {
+    "dark": "Тъмна",
+    "light": "Светла",
+    "toggleAria": "Смяна на цветовата тема",
+    "toggleToLight": "Превключване към светъл режим",
+    "toggleToDark": "Превключване към тъмен режим"
+  },
+  "hero": {
+    "line1": "Твори.",
+    "line2": "Улавяй.",
+    "line3": "Гради.",
+    "tagline": "Рисувам, снимам, пиша и съзидавам. Там, където любопитството среща майсторството и кода, се ражда всичко това.",
+    "labelLeft": "Художник",
+    "labelRight": "Разработчик"
+  },
+  "recentPosts": {
+    "label": "Последни публикации",
+    "viewAll": "Виж всички →"
+  },
+  "newsletterCta": {
+    "label": "Бюлетин",
+    "headline": "Остани любопитен.",
+    "desc": "Мисли за изкуството, живота и създаването на неща — доставени в пощенската ти кутия."
+  },
+  "blogPage": {
+    "title": "Блог"
+  },
+  "aboutPage": {
+    "tagline": "Художник · Писател · Разработчик",
+    "bioP1": "Аз съм творец, програмист и мислител. Обичам да създавам неща от нулата — било то картина, парче код или задълбочено есе.",
+    "bioP2": "Дълго време най-голямата пречка пред тази страст беше собственият ми мозък: имам ADHD. След като изпробвах почти всеки инструмент за продуктивност на пазара, осъзнах, че всички те са създадени за невротипичен ум. Имах нужда от „партньор“ — нещо, което да ме разбира и да ме подтиква нежно точно когато имам най-голяма нужда.",
+    "bioP3": "Не можах да го открия никъде. Затова реших да го създам сам — за себе си и за милионите други с „неспокоен мозък“ като моя. Така се роди Dopamind.",
+    "sectionProjects": "Проекти",
+    "sectionNewsletter": "Бюлетин",
+    "sectionArtworks": "Творби",
+    "sectionReadMore": "Прочети повече",
+    "sectionFindMe": "Намери ме на други места",
+    "projectDopamindDesc": "AI ADHD треньор",
+    "projectPhiloArtDesc": "Галерия за дигитално изкуство",
+    "newsletterMediumDesc": "Есета",
+    "artworksText": "Публикувам творбите си на philoart.io/philo",
+    "artworksContactText": "За закупуване на оригинални картини или фотографски принтове, пишете ми на ЛС в X или на имейл philo.li.official@gmail.com",
+    "extraEmail": "Имейл"
+  },
+  "artPage": {
+    "title": "Изкуство"
+  },
+  "projectsPage": {
+    "title": "Проекти",
+    "openLink": "Отвори →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI ADHD треньор. Помага на хора с ADHD да изграждат по-добри навици и да останат фокусирани."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Моята лична арт галерия — фотография, картини и дигитално изкуство."
+      },
+      "ebookTranslator": {
+        "name": "Двуезичен преводач на електронни книги",
+        "description": "Превърнете всеки EPUB в двуезично издание — работи в браузъра ви с вашия собствен LLM API key.",
+        "cta": "Отвори инструмента →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Език",
+    "currentAria": "Текущ език"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Проект",
+    "title": "Двуезичен преводач на електронни книги",
+    "subtitle": "Качете EPUB, използвайте свой собствен LLM API key и получете двуезично издание с оригиналния и преведения текст, редуващи се абзац по абзац. Файлът се обработва изцяло във вашия браузър — книгата ви никога не докосва сървър.",
+    "steps": {
+      "settings": "настройки",
+      "upload": "качване",
+      "browse": "преглед"
+    },
+    "actions": {
+      "cancelRunning": "Прекрати изпълнението",
+      "translateAllRemaining": "Преведи всички останали",
+      "downloadEpub": "⬇ Изтегли EPUB",
+      "building": "Изграждане…",
+      "back": "← Назад",
+      "settingsModel": "← Настройки / модел",
+      "show": "Покажи",
+      "hide": "Скрий",
+      "cancel": "Отказ",
+      "retranslate": "Преведи отново",
+      "resume": "Продължи",
+      "translateChapter": "Преведи тази глава",
+      "continue": "Продължи →"
+    },
+    "settings": {
+      "provider": "Доставчик",
+      "model": "Модел",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Поставете вашия {provider} ключ",
+      "apiKeyHint": "Вземете такъв на {link}. Вашият ключ се изпраща само до {provider}, никога до philoli.com.",
+      "rememberKey": "Запомни ключа само в този браузър (localStorage). Премахнете отметката при споделени устройства.",
+      "showApiKey": "Покажи API key",
+      "hideApiKey": "Скрий API key",
+      "translateFrom": "Превод от",
+      "translateTo": "Превод на",
+      "tone": "Тон",
+      "needApiKey": "Въведете API key, за да продължите."
+    },
+    "upload": {
+      "parsing": "Анализиране на EPUB…",
+      "dropTitle": "Пуснете EPUB тук",
+      "dropSubtitle": "или кликнете, за да изберете файл",
+      "noChapters": "В този EPUB не бяха намерени глави за четене."
+    },
+    "browse": {
+      "chapters": "Глави",
+      "toneTitle": "Тон на превода — влияе на стила на писане",
+      "paragraphCount": "{nodes} параграфа · {translated} преведени",
+      "errorOne": "{count} параграф не бе преведен. Можете да преведете отново за нов опит — вече готовите параграфи ще бъдат прескочени.",
+      "errorMany": "{count} параграфа не бяха преведени. Можете да преведете отново за нов опит — вече готовите параграфи ще бъдат прескочени.",
+      "noTranslatableText": "Тази глава не съдържа текст за превод (корица, уводни страници и др.).",
+      "translatingAria": "Превеждане",
+      "translatingLabel": "превеждане…",
+      "buildFailed": "Неуспешно създаване на EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Идиоматичен",
+        "hint": "естествен и гладък — за повечето книги"
+      },
+      "literary": {
+        "label": "Литературен",
+        "hint": "романи и художествени произведения"
+      },
+      "technical": {
+        "label": "Технически",
+        "hint": "професионална и справочна литература"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "най-евтин, бърз",
+      "higherQuality": "по-високо качество",
+      "bestQuality": "най-добро качество",
+      "newestFast": "най-нов, бърз",
+      "cheapest": "най-евтин",
+      "bestQualityStable": "най-добро качество, стабилен",
+      "balanced": "балансиран",
+      "freeTierFast": "безплатен план, бърз",
+      "flagshipCoding": "флагман за програмиране/агенти",
+      "longContext": "дълъг контекст, стабилен",
+      "cheaper": "по-евтин",
+      "latestLongContext": "най-нов, 256K контекст"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Снимка",
+      "Painting": "Картина",
+      "Drawing": "Рисунка",
+      "Digital Art": "Дигитално изкуство"
+    }
+  },
+  "lightbox": {
+    "previous": "Предишен",
+    "next": "Следващ"
+  },
+  "social": {
+    "photography": "Фотография",
+    "art": "Изкуство"
+  }
+}

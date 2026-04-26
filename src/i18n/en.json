@@ -1,0 +1,214 @@
+{
+  "_preserve": [
+    "newsletterPage.shuo",
+    "newsletterPage.reflections"
+  ],
+  "metadata": {
+    "siteTitle": "Philo Li — Artist, Writer, Creator",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Articles on art, philosophy, and building things.",
+    "aboutTitle": "About — Philo Li",
+    "aboutDescription": "About Philo Li — artist, writer, and developer.",
+    "artTitle": "Art — Philo Li",
+    "artDescription": "Photography, painting, and digital art by Philo Li.",
+    "projectsTitle": "Projects — Philo Li",
+    "projectsDescription": "Projects by Philo Li.",
+    "newsletterTitle": "Newsletter — Philo Li",
+    "newsletterDescription": "Subscribe to Philo Li's newsletters.",
+    "ebookTranslatorTitle": "Bilingual Ebook Translator — Philo Li",
+    "ebookTranslatorDescription": "Upload an EPUB and translate it into a bilingual edition with your own LLM API key. Runs entirely in your browser."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Art",
+    "projects": "Projects",
+    "newsletter": "Newsletter",
+    "about": "About",
+    "menuLabel": "Toggle menu"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light",
+    "toggleAria": "Switch color theme",
+    "toggleToLight": "Switch to light mode",
+    "toggleToDark": "Switch to dark mode"
+  },
+  "hero": {
+    "line1": "Create.",
+    "line2": "Capture.",
+    "line3": "Build.",
+    "tagline": "I paint, photograph, write, and build things. This is what happens when curiosity meets craft and code.",
+    "labelLeft": "Artist",
+    "labelRight": "Developer"
+  },
+  "recentPosts": {
+    "label": "Recent Writing",
+    "viewAll": "View all →"
+  },
+  "newsletterCta": {
+    "label": "Newsletter",
+    "headline": "Stay curious.",
+    "desc": "Thoughts on art, life, and building things — delivered to your inbox."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Artist · Writer · Developer",
+    "bioP1": "I'm a creator, a programmer, and a thinker. I love building things from scratch — whether it's a painting, a piece of code, or a deep-dive essay.",
+    "bioP2": "For the longest time, the biggest obstacle to this passion was my own brain: I have ADHD. After trying nearly every productivity tool on the market, I realized they were all designed for a neurotypical mind. I needed a \"partner\" — something that understood me and could give me a gentle nudge right when I needed it most.",
+    "bioP3": "I couldn't find it anywhere. So I decided to build it myself — for me, and for the millions of others with a \"busy brain\" just like mine. That's how Dopamind was born.",
+    "sectionProjects": "Projects",
+    "sectionNewsletter": "Newsletter",
+    "sectionArtworks": "Artworks",
+    "sectionReadMore": "Read More",
+    "sectionFindMe": "Find me elsewhere",
+    "projectDopamindDesc": "AI ADHD Coach",
+    "projectPhiloArtDesc": "Digital Art Gallery",
+    "newsletterMediumDesc": "Essays",
+    "artworksText": "I post my artworks at philoart.io/philo",
+    "artworksContactText": "To purchase original paintings or photography prints, DM on X or email philo.li.official@gmail.com",
+    "extraEmail": "Email"
+  },
+  "artPage": {
+    "title": "Art"
+  },
+  "projectsPage": {
+    "title": "Projects",
+    "openLink": "Open →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI-powered ADHD Coach. Helping people with ADHD build better habits and stay focused."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "My personal art gallery — photography, paintings, and digital art."
+      },
+      "ebookTranslator": {
+        "name": "Bilingual Ebook Translator",
+        "description": "Turn any EPUB into a bilingual edition — runs in your browser with your own LLM API key.",
+        "cta": "Open tool →"
+      }
+    }
+  },
+  "newsletterPage": {
+    "title": "Newsletter",
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    }
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "currentAria": "Current language"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Project",
+    "title": "Bilingual Ebook Translator",
+    "subtitle": "Upload an EPUB, bring your own LLM API key, and get back a bilingual edition with the original and translated text interleaved paragraph by paragraph. The file is parsed entirely in your browser — your book never touches any server.",
+    "steps": {
+      "settings": "settings",
+      "upload": "upload",
+      "browse": "browse"
+    },
+    "actions": {
+      "cancelRunning": "Cancel running",
+      "translateAllRemaining": "Translate all remaining",
+      "downloadEpub": "⬇ Download EPUB",
+      "building": "Building…",
+      "back": "← Back",
+      "settingsModel": "← Settings / model",
+      "show": "Show",
+      "hide": "Hide",
+      "cancel": "Cancel",
+      "retranslate": "Re-translate",
+      "resume": "Resume",
+      "translateChapter": "Translate this chapter",
+      "continue": "Continue →"
+    },
+    "settings": {
+      "provider": "Provider",
+      "model": "Model",
+      "apiKey": "API Key",
+      "apiKeyPlaceholder": "Paste your {provider} key",
+      "apiKeyHint": "Get one at {link}. Your key is sent only to {provider}, never to philoli.com.",
+      "rememberKey": "Remember key in this browser only (localStorage). Uncheck for shared devices.",
+      "showApiKey": "Show API key",
+      "hideApiKey": "Hide API key",
+      "translateFrom": "Translate from",
+      "translateTo": "Translate to",
+      "tone": "Tone",
+      "needApiKey": "Enter an API key to continue."
+    },
+    "upload": {
+      "parsing": "Parsing EPUB…",
+      "dropTitle": "Drop an EPUB here",
+      "dropSubtitle": "or click to choose a file",
+      "noChapters": "No readable chapters found in this EPUB."
+    },
+    "browse": {
+      "chapters": "Chapters",
+      "toneTitle": "Translation tone — affects writing style",
+      "paragraphCount": "{nodes} paragraphs · {translated} translated",
+      "errorOne": "{count} paragraph failed. You can re-translate to retry — already-done paragraphs are skipped.",
+      "errorMany": "{count} paragraphs failed. You can re-translate to retry — already-done paragraphs are skipped.",
+      "noTranslatableText": "This chapter has no translatable text (cover, front matter, etc).",
+      "translatingAria": "Translating",
+      "translatingLabel": "translating…",
+      "buildFailed": "Failed to build EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomatic",
+        "hint": "natural & fluent — most books"
+      },
+      "literary": {
+        "label": "Literary",
+        "hint": "novels & literary works"
+      },
+      "technical": {
+        "label": "Technical",
+        "hint": "professional & reference books"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "cheapest, fast",
+      "higherQuality": "higher quality",
+      "bestQuality": "best quality",
+      "newestFast": "newest, fast",
+      "cheapest": "cheapest",
+      "bestQualityStable": "best quality, stable",
+      "balanced": "balanced",
+      "freeTierFast": "free tier, fast",
+      "flagshipCoding": "flagship coding/agentic",
+      "longContext": "long context, stable",
+      "cheaper": "cheaper",
+      "latestLongContext": "latest, 256K context"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Photograph",
+      "Painting": "Painting",
+      "Drawing": "Drawing",
+      "Digital Art": "Digital Art"
+    }
+  },
+  "lightbox": {
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "social": {
+    "photography": "Photography",
+    "art": "Art"
+  }
+}

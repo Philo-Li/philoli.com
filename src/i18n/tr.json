@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Bülten"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — Sanatçı, Yazar, Üretici",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Sanat, felsefe ve bir şeyler inşa etmek üzerine yazılar.",
+    "aboutTitle": "Hakkında — Philo Li",
+    "aboutDescription": "Philo Li Hakkında — sanatçı, yazar ve geliştirici.",
+    "artTitle": "Sanat — Philo Li",
+    "artDescription": "Philo Li'den fotoğrafçılık, resim ve dijital sanat.",
+    "projectsTitle": "Projeler — Philo Li",
+    "projectsDescription": "Philo Li tarafından hazırlanan projeler.",
+    "newsletterTitle": "Bülten — Philo Li",
+    "newsletterDescription": "Philo Li'nin bültenlerine abone olun.",
+    "ebookTranslatorTitle": "İki Dilli E-kitap Çevirmeni — Philo Li",
+    "ebookTranslatorDescription": "Bir EPUB yükleyin ve kendi LLM API key'inizle iki dilli bir baskıya çevirin. Tamamen tarayıcınızda çalışır."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Sanat",
+    "projects": "Projeler",
+    "newsletter": "Bülten",
+    "about": "Hakkında",
+    "menuLabel": "Menüyü aç/kapat"
+  },
+  "theme": {
+    "dark": "Koyu",
+    "light": "Açık",
+    "toggleAria": "Renk temasını değiştir",
+    "toggleToLight": "Açık moda geç",
+    "toggleToDark": "Koyu moda geç"
+  },
+  "hero": {
+    "line1": "Yarat.",
+    "line2": "Yakala.",
+    "line3": "İnşa et.",
+    "tagline": "Resim yapıyor, fotoğraf çekiyor, yazıyor ve ellerimle inşa ediyorum. Merakın sanat ve kodla buluştuğu o noktada, tüm bunlar hayat buldu.",
+    "labelLeft": "Sanatçı",
+    "labelRight": "Geliştirici"
+  },
+  "recentPosts": {
+    "label": "Son Yazılar",
+    "viewAll": "Tümünü gör →"
+  },
+  "newsletterCta": {
+    "label": "Bülten",
+    "headline": "Meraklı kal.",
+    "desc": "Sanat, yaşam ve bir şeyler inşa etmek üzerine düşünceler — gelen kutunuza gelsin."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Sanatçı · Yazar · Geliştirici",
+    "bioP1": "Ben bir yaratıcı, programcı ve düşünürüm. Sıfırdan bir şeyler inşa etmeyi seviyorum — ister bir tablo, ister bir kod parçası, ister derinlemesine bir deneme olsun.",
+    "bioP2": "Uzun bir süre boyunca bu tutkumun önündeki en büyük engel kendi beynimdi: ADHD sahibiyim. Piyasadaki hemen hemen her verimlilik aracını denedikten sonra, hepsinin nörotipik bir zihin için tasarlandığını fark ettim. Bir \"ortağa\" ihtiyacım vardı — beni anlayan ve en çok ihtiyaç duyduğum anda bana nazikçe bir dürtme verebilecek bir şeye.",
+    "bioP3": "Onu hiçbir yerde bulamadım. Bu yüzden kendim inşa etmeye karar verdim — kendim ve tıpkı benimki gibi \"meşgul bir beyne\" sahip milyonlarca kişi için. Dopamind böyle doğdu.",
+    "sectionProjects": "Projeler",
+    "sectionNewsletter": "Bülten",
+    "sectionArtworks": "Sanat Eserleri",
+    "sectionReadMore": "Daha Fazla Oku",
+    "sectionFindMe": "Beni başka yerlerde bulun",
+    "projectDopamindDesc": "AI ADHD Koçu",
+    "projectPhiloArtDesc": "Dijital Sanat Galerisi",
+    "newsletterMediumDesc": "Denemeler",
+    "artworksText": "Sanat eserlerimi philoart.io/philo adresinde paylaşıyorum",
+    "artworksContactText": "Orijinal tablolar veya fotoğraf baskıları satın almak için X üzerinden DM gönderin veya philo.li.official@gmail.com adresine e-posta atın",
+    "extraEmail": "E-posta"
+  },
+  "artPage": {
+    "title": "Sanat"
+  },
+  "projectsPage": {
+    "title": "Projeler",
+    "openLink": "Aç →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI destekli ADHD Koçu. ADHD'li kişilerin daha iyi alışkanlıklar edinmelerine ve odaklanmalarına yardımcı olur."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Kişisel sanat galerim — fotoğrafçılık, tablolar ve dijital sanat."
+      },
+      "ebookTranslator": {
+        "name": "İki Dilli E-kitap Çevirmeni",
+        "description": "Herhangi bir EPUB dosyasını iki dilli bir baskıya dönüştürün — kendi LLM API key bilginizle tarayıcınızda çalışır.",
+        "cta": "Aracı aç →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Dil",
+    "currentAria": "Mevcut dil"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Proje",
+    "title": "İki Dilli E-kitap Çevirmeni",
+    "subtitle": "Bir EPUB yükleyin, kendi LLM API key bilgilerinizi kullanın ve orijinal metin ile çevirinin paragraf paragraf iç içe geçtiği iki dilli bir sürüm elde edin. Dosya tamamen tarayıcınızda işlenir — kitabınız asla herhangi bir sunucuya ulaşmaz.",
+    "steps": {
+      "settings": "ayarlar",
+      "upload": "yükle",
+      "browse": "göz at"
+    },
+    "actions": {
+      "cancelRunning": "İşlemi iptal et",
+      "translateAllRemaining": "Kalanların tümünü çevir",
+      "downloadEpub": "⬇ EPUB İndir",
+      "building": "Oluşturuluyor…",
+      "back": "← Geri",
+      "settingsModel": "← Ayarlar / model",
+      "show": "Göster",
+      "hide": "Gizle",
+      "cancel": "İptal",
+      "retranslate": "Yeniden çevir",
+      "resume": "Devam et",
+      "translateChapter": "Bu bölümü çevir",
+      "continue": "Devam et →"
+    },
+    "settings": {
+      "provider": "Sağlayıcı",
+      "model": "Model",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "{provider} anahtarınızı yapıştırın",
+      "apiKeyHint": "{link} adresinden bir tane edinin. Anahtarınız yalnızca {provider} tarafına gönderilir, asla philoli.com adresine gitmez.",
+      "rememberKey": "Anahtarı sadece bu tarayıcıda hatırla (localStorage). Ortak kullanılan cihazlar için işareti kaldırın.",
+      "showApiKey": "API key göster",
+      "hideApiKey": "API key'i gizle",
+      "translateFrom": "Şu dilden çevir",
+      "translateTo": "Şu dile çevir",
+      "tone": "Üslup",
+      "needApiKey": "Devam etmek için bir API key girin."
+    },
+    "upload": {
+      "parsing": "EPUB ayrıştırılıyor…",
+      "dropTitle": "Buraya bir EPUB bırakın",
+      "dropSubtitle": "veya bir dosya seçmek için tıklayın",
+      "noChapters": "Bu EPUB içinde okunabilir bölüm bulunamadı."
+    },
+    "browse": {
+      "chapters": "Bölümler",
+      "toneTitle": "Çeviri üslubu — yazım tarzını etkiler",
+      "paragraphCount": "{nodes} paragraf · {translated} çevrildi",
+      "errorOne": "{count} paragraf başarısız oldu. Tekrar denemek için yeniden çevirebilirsiniz — tamamlanmış paragraflar atlanır.",
+      "errorMany": "{count} paragraf başarısız oldu. Tekrar denemek için yeniden çevirebilirsiniz — tamamlanmış paragraflar atlanır.",
+      "noTranslatableText": "Bu bölümde çevrilebilir metin yok (kapak, ön söz vb.).",
+      "translatingAria": "Çevriliyor",
+      "translatingLabel": "çevriliyor…",
+      "buildFailed": "EPUB oluşturulamadı:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Deyimsel",
+        "hint": "doğal ve akıcı — çoğu kitap"
+      },
+      "literary": {
+        "label": "Edebi",
+        "hint": "romanlar ve edebi eserler"
+      },
+      "technical": {
+        "label": "Teknik",
+        "hint": "profesyonel ve referans kitapları"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "en ucuz, hızlı",
+      "higherQuality": "daha yüksek kalite",
+      "bestQuality": "en iyi kalite",
+      "newestFast": "en yeni, hızlı",
+      "cheapest": "en ucuz",
+      "bestQualityStable": "en iyi kalite, kararlı",
+      "balanced": "dengeli",
+      "freeTierFast": "ücretsiz katman, hızlı",
+      "flagshipCoding": "amiral gemisi kodlama/ajanlık",
+      "longContext": "uzun bağlam, kararlı",
+      "cheaper": "daha ucuz",
+      "latestLongContext": "en yeni, 256K bağlam"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Fotoğraf",
+      "Painting": "Resim",
+      "Drawing": "Çizim",
+      "Digital Art": "Dijital Sanat"
+    }
+  },
+  "lightbox": {
+    "previous": "Önceki",
+    "next": "Sonraki"
+  },
+  "social": {
+    "photography": "Fotoğrafçılık",
+    "art": "Sanat"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Bilten"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — umetnik, pisac, stvaralac",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Članci o umetnosti, filozofiji i stvaranju.",
+    "aboutTitle": "O meni — Philo Li",
+    "aboutDescription": "O Philo Li — umetniku, piscu i programeru.",
+    "artTitle": "Umetnost — Philo Li",
+    "artDescription": "Fotografija, slikarstvo i digitalna umetnost autora Philo Li.",
+    "projectsTitle": "Projekti — Philo Li",
+    "projectsDescription": "Projekti autora Philo Li.",
+    "newsletterTitle": "Bilten — Philo Li",
+    "newsletterDescription": "Pretplatite se na biltene autora Philo Li.",
+    "ebookTranslatorTitle": "Prevodilac dvojezičnih e-knjiga — Philo Li",
+    "ebookTranslatorDescription": "Otpremite EPUB i prevedite ga u dvojezično izdanje koristeći sopstveni LLM API key. Radi u potpunosti u vašem pregledaču."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Umetnost",
+    "projects": "Projekti",
+    "newsletter": "Bilten",
+    "about": "O meni",
+    "menuLabel": "Meni"
+  },
+  "theme": {
+    "dark": "Tamna",
+    "light": "Svetla",
+    "toggleAria": "Promeni temu boja",
+    "toggleToLight": "Prebaci na svetli režim",
+    "toggleToDark": "Prebaci na tamni režim"
+  },
+  "hero": {
+    "line1": "Stvaraj.",
+    "line2": "Uhvati.",
+    "line3": "Gradi.",
+    "tagline": "Slikam, fotografišem, pišem i gradim. To je plod susreta radoznalosti, zanata i koda.",
+    "labelLeft": "Umetnik",
+    "labelRight": "Programer"
+  },
+  "recentPosts": {
+    "label": "Nedavni tekstovi",
+    "viewAll": "Pogledaj sve →"
+  },
+  "newsletterCta": {
+    "label": "Bilten",
+    "headline": "Ostani radoznao.",
+    "desc": "Misli o umetnosti, životu i stvaranju — stižu u tvoje sanduče."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Umetnik · Pisac · Programer",
+    "bioP1": "Ja sam stvaralac, programer i mislilac. Volim da gradim stvari od nule — bilo da je to slika, deo koda ili detaljan esej.",
+    "bioP2": "Dugo vremena, najveća prepreka ovoj strasti bio je moj sopstveni mozak: imam ADHD. Nakon što sam isprobao skoro svaki alat za produktivnost na tržištu, shvatio sam da su svi dizajnirani za neurotipičan um. Trebao mi je „partner“ — nešto što me razume i što može blago da me podstakne baš kada mi je to najpotrebnije.",
+    "bioP3": "Nisam mogao to nigde da pronađem. Zato sam odlučio da ga sam napravim — za sebe i za milione drugih sa „nemirnim mozgom“ baš kao što je moj. Tako je rođen Dopamind.",
+    "sectionProjects": "Projekti",
+    "sectionNewsletter": "Bilten",
+    "sectionArtworks": "Umetnička dela",
+    "sectionReadMore": "Pročitaj više",
+    "sectionFindMe": "Pronađi me na drugim mestima",
+    "projectDopamindDesc": "AI ADHD trener",
+    "projectPhiloArtDesc": "Galerija digitalne umetnosti",
+    "newsletterMediumDesc": "Eseji",
+    "artworksText": "Svoja umetnička dela objavljujem na philoart.io/philo",
+    "artworksContactText": "Za kupovinu originalnih slika ili printova fotografija, pošaljite DM na X ili mejl na philo.li.official@gmail.com",
+    "extraEmail": "E-pošta"
+  },
+  "artPage": {
+    "title": "Umetnost"
+  },
+  "projectsPage": {
+    "title": "Projekti",
+    "openLink": "Otvori →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "ADHD trener pokretan AI tehnologijom. Pomaže ljudima sa ADHD-om da izgrade bolje navike i ostanu fokusirani."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Moja lična umetnička galerija — fotografija, slike i digitalna umetnost."
+      },
+      "ebookTranslator": {
+        "name": "Prevodilac dvojezičnih e-knjiga",
+        "description": "Pretvorite bilo koji EPUB u dvojezično izdanje — radi u vašem pretraživaču uz vaš sopstveni LLM API key.",
+        "cta": "Otvori alat →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Jezik",
+    "currentAria": "Trenutni jezik"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Projekat",
+    "title": "Dvojezični prevodilac e-knjiga",
+    "subtitle": "Otpremite EPUB, unesite sopstveni LLM API key i dobićete dvojezično izdanje u kojem su originalni i prevedeni tekst isprepleteni pasus po pasus. Datoteka se obrađuje u potpunosti u vašem pregledaču — vaša knjiga nikada ne dotiče nijedan server.",
+    "steps": {
+      "settings": "podešavanja",
+      "upload": "otpremi",
+      "browse": "pretraži"
+    },
+    "actions": {
+      "cancelRunning": "Otkaži izvršavanje",
+      "translateAllRemaining": "Prevedi sve preostalo",
+      "downloadEpub": "⬇ Preuzmi EPUB",
+      "building": "Izgradnja…",
+      "back": "← Nazad",
+      "settingsModel": "← Podešavanja / model",
+      "show": "Prikaži",
+      "hide": "Sakrij",
+      "cancel": "Otkaži",
+      "retranslate": "Prevedi ponovo",
+      "resume": "Nastavi",
+      "translateChapter": "Prevedi ovo poglavlje",
+      "continue": "Nastavi →"
+    },
+    "settings": {
+      "provider": "Provajder",
+      "model": "Model",
+      "apiKey": "API Key",
+      "apiKeyPlaceholder": "Nalepite svoj {provider} ključ",
+      "apiKeyHint": "Nabavite ga na {link}. Vaš ključ se šalje samo {provider}, nikada na philoli.com.",
+      "rememberKey": "Zapamti ključ samo u ovom pregledaču (localStorage). Odštiklirajte za zajedničke uređaje.",
+      "showApiKey": "Prikaži API key",
+      "hideApiKey": "Sakrij API key",
+      "translateFrom": "Prevedi sa",
+      "translateTo": "Prevedi na",
+      "tone": "Ton",
+      "needApiKey": "Unesite API key da biste nastavili."
+    },
+    "upload": {
+      "parsing": "Analiziranje EPUB datoteke…",
+      "dropTitle": "Prevucite EPUB ovde",
+      "dropSubtitle": "ili kliknite da izaberete datoteku",
+      "noChapters": "Nisu pronađena čitljiva poglavlja u ovoj EPUB datoteci."
+    },
+    "browse": {
+      "chapters": "Poglavlja",
+      "toneTitle": "Ton prevoda — utiče na stil pisanja",
+      "paragraphCount": "{nodes} pasusa · {translated} prevedeno",
+      "errorOne": "{count} pasus nije uspeo. Možete ponovo prevoditi da biste pokušali opet — već završeni pasusi se preskaču.",
+      "errorMany": "{count} pasusa nije uspelo. Možete ponovo prevoditi da biste pokušali opet — već završeni pasusi se preskaču.",
+      "noTranslatableText": "Ovo poglavlje nema tekst za prevođenje (naslovna strana, uvodni deo, itd).",
+      "translatingAria": "Prevođenje",
+      "translatingLabel": "prevođenje…",
+      "buildFailed": "Neuspešno kreiranje EPUB datoteke:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomatski",
+        "hint": "prirodno i tečno — većina knjiga"
+      },
+      "literary": {
+        "label": "Književni",
+        "hint": "romani i književna dela"
+      },
+      "technical": {
+        "label": "Tehnički",
+        "hint": "stručne knjige i priručnici"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "najjeftinije, brzo",
+      "higherQuality": "viši kvalitet",
+      "bestQuality": "najbolji kvalitet",
+      "newestFast": "najnovije, brzo",
+      "cheapest": "najjeftinije",
+      "bestQualityStable": "najbolji kvalitet, stabilno",
+      "balanced": "izbalansirano",
+      "freeTierFast": "besplatni nivo, brz",
+      "flagshipCoding": "vodeći za kodiranje/agentni",
+      "longContext": "dugačak kontekst, stabilan",
+      "cheaper": "jeftiniji",
+      "latestLongContext": "najnoviji, 256K kontekst"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Fotografija",
+      "Painting": "Slika",
+      "Drawing": "Crtež",
+      "Digital Art": "Digitalna umetnost"
+    }
+  },
+  "lightbox": {
+    "previous": "Prethodno",
+    "next": "Sledeće"
+  },
+  "social": {
+    "photography": "Fotografija",
+    "art": "Umetnost"
+  }
+}

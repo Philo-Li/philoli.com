@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Jaunumi"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — mākslinieks, rakstnieks, radītājs",
+    "blogTitle": "Blogs — Philo Li",
+    "blogDescription": "Raksti par mākslu, filozofiju un lietu radīšanu.",
+    "aboutTitle": "Par mani — Philo Li",
+    "aboutDescription": "Par Philo Li — mākslinieku, rakstnieku un izstrādātāju.",
+    "artTitle": "Māksla — Philo Li",
+    "artDescription": "Philo Li fotogrāfijas, gleznas un digitālā māksla.",
+    "projectsTitle": "Projekti — Philo Li",
+    "projectsDescription": "Philo Li projekti.",
+    "newsletterTitle": "Biļetens — Philo Li",
+    "newsletterDescription": "Pieraksties Philo Li jaunumiem.",
+    "ebookTranslatorTitle": "Divvalodu e-grāmatu tulkotājs — Philo Li",
+    "ebookTranslatorDescription": "Augšupielādē EPUB un pārtulko to divvalodu izdevumā, izmantojot savu LLM API key. Darbojas pilnībā tavā pārlūkprogrammā."
+  },
+  "nav": {
+    "blog": "Blogs",
+    "art": "Māksla",
+    "projects": "Projekti",
+    "newsletter": "Biļetens",
+    "about": "Par mani",
+    "menuLabel": "Pārslēgt izvēlni"
+  },
+  "theme": {
+    "dark": "Tumšs",
+    "light": "Gaišs",
+    "toggleAria": "Mainīt krāsu tēmu",
+    "toggleToLight": "Pārslēgt uz gaišo režīmu",
+    "toggleToDark": "Pārslēgt uz tumšo režīmu"
+  },
+  "hero": {
+    "line1": "Radīt.",
+    "line2": "Tvert.",
+    "line3": "Būvēt.",
+    "tagline": "Es gleznoju, fotografēju, rakstu un radu lietas. Zinātkārei sastopoties ar meistarību un kodu, top šis viss.",
+    "labelLeft": "Mākslinieks",
+    "labelRight": "Izstrādātājs"
+  },
+  "recentPosts": {
+    "label": "Jaunākie raksti",
+    "viewAll": "Skatīt visu →"
+  },
+  "newsletterCta": {
+    "label": "Biļetens",
+    "headline": "Paliec zinātkārs.",
+    "desc": "Pārdomas par mākslu, dzīvi un lietu radīšanu — tavā iesūtnē."
+  },
+  "blogPage": {
+    "title": "Blogs"
+  },
+  "aboutPage": {
+    "tagline": "Mākslinieks · Rakstnieks · Izstrādātājs",
+    "bioP1": "Esmu radītājs, programmētājs un domātājs. Man patīk radīt lietas no nulles — vai tā būtu glezna, koda fragments vai padziļināta eseja.",
+    "bioP2": "Ilgu laiku lielākais šķērslis šai kaislībai bija mana paša smadzenes: man ir ADHD. Izmēģinājis gandrīz visus tirgū pieejamos produktivitātes rīkus, es sapratu, ka tie visi ir paredzēti neirotipiskam prātam. Man bija vajadzīgs \"partneris\" — kaut kas, kas mani saprastu un dotu maigu pamudinājumu tieši tad, kad tas man visvairāk nepieciešams.",
+    "bioP3": "Es to nekur nevarēju atrast. Tāpēc nolēmu to izveidot pats — sev un miljoniem citu ar \"aizņemtu prātu\", tieši tādu kā manējais. Tā piedzima Dopamind.",
+    "sectionProjects": "Projekti",
+    "sectionNewsletter": "Biļetens",
+    "sectionArtworks": "Mākslas darbi",
+    "sectionReadMore": "Lasīt vairāk",
+    "sectionFindMe": "Atrodi mani citur",
+    "projectDopamindDesc": "AI ADHD treneris",
+    "projectPhiloArtDesc": "Digitālās mākslas galerija",
+    "newsletterMediumDesc": "Esejas",
+    "artworksText": "Es publicēju savus mākslas darbus philoart.io/philo",
+    "artworksContactText": "Lai iegādātos oriģinālgleznas vai fotogrāfiju izdrukas, raksti DM platformā X vai sūti e-pastu uz philo.li.official@gmail.com",
+    "extraEmail": "E-pasts"
+  },
+  "artPage": {
+    "title": "Māksla"
+  },
+  "projectsPage": {
+    "title": "Projekti",
+    "openLink": "Atvērt →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "Ar AI darbināts ADHD treneris. Palīdz cilvēkiem ar ADHD veidot labākus ieradumus un saglabāt fokusu."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Mana personīgā mākslas galerija — fotogrāfija, gleznas un digitālā māksla."
+      },
+      "ebookTranslator": {
+        "name": "Divvalodu e-grāmatu tulkotājs",
+        "description": "Pārvērt jebkuru EPUB divvalodu izdevumā — darbojas tavā pārlūkprogrammā ar tavu LLM API key.",
+        "cta": "Atvērt rīku →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Valoda",
+    "currentAria": "Pašreizējā valoda"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Projekts",
+    "title": "Divvalodu e-grāmatu tulkotājs",
+    "subtitle": "Augšupielādējiet EPUB, izmantojiet savu LLM API key un saņemiet divvalodu izdevumu, kurā oriģinālais un tulkotais teksts ir izvietoti pamīšus pa rindkopām. Fails tiek apstrādāts tikai jūsu pārlūkprogrammā — jūsu grāmata nekad nenonāk nevienā serverī.",
+    "steps": {
+      "settings": "iestatījumi",
+      "upload": "augšupielādēt",
+      "browse": "pārlūkot"
+    },
+    "actions": {
+      "cancelRunning": "Atcelt izpildi",
+      "translateAllRemaining": "Tulkot visu atlikušo",
+      "downloadEpub": "⬇ Lejupielādēt EPUB",
+      "building": "Veido…",
+      "back": "← Atpakaļ",
+      "settingsModel": "← Iestatījumi / modelis",
+      "show": "Rādīt",
+      "hide": "Paslēpt",
+      "cancel": "Atcelt",
+      "retranslate": "Tulkot atkārtoti",
+      "resume": "Turpināt",
+      "translateChapter": "Tulkot šo nodaļu",
+      "continue": "Turpināt →"
+    },
+    "settings": {
+      "provider": "Pakalpojumu sniedzējs",
+      "model": "Modelis",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Ielīmējiet savu {provider} atslēgu",
+      "apiKeyHint": "Iegūstiet to vietnē {link}. Jūsu atslēga tiek nosūtīta tikai {provider}, nekad philoli.com.",
+      "rememberKey": "Atcerēties atslēgu tikai šajā pārlūkprogrammā (localStorage). Noņemiet atzīmi koplietojamās ierīcēs.",
+      "showApiKey": "Rādīt API key",
+      "hideApiKey": "Paslēpt API key",
+      "translateFrom": "Tulkot no",
+      "translateTo": "Tulkot uz",
+      "tone": "Tonis",
+      "needApiKey": "Ievadiet API key, lai turpinātu."
+    },
+    "upload": {
+      "parsing": "Analizē EPUB…",
+      "dropTitle": "Nometiet EPUB šeit",
+      "dropSubtitle": "vai noklikšķiniet, lai izvēlētos failu",
+      "noChapters": "Šajā EPUB netika atrasta neviena lasāma nodaļa."
+    },
+    "browse": {
+      "chapters": "Nodaļas",
+      "toneTitle": "Tulkojuma tonis — ietekmē rakstīšanas stilu",
+      "paragraphCount": "{nodes} rindkopas · {translated} iztulkotas",
+      "errorOne": "{count} rindkopa neizdevās. Varat tulkot vēlreiz, lai mēģinātu atkārtoti — jau pabeigtās rindkopas tiks izlaistas.",
+      "errorMany": "{count} rindkopas neizdevās. Varat tulkot vēlreiz, lai mēģinātu atkārtoti — jau pabeigtās rindkopas tiks izlaistas.",
+      "noTranslatableText": "Šajā nodaļā nav tulkojama teksta (vāks, ievaddaļas utt.).",
+      "translatingAria": "Tulko",
+      "translatingLabel": "tulko…",
+      "buildFailed": "Neizdevās izveidot EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomātisks",
+        "hint": "dabisks un plūstošs — lielākajai daļai grāmatu"
+      },
+      "literary": {
+        "label": "Literārs",
+        "hint": "romāni un literārie darbi"
+      },
+      "technical": {
+        "label": "Tehnisks",
+        "hint": "profesionālā un uzziņu literatūra"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "lētākais, ātrs",
+      "higherQuality": "augstāka kvalitāte",
+      "bestQuality": "labākā kvalitāte",
+      "newestFast": "jaunākais, ātrs",
+      "cheapest": "lētākais",
+      "bestQualityStable": "labākā kvalitāte, stabils",
+      "balanced": "līdzsvarots",
+      "freeTierFast": "bezmaksas līmenis, ātrs",
+      "flagshipCoding": "vadošais programmēšanai/aģentu",
+      "longContext": "garš konteksts, stabils",
+      "cheaper": "lētāks",
+      "latestLongContext": "jaunākais, 256K konteksts"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Fotogrāfija",
+      "Painting": "Glezna",
+      "Drawing": "Zīmējums",
+      "Digital Art": "Digitālā māksla"
+    }
+  },
+  "lightbox": {
+    "previous": "Iepriekšējais",
+    "next": "Nākamais"
+  },
+  "social": {
+    "photography": "Fotogrāfija",
+    "art": "Māksla"
+  }
+}

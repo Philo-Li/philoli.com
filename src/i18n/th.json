@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "จดหมายข่าว"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — ศิลปิน, นักเขียน, ผู้สร้างสรรค์",
+    "blogTitle": "บล็อก — Philo Li",
+    "blogDescription": "บทความเกี่ยวกับศิลปะ ปรัชญา และการสร้างสิ่งต่างๆ",
+    "aboutTitle": "เกี่ยวกับ — Philo Li",
+    "aboutDescription": "เกี่ยวกับ Philo Li — ศิลปิน นักเขียน และนักพัฒนา",
+    "artTitle": "ศิลปะ — Philo Li",
+    "artDescription": "ภาพถ่าย ภาพวาด และดิจิทัลอาร์ต โดย Philo Li",
+    "projectsTitle": "โปรเจกต์ — Philo Li",
+    "projectsDescription": "โปรเจกต์โดย Philo Li",
+    "newsletterTitle": "จดหมายข่าว — Philo Li",
+    "newsletterDescription": "ติดตามจดหมายข่าวของ Philo Li",
+    "ebookTranslatorTitle": "เครื่องมือแปลอีบุ๊กสองภาษา — Philo Li",
+    "ebookTranslatorDescription": "อัปโหลดไฟล์ EPUB และแปลเป็นฉบับสองภาษาด้วย API key ของ LLM ของคุณเอง ทำงานบนเบราว์เซอร์ของคุณทั้งหมด"
+  },
+  "nav": {
+    "blog": "บล็อก",
+    "art": "ศิลปะ",
+    "projects": "โปรเจกต์",
+    "newsletter": "จดหมายข่าว",
+    "about": "เกี่ยวกับ",
+    "menuLabel": "เปิด/ปิดเมนู"
+  },
+  "theme": {
+    "dark": "มืด",
+    "light": "สว่าง",
+    "toggleAria": "เปลี่ยนธีมสี",
+    "toggleToLight": "เปลี่ยนเป็นโหมดสว่าง",
+    "toggleToDark": "เปลี่ยนเป็นโหมดมืด"
+  },
+  "hero": {
+    "line1": "รังสรรค์",
+    "line2": "บันทึก",
+    "line3": "ก่อร่าง",
+    "tagline": "ผมวาดภาพ ถ่ายรูป เขียนหนังสือ และลงมือสร้างสิ่งต่างๆ เมื่อความสงสัยใคร่รู้มาบรรจบกับศิลปะและโค้ด จึงเกิดเป็นทั้งหมดนี้อย่างที่เห็น",
+    "labelLeft": "ศิลปิน",
+    "labelRight": "นักพัฒนา"
+  },
+  "recentPosts": {
+    "label": "งานเขียนล่าสุด",
+    "viewAll": "ดูทั้งหมด →"
+  },
+  "newsletterCta": {
+    "label": "จดหมายข่าว",
+    "headline": "คงความอยากรู้อยากเห็นไว้",
+    "desc": "ความคิดเกี่ยวกับศิลปะ ชีวิต และการสร้างสรรค์สิ่งต่าง ๆ — ส่งตรงถึงกล่องข้อความของคุณ"
+  },
+  "blogPage": {
+    "title": "บล็อก"
+  },
+  "aboutPage": {
+    "tagline": "ศิลปิน · นักเขียน · นักพัฒนา",
+    "bioP1": "ผมเป็นนักสร้างสรรค์ โปรแกรมเมอร์ และนักคิด ผมรักการสร้างสิ่งต่าง ๆ ขึ้นมาจากศูนย์ — ไม่ว่าจะเป็นภาพวาด โค้ดสักชุด หรือบทความเจาะลึก",
+    "bioP2": "เป็นเวลานานมากที่อุปสรรคใหญ่ที่สุดต่อความหลงใหลนี้คือสมองของผมเอง: ผมเป็น ADHD หลังจากลองใช้เครื่องมือช่วยเพิ่มประสิทธิภาพการทำงานเกือบทุกอย่างในตลาด ผมก็ตระหนักว่าพวกมันถูกออกแบบมาเพื่อคนที่มีสมองแบบปกติ ผมต้องการ \"คู่หู\" — บางสิ่งที่เข้าใจผมและสามารถช่วยสะกิดเตือนเบา ๆ ในเวลาที่ผมต้องการมากที่สุด",
+    "bioP3": "ผมหาเครื่องมือแบบนั้นไม่เจอที่ไหนเลย ผมจึงตัดสินใจสร้างมันขึ้นมาเอง — เพื่อตัวผมเอง และเพื่อคนอื่น ๆ อีกหลายล้านคนที่มี \"สมองที่วุ่นวาย\" เหมือนกับผม นั่นคือจุดเริ่มต้นของ Dopamind",
+    "sectionProjects": "โปรเจกต์",
+    "sectionNewsletter": "จดหมายข่าว",
+    "sectionArtworks": "ผลงานศิลปะ",
+    "sectionReadMore": "อ่านเพิ่มเติม",
+    "sectionFindMe": "ติดตามผมได้ที่อื่น",
+    "projectDopamindDesc": "โค้ช ADHD ด้วย AI",
+    "projectPhiloArtDesc": "แกลเลอรีศิลปะดิจิทัล",
+    "newsletterMediumDesc": "บทความ",
+    "artworksText": "ผมโพสต์ผลงานศิลปะของผมที่ philoart.io/philo",
+    "artworksContactText": "หากต้องการซื้อภาพวาดต้นฉบับหรือภาพพิมพ์ภาพถ่าย สามารถ DM ทาง X หรืออีเมลมาที่ philo.li.official@gmail.com",
+    "extraEmail": "อีเมล"
+  },
+  "artPage": {
+    "title": "ศิลปะ"
+  },
+  "projectsPage": {
+    "title": "โปรเจกต์",
+    "openLink": "เปิด →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "โค้ช ADHD พลัง AI ช่วยให้คนที่เป็น ADHD สร้างนิสัยที่ดีขึ้นและมีสมาธิจดจ่อ"
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "แกลเลอรีศิลปะส่วนตัวของผม — ทั้งภาพถ่าย ภาพวาด และศิลปะดิจิทัล"
+      },
+      "ebookTranslator": {
+        "name": "เครื่องมือแปลอีบุ๊กสองภาษา",
+        "description": "เปลี่ยน EPUB ใด ๆ ให้เป็นฉบับสองภาษา — ทำงานบนเบราว์เซอร์ของคุณด้วย LLM API key ของคุณเอง",
+        "cta": "เปิดเครื่องมือ →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "ภาษา",
+    "currentAria": "ภาษาปัจจุบัน"
+  },
+  "ebookTranslator": {
+    "eyebrow": "โปรเจกต์",
+    "title": "เครื่องมือแปลอีบุ๊กสองภาษา",
+    "subtitle": "อัปโหลดไฟล์ EPUB ใช้ API key ของ LLM ของคุณเอง และรับอีบุ๊กฉบับสองภาษาที่มีเนื้อหาต้นฉบับและคำแปลสลับกันย่อหน้าต่อย่อหน้า ไฟล์จะถูกประมวลผลในเบราว์เซอร์ของคุณทั้งหมด — หนังสือของคุณจะไม่ถูกส่งไปยังเซิร์ฟเวอร์ใดๆ",
+    "steps": {
+      "settings": "ตั้งค่า",
+      "upload": "อัปโหลด",
+      "browse": "เลือกไฟล์"
+    },
+    "actions": {
+      "cancelRunning": "ยกเลิกการทำงาน",
+      "translateAllRemaining": "แปลส่วนที่เหลือทั้งหมด",
+      "downloadEpub": "⬇ ดาวน์โหลด EPUB",
+      "building": "กำลังสร้าง…",
+      "back": "← ย้อนกลับ",
+      "settingsModel": "← ตั้งค่า / รุ่นโมเดล",
+      "show": "แสดง",
+      "hide": "ซ่อน",
+      "cancel": "ยกเลิก",
+      "retranslate": "แปลใหม่",
+      "resume": "ทำต่อ",
+      "translateChapter": "แปลบทนี้",
+      "continue": "ดำเนินการต่อ →"
+    },
+    "settings": {
+      "provider": "ผู้ให้บริการ",
+      "model": "รุ่นโมเดล",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "วางคีย์ {provider} ของคุณ",
+      "apiKeyHint": "รับคีย์ได้ที่ {link} คีย์ของคุณจะถูกส่งไปยัง {provider} เท่านั้น และจะไม่ถูกส่งไปยัง philoli.com",
+      "rememberKey": "จำคีย์ในเบราว์เซอร์นี้เท่านั้น (localStorage) ยกเลิกการเลือกหากใช้เครื่องร่วมกับผู้อื่น",
+      "showApiKey": "แสดง API key",
+      "hideApiKey": "ซ่อน API key",
+      "translateFrom": "แปลจาก",
+      "translateTo": "แปลเป็น",
+      "tone": "โทน",
+      "needApiKey": "ใส่ API key เพื่อดำเนินการต่อ"
+    },
+    "upload": {
+      "parsing": "กำลังแยกวิเคราะห์ EPUB…",
+      "dropTitle": "วางไฟล์ EPUB ที่นี่",
+      "dropSubtitle": "หรือคลิกเพื่อเลือกไฟล์",
+      "noChapters": "ไม่พบบทที่อ่านได้ในไฟล์ EPUB นี้"
+    },
+    "browse": {
+      "chapters": "บท",
+      "toneTitle": "โทนการแปล — มีผลต่อสไตล์การเขียน",
+      "paragraphCount": "{nodes} ย่อหน้า · แปลแล้ว {translated}",
+      "errorOne": "แปลล้มเหลว {count} ย่อหน้า คุณสามารถแปลใหม่เพื่อลองอีกครั้ง — ย่อหน้าที่เสร็จแล้วจะถูกข้ามไป",
+      "errorMany": "แปลล้มเหลว {count} ย่อหน้า คุณสามารถแปลใหม่เพื่อลองอีกครั้ง — ย่อหน้าที่เสร็จแล้วจะถูกข้ามไป",
+      "noTranslatableText": "บทนี้ไม่มีข้อความที่แปลได้ (หน้าปก, ส่วนนำ ฯลฯ)",
+      "translatingAria": "กำลังแปล",
+      "translatingLabel": "กำลังแปล…",
+      "buildFailed": "สร้าง EPUB ล้มเหลว:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "สำนวนภาษา",
+        "hint": "เป็นธรรมชาติและสละสลวย — หนังสือส่วนใหญ่"
+      },
+      "literary": {
+        "label": "วรรณกรรม",
+        "hint": "นวนิยายและงานวรรณกรรม"
+      },
+      "technical": {
+        "label": "วิชาการ",
+        "hint": "หนังสือวิชาชีพและหนังสืออ้างอิง"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "ถูกที่สุด, รวดเร็ว",
+      "higherQuality": "คุณภาพสูงกว่า",
+      "bestQuality": "คุณภาพดีที่สุด",
+      "newestFast": "ใหม่ล่าสุด, รวดเร็ว",
+      "cheapest": "ถูกที่สุด",
+      "bestQualityStable": "คุณภาพดีที่สุด, เสถียร",
+      "balanced": "สมดุล",
+      "freeTierFast": "แบบฟรี, รวดเร็ว",
+      "flagshipCoding": "รุ่นเรือธงสำหรับการเขียนโค้ด/เอเจนท์",
+      "longContext": "บริบทกว้าง, เสถียร",
+      "cheaper": "ราคาประหยัดกว่า",
+      "latestLongContext": "ล่าสุด, บริบท 256K"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "ภาพถ่าย",
+      "Painting": "ภาพวาดระบายสี",
+      "Drawing": "ภาพวาดเส้น",
+      "Digital Art": "ศิลปะดิจิทัล"
+    }
+  },
+  "lightbox": {
+    "previous": "ก่อนหน้า",
+    "next": "ถัดไป"
+  },
+  "social": {
+    "photography": "การถ่ายภาพ",
+    "art": "ศิลปะ"
+  }
+}

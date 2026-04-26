@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Naujienlaiškis"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — menininkas, rašytojas, kūrėjas",
+    "blogTitle": "Tinklaraštis — Philo Li",
+    "blogDescription": "Straipsniai apie meną, filosofiją ir kūrybą.",
+    "aboutTitle": "Apie — Philo Li",
+    "aboutDescription": "Apie Philo Li — menininką, rašytoją ir programuotoją.",
+    "artTitle": "Menas — Philo Li",
+    "artDescription": "Philo Li fotografija, tapyba ir skaitmeninis menas.",
+    "projectsTitle": "Projektai — Philo Li",
+    "projectsDescription": "Philo Li projektai.",
+    "newsletterTitle": "Naujienlaiškis — Philo Li",
+    "newsletterDescription": "Prenumeruokite Philo Li naujienlaiškius.",
+    "ebookTranslatorTitle": "Dvikalbis el. knygų vertėjas — Philo Li",
+    "ebookTranslatorDescription": "Įkelkite EPUB ir išverskite į dvikalbį leidimą naudodami savo LLM API key. Veikia tiesiogiai jūsų naršyklėje."
+  },
+  "nav": {
+    "blog": "Tinklaraštis",
+    "art": "Menas",
+    "projects": "Projektai",
+    "newsletter": "Naujienlaiškis",
+    "about": "Apie",
+    "menuLabel": "Perjungti meniu"
+  },
+  "theme": {
+    "dark": "Tamsi",
+    "light": "Šviesi",
+    "toggleAria": "Pakeisti spalvų temą",
+    "toggleToLight": "Įjungti šviesųjį režimą",
+    "toggleToDark": "Įjungti tamsųjį režimą"
+  },
+  "hero": {
+    "line1": "Kurti.",
+    "line2": "Įamžinti.",
+    "line3": "Konstruoti.",
+    "tagline": "Tapau, fotografuoju, rašau ir meistrauju. Kai smalsumas susitinka su menu bei kodu, gimsta ši visuma.",
+    "labelLeft": "Menininkas",
+    "labelRight": "Programuotojas"
+  },
+  "recentPosts": {
+    "label": "Naujausi tekstai",
+    "viewAll": "Rodyti viską →"
+  },
+  "newsletterCta": {
+    "label": "Naujienlaiškis",
+    "headline": "Likite smalsūs.",
+    "desc": "Mintys apie meną, gyvenimą ir kūrybą — tiesiai į jūsų pašto dėžutę."
+  },
+  "blogPage": {
+    "title": "Tinklaraštis"
+  },
+  "aboutPage": {
+    "tagline": "Menininkas · Rašytojas · Programuotojas",
+    "bioP1": "Esu kūrėjas, programuotojas ir mąstytojas. Mėgstu kurti dalykus nuo nulio — nesvarbu, ar tai būtų paveikslas, kodo fragmentas, ar išsami esė.",
+    "bioP2": "Ilgą laiką didžiausia kliūtis šiai aistrai buvo mano paties smegenys: turiu ADHD. Išbandęs beveik visus rinkoje esančius produktyvumo įrankius, supratau, kad jie visi sukurti neurotipiniam protui. Man reikėjo „partnerio“ — kažko, kas mane suprastų ir švelniai pastūmėtų būtent tada, kai to labiausiai reikia.",
+    "bioP3": "Nieko panašaus neradau. Tad nusprendžiau tai sukurti pats — sau ir milijonams kitų, turinčių tokį pat „užimtą protą“ kaip mano. Taip gimė Dopamind.",
+    "sectionProjects": "Projektai",
+    "sectionNewsletter": "Naujienlaiškis",
+    "sectionArtworks": "Meno kūriniai",
+    "sectionReadMore": "Skaityti daugiau",
+    "sectionFindMe": "Raskite mane kitur",
+    "projectDopamindDesc": "AI ADHD treneris",
+    "projectPhiloArtDesc": "Skaitmeninio meno galerija",
+    "newsletterMediumDesc": "Esė",
+    "artworksText": "Savo kūrinius keliu į philoart.io/philo",
+    "artworksContactText": "Norėdami įsigyti originalių paveikslų ar fotografijos spaudinių, rašykite asmeninę žinutę X platformoje arba el. paštu philo.li.official@gmail.com",
+    "extraEmail": "El. paštas"
+  },
+  "artPage": {
+    "title": "Menas"
+  },
+  "projectsPage": {
+    "title": "Projektai",
+    "openLink": "Atidaryti →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI pagrindu veikiantis ADHD treneris. Padeda žmonėms su ADHD ugdyti geresnius įpročius ir išlikti susikaupusiems."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Mano asmeninė meno galerija — fotografija, tapyba ir skaitmeninis menas."
+      },
+      "ebookTranslator": {
+        "name": "Dvikalbis el. knygų vertėjas",
+        "description": "Paverskite bet kurią EPUB knygą dvikalbiu leidimu — veikia jūsų naršyklėje naudojant jūsų LLM API key.",
+        "cta": "Atidaryti įrankį →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Kalba",
+    "currentAria": "Dabartinė kalba"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Projektas",
+    "title": "Dvikalbis el. knygų vertėjas",
+    "subtitle": "Įkelkite EPUB, naudokite savo LLM API key ir gaukite dvikalbį leidimą, kuriame originalus ir išverstas tekstas pateikiamas pakaitomis po kiekvienos pastraipos. Failas apdorojamas tik jūsų naršyklėje — jūsų knyga niekada nepasiekia jokio serverio.",
+    "steps": {
+      "settings": "nustatymai",
+      "upload": "įkelti",
+      "browse": "naršyti"
+    },
+    "actions": {
+      "cancelRunning": "Atšaukti vykdymą",
+      "translateAllRemaining": "Išversti visus likusius",
+      "downloadEpub": "⬇ Atsisiųsti EPUB",
+      "building": "Kuriama…",
+      "back": "← Atgal",
+      "settingsModel": "← Nustatymai / modelis",
+      "show": "Rodyti",
+      "hide": "Slėpti",
+      "cancel": "Atšaukti",
+      "retranslate": "Išversti iš naujo",
+      "resume": "Tęsti",
+      "translateChapter": "Išversti šį skyrių",
+      "continue": "Tęsti →"
+    },
+    "settings": {
+      "provider": "Teikėjas",
+      "model": "Modelis",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Įklijuokite savo {provider} raktą",
+      "apiKeyHint": "Gaukite jį adresu {link}. Jūsų raktas siunčiamas tik {provider}, niekada — į philoli.com.",
+      "rememberKey": "Įsiminti raktą tik šioje naršyklėje (localStorage). Atžymėkite, jei naudojatės bendrais įrenginiais.",
+      "showApiKey": "Rodyti API key",
+      "hideApiKey": "Slėpti API key",
+      "translateFrom": "Versti iš",
+      "translateTo": "Versti į",
+      "tone": "Tonas",
+      "needApiKey": "Įveskite API key, kad tęstumėte."
+    },
+    "upload": {
+      "parsing": "Analizuojamas EPUB…",
+      "dropTitle": "Vilkite EPUB čia",
+      "dropSubtitle": "arba spustelėkite, kad pasirinktumėte failą",
+      "noChapters": "Šiame EPUB nerasta skaitomų skyrių."
+    },
+    "browse": {
+      "chapters": "Skyriai",
+      "toneTitle": "Vertimo tonas — veikia rašymo stilių",
+      "paragraphCount": "{nodes} pastraipų · {translated} išversta",
+      "errorOne": "Nepavyko išversti {count} pastraipos. Galite bandyti dar kartą — jau išverstos pastraipos bus praleistos.",
+      "errorMany": "Nepavyko išversti {count} pastraipų. Galite bandyti dar kartą — jau išverstos pastraipos bus praleistos.",
+      "noTranslatableText": "Šiame skyriuje nėra verčiamo teksto (viršelis, įžanga ir kt.).",
+      "translatingAria": "Verčiama",
+      "translatingLabel": "verčiama…",
+      "buildFailed": "Nepavyko sukurti EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomiškas",
+        "hint": "natūralus ir sklandus — daugumai knygų"
+      },
+      "literary": {
+        "label": "Literatūrinis",
+        "hint": "romanams ir literatūros kūriniams"
+      },
+      "technical": {
+        "label": "Techninis",
+        "hint": "profesinei ir informacinei literatūrai"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "pigiausias, greitas",
+      "higherQuality": "aukštesnė kokybė",
+      "bestQuality": "geriausia kokybė",
+      "newestFast": "naujausias, greitas",
+      "cheapest": "pigiausias",
+      "bestQualityStable": "geriausia kokybė, stabilus",
+      "balanced": "subalansuotas",
+      "freeTierFast": "nemokamas planas, greitas",
+      "flagshipCoding": "pagrindinis programavimo / agentinis",
+      "longContext": "ilgas kontekstas, stabilus",
+      "cheaper": "pigesnis",
+      "latestLongContext": "naujausias, 256K kontekstas"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Nuotrauka",
+      "Painting": "Tapyba",
+      "Drawing": "Piešinys",
+      "Digital Art": "Skaitmeninis menas"
+    }
+  },
+  "lightbox": {
+    "previous": "Ankstesnis",
+    "next": "Kitas"
+  },
+  "social": {
+    "photography": "Fotografija",
+    "art": "Menas"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Uudiskiri"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — kunstnik, kirjanik, looja",
+    "blogTitle": "Blogi — Philo Li",
+    "blogDescription": "Artiklid kunstist, filosoofiast ja asjade ehitamisest.",
+    "aboutTitle": "Minust — Philo Li",
+    "aboutDescription": "Philo Li-st — kunstnik, kirjanik ja arendaja.",
+    "artTitle": "Kunst — Philo Li",
+    "artDescription": "Philo Li fotograafia, maalikunst ja digitaalkunst.",
+    "projectsTitle": "Projektid — Philo Li",
+    "projectsDescription": "Philo Li projektid.",
+    "newsletterTitle": "Uudiskiri — Philo Li",
+    "newsletterDescription": "Telli Philo Li uudiskirju.",
+    "ebookTranslatorTitle": "Kakskeelne e-raamatute tõlkija — Philo Li",
+    "ebookTranslatorDescription": "Laadi üles EPUB ja tõlgi see kakskeelseks väljaandeks oma LLM API key abil. Töötab täielikult sinu brauseris."
+  },
+  "nav": {
+    "blog": "Blogi",
+    "art": "Kunst",
+    "projects": "Projektid",
+    "newsletter": "Uudiskiri",
+    "about": "Minust",
+    "menuLabel": "Menüü lüliti"
+  },
+  "theme": {
+    "dark": "Tume",
+    "light": "Hele",
+    "toggleAria": "Vaheta värviteemat",
+    "toggleToLight": "Lülitu heledale režiimile",
+    "toggleToDark": "Lülitu tumedale režiimile"
+  },
+  "hero": {
+    "line1": "Loo.",
+    "line2": "Talleta.",
+    "line3": "Raja.",
+    "tagline": "Maalin, pildistan, kirjutan ja loon oma kätega. Nii sünnibki see kõik, kui uudishimu kohtub kunsti ja koodiga.",
+    "labelLeft": "Kunstnik",
+    "labelRight": "Arendaja"
+  },
+  "recentPosts": {
+    "label": "Hiljutised kirjutised",
+    "viewAll": "Vaata kõiki →"
+  },
+  "newsletterCta": {
+    "label": "Uudiskiri",
+    "headline": "Püsi uudishimulik.",
+    "desc": "Mõtted kunstist, elust ja asjade loomisest — otse sinu postkasti."
+  },
+  "blogPage": {
+    "title": "Blogi"
+  },
+  "aboutPage": {
+    "tagline": "Kunstnik · Kirjanik · Arendaja",
+    "bioP1": "Olen looja, programmeerija ja mõtleja. Mulle meeldib luua asju nullist — olgu selleks maal, koodijupp või põhjalik essee.",
+    "bioP2": "Pikka aega oli suurimaks takistuseks minu kirele minu enda aju: mul on ADHD. Pärast peaaegu kõikide turul olevate produktiivsustööriistade proovimist mõistsin, et need kõik on loodud neurotüüpilise meele jaoks. Vajasin „partnerit“ — kedagi, kes mind mõistaks ja annaks mulle õrna tõuke just siis, kui ma seda kõige rohkem vajan.",
+    "bioP3": "Ma ei leidnud seda kuskilt. Nii otsustasin selle ise luua — endale ja miljonitele teistele, kellel on samasugune „rahutu aju“ nagu minul. Nii sündis Dopamind.",
+    "sectionProjects": "Projektid",
+    "sectionNewsletter": "Uudiskiri",
+    "sectionArtworks": "Kunstiteosed",
+    "sectionReadMore": "Loe edasi",
+    "sectionFindMe": "Leia mind mujalt",
+    "projectDopamindDesc": "AI ADHD nõustaja",
+    "projectPhiloArtDesc": "Digitaalne kunstigalerii",
+    "newsletterMediumDesc": "Esseed",
+    "artworksText": "Postitan oma kunstiteoseid aadressil philoart.io/philo",
+    "artworksContactText": "Originaalmaalide või fotoprintide ostmiseks saada sõnum X-is või e-kiri aadressile philo.li.official@gmail.com",
+    "extraEmail": "E-post"
+  },
+  "artPage": {
+    "title": "Kunst"
+  },
+  "projectsPage": {
+    "title": "Projektid",
+    "openLink": "Ava →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI-toega ADHD nõustaja. Aitab ADHD-ga inimestel luua paremaid harjumusi ja püsida keskendununa."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Minu isiklik kunstigalerii — fotograafia, maalid ja digitaalne kunst."
+      },
+      "ebookTranslator": {
+        "name": "Kakskeelne e-raamatute tõlkija",
+        "description": "Muuda mis tahes EPUB kakskeelseks väljaandeks — töötab sinu brauseris sinu enda LLM API key abil.",
+        "cta": "Ava tööriist →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Keel",
+    "currentAria": "Praegune keel"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Projekt",
+    "title": "Kakskeelne e-raamatute tõlkija",
+    "subtitle": "Laadi üles EPUB, kasuta oma LLM API key-d ja saa vastu kakskeelne väljaanne, kus algne ja tõlgitud tekst on lõikude kaupa vaheldumisi. Faili töödeldakse täielikult sinu brauseris — sinu raamat ei jõua kunagi ühegi serverini.",
+    "steps": {
+      "settings": "seaded",
+      "upload": "laadi üles",
+      "browse": "sirvi"
+    },
+    "actions": {
+      "cancelRunning": "Tühista pooleliolev",
+      "translateAllRemaining": "Tõlgi kõik ülejäänud",
+      "downloadEpub": "⬇ Laadi alla EPUB",
+      "building": "Koostamine…",
+      "back": "← Tagasi",
+      "settingsModel": "← Seaded / mudel",
+      "show": "Näita",
+      "hide": "Peida",
+      "cancel": "Tühista",
+      "retranslate": "Tõlgi uuesti",
+      "resume": "Jätka",
+      "translateChapter": "Tõlgi see peatükk",
+      "continue": "Jätka →"
+    },
+    "settings": {
+      "provider": "Pakkuja",
+      "model": "Mudel",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Kleebi oma {provider} võti",
+      "apiKeyHint": "Hangi see aadressilt {link}. Sinu võti saadetakse ainult teenusele {provider}, mitte kunagi lehele philoli.com.",
+      "rememberKey": "Jäta võti meelde ainult selles brauseris (localStorage). Eemalda märge ühiskasutatavate seadmete puhul.",
+      "showApiKey": "Näita API key-d",
+      "hideApiKey": "Peida API võti",
+      "translateFrom": "Tõlgi keelest",
+      "translateTo": "Tõlgi keelde",
+      "tone": "Toon",
+      "needApiKey": "Jätkamiseks sisesta API võti."
+    },
+    "upload": {
+      "parsing": "EPUB-i parsimine…",
+      "dropTitle": "Lohista EPUB siia",
+      "dropSubtitle": "või klõpsa faili valimiseks",
+      "noChapters": "Sellest EPUB-ist ei leitud loetavaid peatükke."
+    },
+    "browse": {
+      "chapters": "Peatükid",
+      "toneTitle": "Tõlke toon — mõjutab kirjutamisstiili",
+      "paragraphCount": "{nodes} lõiku · {translated} tõlgitud",
+      "errorOne": "{count} lõigu tõlkimine ebaõnnestus. Võid uuesti proovida — juba tõlgitud lõigud jäetakse vahele.",
+      "errorMany": "{count} lõigu tõlkimine ebaõnnestus. Võid uuesti proovida — juba tõlgitud lõigud jäetakse vahele.",
+      "noTranslatableText": "Selles peatükis pole tõlgitavat teksti (kaas, eessõna jne).",
+      "translatingAria": "Tõlkimine",
+      "translatingLabel": "tõlkimine…",
+      "buildFailed": "EPUB-i koostamine ebaõnnestus:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomaatiline",
+        "hint": "loomulik ja sujuv — enamik raamatuid"
+      },
+      "literary": {
+        "label": "Kirjanduslik",
+        "hint": "romaanid ja ilukirjandus"
+      },
+      "technical": {
+        "label": "Tehniline",
+        "hint": "eriala- ja teatmeteosed"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "odavaim, kiire",
+      "higherQuality": "kõrgem kvaliteet",
+      "bestQuality": "parim kvaliteet",
+      "newestFast": "uusim, kiire",
+      "cheapest": "odavaim",
+      "bestQualityStable": "parim kvaliteet, stabiilne",
+      "balanced": "tasakaalustatud",
+      "freeTierFast": "tasuta pakett, kiire",
+      "flagshipCoding": "lipulaev programmeerimiseks/agentne",
+      "longContext": "pikk kontekst, stabiilne",
+      "cheaper": "odavam",
+      "latestLongContext": "uusim, 256K kontekst"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Foto",
+      "Painting": "Maal",
+      "Drawing": "Joonistus",
+      "Digital Art": "Digitaalne kunst"
+    }
+  },
+  "lightbox": {
+    "previous": "Eelmine",
+    "next": "Järgmine"
+  },
+  "social": {
+    "photography": "Fotograafia",
+    "art": "Kunst"
+  }
+}

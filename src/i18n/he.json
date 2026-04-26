@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "ניוזלטר"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — אמן, כותב, יוצר",
+    "blogTitle": "בלוג — Philo Li",
+    "blogDescription": "מאמרים על אמנות, פילוסופיה ובניית דברים.",
+    "aboutTitle": "אודות — Philo Li",
+    "aboutDescription": "אודות Philo Li — אמן, כותב ומפתח.",
+    "artTitle": "אמנות — Philo Li",
+    "artDescription": "צילום, ציור ואמנות דיגיטלית של Philo Li.",
+    "projectsTitle": "פרויקטים — Philo Li",
+    "projectsDescription": "פרויקטים של Philo Li.",
+    "newsletterTitle": "ניוזלטר — Philo Li",
+    "newsletterDescription": "הירשמו לניוזלטרים של Philo Li.",
+    "ebookTranslatorTitle": "מתרגם ספרים דיגיטליים דו-לשוני — Philo Li",
+    "ebookTranslatorDescription": "העלו קובץ EPUB ותרגמו אותו למהדורה דו-לשונית עם ה-API key של ה-LLM שלכם. פועל כולו בדפדפן שלכם."
+  },
+  "nav": {
+    "blog": "בלוג",
+    "art": "אמנות",
+    "projects": "פרויקטים",
+    "newsletter": "ניוזלטר",
+    "about": "אודות",
+    "menuLabel": "החלפת תפריט"
+  },
+  "theme": {
+    "dark": "כהה",
+    "light": "בהיר",
+    "toggleAria": "החלפת ערכת נושא",
+    "toggleToLight": "מעבר למצב בהיר",
+    "toggleToDark": "מעבר למצב כהה"
+  },
+  "hero": {
+    "line1": "ליצור.",
+    "line2": "להנציח.",
+    "line3": "לבנות.",
+    "tagline": "אני מצייר, מצלם, כותב ויוצר בידיי. כשהסקרנות פוגשת את המלאכה והקוד, כל זה נולד.",
+    "labelLeft": "אמן",
+    "labelRight": "מפתח"
+  },
+  "recentPosts": {
+    "label": "כתיבה אחרונה",
+    "viewAll": "צפה בהכל →"
+  },
+  "newsletterCta": {
+    "label": "ניוזלטר",
+    "headline": "הישארו סקרנים.",
+    "desc": "מחשבות על אמנות, חיים, ובניית דברים — ישירות לתיבת הדואר הנכנס שלכם."
+  },
+  "blogPage": {
+    "title": "בלוג"
+  },
+  "aboutPage": {
+    "tagline": "אמן · כותב · מפתח",
+    "bioP1": "אני יוצר, מתכנת, והוגה. אני אוהב לבנות דברים מאפס — בין אם זה ציור, קטע קוד, או מאמר מעמיק.",
+    "bioP2": "במשך זמן רב, המכשול הגדול ביותר לתשוקה הזו היה המוח שלי: יש לי ADHD. אחרי שניסיתי כמעט כל כלי פרודוקטיביות בשוק, הבנתי שכולם עוצבו עבור מוח נוירוטיפיקלי. הייתי צריך \"שותף\" — משהו שיבין אותי ויוכל לתת לי דחיפה קלה בדיוק כשהייתי צריך אותה ביותר.",
+    "bioP3": "לא יכולתי למצוא את זה בשום מקום. אז החלטתי לבנות את זה בעצמי — עבורי, ועבור מיליוני אחרים עם \"מוח עסוק\" בדיוק כמו שלי. כך נולד Dopamind.",
+    "sectionProjects": "פרויקטים",
+    "sectionNewsletter": "ניוזלטר",
+    "sectionArtworks": "יצירות אמנות",
+    "sectionReadMore": "קרא עוד",
+    "sectionFindMe": "מצאו אותי במקומות נוספים",
+    "projectDopamindDesc": "מאמן ADHD מבוסס AI",
+    "projectPhiloArtDesc": "גלריית אמנות דיגיטלית",
+    "newsletterMediumDesc": "מאמרים",
+    "artworksText": "אני מפרסם את יצירות האמנות שלי ב-philoart.io/philo",
+    "artworksContactText": "לרכישת ציורים מקוריים או הדפסי צילום, שלחו הודעה פרטית ב-X או אימייל לכתובת philo.li.official@gmail.com",
+    "extraEmail": "אימייל"
+  },
+  "artPage": {
+    "title": "אמנות"
+  },
+  "projectsPage": {
+    "title": "פרויקטים",
+    "openLink": "פתח →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "מאמן ADHD מבוסס AI. עוזר לאנשים עם ADHD לבנות הרגלים טובים יותר ולהישאר ממוקדים."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "גלריית האמנות האישית שלי — צילום, ציורים, ואמנות דיגיטלית."
+      },
+      "ebookTranslator": {
+        "name": "מתרגם ספרים דיגיטליים דו-לשוני",
+        "description": "הפכו כל EPUB למהדורה דו-לשונית — פועל בדפדפן שלכם עם מפתח API key של LLM משלכם.",
+        "cta": "פתח כלי →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "שפה",
+    "currentAria": "שפה נוכחית"
+  },
+  "ebookTranslator": {
+    "eyebrow": "פרויקט",
+    "title": "מתרגם ספרים דיגיטליים דו-לשוני",
+    "subtitle": "העלו קובץ EPUB, השתמשו במפתח API key של LLM משלכם, וקבלו מהדורה דו-לשונית שבה הטקסט המקורי והמתורגם משולבים פסקה אחר פסקה. הקובץ מעובד כולו בדפדפן שלכם — הספר שלכם לעולם לא מגיע לאף שרת.",
+    "steps": {
+      "settings": "הגדרות",
+      "upload": "העלאה",
+      "browse": "עיון"
+    },
+    "actions": {
+      "cancelRunning": "ביטול הרצה",
+      "translateAllRemaining": "תרגם את כל השאר",
+      "downloadEpub": "⬇ הורדת EPUB",
+      "building": "בבנייה…",
+      "back": "← חזרה",
+      "settingsModel": "← הגדרות / מודל",
+      "show": "הצג",
+      "hide": "הסתר",
+      "cancel": "ביטול",
+      "retranslate": "תרגם מחדש",
+      "resume": "המשך",
+      "translateChapter": "תרגם פרק זה",
+      "continue": "המשך →"
+    },
+    "settings": {
+      "provider": "ספק",
+      "model": "מודל",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "הדבק את מפתח ה-{provider} שלך",
+      "apiKeyHint": "ניתן להשיג אחד ב-{link}. המפתח שלך נשלח רק ל-{provider}, לעולם לא ל-philoli.com.",
+      "rememberKey": "זכור את המפתח בדפדפן זה בלבד (localStorage). בטל את הסימון עבור מכשירים משותפים.",
+      "showApiKey": "הצג API key",
+      "hideApiKey": "הסתר API key",
+      "translateFrom": "תרגם מ-",
+      "translateTo": "תרגם ל-",
+      "tone": "סגנון",
+      "needApiKey": "הזן API key כדי להמשיך."
+    },
+    "upload": {
+      "parsing": "מנתח EPUB…",
+      "dropTitle": "גרור EPUB לכאן",
+      "dropSubtitle": "או לחץ כדי לבחור קובץ",
+      "noChapters": "לא נמצאו פרקים קריאים ב-EPUB זה."
+    },
+    "browse": {
+      "chapters": "פרקים",
+      "toneTitle": "סגנון תרגום — משפיע על סגנון הכתיבה",
+      "paragraphCount": "{nodes} פסקאות · {translated} תורגמו",
+      "errorOne": "פסקה {count} נכשלה. ניתן לתרגם שוב כדי לנסות שנית — פסקאות שכבר תורגמו יידלגו.",
+      "errorMany": "{count} פסקאות נכשלו. ניתן לתרגם שוב כדי לנסות שנית — פסקאות שכבר תורגמו יידלגו.",
+      "noTranslatableText": "בפרק זה אין טקסט לתרגום (כריכה, הקדמה וכו').",
+      "translatingAria": "מתרגם",
+      "translatingLabel": "מתרגם…",
+      "buildFailed": "בניית ה-EPUB נכשלה:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "טבעי",
+        "hint": "טבעי ושוטף — רוב הספרים"
+      },
+      "literary": {
+        "label": "ספרותי",
+        "hint": "רומנים ויצירות ספרותיות"
+      },
+      "technical": {
+        "label": "טכני",
+        "hint": "ספרי מקצוע ועיון"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "הכי זול, מהיר",
+      "higherQuality": "איכות גבוהה יותר",
+      "bestQuality": "האיכות הטובה ביותר",
+      "newestFast": "הכי חדש, מהיר",
+      "cheapest": "הכי זול",
+      "bestQualityStable": "האיכות הטובה ביותר, יציב",
+      "balanced": "מאוזן",
+      "freeTierFast": "מסלול חינמי, מהיר",
+      "flagshipCoding": "ספינת דגל לתכנות/סוכני",
+      "longContext": "הקשר ארוך, יציב",
+      "cheaper": "זול יותר",
+      "latestLongContext": "הכי חדש, הקשר של 256K"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "תצלום",
+      "Painting": "ציור",
+      "Drawing": "רישום",
+      "Digital Art": "אמנות דיגיטלית"
+    }
+  },
+  "lightbox": {
+    "previous": "הקודם",
+    "next": "הבא"
+  },
+  "social": {
+    "photography": "צילום",
+    "art": "אמנות"
+  }
+}

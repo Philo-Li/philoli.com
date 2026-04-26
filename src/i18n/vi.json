@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Bản tin"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — Nghệ sĩ, Nhà văn, Người sáng tạo",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Các bài viết về nghệ thuật, triết học và xây dựng mọi thứ.",
+    "aboutTitle": "Giới thiệu — Philo Li",
+    "aboutDescription": "Về Philo Li — nghệ sĩ, nhà văn và nhà phát triển.",
+    "artTitle": "Nghệ thuật — Philo Li",
+    "artDescription": "Nhiếp ảnh, hội họa và nghệ thuật kỹ thuật số bởi Philo Li.",
+    "projectsTitle": "Dự án — Philo Li",
+    "projectsDescription": "Các dự án của Philo Li.",
+    "newsletterTitle": "Bản tin — Philo Li",
+    "newsletterDescription": "Đăng ký nhận bản tin của Philo Li.",
+    "ebookTranslatorTitle": "Trình dịch sách điện tử song ngữ — Philo Li",
+    "ebookTranslatorDescription": "Tải lên tệp EPUB và dịch sang bản song ngữ bằng API key LLM của riêng bạn. Chạy hoàn toàn trên trình duyệt của bạn."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Nghệ thuật",
+    "projects": "Dự án",
+    "newsletter": "Bản tin",
+    "about": "Giới thiệu",
+    "menuLabel": "Bật/tắt menu"
+  },
+  "theme": {
+    "dark": "Tối",
+    "light": "Sáng",
+    "toggleAria": "Chuyển đổi chủ đề màu sắc",
+    "toggleToLight": "Chuyển sang chế độ sáng",
+    "toggleToDark": "Chuyển sang chế độ tối"
+  },
+  "hero": {
+    "line1": "Sáng tạo.",
+    "line2": "Ghi dấu.",
+    "line3": "Kiến tạo.",
+    "tagline": "Tôi vẽ, chụp ảnh, viết lách và tự tay tạo tác. Khi trí tò mò giao thoa cùng nghệ thuật và những dòng mã, tất cả đã khởi sinh từ đó.",
+    "labelLeft": "Nghệ sĩ",
+    "labelRight": "Nhà phát triển"
+  },
+  "recentPosts": {
+    "label": "Bài viết gần đây",
+    "viewAll": "Xem tất cả →"
+  },
+  "newsletterCta": {
+    "label": "Bản tin",
+    "headline": "Luôn tò mò.",
+    "desc": "Những suy nghĩ về nghệ thuật, cuộc sống và việc xây dựng mọi thứ — được gửi đến hộp thư của bạn."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Nghệ sĩ · Nhà văn · Nhà phát triển",
+    "bioP1": "Tôi là một người sáng tạo, một lập trình viên và một người hay suy ngẫm. Tôi thích xây dựng mọi thứ từ con số không — cho dù đó là một bức tranh, một đoạn mã hay một bài luận chuyên sâu.",
+    "bioP2": "Trong một thời gian dài, trở ngại lớn nhất đối với niềm đam mê này chính là bộ não của tôi: tôi mắc chứng ADHD. Sau khi thử gần như mọi công cụ tăng năng suất trên thị trường, tôi nhận ra chúng đều được thiết kế cho những bộ não bình thường. Tôi cần một \"người bạn đồng hành\" — một thứ gì đó hiểu tôi và có thể thúc đẩy tôi nhẹ nhàng ngay khi tôi cần nhất.",
+    "bioP3": "Tôi không thể tìm thấy nó ở bất cứ đâu. Vì vậy, tôi quyết định tự mình xây dựng nó — cho chính mình và cho hàng triệu người khác có \"bộ não bận rộn\" giống như tôi. Đó là cách Dopamind ra đời.",
+    "sectionProjects": "Dự án",
+    "sectionNewsletter": "Bản tin",
+    "sectionArtworks": "Tác phẩm nghệ thuật",
+    "sectionReadMore": "Đọc thêm",
+    "sectionFindMe": "Tìm tôi ở nơi khác",
+    "projectDopamindDesc": "Huấn luyện viên ADHD AI",
+    "projectPhiloArtDesc": "Triển lãm nghệ thuật kỹ thuật số",
+    "newsletterMediumDesc": "Bài luận",
+    "artworksText": "Tôi đăng các tác phẩm nghệ thuật của mình tại philoart.io/philo",
+    "artworksContactText": "Để mua tranh gốc hoặc bản in nhiếp ảnh, hãy nhắn tin trực tiếp trên X hoặc gửi email đến philo.li.official@gmail.com",
+    "extraEmail": "Email"
+  },
+  "artPage": {
+    "title": "Nghệ thuật"
+  },
+  "projectsPage": {
+    "title": "Dự án",
+    "openLink": "Mở →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "Huấn luyện viên ADHD hỗ trợ bởi AI. Giúp những người mắc ADHD xây dựng thói quen tốt hơn và duy trì sự tập trung."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Phòng trưng bày nghệ thuật cá nhân của tôi — nhiếp ảnh, hội họa và nghệ thuật kỹ thuật số."
+      },
+      "ebookTranslator": {
+        "name": "Trình dịch sách điện tử song ngữ",
+        "description": "Chuyển đổi bất kỳ tệp EPUB nào thành phiên bản song ngữ — chạy ngay trên trình duyệt của bạn với API key LLM của riêng bạn.",
+        "cta": "Mở công cụ →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Ngôn ngữ",
+    "currentAria": "Ngôn ngữ hiện tại"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Dự án",
+    "title": "Trình dịch sách điện tử song ngữ",
+    "subtitle": "Tải lên tệp EPUB, sử dụng API key LLM của riêng bạn và nhận lại bản song ngữ với văn bản gốc và bản dịch được lồng ghép theo từng đoạn. Tệp được xử lý hoàn toàn trong trình duyệt của bạn — sách của bạn không bao giờ được gửi đến bất kỳ máy chủ nào.",
+    "steps": {
+      "settings": "cài đặt",
+      "upload": "tải lên",
+      "browse": "duyệt"
+    },
+    "actions": {
+      "cancelRunning": "Hủy quá trình",
+      "translateAllRemaining": "Dịch tất cả phần còn lại",
+      "downloadEpub": "⬇ Tải xuống EPUB",
+      "building": "Đang tạo…",
+      "back": "← Quay lại",
+      "settingsModel": "← Cài đặt / mô hình",
+      "show": "Hiện",
+      "hide": "Ẩn",
+      "cancel": "Hủy",
+      "retranslate": "Dịch lại",
+      "resume": "Tiếp tục",
+      "translateChapter": "Dịch chương này",
+      "continue": "Tiếp tục →"
+    },
+    "settings": {
+      "provider": "Nhà cung cấp",
+      "model": "Mô hình",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Dán mã {provider} của bạn",
+      "apiKeyHint": "Lấy mã tại {link}. Mã của bạn chỉ được gửi đến {provider}, không bao giờ gửi đến philoli.com.",
+      "rememberKey": "Ghi nhớ mã chỉ trong trình duyệt này (localStorage). Bỏ chọn nếu dùng thiết bị chung.",
+      "showApiKey": "Hiện API key",
+      "hideApiKey": "Ẩn API key",
+      "translateFrom": "Dịch từ",
+      "translateTo": "Dịch sang",
+      "tone": "Giọng văn",
+      "needApiKey": "Nhập một API key để tiếp tục."
+    },
+    "upload": {
+      "parsing": "Đang phân tích EPUB…",
+      "dropTitle": "Thả một EPUB vào đây",
+      "dropSubtitle": "hoặc nhấp để chọn tệp",
+      "noChapters": "Không tìm thấy chương nào có thể đọc được trong EPUB này."
+    },
+    "browse": {
+      "chapters": "Các chương",
+      "toneTitle": "Giọng văn dịch — ảnh hưởng đến phong cách viết",
+      "paragraphCount": "{nodes} đoạn văn · {translated} đã dịch",
+      "errorOne": "{count} đoạn văn bị lỗi. Bạn có thể dịch lại để thử lại — các đoạn đã hoàn thành sẽ được bỏ qua.",
+      "errorMany": "{count} đoạn văn bị lỗi. Bạn có thể dịch lại để thử lại — các đoạn đã hoàn thành sẽ được bỏ qua.",
+      "noTranslatableText": "Chương này không có văn bản để dịch (bìa, lời tựa, v.v.).",
+      "translatingAria": "Đang dịch",
+      "translatingLabel": "đang dịch…",
+      "buildFailed": "Lỗi khi tạo EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Tự nhiên",
+        "hint": "tự nhiên & trôi chảy — hầu hết các loại sách"
+      },
+      "literary": {
+        "label": "Văn chương",
+        "hint": "tiểu thuyết & tác phẩm văn học"
+      },
+      "technical": {
+        "label": "Kỹ thuật",
+        "hint": "sách chuyên môn & tài liệu tham khảo"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "rẻ nhất, nhanh",
+      "higherQuality": "chất lượng cao hơn",
+      "bestQuality": "chất lượng tốt nhất",
+      "newestFast": "mới nhất, nhanh",
+      "cheapest": "rẻ nhất",
+      "bestQualityStable": "chất lượng tốt nhất, ổn định",
+      "balanced": "cân bằng",
+      "freeTierFast": "gói miễn phí, nhanh",
+      "flagshipCoding": "đầu bảng cho lập trình/tác vụ",
+      "longContext": "ngữ cảnh dài, ổn định",
+      "cheaper": "rẻ hơn",
+      "latestLongContext": "mới nhất, ngữ cảnh 256K"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Ảnh chụp",
+      "Painting": "Tranh họa",
+      "Drawing": "Tranh vẽ",
+      "Digital Art": "Nghệ thuật số"
+    }
+  },
+  "lightbox": {
+    "previous": "Trước",
+    "next": "Tiếp"
+  },
+  "social": {
+    "photography": "Nhiếp ảnh",
+    "art": "Nghệ thuật"
+  }
+}
