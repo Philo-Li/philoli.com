@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "E-novice",
     "headline": "Ostani radoveden.",
-    "desc": "Misli o umetnosti, življenju in ustvarjanju — v tvoj poštni predal."
+    "desc": "Razmišljanja o umetnosti, življenju in ustvarjanju – naravnost v tvoj nabiralnik."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Umetnik · Pisec · Razvijalec",
-    "bioP1": "Sem ustvarjalec, programer in mislec. Rad ustvarjam stvari iz nič — naj gre za sliko, košček kode ali poglobljen esej.",
+    "bioP1": "Sem ustvarjalec, programer in mislec. Najbolj uživam v tem, da stvari ustvarjam iz nič – pa naj bo to slika, koda ali poglobljen zapis.",
     "bioP2": "Dolgo časa so bili moji lastni možgani največja ovira tej strasti: imam ADHD. Po tem, ko sem preizkusil skoraj vsa orodja za produktivnost na trgu, sem ugotovil, da so bila vsa zasnovana za nevrotipičen um. Potreboval sem »partnerja« — nekaj, kar bi me razumelo in me nežno spodbudilo ravno takrat, ko sem to najbolj potreboval.",
-    "bioP3": "Nisem ga našel nikjer. Zato sem se odločil, da ga zgradim sam — zase in za milijone drugih z »zaposlenimi možgani«, kot so moji. Tako se je rodil Dopamind.",
+    "bioP3": "Nikjer je nisem našel. Zato sem se odločil, da jo naredim sam – zase in za milijone drugih z \"nenehno zaposlenimi možgani\". Tako se je rodil Dopamind.",
     "sectionProjects": "Projekti",
     "sectionNewsletter": "E-novice",
     "sectionArtworks": "Umetniška dela",
     "sectionReadMore": "Preberi več",
     "sectionFindMe": "Najdi me drugje",
-    "projectDopamindDesc": "AI ADHD trener",
+    "projectDopamindDesc": "Tvoj vsakdanji AI sopotnik",
     "projectPhiloArtDesc": "Digitalna umetniška galerija",
     "newsletterMediumDesc": "Eseji",
-    "artworksText": "Svoja umetniška dela objavljam na philoart.io/philo",
-    "artworksContactText": "Za nakup originalnih slik ali fotografskih tiskov mi pošlji zasebno sporočilo na X ali piši na philo.li.official@gmail.com",
+    "artworksText": "Svoja dela objavljam na philoart.io/philo",
+    "artworksContactText": "Želiš kupiti originalno sliko ali fotografski tisk? Piši mi na X ali na philo.li.official@gmail.com",
     "extraEmail": "E-pošta"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI ADHD trener. Pomaga ljudem z ADHD graditi boljše navade in ohranjati osredotočenost."
+        "description": "Tvoj AI sopotnik. Vsak dan ob tebi, da ti pomaga živeti bolje."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Prevajalnik dvojezičnih e-knjig",
-        "description": "Spremeni kateri koli EPUB v dvojezično izdajo — deluje v tvojem brskalniku s tvojim lastnim LLM API key.",
+        "description": "Spremeni katerokoli e-knjigo v dvojezično izdajo – deluje kar v brskalniku s tvojim LLM API key.",
         "cta": "Odpri orodje →"
       }
     }

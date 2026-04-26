@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Bülten",
     "headline": "Meraklı kal.",
-    "desc": "Sanat, yaşam ve bir şeyler inşa etmek üzerine düşünceler — gelen kutunuza gelsin."
+    "desc": "Sanat, yaşam ve üretmek üzerine düşünceler — gelen kutuna."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Sanatçı · Yazar · Geliştirici",
-    "bioP1": "Ben bir yaratıcı, programcı ve düşünürüm. Sıfırdan bir şeyler inşa etmeyi seviyorum — ister bir tablo, ister bir kod parçası, ister derinlemesine bir deneme olsun.",
+    "bioP1": "Hem bir yaratıcı, hem bir yazılımcı, hem de bir düşünürüm. Sıfırdan bir şeyler var etmek en büyük tutkum — ister bir resim, ister bir satır kod, ister derinlemesine bir yazı olsun.",
     "bioP2": "Uzun bir süre boyunca bu tutkumun önündeki en büyük engel kendi beynimdi: ADHD sahibiyim. Piyasadaki hemen hemen her verimlilik aracını denedikten sonra, hepsinin nörotipik bir zihin için tasarlandığını fark ettim. Bir \"ortağa\" ihtiyacım vardı — beni anlayan ve en çok ihtiyaç duyduğum anda bana nazikçe bir dürtme verebilecek bir şeye.",
-    "bioP3": "Onu hiçbir yerde bulamadım. Bu yüzden kendim inşa etmeye karar verdim — kendim ve tıpkı benimki gibi \"meşgul bir beyne\" sahip milyonlarca kişi için. Dopamind böyle doğdu.",
+    "bioP3": "Hiçbir yerde bulamadım. Ben de kendim yapmaya karar verdim — hem kendim için hem de benim gibi \"zihni yerinde durmayan\" milyonlarca kişi için. Dopamind işte böyle doğdu.",
     "sectionProjects": "Projeler",
     "sectionNewsletter": "Bülten",
     "sectionArtworks": "Sanat Eserleri",
     "sectionReadMore": "Daha Fazla Oku",
     "sectionFindMe": "Beni başka yerlerde bulun",
-    "projectDopamindDesc": "AI ADHD Koçu",
+    "projectDopamindDesc": "AI asistanın",
     "projectPhiloArtDesc": "Dijital Sanat Galerisi",
     "newsletterMediumDesc": "Denemeler",
-    "artworksText": "Sanat eserlerimi philoart.io/philo adresinde paylaşıyorum",
-    "artworksContactText": "Orijinal tablolar veya fotoğraf baskıları satın almak için X üzerinden DM gönderin veya philo.li.official@gmail.com adresine e-posta atın",
+    "artworksText": "Sanat çalışmalarımı philoart.io/philo adresinde paylaşıyorum.",
+    "artworksContactText": "Orijinal tablolarımı veya fotoğraf baskılarımı satın almak mı istiyorsun? X'ten DM atabilir veya philo.li.official@gmail.com adresine yazabilirsin.",
     "extraEmail": "E-posta"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI destekli ADHD Koçu. ADHD'li kişilerin daha iyi alışkanlıklar edinmelerine ve odaklanmalarına yardımcı olur."
+        "description": "AI asistanın. Her gün yanında, hayatını daha iyi yaşaman için sana eşlik ediyor."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "İki Dilli E-kitap Çevirmeni",
-        "description": "Herhangi bir EPUB dosyasını iki dilli bir baskıya dönüştürün — kendi LLM API key bilginizle tarayıcınızda çalışır.",
+        "description": "İstediğin e-kitabı iki dilli hale getir — tarayıcında, kendi LLM API key'inle çalışır.",
         "cta": "Aracı aç →"
       }
     }

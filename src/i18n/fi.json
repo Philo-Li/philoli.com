@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Uutiskirje",
     "headline": "Pysy uteliaana.",
-    "desc": "Ajatuksia taiteesta, elämästä ja asioiden rakentamisesta — suoraan sähköpostiisi."
+    "desc": "Ajatuksia taiteesta, elämästä ja asioiden luomisesta — suoraan sähköpostiisi."
   },
   "blogPage": {
     "title": "Blogi"
   },
   "aboutPage": {
     "tagline": "Taiteilija · Kirjoittaja · Kehittäjä",
-    "bioP1": "Olen luoja, ohjelmoija ja ajattelija. Rakastan asioiden rakentamista tyhjästä — olipa kyseessä maalaus, koodinpätkä tai syväluotaava essee.",
+    "bioP1": "Olen luoja, ohjelmoija ja ajattelija. Rakastan luoda asioita tyhjästä — oli kyseessä sitten maalaus, pätkä koodia tai syvällinen essee.",
     "bioP2": "Pitkään suurin este tälle intohimolle oli omat aivoni: minulla on ADHD. Kokeiltuani lähes jokaista markkinoilla olevaa tuottavuustyökalua tajusin, että ne kaikki oli suunniteltu neurotyypillisille mielille. Tarvitsin ”kumppanin” — jotain, joka ymmärtäisi minua ja voisi antaa lempeän tönäisyn juuri silloin, kun tarvitsen sitä eniten.",
-    "bioP3": "En löytänyt sellaista mistään. Joten päätin rakentaa sen itse — itselleni ja miljoonille muille, joilla on samanlaiset ”vilkkaat aivot” kuin minulla. Näin Dopamind syntyi.",
+    "bioP3": "En löytänyt sellaista mistään. Niinpä päätin rakentaa sen itse — itseäni ja niitä miljoonia muita varten, joilla on samanlainen ”vilkas mieli” kuin minulla. Siten Dopamind sai alkunsa.",
     "sectionProjects": "Projektit",
     "sectionNewsletter": "Uutiskirje",
     "sectionArtworks": "Taideteokset",
     "sectionReadMore": "Lue lisää",
     "sectionFindMe": "Löydät minut muualta",
-    "projectDopamindDesc": "AI ADHD-valmentaja",
+    "projectDopamindDesc": "Päivittäinen AI-kumppanisi",
     "projectPhiloArtDesc": "Digitaalinen taidegalleria",
     "newsletterMediumDesc": "Esseet",
-    "artworksText": "Julkaisen taideteoksiani osoitteessa philoart.io/philo",
-    "artworksContactText": "Jos haluat ostaa alkuperäisiä maalauksia tai valokuvavedoksia, laita yksityisviesti X:ssä tai sähköpostia osoitteeseen philo.li.official@gmail.com",
+    "artworksText": "Julkaisen taideteokseni osoitteessa philoart.io/philo",
+    "artworksContactText": "Haluatko ostaa alkuperäisiä maalauksia tai valokuvavedoksia? Laita yksityisviestiä X:ssä tai meiliä osoitteeseen philo.li.official@gmail.com",
     "extraEmail": "Sähköposti"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI-pohjainen ADHD-valmentaja. Auttaa ADHD-ihmisiä luomaan parempia tapoja ja pysymään keskittyneenä."
+        "description": "AI-kumppanisi. Tukenasi joka päivä, auttamassa sinua elämään parempaa elämää."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Kaksikielinen e-kirjojen kääntäjä",
-        "description": "Muuta mikä tahansa EPUB kaksikieliseksi versioksi — toimii selaimessasi omalla LLM API key -avaimellasi.",
+        "description": "Muuta mikä tahansa EPUB-kirja kaksikieliseksi — toimii selaimessasi omalla LLM API keylläsi.",
         "cta": "Avaa työkalu →"
       }
     }

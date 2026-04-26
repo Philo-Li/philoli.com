@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Newsletter",
     "headline": "Bleib neugierig.",
-    "desc": "Gedanken über Kunst, das Leben und das Erschaffen von Dingen — direkt in dein Postfach."
+    "desc": "Gedanken zu Kunst, Leben und dem Erschaffen von Dingen — direkt in dein Postfach."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Künstler · Autor · Entwickler",
-    "bioP1": "Ich bin Schöpfer, Programmierer und Denker. Ich liebe es, Dinge von Grund auf zu erschaffen — sei es ein Gemälde, ein Stück Code oder ein tiefgründiger Essay.",
+    "bioP1": "Ich bin Creator, Programmierer und Denker. Etwas von Grund auf neu zu erschaffen, ist das, was ich am liebsten mache — egal ob ein Bild, ein Stück Code oder ein ausführlicher Essay.",
     "bioP2": "Lange Zeit war das größte Hindernis für diese Leidenschaft mein eigenes Gehirn: Ich habe ADHD. Nachdem ich fast jedes Produktivitätstool auf dem Markt ausprobiert hatte, wurde mir klar, dass sie alle für ein neurotypisches Gehirn entwickelt wurden. Ich brauchte einen „Partner“ — etwas, das mich versteht und mir genau dann einen sanften Anstoß gibt, wenn ich ihn am meisten brauche.",
-    "bioP3": "Ich konnte es nirgends finden. Also beschloss ich, es selbst zu bauen — für mich und für Millionen andere mit einem „unruhigen Gehirn“ genau wie meinem. So wurde Dopamind geboren.",
+    "bioP3": "Ich konnte es nirgendwo finden. Also habe ich beschlossen, es selbst zu bauen — für mich und für Millionen andere mit einem „rastlosen Kopf“, genau wie meinem. So ist Dopamind entstanden.",
     "sectionProjects": "Projekte",
     "sectionNewsletter": "Newsletter",
     "sectionArtworks": "Kunstwerke",
     "sectionReadMore": "Weiterlesen",
     "sectionFindMe": "Finde mich woanders",
-    "projectDopamindDesc": "AI ADHD Coach",
+    "projectDopamindDesc": "Dein AI-Begleiter für den Alltag",
     "projectPhiloArtDesc": "Digitale Kunstgalerie",
     "newsletterMediumDesc": "Essays",
-    "artworksText": "Ich poste meine Kunstwerke auf philoart.io/philo",
-    "artworksContactText": "Um Originalgemälde oder Fotodrucke zu kaufen, schreibe mir eine DM auf X oder eine E-Mail an philo.li.official@gmail.com",
+    "artworksText": "Meine Kunstwerke findest du auf philoart.io/philo",
+    "artworksContactText": "Lust auf ein Original oder einen Fotodruck? Schreib mir einfach per DM auf X oder per E-Mail an philo.li.official@gmail.com",
     "extraEmail": "E-Mail"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI-gestützter ADHD Coach. Hilft Menschen mit ADHD, bessere Gewohnheiten zu entwickeln und fokussiert zu bleiben."
+        "description": "Dein AI-Begleiter. Er ist jeden Tag an deiner Seite und hilft dir dabei, dein Leben ein Stück besser zu machen."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Bilingualer E-Book-Übersetzer",
-        "description": "Verwandle jedes EPUB in eine bilinguale Ausgabe — läuft in deinem Browser mit deinem eigenen LLM API key.",
+        "description": "Mach aus jedem E-Book eine zweisprachige Ausgabe — läuft direkt im Browser mit deinem eigenen LLM API key.",
         "cta": "Tool öffnen →"
       }
     }
