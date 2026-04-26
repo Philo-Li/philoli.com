@@ -1,5 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
+import { DEFAULT_LOCALE, formatDate, isLocale, localizedPath, useTranslations } from '../i18n';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
 
 const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
@@ -8,17 +12,17 @@ const posts = (await getCollection('blog'))
 
 <section class="recent-posts">
   <div class="recent-posts__header">
-    <span class="recent-posts__label">Recent Writing</span>
-    <a href="/blog" class="recent-posts__link">View all →</a>
+    <span class="recent-posts__label">{t('recentPosts.label')}</span>
+    <a href={localizedPath('/blog', locale)} class="recent-posts__link">{t('recentPosts.viewAll')}</a>
   </div>
   <ul class="recent-posts__list">
     {posts.map((post, i) => (
       <li class="recent-posts__item">
-        <a href={`/blog/${post.id}`} class="recent-posts__item-link">
+        <a href={localizedPath(`/blog/${post.id}`, locale)} class="recent-posts__item-link">
           <span class="recent-posts__item-num">{String(i + 1).padStart(2, '0')}</span>
           <span class="recent-posts__item-title">{post.data.title}</span>
           <span class="recent-posts__item-date">
-            {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
+            {formatDate(post.data.date, locale, { year: 'numeric', month: 'short' })}
           </span>
         </a>
       </li>

@@ -1,14 +1,19 @@
 ---
+import { DEFAULT_LOCALE, isLocale, useTranslations } from '../i18n';
+
 interface Props {
   size?: 'sm' | 'md';
 }
 const { size = 'md' } = Astro.props;
 
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+
 const links = [
   { href: 'https://github.com/philo-li', label: 'GitHub' },
   { href: 'https://x.com/philo2022', label: 'X' },
-  { href: 'https://instagram.com/philo1024', label: 'Photography' },
-  { href: 'https://instagram.com/philoart2020', label: 'Art' },
+  { href: 'https://instagram.com/philo1024', label: t('social.photography') },
+  { href: 'https://instagram.com/philoart2020', label: t('social.art') },
   { href: 'https://youtube.com/c/PhiloArt', label: 'YouTube' },
 ];
 ---

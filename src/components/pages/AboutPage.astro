@@ -1,0 +1,202 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SocialLinks from '../SocialLinks.astro';
+import { DEFAULT_LOCALE, isLocale, localizedPath, useTranslations } from '../../i18n';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t('metadata.aboutTitle')} description={t('metadata.aboutDescription')}>
+  <main class="about-page">
+    <div class="about-page__hero">
+      <img src="/images/avatar.jpg" alt="Philo Li" class="about-page__avatar" />
+      <h1 class="about-page__name">Philo Li</h1>
+      <p class="about-page__tagline">{t('aboutPage.tagline')}</p>
+    </div>
+
+    <div class="about-page__bio">
+      <p>{t('aboutPage.bioP1')}</p>
+      <p>{t('aboutPage.bioP2')}</p>
+      <p set:html={t('aboutPage.bioP3').replace('Dopamind', '<a href="https://dopamind.app">Dopamind</a>')}></p>
+    </div>
+
+    <div class="about-page__section">
+      <h2 class="about-page__section-title">{t('aboutPage.sectionProjects')}</h2>
+      <div class="about-page__projects">
+        <a href="https://dopamind.app" target="_blank" rel="noopener noreferrer" class="about-page__project">
+          <span class="about-page__project-name">Dopamind</span>
+          <span class="about-page__project-desc">{t('aboutPage.projectDopamindDesc')}</span>
+        </a>
+        <a href="https://philoart.io" target="_blank" rel="noopener noreferrer" class="about-page__project">
+          <span class="about-page__project-name">PhiloArt</span>
+          <span class="about-page__project-desc">{t('aboutPage.projectPhiloArtDesc')}</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="about-page__section">
+      <h2 class="about-page__section-title">{t('aboutPage.sectionNewsletter')}</h2>
+      <div class="about-page__projects">
+        <a href="https://shuo.philoli.com" target="_blank" rel="noopener noreferrer" class="about-page__project">
+          <span class="about-page__project-name">Philo 说会儿</span>
+          <span class="about-page__project-desc">中文</span>
+        </a>
+        <a href="https://reflections.philoli.com" target="_blank" rel="noopener noreferrer" class="about-page__project">
+          <span class="about-page__project-name">Reflections</span>
+          <span class="about-page__project-desc">English</span>
+        </a>
+        <a href="https://medium.com/@philo2018" target="_blank" rel="noopener noreferrer" class="about-page__project">
+          <span class="about-page__project-name">Medium</span>
+          <span class="about-page__project-desc">{t('aboutPage.newsletterMediumDesc')}</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="about-page__section">
+      <h2 class="about-page__section-title">{t('aboutPage.sectionArtworks')}</h2>
+      <p class="about-page__text" set:html={t('aboutPage.artworksText').replace('philoart.io/philo', '<a href="https://philoart.io/philo" target="_blank" rel="noopener noreferrer">philoart.io/philo</a>')}></p>
+      <p class="about-page__text about-page__text--muted" set:html={
+        t('aboutPage.artworksContactText')
+          .replace(/\bX\b/, '<a href="https://x.com/philo2022" target="_blank" rel="noopener noreferrer">X</a>')
+          .replace('philo.li.official@gmail.com', '<a href="mailto:philo.li.official@gmail.com">philo.li.official@gmail.com</a>')
+      }></p>
+    </div>
+
+    <div class="about-page__section">
+      <h2 class="about-page__section-title">{t('aboutPage.sectionReadMore')}</h2>
+      <div class="about-page__projects">
+        <a href={localizedPath('/blog/the-world-as-i-see-it', locale)} class="about-page__project">
+          <span class="about-page__project-name">我的世界观</span>
+          <span class="about-page__project-desc">中文</span>
+        </a>
+        <a href={localizedPath('/blog/the-world-as-i-see-it-en', locale)} class="about-page__project">
+          <span class="about-page__project-name">The World As I See It</span>
+          <span class="about-page__project-desc">English</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="about-page__section">
+      <h2 class="about-page__section-title">{t('aboutPage.sectionFindMe')}</h2>
+      <SocialLinks />
+      <div class="about-page__extra-links">
+        <a href="mailto:philo.li.official@gmail.com">{t('aboutPage.extraEmail')}</a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .about-page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: calc(var(--nav-height) + var(--space-xl)) var(--space-md) var(--space-xl);
+  }
+  .about-page__hero {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+  }
+  .about-page__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 0;
+    object-fit: cover;
+    margin-bottom: var(--space-md);
+  }
+  .about-page__name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-heading);
+  }
+  .about-page__tagline {
+    margin-top: var(--space-xs);
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .about-page__bio {
+    margin-bottom: var(--space-md);
+  }
+  .about-page__bio p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text-subtle);
+    margin-bottom: var(--space-sm);
+  }
+  .about-page__bio a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .about-page__section {
+    margin-top: var(--space-lg);
+  }
+  .about-page__section-title {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    margin-bottom: var(--space-md);
+  }
+  .about-page__projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .about-page__project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-border);
+    transition: color 0.2s ease;
+    color: var(--color-text-subtle);
+  }
+  .about-page__project:first-child {
+    border-top: 1px solid var(--color-border);
+  }
+  .about-page__project:hover {
+    color: var(--color-heading);
+  }
+  .about-page__project-name {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .about-page__project-desc {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.5px;
+  }
+  .about-page__text {
+    font-size: 0.95rem;
+    color: var(--color-text-subtle);
+    line-height: 1.6;
+    margin-bottom: var(--space-xs);
+  }
+  .about-page__text--muted {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+  .about-page__text a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .about-page__extra-links {
+    margin-top: var(--space-sm);
+    display: flex;
+    gap: var(--space-md);
+  }
+  .about-page__extra-links a {
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+  }
+  .about-page__extra-links a:hover {
+    color: var(--color-heading);
+  }
+</style>

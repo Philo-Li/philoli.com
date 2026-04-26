@@ -1,4 +1,12 @@
 ---
+import {
+  DEFAULT_LOCALE,
+  LOCALES,
+  isLocale,
+  unlocalizedPath,
+  useTranslations,
+} from '../i18n';
+
 interface Props {
   title: string;
   description?: string;
@@ -6,15 +14,28 @@ interface Props {
   type?: 'website' | 'article';
 }
 
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+
 const {
   title,
-  description = 'Philo Li — Artist, Writer, Creator',
+  description = t('metadata.siteTitle'),
   image = '/images/hero.jpg',
   type = 'website',
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const imageURL = new URL(image, Astro.site);
+
+const basePath = unlocalizedPath(Astro.url.pathname);
+const buildLocaleHref = (loc: string): string => {
+  const path = loc === DEFAULT_LOCALE
+    ? basePath
+    : basePath === '/'
+      ? `/${loc}/`
+      : `/${loc}${basePath}`;
+  return new URL(path, Astro.site).toString();
+};
 ---
 
 <meta charset="utf-8" />
@@ -25,11 +46,17 @@ const imageURL = new URL(image, Astro.site);
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalURL} />
 
+{LOCALES.map(loc => (
+  <link rel="alternate" hreflang={loc} href={buildLocaleHref(loc)} />
+))}
+<link rel="alternate" hreflang="x-default" href={buildLocaleHref(DEFAULT_LOCALE)} />
+
 <meta property="og:type" content={type} />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageURL} />
+<meta property="og:locale" content={locale} />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@philo2022" />

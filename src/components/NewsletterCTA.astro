@@ -1,15 +1,19 @@
 ---
+import { DEFAULT_LOCALE, isLocale, useTranslations } from '../i18n';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
 ---
 
 <section class="newsletter-cta">
   <div class="newsletter-cta__inner">
     <div class="newsletter-cta__text">
-      <span class="newsletter-cta__label">Newsletter</span>
+      <span class="newsletter-cta__label">{t('newsletterCta.label')}</span>
       <h2 class="newsletter-cta__headline">
-        Stay curious<span class="dot">.</span>
+        {t('newsletterCta.headline')}
       </h2>
       <p class="newsletter-cta__desc">
-        Thoughts on art, life, and building things — delivered to your inbox.
+        {t('newsletterCta.desc')}
       </p>
     </div>
     <div class="newsletter-cta__actions">

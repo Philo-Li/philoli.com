@@ -1,24 +1,4 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Gallery from '../../components/Gallery.tsx';
-import { fetchAllArtworks } from '../../lib/philoart';
-import '../../styles/gallery.css';
-
-const artworks = await fetchAllArtworks();
-
-const galleryData = artworks.map(a => ({
-  id: a.id,
-  title: a.title,
-  type: a.type,
-  srcSmall: a.srcSmall,
-  srcLarge: a.srcLarge,
-  year: a.year,
-}));
+import ArtPage from '../../components/pages/ArtPage.astro';
 ---
-
-<BaseLayout title="Art — Philo Li" description="Photography, painting, and digital art by Philo Li.">
-  <main class="art-page">
-    <h1 class="art-page__title">Art</h1>
-    <Gallery client:load artworks={galleryData} />
-  </main>
-</BaseLayout>
+<ArtPage />

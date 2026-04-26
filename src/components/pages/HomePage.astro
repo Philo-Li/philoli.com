@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../Hero.astro';
+import ArtworkStrip from '../ArtworkStrip.astro';
+import RecentPosts from '../RecentPosts.astro';
+import NewsletterCTA from '../NewsletterCTA.astro';
+import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t('metadata.siteTitle')}>
+  <Hero />
+  <ArtworkStrip />
+  <RecentPosts />
+  <NewsletterCTA />
+</BaseLayout>

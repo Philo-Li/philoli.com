@@ -1,0 +1,9 @@
+---
+import AboutPage from '../../../components/pages/AboutPage.astro';
+import { NON_DEFAULT_LOCALES } from '../../../i18n';
+
+export async function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map(locale => ({ params: { locale } }));
+}
+---
+<AboutPage />
