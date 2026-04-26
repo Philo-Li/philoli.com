@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Buletin informativ",
     "headline": "Rămâi curios.",
-    "desc": "Gânduri despre artă, viață și construcție — livrate în căsuța de e-mail."
+    "desc": "Gânduri despre artă, viață și creație — trimise direct în inbox-ul tău."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Artist · Scriitor · Dezvoltator",
-    "bioP1": "Sunt un creator, un programator și un gânditor. Îmi place să construiesc lucruri de la zero — fie că este vorba de o pictură, un fragment de cod sau un eseu aprofundat.",
+    "bioP1": "Sunt creator, programator și gânditor. Să creez lucruri de la zero e ceea ce-mi place cel mai mult — fie că e o pictură, un fragment de cod sau un eseu lung.",
     "bioP2": "Multă vreme, cel mai mare obstacol în calea acestei pasiuni a fost propriul meu creier: am ADHD. După ce am încercat aproape toate instrumentele de productivitate de pe piață, mi-am dat seama că toate erau concepute pentru o minte neurotipică. Aveam nevoie de un „partener” — ceva care să mă înțeleagă și să-mi dea un imbold blând exact atunci când aveam cea mai mare nevoie.",
-    "bioP3": "Nu l-am găsit nicăieri. Așa că am decis să-l construiesc singur — pentru mine și pentru milioanele de alți oameni cu un „creier ocupat” exact ca al meu. Așa s-a născut Dopamind.",
+    "bioP3": "Nu l-am găsit nicăieri. Așa că am decis să-l fac singur — pentru mine și pentru milioanele de oameni cu o „minte agitată” ca a mea. Așa a apărut Dopamind.",
     "sectionProjects": "Proiecte",
     "sectionNewsletter": "Buletin informativ",
     "sectionArtworks": "Lucrări de artă",
     "sectionReadMore": "Citește mai mult",
     "sectionFindMe": "Găsește-mă în altă parte",
-    "projectDopamindDesc": "Coach ADHD bazat pe AI",
+    "projectDopamindDesc": "Companionul tău AI",
     "projectPhiloArtDesc": "Galerie de artă digitală",
     "newsletterMediumDesc": "Eseuri",
     "artworksText": "Îmi postez lucrările de artă pe philoart.io/philo",
-    "artworksContactText": "Pentru a achiziționa picturi originale sau printuri fotografice, trimite un mesaj direct pe X sau un e-mail la philo.li.official@gmail.com",
+    "artworksContactText": "Vrei să cumperi picturi originale sau printuri fotografice? Trimite-mi un DM pe X sau un e-mail la philo.li.official@gmail.com",
     "extraEmail": "E-mail"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Coach ADHD bazat pe AI. Ajută persoanele cu ADHD să își formeze obiceiuri mai bune și să rămână concentrate."
+        "description": "Companionul tău AI. Îți e alături în fiecare zi și te ajută să ai o viață mai bună."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Traducător bilingv de e-book-uri",
-        "description": "Transformă orice EPUB într-o ediție bilingvă — rulează în browser cu propria ta cheie API pentru LLM.",
+        "description": "Transformă orice e-book într-o ediție bilingvă — rulează direct în browser cu propriul tău LLM API key.",
         "cta": "Deschide instrumentul →"
       }
     }

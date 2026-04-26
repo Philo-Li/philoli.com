@@ -66,19 +66,19 @@
   },
   "aboutPage": {
     "tagline": "Artysta · Pisarz · Programista",
-    "bioP1": "Jestem twórcą, programistą i myślicielem. Uwielbiam budować rzeczy od zera — czy to obraz, fragment kodu, czy pogłębiony esej.",
+    "bioP1": "Jestem twórcą, programistą i myślicielem. Tworzenie rzeczy od zera to to, co kocham najbardziej — nieważne, czy to obraz, kod, czy dłuższy tekst.",
     "bioP2": "Przez bardzo długi czas największą przeszkodą dla tej pasji był mój własny mózg: mam ADHD. Po wypróbowaniu niemal każdego narzędzia do produktywności na rynku zrozumiałem, że wszystkie zostały zaprojektowane dla umysłów neurotypowych. Potrzebowałem „partnera” — czegoś, co by mnie rozumiało i potrafiło delikatnie nakierować dokładnie wtedy, gdy najbardziej tego potrzebowałem.",
-    "bioP3": "Nigdzie nie mogłem tego znaleźć. Postanowiłem więc zbudować to sam — dla siebie i dla milionów innych osób z „rozbieganym mózgiem”, takim jak mój. Tak narodził się Dopamind.",
+    "bioP3": "Nigdzie nie mogłem tego znaleźć. Postanowiłem więc zrobić to sam — dla siebie i dla milionów innych osób z „rozbieganym umysłem”, dokładnie takim jak mój. Tak właśnie powstało Dopamind.",
     "sectionProjects": "Projekty",
     "sectionNewsletter": "Newsletter",
     "sectionArtworks": "Prace",
     "sectionReadMore": "Czytaj więcej",
     "sectionFindMe": "Znajdź mnie gdzie indziej",
-    "projectDopamindDesc": "Trener ADHD oparty na AI",
+    "projectDopamindDesc": "Twój codzienny asystent AI",
     "projectPhiloArtDesc": "Galeria sztuki cyfrowej",
     "newsletterMediumDesc": "Eseje",
-    "artworksText": "Moje prace publikuję na philoart.io/philo",
-    "artworksContactText": "Aby kupić oryginalne obrazy lub wydruki fotograficzne, napisz wiadomość prywatną na X lub e-mail na adres philo.li.official@gmail.com",
+    "artworksText": "Swoje prace publikuję na philoart.io/philo",
+    "artworksContactText": "Chcesz kupić oryginał obrazu lub wydruk fotograficzny? Napisz do mnie na X lub wyślij maila na philo.li.official@gmail.com",
     "extraEmail": "E-mail"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Trener ADHD wspierany przez AI. Pomaga osobom z ADHD budować lepsze nawyki i zachować koncentrację."
+        "description": "Twój asystent AI. Towarzyszy Ci każdego dnia, pomagając po prostu lepiej żyć."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Dwujęzyczny tłumacz e-booków",
-        "description": "Zmień dowolny plik EPUB w wydanie dwujęzyczne — działa w przeglądarce z Twoim własnym LLM API key.",
+        "description": "Zmień dowolny e-book w wersję dwujęzyczną — działa w przeglądarce, z Twoim własnym LLM API key.",
         "cta": "Otwórz narzędzie →"
       }
     }

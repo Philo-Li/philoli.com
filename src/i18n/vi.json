@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Bản tin",
     "headline": "Luôn tò mò.",
-    "desc": "Những suy nghĩ về nghệ thuật, cuộc sống và việc xây dựng mọi thứ — được gửi đến hộp thư của bạn."
+    "desc": "Những suy ngẫm về nghệ thuật, cuộc sống và việc tạo ra mọi thứ —— gửi đến hộp thư của bạn."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Nghệ sĩ · Nhà văn · Nhà phát triển",
-    "bioP1": "Tôi là một người sáng tạo, một lập trình viên và một người hay suy ngẫm. Tôi thích xây dựng mọi thứ từ con số không — cho dù đó là một bức tranh, một đoạn mã hay một bài luận chuyên sâu.",
+    "bioP1": "Mình là một người sáng tạo, một lập trình viên và cũng là một người hay suy ngẫm. Tự tay tạo ra mọi thứ từ con số không là điều mình thích nhất —— dù đó là một bức họa, một đoạn code hay một bài viết chuyên sâu.",
     "bioP2": "Trong một thời gian dài, trở ngại lớn nhất đối với niềm đam mê này chính là bộ não của tôi: tôi mắc chứng ADHD. Sau khi thử gần như mọi công cụ tăng năng suất trên thị trường, tôi nhận ra chúng đều được thiết kế cho những bộ não bình thường. Tôi cần một \"người bạn đồng hành\" — một thứ gì đó hiểu tôi và có thể thúc đẩy tôi nhẹ nhàng ngay khi tôi cần nhất.",
-    "bioP3": "Tôi không thể tìm thấy nó ở bất cứ đâu. Vì vậy, tôi quyết định tự mình xây dựng nó — cho chính mình và cho hàng triệu người khác có \"bộ não bận rộn\" giống như tôi. Đó là cách Dopamind ra đời.",
+    "bioP3": "Mình tìm khắp nơi mà chẳng thấy. Thế là mình quyết định tự tay làm luôn —— cho chính mình, và cho hàng triệu người cũng có một \"bộ não bận rộn\" giống như mình. Dopamind đã ra đời như thế đó.",
     "sectionProjects": "Dự án",
     "sectionNewsletter": "Bản tin",
     "sectionArtworks": "Tác phẩm nghệ thuật",
     "sectionReadMore": "Đọc thêm",
     "sectionFindMe": "Tìm tôi ở nơi khác",
-    "projectDopamindDesc": "Huấn luyện viên ADHD AI",
+    "projectDopamindDesc": "Người bạn đồng hành AI mỗi ngày của bạn",
     "projectPhiloArtDesc": "Triển lãm nghệ thuật kỹ thuật số",
     "newsletterMediumDesc": "Bài luận",
-    "artworksText": "Tôi đăng các tác phẩm nghệ thuật của mình tại philoart.io/philo",
-    "artworksContactText": "Để mua tranh gốc hoặc bản in nhiếp ảnh, hãy nhắn tin trực tiếp trên X hoặc gửi email đến philo.li.official@gmail.com",
+    "artworksText": "Các tác phẩm nghệ thuật của mình đều được đăng tại philoart.io/philo",
+    "artworksContactText": "Muốn mua tranh gốc hay ảnh in nghệ thuật? Nhắn cho mình qua X, hoặc gửi email tới philo.li.official@gmail.com",
     "extraEmail": "Email"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Huấn luyện viên ADHD hỗ trợ bởi AI. Giúp những người mắc ADHD xây dựng thói quen tốt hơn và duy trì sự tập trung."
+        "description": "Người bạn đồng hành AI của bạn. Luôn bên cạnh mỗi ngày, giúp bạn sống một cuộc đời tốt đẹp hơn."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Trình dịch sách điện tử song ngữ",
-        "description": "Chuyển đổi bất kỳ tệp EPUB nào thành phiên bản song ngữ — chạy ngay trên trình duyệt của bạn với API key LLM của riêng bạn.",
+        "description": "Chuyển bất kỳ ebook nào thành bản song ngữ —— chạy ngay trên trình duyệt, dùng chính LLM API key của bạn.",
         "cta": "Mở công cụ →"
       }
     }

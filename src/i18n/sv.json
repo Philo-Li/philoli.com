@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Nyhetsbrev",
     "headline": "Håll dig nyfiken.",
-    "desc": "Tankar om konst, livet och att skapa saker — levererade till din inkorg."
+    "desc": "Tankar om konst, livet och att skapa — direkt till din inkorg."
   },
   "blogPage": {
     "title": "Blogg"
   },
   "aboutPage": {
     "tagline": "Konstnär · Skribent · Utvecklare",
-    "bioP1": "Jag är en skapare, en programmerare och en tänkare. Jag älskar att bygga saker från grunden — oavsett om det är en målning, en bit kod eller en djupdykande essä.",
+    "bioP1": "Jag är en kreatör, en programmerare och en tänkare. Att skapa saker från grunden är det jag gillar bäst — oavsett om det är en målning, lite kod eller en djupdykande essä.",
     "bioP2": "Under lång tid var det största hindret för denna passion min egen hjärna: jag har ADHD. Efter att ha provat nästan alla produktivitetsverktyg på marknaden insåg jag att de alla var designade för ett neurotypiskt sinne. Jag behövde en \"partner\" — något som förstod mig och kunde ge mig en mild knuff precis när jag behövde det som mest.",
-    "bioP3": "Jag kunde inte hitta det någonstans. Så jag bestämde mig för att bygga det själv — för mig, och för de miljontals andra med en \"rastlös hjärna\" precis som min. Det var så Dopamind föddes.",
+    "bioP3": "Jag hittade det ingenstans. Så jag bestämde mig för att bygga det själv — för mig, och för de miljoner andra med en \"rastlös hjärna\" precis som min. Det var så Dopamind föddes.",
     "sectionProjects": "Projekt",
     "sectionNewsletter": "Nyhetsbrev",
     "sectionArtworks": "Konstverk",
     "sectionReadMore": "Läs mer",
     "sectionFindMe": "Hitta mig på andra ställen",
-    "projectDopamindDesc": "AI ADHD-coach",
+    "projectDopamindDesc": "Din AI-kompis i vardagen",
     "projectPhiloArtDesc": "Digitalt konstgalleri",
     "newsletterMediumDesc": "Essäer",
-    "artworksText": "Jag lägger upp mina konstverk på philoart.io/philo",
-    "artworksContactText": "För att köpa originalmålningar eller fotoutskrifter, skicka ett DM på X eller mejla philo.li.official@gmail.com",
+    "artworksText": "Mina konstverk hittar du på philoart.io/philo",
+    "artworksContactText": "Vill du köpa originalmålningar eller fotoprintar? Skicka ett DM på X eller mejla philo.li.official@gmail.com",
     "extraEmail": "E-post"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI-driven ADHD-coach. Hjälper personer med ADHD att skapa bättre vanor och hålla fokus."
+        "description": "Din AI-kompis. Vid din sida varje dag för att hjälpa dig få en bättre vardag."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Tvåspråkig e-boksöversättare",
-        "description": "Förvandla vilken EPUB som helst till en tvåspråkig utgåva — körs i din webbläsare med din egen LLM API key.",
+        "description": "Gör om valfri e-bok till en tvåspråkig version — körs i din webbläsare med din egen LLM API key.",
         "cta": "Öppna verktyg →"
       }
     }

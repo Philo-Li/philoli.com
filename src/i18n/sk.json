@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Newsletter",
     "headline": "Zostaňte zvedaví.",
-    "desc": "Myšlienky o umení, živote a tvorení — doručené do vašej schránky."
+    "desc": "Myšlienky o umení, živote a tvorení vecí — priamo do tvojej schránky."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Umelec · Spisovateľ · Vývojár",
-    "bioP1": "Som tvorca, programátor a mysliteľ. Rád tvorím veci od nuly — či už je to obraz, kus kódu alebo hĺbková esej.",
+    "bioP1": "Som tvorca, programátor a mysliteľ. Tvorenie vecí úplne od nuly je to, čo ma baví najviac — či už je to obraz, kus kódu alebo hĺbková esej.",
     "bioP2": "Dlho bol najväčšou prekážkou tejto vášne môj vlastný mozog: mám ADHD. Po vyskúšaní takmer každého nástroja na produktivitu na trhu som si uvedomil, že všetky boli navrhnuté pre neurotypickú myseľ. Potreboval som „partnera“ — niečo, čo by mi rozumelo a jemne ma postrčilo práve vtedy, keď to najviac potrebujem.",
-    "bioP3": "Nikde som ho nenašiel. Tak som sa rozhodol, že si ho postavím sám — pre seba a pre milióny ďalších s „rušným mozgom“, ako je ten môj. Tak sa zrodil Dopamind.",
+    "bioP3": "Nikde som to nemohol nájsť. Tak som sa rozhodol, že si to vytvorím sám — pre seba a pre milióny ďalších, ktorí majú „nepokojnú myseľ“ presne ako ja. Tak sa zrodil Dopamind.",
     "sectionProjects": "Projekty",
     "sectionNewsletter": "Newsletter",
     "sectionArtworks": "Umelecké diela",
     "sectionReadMore": "Čítať viac",
     "sectionFindMe": "Nájdete ma inde",
-    "projectDopamindDesc": "AI ADHD kouč",
+    "projectDopamindDesc": "Tvoj každodenný AI spoločník",
     "projectPhiloArtDesc": "Galéria digitálneho umenia",
     "newsletterMediumDesc": "Eseje",
-    "artworksText": "Svoje umelecké diela zverejňujem na philoart.io/philo",
-    "artworksContactText": "Ak si chcete kúpiť originálne obrazy alebo fotografické výtlačky, napíšte mi správu na X alebo e-mail na philo.li.official@gmail.com",
+    "artworksText": "Svoju tvorbu zverejňujem na philoart.io/philo",
+    "artworksContactText": "Chceš si kúpiť originálny obraz alebo umeleckú fotografiu? Napíš mi správu na X alebo pošli mail na philo.li.official@gmail.com",
     "extraEmail": "E-mail"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "ADHD kouč poháňaný AI. Pomáha ľuďom s ADHD budovať si lepšie návyky a zostať sústredení."
+        "description": "Tvoj AI spoločník. Je tu pre teba každý deň a pomáha ti žiť o niečo lepšie."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Bilingválny prekladač e-kníh",
-        "description": "Premeňte akýkoľvek EPUB na bilingválne vydanie — beží vo vašom prehliadači s vaším vlastným LLM API key.",
+        "description": "Premeň akúkoľvek e-knihu na dvojjazyčnú — beží to priamo v tvojom prehliadači a s tvojím vlastným LLM API key.",
         "cta": "Otvoriť nástroj →"
       }
     }

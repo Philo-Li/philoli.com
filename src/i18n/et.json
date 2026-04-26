@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Uudiskiri",
     "headline": "Püsi uudishimulik.",
-    "desc": "Mõtted kunstist, elust ja asjade loomisest — otse sinu postkasti."
+    "desc": "Mõtted kunstist, elust ja loomisest — otse sinu postkasti."
   },
   "blogPage": {
     "title": "Blogi"
   },
   "aboutPage": {
     "tagline": "Kunstnik · Kirjanik · Arendaja",
-    "bioP1": "Olen looja, programmeerija ja mõtleja. Mulle meeldib luua asju nullist — olgu selleks maal, koodijupp või põhjalik essee.",
+    "bioP1": "Olen looja, programmeerija ja mõtleja. Asjade nullist loomine on see, mida ma kõige rohkem naudin — olgu selleks maal, koodijupp või üks põhjalik essee.",
     "bioP2": "Pikka aega oli suurimaks takistuseks minu kirele minu enda aju: mul on ADHD. Pärast peaaegu kõikide turul olevate produktiivsustööriistade proovimist mõistsin, et need kõik on loodud neurotüüpilise meele jaoks. Vajasin „partnerit“ — kedagi, kes mind mõistaks ja annaks mulle õrna tõuke just siis, kui ma seda kõige rohkem vajan.",
-    "bioP3": "Ma ei leidnud seda kuskilt. Nii otsustasin selle ise luua — endale ja miljonitele teistele, kellel on samasugune „rahutu aju“ nagu minul. Nii sündis Dopamind.",
+    "bioP3": "Ma ei leidnud seda kuskilt. Nii otsustasin selle ise valmis teha — endale ja miljonitele teistele, kellel on samasugune \"rahutu aju\". Nii sündiski Dopamind.",
     "sectionProjects": "Projektid",
     "sectionNewsletter": "Uudiskiri",
     "sectionArtworks": "Kunstiteosed",
     "sectionReadMore": "Loe edasi",
     "sectionFindMe": "Leia mind mujalt",
-    "projectDopamindDesc": "AI ADHD nõustaja",
+    "projectDopamindDesc": "Sinu AI-kaaslane",
     "projectPhiloArtDesc": "Digitaalne kunstigalerii",
     "newsletterMediumDesc": "Esseed",
-    "artworksText": "Postitan oma kunstiteoseid aadressil philoart.io/philo",
-    "artworksContactText": "Originaalmaalide või fotoprintide ostmiseks saada sõnum X-is või e-kiri aadressile philo.li.official@gmail.com",
+    "artworksText": "Minu kunstiteosed leiad lehelt philoart.io/philo",
+    "artworksContactText": "Soovid osta originaalmaale või fotoprinte? Kirjuta mulle X-is või saada e-kiri aadressile philo.li.official@gmail.com",
     "extraEmail": "E-post"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI-toega ADHD nõustaja. Aitab ADHD-ga inimestel luua paremaid harjumusi ja püsida keskendununa."
+        "description": "Sinu AI-kaaslane. Sinu kõrval iga päev, aidates sul elu paremaks muuta."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Kakskeelne e-raamatute tõlkija",
-        "description": "Muuda mis tahes EPUB kakskeelseks väljaandeks — töötab sinu brauseris sinu enda LLM API key abil.",
+        "description": "Muuda mis tahes e-raamat kakskeelseks — töötab sinu brauseris sinu enda LLM API key-ga.",
         "cta": "Ava tööriist →"
       }
     }

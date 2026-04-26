@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Naujienlaiškis",
     "headline": "Likite smalsūs.",
-    "desc": "Mintys apie meną, gyvenimą ir kūrybą — tiesiai į jūsų pašto dėžutę."
+    "desc": "Mintys apie meną, gyvenimą ir kūrybą — tiesiai į tavo pašto dėžutę."
   },
   "blogPage": {
     "title": "Tinklaraštis"
   },
   "aboutPage": {
     "tagline": "Menininkas · Rašytojas · Programuotojas",
-    "bioP1": "Esu kūrėjas, programuotojas ir mąstytojas. Mėgstu kurti dalykus nuo nulio — nesvarbu, ar tai būtų paveikslas, kodo fragmentas, ar išsami esė.",
+    "bioP1": "Esu kūrėjas, programuotojas ir mąstytojas. Kurti kažką nuo nulio man — didžiausias malonumas, nesvarbu, ar tai būtų paveikslas, kodo fragmentas ar ilgas tekstas.",
     "bioP2": "Ilgą laiką didžiausia kliūtis šiai aistrai buvo mano paties smegenys: turiu ADHD. Išbandęs beveik visus rinkoje esančius produktyvumo įrankius, supratau, kad jie visi sukurti neurotipiniam protui. Man reikėjo „partnerio“ — kažko, kas mane suprastų ir švelniai pastūmėtų būtent tada, kai to labiausiai reikia.",
-    "bioP3": "Nieko panašaus neradau. Tad nusprendžiau tai sukurti pats — sau ir milijonams kitų, turinčių tokį pat „užimtą protą“ kaip mano. Taip gimė Dopamind.",
+    "bioP3": "Niekaip niekur to neradau. Tad nusprendžiau sukurti pats — sau ir milijonams kitų, turinčių tokį pat „neramų protą“ kaip mano. Taip gimė Dopamind.",
     "sectionProjects": "Projektai",
     "sectionNewsletter": "Naujienlaiškis",
     "sectionArtworks": "Meno kūriniai",
     "sectionReadMore": "Skaityti daugiau",
     "sectionFindMe": "Raskite mane kitur",
-    "projectDopamindDesc": "AI ADHD treneris",
+    "projectDopamindDesc": "Tavo kasdienis AI asistentas",
     "projectPhiloArtDesc": "Skaitmeninio meno galerija",
     "newsletterMediumDesc": "Esė",
-    "artworksText": "Savo kūrinius keliu į philoart.io/philo",
-    "artworksContactText": "Norėdami įsigyti originalių paveikslų ar fotografijos spaudinių, rašykite asmeninę žinutę X platformoje arba el. paštu philo.li.official@gmail.com",
+    "artworksText": "Savo kūryba dalinuosi philoart.io/philo",
+    "artworksContactText": "Nori įsigyti originalų paveikslą ar fotografijos spaudinį? Rašyk man asmeninę žinutę X arba el. paštu philo.li.official@gmail.com",
     "extraEmail": "El. paštas"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI pagrindu veikiantis ADHD treneris. Padeda žmonėms su ADHD ugdyti geresnius įpročius ir išlikti susikaupusiems."
+        "description": "Tavo AI asistentas. Kasdien šalia, kad padėtų tau gyventi geriau."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Dvikalbis el. knygų vertėjas",
-        "description": "Paverskite bet kurią EPUB knygą dvikalbiu leidimu — veikia jūsų naršyklėje naudojant jūsų LLM API key.",
+        "description": "Paversk bet kurią el. knygą dvikalbe — veikia tiesiog tavo naršyklėje su tavo paties LLM API key.",
         "cta": "Atidaryti įrankį →"
       }
     }

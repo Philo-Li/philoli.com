@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Surat Berita",
     "headline": "Kekal ingin tahu.",
-    "desc": "Pemikiran tentang seni, kehidupan, dan membina sesuatu — dihantar ke peti masuk anda."
+    "desc": "Perkongsian tentang seni, kehidupan, dan membina sesuatu —— terus ke inbox awak."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Artis · Penulis · Pembangun",
-    "bioP1": "Saya seorang pencipta, pengatur cara, dan pemikir. Saya suka membina sesuatu dari awal — sama ada lukisan, kod, atau esei yang mendalam.",
+    "bioP1": "Saya seorang pencipta, pengatur cara, dan pemikir. Bina sesuatu dari kosong adalah perkara yang paling saya minat —— tak kira lah lukisan, kod, atau penulisan panjang.",
     "bioP2": "Sejak sekian lama, halangan terbesar bagi minat ini ialah otak saya sendiri: Saya mempunyai ADHD. Selepas mencuba hampir setiap alat produktiviti di pasaran, saya menyedari semuanya direka untuk minda neurotipikal. Saya memerlukan \"rakan kongsi\" — sesuatu yang memahami saya dan boleh memberi dorongan lembut tepat pada masanya.",
-    "bioP3": "Saya tidak menemuinya di mana-mana. Jadi saya memutuskan untuk membinanya sendiri — untuk saya, dan untuk berjuta-juta orang lain yang mempunyai \"otak sibuk\" seperti saya. Begitulah cara Dopamind dilahirkan.",
+    "bioP3": "Saya cari merata-rata tapi tak jumpa. Jadi saya buat sendiri —— untuk saya, dan untuk berjuta orang lain yang ada \"otak sibuk\" macam saya. Macam itulah Dopamind tercipta.",
     "sectionProjects": "Projek",
     "sectionNewsletter": "Surat Berita",
     "sectionArtworks": "Karya Seni",
     "sectionReadMore": "Baca Lagi",
     "sectionFindMe": "Cari saya di tempat lain",
-    "projectDopamindDesc": "Jurulatih ADHD AI",
+    "projectDopamindDesc": "Teman AI awak",
     "projectPhiloArtDesc": "Galeri Seni Digital",
     "newsletterMediumDesc": "Esei",
-    "artworksText": "Saya menyiarkan karya seni saya di philoart.io/philo",
-    "artworksContactText": "Untuk membeli lukisan asli atau cetakan fotografi, DM di X atau e-mel philo.li.official@gmail.com",
+    "artworksText": "Saya kongsikan karya seni saya di philoart.io/philo",
+    "artworksContactText": "Nak beli lukisan asli atau cetakan fotografi? DM saya di X, atau emel ke philo.li.official@gmail.com",
     "extraEmail": "E-mel"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Jurulatih ADHD berkuasa AI. Membantu orang yang mempunyai ADHD membina tabiat yang lebih baik dan kekal fokus."
+        "description": "Teman AI awak. Sentiasa ada setiap hari, bantu awak jalani hidup dengan lebih baik."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Penterjemah E-buku Dwibahasa",
-        "description": "Tukar mana-mana EPUB menjadi edisi dwibahasa — berjalan dalam pelayar anda dengan API key LLM anda sendiri.",
+        "description": "Tukar mana-mana e-book ke versi dwibahasa —— jalan dalam browser, guna LLM API key awak sendiri.",
         "cta": "Buka alatan →"
       }
     }

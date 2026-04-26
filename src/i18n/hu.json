@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Hírlevél",
     "headline": "Maradj kíváncsi.",
-    "desc": "Gondolatok művészetről, életről és alkotásról — egyenesen a postaládádba."
+    "desc": "Gondolatok művészetről, életről és az alkotásról — egyenesen a postaládádba."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Művész · Író · Fejlesztő",
-    "bioP1": "Alkotó, programozó és gondolkodó vagyok. Szeretek a semmiből felépíteni dolgokat — legyen szó egy festményről, egy kódrészletről vagy egy mélyreható esszéről.",
+    "bioP1": "Alkotó, programozó és gondolkodó vagyok. Imádok a semmiből építkezni — legyen az egy festmény, egy kódsor vagy egy mélyebb esszé.",
     "bioP2": "Hosszú ideig a legnagyobb akadályt a szenvedélyem előtt a saját agyam jelentette: ADHD-m van. Miután szinte minden produktivitási eszközt kipróbáltam a piacon, rájöttem, hogy mindet neurotipikus elméknek tervezték. Szükségem volt egy „társra” — valakire, aki megért engem, és képes egy gyengéd lökést adni pont akkor, amikor a legnagyobb szükségem van rá.",
-    "bioP3": "Sehol sem találtam ilyet. Így hát elhatároztam, hogy megépítem magam — magamnak, és annak a több millió embernek, akinek hozzám hasonlóan „nyüzsgő agya” van. Így született meg a Dopamind.",
+    "bioP3": "Sehol sem találtam ilyet. Így hát úgy döntöttem, megépítem magam — magamnak és annak a több millió sorstársamnak, akiknek ugyanilyen „pörgő agyuk” van. Így született meg a Dopamind.",
     "sectionProjects": "Projektek",
     "sectionNewsletter": "Hírlevél",
     "sectionArtworks": "Alkotások",
     "sectionReadMore": "Olvass tovább",
     "sectionFindMe": "Itt is megtalálsz",
-    "projectDopamindDesc": "AI ADHD Coach",
+    "projectDopamindDesc": "Az AI-társad a mindennapokban.",
     "projectPhiloArtDesc": "Digitális művészeti galéria",
     "newsletterMediumDesc": "Esszék",
-    "artworksText": "Az alkotásaimat a philoart.io/philo oldalon teszem közzé",
-    "artworksContactText": "Eredeti festmények vagy fotónyomatok vásárlásához írj privát üzenetet X-en vagy e-mailt a philo.li.official@gmail.com címre",
+    "artworksText": "A munkáimat a philoart.io/philo oldalon teszem közzé.",
+    "artworksContactText": "Eredeti festményt vagy fotóprintet vásárolnál? Dobj egy üzenetet X-en, vagy írj a philo.li.official@gmail.com címre.",
     "extraEmail": "E-mail"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI-alapú ADHD Coach. Segít az ADHD-val élőknek jobb szokásokat kialakítani és fókuszáltnak maradni."
+        "description": "Az AI-segítőtársad. Veled van minden nap, hogy segítsen jobbá tenni a mindennapjaidat."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Kétnyelvű e-könyv fordító",
-        "description": "Alakíts bármilyen EPUB fájlt kétnyelvű kiadássá — a böngésződben fut a saját LLM API key használatával.",
+        "description": "Alakíts át bármilyen e-bookot kétnyelvűvé — a saját böngésződben fut, a saját LLM API key-eddel.",
         "cta": "Eszköz megnyitása →"
       }
     }

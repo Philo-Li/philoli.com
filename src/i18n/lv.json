@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Biļetens",
     "headline": "Paliec zinātkārs.",
-    "desc": "Pārdomas par mākslu, dzīvi un lietu radīšanu — tavā iesūtnē."
+    "desc": "Pārdomas par mākslu, dzīvi un lietu radīšanu — tieši tavā e-pastā."
   },
   "blogPage": {
     "title": "Blogs"
   },
   "aboutPage": {
     "tagline": "Mākslinieks · Rakstnieks · Izstrādātājs",
-    "bioP1": "Esmu radītājs, programmētājs un domātājs. Man patīk radīt lietas no nulles — vai tā būtu glezna, koda fragments vai padziļināta eseja.",
+    "bioP1": "Esmu radītājs, programmētājs un domātājs. Radīt lietas no nulles ir tas, ko izbaudu visvairāk — vai tā būtu glezna, kods vai pamatīga eseja.",
     "bioP2": "Ilgu laiku lielākais šķērslis šai kaislībai bija mana paša smadzenes: man ir ADHD. Izmēģinājis gandrīz visus tirgū pieejamos produktivitātes rīkus, es sapratu, ka tie visi ir paredzēti neirotipiskam prātam. Man bija vajadzīgs \"partneris\" — kaut kas, kas mani saprastu un dotu maigu pamudinājumu tieši tad, kad tas man visvairāk nepieciešams.",
-    "bioP3": "Es to nekur nevarēju atrast. Tāpēc nolēmu to izveidot pats — sev un miljoniem citu ar \"aizņemtu prātu\", tieši tādu kā manējais. Tā piedzima Dopamind.",
+    "bioP3": "Nekur nevarēju ko tādu atrast. Tāpēc nolēmu uztaisīt pats — sev un miljoniem citu, kuriem ir tikpat \"nemierīgs prāts\" kā man. Tā piedzima Dopamind.",
     "sectionProjects": "Projekti",
     "sectionNewsletter": "Biļetens",
     "sectionArtworks": "Mākslas darbi",
     "sectionReadMore": "Lasīt vairāk",
     "sectionFindMe": "Atrodi mani citur",
-    "projectDopamindDesc": "AI ADHD treneris",
+    "projectDopamindDesc": "Tavs ikdienas AI biedrs",
     "projectPhiloArtDesc": "Digitālās mākslas galerija",
     "newsletterMediumDesc": "Esejas",
-    "artworksText": "Es publicēju savus mākslas darbus philoart.io/philo",
-    "artworksContactText": "Lai iegādātos oriģinālgleznas vai fotogrāfiju izdrukas, raksti DM platformā X vai sūti e-pastu uz philo.li.official@gmail.com",
+    "artworksText": "Savus mākslas darbus publicēju philoart.io/philo",
+    "artworksContactText": "Vēlies iegādāties oriģinālgleznas vai fotogrāfiju izdrukas? Raksti man X vai sūti e-pastu uz philo.li.official@gmail.com",
     "extraEmail": "E-pasts"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Ar AI darbināts ADHD treneris. Palīdz cilvēkiem ar ADHD veidot labākus ieradumus un saglabāt fokusu."
+        "description": "Tavs AI biedrs. Tev blakus katru dienu, palīdzot dzīvot labāk."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Divvalodu e-grāmatu tulkotājs",
-        "description": "Pārvērt jebkuru EPUB divvalodu izdevumā — darbojas tavā pārlūkprogrammā ar tavu LLM API key.",
+        "description": "Pārvērt jebkuru e-grāmatu divvalodu izdevumā — darbojas tavā pārlūkprogrammā ar tavu LLM API key.",
         "cta": "Atvērt rīku →"
       }
     }

@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "ニュースレター",
     "headline": "好奇心を持ち続けよう。",
-    "desc": "アート、人生、そしてものづくりについての思考を、あなたのインボックスにお届けします。"
+    "desc": "アート、人生、そして「創ること」についての思考 —— あなたの受信トレイにお届けします。"
   },
   "blogPage": {
     "title": "ブログ"
   },
   "aboutPage": {
     "tagline": "アーティスト · ライター · デベロッパー",
-    "bioP1": "私はクリエイターであり、プログラマーであり、思想家でもあります。絵画、コード、あるいは深掘りしたエッセイなど、ゼロから何かを作り上げることが大好きです。",
+    "bioP1": "クリエイター、プログラマー、そして思索家。ゼロから何かを創り出すこと —— 絵でも、コードでも、深掘りした文章でも、それが僕の一番の楽しみです。",
     "bioP2": "長い間、この情熱に対する最大の障害は私自身の脳でした。私には ADHD があります。市販されているほぼすべての生産性向上ツールを試した後、それらがすべて定型発達の脳向けに設計されていることに気づきました。私には「パートナー」が必要でした。私を理解し、最も必要な時にそっと背中を押してくれる何かです。",
-    "bioP3": "どこを探しても見つかりませんでした。だから、自分自身のため、そして私と同じように「忙しい脳」を持つ何百万人もの人々のために、自分で作ることにしました。そうして Dopamind は誕生しました。",
+    "bioP3": "どこを探しても見つからなかった。だから、自分で作ることにしたんです —— 僕自身のため、そして僕と同じ「忙しい脳」を持つ何百万人もの人たちのために。そうして Dopamind は誕生しました。",
     "sectionProjects": "プロジェクト",
     "sectionNewsletter": "ニュースレター",
     "sectionArtworks": "作品",
     "sectionReadMore": "続きを読む",
     "sectionFindMe": "他のプラットフォーム",
-    "projectDopamindDesc": "AI ADHD コーチ",
+    "projectDopamindDesc": "あなたの AI パートナー",
     "projectPhiloArtDesc": "デジタルアートギャラリー",
     "newsletterMediumDesc": "エッセイ",
-    "artworksText": "作品は philoart.io/philo で公開しています",
-    "artworksContactText": "原画や写真プリントの購入については、X の DM またはメール（philo.li.official@gmail.com）でお問い合わせください",
+    "artworksText": "アート作品はすべて philoart.io/philo で公開しています。",
+    "artworksContactText": "原画や写真プリントを購入したい？ X で DM を送るか、philo.li.official@gmail.com までメールをください。",
     "extraEmail": "メール"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI を活用した ADHD コーチ。ADHD を持つ人々が良い習慣を築き、集中力を維持できるようサポートします。"
+        "description": "あなたの AI パートナー。毎日そばに寄り添い、より良い暮らしをサポートします。"
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "二ヶ国語電子書籍翻訳ツール",
-        "description": "あらゆる EPUB を二ヶ国語版に変換します — 自身の LLM API key を使用し、ブラウザ上で動作します。",
+        "description": "どんな電子書籍もバイリンガル版に —— ブラウザ上で、自分自身の LLM API key を使って動かせます。",
         "cta": "ツールを開く →"
       }
     }

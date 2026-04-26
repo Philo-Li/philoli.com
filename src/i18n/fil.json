@@ -59,26 +59,26 @@
   "newsletterCta": {
     "label": "Sulat-balita",
     "headline": "Manatiling mausisa.",
-    "desc": "Mga kaisipan tungkol sa sining, buhay, at pagbuo ng mga bagay — ipinapadala sa iyong inbox."
+    "desc": "Mga kwento tungkol sa sining, buhay, at paglikha — diretso sa inbox mo."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Artista · Manunulat · Tagadebelop",
-    "bioP1": "Isa akong tagalikha, tagaprograma, at palaisip. Mahilig akong bumuo ng mga bagay mula sa simula — ito man ay isang pinta, isang piraso ng code, o isang malalim na sanaysay.",
+    "bioP1": "Isa akong creator, programmer, at thinker. Hilig ko ang gumawa ng mga bagay mula sa simula — painting man 'yan, code, o isang essay.",
     "bioP2": "Sa loob ng mahabang panahon, ang pinakamalaking hadlang sa hilig kong ito ay ang sarili kong utak: mayroon akong ADHD. Matapos subukan ang halos lahat ng kagamitan para sa pagiging produktibo sa merkado, napagtanto ko na ang lahat ng ito ay idinisenyo para sa isang neurotypical na isipan. Kailangan ko ng isang \"kasama\" — isang bagay na nakakaunawa sa akin at makakapagbigay ng banayad na paalala sa oras na kailangan ko ito nang husto.",
-    "bioP3": "Wala akong mahanap kahit saan. Kaya nagpasya akong buuin ito nang mag-isa — para sa akin, at para sa milyun-milyong iba pa na may \"abalang utak\" na katulad ng sa akin. Dito isinilang ang Dopamind.",
+    "bioP3": "Wala akong makitang ganoon kahit saan. Kaya naisipan kong ako na mismo ang gumawa — para sa sarili ko, at para sa milyon-milyong gaya ko na may \"busy brain.\" Dito isinilang ang Dopamind.",
     "sectionProjects": "Mga Proyekto",
     "sectionNewsletter": "Sulat-balita",
     "sectionArtworks": "Mga Obra",
     "sectionReadMore": "Magbasa Pa",
     "sectionFindMe": "Hanapin ako sa iba pang lugar",
-    "projectDopamindDesc": "AI ADHD Coach",
+    "projectDopamindDesc": "Ang AI companion mo",
     "projectPhiloArtDesc": "Galerya ng Digital na Sining",
     "newsletterMediumDesc": "Mga Sanaysay",
-    "artworksText": "Ipinopost ko ang aking mga obra sa philoart.io/philo",
-    "artworksContactText": "Para bumili ng mga orihinal na pinta o mga print ng potograpiya, mag-DM sa X o mag-email sa philo.li.official@gmail.com",
+    "artworksText": "Dito ko pino-post ang mga artwork ko: philoart.io/philo",
+    "artworksContactText": "Gusto mong bumili ng original na painting o photography print? DM mo lang ako sa X, o mag-email sa philo.li.official@gmail.com",
     "extraEmail": "Email"
   },
   "artPage": {
@@ -90,7 +90,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI-powered ADHD Coach. Tinutulungan ang mga taong may ADHD na bumuo ng mas mabuting gawi at manatiling nakapokus."
+        "description": "Ang AI companion mo. Kasama mo araw-araw para tulungan kang mas mapaganda ang takbo ng buhay."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -98,7 +98,7 @@
       },
       "ebookTranslator": {
         "name": "Tagasalin ng Bilingguwal na Ebook",
-        "description": "Gawing bilingguwal na edisyon ang anumang EPUB — gumagana sa iyong browser gamit ang sarili mong LLM API key.",
+        "description": "Gawing bilingual ang kahit anong e-book — tatakbo sa browser mo gamit ang sarili mong LLM API key.",
         "cta": "Buksan ang kasangkapan →"
       }
     }
