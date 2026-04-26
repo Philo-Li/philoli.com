@@ -1,5 +1,7 @@
 {
   "newsletterPage": {
+    "title": "Ενημερωτικό δελτίο",
+    "subscribe": "Εγγραφή →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -11,8 +13,7 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    },
-    "title": "Ενημερωτικό δελτίο"
+    }
   },
   "metadata": {
     "siteTitle": "Philo Li — Καλλιτέχνης, Συγγραφέας, Δημιουργός",
