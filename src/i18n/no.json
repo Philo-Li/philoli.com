@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Nyhetsbrev"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — Kunstner, skribent, skaper",
+    "blogTitle": "Blogg — Philo Li",
+    "blogDescription": "Artikler om kunst, filosofi og det å bygge ting.",
+    "aboutTitle": "Om — Philo Li",
+    "aboutDescription": "Om Philo Li — kunstner, skribent og utvikler.",
+    "artTitle": "Kunst — Philo Li",
+    "artDescription": "Fotografi, maleri og digital kunst av Philo Li.",
+    "projectsTitle": "Prosjekter — Philo Li",
+    "projectsDescription": "Prosjekter av Philo Li.",
+    "newsletterTitle": "Nyhetsbrev — Philo Li",
+    "newsletterDescription": "Abonner på Philo Lis nyhetsbrev.",
+    "ebookTranslatorTitle": "Tospråklig e-bok-oversetter — Philo Li",
+    "ebookTranslatorDescription": "Last opp en EPUB og oversett den til en tospråklig utgave med din egen LLM API key. Kjører i sin helhet i nettleseren din."
+  },
+  "nav": {
+    "blog": "Blogg",
+    "art": "Kunst",
+    "projects": "Prosjekter",
+    "newsletter": "Nyhetsbrev",
+    "about": "Om",
+    "menuLabel": "Veksle meny"
+  },
+  "theme": {
+    "dark": "Mørk",
+    "light": "Lys",
+    "toggleAria": "Bytt fargetema",
+    "toggleToLight": "Bytt til lys modus",
+    "toggleToDark": "Bytt til mørk modus"
+  },
+  "hero": {
+    "line1": "Skape.",
+    "line2": "Fange.",
+    "line3": "Bygge.",
+    "tagline": "Jeg maler, fotograferer, skriver og bygger. I møtet mellom nysgjerrighet, håndverk og kode blir alt dette til.",
+    "labelLeft": "Kunstner",
+    "labelRight": "Utvikler"
+  },
+  "recentPosts": {
+    "label": "Siste tekster",
+    "viewAll": "Se alle →"
+  },
+  "newsletterCta": {
+    "label": "Nyhetsbrev",
+    "headline": "Forbli nysgjerrig.",
+    "desc": "Tanker om kunst, livet og å skape ting — levert til innboksen din."
+  },
+  "blogPage": {
+    "title": "Blogg"
+  },
+  "aboutPage": {
+    "tagline": "Kunstner · Skribent · Utvikler",
+    "bioP1": "Jeg er en skaper, en programmerer og en tenker. Jeg elsker å bygge ting fra bunnen av — enten det er et maleri, en kodesnutt eller et dyptpløyende essay.",
+    "bioP2": "Lenge var det største hinderet for denne lidenskapen min egen hjerne: Jeg har ADHD. Etter å ha prøvd nesten alle produktivitetsverktøy på markedet, innså jeg at de alle var designet for et nevrotypisk sinn. Jeg trengte en \"partner\" — noe som forsto meg og kunne gi meg et lite dytt akkurat når jeg trengte det mest.",
+    "bioP3": "Jeg fant det ikke noe sted. Så jeg bestemte meg for å bygge det selv — for meg, og for de millioner av andre med en \"travel hjerne\" akkurat som min. Slik ble Dopamind født.",
+    "sectionProjects": "Prosjekter",
+    "sectionNewsletter": "Nyhetsbrev",
+    "sectionArtworks": "Kunstverk",
+    "sectionReadMore": "Les mer",
+    "sectionFindMe": "Finn meg andre steder",
+    "projectDopamindDesc": "AI ADHD-coach",
+    "projectPhiloArtDesc": "Digitalt kunstgalleri",
+    "newsletterMediumDesc": "Essayer",
+    "artworksText": "Jeg legger ut kunstverkene mine på philoart.io/philo",
+    "artworksContactText": "For å kjøpe originale malerier eller fototrykk, send DM på X eller e-post til philo.li.official@gmail.com",
+    "extraEmail": "E-post"
+  },
+  "artPage": {
+    "title": "Kunst"
+  },
+  "projectsPage": {
+    "title": "Prosjekter",
+    "openLink": "Åpne →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI-drevet ADHD-coach. Hjelper folk med ADHD med å bygge bedre vaner og holde fokus."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Mitt personlige kunstgalleri — fotografi, malerier og digital kunst."
+      },
+      "ebookTranslator": {
+        "name": "Tospråklig e-bok-oversetter",
+        "description": "Gjør enhver EPUB om til en tospråklig utgave — kjører i nettleseren din med din egen LLM API key.",
+        "cta": "Åpne verktøy →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Språk",
+    "currentAria": "Gjeldende språk"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Prosjekt",
+    "title": "Tospråklig e-bokoversetter",
+    "subtitle": "Last opp en EPUB, bruk din egen LLM API key, og få tilbake en tospråklig utgave der originalteksten og den oversatte teksten flettes sammen avsnitt for avsnitt. Filen analyseres i sin helhet i nettleseren din — boken din berører aldri noen server.",
+    "steps": {
+      "settings": "innstillinger",
+      "upload": "last opp",
+      "browse": "bla gjennom"
+    },
+    "actions": {
+      "cancelRunning": "Avbryt kjøring",
+      "translateAllRemaining": "Oversett alle gjenværende",
+      "downloadEpub": "⬇ Last ned EPUB",
+      "building": "Bygger…",
+      "back": "← Tilbake",
+      "settingsModel": "← Innstillinger / modell",
+      "show": "Vis",
+      "hide": "Skjul",
+      "cancel": "Avbryt",
+      "retranslate": "Oversett på nytt",
+      "resume": "Gjenoppta",
+      "translateChapter": "Oversett dette kapittelet",
+      "continue": "Fortsett →"
+    },
+    "settings": {
+      "provider": "Leverandør",
+      "model": "Modell",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Lim inn din {provider}-nøkkel",
+      "apiKeyHint": "Hent en på {link}. Nøkkelen din sendes kun til {provider}, aldri til philoli.com.",
+      "rememberKey": "Husk nøkkelen kun i denne nettleseren (localStorage). Fjern markeringen for delte enheter.",
+      "showApiKey": "Vis API key",
+      "hideApiKey": "Skjul API key",
+      "translateFrom": "Oversett fra",
+      "translateTo": "Oversett til",
+      "tone": "Tone",
+      "needApiKey": "Oppgi en API key for å fortsette."
+    },
+    "upload": {
+      "parsing": "Analyserer EPUB…",
+      "dropTitle": "Slipp en EPUB her",
+      "dropSubtitle": "eller klikk for å velge en fil",
+      "noChapters": "Fant ingen lesbare kapitler i denne EPUB-filen."
+    },
+    "browse": {
+      "chapters": "Kapitler",
+      "toneTitle": "Oversettelsestone — påvirker skrivestilen",
+      "paragraphCount": "{nodes} avsnitt · {translated} oversatt",
+      "errorOne": "{count} avsnitt mislyktes. Du kan oversette på nytt for å prøve igjen — avsnitt som allerede er ferdige, hoppes over.",
+      "errorMany": "{count} avsnitt mislyktes. Du kan oversette på nytt for å prøve igjen — avsnitt som allerede er ferdige, hoppes over.",
+      "noTranslatableText": "Dette kapittelet har ingen oversettbar tekst (omslag, innledende sider, osv.).",
+      "translatingAria": "Oversetter",
+      "translatingLabel": "oversetter…",
+      "buildFailed": "Kunne ikke bygge EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomatisk",
+        "hint": "naturlig og flytende — de fleste bøker"
+      },
+      "literary": {
+        "label": "Litterær",
+        "hint": "romaner og litterære verk"
+      },
+      "technical": {
+        "label": "Teknisk",
+        "hint": "fagbøker og oppslagsverk"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "billigst, rask",
+      "higherQuality": "høyere kvalitet",
+      "bestQuality": "best kvalitet",
+      "newestFast": "nyeste, rask",
+      "cheapest": "billigst",
+      "bestQualityStable": "best kvalitet, stabil",
+      "balanced": "balansert",
+      "freeTierFast": "gratisnivå, rask",
+      "flagshipCoding": "flaggskip koding/agentisk",
+      "longContext": "lang kontekst, stabil",
+      "cheaper": "billigere",
+      "latestLongContext": "nyeste, 256K kontekst"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Fotografi",
+      "Painting": "Maleri",
+      "Drawing": "Tegning",
+      "Digital Art": "Digital kunst"
+    }
+  },
+  "lightbox": {
+    "previous": "Forrige",
+    "next": "Neste"
+  },
+  "social": {
+    "photography": "Fotografi",
+    "art": "Kunst"
+  }
+}

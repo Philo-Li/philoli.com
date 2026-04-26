@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Newsletter"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — umelec, spisovateľ, tvorca",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Články o umení, filozofii a tvorení vecí.",
+    "aboutTitle": "O mne — Philo Li",
+    "aboutDescription": "O Philo Li — umelcovi, spisovateľovi a vývojárovi.",
+    "artTitle": "Umenie — Philo Li",
+    "artDescription": "Fotografia, maľba a digitálne umenie od Philo Li.",
+    "projectsTitle": "Projekty — Philo Li",
+    "projectsDescription": "Projekty od Philo Li.",
+    "newsletterTitle": "Newsletter — Philo Li",
+    "newsletterDescription": "Prihláste sa na odber newsletterov Philo Li.",
+    "ebookTranslatorTitle": "Bilingválny prekladač e-kníh — Philo Li",
+    "ebookTranslatorDescription": "Nahrajte EPUB a preložte ho do bilingválneho vydania pomocou vlastného LLM API key. Beží úplne vo vašom prehliadači."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Umenie",
+    "projects": "Projekty",
+    "newsletter": "Newsletter",
+    "about": "O mne",
+    "menuLabel": "Prepnúť menu"
+  },
+  "theme": {
+    "dark": "Tmavý",
+    "light": "Svetlý",
+    "toggleAria": "Prepnúť farebnú tému",
+    "toggleToLight": "Prepnúť na svetlý režim",
+    "toggleToDark": "Prepnúť na tmavý režim"
+  },
+  "hero": {
+    "line1": "Tvoriť.",
+    "line2": "Zachytiť.",
+    "line3": "Budovať.",
+    "tagline": "Maľujem, fotografujem, píšem a vlastnoručne tvorím. Keď sa zvedavosť stretne s umením a kódom, rodí sa tento svet.",
+    "labelLeft": "Umelec",
+    "labelRight": "Vývojár"
+  },
+  "recentPosts": {
+    "label": "Najnovšie texty",
+    "viewAll": "Zobraziť všetko →"
+  },
+  "newsletterCta": {
+    "label": "Newsletter",
+    "headline": "Zostaňte zvedaví.",
+    "desc": "Myšlienky o umení, živote a tvorení — doručené do vašej schránky."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Umelec · Spisovateľ · Vývojár",
+    "bioP1": "Som tvorca, programátor a mysliteľ. Rád tvorím veci od nuly — či už je to obraz, kus kódu alebo hĺbková esej.",
+    "bioP2": "Dlho bol najväčšou prekážkou tejto vášne môj vlastný mozog: mám ADHD. Po vyskúšaní takmer každého nástroja na produktivitu na trhu som si uvedomil, že všetky boli navrhnuté pre neurotypickú myseľ. Potreboval som „partnera“ — niečo, čo by mi rozumelo a jemne ma postrčilo práve vtedy, keď to najviac potrebujem.",
+    "bioP3": "Nikde som ho nenašiel. Tak som sa rozhodol, že si ho postavím sám — pre seba a pre milióny ďalších s „rušným mozgom“, ako je ten môj. Tak sa zrodil Dopamind.",
+    "sectionProjects": "Projekty",
+    "sectionNewsletter": "Newsletter",
+    "sectionArtworks": "Umelecké diela",
+    "sectionReadMore": "Čítať viac",
+    "sectionFindMe": "Nájdete ma inde",
+    "projectDopamindDesc": "AI ADHD kouč",
+    "projectPhiloArtDesc": "Galéria digitálneho umenia",
+    "newsletterMediumDesc": "Eseje",
+    "artworksText": "Svoje umelecké diela zverejňujem na philoart.io/philo",
+    "artworksContactText": "Ak si chcete kúpiť originálne obrazy alebo fotografické výtlačky, napíšte mi správu na X alebo e-mail na philo.li.official@gmail.com",
+    "extraEmail": "E-mail"
+  },
+  "artPage": {
+    "title": "Umenie"
+  },
+  "projectsPage": {
+    "title": "Projekty",
+    "openLink": "Otvoriť →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "ADHD kouč poháňaný AI. Pomáha ľuďom s ADHD budovať si lepšie návyky a zostať sústredení."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Moja osobná umelecká galéria — fotografia, maľby a digitálne umenie."
+      },
+      "ebookTranslator": {
+        "name": "Bilingválny prekladač e-kníh",
+        "description": "Premeňte akýkoľvek EPUB na bilingválne vydanie — beží vo vašom prehliadači s vaším vlastným LLM API key.",
+        "cta": "Otvoriť nástroj →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Jazyk",
+    "currentAria": "Aktuálny jazyk"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Projekt",
+    "title": "Bilingválny prekladač e-kníh",
+    "subtitle": "Nahrajte EPUB, použite vlastný API kľúč pre LLM a získajte bilingválnu edíciu s pôvodným a preloženým textom striedajúcim sa odsek po odseku. Súbor sa spracováva výhradne vo vašom prehliadači — vaša kniha sa nikdy neodošle na žiadny server.",
+    "steps": {
+      "settings": "nastavenia",
+      "upload": "nahrať",
+      "browse": "prehľadávať"
+    },
+    "actions": {
+      "cancelRunning": "Zrušiť prebiehajúce",
+      "translateAllRemaining": "Preložiť všetky zostávajúce",
+      "downloadEpub": "⬇ Stiahnuť EPUB",
+      "building": "Vytvára sa…",
+      "back": "← Späť",
+      "settingsModel": "← Nastavenia / model",
+      "show": "Zobraziť",
+      "hide": "Skryť",
+      "cancel": "Zrušiť",
+      "retranslate": "Preložiť znova",
+      "resume": "Pokračovať",
+      "translateChapter": "Preložiť túto kapitolu",
+      "continue": "Pokračovať →"
+    },
+    "settings": {
+      "provider": "Poskytovateľ",
+      "model": "Model",
+      "apiKey": "API kľúč",
+      "apiKeyPlaceholder": "Vložte svoj kľúč pre {provider}",
+      "apiKeyHint": "Získajte ho na {link}. Váš kľúč sa odosiela iba poskytovateľovi {provider}, nikdy nie na philoli.com.",
+      "rememberKey": "Zapamätať kľúč iba v tomto prehliadači (localStorage). Zrušte zaškrtnutie pri zdieľaných zariadeniach.",
+      "showApiKey": "Zobraziť API kľúč",
+      "hideApiKey": "Skryť API key",
+      "translateFrom": "Preložiť z",
+      "translateTo": "Preložiť do",
+      "tone": "Tón",
+      "needApiKey": "Pre pokračovanie zadajte API key."
+    },
+    "upload": {
+      "parsing": "Spracúvam EPUB…",
+      "dropTitle": "Sem presuňte EPUB",
+      "dropSubtitle": "alebo kliknite pre výber súboru",
+      "noChapters": "V tomto EPUB sa nenašli žiadne čitateľné kapitoly."
+    },
+    "browse": {
+      "chapters": "Kapitoly",
+      "toneTitle": "Tón prekladu — ovplyvňuje štýl písania",
+      "paragraphCount": "{nodes} odsekov · {translated} preložených",
+      "errorOne": "{count} odsek zlyhal. Pre opakovanie môžete preklad spustiť znova — už hotové odseky sa vynechajú.",
+      "errorMany": "{count} odsekov zlyhalo. Pre opakovanie môžete preklad spustiť znova — už hotové odseky sa vynechajú.",
+      "noTranslatableText": "Táto kapitola neobsahuje žiadny text na preklad (obálka, úvodné informácie atď.).",
+      "translatingAria": "Prekladám",
+      "translatingLabel": "prekladám…",
+      "buildFailed": "Nepodarilo sa vytvoriť EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomatický",
+        "hint": "prirodzený a plynulý — väčšina kníh"
+      },
+      "literary": {
+        "label": "Literárny",
+        "hint": "romány a literárne diela"
+      },
+      "technical": {
+        "label": "Technický",
+        "hint": "odborné a referenčné knihy"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "najlacnejší, rýchly",
+      "higherQuality": "vyššia kvalita",
+      "bestQuality": "najlepšia kvalita",
+      "newestFast": "najnovší, rýchly",
+      "cheapest": "najlacnejší",
+      "bestQualityStable": "najlepšia kvalita, stabilný",
+      "balanced": "vyvážený",
+      "freeTierFast": "bezplatná úroveň, rýchly",
+      "flagshipCoding": "vlajková loď pre kódovanie/agentov",
+      "longContext": "dlhý kontext, stabilný",
+      "cheaper": "lacnejší",
+      "latestLongContext": "najnovší, 256K kontext"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Fotografia",
+      "Painting": "Maľba",
+      "Drawing": "Kresba",
+      "Digital Art": "Digitálne umenie"
+    }
+  },
+  "lightbox": {
+    "previous": "Predchádzajúce",
+    "next": "Nasledujúce"
+  },
+  "social": {
+    "photography": "Fotografia",
+    "art": "Umenie"
+  }
+}

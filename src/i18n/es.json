@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Boletín"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — Artista, Escritor, Creador",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Artículos sobre arte, filosofía y construcción de cosas.",
+    "aboutTitle": "Sobre mí — Philo Li",
+    "aboutDescription": "Sobre Philo Li — artista, escritor y desarrollador.",
+    "artTitle": "Arte — Philo Li",
+    "artDescription": "Fotografía, pintura y arte digital de Philo Li.",
+    "projectsTitle": "Proyectos — Philo Li",
+    "projectsDescription": "Proyectos de Philo Li.",
+    "newsletterTitle": "Boletín — Philo Li",
+    "newsletterDescription": "Suscríbete a los boletines de Philo Li.",
+    "ebookTranslatorTitle": "Traductor de libros electrónicos bilingües — Philo Li",
+    "ebookTranslatorDescription": "Sube un EPUB y tradúcelo a una edición bilingüe con tu propia API key de LLM. Se ejecuta completamente en tu navegador."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Arte",
+    "projects": "Proyectos",
+    "newsletter": "Boletín",
+    "about": "Sobre mí",
+    "menuLabel": "Alternar menú"
+  },
+  "theme": {
+    "dark": "Oscuro",
+    "light": "Claro",
+    "toggleAria": "Cambiar tema de color",
+    "toggleToLight": "Cambiar a modo claro",
+    "toggleToDark": "Cambiar a modo oscuro"
+  },
+  "hero": {
+    "line1": "Crear.",
+    "line2": "Capturar.",
+    "line3": "Construir.",
+    "tagline": "Pinto, fotografío, escribo y también construyo. De la unión entre curiosidad, arte y código, nace todo esto.",
+    "labelLeft": "Artista",
+    "labelRight": "Desarrollador"
+  },
+  "recentPosts": {
+    "label": "Escritos recientes",
+    "viewAll": "Ver todo →"
+  },
+  "newsletterCta": {
+    "label": "Boletín",
+    "headline": "Mantén la curiosidad.",
+    "desc": "Reflexiones sobre arte, vida y creación — directo a tu bandeja de entrada."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Artista · Escritor · Desarrollador",
+    "bioP1": "Soy creador, programador y pensador. Me encanta construir cosas desde cero — ya sea una pintura, una pieza de código o un ensayo profundo.",
+    "bioP2": "Durante mucho tiempo, el mayor obstáculo para esta pasión fue mi propio cerebro: tengo ADHD. Después de probar casi todas las herramientas de productividad del mercado, me di cuenta de que todas estaban diseñadas para una mente neurotípica. Necesitaba un \"compañero\" — algo que me entendiera y pudiera darme un pequeño empujón justo cuando más lo necesitaba.",
+    "bioP3": "No pude encontrarlo en ningún lado. Así que decidí construirlo yo mismo — para mí y para los millones de personas con un \"cerebro inquieto\" como el mío. Así nació Dopamind.",
+    "sectionProjects": "Proyectos",
+    "sectionNewsletter": "Boletín",
+    "sectionArtworks": "Obras de arte",
+    "sectionReadMore": "Leer más",
+    "sectionFindMe": "Encuéntrame en otros sitios",
+    "projectDopamindDesc": "Coach de ADHD con AI",
+    "projectPhiloArtDesc": "Galería de arte digital",
+    "newsletterMediumDesc": "Ensayos",
+    "artworksText": "Publico mis obras de arte en philoart.io/philo",
+    "artworksContactText": "Para comprar pinturas originales o impresiones fotográficas, envía un mensaje directo en X o un correo a philo.li.official@gmail.com",
+    "extraEmail": "Correo electrónico"
+  },
+  "artPage": {
+    "title": "Arte"
+  },
+  "projectsPage": {
+    "title": "Proyectos",
+    "openLink": "Abrir →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "Coach de ADHD impulsado por AI. Ayudando a personas con ADHD a crear mejores hábitos y mantener la concentración."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Mi galería de arte personal — fotografía, pintura y arte digital."
+      },
+      "ebookTranslator": {
+        "name": "Traductor de libros electrónicos bilingües",
+        "description": "Convierte cualquier EPUB en una edición bilingüe — se ejecuta en tu navegador con tu propia API key de LLM.",
+        "cta": "Abrir herramienta →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "currentAria": "Idioma actual"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Proyecto",
+    "title": "Traductor bilingüe de libros electrónicos",
+    "subtitle": "Sube un EPUB, usa tu propia API key de LLM y obtén una edición bilingüe con el texto original y traducido intercalados párrafo por párrafo. El archivo se analiza completamente en tu navegador — tu libro nunca toca ningún servidor.",
+    "steps": {
+      "settings": "ajustes",
+      "upload": "subir",
+      "browse": "explorar"
+    },
+    "actions": {
+      "cancelRunning": "Cancelar ejecución",
+      "translateAllRemaining": "Traducir todo lo restante",
+      "downloadEpub": "⬇ Descargar EPUB",
+      "building": "Generando…",
+      "back": "← Volver",
+      "settingsModel": "← Ajustes / modelo",
+      "show": "Mostrar",
+      "hide": "Ocultar",
+      "cancel": "Cancelar",
+      "retranslate": "Volver a traducir",
+      "resume": "Reanudar",
+      "translateChapter": "Traducir este capítulo",
+      "continue": "Continuar →"
+    },
+    "settings": {
+      "provider": "Proveedor",
+      "model": "Modelo",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Pega tu API key de {provider}",
+      "apiKeyHint": "Consigue una en {link}. Tu API key se envía solo a {provider}, nunca a philoli.com.",
+      "rememberKey": "Recordar API key solo en este navegador (localStorage). Desmarca esta opción en dispositivos compartidos.",
+      "showApiKey": "Mostrar API key",
+      "hideApiKey": "Ocultar API key",
+      "translateFrom": "Traducir de",
+      "translateTo": "Traducir a",
+      "tone": "Tono",
+      "needApiKey": "Introduce una API key para continuar."
+    },
+    "upload": {
+      "parsing": "Analizando EPUB…",
+      "dropTitle": "Suelta un EPUB aquí",
+      "dropSubtitle": "o haz clic para elegir un archivo",
+      "noChapters": "No se han encontrado capítulos legibles en este EPUB."
+    },
+    "browse": {
+      "chapters": "Capítulos",
+      "toneTitle": "Tono de traducción — afecta al estilo de escritura",
+      "paragraphCount": "{nodes} párrafos · {translated} traducidos",
+      "errorOne": "{count} párrafo fallido. Puedes volver a traducir para reintentar — los párrafos ya terminados se omiten.",
+      "errorMany": "{count} párrafos fallidos. Puedes volver a traducir para reintentar — los párrafos ya terminados se omiten.",
+      "noTranslatableText": "Este capítulo no tiene texto traducible (portada, preliminares, etc.).",
+      "translatingAria": "Traduciendo",
+      "translatingLabel": "traduciendo…",
+      "buildFailed": "Error al generar el EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomático",
+        "hint": "natural y fluido — la mayoría de los libros"
+      },
+      "literary": {
+        "label": "Literario",
+        "hint": "novelas y obras literarias"
+      },
+      "technical": {
+        "label": "Técnico",
+        "hint": "libros profesionales y de referencia"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "más barato, rápido",
+      "higherQuality": "mayor calidad",
+      "bestQuality": "mejor calidad",
+      "newestFast": "más nuevo, rápido",
+      "cheapest": "más barato",
+      "bestQualityStable": "mejor calidad, estable",
+      "balanced": "equilibrado",
+      "freeTierFast": "nivel gratuito, rápido",
+      "flagshipCoding": "insignia para programación/agéntico",
+      "longContext": "contexto amplio, estable",
+      "cheaper": "más económico",
+      "latestLongContext": "más reciente, contexto de 256K"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Fotografía",
+      "Painting": "Pintura",
+      "Drawing": "Dibujo",
+      "Digital Art": "Arte digital"
+    }
+  },
+  "lightbox": {
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
+  "social": {
+    "photography": "Fotografía",
+    "art": "Arte"
+  }
+}

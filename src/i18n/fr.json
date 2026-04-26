@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Lettre d'information"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — Artiste, écrivain, créateur",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Articles sur l'art, la philosophie et la création.",
+    "aboutTitle": "À propos — Philo Li",
+    "aboutDescription": "À propos de Philo Li — artiste, écrivain et développeur.",
+    "artTitle": "Art — Philo Li",
+    "artDescription": "Photographie, peinture et art numérique par Philo Li.",
+    "projectsTitle": "Projets — Philo Li",
+    "projectsDescription": "Projets par Philo Li.",
+    "newsletterTitle": "Lettre d'information — Philo Li",
+    "newsletterDescription": "S'abonner aux lettres d'information de Philo Li.",
+    "ebookTranslatorTitle": "Traducteur de livres numériques bilingues — Philo Li",
+    "ebookTranslatorDescription": "Téléversez un EPUB et traduisez-le en une édition bilingue avec votre propre API key LLM. Fonctionne entièrement dans votre navigateur."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Art",
+    "projects": "Projets",
+    "newsletter": "Lettre d'information",
+    "about": "À propos",
+    "menuLabel": "Basculer le menu"
+  },
+  "theme": {
+    "dark": "Sombre",
+    "light": "Clair",
+    "toggleAria": "Changer le thème de couleur",
+    "toggleToLight": "Passer en mode clair",
+    "toggleToDark": "Passer en mode sombre"
+  },
+  "hero": {
+    "line1": "Créer.",
+    "line2": "Saisir.",
+    "line3": "Bâtir.",
+    "tagline": "Je peins, je photographie, j'écris et je bâtis de mes mains. De l'alchimie entre curiosité, art et code, naît tout ceci.",
+    "labelLeft": "Artiste",
+    "labelRight": "Développeur"
+  },
+  "recentPosts": {
+    "label": "Écrits récents",
+    "viewAll": "Tout voir →"
+  },
+  "newsletterCta": {
+    "label": "Lettre d'information",
+    "headline": "Restez curieux.",
+    "desc": "Réflexions sur l'art, la vie et la création — livrées dans votre boîte de réception."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Artiste · Écrivain · Développeur",
+    "bioP1": "Je suis un créateur, un programmeur et un penseur. J'aime créer des choses à partir de zéro — qu'il s'agisse d'une peinture, d'un morceau de code ou d'un essai approfondi.",
+    "bioP2": "Pendant très longtemps, le plus grand obstacle à cette passion a été mon propre cerveau : j'ai un ADHD. Après avoir essayé presque tous les outils de productivité sur le marché, j'ai réalisé qu'ils étaient tous conçus pour un esprit neurotypique. J'avais besoin d'un « partenaire » — quelque chose qui me comprenne et puisse me donner un petit coup de pouce au moment précis où j'en avais le plus besoin.",
+    "bioP3": "Je ne le trouvais nulle part. J'ai donc décidé de le construire moi-même — pour moi, et pour les millions d'autres personnes ayant un « cerveau agité » comme le mien. C'est ainsi que Dopamind est né.",
+    "sectionProjects": "Projets",
+    "sectionNewsletter": "Lettre d'information",
+    "sectionArtworks": "Œuvres d'art",
+    "sectionReadMore": "Lire la suite",
+    "sectionFindMe": "Me trouver ailleurs",
+    "projectDopamindDesc": "Coach ADHD par AI",
+    "projectPhiloArtDesc": "Galerie d'art numérique",
+    "newsletterMediumDesc": "Essais",
+    "artworksText": "Je publie mes œuvres sur philoart.io/philo",
+    "artworksContactText": "Pour acheter des peintures originales ou des tirages photographiques, contactez-moi par message privé sur X ou par e-mail à philo.li.official@gmail.com",
+    "extraEmail": "E-mail"
+  },
+  "artPage": {
+    "title": "Art"
+  },
+  "projectsPage": {
+    "title": "Projets",
+    "openLink": "Ouvrir →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "Coach ADHD propulsé par AI. Aide les personnes atteintes de ADHD à adopter de meilleures habitudes et à rester concentrées."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Ma galerie d'art personnelle — photographie, peintures et art numérique."
+      },
+      "ebookTranslator": {
+        "name": "Traducteur d'e-book bilingue",
+        "description": "Transformez n'importe quel EPUB en édition bilingue — s'exécute dans votre navigateur avec votre propre API key de LLM.",
+        "cta": "Ouvrir l'outil →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Langue",
+    "currentAria": "Langue actuelle"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Projet",
+    "title": "Traducteur d'ebook bilingue",
+    "subtitle": "Téléversez un EPUB, utilisez votre propre API key LLM, et obtenez une édition bilingue avec le texte original et traduit entrelacé paragraphe par paragraphe. Le fichier est analysé entièrement dans votre navigateur — votre livre ne transite par aucun serveur.",
+    "steps": {
+      "settings": "paramètres",
+      "upload": "importer",
+      "browse": "parcourir"
+    },
+    "actions": {
+      "cancelRunning": "Annuler l'exécution",
+      "translateAllRemaining": "Traduire tout le reste",
+      "downloadEpub": "⬇ Télécharger l'EPUB",
+      "building": "Génération…",
+      "back": "← Retour",
+      "settingsModel": "← Paramètres / modèle",
+      "show": "Afficher",
+      "hide": "Masquer",
+      "cancel": "Annuler",
+      "retranslate": "Retraduire",
+      "resume": "Reprendre",
+      "translateChapter": "Traduire ce chapitre",
+      "continue": "Continuer →"
+    },
+    "settings": {
+      "provider": "Fournisseur",
+      "model": "Modèle",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Collez votre clé {provider}",
+      "apiKeyHint": "Obtenez-en une sur {link}. Votre clé est envoyée uniquement à {provider}, jamais à philoli.com.",
+      "rememberKey": "Mémoriser la clé dans ce navigateur uniquement (localStorage). Décochez pour les appareils partagés.",
+      "showApiKey": "Afficher l'API key",
+      "hideApiKey": "Masquer la clé API",
+      "translateFrom": "Traduire de",
+      "translateTo": "Traduire vers",
+      "tone": "Ton",
+      "needApiKey": "Saisissez une API key pour continuer."
+    },
+    "upload": {
+      "parsing": "Analyse de l'EPUB…",
+      "dropTitle": "Déposez un EPUB ici",
+      "dropSubtitle": "ou cliquez pour choisir un fichier",
+      "noChapters": "Aucun chapitre lisible trouvé dans cet EPUB."
+    },
+    "browse": {
+      "chapters": "Chapitres",
+      "toneTitle": "Ton de la traduction — affecte le style d'écriture",
+      "paragraphCount": "{nodes} paragraphes · {translated} traduits",
+      "errorOne": "{count} paragraphe a échoué. Vous pouvez retraduire pour réessayer — les paragraphes déjà faits sont ignorés.",
+      "errorMany": "{count} paragraphes ont échoué. Vous pouvez retraduire pour réessayer — les paragraphes déjà faits sont ignorés.",
+      "noTranslatableText": "Ce chapitre ne contient aucun texte traduisible (couverture, pages de garde, etc.).",
+      "translatingAria": "Traduction",
+      "translatingLabel": "traduction…",
+      "buildFailed": "Échec de la création de l'EPUB :"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomatique",
+        "hint": "naturel et fluide — la plupart des livres"
+      },
+      "literary": {
+        "label": "Littéraire",
+        "hint": "romans et œuvres littéraires"
+      },
+      "technical": {
+        "label": "Technique",
+        "hint": "livres professionnels et de référence"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "le moins cher, rapide",
+      "higherQuality": "qualité supérieure",
+      "bestQuality": "meilleure qualité",
+      "newestFast": "le plus récent, rapide",
+      "cheapest": "le moins cher",
+      "bestQualityStable": "meilleure qualité, stable",
+      "balanced": "équilibré",
+      "freeTierFast": "version gratuite, rapide",
+      "flagshipCoding": "modèle phare codage/agentique",
+      "longContext": "contexte long, stable",
+      "cheaper": "moins cher",
+      "latestLongContext": "dernier cri, contexte 256K"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Photographie",
+      "Painting": "Peinture",
+      "Drawing": "Dessin",
+      "Digital Art": "Art numérique"
+    }
+  },
+  "lightbox": {
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "social": {
+    "photography": "Photographie",
+    "art": "Art"
+  }
+}

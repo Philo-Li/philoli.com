@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "النشرة الإخبارية"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — فنان، كاتب، مبدع",
+    "blogTitle": "المدونة — Philo Li",
+    "blogDescription": "مقالات عن الفن، الفلسفة، وبناء الأشياء.",
+    "aboutTitle": "عني — Philo Li",
+    "aboutDescription": "عن Philo Li — فنان، كاتب، ومطور.",
+    "artTitle": "الفن — Philo Li",
+    "artDescription": "التصوير الفوتوغرافي، الرسم، والفن الرقمي بواسطة Philo Li.",
+    "projectsTitle": "المشاريع — Philo Li",
+    "projectsDescription": "مشاريع بواسطة Philo Li.",
+    "newsletterTitle": "النشرة البريدية — Philo Li",
+    "newsletterDescription": "اشترك في نشرات Philo Li البريدية.",
+    "ebookTranslatorTitle": "مترجم الكتب الإلكترونية ثنائي اللغة — Philo Li",
+    "ebookTranslatorDescription": "ارفع ملف EPUB وترجمه إلى نسخة ثنائية اللغة باستخدام API key الخاص بك لـ LLM. يعمل بالكامل في متصفحك."
+  },
+  "nav": {
+    "blog": "المدونة",
+    "art": "الفن",
+    "projects": "المشاريع",
+    "newsletter": "النشرة البريدية",
+    "about": "عني",
+    "menuLabel": "تبديل القائمة"
+  },
+  "theme": {
+    "dark": "داكن",
+    "light": "فاتح",
+    "toggleAria": "تبديل مظهر الألوان",
+    "toggleToLight": "التبديل إلى الوضع الفاتح",
+    "toggleToDark": "التبديل إلى الوضع الداكن"
+  },
+  "hero": {
+    "line1": "أبدع.",
+    "line2": "التقط.",
+    "line3": "شيّد.",
+    "tagline": "أرسم، وأصوّر، وأكتب، وأصنع بيديّ؛ فمن تلاقي الفضول بالفن والبرمجيات، وُلد كل هذا.",
+    "labelLeft": "فنان",
+    "labelRight": "مطور"
+  },
+  "recentPosts": {
+    "label": "كتابات حديثة",
+    "viewAll": "عرض الكل →"
+  },
+  "newsletterCta": {
+    "label": "النشرة البريدية",
+    "headline": "ابقَ فضولياً.",
+    "desc": "خواطر حول الفن، والحياة، وبناء الأشياء — تصلك في بريدك الوارد."
+  },
+  "blogPage": {
+    "title": "المدونة"
+  },
+  "aboutPage": {
+    "tagline": "فنان · كاتب · مطور",
+    "bioP1": "أنا صانع، ومبرمج، ومفكر. أحب بناء الأشياء من الصفر — سواء كانت لوحة فنية، أو كوداً برمجياً، أو مقالاً تحليلياً عميقاً.",
+    "bioP2": "لفترة طويلة، كان العائق الأكبر أمام هذا الشغف هو عقلي: أنا مصاب بـ ADHD. بعد تجربة كل أدوات الإنتاجية المتاحة تقريباً، أدركت أنها جميعاً صُممت لعقول نمطية عصبياً. كنت بحاجة إلى \"شريك\" — شيء يفهمني ويمنحني دفعة لطيفة في اللحظة التي أحتاج إليها بشدة.",
+    "bioP3": "لم أتمكن من العثور عليه في أي مكان. لذا قررت أن أبنيه بنفسي — لي، وللملايين الآخرين الذين يملكون \"عقلاً مشغولاً\" تماماً مثل عقلي. هكذا وُلد Dopamind.",
+    "sectionProjects": "المشاريع",
+    "sectionNewsletter": "النشرة البريدية",
+    "sectionArtworks": "الأعمال الفنية",
+    "sectionReadMore": "اقرأ المزيد",
+    "sectionFindMe": "تجدني في أماكن أخرى",
+    "projectDopamindDesc": "مدرب ADHD بـ AI",
+    "projectPhiloArtDesc": "معرض الفن الرقمي",
+    "newsletterMediumDesc": "مقالات",
+    "artworksText": "أنشر أعمالي الفنية على philoart.io/philo",
+    "artworksContactText": "لشراء اللوحات الأصلية أو المطبوعات الفوتوغرافية، تواصل عبر الرسائل الخاصة على X أو عبر البريد الإلكتروني philo.li.official@gmail.com",
+    "extraEmail": "البريد الإلكتروني"
+  },
+  "artPage": {
+    "title": "الفن"
+  },
+  "projectsPage": {
+    "title": "المشاريع",
+    "openLink": "فتح →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "مدرب ADHD مدعوم بـ AI. يساعد الأشخاص المصابين بـ ADHD على بناء عادات أفضل والحفاظ على التركيز."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "معرضي الفني الشخصي — تصوير فوتوغرافي، لوحات، وفن رقمي."
+      },
+      "ebookTranslator": {
+        "name": "مترجم الكتب الإلكترونية ثنائي اللغة",
+        "description": "حوّل أي ملف EPUB إلى نسخة ثنائية اللغة — يعمل في متصفحك باستخدام LLM API key الخاص بك.",
+        "cta": "افتح الأداة →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "اللغة",
+    "currentAria": "اللغة الحالية"
+  },
+  "ebookTranslator": {
+    "eyebrow": "مشروع",
+    "title": "مترجم الكتب الإلكترونية ثنائي اللغة",
+    "subtitle": "قم برفع ملف EPUB، واستخدم مفتاح API key الخاص بك لـ LLM، واحصل على نسخة ثنائية اللغة مع دمج النص الأصلي والمترجم فقرة بفقرة. يتم تحليل الملف بالكامل في متصفحك — كتابك لا يلمس أي خادم أبدًا.",
+    "steps": {
+      "settings": "الإعدادات",
+      "upload": "رفع",
+      "browse": "تصفح"
+    },
+    "actions": {
+      "cancelRunning": "إلغاء التشغيل",
+      "translateAllRemaining": "ترجمة كل المتبقي",
+      "downloadEpub": "⬇ تحميل EPUB",
+      "building": "جاري الإنشاء…",
+      "back": "← عودة",
+      "settingsModel": "← الإعدادات / النموذج",
+      "show": "إظهار",
+      "hide": "إخفاء",
+      "cancel": "إلغاء",
+      "retranslate": "إعادة الترجمة",
+      "resume": "استئناف",
+      "translateChapter": "ترجمة هذا الفصل",
+      "continue": "استمرار →"
+    },
+    "settings": {
+      "provider": "المزود",
+      "model": "النموذج",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "الصق مفتاح {provider} الخاص بك",
+      "apiKeyHint": "احصل على واحد عبر {link}. يتم إرسال مفتاحك فقط إلى {provider}، ولا يتم إرساله أبدًا إلى philoli.com.",
+      "rememberKey": "تذكر المفتاح في هذا المتصفح فقط (localStorage). قم بإلغاء التحديد للأجهزة المشتركة.",
+      "showApiKey": "إظهار API key",
+      "hideApiKey": "إخفاء API key",
+      "translateFrom": "الترجمة من",
+      "translateTo": "الترجمة إلى",
+      "tone": "النبرة",
+      "needApiKey": "أدخل API key للمتابعة."
+    },
+    "upload": {
+      "parsing": "جاري تحليل EPUB…",
+      "dropTitle": "أسقط ملف EPUB هنا",
+      "dropSubtitle": "أو انقر لاختيار ملف",
+      "noChapters": "لم يتم العثور على فصول قابلة للقراءة في ملف EPUB هذا."
+    },
+    "browse": {
+      "chapters": "الفصول",
+      "toneTitle": "نبرة الترجمة — تؤثر على أسلوب الكتابة",
+      "paragraphCount": "{nodes} فقرات · تم ترجمة {translated}",
+      "errorOne": "فشلت {count} فقرة. يمكنك إعادة الترجمة للمحاولة مرة أخرى — سيتم تخطي الفقرات المترجمة بالفعل.",
+      "errorMany": "فشلت {count} فقرات. يمكنك إعادة الترجمة للمحاولة مرة أخرى — سيتم تخطي الفقرات المترجمة بالفعل.",
+      "noTranslatableText": "لا يحتوي هذا الفصل على نص قابل للترجمة (غلاف، مقدمة، إلخ).",
+      "translatingAria": "جاري الترجمة",
+      "translatingLabel": "جاري الترجمة…",
+      "buildFailed": "فشل إنشاء ملف EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "اصطلاحي",
+        "hint": "طبيعي وسلس — معظم الكتب"
+      },
+      "literary": {
+        "label": "أدبي",
+        "hint": "روايات وأعمال أدبية"
+      },
+      "technical": {
+        "label": "تقني",
+        "hint": "كتب مهنية ومرجعية"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "الأرخص، سريع",
+      "higherQuality": "جودة أعلى",
+      "bestQuality": "أفضل جودة",
+      "newestFast": "الأحدث، سريع",
+      "cheapest": "الأرخص",
+      "bestQualityStable": "أفضل جودة، مستقر",
+      "balanced": "متوازن",
+      "freeTierFast": "فئة مجانية، سريع",
+      "flagshipCoding": "رائد للبرمجة/الوكلاء",
+      "longContext": "سياق طويل، مستقر",
+      "cheaper": "أرخص",
+      "latestLongContext": "الأحدث، سياق 256K"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "صورة فوتوغرافية",
+      "Painting": "لوحة",
+      "Drawing": "رسم",
+      "Digital Art": "فن رقمي"
+    }
+  },
+  "lightbox": {
+    "previous": "السابق",
+    "next": "التالي"
+  },
+  "social": {
+    "photography": "التصوير الفوتوغرافي",
+    "art": "فن"
+  }
+}

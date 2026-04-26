@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Buletin informativ"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — Artist, Scriitor, Creator",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Articole despre artă, filozofie și construirea de lucruri.",
+    "aboutTitle": "Despre — Philo Li",
+    "aboutDescription": "Despre Philo Li — artist, scriitor și dezvoltator.",
+    "artTitle": "Artă — Philo Li",
+    "artDescription": "Fotografie, pictură și artă digitală de Philo Li.",
+    "projectsTitle": "Proiecte — Philo Li",
+    "projectsDescription": "Proiecte de Philo Li.",
+    "newsletterTitle": "Newsletter — Philo Li",
+    "newsletterDescription": "Abonează-te la newsletterele lui Philo Li.",
+    "ebookTranslatorTitle": "Traducător de e-book-uri bilingve — Philo Li",
+    "ebookTranslatorDescription": "Încarcă un EPUB și tradu-l într-o ediție bilingvă cu propriul tău LLM API key. Rulează în întregime în browserul tău."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Artă",
+    "projects": "Proiecte",
+    "newsletter": "Newsletter",
+    "about": "Despre",
+    "menuLabel": "Comută meniul"
+  },
+  "theme": {
+    "dark": "Întunecat",
+    "light": "Luminos",
+    "toggleAria": "Schimbă tema de culori",
+    "toggleToLight": "Comută la modul luminos",
+    "toggleToDark": "Comută la modul întunecat"
+  },
+  "hero": {
+    "line1": "Creează.",
+    "line2": "Surprinde.",
+    "line3": "Făurește.",
+    "tagline": "Pictură, fotografie, scris și meșteșug. Din întâlnirea curiozității cu arta și codul s-au născut toate acestea.",
+    "labelLeft": "Artist",
+    "labelRight": "Dezvoltator"
+  },
+  "recentPosts": {
+    "label": "Scrieri recente",
+    "viewAll": "Vezi tot →"
+  },
+  "newsletterCta": {
+    "label": "Buletin informativ",
+    "headline": "Rămâi curios.",
+    "desc": "Gânduri despre artă, viață și construcție — livrate în căsuța de e-mail."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Artist · Scriitor · Dezvoltator",
+    "bioP1": "Sunt un creator, un programator și un gânditor. Îmi place să construiesc lucruri de la zero — fie că este vorba de o pictură, un fragment de cod sau un eseu aprofundat.",
+    "bioP2": "Multă vreme, cel mai mare obstacol în calea acestei pasiuni a fost propriul meu creier: am ADHD. După ce am încercat aproape toate instrumentele de productivitate de pe piață, mi-am dat seama că toate erau concepute pentru o minte neurotipică. Aveam nevoie de un „partener” — ceva care să mă înțeleagă și să-mi dea un imbold blând exact atunci când aveam cea mai mare nevoie.",
+    "bioP3": "Nu l-am găsit nicăieri. Așa că am decis să-l construiesc singur — pentru mine și pentru milioanele de alți oameni cu un „creier ocupat” exact ca al meu. Așa s-a născut Dopamind.",
+    "sectionProjects": "Proiecte",
+    "sectionNewsletter": "Buletin informativ",
+    "sectionArtworks": "Lucrări de artă",
+    "sectionReadMore": "Citește mai mult",
+    "sectionFindMe": "Găsește-mă în altă parte",
+    "projectDopamindDesc": "Coach ADHD bazat pe AI",
+    "projectPhiloArtDesc": "Galerie de artă digitală",
+    "newsletterMediumDesc": "Eseuri",
+    "artworksText": "Îmi postez lucrările de artă pe philoart.io/philo",
+    "artworksContactText": "Pentru a achiziționa picturi originale sau printuri fotografice, trimite un mesaj direct pe X sau un e-mail la philo.li.official@gmail.com",
+    "extraEmail": "E-mail"
+  },
+  "artPage": {
+    "title": "Artă"
+  },
+  "projectsPage": {
+    "title": "Proiecte",
+    "openLink": "Deschide →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "Coach ADHD bazat pe AI. Ajută persoanele cu ADHD să își formeze obiceiuri mai bune și să rămână concentrate."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Galeria mea personală de artă — fotografie, picturi și artă digitală."
+      },
+      "ebookTranslator": {
+        "name": "Traducător bilingv de e-book-uri",
+        "description": "Transformă orice EPUB într-o ediție bilingvă — rulează în browser cu propria ta cheie API pentru LLM.",
+        "cta": "Deschide instrumentul →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Limbă",
+    "currentAria": "Limba curentă"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Proiect",
+    "title": "Traducător bilingv de cărți electronice",
+    "subtitle": "Încarcă un EPUB, folosește propriul LLM API key și primește o ediție bilingvă cu textul original și cel tradus intercalate paragraf cu paragraf. Fișierul este procesat în întregime în browserul tău — cartea ta nu ajunge niciodată pe niciun server.",
+    "steps": {
+      "settings": "setări",
+      "upload": "încărcare",
+      "browse": "răsfoiește"
+    },
+    "actions": {
+      "cancelRunning": "Anulează procesul",
+      "translateAllRemaining": "Tradu tot ce a rămas",
+      "downloadEpub": "⬇ Descarcă EPUB",
+      "building": "Se generează…",
+      "back": "← Înapoi",
+      "settingsModel": "← Setări / model",
+      "show": "Afișează",
+      "hide": "Ascunde",
+      "cancel": "Anulează",
+      "retranslate": "Retraduce",
+      "resume": "Continuă",
+      "translateChapter": "Tradu acest capitol",
+      "continue": "Continuă →"
+    },
+    "settings": {
+      "provider": "Furnizor",
+      "model": "Model",
+      "apiKey": "API Key",
+      "apiKeyPlaceholder": "Lipește cheia ta {provider}",
+      "apiKeyHint": "Obține una la {link}. Cheia ta este trimisă doar către {provider}, niciodată către philoli.com.",
+      "rememberKey": "Reține cheia doar în acest browser (localStorage). Debifează pentru dispozitivele partajate.",
+      "showApiKey": "Afișează API key",
+      "hideApiKey": "Ascunde cheia API",
+      "translateFrom": "Tradu din",
+      "translateTo": "Tradu în",
+      "tone": "Ton",
+      "needApiKey": "Introdu o cheie API pentru a continua."
+    },
+    "upload": {
+      "parsing": "Se analizează EPUB…",
+      "dropTitle": "Trage un EPUB aici",
+      "dropSubtitle": "sau fă clic pentru a alege un fișier",
+      "noChapters": "Nu s-au găsit capitole lizibile în acest EPUB."
+    },
+    "browse": {
+      "chapters": "Capitole",
+      "toneTitle": "Tonul traducerii — afectează stilul scrierii",
+      "paragraphCount": "{nodes} paragrafe · {translated} traduse",
+      "errorOne": "{count} paragraf a eșuat. Poți retraduce pentru a reîncerca — paragrafele deja traduse sunt omise.",
+      "errorMany": "{count} paragrafe au eșuat. Poți retraduce pentru a reîncerca — paragrafele deja traduse sunt omise.",
+      "noTranslatableText": "Acest capitol nu are text traductibil (copertă, prefață etc.).",
+      "translatingAria": "Se traduce",
+      "translatingLabel": "se traduce…",
+      "buildFailed": "Eroare la generarea EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomatic",
+        "hint": "natural și fluent — majoritatea cărților"
+      },
+      "literary": {
+        "label": "Literar",
+        "hint": "romane și opere literare"
+      },
+      "technical": {
+        "label": "Tehnic",
+        "hint": "cărți profesionale și de referință"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "cel mai ieftin, rapid",
+      "higherQuality": "calitate superioară",
+      "bestQuality": "cea mai bună calitate",
+      "newestFast": "cel mai nou, rapid",
+      "cheapest": "cel mai ieftin",
+      "bestQualityStable": "cea mai bună calitate, stabil",
+      "balanced": "echilibrat",
+      "freeTierFast": "nivel gratuit, rapid",
+      "flagshipCoding": "vârf de gamă programare/agentic",
+      "longContext": "context lung, stabil",
+      "cheaper": "mai ieftin",
+      "latestLongContext": "cel mai recent, context 256K"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Fotografie",
+      "Painting": "Pictură",
+      "Drawing": "Desen",
+      "Digital Art": "Artă digitală"
+    }
+  },
+  "lightbox": {
+    "previous": "Anterior",
+    "next": "Următor"
+  },
+  "social": {
+    "photography": "Fotografie",
+    "art": "Artă"
+  }
+}

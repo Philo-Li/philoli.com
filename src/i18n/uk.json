@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Розсилка"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — художник, письменник, творець",
+    "blogTitle": "Блог — Philo Li",
+    "blogDescription": "Статті про мистецтво, філософію та створення речей.",
+    "aboutTitle": "Про мене — Philo Li",
+    "aboutDescription": "Про Philo Li — художника, письменника та розробника.",
+    "artTitle": "Мистецтво — Philo Li",
+    "artDescription": "Фотографія, живопис та цифрове мистецтво Philo Li.",
+    "projectsTitle": "Проєкти — Philo Li",
+    "projectsDescription": "Проєкти Philo Li.",
+    "newsletterTitle": "Розсилка — Philo Li",
+    "newsletterDescription": "Підпишіться на розсилки Philo Li.",
+    "ebookTranslatorTitle": "Перекладач двомовних електронних книг — Philo Li",
+    "ebookTranslatorDescription": "Завантажте EPUB і перекладіть його у двомовне видання за допомогою власного LLM API key. Працює повністю у вашому браузері."
+  },
+  "nav": {
+    "blog": "Блог",
+    "art": "Мистецтво",
+    "projects": "Проєкти",
+    "newsletter": "Розсилка",
+    "about": "Про мене",
+    "menuLabel": "Перемкнути меню"
+  },
+  "theme": {
+    "dark": "Темна",
+    "light": "Світла",
+    "toggleAria": "Змінити колірну тему",
+    "toggleToLight": "Перейти на світлий режим",
+    "toggleToDark": "Перейти на темний режим"
+  },
+  "hero": {
+    "line1": "Творити.",
+    "line2": "Карбувати.",
+    "line3": "Зводити.",
+    "tagline": "Я малюю, пишу, знімаю та творю власноруч. Коли допитливість зустрічається з мистецтвом і кодом — народжується все це.",
+    "labelLeft": "Художник",
+    "labelRight": "Розробник"
+  },
+  "recentPosts": {
+    "label": "Останні дописи",
+    "viewAll": "Переглянути всі →"
+  },
+  "newsletterCta": {
+    "label": "Розсилка",
+    "headline": "Залишайтеся допитливими.",
+    "desc": "Думки про мистецтво, життя та створення речей — прямо у вашій скриньці."
+  },
+  "blogPage": {
+    "title": "Блог"
+  },
+  "aboutPage": {
+    "tagline": "Художник · Письменник · Розробник",
+    "bioP1": "Я творець, програміст і мислитель. Люблю створювати речі з нуля — чи то картина, чи то код, чи то глибоке есе.",
+    "bioP2": "Довгий час найбільшою перешкодою для цього захоплення був мій власний мозок: у мене ADHD. Спробувавши майже всі інструменти продуктивності на ринку, я зрозумів, що всі вони розроблені для нейротипового розуму. Мені потрібен був «партнер» — хтось, хто розумів би мене і міг би м’яко підштовхнути саме тоді, коли це найбільше потрібно.",
+    "bioP3": "Я ніде не міг такого знайти. Тому вирішив створити його сам — для себе та для мільйонів інших із таким же «неспокійним мозком», як у мене. Так народився Dopamind.",
+    "sectionProjects": "Проєкти",
+    "sectionNewsletter": "Розсилка",
+    "sectionArtworks": "Роботи",
+    "sectionReadMore": "Читати далі",
+    "sectionFindMe": "Знайдіть мене на інших ресурсах",
+    "projectDopamindDesc": "AI-коуч для людей з ADHD",
+    "projectPhiloArtDesc": "Галерея цифрового мистецтва",
+    "newsletterMediumDesc": "Есе",
+    "artworksText": "Я публікую свої роботи на philoart.io/philo",
+    "artworksContactText": "Щоб придбати оригінальні картини або фотопринти, пишіть у приватні повідомлення в X або на пошту philo.li.official@gmail.com",
+    "extraEmail": "Електронна пошта"
+  },
+  "artPage": {
+    "title": "Мистецтво"
+  },
+  "projectsPage": {
+    "title": "Проєкти",
+    "openLink": "Відкрити →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI-коуч для людей з ADHD. Допомагає формувати кращі звички та зберігати фокус."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Моя особиста художня галерея — фотографія, живопис та цифрове мистецтво."
+      },
+      "ebookTranslator": {
+        "name": "Перекладач двомовних електронних книг",
+        "description": "Перетворюйте будь-який EPUB на двомовне видання — працює у вашому браузері з вашим власним LLM API key.",
+        "cta": "Відкрити інструмент →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Мова",
+    "currentAria": "Поточна мова"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Проєкт",
+    "title": "Перекладач двомовних електронних книг",
+    "subtitle": "Завантажте EPUB, додайте власний LLM API key та отримайте двомовне видання, де оригінал і переклад чергуються абзац за абзацом. Файл обробляється повністю у вашому браузері — ваша книга ніколи не потрапляє на жоден сервер.",
+    "steps": {
+      "settings": "налаштування",
+      "upload": "завантажити",
+      "browse": "огляд"
+    },
+    "actions": {
+      "cancelRunning": "Скасувати виконання",
+      "translateAllRemaining": "Перекласти решту",
+      "downloadEpub": "⬇ Завантажити EPUB",
+      "building": "Створення…",
+      "back": "← Назад",
+      "settingsModel": "← Налаштування / модель",
+      "show": "Показати",
+      "hide": "Приховати",
+      "cancel": "Скасувати",
+      "retranslate": "Перекласти повторно",
+      "resume": "Продовжити",
+      "translateChapter": "Перекласти цей розділ",
+      "continue": "Продовжити →"
+    },
+    "settings": {
+      "provider": "Провайдер",
+      "model": "Модель",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Вставте ваш ключ {provider}",
+      "apiKeyHint": "Отримайте його за посиланням {link}. Ваш ключ надсилається лише до {provider}, і ніколи — на philoli.com.",
+      "rememberKey": "Запам'ятати ключ лише в цьому браузері (localStorage). Зніміть прапорець для спільних пристроїв.",
+      "showApiKey": "Показати API key",
+      "hideApiKey": "Сховати API key",
+      "translateFrom": "Перекласти з",
+      "translateTo": "Перекласти на",
+      "tone": "Тон",
+      "needApiKey": "Введіть API key, щоб продовжити."
+    },
+    "upload": {
+      "parsing": "Аналіз EPUB…",
+      "dropTitle": "Перетягніть EPUB сюди",
+      "dropSubtitle": "або натисніть, щоб вибрати файл",
+      "noChapters": "У цьому EPUB не знайдено розділів для читання."
+    },
+    "browse": {
+      "chapters": "Розділи",
+      "toneTitle": "Тон перекладу — впливає на стиль письма",
+      "paragraphCount": "{nodes} абзаців · {translated} перекладено",
+      "errorOne": "Не вдалося перекласти {count} абзац. Ви можете спробувати ще раз — уже готові абзаци будуть пропущені.",
+      "errorMany": "Не вдалося перекласти {count} абзаців. Ви можете спробувати ще раз — уже готові абзаци будуть пропущені.",
+      "noTranslatableText": "У цьому розділі немає тексту для перекладу (обкладинка, вступ тощо).",
+      "translatingAria": "Переклад",
+      "translatingLabel": "переклад…",
+      "buildFailed": "Не вдалося створити EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Ідіоматичний",
+        "hint": "природний та плавний — для більшості книг"
+      },
+      "literary": {
+        "label": "Літературний",
+        "hint": "романи та художні твори"
+      },
+      "technical": {
+        "label": "Технічний",
+        "hint": "професійна та довідкова література"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "найдешевший, швидкий",
+      "higherQuality": "вища якість",
+      "bestQuality": "найкраща якість",
+      "newestFast": "найновіший, швидкий",
+      "cheapest": "найдешевший",
+      "bestQualityStable": "найкраща якість, стабільний",
+      "balanced": "збалансований",
+      "freeTierFast": "безкоштовний рівень, швидкий",
+      "flagshipCoding": "флагман для кодування/агентів",
+      "longContext": "довгий контекст, стабільний",
+      "cheaper": "дешевший",
+      "latestLongContext": "найновіший, 256K контекст"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Фотографія",
+      "Painting": "Живопис",
+      "Drawing": "Малюнок",
+      "Digital Art": "Цифрове мистецтво"
+    }
+  },
+  "lightbox": {
+    "previous": "Попередній",
+    "next": "Наступний"
+  },
+  "social": {
+    "photography": "Фотографія",
+    "art": "Мистецтво"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Uutiskirje"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — Taiteilija, kirjoittaja, luoja",
+    "blogTitle": "Blogi — Philo Li",
+    "blogDescription": "Artikkeleita taiteesta, filosofiasta ja asioiden rakentamisesta.",
+    "aboutTitle": "Tietoa — Philo Li",
+    "aboutDescription": "Tietoa Philo Li:stä — taiteilija, kirjoittaja ja kehittäjä.",
+    "artTitle": "Taide — Philo Li",
+    "artDescription": "Valokuvausta, maalausta ja digitaalista taidetta Philo Li:ltä.",
+    "projectsTitle": "Projektit — Philo Li",
+    "projectsDescription": "Philo Li:n projekteja.",
+    "newsletterTitle": "Uutiskirje — Philo Li",
+    "newsletterDescription": "Tilaa Philo Li:n uutiskirjeet.",
+    "ebookTranslatorTitle": "Kaksikielinen e-kirjojen kääntäjä — Philo Li",
+    "ebookTranslatorDescription": "Lataa EPUB ja käännä se kaksikieliseksi painokseksi omalla LLM API key -avaimellasi. Toimii kokonaan selaimessasi."
+  },
+  "nav": {
+    "blog": "Blogi",
+    "art": "Taide",
+    "projects": "Projektit",
+    "newsletter": "Uutiskirje",
+    "about": "Tietoa",
+    "menuLabel": "Valikko"
+  },
+  "theme": {
+    "dark": "Tumma",
+    "light": "Vaalea",
+    "toggleAria": "Vaihda väriteemaa",
+    "toggleToLight": "Vaihda vaaleaan tilaan",
+    "toggleToDark": "Vaihda tummaan tilaan"
+  },
+  "hero": {
+    "line1": "Luo.",
+    "line2": "Ikuista.",
+    "line3": "Rakenna.",
+    "tagline": "Maalaan, valokuvaan, kirjoitan ja rakennan. Kun uteliaisuus kohtaa taiteen ja koodin, syntyy kaikki tämä.",
+    "labelLeft": "Taiteilija",
+    "labelRight": "Kehittäjä"
+  },
+  "recentPosts": {
+    "label": "Viimeisimmät kirjoitukset",
+    "viewAll": "Näytä kaikki →"
+  },
+  "newsletterCta": {
+    "label": "Uutiskirje",
+    "headline": "Pysy uteliaana.",
+    "desc": "Ajatuksia taiteesta, elämästä ja asioiden rakentamisesta — suoraan sähköpostiisi."
+  },
+  "blogPage": {
+    "title": "Blogi"
+  },
+  "aboutPage": {
+    "tagline": "Taiteilija · Kirjoittaja · Kehittäjä",
+    "bioP1": "Olen luoja, ohjelmoija ja ajattelija. Rakastan asioiden rakentamista tyhjästä — olipa kyseessä maalaus, koodinpätkä tai syväluotaava essee.",
+    "bioP2": "Pitkään suurin este tälle intohimolle oli omat aivoni: minulla on ADHD. Kokeiltuani lähes jokaista markkinoilla olevaa tuottavuustyökalua tajusin, että ne kaikki oli suunniteltu neurotyypillisille mielille. Tarvitsin ”kumppanin” — jotain, joka ymmärtäisi minua ja voisi antaa lempeän tönäisyn juuri silloin, kun tarvitsen sitä eniten.",
+    "bioP3": "En löytänyt sellaista mistään. Joten päätin rakentaa sen itse — itselleni ja miljoonille muille, joilla on samanlaiset ”vilkkaat aivot” kuin minulla. Näin Dopamind syntyi.",
+    "sectionProjects": "Projektit",
+    "sectionNewsletter": "Uutiskirje",
+    "sectionArtworks": "Taideteokset",
+    "sectionReadMore": "Lue lisää",
+    "sectionFindMe": "Löydät minut muualta",
+    "projectDopamindDesc": "AI ADHD-valmentaja",
+    "projectPhiloArtDesc": "Digitaalinen taidegalleria",
+    "newsletterMediumDesc": "Esseet",
+    "artworksText": "Julkaisen taideteoksiani osoitteessa philoart.io/philo",
+    "artworksContactText": "Jos haluat ostaa alkuperäisiä maalauksia tai valokuvavedoksia, laita yksityisviesti X:ssä tai sähköpostia osoitteeseen philo.li.official@gmail.com",
+    "extraEmail": "Sähköposti"
+  },
+  "artPage": {
+    "title": "Taide"
+  },
+  "projectsPage": {
+    "title": "Projektit",
+    "openLink": "Avaa →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI-pohjainen ADHD-valmentaja. Auttaa ADHD-ihmisiä luomaan parempia tapoja ja pysymään keskittyneenä."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Henkilökohtainen taidegalleriani — valokuvausta, maalauksia ja digitaalista taidetta."
+      },
+      "ebookTranslator": {
+        "name": "Kaksikielinen e-kirjojen kääntäjä",
+        "description": "Muuta mikä tahansa EPUB kaksikieliseksi versioksi — toimii selaimessasi omalla LLM API key -avaimellasi.",
+        "cta": "Avaa työkalu →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Kieli",
+    "currentAria": "Nykyinen kieli"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Projekti",
+    "title": "Kaksikielinen e-kirjan kääntäjä",
+    "subtitle": "Lataa EPUB, käytä omaa LLM API key -avaintasi ja saat kaksikielisen version, jossa alkuperäinen ja käännetty teksti on sijoitettu lomittain kappale kerrallaan. Tiedosto käsitellään kokonaan selaimessasi — kirjasi ei koskaan päädy palvelimelle.",
+    "steps": {
+      "settings": "asetukset",
+      "upload": "lataa",
+      "browse": "selaa"
+    },
+    "actions": {
+      "cancelRunning": "Peruuta suoritus",
+      "translateAllRemaining": "Käännä kaikki loput",
+      "downloadEpub": "⬇ Lataa EPUB",
+      "building": "Rakennetaan…",
+      "back": "← Takaisin",
+      "settingsModel": "← Asetukset / malli",
+      "show": "Näytä",
+      "hide": "Piilota",
+      "cancel": "Peruuta",
+      "retranslate": "Käännä uudelleen",
+      "resume": "Jatka",
+      "translateChapter": "Käännä tämä luku",
+      "continue": "Jatka →"
+    },
+    "settings": {
+      "provider": "Tarjoaja",
+      "model": "Malli",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Liitä {provider}-avaimesi",
+      "apiKeyHint": "Hanki sellainen osoitteesta {link}. Avaimesi lähetetään vain palveluun {provider}, ei koskaan sivustolle philoli.com.",
+      "rememberKey": "Muista avain vain tässä selaimessa (localStorage). Poista valinta jaetuilla laitteilla.",
+      "showApiKey": "Näytä API key",
+      "hideApiKey": "Piilota API key",
+      "translateFrom": "Käännä kielestä",
+      "translateTo": "Käännä kielelle",
+      "tone": "Sävy",
+      "needApiKey": "Syötä API key jatkaaksesi."
+    },
+    "upload": {
+      "parsing": "Jäsennellään EPUB-tiedostoa…",
+      "dropTitle": "Pudota EPUB tähän",
+      "dropSubtitle": "tai valitse tiedosto klikkaamalla",
+      "noChapters": "Tästä EPUB-tiedostosta ei löytynyt luettavia lukuja."
+    },
+    "browse": {
+      "chapters": "Luvut",
+      "toneTitle": "Käännöksen sävy — vaikuttaa kirjoitustyyliin",
+      "paragraphCount": "{nodes} kappaletta · {translated} käännetty",
+      "errorOne": "{count} kappale epäonnistui. Voit yrittää kääntämistä uudelleen — jo käännetyt kappaleet ohitetaan.",
+      "errorMany": "{count} kappaletta epäonnistui. Voit yrittää kääntämistä uudelleen — jo käännetyt kappaleet ohitetaan.",
+      "noTranslatableText": "Tässä luvussa ei ole käännettävää tekstiä (kansi, alkusanat jne.).",
+      "translatingAria": "Käännetään",
+      "translatingLabel": "käännetään…",
+      "buildFailed": "EPUB-tiedoston luominen epäonnistui:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomaattinen",
+        "hint": "luonnollinen ja sujuva — useimmat kirjat"
+      },
+      "literary": {
+        "label": "Kirjallinen",
+        "hint": "romaanit ja kaunokirjallisuus"
+      },
+      "technical": {
+        "label": "Tekninen",
+        "hint": "ammatti- ja hakuteokset"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "halvin, nopea",
+      "higherQuality": "korkeampi laatu",
+      "bestQuality": "paras laatu",
+      "newestFast": "uusin, nopea",
+      "cheapest": "halvin",
+      "bestQualityStable": "paras laatu, vakaa",
+      "balanced": "tasapainoinen",
+      "freeTierFast": "ilmaisversio, nopea",
+      "flagshipCoding": "lippulaiva koodaukseen/agenttikäyttöön",
+      "longContext": "pitkä konteksti, vakaa",
+      "cheaper": "halvempi",
+      "latestLongContext": "viimeisin, 256K konteksti"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Valokuva",
+      "Painting": "Maalaus",
+      "Drawing": "Piirustus",
+      "Digital Art": "Digitaalinen taide"
+    }
+  },
+  "lightbox": {
+    "previous": "Edellinen",
+    "next": "Seuraava"
+  },
+  "social": {
+    "photography": "Valokuvaus",
+    "art": "Taide"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Buletin"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — Seniman, Penulis, Kreator",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Artikel tentang seni, filsafat, dan membangun sesuatu.",
+    "aboutTitle": "Tentang — Philo Li",
+    "aboutDescription": "Tentang Philo Li — seniman, penulis, dan pengembang.",
+    "artTitle": "Seni — Philo Li",
+    "artDescription": "Fotografi, lukisan, dan seni digital oleh Philo Li.",
+    "projectsTitle": "Proyek — Philo Li",
+    "projectsDescription": "Proyek oleh Philo Li.",
+    "newsletterTitle": "Buletin — Philo Li",
+    "newsletterDescription": "Berlangganan buletin Philo Li.",
+    "ebookTranslatorTitle": "Penerjemah Ebook Dwibahasa — Philo Li",
+    "ebookTranslatorDescription": "Unggah EPUB dan terjemahkan menjadi edisi dwibahasa dengan API key LLM Anda sendiri. Berjalan sepenuhnya di peramban Anda."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Seni",
+    "projects": "Proyek",
+    "newsletter": "Buletin",
+    "about": "Tentang",
+    "menuLabel": "Alihkan menu"
+  },
+  "theme": {
+    "dark": "Gelap",
+    "light": "Terang",
+    "toggleAria": "Ganti tema warna",
+    "toggleToLight": "Ganti ke mode terang",
+    "toggleToDark": "Ganti ke mode gelap"
+  },
+  "hero": {
+    "line1": "Berkarya.",
+    "line2": "Abadikan.",
+    "line3": "Bangun.",
+    "tagline": "Saya melukis, memotret, menulis, dan merakit karya. Inilah yang lahir saat rasa ingin tahu bersua dengan seni dan kode.",
+    "labelLeft": "Seniman",
+    "labelRight": "Pengembang"
+  },
+  "recentPosts": {
+    "label": "Tulisan Terbaru",
+    "viewAll": "Lihat semua →"
+  },
+  "newsletterCta": {
+    "label": "Buletin",
+    "headline": "Tetaplah penasaran.",
+    "desc": "Pemikiran tentang seni, kehidupan, dan membangun sesuatu — dikirim ke kotak masuk Anda."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Seniman · Penulis · Pengembang",
+    "bioP1": "Saya seorang kreator, pemrogram, dan pemikir. Saya senang membangun sesuatu dari nol — baik itu lukisan, baris kode, atau esai mendalam.",
+    "bioP2": "Sudah lama sekali, hambatan terbesar bagi gairah ini adalah otak saya sendiri: saya memiliki ADHD. Setelah mencoba hampir setiap alat produktivitas di pasar, saya menyadari semuanya dirancang untuk pikiran neurotipikal. Saya butuh seorang \"mitra\" — sesuatu yang memahami saya dan bisa memberi dorongan lembut tepat saat saya sangat membutuhkannya.",
+    "bioP3": "Saya tidak bisa menemukannya di mana pun. Jadi saya memutuskan untuk membangunnya sendiri — untuk saya, dan untuk jutaan orang lain dengan \"otak sibuk\" seperti milik saya. Begitulah Dopamind lahir.",
+    "sectionProjects": "Proyek",
+    "sectionNewsletter": "Buletin",
+    "sectionArtworks": "Karya Seni",
+    "sectionReadMore": "Baca Selengkapnya",
+    "sectionFindMe": "Temukan saya di tempat lain",
+    "projectDopamindDesc": "Pelatih ADHD AI",
+    "projectPhiloArtDesc": "Galeri Seni Digital",
+    "newsletterMediumDesc": "Esai",
+    "artworksText": "Saya mengunggah karya seni saya di philoart.io/philo",
+    "artworksContactText": "Untuk membeli lukisan asli atau cetakan fotografi, kirim DM di X atau email ke philo.li.official@gmail.com",
+    "extraEmail": "Email"
+  },
+  "artPage": {
+    "title": "Seni"
+  },
+  "projectsPage": {
+    "title": "Proyek",
+    "openLink": "Buka →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "Pelatih ADHD bertenaga AI. Membantu orang dengan ADHD membangun kebiasaan yang lebih baik dan tetap fokus."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Galeri seni pribadi saya — fotografi, lukisan, dan seni digital."
+      },
+      "ebookTranslator": {
+        "name": "Penerjemah Ebook Dwibahasa",
+        "description": "Ubah EPUB apa pun menjadi edisi dwibahasa — berjalan di peramban Anda dengan LLM API key Anda sendiri.",
+        "cta": "Buka alat →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Bahasa",
+    "currentAria": "Bahasa saat ini"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Proyek",
+    "title": "Penerjemah Ebook Dwibahasa",
+    "subtitle": "Unggah EPUB, gunakan API key LLM Anda sendiri, dan dapatkan edisi dwibahasa dengan teks asli dan terjemahan yang disisipkan paragraf demi paragraf. Berkas diproses sepenuhnya di peramban Anda — buku Anda tidak pernah menyentuh server mana pun.",
+    "steps": {
+      "settings": "pengaturan",
+      "upload": "unggah",
+      "browse": "telusuri"
+    },
+    "actions": {
+      "cancelRunning": "Batalkan proses",
+      "translateAllRemaining": "Terjemahkan semua yang tersisa",
+      "downloadEpub": "⬇ Unduh EPUB",
+      "building": "Membangun…",
+      "back": "← Kembali",
+      "settingsModel": "← Pengaturan / model",
+      "show": "Tampilkan",
+      "hide": "Sembunyikan",
+      "cancel": "Batal",
+      "retranslate": "Terjemahkan ulang",
+      "resume": "Lanjutkan",
+      "translateChapter": "Terjemahkan bab ini",
+      "continue": "Lanjutkan →"
+    },
+    "settings": {
+      "provider": "Penyedia",
+      "model": "Model",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Tempel kunci {provider} Anda",
+      "apiKeyHint": "Dapatkan di {link}. Kunci Anda hanya dikirim ke {provider}, tidak pernah ke philoli.com.",
+      "rememberKey": "Ingat kunci di peramban ini saja (localStorage). Hapus centang untuk perangkat bersama.",
+      "showApiKey": "Tampilkan API key",
+      "hideApiKey": "Sembunyikan API key",
+      "translateFrom": "Terjemahkan dari",
+      "translateTo": "Terjemahkan ke",
+      "tone": "Nada",
+      "needApiKey": "Masukkan API key untuk melanjutkan."
+    },
+    "upload": {
+      "parsing": "Mengurai EPUB…",
+      "dropTitle": "Letakkan EPUB di sini",
+      "dropSubtitle": "atau klik untuk memilih berkas",
+      "noChapters": "Tidak ada bab yang dapat dibaca ditemukan di EPUB ini."
+    },
+    "browse": {
+      "chapters": "Bab",
+      "toneTitle": "Nada terjemahan — memengaruhi gaya penulisan",
+      "paragraphCount": "{nodes} paragraf · {translated} diterjemahkan",
+      "errorOne": "{count} paragraf gagal. Anda dapat menerjemahkan ulang untuk mencoba lagi — paragraf yang sudah selesai akan dilewati.",
+      "errorMany": "{count} paragraf gagal. Anda dapat menerjemahkan ulang untuk mencoba lagi — paragraf yang sudah selesai akan dilewati.",
+      "noTranslatableText": "Bab ini tidak memiliki teks yang dapat diterjemahkan (sampul, bagian awal, dll).",
+      "translatingAria": "Menerjemahkan",
+      "translatingLabel": "menerjemahkan…",
+      "buildFailed": "Gagal membuat EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomatik",
+        "hint": "alami & lancar — sebagian besar buku"
+      },
+      "literary": {
+        "label": "Sastra",
+        "hint": "novel & karya sastra"
+      },
+      "technical": {
+        "label": "Teknis",
+        "hint": "buku profesional & referensi"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "termurah, cepat",
+      "higherQuality": "kualitas lebih tinggi",
+      "bestQuality": "kualitas terbaik",
+      "newestFast": "terbaru, cepat",
+      "cheapest": "termurah",
+      "bestQualityStable": "kualitas terbaik, stabil",
+      "balanced": "seimbang",
+      "freeTierFast": "tingkat gratis, cepat",
+      "flagshipCoding": "unggulan koding/agen",
+      "longContext": "konteks panjang, stabil",
+      "cheaper": "lebih murah",
+      "latestLongContext": "terbaru, konteks 256K"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Foto",
+      "Painting": "Lukisan",
+      "Drawing": "Gambar",
+      "Digital Art": "Seni Digital"
+    }
+  },
+  "lightbox": {
+    "previous": "Sebelumnya",
+    "next": "Berikutnya"
+  },
+  "social": {
+    "photography": "Fotografi",
+    "art": "Seni"
+  }
+}

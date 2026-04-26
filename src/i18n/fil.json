@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Sulat-balita"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — Artista, Manunulat, Tagalikha",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Mga artikulo tungkol sa sining, pilosopiya, at pagbuo ng mga bagay.",
+    "aboutTitle": "Tungkol sa — Philo Li",
+    "aboutDescription": "Tungkol kay Philo Li — artista, manunulat, at tagabuo.",
+    "artTitle": "Sining — Philo Li",
+    "artDescription": "Potograpiya, pagpipinta, at sining na digital ni Philo Li.",
+    "projectsTitle": "Mga Proyekto — Philo Li",
+    "projectsDescription": "Mga proyekto ni Philo Li.",
+    "newsletterTitle": "Newsletter — Philo Li",
+    "newsletterDescription": "Mag-subscribe sa mga newsletter ni Philo Li.",
+    "ebookTranslatorTitle": "Tagasalin ng Bilingual na Ebook — Philo Li",
+    "ebookTranslatorDescription": "Mag-upload ng EPUB at isalin ito sa isang bilingual na edisyon gamit ang sarili mong LLM API key. Gumagana nang buo sa iyong browser."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Sining",
+    "projects": "Mga Proyekto",
+    "newsletter": "Newsletter",
+    "about": "Tungkol",
+    "menuLabel": "I-toggle ang menu"
+  },
+  "theme": {
+    "dark": "Madilim",
+    "light": "Maliwanag",
+    "toggleAria": "Palitan ang tema ng kulay",
+    "toggleToLight": "Lumipat sa maliwanag na mode",
+    "toggleToDark": "Lumipat sa madilim na mode"
+  },
+  "hero": {
+    "line1": "Likhâ.",
+    "line2": "Sipat.",
+    "line3": "Panday.",
+    "tagline": "Nagpipinta, kumukuha ng retrato, nagsusulat, at nagpapanday. Sa pagtatagpo ng kuryosidad, sining, at koda—isinisilang ang lahat ng ito.",
+    "labelLeft": "Artista",
+    "labelRight": "Tagabuo"
+  },
+  "recentPosts": {
+    "label": "Mga Bagong Isinulat",
+    "viewAll": "Tingnan lahat →"
+  },
+  "newsletterCta": {
+    "label": "Sulat-balita",
+    "headline": "Manatiling mausisa.",
+    "desc": "Mga kaisipan tungkol sa sining, buhay, at pagbuo ng mga bagay — ipinapadala sa iyong inbox."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Artista · Manunulat · Tagadebelop",
+    "bioP1": "Isa akong tagalikha, tagaprograma, at palaisip. Mahilig akong bumuo ng mga bagay mula sa simula — ito man ay isang pinta, isang piraso ng code, o isang malalim na sanaysay.",
+    "bioP2": "Sa loob ng mahabang panahon, ang pinakamalaking hadlang sa hilig kong ito ay ang sarili kong utak: mayroon akong ADHD. Matapos subukan ang halos lahat ng kagamitan para sa pagiging produktibo sa merkado, napagtanto ko na ang lahat ng ito ay idinisenyo para sa isang neurotypical na isipan. Kailangan ko ng isang \"kasama\" — isang bagay na nakakaunawa sa akin at makakapagbigay ng banayad na paalala sa oras na kailangan ko ito nang husto.",
+    "bioP3": "Wala akong mahanap kahit saan. Kaya nagpasya akong buuin ito nang mag-isa — para sa akin, at para sa milyun-milyong iba pa na may \"abalang utak\" na katulad ng sa akin. Dito isinilang ang Dopamind.",
+    "sectionProjects": "Mga Proyekto",
+    "sectionNewsletter": "Sulat-balita",
+    "sectionArtworks": "Mga Obra",
+    "sectionReadMore": "Magbasa Pa",
+    "sectionFindMe": "Hanapin ako sa iba pang lugar",
+    "projectDopamindDesc": "AI ADHD Coach",
+    "projectPhiloArtDesc": "Galerya ng Digital na Sining",
+    "newsletterMediumDesc": "Mga Sanaysay",
+    "artworksText": "Ipinopost ko ang aking mga obra sa philoart.io/philo",
+    "artworksContactText": "Para bumili ng mga orihinal na pinta o mga print ng potograpiya, mag-DM sa X o mag-email sa philo.li.official@gmail.com",
+    "extraEmail": "Email"
+  },
+  "artPage": {
+    "title": "Sining"
+  },
+  "projectsPage": {
+    "title": "Mga Proyekto",
+    "openLink": "Buksan →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI-powered ADHD Coach. Tinutulungan ang mga taong may ADHD na bumuo ng mas mabuting gawi at manatiling nakapokus."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Ang aking personal na galerya ng sining — potograpiya, mga pinta, at digital na sining."
+      },
+      "ebookTranslator": {
+        "name": "Tagasalin ng Bilingguwal na Ebook",
+        "description": "Gawing bilingguwal na edisyon ang anumang EPUB — gumagana sa iyong browser gamit ang sarili mong LLM API key.",
+        "cta": "Buksan ang kasangkapan →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Wika",
+    "currentAria": "Kasalukuyang wika"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Proyekto",
+    "title": "Bilingguwal na Tagasalin ng Ebook",
+    "subtitle": "Mag-upload ng EPUB, gamitin ang sarili mong LLM API key, at kumuha ng bilingguwal na edisyon kung saan salit-salit ang orihinal at isinaling teksto sa bawat talata. Ang file ay sinusuri nang buo sa iyong browser — ang iyong libro ay hindi kailanman dadaan sa anumang server.",
+    "steps": {
+      "settings": "mga pagsasaayos",
+      "upload": "i-upload",
+      "browse": "mag-browse"
+    },
+    "actions": {
+      "cancelRunning": "Kanselahin ang pagtakbo",
+      "translateAllRemaining": "Isalin ang lahat ng natitira",
+      "downloadEpub": "⬇ I-download ang EPUB",
+      "building": "Binubuo…",
+      "back": "← Bumalik",
+      "settingsModel": "← Mga Pagsasaayos / modelo",
+      "show": "Ipakita",
+      "hide": "Itago",
+      "cancel": "Kanselahin",
+      "retranslate": "Isalin muli",
+      "resume": "Ipagpatuloy",
+      "translateChapter": "Isalin ang kabanatang ito",
+      "continue": "Magpatuloy →"
+    },
+    "settings": {
+      "provider": "Tagapagbigay",
+      "model": "Modelo",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "I-paste ang iyong {provider} key",
+      "apiKeyHint": "Kumuha sa {link}. Ang iyong key ay ipinapadala lamang sa {provider}, hindi kailanman sa philoli.com.",
+      "rememberKey": "Tandaan ang key sa browser na ito lamang (localStorage). Alisin ang tsek para sa mga nakabahaging aparato.",
+      "showApiKey": "Ipakita ang API key",
+      "hideApiKey": "Itago ang API key",
+      "translateFrom": "Isalin mula sa",
+      "translateTo": "Isalin sa",
+      "tone": "Tono",
+      "needApiKey": "Maglagay ng API key para magpatuloy."
+    },
+    "upload": {
+      "parsing": "Sinusuri ang EPUB…",
+      "dropTitle": "I-drop ang EPUB dito",
+      "dropSubtitle": "o i-click para pumili ng file",
+      "noChapters": "Walang nahanap na mababasang kabanata sa EPUB na ito."
+    },
+    "browse": {
+      "chapters": "Mga Kabanata",
+      "toneTitle": "Tono ng pagsasalin — nakakaapekto sa estilo ng pagsulat",
+      "paragraphCount": "{nodes} na talata · {translated} naisalin",
+      "errorOne": "{count} na talata ang nabigo. Maaari mong isalin muli para sumubok ulit — lalaktawan ang mga talatang tapos na.",
+      "errorMany": "{count} na mga talata ang nabigo. Maaari mong isalin muli para sumubok ulit — lalaktawan ang mga talatang tapos na.",
+      "noTranslatableText": "Ang kabanatang ito ay walang tekstong maisasalin (pabalat, paunang salita, atbp).",
+      "translatingAria": "Isinasalin",
+      "translatingLabel": "isinasalin…",
+      "buildFailed": "Bigo sa pagbuo ng EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idyomatiko",
+        "hint": "natural at matatas — karamihan ng mga libro"
+      },
+      "literary": {
+        "label": "Pampanitikan",
+        "hint": "mga nobela at akdang pampanitikan"
+      },
+      "technical": {
+        "label": "Teknikal",
+        "hint": "mga librong propesyonal at sanggunian"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "pinakamura, mabilis",
+      "higherQuality": "mas mataas na kalidad",
+      "bestQuality": "pinakamahusay na kalidad",
+      "newestFast": "pinakabago, mabilis",
+      "cheapest": "pinakamura",
+      "bestQualityStable": "pinakamahusay na kalidad, matatag",
+      "balanced": "balanse",
+      "freeTierFast": "libreng antas, mabilis",
+      "flagshipCoding": "pangunahing coding/agentic",
+      "longContext": "mahabang konteksto, matatag",
+      "cheaper": "mas mura",
+      "latestLongContext": "pinakabago, 256K na konteksto"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Litrato",
+      "Painting": "Pinta",
+      "Drawing": "Guhit",
+      "Digital Art": "Sining na Digital"
+    }
+  },
+  "lightbox": {
+    "previous": "Nakaraan",
+    "next": "Susunod"
+  },
+  "social": {
+    "photography": "Potograpiya",
+    "art": "Sining"
+  }
+}

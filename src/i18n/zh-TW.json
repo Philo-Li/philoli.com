@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "電子報"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — 藝術家、作家、創作者",
+    "blogTitle": "部落格 — Philo Li",
+    "blogDescription": "關於藝術、哲學與打造事物的文章。",
+    "aboutTitle": "關於 — Philo Li",
+    "aboutDescription": "關於 Philo Li — 藝術家、作家與開發者。",
+    "artTitle": "藝術 — Philo Li",
+    "artDescription": "Philo Li 的攝影、繪畫與數位藝術作品。",
+    "projectsTitle": "專案 — Philo Li",
+    "projectsDescription": "Philo Li 的專案作品。",
+    "newsletterTitle": "電子報 — Philo Li",
+    "newsletterDescription": "訂閱 Philo Li 的電子報。",
+    "ebookTranslatorTitle": "雙語電子書翻譯器 — Philo Li",
+    "ebookTranslatorDescription": "上傳 EPUB 檔案，並使用您自己的 LLM API key 翻譯成雙語版本。完全在您的瀏覽器中執行。"
+  },
+  "nav": {
+    "blog": "部落格",
+    "art": "藝術",
+    "projects": "專案",
+    "newsletter": "電子報",
+    "about": "關於",
+    "menuLabel": "切換選單"
+  },
+  "theme": {
+    "dark": "深色",
+    "light": "淺色",
+    "toggleAria": "切換色彩主題",
+    "toggleToLight": "切換至淺色模式",
+    "toggleToDark": "切換至深色模式"
+  },
+  "hero": {
+    "line1": "創作。",
+    "line2": "捕捉。",
+    "line3": "建造。",
+    "tagline": "我繪畫、攝影、寫作，也親手造物。當好奇心遇上藝術與代碼，便有了這一切",
+    "labelLeft": "藝術家",
+    "labelRight": "開發者"
+  },
+  "recentPosts": {
+    "label": "近期文章",
+    "viewAll": "查看全部 →"
+  },
+  "newsletterCta": {
+    "label": "電子報",
+    "headline": "保持好奇。",
+    "desc": "關於藝術、生活與創作的思考 —— 直接發送到您的收件匣。"
+  },
+  "blogPage": {
+    "title": "部落格"
+  },
+  "aboutPage": {
+    "tagline": "藝術家 · 作家 · 開發者",
+    "bioP1": "我是一位創作者、工程師與思考者。我熱愛從零開始創作 —— 無論是畫作、程式碼，還是深度長文。",
+    "bioP2": "長久以來，這份熱情最大的障礙源於我的大腦：我有 ADHD。在嘗試過市面上幾乎所有的生產力工具後，我意識到它們都是為神經典型大腦設計的。我需要一個「夥伴」 —— 一個能理解我，並在最需要的時刻輕輕推我一把的存在。",
+    "bioP3": "我遍尋不獲，於是決定親手打造一個 —— 為了我自己，也為了數百萬像我一樣擁有「忙碌大腦」的人。這就是 Dopamind 的誕生由來。",
+    "sectionProjects": "專案",
+    "sectionNewsletter": "電子報",
+    "sectionArtworks": "藝術作品",
+    "sectionReadMore": "閱讀更多",
+    "sectionFindMe": "在其他地方找到我",
+    "projectDopamindDesc": "AI ADHD 教練",
+    "projectPhiloArtDesc": "數位藝術畫廊",
+    "newsletterMediumDesc": "隨筆",
+    "artworksText": "我在 philoart.io/philo 發布我的藝術作品",
+    "artworksContactText": "如欲購買原畫或攝影沖印，請在 X 上私訊或寄信至 philo.li.official@gmail.com",
+    "extraEmail": "電子郵件"
+  },
+  "artPage": {
+    "title": "藝術"
+  },
+  "projectsPage": {
+    "title": "專案",
+    "openLink": "開啟 →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI 驅動的 ADHD 教練。幫助 ADHD 患者建立更好的習慣並保持專注。"
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "我的個人藝術畫廊 —— 攝影、繪畫與數位藝術。"
+      },
+      "ebookTranslator": {
+        "name": "雙語電子書翻譯工具",
+        "description": "將任何 EPUB 轉換為雙語版本 —— 在瀏覽器中運行，使用您自己的 LLM API key。",
+        "cta": "開啟工具 →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "語言",
+    "currentAria": "目前語言"
+  },
+  "ebookTranslator": {
+    "eyebrow": "專案",
+    "title": "雙語電子書翻譯器",
+    "subtitle": "上傳 EPUB 檔案，使用您自己的 LLM API key，即可獲得原文與譯文逐段對照的雙語版本。檔案完全在您的瀏覽器中解析 — 您的書籍絕不會傳送到任何伺服器。",
+    "steps": {
+      "settings": "設定",
+      "upload": "上傳",
+      "browse": "瀏覽"
+    },
+    "actions": {
+      "cancelRunning": "取消執行",
+      "translateAllRemaining": "翻譯其餘全部",
+      "downloadEpub": "⬇ 下載 EPUB",
+      "building": "建置中…",
+      "back": "← 返回",
+      "settingsModel": "← 設定 / 模型",
+      "show": "顯示",
+      "hide": "隱藏",
+      "cancel": "取消",
+      "retranslate": "重新翻譯",
+      "resume": "繼續",
+      "translateChapter": "翻譯此章節",
+      "continue": "繼續 →"
+    },
+    "settings": {
+      "provider": "供應商",
+      "model": "模型",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "貼上您的 {provider} 金鑰",
+      "apiKeyHint": "前往 {link} 取得。您的金鑰僅會傳送至 {provider}，絕不會傳送至 philoli.com。",
+      "rememberKey": "僅在此瀏覽器中記住金鑰 (localStorage)。若使用共用裝置請取消勾選。",
+      "showApiKey": "顯示 API key",
+      "hideApiKey": "隱藏 API key",
+      "translateFrom": "翻譯自",
+      "translateTo": "翻譯為",
+      "tone": "語氣",
+      "needApiKey": "請輸入 API key 以繼續。"
+    },
+    "upload": {
+      "parsing": "正在解析 EPUB…",
+      "dropTitle": "將 EPUB 檔案拖放至此",
+      "dropSubtitle": "或點擊選擇檔案",
+      "noChapters": "此 EPUB 中未找到可讀取的章節。"
+    },
+    "browse": {
+      "chapters": "章節",
+      "toneTitle": "翻譯語氣 — 影響寫作風格",
+      "paragraphCount": "{nodes} 個段落 · {translated} 已翻譯",
+      "errorOne": "{count} 個段落失敗。您可以重新翻譯以重試 — 已完成的段落將被跳過。",
+      "errorMany": "{count} 個段落失敗。您可以重新翻譯以重試 — 已完成的段落將被跳過。",
+      "noTranslatableText": "此章節沒有可翻譯的文字（封面、前言等）。",
+      "translatingAria": "翻譯中",
+      "translatingLabel": "翻譯中…",
+      "buildFailed": "無法建立 EPUB："
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "地道",
+        "hint": "自然流暢 — 多數書籍"
+      },
+      "literary": {
+        "label": "文學",
+        "hint": "小說與文學作品"
+      },
+      "technical": {
+        "label": "專業",
+        "hint": "專業與參考書籍"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "最便宜、快速",
+      "higherQuality": "品質較高",
+      "bestQuality": "品質最佳",
+      "newestFast": "最新、快速",
+      "cheapest": "最便宜",
+      "bestQualityStable": "品質最佳、穩定",
+      "balanced": "平衡",
+      "freeTierFast": "免費版，快速",
+      "flagshipCoding": "旗艦級程式碼/代理",
+      "longContext": "長上下文，穩定",
+      "cheaper": "更便宜",
+      "latestLongContext": "最新，256K 上下文"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "攝影",
+      "Painting": "繪畫",
+      "Drawing": "素描",
+      "Digital Art": "數位藝術"
+    }
+  },
+  "lightbox": {
+    "previous": "上一個",
+    "next": "下一個"
+  },
+  "social": {
+    "photography": "攝影",
+    "art": "藝術"
+  }
+}

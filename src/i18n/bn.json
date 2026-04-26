@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "নিউজলেটার"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — শিল্পী, লেখক, নির্মাতা",
+    "blogTitle": "ব্লগ — Philo Li",
+    "blogDescription": "শিল্প, দর্শন এবং নতুন কিছু তৈরির ওপর নিবন্ধ।",
+    "aboutTitle": "সম্পর্কে — Philo Li",
+    "aboutDescription": "Philo Li সম্পর্কে — শিল্পী, লেখক এবং ডেভেলপার।",
+    "artTitle": "শিল্প — Philo Li",
+    "artDescription": "Philo Li-এর ফটোগ্রাফি, চিত্রকর্ম এবং ডিজিটাল শিল্প।",
+    "projectsTitle": "প্রজেক্ট — Philo Li",
+    "projectsDescription": "Philo Li-এর প্রজেক্টসমূহ।",
+    "newsletterTitle": "নিউজলেটার — Philo Li",
+    "newsletterDescription": "Philo Li-এর নিউজলেটারে সাবস্ক্রাইব করুন।",
+    "ebookTranslatorTitle": "দ্বিভাষিক ই-বুক অনুবাদক — Philo Li",
+    "ebookTranslatorDescription": "একটি EPUB আপলোড করুন এবং আপনার নিজস্ব LLM API key ব্যবহার করে এটিকে একটি দ্বিভাষিক সংস্করণে অনুবাদ করুন। এটি সম্পূর্ণভাবে আপনার ব্রাউজারে চলে।"
+  },
+  "nav": {
+    "blog": "ব্লগ",
+    "art": "শিল্প",
+    "projects": "প্রজেক্ট",
+    "newsletter": "নিউজলেটার",
+    "about": "সম্পর্কে",
+    "menuLabel": "মেনু টগল করুন"
+  },
+  "theme": {
+    "dark": "ডার্ক",
+    "light": "লাইট",
+    "toggleAria": "কালার থিম পরিবর্তন করুন",
+    "toggleToLight": "লাইট মোডে পরিবর্তন করুন",
+    "toggleToDark": "ডার্ক মোডে পরিবর্তন করুন"
+  },
+  "hero": {
+    "line1": "সৃজন।",
+    "line2": "ধারণ।",
+    "line3": "নির্মাণ।",
+    "tagline": "আমি আঁকি, ছবি তুলি, লিখি আর গড়ি। কৌতূহল যখন শিল্প আর কোডের মেলবন্ধন ঘটায়, তখনই জন্ম নেয় এই সব কিছু।",
+    "labelLeft": "শিল্পী",
+    "labelRight": "ডেভেলপার"
+  },
+  "recentPosts": {
+    "label": "সাম্প্রতিক লেখা",
+    "viewAll": "সব দেখুন →"
+  },
+  "newsletterCta": {
+    "label": "নিউজলেটার",
+    "headline": "কৌতূহলী থাকুন।",
+    "desc": "শিল্প, জীবন এবং নতুন কিছু গড়ার ভাবনা — সরাসরি আপনার ইনবক্সে।"
+  },
+  "blogPage": {
+    "title": "ব্লগ"
+  },
+  "aboutPage": {
+    "tagline": "শিল্পী · লেখক · ডেভেলপার",
+    "bioP1": "আমি একজন স্রষ্টা, প্রোগ্রামার এবং চিন্তক। আমি একদম শুরু থেকে কিছু তৈরি করতে ভালোবাসি — তা হোক কোনো চিত্রকর্ম, কোড বা কোনো গভীর প্রবন্ধ।",
+    "bioP2": "দীর্ঘ সময় ধরে, এই প্যাশনের পথে সবচেয়ে বড় বাধা ছিল আমার নিজের মস্তিষ্ক: আমার ADHD আছে। বাজারের প্রায় সব প্রোডাক্টিভিটি টুল ব্যবহার করে দেখার পর আমি বুঝতে পারলাম যে সেগুলো সবই নিউরোটিপিক্যাল মস্তিষ্কের জন্য তৈরি। আমার এমন একজন \"সঙ্গী\" প্রয়োজন ছিল — যে আমাকে বুঝবে এবং যখন সবচেয়ে বেশি প্রয়োজন তখন আলতো করে মনে করিয়ে দেবে।",
+    "bioP3": "আমি এটি কোথাও খুঁজে পাইনি। তাই আমি নিজেই এটি তৈরি করার সিদ্ধান্ত নিয়েছি — আমার জন্য এবং আমার মতো আরও লক্ষ লক্ষ \"ব্যস্ত মস্তিষ্কের\" মানুষের জন্য। এভাবেই Dopamind-এর জন্ম।",
+    "sectionProjects": "প্রজেক্টসমূহ",
+    "sectionNewsletter": "নিউজলেটার",
+    "sectionArtworks": "শিল্পকর্ম",
+    "sectionReadMore": "আরও পড়ুন",
+    "sectionFindMe": "আমাকে অন্য কোথাও খুঁজুন",
+    "projectDopamindDesc": "AI ADHD কোচ",
+    "projectPhiloArtDesc": "ডিজিটাল আর্ট গ্যালারি",
+    "newsletterMediumDesc": "প্রবন্ধ",
+    "artworksText": "আমি আমার শিল্পকর্মগুলো philoart.io/philo-তে পোস্ট করি",
+    "artworksContactText": "মূল চিত্রকর্ম বা ফটোগ্রাফি প্রিন্ট কিনতে, X-এ DM করুন অথবা philo.li.official@gmail.com-এ ইমেল করুন",
+    "extraEmail": "ইমেল"
+  },
+  "artPage": {
+    "title": "শিল্প"
+  },
+  "projectsPage": {
+    "title": "প্রজেক্টসমূহ",
+    "openLink": "খুলুন →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "AI-চালিত ADHD কোচ। ADHD আক্রান্ত ব্যক্তিদের ভালো অভ্যাস গড়ে তুলতে এবং মনোযোগ ধরে রাখতে সাহায্য করে।"
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "আমার ব্যক্তিগত আর্ট গ্যালারি — ফটোগ্রাফি, চিত্রকর্ম এবং ডিজিটাল আর্ট।"
+      },
+      "ebookTranslator": {
+        "name": "দ্বিভাষিক ই-বুক অনুবাদক",
+        "description": "যেকোনো EPUB-কে দ্বিভাষিক সংস্করণে রূপান্তর করুন — আপনার নিজের LLM API key ব্যবহার করে ব্রাউজারেই চলবে।",
+        "cta": "টুল খুলুন →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "ভাষা",
+    "currentAria": "বর্তমান ভাষা"
+  },
+  "ebookTranslator": {
+    "eyebrow": "প্রজেক্ট",
+    "title": "দ্বিভাষিক ই-বুক অনুবাদক",
+    "subtitle": "একটি EPUB আপলোড করুন, আপনার নিজস্ব LLM API key ব্যবহার করুন, এবং মূল ও অনূদিত লেখা অনুচ্ছেদ অনুযায়ী সাজানো একটি দ্বিভাষিক সংস্করণ পান। ফাইলটি সম্পূর্ণভাবে আপনার ব্রাউজারে পার্স করা হয় — আপনার বইটি কোনো সার্ভারে যায় না।",
+    "steps": {
+      "settings": "সেটিংস",
+      "upload": "আপলোড",
+      "browse": "ব্রাউজ"
+    },
+    "actions": {
+      "cancelRunning": "চলমান কাজ বাতিল করুন",
+      "translateAllRemaining": "বাকি সব অনুবাদ করুন",
+      "downloadEpub": "⬇ EPUB ডাউনলোড করুন",
+      "building": "তৈরি হচ্ছে…",
+      "back": "← ফিরে যান",
+      "settingsModel": "← সেটিংস / মডেল",
+      "show": "দেখান",
+      "hide": "লুকান",
+      "cancel": "বাতিল",
+      "retranslate": "পুনরায় অনুবাদ করুন",
+      "resume": "পুনরায় শুরু করুন",
+      "translateChapter": "এই অধ্যায়টি অনুবাদ করুন",
+      "continue": "চালিয়ে যান →"
+    },
+    "settings": {
+      "provider": "প্রোভাইডার",
+      "model": "মডেল",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "আপনার {provider} কী পেস্ট করুন",
+      "apiKeyHint": "{link} থেকে একটি সংগ্রহ করুন। আপনার কী শুধুমাত্র {provider}-এ পাঠানো হয়, কখনোই philoli.com-এ নয়।",
+      "rememberKey": "শুধুমাত্র এই ব্রাউজারে কী মনে রাখুন (localStorage)। শেয়ার করা ডিভাইসের জন্য টিক চিহ্ন সরিয়ে দিন।",
+      "showApiKey": "API key দেখান",
+      "hideApiKey": "API key লুকান",
+      "translateFrom": "থেকে অনুবাদ করুন",
+      "translateTo": "তে অনুবাদ করুন",
+      "tone": "ভঙ্গি",
+      "needApiKey": "চালিয়ে যেতে একটি API key লিখুন।"
+    },
+    "upload": {
+      "parsing": "EPUB পার্স করা হচ্ছে…",
+      "dropTitle": "এখানে একটি EPUB ড্রপ করুন",
+      "dropSubtitle": "অথবা ফাইল বেছে নিতে ক্লিক করুন",
+      "noChapters": "এই EPUB-এ কোনো পাঠযোগ্য অধ্যায় পাওয়া যায়নি।"
+    },
+    "browse": {
+      "chapters": "অধ্যায়সমূহ",
+      "toneTitle": "অনুবাদের ভঙ্গি — লেখার শৈলীকে প্রভাবিত করে",
+      "paragraphCount": "{nodes}টি অনুচ্ছেদ · {translated}টি অনূদিত",
+      "errorOne": "{count}টি অনুচ্ছেদ ব্যর্থ হয়েছে। পুনরায় চেষ্টা করতে আবার অনুবাদ করতে পারেন — ইতিমধ্যে সম্পন্ন অনুচ্ছেদগুলো এড়িয়ে যাওয়া হবে।",
+      "errorMany": "{count}টি অনুচ্ছেদ ব্যর্থ হয়েছে। পুনরায় চেষ্টা করতে আবার অনুবাদ করতে পারেন — ইতিমধ্যে সম্পন্ন অনুচ্ছেদগুলো এড়িয়ে যাওয়া হবে।",
+      "noTranslatableText": "এই অধ্যায়ে কোনো অনুবাদযোগ্য টেক্সট নেই (কভার, শুরুর অংশ ইত্যাদি)।",
+      "translatingAria": "অনুবাদ করা হচ্ছে",
+      "translatingLabel": "অনুবাদ করা হচ্ছে…",
+      "buildFailed": "EPUB তৈরি করতে ব্যর্থ হয়েছে:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "সাবলীল",
+        "hint": "প্রাকৃতিক ও সাবলীল — বেশিরভাগ বইয়ের জন্য"
+      },
+      "literary": {
+        "label": "সাহিত্যিক",
+        "hint": "উপন্যাস ও সাহিত্যকর্ম"
+      },
+      "technical": {
+        "label": "প্রযুক্তিগত",
+        "hint": "পেশাদার ও তথ্যসূত্রমূলক বই"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "সবচেয়ে সস্তা, দ্রুত",
+      "higherQuality": "উচ্চতর মান",
+      "bestQuality": "সেরা মান",
+      "newestFast": "নতুনতম, দ্রুত",
+      "cheapest": "সবচেয়ে সস্তা",
+      "bestQualityStable": "সেরা মান, স্থিতিশীল",
+      "balanced": "ভারসাম্যপূর্ণ",
+      "freeTierFast": "ফ্রি টিয়ার, দ্রুত",
+      "flagshipCoding": "ফ্ল্যাগশিপ কোডিং/এজেন্টিক",
+      "longContext": "দীর্ঘ কনটেক্সট, স্থিতিশীল",
+      "cheaper": "সাশ্রয়ী",
+      "latestLongContext": "সর্বশেষ, 256K কনটেক্সট"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "আলোকচিত্র",
+      "Painting": "চিত্রকর্ম",
+      "Drawing": "অঙ্কন",
+      "Digital Art": "ডিজিটাল আর্ট"
+    }
+  },
+  "lightbox": {
+    "previous": "পূর্ববর্তী",
+    "next": "পরবর্তী"
+  },
+  "social": {
+    "photography": "ফটোগ্রাফি",
+    "art": "শিল্প"
+  }
+}

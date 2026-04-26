@@ -1,0 +1,210 @@
+{
+  "newsletterPage": {
+    "shuo": {
+      "name": "Philo 说会儿",
+      "lang": "中文",
+      "desc": "关于艺术、生活、投资和创造的思考。每月 1-3 篇深度文章。",
+      "subscribe": "Subscribe →"
+    },
+    "reflections": {
+      "name": "Reflections",
+      "lang": "English",
+      "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
+      "subscribe": "Subscribe →"
+    },
+    "title": "Zpravodaj"
+  },
+  "metadata": {
+    "siteTitle": "Philo Li — umělec, spisovatel, tvůrce",
+    "blogTitle": "Blog — Philo Li",
+    "blogDescription": "Články o umění, filozofii a stavění věcí.",
+    "aboutTitle": "O mně — Philo Li",
+    "aboutDescription": "O Philo Li — umělci, spisovateli a vývojáři.",
+    "artTitle": "Umění — Philo Li",
+    "artDescription": "Fotografie, malba a digitální umění od Philo Li.",
+    "projectsTitle": "Projekty — Philo Li",
+    "projectsDescription": "Projekty od Philo Li.",
+    "newsletterTitle": "Newsletter — Philo Li",
+    "newsletterDescription": "Přihlaste se k odběru newsletterů Philo Li.",
+    "ebookTranslatorTitle": "Překladač bilingvních e-knih — Philo Li",
+    "ebookTranslatorDescription": "Nahrajte EPUB a přeložte jej do bilingvního vydání pomocí vlastního LLM API key. Běží zcela ve vašem prohlížeči."
+  },
+  "nav": {
+    "blog": "Blog",
+    "art": "Umění",
+    "projects": "Projekty",
+    "newsletter": "Newsletter",
+    "about": "O mně",
+    "menuLabel": "Přepnout menu"
+  },
+  "theme": {
+    "dark": "Tmavý",
+    "light": "Světlý",
+    "toggleAria": "Přepnout barevný motiv",
+    "toggleToLight": "Přepnout do světlého režimu",
+    "toggleToDark": "Přepnout do tmavého režimu"
+  },
+  "hero": {
+    "line1": "Tvořit.",
+    "line2": "Zachytit.",
+    "line3": "Budovat.",
+    "tagline": "Maluji, fotografuji, píšu a vlastníma rukama tvořím. Právě zde se zvědavost snoubí s řemeslem a kódem.",
+    "labelLeft": "Umělec",
+    "labelRight": "Vývojář"
+  },
+  "recentPosts": {
+    "label": "Nedávné texty",
+    "viewAll": "Zobrazit vše →"
+  },
+  "newsletterCta": {
+    "label": "Newsletter",
+    "headline": "Zůstaňte zvídaví.",
+    "desc": "Úvahy o umění, životě a tvoření věcí — přímo do vaší schránky."
+  },
+  "blogPage": {
+    "title": "Blog"
+  },
+  "aboutPage": {
+    "tagline": "Umělec · Spisovatel · Vývojář",
+    "bioP1": "Jsem tvůrce, programátor a myslitel. Rád tvořím věci od nuly — ať už je to obraz, kus kódu nebo hloubková esej.",
+    "bioP2": "Dlouhou dobu byl největší překážkou této vášně můj vlastní mozek: mám ADHD. Poté, co jsem vyzkoušel téměř každý nástroj na produktivitu na trhu, jsem si uvědomil, že všechny byly navrženy pro neurotypickou mysl. Potřeboval jsem „partnera“ — něco, co by mi rozumělo a dokázalo mě jemně postrčit přesně ve chvíli, kdy to nejvíc potřebuji.",
+    "bioP3": "Nikde jsem ho nemohl najít. Tak jsem se rozhodl, že si ho postavím sám — pro sebe a pro miliony dalších s „roztěkaným mozkem“, jako je ten můj. Tak se zrodil Dopamind.",
+    "sectionProjects": "Projekty",
+    "sectionNewsletter": "Newsletter",
+    "sectionArtworks": "Umělecká díla",
+    "sectionReadMore": "Číst dál",
+    "sectionFindMe": "Najdete mě i jinde",
+    "projectDopamindDesc": "AI ADHD kouč",
+    "projectPhiloArtDesc": "Digitální umělecká galerie",
+    "newsletterMediumDesc": "Eseje",
+    "artworksText": "Svá umělecká díla zveřejňuji na philoart.io/philo",
+    "artworksContactText": "Pro nákup originálních obrazů nebo fotografických tisků mi napište DM na X nebo e-mail na philo.li.official@gmail.com",
+    "extraEmail": "E-mail"
+  },
+  "artPage": {
+    "title": "Umění"
+  },
+  "projectsPage": {
+    "title": "Projekty",
+    "openLink": "Otevřít →",
+    "items": {
+      "dopamind": {
+        "name": "Dopamind",
+        "description": "ADHD kouč poháněný AI. Pomáhá lidem s ADHD budovat lepší návyky a udržet soustředění."
+      },
+      "philoart": {
+        "name": "PhiloArt",
+        "description": "Moje osobní umělecká galerie — fotografie, malby a digitální umění."
+      },
+      "ebookTranslator": {
+        "name": "Bilingvní překladač e-knih",
+        "description": "Proměňte jakýkoli EPUB v bilingvní vydání — běží ve vašem prohlížeči s vaším vlastním LLM API key.",
+        "cta": "Otevřít nástroj →"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Jazyk",
+    "currentAria": "Aktuální jazyk"
+  },
+  "ebookTranslator": {
+    "eyebrow": "Projekt",
+    "title": "Bilingvální překladač e-knih",
+    "subtitle": "Nahrajte EPUB, použijte vlastní LLM API key a získejte bilingvální vydání s originálním a přeloženým textem proloženým odstavec po odstavci. Soubor je zpracován kompletně ve vašem prohlížeči — vaše kniha se nikdy nedostane na žádný server.",
+    "steps": {
+      "settings": "nastavení",
+      "upload": "nahrát",
+      "browse": "procházet"
+    },
+    "actions": {
+      "cancelRunning": "Zrušit probíhající",
+      "translateAllRemaining": "Přeložit vše zbývající",
+      "downloadEpub": "⬇ Stáhnout EPUB",
+      "building": "Sestavování…",
+      "back": "← Zpět",
+      "settingsModel": "← Nastavení / model",
+      "show": "Zobrazit",
+      "hide": "Skrýt",
+      "cancel": "Zrušit",
+      "retranslate": "Přeložit znovu",
+      "resume": "Pokračovat",
+      "translateChapter": "Přeložit tuto kapitolu",
+      "continue": "Pokračovat →"
+    },
+    "settings": {
+      "provider": "Poskytovatel",
+      "model": "Model",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Vložte svůj klíč pro {provider}",
+      "apiKeyHint": "Získejte jej na {link}. Váš klíč je odesílán pouze poskytovateli {provider}, nikdy na philoli.com.",
+      "rememberKey": "Zapamatovat si klíč pouze v tomto prohlížeči (localStorage). Pro sdílená zařízení odškrtněte.",
+      "showApiKey": "Zobrazit API key",
+      "hideApiKey": "Skrýt API key",
+      "translateFrom": "Přeložit z",
+      "translateTo": "Přeložit do",
+      "tone": "Tón",
+      "needApiKey": "Zadejte API key pro pokračování."
+    },
+    "upload": {
+      "parsing": "Zpracování EPUB…",
+      "dropTitle": "Sem přetáhněte EPUB",
+      "dropSubtitle": "nebo klikněte pro výběr souboru",
+      "noChapters": "V tomto EPUB nebyly nalezeny žádné čitelné kapitoly."
+    },
+    "browse": {
+      "chapters": "Kapitoly",
+      "toneTitle": "Tón překladu — ovlivňuje styl psaní",
+      "paragraphCount": "{nodes} odstavců · {translated} přeloženo",
+      "errorOne": "{count} odstavec selhal. Můžete zkusit překlad znovu — již hotové odstavce budou přeskočeny.",
+      "errorMany": "{count} odstavců selhalo. Můžete zkusit překlad znovu — již hotové odstavce budou přeskočeny.",
+      "noTranslatableText": "Tato kapitola neobsahuje žádný text k překladu (obálka, úvodní informace atd.).",
+      "translatingAria": "Překládání",
+      "translatingLabel": "překládání…",
+      "buildFailed": "Nepodařilo se vytvořit EPUB:"
+    },
+    "tones": {
+      "idiomatic": {
+        "label": "Idiomatický",
+        "hint": "přirozený a plynulý — většina knih"
+      },
+      "literary": {
+        "label": "Literární",
+        "hint": "romány a literární díla"
+      },
+      "technical": {
+        "label": "Technický",
+        "hint": "odborné a referenční knihy"
+      }
+    },
+    "modelHints": {
+      "cheapestFast": "nejlevnější, rychlý",
+      "higherQuality": "vyšší kvalita",
+      "bestQuality": "nejlepší kvalita",
+      "newestFast": "nejnovější, rychlý",
+      "cheapest": "nejlevnější",
+      "bestQualityStable": "nejlepší kvalita, stabilní",
+      "balanced": "vyvážený",
+      "freeTierFast": "bezplatná verze, rychlá",
+      "flagshipCoding": "vlajková loď pro kódování/agenty",
+      "longContext": "dlouhý kontext, stabilní",
+      "cheaper": "levnější",
+      "latestLongContext": "nejnovější, 256K kontext"
+    }
+  },
+  "gallery": {
+    "filters": {
+      "Photograph": "Fotografie",
+      "Painting": "Malba",
+      "Drawing": "Kresba",
+      "Digital Art": "Digitální umění"
+    }
+  },
+  "lightbox": {
+    "previous": "Předchozí",
+    "next": "Další"
+  },
+  "social": {
+    "photography": "Fotografie",
+    "art": "Umění"
+  }
+}
