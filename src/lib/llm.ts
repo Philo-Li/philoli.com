@@ -5,7 +5,8 @@ export type ProviderId =
   | 'deepseek'
   | 'qwen'
   | 'glm'
-  | 'kimi';
+  | 'kimi'
+  | 'custom';
 
 export interface ModelOption {
   id: string;
@@ -112,7 +113,18 @@ export const PROVIDERS: ProviderConfig[] = [
   },
 ];
 
+/** Sentinel config for "Custom (OpenAI-compatible)". */
+const CUSTOM_PROVIDER: ProviderConfig = {
+  id: 'custom',
+  label: 'Custom (OpenAI-compatible)',
+  api: 'openai-compat',
+  keyHelp: '',
+  endpoint: '',          // filled at call-time from user input
+  models: [{ id: 'custom', label: 'custom' }],
+};
+
 export function findProvider(id: ProviderId): ProviderConfig {
+  if (id === 'custom') return CUSTOM_PROVIDER;
   const p = PROVIDERS.find(x => x.id === id);
   if (!p) throw new Error(`Unknown provider: ${id}`);
   return p;
@@ -176,6 +188,8 @@ export interface TranslateOptions {
   /** One of TONES[].id; defaults to 'literary' if missing/unknown. */
   tone?: string;
   signal?: AbortSignal;
+  /** Override endpoint URL — used by the "custom" provider. */
+  customEndpoint?: string;
 }
 
 const SYSTEM_PROMPT = (sourceLang: string, targetLang: string, toneId: string | undefined) => {
@@ -313,9 +327,11 @@ export async function translateBatch(
   if (passages.length === 0) return [];
   const cfg = findProvider(opts.provider);
   switch (cfg.api) {
-    case 'openai-compat':
-      if (!cfg.endpoint) throw new Error(`${cfg.label} missing endpoint config`);
-      return callOpenAICompat(passages, opts, cfg.endpoint, cfg.label);
+    case 'openai-compat': {
+      const endpoint = opts.provider === 'custom' ? opts.customEndpoint : cfg.endpoint;
+      if (!endpoint) throw new Error(`${cfg.label} missing endpoint config`);
+      return callOpenAICompat(passages, opts, endpoint, cfg.label);
+    }
     case 'anthropic':
       return callAnthropic(passages, opts);
     case 'gemini':
