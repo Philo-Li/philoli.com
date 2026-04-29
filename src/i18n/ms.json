@@ -146,10 +146,11 @@
       "tone": "Nada",
       "customProvider": "Tersuai (Serasi OpenAI)",
       "customModel": "ID Model",
-      "customModelPlaceholder": "cth. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "Titik Akhir API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "URL Penuh ke titik akhir /chat/completions yang serasi dengan OpenAI.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "Masukkan API key untuk teruskan."
     },
     "upload": {

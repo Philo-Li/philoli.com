@@ -146,10 +146,11 @@
       "tone": "Hangnem",
       "customProvider": "Egyéni (OpenAI-kompatibilis)",
       "customModel": "Modell ID",
-      "customModelPlaceholder": "pl. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API végpont",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Teljes URL egy OpenAI-kompatibilis /chat/completions végponthoz.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "A folytatáshoz adj meg egy API key-t."
     },
     "upload": {

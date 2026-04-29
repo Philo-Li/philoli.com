@@ -146,10 +146,11 @@
       "tone": "Ton",
       "customProvider": "Prilagođeno (kompatibilno s OpenAI-jem)",
       "customModel": "ID modela",
-      "customModelPlaceholder": "npr. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API krajnja točka",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Puni URL do krajnje točke /chat/completions kompatibilne s OpenAI-jem.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "Unesite API key za nastavak."
     },
     "upload": {

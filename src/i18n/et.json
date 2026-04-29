@@ -146,10 +146,11 @@
       "tone": "Toon",
       "customProvider": "Kohandatud (OpenAI-ga ühilduv)",
       "customModel": "Mudeli ID",
-      "customModelPlaceholder": "nt gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API lõpp-punkt",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Täielik URL OpenAI-ga ühilduva /chat/completions lõpp-punkti juurde.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "Jätkamiseks sisesta API võti."
     },
     "upload": {

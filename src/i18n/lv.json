@@ -146,10 +146,11 @@
       "tone": "Tonis",
       "customProvider": "Pielāgots (OpenAI saderīgs)",
       "customModel": "Modeļa ID",
-      "customModelPlaceholder": "piem. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API Gala punkts",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Pilns URL uz OpenAI saderīgu /chat/completions gala punktu.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "Ievadiet API key, lai turpinātu."
     },
     "upload": {

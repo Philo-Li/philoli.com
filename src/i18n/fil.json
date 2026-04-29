@@ -146,10 +146,11 @@
       "tone": "Tono",
       "customProvider": "Pasadyang (OpenAI-compatible)",
       "customModel": "Model ID",
-      "customModelPlaceholder": "hal. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API Endpoint",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Buong URL sa isang OpenAI-compatible na /chat/completions endpoint.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "Maglagay ng API key para magpatuloy."
     },
     "upload": {

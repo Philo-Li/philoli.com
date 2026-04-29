@@ -62,6 +62,9 @@ const LANG_OPTIONS = LOCALES.map(code => ({
 }));
 const VALID_LANG_VALUES = new Set(LANG_OPTIONS.map(o => o.value));
 
+/** Providers where the user types a free-text model ID instead of picking from a dropdown. */
+const FREE_MODEL_PROVIDERS = new Set<ProviderId>(['custom', 'openrouter']);
+
 const STORAGE_PREFIX = 'bilingual-translator/';
 // Within one chapter (only matters for very long chapters that get split into
 // multiple parts) — sequential keeps coherence between consecutive parts.
@@ -241,7 +244,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
           slice.map(b =>
             translateBatch(b.map(p => p.text), {
               provider: settings.provider,
-              model: settings.provider === 'custom' ? settings.customModel : settings.model,
+              model: FREE_MODEL_PROVIDERS.has(settings.provider) ? settings.customModel : settings.model,
               apiKey: settings.apiKey,
               sourceLang: settings.sourceLang,
               targetLang: settings.targetLang,
@@ -339,7 +342,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     try {
       const result = await translateBatch([original], {
         provider: settings.provider,
-        model: settings.provider === 'custom' ? settings.customModel : settings.model,
+        model: FREE_MODEL_PROVIDERS.has(settings.provider) ? settings.customModel : settings.model,
         apiKey: settings.apiKey,
         sourceLang: settings.sourceLang,
         targetLang: settings.targetLang,
@@ -382,7 +385,8 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   }
 
   const canStart = settings.apiKey.trim().length > 0
-    && (settings.provider !== 'custom' || (settings.customEndpoint.trim().length > 0 && settings.customModel.trim().length > 0));
+    && (settings.provider !== 'custom' || (settings.customEndpoint.trim().length > 0 && settings.customModel.trim().length > 0))
+    && (settings.provider !== 'openrouter' || settings.customModel.trim().length > 0);
   const totalNodes = parsed?.chapters.reduce((s, c) => s + c.nodes.length, 0) ?? 0;
   const translatedNodes = useMemo(() => {
     let n = 0;
@@ -654,14 +658,16 @@ function SettingsPanel({
             <option value="custom">{t('ebookTranslator.settings.customProvider')}</option>
           </select>
         </div>
-        {settings.provider === 'custom' ? (
+        {FREE_MODEL_PROVIDERS.has(settings.provider) ? (
           <div className="bt__field">
             <label className="bt__label">{t('ebookTranslator.settings.customModel')}</label>
             <input
               className="bt__input"
               type="text"
               value={settings.customModel}
-              placeholder={t('ebookTranslator.settings.customModelPlaceholder')}
+              placeholder={settings.provider === 'openrouter'
+                ? t('ebookTranslator.settings.openrouterModelPlaceholder')
+                : t('ebookTranslator.settings.customModelPlaceholder')}
               onChange={e => onChange({ customModel: e.target.value })}
             />
           </div>
