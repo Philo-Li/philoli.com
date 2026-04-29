@@ -144,12 +144,12 @@
       "translateFrom": "Traduci da",
       "translateTo": "Traduci in",
       "tone": "Tono",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "Personalizzato (compatibile con OpenAI)",
+      "customModel": "ID Modello",
+      "customModelPlaceholder": "es. gpt-4o, deepseek-chat, …",
+      "customEndpoint": "Endpoint API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "URL completo a un endpoint /chat/completions compatibile con OpenAI.",
       "needApiKey": "Inserisci una API key per continuare."
     },
     "upload": {

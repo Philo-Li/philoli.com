@@ -144,12 +144,12 @@
       "translateFrom": "Prevedi iz",
       "translateTo": "Prevedi v",
       "tone": "Ton",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "Po meri (združljivo z OpenAI)",
+      "customModel": "ID modela",
+      "customModelPlaceholder": "npr. gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API končna točka",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "Celoten URL do končne točke /chat/completions, združljive z OpenAI.",
       "needApiKey": "Vnesite API key za nadaljevanje."
     },
     "upload": {

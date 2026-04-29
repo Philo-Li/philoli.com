@@ -144,12 +144,12 @@
       "translateFrom": "翻訳元",
       "translateTo": "翻訳先",
       "tone": "トーン",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "カスタム (OpenAI互換)",
+      "customModel": "モデルID",
+      "customModelPlaceholder": "例: gpt-4o, deepseek-chat, …",
+      "customEndpoint": "APIエンドポイント",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "OpenAI互換の/chat/completionsエンドポイントへの完全なURL。",
       "needApiKey": "続行するには API key を入力してください。"
     },
     "upload": {

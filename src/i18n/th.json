@@ -144,12 +144,12 @@
       "translateFrom": "แปลจาก",
       "translateTo": "แปลเป็น",
       "tone": "โทน",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "กำหนดเอง (รองรับ OpenAI)",
+      "customModel": "โมเดล ID",
+      "customModelPlaceholder": "เช่น gpt-4o, deepseek-chat, …",
+      "customEndpoint": "ปลายทาง API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "URL เต็มสำหรับปลายทาง /chat/completions ที่เข้ากันได้กับ OpenAI",
       "needApiKey": "ใส่ API key เพื่อดำเนินการต่อ"
     },
     "upload": {

@@ -144,12 +144,12 @@
       "translateFrom": "Oversæt fra",
       "translateTo": "Oversæt til",
       "tone": "Tone",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "Brugerdefineret (OpenAI-kompatibel)",
+      "customModel": "Model-ID",
+      "customModelPlaceholder": "f.eks. gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API-slutpunkt",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "Fuld URL til et OpenAI-kompatibelt /chat/completions-slutpunkt.",
       "needApiKey": "Indtast en API key for at fortsætte."
     },
     "upload": {

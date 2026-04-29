@@ -144,12 +144,12 @@
       "translateFrom": "Fordítás erről:",
       "translateTo": "Fordítás erre:",
       "tone": "Hangnem",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "Egyéni (OpenAI-kompatibilis)",
+      "customModel": "Modell ID",
+      "customModelPlaceholder": "pl. gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API végpont",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "Teljes URL egy OpenAI-kompatibilis /chat/completions végponthoz.",
       "needApiKey": "A folytatáshoz adj meg egy API key-t."
     },
     "upload": {

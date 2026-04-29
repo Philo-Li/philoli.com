@@ -144,12 +144,12 @@
       "translateFrom": "Μετάφραση από",
       "translateTo": "Μετάφραση σε",
       "tone": "Ύφος",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customProvider": "Προσαρμοσμένο (Συμβατό με OpenAI)",
+      "customModel": "Μοντέλο ID",
+      "customModelPlaceholder": "π.χ. gpt-4o, deepseek-chat, ...",
       "customEndpoint": "API Endpoint",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "Πλήρης URL σε ένα συμβατό με OpenAI /chat/completions endpoint.",
       "needApiKey": "Εισαγάγετε ένα API key για να συνεχίσετε."
     },
     "upload": {

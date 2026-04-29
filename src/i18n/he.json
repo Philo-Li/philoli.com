@@ -144,12 +144,12 @@
       "translateFrom": "תרגם מ-",
       "translateTo": "תרגם ל-",
       "tone": "סגנון",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "מותאם אישית (תואם OpenAI)",
+      "customModel": "מודל ID",
+      "customModelPlaceholder": "לדוגמה: gpt-4o, deepseek-chat, …",
+      "customEndpoint": "נקודת קצה של API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "כתובת URL מלאה לנקודת קצה תואמת OpenAI מסוג /chat/completions.",
       "needApiKey": "הזן API key כדי להמשיך."
     },
     "upload": {
