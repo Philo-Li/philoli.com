@@ -144,12 +144,12 @@
       "translateFrom": "Terjemahkan dari",
       "translateTo": "Terjemahkan ke",
       "tone": "Nada",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "Kustom (Kompatibel dengan OpenAI)",
+      "customModel": "ID Model",
+      "customModelPlaceholder": "misalnya gpt-4o, deepseek-chat, …",
+      "customEndpoint": "Endpoint API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "URL Lengkap ke endpoint /chat/completions yang kompatibel dengan OpenAI.",
       "needApiKey": "Masukkan API key untuk melanjutkan."
     },
     "upload": {

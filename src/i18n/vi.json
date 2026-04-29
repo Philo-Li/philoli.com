@@ -144,12 +144,12 @@
       "translateFrom": "Dịch từ",
       "translateTo": "Dịch sang",
       "tone": "Giọng văn",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "Tùy chỉnh (Tương thích OpenAI)",
+      "customModel": "ID Mô hình",
+      "customModelPlaceholder": "ví dụ: gpt-4o, deepseek-chat, …",
+      "customEndpoint": "Điểm cuối API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "URL đầy đủ của một điểm cuối /chat/completions tương thích OpenAI.",
       "needApiKey": "Nhập một API key để tiếp tục."
     },
     "upload": {

@@ -144,12 +144,12 @@
       "translateFrom": "Şu dilden çevir",
       "translateTo": "Şu dile çevir",
       "tone": "Üslup",
-      "customProvider": "Custom (OpenAI-compatible)",
+      "customProvider": "Özel (OpenAI uyumlu)",
       "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customModelPlaceholder": "örn. gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API Uç Noktası",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "OpenAI uyumlu bir /chat/completions uç noktasına giden tam URL.",
       "needApiKey": "Devam etmek için bir API key girin."
     },
     "upload": {

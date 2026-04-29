@@ -144,12 +144,12 @@
       "translateFrom": "থেকে অনুবাদ করুন",
       "translateTo": "তে অনুবাদ করুন",
       "tone": "ভঙ্গি",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "নিজস্ব (OpenAI-কম্প্যাটিবল)",
+      "customModel": "মডেল আইডি",
+      "customModelPlaceholder": "যেমন gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API এন্ডপয়েন্ট",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "একটি OpenAI-কম্প্যাটিবল /chat/completions এন্ডপয়েন্টের সম্পূর্ণ URL।",
       "needApiKey": "চালিয়ে যেতে একটি API key লিখুন।"
     },
     "upload": {

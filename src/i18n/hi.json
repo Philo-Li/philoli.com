@@ -144,12 +144,12 @@
       "translateFrom": "यहाँ से अनुवाद",
       "translateTo": "इसमें अनुवाद",
       "tone": "शैली",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "कस्टम (OpenAI-संगत)",
+      "customModel": "मॉडल ID",
+      "customModelPlaceholder": "उदाहरण के लिए gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API एंडपॉइंट",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "एक OpenAI-संगत /chat/completions एंडपॉइंट का पूर्ण URL।",
       "needApiKey": "जारी रखने के लिए API key दर्ज करें।"
     },
     "upload": {

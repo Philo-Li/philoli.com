@@ -144,12 +144,12 @@
       "translateFrom": "Preložiť z",
       "translateTo": "Preložiť do",
       "tone": "Tón",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "Vlastný (kompatibilný s OpenAI)",
+      "customModel": "ID modelu",
+      "customModelPlaceholder": "napr. gpt-4o, deepseek-chat, …",
+      "customEndpoint": "Koncový bod API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "Úplná URL adresa k OpenAI-kompatibilnému koncovému bodu /chat/completions.",
       "needApiKey": "Pre pokračovanie zadajte API key."
     },
     "upload": {

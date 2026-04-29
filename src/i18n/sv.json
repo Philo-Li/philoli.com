@@ -144,12 +144,12 @@
       "translateFrom": "Översätt från",
       "translateTo": "Översätt till",
       "tone": "Ton",
-      "customProvider": "Custom (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Endpoint",
+      "customProvider": "Anpassad (OpenAI-kompatibel)",
+      "customModel": "Modell-ID",
+      "customModelPlaceholder": "t.ex. gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API-slutpunkt",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "Fullständig URL till en OpenAI-kompatibel /chat/completions-slutpunkt.",
       "needApiKey": "Ange en API key för att fortsätta."
     },
     "upload": {
