@@ -146,10 +146,11 @@
       "tone": "Тон",
       "customProvider": "Пользовательский (совместимый с OpenAI)",
       "customModel": "ID модели",
-      "customModelPlaceholder": "напр. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "Конечная точка API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Полный URL к совместимой с OpenAI конечной точке /chat/completions.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "Введите API key, чтобы продолжить."
     },
     "upload": {

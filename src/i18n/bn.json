@@ -146,10 +146,11 @@
       "tone": "ভঙ্গি",
       "customProvider": "নিজস্ব (OpenAI-কম্প্যাটিবল)",
       "customModel": "মডেল আইডি",
-      "customModelPlaceholder": "যেমন gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API এন্ডপয়েন্ট",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "একটি OpenAI-কম্প্যাটিবল /chat/completions এন্ডপয়েন্টের সম্পূর্ণ URL।",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "চালিয়ে যেতে একটি API key লিখুন।"
     },
     "upload": {

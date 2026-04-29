@@ -146,10 +146,11 @@
       "tone": "Tonas",
       "customProvider": "Pasirinktinis (suderinamas su OpenAI)",
       "customModel": "Modelio ID",
-      "customModelPlaceholder": "pvz. gpt-4o, deepseek-chat, ...",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API galinis taškas",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Visas su OpenAI suderinamo /chat/completions galinio taško URL adresas.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "Įveskite API key, kad tęstumėte."
     },
     "upload": {

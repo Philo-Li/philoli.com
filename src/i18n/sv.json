@@ -146,10 +146,11 @@
       "tone": "Ton",
       "customProvider": "Anpassad (OpenAI-kompatibel)",
       "customModel": "Modell-ID",
-      "customModelPlaceholder": "t.ex. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API-slutpunkt",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Fullständig URL till en OpenAI-kompatibel /chat/completions-slutpunkt.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "Ange en API key för att fortsätta."
     },
     "upload": {

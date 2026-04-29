@@ -118,16 +118,8 @@ export const PROVIDERS: ProviderConfig[] = [
     api: 'openai-compat',
     endpoint: 'https://openrouter.ai/api/v1/chat/completions',
     keyHelp: 'https://openrouter.ai/settings/keys',
-    models: [
-      { id: 'google/gemini-2.5-flash', label: 'Gemini 2.5 Flash', hint: 'cheapest, fast' },
-      { id: 'google/gemini-2.5-pro', label: 'Gemini 2.5 Pro', hint: 'best quality' },
-      { id: 'anthropic/claude-sonnet-4', label: 'Claude Sonnet 4', hint: 'balanced' },
-      { id: 'anthropic/claude-opus-4', label: 'Claude Opus 4', hint: 'best quality' },
-      { id: 'openai/gpt-4.1-mini', label: 'GPT-4.1 mini', hint: 'cheapest, fast' },
-      { id: 'openai/gpt-4.1', label: 'GPT-4.1', hint: 'higher quality' },
-      { id: 'deepseek/deepseek-r1', label: 'DeepSeek R1', hint: 'best quality' },
-      { id: 'deepseek/deepseek-v3-0324', label: 'DeepSeek V3', hint: 'balanced' },
-    ],
+    /** User types any model ID (e.g. google/gemini-2.5-flash). */
+    models: [{ id: 'openrouter', label: 'openrouter' }],
   },
 ];
 

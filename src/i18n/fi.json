@@ -146,10 +146,11 @@
       "tone": "Sävy",
       "customProvider": "Mukautettu (OpenAI-yhteensopiva)",
       "customModel": "Mallin ID",
-      "customModelPlaceholder": "esim. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API-päätepiste",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Koko URL OpenAI-yhteensopivaan /chat/completions-päätepisteeseen.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "Syötä API key jatkaaksesi."
     },
     "upload": {

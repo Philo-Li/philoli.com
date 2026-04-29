@@ -146,10 +146,11 @@
       "tone": "Ton",
       "customProvider": "Personalizat (compatibil OpenAI)",
       "customModel": "ID model",
-      "customModelPlaceholder": "ex. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "Endpoint API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "URL complet către un endpoint /chat/completions compatibil OpenAI.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "Introdu o cheie API pentru a continua."
     },
     "upload": {

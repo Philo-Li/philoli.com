@@ -146,10 +146,11 @@
       "tone": "문체",
       "customProvider": "커스텀 (OpenAI 호환)",
       "customModel": "모델 ID",
-      "customModelPlaceholder": "예: gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API 엔드포인트",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "OpenAI 호환 /chat/completions 엔드포인트의 전체 URL.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "계속하려면 API key를 입력하세요."
     },
     "upload": {

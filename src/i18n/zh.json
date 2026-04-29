@@ -146,10 +146,11 @@
       "tone": "语气",
       "customProvider": "自定义（OpenAI 兼容）",
       "customModel": "模型 ID",
-      "customModelPlaceholder": "例如 gpt-4o、deepseek-chat、…",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API 接口地址",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "填写完整的 OpenAI 兼容 /chat/completions 接口 URL。",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "输入 API key 以继续。"
     },
     "upload": {

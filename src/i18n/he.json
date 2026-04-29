@@ -146,10 +146,11 @@
       "tone": "סגנון",
       "customProvider": "מותאם אישית (תואם OpenAI)",
       "customModel": "מודל ID",
-      "customModelPlaceholder": "לדוגמה: gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "נקודת קצה של API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "כתובת URL מלאה לנקודת קצה תואמת OpenAI מסוג /chat/completions.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "הזן API key כדי להמשיך."
     },
     "upload": {

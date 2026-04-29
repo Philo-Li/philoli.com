@@ -146,10 +146,11 @@
       "tone": "لحن",
       "customProvider": "سفارشی (سازگار با OpenAI)",
       "customModel": "شناسه مدل",
-      "customModelPlaceholder": "مثال: gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "نقطه پایانی API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "URL کامل برای یک نقطه پایانی /chat/completions سازگار با OpenAI.",
+      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "needApiKey": "برای ادامه یک API key وارد کنید."
     },
     "upload": {
