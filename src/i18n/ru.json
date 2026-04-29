@@ -144,6 +144,12 @@
       "translateFrom": "Перевести с",
       "translateTo": "Перевести на",
       "tone": "Тон",
+      "customProvider": "Custom (OpenAI-compatible)",
+      "customModel": "Model ID",
+      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API Endpoint",
+      "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
+      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
       "needApiKey": "Введите API key, чтобы продолжить."
     },
     "upload": {

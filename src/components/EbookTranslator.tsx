@@ -47,6 +47,8 @@ interface Settings {
   sourceLang: string;
   targetLang: string;
   tone: string;
+  customEndpoint: string;
+  customModel: string;
 }
 
 interface NodeError {
@@ -82,7 +84,9 @@ function loadSettings(): Settings {
   const targetLang = VALID_LANG_VALUES.has(savedTarget) ? savedTarget : 'Chinese (Simplified)';
   const savedTone = localStorage.getItem(STORAGE_PREFIX + 'tone') || '';
   const tone = TONES.some(t => t.id === savedTone) ? savedTone : TONES[0].id;
-  return { provider, model, apiKey, rememberKey: remember, sourceLang, targetLang, tone };
+  const customEndpoint = localStorage.getItem(STORAGE_PREFIX + 'customEndpoint') || '';
+  const customModel = localStorage.getItem(STORAGE_PREFIX + 'customModel') || '';
+  return { provider, model, apiKey, rememberKey: remember, sourceLang, targetLang, tone, customEndpoint, customModel };
 }
 
 function persistSettings(s: Settings): void {
@@ -91,6 +95,8 @@ function persistSettings(s: Settings): void {
   localStorage.setItem(STORAGE_PREFIX + 'sourceLang', s.sourceLang);
   localStorage.setItem(STORAGE_PREFIX + 'targetLang', s.targetLang);
   localStorage.setItem(STORAGE_PREFIX + 'tone', s.tone);
+  localStorage.setItem(STORAGE_PREFIX + 'customEndpoint', s.customEndpoint);
+  localStorage.setItem(STORAGE_PREFIX + 'customModel', s.customModel);
   localStorage.setItem(STORAGE_PREFIX + 'rememberKey', String(s.rememberKey));
   if (s.rememberKey) {
     if (s.apiKey) localStorage.setItem(STORAGE_PREFIX + 'apiKey-' + s.provider, s.apiKey);
@@ -118,7 +124,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const [step, setStep] = useState<Step>('settings');
   const [settings, setSettings] = useState<Settings>(() =>
     typeof window === 'undefined'
-      ? { provider: 'gemini', model: 'gemini-3-flash-preview', apiKey: '', rememberKey: true, sourceLang: 'English', targetLang: 'Chinese (Simplified)', tone: 'idiomatic' }
+      ? { provider: 'gemini', model: 'gemini-3-flash-preview', apiKey: '', rememberKey: true, sourceLang: 'English', targetLang: 'Chinese (Simplified)', tone: 'idiomatic', customEndpoint: '', customModel: '' }
       : loadSettings()
   );
 
@@ -235,12 +241,13 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
           slice.map(b =>
             translateBatch(b.map(p => p.text), {
               provider: settings.provider,
-              model: settings.model,
+              model: settings.provider === 'custom' ? settings.customModel : settings.model,
               apiKey: settings.apiKey,
               sourceLang: settings.sourceLang,
               targetLang: settings.targetLang,
               tone: settings.tone,
               signal: ctl.signal,
+              customEndpoint: settings.customEndpoint,
             }).then(tr => ({ b, tr }))
           )
         );
@@ -332,11 +339,12 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     try {
       const result = await translateBatch([original], {
         provider: settings.provider,
-        model: settings.model,
+        model: settings.provider === 'custom' ? settings.customModel : settings.model,
         apiKey: settings.apiKey,
         sourceLang: settings.sourceLang,
         targetLang: settings.targetLang,
         tone: settings.tone,
+        customEndpoint: settings.customEndpoint,
       });
       const t = (result[0] || '').trim() || original;
       translatedTitleRef.current = t;
@@ -373,7 +381,8 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     }
   }
 
-  const canStart = settings.apiKey.trim().length > 0;
+  const canStart = settings.apiKey.trim().length > 0
+    && (settings.provider !== 'custom' || (settings.customEndpoint.trim().length > 0 && settings.customModel.trim().length > 0));
   const totalNodes = parsed?.chapters.reduce((s, c) => s + c.nodes.length, 0) ?? 0;
   const translatedNodes = useMemo(() => {
     let n = 0;
@@ -642,26 +651,54 @@ function SettingsPanel({
             {PROVIDERS.map(p => (
               <option key={p.id} value={p.id}>{p.label}</option>
             ))}
+            <option value="custom">{t('ebookTranslator.settings.customProvider')}</option>
           </select>
         </div>
-        <div className="bt__field">
-          <label className="bt__label">{t('ebookTranslator.settings.model')}</label>
-          <select
-            className="bt__select"
-            value={settings.model}
-            onChange={e => onChange({ model: e.target.value })}
-          >
-            {provider.models.map(m => {
-              const hint = translateModelHint(t, m.hint);
-              return (
-                <option key={m.id} value={m.id}>
-                  {m.label}{hint ? ` — ${hint}` : ''}
-                </option>
-              );
-            })}
-          </select>
-        </div>
+        {settings.provider === 'custom' ? (
+          <div className="bt__field">
+            <label className="bt__label">{t('ebookTranslator.settings.customModel')}</label>
+            <input
+              className="bt__input"
+              type="text"
+              value={settings.customModel}
+              placeholder={t('ebookTranslator.settings.customModelPlaceholder')}
+              onChange={e => onChange({ customModel: e.target.value })}
+            />
+          </div>
+        ) : (
+          <div className="bt__field">
+            <label className="bt__label">{t('ebookTranslator.settings.model')}</label>
+            <select
+              className="bt__select"
+              value={settings.model}
+              onChange={e => onChange({ model: e.target.value })}
+            >
+              {provider.models.map(m => {
+                const hint = translateModelHint(t, m.hint);
+                return (
+                  <option key={m.id} value={m.id}>
+                    {m.label}{hint ? ` — ${hint}` : ''}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
+        )}
       </div>
+
+      {settings.provider === 'custom' && (
+        <div className="bt__field">
+          <label className="bt__label">{t('ebookTranslator.settings.customEndpoint')}</label>
+          <input
+            className="bt__input"
+            type="url"
+            value={settings.customEndpoint}
+            placeholder={t('ebookTranslator.settings.customEndpointPlaceholder')}
+            onChange={e => onChange({ customEndpoint: e.target.value })}
+          />
+          <span className="bt__hint">{t('ebookTranslator.settings.customEndpointHint')}</span>
+        </div>
+      )}
 
       <div className="bt__field">
         <label className="bt__label">{t('ebookTranslator.settings.apiKey')}</label>
@@ -698,7 +735,7 @@ function SettingsPanel({
           </button>
         </div>
         <span className="bt__hint">
-          {(() => {
+          {settings.provider === 'custom' ? null : (() => {
             const raw = t('ebookTranslator.settings.apiKeyHint');
             const linkAnchor = '{link}';
             const provAnchor = '{provider}';

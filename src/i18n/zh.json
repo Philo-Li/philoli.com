@@ -144,6 +144,12 @@
       "translateFrom": "翻译自",
       "translateTo": "翻译为",
       "tone": "语气",
+      "customProvider": "自定义（OpenAI 兼容）",
+      "customModel": "模型 ID",
+      "customModelPlaceholder": "例如 gpt-4o、deepseek-chat、…",
+      "customEndpoint": "API 接口地址",
+      "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
+      "customEndpointHint": "填写完整的 OpenAI 兼容 /chat/completions 接口 URL。",
       "needApiKey": "输入 API key 以继续。"
     },
     "upload": {
