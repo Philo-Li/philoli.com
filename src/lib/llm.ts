@@ -7,6 +7,7 @@ export type ProviderId =
   | 'glm'
   | 'kimi'
   | 'openrouter'
+  | 'opencode'
   | 'custom';
 
 export interface ModelOption {
@@ -14,6 +15,9 @@ export interface ModelOption {
   label: string;
   hint?: string;
 }
+
+const OPENCODE_GO_ENDPOINT = 'https://opencode.ai/zen/go/v1/chat/completions';
+const OPENCODE_GO_PROXY_ENDPOINT = 'https://philoli-opencode-go-proxy.philo-2e9.workers.dev/v1/chat/completions';
 
 /** API shape — most providers expose an OpenAI-compatible /chat/completions endpoint. */
 export type ApiShape = 'openai-compat' | 'anthropic' | 'gemini';
@@ -121,6 +125,24 @@ export const PROVIDERS: ProviderConfig[] = [
     /** User types any model ID (e.g. google/gemini-2.5-flash). */
     models: [{ id: 'openrouter', label: 'openrouter' }],
   },
+  {
+    id: 'opencode',
+    label: 'OpenCode',
+    api: 'openai-compat',
+    endpoint: OPENCODE_GO_PROXY_ENDPOINT,
+    keyHelp: 'https://opencode.ai/docs/go/',
+    models: [
+      { id: 'kimi-k2.6', label: 'Kimi K2.6', hint: 'latest flagship, 262K context' },
+      { id: 'kimi-k2.5', label: 'Kimi K2.5', hint: 'long context, stable' },
+      { id: 'deepseek-v4-flash', label: 'DeepSeek V4 Flash', hint: 'cheapest, fast' },
+      { id: 'deepseek-v4-pro', label: 'DeepSeek V4 Pro', hint: 'best quality' },
+      { id: 'glm-5.1', label: 'GLM-5.1', hint: 'balanced' },
+      { id: 'glm-5', label: 'GLM-5', hint: 'flagship coding/agentic' },
+      { id: 'qwen3.6-plus', label: 'Qwen 3.6 Plus', hint: 'balanced' },
+      { id: 'minimax-m2.7', label: 'MiniMax M2.7', hint: 'best quality' },
+      { id: 'mimo-v2.5', label: 'Mimo v2.5', hint: 'cheaper' },
+    ],
+  },
 ];
 
 /** Sentinel config for "Custom (OpenAI-compatible)". */
@@ -187,6 +209,10 @@ Best for non-fiction, business, popular science, essays, blog posts, light ficti
 
 export function findTone(id: string): ToneOption {
   return TONES.find(t => t.id === id) ?? TONES[0];
+}
+
+function resolveOpenAICompatEndpoint(endpoint: string): string {
+  return endpoint.trim() === OPENCODE_GO_ENDPOINT ? OPENCODE_GO_PROXY_ENDPOINT : endpoint;
 }
 
 export interface TranslateOptions {
@@ -340,7 +366,7 @@ export async function translateBatch(
     case 'openai-compat': {
       const endpoint = opts.provider === 'custom' ? opts.customEndpoint : cfg.endpoint;
       if (!endpoint) throw new Error(`${cfg.label} missing endpoint config`);
-      return callOpenAICompat(passages, opts, endpoint, cfg.label);
+      return callOpenAICompat(passages, opts, resolveOpenAICompatEndpoint(endpoint), cfg.label);
     }
     case 'anthropic':
       return callAnthropic(passages, opts);
