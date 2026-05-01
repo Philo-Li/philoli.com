@@ -4,13 +4,14 @@ import { useTranslations } from '../i18n';
 interface LightboxProps {
   src: string;
   alt: string;
+  sourceUrl: string;
   onClose: () => void;
   onPrev?: () => void;
   onNext?: () => void;
   locale?: string;
 }
 
-export default function Lightbox({ src, alt, onClose, onPrev, onNext, locale }: LightboxProps) {
+export default function Lightbox({ src, alt, sourceUrl, onClose, onPrev, onNext, locale }: LightboxProps) {
   const t = useTranslations(locale);
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.key === 'Escape') onClose();
@@ -39,6 +40,15 @@ export default function Lightbox({ src, alt, onClose, onPrev, onNext, locale }: 
         </button>
       )}
       <img src={src} alt={alt} onClick={(e) => e.stopPropagation()} />
+      <a
+        className="lightbox__source"
+        href={sourceUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
+      >
+        View on PhiloArt
+      </a>
       {onNext && (
         <button
           className="lightbox__nav lightbox__nav--next"

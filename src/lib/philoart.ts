@@ -4,6 +4,7 @@ const USERNAME = 'philo';
 export interface PhiloArtwork {
   id: string;
   title: string;
+  slug?: string;
   type: string;
   tags: string;
   year: number;
@@ -31,6 +32,15 @@ interface PhotosResponse {
 // In-memory cache shared across all build-time calls
 let cachedArtworks: PhiloArtwork[] | null = null;
 
+export function shuffleArtworks<T>(artworks: T[]): T[] {
+  const shuffled = [...artworks];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 async function fetchPage(first: number, after?: string): Promise<PhotosResponse> {
   const afterArg = after ? `, after: "${after}"` : '';
   const query = `{
@@ -39,6 +49,7 @@ async function fetchPage(first: number, after?: string): Promise<PhotosResponse>
         node {
           id
           title
+          slug
           type
           tags
           year
@@ -100,10 +111,7 @@ export async function fetchAllArtworks(): Promise<PhiloArtwork[]> {
 }
 
 export async function fetchRecentArtworks(count: number): Promise<PhiloArtwork[]> {
-  if (cachedArtworks) return cachedArtworks.slice(0, count);
-
-  const res = await fetchPage(Math.min(count, 30));
-  return res.data!.photos.edges.map(e => e.node);
+  return shuffleArtworks(await fetchAllArtworks()).slice(0, count);
 }
 
 export function getUniqueTypes(artworks: PhiloArtwork[]): string[] {
