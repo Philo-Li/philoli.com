@@ -4,16 +4,16 @@
  * Gemini 3 Flash (preview). Reads GEMINI_API_KEY from .env at the project root.
  *
  * Usage:
- *   node scripts/translate-i18n.mjs                # all locales
- *   node scripts/translate-i18n.mjs zh ja ko       # specific locales only
- *   node scripts/translate-i18n.mjs --force        # overwrite even if file exists
+ *   node scripts/i18n/translate-i18n.mjs                # all locales
+ *   node scripts/i18n/translate-i18n.mjs zh ja ko       # specific locales only
+ *   node scripts/i18n/translate-i18n.mjs --force        # overwrite even if file exists
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = resolve(__dirname, '..');
+const ROOT = resolve(__dirname, '..', '..');
 const I18N_DIR = join(ROOT, 'src', 'i18n');
 
 // ---- Config ----
