@@ -576,6 +576,9 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
                   ? t('ebookTranslator.browse.errorOne')
                   : t('ebookTranslator.browse.errorMany')
                 ).replace('{count}', String(chapterErrList.length))}
+                {chapterErrList[0]?.message && (
+                  <div style={{ marginTop: 8, wordBreak: 'break-word' }}>{chapterErrList[0].message}</div>
+                )}
               </div>
             )}
 

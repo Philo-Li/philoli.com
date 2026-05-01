@@ -258,6 +258,27 @@ function parseBatchResponse(response: string, expectedCount: number): string[] {
   return out;
 }
 
+function extractErrorMessage(body: string): string {
+  const trimmed = body.trim();
+  if (!trimmed) return 'Empty error response';
+  try {
+    const parsed = JSON.parse(trimmed) as {
+      error?: string | { message?: string; error?: { message?: string } };
+      message?: string;
+      type?: string;
+    };
+    if (typeof parsed.error === 'string') return parsed.error;
+    if (parsed.error && typeof parsed.error === 'object') {
+      if (typeof parsed.error.message === 'string') return parsed.error.message;
+      if (parsed.error.error && typeof parsed.error.error.message === 'string') return parsed.error.error.message;
+    }
+    if (typeof parsed.message === 'string') return parsed.message;
+  } catch {
+    // Fall through to plain-text handling.
+  }
+  return trimmed.length > 300 ? `${trimmed.slice(0, 300)}…` : trimmed;
+}
+
 /**
  * Generic OpenAI-compatible chat-completions caller. Used by OpenAI, DeepSeek,
  * Qwen, GLM, Kimi — all expose the same /chat/completions schema.
@@ -285,7 +306,7 @@ async function callOpenAICompat(
       ],
     }),
   });
-  if (!res.ok) throw new Error(`${providerLabel} ${res.status}: ${await res.text()}`);
+  if (!res.ok) throw new Error(`${providerLabel} ${res.status}: ${extractErrorMessage(await res.text())}`);
   const data = await res.json();
   const text = data.choices?.[0]?.message?.content ?? '';
   return parseBatchResponse(text, passages.length);
