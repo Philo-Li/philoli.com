@@ -131,17 +131,7 @@ export const PROVIDERS: ProviderConfig[] = [
     api: 'openai-compat',
     endpoint: OPENCODE_GO_PROXY_ENDPOINT,
     keyHelp: 'https://opencode.ai/docs/go/',
-    models: [
-      { id: 'kimi-k2.6', label: 'Kimi K2.6', hint: 'latest flagship, 262K context' },
-      { id: 'kimi-k2.5', label: 'Kimi K2.5', hint: 'long context, stable' },
-      { id: 'deepseek-v4-flash', label: 'DeepSeek V4 Flash', hint: 'cheapest, fast' },
-      { id: 'deepseek-v4-pro', label: 'DeepSeek V4 Pro', hint: 'best quality' },
-      { id: 'glm-5.1', label: 'GLM-5.1', hint: 'balanced' },
-      { id: 'glm-5', label: 'GLM-5', hint: 'flagship coding/agentic' },
-      { id: 'qwen3.6-plus', label: 'Qwen 3.6 Plus', hint: 'balanced' },
-      { id: 'minimax-m2.7', label: 'MiniMax M2.7', hint: 'best quality' },
-      { id: 'mimo-v2.5', label: 'Mimo v2.5', hint: 'cheaper' },
-    ],
+    models: [{ id: 'opencode', label: 'opencode' }],
   },
 ];
 

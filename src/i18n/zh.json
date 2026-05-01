@@ -151,6 +151,7 @@
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "填写完整的 OpenAI 兼容 /chat/completions 接口 URL。",
       "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "例如 kimi-k2.6、deepseek-v4-flash、glm-5.1 等",
       "needApiKey": "输入 API key 以继续。"
     },
     "upload": {

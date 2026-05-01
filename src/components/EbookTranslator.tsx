@@ -63,7 +63,7 @@ const LANG_OPTIONS = LOCALES.map(code => ({
 const VALID_LANG_VALUES = new Set(LANG_OPTIONS.map(o => o.value));
 
 /** Providers where the user types a free-text model ID instead of picking from a dropdown. */
-const FREE_MODEL_PROVIDERS = new Set<ProviderId>(['custom', 'openrouter']);
+const FREE_MODEL_PROVIDERS = new Set<ProviderId>(['custom', 'openrouter', 'opencode']);
 
 const STORAGE_PREFIX = 'bilingual-translator/';
 // Within one chapter (only matters for very long chapters that get split into
@@ -667,6 +667,8 @@ function SettingsPanel({
               value={settings.customModel}
               placeholder={settings.provider === 'openrouter'
                 ? t('ebookTranslator.settings.openrouterModelPlaceholder')
+                : settings.provider === 'opencode'
+                  ? t('ebookTranslator.settings.opencodeModelPlaceholder')
                 : t('ebookTranslator.settings.customModelPlaceholder')}
               onChange={e => onChange({ customModel: e.target.value })}
             />
