@@ -8,6 +8,9 @@ export interface PhiloArtwork {
   type: string;
   tags: string;
   year: number;
+  width: number;
+  height: number;
+  color: string;
   srcSmall: string;
   srcLarge: string;
   createdAt: string;
@@ -53,6 +56,9 @@ async function fetchPage(first: number, after?: string): Promise<PhotosResponse>
           type
           tags
           year
+          width
+          height
+          color
           srcSmall
           srcLarge
           createdAt

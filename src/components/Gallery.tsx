@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import Lightbox from './Lightbox';
 import { useTranslations } from '../i18n';
 
@@ -6,6 +6,9 @@ interface Artwork {
   id: string;
   title: string;
   type: string;
+  width: number;
+  height: number;
+  color: string;
   srcSmall: string;
   srcLarge: string;
   year: number;
@@ -26,6 +29,29 @@ function shuffleArtworks<T>(artworks: T[]): T[] {
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
   return shuffled;
+}
+
+function GalleryItem({ art, onClick }: { art: Artwork; onClick: () => void }) {
+  const [loaded, setLoaded] = useState(false);
+  const handleLoad = useCallback(() => setLoaded(true), []);
+  const aspectRatio = art.width && art.height ? art.width / art.height : 4 / 3;
+  const bgColor = art.color || '#84B0B3';
+
+  return (
+    <div
+      className="gallery__item"
+      style={{ aspectRatio, backgroundColor: bgColor }}
+      onClick={onClick}
+    >
+      <img
+        src={art.srcSmall}
+        alt={art.title}
+        loading="lazy"
+        style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.3s ease' }}
+        onLoad={handleLoad}
+      />
+    </div>
+  );
 }
 
 export default function Gallery({ artworks, locale }: GalleryProps) {
@@ -65,9 +91,7 @@ export default function Gallery({ artworks, locale }: GalleryProps) {
       </div>
       <div className="gallery__grid">
         {filtered.map((art, i) => (
-          <div key={art.id} className="gallery__item" onClick={() => setLightboxIndex(i)}>
-            <img src={art.srcSmall} alt={art.title} loading="lazy" />
-          </div>
+          <GalleryItem key={art.id} art={art} onClick={() => setLightboxIndex(i)} />
         ))}
       </div>
       {current && (
