@@ -9,6 +9,7 @@ interface Artwork {
   srcSmall: string;
   srcLarge: string;
   year: number;
+  sourceUrl: string;
 }
 
 interface GalleryProps {
@@ -18,12 +19,22 @@ interface GalleryProps {
 
 const FILTER_ORDER = ['Photograph', 'Painting', 'Drawing', 'Digital Art'];
 
+function shuffleArtworks<T>(artworks: T[]): T[] {
+  const shuffled = [...artworks];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 export default function Gallery({ artworks, locale }: GalleryProps) {
   const t = useTranslations(locale);
+  const [shuffledArtworks] = useState<Artwork[]>(() => shuffleArtworks(artworks));
   const [filter, setFilter] = useState<string>(FILTER_ORDER[0]);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  const filtered = artworks.filter(a => a.type === filter);
+  const filtered = shuffledArtworks.filter(a => a.type === filter);
 
   const handlePrev = () => {
     if (lightboxIndex !== null && lightboxIndex > 0) {
@@ -63,6 +74,7 @@ export default function Gallery({ artworks, locale }: GalleryProps) {
         <Lightbox
           src={current.srcLarge}
           alt={current.title}
+          sourceUrl={current.sourceUrl}
           onClose={() => setLightboxIndex(null)}
           onPrev={lightboxIndex! > 0 ? handlePrev : undefined}
           onNext={lightboxIndex! < filtered.length - 1 ? handleNext : undefined}

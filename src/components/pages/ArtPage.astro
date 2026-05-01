@@ -1,14 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Gallery from '../Gallery.tsx';
-import { fetchAllArtworks } from '../../lib/philoart';
+import { fetchAllArtworks, shuffleArtworks } from '../../lib/philoart';
 import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
 import '../../styles/gallery.css';
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
 
-const artworks = await fetchAllArtworks();
+const artworks = shuffleArtworks(await fetchAllArtworks());
 
 const galleryData = artworks.map(a => ({
   id: a.id,
@@ -17,6 +17,9 @@ const galleryData = artworks.map(a => ({
   srcSmall: a.srcSmall,
   srcLarge: a.srcLarge,
   year: a.year,
+  sourceUrl: a.slug
+    ? `https://philoart.io/photo/${a.slug}-${a.id}`
+    : `https://philoart.io/photo/${a.id}`,
 }));
 ---
 

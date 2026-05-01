@@ -5,7 +5,7 @@ const artworks = await fetchRecentArtworks(12);
 ---
 
 <section class="artwork-strip">
-  <div class="artwork-strip__scroll">
+  <div class="artwork-strip__scroll" data-artwork-strip>
     {artworks.map(art => (
       <a href="/art" class="artwork-strip__item">
         <img src={art.srcSmall} alt={art.title} loading="lazy" />
@@ -13,6 +13,19 @@ const artworks = await fetchRecentArtworks(12);
     ))}
   </div>
 </section>
+
+<script is:inline>
+  (() => {
+    const strip = document.querySelector('[data-artwork-strip]');
+    if (!strip) return;
+    const items = Array.from(strip.children);
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [items[i], items[j]] = [items[j], items[i]];
+    }
+    items.forEach((item) => strip.appendChild(item));
+  })();
+</script>
 
 <style>
   .artwork-strip {
