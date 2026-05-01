@@ -7,8 +7,8 @@ const artworks = await fetchRecentArtworks(12);
 <section class="artwork-strip">
   <div class="artwork-strip__scroll" data-artwork-strip>
     {artworks.map(art => (
-      <a href="/art" class="artwork-strip__item">
-        <img src={art.srcSmall} alt={art.title} loading="lazy" />
+      <a href="/art" class="artwork-strip__item" style={`background-color: ${art.color || '#84B0B3'}`}>
+        <img src={art.srcSmall} alt={art.title} loading="lazy" onload="this.style.opacity='1'" />
       </a>
     ))}
   </div>
@@ -60,7 +60,8 @@ const artworks = await fetchRecentArtworks(12);
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease, filter 0.5s ease;
+    opacity: 0;
+    transition: transform 0.5s ease, filter 0.5s ease, opacity 0.3s ease;
     filter: brightness(0.8);
   }
 
