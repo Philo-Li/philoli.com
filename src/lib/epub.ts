@@ -250,10 +250,26 @@ export function applyTranslations(
 export async function buildBilingualEpub(
   parsed: ParsedEpub,
   allTranslations: Map<string, Map<string, string>>, // chapterHref -> nodeId -> translation
+  targetLang = 'zh',
 ): Promise<Blob> {
+  // Update OPF language so Kindle uses the correct CJK font for the target language.
+  const opfEntry = parsed.zip.file(parsed.opfPath);
+  if (opfEntry) {
+    let opfXml = await opfEntry.async('string');
+    opfXml = opfXml.replace(
+      /<dc:language>[^<]*<\/dc:language>/,
+      `<dc:language>${targetLang}</dc:language>`,
+    );
+    parsed.zip.file(parsed.opfPath, opfXml);
+  }
+
   for (const chapter of parsed.chapters) {
     const chapterTranslations = allTranslations.get(chapter.href);
     if (chapterTranslations) applyTranslations(chapter, chapterTranslations);
+    // Set xml:lang on <html> so readers apply the correct font for CJK text.
+    const htmlEl = chapter.doc.documentElement;
+    htmlEl.setAttribute('xml:lang', targetLang);
+    htmlEl.setAttribute('lang', targetLang);
     const updated = serializeXml(chapter.doc);
     parsed.zip.file(chapter.href, updated);
   }
