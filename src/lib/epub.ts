@@ -37,7 +37,6 @@ export interface ParsedEpub {
 }
 
 const TRANSLATABLE_SELECTOR = 'p, h1, h2, h3, h4, h5, h6, blockquote, li';
-const BILINGUAL_MARKER_CLASS = 'bilingual-translation';
 
 const xmlSerializer = new XMLSerializer();
 
@@ -231,7 +230,9 @@ export function applyTranslations(
     if (el.parentNode?.querySelector(`[data-bilingual-for="${node.id}"]`)) continue; // already inserted
 
     const sibling = chapter.doc.createElement(el.tagName.toLowerCase());
-    sibling.setAttribute('class', BILINGUAL_MARKER_CLASS);
+    // Copy the original element's class so Kindle renders both with the same font.
+    const origClass = el.getAttribute('class') || '';
+    sibling.setAttribute('class', origClass);
     sibling.setAttribute('data-bilingual-for', node.id);
     if (node.preserved.length > 0) {
       // Translation contains placeholders — escape the surrounding text but inject
@@ -245,26 +246,6 @@ export function applyTranslations(
   }
 }
 
-/**
- * Inject a small CSS rule into each chapter so the translation lines are
- * visually distinct (lighter color, slightly smaller). EPUB readers vary in CSS
- * support but the basics work everywhere.
- */
-function injectBilingualStyle(chapter: ChapterFile): void {
-  const head = chapter.doc.querySelector('head');
-  if (!head) return;
-  if (chapter.doc.querySelector('style[data-bilingual-style]')) return;
-  const style = chapter.doc.createElement('style');
-  style.setAttribute('data-bilingual-style', 'true');
-  // Keep the translated paragraph visually identical to the original — no italic, no quote.
-  style.textContent = `
-    .${BILINGUAL_MARKER_CLASS} {
-      margin-top: 0.1em;
-      margin-bottom: 0.85em;
-    }
-  `;
-  head.appendChild(style);
-}
 
 export async function buildBilingualEpub(
   parsed: ParsedEpub,
@@ -273,7 +254,6 @@ export async function buildBilingualEpub(
   for (const chapter of parsed.chapters) {
     const chapterTranslations = allTranslations.get(chapter.href);
     if (chapterTranslations) applyTranslations(chapter, chapterTranslations);
-    injectBilingualStyle(chapter);
     const updated = serializeXml(chapter.doc);
     parsed.zip.file(chapter.href, updated);
   }
