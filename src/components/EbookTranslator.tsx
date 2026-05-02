@@ -59,8 +59,11 @@ interface NodeError {
 const LANG_OPTIONS = LOCALES.map(code => ({
   value: LOCALE_ENGLISH_NAMES[code],
   label: LOCALE_NAMES[code],
+  code,
 }));
 const VALID_LANG_VALUES = new Set(LANG_OPTIONS.map(o => o.value));
+/** Map English language name back to BCP-47 code for epub metadata. */
+const LANG_NAME_TO_CODE = Object.fromEntries(LANG_OPTIONS.map(o => [o.value, o.code]));
 
 /** Providers where the user types a free-text model ID instead of picking from a dropdown. */
 const FREE_MODEL_PROVIDERS = new Set<ProviderId>(['custom', 'openrouter', 'opencode']);
@@ -362,7 +365,8 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     setBuilding(true);
     try {
       const translatedTitle = await getTranslatedTitle();
-      const blob = await buildBilingualEpub(parsed, allTranslationsRef.current);
+      const targetLangCode = LANG_NAME_TO_CODE[settings.targetLang] || 'zh';
+      const blob = await buildBilingualEpub(parsed, allTranslationsRef.current, targetLangCode);
       // Allow letters in any script (CJK, Cyrillic, etc.), digits, spaces, dashes, underscores.
       const sanitize = (s: string) => s.replace(/[^\p{L}\p{N}\-_ ]/gu, '_').trim();
       const original = sanitize(parsed.metadata.title || '') || 'book';
