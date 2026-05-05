@@ -3,9 +3,9 @@ layout: blog
 title: "Hacking My Sleep: Day 1 of a Personal Experiment"
 date: 2025-07-11 12:00:00
 tags:
-  - 随笔
-  - 自我提升
-categories: 日常闲聊
+  - Essays
+  - Self-improvement
+categories: Casual Thoughts
 ---
 
 I've embarked on a sleep experiment. My goal is to improve my sleep quality and energy levels by adjusting my diet and lifestyle, aiming to maintain a more alert and vibrant state of being.

@@ -3,9 +3,9 @@ layout: blog
 title: "Monet's Water Lilies: A Visit That Left My Heart Afloat"
 date: 2025-02-16 19:29:55
 tags:
-  - 随笔
-  - 艺术
-categories: 日常闲聊
+  - Essays
+  - Art
+categories: Casual Thoughts
 ---
 
 A few days ago, I finally caught — literally at the last possible moment — the monumental Monet exhibition I'd been longing to see. Claude Monet is one of my dearest painters, and unquestionably my favorite Impressionist.

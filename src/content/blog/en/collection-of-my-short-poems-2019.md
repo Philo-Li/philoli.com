@@ -1,8 +1,8 @@
 ---
 title: Short Poem Collection (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Casual Thoughts
 ---
 
 These are fragments of the soul: fantasies, realities, and touches of childlike innocence.

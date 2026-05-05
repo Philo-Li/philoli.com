@@ -3,9 +3,9 @@ layout: blog
 title: Essential Truths About Aging and Death
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-categories: 读书笔记
+  - Essays
+  - Reading
+categories: Reading笔记
 ---
 
 Last year (2024) I reached my goal of reading one hundred books — works ranging from science, medicine, psychology, and the arts to social science, literature, and investing. Among them were many outstanding titles. To keep this recommendation list from growing unwieldy, I have chosen only the finest: every book below earned at least four, and often five, stars in my personal ledger.

@@ -2,8 +2,8 @@
 layout: blog
 title: Thoughts on Success and Failure
 date: 2024-09-18 15:02:52
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Casual Thoughts
 ---
 
 ## Escaping the Narrative of Success

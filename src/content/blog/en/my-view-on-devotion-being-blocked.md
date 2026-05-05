@@ -1,8 +1,8 @@
 ---
 title: My Thoughts on the Banning of "Devotion"
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Casual Thoughts
 ---
 Disclaimer: Please discuss this topic rationally. The Red Candle Games team has already apologized for the controversy, and now I'd like to delve into the incident itself and share some personal reflections.
 

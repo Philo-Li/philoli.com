@@ -2,8 +2,8 @@
 layout: blog
 title: The World as I See It
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Casual Thoughts
 ---
 Albert Einstein had a book called *The World as I See It*. It was a collection of his letters, articles, and speeches. One of them was the essay that gave the book its name. I want to write my own "The World as I See It".
 

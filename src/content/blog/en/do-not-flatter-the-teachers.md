@@ -1,8 +1,8 @@
 ---
 title: Enough with the Glorification of Teachers
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Casual Thoughts
 ---
 Today, on Teachers' Day, as almost everyone across China is busy showering teachers with gifts and praise, please allow me to strike a different note.
 

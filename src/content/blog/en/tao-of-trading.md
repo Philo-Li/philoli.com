@@ -3,10 +3,10 @@ layout: blog
 title: The Way of Trading
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Essays
+  - Reading
+  - Trading
+categories: Reading笔记
 ---
 
 The path to becoming a top trader is a journey of "seeing oneself, seeing the world, and seeing all beings." It's not about battling the market, but battling your inner self.

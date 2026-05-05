@@ -1,8 +1,8 @@
 ---
 title: Philo's Thought Experiments (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Casual Thoughts
 ---
 Do you often find yourself zoning out? And what exactly do you think about when you do?
 

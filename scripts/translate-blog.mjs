@@ -1,19 +1,20 @@
 #!/usr/bin/env node
 /**
- * Translate Chinese blog posts to English using Gemini API.
- * Uses the literary style: short sentences, simple words, poetic rhythm.
+ * Translate blog posts to a target language using Gemini API (idiomatic style).
  *
  * Usage:
- *   node scripts/translate-blog.mjs              # translate all missing
- *   node scripts/translate-blog.mjs --force      # overwrite existing -en files
+ *   node scripts/translate-blog.mjs zh-TW          # translate all zh posts to Traditional Chinese
+ *   node scripts/translate-blog.mjs ja             # translate to Japanese
+ *   node scripts/translate-blog.mjs fr --force     # overwrite existing translations
  */
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
-import { dirname, join, resolve, basename } from 'node:path';
+import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const BLOG_DIR = join(ROOT, 'src', 'content', 'blog');
+const ZH_DIR = join(BLOG_DIR, 'zh');
 
 // ---- Load .env ----
 function loadDotEnv() {
@@ -42,54 +43,112 @@ if (!API_KEY) {
 }
 
 const MODEL = 'gemini-2.5-flash';
+
+// ---- Language map ----
+const LANGUAGES = {
+  'zh-TW': 'Traditional Chinese (Taiwan)',
+  'ja': 'Japanese',
+  'ko': 'Korean',
+  'es': 'Spanish',
+  'fr': 'French',
+  'de': 'German',
+  'pt': 'Portuguese',
+  'ru': 'Russian',
+  'ar': 'Arabic',
+  'hi': 'Hindi',
+  'it': 'Italian',
+  'nl': 'Dutch',
+  'pl': 'Polish',
+  'tr': 'Turkish',
+  'vi': 'Vietnamese',
+  'th': 'Thai',
+  'id': 'Indonesian',
+  'ms': 'Malay',
+  'sv': 'Swedish',
+  'da': 'Danish',
+  'no': 'Norwegian',
+  'fi': 'Finnish',
+  'el': 'Greek',
+  'cs': 'Czech',
+  'ro': 'Romanian',
+  'hu': 'Hungarian',
+  'uk': 'Ukrainian',
+  'bg': 'Bulgarian',
+  'hr': 'Croatian',
+  'sk': 'Slovak',
+  'sl': 'Slovenian',
+  'sr': 'Serbian',
+  'lt': 'Lithuanian',
+  'lv': 'Latvian',
+  'et': 'Estonian',
+  'he': 'Hebrew',
+  'fa': 'Persian',
+  'bn': 'Bengali',
+  'fil': 'Filipino',
+};
+
+// ---- Args ----
+const args = process.argv.slice(2).filter(a => !a.startsWith('--'));
 const force = process.argv.includes('--force');
 
+if (args.length === 0) {
+  console.error('Usage: node scripts/translate-blog.mjs <lang-code> [--force]');
+  console.error('Available languages:', Object.keys(LANGUAGES).join(', '));
+  process.exit(1);
+}
+
+const targetLang = args[0];
+const targetName = LANGUAGES[targetLang];
+if (!targetName) {
+  console.error(`Unknown language: ${targetLang}`);
+  console.error('Available:', Object.keys(LANGUAGES).join(', '));
+  process.exit(1);
+}
+
 // ---- Find posts needing translation ----
-import { readdirSync } from 'node:fs';
+const targetDir = join(BLOG_DIR, targetLang);
+if (!existsSync(targetDir)) mkdirSync(targetDir, { recursive: true });
 
-const allFiles = readdirSync(BLOG_DIR).filter(f => f.endsWith('.md'));
-const enFiles = new Set(allFiles.filter(f => f.endsWith('-en.md')));
-const zhFiles = allFiles.filter(f => {
-  if (f.endsWith('-en.md')) return false;
-  const stem = f.replace(/\.md$/, '');
-  const enVersion = `${stem}-en.md`;
-  if (!force && enFiles.has(enVersion)) return false;
-  return true;
-});
+const zhFiles = readdirSync(ZH_DIR).filter(f => f.endsWith('.md'));
+const existingFiles = new Set(readdirSync(targetDir).filter(f => f.endsWith('.md')));
 
-console.log(`Found ${zhFiles.length} posts to translate:\n`);
-zhFiles.forEach(f => console.log(`  - ${f}`));
+const toTranslate = force ? zhFiles : zhFiles.filter(f => !existingFiles.has(f));
+
+console.log(`Translating ${toTranslate.length} posts to ${targetName} (${targetLang}):\n`);
+toTranslate.forEach(f => console.log(`  - ${f}`));
 console.log('');
 
-// ---- System prompt using "idiomatic" translation style ----
-const SYSTEM_PROMPT = `You are a professional translator. Translate the user's Chinese blog post into English for philoli.com (Philo Li — artist, writer, developer).
+// ---- System prompt ----
+function buildSystemPrompt() {
+  return `You are a professional translator. Translate the user's Chinese blog post into ${targetName} for philoli.com (Philo Li — artist, writer, developer).
 
-Style: Translate freely and idiomatically. Your goal is prose that reads as if a native English speaker wrote it from scratch — NOT a translation that preserves the source sentence structure.
+Style: Translate freely and idiomatically. Your goal is prose that reads as if a native ${targetName} speaker wrote it from scratch — NOT a translation that preserves the source sentence structure.
 
 Specifically:
-- Re-craft each sentence in English. Reorder, split, or merge sentences when it sounds more natural.
+- Re-craft each sentence in ${targetName}. Reorder, split, or merge sentences when it sounds more natural.
 - Translate the MEANING and FEELING, not the words. If a literal translation would feel awkward or foreign, choose an idiomatic native expression that carries the same emotional weight.
-- Replace source-language idioms, metaphors, and cultural references with English equivalents the reader will instinctively understand.
+- Replace source-language idioms, metaphors, and cultural references with ${targetName} equivalents the reader will instinctively understand.
 - Prefer vivid, specific, native vocabulary over neutral dictionary words.
-- Match the original's emotional register precisely (warm stays warm, dry stays dry, urgent stays urgent), but express it in English's natural way of conveying that register.
+- Match the original's emotional register precisely (warm stays warm, dry stays dry, urgent stays urgent), but express it in ${targetName}'s natural way of conveying that register.
 
 Avoid: stiff word-for-word renderings, awkward calques, "translation-ese", overly formal phrasing where the original is casual.
 
 RULES:
 - Translate ALL content faithfully. Do not summarize or skip sections.
-- Keep the YAML frontmatter structure but translate the title to English. Keep date, tags, and categories as-is.
+- Keep the YAML frontmatter structure but translate the title to ${targetName}. Keep date, tags, and categories as-is.
 - Keep <!--more--> markers in the same relative position.
 - Keep markdown formatting (headers, bold, italic, links, code blocks) intact.
 - Keep URLs, code snippets, and technical terms as-is.
 - Keep proper nouns as-is: "Philo Li", "Dopamind", "PhiloArt".
 - Output ONLY the translated markdown. No explanations or notes.`;
+}
 
 // ---- Gemini API call ----
 async function callGemini(content) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
   const body = {
-    systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-    contents: [{ role: 'user', parts: [{ text: `Translate this Chinese blog post to English:\n\n${content}` }] }],
+    systemInstruction: { parts: [{ text: buildSystemPrompt() }] },
+    contents: [{ role: 'user', parts: [{ text: `Translate this blog post to ${targetName}:\n\n${content}` }] }],
     generationConfig: {
       temperature: 0.8,
       maxOutputTokens: 65536,
@@ -114,20 +173,10 @@ async function callGemini(content) {
 
 // ---- Process each post ----
 async function translatePost(filename) {
-  const srcPath = join(BLOG_DIR, filename);
-  const stem = filename.replace(/\.md$/, '');
-  const outPath = join(BLOG_DIR, `${stem}-en.md`);
+  const srcPath = join(ZH_DIR, filename);
+  const outPath = join(targetDir, filename);
 
   const content = readFileSync(srcPath, 'utf8');
-
-  // Skip if content appears to already be in English
-  const bodyStart = content.indexOf('---', content.indexOf('---') + 3);
-  const body = content.slice(bodyStart + 3).trim();
-  const chineseChars = (body.match(/[\u4e00-\u9fff]/g) || []).length;
-  if (chineseChars < 20) {
-    console.log(`  [SKIP] ${filename} — appears to be English already`);
-    return;
-  }
 
   console.log(`  [TRANSLATING] ${filename}...`);
   const t0 = Date.now();
@@ -136,18 +185,30 @@ async function translatePost(filename) {
     const translated = await callGemini(content);
     writeFileSync(outPath, translated + '\n', 'utf8');
     const dt = ((Date.now() - t0) / 1000).toFixed(1);
-    console.log(`  [DONE] ${stem}-en.md (${dt}s)`);
+    console.log(`  [DONE] ${targetLang}/${filename} (${dt}s)`);
   } catch (err) {
     console.error(`  [ERROR] ${filename}: ${err.message}`);
   }
 }
 
+const CONCURRENCY = 4;
+
 async function main() {
-  for (const file of zhFiles) {
-    await translatePost(file);
-    // Small delay to avoid rate limiting
-    await new Promise(r => setTimeout(r, 1000));
+  let nextIdx = 0;
+  let completed = 0;
+
+  async function worker() {
+    while (true) {
+      const i = nextIdx++;
+      if (i >= toTranslate.length) return;
+      await translatePost(toTranslate[i]);
+      completed++;
+      console.log(`  [PROGRESS] ${completed}/${toTranslate.length}`);
+    }
   }
+
+  const workers = Array.from({ length: Math.min(CONCURRENCY, toTranslate.length) }, worker);
+  await Promise.all(workers);
   console.log('\nAll done.');
 }
 
