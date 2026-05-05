@@ -9,20 +9,23 @@ const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOC
 const t = useTranslations(locale);
 
 const allPosts = await getCollection('blog');
-const isEnglish = locale === 'en';
+
+// Posts are in subfolders: zh/, en/, ja/, etc.
+// Show posts matching current locale, fallback to zh if no translation exists.
+const blogLocale = locale === 'zh' || locale === 'zh-TW' ? 'zh' : locale;
+const prefix = `${blogLocale}/`;
+const zhPrefix = 'zh/';
 
 const posts = allPosts
   .filter(post => {
-    const isEnPost = post.id.endsWith('-en');
-    if (isEnglish) {
-      // Show English version if available, otherwise show the original
-      if (isEnPost) return true;
-      const hasEnVersion = allPosts.some(p => p.id === `${post.id}-en`);
-      return !hasEnVersion;
-    } else {
-      // Non-English locale: show only non-en posts
-      return !isEnPost;
+    if (post.id.startsWith(prefix)) return true;
+    // Fallback: show zh post if no translation exists for this locale
+    if (post.id.startsWith(zhPrefix)) {
+      const slug = post.id.slice(zhPrefix.length);
+      const hasTranslation = allPosts.some(p => p.id === `${prefix}${slug}`);
+      return !hasTranslation;
     }
+    return false;
   })
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
@@ -31,16 +34,19 @@ const posts = allPosts
   <main class="blog-page">
     <h1 class="blog-page__title">{t('blogPage.title')}</h1>
     <ul class="blog-page__list">
-      {posts.map(post => (
-        <li>
-          <BlogPostCard
-            title={post.data.title}
-            date={post.data.date}
-            slug={post.id}
-            tags={post.data.tags}
-          />
-        </li>
-      ))}
+      {posts.map(post => {
+        const slug = post.id.replace(/^[^/]+\//, '');
+        return (
+          <li>
+            <BlogPostCard
+              title={post.data.title}
+              date={post.data.date}
+              slug={slug}
+              tags={post.data.tags}
+            />
+          </li>
+        );
+      })}
     </ul>
   </main>
 </BaseLayout>

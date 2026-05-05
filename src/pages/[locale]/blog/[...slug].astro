@@ -7,8 +7,18 @@ export async function getStaticPaths() {
   const posts = await getCollection('blog');
   const paths = [];
   for (const locale of NON_DEFAULT_LOCALES) {
+    // For each locale, prefer that locale's folder, fallback to zh/
+    const blogLocale = (locale === 'zh' || locale === 'zh-TW') ? 'zh' : locale;
+    const slugMap = new Map();
     for (const post of posts) {
-      paths.push({ params: { locale, slug: post.id }, props: { post } });
+      const [lang, ...rest] = post.id.split('/');
+      const slug = rest.join('/');
+      if (lang === blogLocale || (!slugMap.has(slug) && lang === 'zh')) {
+        slugMap.set(slug, post);
+      }
+    }
+    for (const [slug, post] of slugMap) {
+      paths.push({ params: { locale, slug }, props: { post } });
     }
   }
   return paths;
