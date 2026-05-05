@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RubiksCube from '../RubiksCube.tsx';
+import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+---
+
+<BaseLayout
+  title={t('rubiksCube.metadata.title')}
+  description={t('rubiksCube.metadata.description')}
+>
+  <RubiksCube client:only="react" locale={locale} />
+</BaseLayout>
