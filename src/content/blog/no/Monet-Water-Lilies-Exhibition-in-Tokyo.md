@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Monet-utstillingen i Tokyo: Fra plager med grå stær til udødelige penselstrøk
+title: "Monet-utstillingen i Tokyo: Fra plager med grå stær til udødelige penselstrøk"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

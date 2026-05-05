@@ -1,5 +1,5 @@
 ---
-title: Jedrnat vodič: Postavitev Hexo bloga od začetka (izdaja 2024)
+title: "Jedrnat vodič: Postavitev Hexo bloga od začetka (izdaja 2024)"
 date: 2024-04-11 00:25:20
 tags: Postavitev bloga
 categories: Dnevno ukvarjanje

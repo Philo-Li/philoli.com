@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Den beste avskjeden: Hva du må vite om aldring og død
+title: "Den beste avskjeden: Hva du må vite om aldring og død"
 date: 2025-05-22 12:00:00
 tags:
   - tanker

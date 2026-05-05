@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: O Melhor Adeus: O que você precisa saber sobre envelhecimento e morte
+title: "O Melhor Adeus: O que você precisa saber sobre envelhecimento e morte"
 date: 2025-05-22 12:00:00
 tags:
   - Ensaios

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: תערוכת מונה בטוקיו: ממצוקת הקטרקט אל משיכות המכחול האלמותיות
+title: "תערוכת מונה בטוקיו: ממצוקת הקטרקט אל משיכות המכחול האלמותיות"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

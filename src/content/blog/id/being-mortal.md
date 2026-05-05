@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Perpisahan Terbaik: Fakta Dasar tentang Penuaan dan Kematian yang Wajib Kamu Tahu
+title: "Perpisahan Terbaik: Fakta Dasar tentang Penuaan dan Kematian yang Wajib Kamu Tahu"
 date: 2025-05-22 12:00:00
 tags:
   - Esai

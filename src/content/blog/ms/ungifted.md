@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Bukan Bakat Semata-mata: Kebenaran di Sebalik IQ, Latihan Berfokus, dan Kreativiti
+title: "Bukan Bakat Semata-mata: Kebenaran di Sebalik IQ, Latihan Berfokus, dan Kreativiti"
 date: 2025-05-22 12:00:00
 tags:
   - Esei

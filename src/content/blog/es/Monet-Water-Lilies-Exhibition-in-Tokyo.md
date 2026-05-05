@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Exposición de Monet en Tokio: De la aflicción de las cataratas a las pinceladas inmortales
+title: "Exposición de Monet en Tokio: De la aflicción de las cataratas a las pinceladas inmortales"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

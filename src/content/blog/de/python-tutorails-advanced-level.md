@@ -1,5 +1,5 @@
 ---
-title: Python für Data Science: Fortgeschrittene Syntax und Funktionen
+title: "Python für Data Science: Fortgeschrittene Syntax und Funktionen"
 date: 2018-11-07 23:53:13
 tags: Python
 categories: Data Science

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Úspech a zlyhanie: Zamyslenia
+title: "Úspech a zlyhanie: Zamyslenia"
 date: 2024-09-18 15:02:52
 tags: Úvahy
 categories: Každodenné úvahy

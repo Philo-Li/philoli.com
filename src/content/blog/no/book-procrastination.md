@@ -1,5 +1,5 @@
 ---
-title: Etter fem års utsettelse har jeg endelig lest ferdig «Procrastination: Why You Do It, What to Do About It Now»
+title: "Etter fem års utsettelse har jeg endelig lest ferdig «Procrastination: Why You Do It, What to Do About It Now»"
 date: 2019-09-14 00:25:20
 tags: Boklesing笔记
 categories: 日常Lesing

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Exposição de Monet em Tóquio: Da Luta Contra a Catarata às Pinceladas Imortais
+title: "Exposição de Monet em Tóquio: Da Luta Contra a Catarata às Pinceladas Imortais"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

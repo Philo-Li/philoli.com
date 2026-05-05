@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ibinabahagi ang 12 Mahusay na Aklat: Ang Aking High-Rated Reading List ng 2025
+title: "Ibinabahagi ang 12 Mahusay na Aklat: Ang Aking High-Rated Reading List ng 2025"
 date: 2026-04-24 12:00:00
 tags:
   - Pagbabasa

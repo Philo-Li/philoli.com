@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Den bedste afsked: Det du bør vide om aldring og død
+title: "Den bedste afsked: Det du bør vide om aldring og død"
 date: 2025-05-22 12:00:00
 tags:
   - Essays

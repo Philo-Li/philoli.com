@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Paras jäähyväinen: Ikääntymisestä ja kuolemasta – perusasiat, jotka sinun tulee tietää
+title: "Paras jäähyväinen: Ikääntymisestä ja kuolemasta – perusasiat, jotka sinun tulee tietää"
 date: 2025-05-22 12:00:00
 tags:
   - Mietteitä

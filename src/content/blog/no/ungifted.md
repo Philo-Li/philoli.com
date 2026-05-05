@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ikke medfødt talent: Sannheten om IQ, målrettet praksis og kreativitet
+title: "Ikke medfødt talent: Sannheten om IQ, målrettet praksis og kreativitet"
 date: 2025-05-22 12:00:00
 tags:
   - Refleksjon

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ne talants vien: Intelekta, apzinātas prakses un radošuma patiesība
+title: "Ne talants vien: Intelekta, apzinātas prakses un radošuma patiesība"
 date: 2025-05-22 12:00:00
 tags:
   - Eseja

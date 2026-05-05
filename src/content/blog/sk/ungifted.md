@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Nie je to len talent: Pravda o IQ, zámernom cvičení a kreativite
+title: "Nie je to len talent: Pravda o IQ, zámernom cvičení a kreativite"
 date: 2025-05-22 12:00:00
 tags:
   - Esej

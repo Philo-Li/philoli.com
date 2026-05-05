@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Monetova izložba u Tokiju: Od borbe s kataraktom do besmrtnih poteza kistom
+title: "Monetova izložba u Tokiju: Od borbe s kataraktom do besmrtnih poteza kistom"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

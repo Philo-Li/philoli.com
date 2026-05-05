@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Najlepsze pożegnanie: Prawdy o starzeniu się i śmierci, które musisz znać
+title: "Najlepsze pożegnanie: Prawdy o starzeniu się i śmierci, które musisz znać"
 date: 2025-05-22 12:00:00
 tags:
   - Eseje

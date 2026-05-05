@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Kein reines Talent: Die Wahrheit über Intelligenz, bewusstes Üben und Kreativität
+title: "Kein reines Talent: Die Wahrheit über Intelligenz, bewusstes Üben und Kreativität"
 date: 2025-05-22 12:00:00
 tags:
   - Essay

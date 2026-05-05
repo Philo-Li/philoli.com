@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 12 skvělých knih: Seznam nejlépe hodnocených knih přečtených v roce 2025
+title: "12 skvělých knih: Seznam nejlépe hodnocených knih přečtených v roce 2025"
 date: 2026-04-24 12:00:00
 tags:
   - Čtení

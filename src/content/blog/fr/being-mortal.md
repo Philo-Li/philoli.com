@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Le meilleur des adieux : L'essentiel à savoir sur la vieillesse et la mort
+title: "Le meilleur des adieux : L'essentiel à savoir sur la vieillesse et la mort"
 date: 2025-05-22 12:00:00
 tags:
   - Essais

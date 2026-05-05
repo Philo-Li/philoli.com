@@ -1,5 +1,5 @@
 ---
-title: Neuvěřitelné: Zmeškal jsem oficiální registraci k postgraduálnímu studiu!
+title: "Neuvěřitelné: Zmeškal jsem oficiální registraci k postgraduálnímu studiu!"
 date: 2018-11-05 20:53:13
 tags: Zamyšlení
 categories: Denní povídání

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Doğuştan Değil: IQ, Odaklı Pratik ve Yaratıcılığın Gerçeği
+title: "Doğuştan Değil: IQ, Odaklı Pratik ve Yaratıcılığın Gerçeği"
 date: 2025-05-22 12:00:00
 tags:
   - Deneme

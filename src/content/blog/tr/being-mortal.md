@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: En İyi Veda: Yaşlanma ve Ölüm Üzerine Bilmeniz Gereken Temel Gerçekler
+title: "En İyi Veda: Yaşlanma ve Ölüm Üzerine Bilmeniz Gereken Temel Gerçekler"
 date: 2025-05-22 12:00:00
 tags:
   - Deneme

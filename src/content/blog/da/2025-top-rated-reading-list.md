@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 12 fremragende bøger fra 2025: Min anbefalede læseliste
+title: "12 fremragende bøger fra 2025: Min anbefalede læseliste"
 date: 2026-04-24 12:00:00
 tags:
   - Læsning

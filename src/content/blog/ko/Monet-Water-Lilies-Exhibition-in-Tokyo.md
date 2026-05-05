@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 도쿄 모네전: 백내장의 고뇌에서 불멸의 붓터치까지
+title: "도쿄 모네전: 백내장의 고뇌에서 불멸의 붓터치까지"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

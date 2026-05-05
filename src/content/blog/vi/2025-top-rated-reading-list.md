@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Chia sẻ 12 Cuốn Sách Hay Đã Đọc Năm 2025: Danh Sách Đề Xuất Điểm Cao
+title: "Chia sẻ 12 Cuốn Sách Hay Đã Đọc Năm 2025: Danh Sách Đề Xuất Điểm Cao"
 date: 2026-04-24 12:00:00
 tags:
   - Đọc sách

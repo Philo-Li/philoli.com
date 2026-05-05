@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Triển lãm Monet tại Tokyo: Từ nỗi ám ảnh đục thủy tinh thể đến những nét cọ bất hủ
+title: "Triển lãm Monet tại Tokyo: Từ nỗi ám ảnh đục thủy tinh thể đến những nét cọ bất hủ"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 12 suosikkikirjaa vuodelta 2025: Korkealle arvosteltu lukulista
+title: "12 suosikkikirjaa vuodelta 2025: Korkealle arvosteltu lukulista"
 date: 2026-04-24 12:00:00
 tags:
   - lukeminen

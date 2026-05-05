@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Monet-Ausstellung in Tokio: Von der Last des Katarakts zu unvergänglichen Pinselstrichen
+title: "Monet-Ausstellung in Tokio: Von der Last des Katarakts zu unvergänglichen Pinselstrichen"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

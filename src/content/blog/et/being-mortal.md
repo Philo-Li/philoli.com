@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Parim hüvastijätt: Mida peaksid vananemise ja surma kohta teadma
+title: "Parim hüvastijätt: Mida peaksid vananemise ja surma kohta teadma"
 date: 2025-05-22 12:00:00
 tags:
   - mõtisklused

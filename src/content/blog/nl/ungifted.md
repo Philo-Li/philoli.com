@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Absoluut geen talent: De waarheid over IQ, doelgerichte oefening en creativiteit
+title: "Absoluut geen talent: De waarheid over IQ, doelgerichte oefening en creativiteit"
 date: 2025-05-22 12:00:00
 tags:
   - essay

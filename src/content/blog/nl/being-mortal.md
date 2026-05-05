@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Het beste afscheid: Wat je moet weten over ouderdom en sterfelijkheid
+title: "Het beste afscheid: Wat je moet weten over ouderdom en sterfelijkheid"
 date: 2025-05-22 12:00:00
 tags:
   - Essay

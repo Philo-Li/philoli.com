@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Der beste Abschied: Was man über Altern und Sterben wissen sollte
+title: "Der beste Abschied: Was man über Altern und Sterben wissen sollte"
 date: 2025-05-22 12:00:00
 tags:
   - Essays

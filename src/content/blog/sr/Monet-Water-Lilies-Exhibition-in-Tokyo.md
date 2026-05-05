@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Monetova izložba u Tokiju: Od problema sa kataraktom do besmrtnog poteza četkice
+title: "Monetova izložba u Tokiju: Od problema sa kataraktom do besmrtnog poteza četkice"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

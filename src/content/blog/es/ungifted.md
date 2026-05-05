@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: No es Cuestión de Talento: La Verdad sobre el CI, la Práctica Deliberada y la Creatividad
+title: "No es Cuestión de Talento: La Verdad sobre el CI, la Práctica Deliberada y la Creatividad"
 date: 2025-05-22 12:00:00
 tags:
   - Ensayo

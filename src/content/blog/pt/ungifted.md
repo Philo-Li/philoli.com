@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Muito Além do Talento: QI, Prática Deliberada e a Verdade por Trás da Criatividade
+title: "Muito Além do Talento: QI, Prática Deliberada e a Verdade por Trás da Criatividade"
 date: 2025-05-22 12:00:00
 tags:
   - ensaio

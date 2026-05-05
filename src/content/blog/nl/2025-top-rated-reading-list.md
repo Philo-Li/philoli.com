@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Mijn 12 favoriete boeken van 2025: Een lijst van toppers
+title: "Mijn 12 favoriete boeken van 2025: Een lijst van toppers"
 date: 2026-04-24 12:00:00
 tags:
   - Lezen
