@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Newsletter",
-    "subscribe": "Iscriviti →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,13 +11,15 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Newsletter",
+    "subscribe": "Iscriviti →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Artista, Scrittore, Creatore",
     "blogTitle": "Blog — Philo Li",
-    "blogDescription": "Articoli su arte, filosofia e creazione di cose.",
-    "aboutTitle": "Info — Philo Li",
+    "blogDescription": "Articoli su arte, filosofia e costruzione di cose.",
+    "aboutTitle": "Chi sono — Philo Li",
     "aboutDescription": "Su Philo Li — artista, scrittore e sviluppatore.",
     "artTitle": "Arte — Philo Li",
     "artDescription": "Fotografia, pittura e arte digitale di Philo Li.",
@@ -27,15 +27,17 @@
     "projectsDescription": "Progetti di Philo Li.",
     "newsletterTitle": "Newsletter — Philo Li",
     "newsletterDescription": "Iscriviti alle newsletter di Philo Li.",
-    "ebookTranslatorTitle": "Traduttore di ebook bilingue — Philo Li",
-    "ebookTranslatorDescription": "Carica un EPUB e traducilo in un'edizione bilingue con la tua API key di un LLM. Funziona interamente nel tuo browser."
+    "ebookTranslatorTitle": "Traduttore Ebook Bilingue — Philo Li",
+    "ebookTranslatorDescription": "Carica un EPUB e traducilo in un'edizione bilingue con la tua API key di un LLM. Funziona interamente nel tuo browser.",
+    "rubiksCubeTitle": "Cubo di Rubik 3D — Philo Li",
+    "rubiksCubeDescription": "Cubo di Rubik 3D interattivo. Imposta una sequenza di rimescolamento e una soluzione, gioca passo dopo passo, nascondi colori o facce per esercizi di memorizzazione."
   },
   "nav": {
     "blog": "Blog",
     "art": "Arte",
     "projects": "Progetti",
     "newsletter": "Newsletter",
-    "about": "Info",
+    "about": "Chi sono",
     "menuLabel": "Attiva/disattiva menu"
   },
   "theme": {
@@ -46,30 +48,30 @@
     "toggleToDark": "Passa alla modalità scura"
   },
   "hero": {
-    "line1": "Creare.",
-    "line2": "Catturare.",
-    "line3": "Costruire.",
-    "tagline": "Dipingo, fotografo, scrivo e do forma alle idee. Dall’incontro tra curiosità, arte e codice, nasce tutto questo.",
+    "line1": "Crea.",
+    "line2": "Cattura.",
+    "line3": "Costruisci.",
+    "tagline": "Dipingo, fotografo, scrivo e costruisco cose. Questo è ciò che accade quando la curiosità incontra l'artigianato e il codice.",
     "labelLeft": "Artista",
     "labelRight": "Sviluppatore"
   },
   "recentPosts": {
     "label": "Scritti recenti",
-    "viewAll": "Vedi tutti →"
+    "viewAll": "Vedi tutto →"
   },
   "newsletterCta": {
     "label": "Newsletter",
-    "headline": "Rimani curioso.",
-    "desc": "Riflessioni su arte, vita e creazione — direttamente nella tua casella di posta."
+    "headline": "Resta curioso.",
+    "desc": "Riflessioni su arte, vita e creare cose — consegnate nella tua casella di posta."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Artista · Scrittore · Sviluppatore",
-    "bioP1": "Sono un creatore, un programmatore e un pensatore. Creare dal nulla è ciò che amo di più — che si tratti di un quadro, di un po' di codice o di un saggio approfondito.",
-    "bioP2": "Per molto tempo, il più grande ostacolo a questa passione è stato il mio stesso cervello: ho l'ADHD. Dopo aver provato quasi ogni strumento di produttività sul mercato, mi sono reso conto che erano tutti progettati per una mente neurotipica. Avevo bisogno di un \"partner\" — qualcosa che mi capisse e potesse darmi una leggera spinta proprio quando ne avevo più bisogno.",
-    "bioP3": "Non lo trovavo da nessuna parte. Così ho deciso di costruirmelo da solo — per me e per i milioni di persone che, come me, hanno una \"mente sempre in movimento\". È così che è nato Dopamind.",
+    "bioP1": "Sono un creatore, un programmatore e un pensatore. Amo costruire cose da zero — che si tratti di un dipinto, di un pezzo di codice o di un saggio approfondito.",
+    "bioP2": "Per molto tempo, il più grande ostacolo a questa passione è stato il mio stesso cervello: ho l'ADHD. Dopo aver provato quasi ogni strumento di produttività sul mercato, ho capito che erano tutti progettati per una mente neurotipica. Avevo bisogno di un \"partner\" — qualcosa che mi capisse e potesse darmi una leggera spinta proprio quando ne avevo più bisogno.",
+    "bioP3": "Non riuscivo a trovarlo da nessuna parte. Così ho deciso di costruirlo da solo — per me e per i milioni di altri con un \"cervello iperattivo\" proprio come il mio. È così che è nato Dopamind.",
     "sectionProjects": "Progetti",
     "sectionNewsletter": "Newsletter",
     "sectionArtworks": "Opere d'arte",
@@ -78,8 +80,8 @@
     "projectDopamindDesc": "Il tuo compagno AI quotidiano",
     "projectPhiloArtDesc": "Galleria d'arte digitale",
     "newsletterMediumDesc": "Saggi",
-    "artworksText": "Trovi le mie opere d'arte su philoart.io/philo",
-    "artworksContactText": "Vuoi acquistare un'opera originale o una stampa fotografica? Scrivimi in DM su X o manda una mail a philo.li.official@gmail.com",
+    "artworksText": "Pubblico le mie opere su philoart.io/philo",
+    "artworksContactText": "Per acquistare dipinti originali o stampe fotografiche, scrivimi in DM su X o via email a philo.li.official@gmail.com",
     "extraEmail": "Email"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Il tuo compagno AI. Al tuo fianco ogni giorno, per aiutarti a vivere meglio."
+        "description": "Il tuo compagno AI. Al tuo fianco ogni giorno, per aiutarti a vivere una vita migliore."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "Traduttore di ebook bilingue",
-        "description": "Trasforma qualsiasi ebook in un'edizione bilingue — gira nel tuo browser, con la tua LLM API key.",
-        "cta": "Apri strumento →"
+        "description": "Trasforma qualsiasi e-book in un'edizione bilingue — funziona nel tuo browser con la tua API key LLM.",
+        "cta": "Apri lo strumento →"
+      },
+      "rubiksCube": {
+        "name": "Cubo di Rubik 3D",
+        "description": "Segui i passaggi di rimescolamenti e soluzioni su un cubo 3D interattivo. La modalità di apprendimento nasconde colori e facce per esercitarsi con gli algoritmi.",
+        "cta": "Apri il cubo →"
       }
     }
   },
@@ -111,17 +118,17 @@
   "ebookTranslator": {
     "eyebrow": "Progetto",
     "title": "Traduttore di ebook bilingue",
-    "subtitle": "Carica un EPUB, usa la tua API key di un LLM e ottieni un'edizione bilingue con il testo originale e quello tradotto alternati paragrafo per paragrafo. Il file viene analizzato interamente nel tuo browser — il tuo libro non tocca mai alcun server.",
+    "subtitle": "Carica un EPUB, usa la tua API key LLM e ottieni un'edizione bilingue con il testo originale e quello tradotto alternati paragrafo per paragrafo. Il file viene analizzato interamente nel tuo browser — il tuo libro non tocca mai alcun server.",
     "steps": {
       "settings": "impostazioni",
       "upload": "carica",
       "browse": "sfoglia"
     },
     "actions": {
-      "cancelRunning": "Annulla esecuzione",
+      "cancelRunning": "Annulla operazione",
       "translateAllRemaining": "Traduci tutti i rimanenti",
       "downloadEpub": "⬇ Scarica EPUB",
-      "building": "Generazione in corso…",
+      "building": "Creazione in corso…",
       "back": "← Indietro",
       "settingsModel": "← Impostazioni / modello",
       "show": "Mostra",
@@ -136,21 +143,22 @@
       "provider": "Provider",
       "model": "Modello",
       "apiKey": "API key",
-      "apiKeyPlaceholder": "Incolla la tua key {provider}",
-      "apiKeyHint": "Ottienine una su {link}. La tua key viene inviata solo a {provider}, mai a philoli.com.",
-      "rememberKey": "Ricorda la key solo in questo browser (localStorage). Deseleziona per dispositivi condivisi.",
+      "apiKeyPlaceholder": "Incolla la tua chiave {provider}",
+      "apiKeyHint": "Ottienine una su {link}. La tua chiave viene inviata solo a {provider}, mai a philoli.com.",
+      "rememberKey": "Ricorda la chiave solo in questo browser (localStorage). Deseleziona per dispositivi condivisi.",
       "showApiKey": "Mostra API key",
       "hideApiKey": "Nascondi API key",
       "translateFrom": "Traduci da",
       "translateTo": "Traduci in",
       "tone": "Tono",
       "customProvider": "Personalizzato (compatibile con OpenAI)",
-      "customModel": "ID Modello",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModel": "ID modello",
+      "customModelPlaceholder": "es. gpt-4o, deepseek-chat, …",
       "customEndpoint": "Endpoint API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "URL completo a un endpoint /chat/completions compatibile con OpenAI.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "URL completo di un endpoint /chat/completions compatibile con OpenAI.",
+      "openrouterModelPlaceholder": "es. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "es. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Inserisci una API key per continuare."
     },
     "upload": {
@@ -165,7 +173,7 @@
       "paragraphCount": "{nodes} paragrafi · {translated} tradotti",
       "errorOne": "{count} paragrafo non riuscito. Puoi tradurre di nuovo per riprovare — i paragrafi già completati verranno saltati.",
       "errorMany": "{count} paragrafi non riusciti. Puoi tradurre di nuovo per riprovare — i paragrafi già completati verranno saltati.",
-      "noTranslatableText": "Questo capitolo non ha testo traducibile (copertina, introduzione, ecc.).",
+      "noTranslatableText": "Questo capitolo non contiene testo traducibile (copertina, pagine iniziali, ecc.).",
       "translatingAria": "Traduzione in corso",
       "translatingLabel": "traduzione in corso…",
       "buildFailed": "Errore nella creazione dell'EPUB:"
@@ -173,7 +181,7 @@
     "tones": {
       "idiomatic": {
         "label": "Idiomatico",
-        "hint": "naturale e fluido — la maggior parte dei libri"
+        "hint": "naturale e scorrevole — la maggior parte dei libri"
       },
       "literary": {
         "label": "Letterario",
@@ -185,15 +193,15 @@
       }
     },
     "modelHints": {
-      "cheapestFast": "economico, veloce",
+      "cheapestFast": "il più economico, veloce",
       "higherQuality": "qualità superiore",
       "bestQuality": "migliore qualità",
-      "newestFast": "più recente, veloce",
-      "cheapest": "più economico",
+      "newestFast": "il più recente, veloce",
+      "cheapest": "il più economico",
       "bestQualityStable": "migliore qualità, stabile",
-      "balanced": "bilanciato",
+      "balanced": "equilibrato",
       "freeTierFast": "piano gratuito, veloce",
-      "flagshipCoding": "modello di punta programmazione/agentico",
+      "flagshipCoding": "ammiraglia coding/agentico",
       "longContext": "contesto lungo, stabile",
       "cheaper": "più economico",
       "latestLongContext": "più recente, contesto 256K"
@@ -204,7 +212,7 @@
       "Photograph": "Fotografia",
       "Painting": "Pittura",
       "Drawing": "Disegno",
-      "Digital Art": "Arte digitale"
+      "Digital Art": "Arte Digitale"
     }
   },
   "lightbox": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotografia",
     "art": "Arte"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "Cubo di Rubik 3D — Philo Li",
+      "description": "Cubo di Rubik 3D interattivo. Imposta una sequenza di rimescolamento e una soluzione, riproduci passo dopo passo, nascondi colori o facce per esercizi di memorizzazione."
+    },
+    "title": "Cubo di Rubik 3D",
+    "intro": "Inserisci una sequenza di rimescolamento e una soluzione. Segui i passaggi della risoluzione, trascina per ruotare la visuale e usa la modalità apprendimento per esercitarti sugli algoritmi.",
+    "scramble": {
+      "label": "Rimescolamento",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Applica rimescolamento",
+      "reset": "Ripristina"
+    },
+    "solution": {
+      "label": "Soluzione",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Non riconosciuto: {token}"
+    },
+    "playback": {
+      "play": "Riproduci",
+      "pause": "Pausa",
+      "prev": "Passaggio precedente",
+      "next": "Passaggio successivo",
+      "first": "Vai all'inizio",
+      "last": "Vai alla fine",
+      "speed": "Velocità"
+    },
+    "learning": {
+      "title": "Modalità apprendimento",
+      "master": "Abilita",
+      "hideColors": "Nascondi colori",
+      "hideFaces": "Nascondi facce",
+      "faceLabel": {
+        "U": "Sopra",
+        "R": "Destra",
+        "F": "Fronte",
+        "D": "Sotto",
+        "L": "Sinistra",
+        "B": "Dietro"
+      },
+      "colorLabel": {
+        "white": "Bianco",
+        "red": "Rosso",
+        "green": "Verde",
+        "yellow": "Giallo",
+        "orange": "Arancione",
+        "blue": "Blu"
+      }
+    },
+    "share": {
+      "copy": "Copia link di condivisione",
+      "copied": "Copiato!"
+    }
   }
 }

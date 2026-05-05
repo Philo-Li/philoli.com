@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Bản tin",
-    "subscribe": "Đăng ký →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,22 +11,26 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Bản tin",
+    "subscribe": "Đăng ký →"
   },
   "metadata": {
-    "siteTitle": "Philo Li — Nghệ sĩ, Nhà văn, Người sáng tạo",
+    "siteTitle": "Philo Li — Nghệ sĩ, Người viết, Người sáng tạo",
     "blogTitle": "Blog — Philo Li",
-    "blogDescription": "Các bài viết về nghệ thuật, triết học và xây dựng mọi thứ.",
+    "blogDescription": "Các bài viết về nghệ thuật, triết học và kiến tạo.",
     "aboutTitle": "Giới thiệu — Philo Li",
-    "aboutDescription": "Về Philo Li — nghệ sĩ, nhà văn và nhà phát triển.",
+    "aboutDescription": "Về Philo Li — nghệ sĩ, người viết và nhà phát triển.",
     "artTitle": "Nghệ thuật — Philo Li",
-    "artDescription": "Nhiếp ảnh, hội họa và nghệ thuật kỹ thuật số bởi Philo Li.",
+    "artDescription": "Nhiếp ảnh, hội họa và nghệ thuật kỹ thuật số của Philo Li.",
     "projectsTitle": "Dự án — Philo Li",
     "projectsDescription": "Các dự án của Philo Li.",
     "newsletterTitle": "Bản tin — Philo Li",
     "newsletterDescription": "Đăng ký nhận bản tin của Philo Li.",
     "ebookTranslatorTitle": "Trình dịch sách điện tử song ngữ — Philo Li",
-    "ebookTranslatorDescription": "Tải lên tệp EPUB và dịch sang bản song ngữ bằng API key LLM của riêng bạn. Chạy hoàn toàn trên trình duyệt của bạn."
+    "ebookTranslatorDescription": "Tải lên tệp EPUB và dịch sang bản song ngữ bằng API key LLM của riêng bạn. Chạy hoàn toàn trên trình duyệt.",
+    "rubiksCubeTitle": "Khối Rubik 3D — Philo Li",
+    "rubiksCubeDescription": "Khối Rubik 3D tương tác. Thiết lập xáo trộn và lời giải, chơi từng bước, ẩn màu hoặc các mặt để luyện trí nhớ."
   },
   "nav": {
     "blog": "Blog",
@@ -41,17 +43,17 @@
   "theme": {
     "dark": "Tối",
     "light": "Sáng",
-    "toggleAria": "Chuyển đổi chủ đề màu sắc",
+    "toggleAria": "Chuyển đổi chủ đề màu",
     "toggleToLight": "Chuyển sang chế độ sáng",
     "toggleToDark": "Chuyển sang chế độ tối"
   },
   "hero": {
     "line1": "Sáng tạo.",
-    "line2": "Ghi dấu.",
+    "line2": "Ghi lại.",
     "line3": "Kiến tạo.",
-    "tagline": "Tôi vẽ, chụp ảnh, viết lách và tự tay tạo tác. Khi trí tò mò giao thoa cùng nghệ thuật và những dòng mã, tất cả đã khởi sinh từ đó.",
+    "tagline": "Tôi vẽ, chụp ảnh, viết lách và kiến tạo. Đây là thành quả khi sự tò mò giao thoa cùng tay nghề và mã code.",
     "labelLeft": "Nghệ sĩ",
-    "labelRight": "Nhà phát triển"
+    "labelRight": "Lập trình viên"
   },
   "recentPosts": {
     "label": "Bài viết gần đây",
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "Bản tin",
     "headline": "Luôn tò mò.",
-    "desc": "Những suy ngẫm về nghệ thuật, cuộc sống và việc tạo ra mọi thứ —— gửi đến hộp thư của bạn."
+    "desc": "Những suy nghĩ về nghệ thuật, cuộc sống và sáng tạo — gửi thẳng đến hộp thư của bạn."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
-    "tagline": "Nghệ sĩ · Nhà văn · Nhà phát triển",
-    "bioP1": "Mình là một người sáng tạo, một lập trình viên và cũng là một người hay suy ngẫm. Tự tay tạo ra mọi thứ từ con số không là điều mình thích nhất —— dù đó là một bức họa, một đoạn code hay một bài viết chuyên sâu.",
-    "bioP2": "Trong một thời gian dài, trở ngại lớn nhất đối với niềm đam mê này chính là bộ não của tôi: tôi mắc chứng ADHD. Sau khi thử gần như mọi công cụ tăng năng suất trên thị trường, tôi nhận ra chúng đều được thiết kế cho những bộ não bình thường. Tôi cần một \"người bạn đồng hành\" — một thứ gì đó hiểu tôi và có thể thúc đẩy tôi nhẹ nhàng ngay khi tôi cần nhất.",
-    "bioP3": "Mình tìm khắp nơi mà chẳng thấy. Thế là mình quyết định tự tay làm luôn —— cho chính mình, và cho hàng triệu người cũng có một \"bộ não bận rộn\" giống như mình. Dopamind đã ra đời như thế đó.",
+    "tagline": "Nghệ sĩ · Nhà văn · Lập trình viên",
+    "bioP1": "Tôi là một người sáng tạo, một lập trình viên và một người hay suy ngẫm. Tôi thích xây dựng mọi thứ từ con số không — dù đó là một bức tranh, một đoạn mã hay một bài luận chuyên sâu.",
+    "bioP2": "Trong một thời gian dài, trở ngại lớn nhất đối với niềm đam mê này chính là bộ não của tôi: tôi mắc chứng ADHD. Sau khi thử gần như mọi công cụ làm việc hiệu quả trên thị trường, tôi nhận ra chúng đều được thiết kế cho những bộ não bình thường. Tôi cần một \"người đồng hành\" — một thứ gì đó hiểu tôi và có thể thúc đẩy tôi nhẹ nhàng đúng lúc tôi cần nhất.",
+    "bioP3": "Tôi không thể tìm thấy nó ở bất cứ đâu. Vì vậy, tôi quyết định tự mình xây dựng nó — cho chính mình và cho hàng triệu người khác có \"bộ não bận rộn\" giống như tôi. Đó là cách Dopamind ra đời.",
     "sectionProjects": "Dự án",
     "sectionNewsletter": "Bản tin",
     "sectionArtworks": "Tác phẩm nghệ thuật",
     "sectionReadMore": "Đọc thêm",
     "sectionFindMe": "Tìm tôi ở nơi khác",
-    "projectDopamindDesc": "Người bạn đồng hành AI mỗi ngày của bạn",
+    "projectDopamindDesc": "Người bạn đồng hành AI hàng ngày của bạn",
     "projectPhiloArtDesc": "Triển lãm nghệ thuật kỹ thuật số",
     "newsletterMediumDesc": "Bài luận",
-    "artworksText": "Các tác phẩm nghệ thuật của mình đều được đăng tại philoart.io/philo",
-    "artworksContactText": "Muốn mua tranh gốc hay ảnh in nghệ thuật? Nhắn cho mình qua X, hoặc gửi email tới philo.li.official@gmail.com",
+    "artworksText": "Tôi đăng các tác phẩm nghệ thuật của mình tại philoart.io/philo",
+    "artworksContactText": "Để mua tranh gốc hoặc bản in nhiếp ảnh, hãy nhắn tin trực tiếp trên X hoặc gửi email đến philo.li.official@gmail.com",
     "extraEmail": "Email"
   },
   "artPage": {
@@ -91,16 +93,21 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Người bạn đồng hành AI của bạn. Luôn bên cạnh mỗi ngày, giúp bạn sống một cuộc đời tốt đẹp hơn."
+        "description": "Người bạn đồng hành AI của bạn. Luôn bên cạnh bạn mỗi ngày, giúp bạn sống một cuộc đời tốt đẹp hơn."
       },
       "philoart": {
         "name": "PhiloArt",
-        "description": "Phòng trưng bày nghệ thuật cá nhân của tôi — nhiếp ảnh, hội họa và nghệ thuật kỹ thuật số."
+        "description": "Triển lãm nghệ thuật cá nhân của tôi — nhiếp ảnh, hội họa và nghệ thuật kỹ thuật số."
       },
       "ebookTranslator": {
         "name": "Trình dịch sách điện tử song ngữ",
-        "description": "Chuyển bất kỳ ebook nào thành bản song ngữ —— chạy ngay trên trình duyệt, dùng chính LLM API key của bạn.",
+        "description": "Chuyển đổi bất kỳ sách điện tử nào thành bản song ngữ — chạy ngay trên trình duyệt với API key LLM của riêng bạn.",
         "cta": "Mở công cụ →"
+      },
+      "rubiksCube": {
+        "name": "Khối Rubik 3D",
+        "description": "Theo dõi từng bước xáo trộn và giải đố trên khối 3D tương tác. Chế độ học tập ẩn màu sắc và các mặt để luyện tập thuật toán.",
+        "cta": "Mở khối Rubik →"
       }
     }
   },
@@ -111,11 +118,11 @@
   "ebookTranslator": {
     "eyebrow": "Dự án",
     "title": "Trình dịch sách điện tử song ngữ",
-    "subtitle": "Tải lên tệp EPUB, sử dụng API key LLM của riêng bạn và nhận lại bản song ngữ với văn bản gốc và bản dịch được lồng ghép theo từng đoạn. Tệp được xử lý hoàn toàn trong trình duyệt của bạn — sách của bạn không bao giờ được gửi đến bất kỳ máy chủ nào.",
+    "subtitle": "Tải lên tệp EPUB, sử dụng API key LLM của bạn và nhận lại bản song ngữ với văn bản gốc và bản dịch xen kẽ từng đoạn. Tệp được xử lý hoàn toàn trong trình duyệt của bạn — sách của bạn không bao giờ được gửi lên bất kỳ máy chủ nào.",
     "steps": {
       "settings": "cài đặt",
       "upload": "tải lên",
-      "browse": "duyệt"
+      "browse": "duyệt tệp"
     },
     "actions": {
       "cancelRunning": "Hủy quá trình",
@@ -136,32 +143,33 @@
       "provider": "Nhà cung cấp",
       "model": "Mô hình",
       "apiKey": "API key",
-      "apiKeyPlaceholder": "Dán mã {provider} của bạn",
-      "apiKeyHint": "Lấy mã tại {link}. Mã của bạn chỉ được gửi đến {provider}, không bao giờ gửi đến philoli.com.",
-      "rememberKey": "Ghi nhớ mã chỉ trong trình duyệt này (localStorage). Bỏ chọn nếu dùng thiết bị chung.",
+      "apiKeyPlaceholder": "Dán API key {provider} của bạn",
+      "apiKeyHint": "Nhận mã tại {link}. Mã của bạn chỉ được gửi đến {provider}, không bao giờ gửi đến philoli.com.",
+      "rememberKey": "Ghi nhớ mã chỉ trên trình duyệt này (localStorage). Bỏ chọn nếu dùng thiết bị chung.",
       "showApiKey": "Hiện API key",
       "hideApiKey": "Ẩn API key",
       "translateFrom": "Dịch từ",
       "translateTo": "Dịch sang",
-      "tone": "Giọng văn",
-      "customProvider": "Tùy chỉnh (Tương thích OpenAI)",
-      "customModel": "ID Mô hình",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "Điểm cuối API",
+      "tone": "Văn phong",
+      "customProvider": "Tùy chỉnh (tương thích OpenAI)",
+      "customModel": "ID mô hình",
+      "customModelPlaceholder": "VD: gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API Endpoint",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "URL đầy đủ của một điểm cuối /chat/completions tương thích OpenAI.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
-      "needApiKey": "Nhập một API key để tiếp tục."
+      "customEndpointHint": "URL đầy đủ đến endpoint /chat/completions tương thích OpenAI.",
+      "openrouterModelPlaceholder": "VD: google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "VD: kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
+      "needApiKey": "Nhập API key để tiếp tục."
     },
     "upload": {
       "parsing": "Đang phân tích EPUB…",
-      "dropTitle": "Thả một EPUB vào đây",
+      "dropTitle": "Thả tệp EPUB vào đây",
       "dropSubtitle": "hoặc nhấp để chọn tệp",
-      "noChapters": "Không tìm thấy chương nào có thể đọc được trong EPUB này."
+      "noChapters": "Không tìm thấy chương nào có thể đọc được trong tệp EPUB này."
     },
     "browse": {
-      "chapters": "Các chương",
-      "toneTitle": "Giọng văn dịch — ảnh hưởng đến phong cách viết",
+      "chapters": "Chương",
+      "toneTitle": "Văn phong dịch — ảnh hưởng đến phong cách viết",
       "paragraphCount": "{nodes} đoạn văn · {translated} đã dịch",
       "errorOne": "{count} đoạn văn bị lỗi. Bạn có thể dịch lại để thử lại — các đoạn đã hoàn thành sẽ được bỏ qua.",
       "errorMany": "{count} đoạn văn bị lỗi. Bạn có thể dịch lại để thử lại — các đoạn đã hoàn thành sẽ được bỏ qua.",
@@ -181,7 +189,7 @@
       },
       "technical": {
         "label": "Kỹ thuật",
-        "hint": "sách chuyên môn & tài liệu tham khảo"
+        "hint": "sách chuyên môn & tham khảo"
       }
     },
     "modelHints": {
@@ -193,7 +201,7 @@
       "bestQualityStable": "chất lượng tốt nhất, ổn định",
       "balanced": "cân bằng",
       "freeTierFast": "gói miễn phí, nhanh",
-      "flagshipCoding": "đầu bảng cho lập trình/tác vụ",
+      "flagshipCoding": "đầu bảng cho lập trình/tác vụ tự hành",
       "longContext": "ngữ cảnh dài, ổn định",
       "cheaper": "rẻ hơn",
       "latestLongContext": "mới nhất, ngữ cảnh 256K"
@@ -202,9 +210,9 @@
   "gallery": {
     "filters": {
       "Photograph": "Ảnh chụp",
-      "Painting": "Tranh họa",
-      "Drawing": "Tranh vẽ",
-      "Digital Art": "Nghệ thuật số"
+      "Painting": "Tranh vẽ",
+      "Drawing": "Hình vẽ",
+      "Digital Art": "Nghệ thuật kỹ thuật số"
     }
   },
   "lightbox": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Nhiếp ảnh",
     "art": "Nghệ thuật"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "Khối Rubik 3D — Philo Li",
+      "description": "Khối Rubik 3D tương tác. Thiết lập xáo trộn và lời giải, chơi từng bước, ẩn màu sắc hoặc các mặt để luyện tập ghi nhớ."
+    },
+    "title": "Khối Rubik 3D",
+    "intro": "Nhập chuỗi xáo trộn và lời giải. Xem từng bước giải, kéo để xoay góc nhìn, và dùng chế độ học tập để luyện tập các công thức.",
+    "scramble": {
+      "label": "Xáo trộn",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Áp dụng xáo trộn",
+      "reset": "Đặt lại"
+    },
+    "solution": {
+      "label": "Lời giải",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Không nhận dạng được: {token}"
+    },
+    "playback": {
+      "play": "Phát",
+      "pause": "Tạm dừng",
+      "prev": "Bước trước",
+      "next": "Bước tiếp theo",
+      "first": "Nhảy về đầu",
+      "last": "Nhảy đến cuối",
+      "speed": "Tốc độ"
+    },
+    "learning": {
+      "title": "Chế độ học tập",
+      "master": "Bật",
+      "hideColors": "Ẩn màu sắc",
+      "hideFaces": "Ẩn các mặt",
+      "faceLabel": {
+        "U": "Trên",
+        "R": "Phải",
+        "F": "Trước",
+        "D": "Dưới",
+        "L": "Trái",
+        "B": "Sau"
+      },
+      "colorLabel": {
+        "white": "Trắng",
+        "red": "Đỏ",
+        "green": "Xanh lá",
+        "yellow": "Vàng",
+        "orange": "Cam",
+        "blue": "Xanh dương"
+      }
+    },
+    "share": {
+      "copy": "Sao chép liên kết chia sẻ",
+      "copied": "Đã sao chép!"
+    }
   }
 }

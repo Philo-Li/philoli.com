@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Sulat-balita",
-    "subscribe": "Mag-subscribe →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,22 +11,26 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Sulat-balita",
+    "subscribe": "Mag-subscribe →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Artista, Manunulat, Tagalikha",
     "blogTitle": "Blog — Philo Li",
     "blogDescription": "Mga artikulo tungkol sa sining, pilosopiya, at pagbuo ng mga bagay.",
-    "aboutTitle": "Tungkol sa — Philo Li",
+    "aboutTitle": "Tungkol — Philo Li",
     "aboutDescription": "Tungkol kay Philo Li — artista, manunulat, at tagabuo.",
     "artTitle": "Sining — Philo Li",
-    "artDescription": "Potograpiya, pagpipinta, at sining na digital ni Philo Li.",
+    "artDescription": "Potograpiya, pagpipinta, at digital art ni Philo Li.",
     "projectsTitle": "Mga Proyekto — Philo Li",
     "projectsDescription": "Mga proyekto ni Philo Li.",
     "newsletterTitle": "Newsletter — Philo Li",
     "newsletterDescription": "Mag-subscribe sa mga newsletter ni Philo Li.",
-    "ebookTranslatorTitle": "Tagasalin ng Bilingual na Ebook — Philo Li",
-    "ebookTranslatorDescription": "Mag-upload ng EPUB at isalin ito sa isang bilingual na edisyon gamit ang sarili mong LLM API key. Gumagana nang buo sa iyong browser."
+    "ebookTranslatorTitle": "Bilingguwal na Tagasalin ng Ebook — Philo Li",
+    "ebookTranslatorDescription": "Mag-upload ng EPUB at isalin ito sa isang bilingguwal na edisyon gamit ang iyong sariling LLM API key. Ganap na tumatakbo sa iyong browser.",
+    "rubiksCubeTitle": "3D Rubik's Cube — Philo Li",
+    "rubiksCubeDescription": "Interaktibong 3D Rubik's Cube. Magtakda ng scramble at solusyon, maglaro nang sunud-sunod, itago ang mga kulay o mukha para sa mga pagsasanay sa pagsasaulo."
   },
   "nav": {
     "blog": "Blog",
@@ -42,44 +44,44 @@
     "dark": "Madilim",
     "light": "Maliwanag",
     "toggleAria": "Palitan ang tema ng kulay",
-    "toggleToLight": "Lumipat sa maliwanag na mode",
-    "toggleToDark": "Lumipat sa madilim na mode"
+    "toggleToLight": "Lumipat sa light mode",
+    "toggleToDark": "Lumipat sa dark mode"
   },
   "hero": {
-    "line1": "Likhâ.",
-    "line2": "Sipat.",
-    "line3": "Panday.",
-    "tagline": "Nagpipinta, kumukuha ng retrato, nagsusulat, at nagpapanday. Sa pagtatagpo ng kuryosidad, sining, at koda—isinisilang ang lahat ng ito.",
+    "line1": "Lumikha.",
+    "line2": "Kumuha.",
+    "line3": "Bumuo.",
+    "tagline": "Nagpipinta, kumukuha ng larawan, nagsusulat, at bumubuo ako ng mga bagay. Ito ang nangyayari kapag ang kuryosidad ay nakatagpo ng kasanayan at code.",
     "labelLeft": "Artista",
-    "labelRight": "Tagabuo"
+    "labelRight": "Developer"
   },
   "recentPosts": {
-    "label": "Mga Bagong Isinulat",
+    "label": "Kamakailang Sulatin",
     "viewAll": "Tingnan lahat →"
   },
   "newsletterCta": {
-    "label": "Sulat-balita",
+    "label": "Newsletter",
     "headline": "Manatiling mausisa.",
-    "desc": "Mga kwento tungkol sa sining, buhay, at paglikha — diretso sa inbox mo."
+    "desc": "Mga kaisipan tungkol sa sining, buhay, at pagbuo ng mga bagay — ipinapadala sa iyong inbox."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
-    "tagline": "Artista · Manunulat · Tagadebelop",
-    "bioP1": "Isa akong creator, programmer, at thinker. Hilig ko ang gumawa ng mga bagay mula sa simula — painting man 'yan, code, o isang essay.",
-    "bioP2": "Sa loob ng mahabang panahon, ang pinakamalaking hadlang sa hilig kong ito ay ang sarili kong utak: mayroon akong ADHD. Matapos subukan ang halos lahat ng kagamitan para sa pagiging produktibo sa merkado, napagtanto ko na ang lahat ng ito ay idinisenyo para sa isang neurotypical na isipan. Kailangan ko ng isang \"kasama\" — isang bagay na nakakaunawa sa akin at makakapagbigay ng banayad na paalala sa oras na kailangan ko ito nang husto.",
-    "bioP3": "Wala akong makitang ganoon kahit saan. Kaya naisipan kong ako na mismo ang gumawa — para sa sarili ko, at para sa milyon-milyong gaya ko na may \"busy brain.\" Dito isinilang ang Dopamind.",
+    "tagline": "Artista · Manunulat · Developer",
+    "bioP1": "Isa akong tagalikha, programmer, at palaisip. Mahilig akong bumuo ng mga bagay mula sa simula — ito man ay isang pinta, isang piraso ng code, o isang malalim na sanaysay.",
+    "bioP2": "Sa mahabang panahon, ang pinakamalaking hadlang sa hilig na ito ay ang sarili kong utak: mayroon akong ADHD. Matapos subukan ang halos lahat ng kagamitan para sa pagiging produktibo sa merkado, napagtanto ko na ang lahat ng ito ay idinisenyo para sa isang neurotypical na isipan. Kailangan ko ng isang \"kapareha\" — isang bagay na nakakaunawa sa akin at makakapagbigay ng banayad na paalala sa oras na kailangan ko ito nang husto.",
+    "bioP3": "Hindi ko ito mahanap kahit saan. Kaya nagpasya akong buuin ito nang mag-isa — para sa akin, at para sa milyun-milyong iba pa na may \"abalang utak\" na katulad ng sa akin. Dito isinilang ang Dopamind.",
     "sectionProjects": "Mga Proyekto",
-    "sectionNewsletter": "Sulat-balita",
+    "sectionNewsletter": "Newsletter",
     "sectionArtworks": "Mga Obra",
     "sectionReadMore": "Magbasa Pa",
-    "sectionFindMe": "Hanapin ako sa iba pang lugar",
-    "projectDopamindDesc": "Ang AI companion mo",
+    "sectionFindMe": "Hanapin ako sa iba pang mga dako",
+    "projectDopamindDesc": "Ang iyong pang-araw-araw na AI companion",
     "projectPhiloArtDesc": "Galerya ng Digital na Sining",
     "newsletterMediumDesc": "Mga Sanaysay",
-    "artworksText": "Dito ko pino-post ang mga artwork ko: philoart.io/philo",
-    "artworksContactText": "Gusto mong bumili ng original na painting o photography print? DM mo lang ako sa X, o mag-email sa philo.li.official@gmail.com",
+    "artworksText": "Ipinopost ko ang aking mga obra sa philoart.io/philo",
+    "artworksContactText": "Para bumili ng mga orihinal na pinta o mga print ng potograpiya, mag-DM sa X o mag-email sa philo.li.official@gmail.com",
     "extraEmail": "Email"
   },
   "artPage": {
@@ -91,16 +93,21 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Ang AI companion mo. Kasama mo araw-araw para tulungan kang mas mapaganda ang takbo ng buhay."
+        "description": "Ang iyong AI companion. Kasama mo araw-araw, tinutulungan kang mamuhay nang mas mabuti."
       },
       "philoart": {
         "name": "PhiloArt",
         "description": "Ang aking personal na galerya ng sining — potograpiya, mga pinta, at digital na sining."
       },
       "ebookTranslator": {
-        "name": "Tagasalin ng Bilingguwal na Ebook",
-        "description": "Gawing bilingual ang kahit anong e-book — tatakbo sa browser mo gamit ang sarili mong LLM API key.",
-        "cta": "Buksan ang kasangkapan →"
+        "name": "Bilingguwal na Tagasalin ng Ebook",
+        "description": "Gawing bilingguwal na edisyon ang anumang e-book — tumatakbo sa iyong browser gamit ang sarili mong LLM API key.",
+        "cta": "Buksan ang tool →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubik's Cube",
+        "description": "Sundan ang mga scramble at solusyon sa isang interactive na 3D cube. Itinatago ng mode ng pag-aaral ang mga kulay at mukha para sa mga pagsasanay sa algoritmo.",
+        "cta": "Buksan ang cube →"
       }
     }
   },
@@ -111,9 +118,9 @@
   "ebookTranslator": {
     "eyebrow": "Proyekto",
     "title": "Bilingguwal na Tagasalin ng Ebook",
-    "subtitle": "Mag-upload ng EPUB, gamitin ang sarili mong LLM API key, at kumuha ng bilingguwal na edisyon kung saan salit-salit ang orihinal at isinaling teksto sa bawat talata. Ang file ay sinusuri nang buo sa iyong browser — ang iyong libro ay hindi kailanman dadaan sa anumang server.",
+    "subtitle": "Mag-upload ng EPUB, gamitin ang sarili mong LLM API key, at kumuha ng bilingguwal na edisyon kung saan magkasunod ang orihinal at isinaling teksto bawat talata. Ang file ay sinusuri nang buo sa iyong browser — hindi kailanman mapupunta ang iyong libro sa anumang server.",
     "steps": {
-      "settings": "mga pagsasaayos",
+      "settings": "mga setting",
       "upload": "i-upload",
       "browse": "mag-browse"
     },
@@ -123,7 +130,7 @@
       "downloadEpub": "⬇ I-download ang EPUB",
       "building": "Binubuo…",
       "back": "← Bumalik",
-      "settingsModel": "← Mga Pagsasaayos / modelo",
+      "settingsModel": "← Mga Setting / modelo",
       "show": "Ipakita",
       "hide": "Itago",
       "cancel": "Kanselahin",
@@ -136,44 +143,45 @@
       "provider": "Tagapagbigay",
       "model": "Modelo",
       "apiKey": "API key",
-      "apiKeyPlaceholder": "I-paste ang iyong {provider} key",
-      "apiKeyHint": "Kumuha sa {link}. Ang iyong key ay ipinapadala lamang sa {provider}, hindi kailanman sa philoli.com.",
-      "rememberKey": "Tandaan ang key sa browser na ito lamang (localStorage). Alisin ang tsek para sa mga nakabahaging aparato.",
+      "apiKeyPlaceholder": "Idikit ang iyong {provider} key",
+      "apiKeyHint": "Kumuha sa {link}. Ang iyong key ay ipinapadala lamang sa {provider}, hinding-hindi sa philoli.com.",
+      "rememberKey": "Tandaan ang key sa browser na ito lamang (localStorage). Alisin ang tsek para sa mga kagamitang pinagsasaluhan.",
       "showApiKey": "Ipakita ang API key",
       "hideApiKey": "Itago ang API key",
       "translateFrom": "Isalin mula sa",
       "translateTo": "Isalin sa",
       "tone": "Tono",
-      "customProvider": "Pasadyang (OpenAI-compatible)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customProvider": "Pasadyang (tugma sa OpenAI)",
+      "customModel": "ID ng Modelo",
+      "customModelPlaceholder": "hal. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API Endpoint",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Buong URL sa isang OpenAI-compatible na /chat/completions endpoint.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "Buong URL para sa isang endpoint na tugma sa OpenAI /chat/completions.",
+      "openrouterModelPlaceholder": "hal. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "hal. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Maglagay ng API key para magpatuloy."
     },
     "upload": {
       "parsing": "Sinusuri ang EPUB…",
-      "dropTitle": "I-drop ang EPUB dito",
-      "dropSubtitle": "o i-click para pumili ng file",
+      "dropTitle": "Ilagay ang EPUB dito",
+      "dropSubtitle": "o pindutin para pumili ng file",
       "noChapters": "Walang nahanap na mababasang kabanata sa EPUB na ito."
     },
     "browse": {
       "chapters": "Mga Kabanata",
       "toneTitle": "Tono ng pagsasalin — nakakaapekto sa estilo ng pagsulat",
-      "paragraphCount": "{nodes} na talata · {translated} naisalin",
+      "paragraphCount": "{nodes} na talata · {translated} na naisalin",
       "errorOne": "{count} na talata ang nabigo. Maaari mong isalin muli para sumubok ulit — lalaktawan ang mga talatang tapos na.",
-      "errorMany": "{count} na mga talata ang nabigo. Maaari mong isalin muli para sumubok ulit — lalaktawan ang mga talatang tapos na.",
-      "noTranslatableText": "Ang kabanatang ito ay walang tekstong maisasalin (pabalat, paunang salita, atbp).",
+      "errorMany": "{count} na talata ang nabigo. Maaari mong isalin muli para sumubok ulit — lalaktawan ang mga talatang tapos na.",
+      "noTranslatableText": "Ang kabanatang ito ay walang tekstong maisasalin (pabalat, panimulang bahagi, atbp).",
       "translatingAria": "Isinasalin",
       "translatingLabel": "isinasalin…",
-      "buildFailed": "Bigo sa pagbuo ng EPUB:"
+      "buildFailed": "Nabigong buuin ang EPUB:"
     },
     "tones": {
       "idiomatic": {
         "label": "Idyomatiko",
-        "hint": "natural at matatas — karamihan ng mga libro"
+        "hint": "natural at matatas — karamihan ng mga aklat"
       },
       "literary": {
         "label": "Pampanitikan",
@@ -181,7 +189,7 @@
       },
       "technical": {
         "label": "Teknikal",
-        "hint": "mga librong propesyonal at sanggunian"
+        "hint": "mga aklat na propesyonal at sanggunian"
       }
     },
     "modelHints": {
@@ -201,8 +209,8 @@
   },
   "gallery": {
     "filters": {
-      "Photograph": "Litrato",
-      "Painting": "Pinta",
+      "Photograph": "Larawan",
+      "Painting": "Pintura",
       "Drawing": "Guhit",
       "Digital Art": "Sining na Digital"
     }
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Potograpiya",
     "art": "Sining"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubik's Cube — Philo Li",
+      "description": "Interaktibong 3D Rubik's Cube. Magtakda ng pagbalasa at solusyon, laruin nang sunud-sunod, itago ang mga kulay o mukha para sa mga pagsasanay sa pagsasaulo."
+    },
+    "title": "3D na Rubik's Cube",
+    "intro": "Mag-type ng paghalu-halo at solusyon. Isa-isahin ang mga hakbang ng paglutas, i-drag para paikutin ang view, at gamitin ang mode ng pag-aaral para mag-ensayo ng mga algorithm case.",
+    "scramble": {
+      "label": "Paghalu-halo",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Ilapat ang paghalu-halo",
+      "reset": "I-reset"
+    },
+    "solution": {
+      "label": "Solusyon",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Hindi kinikilala: {token}"
+    },
+    "playback": {
+      "play": "I-play",
+      "pause": "I-pause",
+      "prev": "Nakaraang hakbang",
+      "next": "Susunod na hakbang",
+      "first": "Pumunta sa simula",
+      "last": "Pumunta sa dulo",
+      "speed": "Bilis"
+    },
+    "learning": {
+      "title": "Mode ng pag-aaral",
+      "master": "Paganahin",
+      "hideColors": "Itago ang mga kulay",
+      "hideFaces": "Itago ang mga mukha",
+      "faceLabel": {
+        "U": "Itaas",
+        "R": "Kanan",
+        "F": "Harap",
+        "D": "Ibaba",
+        "L": "Kaliwa",
+        "B": "Likod"
+      },
+      "colorLabel": {
+        "white": "Puti",
+        "red": "Pula",
+        "green": "Berde",
+        "yellow": "Dilaw",
+        "orange": "Kahel",
+        "blue": "Asul"
+      }
+    },
+    "share": {
+      "copy": "Kopyahin ang link sa pagbabahagi",
+      "copied": "Nakopya na!"
+    }
   }
 }

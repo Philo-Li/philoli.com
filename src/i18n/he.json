@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "ניוזלטר",
-    "subscribe": "הרשמה →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "ניוזלטר",
+    "subscribe": "הרשמה →"
   },
   "metadata": {
     "siteTitle": "Philo Li — אמן, כותב, יוצר",
@@ -28,7 +28,9 @@
     "newsletterTitle": "ניוזלטר — Philo Li",
     "newsletterDescription": "הירשמו לניוזלטרים של Philo Li.",
     "ebookTranslatorTitle": "מתרגם ספרים דיגיטליים דו-לשוני — Philo Li",
-    "ebookTranslatorDescription": "העלו קובץ EPUB ותרגמו אותו למהדורה דו-לשונית עם ה-API key של ה-LLM שלכם. פועל כולו בדפדפן שלכם."
+    "ebookTranslatorDescription": "העלו קובץ EPUB ותרגמו אותו למהדורה דו-לשונית עם API key של LLM משלכם. פועל כולו בדפדפן שלכם.",
+    "rubiksCubeTitle": "קובייה הונגרית בתלת-ממד — Philo Li",
+    "rubiksCubeDescription": "קובייה הונגרית תלת-ממדית אינטראקטיבית. הגדירו ערבוב ופתרון, שחקו צעד אחר צעד, הסתירו צבעים או פאות לתרגול זיכרון."
   },
   "nav": {
     "blog": "בלוג",
@@ -47,39 +49,39 @@
   },
   "hero": {
     "line1": "ליצור.",
-    "line2": "להנציח.",
+    "line2": "לתעד.",
     "line3": "לבנות.",
-    "tagline": "אני מצייר, מצלם, כותב ויוצר בידיי. כשהסקרנות פוגשת את המלאכה והקוד, כל זה נולד.",
+    "tagline": "אני מצייר, מצלם, כותב ובונה דברים. זה מה שקורה כשסקרנות פוגשת אומנות וקוד.",
     "labelLeft": "אמן",
     "labelRight": "מפתח"
   },
   "recentPosts": {
     "label": "כתיבה אחרונה",
-    "viewAll": "צפה בהכל →"
+    "viewAll": "הצג הכל →"
   },
   "newsletterCta": {
     "label": "ניוזלטר",
     "headline": "הישארו סקרנים.",
-    "desc": "מחשבות על אמנות, חיים ויצירה — ישר לתיבת המייל שלך."
+    "desc": "מחשבות על אמנות, חיים ובניית דברים — נשלח לתיבת הדואר הנכנס שלך."
   },
   "blogPage": {
     "title": "בלוג"
   },
   "aboutPage": {
     "tagline": "אמן · כותב · מפתח",
-    "bioP1": "אני יוצר, מתכנת וחושב. ליצור דברים מאפס זה מה שאני הכי אוהב — בין אם זה ציור, קטע קוד או מאמר מעמיק.",
-    "bioP2": "במשך זמן רב, המכשול הגדול ביותר לתשוקה הזו היה המוח שלי: יש לי ADHD. אחרי שניסיתי כמעט כל כלי פרודוקטיביות בשוק, הבנתי שכולם עוצבו עבור מוח נוירוטיפיקלי. הייתי צריך \"שותף\" — משהו שיבין אותי ויוכל לתת לי דחיפה קלה בדיוק כשהייתי צריך אותה ביותר.",
-    "bioP3": "לא מצאתי את זה בשום מקום. אז החלטתי לבנות את זה בעצמי — בשבילי, ובשביל מיליוני האנשים האחרים עם \"מוח עסוק\" בדיוק כמו שלי. ככה נולד Dopamind.",
+    "bioP1": "אני יוצר, מתכנת והוגה דעות. אני אוהב לבנות דברים מאפס — בין אם זה ציור, קטע קוד או מאמר מעמיק.",
+    "bioP2": "במשך זמן רב, המכשול הגדול ביותר לתשוקה הזו היה המוח שלי: יש לי ADHD. אחרי שניסיתי כמעט כל כלי פרודוקטיביות בשוק, הבנתי שכולם עוצבו עבור מוח נוירוטיפיקלי. הייתי זקוק ל\"שותף\" — משהו שיבין אותי ויוכל לתת לי דחיפה קלה בדיוק כשהייתי זקוק לה ביותר.",
+    "bioP3": "לא הצלחתי למצוא את זה בשום מקום. אז החלטתי לבנות את זה בעצמי — עבורי, ועבור מיליוני אחרים עם \"מוח עסוק\" בדיוק כמו שלי. כך נולד Dopamind.",
     "sectionProjects": "פרויקטים",
     "sectionNewsletter": "ניוזלטר",
     "sectionArtworks": "יצירות אמנות",
     "sectionReadMore": "קרא עוד",
     "sectionFindMe": "מצאו אותי במקומות נוספים",
-    "projectDopamindDesc": "ה-AI האישי שלך",
+    "projectDopamindDesc": "מלווה ה-AI היומי שלך",
     "projectPhiloArtDesc": "גלריית אמנות דיגיטלית",
     "newsletterMediumDesc": "מאמרים",
-    "artworksText": "אני מעלה את עבודות האמנות שלי ל-philoart.io/philo",
-    "artworksContactText": "רוצה לקנות ציור מקורי או הדפס צילום? אפשר לשלוח לי הודעה ב-X או מייל ל-philo.li.official@gmail.com",
+    "artworksText": "אני מפרסם את יצירות האמנות שלי ב-philoart.io/philo",
+    "artworksContactText": "לרכישת ציורים מקוריים או הדפסי צילום, שלחו הודעה פרטית ב-X או אימייל ל-philo.li.official@gmail.com",
     "extraEmail": "אימייל"
   },
   "artPage": {
@@ -91,16 +93,21 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "ה-AI האישי שלך. מלווה אותך כל יום ועוזר לך להפוך את החיים לטובים יותר."
+        "description": "מלווה ה-AI שלך. לצידך כל יום, עוזר לך לחיות חיים טובים יותר."
       },
       "philoart": {
         "name": "PhiloArt",
-        "description": "גלריית האמנות האישית שלי — צילום, ציורים, ואמנות דיגיטלית."
+        "description": "גלריית האמנות האישית שלי — צילום, ציורים ואמנות דיגיטלית."
       },
       "ebookTranslator": {
         "name": "מתרגם ספרים דיגיטליים דו-לשוני",
-        "description": "הופך כל ספר דיגיטלי למהדורה דו-לשונית — רץ אצלך בדפדפן, עם ה-LLM API key שלך.",
-        "cta": "פתח כלי →"
+        "description": "הפכו כל ספר דיגיטלי למהדורה דו-לשונית — פועל בדפדפן שלכם עם LLM API key משלכם.",
+        "cta": "פתיחת הכלי →"
+      },
+      "rubiksCube": {
+        "name": "קובייה הונגרית בתלת-ממד",
+        "description": "עברו על ערבובים ופתרונות בקובייה תלת-ממדית אינטראקטיבית. מצב למידה מסתיר צבעים ופאות לתרגול אלגוריתמים.",
+        "cta": "פתיחת הקובייה →"
       }
     }
   },
@@ -111,25 +118,25 @@
   "ebookTranslator": {
     "eyebrow": "פרויקט",
     "title": "מתרגם ספרים דיגיטליים דו-לשוני",
-    "subtitle": "העלו קובץ EPUB, השתמשו במפתח API key של LLM משלכם, וקבלו מהדורה דו-לשונית שבה הטקסט המקורי והמתורגם משולבים פסקה אחר פסקה. הקובץ מעובד כולו בדפדפן שלכם — הספר שלכם לעולם לא מגיע לאף שרת.",
+    "subtitle": "העלו קובץ EPUB, השתמשו ב-LLM API key משלכם, וקבלו מהדורה דו-לשונית שבה הטקסט המקורי והמתורגם משולבים פסקה אחר פסקה. הקובץ מעובד כולו בדפדפן שלכם — הספר שלכם לעולם לא מגיע לשרת כלשהו.",
     "steps": {
       "settings": "הגדרות",
       "upload": "העלאה",
       "browse": "עיון"
     },
     "actions": {
-      "cancelRunning": "ביטול הרצה",
-      "translateAllRemaining": "תרגם את כל השאר",
+      "cancelRunning": "ביטול הפעולה",
+      "translateAllRemaining": "תרגום כל השאר",
       "downloadEpub": "⬇ הורדת EPUB",
       "building": "בבנייה…",
       "back": "← חזרה",
       "settingsModel": "← הגדרות / מודל",
-      "show": "הצג",
-      "hide": "הסתר",
+      "show": "הצגה",
+      "hide": "הסתרה",
       "cancel": "ביטול",
-      "retranslate": "תרגם מחדש",
+      "retranslate": "תרגום מחדש",
       "resume": "המשך",
-      "translateChapter": "תרגם פרק זה",
+      "translateChapter": "תרגום פרק זה",
       "continue": "המשך →"
     },
     "settings": {
@@ -137,20 +144,21 @@
       "model": "מודל",
       "apiKey": "API key",
       "apiKeyPlaceholder": "הדבק את מפתח ה-{provider} שלך",
-      "apiKeyHint": "ניתן להשיג אחד ב-{link}. המפתח שלך נשלח רק ל-{provider}, לעולם לא ל-philoli.com.",
-      "rememberKey": "זכור את המפתח בדפדפן זה בלבד (localStorage). בטל את הסימון עבור מכשירים משותפים.",
+      "apiKeyHint": "קבל אחד ב-{link}. המפתח שלך נשלח רק ל-{provider}, לעולם לא ל-philoli.com.",
+      "rememberKey": "זכור מפתח בדפדפן זה בלבד (localStorage). בטל את הסימון עבור מכשירים משותפים.",
       "showApiKey": "הצג API key",
       "hideApiKey": "הסתר API key",
       "translateFrom": "תרגם מ-",
       "translateTo": "תרגם ל-",
       "tone": "סגנון",
       "customProvider": "מותאם אישית (תואם OpenAI)",
-      "customModel": "מודל ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModel": "מזהה מודל",
+      "customModelPlaceholder": "למשל gpt-4o, deepseek-chat, …",
       "customEndpoint": "נקודת קצה של API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "כתובת URL מלאה לנקודת קצה תואמת OpenAI מסוג /chat/completions.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "כתובת URL מלאה לנקודת קצה של /chat/completions התואמת ל-OpenAI.",
+      "openrouterModelPlaceholder": "למשל google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "למשל kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "הזן API key כדי להמשיך."
     },
     "upload": {
@@ -163,17 +171,17 @@
       "chapters": "פרקים",
       "toneTitle": "סגנון תרגום — משפיע על סגנון הכתיבה",
       "paragraphCount": "{nodes} פסקאות · {translated} תורגמו",
-      "errorOne": "פסקה {count} נכשלה. ניתן לתרגם שוב כדי לנסות שנית — פסקאות שכבר תורגמו יידלגו.",
-      "errorMany": "{count} פסקאות נכשלו. ניתן לתרגם שוב כדי לנסות שנית — פסקאות שכבר תורגמו יידלגו.",
-      "noTranslatableText": "בפרק זה אין טקסט לתרגום (כריכה, הקדמה וכו').",
+      "errorOne": "פסקה {count} נכשלה. ניתן לתרגם שוב כדי לנסות שנית — פסקאות שכבר תורגמו ידלגו.",
+      "errorMany": "{count} פסקאות נכשלו. ניתן לתרגם שוב כדי לנסות שנית — פסקאות שכבר תורגמו ידלגו.",
+      "noTranslatableText": "בפרק זה אין טקסט הניתן לתרגום (כריכה, חלקים מקדימים וכו').",
       "translatingAria": "מתרגם",
       "translatingLabel": "מתרגם…",
-      "buildFailed": "בניית ה-EPUB נכשלה:"
+      "buildFailed": "בניית EPUB נכשלה:"
     },
     "tones": {
       "idiomatic": {
-        "label": "טבעי",
-        "hint": "טבעי ושוטף — רוב הספרים"
+        "label": "אידיומטי",
+        "hint": "טבעי וזורם — רוב הספרים"
       },
       "literary": {
         "label": "ספרותי",
@@ -193,15 +201,15 @@
       "bestQualityStable": "האיכות הטובה ביותר, יציב",
       "balanced": "מאוזן",
       "freeTierFast": "מסלול חינמי, מהיר",
-      "flagshipCoding": "ספינת דגל לתכנות/סוכני",
+      "flagshipCoding": "דגם דגל לתכנות/סוכנים",
       "longContext": "הקשר ארוך, יציב",
       "cheaper": "זול יותר",
-      "latestLongContext": "הכי חדש, הקשר של 256K"
+      "latestLongContext": "הכי עדכני, הקשר 256K"
     }
   },
   "gallery": {
     "filters": {
-      "Photograph": "תצלום",
+      "Photograph": "צילום",
       "Painting": "ציור",
       "Drawing": "רישום",
       "Digital Art": "אמנות דיגיטלית"
@@ -214,5 +222,59 @@
   "social": {
     "photography": "צילום",
     "art": "אמנות"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "קובייה הונגרית בתלת-ממד — Philo Li",
+      "description": "קובייה הונגרית אינטראקטיבית בתלת-ממד. הגדר ערבוב ופתרון, שחק צעד אחר צעד, הסתר צבעים או פאות לתרגול זיכרון."
+    },
+    "title": "קוביה הונגרית בתלת-ממד",
+    "intro": "הקלידו ערבוב ופתרון. עברו על שלבי הפתרון, גררו כדי לסובב את התצוגה, והשתמשו במצב למידה כדי לתרגל אלגוריתמים.",
+    "scramble": {
+      "label": "ערבוב",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "החל ערבוב",
+      "reset": "איפוס"
+    },
+    "solution": {
+      "label": "פתרון",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "לא מזוהה: {token}"
+    },
+    "playback": {
+      "play": "הפעלה",
+      "pause": "השהיה",
+      "prev": "שלב קודם",
+      "next": "שלב הבא",
+      "first": "קפיצה להתחלה",
+      "last": "קפיצה לסוף",
+      "speed": "מהירות"
+    },
+    "learning": {
+      "title": "מצב למידה",
+      "master": "הפעלה",
+      "hideColors": "הסתר צבעים",
+      "hideFaces": "הסתר פאות",
+      "faceLabel": {
+        "U": "למעלה",
+        "R": "ימין",
+        "F": "חזית",
+        "D": "למטה",
+        "L": "שמאל",
+        "B": "אחורה"
+      },
+      "colorLabel": {
+        "white": "לבן",
+        "red": "אדום",
+        "green": "ירוק",
+        "yellow": "צהוב",
+        "orange": "כתום",
+        "blue": "כחול"
+      }
+    },
+    "share": {
+      "copy": "העתק קישור לשיתוף",
+      "copied": "הועתק!"
+    }
   }
 }

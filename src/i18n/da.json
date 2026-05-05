@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Nyhedsbrev",
-    "subscribe": "Abonnér →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,12 +11,14 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Nyhedsbrev",
+    "subscribe": "Tilmeld →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Kunstner, forfatter, skaber",
     "blogTitle": "Blog — Philo Li",
-    "blogDescription": "Artikler om kunst, filosofi og at bygge ting.",
+    "blogDescription": "Artikler om kunst, filosofi og det at bygge ting.",
     "aboutTitle": "Om — Philo Li",
     "aboutDescription": "Om Philo Li — kunstner, forfatter og udvikler.",
     "artTitle": "Kunst — Philo Li",
@@ -28,7 +28,9 @@
     "newsletterTitle": "Nyhedsbrev — Philo Li",
     "newsletterDescription": "Tilmeld dig Philo Lis nyhedsbreve.",
     "ebookTranslatorTitle": "Tosproget e-bogsoversætter — Philo Li",
-    "ebookTranslatorDescription": "Upload en EPUB og oversæt den til en tosproget udgave med din egen LLM API key. Kører udelukkende i din browser."
+    "ebookTranslatorDescription": "Upload en EPUB og oversæt den til en tosproget udgave med din egen LLM API key. Kører udelukkende i din browser.",
+    "rubiksCubeTitle": "3D Rubiks terning — Philo Li",
+    "rubiksCubeDescription": "Interaktiv 3D Rubiks terning. Indstil en blanding og en løsning, afspil trin for trin, skjul farver eller sider til udenadslære."
   },
   "nav": {
     "blog": "Blog",
@@ -36,20 +38,20 @@
     "projects": "Projekter",
     "newsletter": "Nyhedsbrev",
     "about": "Om",
-    "menuLabel": "Skift menu"
+    "menuLabel": "Menu til/fra"
   },
   "theme": {
     "dark": "Mørk",
     "light": "Lys",
     "toggleAria": "Skift farvetema",
-    "toggleToLight": "Skift til lys tilstand",
-    "toggleToDark": "Skift til mørk tilstand"
+    "toggleToLight": "Skift til lyst tema",
+    "toggleToDark": "Skift til mørkt tema"
   },
   "hero": {
     "line1": "Skab.",
     "line2": "Indfang.",
     "line3": "Byg.",
-    "tagline": "Jeg maler, fotograferer, skriver og bygger. I mødet mellem nysgerrighed, håndværk og kode bliver alt dette til.",
+    "tagline": "Jeg maler, fotograferer, skriver og bygger ting. Dette er hvad der sker, når nysgerrighed møder håndværk og kode.",
     "labelLeft": "Kunstner",
     "labelRight": "Udvikler"
   },
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "Nyhedsbrev",
     "headline": "Forbliv nysgerrig.",
-    "desc": "Tanker om kunst, livet og det at skabe – sendt direkte til din indbakke."
+    "desc": "Tanker om kunst, livet og at bygge ting — leveret til din indbakke."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Kunstner · Forfatter · Udvikler",
-    "bioP1": "Jeg er skaber, programmør og tænker. At skabe ting helt fra bunden er det, jeg nyder allermest – uanset om det er et maleri, en bid kode eller et længere essay.",
-    "bioP2": "I lang tid var den største forhindring for denne passion min egen hjerne: Jeg har ADHD. Efter at have prøvet næsten alle produktivitetsværktøjer på markedet, indså jeg, at de alle var designet til et neurotypisk sind. Jeg havde brug for en \"partner\" — noget, der forstod mig og kunne give mig et kærligt puf, lige når jeg havde mest brug for det.",
-    "bioP3": "Jeg kunne ikke finde det nogen steder. Så jeg besluttede at bygge det selv – for min egen skyld, og for de millioner af andre med en \"travl hjerne\" ligesom min. Det var sådan, Dopamind blev til.",
+    "bioP1": "Jeg er en skaber, en programmør og en tænker. Jeg elsker at bygge ting fra bunden — uanset om det er et maleri, et stykke kode eller et dybdegående essay.",
+    "bioP2": "I lang tid var den største forhindring for denne passion min egen hjerne: Jeg har ADHD. Efter at have prøvet næsten alle produktivitetsværktøjer på markedet, indså jeg, at de alle var designet til et neurotypisk sind. Jeg havde brug for en \"partner\" — noget, der forstod mig og kunne give mig et kærligt skub, lige når jeg havde mest brug for det.",
+    "bioP3": "Jeg kunne ikke finde det nogen steder. Så jeg besluttede at bygge det selv — til mig selv og til de millioner af andre med en \"travl hjerne\" ligesom min. Det var sådan, Dopamind blev født.",
     "sectionProjects": "Projekter",
     "sectionNewsletter": "Nyhedsbrev",
     "sectionArtworks": "Kunstværker",
     "sectionReadMore": "Læs mere",
     "sectionFindMe": "Find mig andre steder",
-    "projectDopamindDesc": "Din AI-makker",
+    "projectDopamindDesc": "Din daglige AI-ledsager",
     "projectPhiloArtDesc": "Digitalt kunstgalleri",
     "newsletterMediumDesc": "Essays",
-    "artworksText": "Jeg lægger mine kunstværker ud på philoart.io/philo",
-    "artworksContactText": "Vil du købe originale malerier eller fotoprint? Send en DM på X eller skriv til philo.li.official@gmail.com",
+    "artworksText": "Jeg lægger mine kunstværker op på philoart.io/philo",
+    "artworksContactText": "For at købe originale malerier eller fotoprint, send en DM på X eller en e-mail til philo.li.official@gmail.com",
     "extraEmail": "E-mail"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Din AI-makker. Ved din side hver dag for at hjælpe dig med at få en bedre hverdag."
+        "description": "Din AI-ledsager. Ved din side hver dag, og hjælper dig med at leve et bedre liv."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "Tosproget e-bogsoversætter",
-        "description": "Gør enhver e-bog tosproget – kører i din browser med din egen LLM API key.",
+        "description": "Gør enhver e-bog til en tosproget udgave — kører i din browser med din egen LLM API-nøgle.",
         "cta": "Åbn værktøj →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubik's terning",
+        "description": "Gennemgå blandinger og løsninger på en interaktiv 3D-terning. Læringstilstand skjuler farver og sider til algoritmeøvelser.",
+        "cta": "Åbn terningen →"
       }
     }
   },
@@ -111,7 +118,7 @@
   "ebookTranslator": {
     "eyebrow": "Projekt",
     "title": "Tosproget e-bogsoversætter",
-    "subtitle": "Upload en EPUB, brug din egen LLM API key, og få en tosproget udgave tilbage, hvor den originale og oversatte tekst er flettet sammen afsnit for afsnit. Filen analyseres udelukkende i din browser — din bog rører aldrig nogen server.",
+    "subtitle": "Upload en EPUB, brug din egen LLM API-nøgle, og få en tosproget udgave tilbage, hvor den originale og oversatte tekst er flettet sammen afsnit for afsnit. Filen analyseres udelukkende i din browser — din bog rører aldrig nogen server.",
     "steps": {
       "settings": "indstillinger",
       "upload": "upload",
@@ -135,27 +142,28 @@
     "settings": {
       "provider": "Udbyder",
       "model": "Model",
-      "apiKey": "API key",
+      "apiKey": "API-nøgle",
       "apiKeyPlaceholder": "Indsæt din {provider}-nøgle",
       "apiKeyHint": "Få en på {link}. Din nøgle sendes kun til {provider}, aldrig til philoli.com.",
       "rememberKey": "Husk nøgle kun i denne browser (localStorage). Fjern markering for delte enheder.",
-      "showApiKey": "Vis API key",
-      "hideApiKey": "Skjul API key",
+      "showApiKey": "Vis API-nøgle",
+      "hideApiKey": "Skjul API-nøgle",
       "translateFrom": "Oversæt fra",
       "translateTo": "Oversæt til",
       "tone": "Tone",
       "customProvider": "Brugerdefineret (OpenAI-kompatibel)",
       "customModel": "Model-ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "f.eks. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API-slutpunkt",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Fuld URL til et OpenAI-kompatibelt /chat/completions-slutpunkt.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
-      "needApiKey": "Indtast en API key for at fortsætte."
+      "customEndpointHint": "Fuldt URL til et OpenAI-kompatibelt /chat/completions-slutpunkt.",
+      "openrouterModelPlaceholder": "f.eks. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "f.eks. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
+      "needApiKey": "Indtast en API-nøgle for at fortsætte."
     },
     "upload": {
       "parsing": "Analyserer EPUB…",
-      "dropTitle": "Træk en EPUB hertil",
+      "dropTitle": "Slip en EPUB her",
       "dropSubtitle": "eller klik for at vælge en fil",
       "noChapters": "Ingen læsbare kapitler fundet i denne EPUB."
     },
@@ -163,9 +171,9 @@
       "chapters": "Kapitler",
       "toneTitle": "Oversættelsestone — påvirker skrivestilen",
       "paragraphCount": "{nodes} afsnit · {translated} oversat",
-      "errorOne": "{count} afsnit mislykkedes. Du kan oversætte igen for at prøve på ny — afsnit, der allerede er færdige, springes over.",
-      "errorMany": "{count} afsnit mislykkedes. Du kan oversætte igen for at prøve på ny — afsnit, der allerede er færdige, springes over.",
-      "noTranslatableText": "Dette kapitel har ingen tekst, der kan oversættes (omslag, indledende sider, osv.).",
+      "errorOne": "{count} afsnit mislykkedes. Du kan oversætte igen for at prøve forfra — afsnit, der allerede er færdige, springes over.",
+      "errorMany": "{count} afsnit mislykkedes. Du kan oversætte igen for at prøve forfra — afsnit, der allerede er færdige, springes over.",
+      "noTranslatableText": "Dette kapitel har ingen tekst, der kan oversættes (forside, indledende sider osv.).",
       "translatingAria": "Oversætter",
       "translatingLabel": "oversætter…",
       "buildFailed": "Kunne ikke oprette EPUB:"
@@ -173,7 +181,7 @@
     "tones": {
       "idiomatic": {
         "label": "Idiomatisk",
-        "hint": "naturligt & flydende — de fleste bøger"
+        "hint": "naturlig & flydende — de fleste bøger"
       },
       "literary": {
         "label": "Litterær",
@@ -181,7 +189,7 @@
       },
       "technical": {
         "label": "Teknisk",
-        "hint": "faglitteratur & opslagsværker"
+        "hint": "fag- & opslagsbøger"
       }
     },
     "modelHints": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotografi",
     "art": "Kunst"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubiks terning — Philo Li",
+      "description": "Interaktiv 3D Rubiks terning. Indstil en blanding og en løsning, afspil trin for trin, skjul farver eller sider til hukommelsestræning."
+    },
+    "title": "3D Rubik's terning",
+    "intro": "Indtast en blanding og en løsning. Gå gennem løsningen trin for trin, træk for at rotere visningen, og brug læringstilstand til at øve algoritmer.",
+    "scramble": {
+      "label": "Blanding",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Anvend blanding",
+      "reset": "Nulstil"
+    },
+    "solution": {
+      "label": "Løsning",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Ikke genkendt: {token}"
+    },
+    "playback": {
+      "play": "Afspil",
+      "pause": "Pause",
+      "prev": "Forrige trin",
+      "next": "Næste trin",
+      "first": "Gå til start",
+      "last": "Gå til slutning",
+      "speed": "Hastighed"
+    },
+    "learning": {
+      "title": "Læringstilstand",
+      "master": "Aktiver",
+      "hideColors": "Skjul farver",
+      "hideFaces": "Skjul sider",
+      "faceLabel": {
+        "U": "Op",
+        "R": "Højre",
+        "F": "Forside",
+        "D": "Ned",
+        "L": "Venstre",
+        "B": "Bagside"
+      },
+      "colorLabel": {
+        "white": "Hvid",
+        "red": "Rød",
+        "green": "Grøn",
+        "yellow": "Gul",
+        "orange": "Orange",
+        "blue": "Blå"
+      }
+    },
+    "share": {
+      "copy": "Kopiér delingslink",
+      "copied": "Kopieret!"
+    }
   }
 }

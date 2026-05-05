@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Bülten",
-    "subscribe": "Abone Ol →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Bülten",
+    "subscribe": "Abone ol →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Sanatçı, Yazar, Üretici",
@@ -28,7 +28,9 @@
     "newsletterTitle": "Bülten — Philo Li",
     "newsletterDescription": "Philo Li'nin bültenlerine abone olun.",
     "ebookTranslatorTitle": "İki Dilli E-kitap Çevirmeni — Philo Li",
-    "ebookTranslatorDescription": "Bir EPUB yükleyin ve kendi LLM API key'inizle iki dilli bir baskıya çevirin. Tamamen tarayıcınızda çalışır."
+    "ebookTranslatorDescription": "Bir EPUB yükleyin ve kendi LLM API key bilginizle iki dilli bir baskıya çevirin. Tamamen tarayıcınızda çalışır.",
+    "rubiksCubeTitle": "3D Rubik Küpü — Philo Li",
+    "rubiksCubeDescription": "Etkileşimli 3D Rubik Küpü. Bir karıştırma ve çözüm ayarlayın, adım adım oynayın, ezberleme çalışmaları için renkleri veya yüzleri gizleyin."
   },
   "nav": {
     "blog": "Blog",
@@ -49,7 +51,7 @@
     "line1": "Yarat.",
     "line2": "Yakala.",
     "line3": "İnşa et.",
-    "tagline": "Resim yapıyor, fotoğraf çekiyor, yazıyor ve ellerimle inşa ediyorum. Merakın sanat ve kodla buluştuğu o noktada, tüm bunlar hayat buldu.",
+    "tagline": "Resim yapıyorum, fotoğraf çekiyorum, yazıyorum ve bir şeyler inşa ediyorum. Merak, zanaat ve kodla buluştuğunda olan budur.",
     "labelLeft": "Sanatçı",
     "labelRight": "Geliştirici"
   },
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "Bülten",
     "headline": "Meraklı kal.",
-    "desc": "Sanat, yaşam ve üretmek üzerine düşünceler — gelen kutuna."
+    "desc": "Sanat, yaşam ve bir şeyler inşa etmek üzerine düşünceler — gelen kutunuza teslim edilir."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Sanatçı · Yazar · Geliştirici",
-    "bioP1": "Hem bir yaratıcı, hem bir yazılımcı, hem de bir düşünürüm. Sıfırdan bir şeyler var etmek en büyük tutkum — ister bir resim, ister bir satır kod, ister derinlemesine bir yazı olsun.",
-    "bioP2": "Uzun bir süre boyunca bu tutkumun önündeki en büyük engel kendi beynimdi: ADHD sahibiyim. Piyasadaki hemen hemen her verimlilik aracını denedikten sonra, hepsinin nörotipik bir zihin için tasarlandığını fark ettim. Bir \"ortağa\" ihtiyacım vardı — beni anlayan ve en çok ihtiyaç duyduğum anda bana nazikçe bir dürtme verebilecek bir şeye.",
-    "bioP3": "Hiçbir yerde bulamadım. Ben de kendim yapmaya karar verdim — hem kendim için hem de benim gibi \"zihni yerinde durmayan\" milyonlarca kişi için. Dopamind işte böyle doğdu.",
+    "bioP1": "Ben bir yaratıcı, bir programcı ve bir düşünürüm. Sıfırdan bir şeyler inşa etmeyi seviyorum — ister bir tablo, ister bir kod parçası, ister derinlemesine bir deneme olsun.",
+    "bioP2": "Uzun bir süre boyunca bu tutkumun önündeki en büyük engel kendi beynimdi: ADHD'm var. Piyasadaki hemen hemen her verimlilik aracını denedikten sonra, hepsinin nörotipik bir zihin için tasarlandığını fark ettim. Bir \"partnere\" ihtiyacım vardı — beni anlayan ve en çok ihtiyaç duyduğum anda bana nazikçe bir dürtü verebilecek bir şeye.",
+    "bioP3": "Onu hiçbir yerde bulamadım. Bu yüzden kendim inşa etmeye karar verdim — kendim ve tıpkı benimki gibi \"meşgul bir beyne\" sahip milyonlarca kişi için. Dopamind böyle doğdu.",
     "sectionProjects": "Projeler",
     "sectionNewsletter": "Bülten",
     "sectionArtworks": "Sanat Eserleri",
     "sectionReadMore": "Daha Fazla Oku",
-    "sectionFindMe": "Beni başka yerlerde bulun",
-    "projectDopamindDesc": "AI asistanın",
+    "sectionFindMe": "Beni başka yerlerde bul",
+    "projectDopamindDesc": "Günlük AI yoldaşınız",
     "projectPhiloArtDesc": "Dijital Sanat Galerisi",
     "newsletterMediumDesc": "Denemeler",
-    "artworksText": "Sanat çalışmalarımı philoart.io/philo adresinde paylaşıyorum.",
-    "artworksContactText": "Orijinal tablolarımı veya fotoğraf baskılarımı satın almak mı istiyorsun? X'ten DM atabilir veya philo.li.official@gmail.com adresine yazabilirsin.",
+    "artworksText": "Sanat eserlerimi philoart.io/philo adresinde paylaşıyorum",
+    "artworksContactText": "Orijinal tablolar veya fotoğraf baskıları satın almak için X üzerinden DM gönderin veya philo.li.official@gmail.com adresine e-posta gönderin",
     "extraEmail": "E-posta"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI asistanın. Her gün yanında, hayatını daha iyi yaşaman için sana eşlik ediyor."
+        "description": "AI yoldaşınız. Her gün yanınızda, daha iyi bir hayat yaşamanıza yardımcı olur."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "İki Dilli E-kitap Çevirmeni",
-        "description": "İstediğin e-kitabı iki dilli hale getir — tarayıcında, kendi LLM API key'inle çalışır.",
+        "description": "Herhangi bir e-kitabı iki dilli bir sürüme dönüştürün — kendi LLM API key'inizle tarayıcınızda çalışır.",
         "cta": "Aracı aç →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubik Küpü",
+        "description": "Etkileşimli bir 3D küp üzerinde karıştırma ve çözüm adımlarını izleyin. Öğrenme modu, algoritma pratikleri için renkleri ve yüzleri gizler.",
+        "cta": "Küpü aç →"
       }
     }
   },
@@ -111,7 +118,7 @@
   "ebookTranslator": {
     "eyebrow": "Proje",
     "title": "İki Dilli E-kitap Çevirmeni",
-    "subtitle": "Bir EPUB yükleyin, kendi LLM API key bilgilerinizi kullanın ve orijinal metin ile çevirinin paragraf paragraf iç içe geçtiği iki dilli bir sürüm elde edin. Dosya tamamen tarayıcınızda işlenir — kitabınız asla herhangi bir sunucuya ulaşmaz.",
+    "subtitle": "Bir EPUB yükleyin, kendi LLM API key'inizi getirin ve orijinal ile çevrilmiş metnin paragraf paragraf iç içe geçtiği iki dilli bir sürüm elde edin. Dosya tamamen tarayıcınızda ayrıştırılır — kitabınız asla herhangi bir sunucuya dokunmaz.",
     "steps": {
       "settings": "ayarlar",
       "upload": "yükle",
@@ -120,7 +127,7 @@
     "actions": {
       "cancelRunning": "İşlemi iptal et",
       "translateAllRemaining": "Kalanların tümünü çevir",
-      "downloadEpub": "⬇ EPUB İndir",
+      "downloadEpub": "⬇ EPUB indir",
       "building": "Oluşturuluyor…",
       "back": "← Geri",
       "settingsModel": "← Ayarlar / model",
@@ -135,37 +142,38 @@
     "settings": {
       "provider": "Sağlayıcı",
       "model": "Model",
-      "apiKey": "API key",
+      "apiKey": "API Key",
       "apiKeyPlaceholder": "{provider} anahtarınızı yapıştırın",
-      "apiKeyHint": "{link} adresinden bir tane edinin. Anahtarınız yalnızca {provider} tarafına gönderilir, asla philoli.com adresine gitmez.",
-      "rememberKey": "Anahtarı sadece bu tarayıcıda hatırla (localStorage). Ortak kullanılan cihazlar için işareti kaldırın.",
+      "apiKeyHint": "{link} adresinden bir tane edinin. Anahtarınız sadece {provider} servisine gönderilir, asla philoli.com adresine gönderilmez.",
+      "rememberKey": "Anahtarı sadece bu tarayıcıda hatırla (localStorage). Ortak kullanılan cihazlarda işareti kaldırın.",
       "showApiKey": "API key göster",
-      "hideApiKey": "API key'i gizle",
-      "translateFrom": "Şu dilden çevir",
-      "translateTo": "Şu dile çevir",
-      "tone": "Üslup",
+      "hideApiKey": "API key gizle",
+      "translateFrom": "Kaynak dil",
+      "translateTo": "Hedef dil",
+      "tone": "Ton",
       "customProvider": "Özel (OpenAI uyumlu)",
-      "customModel": "Model ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModel": "Model Kimliği",
+      "customModelPlaceholder": "örn. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API Uç Noktası",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "OpenAI uyumlu bir /chat/completions uç noktasına giden tam URL.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "OpenAI uyumlu bir /chat/completions uç noktasının tam URL'si.",
+      "openrouterModelPlaceholder": "örn. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "örn. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Devam etmek için bir API key girin."
     },
     "upload": {
       "parsing": "EPUB ayrıştırılıyor…",
-      "dropTitle": "Buraya bir EPUB bırakın",
+      "dropTitle": "Bir EPUB dosyasını buraya bırakın",
       "dropSubtitle": "veya bir dosya seçmek için tıklayın",
-      "noChapters": "Bu EPUB içinde okunabilir bölüm bulunamadı."
+      "noChapters": "Bu EPUB dosyasında okunabilir bölüm bulunamadı."
     },
     "browse": {
       "chapters": "Bölümler",
-      "toneTitle": "Çeviri üslubu — yazım tarzını etkiler",
+      "toneTitle": "Çeviri tonu — yazım stilini etkiler",
       "paragraphCount": "{nodes} paragraf · {translated} çevrildi",
       "errorOne": "{count} paragraf başarısız oldu. Tekrar denemek için yeniden çevirebilirsiniz — tamamlanmış paragraflar atlanır.",
       "errorMany": "{count} paragraf başarısız oldu. Tekrar denemek için yeniden çevirebilirsiniz — tamamlanmış paragraflar atlanır.",
-      "noTranslatableText": "Bu bölümde çevrilebilir metin yok (kapak, ön söz vb.).",
+      "noTranslatableText": "Bu bölümde çevrilebilir metin yok (kapak, ön bilgiler vb.).",
       "translatingAria": "Çevriliyor",
       "translatingLabel": "çevriliyor…",
       "buildFailed": "EPUB oluşturulamadı:"
@@ -193,10 +201,10 @@
       "bestQualityStable": "en iyi kalite, kararlı",
       "balanced": "dengeli",
       "freeTierFast": "ücretsiz katman, hızlı",
-      "flagshipCoding": "amiral gemisi kodlama/ajanlık",
+      "flagshipCoding": "amiral gemisi kodlama/aracı",
       "longContext": "uzun bağlam, kararlı",
       "cheaper": "daha ucuz",
-      "latestLongContext": "en yeni, 256K bağlam"
+      "latestLongContext": "en son, 256K bağlam"
     }
   },
   "gallery": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotoğrafçılık",
     "art": "Sanat"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubik Küpü — Philo Li",
+      "description": "Etkileşimli 3D Rubik Küpü. Bir karıştırma ve çözüm belirleyin, adım adım oynayın, ezberleme alıştırmaları için renkleri veya yüzleri gizleyin."
+    },
+    "title": "3D Rubik Küpü",
+    "intro": "Bir karıştırma ve bir çözüm yazın. Çözüm adımlarını izleyin, görünümü döndürmek için sürükleyin ve algoritma durumlarını çalışmak için öğrenme modunu kullanın.",
+    "scramble": {
+      "label": "Karıştırma",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Karıştırmayı uygula",
+      "reset": "Sıfırla"
+    },
+    "solution": {
+      "label": "Çözüm",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Tanımlanamadı: {token}"
+    },
+    "playback": {
+      "play": "Oynat",
+      "pause": "Duraklat",
+      "prev": "Önceki adım",
+      "next": "Sonraki adım",
+      "first": "Başa atla",
+      "last": "Sona atla",
+      "speed": "Hız"
+    },
+    "learning": {
+      "title": "Öğrenme modu",
+      "master": "Etkinleştir",
+      "hideColors": "Renkleri gizle",
+      "hideFaces": "Yüzleri gizle",
+      "faceLabel": {
+        "U": "Üst",
+        "R": "Sağ",
+        "F": "Ön",
+        "D": "Alt",
+        "L": "Sol",
+        "B": "Arka"
+      },
+      "colorLabel": {
+        "white": "Beyaz",
+        "red": "Kırmızı",
+        "green": "Yeşil",
+        "yellow": "Sarı",
+        "orange": "Turuncu",
+        "blue": "Mavi"
+      }
+    },
+    "share": {
+      "copy": "Paylaşım bağlantısını kopyala",
+      "copied": "Kopyalandı!"
+    }
   }
 }

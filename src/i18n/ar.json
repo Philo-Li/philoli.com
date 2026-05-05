@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "النشرة الإخبارية",
-    "subscribe": "اشترك →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "النشرة البريدية",
+    "subscribe": "اشترك →"
   },
   "metadata": {
     "siteTitle": "Philo Li — فنان، كاتب، مبدع",
@@ -21,19 +21,21 @@
     "blogDescription": "مقالات عن الفن، الفلسفة، وبناء الأشياء.",
     "aboutTitle": "عني — Philo Li",
     "aboutDescription": "عن Philo Li — فنان، كاتب، ومطور.",
-    "artTitle": "الفن — Philo Li",
-    "artDescription": "التصوير الفوتوغرافي، الرسم، والفن الرقمي بواسطة Philo Li.",
-    "projectsTitle": "المشاريع — Philo Li",
+    "artTitle": "فن — Philo Li",
+    "artDescription": "تصوير فوتوغرافي، رسم، وفن رقمي بواسطة Philo Li.",
+    "projectsTitle": "مشاريع — Philo Li",
     "projectsDescription": "مشاريع بواسطة Philo Li.",
     "newsletterTitle": "النشرة البريدية — Philo Li",
     "newsletterDescription": "اشترك في نشرات Philo Li البريدية.",
     "ebookTranslatorTitle": "مترجم الكتب الإلكترونية ثنائي اللغة — Philo Li",
-    "ebookTranslatorDescription": "ارفع ملف EPUB وترجمه إلى نسخة ثنائية اللغة باستخدام API key الخاص بك لـ LLM. يعمل بالكامل في متصفحك."
+    "ebookTranslatorDescription": "ارفع ملف EPUB وترجمه إلى نسخة ثنائية اللغة باستخدام API key الخاص بك لـ LLM. يعمل بالكامل في متصفحك.",
+    "rubiksCubeTitle": "مكعب روبيك ثلاثي الأبعاد — Philo Li",
+    "rubiksCubeDescription": "مكعب روبيك ثلاثي الأبعاد تفاعلي. حدد خلطاً وحلاً، العب خطوة بخطوة، وأخفِ الألوان أو الأوجه لتدريبات الحفظ."
   },
   "nav": {
     "blog": "المدونة",
-    "art": "الفن",
-    "projects": "المشاريع",
+    "art": "فن",
+    "projects": "مشاريع",
     "newsletter": "النشرة البريدية",
     "about": "عني",
     "menuLabel": "تبديل القائمة"
@@ -46,10 +48,10 @@
     "toggleToDark": "التبديل إلى الوضع الداكن"
   },
   "hero": {
-    "line1": "أبدع.",
+    "line1": "أبدِع.",
     "line2": "التقط.",
-    "line3": "شيّد.",
-    "tagline": "أرسم، وأصوّر، وأكتب، وأصنع بيديّ؛ فمن تلاقي الفضول بالفن والبرمجيات، وُلد كل هذا.",
+    "line3": "ابنِ.",
+    "tagline": "أنا أرسم، أصوّر، أكتب، وأبني الأشياء. هذا ما يحدث عندما يلتقي الفضول بالحرفة والبرمجة.",
     "labelLeft": "فنان",
     "labelRight": "مطور"
   },
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "النشرة البريدية",
     "headline": "ابقَ فضولياً.",
-    "desc": "تأملات في الفن والحياة والبناء — تصلك مباشرة إلى بريدك الإلكتروني."
+    "desc": "أفكار حول الفن، والحياة، وبناء الأشياء — تصل إلى بريدك الوارد."
   },
   "blogPage": {
     "title": "المدونة"
   },
   "aboutPage": {
     "tagline": "فنان · كاتب · مطور",
-    "bioP1": "أنا مبدع، ومبرمج، ومفكر. بناء الأشياء من الصفر هو أكثر ما أستمتع به — سواء كانت لوحة، أو كود برمجي، أو مقالاً عميقاً.",
-    "bioP2": "لفترة طويلة، كان العائق الأكبر أمام هذا الشغف هو عقلي: أنا مصاب بـ ADHD. بعد تجربة كل أدوات الإنتاجية المتاحة تقريباً، أدركت أنها جميعاً صُممت لعقول نمطية عصبياً. كنت بحاجة إلى \"شريك\" — شيء يفهمني ويمنحني دفعة لطيفة في اللحظة التي أحتاج إليها بشدة.",
-    "bioP3": "لم أجده في أي مكان. فقررت أن أصنعه بنفسي — من أجلي، ومن أجل الملايين غيري ممن يملكون \"عقلاً لا يهدأ\" مثلي تماماً. هكذا ولد Dopamind.",
+    "bioP1": "أنا مبدع، ومبرمج، ومفكر. أحب بناء الأشياء من الصفر — سواء كانت لوحة فنية، أو كوداً برمجياً، أو مقالاً معمقاً.",
+    "bioP2": "لفترة طويلة، كان العائق الأكبر أمام هذا الشغف هو عقلي: أنا مصاب بـ ADHD. بعد تجربة كل أدوات الإنتاجية المتاحة تقريباً، أدركت أنها جميعاً صُممت لعقول نمطية عصبياً. كنت بحاجة إلى \"شريك\" — شيء يفهمني ويمكنه أن يعطيني دفعة لطيفة في اللحظة التي أحتاج إليها بشدة.",
+    "bioP3": "لم أتمكن من العثور عليه في أي مكان. لذا قررت أن أبنيه بنفسي — لي، وللملايين الآخرين الذين يملكون \"عقلاً مشغولاً\" تماماً مثل عقلي. هكذا وُلد Dopamind.",
     "sectionProjects": "المشاريع",
     "sectionNewsletter": "النشرة البريدية",
     "sectionArtworks": "الأعمال الفنية",
     "sectionReadMore": "اقرأ المزيد",
     "sectionFindMe": "تجدني في أماكن أخرى",
-    "projectDopamindDesc": "مساعدك الـ AI اليومي",
+    "projectDopamindDesc": "رفيقك اليومي بذكاء AI",
     "projectPhiloArtDesc": "معرض الفن الرقمي",
     "newsletterMediumDesc": "مقالات",
     "artworksText": "أنشر أعمالي الفنية على philoart.io/philo",
-    "artworksContactText": "تود شراء لوحات أصلية أو مطبوعات فوتوغرافية؟ راسلني على الخاص في X، أو عبر البريد philo.li.official@gmail.com",
+    "artworksContactText": "لشراء اللوحات الأصلية أو المطبوعات الفوتوغرافية، أرسل رسالة خاصة على X أو بريداً إلكترونياً إلى philo.li.official@gmail.com",
     "extraEmail": "البريد الإلكتروني"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "مساعدك الـ AI. يرافقك كل يوم، ليساعدك على عيش حياة أفضل."
+        "description": "رفيقك بذكاء AI. بجانبك كل يوم، يساعدك لتعيش حياة أفضل."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "مترجم الكتب الإلكترونية ثنائي اللغة",
-        "description": "حوّل أي كتاب إلكتروني إلى نسخة ثنائية اللغة — يعمل مباشرة في متصفحك، باستخدام الـ LLM API key الخاص بك.",
+        "description": "حوّل أي كتاب إلكتروني إلى نسخة ثنائية اللغة — يعمل في متصفحك باستخدام LLM API key الخاص بك.",
         "cta": "افتح الأداة →"
+      },
+      "rubiksCube": {
+        "name": "مكعب روبيك ثلاثي الأبعاد",
+        "description": "تتبع خطوات الخلط والحلول على مكعب ثلاثي الأبعاد تفاعلي. وضع التعلم يخفي الألوان والأوجه للتدريب على الخوارزميات.",
+        "cta": "افتح المكعب →"
       }
     }
   },
@@ -111,7 +118,7 @@
   "ebookTranslator": {
     "eyebrow": "مشروع",
     "title": "مترجم الكتب الإلكترونية ثنائي اللغة",
-    "subtitle": "قم برفع ملف EPUB، واستخدم مفتاح API key الخاص بك لـ LLM، واحصل على نسخة ثنائية اللغة مع دمج النص الأصلي والمترجم فقرة بفقرة. يتم تحليل الملف بالكامل في متصفحك — كتابك لا يلمس أي خادم أبدًا.",
+    "subtitle": "ارفع ملف EPUB، واستخدم LLM API key الخاص بك، واحصل على نسخة ثنائية اللغة مع دمج النص الأصلي والمترجم فقرة بفقرة. يتم تحليل الملف بالكامل في متصفحك — كتابك لا يلمس أي خادم أبداً.",
     "steps": {
       "settings": "الإعدادات",
       "upload": "رفع",
@@ -130,28 +137,29 @@
       "retranslate": "إعادة الترجمة",
       "resume": "استئناف",
       "translateChapter": "ترجمة هذا الفصل",
-      "continue": "استمرار →"
+      "continue": "متابعة →"
     },
     "settings": {
       "provider": "المزود",
-      "model": "النموذج",
-      "apiKey": "API key",
+      "model": "نموذج",
+      "apiKey": "مفتاح API",
       "apiKeyPlaceholder": "الصق مفتاح {provider} الخاص بك",
-      "apiKeyHint": "احصل على واحد عبر {link}. يتم إرسال مفتاحك فقط إلى {provider}، ولا يتم إرساله أبدًا إلى philoli.com.",
+      "apiKeyHint": "احصل على واحد من {link}. يُرسل مفتاحك إلى {provider} فقط، ولا يُرسل أبداً إلى philoli.com.",
       "rememberKey": "تذكر المفتاح في هذا المتصفح فقط (localStorage). قم بإلغاء التحديد للأجهزة المشتركة.",
-      "showApiKey": "إظهار API key",
-      "hideApiKey": "إخفاء API key",
+      "showApiKey": "إظهار مفتاح API",
+      "hideApiKey": "إخفاء مفتاح API",
       "translateFrom": "الترجمة من",
       "translateTo": "الترجمة إلى",
-      "tone": "النبرة",
+      "tone": "الأسلوب",
       "customProvider": "مخصص (متوافق مع OpenAI)",
       "customModel": "معرف النموذج",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "مثل gpt-4o، deepseek-chat، …",
       "customEndpoint": "نقطة نهاية API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "عنوان URL الكامل لنقطة نهاية /chat/completions متوافقة مع OpenAI.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
-      "needApiKey": "أدخل API key للمتابعة."
+      "customEndpointHint": "الرابط الكامل لنقطة نهاية /chat/completions متوافقة مع OpenAI.",
+      "openrouterModelPlaceholder": "مثل google/gemini-2.5-flash، anthropic/claude-sonnet-4، …",
+      "opencodeModelPlaceholder": "مثل kimi-k2.6، deepseek-v4-flash، glm-5.1، …",
+      "needApiKey": "أدخل مفتاح API للمتابعة."
     },
     "upload": {
       "parsing": "جاري تحليل EPUB…",
@@ -161,14 +169,14 @@
     },
     "browse": {
       "chapters": "الفصول",
-      "toneTitle": "نبرة الترجمة — تؤثر على أسلوب الكتابة",
+      "toneTitle": "أسلوب الترجمة — يؤثر على نمط الكتابة",
       "paragraphCount": "{nodes} فقرات · تم ترجمة {translated}",
-      "errorOne": "فشلت {count} فقرة. يمكنك إعادة الترجمة للمحاولة مرة أخرى — سيتم تخطي الفقرات المترجمة بالفعل.",
-      "errorMany": "فشلت {count} فقرات. يمكنك إعادة الترجمة للمحاولة مرة أخرى — سيتم تخطي الفقرات المترجمة بالفعل.",
-      "noTranslatableText": "لا يحتوي هذا الفصل على نص قابل للترجمة (غلاف، مقدمة، إلخ).",
+      "errorOne": "فشلت ترجمة {count} فقرة. يمكنك إعادة الترجمة للمحاولة مرة أخرى — سيتم تخطي الفقرات المترجمة بالفعل.",
+      "errorMany": "فشلت ترجمة {count} فقرات. يمكنك إعادة الترجمة للمحاولة مرة أخرى — سيتم تخطي الفقرات المترجمة بالفعل.",
+      "noTranslatableText": "لا يحتوي هذا الفصل على نص قابل للترجمة (الغلاف، المقدمة، إلخ).",
       "translatingAria": "جاري الترجمة",
       "translatingLabel": "جاري الترجمة…",
-      "buildFailed": "فشل إنشاء ملف EPUB:"
+      "buildFailed": "فشل إنشاء EPUB:"
     },
     "tones": {
       "idiomatic": {
@@ -193,7 +201,7 @@
       "bestQualityStable": "أفضل جودة، مستقر",
       "balanced": "متوازن",
       "freeTierFast": "فئة مجانية، سريع",
-      "flagshipCoding": "رائد للبرمجة/الوكلاء",
+      "flagshipCoding": "رائد في البرمجة/الوكلاء",
       "longContext": "سياق طويل، مستقر",
       "cheaper": "أرخص",
       "latestLongContext": "الأحدث، سياق 256K"
@@ -202,7 +210,7 @@
   "gallery": {
     "filters": {
       "Photograph": "صورة فوتوغرافية",
-      "Painting": "لوحة",
+      "Painting": "لوحة فنية",
       "Drawing": "رسم",
       "Digital Art": "فن رقمي"
     }
@@ -213,6 +221,60 @@
   },
   "social": {
     "photography": "التصوير الفوتوغرافي",
-    "art": "فن"
+    "art": "الفن"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "مكعب روبيك ثلاثي الأبعاد — Philo Li",
+      "description": "مكعب روبيك تفاعلي ثلاثي الأبعاد. قم بتعيين خلط وحل، والعب خطوة بخطوة، وأخفِ الألوان أو الأوجه لتمارين الحفظ."
+    },
+    "title": "مكعب روبيك ثلاثي الأبعاد",
+    "intro": "اكتب خلطة وحلاً. تنقل عبر خطوات الحل، واسحب لتدوير العرض، واستخدم وضع التعلم للتدرب على حالات الخوارزميات.",
+    "scramble": {
+      "label": "خلطة",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "تطبيق الخلطة",
+      "reset": "إعادة ضبط"
+    },
+    "solution": {
+      "label": "الحل",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "غير معروف: {token}"
+    },
+    "playback": {
+      "play": "تشغيل",
+      "pause": "إوقف مؤقت",
+      "prev": "الخطوة السابقة",
+      "next": "الخطوة التالية",
+      "first": "قفز إلى البداية",
+      "last": "قفز إلى النهاية",
+      "speed": "السرعة"
+    },
+    "learning": {
+      "title": "وضع التعلم",
+      "master": "تفعيل",
+      "hideColors": "إخفاء الألوان",
+      "hideFaces": "إخفاء الأوجه",
+      "faceLabel": {
+        "U": "أعلى",
+        "R": "يمين",
+        "F": "أمام",
+        "D": "أسفل",
+        "L": "يسار",
+        "B": "خلف"
+      },
+      "colorLabel": {
+        "white": "أبيض",
+        "red": "أحمر",
+        "green": "أخضر",
+        "yellow": "أصفر",
+        "orange": "برتقالي",
+        "blue": "أزرق"
+      }
+    },
+    "share": {
+      "copy": "نسخ رابط المشاركة",
+      "copied": "تم النسخ!"
+    }
   }
 }
