@@ -1,4 +1,4 @@
-```yaml
+---
 title: Philo Lis tanker og ideer (2019)
 date: 2020-01-02 10:53:13
 tags: Betraktninger

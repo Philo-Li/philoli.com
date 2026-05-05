@@ -1,6 +1,6 @@
-```yaml
+---
 layout: blog
-title: Del 12 gode bøker: Mine høyt rangerte favoritter fra 2025
+title: "Del 12 gode bøker: Mine høyt rangerte favoritter fra 2025"
 date: 2026-04-24 12:00:00
 tags:
   - 阅读

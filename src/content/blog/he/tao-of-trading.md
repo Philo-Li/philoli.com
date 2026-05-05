@@ -1,4 +1,3 @@
-```yaml
 ---
 layout: blog
 title: דרך המסחר

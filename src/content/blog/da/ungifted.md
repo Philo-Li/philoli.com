@@ -1,7 +1,6 @@
-```yaml
 ---
 layout: blog
-title: Talent er ikke alt: Sandheden om IQ, bevidst træning og kreativitet
+title: "Talent er ikke alt: Sandheden om IQ, bevidst træning og kreativitet"
 date: 2025-05-22 12:00:00
 tags:
   - Essays

@@ -1,4 +1,4 @@
-```yaml
+---
 title: Basta esaltare la professione di insegnante
 date: 2019-09-10 20:53:13
 tags: Saggi

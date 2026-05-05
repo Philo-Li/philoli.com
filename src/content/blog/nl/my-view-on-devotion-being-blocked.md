@@ -1,4 +1,3 @@
-```yaml
 ---
 title: Mijn visie op het verbod van 'Devotion'
 date: 2019-02-26 20:53:13

@@ -1,4 +1,4 @@
-```yaml
+---
 title: Basta de idealizar la profesión docente
 date: 2019-09-10 20:53:13
 tags: Ensayos

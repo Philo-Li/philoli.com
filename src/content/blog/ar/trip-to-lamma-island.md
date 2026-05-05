@@ -1,4 +1,3 @@
-```yaml
 ---
 layout: blog
 title: رحلة إلى جزيرة لاما

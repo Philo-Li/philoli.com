@@ -1,4 +1,4 @@
-```yaml
+---
 title: Philo's samling af skøre idéer (2019)
 date: 2020-01-02 10:53:13
 tags: Tanker
