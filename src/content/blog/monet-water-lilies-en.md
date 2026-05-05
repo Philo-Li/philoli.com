@@ -83,3 +83,9 @@ Most of what you have read I jotted while walking; only the third gallery allowe
 Tokyo's run has ended, but the exhibition will travel on to Kyoto — there is still time if you missed it. It is a triumph of curatorial care and scholarly depth. The museum shop proved irresistible: postcards, the limited-edition catalogue — souvenirs of an unforgettable day. Crowd aside, I give the show my highest praise.
 
 For a quick flip-through of the catalogue, see my video on X: [https://x.com/Philo2022/status/1890294639682601296](https://x.com/Philo2022/status/1890294639682601296)
+
+![Monet's Water Lilies Exhibition in Tokyo](/uploads/images/Monet-Water-Lilies-Exhibition-in-Tokyo-1.jpg)
+
+![Monet's Water Lilies Exhibition in Tokyo](/uploads/images/Monet-Water-Lilies-Exhibition-in-Tokyo-2.jpg)
+
+![Monet's Water Lilies Exhibition in Tokyo](/uploads/images/Monet-Water-Lilies-Exhibition-in-Tokyo-3.jpg)
