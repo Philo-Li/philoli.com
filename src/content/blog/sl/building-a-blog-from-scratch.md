@@ -1,8 +1,8 @@
 ---
 title: Jedrnat vodič: Postavitev Hexo bloga od začetka (izdaja 2024)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Postavitev bloga
+categories: Dnevno ukvarjanje
 ---
 Ste že siti neestetskih vmesnikov blogov, imate dovolj neskončnih spletnih obvestil in si že dolgo želite ustvariti lasten blog, pa vas je ustavila kompleksnost navodil in kopica zoprnih kod? Potem pa čestitam! Ta članek vas bo korak za korakom naučil, kako si postaviti lasten blog, in to na najpreprostejši in najbolj razumljiv način. Potrebujete le malo potrpljenja in sledite navodilom korak za korakom.
 

@@ -1,8 +1,8 @@
 ---
 title: Ahoj 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 
 Na Weibo jsem narazil na neuvěřitelně nápadité a roztomilé verše. Úplně mě to uchvátilo! Takže takhle se dá taky psát poezie? Chci se to naučit!

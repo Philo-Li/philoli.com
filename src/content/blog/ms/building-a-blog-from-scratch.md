@@ -1,8 +1,8 @@
 ---
 title: Panduan Ringkas Membina Blog Hexo dari Sifar (Versi 2024)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Pembinaan Blog
+categories: Urusan Harian
 ---
 Adakah anda sudah lama bosan dengan antaramuka laman blog yang hambar dan tidak menarik? Adakah anda muak dengan notifikasi laman web yang tidak berkesudahan? Adakah anda sudah lama teringin nak bina blog sendiri, tetapi terhenti kerana tutorial yang rumit dan kod-kod yang memeningkan kepala? Kalau begitu, tahniah! Artikel ini akan membimbing anda secara langkah demi langkah untuk membina blog sendiri dengan cara yang paling mudah difahami. Anda cuma perlukan sedikit kesabaran, dan ikut sahaja setiap langkah.
 

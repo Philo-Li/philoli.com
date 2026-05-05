@@ -1,8 +1,8 @@
 ---
 title: Etter fem års utsettelse har jeg endelig lest ferdig «Procrastination: Why You Do It, What to Do About It Now»
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Boklesing笔记
+categories: 日常Lesing
 ---
 En bok jeg kjøpte for nesten fem år siden, og som jeg har utsatt å lese ferdig – nå har jeg endelig lest den fra perm til perm!
 

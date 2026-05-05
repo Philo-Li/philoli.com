@@ -3,10 +3,10 @@ layout: blog
 title: Kan jag sova bättre på mindre tid? Ett självexperiment om sömn – Dag 1
 date: 2025-07-11 12:00:00
 tags:
-  - 随笔
-  - 睡眠
-  - 自我提升
-categories: 日常闲聊
+  - Funderingar
+  - Sömn
+  - Självförbättring
+categories: Vardagssnack
 ---
 
 Jag har påbörjat ett sömnexperiment. Målet är att förbättra min sömnkvalitet och energinivåer, och att känna mig piggare och mer vital, genom att justera min kost och mina livsstilsvanor.

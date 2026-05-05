@@ -2,8 +2,8 @@
 layout: blog
 title: Overwegingen bij succes en falen
 date: 2024-09-18 15:02:52
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Dagelijkse praatjes
 ---
 
 ## Voorbij het succesdenken

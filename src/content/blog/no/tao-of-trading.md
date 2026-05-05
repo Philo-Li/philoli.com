@@ -3,10 +3,10 @@ layout: blog
 title: Handelens kunst
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Betraktninger
+  - Boklesing
+  - Trading
+categories: Boklesing笔记
 ---
 
 Veien til å bli en toptrader er en prosess der man «ser seg selv, ser verden, og ser alle andre». Du kjemper ikke mot markedet, men mot ditt indre selv.

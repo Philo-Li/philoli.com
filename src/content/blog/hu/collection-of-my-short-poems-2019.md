@@ -1,8 +1,8 @@
 ---
 title: Rövid versek gyűjteménye (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Gondolatok
+categories: Csevegés
 ---
 
 Van benne fantázia, valóság és bájos gyermeki ártatlanság is, ezek mind lélektöredékek.

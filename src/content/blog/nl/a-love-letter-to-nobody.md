@@ -1,8 +1,8 @@
 ---
 title: Onbenoemde liefdeswoorden
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Dagelijkse praatjes
 ---
 
 Liefdeswoorden, gericht aan een onbekende, en tevens fragmenten van mijn ziel.

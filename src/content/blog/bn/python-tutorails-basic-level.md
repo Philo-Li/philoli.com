@@ -2,7 +2,7 @@
 title: ডেটা সায়েন্সে পাইথনের সাধারণ সিনট্যাক্স (মৌলিক)
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: ডেটা সায়েন্স
 mathjax: true
 --- 
 

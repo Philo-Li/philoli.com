@@ -1,8 +1,8 @@
 ---
 title: Neverjetno, zamudil sem uradno prijavo za podiplomski študij!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Razmišljanja
+categories: Dnevni pogovori
 ---
 Predstavljal sem si že marsikakšen način, kako bi mi lahko spodletelo, a nikoli si nisem mislil, da se bom spotaknil ravno tukaj.
 

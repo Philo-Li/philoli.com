@@ -1,8 +1,8 @@
 ```yaml
 title: Slutt å hylle lærerprofesjonen
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagsbetraktninger
 ---
 På Lærernes dag, når nesten hele Kina er travelt opptatt med å gi gaver til og lovprise lærere, ber jeg om tillatelse til å komme med en motstemme.
 

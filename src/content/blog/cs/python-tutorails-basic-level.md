@@ -2,7 +2,7 @@
 title: Základní syntaxe Pythonu pro datovou vědu (základy)
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: Datová věda
 mathjax: true
 --- 
 

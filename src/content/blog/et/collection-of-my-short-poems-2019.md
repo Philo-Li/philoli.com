@@ -1,8 +1,8 @@
 ---
 title: Lühiluuletuste kogu (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 
 Siin on fantaasiaid, reaalsust ja ka lapselikku süütust – kõik need on hinge killud.

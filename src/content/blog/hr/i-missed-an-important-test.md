@@ -1,8 +1,8 @@
 ---
 title: Propustio sam službenu prijavu za postdiplomski!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Svakodnevne misli
 ---
 Zamišljao sam mnoge načine neuspjeha, ali nikad nisam pomislio da ću se jednog dana spotaknuti baš ovdje.
 

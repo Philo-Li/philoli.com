@@ -1,8 +1,8 @@
 ---
 title: Moje mišljenje o zabrani igre "Devotion"
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Svakodnevne misli
 ---
 Napomena: Molim vas, raspravljajte racionalno. Tim Red Candle već se ispričao zbog ove kontroverze, a ja ću sada pokušati razgovarati o samom događaju i podijeliti neka svoja razmišljanja.
 

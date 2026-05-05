@@ -1,8 +1,8 @@
 ---
 title: Miten vapauttaa mielikuvitus lentoon
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 Mielikuvitus on jokaisella ihmisellä, mutta harva tietää, miten sitä hyödyntää tai päästää valloilleen. En itse asiassa aio vastata siihen, miten mielikuvituksen voi *saada*, vaan pikemminkin siihen, miten sen voi *vapauttaa*. Keskityn siis käsittelemään sitä, mitä kutsun rajattomaksi mielikuvitukseksi.
 

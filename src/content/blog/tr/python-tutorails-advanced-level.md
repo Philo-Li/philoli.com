@@ -2,7 +2,7 @@
 title: Veri Biliminde Python'ın Sık Kullanılan Söz Dizimi (İleri Seviye)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Veri Bilimi
 mathjax: true
 ---
 Son günlerde [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF adresi](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)) kitabına bakıyordum. Veri bilimine giriş için oldukça anlaşılır ve iyi bir kaynak. Kitaptaki bir bölüm Python'ın temel ve veri biliminde sık kullanılan ileri seviye söz dizimini oldukça sade ve net bir şekilde anlatıyordu. Bu anlatımı çok beğendiğim için, kendime not olması amacıyla buraya çeviriyorum.  

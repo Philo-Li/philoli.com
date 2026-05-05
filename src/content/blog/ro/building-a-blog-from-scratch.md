@@ -1,8 +1,8 @@
 ---
 title: Ghid concis pentru crearea unui blog Hexo de la zero (Ediția 2024)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Creare blog
+categories: Experimente zilnice
 ---
 Te-ai săturat de interfețele inestetice ale multor bloguri? Te-ai săturat de notificările și recomandările intruzive de pe site-uri? Ai visat dintotdeauna să-ți creezi propriul blog, dar te-au descurajat tutorialele complicate și codul care-ți dă bătăi de cap? Atunci, felicitări! Acest articol își propune să te ghideze pas cu pas, în cel mai simplu și accesibil mod, pentru a-ți construi propriul spațiu online. Nu ai nevoie decât de puțină răbdare și să urmezi instrucțiunile rând pe rând.
 

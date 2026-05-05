@@ -1,8 +1,8 @@
 ---
 title: Zdravo 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Dnevne priče
 ---
 
 Videla sam na Weibu da neko piše tako maštovite i prelepe stihove, i pomislila sam: "Pa ovo je fantastično! Zar i poezija može ovako da se piše?" Odmah sam poželela da naučim!

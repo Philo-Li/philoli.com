@@ -1,8 +1,8 @@
 ---
 title: Konačno sam pročitao „Psihologiju odugovlačenja“ – posle pet godina odlaganja!
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Čitanje笔记
+categories: 日常Čitanje
 ---
 Knjigu koju sam kupio pre skoro pet godina, a koju sam uporno odlagao da pročitam do kraja, konačno sam progutao u jednom dahu.
 

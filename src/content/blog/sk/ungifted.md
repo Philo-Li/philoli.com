@@ -3,10 +3,10 @@ layout: blog
 title: Nie je to len talent: Pravda o IQ, zámernom cvičení a kreativite
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 心理学
-categories: 读书笔记
+  - Esej
+  - Čítanie kníh
+  - Psychológia
+categories: Čítanie kníh笔记
 ---
 
 Kognitívny vedec Scott Barry Kaufman sa venuje výskumu inteligencie, kreativity a ľudského potenciálu. Vo svojej knihe skúma, ako sa učíme, a snaží sa vyvrátiť zaužívané, úzke predstavy verejnosti o „IQ“ a „talente“. Na základe vlastných skúseností prináša nové možnosti a nádej pre tých, ktorí sú označení nálepkou „poruchy učenia“.

@@ -1,8 +1,8 @@
 ---
 title: Berhenti Memuja Profesi Guru
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esai
+categories: Obrolan Santai
 ---
 Di Hari Guru ini, saat nyaris seluruh Tiongkok sibuk memberi hadiah dan memuji guru, izinkan saya menyampaikan pandangan yang berbeda.
 

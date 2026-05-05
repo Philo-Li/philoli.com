@@ -1,8 +1,8 @@
 ---
 title: Igavene looming (mõned säutsud)
 date: 2022-09-11 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 
 Mõned mõtted loomingust.

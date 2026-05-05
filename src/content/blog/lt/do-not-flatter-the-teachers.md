@@ -1,8 +1,8 @@
 ```yaml
 title: Gana liaukitės liaupsinti mokytojo profesiją
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esė
+categories: Kasdienybė
 ---
 Šią Mokytojų dieną, kai beveik visa Kinija skuba dovanoti dovanas ir garbinti mokytojus, leiskite man išsakyti kitokią nuomonę.
 

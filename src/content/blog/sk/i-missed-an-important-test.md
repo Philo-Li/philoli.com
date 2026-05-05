@@ -1,8 +1,8 @@
 ---
 title: Ako som premeškal oficiálnu registráciu na prijímačky na vysokú školu!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Každodenné rozhovory
 ---
 Predstavoval som si mnoho spôsobov, ako by som mohol zlyhať, no nikdy by mi nenapadlo, že sa potknem práve tu.
 

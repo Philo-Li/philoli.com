@@ -2,7 +2,7 @@
 title: Pokročilá syntax Pythonu pre dátovú vedu
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Dátová veda
 mathjax: true
 ---
 Posledné dni som čítal túto knihu [Data Science from Scrach](https://book.douban.com/subject/26364377/) ([PDF adresa](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf) ), ktorá je skvelou a ľahko zrozumiteľnou úvodnou knihou do dátovej vedy. Jedna kapitola sa venovala základnej syntaxi Pythonu a pokročilým konštrukciám často používaným v dátovej vede. Považoval som jej vysvetlenie za veľmi dobré, stručné a jasné, preto som sa rozhodol preložiť ju sem ako referenciu pre seba.

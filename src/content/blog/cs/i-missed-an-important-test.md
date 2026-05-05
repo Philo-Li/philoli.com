@@ -1,8 +1,8 @@
 ---
 title: Neuvěřitelné: Zmeškal jsem oficiální registraci k postgraduálnímu studiu!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 Představoval jsem si mnoho způsobů, jak bych mohl selhat, ale nikdy by mě nenapadlo, že jednoho dne klopýtnu zrovna tady.
 

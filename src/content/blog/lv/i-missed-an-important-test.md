@@ -1,8 +1,8 @@
 ---
 title: Es palaidu garām maģistrantūras pieteikšanos!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseja
+categories: Ikdienas sarunas
 ---
 Es biju iztēlojies daudz dažādu veidu, kā varētu ciest neveiksmi, bet nekad nebiju domājis, ka vienu dienu paklupu tieši šeit.
 

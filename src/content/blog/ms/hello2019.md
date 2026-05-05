@@ -1,8 +1,8 @@
 ---
 title: Hello 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esei
+categories: Sembang Santai
 ---
 
 Di Weibo, saya terbaca bait-bait puisi yang sungguh imaginatif dan comel. Terpegun saya dibuatnya; rupanya puisi boleh ditulis sebegitu rupa! Hebat sungguh, saya nak belajar!

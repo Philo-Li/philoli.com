@@ -1,8 +1,8 @@
 ---
 title: Min syn på blockaden av "Devotion"
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Funderingar
+categories: Vardagssnack
 ---
 Ett förtydligande: Vänligen diskutera sakligt. Red Candle-teamet har redan bett om ursäkt för kontroversen, och jag kommer nu att försöka diskutera händelsen i sig och dela med mig av några tankar.
 

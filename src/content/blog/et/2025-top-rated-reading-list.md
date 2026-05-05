@@ -3,9 +3,9 @@ layout: blog
 title: 12 head raamatut, mida lugesin 2025. aastal: Minu soovitused
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
+  - Lugemine
+  - Raamatunimekiri
+categories: Igapäevane jutt
 description: 2025. aastal loetud 12 nelja- või viietärnilise raamatu soovitused, mis hõlmavad kirjutamist, kunsti, psühholoogiat, sotsiaalteadusi, rahandust ja isiklikku arengut.
 ---
 

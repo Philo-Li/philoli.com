@@ -2,8 +2,8 @@
 layout: blog
 title: Mit Verdenssyn
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Hverdagssnak
 ---
 
 Albert Einstein skrev en bog med titlen "Min Verdensanskuelse", der indeholder en række af hans udgivne breve, artikler og offentlige taler, herunder en artikel med samme navn som bogen. Jeg vil også gerne skrive en artikel med titlen "Mit Verdenssyn".

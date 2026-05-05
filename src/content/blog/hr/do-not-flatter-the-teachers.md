@@ -1,8 +1,8 @@
 ---
 title: Prestanite s veličanjem profesije učitelja
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Svakodnevne misli
 ---
 Na ovaj Dan učitelja, dok se gotovo cijela Kina utrkuje tko će više darivati i hvaliti učitelje, dopustite mi da budem disonantan ton.
 

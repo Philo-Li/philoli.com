@@ -1,8 +1,8 @@
 ```yaml
 title: Hentikan Sanjungan Melampau Terhadap Profesyen Guru
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esei
+categories: Sembang Santai
 ---
 Pada Hari Guru ini, di saat hampir seluruh China sibuk menghantar hadiah dan memuji guru, izinkan saya untuk menyuarakan pendapat yang berbeza.
 

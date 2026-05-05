@@ -1,8 +1,8 @@
 ---
 title: Mano nuomonė apie žaidimo „Devotion“ uždraudimą
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esė
+categories: Kasdienybė
 ---
 Svarbu: Prašau diskutuoti racionaliai. Nors „Red Candle Games“ komanda jau atsiprašė už kilusį skandalą, dabar pabandysiu aptarti patį įvykį ir pasidalinti keletu savo minčių.
 

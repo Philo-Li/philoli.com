@@ -4,9 +4,9 @@ title: Wystawa Moneta w Tokio: Od zmagań z zaćmą po nieśmiertelne pociągni�
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 
-    - 随笔
-    - 艺术
-categories: 日常闲聊
+    - Eseje
+    - Sztuka
+categories: Codzienne pogadanki
 ---
 
 Kilka dni temu, w ostatniej chwili, udało mi się wreszcie zobaczyć długo wyczekiwaną wystawę Moneta. Jest on jednym z moich ulubionych malarzy, a także jednym z moich ulubionych impresjonistów.

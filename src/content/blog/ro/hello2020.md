@@ -1,8 +1,8 @@
 ---
 title: Bună 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Reflecții
+categories: Gânduri cotidiene
 ---
 Sfârșitul unui an sună ușor melancolic, însă începutul unui an nou te umple de speranță și vitalitate. De aceea, îmi intitulez întotdeauna rezumatele anuale „Bună XXXX”, iar acesta este al doilea articol din această serie.
 

@@ -2,7 +2,7 @@
 title: Mga Pangunahing Python Syntax sa Data Science (Advanced)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Agham ng Datos
 mathjax: true
 ---
 Nitong mga nakaraang araw, binabasa ko itong aklat na [Data Science from Scrach](https://book.douban.com/subject/26364377/) ([PDF address](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), na isang magandang panimulang libro sa data science, madaling intindihin. May isang kabanata rito na nagpapakilala sa basic syntax ng Python at sa mga advanced na syntax na madalas gamitin sa data science. Naisip kong maganda ang pagkakalarawan, malinaw at direkta, kaya isinalin ko ito rito para maging talaan ko.

@@ -1,8 +1,8 @@
 ---
 title: Evig Skabelse (nogle tweets)
 date: 2022-09-11 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Hverdagssnak
 ---
 
 Nogle refleksioner over skabelse.

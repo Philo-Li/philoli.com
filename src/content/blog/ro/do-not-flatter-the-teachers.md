@@ -1,8 +1,8 @@
 ---
 title: Nu mai glorificați profesia de profesor
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Reflecții
+categories: Gânduri cotidiene
 ---
 De Ziua Profesorului, într-o zi în care aproape toată China e prinsă în febra cadourilor și a laudelor aduse dascălilor, permiteți-mi să vin cu o notă discordantă.
 

@@ -1,8 +1,8 @@
 ---
 title: Trumpas Hexo tinklaraščio kūrimo vadovas nuo nulio (2024 m. leidimas)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Tinklaraščio kūrimas
+categories: Kasdieniai bandymai
 ---
 Ar jau seniai pavargote nuo estetiškai nepatrauklių tinklaraščių platformų sąsajų? Atsibodo nesibaigiantys svetainių pranešimai? Ar visada norėjote susikurti savo tinklaraštį, bet sustabdė sudėtingi vadovėliai ir galvos skausmą keliantis kodas? Jei taip, sveikiname, šis straipsnis skirtas būtent jums! Jame žingsnis po žingsnio ir kuo paprasčiau parodysime, kaip susikurti savo tinklaraštį. Jums prireiks tik šiek tiek kantrybės ir tereikės sekti nurodymus.
 

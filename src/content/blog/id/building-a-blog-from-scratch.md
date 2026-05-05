@@ -1,8 +1,8 @@
 ---
 title: Panduan Singkat Membangun Blog Hexo dari Nol (Versi 2024)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Membangun Blog
+categories: Kutak-katik Harian
 ---
 Apakah kamu sudah bosan dengan antarmuka situs blog yang kurang estetis? Muak dengan notifikasi atau rekomendasi situs yang tak ada habisnya? Sudah lama ingin punya blog sendiri, tapi terhalang oleh tutorial yang rumit dan deretan kode yang bikin pusing kepala? Kalau begitu, selamat! Artikel ini hadir untuk memandu kamu langkah demi langkah membangun blog impianmu dengan cara yang paling mudah dipahami. Kamu hanya perlu sedikit kesabaran dan mengikuti setiap langkahnya.
 

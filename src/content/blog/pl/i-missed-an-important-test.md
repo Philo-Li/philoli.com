@@ -1,8 +1,8 @@
 ---
 title: Jakim cudem przegapiłem oficjalną rejestrację na egzaminy magisterskie
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 Spodziewałem się wielu rodzajów porażek, ale nigdy bym nie pomyślał, że pewnego dnia potknę się właśnie tutaj.
 

@@ -2,7 +2,7 @@
 title: Pythonin yleisimmin käytetty syntaksi datatieteessä (jatkotaso)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Datatiede
 mathjax: true
 --- 
 Viime päivinä olen lukenut kirjaa [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF-osoite](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), joka on hyvä ja helppotajuinen johdatus datatieteeseen. Yhdessä luvussa esiteltiin Pythonin perussyntaksia ja datatieteessä yleisesti käytettyä edistyneempää syntaksia. Koen esityksen olevan niin selkeä ja ytimekäs, että päätin kääntää sen tähän muistiinpanoksi.  

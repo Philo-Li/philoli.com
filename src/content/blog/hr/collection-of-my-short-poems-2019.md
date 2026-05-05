@@ -1,8 +1,8 @@
 ---
 title: Zbirka kratkih pjesama (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Svakodnevne misli
 ---
 
 Ima tu mašte, ima i stvarnosti, a ima i dječje nevinosti; sve su to fragmenti duše.

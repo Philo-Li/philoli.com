@@ -1,8 +1,8 @@
 ---
 title: En kortfattet guide til opbygning af en Hexo-blog fra bunden (2024-udgave)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Blogopsætning
+categories: Dagligdags sysler
 ---
 Er du træt af de kedelige og uskønne brugerflader på mange blogplatforme? Har du fået nok af uendelige notifikationer og push-beskeder fra websites? Har du længe drømt om at skabe din egen blog, men er du blevet afskrækket af komplekse vejledninger og en masse hovedpinefremkaldende kode? Så er du heldig! Denne artikel vil trin for trin vise dig, hvordan du opretter din egen blog på den mest ligetil og forståelige måde. Det kræver blot en smule tålmodighed, og så kan du følge med skridt for skridt.
 

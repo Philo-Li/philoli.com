@@ -2,7 +2,7 @@
 title: Često korištena Python sintaksa u podatkovnoj znanosti (osnove)
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: Znanost o podacima
 mathjax: true
 --- 
 

@@ -1,8 +1,8 @@
 ---
 title: Colecția de idei trăsnite ale lui Philo (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Reflecții
+categories: Gânduri cotidiene
 ---
 Te trezești adesea visând cu ochii deschiși? La ce anume te gândești în acele momente?
 

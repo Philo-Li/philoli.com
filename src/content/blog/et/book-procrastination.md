@@ -1,8 +1,8 @@
 ---
 title: Pärast viit aastat venitamist lugesin ma lõpuks läbi „Prokrastinatsiooni psühholoogia”
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Lugemine笔记
+categories: 日常Lugemine
 ---
 Olen seda raamatut omanud peaaegu viis aastat, lükanud lugemist kogu aeg edasi, aga nüüd lugesin selle lõpuks ühe hooga läbi.
 

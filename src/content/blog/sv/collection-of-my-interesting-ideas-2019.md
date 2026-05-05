@@ -1,8 +1,8 @@
 ---
 title: Philos tankesprång (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Funderingar
+categories: Vardagssnack
 ---
 Dagdrömmer du ofta? Och vad tänker du på när du dagdrömmer?
 

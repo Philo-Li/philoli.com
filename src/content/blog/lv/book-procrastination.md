@@ -1,8 +1,8 @@
 ---
 title: Piecus gadus atliku, beidzot pabeidzu lasīt "Prokrastinācijas psiholoģija"
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Lasīšana笔记
+categories: 日常Lasīšana
 ---
 Grāmatu nopirku gandrīz pirms pieciem gadiem, bet lasīšanu nepārtraukti atliku. Nu beidzot to izlasīju vienā piegājienā.
 

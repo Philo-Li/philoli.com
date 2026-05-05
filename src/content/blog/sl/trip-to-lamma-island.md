@@ -2,8 +2,8 @@
 layout: blog
 title: Izlet na otok Lamma
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Razmišljanja
+categories: Dnevni pogovori
 ---
 
 Potovanje, ki sploh ni bilo v načrtu, se je nepričakovano spremenilo v nepozabno doživetje.

@@ -1,8 +1,8 @@
 ---
 title: Živjo 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Razmišljanja
+categories: Dnevni pogovori
 ---
 
 Na Weibu sem naletel na domiselne in prisrčne verze, ki so me popolnoma navdušili. Osupljivo, da se poezija lahko piše tudi tako! Želim se naučiti!

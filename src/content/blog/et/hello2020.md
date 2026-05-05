@@ -1,8 +1,8 @@
 ---
 title: Tere 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 Aasta lõpp kõlab alati pisut nukralt, aga uue algus toob endaga kaasa lootuse ja elujõu. Seepärast pealkirjastan oma aasta kokkuvõtted alati „Tere XXXX“. See on selle blogiseeria teine postitus.
 

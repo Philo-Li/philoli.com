@@ -1,8 +1,8 @@
 ---
 title: Opettajan ammatin ylistämisen on loputtava
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 Opettajien päivänä, kun lähes koko Kiina on uppoutunut opettajien lahjomiseen ja ylistämiseen, sallikaa minun esittää hieman poikkeava näkökulma.
 

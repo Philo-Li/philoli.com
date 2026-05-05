@@ -2,8 +2,8 @@
 layout: blog
 title: Excursie pe insula Lamma
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Reflecții
+categories: Gânduri cotidiene
 ---
 
 Deși nu era în plan, această călătorie s-a dovedit a fi o experiență memorabilă.

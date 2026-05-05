@@ -3,10 +3,10 @@ layout: blog
 title: Můžu spát lépe za méně času? Vlastní experiment se spánkem – Den 1
 date: 2025-07-11 12:00:00
 tags:
-  - 随笔
-  - 睡眠
-  - 自我提升
-categories: 日常闲聊
+  - Zamyšlení
+  - Spánek
+  - Seberozvoj
+categories: Denní povídání
 ---
 
 Pustila jsem se do spánkového experimentu s cílem zlepšit kvalitu spánku a úroveň energie úpravou stravy a životního stylu, abych si udržela bdělost a vitalitu.

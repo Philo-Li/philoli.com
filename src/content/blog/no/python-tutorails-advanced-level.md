@@ -2,7 +2,7 @@
 title: Ofte brukt Python-syntaks i datavitenskap (Avansert)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Datavitenskap
 mathjax: true
 ---
 De siste dagene har jeg lest [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF-lenke](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), en utmerket og lettfattelig introduksjon til datavitenskap. Ett av kapitlene gir en fin, kortfattet og klar oversikt over grunnleggende Python-syntaks og avansert syntaks som ofte brukes i datavitenskap. Jeg syntes det var så bra beskrevet at jeg har oversatt det og lagt det ut her som en huskelapp.

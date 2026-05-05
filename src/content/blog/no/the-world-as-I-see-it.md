@@ -2,8 +2,8 @@
 layout: blog
 title: Mitt verdensbilde
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 
 Einstein skrev en bok som het «Mitt verdensbilde», en samling av hans publiserte brev, artikler og offentlige taler. Én av tekstene i boken hadde samme tittel som boken selv. Nå ønsker jeg også å skrive min egen versjon av «Mitt verdensbilde».

@@ -1,8 +1,8 @@
 ---
 title: Hello 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esei
+categories: Sembang Santai
 ---
 Penghujung tahun selalunya membawa sedikit rasa sayu, manakala permulaan tahun baharu pula menyuntik semangat harapan dan tenaga. Sebab itulah saya sentiasa menggunakan 'Hello XXXX' sebagai tajuk ringkasan tahunan saya, dan ini adalah entri kedua dalam siri blog ini.
 

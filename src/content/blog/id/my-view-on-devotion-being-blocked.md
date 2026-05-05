@@ -1,8 +1,8 @@
 ---
 title: Pandanganku tentang Pemblokiran 'Devotion'
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esai
+categories: Obrolan Santai
 ---
 **Pernyataan:** Mari berdiskusi secara rasional. Tim Red Candle sudah menyampaikan permintaan maaf atas kontroversi ini. Sekarang, saya akan mencoba membahas insiden tersebut dan merenungkannya sedikit.
 

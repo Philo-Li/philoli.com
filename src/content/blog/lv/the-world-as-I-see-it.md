@@ -2,8 +2,8 @@
 layout: blog
 title: Mans pasaules uzskats
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Eseja
+categories: Ikdienas sarunas
 ---
 
 Alberts Einšteins ir sarakstījis grāmatu “Mans pasaules uzskats”, kurā apkopotas dažādas viņa vēstules, raksti un publiskās runas. Viens no tiem ir arī grāmatas nosaukumam atbilstošs raksts. Arī es vēlos uzrakstīt savu versiju par “Manu pasaules uzskatu”.

@@ -1,8 +1,8 @@
 ---
 title: Moje mnenje o prepovedi igre "Devotion"
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Razmišljanja
+categories: Dnevni pogovori
 ---
 Izjava: Prosim za trezno razpravo. Ekipa Red Candle se je že opravičila za nastalo polemiko, zdaj pa bi sam poskusil razpravljati o samem dogodku in vanj vložiti nekaj razmisleka.
 

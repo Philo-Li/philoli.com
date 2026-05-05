@@ -2,8 +2,8 @@
 layout: blog
 title: Úvahy o úspěchu a neúspěchu
 date: 2024-09-18 15:02:52
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 
 ## Vymanit se z narativu úspěšnosti

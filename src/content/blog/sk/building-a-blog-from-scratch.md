@@ -1,8 +1,8 @@
 ---
 title: Jednoduchý návod na vytvorenie blogu Hexo od začiatku (verzia 2024)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Tvorba blogu
+categories: Každodenné záležitosti
 ---
 Už vás unavujú nevkusné rozhrania blogovacích platforiem? Máte dosť nekonečných notifikácií a reklám? Dlho ste túžili po vlastnom blogu, ale odradili vás zložité návody a kopa otravného kódu? Ak áno, potom gratulujem! Tento článok vás krok za krokom, tým najjednoduchším spôsobom, naučí, ako si postaviť vlastný blog. Potrebujete len trochu trpezlivosti a riadiť sa pokynmi.
 

@@ -1,8 +1,8 @@
 ---
 title: Efter fem års udsættelse har jeg endelig læst 'Psykologien bag udsættelse' færdig
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Læsning笔记
+categories: 日常Læsning
 ---
 En bog jeg købte for snart fem år siden, har ligget og ventet på at blive læst færdig. Nu har jeg endelig slugt den i ét stræk.
 

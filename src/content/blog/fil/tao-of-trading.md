@@ -3,10 +3,10 @@ layout: blog
 title: Ang Landas ng Trading
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Mga Pagninilay
+  - Pagbabasa
+  - Kalakalan
+categories: Pagbabasa笔记
 ---
 
 Ang landas tungo sa pagiging isang top trader ay isang proseso ng "pagkilala sa sarili, pag-unawa sa mundo, at pagmamalasakit sa kapwa." Hindi ka nakikipaglaban sa merkado, kundi sa sarili mo sa loob.

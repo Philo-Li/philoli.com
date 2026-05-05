@@ -3,9 +3,9 @@ layout: blog
 title: Moje 12 ulubionych książek: Wysoko oceniane lektury z 2025 roku
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
+  - Czytanie
+  - Listy książek
+categories: Codzienne pogadanki
 description: Rekomendacja 12 książek ocenionych na cztery gwiazdki lub więcej, przeczytanych w 2025 roku, obejmujących pisanie, sztukę, psychologię, nauki społeczne, finanse i rozwój osobisty.
 ---
 

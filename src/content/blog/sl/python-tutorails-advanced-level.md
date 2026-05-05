@@ -2,7 +2,7 @@
 title: Pogosta napredna sintaksa Pythona za podatkovno znanost
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Podatkovna znanost
 mathjax: true
 ---
 Zadnje dni sem bral tole knjigo [Data Science from Scrach](https://book.douban.com/subject/26364377/) ([PDF](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), ki je odličen in razumljiv uvod v podatkovno znanost. Eno poglavje je opisovalo osnovno sintakso Pythona in napredno sintakso, pogosto uporabljeno v podatkovni znanosti. Ker se mi je zdelo dobro predstavljeno, jedrnato in jasno, sem se odločil, da ga prevedem in objavim tukaj kot opomnik.

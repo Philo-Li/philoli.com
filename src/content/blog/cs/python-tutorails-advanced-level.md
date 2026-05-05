@@ -2,7 +2,7 @@
 title: Častá syntaxe Pythonu v datové vědě (pokročilá)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Datová věda
 mathjax: true
 ---
 V posledních dnech jsem se ponořil do knihy [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF zde](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), která je skvělým, srozumitelným úvodem do datové vědy. Jedna z kapitol představuje základní syntaxi Pythonu a pokročilejší techniky často používané v datové vědě. Přišlo mi to výborně a jasně vysvětlené, a tak jsem se rozhodl to přeložit a uložit sem jako připomínku a referenci.

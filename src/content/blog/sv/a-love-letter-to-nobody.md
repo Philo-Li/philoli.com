@@ -1,8 +1,8 @@
 ---
 title: Otitlade kärleksord
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Funderingar
+categories: Vardagssnack
 ---
 
 Dessa kärleksord är till en okänd mottagare, men de är också fragment av min själ.

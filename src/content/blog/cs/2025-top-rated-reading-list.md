@@ -3,9 +3,9 @@ layout: blog
 title: 12 skvělých knih: Seznam nejlépe hodnocených knih přečtených v roce 2025
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
+  - Čtení
+  - Seznam knih
+categories: Denní povídání
 description: Doporučení 12 skvělých knih s hodnocením čtyři a více hvězdiček, přečtených v roce 2025, zahrnující témata jako psaní, umění, psychologie, sociální vědy, finance a osobní rozvoj.
 ---
 

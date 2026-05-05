@@ -2,7 +2,7 @@
 title: ไวยากรณ์ Python ที่ใช้บ่อยในวิทยาศาสตร์ข้อมูล (ระดับสูง)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: วิทยาศาสตร์ข้อมูล
 mathjax: true
 ---
 สองสามวันนี้ผมได้อ่านหนังสือ [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([ลิงก์ PDF](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)) ซึ่งเป็นหนังสือแนะนำวิทยาศาสตร์ข้อมูลที่อ่านเข้าใจง่ายและดีเยี่ยมเล่มหนึ่ง ในบทหนึ่งของหนังสือได้อธิบายไวยากรณ์พื้นฐานของ Python และไวยากรณ์ขั้นสูงที่ใช้บ่อยในวิทยาศาสตร์ข้อมูล ผมคิดว่าคำอธิบายนั้นทำได้ดีมาก กระชับและชัดเจน จึงนำมาแปลและบันทึกไว้ที่นี่เพื่อเป็นข้อมูลอ้างอิงครับ

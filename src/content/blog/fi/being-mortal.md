@@ -3,9 +3,9 @@ layout: blog
 title: Paras jäähyväinen: Ikääntymisestä ja kuolemasta – perusasiat, jotka sinun tulee tietää
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-categories: 读书笔记
+  - Mietteitä
+  - Lukeminen
+categories: Lukeminen笔记
 ---
 
 Todennäköisesti suurin osa tämän artikkelin lukijoista on vielä kaukana vanhuudesta, eikä heidän ole helppoa kuvitella todellista elämää iäkkäänä. Ikääntyminen ja kuolema herättävät usein vierautta ja pelkoa. On kuitenkin tosiasia, että jokainen meistä kuolee aikanaan. Siksi on tärkeää tietää, mitä meitä odottaa, millaisia prosesseja ja mielentiloja silloin koemme. Mitä me itse voimme tehdä, ja miten terveydenhuoltoa tulisi kehittää vastaamaan näihin haasteisiin? Vain tuntemalla asiat voimme poistaa niihin liittyvän pelon.

@@ -1,8 +1,8 @@
 ---
 title: Stop met het verheerlijken van het lerarenberoep
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Dagelijkse praatjes
 ---
 Op deze Dag van de Leraar, nu vrijwel heel China druk bezig is met het geven van cadeaus en het prijzen van leerkrachten, wil ik graag een tegengeluid laten horen.
 

@@ -1,8 +1,8 @@
 ---
 title: Rövid útmutató a Hexo blog felépítéséhez a nulláról (2024-es kiadás)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Blogépítés
+categories: Mindennapi pepecselés
 ---
 Eleged van már a blogoldalak ízléstelen felületeiből? Fárasztanak a végeláthatatlan értesítések és ajánlatok? Szeretnél már régóta egy saját blogot, de elrettentettek a bonyolult útmutatók és a fejtörést okozó kódok? Akkor gratulálok, mert ez a cikk a lehető legegyszerűbb módon, lépésről lépésre fog elkalauzolni a saját blogod felépítésében. Csak egy kis türelemre van szükséged, és kövesd az utasításokat.
 

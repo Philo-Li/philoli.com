@@ -1,8 +1,8 @@
 ---
 title: Kako pridobiti nebrzdano domišljijo
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Razmišljanja
+categories: Dnevni pogovori
 ---
 Vsak človek ima domišljijo, ključno pa je, da ne vemo, kako jo izkoristiti. Pravzaprav ne želim odgovoriti na vprašanje "kako pridobiti domišljijo", ampak na "kako sprostiti svojo domišljijo". Zato se bom tukaj osredotočil predvsem na tako imenovano nebrzdano domišljijo.
 

@@ -1,8 +1,8 @@
 ---
 title: Hei 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 
 På Weibo kom jeg over noen som hadde skrevet fantasifulle og aldeles nydelige dikt. Jeg tenkte: "Så fantastisk! Kan man virkelig skrive poesi på denne måten?" Fikk umiddelbart lyst til å lære mer!

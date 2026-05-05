@@ -1,8 +1,8 @@
 ---
 title: Ako rozvinúť nespútanú predstavivosť
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Každodenné rozhovory
 ---
 Predstavivosť má každý človek, kľúčové je len vedieť, ako ju naplno využiť. V skutočnosti nechcem odpovedať na otázku „ako získať predstavivosť“, ale skôr na to, „ako oslobodiť svoju predstavivosť“. Preto sa tu zameriam na to, čo nazývam nespútanou, bujnou fantáziou.
 

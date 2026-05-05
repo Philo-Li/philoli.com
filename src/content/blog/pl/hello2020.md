@@ -1,8 +1,8 @@
 ---
 title: Witaj 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 Koniec roku zawsze brzmi nieco melancholijnie, ale początek nowego napawa nadzieją i energią. Dlatego moje roczne podsumowania zawsze noszą tytuł „Witaj XXXX” – a ten to już drugi wpis z tej serii.
 

@@ -1,8 +1,8 @@
 ---
 title: Zbirka Philoovih dosjetki (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Svakodnevne misli
 ---
 Često li se zateknete u sanjarenju? O čemu razmišljate kada vam pogled odluta u prazno?
 

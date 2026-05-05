@@ -3,10 +3,10 @@ layout: blog
 title: Handlens Vej
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Essays
+  - Læsning
+  - Handel
+categories: Læsning笔记
 ---
 
 Vejen til at blive en toptrader er en proces, hvor man 'ser sig selv, ser verden og ser menneskeheden'. Du kæmper ikke mod markedet, men mod dit indre selv.

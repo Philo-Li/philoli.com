@@ -1,8 +1,8 @@
 ---
-title: Selepas Lima Tahun Menangguh, Akhirnya Saya Selesai Membaca《拖延心理学》(Psychology of Procrastination)
+title: Selepas Lima Tahun Menangguh, Akhirnya Saya Selesai Membaca《拖延Psikologi》(Psychology of Procrastination)
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Pembacaan笔记
+categories: 日常Membaca
 ---
 Buku yang saya beli hampir lima tahun lalu ini asyik tertangguh untuk dihabiskan. Tapi kini, akhirnya saya berjaya membacanya sehingga tamat dalam satu sesi!
 

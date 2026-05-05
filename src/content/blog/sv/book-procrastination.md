@@ -1,8 +1,8 @@
 ---
 title: Efter fem års prokrastinering har jag äntligen läst klart ”Prokrastineringspsykologi”
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Bokläsning笔记
+categories: 日常Läsning
 ---
 En bok jag köpte för nästan fem år sedan har jag dragit ut på att läsa klart, men nu har jag äntligen läst den från pärm till pärm.
 

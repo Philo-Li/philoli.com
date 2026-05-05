@@ -1,8 +1,8 @@
 ---
 title: Gyvenimo žaidimas
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esė
+categories: Kasdienybė
 ---
 ### Žvelkime į gyvenimą kaip į žaidimą
 

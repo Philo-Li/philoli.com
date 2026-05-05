@@ -1,8 +1,8 @@
 ---
 title: Bună 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Reflecții
+categories: Gânduri cotidiene
 ---
 
 Am văzut pe Weibo niște versuri atât de adorabile și pline de imaginație, și mi s-a părut extraordinar! Nici nu știam că poezia poate fi scrisă și așa. Vreau să învăț!

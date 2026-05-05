@@ -3,10 +3,10 @@ layout: blog
 title: Kaupankäynnin tie
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Mietteitä
+  - Lukeminen
+  - Kaupankäynti
+categories: Lukeminen笔记
 ---
 
 Polku huippukauppiaaksi on prosessi, jossa "kohdataan itsensä, maailma ja kaikki olennot". Et taistele markkinoita, vaan omaa sisäistä itseäsi vastaan.

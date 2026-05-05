@@ -2,8 +2,8 @@
 layout: blog
 title: Başarı ve Başarısızlık Üzerine Düşünceler
 date: 2024-09-18 15:02:52
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 
 ## Başarı Odaklı Anlatıdan Ayrılmak

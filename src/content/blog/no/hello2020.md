@@ -1,8 +1,8 @@
 ---
 title: Hei 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 Slutten på et år kan føles litt vemodig, mens starten på et nytt gir en følelse av håp og vitalitet. Derfor kaller jeg alltid mine årsoppsummeringer for «Hei XXXX». Dette er den andre bloggposten i den serien.
 

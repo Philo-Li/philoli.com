@@ -2,7 +2,7 @@
 title: Veelgebruikte Python-syntaxis in Data Science (Basis)
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: Datawetenschap
 mathjax: true
 ---
 

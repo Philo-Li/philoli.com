@@ -1,8 +1,8 @@
 ---
 title: Yüksek Lisans Sınavına Resmi Başvuruyu Kaçırdığıma İnanamıyorum!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 Başarısızlığın birçok yolunu hayal etmiştim, ama bir gün tam da buraya takılıp düşeceğimi hiç düşünmemiştim.
 

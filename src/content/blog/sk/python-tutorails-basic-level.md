@@ -2,7 +2,7 @@
 title: Bežne používaná základná syntax Pythonu v dátovej vede
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: Dátová veda
 mathjax: true
 ---
 

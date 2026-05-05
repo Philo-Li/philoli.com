@@ -3,10 +3,10 @@ layout: blog
 title: Mas Makakatulog Ba Ako Nang Mas Mahusay sa Mas Kaunting Oras? Isang Sariling Eksperimento sa Pagtulog, Araw 1
 date: 2025-07-11 12:00:00
 tags:
-  - 随笔
-  - 睡眠
-  - 自我提升
-categories: 日常闲聊
+  - Mga Pagninilay
+  - Pagtulog
+  - Pagpapaunlad ng Sarili
+categories: Kwentuhan
 ---
 
 Nagsimula ako sa isang eksperimento sa pagtulog. Ang layunin ay mapabuti ang kalidad ng aking pagtulog at lebel ng enerhiya sa pamamagitan ng pagbabago ng aking diyeta at mga gawi sa pamumuhay, upang manatiling mas gising at mas masigla.

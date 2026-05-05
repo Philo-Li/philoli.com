@@ -1,8 +1,8 @@
 ---
 title: Samling korta dikter (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Funderingar
+categories: Vardagssnack
 ---
 
 Här finns fantasi, verklighet och barnasinne – allt är själsfragment.

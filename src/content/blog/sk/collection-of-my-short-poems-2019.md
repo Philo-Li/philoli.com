@@ -1,8 +1,8 @@
 ---
 title: Zbierka krátkych básní (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Každodenné rozhovory
 ---
 
 Sú v nich fantázie, aj realita, a tiež milá detská naivita – všetko úlomky duše.

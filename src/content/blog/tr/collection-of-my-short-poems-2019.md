@@ -1,8 +1,8 @@
 ---
 title: Kısa Şiirler Derlemesi (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 
 Hayaller, gerçekler ve çocuksu masumiyet... Hepsi ruhun kırıntıları.

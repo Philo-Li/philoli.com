@@ -1,8 +1,8 @@
 ---
 title: Neizrečene ljubavne reči
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Dnevne priče
 ---
 
 Ovo su ljubavne reči upućene neznanoj osobi, ali i delići moje duše.

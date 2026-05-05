@@ -1,8 +1,8 @@
 ---
 title: Ang Aking Pananaw Tungkol sa Pagka-ban ng "Devotion"
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mga Pagninilay
+categories: Kwentuhan
 ---
 Paalala: Pakiusap, maging rasyonal sa pagtalakay. Humingi na ng paumanhin ang Red Candle team sa kontrobersiyang ito. Ngayon, susubukan kong talakayin ang mismong pangyayari at magbahagi ng ilang kaisipan.
 

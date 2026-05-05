@@ -2,8 +2,8 @@
 layout: blog
 title: Moj pogled na svet
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Dnevne priče
 ---
 
 Albert Ajnštajn je napisao knjigu pod nazivom „Moj pogled na svet“, u kojoj su sabrani njegovi objavljeni članci, pisma i javni govori. Jedan od tih tekstova nosi isti naslov kao i sama knjiga. I ja sam poželela da napišem nešto slično – „Moj pogled na svet“.

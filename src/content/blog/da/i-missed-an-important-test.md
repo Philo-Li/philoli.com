@@ -1,8 +1,8 @@
 ---
 title: Jeg glemte sgu at tilmelde mig den officielle optagelsesprøve til kandidatuddannelsen
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Hverdagssnak
 ---
 Jeg havde forestillet mig mange måder at fejle på, men jeg havde aldrig forventet, at det ville være her, jeg snublede.
 

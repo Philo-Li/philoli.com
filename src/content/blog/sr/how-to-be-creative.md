@@ -1,8 +1,8 @@
 ---
 title: Kako razviti neobuzdanu maštu
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Dnevne priče
 ---
 Svaki čovek poseduje maštu, ali je ključno pitanje kako je iskoristiti. Zapravo, neću se baviti time „kako steći maštu“, već „kako osloboditi svoju maštu“. Zato će ovde biti reči o onome što nazivamo neobuzdanom maštom, onom koja leti visoko i bez granica.
 

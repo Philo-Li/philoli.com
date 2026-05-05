@@ -3,9 +3,9 @@ layout: blog
 title: Není to jen talent: IQ, záměrná praxe a skutečná podstata kreativity
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 心理学
+  - Zamyšlení
+  - Knihy
+  - Psychologie
 categories: Čtenářské poznámky
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Ubetitlede kjærlighetsord
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 
 Dette er kjærlighetsord til noen jeg ikke kjenner, små biter av min sjel.

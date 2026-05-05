@@ -2,8 +2,8 @@
 layout: blog
 title: Matka Lamma-saarelle
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 
 Vaikka matka ei ollut alun perin suunnitelmissani, siitä syntyi odottamatta unohtumaton muisto.

@@ -1,8 +1,8 @@
 ---
 title: Tak Sangka, Saya Terlepas Pendaftaran Rasmi Peperiksaan Pascasiswazah!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esei
+categories: Sembang Santai
 ---
 Saya sudah membayangkan pelbagai cara untuk gagal, tetapi tak terlintas di fikiran yang saya akan tersandung di sini.
 

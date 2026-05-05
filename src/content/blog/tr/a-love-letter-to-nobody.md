@@ -1,8 +1,8 @@
 ---
 title: İsimsiz Aşk Sözleri
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 
 Kime yazıldığını bilmediğim bu aşk sözleri, aynı zamanda ruhumun parçalarıdır.

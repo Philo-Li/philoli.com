@@ -1,8 +1,8 @@
 ---
 title: Můj názor na zákaz hry „Devotion“
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 Upozornění: Prosím o věcnou diskusi. Tým Red Candle se už za tuto kauzu omluvil a já se teď pokusím podívat na samotnou událost a zamyslet se nad ní.
 

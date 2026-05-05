@@ -2,7 +2,7 @@
 title: Pogosta sintaksa Pythona v podatkovni znanosti (osnove)
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: Podatkovna znanost
 mathjax: true
 --- 
 

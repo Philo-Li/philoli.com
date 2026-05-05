@@ -1,8 +1,8 @@
 ---
 title: Kreasi Abadi (Beberapa Cuitan)
 date: 2022-09-11 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esai
+categories: Obrolan Santai
 ---
 
 Serangkaian Cuitan tentang Kreasi Abadi

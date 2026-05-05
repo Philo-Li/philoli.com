@@ -3,9 +3,9 @@ layout: blog
 title: Mijn 12 favoriete boeken van 2025: Een lijst van toppers
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
+  - Lezen
+  - Boekenlijst
+categories: Dagelijkse praatjes
 description: Een selectie van 12 boeken die ik in 2025 las en die vier sterren of meer kregen, over schrijven, kunst, psychologie, sociale wetenschappen, financiën en persoonlijke ontwikkeling.
 ---
 

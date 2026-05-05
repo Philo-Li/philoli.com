@@ -1,8 +1,8 @@
 ---
 title: Tere, 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 
 Nägin Weibos, kuidas keegi oli kirjutanud kujutlusvõimelisi ja nii armsaid luuleridu. See tundus nii vapustav! Mõtlesin, et ahhaa, luulet saabki niimoodi kirjutada – tahaks ka õppida!

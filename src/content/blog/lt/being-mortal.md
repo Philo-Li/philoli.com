@@ -3,8 +3,8 @@ layout: blog
 title: Geriausias atsisveikinimas: ką privalote žinoti apie senėjimą ir mirtį
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
+  - Esė
+  - Knygos
 categories: Dėmesio vertos knygos
 ---
 

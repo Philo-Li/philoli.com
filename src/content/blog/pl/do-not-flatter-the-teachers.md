@@ -1,8 +1,8 @@
 ---
 title: Przestańcie idealizować zawód nauczyciela
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 W Dniu Nauczyciela, kiedy niemal całe Chiny są zajęte wręczaniem prezentów i wychwalaniem pedagogów, pozwólcie, że wyrażę odmienne zdanie.
 

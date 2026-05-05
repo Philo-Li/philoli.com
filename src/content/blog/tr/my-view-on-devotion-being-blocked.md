@@ -1,8 +1,8 @@
 ---
 title: "Devotion"ın Yasaklanması Hakkındaki Görüşlerim
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 Uyarı: Lütfen konuyu mantıklı bir şekilde tartışın. Red Candle ekibi bu çalkantı için zaten özür diledi; şimdi ben de olayın kendisini irdelemeye ve biraz düşünmeye çalışacağım.
 

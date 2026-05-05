@@ -1,8 +1,8 @@
 ---
 title: Hexo-blogin perustaminen alusta alkaen: Yksinkertainen opas (2024-versio)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Blogin rakentaminen
+categories: Arkipäivän puuhastelu
 ---
 Oletko kyllästynyt blogisivustojen tylsiin käyttöliittymiin, saanut tarpeeksesi loputtomista ilmoituksista ja mainoksista? Oletko jo pitkään halunnut perustaa oman blogin, mutta monimutkaiset ohjeet ja päänvaivaa aiheuttavat koodirivit ovat saaneet sinut luovuttamaan? Onneksi olkoon, tämä artikkeli opastaa sinua askel askeleelta, miten voit pystyttää oman blogisi mahdollisimman yksinkertaisesti. Tarvitset vain hieman kärsivällisyyttä ja seurata ohjeita tarkasti.
 

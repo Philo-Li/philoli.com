@@ -2,7 +2,7 @@
 title: Avanceret Python-syntaks til datalogi
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Datavidenskab
 mathjax: true
 ---
 De seneste par dage har jeg læst bogen [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF-adresse](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), som er en fremragende og lettilgængelig introduktion til datalogi. Et af kapitlerne præsenterede grundlæggende Python-syntaks og avanceret syntaks, der ofte bruges i datalogi. Jeg syntes, det var en rigtig god og overskuelig gennemgang, så jeg har oversat den her som en huskeliste.

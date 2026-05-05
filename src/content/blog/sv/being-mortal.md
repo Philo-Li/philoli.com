@@ -3,9 +3,9 @@ layout: blog
 title: Det bästa avskedet: Sunt förnuft om åldrande och döden som du behöver känna till
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-categories: 读书笔记
+  - Funderingar
+  - Bokläsning
+categories: Bokläsning笔记
 ---
 
 De flesta som läser den här artikeln är förmodligen långt ifrån ålderdomen, har svårt att föreställa sig hur ett verkligt äldre liv ser ut och känner både främlingskap och rädsla inför åldrande och döden. Men alla ska vi dö, och vi behöver veta vad vi kommer att möta då, vilken process och vilket psykologiskt tillstånd vi kommer att uppleva. Vad kan vi själva göra, och hur kan sjukvården reformeras för att bättre möta detta? Endast genom att eliminera det okända kan vi eliminera rädslan.

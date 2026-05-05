@@ -1,8 +1,8 @@
 ---
 title: Sveiki, 2019!
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esė
+categories: Kasdienybė
 ---
 
 Naršydamas Weibo užtikau nuostabiai įsivaizduojamus ir mielus eilėraščius. Pagalvojau, koks tobulas! Pasirodo, poezija gali būti rašoma ir taip. Noriu išmokti!

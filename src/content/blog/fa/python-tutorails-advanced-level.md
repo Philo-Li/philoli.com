@@ -2,7 +2,7 @@
 title: سینتکس پرکاربرد پایتون در علم داده (پیشرفته)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: علم داده
 mathjax: true
 --- 
 این روزها مشغول مطالعه کتاب [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([لینک PDF](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)) هستم، که یک کتاب عالی و قابل فهم برای شروع کار با علم داده است. یکی از فصل‌های این کتاب به معرفی سینتکس پایه پایتون و همچنین سینتکس پیشرفته‌ای که در علم داده پرکاربرد است، می‌پردازد. به نظرم توضیحاتش بسیار خوب، مختصر و مفید بود، به همین دلیل، آن را ترجمه کرده‌ام تا اینجا به عنوان یک یادداشت شخصی نگه دارم.  

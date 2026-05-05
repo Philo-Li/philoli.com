@@ -1,8 +1,8 @@
 ---
 title: Jak osiągnąć nieokiełznaną wyobraźnię
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 Każdy człowiek posiada wyobraźnię, lecz często nie wie, jak ją w pełni wykorzystać. Moim celem nie jest odpowiedź na pytanie „jak zdobyć wyobraźnię”, lecz raczej „jak uwolnić swoją wyobraźnię”, dlatego skupię się tu na tzw. nieokiełznanej, swobodnej imaginacji.
 

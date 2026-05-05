@@ -2,8 +2,8 @@
 layout: blog
 title: Maailmankuvani
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 
 Albert Einsteinilla on kirja nimeltä ”Maailmankuvani”, joka sisältää kokoelman hänen julkaistuja kirjeitään, artikkeleitaan ja julkisia puheitaan. Yksi näistä teksteistä on kirjan nimen kanssa samanniminen. Minäkin haluan kirjoittaa oman ”Maailmankuvani”.

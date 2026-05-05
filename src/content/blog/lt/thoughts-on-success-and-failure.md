@@ -2,8 +2,8 @@
 layout: blog
 title: Sėkmė ir nesėkmė: pamąstymai
 date: 2024-09-18 15:02:52
-tags: 随笔
-categories: 日常闲聊
+tags: Esė
+categories: Kasdienybė
 ---
 
 ## Atsisakant sėkmės naratyvo

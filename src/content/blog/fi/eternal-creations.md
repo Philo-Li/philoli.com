@@ -1,8 +1,8 @@
 ---
 title: Ajattomat luomukset (muutamia tviittejä)
 date: 2022-09-11 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 
 Muutamia ajatuksia luomisesta.

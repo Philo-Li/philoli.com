@@ -2,8 +2,8 @@
 layout: blog
 title: Biyahe sa Lamma Island
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Mga Pagninilay
+categories: Kwentuhan
 ---
 
 Isang biyahe na di ko naman talaga plinano, pero nagdulot ng mga alaalang hinding-hindi ko malilimutan.

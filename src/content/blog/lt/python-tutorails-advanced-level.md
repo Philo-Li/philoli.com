@@ -2,7 +2,7 @@
 title: Dažnai naudojamos Python sintaksės ypatybės duomenų moksle (pažengusiems)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Duomenų mokslas
 mathjax: true
 ---
 Šiomis dienomis skaitau knygą [„Data Science from Scratch“](https://book.douban.com/subject/26364377/) ([PDF nuoroda](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), ir tai puikus, lengvai suprantamas įvadas į duomenų mokslą. Viename iš skyrių pristatomos pagrindinės Python sintaksės taisyklės ir pažangesnės, dažnai naudojamos duomenų moksle. Man pasirodė, kad šis pristatymas yra labai aiškus ir glaustas, todėl nusprendžiau jį išversti ir pasidalinti čia kaip atmintine.

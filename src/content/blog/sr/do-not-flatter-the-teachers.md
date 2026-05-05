@@ -1,8 +1,8 @@
 ---
 title: Prestanite da veličate nastavnički poziv
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Dnevne priče
 ---
 Na Dan učitelja, dok se danas gotovo cela Kina utrkuje ko će pre da daruje i hvali nastavnike, dozvolite mi da budem disonantan.
 

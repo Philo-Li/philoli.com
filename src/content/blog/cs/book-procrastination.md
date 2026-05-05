@@ -1,8 +1,8 @@
 ---
 title: Po pěti letech prokrastinace jsem konečně dočetla Psychologii prokrastinace
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Knihy笔记
+categories: 日常Čtení
 ---
 Knihu jsem si koupila téměř před pěti lety, ale neustále jsem její čtení odkládala. Teď jsem ji konečně přečetla najednou, v kuse.
 

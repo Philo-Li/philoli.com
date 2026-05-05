@@ -1,8 +1,8 @@
 ---
 title: Hei 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 
 Näin Weibossa jonkun kirjoittavan mielikuvituksellisia ja suloisia runoja. Se oli aivan mahtavaa! Runoja voi siis kirjoittaa näinkin. Haluan oppia!

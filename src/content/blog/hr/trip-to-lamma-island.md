@@ -2,8 +2,8 @@
 layout: blog
 title: Putovanje na otok Lamma
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Svakodnevne misli
 ---
 
 Iako putovanje prvotno nije bilo u planu, neočekivano se pretvorilo u nezaboravnu uspomenu.

@@ -4,9 +4,9 @@ title: Tokion Monet-näyttely: Kaihin haasteista kuolemattomiin siveltimenvetoih
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 
-    - 随笔
-    - 艺术
-categories: 日常闲聊
+    - Mietteitä
+    - Taide
+categories: Arkipäivän jutustelu
 ---
 
 Muutama päivä sitten, aivan viime hetkellä, ehdin vihdoin nähdä sen kauan odottamani Monet-näyttelyn. Monet on yksi suosikkitaiteilijoistani ja ehdottomasti lempimpressionistini.

@@ -2,8 +2,8 @@
 layout: blog
 title: Reis Lamma saarele
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 
 Algselt plaaniväline reis kujunes aga ootamatult meeldejäävaks mälestuseks.

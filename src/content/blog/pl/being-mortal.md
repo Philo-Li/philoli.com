@@ -3,9 +3,9 @@ layout: blog
 title: Najlepsze pożegnanie: Prawdy o starzeniu się i śmierci, które musisz znać
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-categories: 读书笔记
+  - Eseje
+  - Czytanie książek
+categories: Czytanie książek笔记
 ---
 
 Osoby, które czytają ten artykuł, najprawdopodobniej są jeszcze daleko od starości i trudno im sobie wyobrazić prawdziwe życie w podeszłym wieku. Czują zarówno obcość, jak i lęk przed starzeniem się i śmiercią. Ale każdy z nas kiedyś umrze. Musimy wiedzieć, czego możemy się spodziewać, jakie procesy i stany psychiczne nas czekają, gdy nadejdzie ten czas. Co możemy zrobić, i jak medycyna może się do tego przygotować? Tylko eliminacja niewiedzy może usunąć strach.

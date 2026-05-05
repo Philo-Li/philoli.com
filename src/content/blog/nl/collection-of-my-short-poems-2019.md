@@ -1,8 +1,8 @@
 ---
 title: Korte gedichtenbundel (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Dagelijkse praatjes
 ---
 
 Vol fantasie, realiteit en kinderlijke onschuld – het zijn allemaal fragmenten van de ziel.

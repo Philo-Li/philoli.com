@@ -2,8 +2,8 @@
 ---
 title: Mijn visie op het verbod van 'Devotion'
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Dagelijkse praatjes
 ---
 Noot: Graag een rationele discussie. Het Red Candle-team heeft al excuses aangeboden voor deze controverse. Ik wil nu proberen de gebeurtenis zelf te bespreken en er wat gedachten over te delen.
 

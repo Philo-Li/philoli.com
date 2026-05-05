@@ -3,10 +3,10 @@ layout: blog
 title: Ar galiu geriau išsimiegoti per trumpesnį laiką? Miego savęs eksperimentas. 1 diena
 date: 2025-07-11 12:00:00
 tags:
-  - 随笔
-  - 睡眠
-  - 自我提升
-categories: 日常闲聊
+  - Esė
+  - Miegas
+  - Savęs tobulinimas
+categories: Kasdienybė
 ---
 
 Pradėjau miego eksperimentą. Juo siekiu, pakoregavęs mitybą ir gyvenimo būdą, pagerinti miego kokybę bei energijos lygį, kad jausčiausi budresnis ir energingesnis.

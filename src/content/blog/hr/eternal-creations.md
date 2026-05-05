@@ -1,8 +1,8 @@
 ---
 title: Vječno stvaranje (Zapisi s Twittera)
 date: 2022-09-11 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Svakodnevne misli
 ---
 
 Neka razmišljanja o stvaralaštvu.

@@ -2,8 +2,8 @@
 layout: blog
 title: Ang Aking Pananaw sa Mundo
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Mga Pagninilay
+categories: Kwentuhan
 ---
 
 May aklat si Einstein na pinamagatang "Ang Aking Pananaw sa Mundo," na naglalaman ng koleksyon ng kanyang mga sulat, artikulo, at pampublikong talumpati. Isa sa mga ito ay ang mismong sanaysay na kapareho ng pamagat ng libro. Ako man ay nagnanais sumulat ng sarili kong "Ang Aking Pananaw sa Mundo."

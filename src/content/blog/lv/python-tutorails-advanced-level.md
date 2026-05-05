@@ -2,7 +2,7 @@
 title: Python biežāk lietotā sintakse datu zinātnē (padziļināti)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Datu zinātne
 mathjax: true
 ---
 Šajās dienās lasu grāmatu "[Data Science from Scratch](https://book.douban.com/subject/26364377/)" ([PDF adrese](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), un tā ir lieliska, viegli saprotama ievadgrāmata datu zinātnē. Vienā no tās nodaļām tika aplūkota Python pamatsintakse un biežāk lietotā padziļinātā sintakse datu zinātnē. Man šķita, ka izklāsts ir ļoti labs, kodolīgs un skaidrs, tāpēc nolēmu to pārtulkot un ievietot šeit kā atgādinājumu.

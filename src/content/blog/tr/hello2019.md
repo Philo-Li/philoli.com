@@ -1,8 +1,8 @@
 ---
 title: Merhaba 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 
 Weibo'da hayal gücü dolu, çok sevimli şiirler yazan birini gördüğümde, "Bu ne harika bir şey!" diye düşündüm. Şiir böyle de yazılırmış meğer, öğrenmek istiyorum!

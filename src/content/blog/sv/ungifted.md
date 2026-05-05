@@ -3,10 +3,10 @@ layout: blog
 title: Inte bara medfödd talang: Sanningen om IQ, målmedveten träning och kreativitet
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 心理学
-categories: 读书笔记
+  - Funderingar
+  - Bokläsning
+  - Psykologi
+categories: Bokläsning笔记
 ---
 
 Kognitionsforskaren Scott Barry Kaufman specialiserar sig på intelligens, kreativitet och mänsklig potential. I sina böcker utforskar han hur vi lär oss och försöker utmana den snäva och förutfattade uppfattningen om "IQ" och "talang" som många har. Genom att dela med sig av sina egna erfarenheter vill han erbjuda nya möjligheter och hopp för dem som blivit stämplade med "inlärningssvårigheter".

@@ -1,8 +1,8 @@
 ---
 title: Kata-kata Hati Tanpa Nama
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esei
+categories: Sembang Santai
 ---
 
 Ini adalah luahan hati yang ditulis untuk seseorang yang tidak diketahui, sekaligus serpihan-serpihan jiwaku.

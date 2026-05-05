@@ -4,9 +4,9 @@ title: Monet Exhibition sa Tokyo: Mula sa Hamon ng Katarata Tungo sa Walang Kama
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 
-    - 随笔
-    - 艺术
-categories: 日常闲聊
+    - Mga Pagninilay
+    - Sining
+categories: Kwentuhan
 ---
 
 Ilang araw lang ang nakakaraan, sa wakas ay nakita ko na ang Monet exhibition na matagal ko nang gustong puntahan, bago pa man ito matapos. Si Monet ay isa sa mga paborito kong pintor, at isa rin sa mga pinakagusto kong Impressionist artist.

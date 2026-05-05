@@ -1,8 +1,8 @@
 ---
 title: Beş Yıl Ertelediğim 'Erteleme Psikolojisi' Kitabını Nihayet Bitirdim
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Okuma笔记
+categories: 日常Okuma
 ---
 Yaklaşık beş yıl önce aldığım bu kitabı bir türlü bitirememiş, sürekli ertelemiştim. Nihayet tek seferde okuyup bitirdim.
 

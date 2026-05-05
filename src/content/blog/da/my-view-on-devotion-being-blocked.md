@@ -1,8 +1,8 @@
 ---
 title: Mine tanker om forbuddet mod 'Devotion'
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Hverdagssnak
 ---
 Bemærk: Jeg opfordrer til en saglig debat. Red Candle Games har allerede undskyldt for kontroversen, og nu vil jeg forsøge at tale om selve hændelsen og reflektere lidt over den.
 

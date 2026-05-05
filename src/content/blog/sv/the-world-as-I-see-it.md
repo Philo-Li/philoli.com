@@ -2,8 +2,8 @@
 layout: blog
 title: Min världsbild
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Funderingar
+categories: Vardagssnack
 ---
 
 Einstein hade en bok som heter "Min världsbild", som samlar en rad av hans publicerade brev, artiklar och offentliga tal. En av texterna hade samma titel som boken. Jag vill också skriva en text som heter "Min världsbild".

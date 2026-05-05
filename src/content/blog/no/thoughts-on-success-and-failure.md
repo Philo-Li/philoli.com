@@ -2,8 +2,8 @@
 layout: blog
 title: Tanker om suksess og fiasko
 date: 2024-09-18 15:02:52
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 
 ## Å frigjøre seg fra suksessfortellingen

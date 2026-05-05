@@ -3,10 +3,10 @@ layout: blog
 title: Ne talants vien: Intelekta, apzinātas prakses un radošuma patiesība
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 心理学
-categories: 读书笔记
+  - Eseja
+  - Lasīšana
+  - Psiholoģija
+categories: Lasīšana笔记
 ---
 
 Kognitīvais zinātnieks Skots Berijs Kaufmans savā darbā koncentrējas uz intelekta, radošuma un cilvēka potenciāla izpēti. Grāmatā viņš pēta mācīšanās procesus, cenšoties apgāzt sabiedrībā iesakņojušos šauro priekšstatu par "intelekta koeficientu" un "talantu", un, balstoties savā pieredzē, sniedz jaunas iespējas un cerību tiem, kuriem ir piesprausta "mācīšanās traucējumu" birka.

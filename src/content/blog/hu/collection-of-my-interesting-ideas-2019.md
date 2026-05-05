@@ -1,8 +1,8 @@
 ---
 title: Philo Agyszüleményei (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Gondolatok
+categories: Csevegés
 ---
 Gyakran elmerengsz? Min szoktál ilyenkor gondolkodni?
 

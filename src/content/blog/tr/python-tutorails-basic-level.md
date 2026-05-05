@@ -2,7 +2,7 @@
 title: Veri Biliminde Python'ın Sık Kullanılan Temel Sözdizimi
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: Veri Bilimi
 mathjax: true
 --- 
 

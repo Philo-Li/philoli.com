@@ -3,8 +3,8 @@ layout: blog
 title: Kan jeg sove bedre på kortere tid? Et selv-eksperiment om søvn Dag 1
 date: 2025-07-11 12:00:00
 tags:
-  - 随笔
-  - 睡眠
+  - Betraktninger
+  - Søvn
   - selvutvikling
 categories: Daglig prat
 ---

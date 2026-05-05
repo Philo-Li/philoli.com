@@ -1,8 +1,8 @@
 ---
 title: Lihtne juhend Hexo blogi loomiseks nullist (2024. aasta versioon)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Blogi loomine
+categories: Igapäevased toimetused
 ---
 Kas olete juba ammu tüdinenud blogiplatvormide koledatest liidestest? Kas olete villand lõpututest veebisaidi teavitustest ja soovitustest? Olete ehk juba ammu tahtnud luua oma isiklikku blogi, kuid olete pidurdunud keeruliste juhendite ja peavalu tekitava koodi pärast? Siis on mul hea meel teatada, et see artikkel õpetab teile samm-sammult ja kõige lihtsamal ning arusaadavamal moel, kuidas oma blogi luua. Teil on vaja vaid veidi kannatust ja järgida juhiseid.
 

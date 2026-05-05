@@ -1,8 +1,8 @@
 ---
 title: Sıfırdan Hexo Blog Kurulumu: Basit Rehber (2024 Sürümü)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Blog Kurulumu
+categories: Günlük Uğraşlar
 ---
 O çirkin blog sitelerinin arayüzlerinden sıkılmadınız mı? Bitmek bilmeyen bildirimlerden gına mı geldi? Kendi blogunuzu kurmayı çoktan düşündünüz ama karmaşık rehberler ve baş ağrıtan kodlarla karşılaşınca vazgeçtiniz mi? O zaman tebrikler! Bu yazı, kendi blogunuzu adım adım, en basit ve anlaşılır şekilde kurmanız için size rehberlik edecek. Tek yapmanız gereken biraz sabırlı olmak ve adımları dikkatle takip etmek.
 

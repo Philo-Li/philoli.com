@@ -1,8 +1,8 @@
 ---
 title: Kumusta 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mga Pagninilay
+categories: Kwentuhan
 ---
 
 Sa Weibo, nakita ko ang ilang tula na puno ng imahinasyon at napakaganda. Ang galing pala! Ganoon din pala magsulat ng tula, gusto kong matuto!

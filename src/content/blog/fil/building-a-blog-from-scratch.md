@@ -1,8 +1,8 @@
 ---
 title: Isang Simpleng Gabay sa Paggawa ng Hexo Blog Mula sa Simula (2024 Edition)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Pagbuo ng Blog
+categories: Pang-araw-araw na Pagkakalikot
 ---
 Hindi ka ba napapagod na sa mga walang kadesign-design na interface ng mga blog website? Sawa ka na ba sa walang katapusang notipikasyon mula sa mga website? Matagal mo nang gustong gumawa ng sarili mong blog, pero napatigil ka dahil sa kumplikadong mga gabay at nakakapanakit-ulong mga code? Kung ganoon, binabati kita! Ang artikulong ito ang magtuturo sa'yo nang hakbang-hakbang, sa pinakamadali at pinakamalinaw na paraan, kung paano itayo ang sarili mong blog. Kailangan mo lang ng kaunting pasensya at sundan ang bawat hakbang.
 

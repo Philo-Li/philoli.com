@@ -1,8 +1,8 @@
 ---
 title: Jak probudit nespoutanou představivost
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 Představivost má každý člověk, ale klíčové je vědět, jak ji využít. Ve skutečnosti se nebudu zabývat otázkou ‚jak získat představivost‘, nýbrž ‚jak ji osvobodit‘. Proto se zde zaměřím především na to, čemu říkáme nespoutaná, divoká představivost.
 

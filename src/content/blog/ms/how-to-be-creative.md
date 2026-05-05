@@ -1,8 +1,8 @@
 ---
 title: Bagaimana Mendapatkan Daya Imaginasi yang Melampaui Batasan
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esei
+categories: Sembang Santai
 ---
 Setiap manusia mempunyai imaginasi, tetapi kuncinya adalah tidak tahu bagaimana untuk mencetuskannya. Sebenarnya, apa yang ingin saya jawab bukanlah "bagaimana untuk mendapatkan imaginasi", sebaliknya "bagaimana untuk melepaskan imaginasi anda". Oleh itu, di sini saya akan membincangkan tentang imaginasi yang dikatakan melampaui batasan.
 

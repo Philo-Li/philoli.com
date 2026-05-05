@@ -2,7 +2,7 @@
 title: Sintaxă Python comună în știința datelor (Noțiuni de bază)
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: Știința datelor
 mathjax: true
 ---
 
