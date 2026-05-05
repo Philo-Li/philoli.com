@@ -1,8 +1,8 @@
 ---
 title: Pozdrav 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Svakodnevne misli
 ---
 Kraj godine zvuči pomalo sjetno, dok početak nove godine budi osjećaj nade i vitalnosti. Zato svoje godišnje sažetke uvijek naslovljavam s "Pozdrav XXXX", a ovo je drugi post u toj seriji blogova.
 

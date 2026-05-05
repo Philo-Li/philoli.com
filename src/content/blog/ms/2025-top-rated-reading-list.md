@@ -3,9 +3,9 @@ layout: blog
 title: Senarai Buku Terbaik 2025: 12 Buku Berpenarafan Tinggi yang Dibaca
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
+  - Membaca
+  - Senarai Buku
+categories: Sembang Santai
 description: Cadangan 12 buku hebat berpenarafan empat bintang ke atas yang dibaca pada tahun 2025, meliputi penulisan, seni, psikologi, sains sosial, kewangan, dan pembangunan diri.
 ---
 

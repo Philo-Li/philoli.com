@@ -1,8 +1,8 @@
 ---
 title: Môj pohľad na zablokovanie hry „Devotion“
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Každodenné rozhovory
 ---
 Vyhlásenie: Prosím, diskutujte s rozvahou. Tím Red Candle sa za túto kauzu už ospravedlnil. Teraz sa pokúsim pozrieť na samotný incident a ponúknuť pár myšlienok.
 

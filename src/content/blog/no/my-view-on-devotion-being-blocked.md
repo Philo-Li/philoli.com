@@ -1,8 +1,8 @@
 ---
 title: Mine tanker om sensuren av «Devotion»
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 Merk: Jeg ber om en saklig diskusjon. Red Candle-teamet har allerede beklaget hendelsen, og nå vil jeg forsøke å drøfte selve saken og dele noen tanker.
 

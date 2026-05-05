@@ -1,8 +1,8 @@
 ---
 title: După cinci ani de amânări, am terminat în sfârșit de citit „Psihologia Amânării”
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Lectură笔记
+categories: 日常Lectură
 ---
 O carte pe care am cumpărat-o acum aproape cinci ani și pe care am tot amânat-o să o citesc, am terminat-o în sfârșit, dintr-o singură lectură.
 

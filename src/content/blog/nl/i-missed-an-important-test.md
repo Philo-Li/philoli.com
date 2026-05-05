@@ -1,8 +1,8 @@
 ---
 title: Ik ben zowaar de officiële inschrijving voor het mastertoelatingsexamen vergeten!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Dagelijkse praatjes
 ---
 Ik had me voorbereid op allerlei vormen van mislukking, maar ik had nooit gedacht dat ik hierop zou vastlopen.
 

@@ -3,9 +3,9 @@ layout: blog
 title: Nejlepší loučení: Co musíte vědět o stárnutí a smrti
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-categories: 读书笔记
+  - Zamyšlení
+  - Knihy
+categories: Knihy笔记
 ---
 
 Ti, kdo čtou tento článek, jsou pravděpodobně ještě daleko od stáří a jen stěží si dokážou představit skutečný seniorský život. Stáří i smrt jsou pro ně neznámé a zároveň děsivé. Ale smrt čeká na každého z nás. Musíme vědět, co nás čeká, až ten čas přijde – jaké procesy a psychické stavy prožijeme? A co můžeme udělat my sami, a jak se k tomu může přizpůsobit zdravotnictví? Jen odstraněním neznáma můžeme překonat strach.

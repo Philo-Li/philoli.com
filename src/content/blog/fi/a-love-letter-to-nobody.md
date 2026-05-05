@@ -1,8 +1,8 @@
 ---
 title: Nimeämättömiä rakkaussanoja
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 
 Nämä tuntemattomalle omistetut rakkaussanat ovat samalla sieluni sirpaleita.

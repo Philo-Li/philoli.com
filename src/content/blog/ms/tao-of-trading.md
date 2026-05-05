@@ -3,10 +3,10 @@ layout: blog
 title: Seni Dagangan
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Esei
+  - Pembacaan
+  - Dagangan
+categories: Pembacaan笔记
 ---
 
 Laluan untuk menjadi pedagang terkemuka adalah proses 'mengenali diri, mengenali dunia, dan mengenali manusia'. Anda bukan berjuang dengan pasaran, sebaliknya berjuang dengan diri sendiri di dalam hati.

@@ -1,8 +1,8 @@
 ---
 title: Sbírka Philových divokých myšlenek (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 Často se zasníte? Co vám v takových chvílích běhá hlavou?
 

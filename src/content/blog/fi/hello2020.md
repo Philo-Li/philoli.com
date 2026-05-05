@@ -1,8 +1,8 @@
 ---
 title: Hei 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 Vuoden päättyminen tuntuu aina hieman haikealta, mutta uusi vuosi tuo mukanaan toivoa ja energiaa. Siksi otsikoin vuosiyhteenvedot aina ”Hei XXXX” – ja tämä onkin jo sarjan toinen blogiteksti.
 

@@ -1,8 +1,8 @@
 ---
 title: Ahoj 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Každodenné rozhovory
 ---
 Koniec roka znie vždy trochu melancholicky, zatiaľ čo začiatok nového roka prináša pocit nádeje a vitality. Preto svoje ročné zhrnutia vždy nazývam „Ahoj XXXX“. Toto je už druhý príspevok z tejto série blogov.
 

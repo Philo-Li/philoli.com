@@ -1,8 +1,8 @@
 ---
 title: Hvordan slippe løs en grenseløs fantasi
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 Alle mennesker har fantasi, men utfordringen er ofte å vite hvordan man skal bruke den. Spørsmålet jeg egentlig ønsker å besvare, er ikke "hvordan få fantasi", men snarere "hvordan slippe løs fantasien din". Derfor vil jeg her konsentrere meg om det vi kaller **grenseløs fantasi**.
 

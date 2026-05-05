@@ -2,8 +2,8 @@
 layout: blog
 title: Utazás Lamma-szigetre
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Gondolatok
+categories: Csevegés
 ---
 
 Ez az eredetileg nem tervezett utazás végül felejthetetlen emlékeket szerzett.

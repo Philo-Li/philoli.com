@@ -2,8 +2,8 @@
 layout: blog
 title: Viziunea mea asupra lumii
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Reflecții
+categories: Gânduri cotidiene
 ---
 
 Einstein a avut o carte intitulată „Viziunea mea asupra lumii”, care conținea o serie de scrisori, articole și discursuri publice ale sale. Unul dintre articole avea același titlu ca și cartea. Și eu îmi doresc să scriu un eseu intitulat „Viziunea mea asupra lumii”.

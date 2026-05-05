@@ -1,8 +1,8 @@
 ---
 title: Ebedi Eserler (Bazı Tweetler)
 date: 2022-09-11 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 
 Ebedi Eserler (bir dizi tweet)

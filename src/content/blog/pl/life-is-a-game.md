@@ -1,8 +1,8 @@
 ---
 title: Gra życia
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 ### Życie jako gra
 

@@ -2,7 +2,7 @@
 title: Vanlig Python-syntax inom datavetenskap (Avancerad)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Datavetenskap
 mathjax: true
 --- 
 De senaste dagarna har jag läst boken [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF-länk](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), en utmärkt och lättillgänglig introduktionsbok till datavetenskap. Ett av kapitlen presenterar grundläggande Python-syntax och avancerad syntax som ofta används inom datavetenskap. Jag tyckte att presentationen var utmärkt, mycket koncis och tydlig, så jag har översatt den och publicerat den här som en referens.  

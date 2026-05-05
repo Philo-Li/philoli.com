@@ -3,9 +3,9 @@ layout: blog
 title: Ibinabahagi ang 12 Mahusay na Aklat: Ang Aking High-Rated Reading List ng 2025
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
+  - Pagbabasa
+  - Listahan ng Aklat
+categories: Kwentuhan
 description: Mga rekomendasyon para sa 12 mahuhusay na aklat na nabasa ko noong 2025 na may apat na bituin o higit pa, sumasaklaw sa pagsusulat, sining, sikolohiya, agham panlipunan, pananalapi, at personal na pag-unlad.
 ---
 

@@ -2,7 +2,7 @@
 title: Sintaks Python Umum dalam Ilmu Data (Lanjutan)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Sains Data
 mathjax: true
 ---
 Beberapa hari terakhir ini, saya sedang membaca buku [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([link PDF](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), sebuah buku pengantar ilmu data yang bagus dan mudah dipahami. Ada satu bab di dalamnya yang membahas sintaks dasar Python serta sintaks lanjutan yang sering digunakan dalam ilmu data. Menurut saya, penjelasannya sangat baik, ringkas, dan jelas, jadi saya menerjemahkannya di sini sebagai catatan pribadi.

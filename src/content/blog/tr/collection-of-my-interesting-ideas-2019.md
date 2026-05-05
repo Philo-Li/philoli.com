@@ -1,8 +1,8 @@
 ---
 title: Philo'nun Beyin Fırtınası Koleksiyonu (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 Sık sık dalıp gider misiniz? Dalıp gittiğinizde aklınızdan neler geçer?
 

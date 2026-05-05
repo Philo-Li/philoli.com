@@ -3,10 +3,10 @@ layout: blog
 title: 12 sjajnih knjiga koje sam pročitao 2025: Preporuke sa visokim ocenama
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
-description: 2025 年读过的 12 本四星及以上好书推荐，涉及写作、艺术、心理学、社会科学、金融与个人成长。
+  - Čitanje
+  - Lista knjiga
+categories: Dnevne priče
+description: 2025 年读过的 12 本四星及以上好书推荐，涉及写作、Umetnost、Psihologija、社会科学、金融与个人成长。
 ---
 
 Prošle godine sam pročitao 47 knjiga. Zbog raznih okolnosti, prošla godina mi je bila izuzetno, izuzetno naporna, pa nisam uspeo da dostignem cilj od 100 knjiga kao 2024. Ipak, pročitao sam mnogo izvanrednih dela. Čitao sam iz raznih oblasti – pisanja, umetnosti, psihologije, društvenih nauka, finansija i ličnog razvoja. Među njima je bilo mnogo dela koja su mi ostala duboko urezana u pamćenje i nakon čitanja, pa sam ih sada pripremio za preporuku. Izvanrednih i vrednih knjiga je zaista mnogo, a da lista preporuka ne bi bila predugačka, izdvojio sam samo 12 onih koje su dobile četiri, pa čak i pet zvezdica.

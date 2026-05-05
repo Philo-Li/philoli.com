@@ -1,8 +1,8 @@
 ---
 title: Ukendte kærlighedsord
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Hverdagssnak
 ---
 
 Disse kærlighedsord er skrevet til en ukendt person, og de er samtidig fragmenter af min sjæl.

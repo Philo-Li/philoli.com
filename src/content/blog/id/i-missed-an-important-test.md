@@ -1,8 +1,8 @@
 ---
 title: Ternyata Aku Melewatkan Pendaftaran Resmi Ujian Pascasarjana!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esai
+categories: Obrolan Santai
 ---
 Aku sudah membayangkan berbagai macam kegagalan, tapi tak pernah terpikir kalau suatu hari aku akan terjebak di titik ini.
 

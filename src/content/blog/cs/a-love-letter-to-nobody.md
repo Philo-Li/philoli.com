@@ -1,8 +1,8 @@
 ---
 title: Nevyřčená slova lásky
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 
 Slova lásky, psaná někomu neznámému, jsou zároveň i střípky mé duše.

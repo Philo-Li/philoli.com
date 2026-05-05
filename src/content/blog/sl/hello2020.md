@@ -1,8 +1,8 @@
 ---
 title: Pozdrav 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Razmišljanja
+categories: Dnevni pogovori
 ---
 Konec leta zveni malce melanholično, medtem ko začetek novega prinaša občutek upanja in vitalnosti. Zato svoje letne povzetke vedno naslavljam z »Pozdrav XXXX«. To je drugi prispevek v tej seriji blogov.
 

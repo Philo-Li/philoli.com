@@ -1,8 +1,8 @@
 ---
 title: Moje spojrzenie na zbanowanie „Devotion”
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 Oświadczenie: Proszę o rzeczową dyskusję. Zespół Red Candle już przeprosił za całą tę aferę, a ja teraz postaram się omówić samo wydarzenie i podzielić się kilkoma refleksjami.
 

@@ -3,10 +3,10 @@ layout: blog
 title: Kan ik beter slapen in minder tijd? Een zelfexperiment over slaap – Dag 1
 date: 2025-07-11 12:00:00
 tags:
-  - 随笔
-  - 睡眠
-  - 自我提升
-categories: 日常闲聊
+  - Essays
+  - Slaap
+  - Zelfverbetering
+categories: Dagelijkse praatjes
 ---
 
 Ik ben een slaapexperiment gestart, met als doel mijn slaapkwaliteit en energieniveau te verbeteren door mijn dieet en levensstijl aan te passen. Zo hoop ik me alerter en vitaler te voelen.

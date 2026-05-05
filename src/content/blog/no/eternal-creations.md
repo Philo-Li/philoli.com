@@ -1,8 +1,8 @@
 ---
 title: Evig skapelse (noen tweets)
 date: 2022-09-11 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 
 Noen refleksjoner rundt det å skape.

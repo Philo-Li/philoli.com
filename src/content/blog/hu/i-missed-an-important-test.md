@@ -1,8 +1,8 @@
 ---
 title: Elszalasztottam a mesterképzésre való hivatalos jelentkezést!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Gondolatok
+categories: Csevegés
 ---
 Sokféle kudarcot elképzeltem már, de arra sosem gondoltam volna, hogy épp ebbe fogok belefutni.
 

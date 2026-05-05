@@ -3,9 +3,9 @@ layout: blog
 title: Den bedste afsked: Det du bør vide om aldring og død
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-categories: 读书笔记
+  - Essays
+  - Læsning
+categories: Læsning笔记
 ---
 
 De fleste, der læser dette indlæg, er sandsynligvis stadig langt fra alderdommen og har svært ved at forestille sig et ægte seniorliv, og møder derfor aldring og død med både fremmedhed og frygt. Men da vi alle skal dø en dag, har vi brug for at vide, hvad vi vil møde til den tid, og hvilke processer og psykologiske tilstande vi vil gennemgå. Og hvad kan vi selv gøre? Hvordan kan sundhedsvæsenet reformeres for at imødekomme dette? Kun ved at fjerne det ukendte kan vi fjerne frygten.

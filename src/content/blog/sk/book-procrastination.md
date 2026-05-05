@@ -1,8 +1,8 @@
 ---
 title: Po piatich rokoch prokrastinácie som konečne dočítal „Psychológiu prokrastinácie“
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Čítanie kníh笔记
+categories: 日常Čítanie
 ---
 Knihu som si kúpil pred takmer piatimi rokmi, no s čítaním som neustále otáľal. Konečne som ju však prečítal celú naraz.
 

@@ -1,8 +1,8 @@
 ---
 title: Ahoj 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Každodenné rozhovory
 ---
 
 Na Weibo som narazil na niekoho, kto písal nesmierne nápadité a milé verše. Úplne ma to uchvátilo! Takto sa dá písať poézia? Chcem sa to naučiť!

@@ -1,8 +1,8 @@
 ---
 title: Creații eterne (câteva tweet-uri)
 date: 2022-09-11 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Reflecții
+categories: Gânduri cotidiene
 ---
 
 Iată câteva reflecții despre creație.

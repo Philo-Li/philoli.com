@@ -1,8 +1,8 @@
 ---
 title: Pasirodo, praleidau oficialią registraciją į magistrantūros egzaminus
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esė
+categories: Kasdienybė
 ---
 Įsivaizdavau daugybę būdų, kaip galiu patirti nesėkmę, bet niekada nebūčiau pagalvojęs, kad kada nors suklupsiu būtent čia.
 

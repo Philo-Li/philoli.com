@@ -3,9 +3,9 @@ layout: blog
 title: Ali lahko spim bolje v manj časa? Moj osebni spalni eksperiment – 1. dan
 date: 2025-07-11 12:00:00
 tags:
-  - 随笔
-  - 睡眠
-  - 自我提升
+  - Razmišljanja
+  - Spanje
+  - Osebna rast
 categories: Dnevni pogovori
 ---
 

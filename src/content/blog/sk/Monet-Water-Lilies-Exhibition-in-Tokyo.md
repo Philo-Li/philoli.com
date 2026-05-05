@@ -4,9 +4,9 @@ title: Výstava Moneta v Tokiu: Od trápenia s kataraktou k nesmrteľným ťahom
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 
-    - 随笔
-    - 艺术
-categories: 日常闲聊
+    - Esej
+    - Umenie
+categories: Každodenné rozhovory
 ---
 
 Len pred pár dňami, tesne pred koncom, som si konečne pozrel výstavu Moneta, na ktorú som sa tak veľmi tešil. Monet je jedným z mojich najobľúbenejších maliarov a zároveň aj jedným z mojich najmilších impresionistov.

@@ -1,8 +1,8 @@
 ---
 title: Věčné tvoření (několik tweetů)
 date: 2022-09-11 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 
 Pár úvah o tvorbě.

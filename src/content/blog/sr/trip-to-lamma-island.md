@@ -2,8 +2,8 @@
 layout: blog
 title: Putovanje na Lamma ostrvo
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Dnevne priče
 ---
 
 Ovo putovanje, koje uopšte nisam planirao, pretvorilo se u nezaboravnu uspomenu.

@@ -1,8 +1,8 @@
 ---
 title: Nasıl Uçsuz Bucaksız Bir Hayal Gücü Geliştirilir?
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 Her insanda hayal gücü vardır; önemli olan, onu nasıl harekete geçireceğimizi bilmemektir. Bu yazıda asıl yanıtlamak istediğim soru 'hayal gücünü nasıl ediniriz?' değil, 'hayal gücümüzü nasıl serbest bırakırız?' olacak. Dolayısıyla, burada özellikle 'uçsuz bucaksız' hayal gücü olarak adlandırılan konuya odaklanacağız.
 

@@ -1,8 +1,8 @@
 ---
 title: Ahoj 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 Konec roku sice zní trochu melancholicky, ale začátek toho nového mi vždycky dodá pocit naděje a nové energie. Proto své roční bilance vždycky nazývám „Ahoj XXXX“ – a tohle je už druhý příspěvek z této série.
 

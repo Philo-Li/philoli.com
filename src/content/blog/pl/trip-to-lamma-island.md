@@ -2,8 +2,8 @@
 layout: blog
 title: Wyprawa na wyspę Lamma
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 
 Choć ta podróż nie była pierwotnie w moich planach, niespodziewanie stała się niezapomnianym wspomnieniem.

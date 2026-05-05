@@ -2,7 +2,7 @@
 title: डेटा साइंस में Python का सामान्य सिंटैक्स (बुनियादी)
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: डेटा विज्ञान
 mathjax: true
 --- 
 

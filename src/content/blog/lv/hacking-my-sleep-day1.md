@@ -3,10 +3,10 @@ layout: blog
 title: Vai es varu gulēt labāk mazākā laikā? Pašeksperiments par miegu, 1. diena
 date: 2025-07-11 12:00:00
 tags:
-  - 随笔
-  - 睡眠
-  - 自我提升
-categories: 日常闲聊
+  - Eseja
+  - Miegs
+  - Pašizaugsme
+categories: Ikdienas sarunas
 ---
 
 Esmu uzsācis miega eksperimentu, kura mērķis ir, pielāgojot uzturu un dzīvesveida paradumus, uzlabot miega kvalitāti un enerģijas līmeni, lai uzturētu skaidrāku un enerģiskāku stāvokli.

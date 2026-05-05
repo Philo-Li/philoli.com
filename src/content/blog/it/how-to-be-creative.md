@@ -1,8 +1,8 @@
 ```yaml
 title: Come liberare un'immaginazione sconfinata
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Saggi
+categories: Pensieri quotidiani
 ---
 Tutti gli esseri umani possiedono l'immaginazione, la vera sfida è capire come attivarla e sfruttarla al meglio. In realtà, la mia intenzione non è rispondere a "come si ottiene l'immaginazione", bensì a "come si libera la propria immaginazione". Per questo, mi concentrerò principalmente su quella che definiamo un'immaginazione sconfinata.
 

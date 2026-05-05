@@ -1,8 +1,8 @@
 ---
 title: Hej 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Funderingar
+categories: Vardagssnack
 ---
 
 På Weibo såg jag någon som hade skrivit fantasifulla och bedårande dikter. Jag tyckte det var helt fantastiskt – så här kunde man också skriva poesi! Jag ville lära mig!

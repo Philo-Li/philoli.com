@@ -1,8 +1,8 @@
 ---
 title: Moj osvrt na zabranu igre „Devotion“
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Dnevne priče
 ---
 Napomena: Molim vas za racionalnu diskusiju. Tim Red Candle se već izvinio zbog ove kontroverze, a ja ću sada pokušati da govorim o samom događaju i da iznesem neka razmišljanja.
 

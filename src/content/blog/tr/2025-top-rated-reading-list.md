@@ -3,9 +3,9 @@ layout: blog
 title: 2025'te Okuduğum En Beğendiğim 12 Kitap
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
+  - Okuma
+  - Kitap Listesi
+categories: Günlük Sohbetler
 description: 2025 yılında okuduğum, yazım, sanat, psikoloji, sosyal bilimler, finans ve kişisel gelişim alanlarını kapsayan, dört yıldız ve üzeri puan verdiğim 12 harika kitap önerisi.
 ---
 

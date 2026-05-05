@@ -2,8 +2,8 @@
 layout: blog
 title: Perjalanan ke Pulau Lamma
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Esai
+categories: Obrolan Santai
 ---
 
 Sebuah perjalanan yang awalnya tak terencana, siapa sangka justru menciptakan kenangan yang begitu indah dan tak terlupakan.

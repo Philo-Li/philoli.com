@@ -1,8 +1,8 @@
 ---
 title: Hej 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Hverdagssnak
 ---
 
 På Weibo faldt jeg over nogle utroligt fantasifulde og charmerende digte. Jeg tænkte, "Wow, det er fantastisk! Kan man virkelig skrive poesi på den måde?" Jeg fik straks lyst til at lære det.

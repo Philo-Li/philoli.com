@@ -2,8 +2,8 @@
 layout: blog
 title: Výlet na ostrov Lamma
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Každodenné rozhovory
 ---
 
 Pôvodne neplánovaný výlet sa nakoniec premenil na nezabudnuteľnú spomienku.

@@ -2,7 +2,7 @@
 title: डेटा साइंस में Python का सामान्य सिंटैक्स (एडवांस)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: डेटा विज्ञान
 mathjax: true
 ---
 हाल ही में, मैं [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF लिंक](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)) नामक किताब पढ़ रहा था। डेटा साइंस में कदम रखने वालों के लिए यह एक बेहतरीन और आसानी से समझ आने वाली किताब है। इसके एक अध्याय में Python के मूल सिंटैक्स और डेटा साइंस में इस्तेमाल होने वाले कुछ एडवांस सिंटैक्स के बारे में बताया गया है। मुझे लगा कि इसकी जानकारी बहुत अच्छी और सीधी-सादी है, इसलिए मैंने इसे यहाँ अपनी याददाश्त ताज़ा रखने के लिए अनुवाद करके रखा है।

@@ -1,8 +1,8 @@
 ---
 title: Beidziet slavēt skolotāja profesiju!
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseja
+categories: Ikdienas sarunas
 ---
 Šajā Skolotāju dienā, kad gandrīz visa Ķīna ir aizņemta ar dāvanu dāvināšanu un skolotāju slavēšanu, atļaujiet man izteikt atšķirīgu viedokli.
 

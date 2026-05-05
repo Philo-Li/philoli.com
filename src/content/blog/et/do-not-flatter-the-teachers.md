@@ -1,8 +1,8 @@
 ---
 title: Ärge enam ülistage õpetajaametit
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 Õpetajate päeval, ajal, mil peaaegu kogu Hiina on hõivatud õpetajatele kingituste viimise ja nende kiitmisega, lubage mul hoopis vastuvoolu ujuda.
 

@@ -1,8 +1,8 @@
 ```yaml
 title: Philo Lis tanker og ideer (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagsbetraktninger
 ---
 Drømmer du deg ofte bort? Og hva tenker du på når du gjør det?
 

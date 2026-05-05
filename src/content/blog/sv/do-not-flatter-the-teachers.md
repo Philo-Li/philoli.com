@@ -1,8 +1,8 @@
 ---
 title: Sluta prisa läraryrket till skyarna
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Funderingar
+categories: Vardagssnack
 ---
 På Lärarnas dag, när nästan hela Kina är upptaget med att ge presenter och hylla lärare, ber jag om ursäkt om jag nu sjunger en annan melodi.
 

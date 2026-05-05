@@ -1,8 +1,8 @@
 ---
 title: Philojeve domislice (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Razmišljanja
+categories: Dnevni pogovori
 ---
 Ali pogosto strmite v prazno? In kaj vam takrat roji po glavi?
 

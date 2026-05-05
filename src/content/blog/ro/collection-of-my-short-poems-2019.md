@@ -1,8 +1,8 @@
 ---
 title: Colecție de poezii scurte (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Reflecții
+categories: Gânduri cotidiene
 ---
 
 Există fantezie, există realitate, și există și o inocență copilărească adorabilă — toate sunt fragmente de suflet.

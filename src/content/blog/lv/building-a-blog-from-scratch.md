@@ -1,8 +1,8 @@
 ---
 title: Īss ceļvedis Hexo emuāra izveidei no nulles (2024. gada versija)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Emuāra izveide
+categories: Ikdienas darbošanās
 ---
 Vai jums ir apnicis emuāru vietņu nepievilcīgais izskats? Vai esat noguris no nebeidzamajiem vietņu paziņojumiem? Vai jau sen vēlaties izveidot savu emuāru, bet sarežģītas pamācības un galvassāpes radošs kods jūs attur? Tad apsveicu! Šis raksts soli pa solim, visvienkāršākajā veidā, iemācīs jums izveidot savu emuāru. Jums nepieciešama tikai nedaudz pacietības, un jums jāseko norādījumiem soli pa solim.
 

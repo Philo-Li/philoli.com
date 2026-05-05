@@ -3,9 +3,9 @@ layout: blog
 title: 12 skvelých kníh, ktoré som prečítal v roku 2025: Zoznam vysoko hodnotených diel
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
+  - Čítanie
+  - Zoznam kníh
+categories: Každodenné rozhovory
 description: Odporúčam 12 výnimočných kníh (4 a viac hviezdičiek), ktoré som prečítal v roku 2025. Pokrývajú písanie, umenie, psychológiu, spoločenské vedy, financie a osobný rozvoj.
 ---
 

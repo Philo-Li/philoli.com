@@ -1,8 +1,8 @@
 ---
 title: En enkel guide för att bygga en Hexo-blogg från grunden (2024 års version)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Bloggbyggande
+categories: Vardagspyssel
 ---
 Har du länge varit trött på de oestetiska gränssnitten på många bloggwebbplatser? Har du fått nog av oändliga webbplatsnotiser? Har du länge velat skapa en egen blogg men stoppats av komplicerade guider och en rad huvudvärkande koder? Då har du tur! Den här artikeln är utformad för att på ett så enkelt sätt som möjligt vägleda dig steg för steg till din egen blogg. Allt du behöver är lite tålamod och att följa instruktionerna.
 

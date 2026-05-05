@@ -3,10 +3,10 @@ layout: blog
 title: Handelns väg
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Funderingar
+  - Bokläsning
+  - Handel
+categories: Bokläsning笔记
 ---
 
 Vägen till att bli en topptrader är en resa där du "ser dig själv, ser världen och ser medmänniskor". Du brottas inte med marknaden, utan med ditt inre jag.

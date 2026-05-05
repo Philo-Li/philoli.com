@@ -2,7 +2,7 @@
 title: Napredna Python sintaksa za nauku o podacima
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Nauka o podacima
 mathjax: true
 ---
 Poslednjih dana čitam knjigu [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF adresa](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), koja je odličan i razumljiv uvod u nauku o podacima. Jedno poglavlje u njoj predstavlja osnovnu i često korišćenu naprednu Python sintaksu za nauku o podacima. Smatram da je objašnjenje odlično, sažeto i jasno, pa sam ga preveo i ovde objavio kao podsetnik.

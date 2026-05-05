@@ -1,8 +1,8 @@
 ---
 title: Cuvinte de dragoste nenumite
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Reflecții
+categories: Gânduri cotidiene
 ---
 
 Declarații de iubire adresate unui destinatar necunoscut, sunt totodată și fragmente de suflet.

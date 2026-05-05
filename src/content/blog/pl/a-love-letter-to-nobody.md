@@ -1,8 +1,8 @@
 ---
 title: Nienazwane wyznania miłosne
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 
 To wyznania miłosne skierowane do nieznanej osoby, a zarazem fragmenty mojej duszy.

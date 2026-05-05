@@ -1,8 +1,8 @@
 ---
 title: Ajatuksiani Devotion-pelin sensuroinnista
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 Selvennys: Pyydän asiallista keskustelua. Red Candle -tiimi on jo pyytänyt anteeksi tapahtunutta kohua, ja nyt aion yrittää käsitellä itse tapahtumaa ja pohtia sitä hieman.
 

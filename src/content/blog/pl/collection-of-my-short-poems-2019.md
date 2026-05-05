@@ -1,8 +1,8 @@
 ---
 title: Zbiór krótkich wierszy (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 
 To fragmenty duszy: trochę fantazji, trochę rzeczywistości, trochę dziecięcej niewinności.

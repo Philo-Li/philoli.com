@@ -1,8 +1,8 @@
 ---
 title: Neizgovorene ljubavne riječi
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Svakodnevne misli
 ---
 
 Ovo su riječi ljubavi upućene neznanom biću, ujedno i djelići moje duše.

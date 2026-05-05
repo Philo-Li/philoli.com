@@ -1,8 +1,8 @@
 ```yaml
 title: Basta esaltare la professione di insegnante
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Saggi
+categories: Pensieri quotidiani
 ---
 In questo Giorno degli Insegnanti, mentre quasi tutta la Cina è impegnata a fare regali e a lodare i docenti, permettetemi di esprimere un'opinione controcorrente.
 

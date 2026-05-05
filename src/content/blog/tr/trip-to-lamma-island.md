@@ -2,8 +2,8 @@
 layout: blog
 title: Lamma Adası Seyahati
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 
 Hiç planlamadığım bir seyahat olsa da, unutulmaz anılarla dolu bir deneyime dönüştü.

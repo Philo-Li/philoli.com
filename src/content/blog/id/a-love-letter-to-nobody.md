@@ -1,8 +1,8 @@
 ---
 title: Untaian Kata Cinta yang Tak Bernama
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esai
+categories: Obrolan Santai
 ---
 
 Ini adalah untaian kata cinta untuk sosok tak bernama, sekaligus serpihan-serpihan jiwa.

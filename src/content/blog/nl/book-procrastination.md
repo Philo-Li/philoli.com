@@ -1,8 +1,8 @@
 ---
 title: Na vijf jaar uitstel heb ik eindelijk 'The Procrastination Equation' gelezen
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Lezen笔记
+categories: 日常Lezen
 ---
 Een boek dat ik bijna vijf jaar geleden kocht en dat ik al die tijd uitstelde om te lezen, heb ik nu eindelijk in één keer uitgelezen.
 

@@ -2,8 +2,8 @@
 layout: blog
 title: Můj světonázor
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 
 Einstein napsal knihu „Můj světonázor“, ve které shromáždil řadu svých dopisů, článků a veřejných projevů. Jeden z těchto textů nesl stejný název jako celá kniha. I já bych ráda napsala text s názvem „Můj světonázor“.

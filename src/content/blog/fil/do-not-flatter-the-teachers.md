@@ -1,8 +1,8 @@
 ---
 title: Tigilan Na Ang Pagbubunyi sa Propesyon ng Guro
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mga Pagninilay
+categories: Kwentuhan
 ---
 Sa Araw ng mga Guro, ngayong halos buong Tsina ay abala sa pagbibigay ng regalo at pagpupuri sa mga tagapagturo, hayaan ninyong kumontra ako.
 

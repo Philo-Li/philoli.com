@@ -2,8 +2,8 @@
 layout: blog
 title: Minu maailmavaade
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 
 Einsteinil oli raamat „Minu maailmavaade“, mis koondas tema avaldatud kirju, artikleid ja avalikke kõnesid. Üks neist tekstidest kandis sama pealkirja, mis raamat. Minagi soovin kirjutada oma „Minu maailmavaade“.

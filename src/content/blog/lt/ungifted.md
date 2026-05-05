@@ -3,10 +3,10 @@ layout: blog
 title: Ne vien tik talentas: IQ, tikslinga praktika ir tiesa apie kūrybiškumą
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 心理学
-categories: 读书笔记
+  - Esė
+  - Knygos
+  - Psichologija
+categories: Knygos笔记
 ---
 
 Kognityvinis mokslininkas Scottas Barry Kaufmanas savo tyrimuose daugiausia dėmesio skiria intelektui, kūrybiškumui ir žmogaus potencialui. Savo knygoje jis nagrinėja, kaip mes mokomės, ir siekia paneigti visuomenėje įsitvirtinusį siaurą „intelekto koeficiento“ (IQ) ir „talento“ suvokimą. Remdamasis asmenine patirtimi, jis atveria naujas galimybes ir teikia vilties tiems, kurie buvo apibūdinti kaip turintys „mokymosi sunkumų“.

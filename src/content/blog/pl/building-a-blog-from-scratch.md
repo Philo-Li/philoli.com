@@ -1,8 +1,8 @@
 ---
 title: Prosty poradnik budowy bloga Hexo od zera (edycja 2024)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Budowanie bloga
+categories: Codzienne eksperymenty
 ---
 Czy masz już dość bezdusznych interfejsów tych wszystkich serwisów blogowych? Czy zmęczyły cię niekończące się powiadomienia i od dawna marzysz o własnym blogu, ale powstrzymywały cię skomplikowane poradniki i kody, od których boli głowa? Jeśli tak, to gratuluję! Ten artykuł ma za zadanie w najprostszy możliwy sposób, krok po kroku, nauczyć cię, jak zbudować własnego bloga. Wystarczy trochę cierpliwości i podążanie za instrukcjami.
 

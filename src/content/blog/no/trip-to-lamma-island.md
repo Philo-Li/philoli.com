@@ -2,8 +2,8 @@
 layout: blog
 title: En tur til Lamma Island
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 
 En tur som egentlig var utenfor planen, men som uventet ble til et uforglemmelig minne.

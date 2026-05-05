@@ -1,8 +1,8 @@
 ---
 title: Zbirka kratkih pesmi (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Razmišljanja
+categories: Dnevni pogovori
 ---
 
 Domiselnost, resničnost in otroška igrivost – vse to so drobci duše.

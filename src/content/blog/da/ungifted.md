@@ -4,10 +4,10 @@ layout: blog
 title: Talent er ikke alt: Sandheden om IQ, bevidst træning og kreativitet
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 心理学
-categories: 读书笔记
+  - Essays
+  - Læsning
+  - Psykologi
+categories: Læsning笔记
 ---
 
 Kognitiv videnskabsmand Scott Barry Kaufman fokuserer på forskning inden for intelligens, kreativitet og menneskeligt potentiale. I sin bog udforsker han, hvordan vi lærer, og forsøger at udfordre den gængse, snævre opfattelse af "IQ" og "talent". Med udgangspunkt i sine egne erfaringer bringer han nye muligheder og håb til dem, der er blevet stemplet med "indlæringsvanskeligheder".

@@ -1,8 +1,8 @@
 ---
 title: Prestaňte už ospevovať povolanie učiteľa
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Každodenné rozhovory
 ---
 V deň učiteľov, keď sa takmer celá Čína sústredí na obdarúvanie a chválenie učiteľov, dovoľte mi zaspievať trochu inú pieseň.
 

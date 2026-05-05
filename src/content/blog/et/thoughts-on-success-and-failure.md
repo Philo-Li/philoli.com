@@ -2,8 +2,8 @@
 layout: blog
 title: Mõtisklusi edust ja läbikukkumisest
 date: 2024-09-18 15:02:52
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 
 ## Edukesksest narratiivist vabanemine

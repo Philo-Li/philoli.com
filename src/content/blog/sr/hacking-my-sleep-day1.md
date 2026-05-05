@@ -3,10 +3,10 @@ layout: blog
 title: Mogu li kvalitetnije spavati uz manje sna? Samoeeksperiment o spavanju – Dan 1
 date: 2025-07-11 12:00:00
 tags:
-  - 随笔
-  - 睡眠
-  - 自我提升
-categories: 日常闲聊
+  - Esej
+  - Spavanje
+  - Lični razvoj
+categories: Dnevne priče
 ---
 
 Započeo sam eksperiment sa spavanjem, sa ciljem da, prilagođavanjem ishrane i životnih navika, poboljšam kvalitet sna i nivo energije, kako bih bio budniji i vitalniji.

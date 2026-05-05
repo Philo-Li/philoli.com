@@ -3,9 +3,9 @@ layout: blog
 title: En İyi Veda: Yaşlanma ve Ölüm Üzerine Bilmeniz Gereken Temel Gerçekler
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-categories: 读书笔记
+  - Deneme
+  - Okuma
+categories: Okuma笔记
 ---
 
 Bu yazıyı okuyanların büyük çoğunluğu, muhtemelen yaşlılıktan henüz çok uzak ve gerçek bir yaşlılık hayatını hayal etmekte zorlanıyor. Yaşlanmaya ve ölüme karşı hem bir yabancılık hem de korku duyuyorlar. Ancak ölüm kaçınılmaz bir sondur. O zamana geldiğimizde nelerle karşılaşacağımızı, hangi süreçlerden ve psikolojik durumlardan geçeceğimizi bilmemiz gerekiyor. Peki biz ne yapabiliriz? Sağlık sektörü bu duruma nasıl bir reform getirebilir? Unutmayın ki, ancak bilinmezlik ortadan kalktığında korku da yok olur.

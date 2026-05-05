@@ -3,9 +3,9 @@ layout: blog
 title: A legjobb búcsú: Amit az öregedésről és a halálról elengedhetetlen tudni
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-categories: 读书笔记
+  - Gondolatok
+  - Olvasás
+categories: Olvasás笔记
 ---
 
 Valószínűleg azok, akik ezt a cikket olvassák, még messze vannak az öregkortól. Nehezen tudják elképzelni az igazi idős kori életet, és egyszerre éreznek idegenséget és félelmet az öregedés és a halál iránt. De az ember végül is halandó. Tudnunk kell, mi vár ránk akkor, milyen folyamatokat és lelkiállapotokat fogunk átélni? És mi magunk mit tehetünk? Hogyan reformálódhat az orvostudomány ennek érdekében? A félelem csak az ismeretlen megszüntetésével oszlatható el.

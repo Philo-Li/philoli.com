@@ -1,8 +1,8 @@
 ---
 title: Kortdiktsamling (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 
 Her finnes fantasi, virkelighet og barnlig uskyld – alle er små fragmenter av sjelen.

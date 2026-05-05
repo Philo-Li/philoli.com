@@ -2,8 +2,8 @@
 layout: blog
 title: Gânduri despre succes și eșec
 date: 2024-09-18 15:02:52
-tags: 随笔
-categories: 日常闲聊
+tags: Reflecții
+categories: Gânduri cotidiene
 ---
 
 ## Eliberarea de narațiunea succesului

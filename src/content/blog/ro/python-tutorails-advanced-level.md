@@ -2,7 +2,7 @@
 title: Sintaxa Python utilizată frecvent în știința datelor (Avansat)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Știința datelor
 mathjax: true
 ---
 În ultimele zile am parcurs cartea [Data Science from Scrach](https://book.douban.com/subject/26364377/) ([link PDF](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), care este o introducere excelentă și ușor de înțeles în știința datelor. Unul dintre capitole prezintă sintaxa de bază a Python și sintaxa avansată utilizată frecvent în știința datelor. Am găsit prezentarea foarte bună, concisă și clară, așa că am tradus-o și am pus-o aici ca o referință.

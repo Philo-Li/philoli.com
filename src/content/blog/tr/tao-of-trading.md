@@ -3,10 +3,10 @@ layout: blog
 title: Ticaretin Yolu
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Deneme
+  - Okuma
+  - Ticaret
+categories: Okuma笔记
 ---
 
 Zirve bir trader olma yolu, "kendini görmek, dünyayı görmek ve tüm varlıkları görmek" sürecidir. Piyasa ile değil, kendi iç dünyanızla savaşıyorsunuz.

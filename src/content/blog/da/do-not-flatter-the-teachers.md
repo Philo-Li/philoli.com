@@ -1,8 +1,8 @@
 ```yaml
 title: Stop med at hylde lærerfaget
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Tanker
+categories: Hverdagssnak
 ---
 På Lærernes Dag, en dag hvor næsten hele Kina har travlt med at give lærere gaver og lovprise dem, tillad mig at synge med en anden stemme.
 

@@ -1,8 +1,8 @@
 ---
 title: Kaip išlaisvinti beribę vaizduotę
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esė
+categories: Kasdienybė
 ---
 Vaizduotę turi kiekvienas žmogus, tačiau pagrindinis iššūkis – nežinojimas, kaip ją išnaudoti. Iš tiesų, aš ketinu atsakyti ne į klausimą „kaip įgyti vaizduotę“, o „kaip išlaisvinti savo vaizduotę“. Todėl čia daugiausia kalbėsiu apie vadinamąją beribę vaizduotę.
 

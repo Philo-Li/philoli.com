@@ -1,8 +1,8 @@
 ---
 title: Hello 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Deneme
+categories: Günlük Sohbetler
 ---
 Yılın sonu her zaman biraz hüzünlendirir insanı, oysa yeni bir yılın başlangıcı insana umut ve enerji dolu bir his verir. Bu yüzden yıl sonu özetlerimin başlığına hep 'Hello XXXX' yazarım; bu da serinin ikinci blog yazısı.
 

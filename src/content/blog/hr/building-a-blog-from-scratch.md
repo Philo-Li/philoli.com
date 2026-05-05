@@ -1,8 +1,8 @@
 ---
 title: Vodič za postavljanje Hexo bloga od nule (izdanje 2024.)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Izrada bloga
+categories: Svakodnevno petljanje
 ---
 Jeste li se već odavno zasitili neatraktivnih sučelja blogova? Dosta vam je beskrajnih obavijesti i nametljivog sadržaja? Oduvijek ste željeli pokrenuti vlastiti blog, ali vas je zaustavila složenost tutorijala i gomila koda od koje vas boli glava? Ako je odgovor da, čestitamo! Ovaj članak će vas korak po korak, na najjednostavniji mogući način, naučiti kako postaviti vlastiti blog. Trebate samo malo strpljenja i slijediti upute.
 

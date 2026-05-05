@@ -1,8 +1,8 @@
 ---
 title: Koleksi Cetusan Idea Philo (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esei
+categories: Sembang Santai
 ---
 Anda selalu termenung? Apa yang anda fikirkan ketika termenung?
 

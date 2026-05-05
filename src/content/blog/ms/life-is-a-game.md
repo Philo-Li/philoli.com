@@ -1,8 +1,8 @@
 ---
 title: Permainan Hidup
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esei
+categories: Sembang Santai
 ---
 ### Menganggap Hidup Ini Sebagai Permainan
 

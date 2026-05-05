@@ -3,10 +3,10 @@ layout: blog
 title: De Weg van het Traden
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Essays
+  - Lezen
+  - Handel
+categories: Lezen笔记
 ---
 
 De weg naar het worden van een top trader is een proces van 'zelfreflectie, begrip van de wereld en empathie voor anderen'. Je vecht niet tegen de markt, maar tegen jezelf, tegen je innerlijke strijd.

@@ -4,9 +4,9 @@ title: Monet-utställningen i Tokyo: Från gråstarrens plåga till odödliga pe
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 
-    - 随笔
-    - 艺术
-categories: 日常闲聊
+    - Funderingar
+    - Konst
+categories: Vardagssnack
 ---
 
 För några dagar sedan, precis innan den stängde, lyckades jag äntligen besöka Monet-utställningen jag så länge sett fram emot. Monet är en av mina absoluta favoritkonstnärer, och definitivt min favoritmålare inom impressionismen.

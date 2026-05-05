@@ -4,9 +4,9 @@ title: Monetova izložba u Tokiju: Od borbe s kataraktom do besmrtnih poteza kis
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 
-    - 随笔
-    - 艺术
-categories: 日常闲聊
+    - Esej
+    - Umjetnost
+categories: Svakodnevne misli
 ---
 
 Prije nekoliko dana, u zadnji čas, napokon sam posjetio dugo željenu izložbu Moneta. On je jedan od mojih omiljenih slikara, a ujedno i jedan od mojih najdražih impresionista.

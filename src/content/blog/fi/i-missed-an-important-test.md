@@ -1,8 +1,8 @@
 ---
 title: Miten ihmeessä unohdin ilmoittautua jatko-opintoihin!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 Olin varautunut monenlaisiin epäonnistumisiin, mutta en koskaan kuvitellut kompastuvani juuri tähän.
 

@@ -1,8 +1,8 @@
 ---
 title: Koleksyon ng Maiikling Tula (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mga Pagninilay
+categories: Kwentuhan
 ---
 
 May pantasya, may realidad, at mayroon ding pagka-inosente't kakyutan. Lahat ng ito ay mga piraso ng kaluluwa.

@@ -2,7 +2,7 @@
 title: قواعد بايثون شائعة في علم البيانات (متقدمة)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: علم البيانات
 mathjax: true
 ---
 في الأيام القليلة الماضية، كنت أقرأ كتاب [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([رابط PDF](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf))، وهو كتاب تمهيدي ممتاز وسهل الفهم في علم البيانات. يخصص أحد فصوله لشرح قواعد بايثون الأساسية والقواعد المتقدمة الشائعة في علم البيانات، وقد وجدت الشرح ممتازًا وموجزًا وواضحًا. لذلك، قمت بترجمته ووضعه هنا كمرجع.

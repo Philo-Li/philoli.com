@@ -1,8 +1,8 @@
 ---
 title: Hallo 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Dagelijkse praatjes
 ---
 Het einde van een jaar klinkt altijd een beetje melancholisch, maar de start van een nieuw jaar daarentegen geeft me juist een gevoel van hoop en vitaliteit. Daarom gebruik ik steevast 'Hallo XXXX' als titel voor mijn jaaroverzichten. Dit is het tweede blogbericht in deze reeks.
 

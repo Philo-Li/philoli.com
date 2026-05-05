@@ -2,8 +2,8 @@
 layout: blog
 title: Pārdomas par panākumiem un neveiksmēm
 date: 2024-09-18 15:02:52
-tags: 随笔
-categories: 日常闲聊
+tags: Eseja
+categories: Ikdienas sarunas
 ---
 
 ## Atbrīvojoties no panākumu kulta stāstījuma

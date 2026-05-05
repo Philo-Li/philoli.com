@@ -2,7 +2,7 @@
 title: Veelvoorkomende Python-syntaxis in data science (gevorderd)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Datawetenschap
 mathjax: true
 ---
 De afgelopen dagen heb ik gelezen in [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF-adres](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf) ), een uitstekend en toegankelijk introductieboek voor data science. Een van de hoofdstukken behandelt de basis- en geavanceerde Python-syntaxis die veel wordt gebruikt in data science. De uitleg vond ik erg duidelijk en beknopt, dus heb ik besloten deze hier te vertalen als naslagwerk.

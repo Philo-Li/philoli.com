@@ -1,8 +1,8 @@
 ```yaml
 title: Basta de idealizar la profesión docente
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Ensayos
+categories: Charlas cotidianas
 ---
 En este Día del Maestro, mientras casi toda China se afana en entregar regalos y alabar a los profesores, permítanme ir a contracorriente.
 

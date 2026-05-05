@@ -3,9 +3,9 @@ layout: blog
 title: 12 odličnih knjig: seznam visoko ocenjenih branj iz leta 2025
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
+  - Branje
+  - Seznam knjig
+categories: Dnevni pogovori
 description: Priporočila 12 odličnih knjig iz leta 2025 z oceno štiri zvezdice ali več, ki zajemajo področja pisanja, umetnosti, psihologije, družbenih ved, financ in osebne rasti.
 ---
 

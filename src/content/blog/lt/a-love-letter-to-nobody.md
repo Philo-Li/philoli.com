@@ -1,8 +1,8 @@
 ---
 title: Neįvardinti meilės žodžiai
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esė
+categories: Kasdienybė
 ---
 
 Tai meilės žodžiai, skirti neįvardytam asmeniui, kartu ir sielos nuotrupos.

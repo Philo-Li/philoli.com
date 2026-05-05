@@ -5,7 +5,7 @@ date: 2026-04-24 12:00:00
 tags:
   - 阅读
   - 书单
-categories: 日常闲聊
+categories: Hverdagsbetraktninger
 description: En anbefaling av 12 bøker rangert fire stjerner eller høyere fra 2025, innen skriving, kunst, psykologi, samfunnsvitenskap, finans og personlig utvikling.
 ---
 

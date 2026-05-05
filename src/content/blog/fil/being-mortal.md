@@ -3,9 +3,9 @@ layout: blog
 title: Ang Pinakamagandang Pamamaalam: Mga Karaniwang Kaalaman Tungkol sa Pagtanda at Kamatayan na Dapat Mong Malaman
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-categories: 读书笔记
+  - Mga Pagninilay
+  - Pagbabasa
+categories: Pagbabasa笔记
 ---
 
 Para sa mga nagbabasa nito, malamang na malayo pa kayo sa katandaan, at mahirap pang isipin ang tunay na buhay ng isang matanda. May pagtataka at takot tayo tungkol sa pagtanda at kamatayan. Ngunit, darating ang panahon na lahat tayo ay mamamatay. Kaya kailangan nating malaman kung ano ang sasalubong sa atin sa panahong iyon — anong mga proseso at kalagayan ng isip ang ating mararanasan? At ano ang kaya nating gawin, at paano dapat magbago ang sistema ng medisina para dito? Para mawala ang takot, kailangan nating alisin ang mga hindi natin nalalaman.

@@ -1,8 +1,8 @@
 ---
 title: Hur man får en vild och gränslös fantasi
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Funderingar
+categories: Vardagssnack
 ---
 Alla människor har fantasi, men nyckeln är att veta hur man använder den. Det jag egentligen vill svara på är inte "hur man får fantasi", utan snarare "hur man släpper loss sin fantasi". Därför kommer jag här att fokusera på vad jag kallar en gränslös fantasi.
 

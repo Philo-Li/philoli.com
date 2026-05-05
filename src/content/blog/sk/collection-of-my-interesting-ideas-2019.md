@@ -1,8 +1,8 @@
 ---
 title: Philoho nápady z hlavy (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Každodenné rozhovory
 ---
 Zamyšľate sa často? Čo vám vtedy behá hlavou?
 

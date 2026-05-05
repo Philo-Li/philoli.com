@@ -3,10 +3,10 @@ layout: blog
 title: Doğuştan Değil: IQ, Odaklı Pratik ve Yaratıcılığın Gerçeği
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 心理学
-categories: 读书笔记
+  - Deneme
+  - Okuma
+  - Psikoloji
+categories: Okuma笔记
 ---
 
 Bilişsel bir bilim insanı olan Scott Barry Kaufman, zeka, yaratıcılık ve insan potansiyeli üzerine araştırmalar yapıyor. Kitabında, öğrenme biçimlerimizi inceliyor ve "zeka" ile "yetenek" hakkındaki yaygın, dar görüşlü algıları yıkmayı hedefliyor. Kendi deneyimlerini de paylaşarak "öğrenme güçlüğü" etiketi yapıştırılmış bireylere yeni olanaklar ve umutlar sunuyor.

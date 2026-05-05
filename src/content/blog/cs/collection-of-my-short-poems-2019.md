@@ -1,8 +1,8 @@
 ---
 title: Sbírka krátkých básní (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Zamyšlení
+categories: Denní povídání
 ---
 
 Fantazie, realita i dětská roztomilost – to vše jsou střípky mé duše. Říkejme jim prozatím krátké básně.

@@ -1,8 +1,8 @@
 ---
 title: Hej 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Funderingar
+categories: Vardagssnack
 ---
 Slutet på ett år kan kännas lite sorgligt, men början på ett nytt ger alltid en känsla av hopp och vitalitet. Därför väljer jag alltid "Hej XXXX" som rubrik för mina årsresuméer, och detta är det andra inlägget i den serien.
 

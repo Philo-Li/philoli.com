@@ -1,8 +1,8 @@
 ---
 title: Lyhyiden runojen kokoelma (2019)
 date: 2020-01-02 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mietteitä
+categories: Arkipäivän jutustelu
 ---
 
 Sisältää unelmia, todellisuutta ja lapsenomaista iloa – kaikki sielun sirpaleita.

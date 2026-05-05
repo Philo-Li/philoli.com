@@ -1,8 +1,8 @@
 ---
 title: Dzīves spēle
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseja
+categories: Ikdienas sarunas
 ---
 ### Uztvert dzīvi kā spēli
 

@@ -2,7 +2,7 @@
 title: תחביר Python נפוץ במדעי הנתונים (מתקדם)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: מדעי הנתונים
 mathjax: true
 ---
 בימים אלו אני קורא את הספר [Data Science from Scrach](https://book.douban.com/subject/26364377/) ([כתובת PDF](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), שהוא ספר מבוא מצוין וקל להבנה למדעי הנתונים. אחד הפרקים בספר מציג את התחביר הבסיסי של Python, יחד עם תחביר מתקדם הנפוץ במדעי הנתונים. מצאתי את ההסברים מצוינים, תמציתיים ובהירים, ולכן החלטתי לתרגם אותם ולרכז אותם כאן לעיון עתידי.

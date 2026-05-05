@@ -1,8 +1,8 @@
 ---
 title: Jag missade visst den officiella anmälan till forskarutbildningen!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Funderingar
+categories: Vardagssnack
 ---
 Jag hade föreställt mig många sätt att misslyckas på, men jag hade aldrig trott att jag skulle falla på just det här.
 

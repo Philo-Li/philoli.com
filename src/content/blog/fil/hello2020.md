@@ -1,8 +1,8 @@
 ---
 title: Kumusta 2020
 date: 2020-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mga Pagninilay
+categories: Kwentuhan
 ---
 May lungkot na kasama ang pagtatapos ng taon, samantalang ang pagsisimula ng bagong taon naman ay nagbibigay ng pag-asa at sigla. Kaya naman, lagi kong ginagawang pamagat ng aking taunang pagbubuod ang 'Hello XXXX'. Ito na ang ikalawang bahagi ng seryeng ito ng blog.
 

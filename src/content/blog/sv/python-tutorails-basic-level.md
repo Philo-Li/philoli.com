@@ -2,7 +2,7 @@
 title: Vanlig Python-syntax inom datavetenskap (grundläggande)
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: Datavetenskap
 mathjax: true
 --- 
 

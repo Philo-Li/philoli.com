@@ -1,8 +1,8 @@
 ---
 title: Jeg gikk visst glipp av den offisielle påmeldingen til mastergradstudiet!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Betraktninger
+categories: Hverdagssnakk
 ---
 Jeg hadde forestilt meg utallige måter å mislykkes på, men at jeg skulle bomme på akkurat dette, det var uventet.
 

@@ -1,8 +1,8 @@
 ---
 title: Nenaslovljene ljubezenske besede
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Razmišljanja
+categories: Dnevni pogovori
 ---
 
 To so ljubezenske izpovedi, namenjene neznani osebi, in hkrati drobci moje duše.

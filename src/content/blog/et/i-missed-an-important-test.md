@@ -1,8 +1,8 @@
 ---
 title: Uskumatu, ma magasin ülikooli sisseastumiseksamite ametliku registreerumise maha!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 Olin valmis paljudeks ebaõnnestumisteks, aga ma poleks iial uskunud, et komistan just siin.
 

@@ -1,8 +1,8 @@
 ---
 title: Neverovatno, propustio sam zvaničnu prijavu za master studije!
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Dnevne priče
 ---
 Predviđao sam mnogo načina da ne uspem, ali nisam ni sanjao da ću se jednog dana saplesti baš ovde.
 

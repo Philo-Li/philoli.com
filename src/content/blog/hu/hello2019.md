@@ -1,8 +1,8 @@
 ---
 title: Helló 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Gondolatok
+categories: Csevegés
 ---
 
 A Weibón láttam valakit, aki elképesztően fantáziadús és bájos verseket írt, és azt gondoltam, ez valami hihetetlenül nagyszerű! Hát így is lehet verset írni! Meg akarom tanulni!

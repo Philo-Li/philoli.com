@@ -1,8 +1,8 @@
 ---
 title: Mga Walang Hanggang Likha (Ilang Tweet)
 date: 2022-09-11 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mga Pagninilay
+categories: Kwentuhan
 ---
 
 Mga Walang Hanggang Likha (Isang serye ng mga tweet)

@@ -1,8 +1,8 @@
 ---
 title: Pandangan Saya Tentang Pengharaman 'Devotion'
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esei
+categories: Sembang Santai
 ---
 Makluman: Mohon berdiskusi secara rasional. Pasukan Red Candle sudah pun memohon maaf atas kontroversi ini. Sekarang, saya akan cuba membincangkan tentang insiden itu sendiri, dan berkongsi sedikit buah fikiran.
 

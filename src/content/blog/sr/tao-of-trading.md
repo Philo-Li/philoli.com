@@ -3,10 +3,10 @@ layout: blog
 title: Put trgovanja
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Esej
+  - Čitanje
+  - Trgovanje
+categories: Čitanje笔记
 ---
 
 Put ka tome da postaneš vrhunski trgovac je proces 'spoznaje sebe, razumevanja sveta i sagledavanja čovečanstva'. Ne boriš se protiv tržišta, već protiv sebe samog, svog unutrašnjeg bića.

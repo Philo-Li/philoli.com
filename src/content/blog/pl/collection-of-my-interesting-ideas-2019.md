@@ -1,8 +1,8 @@
 ---
 title: Szalony zbiór pomysłów Phila (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 Czy często się zamyślasz? O czym wtedy myślisz?
 

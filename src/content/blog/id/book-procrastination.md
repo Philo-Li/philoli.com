@@ -1,8 +1,8 @@
 ---
 title: Setelah Lima Tahun Menunda, Aku Akhirnya Selesai Membaca 'Psikologi Prokrastinasi'
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Membaca笔记
+categories: 日常Membaca
 ---
 Buku yang kubeli hampir lima tahun lalu ini selalu kutunda-tunda membacanya sampai selesai. Tapi akhirnya, kali ini, aku berhasil merampungkannya!
 

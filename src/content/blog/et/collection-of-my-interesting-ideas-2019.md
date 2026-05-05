@@ -1,8 +1,8 @@
 ---
 title: Philo mõttelendude kogumik (2019)
 date: 2020-01-02 10:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 Kas sa unistad sageli tühja pilguga? Millele sa sellistel hetkedel mõtled?
 

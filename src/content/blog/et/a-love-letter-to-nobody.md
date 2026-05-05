@@ -1,8 +1,8 @@
 ---
 title: Nimetud armusõnad
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Mõtisklused
+categories: Igapäevane jutt
 ---
 
 Need on tundmatule pühendatud armusõnad, ühtlasi ka killukesed minu hingest.

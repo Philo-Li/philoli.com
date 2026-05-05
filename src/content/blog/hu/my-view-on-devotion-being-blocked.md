@@ -1,8 +1,8 @@
 ---
 title: Gondolataim a „Devotion” betiltásáról
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Gondolatok
+categories: Csevegés
 ---
 Nyilatkozat: Kérem, tárgyaljuk meg higgadtan. A Red Candle Games csapata már bocsánatot kért a botrányért, most megpróbálom magát az esetet megvitatni, és elgondolkodni rajta egy kicsit.
 

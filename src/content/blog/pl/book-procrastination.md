@@ -1,8 +1,8 @@
 ---
 title: Po pięciu latach prokrastynacji wreszcie przeczytałem „Psychologię prokrastynacji”
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Czytanie książek笔记
+categories: 日常Czytanie
 ---
 Książkę kupiłem prawie pięć lat temu, a jej przeczytanie ciągle odkładałem. Wreszcie, za jednym zamachem, udało mi się ją skończyć.
 

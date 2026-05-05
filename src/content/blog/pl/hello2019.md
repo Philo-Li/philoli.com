@@ -1,8 +1,8 @@
 ---
 title: Witaj 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 
 Na Weibo trafiłem na niezwykle urocze i pełne wyobraźni wiersze. Pomyślałem: to jest po prostu genialne! Okazuje się, że poezję można pisać również w ten sposób – muszę się tego nauczyć!

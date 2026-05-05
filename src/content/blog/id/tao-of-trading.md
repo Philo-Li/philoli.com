@@ -3,10 +3,10 @@ layout: blog
 title: Hakikat Trading
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Esai
+  - Membaca
+  - Trading
+categories: Membaca笔记
 ---
 
 Jalan menuju menjadi trader papan atas adalah sebuah proses "mengenali diri, mengenali dunia, dan mengenali sesama". Ini bukan pertarungan melawan pasar, melainkan pertarungan melawan diri sendiri.

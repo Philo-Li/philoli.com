@@ -1,8 +1,8 @@
 ```yaml
 title: Hoe je een grenzeloze verbeelding krijgt
 date: 2022-03-19 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Dagelijkse praatjes
 ---
 Ieder mens heeft verbeeldingskracht, maar het is de vraag hoe je die benut. Wat ik eigenlijk wil beantwoorden is niet 'hoe je verbeeldingskracht krijgt', maar 'hoe je je verbeeldingskracht de vrije loop laat'. Dit artikel gaat dan ook voornamelijk over de zogenaamde grenzeloze verbeelding.
 

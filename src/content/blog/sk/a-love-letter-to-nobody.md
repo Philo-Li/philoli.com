@@ -1,8 +1,8 @@
 ---
 title: Nevyslovené vyznania lásky
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Každodenné rozhovory
 ---
 
 Toto sú vyznania lásky pre niekoho, koho nepoznám, a zároveň úlomky mojej duše.

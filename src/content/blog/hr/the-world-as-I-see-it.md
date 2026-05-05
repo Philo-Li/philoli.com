@@ -2,8 +2,8 @@
 layout: blog
 title: Moj svjetonazor
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Esej
+categories: Svakodnevne misli
 ---
 
 Einstein je napisao knjigu "Moj pogled na svijet", koja je obuhvaćala niz njegovih objavljenih pisama, članaka i javnih govora, a jedan od tih članaka nosio je isti naslov kao i knjiga. I ja bih željela napisati tekst pod nazivom "Moj svjetonazor".

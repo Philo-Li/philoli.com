@@ -1,8 +1,8 @@
 ---
 title: Po petih letih odlašanja sem končno prebral 'Psihologijo odlašanja'
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Branje笔记
+categories: 日常Branje
 ---
 Knjigo sem kupil/a pred skoraj petimi leti, a sem jo ves čas odlagal/a in nikoli dokončal/a. Zdaj pa sem jo končno prebral/a v enem zamahu.
 

@@ -2,8 +2,8 @@
 layout: blog
 title: Mano pasaulėžiūra
 date: 2024-12-25 18:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Esė
+categories: Kasdienybė
 ---
 
 Albertas Einsteinas yra parašęs knygą „Mano pasaulėžiūra“, kurioje surinkta daugybė jo laiškų, straipsnių ir viešų kalbų. Vienas iš šių tekstų pavadintas lygiai taip pat, kaip ir pati knyga. Ir aš noriu parašyti savo „Mano pasaulėžiūrą“.

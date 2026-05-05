@@ -1,8 +1,8 @@
 ---
 title: Korte handleiding voor het opzetten van een Hexo blog vanaf nul (editie 2024)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Blog opzetten
+categories: Dagelijkse bezigheden
 ---
 Ben je de lelijke interfaces van veel blogwebsites zat? Heb je genoeg van de eindeloze meldingen? Wil je al heel lang je eigen blog opzetten, maar word je afgeschrikt door ingewikkelde handleidingen en hoofdpijnveroorzakende code? Dan heb ik goed nieuws voor je! Dit artikel leert je stap voor stap, op de meest eenvoudige manier, hoe je je eigen blog kunt bouwen. Het enige wat je nodig hebt, is een beetje geduld en de bereidheid om de stappen te volgen.
 

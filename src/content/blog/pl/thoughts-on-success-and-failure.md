@@ -2,8 +2,8 @@
 layout: blog
 title: Refleksje o sukcesie i porażce
 date: 2024-09-18 15:02:52
-tags: 随笔
-categories: 日常闲聊
+tags: Eseje
+categories: Codzienne pogadanki
 ---
 
 ## Uwolnić się od paradygmatu sukcesu

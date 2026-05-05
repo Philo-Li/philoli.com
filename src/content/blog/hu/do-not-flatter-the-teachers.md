@@ -1,8 +1,8 @@
 ---
 title: Ne áradozzunk többé a tanári hivatásról!
 date: 2019-09-10 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Gondolatok
+categories: Csevegés
 ---
 A tanárok napján, miközben Kína szinte egésze ajándékokkal halmozza el és dicsőíti a tanárokat, kérem, engedjék meg, hogy egy kicsit más hangot üssek meg.
 

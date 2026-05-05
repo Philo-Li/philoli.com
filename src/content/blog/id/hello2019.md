@@ -1,8 +1,8 @@
 ---
 title: Halo 2019
 date: 2019-01-01 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Esai
+categories: Obrolan Santai
 ---
 
 Di Weibo, saya melihat seseorang menulis puisi yang imajinatif dan sangat indah, dan saya merasa itu luar biasa sekali! Ternyata puisi juga bisa ditulis seperti ini. Saya ingin belajar!

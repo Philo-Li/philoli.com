@@ -2,8 +2,8 @@
 layout: blog
 title: Kelionė į Lamos salą
 date: 2024-09-19 11:19:46
-tags: 随笔
-categories: 日常闲聊
+tags: Esė
+categories: Kasdienybė
 ---
 
 Ši kelionė, nors ir neplanuota, netikėtai virto nepamirštamais prisiminimais.

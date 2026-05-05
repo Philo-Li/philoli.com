@@ -2,7 +2,7 @@
 title: Mga Pangunahing Syntax ng Python sa Data Science (Mga Batayan)
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: Agham ng Datos
 mathjax: true
 --- 
 

@@ -1,8 +1,8 @@
 ---
 title: En enkel guide til å sette opp en Hexo-blogg fra bunnen av (2024-utgaven)
 date: 2024-04-11 00:25:20
-tags: 博客搭建
-categories: 日常折腾
+tags: Bloggbygging
+categories: Hverdagsutfordringer
 ---
 Har du lenge vært lei av de kjedelige grensesnittene på mange bloggnettsteder? Er du lei av endeløse varsler og reklame? Har du drømt om å lage din egen blogg, men blitt stoppet av kompliserte guider og hodebry med kode? Da er du heldig! Denne artikkelen er skrevet for å veilede deg trinn for trinn på den enklest mulige måten, slik at du kan sette opp din egen blogg. Alt du trenger er litt tålmodighet og å følge instruksjonene nøye.
 

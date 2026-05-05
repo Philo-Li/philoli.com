@@ -3,9 +3,9 @@ layout: blog
 title: Dalijamės 12 puikių knygų: 2025 m. skaitytų aukščiausiai įvertintų knygų sąrašas
 date: 2026-04-24 12:00:00
 tags:
-  - 阅读
-  - 书单
-categories: 日常闲聊
+  - Skaitymas
+  - Knygų sąrašas
+categories: Kasdienybė
 description: 12 knygų, perskaitytų 2025 m. ir įvertintų keturiomis žvaigždutėmis ir daugiau, rekomendacijos. Apima rašymą, meną, psichologiją, socialinius mokslus, finansus ir asmeninį tobulėjimą.
 ---
 

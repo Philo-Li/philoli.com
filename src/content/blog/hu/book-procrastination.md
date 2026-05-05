@@ -1,8 +1,8 @@
 ---
 title: Végre elolvastam a Halogatás pszichológiáját – öt év halogatás után
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Olvasás笔记
+categories: 日常Olvasás
 ---
 Közel öt éve vettem ezt a könyvet, de folyton halogattam az elolvasását. Most végre együltő helyemben befejeztem.
 

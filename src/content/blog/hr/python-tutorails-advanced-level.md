@@ -2,7 +2,7 @@
 title: Često korištena Python sintaksa u podatkovnoj znanosti (Napredno)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Znanost o podacima
 mathjax: true
 ---
 Posljednjih nekoliko dana čitam ovu knjigu [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF adresa](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), koja je izvrsna i lako razumljiva uvodna knjiga u svijet podatkovne znanosti. Jedno poglavlje sjajno objašnjava osnove Python sintakse i naprednije koncepte koji se često koriste u podatkovnoj znanosti. Smatram da je objašnjenje izvrsno, sažeto i jasno, pa sam ga odlučio prevesti i objaviti ovdje kao podsjetnik.

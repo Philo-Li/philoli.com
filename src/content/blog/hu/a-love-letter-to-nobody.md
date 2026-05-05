@@ -1,8 +1,8 @@
 ---
 title: Névtelen szerelmes szavak
 date: 2022-08-27 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Gondolatok
+categories: Csevegés
 ---
 
 Ezek szerelmes szavak egy ismeretlenhez, egyben a lelkem darabkái.

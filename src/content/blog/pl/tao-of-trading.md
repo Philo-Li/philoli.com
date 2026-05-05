@@ -3,10 +3,10 @@ layout: blog
 title: Filozofia tradingu
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 交易
-categories: 读书笔记
+  - Eseje
+  - Czytanie książek
+  - Handel
+categories: Czytanie książek笔记
 ---
 
 Droga do zostania wybitnym traderem to podróż polegająca na „poznaniu siebie, zrozumieniu świata i dostrzeżeniu ludzkości”. Nie walczysz z rynkiem, lecz ze sobą samym, z własnym wnętrzem.

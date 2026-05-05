@@ -2,7 +2,7 @@
 title: Pythoni sagedamini kasutatav süntaks andmeteaduses (edasijõudnutele)
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Andmeteadus
 mathjax: true
 ---
 Viimastel päevadel olen lugenud raamatut [Data Science from Scratch](https://book.douban.com/subject/26364377/) ([PDF-link](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), mis on suurepärane ja kergesti mõistetav sissejuhatus andmeteadusesse. Üks peatükk tutvustas Pythoni põhisüntaksit ja andmeteaduses sageli kasutatavaid edasijõudnute süntaksi funktsioone. Leidsin, et see oli väga hästi, lühidalt ja selgelt esitatud, mistõttu otsustasin selle siia üles kirjutada ja tõlkida meeldetuletuseks.

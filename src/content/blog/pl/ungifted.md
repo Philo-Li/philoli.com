@@ -3,10 +3,10 @@ layout: blog
 title: To nie tylko talent: IQ, celowa praktyka i prawda o kreatywności
 date: 2025-05-22 12:00:00
 tags:
-  - 随笔
-  - 读书
-  - 心理学
-categories: 读书笔记
+  - Eseje
+  - Czytanie książek
+  - Psychologia
+categories: Czytanie książek笔记
 ---
 
 Scott Barry Kaufman, naukowiec kognitywista, zajmuje się badaniem inteligencji, kreatywności i ludzkiego potencjału. W swojej książce analizuje proces uczenia się, podważając powszechne, często zbyt wąskie, postrzeganie IQ i "talentu". Opierając się na własnych doświadczeniach, oferuje nowe perspektywy i nadzieję tym, którzy zostali naznaczeni etykietą "trudności w nauce".

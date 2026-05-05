@@ -1,8 +1,8 @@
 ---
 title: Viiden vuoden vitkuttelun jälkeen sain vihdoin luettua "Viivyttelyn psykologiaa"
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Lukeminen笔记
+categories: 日常Lukeminen
 ---
 Kirja on ollut hyllyssäni lähes viisi vuotta, ja olen lykännyt sen lukemista taukoamatta. Nyt sain sen vihdoin luettua yhdellä istumalla.
 

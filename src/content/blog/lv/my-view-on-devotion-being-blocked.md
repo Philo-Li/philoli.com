@@ -1,8 +1,8 @@
 ---
 title: Manas pārdomas par spēles “Devotion” aizliegšanu
 date: 2019-02-26 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Eseja
+categories: Ikdienas sarunas
 ---
 Paziņojums: lūdzu, diskutējiet ar vēsu prātu. "Red Candle" komanda jau ir atvainojusies par šo skandālu, un tagad es mēģināšu apspriest pašu notikumu un padalīties ar dažām pārdomām.
 

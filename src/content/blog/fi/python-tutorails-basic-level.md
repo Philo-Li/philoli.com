@@ -2,7 +2,7 @@
 title: Yleisiä Python-syntakseja datatieteessä (perusteet)
 date: 2018-11-07 20:53:13
 tags: Python
-categories: 数据科学
+categories: Datatiede
 mathjax: true
 --- 
 
