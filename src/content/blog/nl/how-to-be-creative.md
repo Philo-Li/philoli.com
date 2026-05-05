@@ -1,4 +1,4 @@
-```yaml
+---
 title: Hoe je een grenzeloze verbeelding krijgt
 date: 2022-03-19 20:53:13
 tags: Essays

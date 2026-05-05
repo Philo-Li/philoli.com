@@ -1,4 +1,4 @@
-```yaml
+---
 title: Stop med at hylde lærerfaget
 date: 2019-09-10 20:53:13
 tags: Tanker

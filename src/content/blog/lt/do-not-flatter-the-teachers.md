@@ -1,4 +1,4 @@
-```yaml
+---
 title: Gana liaukitės liaupsinti mokytojo profesiją
 date: 2019-09-10 20:53:13
 tags: Esė

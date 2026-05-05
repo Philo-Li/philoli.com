@@ -1,4 +1,4 @@
-```yaml
+---
 title: Come liberare un'immaginazione sconfinata
 date: 2022-03-19 20:53:13
 tags: Saggi
