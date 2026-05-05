@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "ニュースレター",
-    "subscribe": "購読する →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "ニュースレター",
+    "subscribe": "購読する →"
   },
   "metadata": {
     "siteTitle": "Philo Li — アーティスト、ライター、クリエイター",
@@ -27,8 +27,10 @@
     "projectsDescription": "Philo Li によるプロジェクト。",
     "newsletterTitle": "ニュースレター — Philo Li",
     "newsletterDescription": "Philo Li のニュースレターを購読する。",
-    "ebookTranslatorTitle": "二ヶ国語電子書籍翻訳ツール — Philo Li",
-    "ebookTranslatorDescription": "EPUB をアップロードし、自身の LLM API key を使って二ヶ国語版に翻訳します。すべてブラウザ上で動作します。"
+    "ebookTranslatorTitle": "バイリンガル電子書籍翻訳機 — Philo Li",
+    "ebookTranslatorDescription": "EPUB をアップロードし、自身の LLM API key を使用して二ヶ国語版に翻訳します。すべてブラウザ上で動作します。",
+    "rubiksCubeTitle": "3D ルービックキューブ — Philo Li",
+    "rubiksCubeDescription": "インタラクティブな 3D ルービックキューブ。スクランブルと手順を設定し、一歩ずつ再生したり、暗記の練習のために色や面を非表示にしたりできます。"
   },
   "nav": {
     "blog": "ブログ",
@@ -47,9 +49,9 @@
   },
   "hero": {
     "line1": "創る。",
-    "line2": "捉える。",
-    "line3": "築く。",
-    "tagline": "絵を描き、写し、綴り、そして造る。好奇心が技芸とコードに重なるとき、ここにあるすべてが形を成す。",
+    "line2": "撮る。",
+    "line3": "作る。",
+    "tagline": "絵を描き、写真を撮り、文章を書き、ものを作る。好奇心が技術とコードに出会ったとき、これらが生まれます。",
     "labelLeft": "アーティスト",
     "labelRight": "デベロッパー"
   },
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "ニュースレター",
     "headline": "好奇心を持ち続けよう。",
-    "desc": "アート、人生、そして「創ること」についての思考 —— あなたの受信トレイにお届けします。"
+    "desc": "アート、人生、そしてものづくりについての思考を、あなたのインボックスへお届けします。"
   },
   "blogPage": {
     "title": "ブログ"
   },
   "aboutPage": {
     "tagline": "アーティスト · ライター · デベロッパー",
-    "bioP1": "クリエイター、プログラマー、そして思索家。ゼロから何かを創り出すこと —— 絵でも、コードでも、深掘りした文章でも、それが僕の一番の楽しみです。",
-    "bioP2": "長い間、この情熱に対する最大の障害は私自身の脳でした。私には ADHD があります。市販されているほぼすべての生産性向上ツールを試した後、それらがすべて定型発達の脳向けに設計されていることに気づきました。私には「パートナー」が必要でした。私を理解し、最も必要な時にそっと背中を押してくれる何かです。",
-    "bioP3": "どこを探しても見つからなかった。だから、自分で作ることにしたんです —— 僕自身のため、そして僕と同じ「忙しい脳」を持つ何百万人もの人たちのために。そうして Dopamind は誕生しました。",
+    "bioP1": "私はクリエイターであり、プログラマーであり、思索家でもあります。絵画、コード、あるいは深掘りしたエッセイなど、ゼロから何かを作り上げることが大好きです。",
+    "bioP2": "長い間、この情熱に対する最大の障害は自分自身の脳でした。私には ADHD があります。市場にあるほぼすべての生産性ツールを試した後、それらがすべて定型発達の脳向けに設計されていることに気づきました。私には「パートナー」が必要でした。私を理解し、最も必要な時にそっと背中を押してくれる何かです。",
+    "bioP3": "それはどこにも見つかりませんでした。だから、自分自身のため、そして私と同じように「忙しい脳」を持つ何百万人もの人々のために、自分で作ることにしました。そうして Dopamind は誕生しました。",
     "sectionProjects": "プロジェクト",
     "sectionNewsletter": "ニュースレター",
-    "sectionArtworks": "作品",
+    "sectionArtworks": "アートワーク",
     "sectionReadMore": "続きを読む",
     "sectionFindMe": "他のプラットフォーム",
-    "projectDopamindDesc": "あなたの AI パートナー",
+    "projectDopamindDesc": "あなたの日々の AI コンパニオン",
     "projectPhiloArtDesc": "デジタルアートギャラリー",
     "newsletterMediumDesc": "エッセイ",
-    "artworksText": "アート作品はすべて philoart.io/philo で公開しています。",
-    "artworksContactText": "原画や写真プリントを購入したい？ X で DM を送るか、philo.li.official@gmail.com までメールをください。",
+    "artworksText": "アートワークは philoart.io/philo で公開しています",
+    "artworksContactText": "原画や写真プリントの購入については、X の DM またはメール（philo.li.official@gmail.com）でお問い合わせください",
     "extraEmail": "メール"
   },
   "artPage": {
@@ -91,16 +93,21 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "あなたの AI パートナー。毎日そばに寄り添い、より良い暮らしをサポートします。"
+        "description": "あなたの AI コンパニオン。毎日あなたのそばで、より良い生活を送るお手伝いをします。"
       },
       "philoart": {
         "name": "PhiloArt",
         "description": "私の個人アートギャラリー — 写真、絵画、デジタルアート。"
       },
       "ebookTranslator": {
-        "name": "二ヶ国語電子書籍翻訳ツール",
-        "description": "どんな電子書籍もバイリンガル版に —— ブラウザ上で、自分自身の LLM API key を使って動かせます。",
+        "name": "2ヶ国語電子書籍翻訳ツール",
+        "description": "あらゆる電子書籍を2ヶ国語版に — お持ちの LLM API key を使い、ブラウザ上で動作します。",
         "cta": "ツールを開く →"
+      },
+      "rubiksCube": {
+        "name": "3Dルービックキューブ",
+        "description": "インタラクティブな3Dキューブで、スクランブルや解法をステップごとに確認。学習モードでは色や面を非表示にして、アルゴリズムの練習が可能です。",
+        "cta": "キューブを開く →"
       }
     }
   },
@@ -111,16 +118,16 @@
   "ebookTranslator": {
     "eyebrow": "プロジェクト",
     "title": "2ヶ国語電子書籍翻訳ツール",
-    "subtitle": "EPUBをアップロードし、自身のLLM API keyを使用することで、原文と翻訳文が段落ごとに交互に配置された2ヶ国語版を作成できます。ファイルはすべてブラウザ内で解析され、本がサーバーに送信されることはありません。",
+    "subtitle": "EPUB をアップロードし、ご自身の LLM API key を使用することで、原文と翻訳文が段落ごとに交互に配置された2ヶ国語版を作成します。ファイル解析はすべてブラウザ内で行われるため、本がサーバーに送信されることはありません。",
     "steps": {
       "settings": "設定",
       "upload": "アップロード",
-      "browse": "参照"
+      "browse": "ファイルを選択"
     },
     "actions": {
       "cancelRunning": "実行をキャンセル",
       "translateAllRemaining": "残りをすべて翻訳",
-      "downloadEpub": "⬇ EPUBをダウンロード",
+      "downloadEpub": "⬇ EPUB をダウンロード",
       "building": "作成中…",
       "back": "← 戻る",
       "settingsModel": "← 設定 / モデル",
@@ -136,25 +143,26 @@
       "provider": "プロバイダー",
       "model": "モデル",
       "apiKey": "API key",
-      "apiKeyPlaceholder": "{provider}のキーを貼り付け",
+      "apiKeyPlaceholder": "{provider}のキーを貼り付けてください",
       "apiKeyHint": "{link}で取得できます。キーは{provider}にのみ送信され、philoli.comに送信されることはありません。",
-      "rememberKey": "このブラウザにのみキーを保存する（localStorage）。共有デバイスの場合はチェックを外してください。",
+      "rememberKey": "このブラウザにのみキーを保存する（ローカルストレージ）。共有デバイスの場合はチェックを外してください。",
       "showApiKey": "API keyを表示",
-      "hideApiKey": "API key を非表示",
+      "hideApiKey": "API keyを隠す",
       "translateFrom": "翻訳元",
       "translateTo": "翻訳先",
       "tone": "トーン",
-      "customProvider": "カスタム (OpenAI互換)",
+      "customProvider": "カスタム（OpenAI互換）",
       "customModel": "モデルID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "例：gpt-4o、deepseek-chat、…",
       "customEndpoint": "APIエンドポイント",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "OpenAI互換の/chat/completionsエンドポイントへの完全なURL。",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "OpenAI互換の /chat/completions エンドポイントのフルURL。",
+      "openrouterModelPlaceholder": "例：google/gemini-2.5-flash、anthropic/claude-sonnet-4、…",
+      "opencodeModelPlaceholder": "例：kimi-k2.6、deepseek-v4-flash、glm-5.1、…",
       "needApiKey": "続行するには API key を入力してください。"
     },
     "upload": {
-      "parsing": "EPUB を解析中…",
+      "parsing": "EPUBを解析中…",
       "dropTitle": "ここに EPUB をドロップ",
       "dropSubtitle": "またはクリックしてファイルを選択",
       "noChapters": "この EPUB 内に読み取り可能な章が見つかりませんでした。"
@@ -168,20 +176,20 @@
       "noTranslatableText": "この章には翻訳可能なテキストがありません（表紙、前付など）。",
       "translatingAria": "翻訳中",
       "translatingLabel": "翻訳中…",
-      "buildFailed": "EPUB の作成に失敗しました:"
+      "buildFailed": "EPUBの作成に失敗しました："
     },
     "tones": {
       "idiomatic": {
         "label": "慣用的",
-        "hint": "自然で流暢 — ほとんどの書籍"
+        "hint": "自然で流暢 — ほとんどの本"
       },
       "literary": {
         "label": "文学的",
-        "hint": "小説や文学作品"
+        "hint": "小説・文学作品"
       },
       "technical": {
-        "label": "専門的",
-        "hint": "専門書や参考書"
+        "label": "技術的",
+        "hint": "専門書・参考書"
       }
     },
     "modelHints": {
@@ -191,11 +199,11 @@
       "newestFast": "最新、高速",
       "cheapest": "最安",
       "bestQualityStable": "最高品質、安定",
-      "balanced": "バランス",
-      "freeTierFast": "無料プラン、高速",
+      "balanced": "バランス重視",
+      "freeTierFast": "無料枠、高速",
       "flagshipCoding": "フラッグシップ・コーディング/エージェント",
-      "longContext": "ロングコンテキスト、安定",
-      "cheaper": "低価格",
+      "longContext": "長文コンテキスト、安定",
+      "cheaper": "より安価",
       "latestLongContext": "最新、256Kコンテキスト"
     }
   },
@@ -214,5 +222,59 @@
   "social": {
     "photography": "写真",
     "art": "アート"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3Dルービックキューブ — Philo Li",
+      "description": "インタラクティブな3Dルービックキューブ。スクランブルと手順を設定し、ステップごとに再生。暗記練習のために色や面を非表示にできます。"
+    },
+    "title": "3Dルービックキューブ",
+    "intro": "スクランブルと手順を入力してください。解決手順を1ステップずつ確認したり、ドラッグで視点を回転させたり、学習モードでアルゴリズムを練習したりできます。",
+    "scramble": {
+      "label": "スクランブル",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "スクランブルを適用",
+      "reset": "リセット"
+    },
+    "solution": {
+      "label": "手順",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "認識できません: {token}"
+    },
+    "playback": {
+      "play": "再生",
+      "pause": "一時停止",
+      "prev": "前のステップ",
+      "next": "次のステップ",
+      "first": "最初に戻る",
+      "last": "最後まで進む",
+      "speed": "速度"
+    },
+    "learning": {
+      "title": "学習モード",
+      "master": "有効にする",
+      "hideColors": "色を非表示",
+      "hideFaces": "面を非表示",
+      "faceLabel": {
+        "U": "上",
+        "R": "右",
+        "F": "前",
+        "D": "下",
+        "L": "左",
+        "B": "後"
+      },
+      "colorLabel": {
+        "white": "白",
+        "red": "赤",
+        "green": "緑",
+        "yellow": "黄",
+        "orange": "オレンジ",
+        "blue": "ブルー"
+      }
+    },
+    "share": {
+      "copy": "共有リンクをコピー",
+      "copied": "コピーしました！"
+    }
   }
 }

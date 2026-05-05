@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Surat berita",
-    "subscribe": "Langgan →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Buletin",
+    "subscribe": "Langgan →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Artis, Penulis, Pencipta",
@@ -28,7 +28,9 @@
     "newsletterTitle": "Buletin — Philo Li",
     "newsletterDescription": "Langgan buletin Philo Li.",
     "ebookTranslatorTitle": "Penterjemah E-buku Dwibahasa — Philo Li",
-    "ebookTranslatorDescription": "Muat naik EPUB dan terjemahkannya ke dalam edisi dwibahasa dengan API key LLM anda sendiri. Berjalan sepenuhnya dalam pelayar anda."
+    "ebookTranslatorDescription": "Muat naik EPUB dan terjemahkannya ke dalam edisi dwibahasa dengan API key LLM anda sendiri. Berjalan sepenuhnya dalam pelayar anda.",
+    "rubiksCubeTitle": "Kiub Rubik 3D — Philo Li",
+    "rubiksCubeDescription": "Kiub Rubik 3D interaktif. Tetapkan susunan rawak dan penyelesaian, main langkah demi langkah, sembunyikan warna atau muka untuk latihan hafalan."
   },
   "nav": {
     "blog": "Blog",
@@ -40,46 +42,46 @@
   },
   "theme": {
     "dark": "Gelap",
-    "light": "Terang",
+    "light": "Cerah",
     "toggleAria": "Tukar tema warna",
-    "toggleToLight": "Tukar ke mod terang",
+    "toggleToLight": "Tukar ke mod cerah",
     "toggleToDark": "Tukar ke mod gelap"
   },
   "hero": {
-    "line1": "Mencipta.",
-    "line2": "Merakam.",
-    "line3": "Membina.",
-    "tagline": "Saya melukis, memotret, menulis, dan membina. Inilah yang lahir saat rasa ingin tahu bertemu seni dan kod.",
+    "line1": "Cipta.",
+    "line2": "Rakam.",
+    "line3": "Bina.",
+    "tagline": "Saya melukis, merakam foto, menulis, dan membina sesuatu. Inilah yang berlaku apabila rasa ingin tahu bertemu dengan kraf dan kod.",
     "labelLeft": "Artis",
     "labelRight": "Pembangun"
   },
   "recentPosts": {
-    "label": "Penulisan Terkini",
+    "label": "Tulisan Terkini",
     "viewAll": "Lihat semua →"
   },
   "newsletterCta": {
-    "label": "Surat Berita",
+    "label": "Buletin",
     "headline": "Kekal ingin tahu.",
-    "desc": "Perkongsian tentang seni, kehidupan, dan membina sesuatu —— terus ke inbox awak."
+    "desc": "Pemikiran tentang seni, kehidupan, dan membina sesuatu — dihantar ke peti masuk anda."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Artis · Penulis · Pembangun",
-    "bioP1": "Saya seorang pencipta, pengatur cara, dan pemikir. Bina sesuatu dari kosong adalah perkara yang paling saya minat —— tak kira lah lukisan, kod, atau penulisan panjang.",
-    "bioP2": "Sejak sekian lama, halangan terbesar bagi minat ini ialah otak saya sendiri: Saya mempunyai ADHD. Selepas mencuba hampir setiap alat produktiviti di pasaran, saya menyedari semuanya direka untuk minda neurotipikal. Saya memerlukan \"rakan kongsi\" — sesuatu yang memahami saya dan boleh memberi dorongan lembut tepat pada masanya.",
-    "bioP3": "Saya cari merata-rata tapi tak jumpa. Jadi saya buat sendiri —— untuk saya, dan untuk berjuta orang lain yang ada \"otak sibuk\" macam saya. Macam itulah Dopamind tercipta.",
+    "bioP1": "Saya seorang pencipta, pengatur cara, dan pemikir. Saya suka membina sesuatu dari awal — sama ada lukisan, kod pengaturcaraan, atau esei yang mendalam.",
+    "bioP2": "Sejak sekian lama, halangan terbesar bagi minat ini ialah otak saya sendiri: saya mempunyai ADHD. Selepas mencuba hampir setiap alat produktiviti di pasaran, saya sedar semuanya direka untuk minda neurotipikal. Saya memerlukan seorang \"rakan kongsi\" — sesuatu yang memahami saya dan boleh memberi dorongan lembut tepat pada masa saya sangat memerlukannya.",
+    "bioP3": "Saya tidak menemuinya di mana-mana. Jadi saya memutuskan untuk membinanya sendiri — untuk saya, dan untuk berjuta-juta orang lain yang mempunyai \"otak yang sibuk\" seperti saya. Begitulah cara Dopamind dilahirkan.",
     "sectionProjects": "Projek",
-    "sectionNewsletter": "Surat Berita",
+    "sectionNewsletter": "Buletin",
     "sectionArtworks": "Karya Seni",
     "sectionReadMore": "Baca Lagi",
     "sectionFindMe": "Cari saya di tempat lain",
-    "projectDopamindDesc": "Teman AI awak",
+    "projectDopamindDesc": "Teman AI harian anda",
     "projectPhiloArtDesc": "Galeri Seni Digital",
     "newsletterMediumDesc": "Esei",
-    "artworksText": "Saya kongsikan karya seni saya di philoart.io/philo",
-    "artworksContactText": "Nak beli lukisan asli atau cetakan fotografi? DM saya di X, atau emel ke philo.li.official@gmail.com",
+    "artworksText": "Saya memuat naik karya seni saya di philoart.io/philo",
+    "artworksContactText": "Untuk membeli lukisan asli atau cetakan fotografi, hantar DM di X atau e-mel philo.li.official@gmail.com",
     "extraEmail": "E-mel"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Teman AI awak. Sentiasa ada setiap hari, bantu awak jalani hidup dengan lebih baik."
+        "description": "Teman AI anda. Di sisi anda setiap hari, membantu anda menjalani kehidupan yang lebih baik."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "Penterjemah E-buku Dwibahasa",
-        "description": "Tukar mana-mana e-book ke versi dwibahasa —— jalan dalam browser, guna LLM API key awak sendiri.",
+        "description": "Tukarkan mana-mana e-buku menjadi edisi dwibahasa — berjalan dalam pelayar anda dengan API key LLM anda sendiri.",
         "cta": "Buka alatan →"
+      },
+      "rubiksCube": {
+        "name": "Kiub Rubik 3D",
+        "description": "Lalui langkah-langkah susunan rawak dan penyelesaian pada kiub 3D interaktif. Mod pembelajaran menyembunyikan warna dan muka untuk latihan algoritma.",
+        "cta": "Buka kiub →"
       }
     }
   },
@@ -111,11 +118,11 @@
   "ebookTranslator": {
     "eyebrow": "Projek",
     "title": "Penterjemah E-buku Dwibahasa",
-    "subtitle": "Muat naik EPUB, gunakan API key LLM anda sendiri, dan dapatkan edisi dwibahasa dengan teks asal dan terjemahan diselang-seli perenggan demi perenggan. Fail ini dihurai sepenuhnya dalam pelayar anda — buku anda tidak pernah menyentuh mana-mana pelayan.",
+    "subtitle": "Muat naik EPUB, gunakan API key LLM anda sendiri, dan dapatkan semula edisi dwibahasa dengan teks asal dan terjemahan yang diselang-seli perenggan demi perenggan. Fail dianalisis sepenuhnya dalam pelayar anda — buku anda tidak akan menyentuh mana-mana pelayan.",
     "steps": {
       "settings": "tetapan",
       "upload": "muat naik",
-      "browse": "semak"
+      "browse": "semak imbas"
     },
     "actions": {
       "cancelRunning": "Batal proses",
@@ -138,19 +145,20 @@
       "apiKey": "API key",
       "apiKeyPlaceholder": "Tampal kunci {provider} anda",
       "apiKeyHint": "Dapatkan satu di {link}. Kunci anda hanya dihantar ke {provider}, tidak sesekali ke philoli.com.",
-      "rememberKey": "Ingat kunci dalam pelayar ini sahaja (localStorage). Nyahpilih untuk peranti kongsi.",
+      "rememberKey": "Ingat kunci dalam pelayar ini sahaja (localStorage). Nyah-tanda untuk peranti kongsi.",
       "showApiKey": "Papar API key",
-      "hideApiKey": "Sembunyikan API key",
+      "hideApiKey": "Sembunyi API key",
       "translateFrom": "Terjemah daripada",
       "translateTo": "Terjemah ke",
       "tone": "Nada",
-      "customProvider": "Tersuai (Serasi OpenAI)",
+      "customProvider": "Tersuai (serasi OpenAI)",
       "customModel": "ID Model",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "Titik Akhir API",
+      "customModelPlaceholder": "cth. gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API Endpoint",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "URL Penuh ke titik akhir /chat/completions yang serasi dengan OpenAI.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "URL penuh ke API Endpoint /chat/completions yang serasi OpenAI.",
+      "openrouterModelPlaceholder": "cth. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "cth. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Masukkan API key untuk teruskan."
     },
     "upload": {
@@ -165,7 +173,7 @@
       "paragraphCount": "{nodes} perenggan · {translated} diterjemah",
       "errorOne": "{count} perenggan gagal. Anda boleh terjemah semula untuk cuba lagi — perenggan yang sudah siap akan dilangkau.",
       "errorMany": "{count} perenggan gagal. Anda boleh terjemah semula untuk cuba lagi — perenggan yang sudah siap akan dilangkau.",
-      "noTranslatableText": "Bab ini tidak mempunyai teks yang boleh diterjemah (kulit buku, prakata, dll).",
+      "noTranslatableText": "Bab ini tiada teks yang boleh diterjemah (kulit buku, prakata, dll).",
       "translatingAria": "Menterjemah",
       "translatingLabel": "menterjemah…",
       "buildFailed": "Gagal membina EPUB:"
@@ -173,7 +181,7 @@
     "tones": {
       "idiomatic": {
         "label": "Idiomatik",
-        "hint": "semula jadi & lancar — kebanyakan buku"
+        "hint": "semulajadi & lancar — kebanyakan buku"
       },
       "literary": {
         "label": "Sastera",
@@ -188,15 +196,15 @@
       "cheapestFast": "paling murah, pantas",
       "higherQuality": "kualiti lebih tinggi",
       "bestQuality": "kualiti terbaik",
-      "newestFast": "terbaru, pantas",
+      "newestFast": "terbaharu, pantas",
       "cheapest": "paling murah",
       "bestQualityStable": "kualiti terbaik, stabil",
       "balanced": "seimbang",
-      "freeTierFast": "pelan percuma, pantas",
-      "flagshipCoding": "unggulan pengkodan/ejen",
+      "freeTierFast": "peringkat percuma, pantas",
+      "flagshipCoding": "flagship pengekodan/agentik",
       "longContext": "konteks panjang, stabil",
       "cheaper": "lebih murah",
-      "latestLongContext": "terbaharu, konteks 256K"
+      "latestLongContext": "terkini, konteks 256K"
     }
   },
   "gallery": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotografi",
     "art": "Seni"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "Kiub Rubik 3D — Philo Li",
+      "description": "Kiub Rubik 3D interaktif. Tetapkan susunan rawak dan penyelesaian, main langkah demi langkah, sembunyikan warna atau muka untuk latihan hafalan."
+    },
+    "title": "Kiub Rubik 3D",
+    "intro": "Taip susunan rawak dan penyelesaian. Lihat langkah demi langkah, seret untuk memutar pandangan, dan gunakan mod pembelajaran untuk melatih kes algoritma.",
+    "scramble": {
+      "label": "Susunan rawak",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Gunakan susunan rawak",
+      "reset": "Set semula"
+    },
+    "solution": {
+      "label": "Penyelesaian",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Tidak dikenali: {token}"
+    },
+    "playback": {
+      "play": "Main",
+      "pause": "Jeda",
+      "prev": "Langkah sebelumnya",
+      "next": "Langkah seterusnya",
+      "first": "Lompat ke mula",
+      "last": "Lompat ke akhir",
+      "speed": "Kelajuan"
+    },
+    "learning": {
+      "title": "Mod pembelajaran",
+      "master": "Aktifkan",
+      "hideColors": "Sembunyikan warna",
+      "hideFaces": "Sembunyikan muka",
+      "faceLabel": {
+        "U": "Atas",
+        "R": "Kanan",
+        "F": "Depan",
+        "D": "Bawah",
+        "L": "Kiri",
+        "B": "Belakang"
+      },
+      "colorLabel": {
+        "white": "Putih",
+        "red": "Merah",
+        "green": "Hijau",
+        "yellow": "Kuning",
+        "orange": "Oren",
+        "blue": "Biru"
+      }
+    },
+    "share": {
+      "copy": "Salin pautan kongsi",
+      "copied": "Disalin!"
+    }
   }
 }

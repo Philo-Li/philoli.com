@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Buletin",
-    "subscribe": "Berlangganan →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Buletin",
+    "subscribe": "Berlangganan →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Seniman, Penulis, Kreator",
@@ -27,8 +27,10 @@
     "projectsDescription": "Proyek oleh Philo Li.",
     "newsletterTitle": "Buletin — Philo Li",
     "newsletterDescription": "Berlangganan buletin Philo Li.",
-    "ebookTranslatorTitle": "Penerjemah Ebook Dwibahasa — Philo Li",
-    "ebookTranslatorDescription": "Unggah EPUB dan terjemahkan menjadi edisi dwibahasa dengan API key LLM Anda sendiri. Berjalan sepenuhnya di peramban Anda."
+    "ebookTranslatorTitle": "Penerjemah Ebook Bilingual — Philo Li",
+    "ebookTranslatorDescription": "Unggah EPUB dan terjemahkan menjadi edisi bilingual dengan API key LLM Anda sendiri. Berjalan sepenuhnya di peramban Anda.",
+    "rubiksCubeTitle": "Kubus Rubik 3D — Philo Li",
+    "rubiksCubeDescription": "Kubus Rubik 3D interaktif. Atur acakan dan solusi, mainkan langkah demi langkah, sembunyikan warna atau sisi untuk latihan menghafal."
   },
   "nav": {
     "blog": "Blog",
@@ -46,10 +48,10 @@
     "toggleToDark": "Ganti ke mode gelap"
   },
   "hero": {
-    "line1": "Berkarya.",
-    "line2": "Abadikan.",
-    "line3": "Bangun.",
-    "tagline": "Saya melukis, memotret, menulis, dan merakit karya. Inilah yang lahir saat rasa ingin tahu bersua dengan seni dan kode.",
+    "line1": "Berkreasi.",
+    "line2": "Mengabadikan.",
+    "line3": "Membangun.",
+    "tagline": "Saya melukis, memotret, menulis, dan membangun sesuatu. Inilah yang terjadi ketika rasa ingin tahu bertemu dengan keterampilan dan kode.",
     "labelLeft": "Seniman",
     "labelRight": "Pengembang"
   },
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "Buletin",
     "headline": "Tetaplah penasaran.",
-    "desc": "Pemikiran tentang seni, kehidupan, dan berkarya —— langsung ke inbox-mu."
+    "desc": "Pemikiran tentang seni, kehidupan, dan membangun sesuatu — dikirim ke kotak masuk Anda."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Seniman · Penulis · Pengembang",
-    "bioP1": "Aku seorang kreator, programmer, dan pemikir. Membuat sesuatu dari nol adalah hal yang paling aku nikmati —— entah itu lukisan, baris kode, atau tulisan panjang.",
-    "bioP2": "Sudah lama sekali, hambatan terbesar bagi gairah ini adalah otak saya sendiri: saya memiliki ADHD. Setelah mencoba hampir setiap alat produktivitas di pasar, saya menyadari semuanya dirancang untuk pikiran neurotipikal. Saya butuh seorang \"mitra\" — sesuatu yang memahami saya dan bisa memberi dorongan lembut tepat saat saya sangat membutuhkannya.",
-    "bioP3": "Aku nggak menemukannya di mana pun. Jadi aku memutuskan untuk bikin sendiri —— untukku, dan untuk jutaan orang lain dengan \"otak sibuk\" yang sama sepertiku. Begitulah Dopamind lahir.",
+    "bioP1": "Saya seorang kreator, pemrogram, dan pemikir. Saya senang membangun sesuatu dari nol — baik itu lukisan, baris kode, atau esai yang mendalam.",
+    "bioP2": "Sudah lama sekali, hambatan terbesar bagi gairah ini adalah otak saya sendiri: saya menderita ADHD. Setelah mencoba hampir setiap alat produktivitas di pasar, saya menyadari semuanya dirancang untuk pikiran neurotipikal. Saya butuh seorang \"mitra\" — sesuatu yang memahami saya dan bisa memberi dorongan lembut tepat saat saya sangat membutuhkannya.",
+    "bioP3": "Saya tidak bisa menemukannya di mana pun. Jadi saya memutuskan untuk membangunnya sendiri — untuk saya, dan untuk jutaan orang lain dengan \"otak sibuk\" seperti saya. Begitulah Dopamind lahir.",
     "sectionProjects": "Proyek",
     "sectionNewsletter": "Buletin",
     "sectionArtworks": "Karya Seni",
     "sectionReadMore": "Baca Selengkapnya",
     "sectionFindMe": "Temukan saya di tempat lain",
-    "projectDopamindDesc": "Teman AI harianmu",
+    "projectDopamindDesc": "Pendamping AI harian Anda",
     "projectPhiloArtDesc": "Galeri Seni Digital",
     "newsletterMediumDesc": "Esai",
-    "artworksText": "Karya-karya seniku ada di philoart.io/philo",
-    "artworksContactText": "Mau beli lukisan asli atau cetakan foto? DM aku di X atau kirim email ke philo.li.official@gmail.com",
+    "artworksText": "Saya mengunggah karya seni saya di philoart.io/philo",
+    "artworksContactText": "Untuk membeli lukisan asli atau cetakan fotografi, kirim DM di X atau email ke philo.li.official@gmail.com",
     "extraEmail": "Email"
   },
   "artPage": {
@@ -91,16 +93,21 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Teman AI-mu. Menemanimu setiap hari, membantumu menjalani hidup dengan lebih baik."
+        "description": "Pendamping AI Anda. Di sisi Anda setiap hari, membantu Anda menjalani hidup yang lebih baik."
       },
       "philoart": {
         "name": "PhiloArt",
         "description": "Galeri seni pribadi saya — fotografi, lukisan, dan seni digital."
       },
       "ebookTranslator": {
-        "name": "Penerjemah Ebook Dwibahasa",
-        "description": "Ubah e-book apa pun jadi edisi dua bahasa —— jalan di browsermu pakai LLM API key milikmu sendiri.",
+        "name": "Penerjemah E-book Dwibahasa",
+        "description": "Ubah e-book apa pun menjadi edisi dwibahasa — berjalan di peramban Anda dengan API key LLM Anda sendiri.",
         "cta": "Buka alat →"
+      },
+      "rubiksCube": {
+        "name": "Kubus Rubik 3D",
+        "description": "Telusuri acakan dan solusi pada kubus 3D interaktif. Mode belajar menyembunyikan warna dan sisi untuk latihan algoritma.",
+        "cta": "Buka kubus →"
       }
     }
   },
@@ -110,7 +117,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Proyek",
-    "title": "Penerjemah Ebook Dwibahasa",
+    "title": "Penerjemah E-book Dwibahasa",
     "subtitle": "Unggah EPUB, gunakan API key LLM Anda sendiri, dan dapatkan edisi dwibahasa dengan teks asli dan terjemahan yang disisipkan paragraf demi paragraf. Berkas diproses sepenuhnya di peramban Anda — buku Anda tidak pernah menyentuh server mana pun.",
     "steps": {
       "settings": "pengaturan",
@@ -119,7 +126,7 @@
     },
     "actions": {
       "cancelRunning": "Batalkan proses",
-      "translateAllRemaining": "Terjemahkan semua yang tersisa",
+      "translateAllRemaining": "Terjemahkan semua sisanya",
       "downloadEpub": "⬇ Unduh EPUB",
       "building": "Membangun…",
       "back": "← Kembali",
@@ -135,7 +142,7 @@
     "settings": {
       "provider": "Penyedia",
       "model": "Model",
-      "apiKey": "API key",
+      "apiKey": "API Key",
       "apiKeyPlaceholder": "Tempel kunci {provider} Anda",
       "apiKeyHint": "Dapatkan di {link}. Kunci Anda hanya dikirim ke {provider}, tidak pernah ke philoli.com.",
       "rememberKey": "Ingat kunci di peramban ini saja (localStorage). Hapus centang untuk perangkat bersama.",
@@ -144,20 +151,21 @@
       "translateFrom": "Terjemahkan dari",
       "translateTo": "Terjemahkan ke",
       "tone": "Nada",
-      "customProvider": "Kustom (Kompatibel dengan OpenAI)",
+      "customProvider": "Kustom (kompatibel dengan OpenAI)",
       "customModel": "ID Model",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "misal: gpt-4o, deepseek-chat, …",
       "customEndpoint": "Endpoint API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "URL Lengkap ke endpoint /chat/completions yang kompatibel dengan OpenAI.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "URL lengkap ke endpoint /chat/completions yang kompatibel dengan OpenAI.",
+      "openrouterModelPlaceholder": "misal: google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "misal: kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Masukkan API key untuk melanjutkan."
     },
     "upload": {
       "parsing": "Mengurai EPUB…",
       "dropTitle": "Letakkan EPUB di sini",
       "dropSubtitle": "atau klik untuk memilih berkas",
-      "noChapters": "Tidak ada bab yang dapat dibaca ditemukan di EPUB ini."
+      "noChapters": "Tidak ada bab yang terbaca ditemukan di EPUB ini."
     },
     "browse": {
       "chapters": "Bab",
@@ -165,7 +173,7 @@
       "paragraphCount": "{nodes} paragraf · {translated} diterjemahkan",
       "errorOne": "{count} paragraf gagal. Anda dapat menerjemahkan ulang untuk mencoba lagi — paragraf yang sudah selesai akan dilewati.",
       "errorMany": "{count} paragraf gagal. Anda dapat menerjemahkan ulang untuk mencoba lagi — paragraf yang sudah selesai akan dilewati.",
-      "noTranslatableText": "Bab ini tidak memiliki teks yang dapat diterjemahkan (sampul, bagian awal, dll).",
+      "noTranslatableText": "Bab ini tidak memiliki teks yang dapat diterjemahkan (sampul, bagian depan, dll).",
       "translatingAria": "Menerjemahkan",
       "translatingLabel": "menerjemahkan…",
       "buildFailed": "Gagal membuat EPUB:"
@@ -193,7 +201,7 @@
       "bestQualityStable": "kualitas terbaik, stabil",
       "balanced": "seimbang",
       "freeTierFast": "tingkat gratis, cepat",
-      "flagshipCoding": "unggulan koding/agen",
+      "flagshipCoding": "unggulan pengodean/agentic",
       "longContext": "konteks panjang, stabil",
       "cheaper": "lebih murah",
       "latestLongContext": "terbaru, konteks 256K"
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotografi",
     "art": "Seni"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "Kubus Rubik 3D — Philo Li",
+      "description": "Kubus Rubik 3D interaktif. Atur acakan dan solusi, mainkan langkah demi langkah, sembunyikan warna atau sisi untuk latihan menghafal."
+    },
+    "title": "Kubus Rubik 3D",
+    "intro": "Ketik acakan dan solusi. Telusuri langkah penyelesaiannya, seret untuk memutar tampilan, dan gunakan mode belajar untuk melatih kasus algoritma.",
+    "scramble": {
+      "label": "Acakan",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Terapkan acakan",
+      "reset": "Atur ulang"
+    },
+    "solution": {
+      "label": "Solusi",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Tidak dikenali: {token}"
+    },
+    "playback": {
+      "play": "Putar",
+      "pause": "Jeda",
+      "prev": "Langkah sebelumnya",
+      "next": "Langkah berikutnya",
+      "first": "Lompat ke awal",
+      "last": "Lompat ke akhir",
+      "speed": "Kecepatan"
+    },
+    "learning": {
+      "title": "Mode belajar",
+      "master": "Aktifkan",
+      "hideColors": "Sembunyikan warna",
+      "hideFaces": "Sembunyikan sisi",
+      "faceLabel": {
+        "U": "Atas",
+        "R": "Kanan",
+        "F": "Depan",
+        "D": "Bawah",
+        "L": "Kiri",
+        "B": "Belakang"
+      },
+      "colorLabel": {
+        "white": "Putih",
+        "red": "Merah",
+        "green": "Hijau",
+        "yellow": "Kuning",
+        "orange": "Oranye",
+        "blue": "Biru"
+      }
+    },
+    "share": {
+      "copy": "Salin tautan berbagi",
+      "copied": "Tersalin!"
+    }
   }
 }

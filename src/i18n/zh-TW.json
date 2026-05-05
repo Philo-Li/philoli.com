@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "電子報",
-    "subscribe": "訂閱 →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "電子報",
+    "subscribe": "訂閱 →"
   },
   "metadata": {
     "siteTitle": "Philo Li — 藝術家、作家、創作者",
@@ -28,7 +28,9 @@
     "newsletterTitle": "電子報 — Philo Li",
     "newsletterDescription": "訂閱 Philo Li 的電子報。",
     "ebookTranslatorTitle": "雙語電子書翻譯器 — Philo Li",
-    "ebookTranslatorDescription": "上傳 EPUB 檔案，並使用您自己的 LLM API key 翻譯成雙語版本。完全在您的瀏覽器中執行。"
+    "ebookTranslatorDescription": "上傳 EPUB 檔案，並使用您自己的 LLM API key 翻譯成雙語版本。完全在瀏覽器中運行。",
+    "rubiksCubeTitle": "3D 魔術方塊 — Philo Li",
+    "rubiksCubeDescription": "互動式 3D 魔術方塊。設定打亂與解法，逐步操作，並可隱藏顏色或面以進行記憶訓練。"
   },
   "nav": {
     "blog": "部落格",
@@ -46,10 +48,10 @@
     "toggleToDark": "切換至深色模式"
   },
   "hero": {
-    "line1": "創作。",
+    "line1": "創造。",
     "line2": "捕捉。",
-    "line3": "建造。",
-    "tagline": "我繪畫、攝影、寫作，也親手造物。當好奇心遇上藝術與代碼，便有了這一切",
+    "line3": "打造。",
+    "tagline": "我繪畫、攝影、寫作並打造事物。這是好奇心與工藝及程式碼交會的成果。",
     "labelLeft": "藝術家",
     "labelRight": "開發者"
   },
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "電子報",
     "headline": "保持好奇。",
-    "desc": "關於藝術、生活和造物的思考 —— 送到你的收件匣。"
+    "desc": "關於藝術、生活與創作的思考 — 直接發送到您的收件匣。"
   },
   "blogPage": {
     "title": "部落格"
   },
   "aboutPage": {
     "tagline": "藝術家 · 作家 · 開發者",
-    "bioP1": "我是創作者，是工程師，也是思考者。從零開始造物，是我最享受的事 —— 無論是一幅畫、一段程式碼，還是一篇長文。",
-    "bioP2": "長久以來，這份熱情最大的障礙源於我的大腦：我有 ADHD。在嘗試過市面上幾乎所有的生產力工具後，我意識到它們都是為神經典型大腦設計的。我需要一個「夥伴」 —— 一個能理解我，並在最需要的時刻輕輕推我一把的存在。",
-    "bioP3": "我到處都沒找到。於是我決定自己動手 —— 為了我，也為了數百萬和我一樣擁有「忙碌大腦」的人。Dopamind 就這樣誕生了。",
+    "bioP1": "我是一位創作者、程式設計師和思考者。我熱愛從零開始構建事物 — 無論是一幅畫、一段程式碼，還是一篇深度散文。",
+    "bioP2": "在很長一段時間裡，這份熱情的最大障礙是我自己的大腦：我有 ADHD。在嘗試了市面上幾乎所有的生產力工具後，我意識到它們都是為神經典型大腦設計的。我需要一個「夥伴」 — 一個能理解我，並在最需要的時候給我溫柔提醒的東西。",
+    "bioP3": "我在任何地方都找不到它。所以我決定自己動手做 — 為了我，也為了成千上萬和我一樣擁有「忙碌大腦」的人。這就是 Dopamind 誕生的原因。",
     "sectionProjects": "專案",
     "sectionNewsletter": "電子報",
     "sectionArtworks": "藝術作品",
     "sectionReadMore": "閱讀更多",
     "sectionFindMe": "在其他地方找到我",
-    "projectDopamindDesc": "你的 AI 助理",
+    "projectDopamindDesc": "您的每日 AI 夥伴",
     "projectPhiloArtDesc": "數位藝術畫廊",
-    "newsletterMediumDesc": "隨筆",
-    "artworksText": "我的藝術作品都發布在 philoart.io/philo",
-    "artworksContactText": "想購買原畫或攝影印作？X 上私訊我，或寄信到 philo.li.official@gmail.com",
+    "newsletterMediumDesc": "散文",
+    "artworksText": "我在 philoart.io/philo 發佈我的藝術作品",
+    "artworksContactText": "如需購買原畫或攝影沖印作品，請在 X 上私訊或發送電子郵件至 philo.li.official@gmail.com",
     "extraEmail": "電子郵件"
   },
   "artPage": {
@@ -91,16 +93,21 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "你的 AI 助理。每天陪伴你，幫你把日子過得更好。"
+        "description": "您的 AI 夥伴。每天陪伴在您身邊，助您過上更好的生活。"
       },
       "philoart": {
         "name": "PhiloArt",
-        "description": "我的個人藝術畫廊 —— 攝影、繪畫與數位藝術。"
+        "description": "我的個人藝術畫廊 — 攝影、繪畫與數位藝術。"
       },
       "ebookTranslator": {
-        "name": "雙語電子書翻譯工具",
-        "description": "把任意電子書翻譯成雙語版本 —— 在你的瀏覽器裡跑，用你自己的 LLM API key。",
+        "name": "雙語電子書翻譯器",
+        "description": "將任何電子書轉換為雙語版本 — 在您的瀏覽器中運行，並使用您自己的 LLM API key。",
         "cta": "開啟工具 →"
+      },
+      "rubiksCube": {
+        "name": "3D 魔術方塊",
+        "description": "在互動式 3D 魔方上逐步查看打亂與解法。學習模式可隱藏顏色和面，以便進行公式練習。",
+        "cta": "開啟魔方 →"
       }
     }
   },
@@ -111,7 +118,7 @@
   "ebookTranslator": {
     "eyebrow": "專案",
     "title": "雙語電子書翻譯器",
-    "subtitle": "上傳 EPUB 檔案，使用您自己的 LLM API key，即可獲得原文與譯文逐段對照的雙語版本。檔案完全在您的瀏覽器中解析 — 您的書籍絕不會傳送到任何伺服器。",
+    "subtitle": "上傳 EPUB，使用您自己的 LLM API key，即可獲得原文與譯文逐段對照的雙語版本。檔案完全在您的瀏覽器中解析 — 您的書籍絕不會上傳到任何伺服器。",
     "steps": {
       "settings": "設定",
       "upload": "上傳",
@@ -119,9 +126,9 @@
     },
     "actions": {
       "cancelRunning": "取消執行",
-      "translateAllRemaining": "翻譯其餘全部",
+      "translateAllRemaining": "翻譯所有剩餘內容",
       "downloadEpub": "⬇ 下載 EPUB",
-      "building": "建置中…",
+      "building": "建立中…",
       "back": "← 返回",
       "settingsModel": "← 設定 / 模型",
       "show": "顯示",
@@ -129,7 +136,7 @@
       "cancel": "取消",
       "retranslate": "重新翻譯",
       "resume": "繼續",
-      "translateChapter": "翻譯此章節",
+      "translateChapter": "翻譯本章",
       "continue": "繼續 →"
     },
     "settings": {
@@ -137,27 +144,28 @@
       "model": "模型",
       "apiKey": "API key",
       "apiKeyPlaceholder": "貼上您的 {provider} 金鑰",
-      "apiKeyHint": "前往 {link} 取得。您的金鑰僅會傳送至 {provider}，絕不會傳送至 philoli.com。",
-      "rememberKey": "僅在此瀏覽器中記住金鑰 (localStorage)。若使用共用裝置請取消勾選。",
+      "apiKeyHint": "前往 {link} 獲取。您的金鑰僅會發送至 {provider}，絕不會傳送至 philoli.com。",
+      "rememberKey": "僅在此瀏覽器中記住金鑰 (localStorage)。若使用公用裝置請取消勾選。",
       "showApiKey": "顯示 API key",
       "hideApiKey": "隱藏 API key",
       "translateFrom": "翻譯自",
       "translateTo": "翻譯為",
       "tone": "語氣",
-      "customProvider": "自訂（OpenAI 相容）",
+      "customProvider": "自定義 (相容 OpenAI)",
       "customModel": "模型 ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API 端點位址",
+      "customModelPlaceholder": "例如 gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API 端點",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "填入完整的 OpenAI 相容 /chat/completions 端點 URL。",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "指向相容 OpenAI 的 /chat/completions 端點的完整 URL。",
+      "openrouterModelPlaceholder": "例如 google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "例如 kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "請輸入 API key 以繼續。"
     },
     "upload": {
       "parsing": "正在解析 EPUB…",
-      "dropTitle": "將 EPUB 檔案拖放至此",
+      "dropTitle": "將 EPUB 拖放到此處",
       "dropSubtitle": "或點擊選擇檔案",
-      "noChapters": "此 EPUB 中未找到可讀取的章節。"
+      "noChapters": "此 EPUB 中未發現可讀取章節。"
     },
     "browse": {
       "chapters": "章節",
@@ -165,14 +173,14 @@
       "paragraphCount": "{nodes} 個段落 · {translated} 已翻譯",
       "errorOne": "{count} 個段落失敗。您可以重新翻譯以重試 — 已完成的段落將被跳過。",
       "errorMany": "{count} 個段落失敗。您可以重新翻譯以重試 — 已完成的段落將被跳過。",
-      "noTranslatableText": "此章節沒有可翻譯的文字（封面、前言等）。",
-      "translatingAria": "翻譯中",
+      "noTranslatableText": "此章節沒有可翻譯的文本（封面、前言等）。",
+      "translatingAria": "正在翻譯",
       "translatingLabel": "翻譯中…",
-      "buildFailed": "無法建立 EPUB："
+      "buildFailed": "建立 EPUB 失敗："
     },
     "tones": {
       "idiomatic": {
-        "label": "地道",
+        "label": "道地",
         "hint": "自然流暢 — 多數書籍"
       },
       "literary": {
@@ -180,22 +188,22 @@
         "hint": "小說與文學作品"
       },
       "technical": {
-        "label": "專業",
+        "label": "技術",
         "hint": "專業與參考書籍"
       }
     },
     "modelHints": {
-      "cheapestFast": "最便宜、快速",
-      "higherQuality": "品質較高",
-      "bestQuality": "品質最佳",
-      "newestFast": "最新、快速",
+      "cheapestFast": "最便宜，快速",
+      "higherQuality": "較高品質",
+      "bestQuality": "最佳品質",
+      "newestFast": "最新，快速",
       "cheapest": "最便宜",
-      "bestQualityStable": "品質最佳、穩定",
-      "balanced": "平衡",
-      "freeTierFast": "免費版，快速",
-      "flagshipCoding": "旗艦級程式碼/代理",
+      "bestQualityStable": "最佳品質，穩定",
+      "balanced": "均衡",
+      "freeTierFast": "免費額度，快速",
+      "flagshipCoding": "旗艦級程式編寫/代理",
       "longContext": "長上下文，穩定",
-      "cheaper": "更便宜",
+      "cheaper": "較便宜",
       "latestLongContext": "最新，256K 上下文"
     }
   },
@@ -203,7 +211,7 @@
     "filters": {
       "Photograph": "攝影",
       "Painting": "繪畫",
-      "Drawing": "素描",
+      "Drawing": "繪圖",
       "Digital Art": "數位藝術"
     }
   },
@@ -214,5 +222,59 @@
   "social": {
     "photography": "攝影",
     "art": "藝術"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D 魔術方塊 — Philo Li",
+      "description": "互動式 3D 魔術方塊。設定打亂與解法，逐步播放，隱藏顏色或面以進行記憶訓練。"
+    },
+    "title": "3D 魔術方塊",
+    "intro": "輸入打亂公式與解法。逐步查看解法、拖曳以旋轉視角，並使用學習模式來練習公式情況。",
+    "scramble": {
+      "label": "打亂公式",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "套用打亂",
+      "reset": "重設"
+    },
+    "solution": {
+      "label": "解法",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "無法辨識：{token}"
+    },
+    "playback": {
+      "play": "播放",
+      "pause": "暫停",
+      "prev": "上一步",
+      "next": "下一步",
+      "first": "跳至開始",
+      "last": "跳至結束",
+      "speed": "速度"
+    },
+    "learning": {
+      "title": "學習模式",
+      "master": "啟用",
+      "hideColors": "隱藏顏色",
+      "hideFaces": "隱藏面",
+      "faceLabel": {
+        "U": "上",
+        "R": "右",
+        "F": "前",
+        "D": "下",
+        "L": "左",
+        "B": "後"
+      },
+      "colorLabel": {
+        "white": "白色",
+        "red": "紅色",
+        "green": "綠色",
+        "yellow": "黃色",
+        "orange": "橙色",
+        "blue": "藍色"
+      }
+    },
+    "share": {
+      "copy": "複製分享連結",
+      "copied": "已複製！"
+    }
   }
 }

@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Newsletter",
-    "subscribe": "Abonnieren →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Newsletter",
+    "subscribe": "Abonnieren →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Künstler, Autor, Schöpfer",
@@ -28,7 +28,9 @@
     "newsletterTitle": "Newsletter — Philo Li",
     "newsletterDescription": "Abonniere die Newsletter von Philo Li.",
     "ebookTranslatorTitle": "Zweisprachiger E-Book-Übersetzer — Philo Li",
-    "ebookTranslatorDescription": "Lade ein EPUB hoch und übersetze es mit deinem eigenen LLM API key in eine zweisprachige Ausgabe. Läuft vollständig in deinem Browser."
+    "ebookTranslatorDescription": "Lade ein EPUB hoch und übersetze es mit deinem eigenen LLM API key in eine zweisprachige Ausgabe. Läuft vollständig in deinem Browser.",
+    "rubiksCubeTitle": "3D-Zauberwürfel — Philo Li",
+    "rubiksCubeDescription": "Interaktiver 3D-Zauberwürfel. Lege eine Verdrehung und eine Lösung fest, spiele Schritt für Schritt, blende Farben oder Seiten für Gedächtnisübungen aus."
   },
   "nav": {
     "blog": "Blog",
@@ -42,44 +44,44 @@
     "dark": "Dunkel",
     "light": "Hell",
     "toggleAria": "Farbschema wechseln",
-    "toggleToLight": "In den Hellmodus wechseln",
-    "toggleToDark": "In den Dunkelmodus wechseln"
+    "toggleToLight": "In den hellen Modus wechseln",
+    "toggleToDark": "In den dunklen Modus wechseln"
   },
   "hero": {
     "line1": "Erschaffen.",
     "line2": "Festhalten.",
     "line3": "Bauen.",
-    "tagline": "Ich male, fotografiere, schreibe und forme Dinge. Wenn Neugier auf Handwerk und Code trifft, nimmt all das hier Gestalt an.",
+    "tagline": "Ich male, fotografiere, schreibe und baue Dinge. Das passiert, wenn Neugier auf Handwerk und Code trifft.",
     "labelLeft": "Künstler",
     "labelRight": "Entwickler"
   },
   "recentPosts": {
     "label": "Aktuelle Texte",
-    "viewAll": "Alle anzeigen →"
+    "viewAll": "Alle ansehen →"
   },
   "newsletterCta": {
     "label": "Newsletter",
     "headline": "Bleib neugierig.",
-    "desc": "Gedanken zu Kunst, Leben und dem Erschaffen von Dingen — direkt in dein Postfach."
+    "desc": "Gedanken über Kunst, das Leben und das Erschaffen von Dingen — direkt in dein Postfach."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Künstler · Autor · Entwickler",
-    "bioP1": "Ich bin Creator, Programmierer und Denker. Etwas von Grund auf neu zu erschaffen, ist das, was ich am liebsten mache — egal ob ein Bild, ein Stück Code oder ein ausführlicher Essay.",
-    "bioP2": "Lange Zeit war das größte Hindernis für diese Leidenschaft mein eigenes Gehirn: Ich habe ADHD. Nachdem ich fast jedes Produktivitätstool auf dem Markt ausprobiert hatte, wurde mir klar, dass sie alle für ein neurotypisches Gehirn entwickelt wurden. Ich brauchte einen „Partner“ — etwas, das mich versteht und mir genau dann einen sanften Anstoß gibt, wenn ich ihn am meisten brauche.",
-    "bioP3": "Ich konnte es nirgendwo finden. Also habe ich beschlossen, es selbst zu bauen — für mich und für Millionen andere mit einem „rastlosen Kopf“, genau wie meinem. So ist Dopamind entstanden.",
+    "bioP1": "Ich bin ein Schöpfer, ein Programmierer und ein Denker. Ich liebe es, Dinge von Grund auf zu erschaffen — sei es ein Gemälde, ein Stück Code oder ein tiefgründiger Essay.",
+    "bioP2": "Lange Zeit war das größte Hindernis für diese Leidenschaft mein eigenes Gehirn: Ich habe ADHD. Nachdem ich fast jedes Produktivitäts-Tool auf dem Markt ausprobiert hatte, wurde mir klar, dass sie alle für einen neurotypischen Verstand konzipiert waren. Ich brauchte einen „Partner“ — etwas, das mich versteht und mir genau dann einen sanften Anstoß gibt, wenn ich ihn am meisten brauche.",
+    "bioP3": "Ich konnte es nirgends finden. Also beschloss ich, es selbst zu bauen — für mich und für die Millionen anderen mit einem „unruhigen Gehirn“ genau wie meinem. So wurde Dopamind geboren.",
     "sectionProjects": "Projekte",
     "sectionNewsletter": "Newsletter",
     "sectionArtworks": "Kunstwerke",
-    "sectionReadMore": "Weiterlesen",
+    "sectionReadMore": "Mehr lesen",
     "sectionFindMe": "Finde mich woanders",
-    "projectDopamindDesc": "Dein AI-Begleiter für den Alltag",
+    "projectDopamindDesc": "Dein täglicher AI-Begleiter",
     "projectPhiloArtDesc": "Digitale Kunstgalerie",
     "newsletterMediumDesc": "Essays",
-    "artworksText": "Meine Kunstwerke findest du auf philoart.io/philo",
-    "artworksContactText": "Lust auf ein Original oder einen Fotodruck? Schreib mir einfach per DM auf X oder per E-Mail an philo.li.official@gmail.com",
+    "artworksText": "Ich poste meine Kunstwerke auf philoart.io/philo",
+    "artworksContactText": "Um Originalgemälde oder Fotodrucke zu kaufen, sende eine DM auf X oder eine E-Mail an philo.li.official@gmail.com",
     "extraEmail": "E-Mail"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Dein AI-Begleiter. Er ist jeden Tag an deiner Seite und hilft dir dabei, dein Leben ein Stück besser zu machen."
+        "description": "Dein AI-Begleiter. Jeden Tag an deiner Seite, um dir zu einem besseren Leben zu verhelfen."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "Bilingualer E-Book-Übersetzer",
-        "description": "Mach aus jedem E-Book eine zweisprachige Ausgabe — läuft direkt im Browser mit deinem eigenen LLM API key.",
+        "description": "Verwandle jedes E-Book in eine zweisprachige Ausgabe — läuft in deinem Browser mit deinem eigenen LLM API key.",
         "cta": "Tool öffnen →"
+      },
+      "rubiksCube": {
+        "name": "3D-Zauberwürfel",
+        "description": "Gehe Scrambles und Lösungen auf einem interaktiven 3D-Würfel Schritt für Schritt durch. Der Lernmodus blendet Farben und Flächen für Algorithmus-Übungen aus.",
+        "cta": "Würfel öffnen →"
       }
     }
   },
@@ -110,12 +117,12 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekt",
-    "title": "Zweisprachiger E-Book-Übersetzer",
-    "subtitle": "Lade ein EPUB hoch, nutze deinen eigenen LLM API key und erhalte eine zweisprachige Ausgabe, bei der Originaltext und Übersetzung Absatz für Absatz verschachtelt sind. Die Datei wird vollständig in deinem Browser verarbeitet — dein Buch gelangt niemals auf einen Server.",
+    "title": "Bilingualer E-Book-Übersetzer",
+    "subtitle": "Lade ein EPUB hoch, nutze deinen eigenen LLM API key und erhalte eine zweisprachige Ausgabe, bei der Originaltext und Übersetzung Absatz für Absatz verschachtelt sind. Die Datei wird vollständig in deinem Browser verarbeitet — dein Buch gelangt nie auf einen Server.",
     "steps": {
-      "settings": "Einstellungen",
-      "upload": "Hochladen",
-      "browse": "Durchsuchen"
+      "settings": "einstellungen",
+      "upload": "hochladen",
+      "browse": "durchsuchen"
     },
     "actions": {
       "cancelRunning": "Vorgang abbrechen",
@@ -127,7 +134,7 @@
       "show": "Anzeigen",
       "hide": "Ausblenden",
       "cancel": "Abbrechen",
-      "retranslate": "Neu übersetzen",
+      "retranslate": "Erneut übersetzen",
       "resume": "Fortsetzen",
       "translateChapter": "Dieses Kapitel übersetzen",
       "continue": "Weiter →"
@@ -136,21 +143,22 @@
       "provider": "Anbieter",
       "model": "Modell",
       "apiKey": "API key",
-      "apiKeyPlaceholder": "Füge deinen {provider} Key ein",
-      "apiKeyHint": "Hol dir einen unter {link}. Dein Key wird nur an {provider} gesendet, niemals an philoli.com.",
-      "rememberKey": "Key nur in diesem Browser speichern (localStorage). Deaktivieren bei gemeinsam genutzten Geräten.",
+      "apiKeyPlaceholder": "Füge deinen {provider}-Schlüssel ein",
+      "apiKeyHint": "Hol dir einen unter {link}. Dein Schlüssel wird nur an {provider} gesendet, niemals an philoli.com.",
+      "rememberKey": "Schlüssel nur in diesem Browser speichern (localStorage). Bei gemeinsam genutzten Geräten deaktivieren.",
       "showApiKey": "API key anzeigen",
       "hideApiKey": "API key ausblenden",
       "translateFrom": "Übersetzen von",
-      "translateTo": "Übersetzen in",
+      "translateTo": "Übersetzen nach",
       "tone": "Tonfall",
       "customProvider": "Benutzerdefiniert (OpenAI-kompatibel)",
       "customModel": "Modell-ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "z. B. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API-Endpunkt",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Vollständige URL zu einem OpenAI-kompatiblen /chat/completions Endpunkt.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "Vollständige URL zu einem OpenAI-kompatiblen /chat/completions-Endpunkt.",
+      "openrouterModelPlaceholder": "z. B. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "z. B. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Gib einen API key ein, um fortzufahren."
     },
     "upload": {
@@ -163,11 +171,11 @@
       "chapters": "Kapitel",
       "toneTitle": "Übersetzungstonfall — beeinflusst den Schreibstil",
       "paragraphCount": "{nodes} Absätze · {translated} übersetzt",
-      "errorOne": "{count} Absatz fehlgeschlagen. Du kannst die Übersetzung erneut versuchen — bereits fertige Absätze werden übersprungen.",
-      "errorMany": "{count} Absätze fehlgeschlagen. Du kannst die Übersetzung erneut versuchen — bereits fertige Absätze werden übersprungen.",
-      "noTranslatableText": "Dieses Kapitel enthält keinen übersetzbaren Text (Cover, Vorspann, etc.).",
-      "translatingAria": "Übersetzen",
-      "translatingLabel": "übersetzen…",
+      "errorOne": "{count} Absatz fehlgeschlagen. Du kannst die Übersetzung erneut starten — bereits fertige Absätze werden übersprungen.",
+      "errorMany": "{count} Absätze fehlgeschlagen. Du kannst die Übersetzung erneut starten — bereits fertige Absätze werden übersprungen.",
+      "noTranslatableText": "Dieses Kapitel enthält keinen übersetzbaren Text (Cover, Titelei usw.).",
+      "translatingAria": "Wird übersetzt",
+      "translatingLabel": "übersetze…",
       "buildFailed": "EPUB-Erstellung fehlgeschlagen:"
     },
     "tones": {
@@ -185,18 +193,18 @@
       }
     },
     "modelHints": {
-      "cheapestFast": "günstigst, schnell",
+      "cheapestFast": "günstigste, schnell",
       "higherQuality": "höhere Qualität",
       "bestQuality": "beste Qualität",
       "newestFast": "neueste, schnell",
-      "cheapest": "günstigst",
+      "cheapest": "günstigste",
       "bestQualityStable": "beste Qualität, stabil",
       "balanced": "ausgewogen",
-      "freeTierFast": "kostenlose Stufe, schnell",
-      "flagshipCoding": "Flaggschiff für Programmierung/Agenten",
+      "freeTierFast": "kostenlose Version, schnell",
+      "flagshipCoding": "Flaggschiff für Coding/Agenten",
       "longContext": "langer Kontext, stabil",
       "cheaper": "günstiger",
-      "latestLongContext": "aktuellste Version, 256K Kontext"
+      "latestLongContext": "neueste, 256K Kontext"
     }
   },
   "gallery": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotografie",
     "art": "Kunst"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D-Zauberwürfel — Philo Li",
+      "description": "Interaktiver 3D-Zauberwürfel. Lege eine Verdrehung und eine Lösung fest, spiele sie Schritt für Schritt ab, blende Farben oder Seiten für Merk-Übungen aus."
+    },
+    "title": "3D-Zauberwürfel",
+    "intro": "Gib eine Verdrehung und eine Lösung ein. Gehe den Lösungsweg schrittweise durch, ziehe zum Drehen der Ansicht und nutze den Lernmodus, um Algorithmen zu üben.",
+    "scramble": {
+      "label": "Verdrehung",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Verdrehung anwenden",
+      "reset": "Zurücksetzen"
+    },
+    "solution": {
+      "label": "Lösung",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Nicht erkannt: {token}"
+    },
+    "playback": {
+      "play": "Abspielen",
+      "pause": "Pause",
+      "prev": "Vorheriger Schritt",
+      "next": "Nächster Schritt",
+      "first": "Zum Anfang springen",
+      "last": "Zum Ende springen",
+      "speed": "Geschwindigkeit"
+    },
+    "learning": {
+      "title": "Lernmodus",
+      "master": "Aktivieren",
+      "hideColors": "Farben ausblenden",
+      "hideFaces": "Seiten ausblenden",
+      "faceLabel": {
+        "U": "Oben",
+        "R": "Rechts",
+        "F": "Vorne",
+        "D": "Unten",
+        "L": "Links",
+        "B": "Hinten"
+      },
+      "colorLabel": {
+        "white": "Weiß",
+        "red": "Rot",
+        "green": "Grün",
+        "yellow": "Gelb",
+        "orange": "Orange",
+        "blue": "Blau"
+      }
+    },
+    "share": {
+      "copy": "Teilen-Link kopieren",
+      "copied": "Kopiert!"
+    }
   }
 }

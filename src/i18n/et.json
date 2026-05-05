@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Uudiskiri",
-    "subscribe": "Telli →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,22 +11,26 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Uudiskiri",
+    "subscribe": "Telli →"
   },
   "metadata": {
     "siteTitle": "Philo Li — kunstnik, kirjanik, looja",
     "blogTitle": "Blogi — Philo Li",
-    "blogDescription": "Artiklid kunstist, filosoofiast ja asjade ehitamisest.",
+    "blogDescription": "Artiklid kunstist, filosoofiast ja asjade loomisest.",
     "aboutTitle": "Minust — Philo Li",
     "aboutDescription": "Philo Li-st — kunstnik, kirjanik ja arendaja.",
     "artTitle": "Kunst — Philo Li",
-    "artDescription": "Philo Li fotograafia, maalikunst ja digitaalkunst.",
+    "artDescription": "Philo Li fotograafia, maalikunst ja digikunst.",
     "projectsTitle": "Projektid — Philo Li",
     "projectsDescription": "Philo Li projektid.",
     "newsletterTitle": "Uudiskiri — Philo Li",
-    "newsletterDescription": "Telli Philo Li uudiskirju.",
+    "newsletterDescription": "Telli Philo Li uudiskirjad.",
     "ebookTranslatorTitle": "Kakskeelne e-raamatute tõlkija — Philo Li",
-    "ebookTranslatorDescription": "Laadi üles EPUB ja tõlgi see kakskeelseks väljaandeks oma LLM API key abil. Töötab täielikult sinu brauseris."
+    "ebookTranslatorDescription": "Laadi üles EPUB ja tõlgi see kakskeelseks väljaandeks oma LLM API key abil. Töötab täielikult sinu brauseris.",
+    "rubiksCubeTitle": "3D Rubiku kuubik — Philo Li",
+    "rubiksCubeDescription": "Interaktiivne 3D Rubiku kuubik. Määra segamine ja lahendus, mängi samm-sammult, peida värve või külgi meeldejätmise harjutamiseks."
   },
   "nav": {
     "blog": "Blogi",
@@ -36,7 +38,7 @@
     "projects": "Projektid",
     "newsletter": "Uudiskiri",
     "about": "Minust",
-    "menuLabel": "Menüü lüliti"
+    "menuLabel": "Menüü lülitamine"
   },
   "theme": {
     "dark": "Tume",
@@ -47,9 +49,9 @@
   },
   "hero": {
     "line1": "Loo.",
-    "line2": "Talleta.",
-    "line3": "Raja.",
-    "tagline": "Maalin, pildistan, kirjutan ja loon oma kätega. Nii sünnibki see kõik, kui uudishimu kohtub kunsti ja koodiga.",
+    "line2": "Jäädvusta.",
+    "line3": "Ehita.",
+    "tagline": "Ma maalin, pildistan, kirjutan ja ehitan asju. See juhtub siis, kui uudishimu kohtub meisterlikkuse ja koodiga.",
     "labelLeft": "Kunstnik",
     "labelRight": "Arendaja"
   },
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "Uudiskiri",
     "headline": "Püsi uudishimulik.",
-    "desc": "Mõtted kunstist, elust ja loomisest — otse sinu postkasti."
+    "desc": "Mõtted kunstist, elust ja asjade loomisest — otse sinu postkasti."
   },
   "blogPage": {
     "title": "Blogi"
   },
   "aboutPage": {
     "tagline": "Kunstnik · Kirjanik · Arendaja",
-    "bioP1": "Olen looja, programmeerija ja mõtleja. Asjade nullist loomine on see, mida ma kõige rohkem naudin — olgu selleks maal, koodijupp või üks põhjalik essee.",
-    "bioP2": "Pikka aega oli suurimaks takistuseks minu kirele minu enda aju: mul on ADHD. Pärast peaaegu kõikide turul olevate produktiivsustööriistade proovimist mõistsin, et need kõik on loodud neurotüüpilise meele jaoks. Vajasin „partnerit“ — kedagi, kes mind mõistaks ja annaks mulle õrna tõuke just siis, kui ma seda kõige rohkem vajan.",
-    "bioP3": "Ma ei leidnud seda kuskilt. Nii otsustasin selle ise valmis teha — endale ja miljonitele teistele, kellel on samasugune \"rahutu aju\". Nii sündiski Dopamind.",
+    "bioP1": "Olen looja, programmeerija ja mõtleja. Mulle meeldib luua asju nullist — olgu selleks maal, koodijupp või põhjalik essee.",
+    "bioP2": "Pikka aega oli suurimaks takistuseks minu kirele mu oma aju: mul on ADHD. Pärast peaaegu kõikide turul olevate produktiivsustööriistade proovimist mõistsin, et need kõik on loodud neurotüüpilisele mõistusele. Vajasin \"partnerit\" — midagi, mis mind mõistaks ja annaks õrna tõuke just siis, kui ma seda kõige rohkem vajan.",
+    "bioP3": "Ma ei leidnud seda kusagilt. Nii otsustasin selle ise luua — endale ja miljonitele teistele, kellel on samasugune \"rahutu aju\" nagu minul. Nii sündis Dopamind.",
     "sectionProjects": "Projektid",
     "sectionNewsletter": "Uudiskiri",
     "sectionArtworks": "Kunstiteosed",
     "sectionReadMore": "Loe edasi",
     "sectionFindMe": "Leia mind mujalt",
-    "projectDopamindDesc": "Sinu AI-kaaslane",
+    "projectDopamindDesc": "Sinu igapäevane AI kaaslane",
     "projectPhiloArtDesc": "Digitaalne kunstigalerii",
     "newsletterMediumDesc": "Esseed",
-    "artworksText": "Minu kunstiteosed leiad lehelt philoart.io/philo",
-    "artworksContactText": "Soovid osta originaalmaale või fotoprinte? Kirjuta mulle X-is või saada e-kiri aadressile philo.li.official@gmail.com",
+    "artworksText": "Postitan oma kunstiteoseid aadressil philoart.io/philo",
+    "artworksContactText": "Originaalmaalide või fotoprintide ostmiseks saada sõnum X-is või e-kiri aadressile philo.li.official@gmail.com",
     "extraEmail": "E-post"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Sinu AI-kaaslane. Sinu kõrval iga päev, aidates sul elu paremaks muuta."
+        "description": "Sinu AI kaaslane. Sinu kõrval iga päev, aidates sul elada paremat elu."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "Kakskeelne e-raamatute tõlkija",
-        "description": "Muuda mis tahes e-raamat kakskeelseks — töötab sinu brauseris sinu enda LLM API key-ga.",
+        "description": "Muuda mis tahes e-raamat kakskeelseks väljaandeks — töötab sinu brauseris sinu enda LLM API key abil.",
         "cta": "Ava tööriist →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubiku kuubik",
+        "description": "Jälgi segamisi ja lahendusi interaktiivsel 3D-kuubikul. Õpperežiim peidab värvid ja tahud algoritmide harjutamiseks.",
+        "cta": "Ava kuubik →"
       }
     }
   },
@@ -111,10 +118,10 @@
   "ebookTranslator": {
     "eyebrow": "Projekt",
     "title": "Kakskeelne e-raamatute tõlkija",
-    "subtitle": "Laadi üles EPUB, kasuta oma LLM API key-d ja saa vastu kakskeelne väljaanne, kus algne ja tõlgitud tekst on lõikude kaupa vaheldumisi. Faili töödeldakse täielikult sinu brauseris — sinu raamat ei jõua kunagi ühegi serverini.",
+    "subtitle": "Laadi üles EPUB, kasuta oma LLM API key-d ja saa vastu kakskeelne väljaanne, kus algne ja tõlgitud tekst on lõikude kaupa vaheldumisi. Faili töödeldakse täielikult sinu brauseris — sinu raamat ei jõua kunagi ühtegi serverisse.",
     "steps": {
       "settings": "seaded",
-      "upload": "laadi üles",
+      "upload": "üleslaadimine",
       "browse": "sirvi"
     },
     "actions": {
@@ -135,40 +142,41 @@
     "settings": {
       "provider": "Pakkuja",
       "model": "Mudel",
-      "apiKey": "API key",
+      "apiKey": "API Key",
       "apiKeyPlaceholder": "Kleebi oma {provider} võti",
       "apiKeyHint": "Hangi see aadressilt {link}. Sinu võti saadetakse ainult teenusele {provider}, mitte kunagi lehele philoli.com.",
-      "rememberKey": "Jäta võti meelde ainult selles brauseris (localStorage). Eemalda märge ühiskasutatavate seadmete puhul.",
-      "showApiKey": "Näita API key-d",
-      "hideApiKey": "Peida API võti",
+      "rememberKey": "Jäta võti meelde ainult selles brauseris (localStorage). Eemalda märge ühiskasutatavates seadmetes.",
+      "showApiKey": "Näita API key",
+      "hideApiKey": "Peida API key",
       "translateFrom": "Tõlgi keelest",
       "translateTo": "Tõlgi keelde",
       "tone": "Toon",
-      "customProvider": "Kohandatud (OpenAI-ga ühilduv)",
+      "customProvider": "Kohandatud (OpenAI-ühilduv)",
       "customModel": "Mudeli ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "nt gpt-4o, deepseek-chat, …",
       "customEndpoint": "API lõpp-punkt",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Täielik URL OpenAI-ga ühilduva /chat/completions lõpp-punkti juurde.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
-      "needApiKey": "Jätkamiseks sisesta API võti."
+      "customEndpointHint": "Täielik URL OpenAI-ühilduva /chat/completions lõpp-punkti juurde.",
+      "openrouterModelPlaceholder": "nt google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "nt kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
+      "needApiKey": "Jätkamiseks sisesta API key."
     },
     "upload": {
       "parsing": "EPUB-i parsimine…",
       "dropTitle": "Lohista EPUB siia",
       "dropSubtitle": "või klõpsa faili valimiseks",
-      "noChapters": "Sellest EPUB-ist ei leitud loetavaid peatükke."
+      "noChapters": "Selles EPUB-failis ei leitud loetavaid peatükke."
     },
     "browse": {
       "chapters": "Peatükid",
       "toneTitle": "Tõlke toon — mõjutab kirjutamisstiili",
       "paragraphCount": "{nodes} lõiku · {translated} tõlgitud",
-      "errorOne": "{count} lõigu tõlkimine ebaõnnestus. Võid uuesti proovida — juba tõlgitud lõigud jäetakse vahele.",
-      "errorMany": "{count} lõigu tõlkimine ebaõnnestus. Võid uuesti proovida — juba tõlgitud lõigud jäetakse vahele.",
-      "noTranslatableText": "Selles peatükis pole tõlgitavat teksti (kaas, eessõna jne).",
+      "errorOne": "{count} lõik ebaõnnestus. Proovimiseks saad uuesti tõlkida — juba tehtud lõigud jäetakse vahele.",
+      "errorMany": "{count} lõiku ebaõnnestus. Proovimiseks saad uuesti tõlkida — juba tehtud lõigud jäetakse vahele.",
+      "noTranslatableText": "Selles peatükis puudub tõlgitav tekst (kaas, eessõna jne).",
       "translatingAria": "Tõlkimine",
       "translatingLabel": "tõlkimine…",
-      "buildFailed": "EPUB-i koostamine ebaõnnestus:"
+      "buildFailed": "EPUB-i loomine ebaõnnestus:"
     },
     "tones": {
       "idiomatic": {
@@ -193,7 +201,7 @@
       "bestQualityStable": "parim kvaliteet, stabiilne",
       "balanced": "tasakaalustatud",
       "freeTierFast": "tasuta pakett, kiire",
-      "flagshipCoding": "lipulaev programmeerimiseks/agentne",
+      "flagshipCoding": "lipulaev koodi/agentide jaoks",
       "longContext": "pikk kontekst, stabiilne",
       "cheaper": "odavam",
       "latestLongContext": "uusim, 256K kontekst"
@@ -204,7 +212,7 @@
       "Photograph": "Foto",
       "Painting": "Maal",
       "Drawing": "Joonistus",
-      "Digital Art": "Digitaalne kunst"
+      "Digital Art": "Digikunst"
     }
   },
   "lightbox": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotograafia",
     "art": "Kunst"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubiku kuubik — Philo Li",
+      "description": "Interaktiivne 3D Rubiku kuubik. Määra segamine ja lahendus, mängi samm-sammult, peida värve või külgi meeldejätmise harjutamiseks."
+    },
+    "title": "3D Rubiku kuubik",
+    "intro": "Sisesta segamine ja lahendus. Liigu sammhaaval läbi lahenduse, lohista vaate pööramiseks ja kasuta õpperežiimi algoritmide harjutamiseks.",
+    "scramble": {
+      "label": "Segamine",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Rakenda segamine",
+      "reset": "Lähtesta"
+    },
+    "solution": {
+      "label": "Lahendus",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Tundmatu: {token}"
+    },
+    "playback": {
+      "play": "Esita",
+      "pause": "Paus",
+      "prev": "Eelmine samm",
+      "next": "Järgmine samm",
+      "first": "Hüppa algusesse",
+      "last": "Hüppa lõppu",
+      "speed": "Kiirus"
+    },
+    "learning": {
+      "title": "Õpperežiim",
+      "master": "Luba",
+      "hideColors": "Peida värvid",
+      "hideFaces": "Peida tahud",
+      "faceLabel": {
+        "U": "Ülemine",
+        "R": "Parem",
+        "F": "Eesmine",
+        "D": "Alumine",
+        "L": "Vasak",
+        "B": "Tagumine"
+      },
+      "colorLabel": {
+        "white": "Valge",
+        "red": "Punane",
+        "green": "Roheline",
+        "yellow": "Kollane",
+        "orange": "Oranž",
+        "blue": "Sinine"
+      }
+    },
+    "share": {
+      "copy": "Kopeeri jagamislink",
+      "copied": "Kopeeritud!"
+    }
   }
 }

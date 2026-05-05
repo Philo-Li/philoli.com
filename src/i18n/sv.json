@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Nyhetsbrev",
-    "subscribe": "Prenumerera →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Nyhetsbrev",
+    "subscribe": "Prenumerera →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Konstnär, skribent, kreatör",
@@ -28,7 +28,9 @@
     "newsletterTitle": "Nyhetsbrev — Philo Li",
     "newsletterDescription": "Prenumerera på Philo Lis nyhetsbrev.",
     "ebookTranslatorTitle": "Tvåspråkig e-boksöversättare — Philo Li",
-    "ebookTranslatorDescription": "Ladda upp en EPUB och översätt den till en tvåspråkig utgåva med din egen LLM API key. Körs helt i din webbläsare."
+    "ebookTranslatorDescription": "Ladda upp en EPUB och översätt den till en tvåspråkig utgåva med din egen LLM API key. Körs helt i din webbläsare.",
+    "rubiksCubeTitle": "3D Rubiks kub — Philo Li",
+    "rubiksCubeDescription": "Interaktiv 3D Rubiks kub. Ställ in en blandning och en lösning, spela steg för steg, dölj färger eller sidor för minnesträning."
   },
   "nav": {
     "blog": "Blogg",
@@ -48,8 +50,8 @@
   "hero": {
     "line1": "Skapa.",
     "line2": "Fånga.",
-    "line3": "Bygga.",
-    "tagline": "Jag målar, fotograferar, skriver och bygger. Ur mötet mellan nyfikenhet, hantverk och kod växer allt detta fram.",
+    "line3": "Bygg.",
+    "tagline": "Jag målar, fotograferar, skriver och bygger saker. Detta är vad som händer när nyfikenhet möter hantverk och kod.",
     "labelLeft": "Konstnär",
     "labelRight": "Utvecklare"
   },
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "Nyhetsbrev",
     "headline": "Håll dig nyfiken.",
-    "desc": "Tankar om konst, livet och att skapa — direkt till din inkorg."
+    "desc": "Tankar om konst, livet och att skapa saker — levererade till din inkorg."
   },
   "blogPage": {
     "title": "Blogg"
   },
   "aboutPage": {
     "tagline": "Konstnär · Skribent · Utvecklare",
-    "bioP1": "Jag är en kreatör, en programmerare och en tänkare. Att skapa saker från grunden är det jag gillar bäst — oavsett om det är en målning, lite kod eller en djupdykande essä.",
-    "bioP2": "Under lång tid var det största hindret för denna passion min egen hjärna: jag har ADHD. Efter att ha provat nästan alla produktivitetsverktyg på marknaden insåg jag att de alla var designade för ett neurotypiskt sinne. Jag behövde en \"partner\" — något som förstod mig och kunde ge mig en mild knuff precis när jag behövde det som mest.",
-    "bioP3": "Jag hittade det ingenstans. Så jag bestämde mig för att bygga det själv — för mig, och för de miljoner andra med en \"rastlös hjärna\" precis som min. Det var så Dopamind föddes.",
+    "bioP1": "Jag är en kreatör, en programmerare och en tänkare. Jag älskar att skapa saker från grunden — oavsett om det är en målning, en bit kod eller en djupdykande essä.",
+    "bioP2": "Under en lång tid var det största hindret för denna passion min egen hjärna: jag har ADHD. Efter att ha provat nästan alla produktivitetsverktyg på marknaden insåg jag att de alla var designade för ett neurotypiskt sinne. Jag behövde en \"partner\" — något som förstod mig och kunde ge mig en mild knuff precis när jag behövde det som mest.",
+    "bioP3": "Jag kunde inte hitta det någonstans. Så jag bestämde mig för att bygga det själv — för mig, och för de miljontals andra med en \"upptagen hjärna\" precis som min. Det var så Dopamind föddes.",
     "sectionProjects": "Projekt",
     "sectionNewsletter": "Nyhetsbrev",
     "sectionArtworks": "Konstverk",
     "sectionReadMore": "Läs mer",
     "sectionFindMe": "Hitta mig på andra ställen",
-    "projectDopamindDesc": "Din AI-kompis i vardagen",
+    "projectDopamindDesc": "Din dagliga AI-följeslagare",
     "projectPhiloArtDesc": "Digitalt konstgalleri",
     "newsletterMediumDesc": "Essäer",
-    "artworksText": "Mina konstverk hittar du på philoart.io/philo",
-    "artworksContactText": "Vill du köpa originalmålningar eller fotoprintar? Skicka ett DM på X eller mejla philo.li.official@gmail.com",
+    "artworksText": "Jag publicerar mina konstverk på philoart.io/philo",
+    "artworksContactText": "För att köpa originalmålningar eller fotoutskrifter, skicka ett DM på X eller mejla philo.li.official@gmail.com",
     "extraEmail": "E-post"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Din AI-kompis. Vid din sida varje dag för att hjälpa dig få en bättre vardag."
+        "description": "Din AI-följeslagare. Vid din sida varje dag, hjälper dig att leva ett bättre liv."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "Tvåspråkig e-boksöversättare",
-        "description": "Gör om valfri e-bok till en tvåspråkig version — körs i din webbläsare med din egen LLM API key.",
+        "description": "Förvandla vilken e-bok som helst till en tvåspråkig utgåva — körs i din webbläsare med din egen LLM API key.",
         "cta": "Öppna verktyg →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubiks kub",
+        "description": "Gå igenom blandningar och lösningar på en interaktiv 3D-kub. Inlärningsläget döljer färger och sidor för algoritmövningar.",
+        "cta": "Öppna kuben →"
       }
     }
   },
@@ -111,7 +118,7 @@
   "ebookTranslator": {
     "eyebrow": "Projekt",
     "title": "Tvåspråkig e-boksöversättare",
-    "subtitle": "Ladda upp en EPUB, använd din egen LLM API key, och få tillbaka en tvåspråkig utgåva där originaltexten och den översatta texten varvas stycke för stycke. Filen analyseras helt i din webbläsare — din bok når aldrig någon server.",
+    "subtitle": "Ladda upp en EPUB, använd din egen LLM API key och få tillbaka en tvåspråkig utgåva med originaltexten och den översatta texten varvad stycke för stycke. Filen analyseras helt i din webbläsare — din bok rör aldrig någon server.",
     "steps": {
       "settings": "inställningar",
       "upload": "ladda upp",
@@ -135,10 +142,10 @@
     "settings": {
       "provider": "Leverantör",
       "model": "Modell",
-      "apiKey": "API key",
+      "apiKey": "API Key",
       "apiKeyPlaceholder": "Klistra in din {provider}-nyckel",
       "apiKeyHint": "Hämta en på {link}. Din nyckel skickas endast till {provider}, aldrig till philoli.com.",
-      "rememberKey": "Spara nyckeln endast i denna webbläsare (localStorage). Avmarkera för delade enheter.",
+      "rememberKey": "Kom ihåg nyckeln endast i denna webbläsare (localStorage). Avmarkera för delade enheter.",
       "showApiKey": "Visa API key",
       "hideApiKey": "Dölj API key",
       "translateFrom": "Översätt från",
@@ -146,11 +153,12 @@
       "tone": "Ton",
       "customProvider": "Anpassad (OpenAI-kompatibel)",
       "customModel": "Modell-ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "t.ex. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API-slutpunkt",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Fullständig URL till en OpenAI-kompatibel /chat/completions-slutpunkt.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "openrouterModelPlaceholder": "t.ex. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "t.ex. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Ange en API key för att fortsätta."
     },
     "upload": {
@@ -165,7 +173,7 @@
       "paragraphCount": "{nodes} stycken · {translated} översatta",
       "errorOne": "{count} stycke misslyckades. Du kan översätta igen för att försöka på nytt — stycken som redan är klara hoppas över.",
       "errorMany": "{count} stycken misslyckades. Du kan översätta igen för att försöka på nytt — stycken som redan är klara hoppas över.",
-      "noTranslatableText": "Detta kapitel har ingen översättningsbar text (omslag, inledande sidor, etc).",
+      "noTranslatableText": "Detta kapitel har ingen översättningsbar text (omslag, inledande sidor, etc.).",
       "translatingAria": "Översätter",
       "translatingLabel": "översätter…",
       "buildFailed": "Misslyckades med att skapa EPUB:"
@@ -181,14 +189,14 @@
       },
       "technical": {
         "label": "Teknisk",
-        "hint": "fack- & referensböcker"
+        "hint": "facklitteratur & referensböcker"
       }
     },
     "modelHints": {
       "cheapestFast": "billigast, snabb",
       "higherQuality": "högre kvalitet",
       "bestQuality": "bästa kvalitet",
-      "newestFast": "nyaste, snabb",
+      "newestFast": "nyast, snabb",
       "cheapest": "billigast",
       "bestQualityStable": "bästa kvalitet, stabil",
       "balanced": "balanserad",
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotografi",
     "art": "Konst"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubiks kub — Philo Li",
+      "description": "Interaktiv 3D Rubiks kub. Ställ in en blandning och en lösning, spela steg för steg, dölj färger eller sidor för memoreringsträning."
+    },
+    "title": "3D Rubiks kub",
+    "intro": "Skriv in en blandning och en lösning. Gå igenom lösningen steg för steg, dra för att rotera vyn och använd övningsläget för att träna på algoritmer.",
+    "scramble": {
+      "label": "Blandning",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Använd blandning",
+      "reset": "Återställ"
+    },
+    "solution": {
+      "label": "Lösning",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Okänd: {token}"
+    },
+    "playback": {
+      "play": "Spela",
+      "pause": "Pausa",
+      "prev": "Föregående steg",
+      "next": "Nästa steg",
+      "first": "Hoppa till början",
+      "last": "Hoppa till slutet",
+      "speed": "Hastighet"
+    },
+    "learning": {
+      "title": "Övningsläge",
+      "master": "Aktivera",
+      "hideColors": "Dölj färger",
+      "hideFaces": "Dölj sidor",
+      "faceLabel": {
+        "U": "Upp",
+        "R": "Höger",
+        "F": "Fram",
+        "D": "Ner",
+        "L": "Vänster",
+        "B": "Bak"
+      },
+      "colorLabel": {
+        "white": "Vit",
+        "red": "Röd",
+        "green": "Grön",
+        "yellow": "Gul",
+        "orange": "Orange",
+        "blue": "Blå"
+      }
+    },
+    "share": {
+      "copy": "Kopiera delningslänk",
+      "copied": "Kopierad!"
+    }
   }
 }

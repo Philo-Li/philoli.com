@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "E-novice",
-    "subscribe": "Naroči se →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,22 +11,26 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Novice",
+    "subscribe": "Naroči se →"
   },
   "metadata": {
     "siteTitle": "Philo Li — umetnik, pisec, ustvarjalec",
     "blogTitle": "Blog — Philo Li",
     "blogDescription": "Članki o umetnosti, filozofiji in ustvarjanju stvari.",
     "aboutTitle": "O meni — Philo Li",
-    "aboutDescription": "O Philo Li — umetnik, pisec in razvijalec.",
+    "aboutDescription": "O Philo Li — umetniku, piscu in razvijalcu.",
     "artTitle": "Umetnost — Philo Li",
-    "artDescription": "Fotografija, slikarstvo in digitalna umetnost Philo Li.",
+    "artDescription": "Fotografija, slikarstvo in digitalna umetnost avtorja Philo Li.",
     "projectsTitle": "Projekti — Philo Li",
-    "projectsDescription": "Projekti Philo Li.",
+    "projectsDescription": "Projekti avtorja Philo Li.",
     "newsletterTitle": "Novičnik — Philo Li",
     "newsletterDescription": "Naročite se na novičnike Philo Li.",
     "ebookTranslatorTitle": "Dvojezični prevajalnik e-knjig — Philo Li",
-    "ebookTranslatorDescription": "Naložite EPUB in ga s svojim LLM API key prevedite v dvojezično izdajo. Deluje v celoti v vašem brskalniku."
+    "ebookTranslatorDescription": "Naložite EPUB in ga s svojim LLM API key prevedite v dvojezično izdajo. Deluje v celoti v vašem brskalniku.",
+    "rubiksCubeTitle": "3D Rubikova kocka — Philo Li",
+    "rubiksCubeDescription": "Interaktivna 3D Rubikova kocka. Nastavite mešanje in rešitev, igrajte korak za korakom, skrijte barve ali ploskve za vaje pomnjenja."
   },
   "nav": {
     "blog": "Blog",
@@ -46,40 +48,40 @@
     "toggleToDark": "Preklopi na temni način"
   },
   "hero": {
-    "line1": "Ustvarjati.",
-    "line2": "Ujeti.",
-    "line3": "Graditi.",
-    "tagline": "Slikam, fotografiram, pišem in snovam. Kjer se radovednost preplete z umetnostjo in kodo, se rodi vse to.",
+    "line1": "Ustvarjaj.",
+    "line2": "Ujemi.",
+    "line3": "Gradi.",
+    "tagline": "Slikam, fotografiram, pišem in gradim stvari. To se zgodi, ko se radovednost sreča z obrtjo in kodo.",
     "labelLeft": "Umetnik",
     "labelRight": "Razvijalec"
   },
   "recentPosts": {
-    "label": "Novejši zapisi",
+    "label": "Zadnji zapisi",
     "viewAll": "Prikaži vse →"
   },
   "newsletterCta": {
-    "label": "E-novice",
+    "label": "Novičnik",
     "headline": "Ostani radoveden.",
-    "desc": "Razmišljanja o umetnosti, življenju in ustvarjanju – naravnost v tvoj nabiralnik."
+    "desc": "Misli o umetnosti, življenju in ustvarjanju — v vašem poštnem nabiralniku."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Umetnik · Pisec · Razvijalec",
-    "bioP1": "Sem ustvarjalec, programer in mislec. Najbolj uživam v tem, da stvari ustvarjam iz nič – pa naj bo to slika, koda ali poglobljen zapis.",
-    "bioP2": "Dolgo časa so bili moji lastni možgani največja ovira tej strasti: imam ADHD. Po tem, ko sem preizkusil skoraj vsa orodja za produktivnost na trgu, sem ugotovil, da so bila vsa zasnovana za nevrotipičen um. Potreboval sem »partnerja« — nekaj, kar bi me razumelo in me nežno spodbudilo ravno takrat, ko sem to najbolj potreboval.",
-    "bioP3": "Nikjer je nisem našel. Zato sem se odločil, da jo naredim sam – zase in za milijone drugih z \"nenehno zaposlenimi možgani\". Tako se je rodil Dopamind.",
+    "bioP1": "Sem ustvarjalec, programer in mislec. Rad ustvarjam stvari iz nič — najsi bo to slika, košček kode ali poglobljen esej.",
+    "bioP2": "Dolgo časa so bili največja ovira tej strasti moji lastni možgani: imam ADHD. Potem ko sem preizkusil skoraj vsa orodja za produktivnost na trgu, sem spoznal, da so bila vsa zasnovana za nevrotipičen um. Potreboval sem \"partnerja\" — nekaj, kar bi me razumelo in me nežno spodbudilo ravno takrat, ko bi to najbolj potreboval.",
+    "bioP3": "Nikjer ga nisem našel. Zato sem se odločil, da ga zgradim sam — zase in za milijone drugih z \"zaposlenimi možgani\", kot so moji. Tako se je rodil Dopamind.",
     "sectionProjects": "Projekti",
-    "sectionNewsletter": "E-novice",
+    "sectionNewsletter": "Novičnik",
     "sectionArtworks": "Umetniška dela",
     "sectionReadMore": "Preberi več",
     "sectionFindMe": "Najdi me drugje",
-    "projectDopamindDesc": "Tvoj vsakdanji AI sopotnik",
+    "projectDopamindDesc": "Vaš vsakodnevni AI spremljevalec",
     "projectPhiloArtDesc": "Digitalna umetniška galerija",
     "newsletterMediumDesc": "Eseji",
-    "artworksText": "Svoja dela objavljam na philoart.io/philo",
-    "artworksContactText": "Želiš kupiti originalno sliko ali fotografski tisk? Piši mi na X ali na philo.li.official@gmail.com",
+    "artworksText": "Svoja umetniška dela objavljam na philoart.io/philo",
+    "artworksContactText": "Za nakup originalnih slik ali fotografskih tiskov mi pišite v zasebno sporočilo na X ali na e-naslov philo.li.official@gmail.com",
     "extraEmail": "E-pošta"
   },
   "artPage": {
@@ -91,16 +93,21 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Tvoj AI sopotnik. Vsak dan ob tebi, da ti pomaga živeti bolje."
+        "description": "Vaš AI spremljevalec. Ob vaši strani vsak dan, pomaga vam živeti boljše življenje."
       },
       "philoart": {
         "name": "PhiloArt",
         "description": "Moja osebna umetniška galerija — fotografija, slike in digitalna umetnost."
       },
       "ebookTranslator": {
-        "name": "Prevajalnik dvojezičnih e-knjig",
-        "description": "Spremeni katerokoli e-knjigo v dvojezično izdajo – deluje kar v brskalniku s tvojim LLM API key.",
+        "name": "Dvojezični prevajalnik e-knjig",
+        "description": "Spremenite katero koli e-knjigo v dvojezično izdajo — deluje v vašem brskalniku z vašim lastnim LLM API key.",
         "cta": "Odpri orodje →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubikova kocka",
+        "description": "Preglejte mešanja in rešitve na interaktivni 3D kocki. Način učenja skrije barve in ploskve za vaje algoritmov.",
+        "cta": "Odpri kocko →"
       }
     }
   },
@@ -111,17 +118,17 @@
   "ebookTranslator": {
     "eyebrow": "Projekt",
     "title": "Dvojezični prevajalnik e-knjig",
-    "subtitle": "Naložite EPUB, uporabite svoj LLM API key in prejmite dvojezično izdajo z izvirnim in prevedenim besedilom, prepletenim odstavek za odstavkom. Datoteka se v celoti obdela v vašem brskalniku — vaša knjiga nikoli ne doseže nobenega strežnika.",
+    "subtitle": "Naložite EPUB, uporabite svoj LLM API key in prejmite dvojezično izdajo z izvirnim in prevedenim besedilom, prepletenim odstavek za odstavkom. Datoteka se obdela v celoti v vašem brskalniku — vaša knjiga nikoli ne doseže nobenega strežnika.",
     "steps": {
       "settings": "nastavitve",
       "upload": "naloži",
-      "browse": "prebrskaj"
+      "browse": "brskaj"
     },
     "actions": {
       "cancelRunning": "Prekliči izvajanje",
       "translateAllRemaining": "Prevedi vse preostalo",
       "downloadEpub": "⬇ Prenesi EPUB",
-      "building": "Priprava…",
+      "building": "Izdelava…",
       "back": "← Nazaj",
       "settingsModel": "← Nastavitve / model",
       "show": "Pokaži",
@@ -135,40 +142,41 @@
     "settings": {
       "provider": "Ponudnik",
       "model": "Model",
-      "apiKey": "API key",
+      "apiKey": "API ključ",
       "apiKeyPlaceholder": "Prilepite svoj {provider} ključ",
-      "apiKeyHint": "Pridobite ga na {link}. Vaš ključ je poslan samo {provider}, nikoli na philoli.com.",
-      "rememberKey": "Zapomni si ključ samo v tem brskalniku (localStorage). Odkljukajte za naprave v skupni rabi.",
-      "showApiKey": "Pokaži API key",
-      "hideApiKey": "Skrij API key",
+      "apiKeyHint": "Pridobite ga na {link}. Vaš ključ je poslan samo ponudniku {provider}, nikoli na philoli.com.",
+      "rememberKey": "Zapomni si ključ samo v tem brskalniku (localStorage). Odkljukajte pri napravah v skupni rabi.",
+      "showApiKey": "Pokaži API ključ",
+      "hideApiKey": "Skrij API ključ",
       "translateFrom": "Prevedi iz",
       "translateTo": "Prevedi v",
       "tone": "Ton",
       "customProvider": "Po meri (združljivo z OpenAI)",
       "customModel": "ID modela",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "npr. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API končna točka",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Celoten URL do končne točke /chat/completions, združljive z OpenAI.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
-      "needApiKey": "Vnesite API key za nadaljevanje."
+      "openrouterModelPlaceholder": "npr. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "npr. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
+      "needApiKey": "Vnesite API ključ za nadaljevanje."
     },
     "upload": {
       "parsing": "Razčlenjevanje EPUB…",
-      "dropTitle": "Odložite EPUB sem",
+      "dropTitle": "Spustite EPUB sem",
       "dropSubtitle": "ali kliknite za izbiro datoteke",
-      "noChapters": "V tem EPUB ni bilo najdenih berljivih poglavij."
+      "noChapters": "V tem EPUB-u ni bilo mogoče najti berljivih poglavij."
     },
     "browse": {
       "chapters": "Poglavja",
       "toneTitle": "Ton prevajanja — vpliva na slog pisanja",
       "paragraphCount": "{nodes} odstavkov · {translated} prevedenih",
-      "errorOne": "{count} odstavek ni uspel. Za ponovni poskus lahko ponovno prevedete — že dokončani odstavki bodo preskočeni.",
-      "errorMany": "{count} odstavkov ni uspelo. Za ponovni poskus lahko ponovno prevedete — že dokončani odstavki bodo preskočeni.",
+      "errorOne": "{count} odstavek ni uspel. Za ponovni poskus lahko ponovno prevedete — že prevedeni odstavki bodo preskočeni.",
+      "errorMany": "{count} odstavkov ni uspelo. Za ponovni poskus lahko ponovno prevedete — že prevedeni odstavki bodo preskočeni.",
       "noTranslatableText": "To poglavje nima besedila za prevajanje (naslovnica, uvodne strani itd.).",
       "translatingAria": "Prevajanje",
       "translatingLabel": "prevajanje…",
-      "buildFailed": "Napaka pri ustvarjanju EPUB:"
+      "buildFailed": "Napaka pri izdelavi EPUB:"
     },
     "tones": {
       "idiomatic": {
@@ -185,11 +193,11 @@
       }
     },
     "modelHints": {
-      "cheapestFast": "najcenejše, hitro",
+      "cheapestFast": "najceneje, hitro",
       "higherQuality": "višja kakovost",
       "bestQuality": "najboljša kakovost",
       "newestFast": "najnovejše, hitro",
-      "cheapest": "najcenejše",
+      "cheapest": "najceneje",
       "bestQualityStable": "najboljša kakovost, stabilno",
       "balanced": "uravnoteženo",
       "freeTierFast": "brezplačni paket, hitro",
@@ -202,17 +210,71 @@
   "gallery": {
     "filters": {
       "Photograph": "Fotografija",
-      "Painting": "Slika",
+      "Painting": "Slikarstvo",
       "Drawing": "Risba",
       "Digital Art": "Digitalna umetnost"
     }
   },
   "lightbox": {
-    "previous": "Prejšnje",
-    "next": "Naslednje"
+    "previous": "Prejšnja",
+    "next": "Naslednja"
   },
   "social": {
     "photography": "Fotografija",
     "art": "Umetnost"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubikova kocka — Philo Li",
+      "description": "Interaktivna 3D Rubikova kocka. Nastavite premešanje in rešitev, predvajajte korak za korakom, skrijte barve ali ploskve za vaje pomnjenja."
+    },
+    "title": "3D Rubikova kocka",
+    "intro": "Vpišite mešanje in rešitev. Pomikajte se skozi korake reševanja, povlecite za vrtenje pogleda in uporabite način za učenje za vadbo algoritmov.",
+    "scramble": {
+      "label": "Mešanje",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Uporabi mešanje",
+      "reset": "Ponastavi"
+    },
+    "solution": {
+      "label": "Rešitev",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Neprepoznano: {token}"
+    },
+    "playback": {
+      "play": "Predvajaj",
+      "pause": "Premor",
+      "prev": "Prejšnji korak",
+      "next": "Naslednji korak",
+      "first": "Skoči na začetek",
+      "last": "Skoči na konec",
+      "speed": "Hitrost"
+    },
+    "learning": {
+      "title": "Način za učenje",
+      "master": "Omogoči",
+      "hideColors": "Skrij barve",
+      "hideFaces": "Skrij ploskve",
+      "faceLabel": {
+        "U": "Zgoraj",
+        "R": "Desno",
+        "F": "Spredaj",
+        "D": "Spodaj",
+        "L": "Levo",
+        "B": "Zadaj"
+      },
+      "colorLabel": {
+        "white": "Bela",
+        "red": "Rdeča",
+        "green": "Zelena",
+        "yellow": "Rumena",
+        "orange": "Oranžna",
+        "blue": "Modra"
+      }
+    },
+    "share": {
+      "copy": "Kopiraj povezavo za deljenje",
+      "copied": "Kopirano!"
+    }
   }
 }

@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Nyhetsbrev",
-    "subscribe": "Abonner →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Nyhetsbrev",
+    "subscribe": "Abonner →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Kunstner, skribent, skaper",
@@ -27,8 +27,10 @@
     "projectsDescription": "Prosjekter av Philo Li.",
     "newsletterTitle": "Nyhetsbrev — Philo Li",
     "newsletterDescription": "Abonner på Philo Lis nyhetsbrev.",
-    "ebookTranslatorTitle": "Tospråklig e-bok-oversetter — Philo Li",
-    "ebookTranslatorDescription": "Last opp en EPUB og oversett den til en tospråklig utgave med din egen LLM API key. Kjører i sin helhet i nettleseren din."
+    "ebookTranslatorTitle": "Tospråklig e-bokoversetter — Philo Li",
+    "ebookTranslatorDescription": "Last opp en EPUB og oversett den til en tospråklig utgave med din egen LLM API key. Kjører helt i nettleseren din.",
+    "rubiksCubeTitle": "3D Rubiks kube — Philo Li",
+    "rubiksCubeDescription": "Interaktiv 3D Rubiks kube. Angi en blanding og en løsning, spill steg for steg, skjul farger eller sider for hukommelsestrening."
   },
   "nav": {
     "blog": "Blogg",
@@ -49,7 +51,7 @@
     "line1": "Skape.",
     "line2": "Fange.",
     "line3": "Bygge.",
-    "tagline": "Jeg maler, fotograferer, skriver og bygger. I møtet mellom nysgjerrighet, håndverk og kode blir alt dette til.",
+    "tagline": "Jeg maler, fotograferer, skriver og bygger ting. Dette er hva som skjer når nysgjerrighet møter håndverk og kode.",
     "labelLeft": "Kunstner",
     "labelRight": "Utvikler"
   },
@@ -60,16 +62,16 @@
   "newsletterCta": {
     "label": "Nyhetsbrev",
     "headline": "Forbli nysgjerrig.",
-    "desc": "Tanker om kunst, livet og det å skape ting – rett i innboksen din."
+    "desc": "Tanker om kunst, livet og å skape ting — levert til innboksen din."
   },
   "blogPage": {
     "title": "Blogg"
   },
   "aboutPage": {
     "tagline": "Kunstner · Skribent · Utvikler",
-    "bioP1": "Jeg er en skaper, en programmerer og en tenker. Å skape ting fra bunnen av er det jeg liker best – enten det er et maleri, litt kode eller et dypdykk av et essay.",
-    "bioP2": "Lenge var det største hinderet for denne lidenskapen min egen hjerne: Jeg har ADHD. Etter å ha prøvd nesten alle produktivitetsverktøy på markedet, innså jeg at de alle var designet for et nevrotypisk sinn. Jeg trengte en \"partner\" — noe som forsto meg og kunne gi meg et lite dytt akkurat når jeg trengte det mest.",
-    "bioP3": "Jeg fant det ikke noe sted. Så jeg bestemte meg for å lage det selv – for min egen del, og for de millionene av andre med et like «rastløst hode» som mitt. Det var sånn Dopamind ble til.",
+    "bioP1": "Jeg er en skaper, en programmerer og en tenker. Jeg elsker å bygge ting fra bunnen av — enten det er et maleri, en kodesnutt eller et fordypende essay.",
+    "bioP2": "Lenge var den største hindringen for denne lidenskapen min egen hjerne: Jeg har ADHD. Etter å ha prøvd nesten alle produktivitetsverktøy på markedet, innså jeg at de alle var designet for et nevrotypisk sinn. Jeg trengte en \"partner\" — noe som forsto meg og kunne gi meg et lite dytt akkurat når jeg trengte det mest.",
+    "bioP3": "Jeg fant det ikke noe sted. Så jeg bestemte meg for å bygge det selv — for meg, og for de millioner av andre med en \"travel hjerne\" akkurat som min. Slik ble Dopamind født.",
     "sectionProjects": "Prosjekter",
     "sectionNewsletter": "Nyhetsbrev",
     "sectionArtworks": "Kunstverk",
@@ -77,9 +79,9 @@
     "sectionFindMe": "Finn meg andre steder",
     "projectDopamindDesc": "Din daglige AI-følgesvenn",
     "projectPhiloArtDesc": "Digitalt kunstgalleri",
-    "newsletterMediumDesc": "Essayer",
-    "artworksText": "Jeg legger ut kunsten min på philoart.io/philo",
-    "artworksContactText": "Lyst til å kjøpe et originalmaleri eller et fotoprint? Send meg en DM på X eller en e-post til philo.li.official@gmail.com",
+    "newsletterMediumDesc": "Essays",
+    "artworksText": "Jeg legger ut kunstverkene mine på philoart.io/philo",
+    "artworksContactText": "For å kjøpe originale malerier eller fotoutskrifter, send DM på X eller e-post til philo.li.official@gmail.com",
     "extraEmail": "E-post"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Din AI-følgesvenn. Ved din side hver dag, for å hjelpe deg med å få en litt bedre hverdag."
+        "description": "Din AI-følgesvenn. Ved din side hver dag, for å hjelpe deg med å leve et bedre liv."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "Tospråklig e-bok-oversetter",
-        "description": "Gjør hvilken som helst e-bok om til en tospråklig utgave – kjører i nettleseren din med din egen LLM API key.",
+        "description": "Gjør enhver e-bok om til en tospråklig utgave — kjører i nettleseren din med din egen LLM API key.",
         "cta": "Åpne verktøy →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubiks kube",
+        "description": "Gå gjennom blandinger og løsninger på en interaktiv 3D-kube. Læringsmodus skjuler farger og sider for algoritmeøving.",
+        "cta": "Åpne kuben →"
       }
     }
   },
@@ -110,8 +117,8 @@
   },
   "ebookTranslator": {
     "eyebrow": "Prosjekt",
-    "title": "Tospråklig e-bokoversetter",
-    "subtitle": "Last opp en EPUB, bruk din egen LLM API key, og få tilbake en tospråklig utgave der originalteksten og den oversatte teksten flettes sammen avsnitt for avsnitt. Filen analyseres i sin helhet i nettleseren din — boken din berører aldri noen server.",
+    "title": "Tospråklig e-bok-oversetter",
+    "subtitle": "Last opp en EPUB, bruk din egen LLM API key, og få tilbake en tospråklig utgave med original og oversatt tekst flettet sammen avsnitt for avsnitt. Filen analyseres i sin helhet i nettleseren din — boken din berører aldri noen server.",
     "steps": {
       "settings": "innstillinger",
       "upload": "last opp",
@@ -135,37 +142,38 @@
     "settings": {
       "provider": "Leverandør",
       "model": "Modell",
-      "apiKey": "API key",
+      "apiKey": "API-nøkkel",
       "apiKeyPlaceholder": "Lim inn din {provider}-nøkkel",
-      "apiKeyHint": "Hent en på {link}. Nøkkelen din sendes kun til {provider}, aldri til philoli.com.",
-      "rememberKey": "Husk nøkkelen kun i denne nettleseren (localStorage). Fjern markeringen for delte enheter.",
-      "showApiKey": "Vis API key",
-      "hideApiKey": "Skjul API key",
+      "apiKeyHint": "Skaff en på {link}. Nøkkelen din sendes kun til {provider}, aldri til philoli.com.",
+      "rememberKey": "Husk nøkkelen kun i denne nettleseren (localStorage). Fjern avkrysning for delte enheter.",
+      "showApiKey": "Vis API-nøkkel",
+      "hideApiKey": "Skjul API-nøkkel",
       "translateFrom": "Oversett fra",
       "translateTo": "Oversett til",
       "tone": "Tone",
-      "customProvider": "Tilpasset (OpenAI-kompatibel)",
+      "customProvider": "Egendefinert (OpenAI-kompatibel)",
       "customModel": "Modell-ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "f.eks. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API-endepunkt",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "Fullstendig URL til et OpenAI-kompatibelt /chat/completions-endepunkt.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
-      "needApiKey": "Oppgi en API key for å fortsette."
+      "openrouterModelPlaceholder": "f.eks. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "f.eks. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
+      "needApiKey": "Skriv inn en API-nøkkel for å fortsette."
     },
     "upload": {
       "parsing": "Analyserer EPUB…",
       "dropTitle": "Slipp en EPUB her",
       "dropSubtitle": "eller klikk for å velge en fil",
-      "noChapters": "Fant ingen lesbare kapitler i denne EPUB-filen."
+      "noChapters": "Ingen lesbare kapitler funnet i denne EPUB-filen."
     },
     "browse": {
       "chapters": "Kapitler",
       "toneTitle": "Oversettelsestone — påvirker skrivestilen",
       "paragraphCount": "{nodes} avsnitt · {translated} oversatt",
-      "errorOne": "{count} avsnitt mislyktes. Du kan oversette på nytt for å prøve igjen — avsnitt som allerede er ferdige, hoppes over.",
-      "errorMany": "{count} avsnitt mislyktes. Du kan oversette på nytt for å prøve igjen — avsnitt som allerede er ferdige, hoppes over.",
-      "noTranslatableText": "Dette kapittelet har ingen oversettbar tekst (omslag, innledende sider, osv.).",
+      "errorOne": "{count} avsnitt feilet. Du kan oversette på nytt for å prøve igjen — avsnitt som allerede er ferdige blir hoppet over.",
+      "errorMany": "{count} avsnitt feilet. Du kan oversette på nytt for å prøve igjen — avsnitt som allerede er ferdige blir hoppet over.",
+      "noTranslatableText": "Dette kapittelet har ingen tekst som kan oversettes (omslag, innledende sider, osv.).",
       "translatingAria": "Oversetter",
       "translatingLabel": "oversetter…",
       "buildFailed": "Kunne ikke bygge EPUB:"
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotografi",
     "art": "Kunst"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubiks kube — Philo Li",
+      "description": "Interaktiv 3D Rubiks kube. Angi en blanding og en løsning, spill steg for steg, skjul farger eller sider for memoreringstrening."
+    },
+    "title": "3D Rubiks kube",
+    "intro": "Skriv inn en blanding og en løsning. Gå gjennom løsningen steg for steg, dra for å rotere visningen, og bruk læringsmodus for å øve på algoritmer.",
+    "scramble": {
+      "label": "Blanding",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Bruk blanding",
+      "reset": "Nullstill"
+    },
+    "solution": {
+      "label": "Løsning",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Ukjent: {token}"
+    },
+    "playback": {
+      "play": "Spill av",
+      "pause": "Pause",
+      "prev": "Forrige steg",
+      "next": "Neste steg",
+      "first": "Hopp til start",
+      "last": "Hopp til slutt",
+      "speed": "Hastighet"
+    },
+    "learning": {
+      "title": "Læringsmodus",
+      "master": "Aktiver",
+      "hideColors": "Skjul farger",
+      "hideFaces": "Skjul sider",
+      "faceLabel": {
+        "U": "Opp",
+        "R": "Høyre",
+        "F": "Foran",
+        "D": "Ned",
+        "L": "Venstre",
+        "B": "Bak"
+      },
+      "colorLabel": {
+        "white": "Hvit",
+        "red": "Rød",
+        "green": "Grønn",
+        "yellow": "Gul",
+        "orange": "Oransje",
+        "blue": "Blå"
+      }
+    },
+    "share": {
+      "copy": "Kopier delingslenke",
+      "copied": "Kopiert!"
+    }
   }
 }

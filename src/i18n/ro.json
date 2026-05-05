@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Buletin informativ",
-    "subscribe": "Abonează-te →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,12 +11,14 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Buletin informativ",
+    "subscribe": "Abonează-te →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Artist, Scriitor, Creator",
     "blogTitle": "Blog — Philo Li",
-    "blogDescription": "Articole despre artă, filozofie și construirea de lucruri.",
+    "blogDescription": "Articole despre artă, filosofie și construirea de lucruri.",
     "aboutTitle": "Despre — Philo Li",
     "aboutDescription": "Despre Philo Li — artist, scriitor și dezvoltator.",
     "artTitle": "Artă — Philo Li",
@@ -27,8 +27,10 @@
     "projectsDescription": "Proiecte de Philo Li.",
     "newsletterTitle": "Newsletter — Philo Li",
     "newsletterDescription": "Abonează-te la newsletterele lui Philo Li.",
-    "ebookTranslatorTitle": "Traducător de e-book-uri bilingve — Philo Li",
-    "ebookTranslatorDescription": "Încarcă un EPUB și tradu-l într-o ediție bilingvă cu propriul tău LLM API key. Rulează în întregime în browserul tău."
+    "ebookTranslatorTitle": "Traducător de cărți electronice bilingve — Philo Li",
+    "ebookTranslatorDescription": "Încarcă un EPUB și tradu-l într-o ediție bilingvă cu propriul tău API key pentru LLM. Rulează în întregime în browserul tău.",
+    "rubiksCubeTitle": "Cub Rubik 3D — Philo Li",
+    "rubiksCubeDescription": "Cub Rubik 3D interactiv. Setează o amestecare și o soluție, parcurge pas cu pas, ascunde culori sau fețe pentru exerciții de memorare."
   },
   "nav": {
     "blog": "Blog",
@@ -42,44 +44,44 @@
     "dark": "Întunecat",
     "light": "Luminos",
     "toggleAria": "Schimbă tema de culori",
-    "toggleToLight": "Comută la modul luminos",
-    "toggleToDark": "Comută la modul întunecat"
+    "toggleToLight": "Treci la modul luminos",
+    "toggleToDark": "Treci la modul întunecat"
   },
   "hero": {
     "line1": "Creează.",
     "line2": "Surprinde.",
-    "line3": "Făurește.",
-    "tagline": "Pictură, fotografie, scris și meșteșug. Din întâlnirea curiozității cu arta și codul s-au născut toate acestea.",
+    "line3": "Construiește.",
+    "tagline": "Pictez, fotografiez, scriu și construiesc lucruri. Asta se întâmplă când curiozitatea întâlnește măiestria și codul.",
     "labelLeft": "Artist",
     "labelRight": "Dezvoltator"
   },
   "recentPosts": {
     "label": "Scrieri recente",
-    "viewAll": "Vezi tot →"
+    "viewAll": "Vezi toate →"
   },
   "newsletterCta": {
-    "label": "Buletin informativ",
+    "label": "Newsletter",
     "headline": "Rămâi curios.",
-    "desc": "Gânduri despre artă, viață și creație — trimise direct în inbox-ul tău."
+    "desc": "Gânduri despre artă, viață și construirea de lucruri — livrate în căsuța de e-mail."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Artist · Scriitor · Dezvoltator",
-    "bioP1": "Sunt creator, programator și gânditor. Să creez lucruri de la zero e ceea ce-mi place cel mai mult — fie că e o pictură, un fragment de cod sau un eseu lung.",
-    "bioP2": "Multă vreme, cel mai mare obstacol în calea acestei pasiuni a fost propriul meu creier: am ADHD. După ce am încercat aproape toate instrumentele de productivitate de pe piață, mi-am dat seama că toate erau concepute pentru o minte neurotipică. Aveam nevoie de un „partener” — ceva care să mă înțeleagă și să-mi dea un imbold blând exact atunci când aveam cea mai mare nevoie.",
-    "bioP3": "Nu l-am găsit nicăieri. Așa că am decis să-l fac singur — pentru mine și pentru milioanele de oameni cu o „minte agitată” ca a mea. Așa a apărut Dopamind.",
+    "bioP1": "Sunt un creator, un programator și un gânditor. Îmi place să construiesc lucruri de la zero — fie că este o pictură, un fragment de cod sau un eseu aprofundat.",
+    "bioP2": "Multă vreme, cel mai mare obstacol în calea acestei pasiuni a fost propriul meu creier: am ADHD. După ce am încercat aproape toate instrumentele de productivitate de pe piață, am realizat că toate erau concepute pentru o minte neurotipică. Aveam nevoie de un „partener” — ceva care să mă înțeleagă și să-mi dea un imbold blând exact atunci când aveam cea mai mare nevoie.",
+    "bioP3": "Nu l-am găsit nicăieri. Așa că am decis să-l construiesc singur — pentru mine și pentru milioanele de alți oameni cu un „creier ocupat” la fel ca al meu. Așa s-a născut Dopamind.",
     "sectionProjects": "Proiecte",
-    "sectionNewsletter": "Buletin informativ",
+    "sectionNewsletter": "Newsletter",
     "sectionArtworks": "Lucrări de artă",
     "sectionReadMore": "Citește mai mult",
     "sectionFindMe": "Găsește-mă în altă parte",
-    "projectDopamindDesc": "Companionul tău AI",
+    "projectDopamindDesc": "Companionul tău AI zilnic",
     "projectPhiloArtDesc": "Galerie de artă digitală",
     "newsletterMediumDesc": "Eseuri",
     "artworksText": "Îmi postez lucrările de artă pe philoart.io/philo",
-    "artworksContactText": "Vrei să cumperi picturi originale sau printuri fotografice? Trimite-mi un DM pe X sau un e-mail la philo.li.official@gmail.com",
+    "artworksContactText": "Pentru a cumpăra picturi originale sau printuri fotografice, trimite un mesaj privat pe X sau un e-mail la philo.li.official@gmail.com",
     "extraEmail": "E-mail"
   },
   "artPage": {
@@ -91,16 +93,21 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Companionul tău AI. Îți e alături în fiecare zi și te ajută să ai o viață mai bună."
+        "description": "Companionul tău AI. Alături de tine în fiecare zi, ajutându-te să trăiești o viață mai bună."
       },
       "philoart": {
         "name": "PhiloArt",
-        "description": "Galeria mea personală de artă — fotografie, picturi și artă digitală."
+        "description": "Galeria mea personală de artă — fotografie, pictură și artă digitală."
       },
       "ebookTranslator": {
-        "name": "Traducător bilingv de e-book-uri",
-        "description": "Transformă orice e-book într-o ediție bilingvă — rulează direct în browser cu propriul tău LLM API key.",
+        "name": "Traducător Bilingv de E-book-uri",
+        "description": "Transformă orice e-book într-o ediție bilingvă — rulează în browserul tău cu propria cheie API LLM.",
         "cta": "Deschide instrumentul →"
+      },
+      "rubiksCube": {
+        "name": "Cub Rubik 3D",
+        "description": "Parcurge amestecările și soluțiile pe un cub 3D interactiv. Modul de învățare ascunde culorile și fețele pentru exersarea algoritmilor.",
+        "cta": "Deschide cubul →"
       }
     }
   },
@@ -110,15 +117,15 @@
   },
   "ebookTranslator": {
     "eyebrow": "Proiect",
-    "title": "Traducător bilingv de cărți electronice",
-    "subtitle": "Încarcă un EPUB, folosește propriul LLM API key și primește o ediție bilingvă cu textul original și cel tradus intercalate paragraf cu paragraf. Fișierul este procesat în întregime în browserul tău — cartea ta nu ajunge niciodată pe niciun server.",
+    "title": "Traducător Bilingv de E-book-uri",
+    "subtitle": "Încarcă un EPUB, folosește propria cheie API LLM și primește o ediție bilingvă cu textul original și cel tradus intercalate paragraf cu paragraf. Fișierul este procesat integral în browserul tău — cartea ta nu ajunge niciodată pe vreun server.",
     "steps": {
       "settings": "setări",
       "upload": "încărcare",
       "browse": "răsfoiește"
     },
     "actions": {
-      "cancelRunning": "Anulează procesul",
+      "cancelRunning": "Anulează rularea",
       "translateAllRemaining": "Tradu tot ce a rămas",
       "downloadEpub": "⬇ Descarcă EPUB",
       "building": "Se generează…",
@@ -128,47 +135,48 @@
       "hide": "Ascunde",
       "cancel": "Anulează",
       "retranslate": "Retraduce",
-      "resume": "Continuă",
+      "resume": "Reluare",
       "translateChapter": "Tradu acest capitol",
       "continue": "Continuă →"
     },
     "settings": {
       "provider": "Furnizor",
       "model": "Model",
-      "apiKey": "API Key",
-      "apiKeyPlaceholder": "Lipește cheia ta {provider}",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Lipește cheia {provider}",
       "apiKeyHint": "Obține una la {link}. Cheia ta este trimisă doar către {provider}, niciodată către philoli.com.",
-      "rememberKey": "Reține cheia doar în acest browser (localStorage). Debifează pentru dispozitivele partajate.",
+      "rememberKey": "Reține cheia doar în acest browser (localStorage). Debifează pentru dispozitive partajate.",
       "showApiKey": "Afișează API key",
-      "hideApiKey": "Ascunde cheia API",
+      "hideApiKey": "Ascunde API key",
       "translateFrom": "Tradu din",
       "translateTo": "Tradu în",
       "tone": "Ton",
       "customProvider": "Personalizat (compatibil OpenAI)",
-      "customModel": "ID model",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModel": "ID Model",
+      "customModelPlaceholder": "de ex. gpt-4o, deepseek-chat, …",
       "customEndpoint": "Endpoint API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
       "customEndpointHint": "URL complet către un endpoint /chat/completions compatibil OpenAI.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
-      "needApiKey": "Introdu o cheie API pentru a continua."
+      "openrouterModelPlaceholder": "de ex. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "de ex. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
+      "needApiKey": "Introdu un API key pentru a continua."
     },
     "upload": {
       "parsing": "Se analizează EPUB…",
       "dropTitle": "Trage un EPUB aici",
-      "dropSubtitle": "sau fă clic pentru a alege un fișier",
+      "dropSubtitle": "sau clic pentru a alege un fișier",
       "noChapters": "Nu s-au găsit capitole lizibile în acest EPUB."
     },
     "browse": {
       "chapters": "Capitole",
       "toneTitle": "Tonul traducerii — afectează stilul scrierii",
       "paragraphCount": "{nodes} paragrafe · {translated} traduse",
-      "errorOne": "{count} paragraf a eșuat. Poți retraduce pentru a reîncerca — paragrafele deja traduse sunt omise.",
-      "errorMany": "{count} paragrafe au eșuat. Poți retraduce pentru a reîncerca — paragrafele deja traduse sunt omise.",
-      "noTranslatableText": "Acest capitol nu are text traductibil (copertă, prefață etc.).",
+      "errorOne": "{count} paragraf a eșuat. Poți retraduce pentru a reîncerca — paragrafele deja finalizate sunt omise.",
+      "errorMany": "{count} paragrafe au eșuat. Poți retraduce pentru a reîncerca — paragrafele deja finalizate sunt omise.",
+      "noTranslatableText": "Acest capitol nu are text traductibil (copertă, pagini introductive etc.).",
       "translatingAria": "Se traduce",
       "translatingLabel": "se traduce…",
-      "buildFailed": "Eroare la generarea EPUB:"
+      "buildFailed": "Eșec la generarea EPUB:"
     },
     "tones": {
       "idiomatic": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotografie",
     "art": "Artă"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "Cub Rubik 3D — Philo Li",
+      "description": "Cub Rubik 3D interactiv. Configurează o amestecare și o soluție, redă pas cu pas, ascunde culori sau fețe pentru exerciții de memorare."
+    },
+    "title": "Cub Rubik 3D",
+    "intro": "Introdu un amestec și o soluție. Parcurge rezolvarea pas cu pas, trage pentru a roti vederea și folosește modul de învățare pentru a exersa algoritmii.",
+    "scramble": {
+      "label": "Amestec",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Aplică amestecul",
+      "reset": "Resetează"
+    },
+    "solution": {
+      "label": "Soluție",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Nerecunoscut: {token}"
+    },
+    "playback": {
+      "play": "Redă",
+      "pause": "Pauză",
+      "prev": "Pasul anterior",
+      "next": "Pasul următor",
+      "first": "Sari la început",
+      "last": "Sari la sfârșit",
+      "speed": "Viteză"
+    },
+    "learning": {
+      "title": "Mod învățare",
+      "master": "Activează",
+      "hideColors": "Ascunde culorile",
+      "hideFaces": "Ascunde fețele",
+      "faceLabel": {
+        "U": "Sus",
+        "R": "Dreapta",
+        "F": "Față",
+        "D": "Jos",
+        "L": "Stânga",
+        "B": "Spate"
+      },
+      "colorLabel": {
+        "white": "Alb",
+        "red": "Roșu",
+        "green": "Verde",
+        "yellow": "Galben",
+        "orange": "Portocaliu",
+        "blue": "Albastru"
+      }
+    },
+    "share": {
+      "copy": "Copiază linkul de partajare",
+      "copied": "Copiat!"
+    }
   }
 }

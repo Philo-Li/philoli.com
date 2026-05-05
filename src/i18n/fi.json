@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Uutiskirje",
-    "subscribe": "Tilaa →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,22 +11,26 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Uutiskirje",
+    "subscribe": "Tilaa →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Taiteilija, kirjoittaja, luoja",
     "blogTitle": "Blogi — Philo Li",
     "blogDescription": "Artikkeleita taiteesta, filosofiasta ja asioiden rakentamisesta.",
     "aboutTitle": "Tietoa — Philo Li",
-    "aboutDescription": "Tietoa Philo Li:stä — taiteilija, kirjoittaja ja kehittäjä.",
+    "aboutDescription": "Tietoa Philo Listä — taiteilija, kirjoittaja ja kehittäjä.",
     "artTitle": "Taide — Philo Li",
-    "artDescription": "Valokuvausta, maalausta ja digitaalista taidetta Philo Li:ltä.",
+    "artDescription": "Valokuvausta, maalausta ja digitaalista taidetta Philo Liltä.",
     "projectsTitle": "Projektit — Philo Li",
-    "projectsDescription": "Philo Li:n projekteja.",
+    "projectsDescription": "Philo Lin projekteja.",
     "newsletterTitle": "Uutiskirje — Philo Li",
-    "newsletterDescription": "Tilaa Philo Li:n uutiskirjeet.",
+    "newsletterDescription": "Tilaa Philo Lin uutiskirjeet.",
     "ebookTranslatorTitle": "Kaksikielinen e-kirjojen kääntäjä — Philo Li",
-    "ebookTranslatorDescription": "Lataa EPUB ja käännä se kaksikieliseksi painokseksi omalla LLM API key -avaimellasi. Toimii kokonaan selaimessasi."
+    "ebookTranslatorDescription": "Lataa EPUB-tiedosto ja käännä se kaksikieliseksi versioksi omalla LLM API key -avaimellasi. Toimii kokonaan selaimessasi.",
+    "rubiksCubeTitle": "3D Rubikin kuutio — Philo Li",
+    "rubiksCubeDescription": "Interaktiivinen 3D Rubikin kuutio. Aseta sekoitus ja ratkaisu, pelaa vaihe vaiheelta, piilota värejä tai sivuja muistiharjoittelua varten."
   },
   "nav": {
     "blog": "Blogi",
@@ -36,7 +38,7 @@
     "projects": "Projektit",
     "newsletter": "Uutiskirje",
     "about": "Tietoa",
-    "menuLabel": "Valikko"
+    "menuLabel": "Avaa/sulje valikko"
   },
   "theme": {
     "dark": "Tumma",
@@ -49,7 +51,7 @@
     "line1": "Luo.",
     "line2": "Ikuista.",
     "line3": "Rakenna.",
-    "tagline": "Maalaan, valokuvaan, kirjoitan ja rakennan. Kun uteliaisuus kohtaa taiteen ja koodin, syntyy kaikki tämä.",
+    "tagline": "Maalaan, valokuvaan, kirjoitan ja rakennan asioita. Tätä tapahtuu, kun uteliaisuus kohtaa taidon ja koodin.",
     "labelLeft": "Taiteilija",
     "labelRight": "Kehittäjä"
   },
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "Uutiskirje",
     "headline": "Pysy uteliaana.",
-    "desc": "Ajatuksia taiteesta, elämästä ja asioiden luomisesta — suoraan sähköpostiisi."
+    "desc": "Ajatuksia taiteesta, elämästä ja asioiden rakentamisesta — suoraan sähköpostiisi."
   },
   "blogPage": {
     "title": "Blogi"
   },
   "aboutPage": {
     "tagline": "Taiteilija · Kirjoittaja · Kehittäjä",
-    "bioP1": "Olen luoja, ohjelmoija ja ajattelija. Rakastan luoda asioita tyhjästä — oli kyseessä sitten maalaus, pätkä koodia tai syvällinen essee.",
-    "bioP2": "Pitkään suurin este tälle intohimolle oli omat aivoni: minulla on ADHD. Kokeiltuani lähes jokaista markkinoilla olevaa tuottavuustyökalua tajusin, että ne kaikki oli suunniteltu neurotyypillisille mielille. Tarvitsin ”kumppanin” — jotain, joka ymmärtäisi minua ja voisi antaa lempeän tönäisyn juuri silloin, kun tarvitsen sitä eniten.",
-    "bioP3": "En löytänyt sellaista mistään. Niinpä päätin rakentaa sen itse — itseäni ja niitä miljoonia muita varten, joilla on samanlainen ”vilkas mieli” kuin minulla. Siten Dopamind sai alkunsa.",
+    "bioP1": "Olen luoja, ohjelmoija ja ajattelija. Rakastan asioiden rakentamista tyhjästä — oli kyseessä sitten maalaus, koodinpätkä tai syväluotaava essee.",
+    "bioP2": "Pitkään suurin este tälle intohimolle oli omat aivoni: minulla on ADHD. Kokeiltuani lähes kaikkia markkinoilla olevia tuottavuustyökaluja tajusin, että ne kaikki oli suunniteltu neurotyypilliselle mielelle. Tarvitsin \"kumppanin\" — jotain, joka ymmärtäisi minua ja voisi antaa lempeän sysäyksen juuri silloin, kun tarvitsen sitä eniten.",
+    "bioP3": "En löytänyt sellaista mistään. Joten päätin rakentaa sen itse — itselleni ja miljoonille muille, joilla on samanlainen \"vilkas mieli\" kuin minulla. Näin Dopamind syntyi.",
     "sectionProjects": "Projektit",
     "sectionNewsletter": "Uutiskirje",
     "sectionArtworks": "Taideteokset",
     "sectionReadMore": "Lue lisää",
-    "sectionFindMe": "Löydät minut muualta",
+    "sectionFindMe": "Löydät minut myös täältä",
     "projectDopamindDesc": "Päivittäinen AI-kumppanisi",
     "projectPhiloArtDesc": "Digitaalinen taidegalleria",
     "newsletterMediumDesc": "Esseet",
-    "artworksText": "Julkaisen taideteokseni osoitteessa philoart.io/philo",
-    "artworksContactText": "Haluatko ostaa alkuperäisiä maalauksia tai valokuvavedoksia? Laita yksityisviestiä X:ssä tai meiliä osoitteeseen philo.li.official@gmail.com",
+    "artworksText": "Julkaisen taideteoksiani osoitteessa philoart.io/philo",
+    "artworksContactText": "Jos haluat ostaa alkuperäisiä maalauksia tai valokuvavedoksia, lähetä yksityisviesti X:ssä tai sähköpostia osoitteeseen philo.li.official@gmail.com",
     "extraEmail": "Sähköposti"
   },
   "artPage": {
@@ -91,16 +93,21 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "AI-kumppanisi. Tukenasi joka päivä, auttamassa sinua elämään parempaa elämää."
+        "description": "AI-kumppanisi. Rinnallasi joka päivä, auttaen sinua elämään parempaa elämää."
       },
       "philoart": {
         "name": "PhiloArt",
         "description": "Henkilökohtainen taidegalleriani — valokuvausta, maalauksia ja digitaalista taidetta."
       },
       "ebookTranslator": {
-        "name": "Kaksikielinen e-kirjojen kääntäjä",
-        "description": "Muuta mikä tahansa EPUB-kirja kaksikieliseksi — toimii selaimessasi omalla LLM API keylläsi.",
+        "name": "Kaksikielinen e-kirjan kääntäjä",
+        "description": "Muuta mikä tahansa e-kirja kaksikieliseksi painokseksi — toimii selaimessasi omalla LLM API key -avaimellasi.",
         "cta": "Avaa työkalu →"
+      },
+      "rubiksCube": {
+        "name": "3D-Rubikin kuutio",
+        "description": "Käy läpi sekoitukset ja ratkaisut interaktiivisella 3D-kuutiolla. Oppimistila piilottaa värejä ja tahkoja algoritmiharjoituksia varten.",
+        "cta": "Avaa kuutio →"
       }
     }
   },
@@ -111,7 +118,7 @@
   "ebookTranslator": {
     "eyebrow": "Projekti",
     "title": "Kaksikielinen e-kirjan kääntäjä",
-    "subtitle": "Lataa EPUB, käytä omaa LLM API key -avaintasi ja saat kaksikielisen version, jossa alkuperäinen ja käännetty teksti on sijoitettu lomittain kappale kerrallaan. Tiedosto käsitellään kokonaan selaimessasi — kirjasi ei koskaan päädy palvelimelle.",
+    "subtitle": "Lataa EPUB, käytä omaa LLM API key -avaintasi ja saat takaisin kaksikielisen painoksen, jossa alkuperäinen ja käännetty teksti on lomitettu kappaleittain. Tiedosto käsitellään kokonaan selaimessasi — kirjasi ei koskaan päädy palvelimelle.",
     "steps": {
       "settings": "asetukset",
       "upload": "lataa",
@@ -133,7 +140,7 @@
       "continue": "Jatka →"
     },
     "settings": {
-      "provider": "Tarjoaja",
+      "provider": "Palveluntarjoaja",
       "model": "Malli",
       "apiKey": "API key",
       "apiKeyPlaceholder": "Liitä {provider}-avaimesi",
@@ -145,16 +152,17 @@
       "translateTo": "Käännä kielelle",
       "tone": "Sävy",
       "customProvider": "Mukautettu (OpenAI-yhteensopiva)",
-      "customModel": "Mallin ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModel": "Mallin tunnus",
+      "customModelPlaceholder": "esim. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API-päätepiste",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Koko URL OpenAI-yhteensopivaan /chat/completions-päätepisteeseen.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "Täysi URL-osoite OpenAI-yhteensopivaan /chat/completions-päätepisteeseen.",
+      "openrouterModelPlaceholder": "esim. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "esim. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Syötä API key jatkaaksesi."
     },
     "upload": {
-      "parsing": "Jäsennellään EPUB-tiedostoa…",
+      "parsing": "Jäsennetään EPUB-tiedostoa…",
       "dropTitle": "Pudota EPUB tähän",
       "dropSubtitle": "tai valitse tiedosto klikkaamalla",
       "noChapters": "Tästä EPUB-tiedostosta ei löytynyt luettavia lukuja."
@@ -163,8 +171,8 @@
       "chapters": "Luvut",
       "toneTitle": "Käännöksen sävy — vaikuttaa kirjoitustyyliin",
       "paragraphCount": "{nodes} kappaletta · {translated} käännetty",
-      "errorOne": "{count} kappale epäonnistui. Voit yrittää kääntämistä uudelleen — jo käännetyt kappaleet ohitetaan.",
-      "errorMany": "{count} kappaletta epäonnistui. Voit yrittää kääntämistä uudelleen — jo käännetyt kappaleet ohitetaan.",
+      "errorOne": "{count} kappale epäonnistui. Voit yrittää uudelleen — jo käännetyt kappaleet ohitetaan.",
+      "errorMany": "{count} kappaletta epäonnistui. Voit yrittää uudelleen — jo käännetyt kappaleet ohitetaan.",
       "noTranslatableText": "Tässä luvussa ei ole käännettävää tekstiä (kansi, alkusanat jne.).",
       "translatingAria": "Käännetään",
       "translatingLabel": "käännetään…",
@@ -172,16 +180,16 @@
     },
     "tones": {
       "idiomatic": {
-        "label": "Idiomaattinen",
-        "hint": "luonnollinen ja sujuva — useimmat kirjat"
+        "label": "Luonteva",
+        "hint": "luonnollinen & sujuva — useimmat kirjat"
       },
       "literary": {
         "label": "Kirjallinen",
-        "hint": "romaanit ja kaunokirjallisuus"
+        "hint": "romaanit & kaunokirjallisuus"
       },
       "technical": {
         "label": "Tekninen",
-        "hint": "ammatti- ja hakuteokset"
+        "hint": "ammatti- & hakuteokset"
       }
     },
     "modelHints": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Valokuvaus",
     "art": "Taide"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubikin kuutio — Philo Li",
+      "description": "Interaktiivinen 3D Rubikin kuutio. Aseta sekoitus ja ratkaisu, toista vaihe vaiheelta, piilota värejä tai sivuja muistiharjoittelua varten."
+    },
+    "title": "3D Rubikin kuutio",
+    "intro": "Kirjoita sekoitus ja ratkaisu. Käy ratkaisu läpi vaiheittain, vedä kääntääksesi näkymää ja käytä oppimistilaa algoritmien harjoitteluun.",
+    "scramble": {
+      "label": "Sekoitus",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Käytä sekoitusta",
+      "reset": "Nollaa"
+    },
+    "solution": {
+      "label": "Ratkaisu",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Tuntematon: {token}"
+    },
+    "playback": {
+      "play": "Toista",
+      "pause": "Tauko",
+      "prev": "Edellinen vaihe",
+      "next": "Seuraava vaihe",
+      "first": "Hyppää alkuun",
+      "last": "Hyppää loppuun",
+      "speed": "Nopeus"
+    },
+    "learning": {
+      "title": "Oppimistila",
+      "master": "Ota käyttöön",
+      "hideColors": "Piilota värit",
+      "hideFaces": "Piilota sivut",
+      "faceLabel": {
+        "U": "Ylä",
+        "R": "Oikea",
+        "F": "Etu",
+        "D": "Ala",
+        "L": "Vasen",
+        "B": "Taka"
+      },
+      "colorLabel": {
+        "white": "Valkoinen",
+        "red": "Punainen",
+        "green": "Vihreä",
+        "yellow": "Keltainen",
+        "orange": "Oranssi",
+        "blue": "Sininen"
+      }
+    },
+    "share": {
+      "copy": "Kopioi jakolinkki",
+      "copied": "Kopioitu!"
+    }
   }
 }

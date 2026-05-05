@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Newsletter",
-    "subscribe": "Odoberať →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,22 +11,26 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Odber noviniek",
+    "subscribe": "Prihlásiť sa na odber →"
   },
   "metadata": {
     "siteTitle": "Philo Li — umelec, spisovateľ, tvorca",
     "blogTitle": "Blog — Philo Li",
     "blogDescription": "Články o umení, filozofii a tvorení vecí.",
     "aboutTitle": "O mne — Philo Li",
-    "aboutDescription": "O Philo Li — umelcovi, spisovateľovi a vývojárovi.",
+    "aboutDescription": "O Philo Li — umelec, spisovateľ a vývojár.",
     "artTitle": "Umenie — Philo Li",
     "artDescription": "Fotografia, maľba a digitálne umenie od Philo Li.",
     "projectsTitle": "Projekty — Philo Li",
     "projectsDescription": "Projekty od Philo Li.",
     "newsletterTitle": "Newsletter — Philo Li",
     "newsletterDescription": "Prihláste sa na odber newsletterov Philo Li.",
-    "ebookTranslatorTitle": "Bilingválny prekladač e-kníh — Philo Li",
-    "ebookTranslatorDescription": "Nahrajte EPUB a preložte ho do bilingválneho vydania pomocou vlastného LLM API key. Beží úplne vo vašom prehliadači."
+    "ebookTranslatorTitle": "Dvojjazyčný prekladač e-kníh — Philo Li",
+    "ebookTranslatorDescription": "Nahrajte EPUB a preložte ho do dvojjazyčného vydania pomocou vlastného API key pre LLM. Beží úplne vo vašom prehliadači.",
+    "rubiksCubeTitle": "3D Rubikova kocka — Philo Li",
+    "rubiksCubeDescription": "Interaktívna 3D Rubikova kocka. Nastavte si zamiešanie a riešenie, hrajte krok za krokom, skryte farby alebo steny pre nácvik pamäte."
   },
   "nav": {
     "blog": "Blog",
@@ -49,37 +51,37 @@
     "line1": "Tvoriť.",
     "line2": "Zachytiť.",
     "line3": "Budovať.",
-    "tagline": "Maľujem, fotografujem, píšem a vlastnoručne tvorím. Keď sa zvedavosť stretne s umením a kódom, rodí sa tento svet.",
+    "tagline": "Maľujem, fotografujem, píšem a budujem veci. Toto sa stane, keď sa zvedavosť stretne s remeslom a kódom.",
     "labelLeft": "Umelec",
     "labelRight": "Vývojár"
   },
   "recentPosts": {
-    "label": "Najnovšie texty",
+    "label": "Nedávne texty",
     "viewAll": "Zobraziť všetko →"
   },
   "newsletterCta": {
     "label": "Newsletter",
     "headline": "Zostaňte zvedaví.",
-    "desc": "Myšlienky o umení, živote a tvorení vecí — priamo do tvojej schránky."
+    "desc": "Myšlienky o umení, živote a tvorení vecí — doručené do vašej schránky."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Umelec · Spisovateľ · Vývojár",
-    "bioP1": "Som tvorca, programátor a mysliteľ. Tvorenie vecí úplne od nuly je to, čo ma baví najviac — či už je to obraz, kus kódu alebo hĺbková esej.",
-    "bioP2": "Dlho bol najväčšou prekážkou tejto vášne môj vlastný mozog: mám ADHD. Po vyskúšaní takmer každého nástroja na produktivitu na trhu som si uvedomil, že všetky boli navrhnuté pre neurotypickú myseľ. Potreboval som „partnera“ — niečo, čo by mi rozumelo a jemne ma postrčilo práve vtedy, keď to najviac potrebujem.",
-    "bioP3": "Nikde som to nemohol nájsť. Tak som sa rozhodol, že si to vytvorím sám — pre seba a pre milióny ďalších, ktorí majú „nepokojnú myseľ“ presne ako ja. Tak sa zrodil Dopamind.",
+    "bioP1": "Som tvorca, programátor a mysliteľ. Rád tvorím veci od nuly — či už je to obraz, kus kódu alebo hĺbková esej.",
+    "bioP2": "Dlhý čas bol najväčšou prekážkou tejto vášne môj vlastný mozog: mám ADHD. Po vyskúšaní takmer každého nástroja na produktivitu na trhu som si uvedomil, že všetky boli navrhnuté pre neurotypickú myseľ. Potreboval som „partnera“ — niečo, čo by mi rozumelo a jemne ma postrčilo presne vtedy, keď som to najviac potreboval.",
+    "bioP3": "Nikde som ho nemohol nájsť. Tak som sa rozhodol, že si ho postavím sám — pre seba a pre milióny ďalších s „rušným mozgom“, ako je ten môj. Tak sa zrodil Dopamind.",
     "sectionProjects": "Projekty",
     "sectionNewsletter": "Newsletter",
     "sectionArtworks": "Umelecké diela",
     "sectionReadMore": "Čítať viac",
-    "sectionFindMe": "Nájdete ma inde",
-    "projectDopamindDesc": "Tvoj každodenný AI spoločník",
+    "sectionFindMe": "Nájdete ma aj inde",
+    "projectDopamindDesc": "Váš každodenný AI spoločník",
     "projectPhiloArtDesc": "Galéria digitálneho umenia",
     "newsletterMediumDesc": "Eseje",
-    "artworksText": "Svoju tvorbu zverejňujem na philoart.io/philo",
-    "artworksContactText": "Chceš si kúpiť originálny obraz alebo umeleckú fotografiu? Napíš mi správu na X alebo pošli mail na philo.li.official@gmail.com",
+    "artworksText": "Svoje diela zverejňujem na philoart.io/philo",
+    "artworksContactText": "Pre zakúpenie originálnych obrazov alebo fotografických printov mi napíšte DM na X alebo e-mail na philo.li.official@gmail.com",
     "extraEmail": "E-mail"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Tvoj AI spoločník. Je tu pre teba každý deň a pomáha ti žiť o niečo lepšie."
+        "description": "Váš AI spoločník. Po vašom boku každý deň, pomáha vám žiť lepší život."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "Bilingválny prekladač e-kníh",
-        "description": "Premeň akúkoľvek e-knihu na dvojjazyčnú — beží to priamo v tvojom prehliadači a s tvojím vlastným LLM API key.",
+        "description": "Premeňte akúkoľvek e-knihu na bilingválne vydanie — beží vo vašom prehliadači s vaším vlastným LLM API key.",
         "cta": "Otvoriť nástroj →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubikova kocka",
+        "description": "Prechádzajte miešania a riešenia na interaktívnej 3D kocke. Režim učenia skrýva farby a steny pre nácvik algoritmov.",
+        "cta": "Otvoriť kocku →"
       }
     }
   },
@@ -111,7 +118,7 @@
   "ebookTranslator": {
     "eyebrow": "Projekt",
     "title": "Bilingválny prekladač e-kníh",
-    "subtitle": "Nahrajte EPUB, použite vlastný API kľúč pre LLM a získajte bilingválnu edíciu s pôvodným a preloženým textom striedajúcim sa odsek po odseku. Súbor sa spracováva výhradne vo vašom prehliadači — vaša kniha sa nikdy neodošle na žiadny server.",
+    "subtitle": "Nahrajte EPUB, použite svoj vlastný LLM API key a získajte bilingválne vydanie s pôvodným a preloženým textom striedajúcim sa po odsekoch. Súbor sa spracováva výhradne vo vašom prehliadači — vaša kniha sa nikdy nedostane na žiadny server.",
     "steps": {
       "settings": "nastavenia",
       "upload": "nahrať",
@@ -119,7 +126,7 @@
     },
     "actions": {
       "cancelRunning": "Zrušiť prebiehajúce",
-      "translateAllRemaining": "Preložiť všetky zostávajúce",
+      "translateAllRemaining": "Preložiť všetko zostávajúce",
       "downloadEpub": "⬇ Stiahnuť EPUB",
       "building": "Vytvára sa…",
       "back": "← Späť",
@@ -135,22 +142,23 @@
     "settings": {
       "provider": "Poskytovateľ",
       "model": "Model",
-      "apiKey": "API kľúč",
-      "apiKeyPlaceholder": "Vložte svoj kľúč pre {provider}",
-      "apiKeyHint": "Získajte ho na {link}. Váš kľúč sa odosiela iba poskytovateľovi {provider}, nikdy nie na philoli.com.",
-      "rememberKey": "Zapamätať kľúč iba v tomto prehliadači (localStorage). Zrušte zaškrtnutie pri zdieľaných zariadeniach.",
-      "showApiKey": "Zobraziť API kľúč",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Vložte svoj {provider} kľúč",
+      "apiKeyHint": "Získajte ho na {link}. Váš kľúč sa odosiela iba do {provider}, nikdy nie na philoli.com.",
+      "rememberKey": "Zapamätať kľúč iba v tomto prehliadači (localStorage). Zrušte začiarknutie pri zdieľaných zariadeniach.",
+      "showApiKey": "Zobraziť API key",
       "hideApiKey": "Skryť API key",
       "translateFrom": "Preložiť z",
       "translateTo": "Preložiť do",
       "tone": "Tón",
-      "customProvider": "Vlastný (kompatibilný s OpenAI)",
+      "customProvider": "Vlastné (kompatibilné s OpenAI)",
       "customModel": "ID modelu",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
+      "customModelPlaceholder": "napr. gpt-4o, deepseek-chat, …",
       "customEndpoint": "Koncový bod API",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Úplná URL adresa k OpenAI-kompatibilnému koncovému bodu /chat/completions.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "Úplná URL adresa ku koncovému bodu /chat/completions kompatibilnému s OpenAI.",
+      "openrouterModelPlaceholder": "napr. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "napr. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Pre pokračovanie zadajte API key."
     },
     "upload": {
@@ -163,11 +171,11 @@
       "chapters": "Kapitoly",
       "toneTitle": "Tón prekladu — ovplyvňuje štýl písania",
       "paragraphCount": "{nodes} odsekov · {translated} preložených",
-      "errorOne": "{count} odsek zlyhal. Pre opakovanie môžete preklad spustiť znova — už hotové odseky sa vynechajú.",
-      "errorMany": "{count} odsekov zlyhalo. Pre opakovanie môžete preklad spustiť znova — už hotové odseky sa vynechajú.",
-      "noTranslatableText": "Táto kapitola neobsahuje žiadny text na preklad (obálka, úvodné informácie atď.).",
+      "errorOne": "{count} odsek zlyhal. Môžete skúsiť preložiť znova — už hotové odseky budú vynechané.",
+      "errorMany": "{count} odsekov zlyhalo. Môžete skúsiť preložiť znova — už hotové odseky budú vynechané.",
+      "noTranslatableText": "Táto kapitola neobsahuje žiadny preložiteľný text (obálka, úvodné informácie atď.).",
       "translatingAria": "Prekladám",
-      "translatingLabel": "prekladám…",
+      "translatingLabel": "prekladá sa…",
       "buildFailed": "Nepodarilo sa vytvoriť EPUB:"
     },
     "tones": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotografia",
     "art": "Umenie"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubikova kocka — Philo Li",
+      "description": "Interaktívna 3D Rubikova kocka. Nastavte si zamiešanie a riešenie, hrajte krok za krokom, skryte farby alebo steny pre nácvik pamäte."
+    },
+    "title": "3D Rubikova kocka",
+    "intro": "Zadajte zamiešanie a riešenie. Prechádzajte riešením po krokoch, ťahaním otáčajte pohľad a použite režim učenia na precvičovanie algoritmov.",
+    "scramble": {
+      "label": "Zamiešanie",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Použiť zamiešanie",
+      "reset": "Resetovať"
+    },
+    "solution": {
+      "label": "Riešenie",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Nerozpoznané: {token}"
+    },
+    "playback": {
+      "play": "Prehrať",
+      "pause": "Pozastaviť",
+      "prev": "Predchádzajúci krok",
+      "next": "Nasledujúci krok",
+      "first": "Skočiť na začiatok",
+      "last": "Skočiť na koniec",
+      "speed": "Rýchlosť"
+    },
+    "learning": {
+      "title": "Režim učenia",
+      "master": "Zapnúť",
+      "hideColors": "Skryť farby",
+      "hideFaces": "Skryť steny",
+      "faceLabel": {
+        "U": "Hore",
+        "R": "Vpravo",
+        "F": "Vpredu",
+        "D": "Dole",
+        "L": "Vľavo",
+        "B": "Vzadu"
+      },
+      "colorLabel": {
+        "white": "Biela",
+        "red": "Červená",
+        "green": "Zelená",
+        "yellow": "Žltá",
+        "orange": "Oranžová",
+        "blue": "Modrá"
+      }
+    },
+    "share": {
+      "copy": "Kopírovať odkaz na zdieľanie",
+      "copied": "Skopírované!"
+    }
   }
 }

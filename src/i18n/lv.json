@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Jaunumi",
-    "subscribe": "Abonēt →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Jaunumu vēstule",
+    "subscribe": "Abonēt →"
   },
   "metadata": {
     "siteTitle": "Philo Li — mākslinieks, rakstnieks, radītājs",
@@ -28,7 +28,9 @@
     "newsletterTitle": "Biļetens — Philo Li",
     "newsletterDescription": "Pieraksties Philo Li jaunumiem.",
     "ebookTranslatorTitle": "Divvalodu e-grāmatu tulkotājs — Philo Li",
-    "ebookTranslatorDescription": "Augšupielādē EPUB un pārtulko to divvalodu izdevumā, izmantojot savu LLM API key. Darbojas pilnībā tavā pārlūkprogrammā."
+    "ebookTranslatorDescription": "Augšupielādē EPUB un pārtulko to divvalodu izdevumā, izmantojot savu LLM API key. Darbojas pilnībā tavā pārlūkprogrammā.",
+    "rubiksCubeTitle": "3D Rubika kubs — Philo Li",
+    "rubiksCubeDescription": "Interaktīvs 3D Rubika kubs. Iestati sajaukšanu un atrisinājumu, spēlē soli pa solim, paslēp krāsas vai skaldnes iegaumēšanas treniņiem."
   },
   "nav": {
     "blog": "Blogs",
@@ -47,9 +49,9 @@
   },
   "hero": {
     "line1": "Radīt.",
-    "line2": "Tvert.",
+    "line2": "Iemūžināt.",
     "line3": "Būvēt.",
-    "tagline": "Es gleznoju, fotografēju, rakstu un radu lietas. Zinātkārei sastopoties ar meistarību un kodu, top šis viss.",
+    "tagline": "Es gleznoju, fotografēju, rakstu un būvēju lietas. Tas ir rezultāts, kad zinātkāre satiekas ar amatu un kodu.",
     "labelLeft": "Mākslinieks",
     "labelRight": "Izstrādātājs"
   },
@@ -59,17 +61,17 @@
   },
   "newsletterCta": {
     "label": "Biļetens",
-    "headline": "Paliec zinātkārs.",
-    "desc": "Pārdomas par mākslu, dzīvi un lietu radīšanu — tieši tavā e-pastā."
+    "headline": "Saglabā zinātkāri.",
+    "desc": "Pārdomas par mākslu, dzīvi un lietu radīšanu — tavā iesūtnē."
   },
   "blogPage": {
     "title": "Blogs"
   },
   "aboutPage": {
     "tagline": "Mākslinieks · Rakstnieks · Izstrādātājs",
-    "bioP1": "Esmu radītājs, programmētājs un domātājs. Radīt lietas no nulles ir tas, ko izbaudu visvairāk — vai tā būtu glezna, kods vai pamatīga eseja.",
-    "bioP2": "Ilgu laiku lielākais šķērslis šai kaislībai bija mana paša smadzenes: man ir ADHD. Izmēģinājis gandrīz visus tirgū pieejamos produktivitātes rīkus, es sapratu, ka tie visi ir paredzēti neirotipiskam prātam. Man bija vajadzīgs \"partneris\" — kaut kas, kas mani saprastu un dotu maigu pamudinājumu tieši tad, kad tas man visvairāk nepieciešams.",
-    "bioP3": "Nekur nevarēju ko tādu atrast. Tāpēc nolēmu uztaisīt pats — sev un miljoniem citu, kuriem ir tikpat \"nemierīgs prāts\" kā man. Tā piedzima Dopamind.",
+    "bioP1": "Esmu radītājs, programmētājs un domātājs. Man patīk radīt lietas no nulles — vai tā būtu glezna, koda fragments vai padziļināta eseja.",
+    "bioP2": "Ilgu laiku lielākais šķērslis šai kaislībai bija mans prāts: man ir ADHD. Izmēģinājis gandrīz visus tirgū pieejamos produktivitātes rīkus, es sapratu, ka tie visi ir paredzēti neirotipiskam prātam. Man bija vajadzīgs \"partneris\" — kaut kas, kas mani saprastu un sniegtu maigu pamudinājumu tieši tad, kad tas visvairāk nepieciešams.",
+    "bioP3": "Es to nekur nevarēju atrast. Tāpēc nolēmu to izveidot pats — sev un miljoniem citu ar \"aizņemtu prātu\", tādu pašu kā manējais. Tā piedzima Dopamind.",
     "sectionProjects": "Projekti",
     "sectionNewsletter": "Biļetens",
     "sectionArtworks": "Mākslas darbi",
@@ -78,8 +80,8 @@
     "projectDopamindDesc": "Tavs ikdienas AI biedrs",
     "projectPhiloArtDesc": "Digitālās mākslas galerija",
     "newsletterMediumDesc": "Esejas",
-    "artworksText": "Savus mākslas darbus publicēju philoart.io/philo",
-    "artworksContactText": "Vēlies iegādāties oriģinālgleznas vai fotogrāfiju izdrukas? Raksti man X vai sūti e-pastu uz philo.li.official@gmail.com",
+    "artworksText": "Es publicēju savus mākslas darbus vietnē philoart.io/philo",
+    "artworksContactText": "Lai iegādātos oriģinālas gleznas vai fotogrāfiju izdrukas, raksti DM platformā X vai sūti e-pastu uz philo.li.official@gmail.com",
     "extraEmail": "E-pasts"
   },
   "artPage": {
@@ -91,7 +93,7 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Tavs AI biedrs. Tev blakus katru dienu, palīdzot dzīvot labāk."
+        "description": "Tavs AI biedrs. Tev blakus katru dienu, palīdzot dzīvot labāku dzīvi."
       },
       "philoart": {
         "name": "PhiloArt",
@@ -99,8 +101,13 @@
       },
       "ebookTranslator": {
         "name": "Divvalodu e-grāmatu tulkotājs",
-        "description": "Pārvērt jebkuru e-grāmatu divvalodu izdevumā — darbojas tavā pārlūkprogrammā ar tavu LLM API key.",
+        "description": "Pārvērtiet jebkuru e-grāmatu divvalodu izdevumā — darbojas jūsu pārlūkprogrammā ar jūsu LLM API key.",
         "cta": "Atvērt rīku →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubika kubs",
+        "description": "Izpētiet sajaukumus un risinājumus interaktīvā 3D kubā. Mācību režīms paslēpj krāsas un skaldnes algoritmu treniņiem.",
+        "cta": "Atvērt kubu →"
       }
     }
   },
@@ -111,7 +118,7 @@
   "ebookTranslator": {
     "eyebrow": "Projekts",
     "title": "Divvalodu e-grāmatu tulkotājs",
-    "subtitle": "Augšupielādējiet EPUB, izmantojiet savu LLM API key un saņemiet divvalodu izdevumu, kurā oriģinālais un tulkotais teksts ir izvietoti pamīšus pa rindkopām. Fails tiek apstrādāts tikai jūsu pārlūkprogrammā — jūsu grāmata nekad nenonāk nevienā serverī.",
+    "subtitle": "Augšupielādējiet EPUB, izmantojiet savu LLM API key un saņemiet divvalodu izdevumu, kurā oriģinālais un tulkotais teksts ir sakārtots pa rindkopām. Fails tiek apstrādāts tikai jūsu pārlūkprogrammā — jūsu grāmata nekad nenonāk nevienā serverī.",
     "steps": {
       "settings": "iestatījumi",
       "upload": "augšupielādēt",
@@ -121,13 +128,13 @@
       "cancelRunning": "Atcelt izpildi",
       "translateAllRemaining": "Tulkot visu atlikušo",
       "downloadEpub": "⬇ Lejupielādēt EPUB",
-      "building": "Veido…",
+      "building": "Notiek izveide…",
       "back": "← Atpakaļ",
       "settingsModel": "← Iestatījumi / modelis",
       "show": "Rādīt",
       "hide": "Paslēpt",
       "cancel": "Atcelt",
-      "retranslate": "Tulkot atkārtoti",
+      "retranslate": "Pārtulkot no jauna",
       "resume": "Turpināt",
       "translateChapter": "Tulkot šo nodaļu",
       "continue": "Turpināt →"
@@ -136,36 +143,37 @@
       "provider": "Pakalpojumu sniedzējs",
       "model": "Modelis",
       "apiKey": "API key",
-      "apiKeyPlaceholder": "Ielīmējiet savu {provider} atslēgu",
-      "apiKeyHint": "Iegūstiet to vietnē {link}. Jūsu atslēga tiek nosūtīta tikai {provider}, nekad philoli.com.",
-      "rememberKey": "Atcerēties atslēgu tikai šajā pārlūkprogrammā (localStorage). Noņemiet atzīmi koplietojamās ierīcēs.",
+      "apiKeyPlaceholder": "Ielīmē savu {provider} atslēgu",
+      "apiKeyHint": "Iegūsti to vietnē {link}. Tava atslēga tiek nosūtīta tikai {provider}, nekad philoli.com.",
+      "rememberKey": "Atcerēties atslēgu tikai šajā pārlūkprogrammā (localStorage). Noņem atzīmi koplietotās ierīcēs.",
       "showApiKey": "Rādīt API key",
-      "hideApiKey": "Paslēpt API key",
+      "hideApiKey": "Slēpt API key",
       "translateFrom": "Tulkot no",
       "translateTo": "Tulkot uz",
       "tone": "Tonis",
-      "customProvider": "Pielāgots (OpenAI saderīgs)",
+      "customProvider": "Pielāgots (OpenAI-savietojams)",
       "customModel": "Modeļa ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API Gala punkts",
+      "customModelPlaceholder": "piem., gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API galapunkts",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Pilns URL uz OpenAI saderīgu /chat/completions gala punktu.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
-      "needApiKey": "Ievadiet API key, lai turpinātu."
+      "customEndpointHint": "Pilna URL adrese uz OpenAI-savietojamu /chat/completions galapunktu.",
+      "openrouterModelPlaceholder": "piem., google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "piem., kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
+      "needApiKey": "Ievadi API key, lai turpinātu."
     },
     "upload": {
       "parsing": "Analizē EPUB…",
-      "dropTitle": "Nometiet EPUB šeit",
-      "dropSubtitle": "vai noklikšķiniet, lai izvēlētos failu",
+      "dropTitle": "Iemet EPUB šeit",
+      "dropSubtitle": "vai klikšķini, lai izvēlētos failu",
       "noChapters": "Šajā EPUB netika atrasta neviena lasāma nodaļa."
     },
     "browse": {
       "chapters": "Nodaļas",
-      "toneTitle": "Tulkojuma tonis — ietekmē rakstīšanas stilu",
+      "toneTitle": "Tulkošanas tonis — ietekmē rakstīšanas stilu",
       "paragraphCount": "{nodes} rindkopas · {translated} iztulkotas",
-      "errorOne": "{count} rindkopa neizdevās. Varat tulkot vēlreiz, lai mēģinātu atkārtoti — jau pabeigtās rindkopas tiks izlaistas.",
-      "errorMany": "{count} rindkopas neizdevās. Varat tulkot vēlreiz, lai mēģinātu atkārtoti — jau pabeigtās rindkopas tiks izlaistas.",
-      "noTranslatableText": "Šajā nodaļā nav tulkojama teksta (vāks, ievaddaļas utt.).",
+      "errorOne": "{count} rindkopa neizdevās. Vari tulkot vēlreiz — jau pabeigtās rindkopas tiks izlaistas.",
+      "errorMany": "{count} rindkopas neizdevās. Vari tulkot vēlreiz — jau pabeigtās rindkopas tiks izlaistas.",
+      "noTranslatableText": "Šajā nodaļā nav tulkojama teksta (vāks, ievaddaļa utt.).",
       "translatingAria": "Tulko",
       "translatingLabel": "tulko…",
       "buildFailed": "Neizdevās izveidot EPUB:"
@@ -173,7 +181,7 @@
     "tones": {
       "idiomatic": {
         "label": "Idiomātisks",
-        "hint": "dabisks un plūstošs — lielākajai daļai grāmatu"
+        "hint": "dabisks un plūstošs — vairumam grāmatu"
       },
       "literary": {
         "label": "Literārs",
@@ -193,7 +201,7 @@
       "bestQualityStable": "labākā kvalitāte, stabils",
       "balanced": "līdzsvarots",
       "freeTierFast": "bezmaksas līmenis, ātrs",
-      "flagshipCoding": "vadošais programmēšanai/aģentu",
+      "flagshipCoding": "vadošais kodēšanai/aģentiem",
       "longContext": "garš konteksts, stabils",
       "cheaper": "lētāks",
       "latestLongContext": "jaunākais, 256K konteksts"
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotogrāfija",
     "art": "Māksla"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubika kubs — Philo Li",
+      "description": "Interaktīvs 3D Rubika kubs. Iestati sajaukšanu un atrisinājumu, spēlē soli pa solim, paslēp krāsas vai skaldnes iegaumēšanas treniņiem."
+    },
+    "title": "3D Rubika kubs",
+    "intro": "Ierakstiet sajaukumu un atrisinājumu. Sekojiet atrisinājumam pa soļiem, velciet, lai pagrieztu skatu, un izmantojiet mācīšanās režīmu, lai trenētu algoritmu gadījumus.",
+    "scramble": {
+      "label": "Sajaukums",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Pielietot sajaukumu",
+      "reset": "Atiestatīt"
+    },
+    "solution": {
+      "label": "Atrisinājums",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Neatpazīts: {token}"
+    },
+    "playback": {
+      "play": "Atskaņot",
+      "pause": "Pauze",
+      "prev": "Iepriekšējais solis",
+      "next": "Nākamais solis",
+      "first": "Pāriet uz sākumu",
+      "last": "Pāriet uz beigām",
+      "speed": "Ātrums"
+    },
+    "learning": {
+      "title": "Mācīšanās režīms",
+      "master": "Iespējot",
+      "hideColors": "Paslēpt krāsas",
+      "hideFaces": "Paslēpt skaldnes",
+      "faceLabel": {
+        "U": "Augša",
+        "R": "Labā",
+        "F": "Priekša",
+        "D": "Apakša",
+        "L": "Kreisā",
+        "B": "Aizmugure"
+      },
+      "colorLabel": {
+        "white": "Balts",
+        "red": "Sarkans",
+        "green": "Zaļš",
+        "yellow": "Dzeltens",
+        "orange": "Oranžs",
+        "blue": "Zils"
+      }
+    },
+    "share": {
+      "copy": "Kopēt kopīgošanas saiti",
+      "copied": "Nokopēts!"
+    }
   }
 }

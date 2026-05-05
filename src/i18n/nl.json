@@ -1,7 +1,5 @@
 {
   "newsletterPage": {
-    "title": "Nieuwsbrief",
-    "subscribe": "Inschrijven →",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",
@@ -13,7 +11,9 @@
       "lang": "English",
       "desc": "Thoughts on art, investing, physics, and building things. 1-3 deep articles per month.",
       "subscribe": "Subscribe →"
-    }
+    },
+    "title": "Nieuwsbrief",
+    "subscribe": "Inschrijven →"
   },
   "metadata": {
     "siteTitle": "Philo Li — Kunstenaar, Schrijver, Maker",
@@ -28,7 +28,9 @@
     "newsletterTitle": "Nieuwsbrief — Philo Li",
     "newsletterDescription": "Abonneer je op de nieuwsbrieven van Philo Li.",
     "ebookTranslatorTitle": "Tweetalige E-book Vertaler — Philo Li",
-    "ebookTranslatorDescription": "Upload een EPUB en vertaal deze naar een tweetalige editie met je eigen LLM API key. Werkt volledig in je browser."
+    "ebookTranslatorDescription": "Upload een EPUB en vertaal deze naar een tweetalige editie met je eigen LLM API key. Draait volledig in je browser.",
+    "rubiksCubeTitle": "3D Rubik's Kubus — Philo Li",
+    "rubiksCubeDescription": "Interactieve 3D Rubik's Kubus. Stel een scramble en een oplossing in, speel stap voor stap af, verberg kleuren of vlakken voor memorisatie-oefeningen."
   },
   "nav": {
     "blog": "Blog",
@@ -46,10 +48,10 @@
     "toggleToDark": "Overschakelen naar donkere modus"
   },
   "hero": {
-    "line1": "Scheppen.",
-    "line2": "Vastleggen.",
-    "line3": "Bouwen.",
-    "tagline": "Ik schilder, fotografeer, schrijf en bouw. Waar nieuwsgierigheid, ambacht en code samenkomen, daar ontstaat dit alles.",
+    "line1": "Creëer.",
+    "line2": "Leg vast.",
+    "line3": "Bouw.",
+    "tagline": "Ik schilder, fotografeer, schrijf en bouw dingen. Dit is wat er gebeurt wanneer nieuwsgierigheid vakmanschap en code ontmoet.",
     "labelLeft": "Kunstenaar",
     "labelRight": "Ontwikkelaar"
   },
@@ -60,26 +62,26 @@
   "newsletterCta": {
     "label": "Nieuwsbrief",
     "headline": "Blijf nieuwsgierig.",
-    "desc": "Gedachten over kunst, het leven en creëren — rechtstreeks in je inbox."
+    "desc": "Gedachten over kunst, het leven en dingen bouwen — in je inbox bezorgd."
   },
   "blogPage": {
     "title": "Blog"
   },
   "aboutPage": {
     "tagline": "Kunstenaar · Schrijver · Ontwikkelaar",
-    "bioP1": "Ik ben een maker, een programmeur en een denker. Iets vanaf nul creëren is wat ik het liefste doe — of het nu een schilderij is, een stuk code of een diepgravend essay.",
-    "bioP2": "Lange tijd was het grootste obstakel voor deze passie mijn eigen brein: ik heb ADHD. Nadat ik bijna elke productiviteitstool op de markt had geprobeerd, realiseerde ik me dat ze allemaal ontworpen waren voor een neurotypisch brein. Ik had een \"partner\" nodig — iets dat me begreep en me een zacht duwtje in de rug kon geven precies wanneer ik dat het meest nodig had.",
-    "bioP3": "Ik kon het nergens vinden. Dus besloot ik het zelf te maken — voor mezelf, en voor de miljoenen anderen met net zo'n \"druk brein\" als ik. Zo is Dopamind geboren.",
+    "bioP1": "Ik ben een maker, een programmeur en een denker. Ik hou ervan om dingen vanaf nul op te bouwen — of het nu een schilderij, een stuk code of een diepgaand essay is.",
+    "bioP2": "Lange tijd was het grootste obstakel voor deze passie mijn eigen brein: ik heb ADHD. Nadat ik bijna elke productiviteitstool op de markt had geprobeerd, besefte ik dat ze allemaal ontworpen waren voor een neurotypisch brein. Ik had een \"partner\" nodig — iets dat me begreep en me een zacht duwtje kon geven precies wanneer ik dat het meest nodig had.",
+    "bioP3": "Ik kon het nergens vinden. Dus besloot ik het zelf te bouwen — voor mijzelf, en voor de miljoenen anderen met een \"druk brein\" net als het mijne. Zo is Dopamind ontstaan.",
     "sectionProjects": "Projecten",
     "sectionNewsletter": "Nieuwsbrief",
     "sectionArtworks": "Kunstwerken",
     "sectionReadMore": "Lees meer",
     "sectionFindMe": "Vind me elders",
-    "projectDopamindDesc": "Je dagelijkse AI-assistent",
-    "projectPhiloArtDesc": "Digitale kunstgalerij",
+    "projectDopamindDesc": "Je dagelijkse AI-metgezel",
+    "projectPhiloArtDesc": "Digitale kunstgalerie",
     "newsletterMediumDesc": "Essays",
-    "artworksText": "Mijn kunstwerken post ik op philoart.io/philo",
-    "artworksContactText": "Wil je een origineel schilderij of een fotoprint kopen? Stuur een DM op X of mail naar philo.li.official@gmail.com",
+    "artworksText": "Ik post mijn kunstwerken op philoart.io/philo",
+    "artworksContactText": "Om originele schilderijen of fotoprints te kopen, stuur een DM op X of e-mail naar philo.li.official@gmail.com",
     "extraEmail": "E-mail"
   },
   "artPage": {
@@ -91,16 +93,21 @@
     "items": {
       "dopamind": {
         "name": "Dopamind",
-        "description": "Je AI-assistent. Elke dag aan je zijde, om je te helpen je leven net wat fijner te maken."
+        "description": "Je AI-metgezel. Elke dag aan je zijde om je te helpen een beter leven te leiden."
       },
       "philoart": {
         "name": "PhiloArt",
-        "description": "Mijn persoonlijke kunstgalerij — fotografie, schilderijen en digitale kunst."
+        "description": "Mijn persoonlijke kunstgalerie — fotografie, schilderijen en digitale kunst."
       },
       "ebookTranslator": {
-        "name": "Tweetalige e-bookvertaler",
-        "description": "Maak van elk e-book een tweetalige versie — draait gewoon in je browser met je eigen LLM API key.",
+        "name": "Tweetalige E-book Vertaler",
+        "description": "Maak van elk e-book een tweetalige editie — draait in je browser met je eigen LLM API key.",
         "cta": "Open tool →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubiks kubus",
+        "description": "Doorloop husselingen en oplossingen op een interactieve 3D-kubus. De leermodus verbergt kleuren en vlakken voor algoritme-oefeningen.",
+        "cta": "Open de kubus →"
       }
     }
   },
@@ -118,9 +125,9 @@
       "browse": "bladeren"
     },
     "actions": {
-      "cancelRunning": "Uitvoering annuleren",
+      "cancelRunning": "Annuleren",
       "translateAllRemaining": "Vertaal alle resterende",
-      "downloadEpub": "⬇ EPUB downloaden",
+      "downloadEpub": "⬇ Download EPUB",
       "building": "Bouwen…",
       "back": "← Terug",
       "settingsModel": "← Instellingen / model",
@@ -135,10 +142,10 @@
     "settings": {
       "provider": "Provider",
       "model": "Model",
-      "apiKey": "API key",
-      "apiKeyPlaceholder": "Plak je {provider} key",
-      "apiKeyHint": "Vraag er een aan op {link}. Je key wordt alleen naar {provider} verzonden, nooit naar philoli.com.",
-      "rememberKey": "Key alleen in deze browser onthouden (localStorage). Vink uit voor gedeelde apparaten.",
+      "apiKey": "API Key",
+      "apiKeyPlaceholder": "Plak je {provider} sleutel",
+      "apiKeyHint": "Vraag er een aan op {link}. Je sleutel wordt alleen naar {provider} verzonden, nooit naar philoli.com.",
+      "rememberKey": "Sleutel alleen in deze browser onthouden (localStorage). Vink uit voor gedeelde apparaten.",
       "showApiKey": "API key tonen",
       "hideApiKey": "API key verbergen",
       "translateFrom": "Vertalen uit",
@@ -146,16 +153,17 @@
       "tone": "Toon",
       "customProvider": "Aangepast (OpenAI-compatibel)",
       "customModel": "Model-ID",
-      "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
-      "customEndpoint": "API-eindpunt",
+      "customModelPlaceholder": "bijv. gpt-4o, deepseek-chat, …",
+      "customEndpoint": "API-endpoint",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Volledige URL naar een OpenAI-compatibel /chat/completions-eindpunt.",
-      "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "customEndpointHint": "Volledige URL naar een OpenAI-compatibel /chat/completions-endpoint.",
+      "openrouterModelPlaceholder": "bijv. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
+      "opencodeModelPlaceholder": "bijv. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Voer een API key in om door te gaan."
     },
     "upload": {
       "parsing": "EPUB verwerken…",
-      "dropTitle": "Sleep hier een EPUB heen",
+      "dropTitle": "Sleep hier een EPUB naartoe",
       "dropSubtitle": "of klik om een bestand te kiezen",
       "noChapters": "Geen leesbare hoofdstukken gevonden in deze EPUB."
     },
@@ -168,7 +176,7 @@
       "noTranslatableText": "Dit hoofdstuk bevat geen vertaalbare tekst (omslag, voorwerk, etc.).",
       "translatingAria": "Vertalen",
       "translatingLabel": "vertalen…",
-      "buildFailed": "EPUB opbouwen mislukt:"
+      "buildFailed": "EPUB maken mislukt:"
     },
     "tones": {
       "idiomatic": {
@@ -181,7 +189,7 @@
       },
       "technical": {
         "label": "Technisch",
-        "hint": "professionele boeken & naslagwerken"
+        "hint": "professionele & naslagwerken"
       }
     },
     "modelHints": {
@@ -214,5 +222,59 @@
   "social": {
     "photography": "Fotografie",
     "art": "Kunst"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubik's Cube — Philo Li",
+      "description": "Interactieve 3D Rubik's Cube. Stel een scramble en een oplossing in, speel stap voor stap af, verberg kleuren of vlakken voor memorisatietraining."
+    },
+    "title": "3D Rubik's Kubus",
+    "intro": "Typ een hussel en een oplossing. Doorloop de oplossing, sleep om het beeld te draaien en gebruik de leermodus om algoritmes te oefenen.",
+    "scramble": {
+      "label": "Hussel",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Hussel toepassen",
+      "reset": "Resetten"
+    },
+    "solution": {
+      "label": "Oplossing",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Niet herkend: {token}"
+    },
+    "playback": {
+      "play": "Afspelen",
+      "pause": "Pauzeren",
+      "prev": "Vorige stap",
+      "next": "Volgende stap",
+      "first": "Naar begin springen",
+      "last": "Naar einde springen",
+      "speed": "Snelheid"
+    },
+    "learning": {
+      "title": "Leermodus",
+      "master": "Inschakelen",
+      "hideColors": "Kleuren verbergen",
+      "hideFaces": "Vlakken verbergen",
+      "faceLabel": {
+        "U": "Boven",
+        "R": "Rechts",
+        "F": "Voor",
+        "D": "Onder",
+        "L": "Links",
+        "B": "Achter"
+      },
+      "colorLabel": {
+        "white": "Wit",
+        "red": "Rood",
+        "green": "Groen",
+        "yellow": "Geel",
+        "orange": "Oranje",
+        "blue": "Blauw"
+      }
+    },
+    "share": {
+      "copy": "Deellink kopiëren",
+      "copied": "Gekopieerd!"
+    }
   }
 }
