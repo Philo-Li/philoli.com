@@ -4,8 +4,17 @@ import BlogPostLayout from '../../layouts/BlogPostLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  return posts.map(post => ({
-    params: { slug: post.id },
+  // Default locale is 'en': prefer en/ post, fallback to zh/
+  const slugMap = new Map();
+  for (const post of posts) {
+    const [lang, ...rest] = post.id.split('/');
+    const slug = rest.join('/');
+    if (lang === 'en' || !slugMap.has(slug)) {
+      slugMap.set(slug, post);
+    }
+  }
+  return [...slugMap.entries()].map(([slug, post]) => ({
+    params: { slug },
     props: { post },
   }));
 }
