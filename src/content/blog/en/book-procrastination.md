@@ -1,8 +1,8 @@
 ---
 title: After Five Years of Procrastination, I Finally Finished 'The Procrastination Equation'
 date: 2019-09-14 00:25:20
-tags: 读书笔记
-categories: 日常阅读
+tags: Reading笔记
+categories: 日常Reading
 ---
 This book sat on my shelf for nearly five years, perpetually put off, until I finally devoured it in one sitting.
 

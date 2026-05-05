@@ -3,9 +3,9 @@ layout: blog
 title: "Beyond the Algorithm: How to Spark Creativity Without AI"
 date: 2025-06-03 12:00:00
 tags:
-  - 随笔
-  - 创造力
-categories: 日常闲聊
+  - Essays
+  - Creativity
+categories: Casual Thoughts
 ---
 
 Imagination is the birthright of every human being. The real question is not *how to acquire* it, but *how to unleash* it. What follows, therefore, is less a manual for "getting imagination" and more a guide to releasing your own — especially the free-ranging, sky-galloping variety we loosely call *fantasy*.

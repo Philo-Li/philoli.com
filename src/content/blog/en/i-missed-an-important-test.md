@@ -1,8 +1,8 @@
 ---
 title: I Can't Believe I Missed the Official Graduate Entrance Exam Registration
 date: 2018-11-05 20:53:13
-tags: 随笔
-categories: 日常闲聊
+tags: Essays
+categories: Casual Thoughts
 ---
 I'd imagined countless ways to fail, but I never thought I'd stumble at this particular hurdle.
 

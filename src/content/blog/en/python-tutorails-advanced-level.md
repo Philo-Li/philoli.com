@@ -2,7 +2,7 @@
 title: Common Advanced Python Syntax in Data Science
 date: 2018-11-07 23:53:13
 tags: Python
-categories: 数据科学
+categories: Data Science
 mathjax: true
 ---
 Lately, I've been diving into [Data Science from Scrach](https://book.douban.com/subject/26364377/) ([PDF](http://www.zhanjunlang.com/resources/tutorial/Data%20Science%20from%20Scratch%20First%20Principles%20with%20Python.pdf)), which is an excellent and easy-to-understand introductory book on data science. One particular chapter introduces both basic Python syntax and advanced features commonly used in data science. I found the explanations excellent – concise and clear – so I'm translating them here for my own reference and yours.
