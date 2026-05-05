@@ -16,7 +16,9 @@
     "newsletterTitle": "Newsletter — Philo Li",
     "newsletterDescription": "Subscribe to Philo Li's newsletters.",
     "ebookTranslatorTitle": "Bilingual Ebook Translator — Philo Li",
-    "ebookTranslatorDescription": "Upload an EPUB and translate it into a bilingual edition with your own LLM API key. Runs entirely in your browser."
+    "ebookTranslatorDescription": "Upload an EPUB and translate it into a bilingual edition with your own LLM API key. Runs entirely in your browser.",
+    "rubiksCubeTitle": "3D Rubik's Cube — Philo Li",
+    "rubiksCubeDescription": "Interactive 3D Rubik's Cube. Set a scramble and a solution, play step by step, hide colors or faces for memorization drills."
   },
   "nav": {
     "blog": "Blog",
@@ -89,6 +91,11 @@
         "name": "Bilingual Ebook Translator",
         "description": "Turn any e-book into a bilingual edition — runs in your browser with your own LLM API key.",
         "cta": "Open tool →"
+      },
+      "rubiksCube": {
+        "name": "3D Rubik's Cube",
+        "description": "Step through scrambles and solutions on an interactive 3D cube. Learning mode hides colors and faces for algorithm drills.",
+        "cta": "Open the cube →"
       }
     }
   },
@@ -219,5 +226,59 @@
   "social": {
     "photography": "Photography",
     "art": "Art"
+  },
+  "rubiksCube": {
+    "metadata": {
+      "title": "3D Rubik's Cube — Philo Li",
+      "description": "Interactive 3D Rubik's Cube. Set a scramble and a solution, play step by step, hide colors or faces for memorization drills."
+    },
+    "title": "3D Rubik's Cube",
+    "intro": "Type a scramble and a solution. Step through the solve, drag to rotate the view, and use learning mode to drill algorithm cases.",
+    "scramble": {
+      "label": "Scramble",
+      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "apply": "Apply scramble",
+      "reset": "Reset"
+    },
+    "solution": {
+      "label": "Solution",
+      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "parseError": "Unrecognized: {token}"
+    },
+    "playback": {
+      "play": "Play",
+      "pause": "Pause",
+      "prev": "Previous step",
+      "next": "Next step",
+      "first": "Jump to start",
+      "last": "Jump to end",
+      "speed": "Speed"
+    },
+    "learning": {
+      "title": "Learning mode",
+      "master": "Enable",
+      "hideColors": "Hide colors",
+      "hideFaces": "Hide faces",
+      "faceLabel": {
+        "U": "Up",
+        "R": "Right",
+        "F": "Front",
+        "D": "Down",
+        "L": "Left",
+        "B": "Back"
+      },
+      "colorLabel": {
+        "white": "White",
+        "red": "Red",
+        "green": "Green",
+        "yellow": "Yellow",
+        "orange": "Orange",
+        "blue": "Blue"
+      }
+    },
+    "share": {
+      "copy": "Copy share link",
+      "copied": "Copied!"
+    }
   }
 }
