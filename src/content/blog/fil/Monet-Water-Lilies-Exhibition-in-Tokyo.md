@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Monet Exhibition sa Tokyo: Mula sa Hamon ng Katarata Tungo sa Walang Kamatayang Sining
+title: "Monet Exhibition sa Tokyo: Mula sa Hamon ng Katarata Tungo sa Walang Kamatayang Sining"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

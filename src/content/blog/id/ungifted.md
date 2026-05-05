@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Bukan Sekadar Bakat: Mengungkap Kebenaran di Balik IQ, Latihan Terencana, dan Kreativitas
+title: "Bukan Sekadar Bakat: Mengungkap Kebenaran di Balik IQ, Latihan Terencana, dan Kreativitas"
 date: 2025-05-22 12:00:00
 tags:
   - Esai

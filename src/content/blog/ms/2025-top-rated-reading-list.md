@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Senarai Buku Terbaik 2025: 12 Buku Berpenarafan Tinggi yang Dibaca
+title: "Senarai Buku Terbaik 2025: 12 Buku Berpenarafan Tinggi yang Dibaca"
 date: 2026-04-24 12:00:00
 tags:
   - Membaca

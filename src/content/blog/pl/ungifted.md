@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: To nie tylko talent: IQ, celowa praktyka i prawda o kreatywności
+title: "To nie tylko talent: IQ, celowa praktyka i prawda o kreatywności"
 date: 2025-05-22 12:00:00
 tags:
   - Eseje

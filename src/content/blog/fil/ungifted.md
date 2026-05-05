@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Hindi Lang Puro Talento: Ang Katotohanan Tungkol sa IQ, Sadyang Pagsasanay, at Pagkamalikhain
+title: "Hindi Lang Puro Talento: Ang Katotohanan Tungkol sa IQ, Sadyang Pagsasanay, at Pagkamalikhain"
 date: 2025-05-22 12:00:00
 tags:
   - Mga Pagninilay

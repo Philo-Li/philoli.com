@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Není to jen talent: IQ, záměrná praxe a skutečná podstata kreativity
+title: "Není to jen talent: IQ, záměrná praxe a skutečná podstata kreativity"
 date: 2025-05-22 12:00:00
 tags:
   - Zamyšlení

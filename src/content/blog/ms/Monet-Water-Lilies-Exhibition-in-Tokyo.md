@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Pameran Monet di Tokyo: Dari Cabaran Katarak ke Sentuhan Abadi
+title: "Pameran Monet di Tokyo: Dari Cabaran Katarak ke Sentuhan Abadi"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags:

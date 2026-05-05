@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Najlepšia rozlúčka: Čo musíte vedieť o starnutí a smrti
+title: "Najlepšia rozlúčka: Čo musíte vedieť o starnutí a smrti"
 date: 2025-05-22 12:00:00
 tags:
   - Úvaha

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: টোকিওতে মোনের প্রদর্শনী: ছানি রোগের প্রতিকূলতা থেকে অমর তুলির আঁচড়
+title: "টোকিওতে মোনের প্রদর্শনী: ছানি রোগের প্রতিকূলতা থেকে অমর তুলির আঁচড়"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

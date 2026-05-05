@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Nu e doar talentul: Adevărul despre IQ, practica deliberată și creativitate
+title: "Nu e doar talentul: Adevărul despre IQ, practica deliberată și creativitate"
 date: 2025-05-22 12:00:00
 tags:
   - Reflecții

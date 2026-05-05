@@ -1,5 +1,5 @@
 ---
-title: Philos Gedankenspiele: Eine Sammlung (2019)
+title: "Philos Gedankenspiele: Eine Sammlung (2019)"
 date: 2020-01-02 10:53:13
 tags: Essays
 categories: Alltägliches

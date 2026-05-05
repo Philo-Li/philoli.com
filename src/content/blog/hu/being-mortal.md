@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: A legjobb búcsú: Amit az öregedésről és a halálról elengedhetetlen tudni
+title: "A legjobb búcsú: Amit az öregedésről és a halálról elengedhetetlen tudni"
 date: 2025-05-22 12:00:00
 tags:
   - Gondolatok

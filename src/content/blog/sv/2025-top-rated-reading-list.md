@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 12 läsvärda böcker: Min topplista från 2025
+title: "12 läsvärda böcker: Min topplista från 2025"
 date: 2026-04-24 12:00:00
 tags:
   - Läsning

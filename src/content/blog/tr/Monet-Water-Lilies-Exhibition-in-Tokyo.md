@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Tokyo Monet Sergisi: Kataraktın Sıkıntılarından Ölümsüz Fırça Darbelerine
+title: "Tokyo Monet Sergisi: Kataraktın Sıkıntılarından Ölümsüz Fırça Darbelerine"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

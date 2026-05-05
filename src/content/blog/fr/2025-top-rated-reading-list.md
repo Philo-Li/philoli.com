@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 12 excellents livres à découvrir : Ma sélection coup de cœur de 2025
+title: "12 excellents livres à découvrir : Ma sélection coup de cœur de 2025"
 date: 2026-04-24 12:00:00
 tags:
   - Lecture

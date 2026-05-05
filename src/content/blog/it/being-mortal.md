@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Il miglior addio: Le verità che devi conoscere su invecchiamento e morte
+title: "Il miglior addio: Le verità che devi conoscere su invecchiamento e morte"
 date: 2025-05-22 12:00:00
 tags:
   - Saggi

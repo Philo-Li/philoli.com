@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Najbolje knjige koje sam pročitao/la 2025.: 12 preporuka s visokim ocjenama
+title: "Najbolje knjige koje sam pročitao/la 2025.: 12 preporuka s visokim ocjenama"
 date: 2026-04-24 12:00:00
 tags:
   - čitanje

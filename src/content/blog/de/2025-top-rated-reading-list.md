@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Meine 12 Top-Bücher aus dem Jahr 2025: Eine hochbewertete Leseliste
+title: "Meine 12 Top-Bücher aus dem Jahr 2025: Eine hochbewertete Leseliste"
 date: 2026-04-24 12:00:00
 tags:
   - Lesen

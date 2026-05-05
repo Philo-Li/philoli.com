@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 12 sjajnih knjiga koje sam pročitao 2025: Preporuke sa visokim ocenama
+title: "12 sjajnih knjiga koje sam pročitao 2025: Preporuke sa visokim ocenama"
 date: 2026-04-24 12:00:00
 tags:
   - Čitanje

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Mostra di Monet a Tokyo: Dalla Sofferenza della Cataratta ai Tocchi Immortali
+title: "Mostra di Monet a Tokyo: Dalla Sofferenza della Cataratta ai Tocchi Immortali"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags:

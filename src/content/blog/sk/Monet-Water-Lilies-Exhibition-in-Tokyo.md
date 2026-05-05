@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Výstava Moneta v Tokiu: Od trápenia s kataraktou k nesmrteľným ťahom štetca
+title: "Výstava Moneta v Tokiu: Od trápenia s kataraktou k nesmrteľným ťahom štetca"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

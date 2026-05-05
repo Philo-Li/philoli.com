@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Dalijamės 12 puikių knygų: 2025 m. skaitytų aukščiausiai įvertintų knygų sąrašas
+title: "Dalijamės 12 puikių knygų: 2025 m. skaitytų aukščiausiai įvertintų knygų sąrašas"
 date: 2026-04-24 12:00:00
 tags:
   - Skaitymas

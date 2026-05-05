@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: La mejor despedida: Lo que debes saber sobre el envejecimiento y la muerte
+title: "La mejor despedida: Lo que debes saber sobre el envejecimiento y la muerte"
 date: 2025-05-22 12:00:00
 tags:
   - ensayo

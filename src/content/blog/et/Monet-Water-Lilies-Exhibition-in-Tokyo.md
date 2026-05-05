@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Monet' näitus Tokyos: Katarakti vaevustest surematute pintslitõmmeteni
+title: "Monet' näitus Tokyos: Katarakti vaevustest surematute pintslitõmmeteni"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags:

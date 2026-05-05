@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Condivido 12 Ottimi Libri: La Mia Lista di Letture Top del 2025
+title: "Condivido 12 Ottimi Libri: La Mia Lista di Letture Top del 2025"
 date: 2026-04-24 12:00:00
 tags:
   - Lettura

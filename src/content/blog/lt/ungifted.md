@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ne vien tik talentas: IQ, tikslinga praktika ir tiesa apie kūrybiškumą
+title: "Ne vien tik talentas: IQ, tikslinga praktika ir tiesa apie kūrybiškumą"
 date: 2025-05-22 12:00:00
 tags:
   - Esė

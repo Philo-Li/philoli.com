@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Monetova výstava v Tokiu: Od trápení s šedým zákalem k nesmrtelným tahům štětce
+title: "Monetova výstava v Tokiu: Od trápení s šedým zákalem k nesmrtelným tahům štětce"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

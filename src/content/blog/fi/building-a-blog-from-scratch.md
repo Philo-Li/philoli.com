@@ -1,5 +1,5 @@
 ---
-title: Hexo-blogin perustaminen alusta alkaen: Yksinkertainen opas (2024-versio)
+title: "Hexo-blogin perustaminen alusta alkaen: Yksinkertainen opas (2024-versio)"
 date: 2024-04-11 00:25:20
 tags: Blogin rakentaminen
 categories: Arkipäivän puuhastelu

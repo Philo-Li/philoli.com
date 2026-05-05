@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Det bästa avskedet: Sunt förnuft om åldrande och döden som du behöver känna till
+title: "Det bästa avskedet: Sunt förnuft om åldrande och döden som du behöver känna till"
 date: 2025-05-22 12:00:00
 tags:
   - Funderingar

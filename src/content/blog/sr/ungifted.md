@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Nije sve u talentu: Istina o inteligenciji, promišljenoj praksi i kreativnosti
+title: "Nije sve u talentu: Istina o inteligenciji, promišljenoj praksi i kreativnosti"
 date: 2025-05-22 12:00:00
 tags:
   - Esej

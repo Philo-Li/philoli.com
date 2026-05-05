@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Nejlepší loučení: Co musíte vědět o stárnutí a smrti
+title: "Nejlepší loučení: Co musíte vědět o stárnutí a smrti"
 date: 2025-05-22 12:00:00
 tags:
   - Zamyšlení

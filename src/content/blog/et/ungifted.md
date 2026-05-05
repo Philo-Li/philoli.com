@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Pole sugugi anne: IQ, sihipärane harjutamine ja loovuse tõde
+title: "Pole sugugi anne: IQ, sihipärane harjutamine ja loovuse tõde"
 date: 2025-05-22 12:00:00
 tags:
   - Mõtisklus

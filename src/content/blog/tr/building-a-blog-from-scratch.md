@@ -1,5 +1,5 @@
 ---
-title: Sıfırdan Hexo Blog Kurulumu: Basit Rehber (2024 Sürümü)
+title: "Sıfırdan Hexo Blog Kurulumu: Basit Rehber (2024 Sürümü)"
 date: 2024-04-11 00:25:20
 tags: Blog Kurulumu
 categories: Günlük Uğraşlar

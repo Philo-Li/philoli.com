@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: टोक्यो मोनेट प्रदर्शनी: मोतियाबिंद की परेशानी से अमर ब्रशस्ट्रोक तक
+title: "टोक्यो मोनेट प्रदर्शनी: मोतियाबिंद की परेशानी से अमर ब्रशस्ट्रोक तक"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags:

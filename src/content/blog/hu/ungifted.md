@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Nem tehetség kérdése: Az IQ, a tudatos gyakorlás és a kreativitás igazsága
+title: "Nem tehetség kérdése: Az IQ, a tudatos gyakorlás és a kreativitás igazsága"
 date: 2025-05-22 12:00:00
 tags:
   - esszé

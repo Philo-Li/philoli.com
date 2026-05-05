@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ni zgolj talent: Resnica o IQ, namerni praksi in ustvarjalnosti
+title: "Ni zgolj talent: Resnica o IQ, namerni praksi in ustvarjalnosti"
 date: 2025-05-22 12:00:00
 tags:
   - Esej

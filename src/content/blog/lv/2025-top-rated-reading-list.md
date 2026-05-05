@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 12 izcilas grāmatas: augstu novērtēto 2025. gada lasījumu saraksts
+title: "12 izcilas grāmatas: augstu novērtēto 2025. gada lasījumu saraksts"
 date: 2026-04-24 12:00:00
 tags:
   - lasīšana

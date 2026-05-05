@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Sėkmė ir nesėkmė: pamąstymai
+title: "Sėkmė ir nesėkmė: pamąstymai"
 date: 2024-09-18 15:02:52
 tags: Esė
 categories: Kasdienybė

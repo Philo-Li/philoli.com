@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Không Chỉ Là Năng Khiếu: Sự Thật Về IQ, Luyện Tập Có Chủ Đích và Sáng Tạo
+title: "Không Chỉ Là Năng Khiếu: Sự Thật Về IQ, Luyện Tập Có Chủ Đích và Sáng Tạo"
 date: 2025-05-22 12:00:00
 tags:
   - Tản văn

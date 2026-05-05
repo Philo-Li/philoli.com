@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Le mythe du don inné : QI, pratique délibérée et la vérité sur la créativité
+title: "Le mythe du don inné : QI, pratique délibérée et la vérité sur la créativité"
 date: 2025-05-22 12:00:00
 tags:
   - Essais

@@ -1,5 +1,5 @@
 ---
-title: Hexo Blog von Grund auf einrichten: Eine Kurzanleitung (2024)
+title: "Hexo Blog von Grund auf einrichten: Eine Kurzanleitung (2024)"
 date: 2024-04-11 00:25:20
 tags: Blog erstellen
 categories: Basteleien

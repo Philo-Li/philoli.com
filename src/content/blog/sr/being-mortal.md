@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Najbolji oproštaj: Šta morate znati o starenju i smrti
+title: "Najbolji oproštaj: Šta morate znati o starenju i smrti"
 date: 2025-05-22 12:00:00
 tags:
   - Esej

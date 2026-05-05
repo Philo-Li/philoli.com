@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Labākās atvadas: Kas jāzina par novecošanu un nāvi
+title: "Labākās atvadas: Kas jāzina par novecošanu un nāvi"
 date: 2025-05-22 12:00:00
 tags:
   - Eseja

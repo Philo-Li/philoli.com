@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Tokion Monet-näyttely: Kaihin haasteista kuolemattomiin siveltimenvetoihin
+title: "Tokion Monet-näyttely: Kaihin haasteista kuolemattomiin siveltimenvetoihin"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

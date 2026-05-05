@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Non solo talento: la verità su QI, pratica deliberata e creatività
+title: "Non solo talento: la verità su QI, pratica deliberata e creatività"
 date: 2025-05-22 12:00:00
 tags:
   - Saggi

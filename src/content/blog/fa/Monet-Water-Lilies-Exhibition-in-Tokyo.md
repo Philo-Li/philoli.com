@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: نمایشگاه مونه در توکیو: از رنج آب مروارید تا ضربات قلم‌موی جاودانه
+title: "نمایشگاه مونه در توکیو: از رنج آب مروارید تا ضربات قلم‌موی جاودانه"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags:

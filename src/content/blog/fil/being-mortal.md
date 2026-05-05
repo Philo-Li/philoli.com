@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ang Pinakamagandang Pamamaalam: Mga Karaniwang Kaalaman Tungkol sa Pagtanda at Kamatayan na Dapat Mong Malaman
+title: "Ang Pinakamagandang Pamamaalam: Mga Karaniwang Kaalaman Tungkol sa Pagtanda at Kamatayan na Dapat Mong Malaman"
 date: 2025-05-22 12:00:00
 tags:
   - Mga Pagninilay

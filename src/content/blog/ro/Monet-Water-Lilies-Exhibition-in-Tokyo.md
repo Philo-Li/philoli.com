@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Expoziția Monet la Tokyo: De la chinurile cataractei la tușe nemuritoare
+title: "Expoziția Monet la Tokyo: De la chinurile cataractei la tușe nemuritoare"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

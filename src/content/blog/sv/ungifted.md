@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Inte bara medfödd talang: Sanningen om IQ, målmedveten träning och kreativitet
+title: "Inte bara medfödd talang: Sanningen om IQ, målmedveten träning och kreativitet"
 date: 2025-05-22 12:00:00
 tags:
   - Funderingar

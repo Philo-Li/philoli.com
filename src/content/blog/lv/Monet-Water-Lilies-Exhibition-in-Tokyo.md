@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Monē izstāde Tokijā: No kataraktas grūtībām līdz nemirstīgajiem otas vilcieniem
+title: "Monē izstāde Tokijā: No kataraktas grūtībām līdz nemirstīgajiem otas vilcieniem"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

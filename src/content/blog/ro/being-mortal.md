@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Cel mai bun adio: Ce trebuie să știi despre îmbătrânire și moarte
+title: "Cel mai bun adio: Ce trebuie să știi despre îmbătrânire și moarte"
 date: 2025-05-22 12:00:00
 tags:
   - Eseu

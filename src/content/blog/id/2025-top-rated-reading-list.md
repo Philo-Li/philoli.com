@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Rekomendasi 12 Buku Terbaik: Daftar Bacaan Berperingkat Tinggi di Tahun 2025
+title: "Rekomendasi 12 Buku Terbaik: Daftar Bacaan Berperingkat Tinggi di Tahun 2025"
 date: 2026-04-24 12:00:00
 tags:
   - membaca

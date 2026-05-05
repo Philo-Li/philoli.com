@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Geriausias atsisveikinimas: ką privalote žinoti apie senėjimą ir mirtį
+title: "Geriausias atsisveikinimas: ką privalote žinoti apie senėjimą ir mirtį"
 date: 2025-05-22 12:00:00
 tags:
   - Esė

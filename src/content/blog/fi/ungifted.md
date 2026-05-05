@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ei vain lahjakkuutta: Älykkyysosamäärän, harkitun harjoittelun ja luovuuden todellisuus
+title: "Ei vain lahjakkuutta: Älykkyysosamäärän, harkitun harjoittelun ja luovuuden todellisuus"
 date: 2025-05-22 12:00:00
 tags:
   - mietteitä

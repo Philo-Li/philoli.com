@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Monet-utställningen i Tokyo: Från gråstarrens plåga till odödliga penseldrag
+title: "Monet-utställningen i Tokyo: Från gråstarrens plåga till odödliga penseldrag"
 subtitle: Monet's Water Lilies Exhibition in Tokyo
 date: 2025-02-16 19:29:55
 tags: 

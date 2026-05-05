@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Najboljše slovo: Splošno znanje o staranju in smrti, ki ga morate poznati
+title: "Najboljše slovo: Splošno znanje o staranju in smrti, ki ga morate poznati"
 date: 2025-05-22 12:00:00
 tags:
   - razmišljanje

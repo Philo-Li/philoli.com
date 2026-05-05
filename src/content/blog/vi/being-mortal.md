@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Lời từ biệt đẹp nhất: Những kiến thức cơ bản bạn cần biết về lão hóa và cái chết
+title: "Lời từ biệt đẹp nhất: Những kiến thức cơ bản bạn cần biết về lão hóa và cái chết"
 date: 2025-05-22 12:00:00
 tags:
   - Tùy bút

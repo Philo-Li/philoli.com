@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 12 odličnih knjig: seznam visoko ocenjenih branj iz leta 2025
+title: "12 odličnih knjig: seznam visoko ocenjenih branj iz leta 2025"
 date: 2026-04-24 12:00:00
 tags:
   - Branje

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Menestys ja epäonnistuminen: pohdintoja
+title: "Menestys ja epäonnistuminen: pohdintoja"
 date: 2024-09-18 15:02:52
 tags: Mietteitä
 categories: Arkipäivän jutustelu
