@@ -5,7 +5,22 @@ import { DEFAULT_LOCALE, formatDate, isLocale, localizedPath, useTranslations } 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
 
-const posts = (await getCollection('blog'))
+const allPosts = await getCollection('blog');
+
+const blogLocale = locale === 'zh-TW' ? 'zh' : locale;
+const prefix = `${blogLocale}/`;
+const zhPrefix = 'zh/';
+
+const posts = allPosts
+  .filter(post => {
+    if (post.id.startsWith(prefix)) return true;
+    if (post.id.startsWith(zhPrefix)) {
+      const slug = post.id.slice(zhPrefix.length);
+      const hasTranslation = allPosts.some(p => p.id === `${prefix}${slug}`);
+      return !hasTranslation;
+    }
+    return false;
+  })
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 5);
 ---
@@ -16,9 +31,11 @@ const posts = (await getCollection('blog'))
     <a href={localizedPath('/blog', locale)} class="recent-posts__link">{t('recentPosts.viewAll')}</a>
   </div>
   <ul class="recent-posts__list">
-    {posts.map((post, i) => (
+    {posts.map((post, i) => {
+      const slug = post.id.replace(/^[^/]+\//, '');
+      return (
       <li class="recent-posts__item">
-        <a href={localizedPath(`/blog/${post.id}`, locale)} class="recent-posts__item-link">
+        <a href={localizedPath(`/blog/${slug}`, locale)} class="recent-posts__item-link">
           <span class="recent-posts__item-num">{String(i + 1).padStart(2, '0')}</span>
           <span class="recent-posts__item-title">{post.data.title}</span>
           <span class="recent-posts__item-date">
@@ -26,7 +43,8 @@ const posts = (await getCollection('blog'))
           </span>
         </a>
       </li>
-    ))}
+      );
+    })}
   </ul>
 </section>
 
