@@ -280,6 +280,21 @@
     "share": {
       "copy": "Copy share link",
       "copied": "Copied!"
+    },
+    "gif": {
+      "exportButton": "Export GIF",
+      "dialogTitle": "Export GIF",
+      "rangeLabel": "Range",
+      "rangeStart": "From",
+      "rangeEnd": "To",
+      "rangeCaption": "From step {start} to step {end} ({count} steps)",
+      "speedLabel": "Speed",
+      "showOverlay": "Show step overlay on canvas",
+      "cancel": "Cancel",
+      "generate": "Generate GIF",
+      "generating": "Generating… {percent}%",
+      "errorGeneric": "Failed to generate GIF. Please try again.",
+      "filenamePrefix": "rubiks-cube"
     }
   }
 }
