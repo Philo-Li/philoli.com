@@ -86,7 +86,11 @@ export class CubeScene {
     this.mount = mountEl;
     this.onLayerMove = opts.onLayerMove;
 
-    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    this.renderer = new THREE.WebGLRenderer({
+      antialias: true,
+      alpha: true,
+      preserveDrawingBuffer: true,
+    });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.renderer.setClearColor(0x000000, 0);
 
@@ -305,6 +309,54 @@ export class CubeScene {
 
   public isAnimating(): boolean {
     return this.animating;
+  }
+
+  /** The raw WebGL canvas. Use for capture/screenshot — do not mount elsewhere. */
+  public getCanvas(): HTMLCanvasElement {
+    return this.renderer.domElement;
+  }
+
+  /**
+   * Synchronously render one frame at `state`, optionally with an in-progress
+   * `partialMove` rotated to `progress` (0..1). Pivot is detached afterwards
+   * so cubies stay at canonical positions for the next call. Throws when an
+   * animation is already in flight.
+   *
+   * Caller must read the canvas (drawImage / toDataURL) before the next
+   * paint cycle for reliable pixel data.
+   */
+  public renderStillFrame(
+    state: Facelets,
+    learning?: LearningMode,
+    partialMove?: Move,
+    progress?: number,
+  ): HTMLCanvasElement {
+    if (this.animating) {
+      throw new Error('renderStillFrame called during animateMove');
+    }
+    this.reset(state, learning);
+
+    let pivot: THREE.Group | null = null;
+    let moving: THREE.Group[] = [];
+    if (partialMove && typeof progress === 'number') {
+      moving = this.collectMovingCubies(partialMove);
+      pivot = new THREE.Group();
+      this.cubeRoot.add(pivot);
+      for (const c of moving) pivot.attach(c);
+      const t = Math.max(0, Math.min(1, progress));
+      const angle = this.angleFor(partialMove) * easeInOutQuad(t);
+      pivot.setRotationFromAxisAngle(this.axisVec(partialMove.axis), angle);
+    }
+
+    this.renderer.render(this.scene, this.camera);
+
+    if (pivot) {
+      for (const c of [...moving]) this.cubeRoot.attach(c);
+      this.cubeRoot.remove(pivot);
+    }
+
+    this.markDirty();
+    return this.renderer.domElement;
   }
 
   /** Animate the given move over the given duration. Resolves when complete. */
