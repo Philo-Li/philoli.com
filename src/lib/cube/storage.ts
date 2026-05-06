@@ -1,4 +1,4 @@
-import type { Color } from './types';
+import type { Color, Layer } from './types';
 import type { ShareState } from './url';
 
 const KEY = 'philoli/rubiks-cube/v1';
@@ -10,6 +10,8 @@ interface StoredV1 {
     enabled: boolean;
     hiddenColors: number[];
     hiddenFaces: number[];
+    /** Optional — added in a later version, defaults to []. */
+    hiddenLayers?: number[];
   };
   step: number;
 }
@@ -27,6 +29,7 @@ export function saveShareState(state: ShareState): void {
         enabled: state.learning.enabled,
         hiddenColors: [...state.learning.hiddenColors],
         hiddenFaces: [...state.learning.hiddenFaces],
+        hiddenLayers: [...state.learning.hiddenLayers],
       },
       step: state.step,
     };
@@ -51,6 +54,7 @@ export function loadShareState(): ShareState | null {
         enabled: !!parsed.learning?.enabled,
         hiddenColors: new Set((parsed.learning?.hiddenColors ?? []) as Color[]),
         hiddenFaces: new Set((parsed.learning?.hiddenFaces ?? []) as Color[]),
+        hiddenLayers: new Set((parsed.learning?.hiddenLayers ?? []) as Layer[]),
       },
       step: parsed.step ?? 0,
     };

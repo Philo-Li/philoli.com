@@ -1,4 +1,4 @@
-import type { Color, LearningMode } from './types';
+import type { Color, Layer, LearningMode } from './types';
 
 export interface ShareState {
   scramble: string;
@@ -35,15 +35,19 @@ function packLearning(l: LearningMode): number {
   for (const c of l.hiddenColors) mask |= 1 << c;
   for (const f of l.hiddenFaces) mask |= 1 << (f + 6);
   if (l.enabled) mask |= 1 << 12;
+  // Layers occupy bits 13..15 (encoded as layer + 1: -1 → 0, 0 → 1, 1 → 2).
+  for (const ly of l.hiddenLayers) mask |= 1 << (13 + (ly + 1));
   return mask;
 }
 
 function unpackLearning(mask: number): LearningMode {
   const hiddenColors = new Set<Color>();
   const hiddenFaces = new Set<Color>();
+  const hiddenLayers = new Set<Layer>();
   for (let i = 0; i < 6; i++) if (mask & (1 << i)) hiddenColors.add(i as Color);
   for (let i = 0; i < 6; i++) if (mask & (1 << (i + 6))) hiddenFaces.add(i as Color);
-  return { enabled: (mask & (1 << 12)) !== 0, hiddenColors, hiddenFaces };
+  for (let i = 0; i < 3; i++) if (mask & (1 << (13 + i))) hiddenLayers.add((i - 1) as Layer);
+  return { enabled: (mask & (1 << 12)) !== 0, hiddenColors, hiddenFaces, hiddenLayers };
 }
 
 export function encodeShareState(state: ShareState): string {
