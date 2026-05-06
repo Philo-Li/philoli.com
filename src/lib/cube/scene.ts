@@ -59,7 +59,9 @@ export class CubeScene {
   private rafId: number | null = null;
 
   // Camera orbit state — radius is recomputed on every resize to fit the cube.
-  private azimuth = Math.PI * 0.25;
+  // Default at -x +y +z octant so the user sees L (red) on the left, F (green)
+  // on the right, U (yellow) on top.
+  private azimuth = Math.PI * 0.75;
   private elevation = Math.atan(1 / Math.sqrt(2));
   private radius = 7;
 
