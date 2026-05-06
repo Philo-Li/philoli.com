@@ -59,6 +59,10 @@ export default function RubiksCube({ locale }: Props) {
   const canvasRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef<CubeSceneT | null>(null);
   const animatingRef = useRef(false);
+  // Set when stepNext/stepPrev finishes — tells the currentState effect
+  // that cubies are already in the right physical state, so it should
+  // skip the snap-reset and only refresh learning materials.
+  const stepAnimatedRef = useRef(false);
 
   // Refs that mirror state, so async loops always see the freshest values.
   const stepRef = useRef(step);
@@ -145,10 +149,18 @@ export default function RubiksCube({ locale }: Props) {
   }, []);
 
   // Snap cubies back to canonical positions and re-paint when the logical
-  // state changes (scramble / solution / step). Skip while animating.
+  // state changes (scramble / solution / step). Skip while animating, and
+  // skip right after a stepNext/stepPrev animation — the cubies have already
+  // been physically rotated into the new state and a reset would look like
+  // a duplicate turn.
   useEffect(() => {
     if (!sceneRef.current) return;
     if (animatingRef.current) return;
+    if (stepAnimatedRef.current) {
+      stepAnimatedRef.current = false;
+      sceneRef.current.refreshLearning(learningRef.current);
+      return;
+    }
     sceneRef.current.reset(currentState, learningRef.current);
   }, [currentState]);
 
@@ -189,6 +201,7 @@ export default function RubiksCube({ locale }: Props) {
     animatingRef.current = true;
     try {
       await sceneRef.current.animateMove(moves[cur], BASE_STEP_MS / speedRef.current);
+      stepAnimatedRef.current = true;
       setStep(cur + 1);
     } finally {
       animatingRef.current = false;
@@ -207,6 +220,7 @@ export default function RubiksCube({ locale }: Props) {
         inverseMove(moves[cur - 1]),
         BASE_STEP_MS / speedRef.current,
       );
+      stepAnimatedRef.current = true;
       setStep(cur - 1);
     } finally {
       animatingRef.current = false;
@@ -223,15 +237,29 @@ export default function RubiksCube({ locale }: Props) {
   };
 
   // ---------- Auto-play loop ----------
+  // Drive the step counter from a local variable, not stepRef. setStep ->
+  // stepRef sync goes through React's render cycle, which hasn't happened
+  // yet when the next iteration of this loop runs — using stepRef there
+  // reads a stale value and replays the same move (UR ends up as U2 R2).
   useEffect(() => {
     if (!playing) return;
     let cancelled = false;
     (async () => {
-      while (!cancelled) {
+      let cur = stepRef.current;
+      while (!cancelled && playingRef.current) {
         const moves = solutionMovesRef.current;
-        if (stepRef.current >= moves.length) break;
-        if (!playingRef.current) break;
-        await stepNext();
+        if (cur >= moves.length) break;
+        if (!sceneRef.current) break;
+        if (animatingRef.current) break;
+        animatingRef.current = true;
+        try {
+          await sceneRef.current.animateMove(moves[cur], BASE_STEP_MS / speedRef.current);
+          cur++;
+          stepAnimatedRef.current = true;
+          setStep(cur);
+        } finally {
+          animatingRef.current = false;
+        }
       }
       setPlaying(false);
     })();
@@ -299,52 +327,103 @@ export default function RubiksCube({ locale }: Props) {
         <p className="rc__intro">{t('rubiksCube.intro')}</p>
       </header>
 
-      <section className="rc__canvas">
-        <div ref={canvasRef} className="rc__canvas-mount" />
-        {!sceneReady && (
-          <div className="rc__canvas-loading" aria-hidden="true">
-            <div className="rc__canvas-spinner" />
-          </div>
-        )}
-      </section>
+      <div className="rc__stage">
+        <section className="rc__canvas">
+          <div ref={canvasRef} className="rc__canvas-mount" />
+          {!sceneReady && (
+            <div className="rc__canvas-loading" aria-hidden="true">
+              <div className="rc__canvas-spinner" />
+            </div>
+          )}
+        </section>
 
-      <section className="rc__playback">
-        <button type="button" onClick={jumpToStart} disabled={step === 0} aria-label={t('rubiksCube.playback.first')} title={t('rubiksCube.playback.first')}>
-          ⏮
-        </button>
-        <button type="button" onClick={stepPrev} disabled={step === 0} aria-label={t('rubiksCube.playback.prev')} title={t('rubiksCube.playback.prev')}>
-          ⏪
-        </button>
-        <button
-          type="button"
-          className="rc__btn-play"
-          onClick={() => setPlaying((p) => !p)}
-          disabled={totalSteps === 0 || (step >= totalSteps && !playing)}
-        >
-          {playing ? t('rubiksCube.playback.pause') : t('rubiksCube.playback.play')}
-        </button>
-        <button type="button" onClick={stepNext} disabled={step >= totalSteps} aria-label={t('rubiksCube.playback.next')} title={t('rubiksCube.playback.next')}>
-          ⏩
-        </button>
-        <button type="button" onClick={jumpToEnd} disabled={step >= totalSteps} aria-label={t('rubiksCube.playback.last')} title={t('rubiksCube.playback.last')}>
-          ⏭
-        </button>
-        <span className="rc__step-counter">
-          {step} / {totalSteps}
-        </span>
-        <label className="rc__speed">
-          <span>{t('rubiksCube.playback.speed')}</span>
-          <input
-            type="range"
-            min={0}
-            max={SPEED_STOPS.length - 1}
-            step={1}
-            value={speedIndex < 0 ? 2 : speedIndex}
-            onChange={(e) => setSpeed(SPEED_STOPS[parseInt(e.currentTarget.value, 10)])}
-          />
-          <span>{speed}×</span>
-        </label>
-      </section>
+        <section className="rc__controls">
+          <section className="rc__playback">
+            <button type="button" onClick={jumpToStart} disabled={step === 0} aria-label={t('rubiksCube.playback.first')} title={t('rubiksCube.playback.first')}>
+              ⏮
+            </button>
+            <button type="button" onClick={stepPrev} disabled={step === 0} aria-label={t('rubiksCube.playback.prev')} title={t('rubiksCube.playback.prev')}>
+              ⏪
+            </button>
+            <button
+              type="button"
+              className="rc__btn-play"
+              onClick={() => setPlaying((p) => !p)}
+              disabled={totalSteps === 0 || (step >= totalSteps && !playing)}
+            >
+              {playing ? t('rubiksCube.playback.pause') : t('rubiksCube.playback.play')}
+            </button>
+            <button type="button" onClick={stepNext} disabled={step >= totalSteps} aria-label={t('rubiksCube.playback.next')} title={t('rubiksCube.playback.next')}>
+              ⏩
+            </button>
+            <button type="button" onClick={jumpToEnd} disabled={step >= totalSteps} aria-label={t('rubiksCube.playback.last')} title={t('rubiksCube.playback.last')}>
+              ⏭
+            </button>
+            <span className="rc__step-counter">
+              {step} / {totalSteps}
+            </span>
+            <label className="rc__speed">
+              <span>{t('rubiksCube.playback.speed')}</span>
+              <input
+                type="range"
+                min={0}
+                max={SPEED_STOPS.length - 1}
+                step={1}
+                value={speedIndex < 0 ? 2 : speedIndex}
+                onChange={(e) => setSpeed(SPEED_STOPS[parseInt(e.currentTarget.value, 10)])}
+              />
+              <span>{speed}×</span>
+            </label>
+          </section>
+          <label className="rc__field">
+            <div className="rc__field-header">
+              <span className="rc__field-label">{t('rubiksCube.scramble.label')}</span>
+              <button type="button" className="rc__field-action" onClick={resetScramble}>
+                {t('rubiksCube.scramble.reset')}
+              </button>
+            </div>
+            <textarea
+              className="rc__input"
+              rows={3}
+              value={scramble}
+              onChange={(e) => {
+                setScramble(e.currentTarget.value);
+                setStep(0);
+                setPlaying(false);
+              }}
+              placeholder={t('rubiksCube.scramble.placeholder')}
+              spellCheck={false}
+            />
+            {scrambleParse.errors.length > 0 && (
+              <div className="rc__error">
+                {t('rubiksCube.solution.parseError').replace('{token}', scrambleParse.errors[0].token)}
+              </div>
+            )}
+          </label>
+          <label className="rc__field">
+            <div className="rc__field-header">
+              <span className="rc__field-label">{t('rubiksCube.solution.label')}</span>
+            </div>
+            <textarea
+              className="rc__input"
+              rows={3}
+              value={solution}
+              onChange={(e) => {
+                setSolution(e.currentTarget.value);
+                setStep(0);
+                setPlaying(false);
+              }}
+              placeholder={t('rubiksCube.solution.placeholder')}
+              spellCheck={false}
+            />
+            {solutionParse.errors.length > 0 && (
+              <div className="rc__error">
+                {t('rubiksCube.solution.parseError').replace('{token}', solutionParse.errors[0].token)}
+              </div>
+            )}
+          </label>
+        </section>
+      </div>
 
       <section className="rc__learning">
         <header className="rc__learning-header">
@@ -382,56 +461,6 @@ export default function RubiksCube({ locale }: Props) {
             </button>
           ))}
         </div>
-      </section>
-
-      <section className="rc__controls">
-        <label className="rc__field">
-          <div className="rc__field-header">
-            <span className="rc__field-label">{t('rubiksCube.scramble.label')}</span>
-            <button type="button" className="rc__field-action" onClick={resetScramble}>
-              {t('rubiksCube.scramble.reset')}
-            </button>
-          </div>
-          <textarea
-            className="rc__input"
-            rows={2}
-            value={scramble}
-            onChange={(e) => {
-              setScramble(e.currentTarget.value);
-              setStep(0);
-              setPlaying(false);
-            }}
-            placeholder={t('rubiksCube.scramble.placeholder')}
-            spellCheck={false}
-          />
-          {scrambleParse.errors.length > 0 && (
-            <div className="rc__error">
-              {t('rubiksCube.solution.parseError').replace('{token}', scrambleParse.errors[0].token)}
-            </div>
-          )}
-        </label>
-        <label className="rc__field">
-          <div className="rc__field-header">
-            <span className="rc__field-label">{t('rubiksCube.solution.label')}</span>
-          </div>
-          <textarea
-            className="rc__input"
-            rows={2}
-            value={solution}
-            onChange={(e) => {
-              setSolution(e.currentTarget.value);
-              setStep(0);
-              setPlaying(false);
-            }}
-            placeholder={t('rubiksCube.solution.placeholder')}
-            spellCheck={false}
-          />
-          {solutionParse.errors.length > 0 && (
-            <div className="rc__error">
-              {t('rubiksCube.solution.parseError').replace('{token}', solutionParse.errors[0].token)}
-            </div>
-          )}
-        </label>
       </section>
 
       <section className="rc__share">
