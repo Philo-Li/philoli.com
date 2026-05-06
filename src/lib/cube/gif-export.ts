@@ -80,9 +80,16 @@ export interface ExportGifOpts {
 
 const BASE_STEP_MS = 350;
 const FRAMES_PER_MOVE = 12;
-const OVERLAY_FONT = '20px ui-monospace, "JetBrains Mono", "SFMono-Regular", monospace';
-const OVERLAY_ACCENT = '#f08537';
-const OVERLAY_NORMAL = '#1a1a1a';
+export const OVERLAY_FONT_PX = 88;
+export const OVERLAY_FONT = `900 ${OVERLAY_FONT_PX}px Inter, system-ui, -apple-system, sans-serif`;
+export const OVERLAY_LINE_HEIGHT = Math.round(OVERLAY_FONT_PX * 1.25);
+export const OVERLAY_PAD_X = 24;
+export const OVERLAY_PAD_Y = 22;
+export const OVERLAY_GAP = 18;
+export const OVERLAY_ACCENT = '#e8572a';
+export const OVERLAY_NORMAL = '#1a1a1a';
+/** Light cream background, matching the site's light-theme `--color-bg`. */
+export const GIF_BACKGROUND = '#f3eadb';
 
 export async function exportGif(opts: ExportGifOpts): Promise<Blob> {
   const {
@@ -124,10 +131,10 @@ export async function exportGif(opts: ExportGifOpts): Promise<Blob> {
   const layout = showOverlay
     ? layoutTokens(tokens, (t) => ctx.measureText(t).width, {
         maxWidth: w,
-        lineHeight: 26,
-        padX: 14,
-        padY: 14,
-        gap: 8,
+        lineHeight: OVERLAY_LINE_HEIGHT,
+        padX: OVERLAY_PAD_X,
+        padY: OVERLAY_PAD_Y,
+        gap: OVERLAY_GAP,
       })
     : [];
 
@@ -138,7 +145,7 @@ export async function exportGif(opts: ExportGifOpts): Promise<Blob> {
     width: w,
     height: h,
     repeat: 0,
-    background: '#fafafa',
+    background: GIF_BACKGROUND,
   });
 
   const totalJobs = jobs.length;
@@ -155,7 +162,8 @@ export async function exportGif(opts: ExportGifOpts): Promise<Blob> {
         : undefined;
     scene.renderStillFrame(stateAt, learning, partial, job.progress ?? undefined);
 
-    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = GIF_BACKGROUND;
+    ctx.fillRect(0, 0, w, h);
     ctx.drawImage(sourceCanvas, 0, 0, w, h);
     if (showOverlay) {
       const currentIdx = job.moveIndex ?? endStep - 1;

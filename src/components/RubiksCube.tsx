@@ -18,12 +18,12 @@ const SPEED_STOPS = [0.25, 0.5, 1, 2, 4];
 const BASE_STEP_MS = 350;
 
 const COLORS: { color: Color; key: 'white' | 'red' | 'green' | 'yellow' | 'orange' | 'blue'; swatch: string }[] = [
-  { color: 0, key: 'yellow', swatch: '#f4d04a' },
-  { color: 1, key: 'orange', swatch: '#f08537' },
-  { color: 2, key: 'green', swatch: '#3aa756' },
-  { color: 3, key: 'white', swatch: '#f6f6f0' },
-  { color: 4, key: 'red', swatch: '#d23a2c' },
-  { color: 5, key: 'blue', swatch: '#3c6dde' },
+  { color: 0, key: 'yellow', swatch: '#fed130' },
+  { color: 1, key: 'orange', swatch: '#ee511c' },
+  { color: 2, key: 'green', swatch: '#009b48' },
+  { color: 3, key: 'white', swatch: '#f0eee4' },
+  { color: 4, key: 'red', swatch: '#c81d1f' },
+  { color: 5, key: 'blue', swatch: '#1c5cd6' },
 ];
 
 const FACES: { face: Color; key: 'U' | 'R' | 'F' | 'D' | 'L' | 'B' }[] = [
@@ -487,6 +487,18 @@ export default function RubiksCube({ locale }: Props) {
               </div>
             )}
           </label>
+          <div className="rc__share">
+            <button type="button" onClick={copyShareLink}>
+              {copied ? t('rubiksCube.share.copied') : t('rubiksCube.share.copy')}
+            </button>
+            <button
+              type="button"
+              onClick={() => setGifOpen(true)}
+              disabled={totalSteps === 0 || !sceneReady}
+            >
+              {t('rubiksCube.gif.exportButton')}
+            </button>
+          </div>
         </section>
       </div>
 
@@ -528,25 +540,24 @@ export default function RubiksCube({ locale }: Props) {
         </div>
       </section>
 
-      <section className="rc__share">
-        <button type="button" onClick={copyShareLink}>
-          {copied ? t('rubiksCube.share.copied') : t('rubiksCube.share.copy')}
-        </button>
-        <button
-          type="button"
-          onClick={() => setGifOpen(true)}
-          disabled={totalSteps === 0 || !sceneReady}
-        >
-          {t('rubiksCube.gif.exportButton')}
-        </button>
-      </section>
       <GifExportDialog
         open={gifOpen}
         totalSteps={totalSteps}
         locale={locale}
         progress={gifProgress}
+        scene={sceneRef.current}
+        scrambleMoves={scrambleMoves}
+        solutionMoves={solutionMoves}
+        learning={learning}
         onSubmit={handleGifGenerate}
-        onClose={() => setGifOpen(false)}
+        onClose={() => {
+          setGifOpen(false);
+          // Restore the cube to the user's current step — preview drove
+          // the scene through other states while the dialog was open.
+          if (sceneRef.current && !animatingRef.current) {
+            sceneRef.current.reset(currentState, learning);
+          }
+        }}
       />
     </main>
   );

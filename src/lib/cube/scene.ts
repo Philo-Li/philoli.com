@@ -1,15 +1,16 @@
 import * as THREE from 'three';
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import type { Color, Facelets, LearningMode, Move } from './types';
 
-/** Display colors for each face (URFDLB). */
+/** Display colors for each face (URFDLB). Stickerless GAN palette. */
 const STICKER_COLORS: number[] = [
-  0xf4d04a, // U yellow
-  0xf08537, // R orange
-  0x3aa756, // F green
-  0xf6f6f0, // D white
-  0xd23a2c, // L red
-  0x3c6dde, // B blue
+  0xfed130, // U yellow
+  0xee511c, // R orange
+  0x009b48, // F green
+  0xf0eee4, // D white
+  0xc81d1f, // L red
+  0x1c5cd6, // B blue
 ];
 
 const HIDDEN_COLOR = 0x0a0a0a;
@@ -50,8 +51,13 @@ export class CubeScene {
   private cubies: THREE.Group[] = new Array(27);
   /** 54 sticker meshes in URFDLB facelet order, parallel to the Facelets array. */
   private stickers: THREE.Mesh[] = new Array(54);
-  private stickerMaterials: THREE.MeshStandardMaterial[];
+  private stickerMaterials: THREE.MeshPhysicalMaterial[];
   private hiddenMaterial: THREE.MeshStandardMaterial;
+  private envTexture: THREE.Texture | null = null;
+  /** Holds the lights + shadow-receiving floor. We rotate this to track the
+   * camera's azimuth so that, from the user's POV, the light direction stays
+   * fixed on screen — the user is "rotating the cube", not the studio. */
+  private studio!: THREE.Group;
   private currentState: Facelets | null = null;
   private currentLearning: LearningMode | undefined;
   private dirty = true;
@@ -61,7 +67,8 @@ export class CubeScene {
   // Camera orbit state — radius is recomputed on every resize to fit the cube.
   // Default at -x +y +z octant so the user sees L (red) on the left, F (green)
   // on the right, U (yellow) on top.
-  private azimuth = Math.PI * 0.75;
+  private static readonly INITIAL_AZIMUTH = Math.PI * 0.75;
+  private azimuth = CubeScene.INITIAL_AZIMUTH;
   private elevation = Math.atan(1 / Math.sqrt(2));
   private radius = 7;
 
@@ -93,6 +100,8 @@ export class CubeScene {
     });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.renderer.setClearColor(0x000000, 0);
+    this.renderer.shadowMap.enabled = true;
+    this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
@@ -100,22 +109,77 @@ export class CubeScene {
     this.cubeRoot = new THREE.Group();
     this.scene.add(this.cubeRoot);
 
-    // Lighting
-    this.scene.add(new THREE.AmbientLight(0xffffff, 0.6));
-    const key = new THREE.DirectionalLight(0xffffff, 0.7);
-    key.position.set(5, 8, 6);
-    this.scene.add(key);
-    const fill = new THREE.DirectionalLight(0xffffff, 0.3);
-    fill.position.set(-5, 2, -3);
-    this.scene.add(fill);
+    // PMREM env map drives the specular reflections that give the stickers
+    // their plastic-gloss look. RoomEnvironment is a procedural neutral-lit
+    // box, perfect for studio-style highlights without shipping an HDR file.
+    const pmrem = new THREE.PMREMGenerator(this.renderer);
+    this.envTexture = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    this.scene.environment = this.envTexture;
+    // Tone down the env reflection so the gloss reads as a subtle sheen
+    // rather than a chrome-bright highlight.
+    this.scene.environmentIntensity = 0.22;
+    pmrem.dispose();
 
-    // Materials
+    // Studio group holds everything that should "follow" the camera's azimuth
+    // so the user perceives a fixed lighting setup while the cube appears to
+    // turn — lights, their shadow targets, and the contact-shadow floor.
+    // Ambient light has no direction, so it stays at scene level.
+    this.studio = new THREE.Group();
+    this.scene.add(this.studio);
+
+    this.scene.add(new THREE.AmbientLight(0xffffff, 0.25));
+    const key = new THREE.DirectionalLight(0xffffff, 0.8);
+    key.position.set(5, 8, 6);
+    key.castShadow = true;
+    key.shadow.camera.near = 0.5;
+    key.shadow.camera.far = 25;
+    key.shadow.camera.left = -3.5;
+    key.shadow.camera.right = 3.5;
+    key.shadow.camera.top = 3.5;
+    key.shadow.camera.bottom = -3.5;
+    key.shadow.bias = -0.0008;
+    key.shadow.normalBias = 0.02;
+    // Lower-res shadow map + wide PCF radius + many blur samples gives a
+    // soft, diffused contact shadow with feathered edges, not a hard
+    // silhouette. Higher mapSize would re-introduce a crisp outline.
+    key.shadow.mapSize.set(1024, 1024);
+    key.shadow.radius = 12;
+    key.shadow.blurSamples = 24;
+    this.studio.add(key);
+    this.studio.add(key.target);
+    const fill = new THREE.DirectionalLight(0xffffff, 0.28);
+    fill.position.set(-5, 2, -3);
+    this.studio.add(fill);
+    this.studio.add(fill.target);
+
+    // Contact-shadow floor: invisible except where shadows fall. Sits just
+    // beneath the cube so the cast shadow grounds it without a visible plane
+    // when the camera orbits below the horizon.
+    const floorY = -(1.5 * STEP) - 0.05;
+    const floor = new THREE.Mesh(
+      new THREE.PlaneGeometry(20, 20),
+      new THREE.ShadowMaterial({ opacity: 0.18 }),
+    );
+    floor.rotation.x = -Math.PI / 2;
+    floor.position.y = floorY;
+    floor.receiveShadow = true;
+    this.studio.add(floor);
+
+    // Materials — stickers use MeshPhysicalMaterial with a clearcoat layer to
+    // mimic the lacquered plastic look of a real stickered cube: a colored
+    // diffuse base with a glossy transparent coat that picks up sharp
+    // environment highlights.
     this.stickerMaterials = STICKER_COLORS.map(
       (c) =>
-        new THREE.MeshStandardMaterial({
+        new THREE.MeshPhysicalMaterial({
           color: c,
-          roughness: 0.65,
+          roughness: 0.55,
           metalness: 0,
+          // Clearcoat too high turns the env-map reflection into a white film
+          // that visibly washes the sticker color when it tilts toward a
+          // light. Keep it as a faint sheen.
+          clearcoat: 0.25,
+          clearcoatRoughness: 0.5,
         }),
     );
     this.hiddenMaterial = new THREE.MeshStandardMaterial({
@@ -149,7 +213,7 @@ export class CubeScene {
     const cubieGeom = new RoundedBoxGeometry(CUBIE_SIZE, CUBIE_SIZE, CUBIE_SIZE, 4, 0.08);
     const cubieMat = new THREE.MeshStandardMaterial({
       color: CUBIE_BODY_COLOR,
-      roughness: 0.85,
+      roughness: 0.55,
       metalness: 0,
     });
     const stickerSize = CUBIE_SIZE - STICKER_INSET * 2;
@@ -163,6 +227,8 @@ export class CubeScene {
           cubie.position.set(x * STEP, y * STEP, z * STEP);
           cubie.userData = { x, y, z };
           const body = new THREE.Mesh(cubieGeom, cubieMat);
+          body.castShadow = true;
+          body.receiveShadow = true;
           cubie.add(body);
           this.cubies[cubieIdx(x, y, z)] = cubie;
           this.cubeRoot.add(cubie);
@@ -242,6 +308,8 @@ export class CubeScene {
           sticker.quaternion.copy(cfg.orient);
           sticker.position.copy(cfg.offset);
           sticker.userData = { isSticker: true, faceIndex: cfg.face };
+          sticker.castShadow = true;
+          sticker.receiveShadow = true;
           cubie.add(sticker);
           this.stickers[cfg.face * 9 + row * 3 + col] = sticker;
         }
@@ -457,6 +525,12 @@ export class CubeScene {
     const z = this.radius * Math.cos(this.elevation) * Math.sin(this.azimuth);
     this.camera.position.set(x, y, z);
     this.camera.lookAt(0, 0, 0);
+    // Counter-rotate the studio + env map by the azimuth delta so that, from
+    // the camera's POV, the lighting and shadow stay locked to the same
+    // screen direction — only the cube appears to spin.
+    const delta = this.azimuth - CubeScene.INITIAL_AZIMUTH;
+    this.studio.rotation.y = delta;
+    this.scene.environmentRotation.y = delta;
     this.markDirty();
   }
 
@@ -703,6 +777,9 @@ export class CubeScene {
     el.removeEventListener('pointermove', this.boundPointerMove);
     el.removeEventListener('pointerup', this.boundPointerUp);
     el.removeEventListener('pointercancel', this.boundPointerUp);
+    this.envTexture?.dispose();
+    this.envTexture = null;
+    this.scene.environment = null;
     this.renderer.dispose();
     el.remove();
   }
