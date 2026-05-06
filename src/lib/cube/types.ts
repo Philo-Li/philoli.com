@@ -30,10 +30,16 @@ export interface ParseError {
   message: string;
 }
 
+/** Slice indices to hide per axis. -1, 0, 1 map to D/E/U on y, L/M/R on x, B/S/F on z. */
+export interface HiddenLayers {
+  x: Set<Layer>;
+  y: Set<Layer>;
+  z: Set<Layer>;
+}
+
 export interface LearningMode {
   enabled: boolean;
   hiddenColors: Set<Color>;
   hiddenFaces: Set<Color>;
-  /** Y-axis layer indices to hide. -1 = bottom (D), 0 = middle (E slice), 1 = top (U). */
-  hiddenLayers: Set<Layer>;
+  hiddenLayers: HiddenLayers;
 }

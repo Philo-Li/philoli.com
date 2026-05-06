@@ -30,23 +30,35 @@ function decodeBase32(s: string): number {
   return n;
 }
 
+// Layer bit allocation:
+//   y axis at bits 13..15 (legacy — keeps old share links working)
+//   x axis at bits 16..18
+//   z axis at bits 19..21
+// Within each block, layer index (-1, 0, 1) maps to offset (0, 1, 2).
+const LAYER_BIT_BASE: Record<'y' | 'x' | 'z', number> = { y: 13, x: 16, z: 19 };
+
 function packLearning(l: LearningMode): number {
   let mask = 0;
   for (const c of l.hiddenColors) mask |= 1 << c;
   for (const f of l.hiddenFaces) mask |= 1 << (f + 6);
   if (l.enabled) mask |= 1 << 12;
-  // Layers occupy bits 13..15 (encoded as layer + 1: -1 → 0, 0 → 1, 1 → 2).
-  for (const ly of l.hiddenLayers) mask |= 1 << (13 + (ly + 1));
+  for (const axis of ['x', 'y', 'z'] as const) {
+    for (const ly of l.hiddenLayers[axis]) mask |= 1 << (LAYER_BIT_BASE[axis] + (ly + 1));
+  }
   return mask;
 }
 
 function unpackLearning(mask: number): LearningMode {
   const hiddenColors = new Set<Color>();
   const hiddenFaces = new Set<Color>();
-  const hiddenLayers = new Set<Layer>();
+  const hiddenLayers = { x: new Set<Layer>(), y: new Set<Layer>(), z: new Set<Layer>() };
   for (let i = 0; i < 6; i++) if (mask & (1 << i)) hiddenColors.add(i as Color);
   for (let i = 0; i < 6; i++) if (mask & (1 << (i + 6))) hiddenFaces.add(i as Color);
-  for (let i = 0; i < 3; i++) if (mask & (1 << (13 + i))) hiddenLayers.add((i - 1) as Layer);
+  for (const axis of ['x', 'y', 'z'] as const) {
+    for (let i = 0; i < 3; i++) {
+      if (mask & (1 << (LAYER_BIT_BASE[axis] + i))) hiddenLayers[axis].add((i - 1) as Layer);
+    }
+  }
   return { enabled: (mask & (1 << 12)) !== 0, hiddenColors, hiddenFaces, hiddenLayers };
 }
 

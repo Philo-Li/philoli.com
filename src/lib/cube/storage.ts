@@ -10,8 +10,10 @@ interface StoredV1 {
     enabled: boolean;
     hiddenColors: number[];
     hiddenFaces: number[];
-    /** Optional — added in a later version, defaults to []. */
+    /** Legacy single-axis form (y only) — kept for backward compat. */
     hiddenLayers?: number[];
+    /** Newer per-axis form. Replaces hiddenLayers when present. */
+    hiddenLayersAxes?: { x?: number[]; y?: number[]; z?: number[] };
   };
   step: number;
 }
@@ -29,7 +31,11 @@ export function saveShareState(state: ShareState): void {
         enabled: state.learning.enabled,
         hiddenColors: [...state.learning.hiddenColors],
         hiddenFaces: [...state.learning.hiddenFaces],
-        hiddenLayers: [...state.learning.hiddenLayers],
+        hiddenLayersAxes: {
+          x: [...state.learning.hiddenLayers.x],
+          y: [...state.learning.hiddenLayers.y],
+          z: [...state.learning.hiddenLayers.z],
+        },
       },
       step: state.step,
     };
@@ -54,7 +60,13 @@ export function loadShareState(): ShareState | null {
         enabled: !!parsed.learning?.enabled,
         hiddenColors: new Set((parsed.learning?.hiddenColors ?? []) as Color[]),
         hiddenFaces: new Set((parsed.learning?.hiddenFaces ?? []) as Color[]),
-        hiddenLayers: new Set((parsed.learning?.hiddenLayers ?? []) as Layer[]),
+        hiddenLayers: {
+          x: new Set((parsed.learning?.hiddenLayersAxes?.x ?? []) as Layer[]),
+          y: new Set(
+            (parsed.learning?.hiddenLayersAxes?.y ?? parsed.learning?.hiddenLayers ?? []) as Layer[],
+          ),
+          z: new Set((parsed.learning?.hiddenLayersAxes?.z ?? []) as Layer[]),
+        },
       },
       step: parsed.step ?? 0,
     };

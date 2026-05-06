@@ -51,7 +51,7 @@ function emptyLearning(): LearningMode {
     enabled: false,
     hiddenColors: new Set(),
     hiddenFaces: new Set(),
-    hiddenLayers: new Set(),
+    hiddenLayers: { x: new Set(), y: new Set(), z: new Set() },
   };
 }
 
@@ -59,6 +59,12 @@ const LAYERS: { layer: Layer; key: '1' | '2' | '3' }[] = [
   { layer: -1, key: '1' },
   { layer: 0, key: '2' },
   { layer: 1, key: '3' },
+];
+
+const LAYER_AXES: { axis: 'y' | 'x' | 'z'; rowKey: 'updown' | 'leftright' | 'frontback' }[] = [
+  { axis: 'y', rowKey: 'updown' },
+  { axis: 'x', rowKey: 'leftright' },
+  { axis: 'z', rowKey: 'frontback' },
 ];
 
 function inverseMove(m: Move): Move {
@@ -282,7 +288,11 @@ export default function RubiksCube({ locale }: Props) {
         enabled: initial.learning.enabled,
         hiddenColors: new Set(initial.learning.hiddenColors),
         hiddenFaces: new Set(initial.learning.hiddenFaces),
-        hiddenLayers: new Set(initial.learning.hiddenLayers ?? []),
+        hiddenLayers: {
+          x: new Set(initial.learning.hiddenLayers.x),
+          y: new Set(initial.learning.hiddenLayers.y),
+          z: new Set(initial.learning.hiddenLayers.z),
+        },
       });
       setStep(initial.step);
     }
@@ -375,12 +385,15 @@ export default function RubiksCube({ locale }: Props) {
   // Toggling a color/face also auto-enables learning so the change is visible
   // without a separate master toggle click. If the user empties both sets,
   // learning auto-disables.
+  const totalLayerCount = (h: LearningMode['hiddenLayers']) =>
+    h.x.size + h.y.size + h.z.size;
+
   const toggleHiddenColor = (c: Color) => {
     setLearning((prev) => {
       const next = new Set(prev.hiddenColors);
       if (next.has(c)) next.delete(c);
       else next.add(c);
-      const enabled = next.size > 0 || prev.hiddenFaces.size > 0 || prev.hiddenLayers.size > 0;
+      const enabled = next.size > 0 || prev.hiddenFaces.size > 0 || totalLayerCount(prev.hiddenLayers) > 0;
       return { ...prev, hiddenColors: next, enabled };
     });
   };
@@ -389,17 +402,21 @@ export default function RubiksCube({ locale }: Props) {
       const next = new Set(prev.hiddenFaces);
       if (next.has(f)) next.delete(f);
       else next.add(f);
-      const enabled = prev.hiddenColors.size > 0 || next.size > 0 || prev.hiddenLayers.size > 0;
+      const enabled = prev.hiddenColors.size > 0 || next.size > 0 || totalLayerCount(prev.hiddenLayers) > 0;
       return { ...prev, hiddenFaces: next, enabled };
     });
   };
-  const toggleHiddenLayer = (l: Layer) => {
+  const toggleHiddenLayer = (axis: 'x' | 'y' | 'z', l: Layer) => {
     setLearning((prev) => {
-      const next = new Set(prev.hiddenLayers);
-      if (next.has(l)) next.delete(l);
-      else next.add(l);
-      const enabled = prev.hiddenColors.size > 0 || prev.hiddenFaces.size > 0 || next.size > 0;
-      return { ...prev, hiddenLayers: next, enabled };
+      const nextSet = new Set(prev.hiddenLayers[axis]);
+      if (nextSet.has(l)) nextSet.delete(l);
+      else nextSet.add(l);
+      const nextLayers = { ...prev.hiddenLayers, [axis]: nextSet };
+      const enabled =
+        prev.hiddenColors.size > 0 ||
+        prev.hiddenFaces.size > 0 ||
+        totalLayerCount(nextLayers) > 0;
+      return { ...prev, hiddenLayers: nextLayers, enabled };
     });
   };
 
@@ -625,21 +642,23 @@ export default function RubiksCube({ locale }: Props) {
             </button>
           ))}
         </div>
-        <div className="rc__learning-row">
-          <span className="rc__learning-label">{t('rubiksCube.learning.hideLayers')}</span>
-          {LAYERS.map(({ layer, key }) => (
-            <button
-              key={key}
-              type="button"
-              className="rc__face-btn"
-              aria-pressed={learning.hiddenLayers.has(layer)}
-              title={t(`rubiksCube.learning.layerLabel.${key}`)}
-              onClick={() => toggleHiddenLayer(layer)}
-            >
-              {key}
-            </button>
-          ))}
-        </div>
+        {LAYER_AXES.map(({ axis, rowKey }) => (
+          <div key={axis} className="rc__learning-row">
+            <span className="rc__learning-label">{t(`rubiksCube.learning.hideLayers.${rowKey}`)}</span>
+            {LAYERS.map(({ layer, key }) => (
+              <button
+                key={key}
+                type="button"
+                className="rc__face-btn"
+                aria-pressed={learning.hiddenLayers[axis].has(layer)}
+                title={t(`rubiksCube.learning.layerLabel.${rowKey}.${key}`)}
+                onClick={() => toggleHiddenLayer(axis, layer)}
+              >
+                {key}
+              </button>
+            ))}
+          </div>
+        ))}
       </section>
 
       <GifExportDialog
