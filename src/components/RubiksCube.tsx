@@ -6,7 +6,18 @@ import type { CubeScene as CubeSceneT } from '../lib/cube/scene';
 import { decodeShareState, encodeShareState, type ShareState } from '../lib/cube/url';
 import { loadShareState, saveShareState } from '../lib/cube/storage';
 import type { Color, LearningMode, Move } from '../lib/cube/types';
-import { downloadBlob, exportGif } from '../lib/cube/gif-export';
+import {
+  downloadBlob,
+  exportGif,
+  OVERLAY_ACCENT,
+  OVERLAY_FONT,
+  OVERLAY_GAP,
+  OVERLAY_LINE_HEIGHT,
+  OVERLAY_NORMAL,
+  OVERLAY_PAD_X,
+  OVERLAY_PAD_Y,
+} from '../lib/cube/gif-export';
+import { drawOverlay, layoutTokens } from '../lib/cube/gif-overlay';
 import GifExportDialog, { type GifExportSubmit } from './cube/GifExportDialog';
 import '../styles/rubiks-cube.css';
 
@@ -88,8 +99,10 @@ export default function RubiksCube({ locale }: Props) {
   const [sceneReady, setSceneReady] = useState(false);
   const [gifOpen, setGifOpen] = useState(false);
   const [gifProgress, setGifProgress] = useState(0);
+  const [showFormulaOverlay, setShowFormulaOverlay] = useState(true);
 
   const canvasRef = useRef<HTMLDivElement>(null);
+  const overlayCanvasRef = useRef<HTMLCanvasElement>(null);
   const sceneRef = useRef<CubeSceneT | null>(null);
   const animatingRef = useRef(false);
   // Set when stepNext/stepPrev finishes — tells the currentState effect
@@ -202,6 +215,50 @@ export default function RubiksCube({ locale }: Props) {
   useEffect(() => {
     sceneRef.current?.refreshLearning(learning);
   }, [learning]);
+
+  // ---------- On-canvas formula overlay ----------
+  // Paints the solution tokens onto a transparent 2D canvas stacked over the
+  // WebGL cube. Updates whenever step/solution/visibility change, and tracks
+  // the source canvas size via ResizeObserver.
+  useEffect(() => {
+    const cv = overlayCanvasRef.current;
+    if (!cv) return;
+    const ctx = cv.getContext('2d');
+    if (!ctx) return;
+
+    const draw = () => {
+      const sceneCanvas = sceneRef.current?.getCanvas();
+      const w = sceneCanvas?.width ?? cv.clientWidth;
+      const h = sceneCanvas?.height ?? cv.clientHeight;
+      if (cv.width !== w) cv.width = w;
+      if (cv.height !== h) cv.height = h;
+      ctx.clearRect(0, 0, w, h);
+      if (!showFormulaOverlay || solutionMoves.length === 0) return;
+      ctx.font = OVERLAY_FONT;
+      const tokens = solutionMoves.map((m) => m.notation);
+      const layout = layoutTokens(tokens, (s) => ctx.measureText(s).width, {
+        maxWidth: w,
+        lineHeight: OVERLAY_LINE_HEIGHT,
+        padX: OVERLAY_PAD_X,
+        padY: OVERLAY_PAD_Y,
+        gap: OVERLAY_GAP,
+      });
+      const currentIdx = step < solutionMoves.length ? step : solutionMoves.length - 1;
+      drawOverlay(ctx, layout, currentIdx, {
+        font: OVERLAY_FONT,
+        accentColor: OVERLAY_ACCENT,
+        normalColor: OVERLAY_NORMAL,
+      });
+    };
+
+    draw();
+
+    const mount = canvasRef.current;
+    if (!mount) return;
+    const ro = new ResizeObserver(() => draw());
+    ro.observe(mount);
+    return () => ro.disconnect();
+  }, [solutionMoves, step, showFormulaOverlay, sceneReady]);
 
   // ---------- Load from URL hash / localStorage on mount ----------
   useEffect(() => {
@@ -390,6 +447,7 @@ export default function RubiksCube({ locale }: Props) {
       <div className="rc__stage">
         <section className="rc__canvas">
           <div ref={canvasRef} className="rc__canvas-mount" />
+          <canvas ref={overlayCanvasRef} className="rc__canvas-overlay" aria-hidden="true" />
           {!sceneReady && (
             <div className="rc__canvas-loading" aria-hidden="true">
               <div className="rc__canvas-spinner" />
@@ -486,6 +544,14 @@ export default function RubiksCube({ locale }: Props) {
                 {t('rubiksCube.solution.parseError').replace('{token}', solutionParse.errors[0].token)}
               </div>
             )}
+          </label>
+          <label className="rc__overlay-toggle">
+            <input
+              type="checkbox"
+              checked={showFormulaOverlay}
+              onChange={(e) => setShowFormulaOverlay(e.currentTarget.checked)}
+            />
+            <span>{t('rubiksCube.solution.showOverlay')}</span>
           </label>
           <div className="rc__share">
             <button type="button" onClick={copyShareLink}>

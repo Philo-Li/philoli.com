@@ -240,7 +240,8 @@
     "solution": {
       "label": "还原步骤",
       "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
-      "parseError": "无法识别：{token}"
+      "parseError": "无法识别：{token}",
+      "showOverlay": "在画布上显示公式"
     },
     "playback": {
       "play": "播放",
