@@ -349,16 +349,6 @@ export default function RubiksCube({ locale }: Props) {
       <section className="rc__learning">
         <header className="rc__learning-header">
           <h2 className="rc__learning-title">{t('rubiksCube.learning.title')}</h2>
-          <label className="rc__toggle">
-            <input
-              type="checkbox"
-              checked={learning.enabled}
-              onChange={(e) =>
-                setLearning((p) => ({ ...p, enabled: e.currentTarget.checked }))
-              }
-            />
-            <span>{t('rubiksCube.learning.master')}</span>
-          </label>
         </header>
         <div className="rc__learning-row">
           <span className="rc__learning-label">{t('rubiksCube.learning.hideColors')}</span>
