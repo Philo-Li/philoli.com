@@ -1,8 +1,16 @@
 .rc {
-  max-width: 980px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: calc(var(--nav-height) + var(--space-lg)) var(--space-md) var(--space-xl);
   color: var(--color-text);
+}
+
+.rc__stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  align-items: start;
 }
 
 .rc__header {
@@ -36,7 +44,6 @@
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   height: 520px;
-  margin-bottom: var(--space-md);
   position: relative;
   touch-action: none;
   overflow: hidden;
@@ -80,7 +87,6 @@
   align-items: center;
   gap: var(--space-sm);
   flex-wrap: wrap;
-  margin-bottom: var(--space-md);
   padding: var(--space-sm);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -320,6 +326,12 @@
 
 .rc__share button:hover {
   border-color: var(--color-accent);
+}
+
+@media (max-width: 860px) {
+  .rc__stage {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
