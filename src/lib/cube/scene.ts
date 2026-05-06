@@ -6,7 +6,7 @@ import type { Color, Facelets, LearningMode, Move } from './types';
 /** Display colors for each face (URFDLB). Stickerless GAN palette. */
 const STICKER_COLORS: number[] = [
   0xfed130, // U yellow
-  0xee511c, // R orange
+  0xff8a00, // R orange
   0x009b48, // F green
   0xf0eee4, // D white
   0xc81d1f, // L red

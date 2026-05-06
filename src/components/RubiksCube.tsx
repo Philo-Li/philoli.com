@@ -30,7 +30,7 @@ const BASE_STEP_MS = 350;
 
 const COLORS: { color: Color; key: 'white' | 'red' | 'green' | 'yellow' | 'orange' | 'blue'; swatch: string }[] = [
   { color: 0, key: 'yellow', swatch: '#fed130' },
-  { color: 1, key: 'orange', swatch: '#ee511c' },
+  { color: 1, key: 'orange', swatch: '#ff8a00' },
   { color: 2, key: 'green', swatch: '#009b48' },
   { color: 3, key: 'white', swatch: '#f0eee4' },
   { color: 4, key: 'red', swatch: '#c81d1f' },
