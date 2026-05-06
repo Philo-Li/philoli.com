@@ -22,6 +22,11 @@ const STICKER_INSET = 0.10;
 const STICKER_LIFT = 0.005;
 const HALF = STEP / 2 + STICKER_LIFT;
 
+/** Bounding sphere radius of the assembled 3x3 cube (corner-to-center distance). */
+const CUBE_BOUND_RADIUS = Math.sqrt(3) * (1.5 * STEP);
+/** Extra space around the cube so it doesn't kiss the viewport edges. */
+const CAMERA_FIT_MARGIN = 1.25;
+
 function easeInOutQuad(t: number): number {
   return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 }
@@ -53,7 +58,7 @@ export class CubeScene {
   private animating = false;
   private rafId: number | null = null;
 
-  // Camera orbit state
+  // Camera orbit state — radius is recomputed on every resize to fit the cube.
   private azimuth = Math.PI * 0.25;
   private elevation = Math.atan(1 / Math.sqrt(2));
   private radius = 7;
@@ -404,10 +409,20 @@ export class CubeScene {
   private handleResize(): void {
     const { width, height } = this.mount.getBoundingClientRect();
     if (width === 0 || height === 0) return;
-    this.renderer.setSize(width, height, false);
-    this.camera.aspect = width / height;
+    this.renderer.setSize(width, height, true);
+    const aspect = width / height;
+    this.camera.aspect = aspect;
     this.camera.updateProjectionMatrix();
-    this.markDirty();
+
+    // Fit the cube's bounding sphere within both the vertical and horizontal
+    // frustum planes. Vertical FOV is fixed; horizontal FOV scales with aspect.
+    // For aspect < 1 (portrait), horizontal is the binding constraint.
+    const halfVFov = THREE.MathUtils.degToRad(this.camera.fov) / 2;
+    const fitV = (CUBE_BOUND_RADIUS * CAMERA_FIT_MARGIN) / Math.tan(halfVFov);
+    const fitH = fitV / aspect;
+    this.radius = Math.max(fitV, fitH);
+
+    this.applyCamera();
   }
 
   private startRenderLoop(): void {
