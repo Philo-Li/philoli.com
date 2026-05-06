@@ -234,6 +234,7 @@
       "label": "خلطة",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "تطبيق الخلطة",
+      "random": "عشوائي",
       "reset": "إعادة ضبط"
     },
     "solution": {

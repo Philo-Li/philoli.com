@@ -234,6 +234,7 @@
       "label": "Mezcla",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Aplicar mezcla",
+      "random": "Aleatorio",
       "reset": "Reiniciar"
     },
     "solution": {

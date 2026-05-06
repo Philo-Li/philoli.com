@@ -234,6 +234,7 @@
       "label": "Paghalu-halo",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Ilapat ang paghalu-halo",
+      "random": "Random",
       "reset": "I-reset"
     },
     "solution": {

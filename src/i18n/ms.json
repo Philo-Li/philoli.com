@@ -234,6 +234,7 @@
       "label": "Susunan rawak",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Gunakan susunan rawak",
+      "random": "Rawak",
       "reset": "Set semula"
     },
     "solution": {

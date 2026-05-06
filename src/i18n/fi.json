@@ -234,6 +234,7 @@
       "label": "Sekoitus",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Käytä sekoitusta",
+      "random": "Satunnainen",
       "reset": "Nollaa"
     },
     "solution": {

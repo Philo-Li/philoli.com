@@ -234,6 +234,7 @@
       "label": "การสลับ",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "ใช้การสลับ",
+      "random": "สุ่ม",
       "reset": "ตั้งค่าใหม่"
     },
     "solution": {

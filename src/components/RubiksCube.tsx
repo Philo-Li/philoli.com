@@ -44,6 +44,35 @@ function inverseMove(m: Move): Move {
   };
 }
 
+// WCA-style random-move scrambler. 20 moves, no two consecutive moves on the
+// same face, and no three consecutive moves on the same axis (so U D U is
+// disallowed because U D = D U makes it collapsible to U2 D).
+function generateScramble(length = 20): string {
+  const FACES = ['U', 'D', 'L', 'R', 'F', 'B'] as const;
+  const AXIS: Record<(typeof FACES)[number], 'x' | 'y' | 'z'> = {
+    U: 'y', D: 'y', L: 'x', R: 'x', F: 'z', B: 'z',
+  };
+  const MODS = ['', "'", '2'];
+  const out: string[] = [];
+  let lastAxis: 'x' | 'y' | 'z' | '' = '';
+  let secondLastAxis: 'x' | 'y' | 'z' | '' = '';
+  let lastFace: (typeof FACES)[number] | '' = '';
+  for (let i = 0; i < length; i++) {
+    let face: (typeof FACES)[number];
+    do {
+      face = FACES[Math.floor(Math.random() * FACES.length)];
+    } while (
+      face === lastFace ||
+      (lastAxis === secondLastAxis && AXIS[face] === lastAxis)
+    );
+    secondLastAxis = lastAxis;
+    lastAxis = AXIS[face];
+    lastFace = face;
+    out.push(face + MODS[Math.floor(Math.random() * MODS.length)]);
+  }
+  return out.join(' ');
+}
+
 export default function RubiksCube({ locale }: Props) {
   const t = useTranslations(locale);
 
@@ -315,6 +344,14 @@ export default function RubiksCube({ locale }: Props) {
     setPlaying(false);
   };
 
+  const randomScramble = () => {
+    if (animatingRef.current) return;
+    setScramble(generateScramble());
+    setSolution('');
+    setStep(0);
+    setPlaying(false);
+  };
+
   // ---------- UI ----------
   const totalSteps = solutionMoves.length;
   const speedIndex = SPEED_STOPS.indexOf(speed);
@@ -378,9 +415,14 @@ export default function RubiksCube({ locale }: Props) {
           <label className="rc__field">
             <div className="rc__field-header">
               <span className="rc__field-label">{t('rubiksCube.scramble.label')}</span>
-              <button type="button" className="rc__field-action" onClick={resetScramble}>
-                {t('rubiksCube.scramble.reset')}
-              </button>
+              <span className="rc__field-actions">
+                <button type="button" className="rc__field-action" onClick={randomScramble}>
+                  {t('rubiksCube.scramble.random')}
+                </button>
+                <button type="button" className="rc__field-action" onClick={resetScramble}>
+                  {t('rubiksCube.scramble.reset')}
+                </button>
+              </span>
             </div>
             <textarea
               className="rc__input"

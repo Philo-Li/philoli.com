@@ -234,6 +234,7 @@
       "label": "ערבוב",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "החל ערבוב",
+      "random": "אקראי",
       "reset": "איפוס"
     },
     "solution": {

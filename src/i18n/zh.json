@@ -234,6 +234,7 @@
       "label": "打乱",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "应用打乱",
+      "random": "随机",
       "reset": "重置"
     },
     "solution": {

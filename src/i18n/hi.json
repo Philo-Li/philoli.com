@@ -234,6 +234,7 @@
       "label": "स्क्रैम्बल",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "स्क्रैम्बल लागू करें",
+      "random": "यादृच्छिक",
       "reset": "रीसेट करें"
     },
     "solution": {

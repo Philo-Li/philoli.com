@@ -234,6 +234,7 @@
       "label": "섞기 공식",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "섞기 적용",
+      "random": "랜덤",
       "reset": "초기화"
     },
     "solution": {
