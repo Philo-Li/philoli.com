@@ -144,13 +144,19 @@ export default function RubiksCube({ locale }: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Push currentState to scene whenever it changes and we're not animating.
-  // This handles: scramble change, solution change, step jumps, learning toggle.
+  // Snap cubies back to canonical positions and re-paint when the logical
+  // state changes (scramble / solution / step). Skip while animating.
   useEffect(() => {
     if (!sceneRef.current) return;
     if (animatingRef.current) return;
-    sceneRef.current.reset(currentState, learning);
-  }, [currentState, learning]);
+    sceneRef.current.reset(currentState, learningRef.current);
+  }, [currentState]);
+
+  // Learning toggles must NOT touch cubie positions — just repaint materials
+  // so any drag-rotated state stays visually intact.
+  useEffect(() => {
+    sceneRef.current?.refreshLearning(learning);
+  }, [learning]);
 
   // ---------- Load from URL hash / localStorage on mount ----------
   useEffect(() => {
@@ -236,12 +242,16 @@ export default function RubiksCube({ locale }: Props) {
   }, [playing]);
 
   // ---------- Learning mode ----------
+  // Toggling a color/face also auto-enables learning so the change is visible
+  // without a separate master toggle click. If the user empties both sets,
+  // learning auto-disables.
   const toggleHiddenColor = (c: Color) => {
     setLearning((prev) => {
       const next = new Set(prev.hiddenColors);
       if (next.has(c)) next.delete(c);
       else next.add(c);
-      return { ...prev, hiddenColors: next };
+      const enabled = next.size > 0 || prev.hiddenFaces.size > 0;
+      return { ...prev, hiddenColors: next, enabled };
     });
   };
   const toggleHiddenFace = (f: Color) => {
@@ -249,7 +259,8 @@ export default function RubiksCube({ locale }: Props) {
       const next = new Set(prev.hiddenFaces);
       if (next.has(f)) next.delete(f);
       else next.add(f);
-      return { ...prev, hiddenFaces: next };
+      const enabled = prev.hiddenColors.size > 0 || next.size > 0;
+      return { ...prev, hiddenFaces: next, enabled };
     });
   };
 
