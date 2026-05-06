@@ -16,11 +16,11 @@ const SPEED_STOPS = [0.25, 0.5, 1, 2, 4];
 const BASE_STEP_MS = 350;
 
 const COLORS: { color: Color; key: 'white' | 'red' | 'green' | 'yellow' | 'orange' | 'blue'; swatch: string }[] = [
-  { color: 0, key: 'white', swatch: '#f6f6f0' },
-  { color: 1, key: 'red', swatch: '#d23a2c' },
+  { color: 0, key: 'yellow', swatch: '#f4d04a' },
+  { color: 1, key: 'orange', swatch: '#f08537' },
   { color: 2, key: 'green', swatch: '#3aa756' },
-  { color: 3, key: 'yellow', swatch: '#f4d04a' },
-  { color: 4, key: 'orange', swatch: '#f08537' },
+  { color: 3, key: 'white', swatch: '#f6f6f0' },
+  { color: 4, key: 'red', swatch: '#d23a2c' },
   { color: 5, key: 'blue', swatch: '#3c6dde' },
 ];
 

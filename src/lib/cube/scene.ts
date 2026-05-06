@@ -4,11 +4,11 @@ import type { Color, Facelets, LearningMode, Move } from './types';
 
 /** Display colors for each face (URFDLB). */
 const STICKER_COLORS: number[] = [
-  0xf6f6f0, // U white
-  0xd23a2c, // R red
+  0xf4d04a, // U yellow
+  0xf08537, // R orange
   0x3aa756, // F green
-  0xf4d04a, // D yellow
-  0xf08537, // L orange
+  0xf6f6f0, // D white
+  0xd23a2c, // L red
   0x3c6dde, // B blue
 ];
 
