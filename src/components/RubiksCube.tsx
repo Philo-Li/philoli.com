@@ -6,6 +6,8 @@ import type { CubeScene as CubeSceneT } from '../lib/cube/scene';
 import { decodeShareState, encodeShareState, type ShareState } from '../lib/cube/url';
 import { loadShareState, saveShareState } from '../lib/cube/storage';
 import type { Color, LearningMode, Move } from '../lib/cube/types';
+import { downloadBlob, exportGif } from '../lib/cube/gif-export';
+import GifExportDialog, { type GifExportSubmit } from './cube/GifExportDialog';
 import '../styles/rubiks-cube.css';
 
 interface Props {
@@ -84,6 +86,8 @@ export default function RubiksCube({ locale }: Props) {
   const [learning, setLearning] = useState<LearningMode>(emptyLearning);
   const [copied, setCopied] = useState(false);
   const [sceneReady, setSceneReady] = useState(false);
+  const [gifOpen, setGifOpen] = useState(false);
+  const [gifProgress, setGifProgress] = useState(0);
 
   const canvasRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef<CubeSceneT | null>(null);
@@ -344,6 +348,25 @@ export default function RubiksCube({ locale }: Props) {
     setPlaying(false);
   };
 
+  const handleGifGenerate = async (opts: GifExportSubmit, signal: AbortSignal) => {
+    if (!sceneRef.current) throw new Error('scene not ready');
+    setGifProgress(0);
+    const blob = await exportGif({
+      scene: sceneRef.current,
+      scrambleMoves,
+      solutionMoves,
+      startStep: opts.startStep,
+      endStep: opts.endStep,
+      speed: opts.speed,
+      showOverlay: opts.showOverlay,
+      learning,
+      signal,
+      onProgress: setGifProgress,
+    });
+    const date = new Date().toISOString().slice(0, 10);
+    downloadBlob(blob, `${t('rubiksCube.gif.filenamePrefix')}-${date}.gif`);
+  };
+
   const randomScramble = () => {
     if (animatingRef.current) return;
     setScramble(generateScramble());
@@ -509,7 +532,22 @@ export default function RubiksCube({ locale }: Props) {
         <button type="button" onClick={copyShareLink}>
           {copied ? t('rubiksCube.share.copied') : t('rubiksCube.share.copy')}
         </button>
+        <button
+          type="button"
+          onClick={() => setGifOpen(true)}
+          disabled={totalSteps === 0 || !sceneReady}
+        >
+          {t('rubiksCube.gif.exportButton')}
+        </button>
       </section>
+      <GifExportDialog
+        open={gifOpen}
+        totalSteps={totalSteps}
+        locale={locale}
+        progress={gifProgress}
+        onSubmit={handleGifGenerate}
+        onClose={() => setGifOpen(false)}
+      />
     </main>
   );
 }

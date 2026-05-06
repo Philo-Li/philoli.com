@@ -276,6 +276,21 @@
     "share": {
       "copy": "复制分享链接",
       "copied": "已复制！"
+    },
+    "gif": {
+      "exportButton": "导出 GIF",
+      "dialogTitle": "导出 GIF",
+      "rangeLabel": "范围",
+      "rangeStart": "起点",
+      "rangeEnd": "终点",
+      "rangeCaption": "从第 {start} 步到第 {end} 步（共 {count} 步）",
+      "speedLabel": "速度",
+      "showOverlay": "在画布上显示步骤",
+      "cancel": "取消",
+      "generate": "生成 GIF",
+      "generating": "生成中… {percent}%",
+      "errorGeneric": "生成失败，请重试。",
+      "filenamePrefix": "rubiks-cube"
     }
   }
 }
