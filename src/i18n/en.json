@@ -261,7 +261,11 @@
       "master": "Enable",
       "hideColors": "Hide colors",
       "hideFaces": "Hide faces",
-      "hideLayers": "Hide layers",
+      "hideLayers": {
+        "updown": "Hide layers ↕",
+        "leftright": "Hide layers ↔",
+        "frontback": "Hide layers (front/back)"
+      },
       "faceLabel": {
         "U": "Up",
         "R": "Right",
@@ -271,9 +275,21 @@
         "B": "Back"
       },
       "layerLabel": {
-        "1": "1st layer (bottom)",
-        "2": "2nd layer (middle)",
-        "3": "3rd layer (top)"
+        "updown": {
+          "1": "Bottom layer (D)",
+          "2": "Middle layer (E)",
+          "3": "Top layer (U)"
+        },
+        "leftright": {
+          "1": "Left layer (L)",
+          "2": "Middle layer (M)",
+          "3": "Right layer (R)"
+        },
+        "frontback": {
+          "1": "Back layer (B)",
+          "2": "Middle layer (S)",
+          "3": "Front layer (F)"
+        }
       },
       "colorLabel": {
         "white": "White",

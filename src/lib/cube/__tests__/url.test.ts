@@ -5,7 +5,11 @@ const emptyLearning = () => ({
   enabled: false,
   hiddenColors: new Set<0 | 1 | 2 | 3 | 4 | 5>(),
   hiddenFaces: new Set<0 | 1 | 2 | 3 | 4 | 5>(),
-  hiddenLayers: new Set<-1 | 0 | 1>(),
+  hiddenLayers: {
+    x: new Set<-1 | 0 | 1>(),
+    y: new Set<-1 | 0 | 1>(),
+    z: new Set<-1 | 0 | 1>(),
+  },
 });
 
 describe('share state codec', () => {
@@ -17,7 +21,11 @@ describe('share state codec', () => {
         enabled: true,
         hiddenColors: new Set([0, 3]),
         hiddenFaces: new Set([1]),
-        hiddenLayers: new Set([-1, 1]),
+        hiddenLayers: {
+          x: new Set([-1]),
+          y: new Set([1]),
+          z: new Set([-1, 0]),
+        },
       },
       step: 2,
     };
@@ -29,7 +37,9 @@ describe('share state codec', () => {
     expect(decoded!.learning.enabled).toBe(true);
     expect([...decoded!.learning.hiddenColors].sort()).toEqual([0, 3]);
     expect([...decoded!.learning.hiddenFaces]).toEqual([1]);
-    expect([...decoded!.learning.hiddenLayers].sort()).toEqual([-1, 1]);
+    expect([...decoded!.learning.hiddenLayers.x]).toEqual([-1]);
+    expect([...decoded!.learning.hiddenLayers.y]).toEqual([1]);
+    expect([...decoded!.learning.hiddenLayers.z].sort()).toEqual([-1, 0]);
     expect(decoded!.step).toBe(2);
   });
 
@@ -76,6 +86,8 @@ describe('share state codec', () => {
     expect(decoded!.scramble).toBe('');
     expect(decoded!.solution).toBe('');
     expect(decoded!.learning.enabled).toBe(false);
-    expect(decoded!.learning.hiddenLayers.size).toBe(0);
+    expect(decoded!.learning.hiddenLayers.x.size).toBe(0);
+    expect(decoded!.learning.hiddenLayers.y.size).toBe(0);
+    expect(decoded!.learning.hiddenLayers.z.size).toBe(0);
   });
 });
