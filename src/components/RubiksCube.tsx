@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslations } from '../i18n';
 import { parseAlgorithm } from '../lib/cube/parser';
 import { applyMove, solvedState } from '../lib/cube/state';
-import { CubeScene } from '../lib/cube/scene';
+import type { CubeScene as CubeSceneT } from '../lib/cube/scene';
 import { decodeShareState, encodeShareState, type ShareState } from '../lib/cube/url';
 import { loadShareState, saveShareState } from '../lib/cube/storage';
 import type { Color, LearningMode, Move } from '../lib/cube/types';
@@ -54,9 +54,10 @@ export default function RubiksCube({ locale }: Props) {
   const [speed, setSpeed] = useState(1);
   const [learning, setLearning] = useState<LearningMode>(emptyLearning);
   const [copied, setCopied] = useState(false);
+  const [sceneReady, setSceneReady] = useState(false);
 
   const canvasRef = useRef<HTMLDivElement>(null);
-  const sceneRef = useRef<CubeScene | null>(null);
+  const sceneRef = useRef<CubeSceneT | null>(null);
   const animatingRef = useRef(false);
 
   // Refs that mirror state, so async loops always see the freshest values.
@@ -110,25 +111,35 @@ export default function RubiksCube({ locale }: Props) {
     return s;
   }, [scrambledState, solutionMoves, step]);
 
-  // ---------- Scene init ----------
+  // ---------- Scene init (lazy: Three.js loads as a separate chunk) ----------
   useEffect(() => {
     if (!canvasRef.current) return;
-    const scene = new CubeScene(canvasRef.current, {
-      onLayerMove: async (move) => {
-        if (animatingRef.current) return;
-        animatingRef.current = true;
-        try {
-          await scene.animateMove(move, BASE_STEP_MS / speedRef.current);
-        } finally {
-          animatingRef.current = false;
-        }
-      },
+    let cancelled = false;
+    let scene: CubeSceneT | null = null;
+
+    import('../lib/cube/scene').then(({ CubeScene }) => {
+      if (cancelled || !canvasRef.current) return;
+      scene = new CubeScene(canvasRef.current, {
+        onLayerMove: async (move) => {
+          if (animatingRef.current) return;
+          animatingRef.current = true;
+          try {
+            await scene!.animateMove(move, BASE_STEP_MS / speedRef.current);
+          } finally {
+            animatingRef.current = false;
+          }
+        },
+      });
+      scene.reset(solvedState(), learningRef.current);
+      sceneRef.current = scene;
+      setSceneReady(true);
     });
-    scene.reset(solvedState(), learningRef.current);
-    sceneRef.current = scene;
+
     return () => {
-      scene.dispose();
+      cancelled = true;
+      scene?.dispose();
       sceneRef.current = null;
+      setSceneReady(false);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -279,6 +290,11 @@ export default function RubiksCube({ locale }: Props) {
 
       <section className="rc__canvas">
         <div ref={canvasRef} className="rc__canvas-mount" />
+        {!sceneReady && (
+          <div className="rc__canvas-loading" aria-hidden="true">
+            <div className="rc__canvas-spinner" />
+          </div>
+        )}
       </section>
 
       <section className="rc__playback">

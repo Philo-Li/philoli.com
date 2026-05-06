@@ -11,5 +11,5 @@ const t = useTranslations(locale);
   title={t('rubiksCube.metadata.title')}
   description={t('rubiksCube.metadata.description')}
 >
-  <RubiksCube client:only="react" locale={locale} />
+  <RubiksCube client:load locale={locale} />
 </BaseLayout>
