@@ -325,12 +325,20 @@ export class CubeScene {
   public setFacelets(state: Facelets, learning?: LearningMode): void {
     this.currentState = state;
     this.currentLearning = learning;
+    const hideLayers = !!learning?.enabled && learning.hiddenLayers && learning.hiddenLayers.size > 0;
     for (let i = 0; i < 54; i++) {
       const color = state[i] as Color;
       const face = Math.floor(i / 9) as Color;
-      const hidden =
+      let hidden =
         !!learning?.enabled &&
         (learning.hiddenColors.has(color) || learning.hiddenFaces.has(face));
+      if (!hidden && hideLayers) {
+        const cubie = this.stickers[i].parent as THREE.Group | null;
+        if (cubie) {
+          const layer = this.layerCoord(cubie, 'y');
+          if (learning!.hiddenLayers.has(layer)) hidden = true;
+        }
+      }
       this.stickers[i].material = hidden ? this.hiddenMaterial : this.stickerMaterials[color];
     }
     this.markDirty();

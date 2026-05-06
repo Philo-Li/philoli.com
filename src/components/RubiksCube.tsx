@@ -5,7 +5,7 @@ import { applyMove, solvedState } from '../lib/cube/state';
 import type { CubeScene as CubeSceneT } from '../lib/cube/scene';
 import { decodeShareState, encodeShareState, type ShareState } from '../lib/cube/url';
 import { loadShareState, saveShareState } from '../lib/cube/storage';
-import type { Color, LearningMode, Move } from '../lib/cube/types';
+import type { Color, Layer, LearningMode, Move } from '../lib/cube/types';
 import {
   downloadBlob,
   exportGif,
@@ -47,8 +47,19 @@ const FACES: { face: Color; key: 'U' | 'R' | 'F' | 'D' | 'L' | 'B' }[] = [
 ];
 
 function emptyLearning(): LearningMode {
-  return { enabled: false, hiddenColors: new Set(), hiddenFaces: new Set() };
+  return {
+    enabled: false,
+    hiddenColors: new Set(),
+    hiddenFaces: new Set(),
+    hiddenLayers: new Set(),
+  };
 }
+
+const LAYERS: { layer: Layer; key: '1' | '2' | '3' }[] = [
+  { layer: -1, key: '1' },
+  { layer: 0, key: '2' },
+  { layer: 1, key: '3' },
+];
 
 function inverseMove(m: Move): Move {
   return {
@@ -271,6 +282,7 @@ export default function RubiksCube({ locale }: Props) {
         enabled: initial.learning.enabled,
         hiddenColors: new Set(initial.learning.hiddenColors),
         hiddenFaces: new Set(initial.learning.hiddenFaces),
+        hiddenLayers: new Set(initial.learning.hiddenLayers ?? []),
       });
       setStep(initial.step);
     }
@@ -368,7 +380,7 @@ export default function RubiksCube({ locale }: Props) {
       const next = new Set(prev.hiddenColors);
       if (next.has(c)) next.delete(c);
       else next.add(c);
-      const enabled = next.size > 0 || prev.hiddenFaces.size > 0;
+      const enabled = next.size > 0 || prev.hiddenFaces.size > 0 || prev.hiddenLayers.size > 0;
       return { ...prev, hiddenColors: next, enabled };
     });
   };
@@ -377,8 +389,17 @@ export default function RubiksCube({ locale }: Props) {
       const next = new Set(prev.hiddenFaces);
       if (next.has(f)) next.delete(f);
       else next.add(f);
-      const enabled = prev.hiddenColors.size > 0 || next.size > 0;
+      const enabled = prev.hiddenColors.size > 0 || next.size > 0 || prev.hiddenLayers.size > 0;
       return { ...prev, hiddenFaces: next, enabled };
+    });
+  };
+  const toggleHiddenLayer = (l: Layer) => {
+    setLearning((prev) => {
+      const next = new Set(prev.hiddenLayers);
+      if (next.has(l)) next.delete(l);
+      else next.add(l);
+      const enabled = prev.hiddenColors.size > 0 || prev.hiddenFaces.size > 0 || next.size > 0;
+      return { ...prev, hiddenLayers: next, enabled };
     });
   };
 
@@ -599,6 +620,21 @@ export default function RubiksCube({ locale }: Props) {
               aria-pressed={learning.hiddenFaces.has(face)}
               title={t(`rubiksCube.learning.faceLabel.${key}`)}
               onClick={() => toggleHiddenFace(face)}
+            >
+              {key}
+            </button>
+          ))}
+        </div>
+        <div className="rc__learning-row">
+          <span className="rc__learning-label">{t('rubiksCube.learning.hideLayers')}</span>
+          {LAYERS.map(({ layer, key }) => (
+            <button
+              key={key}
+              type="button"
+              className="rc__face-btn"
+              aria-pressed={learning.hiddenLayers.has(layer)}
+              title={t(`rubiksCube.learning.layerLabel.${key}`)}
+              onClick={() => toggleHiddenLayer(layer)}
             >
               {key}
             </button>

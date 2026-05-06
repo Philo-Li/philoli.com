@@ -34,4 +34,6 @@ export interface LearningMode {
   enabled: boolean;
   hiddenColors: Set<Color>;
   hiddenFaces: Set<Color>;
+  /** Y-axis layer indices to hide. -1 = bottom (D), 0 = middle (E slice), 1 = top (U). */
+  hiddenLayers: Set<Layer>;
 }

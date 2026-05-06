@@ -261,6 +261,7 @@
       "master": "Enable",
       "hideColors": "Hide colors",
       "hideFaces": "Hide faces",
+      "hideLayers": "Hide layers",
       "faceLabel": {
         "U": "Up",
         "R": "Right",
@@ -268,6 +269,11 @@
         "D": "Down",
         "L": "Left",
         "B": "Back"
+      },
+      "layerLabel": {
+        "1": "1st layer (bottom)",
+        "2": "2nd layer (middle)",
+        "3": "3rd layer (top)"
       },
       "colorLabel": {
         "white": "White",

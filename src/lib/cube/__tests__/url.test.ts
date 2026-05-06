@@ -1,6 +1,13 @@
 import { describe, it, expect } from 'vitest';
 import { encodeShareState, decodeShareState, type ShareState } from '../url';
 
+const emptyLearning = () => ({
+  enabled: false,
+  hiddenColors: new Set<0 | 1 | 2 | 3 | 4 | 5>(),
+  hiddenFaces: new Set<0 | 1 | 2 | 3 | 4 | 5>(),
+  hiddenLayers: new Set<-1 | 0 | 1>(),
+});
+
 describe('share state codec', () => {
   it('round-trips full state', () => {
     const state: ShareState = {
@@ -10,6 +17,7 @@ describe('share state codec', () => {
         enabled: true,
         hiddenColors: new Set([0, 3]),
         hiddenFaces: new Set([1]),
+        hiddenLayers: new Set([-1, 1]),
       },
       step: 2,
     };
@@ -21,6 +29,7 @@ describe('share state codec', () => {
     expect(decoded!.learning.enabled).toBe(true);
     expect([...decoded!.learning.hiddenColors].sort()).toEqual([0, 3]);
     expect([...decoded!.learning.hiddenFaces]).toEqual([1]);
+    expect([...decoded!.learning.hiddenLayers].sort()).toEqual([-1, 1]);
     expect(decoded!.step).toBe(2);
   });
 
@@ -28,7 +37,7 @@ describe('share state codec', () => {
     const empty: ShareState = {
       scramble: '',
       solution: '',
-      learning: { enabled: false, hiddenColors: new Set(), hiddenFaces: new Set() },
+      learning: emptyLearning(),
       step: 0,
     };
     expect(encodeShareState(empty)).toBe('');
@@ -43,7 +52,7 @@ describe('share state codec', () => {
     const hash = encodeShareState({
       scramble: "R'",
       solution: '',
-      learning: { enabled: false, hiddenColors: new Set(), hiddenFaces: new Set() },
+      learning: emptyLearning(),
       step: 0,
     });
     const decoded = decodeShareState(hash);
@@ -51,12 +60,10 @@ describe('share state codec', () => {
   });
 
   it('escapes ampersand in algorithm text safely', () => {
-    // Using URLSearchParams keys, an ampersand in a value would normally
-    // split into a new key — encoder must protect against it.
     const hash = encodeShareState({
       scramble: 'R&U',
       solution: '',
-      learning: { enabled: false, hiddenColors: new Set(), hiddenFaces: new Set() },
+      learning: emptyLearning(),
       step: 0,
     });
     const decoded = decodeShareState(hash);
@@ -69,5 +76,6 @@ describe('share state codec', () => {
     expect(decoded!.scramble).toBe('');
     expect(decoded!.solution).toBe('');
     expect(decoded!.learning.enabled).toBe(false);
+    expect(decoded!.learning.hiddenLayers.size).toBe(0);
   });
 });
