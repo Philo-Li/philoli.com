@@ -585,17 +585,18 @@ export class CubeScene {
     const rotAxis = allAxes.find((a) => a !== faceAxis && a !== tangentAxis)!;
     const layer = this.hitCubieCoord[rotAxis] as -1 | 0 | 1;
 
-    // Determine turn direction. Right-hand rule: rotating around +rotAxis CCW
-    // from +rotAxis means a sticker on the +faceAxis face moving in the +tangent
-    // direction (where the third axis is the cross product faceAxis × tangentAxis).
-    // Sign of (faceAxis × tangentAxis) along rotAxis determines whether dragging
-    // in +tangent rotates the layer CCW or CW around rotAxis.
+    // Predict the visual angle that a `turns: 1` move at this (rotAxis, layer)
+    // would actually produce. `angleFor` flips sign for L/D/B/M/E layers (so
+    // that "turns: 1" matches WCA notation, not "CW around +axis"), which
+    // breaks any naive CCW/CW reasoning. Pick whichever of {1, 3} makes the
+    // sticker move in the same tangent direction the user dragged.
     const cross = this.crossSign(faceAxis, tangentAxis, rotAxis);
-    const ccwAroundPosAxis = cross * faceSign * tangentSign;
-    // Our move convention "turns:1" is CW from +axis (negative angle). So
-    // turns=1 corresponds to ccwAroundPosAxis = -1 (i.e., CW), and turns=3
-    // corresponds to ccwAroundPosAxis = +1 (CCW).
-    const turns: 1 | 3 = ccwAroundPosAxis < 0 ? 1 : 3;
+    const probeAngleSign: 1 | -1 =
+      this.angleFor({ axis: rotAxis, layers: [layer], turns: 1, notation: '' }) < 0 ? -1 : 1;
+    // For a point at faceSign·faceAxis_hat, rotating by `angle` around +rotAxis
+    // yields velocity along tangentAxis with sign = sign(angle) · faceSign · cross.
+    const expectedTangentSign = probeAngleSign * faceSign * cross;
+    const turns: 1 | 3 = expectedTangentSign === tangentSign ? 1 : 3;
 
     if (this.onLayerMove) {
       this.onLayerMove({
