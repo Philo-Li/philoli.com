@@ -244,7 +244,8 @@
     "solution": {
       "label": "Solution",
       "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
-      "parseError": "Unrecognized: {token}"
+      "parseError": "Unrecognized: {token}",
+      "showOverlay": "Show formula on canvas"
     },
     "playback": {
       "play": "Play",
