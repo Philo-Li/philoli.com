@@ -117,7 +117,7 @@ export class CubeScene {
     this.scene.environment = this.envTexture;
     // Tone down the env reflection so the gloss reads as a subtle sheen
     // rather than a chrome-bright highlight.
-    this.scene.environmentIntensity = 0.22;
+    this.scene.environmentIntensity = 0.35;
     pmrem.dispose();
 
     // Studio group holds everything that should "follow" the camera's azimuth
@@ -127,8 +127,8 @@ export class CubeScene {
     this.studio = new THREE.Group();
     this.scene.add(this.studio);
 
-    this.scene.add(new THREE.AmbientLight(0xffffff, 0.25));
-    const key = new THREE.DirectionalLight(0xffffff, 0.8);
+    this.scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+    const key = new THREE.DirectionalLight(0xffffff, 0.95);
     key.position.set(5, 8, 6);
     key.castShadow = true;
     key.shadow.camera.near = 0.5;
@@ -147,7 +147,7 @@ export class CubeScene {
     key.shadow.blurSamples = 24;
     this.studio.add(key);
     this.studio.add(key.target);
-    const fill = new THREE.DirectionalLight(0xffffff, 0.28);
+    const fill = new THREE.DirectionalLight(0xffffff, 0.45);
     fill.position.set(-5, 2, -3);
     this.studio.add(fill);
     this.studio.add(fill.target);
@@ -173,7 +173,7 @@ export class CubeScene {
       (c) =>
         new THREE.MeshPhysicalMaterial({
           color: c,
-          roughness: 0.55,
+          roughness: 0.45,
           metalness: 0,
           // Clearcoat too high turns the env-map reflection into a white film
           // that visibly washes the sticker color when it tilts toward a
