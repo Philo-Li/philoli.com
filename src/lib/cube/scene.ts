@@ -342,18 +342,22 @@ export class CubeScene {
   }
 
   private collectMovingCubies(move: Move): THREE.Group[] {
+    // The cubies array is indexed by ORIGINAL position; after rotations the
+    // cubie at index (1,1,1) may now sit anywhere on the cube. Layer
+    // membership is decided by the cubie's CURRENT position under cubeRoot.
     const moving: THREE.Group[] = [];
-    for (let x = -1; x <= 1; x++) {
-      for (let y = -1; y <= 1; y++) {
-        for (let z = -1; z <= 1; z++) {
-          const coord = move.axis === 'x' ? x : move.axis === 'y' ? y : z;
-          if (move.layers.includes(coord as -1 | 0 | 1)) {
-            moving.push(this.cubies[cubieIdx(x, y, z)]);
-          }
-        }
-      }
+    for (const c of this.cubies) {
+      const coord = this.layerCoord(c, move.axis);
+      if (move.layers.includes(coord)) moving.push(c);
     }
     return moving;
+  }
+
+  /** Snap a cubie's current cubeRoot-space position along `axis` to {-1, 0, 1}. */
+  private layerCoord(c: THREE.Group, axis: 'x' | 'y' | 'z'): -1 | 0 | 1 {
+    const v = axis === 'x' ? c.position.x : axis === 'y' ? c.position.y : c.position.z;
+    const r = Math.round(v / STEP);
+    return (r < 0 ? -1 : r > 0 ? 1 : 0) as -1 | 0 | 1;
   }
 
   private axisVec(axis: 'x' | 'y' | 'z'): THREE.Vector3 {
@@ -470,7 +474,7 @@ export class CubeScene {
       this.dragMode = this.hitFaceNormal && this.hitCubieCoord ? 'layer' : 'orbit';
     }
     if (this.dragMode === 'orbit') {
-      this.azimuth -= dx * 0.008;
+      this.azimuth += dx * 0.008;
       this.elevation = Math.max(-1.45, Math.min(1.45, this.elevation + dy * 0.008));
       this.dragStartX = e.clientX;
       this.dragStartY = e.clientY;
@@ -510,13 +514,20 @@ export class CubeScene {
       const obj = h.object;
       if (!obj.userData?.isSticker) continue;
       const cubie = obj.parent;
-      if (!cubie || cubie.userData.x === undefined) continue;
+      if (!cubie) continue;
       const normal = new THREE.Vector3(0, 0, 1).applyQuaternion(
         obj.getWorldQuaternion(new THREE.Quaternion()),
       );
+      // Use the cubie's CURRENT position (snapped to layer indices), not its
+      // userData (which is the original solved-state position and goes stale
+      // after the first turn).
       return {
         normal,
-        cubie: { x: cubie.userData.x, y: cubie.userData.y, z: cubie.userData.z },
+        cubie: {
+          x: this.layerCoord(cubie as THREE.Group, 'x'),
+          y: this.layerCoord(cubie as THREE.Group, 'y'),
+          z: this.layerCoord(cubie as THREE.Group, 'z'),
+        },
       };
     }
     return null;
