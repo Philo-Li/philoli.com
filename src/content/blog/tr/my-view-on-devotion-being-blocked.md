@@ -1,5 +1,5 @@
 ---
-title: "Devotion"ın Yasaklanması Hakkındaki Görüşlerim
+title: '"Devotion"ın Yasaklanması Hakkındaki Görüşlerim'
 date: 2019-02-26 20:53:13
 tags: Deneme
 categories: Günlük Sohbetler
