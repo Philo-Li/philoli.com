@@ -234,6 +234,7 @@
       "label": "スクランブル",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "スクランブルを適用",
+      "random": "ランダム",
       "reset": "リセット"
     },
     "solution": {

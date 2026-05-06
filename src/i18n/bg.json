@@ -234,6 +234,7 @@
       "label": "Разбъркване",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Приложи разбъркването",
+      "random": "Случайно",
       "reset": "Нулиране"
     },
     "solution": {

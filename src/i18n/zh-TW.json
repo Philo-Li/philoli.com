@@ -234,6 +234,7 @@
       "label": "打亂公式",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "套用打亂",
+      "random": "隨機",
       "reset": "重設"
     },
     "solution": {

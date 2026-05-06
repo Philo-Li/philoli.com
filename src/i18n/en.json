@@ -238,6 +238,7 @@
       "label": "Scramble",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Apply scramble",
+      "random": "Random",
       "reset": "Reset"
     },
     "solution": {

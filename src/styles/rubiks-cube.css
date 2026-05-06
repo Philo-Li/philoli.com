@@ -175,6 +175,11 @@
   color: var(--color-text-muted);
 }
 
+.rc__field-actions {
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
 .rc__field-action {
   font-family: inherit;
   font-size: 0.8rem;

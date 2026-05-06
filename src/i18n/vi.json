@@ -234,6 +234,7 @@
       "label": "Xáo trộn",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Áp dụng xáo trộn",
+      "random": "Ngẫu nhiên",
       "reset": "Đặt lại"
     },
     "solution": {

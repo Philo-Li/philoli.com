@@ -234,6 +234,7 @@
       "label": "Zamiešanie",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Použiť zamiešanie",
+      "random": "Náhodne",
       "reset": "Resetovať"
     },
     "solution": {

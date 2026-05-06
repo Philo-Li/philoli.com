@@ -234,6 +234,7 @@
       "label": "Miješanje",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Primijeni miješanje",
+      "random": "Nasumično",
       "reset": "Ponovno postavi"
     },
     "solution": {

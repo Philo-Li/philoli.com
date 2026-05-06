@@ -234,6 +234,7 @@
       "label": "Amestec",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Aplică amestecul",
+      "random": "Aleatoriu",
       "reset": "Resetează"
     },
     "solution": {

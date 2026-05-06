@@ -234,6 +234,7 @@
       "label": "Verdrehung",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Verdrehung anwenden",
+      "random": "Zufällig",
       "reset": "Zurücksetzen"
     },
     "solution": {

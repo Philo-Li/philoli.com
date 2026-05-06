@@ -234,6 +234,7 @@
       "label": "Скрамбл",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Застосувати скрамбл",
+      "random": "Випадково",
       "reset": "Скинути"
     },
     "solution": {

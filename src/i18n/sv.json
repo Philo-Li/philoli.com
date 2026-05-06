@@ -234,6 +234,7 @@
       "label": "Blandning",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Använd blandning",
+      "random": "Slumpa",
       "reset": "Återställ"
     },
     "solution": {

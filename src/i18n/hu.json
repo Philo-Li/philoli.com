@@ -234,6 +234,7 @@
       "label": "Keverés",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Keverés alkalmazása",
+      "random": "Véletlen",
       "reset": "Visszaállítás"
     },
     "solution": {

@@ -234,6 +234,7 @@
       "label": "Blanding",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Bruk blanding",
+      "random": "Tilfeldig",
       "reset": "Nullstill"
     },
     "solution": {

@@ -234,6 +234,7 @@
       "label": "Mélange",
       "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
       "apply": "Appliquer le mélange",
+      "random": "Aléatoire",
       "reset": "Réinitialiser"
     },
     "solution": {
