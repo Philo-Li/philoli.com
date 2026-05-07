@@ -1,6 +1,33 @@
 # Cube Timer — Design
 
 Date: 2026-05-07
+Status: **Not pursued** (decided 2026-05-07, same day)
+
+## Why we decided not to build this
+
+After the design was finalized, we stepped back and asked: why build
+this when cstimer.net already exists and is excellent?
+
+The honest answer: this design's feature set is ~99% a subset of
+cstimer. Spacebar hold, WCA scrambles, ao5/ao12, +2/DNF, local
+storage, JSON import/export — cstimer does all of it, polished by
+years of community use.
+
+Three reasons that *would* have justified building it, none of which
+held up:
+
+1. **Integration with the existing `/projects/rubiks-cube` 3D learning
+   page** (e.g., scramble syncs to the 3D model, replay your solve).
+   Would have been genuinely unique. Not the goal here — we wanted a
+   timer, not a teaching integration.
+2. **Content/portfolio piece** ("How I built a cube timer in Astro").
+   Possible, but not what motivated the request.
+3. **A specific feature cstimer lacks.** We couldn't name one.
+
+Decision: use cstimer.net for daily practice. Keep the design doc as a
+record of the thinking. If reason #1 ever becomes interesting (timing
++ 3D replay tied together), this spec is a useful starting point — but
+the scope would expand significantly beyond what's written here.
 
 ## Goal
 
