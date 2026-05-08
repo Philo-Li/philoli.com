@@ -59,7 +59,17 @@ function unpackLearning(mask: number): LearningMode {
       if (mask & (1 << (LAYER_BIT_BASE[axis] + i))) hiddenLayers[axis].add((i - 1) as Layer);
     }
   }
-  return { enabled: (mask & (1 << 12)) !== 0, hiddenColors, hiddenFaces, hiddenLayers };
+  return {
+    enabled: (mask & (1 << 12)) !== 0,
+    hiddenColors,
+    hiddenFaces,
+    hiddenLayers,
+    // Per-cubie sets are not encoded in share URLs (would balloon the
+    // bitmask with up to 27 cubies × 2 states). Custom-hide is a session
+    // preference, persisted via localStorage instead.
+    hiddenCubies: new Set<number>(),
+    highlightedCubies: new Set<number>(),
+  };
 }
 
 export function encodeShareState(state: ShareState): string {

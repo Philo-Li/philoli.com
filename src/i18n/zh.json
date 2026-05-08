@@ -315,6 +315,20 @@
       "errorGeneric": "生成失败，请重试。",
       "filenamePrefix": "rubiks-cube"
     },
+    "customHide": {
+      "button": "自定义隐藏",
+      "title": "自定义隐藏 / 高亮",
+      "instructions": "点击任一贴片以循环：显示 → 隐藏 → 高亮 → 显示。",
+      "summary": "{hidden} 个隐藏 · {highlighted} 个高亮",
+      "legend": {
+        "hidden": "隐藏 —— 贴片变暗",
+        "highlighted": "高亮 —— 块体发出冰蓝光"
+      },
+      "exit": "完成自定义",
+      "hideAll": "全部隐藏",
+      "reset": "全部重置",
+      "close": "关闭"
+    },
     "notation": {
       "button": "符号说明",
       "title": "符号说明",
@@ -340,6 +354,47 @@
         "doubleDesc": "旋转 180°，方向不影响结果"
       },
       "close": "关闭"
+    },
+    "methods": {
+      "sectionTitle": "解法方法",
+      "sectionCaption": "查看常见还原方法的阶段示意：每一步只显示已经归位的块。",
+      "button": "查看方法",
+      "title": "解法方法",
+      "close": "关闭",
+      "viewLabel": {
+        "side": "侧视",
+        "below": "底视"
+      },
+      "lbl": {
+        "name": "层先法（LBL）",
+        "description": "经典入门方法。一层接一层完成：先做底面十字、再放底层角块、然后中层棱块、最后处理整个顶层。",
+        "stages": {
+          "cross": "底面十字",
+          "firstLayer": "完成底层",
+          "secondLayer": "完成中层",
+          "solved": "完成顶层"
+        }
+      },
+      "cfop": {
+        "name": "CFOP（Fridrich）",
+        "description": "速拧主流方法。Cross 完成底面十字，F2L 同时插入底层角和中层棱，OLL 让顶面变同色，PLL 把顶层各块换到正确位置。",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "块式解法。先在左侧搭一个 1×2×3 块，再在右侧搭一个，CMLL 完成顶层四个角，LSE 还原 M 中层和最后六条棱。",
+        "stages": {
+          "firstBlock": "First Block",
+          "secondBlock": "Second Block",
+          "cmll": "CMLL",
+          "lse": "LSE"
+        }
+      }
     }
   }
 }

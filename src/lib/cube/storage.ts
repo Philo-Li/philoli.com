@@ -14,6 +14,11 @@ interface StoredV1 {
     hiddenLayers?: number[];
     /** Newer per-axis form. Replaces hiddenLayers when present. */
     hiddenLayersAxes?: { x?: number[]; y?: number[]; z?: number[] };
+    /** Custom per-cubie hide list. Values are *original* cubie indices
+     * (0..26), so the selection identifies the piece itself. */
+    hiddenCubies?: number[];
+    /** Custom per-cubie highlight list. */
+    highlightedCubies?: number[];
   };
   step: number;
 }
@@ -36,6 +41,8 @@ export function saveShareState(state: ShareState): void {
           y: [...state.learning.hiddenLayers.y],
           z: [...state.learning.hiddenLayers.z],
         },
+        hiddenCubies: [...state.learning.hiddenCubies],
+        highlightedCubies: [...state.learning.highlightedCubies],
       },
       step: state.step,
     };
@@ -67,6 +74,8 @@ export function loadShareState(): ShareState | null {
           ),
           z: new Set((parsed.learning?.hiddenLayersAxes?.z ?? []) as Layer[]),
         },
+        hiddenCubies: new Set(parsed.learning?.hiddenCubies ?? []),
+        highlightedCubies: new Set(parsed.learning?.highlightedCubies ?? []),
       },
       step: parsed.step ?? 0,
     };

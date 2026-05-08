@@ -42,4 +42,13 @@ export interface LearningMode {
   hiddenColors: Set<Color>;
   hiddenFaces: Set<Color>;
   hiddenLayers: HiddenLayers;
+  /** Cubies hidden by the custom-hide picker. Indices 0..26 are the
+   * cubie's *original* position in the solved cube (cubieIdx of its build-
+   * time x/y/z), so the ID identifies the piece itself — it stays hidden
+   * no matter where the piece travels under rotations, and even after the
+   * cube is solved back to its original state. */
+  hiddenCubies: Set<number>;
+  /** Cubies highlighted by the custom-hide picker. Mutually exclusive
+   * with hiddenCubies (cycle steps remove the other). */
+  highlightedCubies: Set<number>;
 }

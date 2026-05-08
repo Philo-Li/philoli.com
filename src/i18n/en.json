@@ -319,6 +319,20 @@
       "errorGeneric": "Failed to generate GIF. Please try again.",
       "filenamePrefix": "rubiks-cube"
     },
+    "customHide": {
+      "button": "Custom hide",
+      "title": "Custom hide / highlight",
+      "instructions": "Click any sticker to cycle: visible → hidden → highlighted → visible.",
+      "summary": "{hidden} hidden · {highlighted} highlighted",
+      "legend": {
+        "hidden": "Hidden — stickers darkened",
+        "highlighted": "Highlighted — body glows ice cyan"
+      },
+      "exit": "Done customizing",
+      "hideAll": "Hide all",
+      "reset": "Reset all",
+      "close": "Close"
+    },
     "notation": {
       "button": "Notation guide",
       "title": "Notation guide",
@@ -344,6 +358,47 @@
         "doubleDesc": "180° turn — direction doesn't matter"
       },
       "close": "Close"
+    },
+    "methods": {
+      "sectionTitle": "Solving methods",
+      "sectionCaption": "Step through common solving methods stage by stage — each thumbnail hides everything except the cubies placed by that point.",
+      "button": "Browse methods",
+      "title": "Solving methods",
+      "close": "Close",
+      "viewLabel": {
+        "side": "side",
+        "below": "from below"
+      },
+      "lbl": {
+        "name": "Layer-by-Layer (LBL)",
+        "description": "Classic beginner method. Solve one layer at a time — bottom cross, bottom corners, middle edges, then last layer.",
+        "stages": {
+          "cross": "White cross",
+          "firstLayer": "First layer",
+          "secondLayer": "Second layer",
+          "solved": "Last layer"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Mainstream speedsolving method. Cross builds the bottom cross, F2L pairs corners with middle edges, OLL orients the last face, PLL permutes the last layer.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Block-building method. Build a 1×2×3 block on the left, then on the right, solve the last-layer corners (CMLL), then finish with the M-slice and last six edges (LSE).",
+        "stages": {
+          "firstBlock": "First Block",
+          "secondBlock": "Second Block",
+          "cmll": "CMLL",
+          "lse": "LSE"
+        }
+      }
     }
   }
 }

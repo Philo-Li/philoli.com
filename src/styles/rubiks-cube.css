@@ -653,6 +653,206 @@
   margin: 0;
 }
 
+/* Inline custom-hide picker — drives the main canvas while active. */
+.rc__canvas--picking {
+  outline: 2px dashed #4dd4ff;
+  outline-offset: -2px;
+}
+
+.rc__canvas--picking .rc__canvas-mount canvas {
+  cursor: pointer;
+}
+
+.rc__custom-hide-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm);
+  margin-top: var(--space-sm);
+  border: 1px dashed #4dd4ff;
+  background: rgba(77, 212, 255, 0.06);
+  font-size: 0.85rem;
+  color: var(--color-text-subtle);
+}
+
+.rc__custom-hide-instr {
+  flex: 1 1 18rem;
+  min-width: 14rem;
+  line-height: 1.4;
+}
+
+.rc__custom-hide-actions {
+  display: inline-flex;
+  gap: 0.4rem;
+}
+
+.rc__custom-hide-summary {
+  font-family: ui-monospace, "JetBrains Mono", "SFMono-Regular", monospace;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.rc__field-action[aria-pressed="true"] {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: white;
+}
+
+/* Methods section — inline tabs + per-stage thumbnails */
+.rc__methods {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.rc__methods-caption {
+  font-size: 0.85rem;
+  color: var(--color-text-subtle);
+  margin: 0;
+}
+
+.rc-method__description {
+  font-size: 0.85rem;
+  color: var(--color-text-subtle);
+  margin: 0;
+}
+
+.rc-method__tabs {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.rc-method__tab {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.9rem;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.rc-method__tab:hover {
+  border-color: var(--color-accent);
+}
+
+.rc-method__tab[aria-selected="true"] {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: white;
+}
+
+.rc-method__stages {
+  /* One column per thumbnail across the whole method. Labels span the columns
+     belonging to their stage. This keeps every thumbnail exactly the same
+     size regardless of how many views a stage has. */
+  display: grid;
+  grid-template-columns: repeat(var(--total-thumbs, 4), minmax(0, 1fr));
+  column-gap: 0.4rem;
+  row-gap: 0.4rem;
+}
+
+.rc-method__thumb-wrap {
+  position: relative;
+  min-width: 0;
+}
+
+.rc-method__thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.rc-method__stage-label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+.rc-method__stage-num {
+  font-family: ui-monospace, "JetBrains Mono", "SFMono-Regular", monospace;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  min-width: 1ch;
+}
+
+.rc-method__view-tag {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  font-size: 0.65rem;
+  color: var(--color-text-subtle);
+  padding: 0.1rem 0.35rem;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Hidden host for the offscreen WebGL scene that generates thumbnails. */
+.rc-method__offscreen {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  left: -9999px;
+  top: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .rc-method__stages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Custom hide / highlight dialog */
+.rc-custom-hide__legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--color-text-subtle);
+}
+
+.rc-custom-hide__legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.rc-custom-hide__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.rc-custom-hide__dot--hidden {
+  background: #0a0a0a;
+  border-color: #0a0a0a;
+}
+
+.rc-custom-hide__dot--highlighted {
+  background: #4dd4ff;
+  border-color: #80e6ff;
+  box-shadow: 0 0 10px rgba(128, 230, 255, 0.85);
+}
+
 @media (max-width: 860px) {
   .rc__stage {
     grid-template-columns: 1fr;

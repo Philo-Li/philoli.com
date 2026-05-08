@@ -19,6 +19,7 @@ import {
 } from '../lib/cube/gif-export';
 import { drawOverlay, layoutTokens } from '../lib/cube/gif-overlay';
 import GifExportDialog, { type GifExportSubmit } from './cube/GifExportDialog';
+import MethodGuide from './cube/MethodGuide';
 import NotationGuideDialog from './cube/NotationGuideDialog';
 import '../styles/rubiks-cube.css';
 
@@ -53,6 +54,8 @@ function emptyLearning(): LearningMode {
     hiddenColors: new Set(),
     hiddenFaces: new Set(),
     hiddenLayers: { x: new Set(), y: new Set(), z: new Set() },
+    hiddenCubies: new Set(),
+    highlightedCubies: new Set(),
   };
 }
 
@@ -118,6 +121,7 @@ export default function RubiksCube({ locale }: Props) {
   const [gifOpen, setGifOpen] = useState(false);
   const [gifProgress, setGifProgress] = useState(0);
   const [notationOpen, setNotationOpen] = useState(false);
+  const [customHideMode, setCustomHideMode] = useState(false);
   const [showFormulaOverlay, setShowFormulaOverlay] = useState(true);
 
   const solutionTextareaId = useId();
@@ -297,6 +301,8 @@ export default function RubiksCube({ locale }: Props) {
           y: new Set(initial.learning.hiddenLayers.y),
           z: new Set(initial.learning.hiddenLayers.z),
         },
+        hiddenCubies: new Set(initial.learning.hiddenCubies),
+        highlightedCubies: new Set(initial.learning.highlightedCubies),
       });
       setStep(initial.step);
     }
@@ -424,6 +430,62 @@ export default function RubiksCube({ locale }: Props) {
     });
   };
 
+  const cycleCubieAt = (originalIdx: number) => {
+    setLearning((prev) => {
+      const hiddenCubies = new Set(prev.hiddenCubies);
+      const highlightedCubies = new Set(prev.highlightedCubies);
+      // Cycle visible → hidden → highlighted → visible.
+      const wasHidden = hiddenCubies.delete(originalIdx);
+      const wasHi = highlightedCubies.delete(originalIdx);
+      if (!wasHidden && !wasHi) hiddenCubies.add(originalIdx);
+      else if (wasHidden) highlightedCubies.add(originalIdx);
+      // (wasHi && !wasHidden) → fall through to "visible" with both deleted.
+      const enabled =
+        prev.hiddenColors.size > 0 ||
+        prev.hiddenFaces.size > 0 ||
+        totalLayerCount(prev.hiddenLayers) > 0 ||
+        hiddenCubies.size > 0 ||
+        highlightedCubies.size > 0;
+      return { ...prev, enabled, hiddenCubies, highlightedCubies };
+    });
+  };
+
+  // Wire / un-wire the picker callback on the live scene whenever the
+  // mode flag flips. Reads through a ref so the closure always sees the
+  // freshest cycle handler; setLearning itself is stable.
+  const cycleCubieRef = useRef(cycleCubieAt);
+  useEffect(() => {
+    cycleCubieRef.current = cycleCubieAt;
+  });
+  useEffect(() => {
+    if (!sceneReady) return;
+    sceneRef.current?.setOnCubieClick(
+      customHideMode ? (idx) => cycleCubieRef.current(idx) : undefined,
+    );
+  }, [customHideMode, sceneReady]);
+
+  const customHideHideAll = () => {
+    const all = Array.from({ length: 27 }, (_, i) => i);
+    setLearning((prev) => ({
+      ...prev,
+      hiddenCubies: new Set(all),
+      highlightedCubies: new Set(),
+      enabled: true,
+    }));
+  };
+
+  const customHideReset = () => {
+    setLearning((prev) => ({
+      ...prev,
+      hiddenCubies: new Set(),
+      highlightedCubies: new Set(),
+      enabled:
+        prev.hiddenColors.size > 0 ||
+        prev.hiddenFaces.size > 0 ||
+        totalLayerCount(prev.hiddenLayers) > 0,
+    }));
+  };
+
   // ---------- Share ----------
   const copyShareLink = async () => {
     const state: ShareState = { scramble, solution, learning, step };
@@ -487,7 +549,7 @@ export default function RubiksCube({ locale }: Props) {
       </header>
 
       <div className="rc__stage">
-        <section className="rc__canvas">
+        <section className={`rc__canvas${customHideMode ? ' rc__canvas--picking' : ''}`}>
           <div ref={canvasRef} className="rc__canvas-mount" />
           <canvas ref={overlayCanvasRef} className="rc__canvas-overlay" aria-hidden="true" />
           {!sceneReady && (
@@ -616,14 +678,60 @@ export default function RubiksCube({ locale }: Props) {
       <section className="rc__learning">
         <header className="rc__learning-header">
           <h2 className="rc__learning-title">{t('rubiksCube.learning.title')}</h2>
-          <button
-            type="button"
-            className="rc__field-action"
-            onClick={() => setNotationOpen(true)}
-          >
-            {t('rubiksCube.notation.button')}
-          </button>
+          <span className="rc__field-actions">
+            <button
+              type="button"
+              className="rc__field-action"
+              aria-pressed={customHideMode}
+              onClick={() => setCustomHideMode((m) => !m)}
+            >
+              {customHideMode
+                ? t('rubiksCube.customHide.exit')
+                : t('rubiksCube.customHide.button')}
+            </button>
+            <button
+              type="button"
+              className="rc__field-action"
+              onClick={() => setNotationOpen(true)}
+            >
+              {t('rubiksCube.notation.button')}
+            </button>
+          </span>
         </header>
+
+        {customHideMode && (
+          <div className="rc__custom-hide-bar">
+            <span className="rc__custom-hide-instr">
+              {t('rubiksCube.customHide.instructions')}
+            </span>
+            <span className="rc__custom-hide-actions">
+              <button
+                type="button"
+                className="rc__field-action"
+                onClick={customHideHideAll}
+                disabled={learning.hiddenCubies.size === 27}
+              >
+                {t('rubiksCube.customHide.hideAll')}
+              </button>
+              <button
+                type="button"
+                className="rc__field-action"
+                onClick={customHideReset}
+                disabled={
+                  learning.hiddenCubies.size === 0 &&
+                  learning.highlightedCubies.size === 0
+                }
+              >
+                {t('rubiksCube.customHide.reset')}
+              </button>
+            </span>
+            <span className="rc__custom-hide-summary">
+              {t('rubiksCube.customHide.summary')
+                .replace('{hidden}', String(learning.hiddenCubies.size))
+                .replace('{highlighted}', String(learning.highlightedCubies.size))}
+            </span>
+          </div>
+        )}
         <div className="rc__learning-row">
           <span className="rc__learning-label">{t('rubiksCube.learning.hideColors')}</span>
           {COLORS.map(({ color, key, swatch }) => (
@@ -673,6 +781,14 @@ export default function RubiksCube({ locale }: Props) {
             ))}
           </div>
         ))}
+      </section>
+
+      <section className="rc__methods">
+        <header className="rc__learning-header">
+          <h2 className="rc__learning-title">{t('rubiksCube.methods.sectionTitle')}</h2>
+        </header>
+        <p className="rc__methods-caption">{t('rubiksCube.methods.sectionCaption')}</p>
+        <MethodGuide locale={locale} />
       </section>
 
       <NotationGuideDialog

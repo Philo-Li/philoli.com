@@ -15,6 +15,11 @@ const STICKER_COLORS: number[] = [
 
 const HIDDEN_COLOR = 0x0a0a0a;
 const CUBIE_BODY_COLOR = 0x1a1a1a;
+/** Body color + emissive for cubies in the "highlight" custom-hide state.
+ * Glows out at the seams between stickers and at the rounded corners, so
+ * the sticker face colors stay visible — only the block frame glows. */
+const HIGHLIGHT_BODY_COLOR = 0x4dd4ff;
+const HIGHLIGHT_BODY_EMISSIVE = 0x80e6ff;
 
 const CUBIE_SIZE = 1;
 const CUBIE_GAP = 0.04;
@@ -40,6 +45,12 @@ function cubieIdx(x: number, y: number, z: number): number {
 export interface CubeSceneOptions {
   /** Optional callback invoked when the user finishes a layer-drag gesture. */
   onLayerMove?: (move: Move) => void;
+  /** When set, layer-drag is disabled (only orbit drag works) and a non-drag
+   * tap on a sticker fires this callback with the *original* index of the
+   * sticker's parent cubie (0..26, computed from the cubie's solved-state
+   * position). Tracking by original index identifies the piece itself, so
+   * the picked block stays selected through any rotations or solves. */
+  onCubieClick?: (originalCubieIndex: number) => void;
 }
 
 export class CubeScene {
@@ -49,10 +60,16 @@ export class CubeScene {
   private camera: THREE.PerspectiveCamera;
   private cubeRoot: THREE.Group;
   private cubies: THREE.Group[] = new Array(27);
-  /** 54 sticker meshes in URFDLB facelet order, parallel to the Facelets array. */
+  /** Cubie body meshes parallel to `cubies`. Cached so per-cubie highlight
+   * material swaps don't have to walk children at every learning update. */
+  private cubieBodies: THREE.Mesh[] = new Array(27);
+  /** 54 sticker meshes — index `i` is the piece originally at facelet `i`,
+   * permanently parented to its cubie so it travels with rotations. */
   private stickers: THREE.Mesh[] = new Array(54);
   private stickerMaterials: THREE.MeshPhysicalMaterial[];
   private hiddenMaterial: THREE.MeshStandardMaterial;
+  private cubieBodyMaterial: THREE.MeshStandardMaterial;
+  private highlightBodyMaterial: THREE.MeshStandardMaterial;
   private envTexture: THREE.Texture | null = null;
   /** Holds the lights + shadow-receiving floor. We rotate this to track the
    * camera's azimuth so that, from the user's POV, the light direction stays
@@ -78,10 +95,15 @@ export class CubeScene {
   private dragStartY = 0;
   private hitFaceNormal: THREE.Vector3 | null = null;
   private hitCubieCoord: { x: number; y: number; z: number } | null = null;
+  /** Original (solved-state) cubie index of the cubie under the pointer at
+   * pointerdown. Used by picker mode to identify the piece, not its current
+   * grid position. */
+  private hitOriginalCubieIdx: number | null = null;
   private activePointerId: number | null = null;
 
   // External callbacks
   private onLayerMove: ((move: Move) => void) | undefined;
+  private onCubieClick: ((originalCubieIndex: number) => void) | undefined;
 
   // Dispose hooks
   private resizeObserver: ResizeObserver;
@@ -92,6 +114,7 @@ export class CubeScene {
   constructor(mountEl: HTMLElement, opts: CubeSceneOptions = {}) {
     this.mount = mountEl;
     this.onLayerMove = opts.onLayerMove;
+    this.onCubieClick = opts.onCubieClick;
 
     this.renderer = new THREE.WebGLRenderer({
       antialias: true,
@@ -187,6 +210,21 @@ export class CubeScene {
       roughness: 1,
       metalness: 0,
     });
+    this.cubieBodyMaterial = new THREE.MeshStandardMaterial({
+      color: CUBIE_BODY_COLOR,
+      roughness: 0.55,
+      metalness: 0,
+    });
+    // Highlighted cubie bodies swap to this material — emissive cyan that
+    // glows through the seams between stickers and out the rounded corners.
+    // Stickers themselves stay normal so the user can still see face colors.
+    this.highlightBodyMaterial = new THREE.MeshStandardMaterial({
+      color: HIGHLIGHT_BODY_COLOR,
+      emissive: HIGHLIGHT_BODY_EMISSIVE,
+      emissiveIntensity: 1.0,
+      roughness: 0.5,
+      metalness: 0,
+    });
 
     this.buildCube();
     this.applyCamera();
@@ -211,11 +249,6 @@ export class CubeScene {
 
   private buildCube(): void {
     const cubieGeom = new RoundedBoxGeometry(CUBIE_SIZE, CUBIE_SIZE, CUBIE_SIZE, 4, 0.08);
-    const cubieMat = new THREE.MeshStandardMaterial({
-      color: CUBIE_BODY_COLOR,
-      roughness: 0.55,
-      metalness: 0,
-    });
     const stickerSize = CUBIE_SIZE - STICKER_INSET * 2;
     const stickerGeom = new THREE.PlaneGeometry(stickerSize, stickerSize);
 
@@ -226,11 +259,13 @@ export class CubeScene {
           const cubie = new THREE.Group();
           cubie.position.set(x * STEP, y * STEP, z * STEP);
           cubie.userData = { x, y, z };
-          const body = new THREE.Mesh(cubieGeom, cubieMat);
+          const body = new THREE.Mesh(cubieGeom, this.cubieBodyMaterial);
           body.castShadow = true;
           body.receiveShadow = true;
           cubie.add(body);
-          this.cubies[cubieIdx(x, y, z)] = cubie;
+          const idx = cubieIdx(x, y, z);
+          this.cubies[idx] = cubie;
+          this.cubieBodies[idx] = body;
           this.cubeRoot.add(cubie);
         }
       }
@@ -325,28 +360,58 @@ export class CubeScene {
   public setFacelets(state: Facelets, learning?: LearningMode): void {
     this.currentState = state;
     this.currentLearning = learning;
+    const enabled = !!learning?.enabled;
     const layers = learning?.hiddenLayers;
     const hideAnyLayer =
-      !!learning?.enabled &&
-      !!layers &&
-      (layers.x.size > 0 || layers.y.size > 0 || layers.z.size > 0);
+      enabled && !!layers && (layers.x.size > 0 || layers.y.size > 0 || layers.z.size > 0);
+    const hiddenCubies = enabled ? learning!.hiddenCubies : null;
+    const highlightedCubies = enabled ? learning!.highlightedCubies : null;
+    const useHiddenCubies = !!hiddenCubies && hiddenCubies.size > 0;
+    const useHighlight = !!highlightedCubies && highlightedCubies.size > 0;
+
+    // Body materials: swap to the glowing highlight material for cubies
+    // whose ORIGINAL index is in highlightedCubies. We always restore even
+    // when the set is empty so a previous highlight gets cleared.
+    for (let idx = 0; idx < 27; idx++) {
+      const cubie = this.cubies[idx];
+      const body = this.cubieBodies[idx];
+      if (!cubie || !body) continue;
+      // `idx` IS the original cubie index by construction (buildCube indexes
+      // by the cubie's solved-state position).
+      const isHi = useHighlight && highlightedCubies!.has(idx);
+      body.material = isHi ? this.highlightBodyMaterial : this.cubieBodyMaterial;
+    }
+
     for (let i = 0; i < 54; i++) {
       const color = state[i] as Color;
       const face = Math.floor(i / 9) as Color;
       let hidden =
-        !!learning?.enabled &&
-        (learning.hiddenColors.has(color) || learning.hiddenFaces.has(face));
-      if (!hidden && hideAnyLayer) {
-        const cubie = this.stickers[i].parent as THREE.Group | null;
-        if (cubie) {
-          if (layers!.x.size > 0 && layers!.x.has(this.layerCoord(cubie, 'x'))) hidden = true;
-          else if (layers!.y.size > 0 && layers!.y.has(this.layerCoord(cubie, 'y'))) hidden = true;
-          else if (layers!.z.size > 0 && layers!.z.has(this.layerCoord(cubie, 'z'))) hidden = true;
-        }
+        enabled && (learning!.hiddenColors.has(color) || learning!.hiddenFaces.has(face));
+      const cubie = this.stickers[i].parent as THREE.Group | null;
+      if (!hidden && hideAnyLayer && cubie) {
+        if (layers!.x.size > 0 && layers!.x.has(this.layerCoord(cubie, 'x'))) hidden = true;
+        else if (layers!.y.size > 0 && layers!.y.has(this.layerCoord(cubie, 'y'))) hidden = true;
+        else if (layers!.z.size > 0 && layers!.z.has(this.layerCoord(cubie, 'z'))) hidden = true;
+      }
+      // Per-cubie hide is keyed by the parent cubie's *original* index — its
+      // identity at build time. Stickers are permanently parented to their
+      // original cubie group, so reading userData here is stable.
+      if (!hidden && useHiddenCubies && cubie) {
+        const originalIdx = this.originalCubieIndex(cubie);
+        if (originalIdx >= 0 && hiddenCubies!.has(originalIdx)) hidden = true;
       }
       this.stickers[i].material = hidden ? this.hiddenMaterial : this.stickerMaterials[color];
     }
     this.markDirty();
+  }
+
+  /** Convert a cubie group to its original (solved-state) index using the
+   * `userData` set at build time. Stable across rotations — userData is
+   * never mutated, only `position` is. */
+  private originalCubieIndex(c: THREE.Group): number {
+    const u = c.userData as { x?: number; y?: number; z?: number };
+    if (typeof u.x !== 'number' || typeof u.y !== 'number' || typeof u.z !== 'number') return -1;
+    return cubieIdx(u.x, u.y, u.z);
   }
 
   /** Re-apply the most recent learning mode (used when toggling masks). */
@@ -390,6 +455,16 @@ export class CubeScene {
 
   public isAnimating(): boolean {
     return this.animating;
+  }
+
+  /** Toggle picker mode at runtime. While a handler is set, layer-drag is
+   * suppressed and a non-drag tap on a cubie fires the handler with that
+   * cubie's *original* index (its solved-state identity, stable across
+   * rotations). Pass `undefined` to return to normal interaction. */
+  public setOnCubieClick(
+    handler: ((originalCubieIndex: number) => void) | undefined,
+  ): void {
+    this.onCubieClick = handler;
   }
 
   /** The raw WebGL canvas. Use for capture/screenshot — do not mount elsewhere. */
@@ -532,6 +607,15 @@ export class CubeScene {
   // Camera + render loop
   // -------------------------------------------------------------------------
 
+  /** Override the camera orbit. Useful for non-interactive views like the
+   * method-guide thumbnails that need to show specific faces (e.g. the cross
+   * is best seen looking up at the D face). */
+  public setView(azimuth: number, elevation: number): void {
+    this.azimuth = azimuth;
+    this.elevation = elevation;
+    this.applyCamera();
+  }
+
   private applyCamera(): void {
     const x = this.radius * Math.cos(this.elevation) * Math.cos(this.azimuth);
     const y = this.radius * Math.sin(this.elevation);
@@ -597,9 +681,11 @@ export class CubeScene {
       if (hit) {
         this.hitFaceNormal = hit.normal;
         this.hitCubieCoord = hit.cubie;
+        this.hitOriginalCubieIdx = hit.originalCubieIdx;
       } else {
         this.hitFaceNormal = null;
         this.hitCubieCoord = null;
+        this.hitOriginalCubieIdx = null;
       }
     }
   }
@@ -612,7 +698,13 @@ export class CubeScene {
     if (this.dragMode === 'pending') {
       const dist = Math.hypot(dx, dy);
       if (dist < 8) return;
-      this.dragMode = this.hitFaceNormal && this.hitCubieCoord ? 'layer' : 'orbit';
+      // In picker mode, layer-drag is suppressed — drags only orbit, and a
+      // non-drag tap is interpreted as a cubie click in onPointerUp.
+      if (this.onCubieClick) {
+        this.dragMode = 'orbit';
+      } else {
+        this.dragMode = this.hitFaceNormal && this.hitCubieCoord ? 'layer' : 'orbit';
+      }
     }
     if (this.dragMode === 'orbit') {
       this.azimuth += dx * 0.008;
@@ -632,16 +724,29 @@ export class CubeScene {
     }
     if (this.dragMode === 'layer') {
       this.commitLayerDrag(e);
+    } else if (
+      this.dragMode === 'pending' &&
+      this.onCubieClick &&
+      this.hitOriginalCubieIdx !== null
+    ) {
+      // No drag past the 8px threshold → treat as a tap on the picked cubie,
+      // identified by its original (solved-state) index.
+      this.onCubieClick(this.hitOriginalCubieIdx);
     }
     this.dragMode = 'none';
     this.hitFaceNormal = null;
     this.hitCubieCoord = null;
+    this.hitOriginalCubieIdx = null;
     this.activePointerId = null;
   }
 
   private raycastSticker(
     e: PointerEvent,
-  ): { normal: THREE.Vector3; cubie: { x: number; y: number; z: number } } | null {
+  ): {
+    normal: THREE.Vector3;
+    cubie: { x: number; y: number; z: number };
+    originalCubieIdx: number;
+  } | null {
     const rect = this.renderer.domElement.getBoundingClientRect();
     const ndc = new THREE.Vector2(
       ((e.clientX - rect.left) / rect.width) * 2 - 1,
@@ -654,21 +759,23 @@ export class CubeScene {
     for (const h of hits) {
       const obj = h.object;
       if (!obj.userData?.isSticker) continue;
-      const cubie = obj.parent;
+      const cubie = obj.parent as THREE.Group | null;
       if (!cubie) continue;
       const normal = new THREE.Vector3(0, 0, 1).applyQuaternion(
         obj.getWorldQuaternion(new THREE.Quaternion()),
       );
-      // Use the cubie's CURRENT position (snapped to layer indices), not its
-      // userData (which is the original solved-state position and goes stale
-      // after the first turn).
+      // For layer-drag we need the cubie's CURRENT layer coords (which axis
+      // it sits on right now). For picker mode we need the cubie's ORIGINAL
+      // index (its identity at build time) so the selection follows the
+      // piece, not its position. Return both.
       return {
         normal,
         cubie: {
-          x: this.layerCoord(cubie as THREE.Group, 'x'),
-          y: this.layerCoord(cubie as THREE.Group, 'y'),
-          z: this.layerCoord(cubie as THREE.Group, 'z'),
+          x: this.layerCoord(cubie, 'x'),
+          y: this.layerCoord(cubie, 'y'),
+          z: this.layerCoord(cubie, 'z'),
         },
+        originalCubieIdx: this.originalCubieIndex(cubie),
       };
     }
     return null;

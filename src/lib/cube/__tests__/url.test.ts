@@ -10,6 +10,8 @@ const emptyLearning = () => ({
     y: new Set<-1 | 0 | 1>(),
     z: new Set<-1 | 0 | 1>(),
   },
+  hiddenCubies: new Set<number>(),
+  highlightedCubies: new Set<number>(),
 });
 
 describe('share state codec', () => {
@@ -26,6 +28,8 @@ describe('share state codec', () => {
           y: new Set([1]),
           z: new Set([-1, 0]),
         },
+        hiddenCubies: new Set<number>(),
+        highlightedCubies: new Set<number>(),
       },
       step: 2,
     };
