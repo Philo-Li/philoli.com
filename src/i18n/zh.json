@@ -314,6 +314,32 @@
       "generating": "生成中… {percent}%",
       "errorGeneric": "生成失败，请重试。",
       "filenamePrefix": "rubiks-cube"
+    },
+    "notation": {
+      "button": "符号说明",
+      "title": "符号说明",
+      "facesHeading": "面转",
+      "slicesHeading": "中层转",
+      "label": {
+        "U": "上层（U）",
+        "D": "下层（D）",
+        "R": "右层（R）",
+        "L": "左层（L）",
+        "F": "前层（F）",
+        "B": "后层（B）",
+        "M": "中层 M（跟随 L）",
+        "E": "中层 E（跟随 D）",
+        "S": "中层 S（跟随 F）"
+      },
+      "legend": {
+        "letterTerm": "字母",
+        "letterDesc": "要旋转的层（默认顺时针 90°，以正对该面的视角为准）",
+        "primeTerm": "'",
+        "primeDesc": "逆时针 90°，例如 R' 是 R 的反向",
+        "doubleTerm": "2",
+        "doubleDesc": "旋转 180°，方向不影响结果"
+      },
+      "close": "关闭"
     }
   }
 }

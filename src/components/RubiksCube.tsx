@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { useTranslations } from '../i18n';
 import { parseAlgorithm } from '../lib/cube/parser';
 import { applyMove, solvedState } from '../lib/cube/state';
@@ -19,6 +19,7 @@ import {
 } from '../lib/cube/gif-export';
 import { drawOverlay, layoutTokens } from '../lib/cube/gif-overlay';
 import GifExportDialog, { type GifExportSubmit } from './cube/GifExportDialog';
+import NotationGuideDialog from './cube/NotationGuideDialog';
 import '../styles/rubiks-cube.css';
 
 interface Props {
@@ -116,7 +117,10 @@ export default function RubiksCube({ locale }: Props) {
   const [sceneReady, setSceneReady] = useState(false);
   const [gifOpen, setGifOpen] = useState(false);
   const [gifProgress, setGifProgress] = useState(0);
+  const [notationOpen, setNotationOpen] = useState(false);
   const [showFormulaOverlay, setShowFormulaOverlay] = useState(true);
+
+  const solutionTextareaId = useId();
 
   const canvasRef = useRef<HTMLDivElement>(null);
   const overlayCanvasRef = useRef<HTMLCanvasElement>(null);
@@ -561,11 +565,22 @@ export default function RubiksCube({ locale }: Props) {
               </div>
             )}
           </label>
-          <label className="rc__field">
+          <div className="rc__field">
             <div className="rc__field-header">
-              <span className="rc__field-label">{t('rubiksCube.solution.label')}</span>
+              <label className="rc__field-label" htmlFor={solutionTextareaId}>
+                {t('rubiksCube.solution.label')}
+              </label>
+              <label className="rc__overlay-toggle">
+                <input
+                  type="checkbox"
+                  checked={showFormulaOverlay}
+                  onChange={(e) => setShowFormulaOverlay(e.currentTarget.checked)}
+                />
+                <span>{t('rubiksCube.solution.showOverlay')}</span>
+              </label>
             </div>
             <textarea
+              id={solutionTextareaId}
               className="rc__input"
               rows={3}
               value={solution}
@@ -582,15 +597,7 @@ export default function RubiksCube({ locale }: Props) {
                 {t('rubiksCube.solution.parseError').replace('{token}', solutionParse.errors[0].token)}
               </div>
             )}
-          </label>
-          <label className="rc__overlay-toggle">
-            <input
-              type="checkbox"
-              checked={showFormulaOverlay}
-              onChange={(e) => setShowFormulaOverlay(e.currentTarget.checked)}
-            />
-            <span>{t('rubiksCube.solution.showOverlay')}</span>
-          </label>
+          </div>
           <div className="rc__share">
             <button type="button" onClick={copyShareLink}>
               {copied ? t('rubiksCube.share.copied') : t('rubiksCube.share.copy')}
@@ -609,6 +616,13 @@ export default function RubiksCube({ locale }: Props) {
       <section className="rc__learning">
         <header className="rc__learning-header">
           <h2 className="rc__learning-title">{t('rubiksCube.learning.title')}</h2>
+          <button
+            type="button"
+            className="rc__field-action"
+            onClick={() => setNotationOpen(true)}
+          >
+            {t('rubiksCube.notation.button')}
+          </button>
         </header>
         <div className="rc__learning-row">
           <span className="rc__learning-label">{t('rubiksCube.learning.hideColors')}</span>
@@ -660,6 +674,12 @@ export default function RubiksCube({ locale }: Props) {
           </div>
         ))}
       </section>
+
+      <NotationGuideDialog
+        open={notationOpen}
+        locale={locale}
+        onClose={() => setNotationOpen(false)}
+      />
 
       <GifExportDialog
         open={gifOpen}

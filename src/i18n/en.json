@@ -318,6 +318,32 @@
       "generating": "Generating… {percent}%",
       "errorGeneric": "Failed to generate GIF. Please try again.",
       "filenamePrefix": "rubiks-cube"
+    },
+    "notation": {
+      "button": "Notation guide",
+      "title": "Notation guide",
+      "facesHeading": "Face turns",
+      "slicesHeading": "Slice turns",
+      "label": {
+        "U": "Up face (U)",
+        "D": "Down face (D)",
+        "R": "Right face (R)",
+        "L": "Left face (L)",
+        "F": "Front face (F)",
+        "B": "Back face (B)",
+        "M": "Middle slice M (follows L)",
+        "E": "Middle slice E (follows D)",
+        "S": "Middle slice S (follows F)"
+      },
+      "legend": {
+        "letterTerm": "Letter",
+        "letterDesc": "the layer to turn (default is clockwise 90°, viewed from facing that face)",
+        "primeTerm": "'",
+        "primeDesc": "counter-clockwise 90°, e.g. R' reverses R",
+        "doubleTerm": "2",
+        "doubleDesc": "180° turn — direction doesn't matter"
+      },
+      "close": "Close"
     }
   }
 }
