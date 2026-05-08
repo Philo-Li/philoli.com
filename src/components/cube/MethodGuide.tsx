@@ -30,8 +30,9 @@ function buildStageLearning(stage: Stage): LearningMode {
     hiddenColors: new Set(),
     hiddenFaces: new Set(),
     hiddenLayers: { x: new Set(), y: new Set(), z: new Set() },
+    hiddenCubies: new Set(),
+    highlightedCubies: new Set(),
     hiddenStickers: new Set(stage.hiddenStickers),
-    highlightedStickers: new Set(),
   };
 }
 

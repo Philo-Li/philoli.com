@@ -51,4 +51,9 @@ export interface LearningMode {
   /** Cubies highlighted by the custom-hide picker. Mutually exclusive
    * with hiddenCubies (cycle steps remove the other). */
   highlightedCubies: Set<number>;
+  /** Individual stickers hidden by facelet index (0..53 in URFDLB order).
+   * Finer grain than hiddenCubies — used by the method guide to express
+   * states like OLL where the U face stays yellow but the side faces of
+   * the top layer should read as "not yet decided". */
+  hiddenStickers: Set<number>;
 }

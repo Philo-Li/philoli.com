@@ -366,8 +366,10 @@ export class CubeScene {
       enabled && !!layers && (layers.x.size > 0 || layers.y.size > 0 || layers.z.size > 0);
     const hiddenCubies = enabled ? learning!.hiddenCubies : null;
     const highlightedCubies = enabled ? learning!.highlightedCubies : null;
+    const hiddenStickers = enabled ? learning!.hiddenStickers : null;
     const useHiddenCubies = !!hiddenCubies && hiddenCubies.size > 0;
     const useHighlight = !!highlightedCubies && highlightedCubies.size > 0;
+    const useHiddenStickers = !!hiddenStickers && hiddenStickers.size > 0;
 
     // Body materials: swap to the glowing highlight material for cubies
     // whose ORIGINAL index is in highlightedCubies. We always restore even
@@ -400,6 +402,10 @@ export class CubeScene {
         const originalIdx = this.originalCubieIndex(cubie);
         if (originalIdx >= 0 && hiddenCubies!.has(originalIdx)) hidden = true;
       }
+      // Per-sticker hide: facelet index `i` matches the original sticker
+      // identity because reset() has already snapped cubies to canonical
+      // positions before setFacelets runs.
+      if (!hidden && useHiddenStickers && hiddenStickers!.has(i)) hidden = true;
       this.stickers[i].material = hidden ? this.hiddenMaterial : this.stickerMaterials[color];
     }
     this.markDirty();

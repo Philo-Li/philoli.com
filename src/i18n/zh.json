@@ -379,20 +379,20 @@
         "name": "CFOP（Fridrich）",
         "description": "速拧主流方法。Cross 完成底面十字，F2L 同时插入底层角和中层棱，OLL 让顶面变同色，PLL 把顶层各块换到正确位置。",
         "stages": {
-          "cross": "Cross",
-          "f2l": "F2L",
-          "oll": "OLL",
-          "pll": "PLL"
+          "cross": "Cross（底面十字）",
+          "f2l": "F2L（前两层）",
+          "oll": "OLL（顶面定向）",
+          "pll": "PLL（顶面置换）"
         }
       },
       "roux": {
-        "name": "Roux",
+        "name": "桥式解法（Roux）",
         "description": "块式解法。先在左侧搭一个 1×2×3 块，再在右侧搭一个，CMLL 完成顶层四个角，LSE 还原 M 中层和最后六条棱。",
         "stages": {
           "firstBlock": "First Block",
           "secondBlock": "Second Block",
-          "cmll": "CMLL",
-          "lse": "LSE"
+          "cmll": "CMLL（顶层角块）",
+          "lse": "LSE（最后六棱）"
         }
       }
     }

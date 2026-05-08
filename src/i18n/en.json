@@ -395,8 +395,8 @@
         "stages": {
           "firstBlock": "First Block",
           "secondBlock": "Second Block",
-          "cmll": "CMLL",
-          "lse": "LSE"
+          "cmll": "CMLL (Corners of Last Layer)",
+          "lse": "LSE (Last Six Edges)"
         }
       }
     }

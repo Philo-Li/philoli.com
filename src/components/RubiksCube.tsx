@@ -56,6 +56,7 @@ function emptyLearning(): LearningMode {
     hiddenLayers: { x: new Set(), y: new Set(), z: new Set() },
     hiddenCubies: new Set(),
     highlightedCubies: new Set(),
+    hiddenStickers: new Set(),
   };
 }
 
