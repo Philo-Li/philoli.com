@@ -126,6 +126,7 @@ export default function RubiksCube({ locale }: Props) {
   const [showFormulaOverlay, setShowFormulaOverlay] = useState(true);
 
   const solutionTextareaId = useId();
+  const scrambleTextareaId = useId();
 
   const canvasRef = useRef<HTMLDivElement>(null);
   const overlayCanvasRef = useRef<HTMLCanvasElement>(null);
@@ -287,26 +288,31 @@ export default function RubiksCube({ locale }: Props) {
   }, [solutionMoves, step, showFormulaOverlay, sceneReady]);
 
   // ---------- Load from URL hash / localStorage on mount ----------
+  // Shared hash links restore the full state (scramble + solution + step +
+  // learning) — that's the point of sharing. Plain page loads only restore
+  // the learning-mode toggles from localStorage; the scramble and solution
+  // textareas start empty so the user opens to a clean slate.
   useEffect(() => {
     const fromHash = decodeShareState(window.location.hash);
     const initial = fromHash ?? loadShareState();
-    if (initial) {
+    if (!initial) return;
+    if (fromHash) {
       setScramble(initial.scramble);
       setSolution(initial.solution);
-      setLearning({
-        enabled: initial.learning.enabled,
-        hiddenColors: new Set(initial.learning.hiddenColors),
-        hiddenFaces: new Set(initial.learning.hiddenFaces),
-        hiddenLayers: {
-          x: new Set(initial.learning.hiddenLayers.x),
-          y: new Set(initial.learning.hiddenLayers.y),
-          z: new Set(initial.learning.hiddenLayers.z),
-        },
-        hiddenCubies: new Set(initial.learning.hiddenCubies),
-        highlightedCubies: new Set(initial.learning.highlightedCubies),
-      });
       setStep(initial.step);
     }
+    setLearning({
+      enabled: initial.learning.enabled,
+      hiddenColors: new Set(initial.learning.hiddenColors),
+      hiddenFaces: new Set(initial.learning.hiddenFaces),
+      hiddenLayers: {
+        x: new Set(initial.learning.hiddenLayers.x),
+        y: new Set(initial.learning.hiddenLayers.y),
+        z: new Set(initial.learning.hiddenLayers.z),
+      },
+      hiddenCubies: new Set(initial.learning.hiddenCubies),
+      highlightedCubies: new Set(initial.learning.highlightedCubies),
+    });
   }, []);
 
   // ---------- Save to localStorage on change ----------
@@ -598,9 +604,11 @@ export default function RubiksCube({ locale }: Props) {
               <span>{speed}×</span>
             </label>
           </section>
-          <label className="rc__field">
+          <div className="rc__field">
             <div className="rc__field-header">
-              <span className="rc__field-label">{t('rubiksCube.scramble.label')}</span>
+              <label className="rc__field-label" htmlFor={scrambleTextareaId}>
+                {t('rubiksCube.scramble.label')}
+              </label>
               <span className="rc__field-actions">
                 <button type="button" className="rc__field-action" onClick={randomScramble}>
                   {t('rubiksCube.scramble.random')}
@@ -611,6 +619,7 @@ export default function RubiksCube({ locale }: Props) {
               </span>
             </div>
             <textarea
+              id={scrambleTextareaId}
               className="rc__input"
               rows={3}
               value={scramble}
@@ -627,7 +636,7 @@ export default function RubiksCube({ locale }: Props) {
                 {t('rubiksCube.solution.parseError').replace('{token}', scrambleParse.errors[0].token)}
               </div>
             )}
-          </label>
+          </div>
           <div className="rc__field">
             <div className="rc__field-header">
               <label className="rc__field-label" htmlFor={solutionTextareaId}>
