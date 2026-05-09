@@ -231,6 +231,8 @@ B⁻¹ = U' L U（复原 B 操作，带调整）
 
 当你复原了左右两边的桥之后，接下来我们开始复原剩下的四个角块。这里我们就需要用到角块三轮换，让三个角轮换位置，从 A 到 B、B 到 C、C 回到 A 的位置。
 
+![角块三轮换示意：A→B→C→A](/uploads/images/solve-rubiks-cube-without-formulas/33-three-cycle-abc.jpg)
+
 #### 角块三轮换
 
 <div class="formula-pair">
@@ -409,7 +411,3 @@ B⁻¹ = U' L U（复原 B 操作，带调整）
 点开这个链接看到的就是打乱好的魔方：[3D 魔方 — Philo Li](https://philoli.com/zh/projects/rubiks-cube/#s=F'%20D2%20F'%20U%20F'%20U2%20F'%20L%20R%20F%20U2%20F2%20D'%20R%20L%20D%20L%20B%20R%20D')
 
 世界冠军都在用的魔方计时器：[csTimer - Professional Rubik's Cube Speedsolving / Training Timer](https://cstimer.net/)
-
----
-
-*下一篇：Roux 桥式解法详细图解教程*
