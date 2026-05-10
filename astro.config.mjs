@@ -22,4 +22,9 @@ export default defineConfig({
       redirectToDefaultLocale: false,
     },
   },
+  // pdfjs-dist's worker is shipped as .mjs and breaks Vite's dep pre-bundler;
+  // skip optimization so it loads as native ESM at runtime.
+  vite: {
+    optimizeDeps: { exclude: ['pdfjs-dist'] },
+  },
 });

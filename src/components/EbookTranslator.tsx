@@ -12,8 +12,23 @@ import {
   findProvider,
   translateBatch,
   chunkPassages,
+  modelSupportsVision,
+  visionModelsForProvider,
+  ocrImage,
   type ProviderId,
 } from '../lib/llm';
+import type { OcrPageProgress, ParaTag } from '../lib/pdf';
+
+interface SinglePageItem {
+  type: ParaTag;
+  original: string;
+  translated: string;
+}
+
+interface SinglePageResult {
+  pageIndex: number;
+  items: SinglePageItem[];
+}
 import { LOCALES, LOCALE_NAMES, LOCALE_ENGLISH_NAMES, useTranslations } from '../i18n';
 import '../styles/ebook-translator.css';
 
@@ -36,7 +51,7 @@ const MODEL_HINT_KEYS: Record<string, string> = {
   'latest, 256K context': 'ebookTranslator.modelHints.latestLongContext',
 };
 
-type Step = 'settings' | 'upload' | 'browse';
+type Step = 'settings' | 'upload' | 'preview' | 'browse';
 type ChapterStatus = 'pending' | 'translating' | 'done' | 'partial' | 'error';
 
 interface Settings {
@@ -138,6 +153,12 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const [parsed, setParsed] = useState<ParsedEpub | null>(null);
   const [parseError, setParseError] = useState<string | null>(null);
   const [parsing, setParsing] = useState(false);
+  const [ocrProgress, setOcrProgress] = useState<OcrPageProgress | null>(null);
+  /** PDF metadata after upload, awaiting user confirmation in the preview step. */
+  const [pdfMeta, setPdfMeta] = useState<{ pageCount: number; isScanned: boolean } | null>(null);
+  /** Set when a scanned PDF is uploaded but the current model can't OCR it. */
+  const [needsVisionModel, setNeedsVisionModel] = useState<{ pageCount: number } | null>(null);
+  const ocrAbortRef = useRef<AbortController | null>(null);
 
   // Browse state
   const [selectedIdx, setSelectedIdx] = useState(0);
@@ -176,33 +197,187 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     });
   }
 
+  function finishParse(result: ParsedEpub) {
+    setParsed(result);
+    const initial = new Map<string, ChapterStatus>();
+    result.chapters.forEach(c => initial.set(c.href, c.nodes.length === 0 ? 'done' : 'pending'));
+    setChapterStatus(initial);
+    const firstWithText = result.chapters.findIndex(c => c.nodes.length > 0);
+    setSelectedIdx(firstWithText >= 0 ? firstWithText : 0);
+    setStep('browse');
+  }
+
+  function effectiveModelId(): string {
+    return FREE_MODEL_PROVIDERS.has(settings.provider) ? settings.customModel : settings.model;
+  }
+
+  async function runOcrOn(f: File, modelId: string): Promise<ParsedEpub> {
+    const { parsePdfWithOcr } = await import('../lib/pdf');
+    ocrAbortRef.current = new AbortController();
+    return parsePdfWithOcr(
+      f,
+      (imageBase64, mimeType, _pageIndex, signal) =>
+        ocrImage({
+          provider: settings.provider,
+          model: modelId,
+          apiKey: settings.apiKey,
+          imageBase64,
+          mimeType,
+          sourceLanguageHint: settings.sourceLang,
+          customEndpoint: settings.customEndpoint,
+          signal,
+        }),
+      {
+        onProgress: setOcrProgress,
+        signal: ocrAbortRef.current.signal,
+      },
+    );
+  }
+
+  /**
+   * Quick first pass on upload:
+   *   - EPUB: full parse → browse step (cheap, immediate)
+   *   - PDF: classify (text-layer vs scanned) and land on the preview step.
+   *     The user reviews pages and clicks "Continue" / "Start OCR" before any heavy work runs.
+   */
   async function handleFile(f: File) {
     setFile(f);
     setParsing(true);
     setParseError(null);
     setParsed(null);
+    setPdfMeta(null);
+    setNeedsVisionModel(null);
+    setOcrProgress(null);
     setSelectedIdx(0);
     setChapterStatus(new Map());
     setAllTranslations(new Map());
     setChapterErrors(new Map());
     setRunning(new Set());
     try {
-      const result = await parseEpub(f);
-      if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
-      setParsed(result);
-      // Initialize status: chapters with no translatable nodes are auto-"done"
-      const initial = new Map<string, ChapterStatus>();
-      result.chapters.forEach(c => initial.set(c.href, c.nodes.length === 0 ? 'done' : 'pending'));
-      setChapterStatus(initial);
-      // Pick first chapter that has translatable text
-      const firstWithText = result.chapters.findIndex(c => c.nodes.length > 0);
-      setSelectedIdx(firstWithText >= 0 ? firstWithText : 0);
-      setStep('browse');
+      const isPdf = /\.pdf$/i.test(f.name) || f.type === 'application/pdf';
+      if (isPdf) {
+        const pdfMod = await import('../lib/pdf');
+        const status = await pdfMod.detectPdfScannedStatus(f);
+        setPdfMeta({ pageCount: status.pageCount, isScanned: status.isScanned });
+        setStep('preview');
+      } else {
+        const result = await parseEpub(f);
+        if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
+        finishParse(result);
+      }
     } catch (e) {
-      setParseError(e instanceof Error ? e.message : String(e));
+      if ((e as Error)?.name !== 'AbortError') {
+        setParseError(e instanceof Error ? e.message : String(e));
+      }
     } finally {
       setParsing(false);
     }
+  }
+
+  /**
+   * Triggered from the preview step's action button. Runs the heavy work the user just
+   * confirmed: text-layer parse, or LLM-vision OCR. `modelOverride` lets the "switch model
+   * + retry" flow pin a freshly-picked vision model without React closure issues.
+   */
+  async function startPdfProcessing(modelOverride?: string) {
+    if (!file) return;
+    const modelForOcr = modelOverride ?? effectiveModelId();
+    setParsing(true);
+    setParseError(null);
+    setNeedsVisionModel(null);
+    setOcrProgress(null);
+    try {
+      const pdfMod = await import('../lib/pdf');
+      if (pdfMeta?.isScanned) {
+        // Pre-flight vision check before paying for any rendering.
+        if (!modelSupportsVision(settings.provider, modelForOcr)) {
+          setNeedsVisionModel({ pageCount: pdfMeta.pageCount });
+          return;
+        }
+        setOcrProgress({ total: pdfMeta.pageCount, done: 0, failed: 0 });
+        const result = await runOcrOn(file, modelForOcr);
+        if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
+        finishParse(result);
+      } else {
+        // Text-layer PDF — parse may still throw ScannedPdfError if our quick detection was wrong.
+        try {
+          const result = await pdfMod.parsePdf(file);
+          if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
+          finishParse(result);
+        } catch (e) {
+          if (e instanceof pdfMod.ScannedPdfError) {
+            // Detection missed — fall back to OCR path.
+            setPdfMeta(prev => prev ? { ...prev, isScanned: true } : { pageCount: e.pageCount, isScanned: true });
+            if (!modelSupportsVision(settings.provider, modelForOcr)) {
+              setNeedsVisionModel({ pageCount: e.pageCount });
+              return;
+            }
+            setOcrProgress({ total: e.pageCount, done: 0, failed: 0 });
+            const result = await runOcrOn(file, modelForOcr);
+            if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
+            finishParse(result);
+          } else {
+            throw e;
+          }
+        }
+      }
+    } catch (e) {
+      if ((e as Error)?.name !== 'AbortError') {
+        setParseError(e instanceof Error ? e.message : String(e));
+      }
+    } finally {
+      setParsing(false);
+      setOcrProgress(null);
+      ocrAbortRef.current = null;
+    }
+  }
+
+  function cancelOcr() {
+    ocrAbortRef.current?.abort();
+  }
+
+  /**
+   * "Translate this page" — extract (or OCR) one page, translate its paragraphs, and return
+   * the bilingual result. Used from the preview step so users can validate quality before
+   * committing to the full book.
+   */
+  async function translateSinglePage(pageNumber: number): Promise<SinglePageResult> {
+    if (!file || !pdfMeta) throw new Error('No file loaded');
+    const pdfMod = await import('../lib/pdf');
+    let paras: Array<{ type: ParaTag; text: string }>;
+    if (pdfMeta.isScanned) {
+      const modelId = effectiveModelId();
+      if (!modelSupportsVision(settings.provider, modelId)) {
+        throw new Error(t('ebookTranslator.preview.singlePage.needsVision'));
+      }
+      const { base64, mimeType } = await pdfMod.renderSinglePageAsJpeg(file, pageNumber);
+      const ocrText = await ocrImage({
+        provider: settings.provider,
+        model: modelId,
+        apiKey: settings.apiKey,
+        imageBase64: base64,
+        mimeType,
+        sourceLanguageHint: settings.sourceLang,
+        customEndpoint: settings.customEndpoint,
+      });
+      paras = pdfMod.parseOcrMarkdown(ocrText);
+    } else {
+      paras = await pdfMod.extractSinglePageParagraphs(file, pageNumber);
+    }
+    if (paras.length === 0) return { pageIndex: pageNumber, items: [] };
+    const translations = await translateBatch(paras.map(p => p.text), {
+      provider: settings.provider,
+      model: effectiveModelId(),
+      apiKey: settings.apiKey,
+      sourceLang: settings.sourceLang,
+      targetLang: settings.targetLang,
+      tone: settings.tone,
+      customEndpoint: settings.customEndpoint,
+    });
+    return {
+      pageIndex: pageNumber,
+      items: paras.map((p, i) => ({ type: p.type, original: p.text, translated: translations[i] || '' })),
+    };
   }
 
   async function translateChapter(chapter: ChapterFile, force = false): Promise<void> {
@@ -415,9 +590,9 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
       </header>
 
       <div className="bt__steps">
-        {(['settings', 'upload', 'browse'] as Step[]).map((s, i) => {
+        {(['settings', 'upload', 'preview', 'browse'] as Step[]).map((s, i) => {
           const active = s === step;
-          const order: Step[] = ['settings', 'upload', 'browse'];
+          const order: Step[] = ['settings', 'upload', 'preview', 'browse'];
           const done = order.indexOf(step) > order.indexOf(s);
           return (
             <div
@@ -472,12 +647,55 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
       {step === 'upload' && (
         <div className="bt__panel">
           <DropZone t={t} onFile={handleFile} />
-          {parsing && <div className="bt__notice">{t('ebookTranslator.upload.parsing')}</div>}
+          {parsing && (
+            <div className="bt__notice">
+              {file && /\.pdf$/i.test(file.name)
+                ? t('ebookTranslator.upload.parsingPdf')
+                : t('ebookTranslator.upload.parsing')}
+            </div>
+          )}
           {parseError && <div className="bt__notice bt__notice--error">{parseError}</div>}
           <div className="bt__actions">
             <button type="button" className="bt__btn" onClick={() => setStep('settings')}>{t('ebookTranslator.actions.back')}</button>
           </div>
         </div>
+      )}
+
+      {step === 'preview' && file && pdfMeta && (
+        <PdfPreviewStep
+          t={t}
+          file={file}
+          pageCount={pdfMeta.pageCount}
+          isScanned={pdfMeta.isScanned}
+          parsing={parsing}
+          ocrProgress={ocrProgress}
+          parseError={parseError}
+          needsVisionModel={needsVisionModel}
+          provider={provider}
+          providerId={settings.provider}
+          selectedModelId={settings.model}
+          effectiveModelId={effectiveModelId()}
+          onStart={() => startPdfProcessing()}
+          onStartWithModel={(modelId) => {
+            updateSettings({ model: modelId });
+            setNeedsVisionModel(null);
+            void startPdfProcessing(modelId);
+          }}
+          onPickModel={(modelId) => updateSettings({ model: modelId })}
+          onCancelOcr={cancelOcr}
+          onCancelPreview={() => {
+            setFile(null);
+            setPdfMeta(null);
+            setNeedsVisionModel(null);
+            setParseError(null);
+            setStep('upload');
+          }}
+          onGoToSettings={() => {
+            setNeedsVisionModel(null);
+            setStep('settings');
+          }}
+          onTranslateSinglePage={translateSinglePage}
+        />
       )}
 
       {step === 'browse' && parsed && chapter && (
@@ -860,7 +1078,7 @@ function DropZone({ t, onFile }: { t: TFn; onFile: (f: File) => void }) {
       <input
         ref={inputRef}
         type="file"
-        accept=".epub,application/epub+zip"
+        accept=".epub,.pdf,application/epub+zip,application/pdf"
         onChange={e => {
           const f = e.target.files?.[0];
           if (f) onFile(f);
@@ -869,5 +1087,398 @@ function DropZone({ t, onFile }: { t: TFn; onFile: (f: File) => void }) {
       <div className="bt__drop-title">{t('ebookTranslator.upload.dropTitle')}</div>
       <div>{t('ebookTranslator.upload.dropSubtitle')}</div>
     </label>
+  );
+}
+
+function renderBilingual(tag: ParaTag, className: string, text: string) {
+  switch (tag) {
+    case 'h1': return <h1 className={className}>{text}</h1>;
+    case 'h2': return <h2 className={className}>{text}</h2>;
+    case 'h3': return <h3 className={className}>{text}</h3>;
+    default: return <p className={className}>{text}</p>;
+  }
+}
+
+function SinglePageResultPanel({
+  t,
+  phase,
+  result,
+  error,
+}: {
+  t: TFn;
+  phase: 'idle' | 'running' | 'done' | 'error';
+  result: SinglePageResult | null;
+  error: string | null;
+}) {
+  if (phase === 'running') {
+    return (
+      <div className="bt__notice">
+        <span className="bt__spinner" aria-hidden />
+        <span style={{ marginLeft: 8 }}>{t('ebookTranslator.preview.singlePage.running')}</span>
+      </div>
+    );
+  }
+  if (phase === 'error') {
+    return <div className="bt__notice bt__notice--error">{error}</div>;
+  }
+  if (phase === 'done' && result) {
+    if (result.items.length === 0) {
+      return <div className="bt__notice">{t('ebookTranslator.preview.singlePage.empty')}</div>;
+    }
+    return (
+      <div className="bt__notice" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+        <strong>
+          {t('ebookTranslator.preview.singlePage.resultHeader').replace('{page}', String(result.pageIndex))}
+        </strong>
+        <div className="bt__chapter-content" style={{ marginTop: 0 }}>
+          {result.items.map((item, i) => (
+            <div key={i}>
+              {renderBilingual(item.type, 'bt__bi-orig', item.original)}
+              {item.translated && renderBilingual(item.type, 'bt__bi-tr', item.translated)}
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+  return null;
+}
+
+function PdfPagePreviewer({ file, page, maxDim }: { file: File; page: number; maxDim: number }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    setError(null);
+    setLoading(true);
+    (async () => {
+      try {
+        const { renderPdfPageToCanvas } = await import('../lib/pdf');
+        if (cancelled || !canvasRef.current) return;
+        await renderPdfPageToCanvas(file, page, canvasRef.current, maxDim);
+      } catch (e) {
+        if (!cancelled) setError(e instanceof Error ? e.message : String(e));
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [file, page, maxDim]);
+
+  return (
+    <div style={{ position: 'relative', minHeight: 200, display: 'flex', justifyContent: 'center', background: '#f5f5f5', borderRadius: 4, overflow: 'hidden' }}>
+      {loading && (
+        <span style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', opacity: 0.5 }}>
+          …
+        </span>
+      )}
+      {error && (
+        <div className="bt__notice bt__notice--error" style={{ margin: 12 }}>
+          {error}
+        </div>
+      )}
+      <canvas
+        ref={canvasRef}
+        style={{ maxWidth: '100%', height: 'auto', display: error ? 'none' : 'block', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
+      />
+    </div>
+  );
+}
+
+function PdfPreviewStep({
+  t,
+  file,
+  pageCount,
+  isScanned,
+  parsing,
+  ocrProgress,
+  parseError,
+  needsVisionModel,
+  provider,
+  providerId,
+  selectedModelId,
+  effectiveModelId,
+  onStart,
+  onStartWithModel,
+  onPickModel,
+  onCancelOcr,
+  onCancelPreview,
+  onGoToSettings,
+  onTranslateSinglePage,
+}: {
+  t: TFn;
+  file: File;
+  pageCount: number;
+  isScanned: boolean;
+  parsing: boolean;
+  ocrProgress: OcrPageProgress | null;
+  parseError: string | null;
+  needsVisionModel: { pageCount: number } | null;
+  provider: ReturnType<typeof findProvider>;
+  providerId: ProviderId;
+  selectedModelId: string;
+  effectiveModelId: string;
+  onStart: () => void;
+  onStartWithModel: (modelId: string) => void;
+  onPickModel: (modelId: string) => void;
+  onCancelOcr: () => void;
+  onCancelPreview: () => void;
+  onGoToSettings: () => void;
+  onTranslateSinglePage: (pageNumber: number) => Promise<SinglePageResult>;
+}) {
+  const [previewPage, setPreviewPage] = useState(1);
+  const [singlePagePhase, setSinglePagePhase] = useState<'idle' | 'running' | 'done' | 'error'>('idle');
+  const [singlePageResult, setSinglePageResult] = useState<SinglePageResult | null>(null);
+  const [singlePageError, setSinglePageError] = useState<string | null>(null);
+
+  // Reset preview to page 1 if a different file is loaded.
+  useEffect(() => { setPreviewPage(1); }, [file]);
+  // Drop the single-page result whenever the user flips to a different page.
+  useEffect(() => {
+    setSinglePagePhase('idle');
+    setSinglePageResult(null);
+    setSinglePageError(null);
+  }, [previewPage]);
+
+  const prev = () => setPreviewPage(p => Math.max(1, p - 1));
+  const next = () => setPreviewPage(p => Math.min(pageCount, p + 1));
+
+  async function runSinglePage() {
+    setSinglePagePhase('running');
+    setSinglePageError(null);
+    setSinglePageResult(null);
+    try {
+      const result = await onTranslateSinglePage(previewPage);
+      setSinglePageResult(result);
+      setSinglePagePhase('done');
+    } catch (e) {
+      setSinglePageError(e instanceof Error ? e.message : String(e));
+      setSinglePagePhase('error');
+    }
+  }
+
+  const currentModelLabel = provider.models.find(m => m.id === effectiveModelId)?.label ?? effectiveModelId;
+  const singleBusy = singlePagePhase === 'running';
+  const startBusy = parsing || singleBusy;
+
+  return (
+    <div className="bt__panel">
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 8 }}>
+          <div>
+            <strong style={{ marginRight: 12 }}>{file.name}</strong>
+            <span style={{ opacity: 0.7 }}>
+              {t('ebookTranslator.preview.pages').replace('{count}', String(pageCount))}
+              {' · '}
+              {isScanned
+                ? t('ebookTranslator.preview.scannedTag')
+                : t('ebookTranslator.preview.textLayerTag')}
+            </span>
+          </div>
+          <button type="button" className="bt__btn bt__btn--small" onClick={onCancelPreview} disabled={parsing}>
+            {t('ebookTranslator.actions.back')}
+          </button>
+        </div>
+
+        <PdfPagePreviewer file={file} page={previewPage} maxDim={900} />
+
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+          <button type="button" className="bt__btn bt__btn--small" onClick={prev} disabled={previewPage <= 1 || singleBusy}>
+            ← {t('ebookTranslator.preview.prev')}
+          </button>
+          <span style={{ minWidth: 110, textAlign: 'center', fontVariantNumeric: 'tabular-nums' }}>
+            {t('ebookTranslator.preview.pageOf')
+              .replace('{current}', String(previewPage))
+              .replace('{total}', String(pageCount))}
+          </span>
+          <button type="button" className="bt__btn bt__btn--small" onClick={next} disabled={previewPage >= pageCount || singleBusy}>
+            {t('ebookTranslator.preview.next')} →
+          </button>
+          <span style={{ width: 1, height: 18, background: 'currentColor', opacity: 0.2 }} aria-hidden />
+          <button
+            type="button"
+            className="bt__btn bt__btn--small"
+            onClick={runSinglePage}
+            disabled={startBusy || !!ocrProgress}
+            title={t('ebookTranslator.preview.singlePage.tooltip')}
+          >
+            {singleBusy
+              ? t('ebookTranslator.preview.singlePage.running')
+              : t('ebookTranslator.preview.singlePage.button')}
+          </button>
+        </div>
+
+        {singlePagePhase !== 'idle' && (
+          <SinglePageResultPanel
+            t={t}
+            phase={singlePagePhase}
+            result={singlePageResult}
+            error={singlePageError}
+          />
+        )}
+
+        {ocrProgress ? (
+          <OcrProgressPanel
+            t={t}
+            progress={ocrProgress}
+            modelLabel={currentModelLabel}
+            onCancel={onCancelOcr}
+          />
+        ) : needsVisionModel ? (
+          <NeedsVisionModelNotice
+            t={t}
+            fileName={file.name}
+            pageCount={needsVisionModel.pageCount}
+            providerId={providerId}
+            providerLabel={provider.label}
+            currentModelLabel={currentModelLabel}
+            onPickModel={onPickModel}
+            selectedModelId={selectedModelId}
+            onRetry={(modelId) => onStartWithModel(modelId)}
+            onGoToSettings={onGoToSettings}
+          />
+        ) : (
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 8 }}>
+            <div style={{ opacity: 0.75, fontSize: 14 }}>
+              {isScanned
+                ? t('ebookTranslator.preview.willOcrWith').replace('{model}', currentModelLabel)
+                : t('ebookTranslator.preview.willTranslate')}
+            </div>
+            <button
+              type="button"
+              className="bt__btn bt__btn--primary"
+              onClick={onStart}
+              disabled={parsing}
+            >
+              {parsing
+                ? t('ebookTranslator.upload.parsing')
+                : isScanned
+                  ? t('ebookTranslator.preview.startOcr').replace('{count}', String(pageCount))
+                  : t('ebookTranslator.preview.continue')}
+            </button>
+          </div>
+        )}
+
+        {parseError && <div className="bt__notice bt__notice--error">{parseError}</div>}
+      </div>
+    </div>
+  );
+}
+
+function OcrProgressPanel({
+  t,
+  progress,
+  modelLabel,
+  onCancel,
+}: {
+  t: TFn;
+  progress: OcrPageProgress;
+  modelLabel: string;
+  onCancel: () => void;
+}) {
+  const pct = progress.total > 0 ? ((progress.done + progress.failed) / progress.total) * 100 : 0;
+  const currentDisplay = typeof progress.current === 'number' ? progress.current + 1 : progress.done;
+  return (
+    <div className="bt__notice">
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+        <strong>
+          {t('ebookTranslator.upload.ocrRunning').replace('{model}', modelLabel)}
+        </strong>
+        <button type="button" className="bt__btn bt__btn--small" onClick={onCancel}>
+          {t('ebookTranslator.actions.cancel')}
+        </button>
+      </div>
+      <div style={{ marginTop: 8 }}>
+        {t('ebookTranslator.upload.ocrPageOf')
+          .replace('{current}', String(currentDisplay))
+          .replace('{total}', String(progress.total))}
+        {progress.failed > 0 && ` · ${t('ebookTranslator.upload.ocrFailedCount').replace('{count}', String(progress.failed))}`}
+      </div>
+      <div className="bt__progress-bar" style={{ marginTop: 8, width: '100%' }}>
+        <div className="bt__progress-fill" style={{ width: `${pct}%` }} />
+      </div>
+    </div>
+  );
+}
+
+function NeedsVisionModelNotice({
+  t,
+  fileName,
+  pageCount,
+  providerId,
+  providerLabel,
+  currentModelLabel,
+  selectedModelId,
+  onPickModel,
+  onRetry,
+  onGoToSettings,
+}: {
+  t: TFn;
+  fileName: string;
+  pageCount: number;
+  providerId: ProviderId;
+  providerLabel: string;
+  currentModelLabel: string;
+  selectedModelId: string;
+  onPickModel: (modelId: string) => void;
+  /** Called with the chosen vision model id — caller routes it through to the OCR pipeline. */
+  onRetry: (modelId: string) => void;
+  onGoToSettings: () => void;
+}) {
+  const visionModels = visionModelsForProvider(providerId);
+  const effectiveSelection = visionModels.some(m => m.id === selectedModelId) ? selectedModelId : visionModels[0]?.id;
+  return (
+    <div className="bt__notice bt__notice--error" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+      <div>
+        {t('ebookTranslator.upload.scannedPdfDetected')
+          .replace('{file}', fileName)
+          .replace('{pages}', String(pageCount))}
+      </div>
+      <div>
+        {t('ebookTranslator.upload.modelLacksVision')
+          .replace('{provider}', providerLabel)
+          .replace('{model}', currentModelLabel)}
+      </div>
+      {visionModels.length > 0 && effectiveSelection ? (
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+          <label className="bt__label" style={{ margin: 0 }}>
+            {t('ebookTranslator.upload.switchToVision')}
+          </label>
+          <select
+            className="bt__select bt__select--inline"
+            value={effectiveSelection}
+            onChange={e => onPickModel(e.target.value)}
+          >
+            {visionModels.map(m => (
+              <option key={m.id} value={m.id}>
+                {m.label}{m.hint ? ` — ${m.hint}` : ''}
+              </option>
+            ))}
+          </select>
+          <button
+            type="button"
+            className="bt__btn bt__btn--small bt__btn--primary"
+            onClick={() => {
+              // Persist choice for next time, then route the explicit model id through the
+              // retry — handleFile uses the override directly so React state propagation
+              // doesn't matter.
+              onPickModel(effectiveSelection);
+              onRetry(effectiveSelection);
+            }}
+          >
+            {t('ebookTranslator.upload.runOcr')}
+          </button>
+        </div>
+      ) : (
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+          <span>{t('ebookTranslator.upload.providerHasNoVision').replace('{provider}', providerLabel)}</span>
+          <button type="button" className="bt__btn bt__btn--small" onClick={onGoToSettings}>
+            {t('ebookTranslator.actions.settingsModel')}
+          </button>
+        </div>
+      )}
+    </div>
   );
 }

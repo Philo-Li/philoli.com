@@ -118,10 +118,11 @@
   "ebookTranslator": {
     "eyebrow": "项目",
     "title": "双语电子书翻译器",
-    "subtitle": "上传 EPUB，使用你自己的 LLM API key，即可获得原文与译文逐段对照的双语版本。文件完全在浏览器中解析 —— 你的书籍绝不会上传到任何服务器。",
+    "subtitle": "上传 EPUB 或 PDF，使用你自己的 LLM API key，即可获得原文与译文逐段对照的双语版本。文件完全在浏览器中解析 —— 你的书籍绝不会上传到任何服务器。",
     "steps": {
       "settings": "设置",
       "upload": "上传",
+      "preview": "预览",
       "browse": "浏览"
     },
     "actions": {
@@ -163,9 +164,38 @@
     },
     "upload": {
       "parsing": "正在解析 EPUB…",
-      "dropTitle": "将 EPUB 拖放到此处",
+      "parsingPdf": "正在解析 PDF —— 提取文字并重建段落…",
+      "dropTitle": "将 EPUB 或 PDF 拖放到此处",
       "dropSubtitle": "或点击选择文件",
-      "noChapters": "此 EPUB 中未找到可读章节。"
+      "noChapters": "此文件中未找到可读章节。",
+      "ocrRunning": "{model} 正在识别页面…",
+      "ocrPageOf": "第 {current} / {total} 页",
+      "ocrFailedCount": "{count} 页失败",
+      "scannedPdfDetected": "{file} 是扫描版 PDF（{pages} 页），没有文字层。",
+      "modelLacksVision": "你当前选择的 {provider} 模型「{model}」不支持图像输入，无法识别扫描页。",
+      "switchToVision": "切换到：",
+      "runOcr": "开始识别",
+      "providerHasNoVision": "{provider} 在此选择器中没有支持视觉的模型。请到设置切换 provider（Gemini / OpenAI / Claude 都支持 OCR）。"
+    },
+    "preview": {
+      "pages": "{count} 页",
+      "scannedTag": "扫描版（需要 OCR）",
+      "textLayerTag": "检测到文字层",
+      "prev": "上一页",
+      "next": "下一页",
+      "pageOf": "第 {current} / {total} 页",
+      "willOcrWith": "将用 {model} 识别全部页面。",
+      "willTranslate": "已提取文本，下一步可挑选章节翻译。",
+      "startOcr": "开始 OCR（{count} 页）",
+      "continue": "继续 →",
+      "singlePage": {
+        "button": "翻译本页",
+        "tooltip": "只对当前页做 OCR + 翻译，先看看质量再决定是否处理整本。",
+        "running": "正在识别并翻译当前页…",
+        "empty": "本页没有可翻译的文本。",
+        "resultHeader": "第 {page} 页 —— 双语预览",
+        "needsVision": "当前模型不支持图像识别，请先切换到支持视觉的模型。"
+      }
     },
     "browse": {
       "chapters": "章节",

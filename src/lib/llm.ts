@@ -14,6 +14,8 @@ export interface ModelOption {
   id: string;
   label: string;
   hint?: string;
+  /** True if the model accepts image input on its standard chat endpoint. */
+  vision?: boolean;
 }
 
 const OPENCODE_GO_ENDPOINT = 'https://opencode.ai/zen/go/v1/chat/completions';
@@ -40,9 +42,9 @@ export const PROVIDERS: ProviderConfig[] = [
     api: 'gemini',
     keyHelp: 'https://aistudio.google.com/apikey',
     models: [
-      { id: 'gemini-3-flash-preview', label: 'Gemini 3 Flash (preview)', hint: 'newest, fast' },
-      { id: 'gemini-3.1-flash-lite-preview', label: 'Gemini 3.1 Flash Lite (preview)', hint: 'cheapest' },
-      { id: 'gemini-3.1-pro-preview', label: 'Gemini 3.1 Pro (preview)', hint: 'best quality' },
+      { id: 'gemini-3-flash-preview', label: 'Gemini 3 Flash (preview)', hint: 'newest, fast', vision: true },
+      { id: 'gemini-3.1-flash-lite-preview', label: 'Gemini 3.1 Flash Lite (preview)', hint: 'cheapest', vision: true },
+      { id: 'gemini-3.1-pro-preview', label: 'Gemini 3.1 Pro (preview)', hint: 'best quality', vision: true },
     ],
   },
   {
@@ -52,9 +54,9 @@ export const PROVIDERS: ProviderConfig[] = [
     endpoint: 'https://api.openai.com/v1/chat/completions',
     keyHelp: 'https://platform.openai.com/api-keys',
     models: [
-      { id: 'gpt-5.4-nano', label: 'GPT-5.4 nano', hint: 'cheapest, fast' },
-      { id: 'gpt-5.4-mini', label: 'GPT-5.4 mini', hint: 'balanced' },
-      { id: 'gpt-5.5', label: 'GPT-5.5', hint: 'best quality' },
+      { id: 'gpt-5.4-nano', label: 'GPT-5.4 nano', hint: 'cheapest, fast', vision: true },
+      { id: 'gpt-5.4-mini', label: 'GPT-5.4 mini', hint: 'balanced', vision: true },
+      { id: 'gpt-5.5', label: 'GPT-5.5', hint: 'best quality', vision: true },
     ],
   },
   {
@@ -63,9 +65,9 @@ export const PROVIDERS: ProviderConfig[] = [
     api: 'anthropic',
     keyHelp: 'https://console.anthropic.com/settings/keys',
     models: [
-      { id: 'claude-haiku-4-5', label: 'Claude Haiku 4.5', hint: 'cheapest, fast' },
-      { id: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6', hint: 'higher quality' },
-      { id: 'claude-opus-4-7', label: 'Claude Opus 4.7', hint: 'best quality' },
+      { id: 'claude-haiku-4-5', label: 'Claude Haiku 4.5', hint: 'cheapest, fast', vision: true },
+      { id: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6', hint: 'higher quality', vision: true },
+      { id: 'claude-opus-4-7', label: 'Claude Opus 4.7', hint: 'best quality', vision: true },
     ],
   },
   {
@@ -75,6 +77,7 @@ export const PROVIDERS: ProviderConfig[] = [
     endpoint: 'https://api.deepseek.com/v1/chat/completions',
     keyHelp: 'https://platform.deepseek.com/api_keys',
     models: [
+      // V4 chat IDs are text-only; vision lives on a separate VL track.
       { id: 'deepseek-v4-flash', label: 'DeepSeek V4 Flash', hint: 'cheapest, fast' },
       { id: 'deepseek-v4-pro', label: 'DeepSeek V4 Pro', hint: 'best quality' },
     ],
@@ -86,10 +89,14 @@ export const PROVIDERS: ProviderConfig[] = [
     // China region (DashScope). Mainland keys / mainland users.
     endpoint: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
     keyHelp: 'https://bailian.console.aliyun.com/?apiKey=1',
+    // Qwen3.6 chat line is text-only on DashScope; image input requires the qwen3-vl-* IDs below.
     models: [
       { id: 'qwen3.6-flash', label: 'Qwen 3.6 Flash', hint: 'cheapest, fast' },
       { id: 'qwen3.6-plus', label: 'Qwen 3.6 Plus', hint: 'balanced' },
       { id: 'qwen3.6-max-preview', label: 'Qwen 3.6 Max (preview)', hint: 'best quality' },
+      { id: 'qwen3-vl-flash', label: 'Qwen3-VL Flash', hint: 'vision, fast', vision: true },
+      { id: 'qwen3-vl-plus', label: 'Qwen3-VL Plus', hint: 'vision, balanced', vision: true },
+      { id: 'qwen-vl-max', label: 'Qwen-VL Max', hint: 'vision, best quality', vision: true },
     ],
   },
   {
@@ -98,10 +105,13 @@ export const PROVIDERS: ProviderConfig[] = [
     api: 'openai-compat',
     endpoint: 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
     keyHelp: 'https://bigmodel.cn/usercenter/proj-mgmt/apikeys',
+    // GLM chat line is text-only; vision lives on the *V suffix variants.
     models: [
       { id: 'glm-4.7-flash', label: 'GLM-4.7 Flash', hint: 'free tier, fast' },
       { id: 'glm-4.7', label: 'GLM-4.7', hint: 'flagship coding/agentic' },
       { id: 'glm-5', label: 'GLM-5', hint: 'best quality' },
+      { id: 'glm-4.6v', label: 'GLM-4.6V', hint: 'vision, balanced', vision: true },
+      { id: 'glm-5v-turbo', label: 'GLM-5V Turbo', hint: 'vision, best quality', vision: true },
     ],
   },
   {
@@ -111,9 +121,11 @@ export const PROVIDERS: ProviderConfig[] = [
     endpoint: 'https://api.moonshot.ai/v1/chat/completions',
     keyHelp: 'https://platform.moonshot.ai/console/api-keys',
     models: [
-      { id: 'kimi-k2.6', label: 'Kimi K2.6', hint: 'latest flagship, 262K context' },
+      { id: 'kimi-k2.6', label: 'Kimi K2.6', hint: 'latest flagship, 262K context', vision: true },
       { id: 'moonshot-v1-128k', label: 'Moonshot v1 128K', hint: 'long context, stable' },
       { id: 'moonshot-v1-32k', label: 'Moonshot v1 32K', hint: 'cheaper' },
+      { id: 'moonshot-v1-128k-vision-preview', label: 'Moonshot v1 128K Vision (preview)', hint: 'vision, long context', vision: true },
+      { id: 'moonshot-v1-32k-vision-preview', label: 'Moonshot v1 32K Vision (preview)', hint: 'vision, cheaper', vision: true },
     ],
   },
   {
@@ -150,6 +162,26 @@ export function findProvider(id: ProviderId): ProviderConfig {
   const p = PROVIDERS.find(x => x.id === id);
   if (!p) throw new Error(`Unknown provider: ${id}`);
   return p;
+}
+
+/** Providers where the user types a free-text model ID — we can't statically know vision support. */
+const FREE_TEXT_MODEL_PROVIDERS = new Set<ProviderId>(['openrouter', 'opencode', 'custom']);
+
+/**
+ * Returns true if we know the (provider, modelId) pair accepts image input.
+ * Free-text providers (OpenRouter / OpenCode / Custom) return true unconditionally — the user
+ * picked the model ID themselves, so we trust them and surface any backend error at call time.
+ */
+export function modelSupportsVision(provider: ProviderId, modelId: string): boolean {
+  if (FREE_TEXT_MODEL_PROVIDERS.has(provider)) return true;
+  const cfg = findProvider(provider);
+  return cfg.models.some(m => m.id === modelId && m.vision === true);
+}
+
+/** Vision-capable model IDs for a provider — used to suggest a switch when the current model is text-only. */
+export function visionModelsForProvider(provider: ProviderId): ModelOption[] {
+  const cfg = findProvider(provider);
+  return cfg.models.filter(m => m.vision === true);
 }
 
 export interface ToneOption {
@@ -383,6 +415,201 @@ export async function translateBatch(
       return callAnthropic(passages, opts);
     case 'gemini':
       return callGemini(passages, opts);
+  }
+}
+
+export interface OcrOptions {
+  provider: ProviderId;
+  model: string;
+  apiKey: string;
+  /** Raw base64 of the JPEG/PNG image (no `data:` prefix). */
+  imageBase64: string;
+  /** MIME type — typically `image/jpeg`. */
+  mimeType: string;
+  /** Optional language hint passed to the OCR prompt — usually the user's selected source language. */
+  sourceLanguageHint?: string;
+  signal?: AbortSignal;
+  /** Override endpoint URL — used by the "custom" provider. */
+  customEndpoint?: string;
+}
+
+const OCR_SYSTEM_PROMPT = (sourceLanguageHint: string | undefined) => {
+  const langLine = sourceLanguageHint
+    ? `The page is primarily in ${sourceLanguageHint}.`
+    : '';
+  return `You are a professional OCR transcription engine. The user has uploaded a page from a book they own and need transcribed. Read every visible word on the page and output them as plain text.
+
+${langLine}
+
+Output rules:
+- Transcribe verbatim — preserve the original language. Do NOT translate. Do NOT paraphrase or summarize.
+- Separate paragraphs with a single blank line.
+- Headings: prefix with "# " (chapter / major section), "## " (subsection), or "### " (sub-subsection). Use heading level by visual weight.
+- Tables: render as Markdown pipe tables.
+- Math: use LaTeX delimiters — $...$ for inline, $$...$$ for display.
+- Illustrations / photos / diagrams without text: output a single line on its own paragraph: [Image: <one-sentence description in the source language>]
+- SKIP page numbers, running headers, and running footers.
+- Output ONLY the transcription. No preamble ("Here is the text:"), no explanation, no surrounding quotes.
+- If the page truly has no text (genuinely blank page), output a single space character. Do NOT refuse the task — the user owns the book and you are helping them transcribe it.`;
+};
+
+/** Toggle once to flip per-page diagnostic logging from the OCR layer. */
+const OCR_DEBUG_FIRST_PAGE = true;
+let ocrDebugBudget = 1;
+
+function logOcrDebug(label: string, info: unknown) {
+  if (!OCR_DEBUG_FIRST_PAGE || ocrDebugBudget <= 0) return;
+  ocrDebugBudget--;
+  // eslint-disable-next-line no-console
+  console.info(`[ocr] ${label}`, info);
+}
+
+async function callOpenAICompatVision(
+  opts: OcrOptions,
+  endpoint: string,
+  providerLabel: string,
+): Promise<string> {
+  const dataUrl = `data:${opts.mimeType};base64,${opts.imageBase64}`;
+  const res = await fetch(endpoint, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${opts.apiKey}`,
+    },
+    signal: opts.signal,
+    body: JSON.stringify({
+      model: opts.model,
+      temperature: 0,
+      max_tokens: 8192,
+      messages: [
+        { role: 'system', content: OCR_SYSTEM_PROMPT(opts.sourceLanguageHint) },
+        {
+          role: 'user',
+          content: [
+            { type: 'image_url', image_url: { url: dataUrl } },
+            { type: 'text', text: 'Transcribe this page following the rules above.' },
+          ],
+        },
+      ],
+    }),
+  });
+  if (!res.ok) throw new Error(`${providerLabel} ${res.status}: ${extractErrorMessage(await res.text())}`);
+  const data = await res.json();
+  const choice = data.choices?.[0];
+  const text = (choice?.message?.content ?? '').trim();
+  logOcrDebug(`${providerLabel} response`, { finishReason: choice?.finish_reason, textLen: text.length, sample: text.slice(0, 200) });
+  if (!text) {
+    throw new Error(`${providerLabel} returned no text (finish_reason: ${choice?.finish_reason ?? 'unknown'})`);
+  }
+  return text;
+}
+
+async function callAnthropicVision(opts: OcrOptions): Promise<string> {
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': opts.apiKey,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true',
+    },
+    signal: opts.signal,
+    body: JSON.stringify({
+      model: opts.model,
+      max_tokens: 8192,
+      temperature: 0,
+      system: OCR_SYSTEM_PROMPT(opts.sourceLanguageHint),
+      messages: [
+        {
+          role: 'user',
+          content: [
+            { type: 'image', source: { type: 'base64', media_type: opts.mimeType, data: opts.imageBase64 } },
+            { type: 'text', text: 'Transcribe this page following the rules above.' },
+          ],
+        },
+      ],
+    }),
+  });
+  if (!res.ok) throw new Error(`Anthropic ${res.status}: ${extractErrorMessage(await res.text())}`);
+  const data = await res.json();
+  // Concat all text-typed content blocks (vision responses can split into multiple).
+  const blocks: Array<{ type?: string; text?: string }> = data.content ?? [];
+  const text = blocks
+    .filter(b => b?.type === 'text' && typeof b.text === 'string')
+    .map(b => b.text!)
+    .join('\n')
+    .trim();
+  logOcrDebug('Anthropic response', { stopReason: data.stop_reason, blocks: blocks.length, textLen: text.length, sample: text.slice(0, 200) });
+  if (!text) {
+    throw new Error(`Anthropic returned no text (stop_reason: ${data.stop_reason ?? 'unknown'})`);
+  }
+  return text;
+}
+
+async function callGeminiVision(opts: OcrOptions): Promise<string> {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(opts.model)}:generateContent?key=${encodeURIComponent(opts.apiKey)}`;
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    signal: opts.signal,
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: OCR_SYSTEM_PROMPT(opts.sourceLanguageHint) }] },
+      contents: [{
+        role: 'user',
+        parts: [
+          // camelCase per the v1beta REST spec — Gemini 3 rejects snake_case in some setups.
+          { inlineData: { mimeType: opts.mimeType, data: opts.imageBase64 } },
+          { text: 'Transcribe this page following the rules above.' },
+        ],
+      }],
+      generationConfig: {
+        temperature: 0,
+        maxOutputTokens: 8192,
+      },
+    }),
+  });
+  if (!res.ok) throw new Error(`Gemini ${res.status}: ${extractErrorMessage(await res.text())}`);
+  const data = await res.json();
+  const cand = data.candidates?.[0];
+  // Gemini 3 puts thinking + answer in separate parts; concat all text parts.
+  const parts: Array<{ text?: string }> = cand?.content?.parts ?? [];
+  const text = parts
+    .map(p => (typeof p?.text === 'string' ? p.text : ''))
+    .filter(Boolean)
+    .join('\n')
+    .trim();
+  logOcrDebug('Gemini response', {
+    finishReason: cand?.finishReason,
+    blockReason: data.promptFeedback?.blockReason,
+    parts: parts.length,
+    textLen: text.length,
+    sample: text.slice(0, 200),
+  });
+  if (!text) {
+    const reason = cand?.finishReason ?? 'unknown';
+    const block = data.promptFeedback?.blockReason ? `, blockReason: ${data.promptFeedback.blockReason}` : '';
+    throw new Error(`Gemini returned no text (finishReason: ${reason}${block})`);
+  }
+  return text;
+}
+
+/**
+ * OCR a single page image using the user's selected LLM. Returns the transcribed page as
+ * lightweight Markdown (`#` headings, blank-line paragraph breaks, `[Image: ...]` placeholders).
+ * Caller is responsible for stitching pages and parsing the structure.
+ */
+export async function ocrImage(opts: OcrOptions): Promise<string> {
+  const cfg = findProvider(opts.provider);
+  switch (cfg.api) {
+    case 'openai-compat': {
+      const endpoint = opts.provider === 'custom' ? opts.customEndpoint : cfg.endpoint;
+      if (!endpoint) throw new Error(`${cfg.label} missing endpoint config`);
+      return callOpenAICompatVision(opts, resolveOpenAICompatEndpoint(endpoint), cfg.label);
+    }
+    case 'anthropic':
+      return callAnthropicVision(opts);
+    case 'gemini':
+      return callGeminiVision(opts);
   }
 }
 

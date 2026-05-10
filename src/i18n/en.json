@@ -122,10 +122,11 @@
   "ebookTranslator": {
     "eyebrow": "Project",
     "title": "Bilingual Ebook Translator",
-    "subtitle": "Upload an EPUB, bring your own LLM API key, and get back a bilingual edition with the original and translated text interleaved paragraph by paragraph. The file is parsed entirely in your browser — your book never touches any server.",
+    "subtitle": "Upload an EPUB or PDF, bring your own LLM API key, and get back a bilingual edition with the original and translated text interleaved paragraph by paragraph. The file is parsed entirely in your browser — your book never touches any server.",
     "steps": {
       "settings": "settings",
       "upload": "upload",
+      "preview": "preview",
       "browse": "browse"
     },
     "actions": {
@@ -167,9 +168,38 @@
     },
     "upload": {
       "parsing": "Parsing EPUB…",
-      "dropTitle": "Drop an EPUB here",
+      "parsingPdf": "Parsing PDF — extracting text and reconstructing paragraphs…",
+      "dropTitle": "Drop an EPUB or PDF here",
       "dropSubtitle": "or click to choose a file",
-      "noChapters": "No readable chapters found in this EPUB."
+      "noChapters": "No readable chapters found in this file.",
+      "ocrRunning": "OCR'ing pages with {model}…",
+      "ocrPageOf": "Page {current} / {total}",
+      "ocrFailedCount": "{count} failed",
+      "scannedPdfDetected": "{file} is a scanned PDF ({pages} pages) with no text layer.",
+      "modelLacksVision": "Your selected {provider} model \"{model}\" doesn't accept image input, so it can't OCR scanned pages.",
+      "switchToVision": "Switch to:",
+      "runOcr": "Run OCR",
+      "providerHasNoVision": "{provider} doesn't offer a vision-capable model in this picker. Open Settings to switch provider (Gemini, OpenAI, or Claude all support OCR)."
+    },
+    "preview": {
+      "pages": "{count} pages",
+      "scannedTag": "scanned (needs OCR)",
+      "textLayerTag": "text layer detected",
+      "prev": "Prev",
+      "next": "Next",
+      "pageOf": "Page {current} / {total}",
+      "willOcrWith": "Will OCR all pages with {model}.",
+      "willTranslate": "Text extracted. Continue to pick chapters to translate.",
+      "startOcr": "Start OCR ({count} pages)",
+      "continue": "Continue →",
+      "singlePage": {
+        "button": "Translate this page",
+        "tooltip": "OCR + translate just this page so you can preview the quality before committing to the whole book.",
+        "running": "OCR'ing & translating this page…",
+        "empty": "No translatable text found on this page.",
+        "resultHeader": "Page {page} — bilingual preview",
+        "needsVision": "The current model can't OCR images. Switch to a vision-capable model first."
+      }
     },
     "browse": {
       "chapters": "Chapters",
