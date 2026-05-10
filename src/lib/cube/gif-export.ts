@@ -116,6 +116,16 @@ export async function exportGif(opts: ExportGifOpts): Promise<Blob> {
     stepDelayMs,
   });
 
+  // Bake the scramble into a single Facelets state we paint once per frame.
+  // Solution moves are applied via solutionReplay below so cubie identities
+  // (and per-piece highlights) physically follow the picked block, matching
+  // the live scene where solution steps physically rotate cubies.
+  const scrambledState = (() => {
+    let s = solvedState();
+    for (const m of scrambleMoves) s = applyMove(s, m);
+    return s;
+  })();
+
   const sourceCanvas = scene.getCanvas();
   const w = sourceCanvas.width;
   const h = sourceCanvas.height;
@@ -155,12 +165,12 @@ export async function exportGif(opts: ExportGifOpts): Promise<Blob> {
       throw new Error('aborted');
     }
     const job = jobs[i];
-    const stateAt = computeStateAt(scrambleMoves, solutionMoves, job.stepBeforeMove);
     const partial =
       job.moveIndex !== null && job.progress !== null
         ? solutionMoves[job.moveIndex]
         : undefined;
-    scene.renderStillFrame(stateAt, learning, partial, job.progress ?? undefined);
+    const replay = solutionMoves.slice(0, job.stepBeforeMove);
+    scene.renderStillFrame(scrambledState, learning, partial, job.progress ?? undefined, replay);
 
     ctx.fillStyle = GIF_BACKGROUND;
     ctx.fillRect(0, 0, w, h);

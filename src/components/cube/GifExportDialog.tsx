@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { useTranslations } from '../../i18n';
 import {
   GIF_BACKGROUND,
@@ -9,11 +9,11 @@ import {
   OVERLAY_NORMAL,
   OVERLAY_PAD_X,
   OVERLAY_PAD_Y,
-  computeStateAt,
   planFrames,
 } from '../../lib/cube/gif-export';
 import { drawOverlay, layoutTokens } from '../../lib/cube/gif-overlay';
 import type { CubeScene } from '../../lib/cube/scene';
+import { applyMove, solvedState } from '../../lib/cube/state';
 import type { LearningMode, Move } from '../../lib/cube/types';
 
 const SPEED_STOPS = [0.25, 0.5, 1, 2, 4];
@@ -75,6 +75,15 @@ export default function GifExportDialog({
     }
   }, [open, totalSteps]);
 
+  // Bake the scramble into a Facelets state once. Solution steps are replayed
+  // physically per-frame (see renderStillFrame's solutionReplay) so per-cubie
+  // highlights track the picked piece through the animation.
+  const scrambledState = useMemo(() => {
+    let s = solvedState();
+    for (const m of scrambleMoves) s = applyMove(s, m);
+    return s;
+  }, [scrambleMoves]);
+
   // Live preview loop: cycles through the selected range continuously, using
   // the same renderStillFrame pipeline the actual export uses, so the preview
   // shows exactly what the GIF will look like (modulo encoder color quantization).
@@ -122,13 +131,13 @@ export default function GifExportDialog({
 
     const renderJob = (idx: number) => {
       const job = jobs[idx];
-      const stateAt = computeStateAt(scrambleMoves, solutionMoves, job.stepBeforeMove);
       const partial =
         job.moveIndex !== null && job.progress !== null
           ? solutionMoves[job.moveIndex]
           : undefined;
+      const replay = solutionMoves.slice(0, job.stepBeforeMove);
       try {
-        scene.renderStillFrame(stateAt, learning, partial, job.progress ?? undefined);
+        scene.renderStillFrame(scrambledState, learning, partial, job.progress ?? undefined, replay);
       } catch {
         // scene may be mid-animation — skip this frame
         return;
@@ -164,7 +173,7 @@ export default function GifExportDialog({
       cancelled = true;
       if (rafId !== null) cancelAnimationFrame(rafId);
     };
-  }, [open, busy, scene, scrambleMoves, solutionMoves, start, end, speed, showOverlay, learning]);
+  }, [open, busy, scene, scrambledState, solutionMoves, start, end, speed, showOverlay, learning]);
 
   if (!open) return null;
 

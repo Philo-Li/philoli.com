@@ -484,6 +484,13 @@ export class CubeScene {
    * so cubies stay at canonical positions for the next call. Throws when an
    * animation is already in flight.
    *
+   * Pass `solutionReplay` to physically apply a sequence of moves after the
+   * reset — needed so per-cubie highlights track the picked block as the
+   * solution unfolds (without replay, the cubie group sits at its solved
+   * slot and the highlight glows on the wrong piece). The scramble is still
+   * baked into `state` via colors, matching the live scene's behavior where
+   * scramble is paint-only and only solution steps physically rotate cubies.
+   *
    * Caller must read the canvas (drawImage / toDataURL) before the next
    * paint cycle for reliable pixel data.
    */
@@ -492,11 +499,16 @@ export class CubeScene {
     learning?: LearningMode,
     partialMove?: Move,
     progress?: number,
+    solutionReplay?: readonly Move[],
   ): HTMLCanvasElement {
     if (this.animating) {
       throw new Error('renderStillFrame called during animateMove');
     }
     this.reset(state, learning);
+
+    if (solutionReplay) {
+      for (const m of solutionReplay) this.applyImmediate(m);
+    }
 
     let pivot: THREE.Group | null = null;
     let moving: THREE.Group[] = [];
