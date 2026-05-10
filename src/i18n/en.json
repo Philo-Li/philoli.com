@@ -236,14 +236,14 @@
     "intro": "Type a scramble and a solution. Step through the solve, drag to rotate the view, and use learning mode to drill algorithm cases.",
     "scramble": {
       "label": "Scramble",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Example: R U R' U'",
       "apply": "Apply scramble",
       "random": "Random",
       "reset": "Reset"
     },
     "solution": {
       "label": "Solution",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Example: U R U' R'",
       "parseError": "Unrecognized: {token}",
       "showOverlay": "Show formula on canvas"
     },

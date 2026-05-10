@@ -232,14 +232,14 @@
     "intro": "اكتب خلطة وحلاً. تنقل عبر خطوات الحل، واسحب لتدوير العرض، واستخدم وضع التعلم للتدرب على حالات الخوارزميات.",
     "scramble": {
       "label": "خلطة",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "مثال: R U R' U'",
       "apply": "تطبيق الخلطة",
       "random": "عشوائي",
       "reset": "إعادة ضبط"
     },
     "solution": {
       "label": "الحل",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "مثال: U R U' R'",
       "parseError": "غير معروف: {token}"
     },
     "playback": {

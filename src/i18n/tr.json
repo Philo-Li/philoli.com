@@ -232,14 +232,14 @@
     "intro": "Bir karıştırma ve bir çözüm yazın. Çözüm adımlarını izleyin, görünümü döndürmek için sürükleyin ve algoritma durumlarını çalışmak için öğrenme modunu kullanın.",
     "scramble": {
       "label": "Karıştırma",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Örnek: R U R' U'",
       "apply": "Karıştırmayı uygula",
       "random": "Rastgele",
       "reset": "Sıfırla"
     },
     "solution": {
       "label": "Çözüm",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Örnek: U R U' R'",
       "parseError": "Tanımlanamadı: {token}"
     },
     "playback": {

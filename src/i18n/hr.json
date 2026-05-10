@@ -232,14 +232,14 @@
     "intro": "Unesite miješanje i rješenje. Prolazite kroz korake rješavanja, povucite za rotaciju prikaza i koristite način učenja za vježbanje algoritama.",
     "scramble": {
       "label": "Miješanje",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Primjer: R U R' U'",
       "apply": "Primijeni miješanje",
       "random": "Nasumično",
       "reset": "Ponovno postavi"
     },
     "solution": {
       "label": "Rješenje",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Primjer: U R U' R'",
       "parseError": "Neprepoznato: {token}"
     },
     "playback": {

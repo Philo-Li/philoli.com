@@ -232,14 +232,14 @@
     "intro": "Kirjoita sekoitus ja ratkaisu. Käy ratkaisu läpi vaiheittain, vedä kääntääksesi näkymää ja käytä oppimistilaa algoritmien harjoitteluun.",
     "scramble": {
       "label": "Sekoitus",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Esimerkki: R U R' U'",
       "apply": "Käytä sekoitusta",
       "random": "Satunnainen",
       "reset": "Nollaa"
     },
     "solution": {
       "label": "Ratkaisu",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Esimerkki: U R U' R'",
       "parseError": "Tuntematon: {token}"
     },
     "playback": {

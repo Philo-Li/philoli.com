@@ -232,14 +232,14 @@
     "intro": "Sisesta segamine ja lahendus. Liigu sammhaaval läbi lahenduse, lohista vaate pööramiseks ja kasuta õpperežiimi algoritmide harjutamiseks.",
     "scramble": {
       "label": "Segamine",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Näide: R U R' U'",
       "apply": "Rakenda segamine",
       "random": "Juhuslik",
       "reset": "Lähtesta"
     },
     "solution": {
       "label": "Lahendus",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Näide: U R U' R'",
       "parseError": "Tundmatu: {token}"
     },
     "playback": {

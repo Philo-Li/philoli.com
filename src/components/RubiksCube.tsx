@@ -628,9 +628,9 @@ export default function RubiksCube({ locale }: Props) {
                 setStep(0);
                 setPlaying(false);
               }}
-              placeholder={t('rubiksCube.scramble.placeholder')}
               spellCheck={false}
             />
+            <div className="rc__hint">{t('rubiksCube.scramble.hint')}</div>
             {scrambleParse.errors.length > 0 && (
               <div className="rc__error">
                 {t('rubiksCube.solution.parseError').replace('{token}', scrambleParse.errors[0].token)}
@@ -661,9 +661,9 @@ export default function RubiksCube({ locale }: Props) {
                 setStep(0);
                 setPlaying(false);
               }}
-              placeholder={t('rubiksCube.solution.placeholder')}
               spellCheck={false}
             />
+            <div className="rc__hint">{t('rubiksCube.solution.hint')}</div>
             {solutionParse.errors.length > 0 && (
               <div className="rc__error">
                 {t('rubiksCube.solution.parseError').replace('{token}', solutionParse.errors[0].token)}

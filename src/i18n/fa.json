@@ -232,14 +232,14 @@
     "intro": "یک به‌هم‌ریختگی و یک راه‌حل وارد کنید. مراحل حل را طی کنید، برای چرخاندن نما بکشید و از حالت یادگیری برای تمرین الگوریتم‌ها استفاده کنید.",
     "scramble": {
       "label": "به‌هم‌ریختگی",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "مثال: R U R' U'",
       "apply": "اعمال به‌هم‌ریختگی",
       "random": "تصادفی",
       "reset": "بازنشانی"
     },
     "solution": {
       "label": "راه‌حل",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "مثال: U R U' R'",
       "parseError": "شناسایی نشد: {token}"
     },
     "playback": {

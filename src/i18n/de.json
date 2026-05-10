@@ -232,14 +232,14 @@
     "intro": "Gib eine Verdrehung und eine Lösung ein. Gehe den Lösungsweg schrittweise durch, ziehe zum Drehen der Ansicht und nutze den Lernmodus, um Algorithmen zu üben.",
     "scramble": {
       "label": "Verdrehung",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Beispiel: R U R' U'",
       "apply": "Verdrehung anwenden",
       "random": "Zufällig",
       "reset": "Zurücksetzen"
     },
     "solution": {
       "label": "Lösung",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Beispiel: U R U' R'",
       "parseError": "Nicht erkannt: {token}"
     },
     "playback": {

@@ -232,14 +232,14 @@
     "intro": "พิมพ์รูปแบบการสลับและวิธีแก้ ดูทีละขั้นตอน ลากเพื่อหมุนมุมมอง และใช้โหมดการเรียนรู้เพื่อฝึกฝนอัลกอริทึม",
     "scramble": {
       "label": "การสลับ",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "ตัวอย่าง: R U R' U'",
       "apply": "ใช้การสลับ",
       "random": "สุ่ม",
       "reset": "ตั้งค่าใหม่"
     },
     "solution": {
       "label": "วิธีแก้",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "ตัวอย่าง: U R U' R'",
       "parseError": "ไม่รู้จัก: {token}"
     },
     "playback": {

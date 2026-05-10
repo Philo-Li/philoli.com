@@ -232,14 +232,14 @@
     "intro": "Skriv inn en blanding og en løsning. Gå gjennom løsningen steg for steg, dra for å rotere visningen, og bruk læringsmodus for å øve på algoritmer.",
     "scramble": {
       "label": "Blanding",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Eksempel: R U R' U'",
       "apply": "Bruk blanding",
       "random": "Tilfeldig",
       "reset": "Nullstill"
     },
     "solution": {
       "label": "Løsning",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Eksempel: U R U' R'",
       "parseError": "Ukjent: {token}"
     },
     "playback": {

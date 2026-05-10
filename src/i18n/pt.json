@@ -232,14 +232,14 @@
     "intro": "Digite um embaralhamento e uma solução. Avance passo a passo, arraste para girar a visualização e use o modo de aprendizado para treinar algoritmos.",
     "scramble": {
       "label": "Embaralhamento",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Exemplo: R U R' U'",
       "apply": "Aplicar embaralhamento",
       "random": "Aleatório",
       "reset": "Redefinir"
     },
     "solution": {
       "label": "Solução",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Exemplo: U R U' R'",
       "parseError": "Não reconhecido: {token}"
     },
     "playback": {

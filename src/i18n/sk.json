@@ -232,14 +232,14 @@
     "intro": "Zadajte zamiešanie a riešenie. Prechádzajte riešením po krokoch, ťahaním otáčajte pohľad a použite režim učenia na precvičovanie algoritmov.",
     "scramble": {
       "label": "Zamiešanie",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Príklad: R U R' U'",
       "apply": "Použiť zamiešanie",
       "random": "Náhodne",
       "reset": "Resetovať"
     },
     "solution": {
       "label": "Riešenie",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Príklad: U R U' R'",
       "parseError": "Nerozpoznané: {token}"
     },
     "playback": {

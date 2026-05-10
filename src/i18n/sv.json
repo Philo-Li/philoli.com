@@ -232,14 +232,14 @@
     "intro": "Skriv in en blandning och en lösning. Gå igenom lösningen steg för steg, dra för att rotera vyn och använd övningsläget för att träna på algoritmer.",
     "scramble": {
       "label": "Blandning",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Exempel: R U R' U'",
       "apply": "Använd blandning",
       "random": "Slumpa",
       "reset": "Återställ"
     },
     "solution": {
       "label": "Lösning",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Exempel: U R U' R'",
       "parseError": "Okänd: {token}"
     },
     "playback": {

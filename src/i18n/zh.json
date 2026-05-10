@@ -232,14 +232,14 @@
     "intro": "输入打乱公式和还原步骤。逐步查看还原过程，拖动以旋转视角，并使用学习模式练习公式。",
     "scramble": {
       "label": "打乱",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "示例: R U R' U'",
       "apply": "应用打乱",
       "random": "随机",
       "reset": "重置"
     },
     "solution": {
       "label": "还原步骤",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "示例: U R U' R'",
       "parseError": "无法识别：{token}",
       "showOverlay": "在画布上显示公式"
     },

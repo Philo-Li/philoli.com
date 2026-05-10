@@ -232,14 +232,14 @@
     "intro": "Typ een hussel en een oplossing. Doorloop de oplossing, sleep om het beeld te draaien en gebruik de leermodus om algoritmes te oefenen.",
     "scramble": {
       "label": "Hussel",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Voorbeeld: R U R' U'",
       "apply": "Hussel toepassen",
       "random": "Willekeurig",
       "reset": "Resetten"
     },
     "solution": {
       "label": "Oplossing",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Voorbeeld: U R U' R'",
       "parseError": "Niet herkend: {token}"
     },
     "playback": {

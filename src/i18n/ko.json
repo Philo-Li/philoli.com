@@ -232,14 +232,14 @@
     "intro": "섞기 공식과 해법을 입력하세요. 단계를 따라가며 풀이 과정을 확인하고, 드래그하여 화면을 회전하며, 학습 모드를 통해 알고리즘 사례를 연습할 수 있습니다.",
     "scramble": {
       "label": "섞기 공식",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "예시: R U R' U'",
       "apply": "섞기 적용",
       "random": "랜덤",
       "reset": "초기화"
     },
     "solution": {
       "label": "해법",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "예시: U R U' R'",
       "parseError": "인식되지 않음: {token}"
     },
     "playback": {

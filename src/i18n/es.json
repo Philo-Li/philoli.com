@@ -232,14 +232,14 @@
     "intro": "Escribe una mezcla y una solución. Sigue los pasos de la resolución, arrastra para rotar la vista y usa el modo de aprendizaje para practicar algoritmos.",
     "scramble": {
       "label": "Mezcla",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Ejemplo: R U R' U'",
       "apply": "Aplicar mezcla",
       "random": "Aleatorio",
       "reset": "Reiniciar"
     },
     "solution": {
       "label": "Solución",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Ejemplo: U R U' R'",
       "parseError": "No reconocido: {token}"
     },
     "playback": {

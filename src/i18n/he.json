@@ -232,14 +232,14 @@
     "intro": "הקלידו ערבוב ופתרון. עברו על שלבי הפתרון, גררו כדי לסובב את התצוגה, והשתמשו במצב למידה כדי לתרגל אלגוריתמים.",
     "scramble": {
       "label": "ערבוב",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "דוגמה: R U R' U'",
       "apply": "החל ערבוב",
       "random": "אקראי",
       "reset": "איפוס"
     },
     "solution": {
       "label": "פתרון",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "דוגמה: U R U' R'",
       "parseError": "לא מזוהה: {token}"
     },
     "playback": {

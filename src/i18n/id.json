@@ -232,14 +232,14 @@
     "intro": "Ketik acakan dan solusi. Telusuri langkah penyelesaiannya, seret untuk memutar tampilan, dan gunakan mode belajar untuk melatih kasus algoritma.",
     "scramble": {
       "label": "Acakan",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Contoh: R U R' U'",
       "apply": "Terapkan acakan",
       "random": "Acak",
       "reset": "Atur ulang"
     },
     "solution": {
       "label": "Solusi",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Contoh: U R U' R'",
       "parseError": "Tidak dikenali: {token}"
     },
     "playback": {

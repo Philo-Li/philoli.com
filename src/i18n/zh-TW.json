@@ -232,14 +232,14 @@
     "intro": "輸入打亂公式與解法。逐步查看解法、拖曳以旋轉視角，並使用學習模式來練習公式情況。",
     "scramble": {
       "label": "打亂公式",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "範例: R U R' U'",
       "apply": "套用打亂",
       "random": "隨機",
       "reset": "重設"
     },
     "solution": {
       "label": "解法",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "範例: U R U' R'",
       "parseError": "無法辨識：{token}"
     },
     "playback": {

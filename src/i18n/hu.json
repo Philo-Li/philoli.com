@@ -232,14 +232,14 @@
     "intro": "Írj be egy keverést és egy megoldást. Haladj végig a megoldáson lépésenként, forgasd a nézetet húzással, és használd a tanuló módot az algoritmusok gyakorlásához.",
     "scramble": {
       "label": "Keverés",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Példa: R U R' U'",
       "apply": "Keverés alkalmazása",
       "random": "Véletlen",
       "reset": "Visszaállítás"
     },
     "solution": {
       "label": "Megoldás",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Példa: U R U' R'",
       "parseError": "Ismeretlen: {token}"
     },
     "playback": {

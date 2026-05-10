@@ -232,14 +232,14 @@
     "intro": "Nhập chuỗi xáo trộn và lời giải. Xem từng bước giải, kéo để xoay góc nhìn, và dùng chế độ học tập để luyện tập các công thức.",
     "scramble": {
       "label": "Xáo trộn",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Ví dụ: R U R' U'",
       "apply": "Áp dụng xáo trộn",
       "random": "Ngẫu nhiên",
       "reset": "Đặt lại"
     },
     "solution": {
       "label": "Lời giải",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Ví dụ: U R U' R'",
       "parseError": "Không nhận dạng được: {token}"
     },
     "playback": {

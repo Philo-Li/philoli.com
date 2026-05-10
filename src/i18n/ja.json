@@ -232,14 +232,14 @@
     "intro": "スクランブルと手順を入力してください。解決手順を1ステップずつ確認したり、ドラッグで視点を回転させたり、学習モードでアルゴリズムを練習したりできます。",
     "scramble": {
       "label": "スクランブル",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "例: R U R' U'",
       "apply": "スクランブルを適用",
       "random": "ランダム",
       "reset": "リセット"
     },
     "solution": {
       "label": "手順",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "例: U R U' R'",
       "parseError": "認識できません: {token}"
     },
     "playback": {

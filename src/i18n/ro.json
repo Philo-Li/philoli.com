@@ -232,14 +232,14 @@
     "intro": "Introdu un amestec și o soluție. Parcurge rezolvarea pas cu pas, trage pentru a roti vederea și folosește modul de învățare pentru a exersa algoritmii.",
     "scramble": {
       "label": "Amestec",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Exemplu: R U R' U'",
       "apply": "Aplică amestecul",
       "random": "Aleatoriu",
       "reset": "Resetează"
     },
     "solution": {
       "label": "Soluție",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Exemplu: U R U' R'",
       "parseError": "Nerecunoscut: {token}"
     },
     "playback": {

@@ -232,14 +232,14 @@
     "intro": "Ierakstiet sajaukumu un atrisinājumu. Sekojiet atrisinājumam pa soļiem, velciet, lai pagrieztu skatu, un izmantojiet mācīšanās režīmu, lai trenētu algoritmu gadījumus.",
     "scramble": {
       "label": "Sajaukums",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Piemērs: R U R' U'",
       "apply": "Pielietot sajaukumu",
       "random": "Nejaušs",
       "reset": "Atiestatīt"
     },
     "solution": {
       "label": "Atrisinājums",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Piemērs: U R U' R'",
       "parseError": "Neatpazīts: {token}"
     },
     "playback": {

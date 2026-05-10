@@ -232,14 +232,14 @@
     "intro": "Wpisz pomieszanie i rozwiązanie. Przechodź przez kroki, przeciągnij, aby obrócić widok, i użyj trybu nauki, aby ćwiczyć algorytmy.",
     "scramble": {
       "label": "Pomieszanie",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Przykład: R U R' U'",
       "apply": "Zastosuj pomieszanie",
       "random": "Losowo",
       "reset": "Resetuj"
     },
     "solution": {
       "label": "Rozwiązanie",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Przykład: U R U' R'",
       "parseError": "Nie rozpoznano: {token}"
     },
     "playback": {

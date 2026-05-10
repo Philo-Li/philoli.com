@@ -238,6 +238,13 @@
   border-color: var(--color-accent);
 }
 
+.rc__hint {
+  font-family: ui-monospace, "JetBrains Mono", "SFMono-Regular", monospace;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+}
+
 .rc__error {
   font-family: ui-monospace, monospace;
   font-size: 0.8rem;

@@ -232,14 +232,14 @@
     "intro": "Inserisci una sequenza di rimescolamento e una soluzione. Segui i passaggi della risoluzione, trascina per ruotare la visuale e usa la modalità apprendimento per esercitarti sugli algoritmi.",
     "scramble": {
       "label": "Rimescolamento",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Esempio: R U R' U'",
       "apply": "Applica rimescolamento",
       "random": "Casuale",
       "reset": "Ripristina"
     },
     "solution": {
       "label": "Soluzione",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Esempio: U R U' R'",
       "parseError": "Non riconosciuto: {token}"
     },
     "playback": {

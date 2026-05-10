@@ -232,14 +232,14 @@
     "intro": "Mag-type ng paghalu-halo at solusyon. Isa-isahin ang mga hakbang ng paglutas, i-drag para paikutin ang view, at gamitin ang mode ng pag-aaral para mag-ensayo ng mga algorithm case.",
     "scramble": {
       "label": "Paghalu-halo",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Halimbawa: R U R' U'",
       "apply": "Ilapat ang paghalu-halo",
       "random": "Random",
       "reset": "I-reset"
     },
     "solution": {
       "label": "Solusyon",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Halimbawa: U R U' R'",
       "parseError": "Hindi kinikilala: {token}"
     },
     "playback": {

@@ -232,14 +232,14 @@
     "intro": "Taip susunan rawak dan penyelesaian. Lihat langkah demi langkah, seret untuk memutar pandangan, dan gunakan mod pembelajaran untuk melatih kes algoritma.",
     "scramble": {
       "label": "Susunan rawak",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Contoh: R U R' U'",
       "apply": "Gunakan susunan rawak",
       "random": "Rawak",
       "reset": "Set semula"
     },
     "solution": {
       "label": "Penyelesaian",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Contoh: U R U' R'",
       "parseError": "Tidak dikenali: {token}"
     },
     "playback": {

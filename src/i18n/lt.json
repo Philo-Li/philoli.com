@@ -232,14 +232,14 @@
     "intro": "Įveskite sumaišymą ir sprendimą. Peržiūrėkite sprendimą žingsnis po žingsnio, vilkite, kad pasuktumėte vaizdą, ir naudokite mokymosi režimą algoritmų praktikai.",
     "scramble": {
       "label": "Sumaišymas",
-      "placeholder": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "hint": "Pavyzdys: R U R' U'",
       "apply": "Pritaikyti sumaišymą",
       "random": "Atsitiktinis",
       "reset": "Atstatyti"
     },
     "solution": {
       "label": "Sprendimas",
-      "placeholder": "F R U' R' U R U R2 F' R U R U' R'",
+      "hint": "Pavyzdys: U R U' R'",
       "parseError": "Neatpažinta: {token}"
     },
     "playback": {
