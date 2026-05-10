@@ -3,9 +3,11 @@
  * Translate blog posts to a target language using Gemini API (idiomatic style).
  *
  * Usage:
- *   node scripts/translate-blog.mjs zh-TW          # translate all zh posts to Traditional Chinese
- *   node scripts/translate-blog.mjs ja             # translate to Japanese
- *   node scripts/translate-blog.mjs fr --force     # overwrite existing translations
+ *   node scripts/translate-blog.mjs zh-TW                              # translate all zh posts to Traditional Chinese
+ *   node scripts/translate-blog.mjs ja                                 # translate to Japanese
+ *   node scripts/translate-blog.mjs fr --force                         # overwrite existing translations
+ *   node scripts/translate-blog.mjs ja --only my-post.md               # translate only one file
+ *   node scripts/translate-blog.mjs all --only my-post.md              # translate one file to ALL supported languages
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
@@ -88,38 +90,53 @@ const LANGUAGES = {
 };
 
 // ---- Args ----
-const args = process.argv.slice(2).filter(a => !a.startsWith('--'));
-const force = process.argv.includes('--force');
+const rawArgs = process.argv.slice(2);
+const positional = [];
+let force = false;
+let onlyFile = null;
+for (let i = 0; i < rawArgs.length; i++) {
+  const a = rawArgs[i];
+  if (a === '--force') {
+    force = true;
+  } else if (a === '--only') {
+    onlyFile = rawArgs[++i];
+  } else if (a.startsWith('--only=')) {
+    onlyFile = a.slice('--only='.length);
+  } else if (a.startsWith('--')) {
+    console.error(`Unknown flag: ${a}`);
+    process.exit(1);
+  } else {
+    positional.push(a);
+  }
+}
 
-if (args.length === 0) {
-  console.error('Usage: node scripts/translate-blog.mjs <lang-code> [--force]');
+if (positional.length === 0) {
+  console.error('Usage: node scripts/translate-blog.mjs <lang-code|all> [--only <filename>] [--force]');
   console.error('Available languages:', Object.keys(LANGUAGES).join(', '));
   process.exit(1);
 }
 
-const targetLang = args[0];
-const targetName = LANGUAGES[targetLang];
-if (!targetName) {
-  console.error(`Unknown language: ${targetLang}`);
-  console.error('Available:', Object.keys(LANGUAGES).join(', '));
+if (onlyFile && !onlyFile.endsWith('.md')) onlyFile += '.md';
+
+const langArg = positional[0];
+const targetLangs = langArg === 'all' ? Object.keys(LANGUAGES) : [langArg];
+for (const l of targetLangs) {
+  if (!LANGUAGES[l]) {
+    console.error(`Unknown language: ${l}`);
+    console.error('Available:', Object.keys(LANGUAGES).join(', '), 'or "all"');
+    process.exit(1);
+  }
+}
+
+const zhFiles = readdirSync(ZH_DIR).filter(f => f.endsWith('.md'));
+
+if (onlyFile && !zhFiles.includes(onlyFile)) {
+  console.error(`File not found in zh/: ${onlyFile}`);
   process.exit(1);
 }
 
-// ---- Find posts needing translation ----
-const targetDir = join(BLOG_DIR, targetLang);
-if (!existsSync(targetDir)) mkdirSync(targetDir, { recursive: true });
-
-const zhFiles = readdirSync(ZH_DIR).filter(f => f.endsWith('.md'));
-const existingFiles = new Set(readdirSync(targetDir).filter(f => f.endsWith('.md')));
-
-const toTranslate = force ? zhFiles : zhFiles.filter(f => !existingFiles.has(f));
-
-console.log(`Translating ${toTranslate.length} posts to ${targetName} (${targetLang}):\n`);
-toTranslate.forEach(f => console.log(`  - ${f}`));
-console.log('');
-
 // ---- System prompt ----
-function buildSystemPrompt() {
+function buildSystemPrompt(targetName) {
   return `You are a professional translator. Translate the user's Chinese blog post into ${targetName} for philoli.com (Philo Li — artist, writer, developer).
 
 Style: Translate freely and idiomatically. Your goal is prose that reads as if a native ${targetName} speaker wrote it from scratch — NOT a translation that preserves the source sentence structure.
@@ -144,10 +161,10 @@ RULES:
 }
 
 // ---- Gemini API call ----
-async function callGemini(content) {
+async function callGemini(content, targetName) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
   const body = {
-    systemInstruction: { parts: [{ text: buildSystemPrompt() }] },
+    systemInstruction: { parts: [{ text: buildSystemPrompt(targetName) }] },
     contents: [{ role: 'user', parts: [{ text: `Translate this blog post to ${targetName}:\n\n${content}` }] }],
     generationConfig: {
       temperature: 0.8,
@@ -172,42 +189,68 @@ async function callGemini(content) {
 }
 
 // ---- Process each post ----
-async function translatePost(filename) {
+async function translatePost(filename, targetLang, targetName, targetDir) {
   const srcPath = join(ZH_DIR, filename);
   const outPath = join(targetDir, filename);
 
   const content = readFileSync(srcPath, 'utf8');
 
-  console.log(`  [TRANSLATING] ${filename}...`);
+  console.log(`  [TRANSLATING] ${targetLang}/${filename}...`);
   const t0 = Date.now();
 
   try {
-    const translated = await callGemini(content);
+    const translated = await callGemini(content, targetName);
     writeFileSync(outPath, translated + '\n', 'utf8');
     const dt = ((Date.now() - t0) / 1000).toFixed(1);
     console.log(`  [DONE] ${targetLang}/${filename} (${dt}s)`);
   } catch (err) {
-    console.error(`  [ERROR] ${filename}: ${err.message}`);
+    console.error(`  [ERROR] ${targetLang}/${filename}: ${err.message}`);
   }
 }
 
 const CONCURRENCY = 4;
 
+// Build the global job queue: { filename, targetLang, targetName, targetDir }
+const jobs = [];
+for (const targetLang of targetLangs) {
+  const targetName = LANGUAGES[targetLang];
+  const targetDir = join(BLOG_DIR, targetLang);
+  if (!existsSync(targetDir)) mkdirSync(targetDir, { recursive: true });
+
+  const existingFiles = new Set(readdirSync(targetDir).filter(f => f.endsWith('.md')));
+  let candidates = onlyFile ? [onlyFile] : zhFiles;
+  if (!force) candidates = candidates.filter(f => !existingFiles.has(f));
+
+  for (const filename of candidates) {
+    jobs.push({ filename, targetLang, targetName, targetDir });
+  }
+}
+
+console.log(`Translating ${jobs.length} job(s) across ${targetLangs.length} language(s)${onlyFile ? ` (only: ${onlyFile})` : ''}:\n`);
+for (const j of jobs) console.log(`  - ${j.targetLang}/${j.filename}`);
+console.log('');
+
 async function main() {
+  if (jobs.length === 0) {
+    console.log('Nothing to translate.');
+    return;
+  }
+
   let nextIdx = 0;
   let completed = 0;
 
   async function worker() {
     while (true) {
       const i = nextIdx++;
-      if (i >= toTranslate.length) return;
-      await translatePost(toTranslate[i]);
+      if (i >= jobs.length) return;
+      const j = jobs[i];
+      await translatePost(j.filename, j.targetLang, j.targetName, j.targetDir);
       completed++;
-      console.log(`  [PROGRESS] ${completed}/${toTranslate.length}`);
+      console.log(`  [PROGRESS] ${completed}/${jobs.length}`);
     }
   }
 
-  const workers = Array.from({ length: Math.min(CONCURRENCY, toTranslate.length) }, worker);
+  const workers = Array.from({ length: Math.min(CONCURRENCY, jobs.length) }, worker);
   await Promise.all(workers);
   console.log('\nAll done.');
 }
