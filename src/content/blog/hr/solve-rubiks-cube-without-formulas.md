@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Kako složiti Rubikovu kocku bez formula: razumljivo i za osnovnoškolce
+title: "Kako složiti Rubikovu kocku bez formula: razumljivo i za osnovnoškolce"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

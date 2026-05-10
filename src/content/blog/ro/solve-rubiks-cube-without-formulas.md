@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Cum să rezolvi Cubul Rubik fără să memorezi formule: Chiar și un școlar poate înțelege
+title: "Cum să rezolvi Cubul Rubik fără să memorezi formule: Chiar și un școlar poate înțelege"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

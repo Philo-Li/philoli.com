@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Paano Ayusin ang Rubik's Cube Nang Walang Formula: Madali Kahit sa Bata
+title: "Paano Ayusin ang Rubik's Cube Nang Walang Formula: Madali Kahit sa Bata"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

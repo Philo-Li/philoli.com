@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Come risolvere il Cubo di Rubik senza formule: comprensibile anche per i più piccoli
+title: "Come risolvere il Cubo di Rubik senza formule: comprensibile anche per i più piccoli"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

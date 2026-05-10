@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Hogyan rakd ki a Rubik-kockát képletek nélkül: Akár egy kisiskolás is megérti
+title: "Hogyan rakd ki a Rubik-kockát képletek nélkül: Akár egy kisiskolás is megérti"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

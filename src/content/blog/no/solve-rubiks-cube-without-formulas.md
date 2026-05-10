@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Hvordan løse Rubiks kube uten formler: Selv barneskoleelever kan forstå det
+title: "Hvordan løse Rubiks kube uten formler: Selv barneskoleelever kan forstå det"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

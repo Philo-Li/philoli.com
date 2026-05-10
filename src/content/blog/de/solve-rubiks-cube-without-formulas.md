@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Wie man einen Zauberwürfel ohne Formeln löst: Auch für Grundschüler verständlich
+title: "Wie man einen Zauberwürfel ohne Formeln löst: Auch für Grundschüler verständlich"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

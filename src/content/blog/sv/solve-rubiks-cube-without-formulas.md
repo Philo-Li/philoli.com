@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Hur du löser Rubiks kub utan att memorera formler: Även en grundskoleelev kan förstå
+title: "Hur du löser Rubiks kub utan att memorera formler: Även en grundskoleelev kan förstå"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

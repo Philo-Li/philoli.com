@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Küp Rubik'i Formül Ezberlemeden Çözmek: İlkokul Çocukları Bile Anlayabilir
+title: "Küp Rubik'i Formül Ezberlemeden Çözmek: İlkokul Çocukları Bile Anlayabilir"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

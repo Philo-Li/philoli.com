@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Cách Giải Khối Rubik Mà Không Cần Học Thuộc Công Thức: Ai Cũng Có Thể Hiểu
+title: "Cách Giải Khối Rubik Mà Không Cần Học Thuộc Công Thức: Ai Cũng Có Thể Hiểu"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

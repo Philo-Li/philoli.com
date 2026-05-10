@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Kako rešiti Rubikovu kocku bez pamćenja formula: razumeće i osnovci
+title: "Kako rešiti Rubikovu kocku bez pamćenja formula: razumeće i osnovci"
 date: 2026-05-09 12:00:00
 tags:
   - Rubikova kocka

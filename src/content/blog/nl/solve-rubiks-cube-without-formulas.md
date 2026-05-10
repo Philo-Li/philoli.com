@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Hoe je een Rubik's kubus oplost zonder formules: Begrijpelijk voor iedereen (zelfs voor basisschoolkinderen)
+title: "Hoe je een Rubik's kubus oplost zonder formules: Begrijpelijk voor iedereen (zelfs voor basisschoolkinderen)"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

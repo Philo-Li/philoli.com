@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Kuinka ratkaista Rubikin kuutio ilman kaavoja: Jopa alakoululaiset ymmärtävät
+title: "Kuinka ratkaista Rubikin kuutio ilman kaavoja: Jopa alakoululaiset ymmärtävät"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Kako sestaviti Rubikovo kocko brez pomnjenja formul: Razumljivo tudi za osnovnošolce
+title: "Kako sestaviti Rubikovo kocko brez pomnjenja formul: Razumljivo tudi za osnovnošolce"
 date: 2026-05-09 12:00:00
 tags:
   - Rubikova kocka

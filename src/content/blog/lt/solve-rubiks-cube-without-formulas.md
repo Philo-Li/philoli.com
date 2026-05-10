@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Kaip išspręsti Rubiko kubą be formulių: supras net pradinukas
+title: "Kaip išspręsti Rubiko kubą be formulių: supras net pradinukas"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

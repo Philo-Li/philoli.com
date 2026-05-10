@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ako poskladať Rubikovu kocku bez učenia sa algoritmov: Zvládne to aj školák
+title: "Ako poskladať Rubikovu kocku bez učenia sa algoritmov: Zvládne to aj školák"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

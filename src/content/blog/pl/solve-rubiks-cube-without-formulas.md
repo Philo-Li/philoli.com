@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Jak ułożyć kostkę Rubika bez zapamiętywania algorytmów: Zrozumie nawet uczeń podstawówki
+title: "Jak ułożyć kostkę Rubika bez zapamiętywania algorytmów: Zrozumie nawet uczeń podstawówki"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

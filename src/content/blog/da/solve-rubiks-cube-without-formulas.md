@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Sådan løser du Rubiks terning uden formler: En guide selv skolebørn kan følge med i
+title: "Sådan løser du Rubiks terning uden formler: En guide selv skolebørn kan følge med i"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

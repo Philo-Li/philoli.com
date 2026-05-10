@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Kuidas lahendada Rubiku kuubikut valemeid pähe õppimata: arusaadav ka algklassilapsele
+title: "Kuidas lahendada Rubiku kuubikut valemeid pähe õppimata: arusaadav ka algklassilapsele"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

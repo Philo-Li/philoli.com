@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Como Resolver o Cubo Mágico Sem Fórmulas: Até Crianças do Ensino Fundamental Conseguem
+title: "Como Resolver o Cubo Mágico Sem Fórmulas: Até Crianças do Ensino Fundamental Conseguem"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

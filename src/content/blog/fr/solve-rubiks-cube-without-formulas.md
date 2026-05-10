@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Comment résoudre le Rubik's Cube sans mémoriser de formules : même un enfant peut comprendre
+title: "Comment résoudre le Rubik's Cube sans mémoriser de formules : même un enfant peut comprendre"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

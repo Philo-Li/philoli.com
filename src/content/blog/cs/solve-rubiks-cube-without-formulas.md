@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Jak složit Rubikovu kostku bez memorování algoritmů: Pochopí i školák
+title: "Jak složit Rubikovu kostku bez memorování algoritmů: Pochopí i školák"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

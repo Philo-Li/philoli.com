@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Cómo resolver el cubo de Rubik sin memorizar fórmulas: ¡Incluso un niño de primaria puede entenderlo!
+title: "Cómo resolver el cubo de Rubik sin memorizar fórmulas: ¡Incluso un niño de primaria puede entenderlo!"
 date: 2026-05-09 12:00:00
 tags:
   - 魔方

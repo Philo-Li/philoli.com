@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Cara Menyelesaikan Kubus Rubik Tanpa Rumus: Bahkan Anak SD Pun Pasti Bisa!
+title: "Cara Menyelesaikan Kubus Rubik Tanpa Rumus: Bahkan Anak SD Pun Pasti Bisa!"
 date: 2026-05-09 12:00:00
 tags:
   - Kubus Rubik
