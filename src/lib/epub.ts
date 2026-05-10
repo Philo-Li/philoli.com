@@ -238,7 +238,16 @@ export function applyTranslations(
       // Translation contains placeholders — escape the surrounding text but inject
       // the preserved chunks (math/code/etc.) as raw HTML so they render.
       const escaped = escapeHtmlText(translated);
-      sibling.innerHTML = restorePlaceholders(escaped, node.preserved);
+      const markup = restorePlaceholders(escaped, node.preserved);
+      try {
+        sibling.innerHTML = markup;
+      } catch (err) {
+        // Strict XML innerHTML rejects named HTML entities, lost xmlns prefixes,
+        // and stray '<' from over-eager LaTeX `$...$` capture. Keep the translation
+        // and drop the inline markup rather than fail the whole book build.
+        console.warn(`[epub] inline markup rejected for ${node.id}, using text fallback`, err);
+        sibling.textContent = translated;
+      }
     } else {
       sibling.textContent = translated;
     }
