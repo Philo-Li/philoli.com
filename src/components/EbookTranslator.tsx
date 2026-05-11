@@ -119,6 +119,8 @@ const CONCURRENT_BATCHES = 1;
 // 10 in-flight calls; if you hit rate limits, failed chapters get marked
 // "partial" and you can retry them.
 const CONCURRENT_CHAPTERS = 10;
+// Per-page PDF trial-translate fan-out — independent calls, no shared context.
+const CONCURRENT_PAGE_TRANSLATIONS = 10;
 
 function loadSettings(): Settings {
   const provider = (localStorage.getItem(STORAGE_PREFIX + 'provider') as ProviderId) || 'gemini';
@@ -486,12 +488,20 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     translatingAllPagesRef.current = { aborted: false };
     setTranslatingAllPages(true);
     try {
-      for (let p = 1; p <= pdfMeta.pageCount; p++) {
-        if (translatingAllPagesRef.current?.aborted) break;
-        const phase = pagePhaseRef.current.get(p);
-        if (phase === 'done' || phase === 'running') continue;
-        await runSinglePage(p);
-      }
+      const totalPages = pdfMeta.pageCount;
+      let nextPage = 1;
+      const worker = async () => {
+        while (true) {
+          if (translatingAllPagesRef.current?.aborted) return;
+          const p = nextPage++;
+          if (p > totalPages) return;
+          const phase = pagePhaseRef.current.get(p);
+          if (phase === 'done' || phase === 'running') continue;
+          await runSinglePage(p);
+        }
+      };
+      const concurrency = Math.min(CONCURRENT_PAGE_TRANSLATIONS, totalPages);
+      await Promise.all(Array.from({ length: concurrency }, worker));
     } finally {
       translatingAllPagesRef.current = null;
       setTranslatingAllPages(false);
