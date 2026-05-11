@@ -134,6 +134,7 @@ function extractTranslatableNodes(doc: Document, chapterIndex: number): Translat
     const { text, preserved } = extractWithPlaceholders(el);
     if (!text) continue;
     if (text.length < 2) continue; // skip stray punctuation
+    if (!text.replace(/⟦M\d+⟧/g, '').trim()) continue; // markup-only block — sibling would duplicate the math/code/img
     const id = `c${chapterIndex}-n${counter++}`;
     el.setAttribute('data-bilingual-id', id);
     out.push({ id, text, preserved });
@@ -256,6 +257,31 @@ export function applyTranslations(
 }
 
 
+// Kindle (and other readers using MathJax-SVG) renders <math> as <svg>, so a
+// publisher rule like `svg { height: 98% }` inflates each formula to fill the page.
+// We append a higher-specificity override to every CSS file in the EPUB.
+const CSS_OVERRIDES = `
+
+/* bilingual translator: prevent publisher svg rules from inflating math */
+math svg, mjx-container svg, .MathJax svg, .MathJax_SVG svg,
+p svg, blockquote svg, li svg, td svg {
+  height: auto !important;
+  width: auto !important;
+  max-width: 100% !important;
+}
+`;
+
+async function injectCssOverrides(zip: JSZip): Promise<void> {
+  const cssPaths = Object.keys(zip.files).filter(p => p.toLowerCase().endsWith('.css'));
+  for (const p of cssPaths) {
+    const entry = zip.file(p);
+    if (!entry) continue;
+    const existing = await entry.async('string');
+    if (existing.includes('bilingual translator: prevent publisher svg rules')) continue;
+    zip.file(p, existing + CSS_OVERRIDES);
+  }
+}
+
 export async function buildBilingualEpub(
   parsed: ParsedEpub,
   allTranslations: Map<string, Map<string, string>>, // chapterHref -> nodeId -> translation
@@ -271,6 +297,8 @@ export async function buildBilingualEpub(
     );
     parsed.zip.file(parsed.opfPath, opfXml);
   }
+
+  await injectCssOverrides(parsed.zip);
 
   for (const chapter of parsed.chapters) {
     const chapterTranslations = allTranslations.get(chapter.href);
