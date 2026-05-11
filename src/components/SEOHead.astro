@@ -6,6 +6,7 @@ import {
   unlocalizedPath,
   useTranslations,
 } from '../i18n';
+import { FEED_META, feedLocaleFor } from '../lib/rss';
 
 interface Props {
   title: string;
@@ -15,6 +16,12 @@ interface Props {
 }
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const feedLocale = feedLocaleFor(locale);
+const feedHref = new URL(
+  feedLocale === 'en' ? '/rss.xml' : `/${feedLocale}/rss.xml`,
+  Astro.site,
+).toString();
+const feedTitle = FEED_META[feedLocale].title;
 const t = useTranslations(locale);
 
 const {
@@ -50,6 +57,7 @@ const buildLocaleHref = (loc: string): string => {
   <link rel="alternate" hreflang={loc} href={buildLocaleHref(loc)} />
 ))}
 <link rel="alternate" hreflang="x-default" href={buildLocaleHref(DEFAULT_LOCALE)} />
+<link rel="alternate" type="application/rss+xml" href={feedHref} title={feedTitle} />
 
 <meta property="og:type" content={type} />
 <meta property="og:url" content={canonicalURL} />
