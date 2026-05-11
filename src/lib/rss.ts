@@ -61,3 +61,38 @@ function stripMarkdown(input: string): string {
     .replace(/\r?\n+/g, ' ')
     .replace(/\s+/g, ' ');
 }
+
+export type FeedLocale = 'en' | 'zh' | 'zh-TW';
+
+export const FEED_META: Record<FeedLocale, {
+  title: string;
+  description: string;
+  language: string;
+}> = {
+  en: {
+    title: 'Philo Li — Blog',
+    description: 'Articles on art, philosophy, and building things.',
+    language: 'en',
+  },
+  zh: {
+    title: 'Philo Li — 博客',
+    description: '关于艺术、生活、投资和创造的思考。',
+    language: 'zh-CN',
+  },
+  'zh-TW': {
+    title: 'Philo Li — 部落格',
+    description: '關於藝術、生活、投資和創造的思考。',
+    language: 'zh-TW',
+  },
+};
+
+export function feedLocaleFor(locale: string | undefined): FeedLocale {
+  if (locale === 'zh') return 'zh';
+  if (locale === 'zh-TW') return 'zh-TW';
+  return 'en';
+}
+
+export function feedUrlFor(locale: string | undefined): string {
+  const fl = feedLocaleFor(locale);
+  return fl === 'en' ? '/rss.xml' : `/${fl}/rss.xml`;
+}
