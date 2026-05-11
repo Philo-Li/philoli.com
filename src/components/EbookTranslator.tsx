@@ -30,7 +30,35 @@ interface SinglePageResult {
   items: SinglePageItem[];
 }
 import { LOCALES, LOCALE_NAMES, LOCALE_ENGLISH_NAMES, useTranslations } from '../i18n';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
+import MarkdownIt from 'markdown-it';
 import '../styles/ebook-translator.css';
+
+const md = new MarkdownIt({ html: false, breaks: false, linkify: false });
+
+/** HTML-escape a plain text string. Used before mixing with KaTeX-rendered HTML. */
+function escapeHtml(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+/** Replace `$$…$$` and `$…$` LaTeX runs inside `html` with KaTeX-rendered markup. */
+function renderMathInHtml(html: string): string {
+  let out = html.replace(/\$\$([\s\S]+?)\$\$/g, (m, tex) => {
+    try { return katex.renderToString(tex, { displayMode: true, throwOnError: false, output: 'html' }); }
+    catch { return m; }
+  });
+  out = out.replace(/\$([^\n$]+?)\$/g, (m, tex) => {
+    try { return katex.renderToString(tex, { displayMode: false, throwOnError: false, output: 'html' }); }
+    catch { return m; }
+  });
+  return out;
+}
+
+/** Plain text → HTML with KaTeX-rendered math. Safe for `dangerouslySetInnerHTML`. */
+function renderTextWithMath(text: string): string {
+  return renderMathInHtml(escapeHtml(text));
+}
 
 interface EbookTranslatorProps {
   locale?: string;
@@ -51,7 +79,7 @@ const MODEL_HINT_KEYS: Record<string, string> = {
   'latest, 256K context': 'ebookTranslator.modelHints.latestLongContext',
 };
 
-type Step = 'settings' | 'upload' | 'preview' | 'browse';
+type Step = 'settings' | 'upload' | 'browse';
 type ChapterStatus = 'pending' | 'translating' | 'done' | 'partial' | 'error';
 
 interface Settings {
@@ -140,6 +168,15 @@ const STATUS_ICONS: Record<ChapterStatus, string> = {
   error: '✕',
 };
 
+type PagePhase = 'idle' | 'running' | 'done' | 'error';
+
+function pagePhaseIcon(phase: PagePhase): string {
+  return phase === 'running' ? STATUS_ICONS.translating
+       : phase === 'done' ? STATUS_ICONS.done
+       : phase === 'error' ? STATUS_ICONS.error
+       : STATUS_ICONS.pending;
+}
+
 export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const t = useTranslations(locale);
   const [step, setStep] = useState<Step>('settings');
@@ -159,6 +196,16 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   /** Set when a scanned PDF is uploaded but the current model can't OCR it. */
   const [needsVisionModel, setNeedsVisionModel] = useState<{ pageCount: number } | null>(null);
   const ocrAbortRef = useRef<AbortController | null>(null);
+
+  // PDF page-preview state (used when pdfMeta is set but parsed isn't yet — the OCR-decision gate).
+  const [previewPage, setPreviewPage] = useState(1);
+  const [pagePhase, setPagePhase] = useState<Map<number, PagePhase>>(new Map());
+  const [pageResults, setPageResults] = useState<Map<number, SinglePageResult>>(new Map());
+  const [pageErrors, setPageErrors] = useState<Map<number, string>>(new Map());
+  const [translatingAllPages, setTranslatingAllPages] = useState(false);
+  const translatingAllPagesRef = useRef<{ aborted: boolean } | null>(null);
+  const pagePhaseRef = useRef(pagePhase);
+  useEffect(() => { pagePhaseRef.current = pagePhase; }, [pagePhase]);
 
   // Browse state
   const [selectedIdx, setSelectedIdx] = useState(0);
@@ -253,13 +300,19 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     setAllTranslations(new Map());
     setChapterErrors(new Map());
     setRunning(new Set());
+    setPreviewPage(1);
+    setPagePhase(new Map());
+    setPageResults(new Map());
+    setPageErrors(new Map());
+    if (translatingAllPagesRef.current) translatingAllPagesRef.current.aborted = true;
+    setTranslatingAllPages(false);
     try {
       const isPdf = /\.pdf$/i.test(f.name) || f.type === 'application/pdf';
       if (isPdf) {
         const pdfMod = await import('../lib/pdf');
         const status = await pdfMod.detectPdfScannedStatus(f);
         setPdfMeta({ pageCount: status.pageCount, isScanned: status.isScanned });
-        setStep('preview');
+        setStep('browse');
       } else {
         const result = await parseEpub(f);
         if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
@@ -378,6 +431,43 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
       pageIndex: pageNumber,
       items: paras.map((p, i) => ({ type: p.type, original: p.text, translated: translations[i] || '' })),
     };
+  }
+
+  /** Trial-translate a single PDF page from the preview sidebar — updates the per-page maps. */
+  async function runSinglePage(targetPage: number) {
+    setPagePhase(prev => new Map(prev).set(targetPage, 'running'));
+    setPageErrors(prev => { const m = new Map(prev); m.delete(targetPage); return m; });
+    setPageResults(prev => { const m = new Map(prev); m.delete(targetPage); return m; });
+    try {
+      const result = await translateSinglePage(targetPage);
+      setPageResults(prev => new Map(prev).set(targetPage, result));
+      setPagePhase(prev => new Map(prev).set(targetPage, 'done'));
+    } catch (e) {
+      setPageErrors(prev => new Map(prev).set(targetPage, e instanceof Error ? e.message : String(e)));
+      setPagePhase(prev => new Map(prev).set(targetPage, 'error'));
+    }
+  }
+
+  /** Trial-translate every page sequentially. Skips pages already done. */
+  async function translateAllPages() {
+    if (!pdfMeta || translatingAllPagesRef.current) return;
+    translatingAllPagesRef.current = { aborted: false };
+    setTranslatingAllPages(true);
+    try {
+      for (let p = 1; p <= pdfMeta.pageCount; p++) {
+        if (translatingAllPagesRef.current?.aborted) break;
+        const phase = pagePhaseRef.current.get(p);
+        if (phase === 'done' || phase === 'running') continue;
+        await runSinglePage(p);
+      }
+    } finally {
+      translatingAllPagesRef.current = null;
+      setTranslatingAllPages(false);
+    }
+  }
+
+  function cancelAllPages() {
+    if (translatingAllPagesRef.current) translatingAllPagesRef.current.aborted = true;
   }
 
   async function translateChapter(chapter: ChapterFile, force = false): Promise<void> {
@@ -563,6 +653,40 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     }
   }
 
+  /** Build a bilingual EPUB from the per-page trial translations (no OCR commit needed). */
+  async function downloadPdfPagesResult() {
+    if (!file || !pdfMeta) return;
+    const pages = Array.from(pageResults.entries())
+      .filter(([, r]) => r.items.length > 0)
+      .sort(([a], [b]) => a - b)
+      .map(([pageNumber, r]) => ({
+        pageIndex: pageNumber - 1,
+        items: r.items.map(it => ({ type: it.type, original: it.original, translated: it.translated })),
+      }));
+    if (pages.length === 0) return;
+    setBuilding(true);
+    try {
+      const pdfMod = await import('../lib/pdf');
+      const targetLangCode = LANG_NAME_TO_CODE[settings.targetLang] || 'zh';
+      const baseTitle = file.name.replace(/\.pdf$/i, '') || 'book';
+      const blob = await pdfMod.buildPdfBilingualEpubFromPages({
+        file,
+        pages,
+        meta: { title: baseTitle, author: 'Unknown', language: targetLangCode },
+      });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${baseTitle} (bilingual).epub`;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    } catch (e) {
+      alert(t('ebookTranslator.browse.buildFailed') + ' ' + (e instanceof Error ? e.message : String(e)));
+    } finally {
+      setBuilding(false);
+    }
+  }
+
   const canStart = settings.apiKey.trim().length > 0
     && (settings.provider !== 'custom' || (settings.customEndpoint.trim().length > 0 && settings.customModel.trim().length > 0))
     && (settings.provider !== 'openrouter' || settings.customModel.trim().length > 0);
@@ -575,11 +699,41 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const overallPct = totalNodes > 0 ? (translatedNodes / totalNodes) * 100 : 0;
   const anyRunning = running.size > 0;
 
+  // PDF preview-mode bulk-translate stats (when pdfMeta is set but parsed isn't yet).
+  const totalPages = pdfMeta?.pageCount ?? 0;
+  const donePages = Array.from(pagePhase.values()).filter(p => p === 'done').length;
+  const pagesPct = totalPages > 0 ? (donePages / totalPages) * 100 : 0;
+
   const chapter = parsed?.chapters[selectedIdx] ?? null;
   const chapterTranslations = chapter ? allTranslations.get(chapter.href) ?? new Map<string, string>() : new Map<string, string>();
   const chapterIsRunning = chapter ? running.has(chapter.href) : false;
   const chapterStat: ChapterStatus = chapter ? chapterStatus.get(chapter.href) ?? 'pending' : 'pending';
   const chapterErrList = chapter ? chapterErrors.get(chapter.href) ?? [] : [];
+
+  // PDF page-preview mode (pdfMeta set but no parsed chapters yet — OCR-decision gate).
+  const inPdfPreview = !!pdfMeta && !parsed;
+  // After trial-translating PDF pages, expose h1 occurrences as sidebar chapter dividers.
+  // Each entry pins to the 1-based page number whose result contains the heading.
+  const pdfChapterAnchors = useMemo(() => {
+    const out = new Map<number, string>();
+    if (!inPdfPreview) return out;
+    for (const [pageNumber, result] of pageResults.entries()) {
+      for (const item of result.items) {
+        if (item.type !== 'h1') continue;
+        const label = (item.translated || item.original).trim();
+        if (!label) continue;
+        if (!out.has(pageNumber)) out.set(pageNumber, label);
+        break; // one chapter divider per page is plenty
+      }
+    }
+    return out;
+  }, [inPdfPreview, pageResults]);
+  const currentPagePhase: PagePhase = pagePhase.get(previewPage) ?? 'idle';
+  const currentPageResult = pageResults.get(previewPage) ?? null;
+  const currentPageError = pageErrors.get(previewPage) ?? null;
+  const singlePageBusy = currentPagePhase === 'running';
+  const anyPageBusy = Array.from(pagePhase.values()).some(p => p === 'running');
+  const currentModelLabel = provider.models.find(m => m.id === effectiveModelId())?.label ?? effectiveModelId();
 
   return (
     <div className={`bt bt--${step}`}>
@@ -590,9 +744,9 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
       </header>
 
       <div className="bt__steps">
-        {(['settings', 'upload', 'preview', 'browse'] as Step[]).map((s, i) => {
+        {(['settings', 'upload', 'browse'] as const).map((s, i) => {
           const active = s === step;
-          const order: Step[] = ['settings', 'upload', 'preview', 'browse'];
+          const order = ['settings', 'upload', 'browse'] as const;
           const done = order.indexOf(step) > order.indexOf(s);
           return (
             <div
@@ -631,6 +785,39 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
             </div>
           </>
         )}
+        {step === 'browse' && inPdfPreview && pdfMeta && (
+          <>
+            <div className="bt__steps-spacer" />
+            {translatingAllPages ? (
+              <button type="button" className="bt__btn bt__btn--small" onClick={cancelAllPages}>
+                {t('ebookTranslator.actions.cancelRunning')}
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="bt__btn bt__btn--small bt__btn--primary"
+                onClick={translateAllPages}
+                disabled={!!ocrProgress || donePages >= totalPages}
+              >
+                {t('ebookTranslator.actions.translateAllRemaining')}
+              </button>
+            )}
+            <button
+              type="button"
+              className="bt__btn bt__btn--small"
+              onClick={downloadPdfPagesResult}
+              disabled={building || donePages === 0}
+            >
+              {building ? t('ebookTranslator.actions.building') : t('ebookTranslator.actions.downloadEpub')}
+            </button>
+            <div className="bt__progress-pair">
+              <div className="bt__progress-bar" style={{ width: 140 }}>
+                <div className="bt__progress-fill" style={{ width: `${pagesPct}%` }} />
+              </div>
+              <span className="bt__progress-pct">{pagesPct.toFixed(0)}%</span>
+            </div>
+          </>
+        )}
       </div>
 
       {step === 'settings' && (
@@ -661,49 +848,16 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
         </div>
       )}
 
-      {step === 'preview' && file && pdfMeta && (
-        <PdfPreviewStep
-          t={t}
-          file={file}
-          pageCount={pdfMeta.pageCount}
-          isScanned={pdfMeta.isScanned}
-          parsing={parsing}
-          ocrProgress={ocrProgress}
-          parseError={parseError}
-          needsVisionModel={needsVisionModel}
-          provider={provider}
-          providerId={settings.provider}
-          selectedModelId={settings.model}
-          effectiveModelId={effectiveModelId()}
-          onStart={() => startPdfProcessing()}
-          onStartWithModel={(modelId) => {
-            updateSettings({ model: modelId });
-            setNeedsVisionModel(null);
-            void startPdfProcessing(modelId);
-          }}
-          onPickModel={(modelId) => updateSettings({ model: modelId })}
-          onCancelOcr={cancelOcr}
-          onCancelPreview={() => {
-            setFile(null);
-            setPdfMeta(null);
-            setNeedsVisionModel(null);
-            setParseError(null);
-            setStep('upload');
-          }}
-          onGoToSettings={() => {
-            setNeedsVisionModel(null);
-            setStep('settings');
-          }}
-          onTranslateSinglePage={translateSinglePage}
-        />
-      )}
-
-      {step === 'browse' && parsed && chapter && (
-        <div className={`bt__browse`}>
+      {step === 'browse' && file && (parsed || pdfMeta) && (
+        <div className="bt__browse">
           <aside className={`bt__sidebar ${sidebarCollapsed ? 'bt__sidebar--collapsed' : ''}`}>
             <div className="bt__sidebar-header">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                <div className="bt__label" style={{ margin: 0 }}>{t('ebookTranslator.browse.chapters')}</div>
+                <div className="bt__label" style={{ margin: 0 }}>
+                  {parsed
+                    ? t('ebookTranslator.browse.chapters')
+                    : t('ebookTranslator.preview.pageList').replace('{count}', String(pdfMeta?.pageCount ?? 0))}
+                </div>
                 <button
                   type="button"
                   className="bt__sidebar-toggle"
@@ -714,28 +868,78 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
               </div>
             </div>
             <ul className="bt__sidebar-list">
-              {parsed.chapters.map((c, idx) => {
-                const status = chapterStatus.get(c.href) ?? 'pending';
-                const tr = allTranslations.get(c.href);
-                const trCount = tr?.size ?? 0;
-                return (
-                  <li key={c.href}>
-                    <button
-                      type="button"
-                      className={`bt__sidebar-item ${idx === selectedIdx ? 'bt__sidebar-item--active' : ''}`}
-                      onClick={() => setSelectedIdx(idx)}
-                    >
-                      <span className={`bt__chap-icon bt__chap-icon--${status}`}>{STATUS_ICONS[status]}</span>
-                      <span className="bt__chap-title">{c.title}</span>
-                      <span className="bt__chap-count">
-                        {c.nodes.length === 0 ? '—' : `${trCount}/${c.nodes.length}`}
-                      </span>
-                    </button>
-                  </li>
-                );
-              })}
+              {parsed
+                ? parsed.chapters.map((c, idx) => {
+                    const status = chapterStatus.get(c.href) ?? 'pending';
+                    const tr = allTranslations.get(c.href);
+                    const trCount = tr?.size ?? 0;
+                    return (
+                      <li key={c.href}>
+                        <button
+                          type="button"
+                          className={`bt__sidebar-item ${idx === selectedIdx ? 'bt__sidebar-item--active' : ''}`}
+                          onClick={() => setSelectedIdx(idx)}
+                        >
+                          <span className={`bt__chap-icon bt__chap-icon--${status}`}>{STATUS_ICONS[status]}</span>
+                          <span className="bt__chap-title">{c.title}</span>
+                          <span className="bt__chap-count">
+                            {c.nodes.length === 0 ? '—' : `${trCount}/${c.nodes.length}`}
+                          </span>
+                        </button>
+                      </li>
+                    );
+                  })
+                : pdfMeta
+                  ? Array.from({ length: pdfMeta.pageCount }, (_, i) => i + 1).flatMap(p => {
+                      const phase = pagePhase.get(p) ?? 'idle';
+                      const active = p === previewPage;
+                      const chapterLabel = pdfChapterAnchors.get(p);
+                      const items: React.ReactNode[] = [];
+                      if (chapterLabel) {
+                        items.push(
+                          <li key={`ch-${p}`} className="bt__pdf-chapter-divider" aria-hidden>
+                            {chapterLabel}
+                          </li>,
+                        );
+                      }
+                      items.push(
+                        <li key={p}>
+                          <button
+                            type="button"
+                            className={`bt__sidebar-item bt__sidebar-item--pdf ${active ? 'bt__sidebar-item--active' : ''}`}
+                            onClick={() => setPreviewPage(p)}
+                          >
+                            <span className={`bt__chap-icon bt__chap-icon--${phase === 'idle' ? 'pending' : phase}`}>
+                              {pagePhaseIcon(phase)}
+                            </span>
+                            <PdfPageThumbnail file={file} page={p} />
+                            <span className="bt__chap-title">
+                              {t('ebookTranslator.preview.pageLabel').replace('{n}', String(p))}
+                            </span>
+                          </button>
+                        </li>,
+                      );
+                      return items;
+                    })
+                  : null}
             </ul>
             <div className="bt__sidebar-footer">
+              {inPdfPreview && (
+                <button
+                  type="button"
+                  className="bt__btn bt__btn--small"
+                  onClick={() => {
+                    setFile(null);
+                    setPdfMeta(null);
+                    setNeedsVisionModel(null);
+                    setParseError(null);
+                    setStep('upload');
+                  }}
+                  disabled={parsing}
+                >
+                  {t('ebookTranslator.actions.back')}
+                </button>
+              )}
               <button type="button" className="bt__btn bt__btn--small" onClick={() => setStep('settings')}>
                 {t('ebookTranslator.actions.settingsModel')}
               </button>
@@ -744,7 +948,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
 
           <section className="bt__main">
             <div className="bt__main-header">
-              {chapter.nodes.length > 0 && (
+              {parsed && chapter && chapter.nodes.length > 0 && (
                 <div className="bt__main-actions">
                   <select
                     className="bt__select bt__select--inline"
@@ -782,17 +986,56 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
                   )}
                 </div>
               )}
+              {inPdfPreview && pdfMeta && (
+                <div className="bt__main-actions">
+                  <select
+                    className="bt__select bt__select--inline"
+                    value={settings.tone}
+                    onChange={e => updateSettings({ tone: e.target.value })}
+                    disabled={singlePageBusy || translatingAllPages || !!ocrProgress}
+                    title={t('ebookTranslator.browse.toneTitle')}
+                  >
+                    {TONES.map(tone => {
+                      const label = t(`ebookTranslator.tones.${tone.id}.label`);
+                      const hint = t(`ebookTranslator.tones.${tone.id}.hint`);
+                      return (
+                        <option key={tone.id} value={tone.id}>
+                          {label}{hint ? ` · ${hint}` : ''}
+                        </option>
+                      );
+                    })}
+                  </select>
+                  <button
+                    type="button"
+                    className="bt__btn bt__btn--small bt__btn--primary"
+                    onClick={() => runSinglePage(previewPage)}
+                    disabled={singlePageBusy || translatingAllPages || !!ocrProgress}
+                    title={t('ebookTranslator.preview.singlePage.tooltip')}
+                  >
+                    {singlePageBusy
+                      ? t('ebookTranslator.preview.singlePage.running')
+                      : currentPagePhase === 'done'
+                        ? t('ebookTranslator.actions.retranslate')
+                        : t('ebookTranslator.preview.singlePage.button')}
+                  </button>
+                </div>
+              )}
               <div className="bt__main-titlerow">
-                <h2 className="bt__main-title">{chapter.title}</h2>
+                <h2 className="bt__main-title">
+                  {parsed && chapter ? chapter.title : file.name}
+                </h2>
                 <div className="bt__main-meta">
-                  {t('ebookTranslator.browse.paragraphCount')
-                    .replace('{nodes}', String(chapter.nodes.length))
-                    .replace('{translated}', String(chapterTranslations.size))}
+                  {parsed && chapter
+                    ? t('ebookTranslator.browse.paragraphCount')
+                        .replace('{nodes}', String(chapter.nodes.length))
+                        .replace('{translated}', String(chapterTranslations.size))
+                    : pdfMeta &&
+                      `${t('ebookTranslator.preview.pages').replace('{count}', String(pdfMeta.pageCount))} · ${t('ebookTranslator.preview.pageOf').replace('{current}', String(previewPage)).replace('{total}', String(pdfMeta.pageCount))}`}
                 </div>
               </div>
             </div>
 
-            {chapterErrList.length > 0 && (
+            {parsed && chapter && chapterErrList.length > 0 && (
               <div className="bt__notice bt__notice--error">
                 {(chapterErrList.length === 1
                   ? t('ebookTranslator.browse.errorOne')
@@ -805,36 +1048,92 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
             )}
 
             <div className="bt__chapter-content">
-              {chapter.nodes.length === 0 ? (
-                <div className="bt__notice">{t('ebookTranslator.browse.noTranslatableText')}</div>
-              ) : (
-                chapter.nodes.map(node => {
-                  const tr = chapterTranslations.get(node.id);
-                  const hasPreserved = node.preserved.length > 0;
-                  const origNode = hasPreserved
-                    ? <p className="bt__bi-orig" dangerouslySetInnerHTML={{ __html: renderWithPlaceholders(node.text, node.preserved) }} />
-                    : <p className="bt__bi-orig">{node.text}</p>;
-                  let trNode: React.ReactNode = null;
-                  if (tr) {
-                    trNode = hasPreserved
-                      ? <p className="bt__bi-tr" dangerouslySetInnerHTML={{ __html: renderWithPlaceholders(tr, node.preserved) }} />
-                      : <p className="bt__bi-tr">{tr}</p>;
-                  } else if (chapterIsRunning) {
-                    trNode = (
-                      <p className="bt__bi-tr bt__bi-pending">
-                        <span className="bt__spinner" aria-label={t('ebookTranslator.browse.translatingAria')} />
-                        <span className="bt__spinner-label">{t('ebookTranslator.browse.translatingLabel')}</span>
-                      </p>
+              {parsed && chapter ? (
+                chapter.nodes.length === 0 ? (
+                  <div className="bt__notice">{t('ebookTranslator.browse.noTranslatableText')}</div>
+                ) : (
+                  chapter.nodes.map(node => {
+                    const tr = chapterTranslations.get(node.id);
+                    const hasPreserved = node.preserved.length > 0;
+                    const origHtml = hasPreserved
+                      ? renderMathInHtml(renderWithPlaceholders(node.text, node.preserved))
+                      : renderTextWithMath(node.text);
+                    const origNode = <p className="bt__bi-orig" dangerouslySetInnerHTML={{ __html: origHtml }} />;
+                    let trNode: React.ReactNode = null;
+                    if (tr) {
+                      const trHtml = hasPreserved
+                        ? renderMathInHtml(renderWithPlaceholders(tr, node.preserved))
+                        : renderTextWithMath(tr);
+                      trNode = <p className="bt__bi-tr" dangerouslySetInnerHTML={{ __html: trHtml }} />;
+                    } else if (chapterIsRunning) {
+                      trNode = (
+                        <p className="bt__bi-tr bt__bi-pending">
+                          <span className="bt__spinner" aria-label={t('ebookTranslator.browse.translatingAria')} />
+                          <span className="bt__spinner-label">{t('ebookTranslator.browse.translatingLabel')}</span>
+                        </p>
+                      );
+                    }
+                    return (
+                      <div key={node.id}>
+                        {origNode}
+                        {trNode}
+                      </div>
                     );
-                  }
-                  return (
-                    <div key={node.id}>
-                      {origNode}
-                      {trNode}
+                  })
+                )
+              ) : inPdfPreview && pdfMeta ? (
+                <>
+                  <div className="bt__pdf-preview-grid">
+                    <div className="bt__pdf-preview-image">
+                      <PdfPagePreviewer file={file} page={previewPage} maxDim={900} />
                     </div>
-                  );
-                })
-              )}
+                    <div className="bt__pdf-preview-result">
+                      {currentPagePhase !== 'idle' ? (
+                        <SinglePageResultPanel
+                          t={t}
+                          phase={currentPagePhase}
+                          result={currentPageResult}
+                          error={currentPageError}
+                        />
+                      ) : (
+                        <div className="bt__pdf-preview-empty">
+                          {t('ebookTranslator.preview.singlePage.tooltip')}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  {ocrProgress && (
+                    <OcrProgressPanel
+                      t={t}
+                      progress={ocrProgress}
+                      modelLabel={currentModelLabel}
+                      onCancel={cancelOcr}
+                    />
+                  )}
+                  {!ocrProgress && needsVisionModel && (
+                    <NeedsVisionModelNotice
+                      t={t}
+                      fileName={file.name}
+                      pageCount={needsVisionModel.pageCount}
+                      providerId={settings.provider}
+                      providerLabel={provider.label}
+                      currentModelLabel={currentModelLabel}
+                      onPickModel={(modelId) => updateSettings({ model: modelId })}
+                      selectedModelId={settings.model}
+                      onRetry={(modelId) => {
+                        updateSettings({ model: modelId });
+                        setNeedsVisionModel(null);
+                        void startPdfProcessing(modelId);
+                      }}
+                      onGoToSettings={() => {
+                        setNeedsVisionModel(null);
+                        setStep('settings');
+                      }}
+                    />
+                  )}
+                  {parseError && <div className="bt__notice bt__notice--error">{parseError}</div>}
+                </>
+              ) : null}
             </div>
           </section>
         </div>
@@ -1091,12 +1390,16 @@ function DropZone({ t, onFile }: { t: TFn; onFile: (f: File) => void }) {
 }
 
 function renderBilingual(tag: ParaTag, className: string, text: string) {
-  switch (tag) {
-    case 'h1': return <h1 className={className}>{text}</h1>;
-    case 'h2': return <h2 className={className}>{text}</h2>;
-    case 'h3': return <h3 className={className}>{text}</h3>;
-    default: return <p className={className}>{text}</p>;
+  // OCR output is light Markdown — tables (TOC pages), lists, inline emphasis — so render the
+  // body through markdown-it. Headings are rendered inline since we're already inside an <hN>.
+  if (tag === 'h1' || tag === 'h2' || tag === 'h3') {
+    const html = renderMathInHtml(md.renderInline(text));
+    return tag === 'h1' ? <h1 className={className} dangerouslySetInnerHTML={{ __html: html }} />
+         : tag === 'h2' ? <h2 className={className} dangerouslySetInnerHTML={{ __html: html }} />
+         : <h3 className={className} dangerouslySetInnerHTML={{ __html: html }} />;
   }
+  const html = renderMathInHtml(md.render(text));
+  return <div className={className} dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
 function SinglePageResultPanel({
@@ -1187,185 +1490,41 @@ function PdfPagePreviewer({ file, page, maxDim }: { file: File; page: number; ma
   );
 }
 
-function PdfPreviewStep({
-  t,
-  file,
-  pageCount,
-  isScanned,
-  parsing,
-  ocrProgress,
-  parseError,
-  needsVisionModel,
-  provider,
-  providerId,
-  selectedModelId,
-  effectiveModelId,
-  onStart,
-  onStartWithModel,
-  onPickModel,
-  onCancelOcr,
-  onCancelPreview,
-  onGoToSettings,
-  onTranslateSinglePage,
-}: {
-  t: TFn;
-  file: File;
-  pageCount: number;
-  isScanned: boolean;
-  parsing: boolean;
-  ocrProgress: OcrPageProgress | null;
-  parseError: string | null;
-  needsVisionModel: { pageCount: number } | null;
-  provider: ReturnType<typeof findProvider>;
-  providerId: ProviderId;
-  selectedModelId: string;
-  effectiveModelId: string;
-  onStart: () => void;
-  onStartWithModel: (modelId: string) => void;
-  onPickModel: (modelId: string) => void;
-  onCancelOcr: () => void;
-  onCancelPreview: () => void;
-  onGoToSettings: () => void;
-  onTranslateSinglePage: (pageNumber: number) => Promise<SinglePageResult>;
-}) {
-  const [previewPage, setPreviewPage] = useState(1);
-  const [singlePagePhase, setSinglePagePhase] = useState<'idle' | 'running' | 'done' | 'error'>('idle');
-  const [singlePageResult, setSinglePageResult] = useState<SinglePageResult | null>(null);
-  const [singlePageError, setSinglePageError] = useState<string | null>(null);
+/** Lazy-rendered page thumbnail for the PDF preview sidebar — only paints when scrolled into view. */
+function PdfPageThumbnail({ file, page }: { file: File; page: number }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const renderedRef = useRef(false);
 
-  // Reset preview to page 1 if a different file is loaded.
-  useEffect(() => { setPreviewPage(1); }, [file]);
-  // Drop the single-page result whenever the user flips to a different page.
   useEffect(() => {
-    setSinglePagePhase('idle');
-    setSinglePageResult(null);
-    setSinglePageError(null);
-  }, [previewPage]);
-
-  const prev = () => setPreviewPage(p => Math.max(1, p - 1));
-  const next = () => setPreviewPage(p => Math.min(pageCount, p + 1));
-
-  async function runSinglePage() {
-    setSinglePagePhase('running');
-    setSinglePageError(null);
-    setSinglePageResult(null);
-    try {
-      const result = await onTranslateSinglePage(previewPage);
-      setSinglePageResult(result);
-      setSinglePagePhase('done');
-    } catch (e) {
-      setSinglePageError(e instanceof Error ? e.message : String(e));
-      setSinglePagePhase('error');
-    }
-  }
-
-  const currentModelLabel = provider.models.find(m => m.id === effectiveModelId)?.label ?? effectiveModelId;
-  const singleBusy = singlePagePhase === 'running';
-  const startBusy = parsing || singleBusy;
+    if (renderedRef.current) return;
+    const el = containerRef.current;
+    if (!el) return;
+    let cancelled = false;
+    const observer = new IntersectionObserver(async (entries) => {
+      if (!entries.some(e => e.isIntersecting)) return;
+      observer.disconnect();
+      if (cancelled || renderedRef.current) return;
+      try {
+        const { renderPdfPageToCanvas } = await import('../lib/pdf');
+        if (cancelled || !canvasRef.current) return;
+        await renderPdfPageToCanvas(file, page, canvasRef.current, 120);
+        renderedRef.current = true;
+      } catch {
+        // Thumbnail failures shouldn't crash the sidebar.
+      }
+    }, { rootMargin: '200px' });
+    observer.observe(el);
+    return () => { cancelled = true; observer.disconnect(); };
+  }, [file, page]);
 
   return (
-    <div className="bt__panel">
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 8 }}>
-          <div>
-            <strong style={{ marginRight: 12 }}>{file.name}</strong>
-            <span style={{ opacity: 0.7 }}>
-              {t('ebookTranslator.preview.pages').replace('{count}', String(pageCount))}
-              {' · '}
-              {isScanned
-                ? t('ebookTranslator.preview.scannedTag')
-                : t('ebookTranslator.preview.textLayerTag')}
-            </span>
-          </div>
-          <button type="button" className="bt__btn bt__btn--small" onClick={onCancelPreview} disabled={parsing}>
-            {t('ebookTranslator.actions.back')}
-          </button>
-        </div>
-
-        <PdfPagePreviewer file={file} page={previewPage} maxDim={900} />
-
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
-          <button type="button" className="bt__btn bt__btn--small" onClick={prev} disabled={previewPage <= 1 || singleBusy}>
-            ← {t('ebookTranslator.preview.prev')}
-          </button>
-          <span style={{ minWidth: 110, textAlign: 'center', fontVariantNumeric: 'tabular-nums' }}>
-            {t('ebookTranslator.preview.pageOf')
-              .replace('{current}', String(previewPage))
-              .replace('{total}', String(pageCount))}
-          </span>
-          <button type="button" className="bt__btn bt__btn--small" onClick={next} disabled={previewPage >= pageCount || singleBusy}>
-            {t('ebookTranslator.preview.next')} →
-          </button>
-          <span style={{ width: 1, height: 18, background: 'currentColor', opacity: 0.2 }} aria-hidden />
-          <button
-            type="button"
-            className="bt__btn bt__btn--small"
-            onClick={runSinglePage}
-            disabled={startBusy || !!ocrProgress}
-            title={t('ebookTranslator.preview.singlePage.tooltip')}
-          >
-            {singleBusy
-              ? t('ebookTranslator.preview.singlePage.running')
-              : t('ebookTranslator.preview.singlePage.button')}
-          </button>
-        </div>
-
-        {singlePagePhase !== 'idle' && (
-          <SinglePageResultPanel
-            t={t}
-            phase={singlePagePhase}
-            result={singlePageResult}
-            error={singlePageError}
-          />
-        )}
-
-        {ocrProgress ? (
-          <OcrProgressPanel
-            t={t}
-            progress={ocrProgress}
-            modelLabel={currentModelLabel}
-            onCancel={onCancelOcr}
-          />
-        ) : needsVisionModel ? (
-          <NeedsVisionModelNotice
-            t={t}
-            fileName={file.name}
-            pageCount={needsVisionModel.pageCount}
-            providerId={providerId}
-            providerLabel={provider.label}
-            currentModelLabel={currentModelLabel}
-            onPickModel={onPickModel}
-            selectedModelId={selectedModelId}
-            onRetry={(modelId) => onStartWithModel(modelId)}
-            onGoToSettings={onGoToSettings}
-          />
-        ) : (
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 8 }}>
-            <div style={{ opacity: 0.75, fontSize: 14 }}>
-              {isScanned
-                ? t('ebookTranslator.preview.willOcrWith').replace('{model}', currentModelLabel)
-                : t('ebookTranslator.preview.willTranslate')}
-            </div>
-            <button
-              type="button"
-              className="bt__btn bt__btn--primary"
-              onClick={onStart}
-              disabled={parsing}
-            >
-              {parsing
-                ? t('ebookTranslator.upload.parsing')
-                : isScanned
-                  ? t('ebookTranslator.preview.startOcr').replace('{count}', String(pageCount))
-                  : t('ebookTranslator.preview.continue')}
-            </button>
-          </div>
-        )}
-
-        {parseError && <div className="bt__notice bt__notice--error">{parseError}</div>}
-      </div>
+    <div ref={containerRef} className="bt__pdf-thumb">
+      <canvas ref={canvasRef} />
     </div>
   );
 }
+
 
 function OcrProgressPanel({
   t,

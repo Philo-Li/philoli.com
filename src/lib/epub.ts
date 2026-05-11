@@ -300,17 +300,57 @@ export async function buildBilingualEpub(
 
   await injectCssOverrides(parsed.zip);
 
+  const failures: Array<{ href: string; message: string }> = [];
   for (const chapter of parsed.chapters) {
-    const chapterTranslations = allTranslations.get(chapter.href);
-    if (chapterTranslations) applyTranslations(chapter, chapterTranslations);
-    // Set xml:lang on <html> so readers apply the correct font for CJK text.
-    const htmlEl = chapter.doc.documentElement;
-    htmlEl.setAttribute('xml:lang', targetLang);
-    htmlEl.setAttribute('lang', targetLang);
-    const updated = serializeXml(chapter.doc);
-    parsed.zip.file(chapter.href, updated);
+    try {
+      const chapterTranslations = allTranslations.get(chapter.href);
+      if (chapterTranslations) applyTranslations(chapter, chapterTranslations);
+      // Set xml:lang on <html> so readers apply the correct font for CJK text.
+      const htmlEl = chapter.doc.documentElement;
+      htmlEl.setAttribute('xml:lang', targetLang);
+      htmlEl.setAttribute('lang', targetLang);
+      const updated = serializeXml(chapter.doc);
+      parsed.zip.file(chapter.href, updated);
+    } catch (e) {
+      // One malformed chapter shouldn't bail out the whole export. Synthesize a minimal
+      // plain-text XHTML that preserves the translations we already have — readable, even
+      // if it loses the publisher's original markup for this chapter.
+      failures.push({ href: chapter.href, message: e instanceof Error ? e.message : String(e) });
+      const chapterTranslations = allTranslations.get(chapter.href);
+      parsed.zip.file(chapter.href, buildPlainTextChapter(chapter, chapterTranslations, targetLang));
+    }
+  }
+  if (failures.length > 0) {
+    console.warn(`[epub] ${failures.length} chapter(s) fell back to plain-text on export:`, failures);
   }
   return parsed.zip.generateAsync({ type: 'blob', mimeType: 'application/epub+zip' });
+}
+
+/** Minimal XHTML used when normal chapter serialization fails — keeps translations as plain text. */
+function buildPlainTextChapter(
+  chapter: ChapterFile,
+  translations: Map<string, string> | undefined,
+  lang: string,
+): string {
+  const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  // Strip ⟦Mn⟧ placeholders; they aren't meant to be reader-visible.
+  const clean = (s: string) => s.replace(/⟦M\d+⟧/g, '').replace(/\s+/g, ' ').trim();
+  const rows: string[] = [];
+  for (const node of chapter.nodes) {
+    const orig = clean(node.text);
+    if (orig) rows.push(`<p>${esc(orig)}</p>`);
+    const tr = translations?.get(node.id);
+    const trText = tr ? clean(tr) : '';
+    if (trText) rows.push(`<p>${esc(trText)}</p>`);
+  }
+  return `<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="${esc(lang)}" lang="${esc(lang)}">
+<head><title>${esc(chapter.title)}</title></head>
+<body>
+<h1>${esc(chapter.title)}</h1>
+${rows.join('\n')}
+</body>
+</html>`;
 }
 
 /** Render a small HTML preview of bilingual content (first N nodes). */

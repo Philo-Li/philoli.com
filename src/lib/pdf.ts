@@ -147,11 +147,46 @@ export type ParaTag = 'p' | 'h1' | 'h2' | 'h3';
 export interface Paragraph {
   type: ParaTag;
   text: string;
+  /** 0-based source page; set by the PDF extractor so embedded images can interleave per page. */
+  pageIndex?: number;
+}
+
+interface PdfPage {
+  pageIndex: number;
+  paragraphs: Paragraph[];
 }
 
 interface PdfChapter {
   title: string;
-  paragraphs: Paragraph[];
+  pages: PdfPage[];
+}
+
+interface PageImage {
+  pageIndex: number;
+  base64: string;
+  mimeType: string;
+}
+
+const EMBED_MAX_DIM = 1200;
+const EMBED_QUALITY = 0.75;
+
+/** Bucket consecutive same-page paragraphs into PdfPage records. */
+function groupByPage(paras: Paragraph[]): PdfPage[] {
+  const pages: PdfPage[] = [];
+  for (const p of paras) {
+    const idx = p.pageIndex ?? -1;
+    const last = pages[pages.length - 1];
+    if (last && last.pageIndex === idx) last.paragraphs.push(p);
+    else pages.push({ pageIndex: idx, paragraphs: [p] });
+  }
+  return pages;
+}
+
+function base64ToUint8(b64: string): Uint8Array {
+  const bin = atob(b64);
+  const out = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+  return out;
 }
 
 interface OutlineEntry {
@@ -375,17 +410,25 @@ function escapeXml(s: string): string {
     .replace(/'/g, '&apos;');
 }
 
-function chapterXhtml(title: string, paragraphs: Paragraph[]): string {
-  const body = paragraphs
-    .map(p => `<${p.type}>${escapeXml(p.text)}</${p.type}>`)
-    .join('\n');
+function pageImageHref(pageIndex: number): string {
+  return `images/page-${pageIndex + 1}.jpg`;
+}
+
+function chapterXhtml(title: string, pages: PdfPage[]): string {
+  const sections = pages.map(page => {
+    const figure = `<figure class="pdf-page"><img src="${pageImageHref(page.pageIndex)}" alt="Page ${page.pageIndex + 1}"/></figure>`;
+    const paras = page.paragraphs
+      .map(p => `<${p.type}>${escapeXml(p.text)}</${p.type}>`)
+      .join('\n');
+    return `${figure}\n${paras}`;
+  }).join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head><title>${escapeXml(title)}</title></head>
 <body>
 <h1>${escapeXml(title)}</h1>
-${body}
+${sections}
 </body>
 </html>`;
 }
@@ -393,6 +436,7 @@ ${body}
 async function buildSyntheticEpub(
   meta: { title: string; author: string; language: string },
   chapters: PdfChapter[],
+  images: PageImage[],
 ): Promise<Blob> {
   const zip = new JSZip();
   // EPUB requires "mimetype" first, stored uncompressed.
@@ -408,15 +452,23 @@ async function buildSyntheticEpub(
     id: `ch${i}`,
     href: `chapter-${i + 1}.xhtml`,
     title: c.title,
-    paras: c.paragraphs,
+    pages: c.pages,
   }));
 
   for (const it of items) {
-    zip.file(`OEBPS/${it.href}`, chapterXhtml(it.title, it.paras));
+    zip.file(`OEBPS/${it.href}`, chapterXhtml(it.title, it.pages));
   }
 
-  const manifest = items
+  // Embed page images.
+  for (const img of images) {
+    zip.file(`OEBPS/${pageImageHref(img.pageIndex)}`, base64ToUint8(img.base64));
+  }
+
+  const manifestChapters = items
     .map(it => `    <item id="${it.id}" href="${it.href}" media-type="application/xhtml+xml"/>`)
+    .join('\n');
+  const manifestImages = images
+    .map(img => `    <item id="img-${img.pageIndex + 1}" href="${pageImageHref(img.pageIndex)}" media-type="${img.mimeType}"/>`)
     .join('\n');
   const spine = items.map(it => `    <itemref idref="${it.id}"/>`).join('\n');
 
@@ -429,7 +481,7 @@ async function buildSyntheticEpub(
     <dc:identifier id="bookid">pdf-${Date.now()}</dc:identifier>
   </metadata>
   <manifest>
-${manifest}
+${manifestChapters}${manifestImages ? '\n' + manifestImages : ''}
   </manifest>
   <spine>
 ${spine}
@@ -470,7 +522,9 @@ export async function parsePdf(file: File | Blob): Promise<ParsedEpub> {
     const page = await pdf.getPage(i);
     const lines = await extractPageLines(page, stats);
     totalLines += lines.length;
-    pageParas.push(linesToParagraphs(lines, bodyFontSize));
+    const paras = linesToParagraphs(lines, bodyFontSize);
+    for (const p of paras) p.pageIndex = i - 1;
+    pageParas.push(paras);
   }
 
   let chapters: PdfChapter[];
@@ -479,7 +533,7 @@ export async function parsePdf(file: File | Blob): Promise<ParsedEpub> {
     if (outline[0].pageIndex > 0) {
       const front: Paragraph[] = [];
       for (let p = 0; p < outline[0].pageIndex; p++) front.push(...pageParas[p]);
-      if (front.length > 0) chapters.push({ title: 'Front matter', paragraphs: front });
+      if (front.length > 0) chapters.push({ title: 'Front matter', pages: groupByPage(front) });
     }
     for (let i = 0; i < outline.length; i++) {
       const entry = outline[i];
@@ -491,7 +545,7 @@ export async function parsePdf(file: File | Blob): Promise<ParsedEpub> {
       if (paras.length > 0 && normalize(paras[0].text) === normalize(entry.title)) {
         paras.shift();
       }
-      chapters.push({ title: entry.title, paragraphs: paras });
+      chapters.push({ title: entry.title, pages: groupByPage(paras) });
     }
   } else {
     // No outline — try to split on inferred h1 headings, else one big chapter.
@@ -500,23 +554,24 @@ export async function parsePdf(file: File | Blob): Promise<ParsedEpub> {
     const hasH1 = all.some(p => p.type === 'h1');
     if (hasH1) {
       chapters = [];
-      let cur: PdfChapter | null = null;
+      let curParas: Paragraph[] = [];
+      let curTitle = title;
       for (const p of all) {
         if (p.type === 'h1') {
-          if (cur && cur.paragraphs.length > 0) chapters.push(cur);
-          cur = { title: p.text, paragraphs: [] };
+          if (curParas.length > 0) chapters.push({ title: curTitle, pages: groupByPage(curParas) });
+          curTitle = p.text;
+          curParas = [];
         } else {
-          if (!cur) cur = { title, paragraphs: [] };
-          cur.paragraphs.push(p);
+          curParas.push(p);
         }
       }
-      if (cur && cur.paragraphs.length > 0) chapters.push(cur);
+      if (curParas.length > 0) chapters.push({ title: curTitle, pages: groupByPage(curParas) });
     } else {
-      chapters = [{ title, paragraphs: all }];
+      chapters = [{ title, pages: groupByPage(all) }];
     }
   }
 
-  chapters = chapters.filter(c => c.paragraphs.length > 0);
+  chapters = chapters.filter(c => c.pages.length > 0);
   if (chapters.length === 0) {
     // Diagnose the failure: distinguish a true scanned PDF, an undecodable text layer,
     // and a paragraph-reconstruction miss.
@@ -539,7 +594,17 @@ export async function parsePdf(file: File | Blob): Promise<ParsedEpub> {
     );
   }
 
-  const epubBlob = await buildSyntheticEpub({ title, author, language }, chapters);
+  // Render embedded page images for every page that survived into a chapter.
+  const usedPages = new Set<number>();
+  for (const c of chapters) for (const pg of c.pages) usedPages.add(pg.pageIndex);
+  const images: PageImage[] = [];
+  for (const pageIndex of Array.from(usedPages).sort((a, b) => a - b)) {
+    if (pageIndex < 0) continue;
+    const img = await renderPageAsJpeg(pdf, pageIndex + 1, EMBED_MAX_DIM, EMBED_QUALITY);
+    images.push({ pageIndex, base64: img.base64, mimeType: img.mimeType });
+  }
+
+  const epubBlob = await buildSyntheticEpub({ title, author, language }, chapters, images);
   return parseEpub(epubBlob);
 }
 
@@ -584,40 +649,198 @@ async function renderPageAsJpeg(
   return { base64: arrayBufferToBase64(buf), mimeType: 'image/jpeg' };
 }
 
+/**
+ * Build a bilingual EPUB directly from per-page trial-translate results (no chapter parse).
+ * Each input page becomes a `<figure><img/></figure>` followed by orig + translation pairs,
+ * matching the interleaved layout produced by buildBilingualEpub on parsed chapters.
+ */
+export async function buildPdfBilingualEpubFromPages(opts: {
+  file: File | Blob;
+  pages: Array<{ pageIndex: number; items: Array<{ type: ParaTag; original: string; translated: string }> }>;
+  meta: { title: string; author: string; language: string };
+}): Promise<Blob> {
+  const sorted = [...opts.pages].sort((a, b) => a.pageIndex - b.pageIndex);
+  const pdf = await loadPdfDocument(opts.file);
+  const images: PageImage[] = [];
+  for (const p of sorted) {
+    const img = await renderPageAsJpeg(pdf, p.pageIndex + 1, EMBED_MAX_DIM, EMBED_QUALITY);
+    images.push({ pageIndex: p.pageIndex, base64: img.base64, mimeType: img.mimeType });
+  }
+  // Flatten each page's items into an alternating sequence of original / translation paragraphs.
+  const chapterPages: PdfPage[] = sorted.map(p => ({
+    pageIndex: p.pageIndex,
+    paragraphs: p.items.flatMap(it => {
+      const rows: Paragraph[] = [{ type: it.type, text: it.original, pageIndex: p.pageIndex }];
+      if (it.translated) rows.push({ type: it.type, text: it.translated, pageIndex: p.pageIndex });
+      return rows;
+    }),
+  }));
+  const chapters: PdfChapter[] = [{ title: opts.meta.title || 'Bilingual', pages: chapterPages }];
+  return buildSyntheticEpub(opts.meta, chapters, images);
+}
+
 /** Parse the LLM's lightweight Markdown OCR output into typed paragraphs. */
 export function parseOcrMarkdown(text: string): Paragraph[] {
   const trimmed = text.trim();
   if (!trimmed) return [];
   const blocks = trimmed.split(/\n\s*\n/).map(b => b.trim()).filter(Boolean);
   const out: Paragraph[] = [];
+
+  const headingKind = (line: string): { kind: ParaTag; rest: string } | null => {
+    if (line.startsWith('### ')) return { kind: 'h3', rest: line.slice(4) };
+    if (line.startsWith('## '))  return { kind: 'h2', rest: line.slice(3) };
+    if (line.startsWith('# '))   return { kind: 'h1', rest: line.slice(2) };
+    return null;
+  };
+
   for (const block of blocks) {
-    let kind: ParaTag = 'p';
-    let content = block;
-    if (block.startsWith('### ')) { kind = 'h3'; content = block.slice(4); }
-    else if (block.startsWith('## ')) { kind = 'h2'; content = block.slice(3); }
-    else if (block.startsWith('# ')) { kind = 'h1'; content = block.slice(2); }
-    content = content.replace(/\s*\n\s*/g, ' ').replace(/\s+/g, ' ').trim();
-    if (content) out.push({ type: kind, text: content });
+    // Tables and lists must keep their line structure intact; treat the whole block as one paragraph.
+    const structural = /^\s*\|/m.test(block) || /^\s*([-*+]|\d+[.)])\s/m.test(block);
+    if (structural) {
+      const first = block.split('\n', 1)[0];
+      const head = headingKind(first);
+      const kind: ParaTag = head ? head.kind : 'p';
+      const body = head ? [head.rest, ...block.split('\n').slice(1)].join('\n') : block;
+      const content = body.split('\n').map(l => l.trimEnd()).filter(Boolean).join('\n').trim();
+      if (content) out.push({ type: kind, text: content });
+      continue;
+    }
+    // Plain prose: split heading lines into their own paragraphs, collapse line-wrap within prose.
+    let prose: string[] = [];
+    const flushProse = () => {
+      const content = prose.join(' ').replace(/\s+/g, ' ').trim();
+      if (content) out.push({ type: 'p', text: content });
+      prose = [];
+    };
+    for (const raw of block.split('\n')) {
+      const line = raw.trim();
+      if (!line) continue;
+      const head = headingKind(line);
+      if (head) {
+        flushProse();
+        if (head.rest.trim()) out.push({ type: head.kind, text: head.rest.trim() });
+      } else {
+        prose.push(line);
+      }
+    }
+    flushProse();
   }
   return out;
 }
 
 function splitOcrParagraphsIntoChapters(paragraphs: Paragraph[], fallbackTitle: string): PdfChapter[] {
   const hasH1 = paragraphs.some(p => p.type === 'h1');
-  if (!hasH1) return [{ title: fallbackTitle, paragraphs }];
+  if (!hasH1) return [{ title: fallbackTitle, pages: groupByPage(paragraphs) }];
   const chapters: PdfChapter[] = [];
-  let cur: PdfChapter | null = null;
+  let curTitle = fallbackTitle;
+  let curParas: Paragraph[] = [];
   for (const p of paragraphs) {
     if (p.type === 'h1') {
-      if (cur && cur.paragraphs.length > 0) chapters.push(cur);
-      cur = { title: p.text, paragraphs: [] };
+      if (curParas.length > 0) chapters.push({ title: curTitle, pages: groupByPage(curParas) });
+      curTitle = p.text;
+      curParas = [];
     } else {
-      if (!cur) cur = { title: fallbackTitle, paragraphs: [] };
-      cur.paragraphs.push(p);
+      curParas.push(p);
     }
   }
-  if (cur && cur.paragraphs.length > 0) chapters.push(cur);
-  return chapters.filter(c => c.paragraphs.length > 0);
+  if (curParas.length > 0) chapters.push({ title: curTitle, pages: groupByPage(curParas) });
+  return chapters.filter(c => c.pages.length > 0);
+}
+
+interface TocEntry { title: string; printedPage: number }
+
+const TOC_HEADER_RE = /^#{1,3}\s*(目录|目錄|目次|Contents|Table of Contents|Index|Inhalt|Sommaire|Índice|Содержание)\s*$/im;
+
+/** Find the first OCR'd page whose top heading reads like a table of contents. */
+function findTocPageIndex(pageTexts: string[]): number {
+  for (let i = 0; i < pageTexts.length; i++) {
+    if (TOC_HEADER_RE.test(pageTexts[i] ?? '')) return i;
+  }
+  return -1;
+}
+
+/** Pull `{ title, printedPage }` entries out of an OCR'd TOC page. */
+function parseTocEntries(tocText: string): TocEntry[] {
+  const entries: TocEntry[] = [];
+  // Common patterns: "Title ........ 15", "Title  15", "1. Title  15"
+  const dotted = /^(.{2,}?)\s*[.…．·\s]{2,}(\d{1,4})\s*$/;
+  const plain = /^(.{2,}?)\s{2,}(\d{1,4})\s*$/;
+  for (const raw of tocText.split('\n')) {
+    const line = raw.trim();
+    if (!line || line.startsWith('#')) continue;
+    const m = dotted.exec(line) ?? plain.exec(line);
+    if (!m) continue;
+    const title = m[1].trim();
+    const printedPage = parseInt(m[2], 10);
+    if (!title || !Number.isFinite(printedPage)) continue;
+    if (title.length < 2 || title.length > 200) continue;
+    entries.push({ title, printedPage });
+  }
+  return entries;
+}
+
+const SPACE_RE = /\s+/g;
+function fuzzyKey(s: string): string {
+  return s.toLowerCase().replace(SPACE_RE, ' ').trim();
+}
+
+/** Walk OCR'd pages, mark which PDF page each TOC entry's chapter actually starts on. */
+function matchTocEntriesToPdfPages(
+  toc: TocEntry[],
+  pageTexts: string[],
+): Array<{ entry: TocEntry; pdfPageIdx: number }> {
+  const out: Array<{ entry: TocEntry; pdfPageIdx: number }> = [];
+  let searchFrom = 0;
+  for (const entry of toc) {
+    const target = fuzzyKey(entry.title);
+    let found = -1;
+    for (let i = searchFrom; i < pageTexts.length; i++) {
+      const text = pageTexts[i] ?? '';
+      for (const m of text.matchAll(/^#\s+(.+)$/gm)) {
+        const h1 = fuzzyKey(m[1]);
+        if (h1 === target || h1.includes(target) || target.includes(h1)) {
+          found = i;
+          break;
+        }
+      }
+      if (found >= 0) break;
+    }
+    if (found >= 0) {
+      out.push({ entry, pdfPageIdx: found });
+      searchFrom = found + 1;
+    }
+  }
+  return out;
+}
+
+/** Build chapters using TOC anchors + per-paragraph pageIndex. Skip TOC text out of body. */
+function splitParagraphsByTocAnchors(
+  paragraphs: Paragraph[],
+  anchors: Array<{ entry: TocEntry; pdfPageIdx: number }>,
+  totalPages: number,
+  fallbackTitle: string,
+): PdfChapter[] {
+  const chapters: PdfChapter[] = [];
+  // Front matter before the first anchor.
+  const firstAnchorPage = anchors[0].pdfPageIdx;
+  const front = paragraphs.filter(p =>
+    typeof p.pageIndex === 'number' && p.pageIndex < firstAnchorPage,
+  );
+  if (front.length > 0) chapters.push({ title: 'Front matter', pages: groupByPage(front) });
+  for (let i = 0; i < anchors.length; i++) {
+    const start = anchors[i].pdfPageIdx;
+    const end = i + 1 < anchors.length ? anchors[i + 1].pdfPageIdx : totalPages;
+    const chapterParas = paragraphs.filter(p =>
+      typeof p.pageIndex === 'number' && p.pageIndex >= start && p.pageIndex < end,
+    );
+    // Drop a leading paragraph that just repeats the chapter title.
+    if (chapterParas.length > 0 && fuzzyKey(chapterParas[0].text) === fuzzyKey(anchors[i].entry.title)) {
+      chapterParas.shift();
+    }
+    if (chapterParas.length === 0) continue;
+    chapters.push({ title: anchors[i].entry.title, pages: groupByPage(chapterParas) });
+  }
+  return chapters.length > 0 ? chapters : [{ title: fallbackTitle, pages: groupByPage(paragraphs) }];
 }
 
 export interface OcrPageProgress {
@@ -714,7 +937,9 @@ export async function parsePdfWithOcr(
   const allParas: Paragraph[] = [];
   for (let i = 0; i < N; i++) {
     if (!pageTexts[i]) continue;
-    allParas.push(...parseOcrMarkdown(pageTexts[i]));
+    const paras = parseOcrMarkdown(pageTexts[i]);
+    for (const p of paras) p.pageIndex = i;
+    allParas.push(...paras);
   }
 
   if (allParas.length === 0) {
@@ -723,7 +948,62 @@ export async function parsePdfWithOcr(
     );
   }
 
-  const chapters = splitOcrParagraphsIntoChapters(allParas, title);
-  const epubBlob = await buildSyntheticEpub({ title, author, language }, chapters);
+  // Chapter splitting priority:
+  //   1. PDF's embedded outline (rare on scans, but cheap to check)
+  //   2. OCR'd "Contents" page parsed for printed-page anchors, matched against h1 headings
+  //   3. Fall back to inferred h1 headings in the OCR text
+  let chapters: PdfChapter[] | null = null;
+  const outline = await getChapterOutline(pdf);
+  if (outline.length >= 2) {
+    chapters = [];
+    if (outline[0].pageIndex > 0) {
+      const front = allParas.filter(p =>
+        typeof p.pageIndex === 'number' && p.pageIndex < outline[0].pageIndex,
+      );
+      if (front.length > 0) chapters.push({ title: 'Front matter', pages: groupByPage(front) });
+    }
+    for (let i = 0; i < outline.length; i++) {
+      const start = outline[i].pageIndex;
+      const end = i + 1 < outline.length ? outline[i + 1].pageIndex : N;
+      const chapterParas = allParas.filter(p =>
+        typeof p.pageIndex === 'number' && p.pageIndex >= start && p.pageIndex < end,
+      );
+      if (chapterParas.length > 0 && fuzzyKey(chapterParas[0].text) === fuzzyKey(outline[i].title)) {
+        chapterParas.shift();
+      }
+      if (chapterParas.length > 0) chapters.push({ title: outline[i].title, pages: groupByPage(chapterParas) });
+    }
+    if (chapters.length < 2) chapters = null;
+  }
+  if (!chapters) {
+    const tocIdx = findTocPageIndex(pageTexts);
+    if (tocIdx >= 0) {
+      const entries = parseTocEntries(pageTexts[tocIdx]);
+      if (entries.length >= 2) {
+        const anchors = matchTocEntriesToPdfPages(entries, pageTexts);
+        if (anchors.length >= 2) {
+          // Exclude the TOC page itself from chapter body so it doesn't get translated as prose.
+          const body = allParas.filter(p => p.pageIndex !== tocIdx);
+          chapters = splitParagraphsByTocAnchors(body, anchors, N, title);
+        }
+      }
+    }
+  }
+  if (!chapters) {
+    chapters = splitOcrParagraphsIntoChapters(allParas, title);
+  }
+  // Render embedded page images for every page that ended up with content. The OCR pass
+  // already rendered each page at its higher input dims; we re-render here at the smaller
+  // embed dims so the output EPUB stays compact.
+  const usedPages = new Set<number>();
+  for (const c of chapters) for (const pg of c.pages) usedPages.add(pg.pageIndex);
+  const images: PageImage[] = [];
+  for (const pageIndex of Array.from(usedPages).sort((a, b) => a - b)) {
+    if (pageIndex < 0) continue;
+    const img = await renderPageAsJpeg(pdf, pageIndex + 1, EMBED_MAX_DIM, EMBED_QUALITY);
+    images.push({ pageIndex, base64: img.base64, mimeType: img.mimeType });
+  }
+
+  const epubBlob = await buildSyntheticEpub({ title, author, language }, chapters, images);
   return parseEpub(epubBlob);
 }
