@@ -38,6 +38,16 @@ describe('renderMarkdownForRss', () => {
     expect(html).toContain('Intro');
     expect(html).toContain('Rest');
   });
+
+  it('absolutizes every root-relative URL in the body, not just the first', () => {
+    const md = '![a](/uploads/a.jpg)\n\n[home](/about)\n\n![b](/uploads/b.jpg)';
+    const html = renderMarkdownForRss(md, SITE);
+    expect(html).toContain('src="https://philoli.com/uploads/a.jpg"');
+    expect(html).toContain('href="https://philoli.com/about"');
+    expect(html).toContain('src="https://philoli.com/uploads/b.jpg"');
+    expect(html).not.toContain('"/uploads/');
+    expect(html).not.toContain('"/about"');
+  });
 });
 
 describe('extractPlainDescription', () => {
