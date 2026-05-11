@@ -107,9 +107,33 @@ const currentBasePath = unlocalizedPath(Astro.url.pathname);
     themeToggle.setAttribute('aria-label', theme === 'light' ? ariaToDark : ariaToLight);
   };
 
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+
+  const handleScroll = () => {
+    const currentY = window.scrollY;
+    const delta = currentY - lastScrollY;
+
+    navbar.classList.toggle('scrolled', currentY > 100);
+
+    if (mobileMenu.classList.contains('open') || currentY < 80) {
+      navbar.classList.remove('navbar--hidden');
+    } else if (delta > 4) {
+      navbar.classList.add('navbar--hidden');
+    } else if (delta < -4) {
+      navbar.classList.remove('navbar--hidden');
+    }
+
+    lastScrollY = currentY;
+    ticking = false;
+  };
+
   window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 100);
-  });
+    if (!ticking) {
+      requestAnimationFrame(handleScroll);
+      ticking = true;
+    }
+  }, { passive: true });
 
   themeToggle.addEventListener('click', () => {
     const nextTheme = root.dataset.theme === 'light' ? 'dark' : 'light';
