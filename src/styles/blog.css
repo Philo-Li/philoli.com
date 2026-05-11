@@ -53,3 +53,35 @@
 .blog-post-card__tag {
   color: var(--color-accent);
 }
+
+.blog-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.blog-page__header .blog-page__title {
+  margin-bottom: 0;
+}
+
+.blog-page__rss {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-text-muted);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.blog-page__rss:hover {
+  color: var(--color-heading);
+  border-color: var(--color-heading);
+}

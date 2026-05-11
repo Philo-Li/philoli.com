@@ -3,10 +3,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BlogPostCard from '../BlogPostCard.astro';
 import { getCollection } from 'astro:content';
 import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
+import { feedUrlFor } from '../../lib/rss';
 import '../../styles/blog.css';
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
+const rssHref = feedUrlFor(locale);
 
 const allPosts = await getCollection('blog');
 
@@ -32,7 +34,15 @@ const posts = allPosts
 
 <BaseLayout title={t('metadata.blogTitle')} description={t('metadata.blogDescription')}>
   <main class="blog-page">
-    <h1 class="blog-page__title">{t('blogPage.title')}</h1>
+    <div class="blog-page__header">
+      <h1 class="blog-page__title">{t('blogPage.title')}</h1>
+      <a href={rssHref} class="blog-page__rss" aria-label="RSS feed" title="RSS">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M4 4a16 16 0 0 1 16 16h-3A13 13 0 0 0 4 7V4Zm0 6a10 10 0 0 1 10 10h-3a7 7 0 0 0-7-7v-3Zm2 7a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z"/>
+        </svg>
+        <span>{t('blogPage.rssLabel')}</span>
+      </a>
+    </div>
     <ul class="blog-page__list">
       {posts.map(post => {
         const slug = post.id.replace(/^[^/]+\//, '');
