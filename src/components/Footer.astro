@@ -1,5 +1,10 @@
 ---
 import SocialLinks from './SocialLinks.astro';
+import { DEFAULT_LOCALE, isLocale } from '../i18n';
+import { feedUrlFor } from '../lib/rss';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const rssHref = feedUrlFor(locale);
 ---
 
 <footer class="footer">
@@ -8,7 +13,14 @@ import SocialLinks from './SocialLinks.astro';
       <span class="footer__logo">Philo Li</span>
       <p class="footer__copy">&copy; {new Date().getFullYear()}</p>
     </div>
-    <SocialLinks size="sm" />
+    <div class="footer__right">
+      <SocialLinks size="sm" />
+      <a href={rssHref} class="footer__rss" aria-label="RSS feed" title="RSS">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M4 4a16 16 0 0 1 16 16h-3A13 13 0 0 0 4 7V4Zm0 6a10 10 0 0 1 10 10h-3a7 7 0 0 0-7-7v-3Zm2 7a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z"/>
+        </svg>
+      </a>
+    </div>
   </div>
 </footer>
 
@@ -32,6 +44,12 @@ import SocialLinks from './SocialLinks.astro';
     gap: var(--space-md);
   }
 
+  .footer__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .footer__logo {
     font-size: 0.75rem;
     font-weight: 700;
@@ -44,6 +62,18 @@ import SocialLinks from './SocialLinks.astro';
     color: var(--color-text-muted);
     font-size: 0.7rem;
     opacity: 0.5;
+  }
+
+  .footer__rss {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-muted);
+    transition: color 0.2s ease;
+  }
+
+  .footer__rss:hover {
+    color: var(--color-heading);
   }
 
   @media (max-width: 768px) {
