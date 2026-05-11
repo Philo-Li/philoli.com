@@ -1,5 +1,8 @@
 import MarkdownIt from 'markdown-it';
 import sanitizeHtml from 'sanitize-html';
+import { getCollection } from 'astro:content';
+import type { RSSFeedItem } from '@astrojs/rss';
+import { DEFAULT_LOCALE, localizedPath } from '../i18n';
 
 const md = new MarkdownIt({ html: true, linkify: true, typographer: false });
 
@@ -95,4 +98,41 @@ export function feedLocaleFor(locale: string | undefined): FeedLocale {
 export function feedUrlFor(locale: string | undefined): string {
   const fl = feedLocaleFor(locale);
   return fl === 'en' ? '/rss.xml' : `/${fl}/rss.xml`;
+}
+
+const POST_LOCALE_FOR_FEED: Record<FeedLocale, string> = {
+  en: DEFAULT_LOCALE,
+  zh: 'zh',
+  'zh-TW': 'zh-TW',
+};
+
+export async function buildFeedItems(
+  feedLocale: FeedLocale,
+  site: URL | string,
+): Promise<RSSFeedItem[]> {
+  const siteUrl = typeof site === 'string' ? site : site.toString();
+  const origin = siteUrl.replace(/\/$/, '');
+  const prefix = `${feedLocale}/`;
+  const routeLocale = POST_LOCALE_FOR_FEED[feedLocale];
+
+  const all = await getCollection('blog');
+  const posts = all
+    .filter(p => p.id.startsWith(prefix))
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+  return posts.map(post => {
+    const slug = post.id.slice(prefix.length);
+    const link = localizedPath(`/blog/${slug}`, routeLocale);
+    const tags = Array.isArray(post.data.tags)
+      ? post.data.tags
+      : post.data.tags ? [post.data.tags] : [];
+    return {
+      title: post.data.title,
+      pubDate: post.data.date,
+      link,
+      description: extractPlainDescription((post as { body?: string }).body ?? '', post.data.description),
+      content: renderMarkdownForRss((post as { body?: string }).body ?? '', origin),
+      categories: tags,
+    };
+  });
 }
