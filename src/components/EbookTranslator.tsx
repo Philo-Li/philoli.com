@@ -1046,7 +1046,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
                   >
                     {singlePageBusy
                       ? t('ebookTranslator.preview.singlePage.running')
-                      : currentPagePhase === 'done'
+                      : currentPagePhase === 'done' || currentPagePhase === 'error'
                         ? t('ebookTranslator.actions.retranslate')
                         : t('ebookTranslator.preview.singlePage.button')}
                   </button>

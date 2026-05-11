@@ -414,13 +414,15 @@ function pageImageHref(pageIndex: number): string {
   return `images/page-${pageIndex + 1}.jpg`;
 }
 
-function chapterXhtml(title: string, pages: PdfPage[]): string {
+function chapterXhtml(title: string, pages: PdfPage[], imagePages: Set<number>): string {
   const sections = pages.map(page => {
-    const figure = `<figure class="pdf-page"><img src="${pageImageHref(page.pageIndex)}" alt="Page ${page.pageIndex + 1}"/></figure>`;
+    const figure = imagePages.has(page.pageIndex)
+      ? `<figure class="pdf-page"><img src="${pageImageHref(page.pageIndex)}" alt="Page ${page.pageIndex + 1}"/></figure>`
+      : '';
     const paras = page.paragraphs
       .map(p => `<${p.type}>${escapeXml(p.text)}</${p.type}>`)
       .join('\n');
-    return `${figure}\n${paras}`;
+    return figure ? `${figure}\n${paras}` : paras;
   }).join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
@@ -455,8 +457,12 @@ async function buildSyntheticEpub(
     pages: c.pages,
   }));
 
+  // Track which page images actually made it into the zip so the chapter XHTML can skip
+  // <figure> tags for pages whose JPEG render failed (rather than emit broken-image refs).
+  const imagePages = new Set(images.map(img => img.pageIndex));
+
   for (const it of items) {
-    zip.file(`OEBPS/${it.href}`, chapterXhtml(it.title, it.pages));
+    zip.file(`OEBPS/${it.href}`, chapterXhtml(it.title, it.pages, imagePages));
   }
 
   // Embed page images.
@@ -595,13 +601,19 @@ export async function parsePdf(file: File | Blob): Promise<ParsedEpub> {
   }
 
   // Render embedded page images for every page that survived into a chapter.
+  // Per-page failures degrade gracefully — the chapter XHTML will simply omit the figure
+  // for any page whose JPEG render threw, instead of bailing out the whole export.
   const usedPages = new Set<number>();
   for (const c of chapters) for (const pg of c.pages) usedPages.add(pg.pageIndex);
   const images: PageImage[] = [];
   for (const pageIndex of Array.from(usedPages).sort((a, b) => a - b)) {
     if (pageIndex < 0) continue;
-    const img = await renderPageAsJpeg(pdf, pageIndex + 1, EMBED_MAX_DIM, EMBED_QUALITY);
-    images.push({ pageIndex, base64: img.base64, mimeType: img.mimeType });
+    try {
+      const img = await renderPageAsJpeg(pdf, pageIndex + 1, EMBED_MAX_DIM, EMBED_QUALITY);
+      images.push({ pageIndex, base64: img.base64, mimeType: img.mimeType });
+    } catch (e) {
+      console.warn(`[pdf] page ${pageIndex + 1} image render failed:`, e);
+    }
   }
 
   const epubBlob = await buildSyntheticEpub({ title, author, language }, chapters, images);
@@ -662,9 +674,14 @@ export async function buildPdfBilingualEpubFromPages(opts: {
   const sorted = [...opts.pages].sort((a, b) => a.pageIndex - b.pageIndex);
   const pdf = await loadPdfDocument(opts.file);
   const images: PageImage[] = [];
+  // Per-page render failures degrade to text-only for that page rather than aborting the export.
   for (const p of sorted) {
-    const img = await renderPageAsJpeg(pdf, p.pageIndex + 1, EMBED_MAX_DIM, EMBED_QUALITY);
-    images.push({ pageIndex: p.pageIndex, base64: img.base64, mimeType: img.mimeType });
+    try {
+      const img = await renderPageAsJpeg(pdf, p.pageIndex + 1, EMBED_MAX_DIM, EMBED_QUALITY);
+      images.push({ pageIndex: p.pageIndex, base64: img.base64, mimeType: img.mimeType });
+    } catch (e) {
+      console.warn(`[pdf] page ${p.pageIndex + 1} image render failed:`, e);
+    }
   }
   // Flatten each page's items into an alternating sequence of original / translation paragraphs.
   const chapterPages: PdfPage[] = sorted.map(p => ({
@@ -994,14 +1011,19 @@ export async function parsePdfWithOcr(
   }
   // Render embedded page images for every page that ended up with content. The OCR pass
   // already rendered each page at its higher input dims; we re-render here at the smaller
-  // embed dims so the output EPUB stays compact.
+  // embed dims so the output EPUB stays compact. Per-page failures degrade gracefully —
+  // the chapter XHTML simply omits the figure for any page whose render threw.
   const usedPages = new Set<number>();
   for (const c of chapters) for (const pg of c.pages) usedPages.add(pg.pageIndex);
   const images: PageImage[] = [];
   for (const pageIndex of Array.from(usedPages).sort((a, b) => a - b)) {
     if (pageIndex < 0) continue;
-    const img = await renderPageAsJpeg(pdf, pageIndex + 1, EMBED_MAX_DIM, EMBED_QUALITY);
-    images.push({ pageIndex, base64: img.base64, mimeType: img.mimeType });
+    try {
+      const img = await renderPageAsJpeg(pdf, pageIndex + 1, EMBED_MAX_DIM, EMBED_QUALITY);
+      images.push({ pageIndex, base64: img.base64, mimeType: img.mimeType });
+    } catch (e) {
+      console.warn(`[pdf] page ${pageIndex + 1} image render failed:`, e);
+    }
   }
 
   const epubBlob = await buildSyntheticEpub({ title, author, language }, chapters, images);
