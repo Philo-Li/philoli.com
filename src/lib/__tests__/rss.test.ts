@@ -1,0 +1,68 @@
+import { describe, it, expect } from 'vitest';
+import { renderMarkdownForRss, extractPlainDescription } from '../rss';
+
+const SITE = 'https://philoli.com';
+
+describe('renderMarkdownForRss', () => {
+  it('renders headings and paragraphs to HTML', () => {
+    const html = renderMarkdownForRss('# Hello\n\nWorld.', SITE);
+    expect(html).toContain('<h1>Hello</h1>');
+    expect(html).toContain('<p>World.</p>');
+  });
+
+  it('absolutizes root-relative image URLs', () => {
+    const html = renderMarkdownForRss('![x](/uploads/a.jpg)', SITE);
+    expect(html).toContain('src="https://philoli.com/uploads/a.jpg"');
+    expect(html).not.toContain('src="/uploads/a.jpg"');
+  });
+
+  it('absolutizes root-relative links', () => {
+    const html = renderMarkdownForRss('[home](/about)', SITE);
+    expect(html).toContain('href="https://philoli.com/about"');
+  });
+
+  it('leaves protocol-absolute URLs untouched', () => {
+    const html = renderMarkdownForRss('[gh](https://github.com/foo)', SITE);
+    expect(html).toContain('href="https://github.com/foo"');
+  });
+
+  it('strips script tags', () => {
+    const html = renderMarkdownForRss('<script>alert(1)</script>\n\nok', SITE);
+    expect(html).not.toContain('<script');
+    expect(html).toContain('ok');
+  });
+
+  it('keeps the <!--more--> marker out of output', () => {
+    const html = renderMarkdownForRss('Intro\n\n<!--more-->\n\nRest', SITE);
+    expect(html).not.toContain('<!--more-->');
+    expect(html).toContain('Intro');
+    expect(html).toContain('Rest');
+  });
+});
+
+describe('extractPlainDescription', () => {
+  it('returns frontmatter description verbatim when present', () => {
+    expect(extractPlainDescription('hello body', 'My summary')).toBe('My summary');
+  });
+
+  it('falls back to the first ~200 chars of stripped body', () => {
+    const body = '# Title\n\nFirst paragraph with **bold** text.\n\nSecond paragraph.';
+    const desc = extractPlainDescription(body, undefined);
+    expect(desc.startsWith('First paragraph with bold text.')).toBe(true);
+    expect(desc).not.toContain('**');
+    expect(desc).not.toContain('#');
+  });
+
+  it('truncates with an ellipsis when body exceeds the limit', () => {
+    const body = 'a'.repeat(500);
+    const desc = extractPlainDescription(body, undefined);
+    expect(desc.length).toBeLessThanOrEqual(220);
+    expect(desc.endsWith('…')).toBe(true);
+  });
+
+  it('cuts at the <!--more--> marker when present', () => {
+    const body = 'Intro paragraph.\n\n<!--more-->\n\nRest of post body.';
+    const desc = extractPlainDescription(body, undefined);
+    expect(desc).toBe('Intro paragraph.');
+  });
+});
