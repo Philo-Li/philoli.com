@@ -6,6 +6,8 @@
     "siteTitle": "Philo Li — Artist, Writer, Creator",
     "blogTitle": "Blog — Philo Li",
     "blogDescription": "Articles on art, philosophy, and building things.",
+    "rssTitle": "Philo Li — Blog",
+    "rssDescription": "Articles on art, philosophy, and building things.",
     "aboutTitle": "About — Philo Li",
     "aboutDescription": "About Philo Li — artist, writer, and developer.",
     "artTitle": "Art — Philo Li",
@@ -52,7 +54,8 @@
     "desc": "Thoughts on art, life, and building things — delivered to your inbox."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Artist · Writer · Developer",
