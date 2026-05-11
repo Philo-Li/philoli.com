@@ -4,9 +4,9 @@ title: "Kako rešiti Rubikovu kocku bez pamćenja formula: razumeće i osnovci"
 date: 2026-05-09 12:00:00
 tags:
   - Rubikova kocka
-  - tutorijal
-  - teorija grupa
-  - matematika
+  - Tutorijal
+  - Teorija grupa
+  - Matematika
   - Roux metoda
 categories: Svakodnevna zanimacija
 description: Koristeći se idejom komutatora iz teorije grupa i Roux metodom mostova, naučićete korak po korak kako da rešite 3x3 Rubikovu kocku bez učenja ijedne formule.

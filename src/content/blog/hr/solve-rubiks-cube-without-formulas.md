@@ -3,11 +3,11 @@ layout: blog
 title: "Kako složiti Rubikovu kocku bez formula: razumljivo i za osnovnoškolce"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubikova kocka
+  - vodič
+  - teorija grupa
+  - matematika
+  - Roux metoda
 categories: 日常折腾
 description: Koristeći se idejom komutatora iz teorije grupa i Roux mostnom metodom, naučite korak po korak, od nule i bez ijedne formule, kako složiti Rubikovu kocku 3x3.
 toc: true

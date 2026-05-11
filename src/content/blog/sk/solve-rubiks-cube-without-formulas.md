@@ -3,11 +3,11 @@ layout: blog
 title: "Ako poskladať Rubikovu kocku bez učenia sa algoritmov: Zvládne to aj školák"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubikova kocka
+  - návod
+  - teória grúp
+  - matematika
+  - Roux metóda
 categories: Každodenné experimenty
 description: Naučte sa krok za krokom, ako poskladať Rubikovu kocku 3x3 bez jedinej formulky, pomocou teórie grúp (komutátorov) a metódy Roux (mostíky).
 toc: true

@@ -3,11 +3,11 @@ layout: blog
 title: "Come risolvere il Cubo di Rubik senza formule: comprensibile anche per i più piccoli"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Cubo di Rubik
+  - tutorial
+  - teoria dei gruppi
+  - matematica
+  - metodo Roux
 categories: 日常折腾
 description: Impara a risolvere il Cubo di Rubik 3x3 da zero, senza memorizzare alcuna formula, ma comprendendo la logica dei commutatori della teoria dei gruppi e il metodo a ponte Roux.
 toc: true

@@ -3,11 +3,11 @@ layout: blog
 title: "Hoe je een Rubik's kubus oplost zonder formules: Begrijpelijk voor iedereen (zelfs voor basisschoolkinderen)"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubiks kubus
+  - tutorial
+  - groepentheorie
+  - wiskunde
+  - Roux-methode
 categories: 日常折腾
 description: Leer stap voor stap, van nul af aan, hoe je een 3x3 Rubik's kubus oplost zonder formules uit het hoofd te leren. We gebruiken de Roux-brugmethode en de logica van commutatoren uit de groepentheorie.
 toc: true

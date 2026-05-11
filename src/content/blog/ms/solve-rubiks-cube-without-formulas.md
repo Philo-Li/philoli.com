@@ -3,11 +3,11 @@ layout: blog
 title: "Cara Selesaikan Kiub Rubik Tanpa Hafal Formula: Mudah Difahami Oleh Murid Sekolah Rendah"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Kiub Rubik
+  - Tutorial
+  - Teori Kumpulan
+  - Matematik
+  - Kaedah Roux
 categories: Projek Harian
 description: Menggunakan konsep commutator teori kumpulan + kaedah jambatan Roux, panduan langkah demi langkah dari asas untuk menyelesaikan Kiub Rubik 3x3 tanpa perlu menghafal sebarang formula.
 toc: true

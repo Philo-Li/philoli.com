@@ -48,6 +48,7 @@ const MODEL = 'gemini-2.5-flash';
 
 // ---- Language map ----
 const LANGUAGES = {
+  'en': 'English',
   'zh-TW': 'Traditional Chinese (Taiwan)',
   'ja': 'Japanese',
   'ko': 'Korean',

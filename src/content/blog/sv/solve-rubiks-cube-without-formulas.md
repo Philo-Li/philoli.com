@@ -3,11 +3,11 @@ layout: blog
 title: "Hur du löser Rubiks kub utan att memorera formler: Även en grundskoleelev kan förstå"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubiks kub
+  - handledning
+  - gruppteori
+  - matematik
+  - Roux-metoden
 categories: 日常折腾
 description: Använd logiken bakom gruppteorins kommutatorer och Roux bro-metoden för att lära dig steg för steg hur du löser en 3x3 Rubiks kub från grunden, utan att memorera några formler.
 toc: true

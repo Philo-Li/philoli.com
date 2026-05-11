@@ -3,11 +3,11 @@ layout: blog
 title: "Wie man einen Zauberwürfel ohne Formeln löst: Auch für Grundschüler verständlich"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Zauberwürfel
+  - Anleitung
+  - Gruppentheorie
+  - Mathematik
+  - Roux-Methode
 categories: 日常折腾
 description: Erfahre Schritt für Schritt, wie du einen 3x3 Zauberwürfel ohne eine einzige Formel lösen kannst, basierend auf der Idee der Kommutatoren aus der Gruppentheorie und der Roux-Brückenmethode.
 toc: true

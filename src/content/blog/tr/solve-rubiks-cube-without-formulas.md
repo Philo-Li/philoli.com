@@ -3,11 +3,11 @@ layout: blog
 title: "Küp Rubik'i Formül Ezberlemeden Çözmek: İlkokul Çocukları Bile Anlayabilir"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubik Küpü
+  - Eğitim
+  - Grup teorisi
+  - Matematik
+  - Roux metodu
 categories: 日常折腾
 description: Grup teorisi komütatör mantığı ve Roux köprü yöntemiyle, sıfırdan başlayarak hiçbir formül ezberlemeden 3x3 Rubik Küpü'nü adım adım çözmeyi öğreneceksiniz.
 toc: true

@@ -3,11 +3,11 @@ layout: blog
 title: "Kuinka ratkaista Rubikin kuutio ilman kaavoja: Jopa alakoululaiset ymmärtävät"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubikin kuutio
+  - opas
+  - ryhmäteoria
+  - matematiikka
+  - Roux-menetelmä
 categories: 日常折腾
 description: Opi ratkaisemaan 3x3 Rubikin kuutio askel askeleelta, ilman ulkoa opeteltavia kaavoja, hyödyntäen ryhmäteorian kommutaattoreita ja Roux-menetelmän silta-ajattelua.
 toc: true

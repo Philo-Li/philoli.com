@@ -3,11 +3,11 @@ layout: blog
 title: "Hvordan løse Rubiks kube uten formler: Selv barneskoleelever kan forstå det"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubiks kube
+  - veiledning
+  - gruppeteori
+  - matematikk
+  - Roux-metoden
 categories: 日常折腾
 description: Lær trinn for trinn hvordan du løser en 3x3 Rubiks kube fra bunnen av, uten å pugge en eneste formel. Vi bruker konseptet med kommutatorer fra gruppeteori, kombinert med Roux' bro-løsning.
 toc: true

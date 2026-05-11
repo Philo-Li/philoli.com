@@ -3,11 +3,11 @@ layout: blog
 title: "Comment résoudre le Rubik's Cube sans mémoriser de formules : même un enfant peut comprendre"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubik's Cube
+  - Tutoriel
+  - Théorie des groupes
+  - Mathématiques
+  - Méthode Roux
 categories: 日常折腾
 description: Découvrez comment résoudre un Rubik's Cube 3x3 de A à Z, sans aucune formule à mémoriser, en utilisant les concepts de commutateurs de la théorie des groupes et la méthode Roux.
 toc: true

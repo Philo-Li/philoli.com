@@ -3,11 +3,11 @@ layout: blog
 title: "Jak ułożyć kostkę Rubika bez zapamiętywania algorytmów: Zrozumie nawet uczeń podstawówki"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Kostka Rubika
+  - poradnik
+  - teoria grup
+  - matematyka
+  - metoda Roux
 categories: Codzienne zmagania
 description: Krok po kroku nauczę Cię, jak ułożyć kostkę 3x3x3 bez zapamiętywania żadnych algorytmów, wykorzystując koncepcję komutatorów z teorii grup oraz metodę mostkową Roux.
 toc: true

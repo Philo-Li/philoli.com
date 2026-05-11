@@ -3,11 +3,11 @@ layout: blog
 title: "Hogyan rakd ki a Rubik-kockát képletek nélkül: Akár egy kisiskolás is megérti"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubik-kocka
+  - oktatóanyag
+  - csoportelmélet
+  - matematika
+  - Roux-módszer
 categories: 日常折腾
 description: A csoportelmélet kommuntátorainak és a Roux-híd módszernek az alkalmazásával lépésről lépésre megtanulhatod, hogyan rakhatsz ki egy 3x3-as Rubik-kockát anélkül, hogy egyetlen képletet is memorizálnod kellene.
 toc: true

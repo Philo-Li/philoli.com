@@ -3,11 +3,11 @@ layout: blog
 title: "Kuidas lahendada Rubiku kuubikut valemeid pähe õppimata: arusaadav ka algklassilapsele"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubiku kuubik
+  - õpetus
+  - rühmateooria
+  - matemaatika
+  - Roux meetod
 categories: 日常折腾
 description: Kasutades rühmateooria kommutaatorite põhimõtteid ja Roux' silla meetodit, õpetan sind samm-sammult, kuidas lahendada 3x3 Rubiku kuubikut nullist peale, ilma ühtegi valemit pähe õppimata.
 toc: true

@@ -3,11 +3,11 @@ layout: blog
 title: "Cách Giải Khối Rubik Mà Không Cần Học Thuộc Công Thức: Ai Cũng Có Thể Hiểu"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Khối Rubik
+  - Hướng dẫn
+  - Lý thuyết nhóm
+  - Toán học
+  - Phương pháp Roux
 categories: 日常折腾
 description: Dựa trên ý tưởng về hoán vị nhóm và phương pháp Roux Bridge, bài viết này sẽ từng bước hướng dẫn bạn cách giải khối Rubik 3x3 mà không cần ghi nhớ bất kỳ công thức nào.
 toc: true

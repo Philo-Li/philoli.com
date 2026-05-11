@@ -3,11 +3,11 @@ layout: blog
 title: "Cum să rezolvi Cubul Rubik fără să memorezi formule: Chiar și un școlar poate înțelege"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Cub Rubik
+  - Tutorial
+  - Teoria grupurilor
+  - Matematică
+  - Metoda Roux
 categories: 日常折腾
 description: Învățați pas cu pas, de la zero, cum să rezolvați un Cub Rubik 3x3 fără a memora nicio formulă, folosind ideea comutatorilor din teoria grupurilor și metoda podului Roux.
 toc: true

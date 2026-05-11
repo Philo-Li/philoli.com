@@ -3,11 +3,11 @@ layout: blog
 title: "Sådan løser du Rubiks terning uden formler: En guide selv skolebørn kan følge med i"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubiks terning
+  - Vejledning
+  - Gruppeteori
+  - Matematik
+  - Roux-metoden
 categories: 日常折腾
 description: Ved hjælp af gruppeteoriens kommutator-principper og Roux-bro-metoden lærer du trin for trin at løse en 3x3 Rubiks terning fra bunden, uden at huske en eneste formel.
 toc: true

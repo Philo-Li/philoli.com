@@ -3,11 +3,11 @@ layout: blog
 title: "Cómo resolver el cubo de Rubik sin memorizar fórmulas: ¡Incluso un niño de primaria puede entenderlo!"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Cubo de Rubik
+  - tutorial
+  - teoría de grupos
+  - matemáticas
+  - método Roux
 categories: 日常折腾
 description: Aprende paso a paso a resolver el cubo de Rubik 3x3 sin memorizar ni una sola fórmula, utilizando la lógica de los conmutadores de la teoría de grupos y el método Roux de puentes.
 toc: true

@@ -3,11 +3,11 @@ layout: blog
 title: "Jak složit Rubikovu kostku bez memorování algoritmů: Pochopí i školák"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubikova kostka
+  - návod
+  - teorie grup
+  - matematika
+  - Roux metoda
 categories: 日常折腾
 description: Naučte se krok za krokem složit Rubikovu kostku 3x3 od základů, bez memorování jakýchkoli algoritmů, za použití principů komutátorů z teorie grup a Rouxovy mostové metody.
 toc: true

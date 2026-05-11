@@ -3,11 +3,11 @@ layout: blog
 title: "Como Resolver o Cubo Mágico Sem Fórmulas: Até Crianças do Ensino Fundamental Conseguem"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Cubo Mágico
+  - Tutorial
+  - Teoria dos Grupos
+  - Matemática
+  - Método Roux
 categories: Divagações Cotidianas
 description: Usando a lógica de comutadores da teoria dos grupos + o método Roux Bridge, aprenda passo a passo a resolver um Cubo Mágico 3x3 do zero, sem memorizar nenhuma fórmula.
 toc: true

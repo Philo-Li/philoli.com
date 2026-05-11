@@ -3,11 +3,11 @@ layout: blog
 title: "Kā atrisināt Rubika kubu bez formulu iegaumēšanas: saprotams pat sākumskolas skolēniem"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubika kubs
+  - pamācība
+  - grupu teorija
+  - matemātika
+  - Roux metode
 categories: 日常折腾
 description: Izmantojot grupu teorijas komutatoru principus un Roux tilta metodi, soli pa solim iemācīsim, kā atrisināt 3x3 Rubika kubu, neiegaumējot nevienu formulu.
 toc: true

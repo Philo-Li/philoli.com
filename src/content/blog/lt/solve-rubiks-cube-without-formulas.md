@@ -3,11 +3,11 @@ layout: blog
 title: "Kaip išspręsti Rubiko kubą be formulių: supras net pradinukas"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubiko kubas
+  - Pamoka
+  - Grupių teorija
+  - Matematika
+  - Roux metodas
 categories: Kasdienės kūrybos išdaigos
 description: Naudodami grupės teorijos komutatorių ir Roux tilto metodą, žingsnis po žingsnio išmoksite išspręsti 3x3 Rubiko kubą, neįsimenant jokių formulių.
 toc: true

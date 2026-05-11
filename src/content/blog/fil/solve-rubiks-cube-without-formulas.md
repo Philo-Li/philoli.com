@@ -3,11 +3,11 @@ layout: blog
 title: "Paano Ayusin ang Rubik's Cube Nang Walang Formula: Madali Kahit sa Bata"
 date: 2026-05-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - 群论
-  - 数学
-  - Roux方法
+  - Rubik's Cube
+  - Tutorial
+  - Teorya ng Grupo
+  - Matematika
+  - Roux Method
 categories: 日常折腾
 description: Gamit ang lohika ng commutator mula sa Group Theory + Roux bridge method, ituturo sa iyo nang paunti-unti mula simula kung paano ayusin ang isang 3x3 Rubik's Cube nang hindi nagme-memorize ng anumang formula.
 toc: true
