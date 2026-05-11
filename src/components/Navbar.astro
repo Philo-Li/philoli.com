@@ -83,13 +83,13 @@ const currentBasePath = unlocalizedPath(Astro.url.pathname);
       <span></span>
     </button>
   </div>
-
-  <ul class="navbar__mobile-menu" id="mobile-menu">
-    {navLinks.map(link => (
-      <li><a href={localizedPath(link.path, locale)}>{link.label}</a></li>
-    ))}
-  </ul>
 </nav>
+
+<ul class="navbar__mobile-menu" id="mobile-menu">
+  {navLinks.map(link => (
+    <li><a href={localizedPath(link.path, locale)}>{link.label}</a></li>
+  ))}
+</ul>
 
 <script>
   const navbar = document.getElementById('navbar')!;
@@ -143,7 +143,16 @@ const currentBasePath = unlocalizedPath(Astro.url.pathname);
   });
 
   hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
+    const willOpen = !mobileMenu.classList.contains('open');
+    mobileMenu.classList.toggle('open', willOpen);
+    document.body.classList.toggle('no-scroll', willOpen);
+  });
+
+  mobileMenu.addEventListener('click', e => {
+    if ((e.target as HTMLElement).closest('a')) {
+      mobileMenu.classList.remove('open');
+      document.body.classList.remove('no-scroll');
+    }
   });
 
   syncThemeToggle();

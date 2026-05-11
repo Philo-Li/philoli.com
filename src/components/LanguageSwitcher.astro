@@ -31,7 +31,20 @@ const sortedLocales = [
     aria-label={t('languageSwitcher.label')}
     title={t('languageSwitcher.label')}
   >
-    <span class="lang-switcher__icon" aria-hidden="true">🌐</span>
+    <svg
+      class="lang-switcher__icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <line x1="2" y1="12" x2="22" y2="12" />
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    </svg>
     <span class="lang-switcher__current">{LOCALE_NAMES[currentLocale]}</span>
     <span class="lang-switcher__caret" aria-hidden="true">▾</span>
   </button>
@@ -124,7 +137,10 @@ const sortedLocales = [
   }
 
   .lang-switcher__icon {
-    font-size: 0.85rem;
+    width: 16px;
+    height: 16px;
+    display: block;
+    flex-shrink: 0;
   }
 
   .lang-switcher__current {
@@ -206,8 +222,28 @@ const sortedLocales = [
   }
 
   @media (max-width: 768px) {
-    .lang-switcher__current {
+    .lang-switcher__trigger {
+      border: none;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      justify-content: center;
+      color: var(--color-heading);
+    }
+
+    .lang-switcher__trigger:hover {
+      border-color: transparent;
+      color: var(--color-accent);
+    }
+
+    .lang-switcher__current,
+    .lang-switcher__caret {
       display: none;
+    }
+
+    .lang-switcher__icon {
+      width: 16px;
+      height: 16px;
     }
   }
 </style>

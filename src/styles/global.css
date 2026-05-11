@@ -76,6 +76,10 @@ body {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 /* Noise texture overlay */
 body::before {
   content: '';
