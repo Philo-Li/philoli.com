@@ -12,9 +12,13 @@ const currentLocale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFA
 const t = useTranslations(currentLocale);
 const basePath = unlocalizedPath(Astro.url.pathname);
 
-const sortedLocales = [...LOCALES].sort((a, b) =>
-  LOCALE_NAMES[a].localeCompare(LOCALE_NAMES[b])
-);
+const PINNED_LOCALES = ['zh', 'zh-TW', 'en'] as const;
+const sortedLocales = [
+  ...PINNED_LOCALES,
+  ...LOCALES
+    .filter(l => !PINNED_LOCALES.includes(l as typeof PINNED_LOCALES[number]))
+    .sort((a, b) => LOCALE_NAMES[a].localeCompare(LOCALE_NAMES[b])),
+];
 ---
 
 <div class="lang-switcher" data-base-path={basePath} data-default-locale={DEFAULT_LOCALE}>
