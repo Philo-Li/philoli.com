@@ -8,7 +8,7 @@
   font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: var(--color-text-muted);
+  color: var(--color-heading);
   font-weight: 500;
   margin-bottom: var(--space-lg);
 }
@@ -39,6 +39,7 @@
 .blog-post-card__title {
   font-size: 1.15rem;
   font-weight: 600;
+  color: var(--color-heading);
   margin-bottom: var(--space-xs);
 }
 
