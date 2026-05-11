@@ -2,7 +2,8 @@ import MarkdownIt from 'markdown-it';
 import sanitizeHtml from 'sanitize-html';
 import { getCollection } from 'astro:content';
 import type { RSSFeedItem } from '@astrojs/rss';
-import { DEFAULT_LOCALE, localizedPath } from '../i18n';
+import type { Locale } from '../i18n';
+import { localizedPath } from '../i18n';
 
 const md = new MarkdownIt({ html: true, linkify: true, typographer: false });
 
@@ -65,55 +66,17 @@ function stripMarkdown(input: string): string {
     .replace(/\s+/g, ' ');
 }
 
-export type FeedLocale = 'en' | 'zh' | 'zh-TW';
-
-export const FEED_META: Record<FeedLocale, {
-  title: string;
-  description: string;
-  language: string;
-}> = {
-  en: {
-    title: 'Philo Li — Blog',
-    description: 'Articles on art, philosophy, and building things.',
-    language: 'en',
-  },
-  zh: {
-    title: 'Philo Li — 博客',
-    description: '关于艺术、生活、投资和创造的思考。',
-    language: 'zh-CN',
-  },
-  'zh-TW': {
-    title: 'Philo Li — 部落格',
-    description: '關於藝術、生活、投資和創造的思考。',
-    language: 'zh-TW',
-  },
-};
-
-export function feedLocaleFor(locale: string | undefined): FeedLocale {
-  if (locale === 'zh') return 'zh';
-  if (locale === 'zh-TW') return 'zh-TW';
-  return 'en';
-}
-
 export function feedUrlFor(locale: string | undefined): string {
-  const fl = feedLocaleFor(locale);
-  return fl === 'en' ? '/rss.xml' : `/${fl}/rss.xml`;
+  return localizedPath('/rss.xml', locale ?? '');
 }
-
-const POST_LOCALE_FOR_FEED: Record<FeedLocale, string> = {
-  en: DEFAULT_LOCALE,
-  zh: 'zh',
-  'zh-TW': 'zh-TW',
-};
 
 export async function buildFeedItems(
-  feedLocale: FeedLocale,
+  locale: Locale,
   site: URL | string,
 ): Promise<RSSFeedItem[]> {
   const siteUrl = typeof site === 'string' ? site : site.toString();
   const origin = siteUrl.replace(/\/$/, '');
-  const prefix = `${feedLocale.toLowerCase()}/`;
-  const routeLocale = POST_LOCALE_FOR_FEED[feedLocale];
+  const prefix = `${locale.toLowerCase()}/`;
 
   const all = await getCollection('blog');
   const posts = all
@@ -122,7 +85,7 @@ export async function buildFeedItems(
 
   return posts.map(post => {
     const slug = post.id.slice(prefix.length);
-    const link = localizedPath(`/blog/${slug}`, routeLocale);
+    const link = localizedPath(`/blog/${slug}`, locale);
     const tags = Array.isArray(post.data.tags)
       ? post.data.tags
       : post.data.tags ? [post.data.tags] : [];

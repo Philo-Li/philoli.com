@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { renderMarkdownForRss, extractPlainDescription, FEED_META, feedLocaleFor, feedUrlFor } from '../rss';
+import { renderMarkdownForRss, extractPlainDescription, feedUrlFor } from '../rss';
 
 const SITE = 'https://philoli.com';
 
@@ -77,37 +77,20 @@ describe('extractPlainDescription', () => {
   });
 });
 
-describe('FEED_META', () => {
-  it('has entries for en, zh, and zh-TW', () => {
-    expect(FEED_META.en.language).toBe('en');
-    expect(FEED_META.zh.language).toBe('zh-CN');
-    expect(FEED_META['zh-TW'].language).toBe('zh-TW');
-    for (const key of ['en', 'zh', 'zh-TW'] as const) {
-      expect(FEED_META[key].title.length).toBeGreaterThan(0);
-      expect(FEED_META[key].description.length).toBeGreaterThan(0);
-    }
-  });
-});
-
-describe('feedLocaleFor', () => {
-  it('maps en, zh, and zh-TW to themselves', () => {
-    expect(feedLocaleFor('en')).toBe('en');
-    expect(feedLocaleFor('zh')).toBe('zh');
-    expect(feedLocaleFor('zh-TW')).toBe('zh-TW');
-  });
-
-  it('falls back to en for other locales', () => {
-    expect(feedLocaleFor('ja')).toBe('en');
-    expect(feedLocaleFor('fr')).toBe('en');
-    expect(feedLocaleFor('not-a-locale')).toBe('en');
-  });
-});
-
 describe('feedUrlFor', () => {
-  it('returns the path for each feed locale', () => {
+  it('returns /rss.xml for the default locale (en)', () => {
     expect(feedUrlFor('en')).toBe('/rss.xml');
+  });
+
+  it('returns the locale-prefixed path for non-default locales', () => {
     expect(feedUrlFor('zh')).toBe('/zh/rss.xml');
     expect(feedUrlFor('zh-TW')).toBe('/zh-TW/rss.xml');
-    expect(feedUrlFor('de')).toBe('/rss.xml');
+    expect(feedUrlFor('ja')).toBe('/ja/rss.xml');
+    expect(feedUrlFor('de')).toBe('/de/rss.xml');
+  });
+
+  it('returns /rss.xml when locale is undefined or unknown', () => {
+    expect(feedUrlFor(undefined)).toBe('/rss.xml');
+    expect(feedUrlFor('not-a-locale')).toBe('/rss.xml');
   });
 });
