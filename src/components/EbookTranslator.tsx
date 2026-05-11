@@ -207,6 +207,38 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const pagePhaseRef = useRef(pagePhase);
   useEffect(() => { pagePhaseRef.current = pagePhase; }, [pagePhase]);
 
+  // Text-layer PDFs: pre-extract each page's paragraphs in the background so the right pane
+  // already shows the source text before the user clicks "Translate this page" — and so the
+  // sidebar chapter dividers light up from h1 headings without waiting for translation.
+  useEffect(() => {
+    if (!file || !pdfMeta || pdfMeta.isScanned || parsed) return;
+    let cancelled = false;
+    (async () => {
+      const pdfMod = await import('../lib/pdf');
+      for (let p = 1; p <= pdfMeta.pageCount; p++) {
+        if (cancelled) return;
+        // Skip pages that already have any kind of result/translation in flight.
+        if (pagePhaseRef.current.get(p) === 'running') continue;
+        try {
+          const paras = await pdfMod.extractSinglePageParagraphs(file, p);
+          if (cancelled) return;
+          setPageResults(prev => {
+            if (prev.has(p)) return prev; // don't overwrite translation or earlier prefetch
+            const next = new Map(prev);
+            next.set(p, {
+              pageIndex: p,
+              items: paras.map(it => ({ type: it.type, original: it.text, translated: '' })),
+            });
+            return next;
+          });
+        } catch {
+          // Per-page extraction failure is non-fatal; manual Translate-this-page can retry.
+        }
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [file, pdfMeta, parsed]);
+
   // Browse state
   const [selectedIdx, setSelectedIdx] = useState(0);
   const [chapterStatus, setChapterStatus] = useState<Map<string, ChapterStatus>>(new Map());
@@ -1088,7 +1120,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
                       <PdfPagePreviewer file={file} page={previewPage} maxDim={900} />
                     </div>
                     <div className="bt__pdf-preview-result">
-                      {currentPagePhase !== 'idle' ? (
+                      {currentPagePhase !== 'idle' || currentPageResult ? (
                         <SinglePageResultPanel
                           t={t}
                           phase={currentPagePhase}
@@ -1424,27 +1456,27 @@ function SinglePageResultPanel({
   if (phase === 'error') {
     return <div className="bt__notice bt__notice--error">{error}</div>;
   }
-  if (phase === 'done' && result) {
-    if (result.items.length === 0) {
-      return <div className="bt__notice">{t('ebookTranslator.preview.singlePage.empty')}</div>;
-    }
-    return (
-      <div className="bt__notice" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-        <strong>
-          {t('ebookTranslator.preview.singlePage.resultHeader').replace('{page}', String(result.pageIndex))}
-        </strong>
-        <div className="bt__chapter-content" style={{ marginTop: 0 }}>
-          {result.items.map((item, i) => (
-            <div key={i}>
-              {renderBilingual(item.type, 'bt__bi-orig', item.original)}
-              {item.translated && renderBilingual(item.type, 'bt__bi-tr', item.translated)}
-            </div>
-          ))}
-        </div>
-      </div>
-    );
+  if (!result) return null;
+  if (result.items.length === 0) {
+    return phase === 'done'
+      ? <div className="bt__notice">{t('ebookTranslator.preview.singlePage.empty')}</div>
+      : null;
   }
-  return null;
+  return (
+    <div className="bt__notice" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+      <strong>
+        {t('ebookTranslator.preview.singlePage.resultHeader').replace('{page}', String(result.pageIndex))}
+      </strong>
+      <div className="bt__chapter-content" style={{ marginTop: 0 }}>
+        {result.items.map((item, i) => (
+          <div key={i}>
+            {renderBilingual(item.type, 'bt__bi-orig', item.original)}
+            {item.translated && renderBilingual(item.type, 'bt__bi-tr', item.translated)}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 function PdfPagePreviewer({ file, page, maxDim }: { file: File; page: number; maxDim: number }) {
