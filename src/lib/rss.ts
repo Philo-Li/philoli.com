@@ -106,22 +106,13 @@ const POST_LOCALE_FOR_FEED: Record<FeedLocale, string> = {
   'zh-TW': 'zh-TW',
 };
 
-// Maps feed locale to the content folder prefix where posts are stored.
-// zh-TW has no separate folder; it reuses the zh/ collection (same as the route layer).
-const CONTENT_PREFIX_FOR_FEED: Record<FeedLocale, string> = {
-  en: DEFAULT_LOCALE,
-  zh: 'zh',
-  'zh-TW': 'zh',
-};
-
 export async function buildFeedItems(
   feedLocale: FeedLocale,
   site: URL | string,
 ): Promise<RSSFeedItem[]> {
   const siteUrl = typeof site === 'string' ? site : site.toString();
   const origin = siteUrl.replace(/\/$/, '');
-  const contentLocale = CONTENT_PREFIX_FOR_FEED[feedLocale];
-  const prefix = `${contentLocale}/`;
+  const prefix = `${feedLocale.toLowerCase()}/`;
   const routeLocale = POST_LOCALE_FOR_FEED[feedLocale];
 
   const all = await getCollection('blog');

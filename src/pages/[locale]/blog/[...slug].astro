@@ -7,13 +7,22 @@ export async function getStaticPaths() {
   const posts = await getCollection('blog');
   const paths = [];
   for (const locale of NON_DEFAULT_LOCALES) {
-    // For each locale, prefer that locale's folder, fallback to zh/
-    const blogLocale = (locale === 'zh' || locale === 'zh-TW') ? 'zh' : locale;
+    // Astro's glob loader lowercases folder names via githubSlug, so zh-TW/ → zh-tw/
+    const contentLocale = locale.toLowerCase();
     const slugMap = new Map();
+    // First pass: take exact-locale matches
     for (const post of posts) {
       const [lang, ...rest] = post.id.split('/');
       const slug = rest.join('/');
-      if (lang === blogLocale || (!slugMap.has(slug) && lang === 'zh')) {
+      if (lang === contentLocale) {
+        slugMap.set(slug, post);
+      }
+    }
+    // Second pass: fall back to zh for slugs not yet covered
+    for (const post of posts) {
+      const [lang, ...rest] = post.id.split('/');
+      const slug = rest.join('/');
+      if (lang === 'zh' && !slugMap.has(slug)) {
         slugMap.set(slug, post);
       }
     }

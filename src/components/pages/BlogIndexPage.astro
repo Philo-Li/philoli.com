@@ -11,9 +11,9 @@ const t = useTranslations(locale);
 const allPosts = await getCollection('blog');
 
 // Posts are in subfolders: zh/, en/, ja/, etc.
+// Astro's glob loader lowercases folder names via githubSlug, so zh-TW/ → zh-tw/.
 // Show posts matching current locale, fallback to zh if no translation exists.
-const blogLocale = locale === 'zh' || locale === 'zh-TW' ? 'zh' : locale;
-const prefix = `${blogLocale}/`;
+const prefix = `${locale.toLowerCase()}/`;
 const zhPrefix = 'zh/';
 
 const posts = allPosts
