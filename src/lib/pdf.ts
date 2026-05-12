@@ -1,5 +1,38 @@
 import JSZip from 'jszip';
+import katex from 'katex';
+import MarkdownIt from 'markdown-it';
 import { parseEpub, type ParsedEpub } from './epub';
+
+// xhtmlOut: true → void tags self-close, required for EPUB XHTML well-formedness.
+const md = new MarkdownIt({ html: false, breaks: false, linkify: false, xhtmlOut: true });
+
+/** Replace `$$…$$` / `$…$` runs with KaTeX MathML — needs no CSS or fonts inside the EPUB. */
+function renderMathToMathML(html: string): string {
+  let out = html.replace(/\$\$([\s\S]+?)\$\$/g, (m, tex) => {
+    try { return katex.renderToString(tex, { displayMode: true, throwOnError: false, output: 'mathml' }); }
+    catch { return m; }
+  });
+  out = out.replace(/\$([^\n$]+?)\$/g, (m, tex) => {
+    try { return katex.renderToString(tex, { displayMode: false, throwOnError: false, output: 'mathml' }); }
+    catch { return m; }
+  });
+  return out;
+}
+
+/**
+ * Render one OCR-derived paragraph to XHTML for the EPUB. Mirrors the in-app preview pipeline so
+ * Markdown tables / lists / emphasis and LaTeX math come out as real structure instead of escaped text.
+ * For prose ('p'), markdown-it already wraps in <p> (or emits <table>/<ul> directly when appropriate),
+ * so we do NOT add an outer <p>.
+ */
+function paragraphToXhtml(type: ParaTag, text: string): string {
+  const t = text.trim();
+  if (!t) return '';
+  if (type === 'h1' || type === 'h2' || type === 'h3') {
+    return `<${type}>${renderMathToMathML(md.renderInline(t))}</${type}>`;
+  }
+  return renderMathToMathML(md.render(t));
+}
 
 /**
  * Thrown by `parsePdf` when the PDF has no text layer at all (a true scanned image).
@@ -420,7 +453,8 @@ function chapterXhtml(title: string, pages: PdfPage[], imagePages: Set<number>):
       ? `<figure class="pdf-page"><img src="${pageImageHref(page.pageIndex)}" alt="Page ${page.pageIndex + 1}"/></figure>`
       : '';
     const paras = page.paragraphs
-      .map(p => `<${p.type}>${escapeXml(p.text)}</${p.type}>`)
+      .map(p => paragraphToXhtml(p.type, p.text))
+      .filter(Boolean)
       .join('\n');
     return figure ? `${figure}\n${paras}` : paras;
   }).join('\n');
