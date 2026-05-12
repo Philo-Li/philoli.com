@@ -276,12 +276,24 @@ function buildBatchPrompt(passages: string[]): string {
   return passages.map((text, i) => `[${i + 1}] ${text}`).join('\n\n');
 }
 
+function stripReasoningBlocks(s: string): string {
+  // Reasoning models (Nemotron, DeepSeek-R1, QwQ, etc.) often emit a
+  // <think>/<thinking>/<reasoning> block inline in message.content where they
+  // rehearse the output format — including [N] markers — which would otherwise
+  // confuse the batch parser. Drop closed blocks first, then any unclosed
+  // trailing block (truncated reasoning).
+  return s
+    .replace(/<(think(?:ing)?|reasoning)\b[^>]*>[\s\S]*?<\/\1>/gi, '')
+    .replace(/<(think(?:ing)?|reasoning)\b[^>]*>[\s\S]*$/gi, '');
+}
+
 function parseBatchResponse(response: string, expectedCount: number): string[] {
+  const cleaned = stripReasoningBlocks(response);
   const out: string[] = new Array(expectedCount).fill('');
   // Match "[N] ..." up to the next "[N+1]" or end of string.
   const pattern = /\[(\d+)\]\s*([\s\S]*?)(?=\n\s*\[\d+\]|$)/g;
   let m: RegExpExecArray | null;
-  while ((m = pattern.exec(response)) !== null) {
+  while ((m = pattern.exec(cleaned)) !== null) {
     const idx = parseInt(m[1], 10) - 1;
     if (idx >= 0 && idx < expectedCount) {
       out[idx] = m[2].trim();
