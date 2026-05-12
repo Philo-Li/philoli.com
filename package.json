@@ -15,8 +15,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "i18n:translate": "node scripts/i18n/translate-i18n.mjs",
-    "proxy:dev": "npx wrangler dev -c services/opencode-go-proxy/wrangler.jsonc",
-    "proxy:deploy": "npx wrangler deploy -c services/opencode-go-proxy/wrangler.jsonc"
+    "proxy:dev": "npx wrangler dev -c services/custom-llm-proxy/wrangler.jsonc",
+    "proxy:deploy": "npx wrangler deploy -c services/custom-llm-proxy/wrangler.jsonc"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.0",

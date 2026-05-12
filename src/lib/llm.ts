@@ -18,8 +18,10 @@ export interface ModelOption {
   vision?: boolean;
 }
 
-const OPENCODE_GO_ENDPOINT = 'https://opencode.ai/zen/go/v1/chat/completions';
-const OPENCODE_GO_PROXY_ENDPOINT = 'https://philoli-opencode-go-proxy.philo-2e9.workers.dev/v1/chat/completions';
+// OpenCode and "custom" endpoints route through this worker so the browser doesn't need the
+// upstream to send CORS headers. Worker validates X-Upstream-URL and forwards verbatim.
+const LLM_PROXY_ENDPOINT = 'https://philoli-custom-llm-proxy.philo-2e9.workers.dev/v1/chat/completions';
+const PROXIED_PROVIDERS = new Set<ProviderId>(['custom', 'opencode']);
 
 /** API shape — most providers expose an OpenAI-compatible /chat/completions endpoint. */
 export type ApiShape = 'openai-compat' | 'anthropic' | 'gemini';
@@ -141,7 +143,7 @@ export const PROVIDERS: ProviderConfig[] = [
     id: 'opencode',
     label: 'OpenCode',
     api: 'openai-compat',
-    endpoint: OPENCODE_GO_PROXY_ENDPOINT,
+    endpoint: 'https://opencode.ai/zen/go/v1/chat/completions',
     keyHelp: 'https://opencode.ai/docs/go/',
     models: [{ id: 'opencode', label: 'opencode' }],
   },
@@ -231,10 +233,6 @@ Best for non-fiction, business, popular science, essays, blog posts, light ficti
 
 export function findTone(id: string): ToneOption {
   return TONES.find(t => t.id === id) ?? TONES[0];
-}
-
-function resolveOpenAICompatEndpoint(endpoint: string): string {
-  return endpoint.trim() === OPENCODE_GO_ENDPOINT ? OPENCODE_GO_PROXY_ENDPOINT : endpoint;
 }
 
 export interface TranslateOptions {
@@ -332,12 +330,14 @@ async function callOpenAICompat(
   opts: TranslateOptions,
   endpoint: string,
   providerLabel: string,
+  extraHeaders?: Record<string, string>,
 ): Promise<string[]> {
   const res = await fetch(endpoint, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${opts.apiKey}`,
+      ...extraHeaders,
     },
     signal: opts.signal,
     body: JSON.stringify({
@@ -421,7 +421,10 @@ export async function translateBatch(
     case 'openai-compat': {
       const endpoint = opts.provider === 'custom' ? opts.customEndpoint : cfg.endpoint;
       if (!endpoint) throw new Error(`${cfg.label} missing endpoint config`);
-      return callOpenAICompat(passages, opts, resolveOpenAICompatEndpoint(endpoint), cfg.label);
+      if (PROXIED_PROVIDERS.has(opts.provider)) {
+        return callOpenAICompat(passages, opts, LLM_PROXY_ENDPOINT, cfg.label, { 'X-Upstream-URL': endpoint });
+      }
+      return callOpenAICompat(passages, opts, endpoint, cfg.label);
     }
     case 'anthropic':
       return callAnthropic(passages, opts);
@@ -480,6 +483,7 @@ async function callOpenAICompatVision(
   opts: OcrOptions,
   endpoint: string,
   providerLabel: string,
+  extraHeaders?: Record<string, string>,
 ): Promise<string> {
   const dataUrl = `data:${opts.mimeType};base64,${opts.imageBase64}`;
   const res = await fetch(endpoint, {
@@ -487,6 +491,7 @@ async function callOpenAICompatVision(
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${opts.apiKey}`,
+      ...extraHeaders,
     },
     signal: opts.signal,
     body: JSON.stringify({
@@ -616,7 +621,10 @@ export async function ocrImage(opts: OcrOptions): Promise<string> {
     case 'openai-compat': {
       const endpoint = opts.provider === 'custom' ? opts.customEndpoint : cfg.endpoint;
       if (!endpoint) throw new Error(`${cfg.label} missing endpoint config`);
-      return callOpenAICompatVision(opts, resolveOpenAICompatEndpoint(endpoint), cfg.label);
+      if (PROXIED_PROVIDERS.has(opts.provider)) {
+        return callOpenAICompatVision(opts, LLM_PROXY_ENDPOINT, cfg.label, { 'X-Upstream-URL': endpoint });
+      }
+      return callOpenAICompatVision(opts, endpoint, cfg.label);
     }
     case 'anthropic':
       return callAnthropicVision(opts);
