@@ -117,6 +117,7 @@
     "steps": {
       "settings": "設定",
       "upload": "上傳",
+      "preview": "預覽",
       "browse": "瀏覽"
     },
     "actions": {
@@ -151,16 +152,48 @@
       "customModelPlaceholder": "例如 gpt-4o, deepseek-chat, …",
       "customEndpoint": "API 端點",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "指向相容 OpenAI 的 /chat/completions 端點的完整 URL。",
+      "customEndpointHint": "指向相容 OpenAI 的 /chat/completions 端點的完整 URL。必須是 https:// 且能從公網存取。",
       "openrouterModelPlaceholder": "例如 google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "opencodeModelPlaceholder": "例如 kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "請輸入 API key 以繼續。"
     },
     "upload": {
       "parsing": "正在解析 EPUB…",
+      "parsingPdf": "正在解析 PDF — 正在提取文字並重組段落…",
       "dropTitle": "將 EPUB 拖放到此處",
       "dropSubtitle": "或點擊選擇檔案",
-      "noChapters": "此 EPUB 中未發現可讀取章節。"
+      "noChapters": "此 EPUB 中未發現可讀取章節。",
+      "ocrRunning": "正在使用 {model} 進行 OCR…",
+      "ocrPageOf": "第 {current} / {total} 頁",
+      "ocrFailedCount": "{count} 個失敗",
+      "scannedPdfDetected": "{file} 是沒有文字層的掃描版 PDF（共 {pages} 頁）。",
+      "modelLacksVision": "您選擇的 {provider} 模型「{model}」不支援圖片輸入，因此無法對掃描頁面進行 OCR。",
+      "switchToVision": "切換至：",
+      "runOcr": "執行 OCR",
+      "providerHasNoVision": "{provider} 在此選單中未提供具備視覺辨識能力的模型。請開啟設定以切換服務供應商（Gemini、OpenAI 或 Claude 皆支援 OCR）。"
+    },
+    "preview": {
+      "pages": "{count} 頁",
+      "scannedTag": "已掃描（需要 OCR）",
+      "textLayerTag": "已偵測到文字層",
+      "prev": "上一頁",
+      "next": "下一頁",
+      "pageOf": "第 {current} / {total} 頁",
+      "pageList": "頁面（{count}）",
+      "pageLabel": "第 {n} 頁",
+      "willOcrWith": "將使用 {model} 對所有頁面進行 OCR。",
+      "willTranslate": "文字已提取。請繼續選擇要翻譯的章節。",
+      "startOcr": "開始 OCR（{count} 頁）",
+      "continue": "繼續 →",
+      "singlePage": {
+        "button": "翻譯此頁面",
+        "tooltip": "僅對此頁面進行 OCR 與翻譯，以便在處理整本書之前預覽品質。",
+        "running": "正在 OCR 與翻譯此頁面…",
+        "translating": "正在翻譯此頁面…",
+        "empty": "此頁面未發現可翻譯的文字。",
+        "resultHeader": "第 {page} 頁 — 雙語預覽",
+        "needsVision": "目前的模型無法進行 OCR。請先切換至具備視覺辨識能力的模型。"
+      }
     },
     "browse": {
       "chapters": "章節",
@@ -235,7 +268,8 @@
     "solution": {
       "label": "解法",
       "hint": "範例: U R U' R'",
-      "parseError": "無法辨識：{token}"
+      "parseError": "無法辨識：{token}",
+      "showOverlay": "在畫布上顯示公式"
     },
     "playback": {
       "play": "播放",
@@ -251,6 +285,11 @@
       "master": "啟用",
       "hideColors": "隱藏顏色",
       "hideFaces": "隱藏面",
+      "hideLayers": {
+        "updown": "隱藏圖層 ↕",
+        "leftright": "隱藏圖層 ↔",
+        "frontback": "隱藏圖層（前/後）"
+      },
       "faceLabel": {
         "U": "上",
         "R": "右",
@@ -258,6 +297,23 @@
         "D": "下",
         "L": "左",
         "B": "後"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "底層 (D)",
+          "2": "中層 (E)",
+          "3": "頂層 (U)"
+        },
+        "leftright": {
+          "1": "左層 (L)",
+          "2": "中層 (M)",
+          "3": "右層 (R)"
+        },
+        "frontback": {
+          "1": "後層 (B)",
+          "2": "中層 (S)",
+          "3": "前層 (F)"
+        }
       },
       "colorLabel": {
         "white": "白色",
@@ -271,6 +327,102 @@
     "share": {
       "copy": "複製分享連結",
       "copied": "已複製！"
+    },
+    "gif": {
+      "exportButton": "匯出 GIF",
+      "dialogTitle": "匯出 GIF",
+      "rangeLabel": "範圍",
+      "rangeStart": "從",
+      "rangeEnd": "到",
+      "rangeCaption": "從步驟 {start} 到步驟 {end}（共 {count} 步）",
+      "speedLabel": "速度",
+      "showOverlay": "在畫布上顯示步驟覆蓋層",
+      "cancel": "取消",
+      "generate": "生成 GIF",
+      "generating": "生成中… {percent}%",
+      "errorGeneric": "GIF 生成失敗。請再試一次。",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "自訂隱藏",
+      "title": "自訂隱藏 / 標示",
+      "instructions": "點擊任意貼紙以切換：可見 → 隱藏 → 標示 → 可見。",
+      "summary": "{hidden} 個隱藏 · {highlighted} 個標示",
+      "legend": {
+        "hidden": "隱藏 — 貼紙已變暗",
+        "highlighted": "高亮顯示 — 主體發出冰青色光芒"
+      },
+      "exit": "自訂完成",
+      "hideAll": "全部隱藏",
+      "reset": "全部重設",
+      "close": "關閉"
+    },
+    "notation": {
+      "button": "符號指南",
+      "title": "符號指南",
+      "facesHeading": "面旋轉",
+      "slicesHeading": "層旋轉",
+      "label": {
+        "U": "上層 (U)",
+        "D": "下層 (D)",
+        "R": "右層 (R)",
+        "L": "左層 (L)",
+        "F": "前層 (F)",
+        "B": "後層 (B)",
+        "M": "中層 M (跟隨 L)",
+        "E": "中層 E (跟隨 D)",
+        "S": "中層 S (跟隨 F)"
+      },
+      "legend": {
+        "letterTerm": "字母",
+        "letterDesc": "要旋轉的層（預設為順時針 90°，從面對該面的角度觀察）",
+        "primeTerm": "'",
+        "primeDesc": "逆時針 90°，例如 R' 為 R 的反向",
+        "doubleTerm": "2",
+        "doubleDesc": "180° 旋轉 — 方向不影響結果"
+      },
+      "close": "關閉"
+    },
+    "methods": {
+      "sectionTitle": "解法",
+      "sectionCaption": "逐步瀏覽常見解法 — 每個縮圖都會隱藏除該階段已歸位方塊以外的所有部分。",
+      "button": "瀏覽解法",
+      "title": "解法",
+      "close": "關閉",
+      "viewLabel": {
+        "side": "側面",
+        "below": "從下方"
+      },
+      "lbl": {
+        "name": "層先法 (LBL)",
+        "description": "經典入門方法。逐層還原——底層十字、底層角塊、中層稜塊，最後是頂層。",
+        "stages": {
+          "cross": "白色十字",
+          "firstLayer": "第一層",
+          "secondLayer": "第二層",
+          "solved": "最後一層"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "主流競速解法。Cross 建立底層十字，F2L 將角塊與中層稜塊配對，OLL 處理頂層方向，PLL 處理頂層排列。",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "方塊構建法。先在左側建立一個 1×2×3 的方塊，接著在右側建立，還原頂層角塊 (CMLL)，最後以 M 層與最後六個稜塊 (LSE) 完成還原。",
+        "stages": {
+          "firstBlock": "第一個方塊",
+          "secondBlock": "第二個方塊",
+          "cmll": "CMLL (頂層角塊)",
+          "lse": "LSE (最後六個稜塊)"
+        }
+      }
     }
   }
 }

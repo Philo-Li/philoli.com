@@ -59,7 +59,8 @@
     "desc": "Gânduri despre artă, viață și construirea de lucruri — livrate în căsuța de e-mail."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Artist · Scriitor · Dezvoltator",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "setări",
       "upload": "încărcare",
+      "preview": "previzualizare",
       "browse": "răsfoiește"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Se analizează EPUB…",
+      "parsingPdf": "Analizez PDF — extrag textul și reconstruiesc paragrafele…",
       "dropTitle": "Trage un EPUB aici",
       "dropSubtitle": "sau clic pentru a alege un fișier",
-      "noChapters": "Nu s-au găsit capitole lizibile în acest EPUB."
+      "noChapters": "Nu s-au găsit capitole lizibile în acest EPUB.",
+      "ocrRunning": "Efectuez OCR pe pagini cu {model}…",
+      "ocrPageOf": "Pagina {current} / {total}",
+      "ocrFailedCount": "{count} eșuate",
+      "scannedPdfDetected": "{file} este un PDF scanat ({pages} pagini) fără strat de text.",
+      "modelLacksVision": "Modelul {provider} selectat „{model}” nu acceptă input de tip imagine, deci nu poate efectua OCR pe paginile scanate.",
+      "switchToVision": "Comută la:",
+      "runOcr": "Rulează OCR",
+      "providerHasNoVision": "{provider} nu oferă un model cu capabilități vizuale în acest selector. Deschide Setări pentru a schimba furnizorul (Gemini, OpenAI sau Claude suportă toate OCR)."
+    },
+    "preview": {
+      "pages": "{count} pagini",
+      "scannedTag": "scanat (necesită OCR)",
+      "textLayerTag": "strat de text detectat",
+      "prev": "Înapoi",
+      "next": "Înainte",
+      "pageOf": "Pagina {current} / {total}",
+      "pageList": "Pagini ({count})",
+      "pageLabel": "Pagina {n}",
+      "willOcrWith": "Se va efectua OCR pe toate paginile cu {model}.",
+      "willTranslate": "Text extras. Continuă pentru a alege capitolele de tradus.",
+      "startOcr": "Pornește OCR ({count} pagini)",
+      "continue": "Continuă →",
+      "singlePage": {
+        "button": "Traduceți această pagină",
+        "tooltip": "Efectuează OCR și traduce doar această pagină pentru a previzualiza calitatea înainte de a te angaja la întreaga carte.",
+        "running": "Efectuez OCR și traduc această pagină…",
+        "translating": "Traduc această pagină…",
+        "empty": "Nu a fost găsit text traductibil pe această pagină.",
+        "resultHeader": "Pagina {page} — previzualizare bilingvă",
+        "needsVision": "Modelul curent nu poate efectua OCR pe imagini. Comută mai întâi la un model cu capabilități vizuale."
+      }
     },
     "browse": {
       "chapters": "Capitole",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Soluție",
       "hint": "Exemplu: U R U' R'",
-      "parseError": "Nerecunoscut: {token}"
+      "parseError": "Nerecunoscut: {token}",
+      "showOverlay": "Arată formula pe canvas"
     },
     "playback": {
       "play": "Redă",
@@ -250,6 +285,11 @@
       "master": "Activează",
       "hideColors": "Ascunde culorile",
       "hideFaces": "Ascunde fețele",
+      "hideLayers": {
+        "updown": "Ascunde straturile ↕",
+        "leftright": "Ascunde straturile ↔",
+        "frontback": "Ascunde straturile (față/spate)"
+      },
       "faceLabel": {
         "U": "Sus",
         "R": "Dreapta",
@@ -257,6 +297,23 @@
         "D": "Jos",
         "L": "Stânga",
         "B": "Spate"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Stratul de jos (D)",
+          "2": "Stratul din mijloc (E)",
+          "3": "Stratul de sus (U)"
+        },
+        "leftright": {
+          "1": "Stratul din stânga (L)",
+          "2": "Stratul din mijloc (M)",
+          "3": "Stratul din dreapta (R)"
+        },
+        "frontback": {
+          "1": "Stratul din spate (B)",
+          "2": "Stratul din mijloc (S)",
+          "3": "Stratul din față (F)"
+        }
       },
       "colorLabel": {
         "white": "Alb",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Copiază linkul de partajare",
       "copied": "Copiat!"
+    },
+    "gif": {
+      "exportButton": "Exportă GIF",
+      "dialogTitle": "Exportă GIF",
+      "rangeLabel": "Interval",
+      "rangeStart": "De la",
+      "rangeEnd": "Până la",
+      "rangeCaption": "De la pasul {start} la pasul {end} ({count} pași)",
+      "speedLabel": "Viteză",
+      "showOverlay": "Arată suprapunerea pasului pe canvas",
+      "cancel": "Anulează",
+      "generate": "Generează GIF",
+      "generating": "Se generează… {percent}%",
+      "errorGeneric": "Generarea GIF-ului a eșuat. Te rugăm să încerci din nou.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Ascundere personalizată",
+      "title": "Ascundere / evidențiere personalizată",
+      "instructions": "Dă click pe orice sticker pentru a alterna: vizibil → ascuns → evidențiat → vizibil.",
+      "summary": "{hidden} ascunse · {highlighted} evidențiate",
+      "legend": {
+        "hidden": "Ascuns — stickere întunecate",
+        "highlighted": "Evidențiat — corpul strălucește în cyan gheață"
+      },
+      "exit": "Personalizare finalizată",
+      "hideAll": "Ascunde tot",
+      "reset": "Resetează tot",
+      "close": "Închide"
+    },
+    "notation": {
+      "button": "Ghid de notație",
+      "title": "Ghid de notație",
+      "facesHeading": "Rotiri de fețe",
+      "slicesHeading": "Rotiri de felii",
+      "label": {
+        "U": "Fața de sus (U)",
+        "D": "Fața de jos (D)",
+        "R": "Fața dreaptă (R)",
+        "L": "Fața stângă (L)",
+        "F": "Fața din față (F)",
+        "B": "Fața din spate (B)",
+        "M": "Felia din mijloc M (urmează L)",
+        "E": "Felia din mijloc E (urmează D)",
+        "S": "Felia din mijloc S (urmează F)"
+      },
+      "legend": {
+        "letterTerm": "Literă",
+        "letterDesc": "stratul de rotit (implicit este 90° în sensul acelor de ceasornic, privit dinspre fața respectivă)",
+        "primeTerm": "'",
+        "primeDesc": "90° în sens invers acelor de ceasornic, ex. R' inversează R",
+        "doubleTerm": "2",
+        "doubleDesc": "rotire 180° — direcția nu contează"
+      },
+      "close": "Închide"
+    },
+    "methods": {
+      "sectionTitle": "Metode de rezolvare",
+      "sectionCaption": "Parcurge metodele comune de rezolvare etapă cu etapă — fiecare miniatură ascunde totul, cu excepția cubulețelor plasate până în acel punct.",
+      "button": "Răsfoiește metodele",
+      "title": "Metode de rezolvare",
+      "close": "Închide",
+      "viewLabel": {
+        "side": "lateral",
+        "below": "de jos"
+      },
+      "lbl": {
+        "name": "Strat cu strat (LBL)",
+        "description": "Metodă clasică pentru începători. Rezolvă un strat pe rând — crucea de jos, colțurile de jos, muchiile din mijloc, apoi ultimul strat.",
+        "stages": {
+          "cross": "Crucea albă",
+          "firstLayer": "Primul strat",
+          "secondLayer": "Al doilea strat",
+          "solved": "Ultimul strat"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Metodă populară de rezolvare rapidă. Cross construiește crucea de jos, F2L împerechează colțurile cu muchiile din mijloc, OLL orientează ultima față, PLL permută ultimul strat.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Metodă de construire pe blocuri. Construiește un bloc de 1×2×3 în stânga, apoi în dreapta, rezolvă colțurile ultimului strat (CMLL), apoi finalizează cu felia M și ultimele șase muchii (LSE).",
+        "stages": {
+          "firstBlock": "Primul bloc",
+          "secondBlock": "Al doilea bloc",
+          "cmll": "CMLL (Colțurile ultimului strat)",
+          "lse": "LSE (Ultimele șase muchii)"
+        }
+      }
     }
   }
 }

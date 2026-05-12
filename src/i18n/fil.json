@@ -59,7 +59,8 @@
     "desc": "Mga kaisipan tungkol sa sining, buhay, at pagbuo ng mga bagay — ipinapadala sa iyong inbox."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Artista · Manunulat · Developer",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "mga setting",
       "upload": "i-upload",
+      "preview": "silip",
       "browse": "mag-browse"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Sinusuri ang EPUB…",
+      "parsingPdf": "Pinoproseso ang PDF — kinukuha ang teksto at muling binubuo ang mga talata…",
       "dropTitle": "Ilagay ang EPUB dito",
       "dropSubtitle": "o pindutin para pumili ng file",
-      "noChapters": "Walang nahanap na mababasang kabanata sa EPUB na ito."
+      "noChapters": "Walang nahanap na mababasang kabanata sa EPUB na ito.",
+      "ocrRunning": "Isinasagawa ang OCR sa mga pahina gamit ang {model}…",
+      "ocrPageOf": "Pahina {current} / {total}",
+      "ocrFailedCount": "{count} ang nabigo",
+      "scannedPdfDetected": "Ang {file} ay isang na-scan na PDF ({pages} na pahina) na walang layer ng teksto.",
+      "modelLacksVision": "Ang napili mong {provider} model na \"{model}\" ay hindi tumatanggap ng input na imahe, kaya hindi nito kayang mag-OCR ng mga na-scan na pahina.",
+      "switchToVision": "Lumipat sa:",
+      "runOcr": "Patakbuhin ang OCR",
+      "providerHasNoVision": "Ang {provider} ay walang model na may kakayahang vision sa picker na ito. Buksan ang Settings para lumipat ng provider (ang Gemini, OpenAI, o Claude ay sumusuporta lahat sa OCR)."
+    },
+    "preview": {
+      "pages": "{count} na pahina",
+      "scannedTag": "na-scan (kailangan ng OCR)",
+      "textLayerTag": "may nakitang layer ng teksto",
+      "prev": "Nakaraan",
+      "next": "Susunod",
+      "pageOf": "Pahina {current} / {total}",
+      "pageList": "Mga pahina ({count})",
+      "pageLabel": "Pahina {n}",
+      "willOcrWith": "I-o-OCR ang lahat ng pahina gamit ang {model}.",
+      "willTranslate": "Nakuha na ang teksto. Magpatuloy sa pagpili ng mga kabanata na isasalin.",
+      "startOcr": "Simulan ang OCR ({count} na pahina)",
+      "continue": "Magpatuloy →",
+      "singlePage": {
+        "button": "Isalin ang pahinang ito",
+        "tooltip": "I-OCR at isalin lang ang pahinang ito para masilip ang kalidad bago ituloy ang buong libro.",
+        "running": "Ino-OCR at isinasalin ang pahinang ito…",
+        "translating": "Isinasalin ang pahinang ito…",
+        "empty": "Walang tekstong maisasalin na nakita sa pahinang ito.",
+        "resultHeader": "Pahina {page} — bilingual na silip",
+        "needsVision": "Hindi kayang mag-OCR ng mga imahe ng kasalukuyang model. Lumipat muna sa model na may kakayahang vision."
+      }
     },
     "browse": {
       "chapters": "Mga Kabanata",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Solusyon",
       "hint": "Halimbawa: U R U' R'",
-      "parseError": "Hindi kinikilala: {token}"
+      "parseError": "Hindi kinikilala: {token}",
+      "showOverlay": "Ipakita ang formula sa canvas"
     },
     "playback": {
       "play": "I-play",
@@ -250,6 +285,11 @@
       "master": "Paganahin",
       "hideColors": "Itago ang mga kulay",
       "hideFaces": "Itago ang mga mukha",
+      "hideLayers": {
+        "updown": "Itago ang mga layer ↕",
+        "leftright": "Itago ang mga layer ↔",
+        "frontback": "Itago ang mga layer (harap/likod)"
+      },
       "faceLabel": {
         "U": "Itaas",
         "R": "Kanan",
@@ -257,6 +297,23 @@
         "D": "Ibaba",
         "L": "Kaliwa",
         "B": "Likod"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Ibabang layer (D)",
+          "2": "Gitnang layer (E)",
+          "3": "Itaas na layer (U)"
+        },
+        "leftright": {
+          "1": "Kaliwang layer (L)",
+          "2": "Gitnang layer (M)",
+          "3": "Kanang layer (R)"
+        },
+        "frontback": {
+          "1": "Likurang layer (B)",
+          "2": "Gitnang layer (S)",
+          "3": "Harapang layer (F)"
+        }
       },
       "colorLabel": {
         "white": "Puti",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Kopyahin ang link sa pagbabahagi",
       "copied": "Nakopya na!"
+    },
+    "gif": {
+      "exportButton": "I-export ang GIF",
+      "dialogTitle": "I-export ang GIF",
+      "rangeLabel": "Saklaw",
+      "rangeStart": "Mula",
+      "rangeEnd": "Hanggang",
+      "rangeCaption": "Mula hakbang {start} hanggang hakbang {end} ({count} na hakbang)",
+      "speedLabel": "Bilis",
+      "showOverlay": "Ipakita ang overlay ng hakbang sa canvas",
+      "cancel": "Kanselahin",
+      "generate": "Bumuo ng GIF",
+      "generating": "Bumubuo… {percent}%",
+      "errorGeneric": "Nabigong bumuo ng GIF. Pakisubukang muli.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Pasadyang pagtago",
+      "title": "Pasadyang pagtago / pag-highlight",
+      "instructions": "I-click ang anumang sticker para magpalit-palit: nakikita → nakatago → naka-highlight → nakikita.",
+      "summary": "{hidden} nakatago · {highlighted} naka-highlight",
+      "legend": {
+        "hidden": "Nakatago — dumilim ang mga sticker",
+        "highlighted": "Naka-highlight — umiilaw ang katawan ng kulay ice cyan"
+      },
+      "exit": "Tapos na ang pag-customize",
+      "hideAll": "Itago lahat",
+      "reset": "I-reset lahat",
+      "close": "Isara"
+    },
+    "notation": {
+      "button": "Gabay sa notasyon",
+      "title": "Gabay sa notasyon",
+      "facesHeading": "Pag-ikot ng mukha",
+      "slicesHeading": "Pag-ikot ng slice",
+      "label": {
+        "U": "Itaas na mukha (U)",
+        "D": "Ibabang mukha (D)",
+        "R": "Kanang mukha (R)",
+        "L": "Kaliwang mukha (L)",
+        "F": "Harap na mukha (F)",
+        "B": "Likod na mukha (B)",
+        "M": "Gitnang slice M (sumusunod sa L)",
+        "E": "Gitnang slice E (sumusunod sa D)",
+        "S": "Gitnang slice S (sumusunod sa F)"
+      },
+      "legend": {
+        "letterTerm": "Titik",
+        "letterDesc": "ang layer na iikot (default ay pakanan na 90°, base sa pagtingin sa mukhang iyon)",
+        "primeTerm": "'",
+        "primeDesc": "pakaliwa na 90°, halimbawa ang R' ay pabaligtad ng R",
+        "doubleTerm": "2",
+        "doubleDesc": "180° na ikot — hindi mahalaga ang direksyon"
+      },
+      "close": "Isara"
+    },
+    "methods": {
+      "sectionTitle": "Mga paraan ng paglutas",
+      "sectionCaption": "Isa-isahin ang mga karaniwang paraan ng paglutas bawat yugto — itinatago ng bawat thumbnail ang lahat maliban sa mga cubie na nailagay na sa puntong iyon.",
+      "button": "Mag-browse ng mga paraan",
+      "title": "Mga paraan ng paglutas",
+      "close": "Isara",
+      "viewLabel": {
+        "side": "gilid",
+        "below": "mula sa ibaba"
+      },
+      "lbl": {
+        "name": "Layer-by-Layer (LBL)",
+        "description": "Klasikong paraan para sa mga nagsisimula. Lutasin ang isang layer sa bawat pagkakataon — krus sa ibaba, mga kanto sa ibaba, mga gilid sa gitna, at pagkatapos ay ang huling layer.",
+        "stages": {
+          "cross": "Puting krus",
+          "firstLayer": "Unang layer",
+          "secondLayer": "Pangalawang layer",
+          "solved": "Huling layer"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Pangunahing paraan ng mabilisang paglutas. Ang Cross ay bumubuo ng krus sa ibaba, ang F2L ay nagpapares ng mga kanto sa mga gilid sa gitna, ang OLL ay nag-aayos ng oryentasyon ng huling mukha, ang PLL ay nagpapalit-palit ng posisyon ng huling layer.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Paraan ng pagbuo ng block. Bumuo ng 1×2×3 block sa kaliwa, pagkatapos ay sa kanan, lutasin ang mga kanto ng huling layer (CMLL), at tapusin gamit ang M-slice at huling anim na gilid (LSE).",
+        "stages": {
+          "firstBlock": "Unang Block",
+          "secondBlock": "Pangalawang Block",
+          "cmll": "CMLL (Corners of Last Layer)",
+          "lse": "LSE (Last Six Edges)"
+        }
+      }
     }
   }
 }

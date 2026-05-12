@@ -59,7 +59,8 @@
     "desc": "Gedachten over kunst, het leven en dingen bouwen — in je inbox bezorgd."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Kunstenaar · Schrijver · Ontwikkelaar",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "instellingen",
       "upload": "uploaden",
+      "preview": "voorbeeld",
       "browse": "bladeren"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "EPUB verwerken…",
+      "parsingPdf": "PDF wordt geparseerd — tekst wordt geëxtraheerd en alinea's worden gereconstrueerd…",
       "dropTitle": "Sleep hier een EPUB naartoe",
       "dropSubtitle": "of klik om een bestand te kiezen",
-      "noChapters": "Geen leesbare hoofdstukken gevonden in deze EPUB."
+      "noChapters": "Geen leesbare hoofdstukken gevonden in deze EPUB.",
+      "ocrRunning": "Pagina's worden via OCR verwerkt met {model}…",
+      "ocrPageOf": "Pagina {current} / {total}",
+      "ocrFailedCount": "{count} mislukt",
+      "scannedPdfDetected": "{file} is een gescande PDF ({pages} pagina's) zonder tekstlaag.",
+      "modelLacksVision": "Het door jou geselecteerde {provider}-model \"{model}\" accepteert geen afbeeldingen, dus het kan geen gescande pagina's via OCR verwerken.",
+      "switchToVision": "Overschakelen naar:",
+      "runOcr": "OCR uitvoeren",
+      "providerHasNoVision": "{provider} biedt geen model met visuele ondersteuning in deze keuzelijst. Open Instellingen om van provider te wisselen (Gemini, OpenAI of Claude ondersteunen allemaal OCR)."
+    },
+    "preview": {
+      "pages": "{count} pagina's",
+      "scannedTag": "gescand (OCR vereist)",
+      "textLayerTag": "tekstlaag gedetecteerd",
+      "prev": "Vorige",
+      "next": "Volgende",
+      "pageOf": "Pagina {current} / {total}",
+      "pageList": "Pagina's ({count})",
+      "pageLabel": "Pagina {n}",
+      "willOcrWith": "Zal alle pagina's via OCR verwerken met {model}.",
+      "willTranslate": "Tekst geëxtraheerd. Ga door om hoofdstukken te kiezen om te vertalen.",
+      "startOcr": "OCR starten ({count} pagina's)",
+      "continue": "Doorgaan →",
+      "singlePage": {
+        "button": "Vertaal deze pagina",
+        "tooltip": "OCR + vertaal alleen deze pagina zodat je de kwaliteit kunt bekijken voordat je het hele boek verwerkt.",
+        "running": "Deze pagina wordt via OCR verwerkt & vertaald…",
+        "translating": "Deze pagina wordt vertaald…",
+        "empty": "Geen vertaalbare tekst gevonden op deze pagina.",
+        "resultHeader": "Pagina {page} — tweetalig voorbeeld",
+        "needsVision": "Het huidige model kan geen OCR uitvoeren op afbeeldingen. Schakel eerst over naar een model met visuele ondersteuning."
+      }
     },
     "browse": {
       "chapters": "Hoofdstukken",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Oplossing",
       "hint": "Voorbeeld: U R U' R'",
-      "parseError": "Niet herkend: {token}"
+      "parseError": "Niet herkend: {token}",
+      "showOverlay": "Toon formule op canvas"
     },
     "playback": {
       "play": "Afspelen",
@@ -250,6 +285,11 @@
       "master": "Inschakelen",
       "hideColors": "Kleuren verbergen",
       "hideFaces": "Vlakken verbergen",
+      "hideLayers": {
+        "updown": "Verberg lagen ↕",
+        "leftright": "Verberg lagen ↔",
+        "frontback": "Verberg lagen (voor/achter)"
+      },
       "faceLabel": {
         "U": "Boven",
         "R": "Rechts",
@@ -257,6 +297,23 @@
         "D": "Onder",
         "L": "Links",
         "B": "Achter"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Onderste laag (D)",
+          "2": "Middelste laag (E)",
+          "3": "Bovenste laag (U)"
+        },
+        "leftright": {
+          "1": "Linkerlaag (L)",
+          "2": "Middelste laag (M)",
+          "3": "Rechterlaag (R)"
+        },
+        "frontback": {
+          "1": "Achterste laag (B)",
+          "2": "Middelste laag (S)",
+          "3": "Voorste laag (F)"
+        }
       },
       "colorLabel": {
         "white": "Wit",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Deellink kopiëren",
       "copied": "Gekopieerd!"
+    },
+    "gif": {
+      "exportButton": "Exporteer GIF",
+      "dialogTitle": "Exporteer GIF",
+      "rangeLabel": "Bereik",
+      "rangeStart": "Van",
+      "rangeEnd": "Tot",
+      "rangeCaption": "Van stap {start} tot stap {end} ({count} stappen)",
+      "speedLabel": "Snelheid",
+      "showOverlay": "Toon stap-overlay op canvas",
+      "cancel": "Annuleren",
+      "generate": "Genereer GIF",
+      "generating": "Bezig met genereren… {percent}%",
+      "errorGeneric": "Genereren van GIF mislukt. Probeer het opnieuw.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Aangepast verbergen",
+      "title": "Aangepast verbergen / markeren",
+      "instructions": "Klik op een sticker om te wisselen: zichtbaar → verborgen → gemarkeerd → zichtbaar.",
+      "summary": "{hidden} verborgen · {highlighted} gemarkeerd",
+      "legend": {
+        "hidden": "Verborgen — stickers donkerder gemaakt",
+        "highlighted": "Gemarkeerd — lichaam gloeit ijs-cyaan"
+      },
+      "exit": "Klaar met aanpassen",
+      "hideAll": "Alles verbergen",
+      "reset": "Alles herstellen",
+      "close": "Sluiten"
+    },
+    "notation": {
+      "button": "Notatiegids",
+      "title": "Notatiegids",
+      "facesHeading": "Vlakdraaiingen",
+      "slicesHeading": "Laagdraaiingen",
+      "label": {
+        "U": "Bovenkant (U)",
+        "D": "Onderkant (D)",
+        "R": "Rechterkant (R)",
+        "L": "Linkerkant (L)",
+        "F": "Voorkant (F)",
+        "B": "Achterkant (B)",
+        "M": "Middenlaag M (volgt L)",
+        "E": "Middenlaag E (volgt D)",
+        "S": "Middenlaag S (volgt F)"
+      },
+      "legend": {
+        "letterTerm": "Letter",
+        "letterDesc": "de te draaien laag (standaard is 90° met de klok mee, bekeken vanaf de kant van dat vlak)",
+        "primeTerm": "'",
+        "primeDesc": "90° tegen de klok in, bijv. R' draait R terug",
+        "doubleTerm": "2",
+        "doubleDesc": "180° draai — richting maakt niet uit"
+      },
+      "close": "Sluiten"
+    },
+    "methods": {
+      "sectionTitle": "Oplosmethoden",
+      "sectionCaption": "Doorloop veelvoorkomende oplosmethoden stap voor stap — elke miniatuur verbergt alles behalve de kubusblokjes die tot dat punt zijn geplaatst.",
+      "button": "Blader door methoden",
+      "title": "Oplosmethoden",
+      "close": "Sluiten",
+      "viewLabel": {
+        "side": "zijkant",
+        "below": "van onderaf"
+      },
+      "lbl": {
+        "name": "Laag-voor-laag (LBL)",
+        "description": "Klassieke beginnersmethode. Los één laag per keer op — onderste kruis, onderste hoeken, middelste randen, en dan de laatste laag.",
+        "stages": {
+          "cross": "Wit kruis",
+          "firstLayer": "Eerste laag",
+          "secondLayer": "Tweede laag",
+          "solved": "Laatste laag"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Gangbare speedsolving-methode. Cross bouwt het onderste kruis, F2L koppelt hoeken met middelste randen, OLL oriënteert het laatste vlak, PLL permuteert de laatste laag.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Blokbouwmethode. Bouw een 1×2×3-blok aan de linkerkant, dan aan de rechterkant, los de hoeken van de laatste laag op (CMLL), en eindig met de M-slice en de laatste zes randen (LSE).",
+        "stages": {
+          "firstBlock": "Eerste blok",
+          "secondBlock": "Tweede blok",
+          "cmll": "CMLL (Hoeken van de laatste laag)",
+          "lse": "LSE (Laatste zes randen)"
+        }
+      }
     }
   }
 }

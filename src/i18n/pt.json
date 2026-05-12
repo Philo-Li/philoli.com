@@ -59,7 +59,8 @@
     "desc": "Reflexões sobre arte, vida e construção de coisas — entregues na sua caixa de entrada."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Artista · Escritor · Desenvolvedor",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "configurações",
       "upload": "upload",
+      "preview": "pré-visualizar",
       "browse": "procurar"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Analisando EPUB…",
+      "parsingPdf": "Analisando PDF — extraindo texto e reconstruindo parágrafos…",
       "dropTitle": "Solte um EPUB aqui",
       "dropSubtitle": "ou clique para escolher um arquivo",
-      "noChapters": "Nenhum capítulo legível encontrado neste EPUB."
+      "noChapters": "Nenhum capítulo legível encontrado neste EPUB.",
+      "ocrRunning": "Realizando OCR das páginas com {model}…",
+      "ocrPageOf": "Página {current} / {total}",
+      "ocrFailedCount": "{count} falhas",
+      "scannedPdfDetected": "{file} é um PDF digitalizado ({pages} páginas) sem camada de texto.",
+      "modelLacksVision": "O modelo \"{model}\" do {provider} selecionado não aceita entrada de imagem, portanto não pode realizar OCR em páginas digitalizadas.",
+      "switchToVision": "Alternar para:",
+      "runOcr": "Executar OCR",
+      "providerHasNoVision": "O {provider} não oferece um modelo com capacidade de visão neste seletor. Abra as Configurações para trocar de provedor (Gemini, OpenAI ou Claude suportam OCR)."
+    },
+    "preview": {
+      "pages": "{count} páginas",
+      "scannedTag": "digitalizado (precisa de OCR)",
+      "textLayerTag": "camada de texto detectada",
+      "prev": "Anterior",
+      "next": "Próximo",
+      "pageOf": "Página {current} / {total}",
+      "pageList": "Páginas ({count})",
+      "pageLabel": "Página {n}",
+      "willOcrWith": "Realizará OCR de todas as páginas com {model}.",
+      "willTranslate": "Texto extraído. Continue para escolher os capítulos a traduzir.",
+      "startOcr": "Iniciar OCR ({count} páginas)",
+      "continue": "Continuar →",
+      "singlePage": {
+        "button": "Traduzir esta página",
+        "tooltip": "Realizar OCR + traduzir apenas esta página para que você possa pré-visualizar a qualidade antes de processar o livro inteiro.",
+        "running": "Realizando OCR e traduzindo esta página…",
+        "translating": "Traduzindo esta página…",
+        "empty": "Nenhum texto traduzível encontrado nesta página.",
+        "resultHeader": "Página {page} — pré-visualização bilíngue",
+        "needsVision": "O modelo atual não consegue realizar OCR em imagens. Mude para um modelo com capacidade de visão primeiro."
+      }
     },
     "browse": {
       "chapters": "Capítulos",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Solução",
       "hint": "Exemplo: U R U' R'",
-      "parseError": "Não reconhecido: {token}"
+      "parseError": "Não reconhecido: {token}",
+      "showOverlay": "Mostrar fórmula na tela"
     },
     "playback": {
       "play": "Reproduzir",
@@ -250,6 +285,11 @@
       "master": "Ativar",
       "hideColors": "Ocultar cores",
       "hideFaces": "Ocultar faces",
+      "hideLayers": {
+        "updown": "Ocultar camadas ↕",
+        "leftright": "Ocultar camadas ↔",
+        "frontback": "Ocultar camadas (frente/trás)"
+      },
       "faceLabel": {
         "U": "Cima",
         "R": "Direita",
@@ -257,6 +297,23 @@
         "D": "Baixo",
         "L": "Esquerda",
         "B": "Trás"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Camada inferior (D)",
+          "2": "Camada central (E)",
+          "3": "Camada superior (U)"
+        },
+        "leftright": {
+          "1": "Camada esquerda (L)",
+          "2": "Camada central (M)",
+          "3": "Camada direita (R)"
+        },
+        "frontback": {
+          "1": "Camada de trás (B)",
+          "2": "Camada central (S)",
+          "3": "Camada da frente (F)"
+        }
       },
       "colorLabel": {
         "white": "Branco",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Copiar link de compartilhamento",
       "copied": "Copiado!"
+    },
+    "gif": {
+      "exportButton": "Exportar GIF",
+      "dialogTitle": "Exportar GIF",
+      "rangeLabel": "Intervalo",
+      "rangeStart": "De",
+      "rangeEnd": "Até",
+      "rangeCaption": "Do passo {start} ao passo {end} ({count} passos)",
+      "speedLabel": "Velocidade",
+      "showOverlay": "Mostrar sobreposição de passo na tela",
+      "cancel": "Cancelar",
+      "generate": "Gerar GIF",
+      "generating": "Gerando… {percent}%",
+      "errorGeneric": "Falha ao gerar GIF. Por favor, tente novamente.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Ocultar personalizado",
+      "title": "Ocultar / destacar personalizado",
+      "instructions": "Clique em qualquer adesivo para alternar: visível → oculto → destacado → visível.",
+      "summary": "{hidden} oculto · {highlighted} destacado",
+      "legend": {
+        "hidden": "Oculto — adesivos escurecidos",
+        "highlighted": "Destacado — corpo brilha em ciano gelo"
+      },
+      "exit": "Personalização concluída",
+      "hideAll": "Ocultar tudo",
+      "reset": "Redefinir tudo",
+      "close": "Fechar"
+    },
+    "notation": {
+      "button": "Guia de notação",
+      "title": "Guia de notação",
+      "facesHeading": "Giros de face",
+      "slicesHeading": "Giros de camada central",
+      "label": {
+        "U": "Face superior (U)",
+        "D": "Face inferior (D)",
+        "R": "Face direita (R)",
+        "L": "Face esquerda (L)",
+        "F": "Face frontal (F)",
+        "B": "Face traseira (B)",
+        "M": "Camada central M (segue L)",
+        "E": "Camada central E (segue D)",
+        "S": "Camada central S (segue F)"
+      },
+      "legend": {
+        "letterTerm": "Letra",
+        "letterDesc": "a camada a girar (o padrão é 90° no sentido horário, visto de frente para essa face)",
+        "primeTerm": "'",
+        "primeDesc": "90° no sentido anti-horário, ex: R' reverte R",
+        "doubleTerm": "2",
+        "doubleDesc": "Giro de 180° — a direção não importa"
+      },
+      "close": "Fechar"
+    },
+    "methods": {
+      "sectionTitle": "Métodos de resolução",
+      "sectionCaption": "Percorra os métodos de resolução comuns etapa por etapa — cada miniatura oculta tudo, exceto as peças posicionadas até aquele ponto.",
+      "button": "Explorar métodos",
+      "title": "Métodos de resolução",
+      "close": "Fechar",
+      "viewLabel": {
+        "side": "lado",
+        "below": "de baixo"
+      },
+      "lbl": {
+        "name": "Camada por Camada (LBL)",
+        "description": "Método clássico para iniciantes. Resolva uma camada de cada vez — cruz inferior, cantos inferiores, arestas do meio e, por fim, a última camada.",
+        "stages": {
+          "cross": "Cruz branca",
+          "firstLayer": "Primeira camada",
+          "secondLayer": "Segunda camada",
+          "solved": "Última camada"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Método de resolução rápida mais comum. O Cross monta a cruz inferior, o F2L emparelha cantos com arestas do meio, o OLL orienta a última face e o PLL permuta a última camada.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Método de construção de blocos. Construa um bloco 1×2×3 à esquerda, depois à direita, resolva os cantos da última camada (CMLL) e finalize com a fatia M e as últimas seis arestas (LSE).",
+        "stages": {
+          "firstBlock": "Primeiro Bloco",
+          "secondBlock": "Segundo Bloco",
+          "cmll": "CMLL (Cantos da Última Camada)",
+          "lse": "LSE (Últimas Seis Arestas)"
+        }
+      }
     }
   }
 }

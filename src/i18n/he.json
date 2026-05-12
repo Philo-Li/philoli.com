@@ -59,7 +59,8 @@
     "desc": "מחשבות על אמנות, חיים ובניית דברים — נשלח לתיבת הדואר הנכנס שלך."
   },
   "blogPage": {
-    "title": "בלוג"
+    "title": "בלוג",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "אמן · כותב · מפתח",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "הגדרות",
       "upload": "העלאה",
+      "preview": "תצוגה מקדימה",
       "browse": "עיון"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "מנתח EPUB…",
+      "parsingPdf": "מנתח PDF — מחלץ טקסט ומשחזר פסקאות…",
       "dropTitle": "גרור EPUB לכאן",
       "dropSubtitle": "או לחץ כדי לבחור קובץ",
-      "noChapters": "לא נמצאו פרקים קריאים ב-EPUB זה."
+      "noChapters": "לא נמצאו פרקים קריאים ב-EPUB זה.",
+      "ocrRunning": "מבצע OCR לדפים עם {model}…",
+      "ocrPageOf": "עמוד {current} / {total}",
+      "ocrFailedCount": "{count} נכשלו",
+      "scannedPdfDetected": "{file} הוא קובץ PDF סרוק ({pages} עמודים) ללא שכבת טקסט.",
+      "modelLacksVision": "מודל ה-{provider} שבחרת \"{model}\" אינו מקבל קלט תמונה, לכן לא ניתן לבצע OCR לדפים סרוקים.",
+      "switchToVision": "החלף ל-:",
+      "runOcr": "הרץ OCR",
+      "providerHasNoVision": "{provider} לא מציע מודל בעל יכולת ראייה בבורר זה. פתח את ההגדרות כדי להחליף ספק (Gemini, OpenAI, או Claude כולם תומכים ב-OCR)."
+    },
+    "preview": {
+      "pages": "{count} עמודים",
+      "scannedTag": "סרוק (דורש OCR)",
+      "textLayerTag": "זוהתה שכבת טקסט",
+      "prev": "הקודם",
+      "next": "הבא",
+      "pageOf": "עמוד {current} / {total}",
+      "pageList": "עמודים ({count})",
+      "pageLabel": "עמוד {n}",
+      "willOcrWith": "יבצע OCR לכל העמודים עם {model}.",
+      "willTranslate": "הטקסט חולץ. המשך לבחירת פרקים לתרגום.",
+      "startOcr": "התחל OCR ({count} עמודים)",
+      "continue": "המשך →",
+      "singlePage": {
+        "button": "תרגם עמוד זה",
+        "tooltip": "בצע OCR ותרגם רק את העמוד הזה כדי שתוכל לראות תצוגה מקדימה של האיכות לפני שתתחייב לכל הספר.",
+        "running": "מבצע OCR ותרגום לעמוד זה…",
+        "translating": "מתרגם עמוד זה…",
+        "empty": "לא נמצא טקסט לתרגום בעמוד זה.",
+        "resultHeader": "עמוד {page} — תצוגה מקדימה דו-לשונית",
+        "needsVision": "המודל הנוכחי אינו יכול לבצע OCR לתמונות. החלף תחילה למודל בעל יכולת ראייה."
+      }
     },
     "browse": {
       "chapters": "פרקים",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "פתרון",
       "hint": "דוגמה: U R U' R'",
-      "parseError": "לא מזוהה: {token}"
+      "parseError": "לא מזוהה: {token}",
+      "showOverlay": "הצג נוסחה על הקנבס"
     },
     "playback": {
       "play": "הפעלה",
@@ -250,6 +285,11 @@
       "master": "הפעלה",
       "hideColors": "הסתר צבעים",
       "hideFaces": "הסתר פאות",
+      "hideLayers": {
+        "updown": "הסתר שכבות ↕",
+        "leftright": "הסתר שכבות ↔",
+        "frontback": "הסתר שכבות (קדמית/אחורית)"
+      },
       "faceLabel": {
         "U": "למעלה",
         "R": "ימין",
@@ -257,6 +297,23 @@
         "D": "למטה",
         "L": "שמאל",
         "B": "אחורה"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "שכבה תחתונה (D)",
+          "2": "שכבה אמצעית (E)",
+          "3": "שכבה עליונה (U)"
+        },
+        "leftright": {
+          "1": "שכבה שמאלית (L)",
+          "2": "שכבה אמצעית (M)",
+          "3": "שכבה ימנית (R)"
+        },
+        "frontback": {
+          "1": "שכבה אחורית (B)",
+          "2": "שכבה אמצעית (S)",
+          "3": "שכבה קדמית (F)"
+        }
       },
       "colorLabel": {
         "white": "לבן",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "העתק קישור לשיתוף",
       "copied": "הועתק!"
+    },
+    "gif": {
+      "exportButton": "ייצוא GIF",
+      "dialogTitle": "ייצוא GIF",
+      "rangeLabel": "טווח",
+      "rangeStart": "מ-",
+      "rangeEnd": "עד",
+      "rangeCaption": "משלב {start} עד שלב {end} ({count} שלבים)",
+      "speedLabel": "מהירות",
+      "showOverlay": "הצג שכבת-על של שלבים על הקנבס",
+      "cancel": "ביטול",
+      "generate": "צור GIF",
+      "generating": "יוצר… {percent}%",
+      "errorGeneric": "יצירת ה-GIF נכשלה. אנא נסה שוב.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "הסתרה מותאמת אישית",
+      "title": "הסתרה / הדגשה מותאמת אישית",
+      "instructions": "לחץ על כל מדבקה כדי לעבור בין מצבים: גלויה → מוסתרת → מודגשת → גלויה.",
+      "summary": "{hidden} מוסתרים · {highlighted} מודגשים",
+      "legend": {
+        "hidden": "מוסתר — מדבקות כהות",
+        "highlighted": "מודגש — הגוף זוהר בציאן קרח"
+      },
+      "exit": "סיום התאמה אישית",
+      "hideAll": "הסתר הכל",
+      "reset": "איפוס הכל",
+      "close": "סגור"
+    },
+    "notation": {
+      "button": "מדריך סימון",
+      "title": "מדריך סימון",
+      "facesHeading": "סיבובי פאות",
+      "slicesHeading": "סיבובי שכבות אמצעיות",
+      "label": {
+        "U": "פאה עליונה (U)",
+        "D": "פאה תחתונה (D)",
+        "R": "פאה ימנית (R)",
+        "L": "פאה שמאלית (L)",
+        "F": "פאה קדמית (F)",
+        "B": "פאה אחורית (B)",
+        "M": "שכבה אמצעית M (עוקבת אחרי L)",
+        "E": "שכבה אמצעית E (עוקבת אחרי D)",
+        "S": "שכבה אמצעית S (עוקבת אחרי F)"
+      },
+      "legend": {
+        "letterTerm": "אות",
+        "letterDesc": "השכבה לסיבוב (ברירת המחדל היא 90° עם כיוון השעון, במבט מול הפאה)",
+        "primeTerm": "'",
+        "primeDesc": "90° נגד כיוון השעון, למשל R' הופך את R",
+        "doubleTerm": "2",
+        "doubleDesc": "סיבוב 180° — הכיוון לא משנה"
+      },
+      "close": "סגור"
+    },
+    "methods": {
+      "sectionTitle": "שיטות פתרון",
+      "sectionCaption": "מעבר על שיטות פתרון נפוצות שלב אחר שלב — כל תמונה ממוזערת מסתירה הכל מלבד הקוביות שהוצבו עד לאותה נקודה.",
+      "button": "עיון בשיטות",
+      "title": "שיטות פתרון",
+      "close": "סגירה",
+      "viewLabel": {
+        "side": "צד",
+        "below": "מלמטה"
+      },
+      "lbl": {
+        "name": "שכבה-אחר-שכבה (LBL)",
+        "description": "שיטת מתחילים קלאסית. פותרים שכבה אחת בכל פעם — צלב תחתון, פינות תחתונות, מקצועות אמצעיים, ואז השכבה האחרונה.",
+        "stages": {
+          "cross": "צלב לבן",
+          "firstLayer": "שכבה ראשונה",
+          "secondLayer": "שכבה שנייה",
+          "solved": "שכבה אחרונה"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (פרידריך)",
+        "description": "שיטת פתרון מהיר נפוצה. ה-Cross בונה את הצלב התחתון, ה-F2L מזווג פינות עם מקצועות אמצעיים, ה-OLL מכוון את הפאה האחרונה, וה-PLL מסדר את השכבה האחרונה.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "שיטת בניית בלוקים. בונים בלוק 1×2×3 בצד שמאל, לאחר מכן בימין, פותרים את פינות השכבה האחרונה (CMLL), ומסיימים עם ה-M-slice וששת המקצועות האחרונים (LSE).",
+        "stages": {
+          "firstBlock": "בלוק ראשון",
+          "secondBlock": "בלוק שני",
+          "cmll": "CMLL (פינות השכבה האחרונה)",
+          "lse": "LSE (ששת המקצועות האחרונים)"
+        }
+      }
     }
   }
 }

@@ -4,9 +4,12 @@
  * Gemini 3 Flash (preview). Reads GEMINI_API_KEY from .env at the project root.
  *
  * Usage:
- *   node scripts/i18n/translate-i18n.mjs                # all locales
+ *   node scripts/i18n/translate-i18n.mjs                # all locales (skip existing files)
  *   node scripts/i18n/translate-i18n.mjs zh ja ko       # specific locales only
- *   node scripts/i18n/translate-i18n.mjs --force        # overwrite even if file exists
+ *   node scripts/i18n/translate-i18n.mjs --force        # overwrite every locale file
+ *   node scripts/i18n/translate-i18n.mjs --missing-only # only translate keys missing from
+ *                                                      # existing locale files; existing
+ *                                                      # translations are kept verbatim
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
@@ -17,7 +20,7 @@ const ROOT = resolve(__dirname, '..', '..');
 const I18N_DIR = join(ROOT, 'src', 'i18n');
 
 // ---- Config ----
-const MODEL = 'gemini-3-flash-preview';
+const MODEL = 'gemini-3.1-flash-lite';
 const TEMPERATURE = 0.3; // tighter than the default 0.8 — UI strings need to stay close to the source
 const MAX_CHARS_PER_BATCH = 4000;
 const MAX_ITEMS_PER_BATCH = 30;
@@ -70,6 +73,9 @@ const TARGETS = [
 // ---- Args ----
 const args = process.argv.slice(2);
 const force = args.includes('--force');
+// Only translate keys present in en.json but missing from the existing locale file.
+// Existing translations are preserved verbatim. Useful when en.json gains new keys.
+const missingOnly = args.includes('--missing-only');
 const requestedLocales = args.filter(a => !a.startsWith('--'));
 const localesToProcess = requestedLocales.length > 0
   ? TARGETS.filter(t => requestedLocales.includes(t.code))
@@ -245,8 +251,8 @@ async function translateBatchRetry(batch, target) {
   return bestOut;
 }
 
-async function translateLocale(target) {
-  const batches = chunk(translatable, MAX_CHARS_PER_BATCH, MAX_ITEMS_PER_BATCH);
+async function translateLocale(target, items = translatable) {
+  const batches = chunk(items, MAX_CHARS_PER_BATCH, MAX_ITEMS_PER_BATCH);
   const translations = new Map(); // path -> translated string
 
   let nextIdx = 0;
@@ -318,8 +324,39 @@ function buildLocaleJson(target, translations) {
 // ---- Main ----
 async function processLocale(target) {
   const outPath = join(I18N_DIR, `${target.code}.json`);
+
+  if (missingOnly && existsSync(outPath)) {
+    const existing = JSON.parse(readFileSync(outPath, 'utf8'));
+    const existingPaths = new Set();
+    collectLeaves(existing, '', { push: o => existingPaths.add(o.path) });
+    const missingLeaves = translatable.filter(l => !existingPaths.has(l.path));
+    if (missingLeaves.length === 0) {
+      console.log(`[${target.code}] up-to-date`);
+      return;
+    }
+    const t0 = Date.now();
+    const translations = await translateLocale(target, missingLeaves);
+    // Rebuild in en.json order, preferring existing values where present.
+    const out = {};
+    for (const leaf of preserved) {
+      setByPath(out, leaf.path, getByPath(en, leaf.path));
+    }
+    for (const leaf of translatable) {
+      const existingVal = getByPath(existing, leaf.path);
+      if (typeof existingVal === 'string') {
+        setByPath(out, leaf.path, existingVal);
+      } else {
+        setByPath(out, leaf.path, translations.get(leaf.path) ?? leaf.text);
+      }
+    }
+    writeFileSync(outPath, JSON.stringify(out, null, 2) + '\n', 'utf8');
+    const dt = ((Date.now() - t0) / 1000).toFixed(1);
+    console.log(`[${target.code}] ${target.name.padEnd(22)} +${missingLeaves.length} key(s)  ${dt}s`);
+    return;
+  }
+
   if (existsSync(outPath) && !force) {
-    console.log(`[${target.code}] exists, skipping (use --force)`);
+    console.log(`[${target.code}] exists, skipping (use --force or --missing-only)`);
     return;
   }
   const t0 = Date.now();

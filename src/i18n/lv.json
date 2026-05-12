@@ -59,7 +59,8 @@
     "desc": "Pārdomas par mākslu, dzīvi un lietu radīšanu — tavā iesūtnē."
   },
   "blogPage": {
-    "title": "Blogs"
+    "title": "Blogs",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Mākslinieks · Rakstnieks · Izstrādātājs",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "iestatījumi",
       "upload": "augšupielādēt",
+      "preview": "priekšskatījums",
       "browse": "pārlūkot"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Analizē EPUB…",
+      "parsingPdf": "Apstrādā PDF — izvelk tekstu un rekonstruē rindkopas…",
       "dropTitle": "Iemet EPUB šeit",
       "dropSubtitle": "vai klikšķini, lai izvēlētos failu",
-      "noChapters": "Šajā EPUB netika atrasta neviena lasāma nodaļa."
+      "noChapters": "Šajā EPUB netika atrasta neviena lasāma nodaļa.",
+      "ocrRunning": "Veic OCR lapām ar {model}…",
+      "ocrPageOf": "Lapa {current} / {total}",
+      "ocrFailedCount": "{count} neizdevās",
+      "scannedPdfDetected": "{file} ir skenēts PDF ({pages} lapas) bez teksta slāņa.",
+      "modelLacksVision": "Jūsu izvēlētais {provider} modelis \"{model}\" nepieņem attēlus, tāpēc tas nevar veikt OCR skenētām lapām.",
+      "switchToVision": "Pārslēgties uz:",
+      "runOcr": "Veikt OCR",
+      "providerHasNoVision": "{provider} nepiedāvā redzes spējīgu modeli šajā izvēlnē. Atveriet iestatījumus, lai pārslēgtu pakalpojumu sniedzēju (Gemini, OpenAI vai Claude atbalsta OCR)."
+    },
+    "preview": {
+      "pages": "{count} lapas",
+      "scannedTag": "skenēts (nepieciešams OCR)",
+      "textLayerTag": "atrasts teksta slānis",
+      "prev": "Iepriekšējā",
+      "next": "Nākamā",
+      "pageOf": "Lapa {current} / {total}",
+      "pageList": "Lapas ({count})",
+      "pageLabel": "Lapa {n}",
+      "willOcrWith": "Veiks OCR visām lapām ar {model}.",
+      "willTranslate": "Teksts izvilkts. Turpiniet, lai izvēlētos nodaļas tulkošanai.",
+      "startOcr": "Sākt OCR ({count} lapas)",
+      "continue": "Turpināt →",
+      "singlePage": {
+        "button": "Tulkot šo lapu",
+        "tooltip": "Veikt OCR + tulkot tikai šo lapu, lai varētu priekšskatīt kvalitāti pirms visas grāmatas apstrādes.",
+        "running": "Veic OCR un tulko šo lapu…",
+        "translating": "Tulko šo lapu…",
+        "empty": "Šajā lapā nav atrasts tulkojams teksts.",
+        "resultHeader": "Lapa {page} — divvalodu priekšskatījums",
+        "needsVision": "Pašreizējais modelis nevar veikt OCR attēliem. Vispirms pārslēdzieties uz redzes spējīgu modeli."
+      }
     },
     "browse": {
       "chapters": "Nodaļas",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Atrisinājums",
       "hint": "Piemērs: U R U' R'",
-      "parseError": "Neatpazīts: {token}"
+      "parseError": "Neatpazīts: {token}",
+      "showOverlay": "Rādīt formulu uz audekla"
     },
     "playback": {
       "play": "Atskaņot",
@@ -250,6 +285,11 @@
       "master": "Iespējot",
       "hideColors": "Paslēpt krāsas",
       "hideFaces": "Paslēpt skaldnes",
+      "hideLayers": {
+        "updown": "Paslēpt slāņus ↕",
+        "leftright": "Paslēpt slāņus ↔",
+        "frontback": "Paslēpt slāņus (priekšējais/aizmugurējais)"
+      },
       "faceLabel": {
         "U": "Augša",
         "R": "Labā",
@@ -257,6 +297,23 @@
         "D": "Apakša",
         "L": "Kreisā",
         "B": "Aizmugure"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Apakšējais slānis (D)",
+          "2": "Vidējais slānis (E)",
+          "3": "Augšējais slānis (U)"
+        },
+        "leftright": {
+          "1": "Kreisais slānis (L)",
+          "2": "Vidējais slānis (M)",
+          "3": "Labais slānis (R)"
+        },
+        "frontback": {
+          "1": "Aizmugurējais slānis (B)",
+          "2": "Vidējais slānis (S)",
+          "3": "Priekšējais slānis (F)"
+        }
       },
       "colorLabel": {
         "white": "Balts",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Kopēt kopīgošanas saiti",
       "copied": "Nokopēts!"
+    },
+    "gif": {
+      "exportButton": "Eksportēt GIF",
+      "dialogTitle": "Eksportēt GIF",
+      "rangeLabel": "Diapazons",
+      "rangeStart": "No",
+      "rangeEnd": "Līdz",
+      "rangeCaption": "No soļa {start} līdz solim {end} ({count} soļi)",
+      "speedLabel": "Ātrums",
+      "showOverlay": "Rādīt soļa pārklājumu uz audekla",
+      "cancel": "Atcelt",
+      "generate": "Ģenerēt GIF",
+      "generating": "Ģenerē… {percent}%",
+      "errorGeneric": "Neizdevās ģenerēt GIF. Lūdzu, mēģiniet vēlreiz.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Pielāgota slēpšana",
+      "title": "Pielāgota slēpšana / izcelšana",
+      "instructions": "Noklikšķiniet uz jebkuras uzlīmes, lai mainītu: redzama → paslēpta → izcelta → redzama.",
+      "summary": "{hidden} paslēpts · {highlighted} izcelts",
+      "legend": {
+        "hidden": "Paslēpts — uzlīmes aptumšotas",
+        "highlighted": "Izcelts — korpuss mirdz ledus ciāna krāsā"
+      },
+      "exit": "Pielāgošana pabeigta",
+      "hideAll": "Paslēpt visu",
+      "reset": "Atiestatīt visu",
+      "close": "Aizvērt"
+    },
+    "notation": {
+      "button": "Notācijas ceļvedis",
+      "title": "Notācijas ceļvedis",
+      "facesHeading": "Skaldnes pagriezieni",
+      "slicesHeading": "Slāņa pagriezieni",
+      "label": {
+        "U": "Augšējā skaldne (U)",
+        "D": "Apakšējā skaldne (D)",
+        "R": "Labā skaldne (R)",
+        "L": "Kreisā skaldne (L)",
+        "F": "Priekšējā skaldne (F)",
+        "B": "Aizmugurējā skaldne (B)",
+        "M": "Vidējais slānis M (seko L)",
+        "E": "Vidējais slānis E (seko D)",
+        "S": "Vidējais slānis S (seko F)"
+      },
+      "legend": {
+        "letterTerm": "Burts",
+        "letterDesc": "pagriežamais slānis (noklusējums ir 90° pulksteņrādītāja virzienā, skatoties uz attiecīgo skaldni)",
+        "primeTerm": "'",
+        "primeDesc": "90° pretēji pulksteņrādītāja virzienam, piem. R' ir R pretstats",
+        "doubleTerm": "2",
+        "doubleDesc": "180° pagrieziens — virzienam nav nozīmes"
+      },
+      "close": "Aizvērt"
+    },
+    "methods": {
+      "sectionTitle": "Risināšanas metodes",
+      "sectionCaption": "Izpētiet populārās risināšanas metodes pa soļiem — katrs sīktēls paslēpj visu, izņemot kubiņus, kas novietoti līdz attiecīgajam posmam.",
+      "button": "Pārlūkot metodes",
+      "title": "Risināšanas metodes",
+      "close": "Aizvērt",
+      "viewLabel": {
+        "side": "sānu",
+        "below": "no apakšas"
+      },
+      "lbl": {
+        "name": "Slāni pa slānim (LBL)",
+        "description": "Klasiskā iesācēju metode. Saliec pa vienam slānim — apakšējo krustu, apakšējos stūrus, vidējās šķautnes, tad pēdējo slāni.",
+        "stages": {
+          "cross": "Baltais krusts",
+          "firstLayer": "Pirmais slānis",
+          "secondLayer": "Otrais slānis",
+          "solved": "Pēdējais slānis"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Populārākā ātrumsalikšanas metode. Cross izveido apakšējo krustu, F2L savieno stūrus ar vidējām šķautnēm, OLL orientē pēdējo skaldni, PLL sakārto pēdējo slāni.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Bloku veidošanas metode. Izveido 1×2×3 bloku kreisajā pusē, tad labajā, saliec pēdējā slāņa stūrus (CMLL), tad pabeidz ar M-slāni un pēdējām sešām šķautnēm (LSE).",
+        "stages": {
+          "firstBlock": "Pirmais bloks",
+          "secondBlock": "Otrais bloks",
+          "cmll": "CMLL (Pēdējā slāņa stūri)",
+          "lse": "LSE (Pēdējās sešas šķautnes)"
+        }
+      }
     }
   }
 }

@@ -59,7 +59,8 @@
     "desc": "Myśli o sztuce, życiu i tworzeniu rzeczy — prosto do Twojej skrzynki."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Artysta · Pisarz · Programista",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "ustawienia",
       "upload": "prześlij",
+      "preview": "podgląd",
       "browse": "przeglądaj"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Przetwarzanie EPUB…",
+      "parsingPdf": "Analizowanie PDF — wyodrębnianie tekstu i rekonstrukcja akapitów…",
       "dropTitle": "Przeciągnij EPUB tutaj",
       "dropSubtitle": "lub kliknij, aby wybrać plik",
-      "noChapters": "W tym EPUB nie znaleziono rozdziałów do odczytu."
+      "noChapters": "W tym EPUB nie znaleziono rozdziałów do odczytu.",
+      "ocrRunning": "Wykonywanie OCR stron za pomocą {model}…",
+      "ocrPageOf": "Strona {current} / {total}",
+      "ocrFailedCount": "{count} niepowodzeń",
+      "scannedPdfDetected": "{file} to zeskanowany PDF ({pages} stron) bez warstwy tekstowej.",
+      "modelLacksVision": "Wybrany model {provider} „{model}” nie obsługuje danych wejściowych w formie obrazu, więc nie może wykonać OCR zeskanowanych stron.",
+      "switchToVision": "Przełącz na:",
+      "runOcr": "Uruchom OCR",
+      "providerHasNoVision": "{provider} nie oferuje modelu z funkcją rozpoznawania obrazu w tym selektorze. Otwórz Ustawienia, aby zmienić dostawcę (Gemini, OpenAI lub Claude obsługują OCR)."
+    },
+    "preview": {
+      "pages": "{count} stron",
+      "scannedTag": "zeskanowany (wymaga OCR)",
+      "textLayerTag": "wykryto warstwę tekstową",
+      "prev": "Poprzednia",
+      "next": "Następna",
+      "pageOf": "Strona {current} / {total}",
+      "pageList": "Strony ({count})",
+      "pageLabel": "Strona {n}",
+      "willOcrWith": "Wszystkie strony zostaną przetworzone przez OCR za pomocą {model}.",
+      "willTranslate": "Tekst wyodrębniony. Kontynuuj, aby wybrać rozdziały do przetłumaczenia.",
+      "startOcr": "Rozpocznij OCR ({count} stron)",
+      "continue": "Kontynuuj →",
+      "singlePage": {
+        "button": "Przetłumacz tę stronę",
+        "tooltip": "Wykonaj OCR i przetłumacz tylko tę stronę, aby sprawdzić jakość przed przetworzeniem całej książki.",
+        "running": "Wykonywanie OCR i tłumaczenie strony…",
+        "translating": "Tłumaczenie strony…",
+        "empty": "Nie znaleziono tekstu do przetłumaczenia na tej stronie.",
+        "resultHeader": "Strona {page} — podgląd dwujęzyczny",
+        "needsVision": "Bieżący model nie obsługuje OCR dla obrazów. Najpierw przełącz się na model z funkcją rozpoznawania obrazu."
+      }
     },
     "browse": {
       "chapters": "Rozdziały",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Rozwiązanie",
       "hint": "Przykład: U R U' R'",
-      "parseError": "Nie rozpoznano: {token}"
+      "parseError": "Nie rozpoznano: {token}",
+      "showOverlay": "Pokaż wzór na płótnie"
     },
     "playback": {
       "play": "Odtwórz",
@@ -250,6 +285,11 @@
       "master": "Włącz",
       "hideColors": "Ukryj kolory",
       "hideFaces": "Ukryj ścianki",
+      "hideLayers": {
+        "updown": "Ukryj warstwy ↕",
+        "leftright": "Ukryj warstwy ↔",
+        "frontback": "Ukryj warstwy (przód/tył)"
+      },
       "faceLabel": {
         "U": "Góra",
         "R": "Prawo",
@@ -257,6 +297,23 @@
         "D": "Dół",
         "L": "Lewo",
         "B": "Tył"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Dolna warstwa (D)",
+          "2": "Środkowa warstwa (E)",
+          "3": "Górna warstwa (U)"
+        },
+        "leftright": {
+          "1": "Lewa warstwa (L)",
+          "2": "Środkowa warstwa (M)",
+          "3": "Prawa warstwa (R)"
+        },
+        "frontback": {
+          "1": "Tylna warstwa (B)",
+          "2": "Środkowa warstwa (S)",
+          "3": "Przednia warstwa (F)"
+        }
       },
       "colorLabel": {
         "white": "Biały",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Kopiuj link do udostępniania",
       "copied": "Skopiowano!"
+    },
+    "gif": {
+      "exportButton": "Eksportuj GIF",
+      "dialogTitle": "Eksportuj GIF",
+      "rangeLabel": "Zakres",
+      "rangeStart": "Od",
+      "rangeEnd": "Do",
+      "rangeCaption": "Od kroku {start} do kroku {end} ({count} kroków)",
+      "speedLabel": "Szybkość",
+      "showOverlay": "Pokaż nakładkę kroku na płótnie",
+      "cancel": "Anuluj",
+      "generate": "Generuj GIF",
+      "generating": "Generowanie… {percent}%",
+      "errorGeneric": "Nie udało się wygenerować GIF-a. Spróbuj ponownie.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Niestandardowe ukrywanie",
+      "title": "Niestandardowe ukrywanie / wyróżnianie",
+      "instructions": "Kliknij dowolną naklejkę, aby przełączać: widoczna → ukryta → wyróżniona → widoczna.",
+      "summary": "{hidden} ukrytych · {highlighted} wyróżnionych",
+      "legend": {
+        "hidden": "Ukryte — naklejki przyciemnione",
+        "highlighted": "Podświetlone — korpus świeci lodowym błękitem"
+      },
+      "exit": "Gotowe",
+      "hideAll": "Ukryj wszystko",
+      "reset": "Zresetuj wszystko",
+      "close": "Zamknij"
+    },
+    "notation": {
+      "button": "Przewodnik po notacji",
+      "title": "Przewodnik po notacji",
+      "facesHeading": "Obrót ścianki",
+      "slicesHeading": "Obrót warstwy środkowej",
+      "label": {
+        "U": "Górna ścianka (U)",
+        "D": "Dolna ścianka (D)",
+        "R": "Prawa ścianka (R)",
+        "L": "Lewa ścianka (L)",
+        "F": "Przednia ścianka (F)",
+        "B": "Tylna ścianka (B)",
+        "M": "Warstwa środkowa M (zgodnie z L)",
+        "E": "Warstwa środkowa E (zgodnie z D)",
+        "S": "Warstwa środkowa S (zgodnie z F)"
+      },
+      "legend": {
+        "letterTerm": "Litera",
+        "letterDesc": "warstwa do obrócenia (domyślnie 90° zgodnie z ruchem wskazówek zegara, patrząc na daną ściankę)",
+        "primeTerm": "'",
+        "primeDesc": "90° przeciwnie do ruchu wskazówek zegara, np. R' to odwrotność R",
+        "doubleTerm": "2",
+        "doubleDesc": "obrót o 180° — kierunek nie ma znaczenia"
+      },
+      "close": "Zamknij"
+    },
+    "methods": {
+      "sectionTitle": "Metody układania",
+      "sectionCaption": "Przeglądaj etapy popularnych metod układania — każda miniatura ukrywa wszystko poza elementami ułożonymi do tego momentu.",
+      "button": "Przeglądaj metody",
+      "title": "Metody układania",
+      "close": "Zamknij",
+      "viewLabel": {
+        "side": "bok",
+        "below": "od dołu"
+      },
+      "lbl": {
+        "name": "Warstwa po warstwie (LBL)",
+        "description": "Klasyczna metoda dla początkujących. Układaj warstwa po warstwie — dolny krzyż, dolne narożniki, środkowe krawędzie, a na końcu ostatnia warstwa.",
+        "stages": {
+          "cross": "Biały krzyż",
+          "firstLayer": "Pierwsza warstwa",
+          "secondLayer": "Druga warstwa",
+          "solved": "Ostatnia warstwa"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Popularna metoda szybkiego układania. Cross tworzy dolny krzyż, F2L łączy narożniki ze środkowymi krawędziami, OLL orientuje ostatnią ściankę, PLL permutuje ostatnią warstwę.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Metoda blokowa. Zbuduj blok 1×2×3 po lewej, potem po prawej stronie, ułóż narożniki ostatniej warstwy (CMLL), a na koniec dokończ środkową warstwę (M-slice) i ostatnie sześć krawędzi (LSE).",
+        "stages": {
+          "firstBlock": "Pierwszy blok",
+          "secondBlock": "Drugi blok",
+          "cmll": "CMLL (Narożniki ostatniej warstwy)",
+          "lse": "LSE (Ostatnie sześć krawędzi)"
+        }
+      }
     }
   }
 }

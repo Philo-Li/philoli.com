@@ -59,7 +59,8 @@
     "desc": "Ajatuksia taiteesta, elämästä ja asioiden rakentamisesta — suoraan sähköpostiisi."
   },
   "blogPage": {
-    "title": "Blogi"
+    "title": "Blogi",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Taiteilija · Kirjoittaja · Kehittäjä",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "asetukset",
       "upload": "lataa",
+      "preview": "esikatselu",
       "browse": "selaa"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Jäsennetään EPUB-tiedostoa…",
+      "parsingPdf": "Jäsennellään PDF-tiedostoa — puretaan tekstiä ja muodostetaan kappaleita uudelleen…",
       "dropTitle": "Pudota EPUB tähän",
       "dropSubtitle": "tai valitse tiedosto klikkaamalla",
-      "noChapters": "Tästä EPUB-tiedostosta ei löytynyt luettavia lukuja."
+      "noChapters": "Tästä EPUB-tiedostosta ei löytynyt luettavia lukuja.",
+      "ocrRunning": "Suoritetaan OCR-tunnistusta sivuille mallilla {model}…",
+      "ocrPageOf": "Sivu {current} / {total}",
+      "ocrFailedCount": "{count} epäonnistui",
+      "scannedPdfDetected": "{file} on skannattu PDF ({pages} sivua), jossa ei ole tekstikerrosta.",
+      "modelLacksVision": "Valitsemasi {provider}-malli \"{model}\" ei tue kuvia, joten se ei voi suorittaa OCR-tunnistusta skannatuille sivuille.",
+      "switchToVision": "Vaihda malliin:",
+      "runOcr": "Suorita OCR",
+      "providerHasNoVision": "{provider} ei tarjoa kuvantunnistukseen kykenevää mallia tässä valikossa. Avaa asetukset vaihtaaksesi palveluntarjoajaa (Gemini, OpenAI tai Claude tukevat kaikki OCR-tunnistusta)."
+    },
+    "preview": {
+      "pages": "{count} sivua",
+      "scannedTag": "skannattu (vaatii OCR-tunnistuksen)",
+      "textLayerTag": "tekstikerros havaittu",
+      "prev": "Edellinen",
+      "next": "Seuraava",
+      "pageOf": "Sivu {current} / {total}",
+      "pageList": "Sivut ({count})",
+      "pageLabel": "Sivu {n}",
+      "willOcrWith": "Suorittaa OCR-tunnistuksen kaikille sivuille mallilla {model}.",
+      "willTranslate": "Teksti purettu. Jatka valitsemalla luvut käännettäväksi.",
+      "startOcr": "Aloita OCR ({count} sivua)",
+      "continue": "Jatka →",
+      "singlePage": {
+        "button": "Käännä tämä sivu",
+        "tooltip": "Suorita OCR ja käännä vain tämä sivu, jotta voit esikatsella laatua ennen koko kirjan käsittelyä.",
+        "running": "Suoritetaan OCR-tunnistusta ja käännetään tätä sivua…",
+        "translating": "Käännetään tätä sivua…",
+        "empty": "Sivulta ei löytynyt käännettävää tekstiä.",
+        "resultHeader": "Sivu {page} — kaksikielinen esikatselu",
+        "needsVision": "Nykyinen malli ei tue kuvien OCR-tunnistusta. Vaihda ensin malliin, joka tukee kuvantunnistusta."
+      }
     },
     "browse": {
       "chapters": "Luvut",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Ratkaisu",
       "hint": "Esimerkki: U R U' R'",
-      "parseError": "Tuntematon: {token}"
+      "parseError": "Tuntematon: {token}",
+      "showOverlay": "Näytä kaava kankaalla"
     },
     "playback": {
       "play": "Toista",
@@ -250,6 +285,11 @@
       "master": "Ota käyttöön",
       "hideColors": "Piilota värit",
       "hideFaces": "Piilota sivut",
+      "hideLayers": {
+        "updown": "Piilota tasot ↕",
+        "leftright": "Piilota tasot ↔",
+        "frontback": "Piilota tasot (etu/taka)"
+      },
       "faceLabel": {
         "U": "Ylä",
         "R": "Oikea",
@@ -257,6 +297,23 @@
         "D": "Ala",
         "L": "Vasen",
         "B": "Taka"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Alin taso (D)",
+          "2": "Keskitaso (E)",
+          "3": "Ylin taso (U)"
+        },
+        "leftright": {
+          "1": "Vasen taso (L)",
+          "2": "Keskitaso (M)",
+          "3": "Oikea taso (R)"
+        },
+        "frontback": {
+          "1": "Takataso (B)",
+          "2": "Keskitaso (S)",
+          "3": "Etutaso (F)"
+        }
       },
       "colorLabel": {
         "white": "Valkoinen",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Kopioi jakolinkki",
       "copied": "Kopioitu!"
+    },
+    "gif": {
+      "exportButton": "Vie GIF-muotoon",
+      "dialogTitle": "Vie GIF-muotoon",
+      "rangeLabel": "Alue",
+      "rangeStart": "Alkaen",
+      "rangeEnd": "Päättyen",
+      "rangeCaption": "Vaiheesta {start} vaiheeseen {end} ({count} vaihetta)",
+      "speedLabel": "Nopeus",
+      "showOverlay": "Näytä vaiheen peittokuva kankaalla",
+      "cancel": "Peruuta",
+      "generate": "Luo GIF",
+      "generating": "Luodaan… {percent}%",
+      "errorGeneric": "GIF-tiedoston luominen epäonnistui. Yritä uudelleen.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Mukautettu piilotus",
+      "title": "Mukautettu piilotus / korostus",
+      "instructions": "Klikkaa mitä tahansa tarraa vaihtaaksesi tilaa: näkyvä → piilotettu → korostettu → näkyvä.",
+      "summary": "{hidden} piilotettu · {highlighted} korostettu",
+      "legend": {
+        "hidden": "Piilotettu — tarrat tummennettu",
+        "highlighted": "Korostettu — runko hohtaa jäänsinisenä"
+      },
+      "exit": "Mukauttaminen valmis",
+      "hideAll": "Piilota kaikki",
+      "reset": "Nollaa kaikki",
+      "close": "Sulje"
+    },
+    "notation": {
+      "button": "Notaatio-opas",
+      "title": "Notaatio-opas",
+      "facesHeading": "Sivujen käännöt",
+      "slicesHeading": "Keskikerrosten käännöt",
+      "label": {
+        "U": "Yläsivu (U)",
+        "D": "Alasivu (D)",
+        "R": "Oikea sivu (R)",
+        "L": "Vasen sivu (L)",
+        "F": "Etusivu (F)",
+        "B": "Takasivu (B)",
+        "M": "Keskikerros M (seuraa L-sivua)",
+        "E": "Keskikerros E (seuraa D-sivua)",
+        "S": "Keskikerros S (seuraa F-sivua)"
+      },
+      "legend": {
+        "letterTerm": "Kirjain",
+        "letterDesc": "käännettävä kerros (oletuksena 90° myötäpäivään, kyseistä sivua katsottaessa)",
+        "primeTerm": "'",
+        "primeDesc": "90° vastapäivään, esim. R' kääntää R-liikkeen vastakkaiseen suuntaan",
+        "doubleTerm": "2",
+        "doubleDesc": "180° käännös — suunnalla ei ole väliä"
+      },
+      "close": "Sulje"
+    },
+    "methods": {
+      "sectionTitle": "Ratkaisumenetelmät",
+      "sectionCaption": "Selaa yleisiä ratkaisumenetelmiä vaiheittain — jokainen pikkukuva piilottaa kaiken muun paitsi siihen mennessä asetetut palat.",
+      "button": "Selaa menetelmiä",
+      "title": "Ratkaisumenetelmät",
+      "close": "Sulje",
+      "viewLabel": {
+        "side": "sivu",
+        "below": "alhaalta"
+      },
+      "lbl": {
+        "name": "Kerros kerrokselta (LBL)",
+        "description": "Klassinen aloittelijamenetelmä. Ratkaise yksi kerros kerrallaan — pohjan risti, pohjan kulmat, keskikerroksen reunat ja lopuksi viimeinen kerros.",
+        "stages": {
+          "cross": "Valkoinen risti",
+          "firstLayer": "Ensimmäinen kerros",
+          "secondLayer": "Toinen kerros",
+          "solved": "Viimeinen kerros"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Yleisin nopeusratkaisumenetelmä. Cross tekee pohjan ristin, F2L yhdistää kulmat ja keskikerroksen reunat, OLL kääntää viimeisen tahkon oikein, PLL järjestää viimeisen kerroksen palat.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Lohkojen rakennusmenetelmä. Rakenna 1×2×3-lohko vasemmalle, sitten oikealle, ratkaise viimeisen kerroksen kulmat (CMLL) ja viimeistele M-siivulla ja viimeisillä kuudella reunapalalla (LSE).",
+        "stages": {
+          "firstBlock": "Ensimmäinen lohko",
+          "secondBlock": "Toinen lohko",
+          "cmll": "CMLL (Viimeisen kerroksen kulmat)",
+          "lse": "LSE (Viimeiset kuusi reunapalaa)"
+        }
+      }
     }
   }
 }

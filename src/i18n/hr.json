@@ -59,7 +59,8 @@
     "desc": "Misli o umjetnosti, životu i stvaranju — dostavljene u tvoj sandučić."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Umjetnik · Pisac · Programer",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "postavke",
       "upload": "učitaj",
+      "preview": "pretpregled",
       "browse": "pregledaj"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Parsiranje EPUB-a…",
+      "parsingPdf": "Parsiranje PDF-a — izdvajanje teksta i rekonstrukcija odlomaka…",
       "dropTitle": "Dovucite EPUB ovdje",
       "dropSubtitle": "ili kliknite za odabir datoteke",
-      "noChapters": "Nisu pronađena čitljiva poglavlja u ovom EPUB-u."
+      "noChapters": "Nisu pronađena čitljiva poglavlja u ovom EPUB-u.",
+      "ocrRunning": "OCR obrada stranica pomoću {model}…",
+      "ocrPageOf": "Stranica {current} / {total}",
+      "ocrFailedCount": "{count} neuspjelo",
+      "scannedPdfDetected": "{file} je skenirani PDF ({pages} stranica) bez tekstualnog sloja.",
+      "modelLacksVision": "Odabrani {provider} model \"{model}\" ne prihvaća unos slika, stoga ne može obaviti OCR skeniranih stranica.",
+      "switchToVision": "Prebaci na:",
+      "runOcr": "Pokreni OCR",
+      "providerHasNoVision": "{provider} ne nudi model s mogućnošću prepoznavanja slike u ovom izborniku. Otvorite Postavke za promjenu pružatelja usluge (Gemini, OpenAI ili Claude podržavaju OCR)."
+    },
+    "preview": {
+      "pages": "{count} stranica",
+      "scannedTag": "skenirano (potreban OCR)",
+      "textLayerTag": "otkriven tekstualni sloj",
+      "prev": "Prethodna",
+      "next": "Sljedeća",
+      "pageOf": "Stranica {current} / {total}",
+      "pageList": "Stranice ({count})",
+      "pageLabel": "Stranica {n}",
+      "willOcrWith": "Obavit će OCR svih stranica pomoću {model}.",
+      "willTranslate": "Tekst izdvojen. Nastavite s odabirom poglavlja za prevođenje.",
+      "startOcr": "Pokreni OCR ({count} stranica)",
+      "continue": "Nastavi →",
+      "singlePage": {
+        "button": "Prevedi ovu stranicu",
+        "tooltip": "OCR i prijevod samo ove stranice kako biste mogli provjeriti kvalitetu prije obrade cijele knjige.",
+        "running": "OCR obrada i prevođenje ove stranice…",
+        "translating": "Prevođenje ove stranice…",
+        "empty": "Na ovoj stranici nije pronađen tekst za prevođenje.",
+        "resultHeader": "Stranica {page} — dvojezični pretpregled",
+        "needsVision": "Trenutni model ne može obavljati OCR slika. Prvo se prebacite na model s mogućnošću prepoznavanja slike."
+      }
     },
     "browse": {
       "chapters": "Poglavlja",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Rješenje",
       "hint": "Primjer: U R U' R'",
-      "parseError": "Neprepoznato: {token}"
+      "parseError": "Neprepoznato: {token}",
+      "showOverlay": "Prikaži formulu na platnu"
     },
     "playback": {
       "play": "Pokreni",
@@ -250,6 +285,11 @@
       "master": "Omogući",
       "hideColors": "Sakrij boje",
       "hideFaces": "Sakrij plohe",
+      "hideLayers": {
+        "updown": "Sakrij slojeve ↕",
+        "leftright": "Sakrij slojeve ↔",
+        "frontback": "Sakrij slojeve (prednji/stražnji)"
+      },
       "faceLabel": {
         "U": "Gore",
         "R": "Desno",
@@ -257,6 +297,23 @@
         "D": "Dolje",
         "L": "Lijevo",
         "B": "Natrag"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Donji sloj (D)",
+          "2": "Srednji sloj (E)",
+          "3": "Gornji sloj (U)"
+        },
+        "leftright": {
+          "1": "Lijevi sloj (L)",
+          "2": "Srednji sloj (M)",
+          "3": "Desni sloj (R)"
+        },
+        "frontback": {
+          "1": "Stražnji sloj (B)",
+          "2": "Srednji sloj (S)",
+          "3": "Prednji sloj (F)"
+        }
       },
       "colorLabel": {
         "white": "Bijela",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Kopiraj poveznicu za dijeljenje",
       "copied": "Kopirano!"
+    },
+    "gif": {
+      "exportButton": "Izvezi GIF",
+      "dialogTitle": "Izvezi GIF",
+      "rangeLabel": "Raspon",
+      "rangeStart": "Od",
+      "rangeEnd": "Do",
+      "rangeCaption": "Od koraka {start} do koraka {end} ({count} koraka)",
+      "speedLabel": "Brzina",
+      "showOverlay": "Prikaži prekrivanje koraka na platnu",
+      "cancel": "Odustani",
+      "generate": "Generiraj GIF",
+      "generating": "Generiranje… {percent}%",
+      "errorGeneric": "Generiranje GIF-a nije uspjelo. Molimo pokušajte ponovno.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Prilagođeno skrivanje",
+      "title": "Prilagođeno skrivanje / isticanje",
+      "instructions": "Kliknite na bilo koju naljepnicu za kruženje: vidljivo → skriveno → istaknuto → vidljivo.",
+      "summary": "{hidden} skriveno · {highlighted} istaknuto",
+      "legend": {
+        "hidden": "Skriveno — naljepnice potamnjene",
+        "highlighted": "Istaknuto — tijelo svijetli ledeno plavom bojom"
+      },
+      "exit": "Prilagodba dovršena",
+      "hideAll": "Sakrij sve",
+      "reset": "Poništi sve",
+      "close": "Zatvori"
+    },
+    "notation": {
+      "button": "Vodič za notaciju",
+      "title": "Vodič za notaciju",
+      "facesHeading": "Okreti stranica",
+      "slicesHeading": "Okreti slojeva",
+      "label": {
+        "U": "Gornja stranica (U)",
+        "D": "Donja stranica (D)",
+        "R": "Desna stranica (R)",
+        "L": "Lijeva stranica (L)",
+        "F": "Prednja stranica (F)",
+        "B": "Stražnja stranica (B)",
+        "M": "Srednji sloj M (prati L)",
+        "E": "Srednji sloj E (prati D)",
+        "S": "Srednji sloj S (prati F)"
+      },
+      "legend": {
+        "letterTerm": "Slovo",
+        "letterDesc": "sloj koji se okreće (zadano je 90° u smjeru kazaljke na satu, gledano prema toj stranici)",
+        "primeTerm": "'",
+        "primeDesc": "90° suprotno od smjera kazaljke na satu, npr. R' poništava R",
+        "doubleTerm": "2",
+        "doubleDesc": "okret od 180° — smjer nije bitan"
+      },
+      "close": "Zatvori"
+    },
+    "methods": {
+      "sectionTitle": "Metode rješavanja",
+      "sectionCaption": "Prođi kroz uobičajene metode rješavanja korak po korak — svaka sličica skriva sve osim kockica postavljenih do te točke.",
+      "button": "Pregledaj metode",
+      "title": "Metode rješavanja",
+      "close": "Zatvori",
+      "viewLabel": {
+        "side": "strana",
+        "below": "odozdo"
+      },
+      "lbl": {
+        "name": "Sloj po sloj (LBL)",
+        "description": "Klasična metoda za početnike. Rješavajte jedan po jedan sloj — donji križ, donji kutovi, srednji rubovi, zatim posljednji sloj.",
+        "stages": {
+          "cross": "Bijeli križ",
+          "firstLayer": "Prvi sloj",
+          "secondLayer": "Drugi sloj",
+          "solved": "Posljednji sloj"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Uobičajena metoda za brzo slaganje. Cross gradi donji križ, F2L uparuje kutove sa srednjim rubovima, OLL orijentira posljednju stranu, PLL permutira posljednji sloj.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Metoda građenja blokova. Izgradite 1×2×3 blok na lijevoj, zatim na desnoj strani, riješite kutove posljednjeg sloja (CMLL), a zatim završite s M-slojem i posljednjih šest rubova (LSE).",
+        "stages": {
+          "firstBlock": "Prvi blok",
+          "secondBlock": "Drugi blok",
+          "cmll": "CMLL (kutovi posljednjeg sloja)",
+          "lse": "LSE (posljednjih šest rubova)"
+        }
+      }
     }
   }
 }

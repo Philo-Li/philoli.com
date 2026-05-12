@@ -59,7 +59,8 @@
     "desc": "Réflexions sur l'art, la vie et la création — livrées dans votre boîte de réception."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Artiste · Écrivain · Développeur",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "paramètres",
       "upload": "importer",
+      "preview": "aperçu",
       "browse": "parcourir"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Analyse de l'EPUB…",
+      "parsingPdf": "Analyse du PDF — extraction du texte et reconstruction des paragraphes…",
       "dropTitle": "Déposez un EPUB ici",
       "dropSubtitle": "ou cliquez pour choisir un fichier",
-      "noChapters": "Aucun chapitre lisible trouvé dans cet EPUB."
+      "noChapters": "Aucun chapitre lisible trouvé dans cet EPUB.",
+      "ocrRunning": "OCR des pages avec {model}…",
+      "ocrPageOf": "Page {current} / {total}",
+      "ocrFailedCount": "{count} échec",
+      "scannedPdfDetected": "{file} est un PDF numérisé ({pages} pages) sans couche de texte.",
+      "modelLacksVision": "Le modèle {provider} sélectionné « {model} » n'accepte pas les images en entrée, il ne peut donc pas effectuer l'OCR des pages numérisées.",
+      "switchToVision": "Passer à :",
+      "runOcr": "Exécuter l'OCR",
+      "providerHasNoVision": "{provider} ne propose pas de modèle doté de vision dans ce sélecteur. Ouvrez les paramètres pour changer de fournisseur (Gemini, OpenAI ou Claude prennent tous en charge l'OCR)."
+    },
+    "preview": {
+      "pages": "{count} pages",
+      "scannedTag": "numérisé (nécessite l'OCR)",
+      "textLayerTag": "couche de texte détectée",
+      "prev": "Précédent",
+      "next": "Suivant",
+      "pageOf": "Page {current} / {total}",
+      "pageList": "Pages ({count})",
+      "pageLabel": "Page {n}",
+      "willOcrWith": "Effectuera l'OCR de toutes les pages avec {model}.",
+      "willTranslate": "Texte extrait. Continuez pour choisir les chapitres à traduire.",
+      "startOcr": "Lancer l'OCR ({count} pages)",
+      "continue": "Continuer →",
+      "singlePage": {
+        "button": "Traduire cette page",
+        "tooltip": "OCR + traduction de cette page uniquement pour prévisualiser la qualité avant de vous engager sur l'ensemble du livre.",
+        "running": "OCR et traduction de cette page en cours…",
+        "translating": "Traduction de cette page en cours…",
+        "empty": "Aucun texte traduisible trouvé sur cette page.",
+        "resultHeader": "Page {page} — aperçu bilingue",
+        "needsVision": "Le modèle actuel ne peut pas effectuer l'OCR d'images. Passez d'abord à un modèle doté de vision."
+      }
     },
     "browse": {
       "chapters": "Chapitres",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Solution",
       "hint": "Exemple : U R U' R'",
-      "parseError": "Non reconnu : {token}"
+      "parseError": "Non reconnu : {token}",
+      "showOverlay": "Afficher la formule sur le canevas"
     },
     "playback": {
       "play": "Lecture",
@@ -250,6 +285,11 @@
       "master": "Activer",
       "hideColors": "Masquer les couleurs",
       "hideFaces": "Masquer les faces",
+      "hideLayers": {
+        "updown": "Masquer les calques ↕",
+        "leftright": "Masquer les calques ↔",
+        "frontback": "Masquer les calques (avant/arrière)"
+      },
       "faceLabel": {
         "U": "Haut",
         "R": "Droite",
@@ -257,6 +297,23 @@
         "D": "Bas",
         "L": "Gauche",
         "B": "Arrière"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Calque inférieur (D)",
+          "2": "Calque intermédiaire (E)",
+          "3": "Calque supérieur (U)"
+        },
+        "leftright": {
+          "1": "Calque gauche (L)",
+          "2": "Calque intermédiaire (M)",
+          "3": "Calque droit (R)"
+        },
+        "frontback": {
+          "1": "Calque arrière (B)",
+          "2": "Calque intermédiaire (S)",
+          "3": "Calque avant (F)"
+        }
       },
       "colorLabel": {
         "white": "Blanc",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Copier le lien de partage",
       "copied": "Copié !"
+    },
+    "gif": {
+      "exportButton": "Exporter en GIF",
+      "dialogTitle": "Exporter en GIF",
+      "rangeLabel": "Plage",
+      "rangeStart": "De",
+      "rangeEnd": "À",
+      "rangeCaption": "De l'étape {start} à l'étape {end} ({count} étapes)",
+      "speedLabel": "Vitesse",
+      "showOverlay": "Afficher la superposition des étapes sur le canevas",
+      "cancel": "Annuler",
+      "generate": "Générer le GIF",
+      "generating": "Génération… {percent}%",
+      "errorGeneric": "Échec de la génération du GIF. Veuillez réessayer.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Masquage personnalisé",
+      "title": "Masquage / surbrillance personnalisé",
+      "instructions": "Cliquez sur n'importe quel autocollant pour faire défiler : visible → masqué → en surbrillance → visible.",
+      "summary": "{hidden} masqué · {highlighted} en surbrillance",
+      "legend": {
+        "hidden": "Masqué — autocollants assombris",
+        "highlighted": "Mis en surbrillance — le corps brille en bleu glacier"
+      },
+      "exit": "Personnalisation terminée",
+      "hideAll": "Tout masquer",
+      "reset": "Tout réinitialiser",
+      "close": "Fermer"
+    },
+    "notation": {
+      "button": "Guide de notation",
+      "title": "Guide de notation",
+      "facesHeading": "Rotations de face",
+      "slicesHeading": "Rotations de tranche",
+      "label": {
+        "U": "Face supérieure (U)",
+        "D": "Face inférieure (D)",
+        "R": "Face droite (R)",
+        "L": "Face gauche (L)",
+        "F": "Face avant (F)",
+        "B": "Face arrière (B)",
+        "M": "Tranche intermédiaire M (suit L)",
+        "E": "Tranche intermédiaire E (suit D)",
+        "S": "Tranche intermédiaire S (suit F)"
+      },
+      "legend": {
+        "letterTerm": "Lettre",
+        "letterDesc": "la couche à tourner (par défaut 90° dans le sens des aiguilles d'une montre, vue de face)",
+        "primeTerm": "'",
+        "primeDesc": "90° dans le sens inverse des aiguilles d'une montre, ex. R' inverse R",
+        "doubleTerm": "2",
+        "doubleDesc": "Rotation de 180° — la direction n'a pas d'importance"
+      },
+      "close": "Fermer"
+    },
+    "methods": {
+      "sectionTitle": "Méthodes de résolution",
+      "sectionCaption": "Parcourez les méthodes de résolution courantes étape par étape — chaque vignette masque tout sauf les pièces placées à ce stade.",
+      "button": "Parcourir les méthodes",
+      "title": "Méthodes de résolution",
+      "close": "Fermer",
+      "viewLabel": {
+        "side": "côté",
+        "below": "par le bas"
+      },
+      "lbl": {
+        "name": "Couche par couche (LBL)",
+        "description": "Méthode classique pour débutants. Résoudre une couche à la fois — croix inférieure, coins inférieurs, arêtes médianes, puis la dernière couche.",
+        "stages": {
+          "cross": "Croix blanche",
+          "firstLayer": "Première couche",
+          "secondLayer": "Deuxième couche",
+          "solved": "Dernière couche"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Méthode de résolution rapide la plus courante. La croix forme la base, le F2L appaire les coins avec les arêtes médianes, l'OLL oriente la dernière face, et le PLL permute la dernière couche.",
+        "stages": {
+          "cross": "Croix",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Méthode par construction de blocs. Construire un bloc 1×2×3 à gauche, puis à droite, résoudre les coins de la dernière couche (CMLL), puis terminer par la tranche M et les six dernières arêtes (LSE).",
+        "stages": {
+          "firstBlock": "Premier bloc",
+          "secondBlock": "Second bloc",
+          "cmll": "CMLL (Coins de la dernière couche)",
+          "lse": "LSE (Six dernières arêtes)"
+        }
+      }
     }
   }
 }

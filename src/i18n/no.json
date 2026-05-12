@@ -59,7 +59,8 @@
     "desc": "Tanker om kunst, livet og å skape ting — levert til innboksen din."
   },
   "blogPage": {
-    "title": "Blogg"
+    "title": "Blogg",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Kunstner · Skribent · Utvikler",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "innstillinger",
       "upload": "last opp",
+      "preview": "forhåndsvisning",
       "browse": "bla gjennom"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Analyserer EPUB…",
+      "parsingPdf": "Analyserer PDF — henter ut tekst og rekonstruerer avsnitt…",
       "dropTitle": "Slipp en EPUB her",
       "dropSubtitle": "eller klikk for å velge en fil",
-      "noChapters": "Ingen lesbare kapitler funnet i denne EPUB-filen."
+      "noChapters": "Ingen lesbare kapitler funnet i denne EPUB-filen.",
+      "ocrRunning": "Kjører OCR på sider med {model}…",
+      "ocrPageOf": "Side {current} / {total}",
+      "ocrFailedCount": "{count} feilet",
+      "scannedPdfDetected": "{file} er en skannet PDF ({pages} sider) uten tekstlag.",
+      "modelLacksVision": "Din valgte {provider}-modell \"{model}\" godtar ikke bildeinput, så den kan ikke utføre OCR på skannede sider.",
+      "switchToVision": "Bytt til:",
+      "runOcr": "Kjør OCR",
+      "providerHasNoVision": "{provider} tilbyr ingen modell med bildestøtte i dette valget. Åpne Innstillinger for å bytte leverandør (Gemini, OpenAI eller Claude støtter alle OCR)."
+    },
+    "preview": {
+      "pages": "{count} sider",
+      "scannedTag": "skannet (trenger OCR)",
+      "textLayerTag": "tekstlag oppdaget",
+      "prev": "Forrige",
+      "next": "Neste",
+      "pageOf": "Side {current} / {total}",
+      "pageList": "Sider ({count})",
+      "pageLabel": "Side {n}",
+      "willOcrWith": "Vil kjøre OCR på alle sider med {model}.",
+      "willTranslate": "Tekst hentet ut. Fortsett for å velge kapitler som skal oversettes.",
+      "startOcr": "Start OCR ({count} sider)",
+      "continue": "Fortsett →",
+      "singlePage": {
+        "button": "Oversett denne siden",
+        "tooltip": "Kjør OCR + oversett kun denne siden slik at du kan forhåndsvise kvaliteten før du forplikter deg til hele boken.",
+        "running": "Kjører OCR og oversetter denne siden…",
+        "translating": "Oversetter denne siden…",
+        "empty": "Ingen oversettbar tekst funnet på denne siden.",
+        "resultHeader": "Side {page} — tospråklig forhåndsvisning",
+        "needsVision": "Den nåværende modellen kan ikke utføre OCR på bilder. Bytt til en modell med bildestøtte først."
+      }
     },
     "browse": {
       "chapters": "Kapitler",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Løsning",
       "hint": "Eksempel: U R U' R'",
-      "parseError": "Ukjent: {token}"
+      "parseError": "Ukjent: {token}",
+      "showOverlay": "Vis formel på lerret"
     },
     "playback": {
       "play": "Spill av",
@@ -250,6 +285,11 @@
       "master": "Aktiver",
       "hideColors": "Skjul farger",
       "hideFaces": "Skjul sider",
+      "hideLayers": {
+        "updown": "Skjul lag ↕",
+        "leftright": "Skjul lag ↔",
+        "frontback": "Skjul lag (foran/bak)"
+      },
       "faceLabel": {
         "U": "Opp",
         "R": "Høyre",
@@ -257,6 +297,23 @@
         "D": "Ned",
         "L": "Venstre",
         "B": "Bak"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Bunnlag (D)",
+          "2": "Midtlag (E)",
+          "3": "Topplag (U)"
+        },
+        "leftright": {
+          "1": "Venstre lag (L)",
+          "2": "Midtlag (M)",
+          "3": "Høyre lag (R)"
+        },
+        "frontback": {
+          "1": "Baklag (B)",
+          "2": "Midtlag (S)",
+          "3": "Frontlag (F)"
+        }
       },
       "colorLabel": {
         "white": "Hvit",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Kopier delingslenke",
       "copied": "Kopiert!"
+    },
+    "gif": {
+      "exportButton": "Eksporter GIF",
+      "dialogTitle": "Eksporter GIF",
+      "rangeLabel": "Område",
+      "rangeStart": "Fra",
+      "rangeEnd": "Til",
+      "rangeCaption": "Fra steg {start} til steg {end} ({count} steg)",
+      "speedLabel": "Hastighet",
+      "showOverlay": "Vis stegoverlegg på lerret",
+      "cancel": "Avbryt",
+      "generate": "Generer GIF",
+      "generating": "Genererer… {percent}%",
+      "errorGeneric": "Kunne ikke generere GIF. Vennligst prøv igjen.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Egendefinert skjul",
+      "title": "Egendefinert skjul / utheving",
+      "instructions": "Klikk på et klistremerke for å bla gjennom: synlig → skjult → uthevet → synlig.",
+      "summary": "{hidden} skjult · {highlighted} uthevet",
+      "legend": {
+        "hidden": "Skjult — klistremerker mørklagt",
+        "highlighted": "Uthevet — kroppen lyser is-cyan"
+      },
+      "exit": "Ferdig med tilpasning",
+      "hideAll": "Skjul alle",
+      "reset": "Nullstill alle",
+      "close": "Lukk"
+    },
+    "notation": {
+      "button": "Notasjonsguide",
+      "title": "Notasjonsguide",
+      "facesHeading": "Sidevendinger",
+      "slicesHeading": "Skivevendinger",
+      "label": {
+        "U": "Toppside (U)",
+        "D": "Bunnside (D)",
+        "R": "Høyre side (R)",
+        "L": "Venstre side (L)",
+        "F": "Forside (F)",
+        "B": "Bakside (B)",
+        "M": "Midtskive M (følger L)",
+        "E": "Midtskive E (følger D)",
+        "S": "Midtskive S (følger F)"
+      },
+      "legend": {
+        "letterTerm": "Bokstav",
+        "letterDesc": "laget som skal vendes (standard er 90° med klokken, sett fra siden som vender mot deg)",
+        "primeTerm": "'",
+        "primeDesc": "90° mot klokken, f.eks. R' reverserer R",
+        "doubleTerm": "2",
+        "doubleDesc": "180° vending — retningen spiller ingen rolle"
+      },
+      "close": "Lukk"
+    },
+    "methods": {
+      "sectionTitle": "Løsningsmetoder",
+      "sectionCaption": "Gå gjennom vanlige løsningsmetoder trinn for trinn — hvert miniatyrbilde skjuler alt unntatt kubene som er plassert ved det punktet.",
+      "button": "Bla gjennom metoder",
+      "title": "Løsningsmetoder",
+      "close": "Lukk",
+      "viewLabel": {
+        "side": "side",
+        "below": "fra bunnen"
+      },
+      "lbl": {
+        "name": "Lag-for-lag (LBL)",
+        "description": "Klassisk nybegynnermetode. Løs ett lag av gangen — bunnkors, bunnhjørner, midtkanter, og til slutt det siste laget.",
+        "stages": {
+          "cross": "Hvitt kors",
+          "firstLayer": "Første lag",
+          "secondLayer": "Andre lag",
+          "solved": "Siste lag"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Den vanligste metoden for hurtigløsning. Cross bygger bunnkorset, F2L parer hjørner med midtkanter, OLL orienterer den siste flaten, PLL permuterer det siste laget.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Blokkoppbyggingsmetode. Bygg en 1×2×3-blokk på venstre side, deretter på høyre, løs hjørnene i det siste laget (CMLL), og avslutt med M-skiven og de siste seks kantene (LSE).",
+        "stages": {
+          "firstBlock": "Første blokk",
+          "secondBlock": "Andre blokk",
+          "cmll": "CMLL (Hjørner i siste lag)",
+          "lse": "LSE (Siste seks kanter)"
+        }
+      }
     }
   }
 }

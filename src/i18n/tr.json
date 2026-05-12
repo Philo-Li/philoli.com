@@ -59,7 +59,8 @@
     "desc": "Sanat, yaşam ve bir şeyler inşa etmek üzerine düşünceler — gelen kutunuza teslim edilir."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Sanatçı · Yazar · Geliştirici",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "ayarlar",
       "upload": "yükle",
+      "preview": "önizleme",
       "browse": "göz at"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "EPUB ayrıştırılıyor…",
+      "parsingPdf": "PDF ayrıştırılıyor — metin çıkarılıyor ve paragraflar yeniden oluşturuluyor…",
       "dropTitle": "Bir EPUB dosyasını buraya bırakın",
       "dropSubtitle": "veya bir dosya seçmek için tıklayın",
-      "noChapters": "Bu EPUB dosyasında okunabilir bölüm bulunamadı."
+      "noChapters": "Bu EPUB dosyasında okunabilir bölüm bulunamadı.",
+      "ocrRunning": "{model} ile sayfalar OCR'dan geçiriliyor…",
+      "ocrPageOf": "Sayfa {current} / {total}",
+      "ocrFailedCount": "{count} başarısız",
+      "scannedPdfDetected": "{file}, metin katmanı olmayan taranmış bir PDF ({pages} sayfa).",
+      "modelLacksVision": "Seçtiğiniz {provider} modeli \"{model}\" görsel girdisi kabul etmiyor, bu yüzden taranmış sayfaları OCR'dan geçiremez.",
+      "switchToVision": "Şuna geç:",
+      "runOcr": "OCR'ı çalıştır",
+      "providerHasNoVision": "{provider}, bu seçicide görsel yeteneği olan bir model sunmuyor. Sağlayıcıyı değiştirmek için Ayarlar'ı açın (Gemini, OpenAI veya Claude'un hepsi OCR'ı destekler)."
+    },
+    "preview": {
+      "pages": "{count} sayfa",
+      "scannedTag": "taranmış (OCR gerekiyor)",
+      "textLayerTag": "metin katmanı algılandı",
+      "prev": "Önceki",
+      "next": "Sonraki",
+      "pageOf": "Sayfa {current} / {total}",
+      "pageList": "Sayfalar ({count})",
+      "pageLabel": "Sayfa {n}",
+      "willOcrWith": "Tüm sayfalar {model} ile OCR'dan geçirilecek.",
+      "willTranslate": "Metin çıkarıldı. Çevrilecek bölümleri seçmek için devam edin.",
+      "startOcr": "OCR'ı başlat ({count} sayfa)",
+      "continue": "Devam et →",
+      "singlePage": {
+        "button": "Bu sayfayı çevir",
+        "tooltip": "Kitabın tamamına başlamadan önce kaliteyi önizleyebilmeniz için sadece bu sayfayı OCR'dan geçirin ve çevirin.",
+        "running": "Bu sayfa OCR'dan geçiriliyor ve çevriliyor…",
+        "translating": "Bu sayfa çevriliyor…",
+        "empty": "Bu sayfada çevrilebilir metin bulunamadı.",
+        "resultHeader": "Sayfa {page} — iki dilli önizleme",
+        "needsVision": "Mevcut model görselleri OCR'dan geçiremiyor. Önce görsel yeteneği olan bir modele geçin."
+      }
     },
     "browse": {
       "chapters": "Bölümler",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Çözüm",
       "hint": "Örnek: U R U' R'",
-      "parseError": "Tanımlanamadı: {token}"
+      "parseError": "Tanımlanamadı: {token}",
+      "showOverlay": "Formülü tuval üzerinde göster"
     },
     "playback": {
       "play": "Oynat",
@@ -250,6 +285,11 @@
       "master": "Etkinleştir",
       "hideColors": "Renkleri gizle",
       "hideFaces": "Yüzleri gizle",
+      "hideLayers": {
+        "updown": "Katmanları gizle ↕",
+        "leftright": "Katmanları gizle ↔",
+        "frontback": "Katmanları gizle (ön/arka)"
+      },
       "faceLabel": {
         "U": "Üst",
         "R": "Sağ",
@@ -257,6 +297,23 @@
         "D": "Alt",
         "L": "Sol",
         "B": "Arka"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Alt katman (D)",
+          "2": "Orta katman (E)",
+          "3": "Üst katman (U)"
+        },
+        "leftright": {
+          "1": "Sol katman (L)",
+          "2": "Orta katman (M)",
+          "3": "Sağ katman (R)"
+        },
+        "frontback": {
+          "1": "Arka katman (B)",
+          "2": "Orta katman (S)",
+          "3": "Ön katman (F)"
+        }
       },
       "colorLabel": {
         "white": "Beyaz",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Paylaşım bağlantısını kopyala",
       "copied": "Kopyalandı!"
+    },
+    "gif": {
+      "exportButton": "GIF dışa aktar",
+      "dialogTitle": "GIF dışa aktar",
+      "rangeLabel": "Aralık",
+      "rangeStart": "Başlangıç",
+      "rangeEnd": "Bitiş",
+      "rangeCaption": "{start}. adımdan {end}. adıma ({count} adım)",
+      "speedLabel": "Hız",
+      "showOverlay": "Adım katmanını tuval üzerinde göster",
+      "cancel": "İptal",
+      "generate": "GIF oluştur",
+      "generating": "Oluşturuluyor… %{percent}",
+      "errorGeneric": "GIF oluşturulamadı. Lütfen tekrar deneyin.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Özel gizleme",
+      "title": "Özel gizleme / vurgulama",
+      "instructions": "Döngü için herhangi bir etikete tıklayın: görünür → gizli → vurgulu → görünür.",
+      "summary": "{hidden} gizli · {highlighted} vurgulu",
+      "legend": {
+        "hidden": "Gizli — çıkartmalar karartıldı",
+        "highlighted": "Vurgulu — gövde buz mavisi parlıyor"
+      },
+      "exit": "Özelleştirme tamamlandı",
+      "hideAll": "Hepsini gizle",
+      "reset": "Hepsini sıfırla",
+      "close": "Kapat"
+    },
+    "notation": {
+      "button": "Notasyon kılavuzu",
+      "title": "Notasyon kılavuzu",
+      "facesHeading": "Yüzey dönüşleri",
+      "slicesHeading": "Katman dönüşleri",
+      "label": {
+        "U": "Üst yüzey (U)",
+        "D": "Alt yüzey (D)",
+        "R": "Sağ yüzey (R)",
+        "L": "Sol yüzey (L)",
+        "F": "Ön yüzey (F)",
+        "B": "Arka yüzey (B)",
+        "M": "Orta katman M (L'yi takip eder)",
+        "E": "Orta katman E (D'yi takip eder)",
+        "S": "Orta katman S (F'yi takip eder)"
+      },
+      "legend": {
+        "letterTerm": "Harf",
+        "letterDesc": "döndürülecek katman (varsayılan saat yönünde 90°, o yüzeye bakarken)",
+        "primeTerm": "'",
+        "primeDesc": "saat yönünün tersine 90°, örneğin R' dönüşü R'yi tersine çevirir",
+        "doubleTerm": "2",
+        "doubleDesc": "180° dönüş — yön fark etmez"
+      },
+      "close": "Kapat"
+    },
+    "methods": {
+      "sectionTitle": "Çözüm yöntemleri",
+      "sectionCaption": "Yaygın çözüm yöntemlerini aşama aşama inceleyin — her küçük resim, o noktaya kadar yerleştirilen küpler dışındaki her şeyi gizler.",
+      "button": "Yöntemlere göz at",
+      "title": "Çözüm yöntemleri",
+      "close": "Kapat",
+      "viewLabel": {
+        "side": "yan",
+        "below": "aşağıdan"
+      },
+      "lbl": {
+        "name": "Katman Katman (LBL)",
+        "description": "Klasik başlangıç yöntemi. Her seferinde bir katmanı çözün — alt artı, alt köşeler, orta kenarlar ve ardından son katman.",
+        "stages": {
+          "cross": "Beyaz artı",
+          "firstLayer": "İlk katman",
+          "secondLayer": "İkinci katman",
+          "solved": "Son katman"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Yaygın hız küpü yöntemi. Cross alt artıyı oluşturur, F2L köşeleri orta kenarlarla eşleştirir, OLL son yüzü yönlendirir, PLL son katmanı yerleştirir.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Blok oluşturma yöntemi. Solda 1×2×3'lük bir blok oluşturun, ardından sağda aynısını yapın, son katman köşelerini (CMLL) çözün ve M-dilimi ile son altı kenarı (LSE) tamamlayarak bitirin.",
+        "stages": {
+          "firstBlock": "İlk Blok",
+          "secondBlock": "İkinci Blok",
+          "cmll": "CMLL (Son Katman Köşeleri)",
+          "lse": "LSE (Son Altı Kenar)"
+        }
+      }
     }
   }
 }

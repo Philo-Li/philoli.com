@@ -59,7 +59,8 @@
     "desc": "Misli o umetnosti, življenju in ustvarjanju — v vašem poštnem nabiralniku."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Umetnik · Pisec · Razvijalec",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "nastavitve",
       "upload": "naloži",
+      "preview": "predogled",
       "browse": "brskaj"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Razčlenjevanje EPUB…",
+      "parsingPdf": "Razčlenjevanje PDF — pridobivanje besedila in rekonstrukcija odstavkov…",
       "dropTitle": "Spustite EPUB sem",
       "dropSubtitle": "ali kliknite za izbiro datoteke",
-      "noChapters": "V tem EPUB-u ni bilo mogoče najti berljivih poglavij."
+      "noChapters": "V tem EPUB-u ni bilo mogoče najti berljivih poglavij.",
+      "ocrRunning": "Izvajanje OCR na straneh z {model}…",
+      "ocrPageOf": "Stran {current} / {total}",
+      "ocrFailedCount": "{count} neuspešnih",
+      "scannedPdfDetected": "{file} je skeniran PDF ({pages} strani) brez besedilne plasti.",
+      "modelLacksVision": "Izbrani model {provider} \"{model}\" ne podpira vnosa slik, zato ne more izvesti OCR na skeniranih straneh.",
+      "switchToVision": "Preklopi na:",
+      "runOcr": "Zaženi OCR",
+      "providerHasNoVision": "{provider} v tem izbirniku ne ponuja modela s podporo za vid. Odprite Nastavitve za preklop ponudnika (Gemini, OpenAI ali Claude podpirajo OCR)."
+    },
+    "preview": {
+      "pages": "{count} strani",
+      "scannedTag": "skenirano (potrebuje OCR)",
+      "textLayerTag": "zaznana besedilna plast",
+      "prev": "Nazaj",
+      "next": "Naprej",
+      "pageOf": "Stran {current} / {total}",
+      "pageList": "Strani ({count})",
+      "pageLabel": "Stran {n}",
+      "willOcrWith": "Izvedel bo OCR vseh strani z {model}.",
+      "willTranslate": "Besedilo pridobljeno. Nadaljujte z izbiro poglavij za prevajanje.",
+      "startOcr": "Začni OCR ({count} strani)",
+      "continue": "Nadaljuj →",
+      "singlePage": {
+        "button": "Prevedi to stran",
+        "tooltip": "OCR + prevod samo te strani, da lahko predogledate kakovost, preden se odločite za celotno knjigo.",
+        "running": "Izvajanje OCR in prevajanje te strani…",
+        "translating": "Prevajanje te strani…",
+        "empty": "Na tej strani ni bilo najdenega besedila za prevajanje.",
+        "resultHeader": "Stran {page} — dvojezični predogled",
+        "needsVision": "Trenutni model ne podpira OCR slik. Najprej preklopite na model s podporo za vid."
+      }
     },
     "browse": {
       "chapters": "Poglavja",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Rešitev",
       "hint": "Primer: U R U' R'",
-      "parseError": "Neprepoznano: {token}"
+      "parseError": "Neprepoznano: {token}",
+      "showOverlay": "Prikaži formulo na platnu"
     },
     "playback": {
       "play": "Predvajaj",
@@ -250,6 +285,11 @@
       "master": "Omogoči",
       "hideColors": "Skrij barve",
       "hideFaces": "Skrij ploskve",
+      "hideLayers": {
+        "updown": "Skrij plasti ↕",
+        "leftright": "Skrij plasti ↔",
+        "frontback": "Skrij plasti (spredaj/zadaj)"
+      },
       "faceLabel": {
         "U": "Zgoraj",
         "R": "Desno",
@@ -257,6 +297,23 @@
         "D": "Spodaj",
         "L": "Levo",
         "B": "Zadaj"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Spodnja plast (D)",
+          "2": "Srednja plast (E)",
+          "3": "Zgornja plast (U)"
+        },
+        "leftright": {
+          "1": "Leva plast (L)",
+          "2": "Srednja plast (M)",
+          "3": "Desna plast (R)"
+        },
+        "frontback": {
+          "1": "Zadnja plast (B)",
+          "2": "Srednja plast (S)",
+          "3": "Sprednja plast (F)"
+        }
       },
       "colorLabel": {
         "white": "Bela",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Kopiraj povezavo za deljenje",
       "copied": "Kopirano!"
+    },
+    "gif": {
+      "exportButton": "Izvozi GIF",
+      "dialogTitle": "Izvozi GIF",
+      "rangeLabel": "Razpon",
+      "rangeStart": "Od",
+      "rangeEnd": "Do",
+      "rangeCaption": "Od koraka {start} do koraka {end} ({count} korakov)",
+      "speedLabel": "Hitrost",
+      "showOverlay": "Prikaži prekrivni korak na platnu",
+      "cancel": "Prekliči",
+      "generate": "Ustvari GIF",
+      "generating": "Ustvarjanje… {percent}%",
+      "errorGeneric": "Ustvarjanje GIF-a ni uspelo. Prosimo, poskusite znova.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Skrij po meri",
+      "title": "Skrij / poudari po meri",
+      "instructions": "Kliknite katero koli nalepko za kroženje: vidno → skrito → poudarjeno → vidno.",
+      "summary": "{hidden} skrito · {highlighted} poudarjeno",
+      "legend": {
+        "hidden": "Skrito — nalepke zatemnjene",
+        "highlighted": "Označeno — telo žari v ledeno modri barvi"
+      },
+      "exit": "Prilagajanje končano",
+      "hideAll": "Skrij vse",
+      "reset": "Ponastavi vse",
+      "close": "Zapri"
+    },
+    "notation": {
+      "button": "Vodnik po notaciji",
+      "title": "Vodnik po notaciji",
+      "facesHeading": "Obračanje ploskev",
+      "slicesHeading": "Obračanje rezin",
+      "label": {
+        "U": "Zgornja ploskev (U)",
+        "D": "Spodnja ploskev (D)",
+        "R": "Desna ploskev (R)",
+        "L": "Leva ploskev (L)",
+        "F": "Sprednja ploskev (F)",
+        "B": "Zadnja ploskev (B)",
+        "M": "Sredinska rezina M (sledi L)",
+        "E": "Sredinska rezina E (sledi D)",
+        "S": "Sredinska rezina S (sledi F)"
+      },
+      "legend": {
+        "letterTerm": "Črka",
+        "letterDesc": "plast za obrat (privzeto je 90° v smeri urinega kazalca, gledano s strani te ploskve)",
+        "primeTerm": "'",
+        "primeDesc": "90° v nasprotni smeri urinega kazalca, npr. R' obrne R",
+        "doubleTerm": "2",
+        "doubleDesc": "180° obrat — smer ni pomembna"
+      },
+      "close": "Zapri"
+    },
+    "methods": {
+      "sectionTitle": "Metode reševanja",
+      "sectionCaption": "Preglejte pogoste metode reševanja po korakih — vsaka sličica skrije vse razen kock, ki so postavljene do tiste točke.",
+      "button": "Brskaj po metodah",
+      "title": "Metode reševanja",
+      "close": "Zapri",
+      "viewLabel": {
+        "side": "stran",
+        "below": "od spodaj"
+      },
+      "lbl": {
+        "name": "Plast za plastjo (LBL)",
+        "description": "Klasična začetniška metoda. Sestavljanje plast za plastjo — spodnji križ, spodnji vogali, srednji robovi, nato zadnja plast.",
+        "stages": {
+          "cross": "Beli križ",
+          "firstLayer": "Prva plast",
+          "secondLayer": "Druga plast",
+          "solved": "Zadnja plast"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Najbolj razširjena metoda za hitrostno sestavljanje. Cross zgradi spodnji križ, F2L poveže vogale s srednjimi robovi, OLL orientira zadnjo ploskev, PLL permutira zadnjo plast.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Metoda gradnje blokov. Zgradite blok 1×2×3 na levi, nato na desni, rešite vogale zadnje plasti (CMLL) in zaključite z M-rezino ter zadnjimi šestimi robovi (LSE).",
+        "stages": {
+          "firstBlock": "Prvi blok",
+          "secondBlock": "Drugi blok",
+          "cmll": "CMLL (Vogali zadnje plasti)",
+          "lse": "LSE (Zadnjih šest robov)"
+        }
+      }
     }
   }
 }

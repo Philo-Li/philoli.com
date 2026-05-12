@@ -59,7 +59,8 @@
     "desc": "Gondolatok a művészetről, az életről és az alkotásról — egyenesen a postaládádba."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Művész · Író · Fejlesztő",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "beállítások",
       "upload": "feltöltés",
+      "preview": "előnézet",
       "browse": "böngészés"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "EPUB feldolgozása…",
+      "parsingPdf": "PDF elemzése — szöveg kinyerése és bekezdések rekonstruálása…",
       "dropTitle": "Húzz ide egy EPUB fájlt",
       "dropSubtitle": "vagy kattints a fájl kiválasztásához",
-      "noChapters": "Nem találhatók olvasható fejezetek ebben az EPUB fájlban."
+      "noChapters": "Nem találhatók olvasható fejezetek ebben az EPUB fájlban.",
+      "ocrRunning": "Oldalak OCR-ezése a következővel: {model}…",
+      "ocrPageOf": "{current} / {total} oldal",
+      "ocrFailedCount": "{count} sikertelen",
+      "scannedPdfDetected": "A(z) {file} egy szkennelt PDF ({pages} oldal), szövegréteg nélkül.",
+      "modelLacksVision": "A kiválasztott {provider} modell („{model}”) nem fogad el képbemenetet, így nem tudja elvégezni a szkennelt oldalak OCR-ezését.",
+      "switchToVision": "Váltás erre:",
+      "runOcr": "OCR futtatása",
+      "providerHasNoVision": "A(z) {provider} nem kínál látásalapú modellt ebben a választóban. Nyissa meg a Beállításokat a szolgáltató váltásához (a Gemini, az OpenAI és a Claude mind támogatja az OCR-t)."
+    },
+    "preview": {
+      "pages": "{count} oldal",
+      "scannedTag": "szkennelt (OCR szükséges)",
+      "textLayerTag": "szövegréteg észlelve",
+      "prev": "Előző",
+      "next": "Következő",
+      "pageOf": "{current} / {total} oldal",
+      "pageList": "Oldalak ({count})",
+      "pageLabel": "{n}. oldal",
+      "willOcrWith": "Az összes oldal OCR-ezése a következővel: {model}.",
+      "willTranslate": "Szöveg kinyerve. Folytassa a fejezetek kiválasztásával a fordításhoz.",
+      "startOcr": "OCR indítása ({count} oldal)",
+      "continue": "Folytatás →",
+      "singlePage": {
+        "button": "Oldal fordítása",
+        "tooltip": "Csak ennek az oldalnak az OCR-ezése és fordítása, hogy ellenőrizhesse a minőséget, mielőtt az egész könyvre alkalmazná.",
+        "running": "Oldal OCR-ezése és fordítása…",
+        "translating": "Oldal fordítása…",
+        "empty": "Nem található fordítható szöveg ezen az oldalon.",
+        "resultHeader": "{page}. oldal — kétnyelvű előnézet",
+        "needsVision": "A jelenlegi modell nem tudja OCR-ezni a képeket. Előbb váltson egy látásalapú modellre."
+      }
     },
     "browse": {
       "chapters": "Fejezetek",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Megoldás",
       "hint": "Példa: U R U' R'",
-      "parseError": "Ismeretlen: {token}"
+      "parseError": "Ismeretlen: {token}",
+      "showOverlay": "Képlet megjelenítése a vásznon"
     },
     "playback": {
       "play": "Lejátszás",
@@ -250,6 +285,11 @@
       "master": "Engedélyezés",
       "hideColors": "Színek elrejtése",
       "hideFaces": "Oldalak elrejtése",
+      "hideLayers": {
+        "updown": "Rétegek elrejtése ↕",
+        "leftright": "Rétegek elrejtése ↔",
+        "frontback": "Rétegek elrejtése (elöl/hátul)"
+      },
       "faceLabel": {
         "U": "Felső",
         "R": "Jobb",
@@ -257,6 +297,23 @@
         "D": "Alsó",
         "L": "Bal",
         "B": "Hátsó"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Alsó réteg (D)",
+          "2": "Középső réteg (E)",
+          "3": "Felső réteg (U)"
+        },
+        "leftright": {
+          "1": "Bal réteg (L)",
+          "2": "Középső réteg (M)",
+          "3": "Jobb réteg (R)"
+        },
+        "frontback": {
+          "1": "Hátsó réteg (B)",
+          "2": "Középső réteg (S)",
+          "3": "Elülső réteg (F)"
+        }
       },
       "colorLabel": {
         "white": "Fehér",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Megosztási link másolása",
       "copied": "Másolva!"
+    },
+    "gif": {
+      "exportButton": "GIF exportálása",
+      "dialogTitle": "GIF exportálása",
+      "rangeLabel": "Tartomány",
+      "rangeStart": "Kezdete",
+      "rangeEnd": "Vége",
+      "rangeCaption": "A(z) {start}. lépéstől a(z) {end}. lépésig ({count} lépés)",
+      "speedLabel": "Sebesség",
+      "showOverlay": "Lépésátfedés megjelenítése a vásznon",
+      "cancel": "Mégse",
+      "generate": "GIF generálása",
+      "generating": "Generálás… {percent}%",
+      "errorGeneric": "A GIF generálása sikertelen. Kérlek, próbáld újra.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Egyéni elrejtés",
+      "title": "Egyéni elrejtés / kiemelés",
+      "instructions": "Kattints bármelyik matricára a váltáshoz: látható → rejtett → kiemelt → látható.",
+      "summary": "{hidden} rejtett · {highlighted} kiemelt",
+      "legend": {
+        "hidden": "Rejtett — a matricák elsötétítve",
+        "highlighted": "Kiemelt — a test jégcián színben világít"
+      },
+      "exit": "Testreszabás kész",
+      "hideAll": "Összes elrejtése",
+      "reset": "Összes alaphelyzetbe állítása",
+      "close": "Bezárás"
+    },
+    "notation": {
+      "button": "Jelölési útmutató",
+      "title": "Jelölési útmutató",
+      "facesHeading": "Oldalforgatások",
+      "slicesHeading": "Szeletforgatások",
+      "label": {
+        "U": "Felső oldal (U)",
+        "D": "Alsó oldal (D)",
+        "R": "Jobb oldal (R)",
+        "L": "Bal oldal (L)",
+        "F": "Elülső oldal (F)",
+        "B": "Hátsó oldal (B)",
+        "M": "Középső szelet M (az L-t követi)",
+        "E": "Középső szelet E (a D-t követi)",
+        "S": "Középső szelet S (az F-t követi)"
+      },
+      "legend": {
+        "letterTerm": "Betű",
+        "letterDesc": "az elforgatandó réteg (alapértelmezésben 90°-os óramutató járásával megegyező, az adott oldal felől nézve)",
+        "primeTerm": "'",
+        "primeDesc": "90°-os óramutató járásával ellentétes, pl. az R' az R ellentéte",
+        "doubleTerm": "2",
+        "doubleDesc": "180°-os fordulat — az irány nem számít"
+      },
+      "close": "Bezárás"
+    },
+    "methods": {
+      "sectionTitle": "Megoldási módszerek",
+      "sectionCaption": "Lépkedj végig a gyakori megoldási módszereken szakaszról szakaszra — minden miniatűr elrejt mindent, kivéve azokat a kockákat, amelyek az adott pontig a helyükre kerültek.",
+      "button": "Módszerek böngészése",
+      "title": "Megoldási módszerek",
+      "close": "Bezár",
+      "viewLabel": {
+        "side": "oldal",
+        "below": "alulról"
+      },
+      "lbl": {
+        "name": "Rétegről rétegre (LBL)",
+        "description": "Klasszikus kezdő módszer. Egy réteg kirakása egyszerre — alsó kereszt, alsó sarkok, középső élek, majd az utolsó réteg.",
+        "stages": {
+          "cross": "Fehér kereszt",
+          "firstLayer": "Első réteg",
+          "secondLayer": "Második réteg",
+          "solved": "Utolsó réteg"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Elterjedt gyorskirakó módszer. A Cross kirakja az alsó keresztet, az F2L párosítja a sarkokat a középső élekkel, az OLL tájolja az utolsó lapot, a PLL pedig permutálja az utolsó réteget.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Blokképző módszer. Egy 1×2×3-as blokk építése bal oldalon, majd a jobb oldalon, az utolsó réteg sarkainak kirakása (CMLL), végül az M-szelet és az utolsó hat él (LSE) befejezése.",
+        "stages": {
+          "firstBlock": "Első blokk",
+          "secondBlock": "Második blokk",
+          "cmll": "CMLL (Az utolsó réteg sarkai)",
+          "lse": "LSE (Utolsó hat él)"
+        }
+      }
     }
   }
 }

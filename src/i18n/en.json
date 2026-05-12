@@ -155,7 +155,7 @@
       "customModelPlaceholder": "e.g. gpt-4o, deepseek-chat, …",
       "customEndpoint": "API Endpoint",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint.",
+      "customEndpointHint": "Full URL to an OpenAI-compatible /chat/completions endpoint. Must be https:// and reachable on the public internet.",
       "openrouterModelPlaceholder": "e.g. google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "opencodeModelPlaceholder": "e.g. kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "Enter an API key to continue."

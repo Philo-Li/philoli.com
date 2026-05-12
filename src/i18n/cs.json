@@ -59,7 +59,8 @@
     "desc": "Myšlenky o umění, životě a tvoření věcí — doručené do vaší schránky."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Umělec · Spisovatel · Vývojář",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "nastavení",
       "upload": "nahrát",
+      "preview": "náhled",
       "browse": "procházet"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Zpracování EPUB…",
+      "parsingPdf": "Zpracovávám PDF — extrahuji text a rekonstruuji odstavce…",
       "dropTitle": "Přetáhněte EPUB sem",
       "dropSubtitle": "nebo klikněte pro výběr souboru",
-      "noChapters": "V tomto EPUB nebyly nalezeny žádné čitelné kapitoly."
+      "noChapters": "V tomto EPUB nebyly nalezeny žádné čitelné kapitoly.",
+      "ocrRunning": "Provádím OCR stránek pomocí {model}…",
+      "ocrPageOf": "Stránka {current} / {total}",
+      "ocrFailedCount": "{count} selhalo",
+      "scannedPdfDetected": "{file} je skenované PDF ({pages} stran) bez textové vrstvy.",
+      "modelLacksVision": "Vámi vybraný model {provider} „{model}“ nepřijímá obrázkové vstupy, takže nemůže provést OCR skenovaných stránek.",
+      "switchToVision": "Přepnout na:",
+      "runOcr": "Spustit OCR",
+      "providerHasNoVision": "{provider} v tomto výběru nenabízí model schopný analýzy obrazu. Otevřete Nastavení a přepněte poskytovatele (Gemini, OpenAI nebo Claude podporují OCR)."
+    },
+    "preview": {
+      "pages": "{count} stran",
+      "scannedTag": "skenováno (vyžaduje OCR)",
+      "textLayerTag": "zjištěna textová vrstva",
+      "prev": "Předchozí",
+      "next": "Další",
+      "pageOf": "Stránka {current} / {total}",
+      "pageList": "Stránky ({count})",
+      "pageLabel": "Stránka {n}",
+      "willOcrWith": "Provede OCR všech stránek pomocí {model}.",
+      "willTranslate": "Text extrahován. Pokračujte výběrem kapitol k překladu.",
+      "startOcr": "Spustit OCR ({count} stran)",
+      "continue": "Pokračovat →",
+      "singlePage": {
+        "button": "Přeložit tuto stránku",
+        "tooltip": "Provést OCR a překlad pouze této stránky, abyste si mohli prohlédnout kvalitu předtím, než se pustíte do celé knihy.",
+        "running": "Provádím OCR a překlad této stránky…",
+        "translating": "Překládám tuto stránku…",
+        "empty": "Na této stránce nebyl nalezen žádný text k překladu.",
+        "resultHeader": "Stránka {page} — dvojjazyčný náhled",
+        "needsVision": "Aktuální model neumí provádět OCR obrázků. Nejprve přepněte na model schopný analýzy obrazu."
+      }
     },
     "browse": {
       "chapters": "Kapitoly",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Řešení",
       "hint": "Příklad: U R U' R'",
-      "parseError": "Nerozpoznáno: {token}"
+      "parseError": "Nerozpoznáno: {token}",
+      "showOverlay": "Zobrazit vzorec na plátně"
     },
     "playback": {
       "play": "Přehrát",
@@ -250,6 +285,11 @@
       "master": "Zapnout",
       "hideColors": "Skrýt barvy",
       "hideFaces": "Skrýt stěny",
+      "hideLayers": {
+        "updown": "Skrýt vrstvy ↕",
+        "leftright": "Skrýt vrstvy ↔",
+        "frontback": "Skrýt vrstvy (přední/zadní)"
+      },
       "faceLabel": {
         "U": "Horní",
         "R": "Pravá",
@@ -257,6 +297,23 @@
         "D": "Dolní",
         "L": "Levá",
         "B": "Zadní"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Spodní vrstva (D)",
+          "2": "Střední vrstva (E)",
+          "3": "Horní vrstva (U)"
+        },
+        "leftright": {
+          "1": "Levá vrstva (L)",
+          "2": "Střední vrstva (M)",
+          "3": "Pravá vrstva (R)"
+        },
+        "frontback": {
+          "1": "Zadní vrstva (B)",
+          "2": "Střední vrstva (S)",
+          "3": "Přední vrstva (F)"
+        }
       },
       "colorLabel": {
         "white": "Bílá",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Kopírovat odkaz pro sdílení",
       "copied": "Zkopírováno!"
+    },
+    "gif": {
+      "exportButton": "Exportovat GIF",
+      "dialogTitle": "Exportovat GIF",
+      "rangeLabel": "Rozsah",
+      "rangeStart": "Od",
+      "rangeEnd": "Do",
+      "rangeCaption": "Od kroku {start} do kroku {end} ({count} kroků)",
+      "speedLabel": "Rychlost",
+      "showOverlay": "Zobrazit překryv kroku na plátně",
+      "cancel": "Zrušit",
+      "generate": "Generovat GIF",
+      "generating": "Generování… {percent}%",
+      "errorGeneric": "Generování GIF selhalo. Zkuste to prosím znovu.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Vlastní skrytí",
+      "title": "Vlastní skrytí / zvýraznění",
+      "instructions": "Kliknutím na libovolnou nálepku přepínáte: viditelná → skrytá → zvýrazněná → viditelná.",
+      "summary": "{hidden} skrytých · {highlighted} zvýrazněných",
+      "legend": {
+        "hidden": "Skryté — nálepky ztmaveny",
+        "highlighted": "Zvýrazněné — tělo září ledově azurovou barvou"
+      },
+      "exit": "Hotovo",
+      "hideAll": "Skrýt vše",
+      "reset": "Obnovit vše",
+      "close": "Zavřít"
+    },
+    "notation": {
+      "button": "Průvodce notací",
+      "title": "Průvodce notací",
+      "facesHeading": "Otočení stěn",
+      "slicesHeading": "Otočení středových vrstev",
+      "label": {
+        "U": "Horní stěna (U)",
+        "D": "Dolní stěna (D)",
+        "R": "Pravá stěna (R)",
+        "L": "Levá stěna (L)",
+        "F": "Přední stěna (F)",
+        "B": "Zadní stěna (B)",
+        "M": "Středová vrstva M (následuje L)",
+        "E": "Středová vrstva E (následuje D)",
+        "S": "Středová vrstva S (následuje F)"
+      },
+      "legend": {
+        "letterTerm": "Písmeno",
+        "letterDesc": "vrstva, kterou otočit (výchozí je 90° po směru hodinových ručiček při pohledu na danou stěnu)",
+        "primeTerm": "'",
+        "primeDesc": "90° proti směru hodinových ručiček, např. R' je opakem R",
+        "doubleTerm": "2",
+        "doubleDesc": "180° otočení — na směru nezáleží"
+      },
+      "close": "Zavřít"
+    },
+    "methods": {
+      "sectionTitle": "Metody řešení",
+      "sectionCaption": "Procházejte běžné metody řešení krok za krokem — každá miniatura skryje vše kromě kostiček umístěných do daného bodu.",
+      "button": "Procházet metody",
+      "title": "Metody řešení",
+      "close": "Zavřít",
+      "viewLabel": {
+        "side": "strana",
+        "below": "zespodu"
+      },
+      "lbl": {
+        "name": "Vrstva po vrstvě (LBL)",
+        "description": "Klasická metoda pro začátečníky. Skládáte jednu vrstvu po druhé — spodní kříž, spodní rohy, prostřední hrany a nakonec poslední vrstvu.",
+        "stages": {
+          "cross": "Bílý kříž",
+          "firstLayer": "První vrstva",
+          "secondLayer": "Druhá vrstva",
+          "solved": "Poslední vrstva"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrichová)",
+        "description": "Nejrozšířenější metoda pro speedcubing. Cross vytvoří spodní kříž, F2L spáruje rohy s prostředními hranami, OLL orientuje poslední stěnu, PLL permutuje poslední vrstvu.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Metoda stavění bloků. Postavíte blok 1×2×3 vlevo, poté vpravo, vyřešíte rohy poslední vrstvy (CMLL) a nakonec dokončíte M-slice a posledních šest hran (LSE).",
+        "stages": {
+          "firstBlock": "První blok",
+          "secondBlock": "Druhý blok",
+          "cmll": "CMLL (Rohy poslední vrstvy)",
+          "lse": "LSE (Posledních šest hran)"
+        }
+      }
     }
   }
 }

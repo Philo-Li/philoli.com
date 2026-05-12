@@ -59,7 +59,8 @@
     "desc": "Riflessioni su arte, vita e creare cose — consegnate nella tua casella di posta."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Artista · Scrittore · Sviluppatore",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "impostazioni",
       "upload": "carica",
+      "preview": "anteprima",
       "browse": "sfoglia"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Analisi EPUB…",
+      "parsingPdf": "Analisi PDF — estrazione del testo e ricostruzione dei paragrafi…",
       "dropTitle": "Trascina un EPUB qui",
       "dropSubtitle": "o clicca per scegliere un file",
-      "noChapters": "Nessun capitolo leggibile trovato in questo EPUB."
+      "noChapters": "Nessun capitolo leggibile trovato in questo EPUB.",
+      "ocrRunning": "OCR delle pagine con {model}…",
+      "ocrPageOf": "Pagina {current} / {total}",
+      "ocrFailedCount": "{count} falliti",
+      "scannedPdfDetected": "{file} è un PDF scansionato ({pages} pagine) senza livello di testo.",
+      "modelLacksVision": "Il modello \"{model}\" del {provider} selezionato non accetta input di immagini, quindi non può eseguire l'OCR di pagine scansionate.",
+      "switchToVision": "Passa a:",
+      "runOcr": "Esegui OCR",
+      "providerHasNoVision": "{provider} non offre un modello con capacità visive in questo selettore. Apri le Impostazioni per cambiare provider (Gemini, OpenAI o Claude supportano tutti l'OCR)."
+    },
+    "preview": {
+      "pages": "{count} pagine",
+      "scannedTag": "scansionato (richiede OCR)",
+      "textLayerTag": "livello di testo rilevato",
+      "prev": "Prec",
+      "next": "Succ",
+      "pageOf": "Pagina {current} / {total}",
+      "pageList": "Pagine ({count})",
+      "pageLabel": "Pagina {n}",
+      "willOcrWith": "Eseguirà l'OCR di tutte le pagine con {model}.",
+      "willTranslate": "Testo estratto. Continua per scegliere i capitoli da tradurre.",
+      "startOcr": "Avvia OCR ({count} pagine)",
+      "continue": "Continua →",
+      "singlePage": {
+        "button": "Traduci questa pagina",
+        "tooltip": "Esegui OCR + traduzione solo di questa pagina per visualizzare l'anteprima della qualità prima di procedere con l'intero libro.",
+        "running": "OCR e traduzione della pagina in corso…",
+        "translating": "Traduzione della pagina in corso…",
+        "empty": "Nessun testo traducibile trovato in questa pagina.",
+        "resultHeader": "Pagina {page} — anteprima bilingue",
+        "needsVision": "Il modello attuale non può eseguire l'OCR di immagini. Passa prima a un modello con capacità visive."
+      }
     },
     "browse": {
       "chapters": "Capitoli",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Soluzione",
       "hint": "Esempio: U R U' R'",
-      "parseError": "Non riconosciuto: {token}"
+      "parseError": "Non riconosciuto: {token}",
+      "showOverlay": "Mostra formula sulla tela"
     },
     "playback": {
       "play": "Riproduci",
@@ -250,6 +285,11 @@
       "master": "Abilita",
       "hideColors": "Nascondi colori",
       "hideFaces": "Nascondi facce",
+      "hideLayers": {
+        "updown": "Nascondi livelli ↕",
+        "leftright": "Nascondi livelli ↔",
+        "frontback": "Nascondi livelli (fronte/retro)"
+      },
       "faceLabel": {
         "U": "Sopra",
         "R": "Destra",
@@ -257,6 +297,23 @@
         "D": "Sotto",
         "L": "Sinistra",
         "B": "Dietro"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Livello inferiore (D)",
+          "2": "Livello centrale (E)",
+          "3": "Livello superiore (U)"
+        },
+        "leftright": {
+          "1": "Livello sinistro (L)",
+          "2": "Livello centrale (M)",
+          "3": "Livello destro (R)"
+        },
+        "frontback": {
+          "1": "Livello posteriore (B)",
+          "2": "Livello centrale (S)",
+          "3": "Livello anteriore (F)"
+        }
       },
       "colorLabel": {
         "white": "Bianco",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Copia link di condivisione",
       "copied": "Copiato!"
+    },
+    "gif": {
+      "exportButton": "Esporta GIF",
+      "dialogTitle": "Esporta GIF",
+      "rangeLabel": "Intervallo",
+      "rangeStart": "Da",
+      "rangeEnd": "A",
+      "rangeCaption": "Dal passaggio {start} al passaggio {end} ({count} passaggi)",
+      "speedLabel": "Velocità",
+      "showOverlay": "Mostra sovrapposizione passaggi sulla tela",
+      "cancel": "Annulla",
+      "generate": "Genera GIF",
+      "generating": "Generazione in corso… {percent}%",
+      "errorGeneric": "Generazione GIF fallita. Riprova.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Nascondi personalizzato",
+      "title": "Nascondi / evidenzia personalizzato",
+      "instructions": "Clicca su un adesivo qualsiasi per scorrere: visibile → nascosto → evidenziato → visibile.",
+      "summary": "{hidden} nascosti · {highlighted} evidenziati",
+      "legend": {
+        "hidden": "Nascosto — adesivi oscurati",
+        "highlighted": "Evidenziato — il corpo brilla di ciano ghiaccio"
+      },
+      "exit": "Personalizzazione completata",
+      "hideAll": "Nascondi tutto",
+      "reset": "Ripristina tutto",
+      "close": "Chiudi"
+    },
+    "notation": {
+      "button": "Guida alla notazione",
+      "title": "Guida alla notazione",
+      "facesHeading": "Rotazioni delle facce",
+      "slicesHeading": "Rotazioni degli strati centrali",
+      "label": {
+        "U": "Faccia superiore (U)",
+        "D": "Faccia inferiore (D)",
+        "R": "Faccia destra (R)",
+        "L": "Faccia sinistra (L)",
+        "F": "Faccia frontale (F)",
+        "B": "Faccia posteriore (B)",
+        "M": "Strato centrale M (segue L)",
+        "E": "Strato centrale E (segue D)",
+        "S": "Strato centrale S (segue F)"
+      },
+      "legend": {
+        "letterTerm": "Lettera",
+        "letterDesc": "lo strato da ruotare (l'impostazione predefinita è 90° in senso orario, guardando la faccia)",
+        "primeTerm": "'",
+        "primeDesc": "90° in senso antiorario, es. R' inverte R",
+        "doubleTerm": "2",
+        "doubleDesc": "Rotazione di 180° — la direzione non conta"
+      },
+      "close": "Chiudi"
+    },
+    "methods": {
+      "sectionTitle": "Metodi di risoluzione",
+      "sectionCaption": "Esplora i metodi di risoluzione comuni passo dopo passo — ogni miniatura nasconde tutto tranne i cubetti posizionati fino a quel punto.",
+      "button": "Sfoglia i metodi",
+      "title": "Metodi di risoluzione",
+      "close": "Chiudi",
+      "viewLabel": {
+        "side": "lato",
+        "below": "dal basso"
+      },
+      "lbl": {
+        "name": "Layer-by-Layer (LBL)",
+        "description": "Metodo classico per principianti. Risolvi uno strato alla volta: croce inferiore, angoli inferiori, spigoli centrali e infine l'ultimo strato.",
+        "stages": {
+          "cross": "Croce bianca",
+          "firstLayer": "Primo strato",
+          "secondLayer": "Secondo strato",
+          "solved": "Ultimo strato"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Metodo di speedsolving più diffuso. La croce crea la croce inferiore, l'F2L accoppia angoli e spigoli centrali, l'OLL orienta l'ultima faccia, il PLL permuta l'ultimo strato.",
+        "stages": {
+          "cross": "Croce",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Metodo basato sulla costruzione a blocchi. Costruisci un blocco 1×2×3 a sinistra, poi a destra, risolvi gli angoli dell'ultimo strato (CMLL) e termina con lo strato M e gli ultimi sei spigoli (LSE).",
+        "stages": {
+          "firstBlock": "Primo blocco",
+          "secondBlock": "Secondo blocco",
+          "cmll": "CMLL (Angoli dell'ultimo strato)",
+          "lse": "LSE (Ultimi sei spigoli)"
+        }
+      }
     }
   }
 }

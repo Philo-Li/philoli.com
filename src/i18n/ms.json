@@ -59,7 +59,8 @@
     "desc": "Pemikiran tentang seni, kehidupan, dan membina sesuatu — dihantar ke peti masuk anda."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Artis · Penulis · Pembangun",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "tetapan",
       "upload": "muat naik",
+      "preview": "pratonton",
       "browse": "semak imbas"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Menghurai EPUB…",
+      "parsingPdf": "Menghurai PDF — mengekstrak teks dan menyusun semula perenggan…",
       "dropTitle": "Lepaskan EPUB di sini",
       "dropSubtitle": "atau klik untuk pilih fail",
-      "noChapters": "Tiada bab yang boleh dibaca ditemui dalam EPUB ini."
+      "noChapters": "Tiada bab yang boleh dibaca ditemui dalam EPUB ini.",
+      "ocrRunning": "Melakukan OCR pada halaman dengan {model}…",
+      "ocrPageOf": "Halaman {current} / {total}",
+      "ocrFailedCount": "{count} gagal",
+      "scannedPdfDetected": "{file} ialah PDF imbasan ({pages} halaman) tanpa lapisan teks.",
+      "modelLacksVision": "Model {provider} pilihan anda \"{model}\" tidak menerima input imej, jadi ia tidak boleh melakukan OCR pada halaman imbasan.",
+      "switchToVision": "Tukar kepada:",
+      "runOcr": "Jalankan OCR",
+      "providerHasNoVision": "{provider} tidak menawarkan model berkeupayaan penglihatan dalam pemilih ini. Buka Tetapan untuk menukar penyedia (Gemini, OpenAI, atau Claude semuanya menyokong OCR)."
+    },
+    "preview": {
+      "pages": "{count} halaman",
+      "scannedTag": "diimbas (perlukan OCR)",
+      "textLayerTag": "lapisan teks dikesan",
+      "prev": "Sebelumnya",
+      "next": "Seterusnya",
+      "pageOf": "Halaman {current} / {total}",
+      "pageList": "Halaman ({count})",
+      "pageLabel": "Halaman {n}",
+      "willOcrWith": "Akan melakukan OCR pada semua halaman dengan {model}.",
+      "willTranslate": "Teks diekstrak. Teruskan untuk memilih bab untuk diterjemahkan.",
+      "startOcr": "Mulakan OCR ({count} halaman)",
+      "continue": "Teruskan →",
+      "singlePage": {
+        "button": "Terjemah halaman ini",
+        "tooltip": "OCR + terjemah halaman ini sahaja supaya anda boleh pratonton kualiti sebelum meneruskan untuk keseluruhan buku.",
+        "running": "Melakukan OCR & menterjemah halaman ini…",
+        "translating": "Menterjemah halaman ini…",
+        "empty": "Tiada teks yang boleh diterjemahkan ditemui pada halaman ini.",
+        "resultHeader": "Halaman {page} — pratonton dwibahasa",
+        "needsVision": "Model semasa tidak boleh melakukan OCR pada imej. Tukar kepada model berkeupayaan penglihatan terlebih dahulu."
+      }
     },
     "browse": {
       "chapters": "Bab",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Penyelesaian",
       "hint": "Contoh: U R U' R'",
-      "parseError": "Tidak dikenali: {token}"
+      "parseError": "Tidak dikenali: {token}",
+      "showOverlay": "Tunjuk formula pada kanvas"
     },
     "playback": {
       "play": "Main",
@@ -250,6 +285,11 @@
       "master": "Aktifkan",
       "hideColors": "Sembunyikan warna",
       "hideFaces": "Sembunyikan muka",
+      "hideLayers": {
+        "updown": "Sembunyi lapisan ↕",
+        "leftright": "Sembunyi lapisan ↔",
+        "frontback": "Sembunyi lapisan (depan/belakang)"
+      },
       "faceLabel": {
         "U": "Atas",
         "R": "Kanan",
@@ -257,6 +297,23 @@
         "D": "Bawah",
         "L": "Kiri",
         "B": "Belakang"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Lapisan bawah (D)",
+          "2": "Lapisan tengah (E)",
+          "3": "Lapisan atas (U)"
+        },
+        "leftright": {
+          "1": "Lapisan kiri (L)",
+          "2": "Lapisan tengah (M)",
+          "3": "Lapisan kanan (R)"
+        },
+        "frontback": {
+          "1": "Lapisan belakang (B)",
+          "2": "Lapisan tengah (S)",
+          "3": "Lapisan depan (F)"
+        }
       },
       "colorLabel": {
         "white": "Putih",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Salin pautan kongsi",
       "copied": "Disalin!"
+    },
+    "gif": {
+      "exportButton": "Eksport GIF",
+      "dialogTitle": "Eksport GIF",
+      "rangeLabel": "Julat",
+      "rangeStart": "Dari",
+      "rangeEnd": "Hingga",
+      "rangeCaption": "Dari langkah {start} hingga langkah {end} ({count} langkah)",
+      "speedLabel": "Kelajuan",
+      "showOverlay": "Tunjuk tindihan langkah pada kanvas",
+      "cancel": "Batal",
+      "generate": "Jana GIF",
+      "generating": "Sedang menjana… {percent}%",
+      "errorGeneric": "Gagal menjana GIF. Sila cuba lagi.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Sembunyi tersuai",
+      "title": "Sembunyi / serlah tersuai",
+      "instructions": "Klik mana-mana pelekat untuk kitaran: kelihatan → tersembunyi → diserlahkan → kelihatan.",
+      "summary": "{hidden} tersembunyi · {highlighted} diserlahkan",
+      "legend": {
+        "hidden": "Disembunyikan — pelekat digelapkan",
+        "highlighted": "Diserlahkan — badan bercahaya biru ais"
+      },
+      "exit": "Selesai menyesuaikan",
+      "hideAll": "Sembunyikan semua",
+      "reset": "Tetapkan semula semua",
+      "close": "Tutup"
+    },
+    "notation": {
+      "button": "Panduan notasi",
+      "title": "Panduan notasi",
+      "facesHeading": "Pusingan muka",
+      "slicesHeading": "Pusingan lapisan",
+      "label": {
+        "U": "Muka atas (U)",
+        "D": "Muka bawah (D)",
+        "R": "Muka kanan (R)",
+        "L": "Muka kiri (L)",
+        "F": "Muka depan (F)",
+        "B": "Muka belakang (B)",
+        "M": "Lapisan tengah M (mengikut L)",
+        "E": "Lapisan tengah E (mengikut D)",
+        "S": "Lapisan tengah S (mengikut F)"
+      },
+      "legend": {
+        "letterTerm": "Huruf",
+        "letterDesc": "lapisan untuk dipusing (lalai ialah 90° ikut jam, dilihat dari arah muka tersebut)",
+        "primeTerm": "'",
+        "primeDesc": "90° lawan jam, contohnya R' menyongsangkan R",
+        "doubleTerm": "2",
+        "doubleDesc": "Pusingan 180° — arah tidak penting"
+      },
+      "close": "Tutup"
+    },
+    "methods": {
+      "sectionTitle": "Kaedah penyelesaian",
+      "sectionCaption": "Terokai kaedah penyelesaian biasa langkah demi langkah — setiap lakaran kecil menyembunyikan segala-galanya kecuali kiub yang diletakkan sehingga tahap itu.",
+      "button": "Semak imbas kaedah",
+      "title": "Kaedah penyelesaian",
+      "close": "Tutup",
+      "viewLabel": {
+        "side": "sisi",
+        "below": "dari bawah"
+      },
+      "lbl": {
+        "name": "Lapis-demi-Lapis (LBL)",
+        "description": "Kaedah pemula klasik. Selesaikan satu lapisan pada satu masa — palang bawah, penjuru bawah, tepi tengah, kemudian lapisan terakhir.",
+        "stages": {
+          "cross": "Palang putih",
+          "firstLayer": "Lapisan pertama",
+          "secondLayer": "Lapisan kedua",
+          "solved": "Lapisan terakhir"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Kaedah penyelesaian pantas arus perdana. Cross membina palang bawah, F2L memadankan penjuru dengan tepi tengah, OLL mengorientasikan muka terakhir, PLL menyusun atur lapisan terakhir.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Kaedah binaan blok. Bina blok 1×2×3 di sebelah kiri, kemudian di sebelah kanan, selesaikan penjuru lapisan terakhir (CMLL), kemudian selesaikan dengan M-slice dan enam tepi terakhir (LSE).",
+        "stages": {
+          "firstBlock": "Blok Pertama",
+          "secondBlock": "Blok Kedua",
+          "cmll": "CMLL (Penjuru Lapisan Terakhir)",
+          "lse": "LSE (Enam Tepi Terakhir)"
+        }
+      }
     }
   }
 }

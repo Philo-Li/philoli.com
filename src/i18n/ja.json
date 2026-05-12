@@ -59,7 +59,8 @@
     "desc": "アート、人生、そしてものづくりについての思考を、あなたのインボックスへお届けします。"
   },
   "blogPage": {
-    "title": "ブログ"
+    "title": "ブログ",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "アーティスト · ライター · デベロッパー",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "設定",
       "upload": "アップロード",
+      "preview": "プレビュー",
       "browse": "ファイルを選択"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "EPUBを解析中…",
+      "parsingPdf": "PDFを解析中 — テキストを抽出して段落を再構築しています…",
       "dropTitle": "ここに EPUB をドロップ",
       "dropSubtitle": "またはクリックしてファイルを選択",
-      "noChapters": "この EPUB 内に読み取り可能な章が見つかりませんでした。"
+      "noChapters": "この EPUB 内に読み取り可能な章が見つかりませんでした。",
+      "ocrRunning": "{model}でページをOCR処理中…",
+      "ocrPageOf": "{current} / {total} ページ",
+      "ocrFailedCount": "{count} 件の失敗",
+      "scannedPdfDetected": "{file} はテキストレイヤーのないスキャン済みPDF（{pages} ページ）です。",
+      "modelLacksVision": "選択した {provider} のモデル「{model}」は画像入力を受け付けないため、スキャンされたページをOCR処理できません。",
+      "switchToVision": "切り替え先：",
+      "runOcr": "OCRを実行",
+      "providerHasNoVision": "{provider} は、この選択肢の中に画像認識対応モデルを提供していません。設定を開いてプロバイダーを切り替えてください（Gemini、OpenAI、ClaudeはすべてOCRに対応しています）。"
+    },
+    "preview": {
+      "pages": "{count} ページ",
+      "scannedTag": "スキャン済み（OCRが必要）",
+      "textLayerTag": "テキストレイヤーを検出済み",
+      "prev": "前へ",
+      "next": "次へ",
+      "pageOf": "{current} / {total} ページ",
+      "pageList": "ページ数（{count}）",
+      "pageLabel": "{n} ページ",
+      "willOcrWith": "{model} を使用して全ページをOCR処理します。",
+      "willTranslate": "テキストを抽出しました。続けて翻訳する章を選択してください。",
+      "startOcr": "OCRを開始（{count} ページ）",
+      "continue": "続ける →",
+      "singlePage": {
+        "button": "このページを翻訳",
+        "tooltip": "本全体を翻訳する前に、OCRと翻訳の品質を確認できるよう、このページのみを処理します。",
+        "running": "このページをOCR・翻訳中…",
+        "translating": "このページを翻訳中…",
+        "empty": "このページには翻訳可能なテキストが見つかりませんでした。",
+        "resultHeader": "{page} ページ — バイリンガルプレビュー",
+        "needsVision": "現在のモデルは画像をOCR処理できません。先に画像認識対応モデルへ切り替えてください。"
+      }
     },
     "browse": {
       "chapters": "章",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "手順",
       "hint": "例: U R U' R'",
-      "parseError": "認識できません: {token}"
+      "parseError": "認識できません: {token}",
+      "showOverlay": "キャンバスに数式を表示"
     },
     "playback": {
       "play": "再生",
@@ -250,6 +285,11 @@
       "master": "有効にする",
       "hideColors": "色を非表示",
       "hideFaces": "面を非表示",
+      "hideLayers": {
+        "updown": "レイヤーを隠す ↕",
+        "leftright": "レイヤーを隠す ↔",
+        "frontback": "レイヤーを隠す（前後）"
+      },
       "faceLabel": {
         "U": "上",
         "R": "右",
@@ -257,6 +297,23 @@
         "D": "下",
         "L": "左",
         "B": "後"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "下層 (D)",
+          "2": "中層 (E)",
+          "3": "上層 (U)"
+        },
+        "leftright": {
+          "1": "左層 (L)",
+          "2": "中層 (M)",
+          "3": "右層 (R)"
+        },
+        "frontback": {
+          "1": "背面層 (B)",
+          "2": "中層 (S)",
+          "3": "前面層 (F)"
+        }
       },
       "colorLabel": {
         "white": "白",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "共有リンクをコピー",
       "copied": "コピーしました！"
+    },
+    "gif": {
+      "exportButton": "GIFを書き出し",
+      "dialogTitle": "GIFを書き出し",
+      "rangeLabel": "範囲",
+      "rangeStart": "開始",
+      "rangeEnd": "終了",
+      "rangeCaption": "ステップ {start} から {end} まで ({count} ステップ)",
+      "speedLabel": "速度",
+      "showOverlay": "キャンバスにステップオーバーレイを表示",
+      "cancel": "キャンセル",
+      "generate": "GIFを生成",
+      "generating": "生成中… {percent}%",
+      "errorGeneric": "GIFの生成に失敗しました。もう一度お試しください。",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "カスタム非表示",
+      "title": "カスタム非表示 / ハイライト",
+      "instructions": "ステッカーをクリックして切り替え：表示 → 非表示 → ハイライト → 表示。",
+      "summary": "{hidden} 非表示 · {highlighted} ハイライト",
+      "legend": {
+        "hidden": "非表示 — ステッカーを暗くする",
+        "highlighted": "ハイライト — 本体がアイスシアンに光る"
+      },
+      "exit": "カスタマイズ完了",
+      "hideAll": "すべて非表示",
+      "reset": "すべてリセット",
+      "close": "閉じる"
+    },
+    "notation": {
+      "button": "表記ガイド",
+      "title": "表記ガイド",
+      "facesHeading": "面の回転",
+      "slicesHeading": "スライスの回転",
+      "label": {
+        "U": "上面 (U)",
+        "D": "下面 (D)",
+        "R": "右面 (R)",
+        "L": "左面 (L)",
+        "F": "前面 (F)",
+        "B": "背面 (B)",
+        "M": "ミドルスライス M (Lに準ずる)",
+        "E": "ミドルスライス E (Dに準ずる)",
+        "S": "ミドルスライス S (Fに準ずる)"
+      },
+      "legend": {
+        "letterTerm": "文字",
+        "letterDesc": "回転させる層 (デフォルトは時計回りに90°、その面を正面から見た場合)",
+        "primeTerm": "'",
+        "primeDesc": "反時計回りに90°、例：R'はRの逆回転",
+        "doubleTerm": "2",
+        "doubleDesc": "180°回転 — 方向は問わない"
+      },
+      "close": "閉じる"
+    },
+    "methods": {
+      "sectionTitle": "解法",
+      "sectionCaption": "一般的な解法を段階的に進める — 各サムネイルは、その時点までに配置されたキューブ以外をすべて隠す。",
+      "button": "解法を閲覧",
+      "title": "解法",
+      "close": "閉じる",
+      "viewLabel": {
+        "side": "サイド",
+        "below": "下から"
+      },
+      "lbl": {
+        "name": "Layer-by-Layer (LBL)",
+        "description": "初心者向けの定番解法。一段ずつ揃えていきます。底面の十字、底面のコーナー、中段のエッジ、最後に上面の順です。",
+        "stages": {
+          "cross": "白十字",
+          "firstLayer": "第一層",
+          "secondLayer": "第二層",
+          "solved": "最終層"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "スピードキューブの主流解法。Crossで底面の十字を作り、F2Lでコーナーと中段エッジをペアにし、OLLで上面を揃え、PLLで最終層を配置します。",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "ブロック構築型解法。左側に1×2×3ブロックを作り、次に右側を作り、最終層のコーナー（CMLL）を揃え、Mスライスと残り6つのエッジ（LSE）で完成させます。",
+        "stages": {
+          "firstBlock": "First Block",
+          "secondBlock": "Second Block",
+          "cmll": "CMLL (Corners of Last Layer)",
+          "lse": "LSE (Last Six Edges)"
+        }
+      }
     }
   }
 }

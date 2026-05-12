@@ -59,7 +59,8 @@
     "desc": "Tankar om konst, livet och att skapa saker — levererade till din inkorg."
   },
   "blogPage": {
-    "title": "Blogg"
+    "title": "Blogg",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Konstnär · Skribent · Utvecklare",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "inställningar",
       "upload": "ladda upp",
+      "preview": "förhandsgranska",
       "browse": "bläddra"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Tolkar EPUB…",
+      "parsingPdf": "Tolkar PDF — extraherar text och återskapar stycken…",
       "dropTitle": "Släpp en EPUB här",
       "dropSubtitle": "eller klicka för att välja en fil",
-      "noChapters": "Inga läsbara kapitel hittades i denna EPUB."
+      "noChapters": "Inga läsbara kapitel hittades i denna EPUB.",
+      "ocrRunning": "OCR-behandlar sidor med {model}…",
+      "ocrPageOf": "Sida {current} / {total}",
+      "ocrFailedCount": "{count} misslyckades",
+      "scannedPdfDetected": "{file} är en skannad PDF ({pages} sidor) utan textlager.",
+      "modelLacksVision": "Din valda {provider}-modell \"{model}\" accepterar inte bildinmatning, så den kan inte OCR-behandla skannade sidor.",
+      "switchToVision": "Växla till:",
+      "runOcr": "Kör OCR",
+      "providerHasNoVision": "{provider} erbjuder ingen modell med bildigenkänning i detta val. Öppna Inställningar för att byta leverantör (Gemini, OpenAI eller Claude har alla stöd för OCR)."
+    },
+    "preview": {
+      "pages": "{count} sidor",
+      "scannedTag": "skannad (behöver OCR)",
+      "textLayerTag": "textlager hittades",
+      "prev": "Föregående",
+      "next": "Nästa",
+      "pageOf": "Sida {current} / {total}",
+      "pageList": "Sidor ({count})",
+      "pageLabel": "Sida {n}",
+      "willOcrWith": "Kommer att OCR-behandla alla sidor med {model}.",
+      "willTranslate": "Text extraherad. Fortsätt för att välja kapitel att översätta.",
+      "startOcr": "Starta OCR ({count} sidor)",
+      "continue": "Fortsätt →",
+      "singlePage": {
+        "button": "Översätt denna sida",
+        "tooltip": "OCR-behandla + översätt bara denna sida så att du kan förhandsgranska kvaliteten innan du bestämmer dig för hela boken.",
+        "running": "OCR-behandlar & översätter denna sida…",
+        "translating": "Översätter denna sida…",
+        "empty": "Ingen översättningsbar text hittades på denna sida.",
+        "resultHeader": "Sida {page} — tvåspråkig förhandsgranskning",
+        "needsVision": "Den nuvarande modellen kan inte OCR-behandla bilder. Växla till en modell med bildigenkänning först."
+      }
     },
     "browse": {
       "chapters": "Kapitel",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Lösning",
       "hint": "Exempel: U R U' R'",
-      "parseError": "Okänd: {token}"
+      "parseError": "Okänd: {token}",
+      "showOverlay": "Visa formel på arbetsytan"
     },
     "playback": {
       "play": "Spela",
@@ -250,6 +285,11 @@
       "master": "Aktivera",
       "hideColors": "Dölj färger",
       "hideFaces": "Dölj sidor",
+      "hideLayers": {
+        "updown": "Dölj lager ↕",
+        "leftright": "Dölj lager ↔",
+        "frontback": "Dölj lager (fram/bak)"
+      },
       "faceLabel": {
         "U": "Upp",
         "R": "Höger",
@@ -257,6 +297,23 @@
         "D": "Ner",
         "L": "Vänster",
         "B": "Bak"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Bottenlager (D)",
+          "2": "Mellanlager (E)",
+          "3": "Topplager (U)"
+        },
+        "leftright": {
+          "1": "Vänsterlager (L)",
+          "2": "Mellanlager (M)",
+          "3": "Högerlager (R)"
+        },
+        "frontback": {
+          "1": "Bakre lager (B)",
+          "2": "Mellanlager (S)",
+          "3": "Främre lager (F)"
+        }
       },
       "colorLabel": {
         "white": "Vit",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Kopiera delningslänk",
       "copied": "Kopierad!"
+    },
+    "gif": {
+      "exportButton": "Exportera GIF",
+      "dialogTitle": "Exportera GIF",
+      "rangeLabel": "Intervall",
+      "rangeStart": "Från",
+      "rangeEnd": "Till",
+      "rangeCaption": "Från steg {start} till steg {end} ({count} steg)",
+      "speedLabel": "Hastighet",
+      "showOverlay": "Visa stegöverlägg på arbetsytan",
+      "cancel": "Avbryt",
+      "generate": "Generera GIF",
+      "generating": "Genererar… {percent}%",
+      "errorGeneric": "Misslyckades med att generera GIF. Försök igen.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Anpassad döljning",
+      "title": "Anpassad döljning / markering",
+      "instructions": "Klicka på valfri klisterlapp för att växla: synlig → dold → markerad → synlig.",
+      "summary": "{hidden} dolda · {highlighted} markerade",
+      "legend": {
+        "hidden": "Dold — klistermärken mörklagda",
+        "highlighted": "Markerad — kroppen lyser iscyan"
+      },
+      "exit": "Klar med anpassning",
+      "hideAll": "Dölj alla",
+      "reset": "Återställ alla",
+      "close": "Stäng"
+    },
+    "notation": {
+      "button": "Notationsguide",
+      "title": "Notationsguide",
+      "facesHeading": "Sidovridningar",
+      "slicesHeading": "Skivvridningar",
+      "label": {
+        "U": "Övre sida (U)",
+        "D": "Undre sida (D)",
+        "R": "Höger sida (R)",
+        "L": "Vänster sida (L)",
+        "F": "Framsida (F)",
+        "B": "Baksida (B)",
+        "M": "Mittskiva M (följer L)",
+        "E": "Mittskiva E (följer D)",
+        "S": "Mittskiva S (följer F)"
+      },
+      "legend": {
+        "letterTerm": "Bokstav",
+        "letterDesc": "lagret som ska vridas (standard är 90° medurs, sett från sidan)",
+        "primeTerm": "'",
+        "primeDesc": "90° moturs, t.ex. R' vänder på R",
+        "doubleTerm": "2",
+        "doubleDesc": "180°-vridning — riktningen spelar ingen roll"
+      },
+      "close": "Stäng"
+    },
+    "methods": {
+      "sectionTitle": "Lösningsmetoder",
+      "sectionCaption": "Gå igenom vanliga lösningsmetoder steg för steg — varje miniatyrbild döljer allt utom de bitar som placerats vid det stadiet.",
+      "button": "Bläddra bland metoder",
+      "title": "Lösningsmetoder",
+      "close": "Stäng",
+      "viewLabel": {
+        "side": "sida",
+        "below": "underifrån"
+      },
+      "lbl": {
+        "name": "Lager-för-lager (LBL)",
+        "description": "Klassisk nybörjarmetod. Lös ett lager i taget — bottenkors, bottenhörn, mittkanter, sedan sista lagret.",
+        "stages": {
+          "cross": "Vitt kors",
+          "firstLayer": "Första lagret",
+          "secondLayer": "Andra lagret",
+          "solved": "Sista lagret"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Den vanligaste metoden för speedsolving. Cross bygger bottenkorset, F2L parar ihop hörn med mittkanter, OLL orienterar den sista sidan, PLL permuterar det sista lagret.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Blockbyggnadsmetod. Bygg ett 1×2×3-block till vänster, sedan till höger, lös hörnen i sista lagret (CMLL), och avsluta med M-skiktet och de sista sex kanterna (LSE).",
+        "stages": {
+          "firstBlock": "Första blocket",
+          "secondBlock": "Andra blocket",
+          "cmll": "CMLL (Corners of Last Layer)",
+          "lse": "LSE (Last Six Edges)"
+        }
+      }
     }
   }
 }

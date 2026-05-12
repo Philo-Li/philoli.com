@@ -59,7 +59,8 @@
     "desc": "Những suy nghĩ về nghệ thuật, cuộc sống và sáng tạo — gửi thẳng đến hộp thư của bạn."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Nghệ sĩ · Nhà văn · Lập trình viên",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "cài đặt",
       "upload": "tải lên",
+      "preview": "xem trước",
       "browse": "duyệt tệp"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "Đang phân tích EPUB…",
+      "parsingPdf": "Đang phân tích PDF — trích xuất văn bản và tái tạo đoạn văn…",
       "dropTitle": "Thả tệp EPUB vào đây",
       "dropSubtitle": "hoặc nhấp để chọn tệp",
-      "noChapters": "Không tìm thấy chương nào có thể đọc được trong tệp EPUB này."
+      "noChapters": "Không tìm thấy chương nào có thể đọc được trong tệp EPUB này.",
+      "ocrRunning": "Đang OCR các trang bằng {model}…",
+      "ocrPageOf": "Trang {current} / {total}",
+      "ocrFailedCount": "{count} thất bại",
+      "scannedPdfDetected": "{file} là tệp PDF dạng quét ({pages} trang) không có lớp văn bản.",
+      "modelLacksVision": "Mô hình {provider} \"{model}\" bạn chọn không hỗ trợ đầu vào là hình ảnh, vì vậy nó không thể OCR các trang dạng quét.",
+      "switchToVision": "Chuyển sang:",
+      "runOcr": "Chạy OCR",
+      "providerHasNoVision": "{provider} không cung cấp mô hình có khả năng xử lý hình ảnh trong bộ chọn này. Mở Cài đặt để chuyển đổi nhà cung cấp (Gemini, OpenAI, hoặc Claude đều hỗ trợ OCR)."
+    },
+    "preview": {
+      "pages": "{count} trang",
+      "scannedTag": "dạng quét (cần OCR)",
+      "textLayerTag": "đã phát hiện lớp văn bản",
+      "prev": "Trước",
+      "next": "Tiếp",
+      "pageOf": "Trang {current} / {total}",
+      "pageList": "Các trang ({count})",
+      "pageLabel": "Trang {n}",
+      "willOcrWith": "Sẽ OCR tất cả các trang bằng {model}.",
+      "willTranslate": "Đã trích xuất văn bản. Tiếp tục chọn chương để dịch.",
+      "startOcr": "Bắt đầu OCR ({count} trang)",
+      "continue": "Tiếp tục →",
+      "singlePage": {
+        "button": "Dịch trang này",
+        "tooltip": "OCR + dịch riêng trang này để bạn có thể xem trước chất lượng trước khi thực hiện cho toàn bộ cuốn sách.",
+        "running": "Đang OCR & dịch trang này…",
+        "translating": "Đang dịch trang này…",
+        "empty": "Không tìm thấy văn bản có thể dịch trên trang này.",
+        "resultHeader": "Trang {page} — xem trước song ngữ",
+        "needsVision": "Mô hình hiện tại không thể OCR hình ảnh. Hãy chuyển sang mô hình có khả năng xử lý hình ảnh trước."
+      }
     },
     "browse": {
       "chapters": "Chương",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Lời giải",
       "hint": "Ví dụ: U R U' R'",
-      "parseError": "Không nhận dạng được: {token}"
+      "parseError": "Không nhận dạng được: {token}",
+      "showOverlay": "Hiển thị công thức trên khung vẽ"
     },
     "playback": {
       "play": "Phát",
@@ -250,6 +285,11 @@
       "master": "Bật",
       "hideColors": "Ẩn màu sắc",
       "hideFaces": "Ẩn các mặt",
+      "hideLayers": {
+        "updown": "Ẩn các lớp ↕",
+        "leftright": "Ẩn các lớp ↔",
+        "frontback": "Ẩn các lớp (trước/sau)"
+      },
       "faceLabel": {
         "U": "Trên",
         "R": "Phải",
@@ -257,6 +297,23 @@
         "D": "Dưới",
         "L": "Trái",
         "B": "Sau"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Lớp dưới (D)",
+          "2": "Lớp giữa (E)",
+          "3": "Lớp trên (U)"
+        },
+        "leftright": {
+          "1": "Lớp trái (L)",
+          "2": "Lớp giữa (M)",
+          "3": "Lớp phải (R)"
+        },
+        "frontback": {
+          "1": "Lớp sau (B)",
+          "2": "Lớp giữa (S)",
+          "3": "Lớp trước (F)"
+        }
       },
       "colorLabel": {
         "white": "Trắng",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Sao chép liên kết chia sẻ",
       "copied": "Đã sao chép!"
+    },
+    "gif": {
+      "exportButton": "Xuất GIF",
+      "dialogTitle": "Xuất GIF",
+      "rangeLabel": "Phạm vi",
+      "rangeStart": "Từ",
+      "rangeEnd": "Đến",
+      "rangeCaption": "Từ bước {start} đến bước {end} ({count} bước)",
+      "speedLabel": "Tốc độ",
+      "showOverlay": "Hiển thị lớp phủ bước trên khung vẽ",
+      "cancel": "Hủy",
+      "generate": "Tạo GIF",
+      "generating": "Đang tạo… {percent}%",
+      "errorGeneric": "Không thể tạo GIF. Vui lòng thử lại.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Ẩn tùy chỉnh",
+      "title": "Ẩn / làm nổi bật tùy chỉnh",
+      "instructions": "Nhấp vào bất kỳ miếng dán nào để chuyển đổi: hiển thị → ẩn → làm nổi bật → hiển thị.",
+      "summary": "{hidden} ẩn · {highlighted} được làm nổi bật",
+      "legend": {
+        "hidden": "Đã ẩn — các miếng dán tối đi",
+        "highlighted": "Đã làm nổi bật — thân khối phát sáng màu xanh băng"
+      },
+      "exit": "Hoàn tất tùy chỉnh",
+      "hideAll": "Ẩn tất cả",
+      "reset": "Đặt lại tất cả",
+      "close": "Đóng"
+    },
+    "notation": {
+      "button": "Hướng dẫn ký hiệu",
+      "title": "Hướng dẫn ký hiệu",
+      "facesHeading": "Xoay mặt",
+      "slicesHeading": "Xoay lớp giữa",
+      "label": {
+        "U": "Mặt trên (U)",
+        "D": "Mặt dưới (D)",
+        "R": "Mặt phải (R)",
+        "L": "Mặt trái (L)",
+        "F": "Mặt trước (F)",
+        "B": "Mặt sau (B)",
+        "M": "Lớp giữa M (theo chiều L)",
+        "E": "Lớp giữa E (theo chiều D)",
+        "S": "Lớp giữa S (theo chiều F)"
+      },
+      "legend": {
+        "letterTerm": "Chữ cái",
+        "letterDesc": "lớp cần xoay (mặc định là 90° theo chiều kim đồng hồ, nhìn từ phía mặt đó)",
+        "primeTerm": "'",
+        "primeDesc": "90° ngược chiều kim đồng hồ, ví dụ R' đảo ngược R",
+        "doubleTerm": "2",
+        "doubleDesc": "Xoay 180° — chiều xoay không quan trọng"
+      },
+      "close": "Đóng"
+    },
+    "methods": {
+      "sectionTitle": "Các phương pháp giải",
+      "sectionCaption": "Xem từng bước các phương pháp giải phổ biến — mỗi hình thu nhỏ sẽ ẩn mọi thứ ngoại trừ các khối nhỏ được đặt vào tại thời điểm đó.",
+      "button": "Duyệt phương pháp",
+      "title": "Các phương pháp giải",
+      "close": "Đóng",
+      "viewLabel": {
+        "side": "cạnh",
+        "below": "từ dưới lên"
+      },
+      "lbl": {
+        "name": "Từng lớp một (LBL)",
+        "description": "Phương pháp cơ bản cổ điển. Giải từng lớp một — dấu cộng mặt đáy, các góc mặt đáy, các cạnh tầng giữa, sau đó là lớp cuối cùng.",
+        "stages": {
+          "cross": "Dấu cộng trắng",
+          "firstLayer": "Lớp đầu tiên",
+          "secondLayer": "Lớp thứ hai",
+          "solved": "Lớp cuối cùng"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Phương pháp giải nhanh phổ biến nhất. Cross tạo dấu cộng mặt đáy, F2L ghép góc với các cạnh tầng giữa, OLL định hướng mặt cuối cùng, PLL hoán vị lớp cuối cùng.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Phương pháp xây khối. Xây khối 1×2×3 ở bên trái, sau đó bên phải, giải các góc lớp cuối cùng (CMLL), rồi hoàn thiện với lát cắt M và sáu cạnh cuối cùng (LSE).",
+        "stages": {
+          "firstBlock": "Khối đầu tiên",
+          "secondBlock": "Khối thứ hai",
+          "cmll": "CMLL (Các góc của lớp cuối cùng)",
+          "lse": "LSE (Sáu cạnh cuối cùng)"
+        }
+      }
     }
   }
 }

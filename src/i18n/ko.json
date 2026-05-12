@@ -59,7 +59,8 @@
     "desc": "예술, 삶, 그리고 무언가를 만드는 것에 대한 생각 — 편지함으로 전해드립니다."
   },
   "blogPage": {
-    "title": "블로그"
+    "title": "블로그",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "아티스트 · 작가 · 개발자",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "설정",
       "upload": "업로드",
+      "preview": "미리보기",
       "browse": "찾아보기"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "EPUB 분석 중…",
+      "parsingPdf": "PDF 파싱 중 — 텍스트 추출 및 문단 재구성 중…",
       "dropTitle": "여기에 EPUB 파일을 드롭하세요",
       "dropSubtitle": "또는 클릭하여 파일 선택",
-      "noChapters": "이 EPUB에서 읽을 수 있는 챕터를 찾을 수 없습니다."
+      "noChapters": "이 EPUB에서 읽을 수 있는 챕터를 찾을 수 없습니다.",
+      "ocrRunning": "{model}(으)로 페이지 OCR 처리 중…",
+      "ocrPageOf": "{current} / {total} 페이지",
+      "ocrFailedCount": "{count}개 실패",
+      "scannedPdfDetected": "{file}은(는) 텍스트 레이어가 없는 스캔된 PDF({pages}페이지)입니다.",
+      "modelLacksVision": "선택하신 {provider} 모델 \"{model}\"은(는) 이미지 입력을 지원하지 않아 스캔된 페이지를 OCR 처리할 수 없습니다.",
+      "switchToVision": "전환 대상:",
+      "runOcr": "OCR 실행",
+      "providerHasNoVision": "{provider}은(는) 이 선택기에서 시각 인식 모델을 제공하지 않습니다. 설정에서 제공자를 변경하세요(Gemini, OpenAI, Claude 모두 OCR을 지원합니다)."
+    },
+    "preview": {
+      "pages": "{count} 페이지",
+      "scannedTag": "스캔됨 (OCR 필요)",
+      "textLayerTag": "텍스트 레이어 감지됨",
+      "prev": "이전",
+      "next": "다음",
+      "pageOf": "{current} / {total} 페이지",
+      "pageList": "페이지 ({count})",
+      "pageLabel": "{n} 페이지",
+      "willOcrWith": "{model}(으)로 모든 페이지를 OCR 처리합니다.",
+      "willTranslate": "텍스트가 추출되었습니다. 계속해서 번역할 챕터를 선택하세요.",
+      "startOcr": "OCR 시작 ({count} 페이지)",
+      "continue": "계속 →",
+      "singlePage": {
+        "button": "이 페이지 번역",
+        "tooltip": "전체 도서 번역 전 품질을 미리 확인할 수 있도록 이 페이지만 OCR 및 번역합니다.",
+        "running": "이 페이지 OCR 및 번역 중…",
+        "translating": "이 페이지 번역 중…",
+        "empty": "이 페이지에서 번역 가능한 텍스트를 찾을 수 없습니다.",
+        "resultHeader": "{page} 페이지 — 이중 언어 미리보기",
+        "needsVision": "현재 모델은 이미지 OCR을 수행할 수 없습니다. 먼저 시각 인식 모델로 전환하세요."
+      }
     },
     "browse": {
       "chapters": "챕터",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "해법",
       "hint": "예시: U R U' R'",
-      "parseError": "인식되지 않음: {token}"
+      "parseError": "인식되지 않음: {token}",
+      "showOverlay": "캔버스에 공식 표시"
     },
     "playback": {
       "play": "재생",
@@ -250,6 +285,11 @@
       "master": "활성화",
       "hideColors": "색상 숨기기",
       "hideFaces": "면 숨기기",
+      "hideLayers": {
+        "updown": "레이어 숨기기 ↕",
+        "leftright": "레이어 숨기기 ↔",
+        "frontback": "레이어 숨기기 (앞/뒤)"
+      },
       "faceLabel": {
         "U": "위",
         "R": "오른쪽",
@@ -257,6 +297,23 @@
         "D": "아래",
         "L": "왼쪽",
         "B": "뒤"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "하단 레이어 (D)",
+          "2": "중간 레이어 (E)",
+          "3": "상단 레이어 (U)"
+        },
+        "leftright": {
+          "1": "왼쪽 레이어 (L)",
+          "2": "중간 레이어 (M)",
+          "3": "오른쪽 레이어 (R)"
+        },
+        "frontback": {
+          "1": "뒤쪽 레이어 (B)",
+          "2": "중간 레이어 (S)",
+          "3": "앞쪽 레이어 (F)"
+        }
       },
       "colorLabel": {
         "white": "흰색",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "공유 링크 복사",
       "copied": "복사되었습니다!"
+    },
+    "gif": {
+      "exportButton": "GIF 내보내기",
+      "dialogTitle": "GIF 내보내기",
+      "rangeLabel": "범위",
+      "rangeStart": "시작",
+      "rangeEnd": "끝",
+      "rangeCaption": "{start} 단계부터 {end} 단계까지 ({count} 단계)",
+      "speedLabel": "속도",
+      "showOverlay": "캔버스에 단계 오버레이 표시",
+      "cancel": "취소",
+      "generate": "GIF 생성",
+      "generating": "생성 중… {percent}%",
+      "errorGeneric": "GIF 생성에 실패했습니다. 다시 시도해 주세요.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "사용자 지정 숨기기",
+      "title": "사용자 지정 숨기기 / 강조",
+      "instructions": "스티커를 클릭하여 순환: 표시 → 숨김 → 강조 → 표시.",
+      "summary": "{hidden} 숨김 · {highlighted} 강조",
+      "legend": {
+        "hidden": "숨김 — 스티커 어둡게 표시",
+        "highlighted": "강조 — 본체 아이스 시안 색상으로 발광"
+      },
+      "exit": "커스터마이징 완료",
+      "hideAll": "모두 숨기기",
+      "reset": "모두 재설정",
+      "close": "닫기"
+    },
+    "notation": {
+      "button": "표기법 가이드",
+      "title": "표기법 가이드",
+      "facesHeading": "면 회전",
+      "slicesHeading": "슬라이스 회전",
+      "label": {
+        "U": "윗면 (U)",
+        "D": "아랫면 (D)",
+        "R": "오른쪽 면 (R)",
+        "L": "왼쪽 면 (L)",
+        "F": "앞면 (F)",
+        "B": "뒷면 (B)",
+        "M": "중간 슬라이스 M (L 방향과 동일)",
+        "E": "중간 슬라이스 E (D 방향과 동일)",
+        "S": "중간 슬라이스 S (F 방향과 동일)"
+      },
+      "legend": {
+        "letterTerm": "문자",
+        "letterDesc": "회전할 레이어 (기본값은 해당 면을 바라볼 때 시계 방향 90°)",
+        "primeTerm": "'",
+        "primeDesc": "반시계 방향 90°, 예: R'은 R의 반대 방향",
+        "doubleTerm": "2",
+        "doubleDesc": "180° 회전 — 방향은 상관없음"
+      },
+      "close": "닫기"
+    },
+    "methods": {
+      "sectionTitle": "해법",
+      "sectionCaption": "일반적인 해법을 단계별로 살펴보기 — 각 썸네일은 해당 단계까지 배치된 조각을 제외한 나머지를 숨깁니다.",
+      "button": "해법 둘러보기",
+      "title": "해법",
+      "close": "닫기",
+      "viewLabel": {
+        "side": "측면",
+        "below": "아래에서부터"
+      },
+      "lbl": {
+        "name": "Layer-by-Layer (LBL)",
+        "description": "고전적인 초보자용 해법입니다. 한 번에 한 층씩 맞춥니다. 바닥 십자가, 바닥 모서리, 중간 엣지, 마지막으로 마지막 층 순서입니다.",
+        "stages": {
+          "cross": "흰색 십자가",
+          "firstLayer": "첫 번째 층",
+          "secondLayer": "두 번째 층",
+          "solved": "마지막 층"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "가장 대중적인 스피드솔빙 해법입니다. Cross로 바닥 십자가를 만들고, F2L로 모서리와 중간 엣지를 쌍으로 맞추며, OLL로 마지막 면의 방향을 잡고, PLL로 마지막 층의 위치를 맞춥니다.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "블록 빌딩 해법입니다. 왼쪽과 오른쪽에 1×2×3 블록을 만들고, 마지막 층 모서리(CMLL)를 맞춘 뒤, M-슬라이스와 마지막 6개 엣지(LSE)로 마무리합니다.",
+        "stages": {
+          "firstBlock": "첫 번째 블록",
+          "secondBlock": "두 번째 블록",
+          "cmll": "CMLL (마지막 층 모서리)",
+          "lse": "LSE (마지막 6개 엣지)"
+        }
+      }
     }
   }
 }

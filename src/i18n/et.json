@@ -59,7 +59,8 @@
     "desc": "Mõtted kunstist, elust ja asjade loomisest — otse sinu postkasti."
   },
   "blogPage": {
-    "title": "Blogi"
+    "title": "Blogi",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Kunstnik · Kirjanik · Arendaja",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "seaded",
       "upload": "üleslaadimine",
+      "preview": "eelvaade",
       "browse": "sirvi"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "EPUB-i parsimine…",
+      "parsingPdf": "PDF-i sõelumine — teksti eraldamine ja lõikude taastamine…",
       "dropTitle": "Lohista EPUB siia",
       "dropSubtitle": "või klõpsa faili valimiseks",
-      "noChapters": "Selles EPUB-failis ei leitud loetavaid peatükke."
+      "noChapters": "Selles EPUB-failis ei leitud loetavaid peatükke.",
+      "ocrRunning": "Lehekülgede OCR-töötlus mudeliga {model}…",
+      "ocrPageOf": "Lehekülg {current} / {total}",
+      "ocrFailedCount": "{count} ebaõnnestus",
+      "scannedPdfDetected": "{file} on skannitud PDF ({pages} lehekülge), millel puudub tekstikiht.",
+      "modelLacksVision": "Sinu valitud {provider} mudel \"{model}\" ei toeta piltide sisestamist, seega ei saa see skannitud lehekülgi OCR-töödelda.",
+      "switchToVision": "Vali:",
+      "runOcr": "Käivita OCR",
+      "providerHasNoVision": "{provider} ei paku selles valikus nägemisvõimelist mudelit. Ava seaded, et vahetada teenusepakkujat (Gemini, OpenAI või Claude toetavad kõik OCR-i)."
+    },
+    "preview": {
+      "pages": "{count} lehekülge",
+      "scannedTag": "skannitud (vajab OCR-i)",
+      "textLayerTag": "tekstikiht tuvastatud",
+      "prev": "Eelmine",
+      "next": "Järgmine",
+      "pageOf": "Lehekülg {current} / {total}",
+      "pageList": "Leheküljed ({count})",
+      "pageLabel": "Lehekülg {n}",
+      "willOcrWith": "OCR-töötleb kõik leheküljed mudeliga {model}.",
+      "willTranslate": "Tekst eraldatud. Jätka peatükkide valimisega tõlkimiseks.",
+      "startOcr": "Alusta OCR-i ({count} lehekülge)",
+      "continue": "Jätka →",
+      "singlePage": {
+        "button": "Tõlgi see lehekülg",
+        "tooltip": "OCR-töötle ja tõlgi ainult see lehekülg, et saaksid kvaliteeti eelvaadata enne terve raamatu töötlemist.",
+        "running": "Selle lehekülje OCR-töötlus ja tõlkimine…",
+        "translating": "Selle lehekülje tõlkimine…",
+        "empty": "Sellelt leheküljelt ei leitud tõlgitavat teksti.",
+        "resultHeader": "Lehekülg {page} — kakskeelne eelvaade",
+        "needsVision": "Praegune mudel ei saa pilte OCR-töödelda. Vali esmalt nägemisvõimeline mudel."
+      }
     },
     "browse": {
       "chapters": "Peatükid",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Lahendus",
       "hint": "Näide: U R U' R'",
-      "parseError": "Tundmatu: {token}"
+      "parseError": "Tundmatu: {token}",
+      "showOverlay": "Kuva valem lõuendil"
     },
     "playback": {
       "play": "Esita",
@@ -250,6 +285,11 @@
       "master": "Luba",
       "hideColors": "Peida värvid",
       "hideFaces": "Peida tahud",
+      "hideLayers": {
+        "updown": "Peida kihid ↕",
+        "leftright": "Peida kihid ↔",
+        "frontback": "Peida kihid (ees/taga)"
+      },
       "faceLabel": {
         "U": "Ülemine",
         "R": "Parem",
@@ -257,6 +297,23 @@
         "D": "Alumine",
         "L": "Vasak",
         "B": "Tagumine"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Alumine kiht (D)",
+          "2": "Keskmine kiht (E)",
+          "3": "Ülemine kiht (U)"
+        },
+        "leftright": {
+          "1": "Vasak kiht (L)",
+          "2": "Keskmine kiht (M)",
+          "3": "Parem kiht (R)"
+        },
+        "frontback": {
+          "1": "Tagumine kiht (B)",
+          "2": "Keskmine kiht (S)",
+          "3": "Eesmine kiht (F)"
+        }
       },
       "colorLabel": {
         "white": "Valge",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Kopeeri jagamislink",
       "copied": "Kopeeritud!"
+    },
+    "gif": {
+      "exportButton": "Ekspordi GIF",
+      "dialogTitle": "Ekspordi GIF",
+      "rangeLabel": "Vahemik",
+      "rangeStart": "Alates",
+      "rangeEnd": "Kuni",
+      "rangeCaption": "Sammust {start} sammuni {end} ({count} sammu)",
+      "speedLabel": "Kiirus",
+      "showOverlay": "Kuva sammu ülekatet lõuendil",
+      "cancel": "Loobu",
+      "generate": "Genereeri GIF",
+      "generating": "Genereerimine… {percent}%",
+      "errorGeneric": "GIF-i genereerimine ebaõnnestus. Palun proovi uuesti.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Kohandatud peitmine",
+      "title": "Kohandatud peitmine / esiletõstmine",
+      "instructions": "Klõpsa kleepsul, et vahetada olekut: nähtav → peidetud → esiletõstetud → nähtav.",
+      "summary": "{hidden} peidetud · {highlighted} esiletõstetud",
+      "legend": {
+        "hidden": "Peidetud — kleepsud tumendatud",
+        "highlighted": "Esile tõstetud — korpus helendab jääsiniselt"
+      },
+      "exit": "Kohandamine valmis",
+      "hideAll": "Peida kõik",
+      "reset": "Lähtesta kõik",
+      "close": "Sule"
+    },
+    "notation": {
+      "button": "Notatsiooni juhend",
+      "title": "Notatsiooni juhend",
+      "facesHeading": "Tahkude pöörded",
+      "slicesHeading": "Kihtide pöörded",
+      "label": {
+        "U": "Ülemine tahk (U)",
+        "D": "Alumine tahk (D)",
+        "R": "Parem tahk (R)",
+        "L": "Vasak tahk (L)",
+        "F": "Eesmine tahk (F)",
+        "B": "Tagumine tahk (B)",
+        "M": "Keskmine kiht M (järgib L-i)",
+        "E": "Keskmine kiht E (järgib D-d)",
+        "S": "Keskmine kiht S (järgib F-i)"
+      },
+      "legend": {
+        "letterTerm": "Täht",
+        "letterDesc": "pööratav kiht (vaikimisi 90° päripäeva, vaadatuna vastava tahkude suunas)",
+        "primeTerm": "'",
+        "primeDesc": "90° vastupäeva, nt R' on R-i vastand",
+        "doubleTerm": "2",
+        "doubleDesc": "180° pööre — suunal pole tähtsust"
+      },
+      "close": "Sule"
+    },
+    "methods": {
+      "sectionTitle": "Lahendusmeetodid",
+      "sectionCaption": "Tutvu levinud lahendusmeetoditega etappide kaupa — iga pisipilt peidab kõik peale nende kuubikute, mis on selleks hetkeks paigutatud.",
+      "button": "Sirvi meetodeid",
+      "title": "Lahendusmeetodid",
+      "close": "Sulge",
+      "viewLabel": {
+        "side": "külg",
+        "below": "altpoolt"
+      },
+      "lbl": {
+        "name": "Kiht-kihilt (LBL)",
+        "description": "Klassikaline algajate meetod. Lahenda üks kiht korraga — alumine rist, alumised nurgad, keskmised servad ja seejärel viimane kiht.",
+        "stages": {
+          "cross": "Valge rist",
+          "firstLayer": "Esimene kiht",
+          "secondLayer": "Teine kiht",
+          "solved": "Viimane kiht"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Levinud kiirlahendusmeetod. Cross ehitab alumise risti, F2L paaristab nurgad keskmiste servadega, OLL orienteerib viimase tahu, PLL permuteerib viimase kihi.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Plokkide ehitamise meetod. Ehita 1×2×3 plokk vasakule, seejärel paremale, lahenda viimase kihi nurgad (CMLL) ning lõpeta M-kihi ja viimase kuue servaga (LSE).",
+        "stages": {
+          "firstBlock": "Esimene plokk",
+          "secondBlock": "Teine plokk",
+          "cmll": "CMLL (viimase kihi nurgad)",
+          "lse": "LSE (viimased kuus serva)"
+        }
+      }
     }
   }
 }

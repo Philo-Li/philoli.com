@@ -152,7 +152,7 @@
       "customModelPlaceholder": "例如 gpt-4o, deepseek-chat, …",
       "customEndpoint": "API 端点",
       "customEndpointPlaceholder": "https://your-api.example.com/v1/chat/completions",
-      "customEndpointHint": "兼容 OpenAI 的 /chat/completions 端点的完整 URL。",
+      "customEndpointHint": "兼容 OpenAI 的 /chat/completions 端点的完整 URL。必须是 https:// 且能从公网访问。",
       "openrouterModelPlaceholder": "例如 google/gemini-2.5-flash, anthropic/claude-sonnet-4, …",
       "opencodeModelPlaceholder": "例如 kimi-k2.6, deepseek-v4-flash, glm-5.1, …",
       "needApiKey": "输入 API key 以继续。"
@@ -179,6 +179,8 @@
       "prev": "上一页",
       "next": "下一页",
       "pageOf": "第 {current} / {total} 页",
+      "pageList": "页面 ({count})",
+      "pageLabel": "第 {n} 页",
       "willOcrWith": "将用 {model} 识别全部页面。",
       "willTranslate": "已提取文本，下一步可挑选章节翻译。",
       "startOcr": "开始 OCR（{count} 页）",

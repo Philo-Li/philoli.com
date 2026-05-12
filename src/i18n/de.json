@@ -59,7 +59,8 @@
     "desc": "Gedanken über Kunst, das Leben und das Erschaffen von Dingen — direkt in dein Postfach."
   },
   "blogPage": {
-    "title": "Blog"
+    "title": "Blog",
+    "rssLabel": "RSS"
   },
   "aboutPage": {
     "tagline": "Künstler · Autor · Entwickler",
@@ -116,6 +117,7 @@
     "steps": {
       "settings": "einstellungen",
       "upload": "hochladen",
+      "preview": "Vorschau",
       "browse": "durchsuchen"
     },
     "actions": {
@@ -157,9 +159,41 @@
     },
     "upload": {
       "parsing": "EPUB wird analysiert…",
+      "parsingPdf": "PDF wird analysiert — Text wird extrahiert und Absätze werden rekonstruiert…",
       "dropTitle": "EPUB hier ablegen",
       "dropSubtitle": "oder klicken, um eine Datei auszuwählen",
-      "noChapters": "Keine lesbaren Kapitel in dieser EPUB gefunden."
+      "noChapters": "Keine lesbaren Kapitel in dieser EPUB gefunden.",
+      "ocrRunning": "Seiten werden mit {model} per OCR verarbeitet…",
+      "ocrPageOf": "Seite {current} / {total}",
+      "ocrFailedCount": "{count} fehlgeschlagen",
+      "scannedPdfDetected": "{file} ist ein gescanntes PDF ({pages} Seiten) ohne Textebene.",
+      "modelLacksVision": "Das von dir gewählte {provider}-Modell „{model}“ akzeptiert keine Bildeingaben, daher können keine gescannten Seiten per OCR verarbeitet werden.",
+      "switchToVision": "Wechseln zu:",
+      "runOcr": "OCR ausführen",
+      "providerHasNoVision": "{provider} bietet in dieser Auswahl kein bildfähiges Modell an. Öffne die Einstellungen, um den Anbieter zu wechseln (Gemini, OpenAI oder Claude unterstützen alle OCR)."
+    },
+    "preview": {
+      "pages": "{count} Seiten",
+      "scannedTag": "gescannt (benötigt OCR)",
+      "textLayerTag": "Textebene erkannt",
+      "prev": "Zurück",
+      "next": "Weiter",
+      "pageOf": "Seite {current} / {total}",
+      "pageList": "Seiten ({count})",
+      "pageLabel": "Seite {n}",
+      "willOcrWith": "Alle Seiten werden mit {model} per OCR verarbeitet.",
+      "willTranslate": "Text extrahiert. Fahre fort, um Kapitel für die Übersetzung auszuwählen.",
+      "startOcr": "OCR starten ({count} Seiten)",
+      "continue": "Weiter →",
+      "singlePage": {
+        "button": "Diese Seite übersetzen",
+        "tooltip": "OCR + Übersetzung nur für diese Seite, damit du die Qualität prüfen kannst, bevor du das ganze Buch bearbeitest.",
+        "running": "Diese Seite wird per OCR verarbeitet & übersetzt…",
+        "translating": "Diese Seite wird übersetzt…",
+        "empty": "Kein übersetzbarer Text auf dieser Seite gefunden.",
+        "resultHeader": "Seite {page} — zweisprachige Vorschau",
+        "needsVision": "Das aktuelle Modell kann keine Bilder per OCR verarbeiten. Wechsle zuerst zu einem bildfähigen Modell."
+      }
     },
     "browse": {
       "chapters": "Kapitel",
@@ -234,7 +268,8 @@
     "solution": {
       "label": "Lösung",
       "hint": "Beispiel: U R U' R'",
-      "parseError": "Nicht erkannt: {token}"
+      "parseError": "Nicht erkannt: {token}",
+      "showOverlay": "Formel auf der Arbeitsfläche anzeigen"
     },
     "playback": {
       "play": "Abspielen",
@@ -250,6 +285,11 @@
       "master": "Aktivieren",
       "hideColors": "Farben ausblenden",
       "hideFaces": "Seiten ausblenden",
+      "hideLayers": {
+        "updown": "Ebenen ausblenden ↕",
+        "leftright": "Ebenen ausblenden ↔",
+        "frontback": "Ebenen ausblenden (vorne/hinten)"
+      },
       "faceLabel": {
         "U": "Oben",
         "R": "Rechts",
@@ -257,6 +297,23 @@
         "D": "Unten",
         "L": "Links",
         "B": "Hinten"
+      },
+      "layerLabel": {
+        "updown": {
+          "1": "Untere Ebene (D)",
+          "2": "Mittlere Ebene (E)",
+          "3": "Obere Ebene (U)"
+        },
+        "leftright": {
+          "1": "Linke Ebene (L)",
+          "2": "Mittlere Ebene (M)",
+          "3": "Rechte Ebene (R)"
+        },
+        "frontback": {
+          "1": "Hintere Ebene (B)",
+          "2": "Mittlere Ebene (S)",
+          "3": "Vordere Ebene (F)"
+        }
       },
       "colorLabel": {
         "white": "Weiß",
@@ -270,6 +327,102 @@
     "share": {
       "copy": "Teilen-Link kopieren",
       "copied": "Kopiert!"
+    },
+    "gif": {
+      "exportButton": "GIF exportieren",
+      "dialogTitle": "GIF exportieren",
+      "rangeLabel": "Bereich",
+      "rangeStart": "Von",
+      "rangeEnd": "Bis",
+      "rangeCaption": "Von Schritt {start} bis Schritt {end} ({count} Schritte)",
+      "speedLabel": "Geschwindigkeit",
+      "showOverlay": "Schritt-Overlay auf der Arbeitsfläche anzeigen",
+      "cancel": "Abbrechen",
+      "generate": "GIF generieren",
+      "generating": "Generiere… {percent}%",
+      "errorGeneric": "GIF-Generierung fehlgeschlagen. Bitte erneut versuchen.",
+      "filenamePrefix": "rubiks-cube"
+    },
+    "customHide": {
+      "button": "Benutzerdefiniertes Ausblenden",
+      "title": "Benutzerdefiniertes Ausblenden / Hervorheben",
+      "instructions": "Klicke auf einen Aufkleber, um zu wechseln: sichtbar → ausgeblendet → hervorgehoben → sichtbar.",
+      "summary": "{hidden} ausgeblendet · {highlighted} hervorgehoben",
+      "legend": {
+        "hidden": "Verborgen — Sticker abgedunkelt",
+        "highlighted": "Hervorgehoben — Körper leuchtet eis-zyan"
+      },
+      "exit": "Anpassung abgeschlossen",
+      "hideAll": "Alle ausblenden",
+      "reset": "Alles zurücksetzen",
+      "close": "Schließen"
+    },
+    "notation": {
+      "button": "Notationshilfe",
+      "title": "Notationshilfe",
+      "facesHeading": "Seitenflächen-Drehungen",
+      "slicesHeading": "Mittelschicht-Drehungen",
+      "label": {
+        "U": "Oberseite (U)",
+        "D": "Unterseite (D)",
+        "R": "Rechte Seite (R)",
+        "L": "Linke Seite (L)",
+        "F": "Vorderseite (F)",
+        "B": "Rückseite (B)",
+        "M": "Mittelschicht M (folgt L)",
+        "E": "Mittelschicht E (folgt D)",
+        "S": "Mittelschicht S (folgt F)"
+      },
+      "legend": {
+        "letterTerm": "Buchstabe",
+        "letterDesc": "die zu drehende Ebene (Standard ist 90° im Uhrzeigersinn, aus der Sicht auf diese Fläche)",
+        "primeTerm": "'",
+        "primeDesc": "90° gegen den Uhrzeigersinn, z. B. R' kehrt R um",
+        "doubleTerm": "2",
+        "doubleDesc": "180°-Drehung — Richtung spielt keine Rolle"
+      },
+      "close": "Schließen"
+    },
+    "methods": {
+      "sectionTitle": "Lösungsmethoden",
+      "sectionCaption": "Gehe gängige Lösungsmethoden Schritt für Schritt durch — jedes Vorschaubild blendet alles aus, außer den Würfelteilen, die bis zu diesem Punkt platziert sind.",
+      "button": "Methoden durchsuchen",
+      "title": "Lösungsmethoden",
+      "close": "Schließen",
+      "viewLabel": {
+        "side": "Seite",
+        "below": "von unten"
+      },
+      "lbl": {
+        "name": "Layer-by-Layer (LBL)",
+        "description": "Klassische Anfängermethode. Löse eine Ebene nach der anderen — unteres Kreuz, untere Ecken, mittlere Kanten, dann die letzte Ebene.",
+        "stages": {
+          "cross": "Weißes Kreuz",
+          "firstLayer": "Erste Ebene",
+          "secondLayer": "Zweite Ebene",
+          "solved": "Letzte Ebene"
+        }
+      },
+      "cfop": {
+        "name": "CFOP (Fridrich)",
+        "description": "Gängige Speedcubing-Methode. Cross bildet das untere Kreuz, F2L paart Ecken mit mittleren Kanten, OLL orientiert die letzte Seite, PLL permutiert die letzte Ebene.",
+        "stages": {
+          "cross": "Cross",
+          "f2l": "F2L",
+          "oll": "OLL",
+          "pll": "PLL"
+        }
+      },
+      "roux": {
+        "name": "Roux",
+        "description": "Blockbau-Methode. Baue einen 1×2×3-Block auf der linken, dann auf der rechten Seite, löse die Ecken der letzten Ebene (CMLL) und beende mit der M-Ebene und den letzten sechs Kanten (LSE).",
+        "stages": {
+          "firstBlock": "Erster Block",
+          "secondBlock": "Zweiter Block",
+          "cmll": "CMLL (Ecken der letzten Ebene)",
+          "lse": "LSE (Letzte sechs Kanten)"
+        }
+      }
     }
   }
 }
