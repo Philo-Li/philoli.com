@@ -507,9 +507,21 @@ async function buildSyntheticEpub(
   const manifestChapters = items
     .map(it => `    <item id="${it.id}" href="${it.href}" media-type="application/xhtml+xml"/>`)
     .join('\n');
+  // First rendered page becomes the cover — flag it with EPUB3 `properties="cover-image"`
+  // and an EPUB2 `<meta name="cover">` so Kindle/Apple Books/Calibre all pick it up.
+  const coverPageIndex = images.length > 0
+    ? images.reduce((min, img) => (img.pageIndex < min ? img.pageIndex : min), images[0].pageIndex)
+    : -1;
   const manifestImages = images
-    .map(img => `    <item id="img-${img.pageIndex + 1}" href="${pageImageHref(img.pageIndex)}" media-type="${img.mimeType}"/>`)
+    .map(img => {
+      const isCover = img.pageIndex === coverPageIndex;
+      const props = isCover ? ' properties="cover-image"' : '';
+      return `    <item id="img-${img.pageIndex + 1}" href="${pageImageHref(img.pageIndex)}" media-type="${img.mimeType}"${props}/>`;
+    })
     .join('\n');
+  const coverMeta = coverPageIndex >= 0
+    ? `\n    <meta name="cover" content="img-${coverPageIndex + 1}"/>`
+    : '';
   const spine = items.map(it => `    <itemref idref="${it.id}"/>`).join('\n');
 
   const opf = `<?xml version="1.0" encoding="UTF-8"?>
@@ -518,7 +530,7 @@ async function buildSyntheticEpub(
     <dc:title>${escapeXml(meta.title)}</dc:title>
     <dc:creator>${escapeXml(meta.author)}</dc:creator>
     <dc:language>${escapeXml(meta.language)}</dc:language>
-    <dc:identifier id="bookid">pdf-${Date.now()}</dc:identifier>
+    <dc:identifier id="bookid">pdf-${Date.now()}</dc:identifier>${coverMeta}
   </metadata>
   <manifest>
 ${manifestChapters}${manifestImages ? '\n' + manifestImages : ''}
