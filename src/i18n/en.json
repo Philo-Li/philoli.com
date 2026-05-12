@@ -192,6 +192,7 @@
         "button": "Translate this page",
         "tooltip": "OCR + translate just this page so you can preview the quality before committing to the whole book.",
         "running": "OCR'ing & translating this page…",
+        "translating": "Translating this page…",
         "empty": "No translatable text found on this page.",
         "resultHeader": "Page {page} — bilingual preview",
         "needsVision": "The current model can't OCR images. Switch to a vision-capable model first."

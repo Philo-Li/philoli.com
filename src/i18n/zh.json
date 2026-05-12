@@ -187,6 +187,7 @@
         "button": "翻译本页",
         "tooltip": "只对当前页做 OCR + 翻译，先看看质量再决定是否处理整本。",
         "running": "正在识别并翻译当前页…",
+        "translating": "正在翻译当前页…",
         "empty": "本页没有可翻译的文本。",
         "resultHeader": "第 {page} 页 —— 双语预览",
         "needsVision": "当前模型不支持图像识别，请先切换到支持视觉的模型。"

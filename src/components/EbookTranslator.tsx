@@ -473,7 +473,9 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   async function runSinglePage(targetPage: number) {
     setPagePhase(prev => new Map(prev).set(targetPage, 'running'));
     setPageErrors(prev => { const m = new Map(prev); m.delete(targetPage); return m; });
-    setPageResults(prev => { const m = new Map(prev); m.delete(targetPage); return m; });
+    // Keep any prefetched-originals entry in pageResults so the right pane keeps showing
+    // the source text during translation (text-layer PDFs); it'll be overwritten by the
+    // full bilingual result on success.
     try {
       const result = await translateSinglePage(targetPage);
       setPageResults(prev => new Map(prev).set(targetPage, result));
@@ -1146,6 +1148,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
                           phase={currentPagePhase}
                           result={currentPageResult}
                           error={currentPageError}
+                          isScanned={!!pdfMeta?.isScanned}
                         />
                       ) : (
                         <div className="bt__pdf-preview-empty">
@@ -1459,17 +1462,26 @@ function SinglePageResultPanel({
   phase,
   result,
   error,
+  isScanned,
 }: {
   t: TFn;
   phase: 'idle' | 'running' | 'done' | 'error';
   result: SinglePageResult | null;
   error: string | null;
+  isScanned: boolean;
 }) {
-  if (phase === 'running') {
+  const hasParsedItems = !!result && result.items.length > 0;
+  // No parsed text yet (scanned PDF awaiting OCR, or text-layer page not prefetched yet) —
+  // show a blocking loader. Otherwise keep the parsed originals visible and slot translations
+  // in under each paragraph as they arrive, mirroring how EPUB chapters render.
+  if (phase === 'running' && !hasParsedItems) {
+    const key = isScanned
+      ? 'ebookTranslator.preview.singlePage.running'
+      : 'ebookTranslator.preview.singlePage.translating';
     return (
       <div className="bt__notice">
         <span className="bt__spinner" aria-hidden />
-        <span style={{ marginLeft: 8 }}>{t('ebookTranslator.preview.singlePage.running')}</span>
+        <span style={{ marginLeft: 8 }}>{t(key)}</span>
       </div>
     );
   }
@@ -1491,7 +1503,14 @@ function SinglePageResultPanel({
         {result.items.map((item, i) => (
           <div key={i}>
             {renderBilingual(item.type, 'bt__bi-orig', item.original)}
-            {item.translated && renderBilingual(item.type, 'bt__bi-tr', item.translated)}
+            {item.translated ? (
+              renderBilingual(item.type, 'bt__bi-tr', item.translated)
+            ) : phase === 'running' ? (
+              <p className="bt__bi-tr bt__bi-pending">
+                <span className="bt__spinner" aria-label={t('ebookTranslator.browse.translatingAria')} />
+                <span className="bt__spinner-label">{t('ebookTranslator.browse.translatingLabel')}</span>
+              </p>
+            ) : null}
           </div>
         ))}
       </div>
