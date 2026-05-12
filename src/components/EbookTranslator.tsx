@@ -208,6 +208,8 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const translatingAllPagesRef = useRef<{ aborted: boolean } | null>(null);
   const pagePhaseRef = useRef(pagePhase);
   useEffect(() => { pagePhaseRef.current = pagePhase; }, [pagePhase]);
+  const pageResultsRef = useRef(pageResults);
+  useEffect(() => { pageResultsRef.current = pageResults; }, [pageResults]);
 
   // Text-layer PDFs: pre-extract each page's paragraphs in the background so the right pane
   // already shows the source text before the user clicks "Translate this page" — and so the
@@ -503,8 +505,16 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
       const concurrency = Math.min(CONCURRENT_PAGE_TRANSLATIONS, totalPages);
       await Promise.all(Array.from({ length: concurrency }, worker));
     } finally {
+      const aborted = translatingAllPagesRef.current?.aborted ?? false;
       translatingAllPagesRef.current = null;
       setTranslatingAllPages(false);
+      if (!aborted) {
+        let anyTranslated = false;
+        for (const r of pageResultsRef.current.values()) {
+          if (r.items.some(it => it.translated)) { anyTranslated = true; break; }
+        }
+        if (anyTranslated) await downloadPdfPagesResult();
+      }
     }
   }
 
@@ -698,8 +708,8 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   /** Build a bilingual EPUB from the per-page trial translations (no OCR commit needed). */
   async function downloadPdfPagesResult() {
     if (!file || !pdfMeta) return;
-    const pages = Array.from(pageResults.entries())
-      .filter(([, r]) => r.items.length > 0)
+    const pages = Array.from(pageResultsRef.current.entries())
+      .filter(([, r]) => r.items.some(it => it.translated))
       .sort(([a], [b]) => a - b)
       .map(([pageNumber, r]) => ({
         pageIndex: pageNumber - 1,
