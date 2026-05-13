@@ -70,6 +70,8 @@ toc: true
 
 恭喜你，你已经学会了阿贝尔群（乘法加法都是阿贝尔群）和非阿贝尔群（魔方群）的区别了。
 
+（补充：有读者指出，以上说法不算很严谨，所以做一点补充。整数在加法下可构成阿贝尔群，自然数 N 在加法下不是阿贝尔群，比如 3 不存在逆元 -3，-3 不是自然数。非零实数、非零有理数、非零复数在乘法下构成阿贝尔群。原文的类比主要是为了让初学者抓住"可交换 vs 不可交换"这个核心直觉）
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 顺序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 顺序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

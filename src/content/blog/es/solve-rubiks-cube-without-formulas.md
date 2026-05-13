@@ -70,6 +70,8 @@ La multiplicación que aprendimos en primaria es una operación conmutativa; el 
 
 ¡Felicidades! Ya has aprendido la diferencia entre grupos abelianos (como la multiplicación y la suma) y grupos no abelianos (como el grupo del cubo de Rubik).
 
+(Aclaración: Algunos lectores han señalado que la afirmación anterior no era del todo rigurosa, por lo que añado esta nota. Los números enteros, bajo la suma, forman un grupo abeliano. Los números naturales N, bajo la suma, no forman un grupo abeliano; por ejemplo, el 3 no tiene un elemento inverso -3, ya que -3 no es un número natural. Los números reales no nulos, los números racionales no nulos y los números complejos no nulos, bajo la multiplicación, forman un grupo abeliano. La analogía original tenía como objetivo principal que los principiantes captaran la intuición central de "conmutativo vs. no conmutativo".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 顺序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 顺序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

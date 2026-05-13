@@ -70,6 +70,8 @@ toc: true
 
 恭喜你，你已經學會了阿貝爾群（乘法加法都是阿貝爾群）和非阿貝爾群（魔術方塊群）的區別了。
 
+（補充：有讀者指出，以上說法不夠嚴謹，因此在此補充說明。整數在加法運算下能構成阿貝爾群；自然數 N 在加法運算下則不是阿貝爾群，例如 3 並不存在逆元素 -3，因為 -3 並非自然數。非零實數、非零有理數、非零複數在乘法運算下則構成阿貝爾群。原文的類比主要是為了讓初學者掌握「可交換」與「不可交換」這個核心直覺。）
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 順序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 順序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

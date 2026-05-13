@@ -70,6 +70,8 @@ Násobenie, ktoré sme sa učili na základnej škole, je komutatívna operácia
 
 Gratulujem, práve ste sa naučili rozdiel medzi Abelovskou grupou (násobenie a sčítanie sú Abelovské grupy) a neAbelovskou grupou (grupa Rubikovej kocky).
 
+(Doplnenie: Niektorí čitatelia poukázali na to, že vyššie uvedené tvrdenie nebolo celkom rigorózne, preto pridávam malé doplnenie. Celé čísla pod sčítaním tvoria abelovskú grupu, prirodzené čísla N pod sčítaním netvoria abelovskú grupu, napríklad pre 3 neexistuje inverzný prvok -3, keďže -3 nie je prirodzené číslo. Nenulové reálne čísla, nenulové racionálne čísla a nenulové komplexné čísla pod násobením tvoria abelovskú grupu. Analógia v pôvodnom texte mala hlavne pomôcť začiatočníkom uchopiť kľúčovú intuíciu „komutatívne vs nekomutatívne".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U a U R majú rôzne efekty kvôli rôznemu poradiu – časť prvá" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U a U R majú rôzne efekty kvôli rôznemu poradiu – časť druhá" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

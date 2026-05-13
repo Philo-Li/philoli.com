@@ -70,6 +70,8 @@ Reizināšana, ko mācījāmies pamatskolā, ir komutatīva operācija — A × 
 
 Apsveicu, tu jau esi apguvis atšķirību starp Abela grupām (reizināšana un saskaitīšana ir Abela grupas) un ne-Abela grupām (Rubika kuba grupa).
 
+(Papildinājums: Daži lasītāji norādīja, ka iepriekš minētais apgalvojums nebija pietiekami precīzs, tāpēc veicu nelielu papildinājumu. Veselie skaitļi saskaitīšanas operācijā veido Abela grupu, savukārt naturālie skaitļi N saskaitīšanas operācijā nav Abela grupa, piemēram, skaitlim 3 nepastāv apgrieztais elements -3, jo -3 nav naturāls skaitlis. Nenulles reālie skaitļi, nenulles racionālie skaitļi un nenulles kompleksie skaitļi reizināšanas operācijā veido Abela grupu. Oriģinālā analoģija galvenokārt tika izmantota, lai iesācējiem palīdzētu uztvert "komutatīvs pret nekomutatīvu" pamatintuīciju.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U un U R atšķirīga secība rada atšķirīgus efektus - 1. daļa" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U un U R atšķirīga secība rada atšķirīgus efektus - 2. daļa" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

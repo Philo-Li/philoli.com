@@ -70,6 +70,8 @@ Deci, ce legătură există între Cubul Rubik și Teoria Grupurilor? Cubul Rubi
 
 Felicitări, ai învățat acum diferența dintre grupurile abeliene (înmulțirea și adunarea sunt grupuri abeliene) și grupurile non-abeliene (grupul Rubik).
 
+(Precizare: Un cititor a subliniat că afirmația de mai sus nu este pe deplin riguroasă, așa că adaug o mică completare. Numerele întregi formează un grup abelian sub operația de adunare, iar numerele naturale N nu formează un grup abelian sub operația de adunare, deoarece, de exemplu, 3 nu are un element invers -3, iar -3 nu este un număr natural. Numerele reale nenule, numerele raționale nenule și numerele complexe nenule formează grupuri abeliene sub operația de înmulțire. Analogia din textul original a fost menită în principal să ajute începătorii să înțeleagă intuiția centrală a conceptului de „comutativ vs. necomutativ".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 顺序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 顺序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

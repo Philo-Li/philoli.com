@@ -70,6 +70,8 @@ Ala-asteella opimme kertolaskun, joka on kommutatiivinen operaatio; A × B ja B 
 
 Onneksi olkoon, olet juuri oppinut eron Abelin ryhmien (kertolasku ja yhteenlasku ovat Abelin ryhmiä) ja ei-Abelin ryhmien (Rubikin kuution ryhmä) välillä.
 
+(Lisäys: Eräs lukija huomautti, että yllä oleva väite ei ollut kovin tarkka, joten teen pienen lisäyksen. Kokonaisluvut muodostavat Abelin ryhmän yhteenlaskun suhteen, mutta luonnolliset luvut N eivät muodosta Abelin ryhmää yhteenlaskun suhteen, sillä esimerkiksi luvulla 3 ei ole käänteisalkiota -3, eikä -3 ole luonnollinen luku. Nollasta poikkeavat reaaliluvut, rationaaliluvut ja kompleksiluvut muodostavat Abelin ryhmän kertolaskun suhteen. Alkuperäisen tekstin vertailu pyrki ensisijaisesti auttamaan aloittelijoita ymmärtämään "vaihdannainen vs. ei-vaihdannainen" -periaatteen ydintä.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U ja U R eri järjestyksessä antavat eri tuloksen - Osa yksi" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U ja U R eri järjestyksessä antavat eri tuloksen - Osa kaksi" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

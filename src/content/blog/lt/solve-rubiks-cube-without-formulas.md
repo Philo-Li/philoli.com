@@ -70,6 +70,8 @@ Daugyba, kurią mokėmės pradinėje mokykloje, yra komutatyvi operacija – A �
 
 Sveikiname, jau supratote skirtumą tarp Abelinės grupės (daugyba ir sudėtis yra Abelinės grupės) ir ne Abelinės grupės (Rubiko kubo grupės).
 
+(Papildymas: Kai kurie skaitytojai atkreipė dėmesį, kad aukščiau pateiktas teiginys nebuvo visiškai griežtas, todėl pateikiame šiek tiek patikslinimų. Sveikieji skaičiai su sudėtimi sudaro Abelio grupę. Natūralieji skaičiai N su sudėtimi Abelio grupės nesudaro, pavyzdžiui, skaičius 3 neturi atvirkštinio elemento -3, nes -3 nėra natūralusis skaičius. Nenuliniai realieji, racionalieji ir kompleksiniai skaičiai su daugyba taip pat sudaro Abelio grupę. Originali analogija buvo skirta pradedantiesiems, kad jie suprastų pagrindinę komutatyvumo ir nekomutatyvumo intuiciją.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U ir U R – skirtingos sekos, skirtingi rezultatai – pirma dalis" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U ir U R – skirtingos sekos, skirtingi rezultatai – antra dalis" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

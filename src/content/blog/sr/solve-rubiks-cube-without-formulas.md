@@ -70,6 +70,8 @@ Množenje, koje smo učili u osnovnoj školi, je komutativna operacija; rezultat
 
 Čestitamo, upravo ste naučili razliku između Abelove grupe (množenje i sabiranje su Abelove grupe) i ne-Abelove grupe (grupa Rubikove kocke).
 
+(Dopuna: Jedan čitalac je ukazao da gornja tvrdnja nije bila dovoljno precizna, pa da dodam malo pojašnjenje. Celi brojevi u odnosu na sabiranje čine Abelovu grupu, dok prirodni brojevi N u odnosu na sabiranje ne čine Abelovu grupu; na primer, broj 3 nema inverzni element -3, jer -3 nije prirodan broj. Nenulti realni brojevi, nenulti racionalni brojevi i nenulti kompleksni brojevi u odnosu na množenje čine Abelovu grupu. Originalna analogija je prvenstveno imala za cilj da pomogne početnicima da shvate ovu suštinsku intuiciju "komutativno naspram nekomutativnog".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U i U R daju različite rezultate - prvi deo" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U i U R daju različite rezultate - drugi deo" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

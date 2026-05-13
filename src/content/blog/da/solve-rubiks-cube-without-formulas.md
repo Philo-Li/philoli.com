@@ -70,6 +70,8 @@ Multiplikation, som vi lærte i folkeskolen, er en kommutativ operation; A × B 
 
 Tillykke, du har allerede lært forskellen mellem en abelsk gruppe (multiplikation og addition er abelske grupper) og en ikke-abelsk gruppe (Rubiks terning-gruppen).
 
+(Tilføjelse: En læser har påpeget, at ovenstående formulering ikke er helt stringent, så her er en lille tilføjelse. Heltal danner en abelsk gruppe under addition, mens de naturlige tal N ikke danner en abelsk gruppe under addition, for eksempel idet 3 ikke har et inverselement -3, og -3 er ikke et naturligt tal. Ikke-nul reelle tal, ikke-nul rationale tal og ikke-nul komplekse tal danner en abelsk gruppe under multiplikation. Den oprindelige analogi var primært ment for at hjælpe begyndere med at fange kerneintuitionen om "kommutativ vs. ikke-kommutativ".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 顺序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 顺序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

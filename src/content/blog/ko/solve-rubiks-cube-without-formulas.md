@@ -70,6 +70,8 @@ toc: true
 
 축하합니다! 당신은 이미 아벨군(덧셈과 곱셈이 아벨군에 해당)과 비아벨군(큐브군)의 차이를 알게 되었습니다.
 
+(보충: 독자분께서 위 내용이 엄밀하지 않다고 지적해 주셔서, 보충 설명을 덧붙입니다. 정수는 덧셈에 대해 아벨 군을 이룹니다. 자연수 N은 덧셈에 대해 아벨 군이 아닙니다. 예를 들어 3의 역원인 -3이 존재하지 않는데, -3은 자연수가 아니기 때문입니다. 0이 아닌 실수, 0이 아닌 유리수, 0이 아닌 복소수는 곱셈에 대해 아벨 군을 이룹니다. 원문의 비유는 주로 초보자들이 "가환 vs 비가환"이라는 핵심 직관을 파악하도록 돕기 위함이었습니다.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 와 U R 순서에 따른 다른 효과 - 첫 번째 부분" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 와 U R 순서에 따른 다른 효과 - 두 번째 부분" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

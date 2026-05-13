@@ -70,6 +70,8 @@ toc: true
 
 おめでとうございます！これであなたは、アーベル群（掛け算や足し算がこれにあたります）と非アーベル群（ルービックキューブの群がこれにあたります）の違いを理解したことになります。
 
+（補足：読者の方から、上記の記述は厳密性に欠ける点があるとのご指摘をいただいたため、少し補足させていただきます。整数は加法のもとでアーベル群を構成しますが、自然数 N は加法のもとではアーベル群ではありません。例えば、3の逆元である -3 は自然数ではないため、自然数 N には存在しません。また、零でない実数、零でない有理数、零でない複素数は、それぞれ乗法のもとでアーベル群を構成します。元の記事における類比は、主に初心者に「可換か非可換か」という核心的な直感を掴んでもらうためのものでした。）
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 顺序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 顺序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

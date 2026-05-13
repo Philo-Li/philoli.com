@@ -70,6 +70,8 @@ Algkoolis õpitud korrutamine on kommutatiivne tehe – A × B ja B × A annavad
 
 Õnnitleme, oled just õppinud ära Abeli rühma (korrutamine ja liitmine on mõlemad Abeli rühmad) ja mitte-Abeli rühma (Rubiku kuubiku rühm) erinevuse!
 
+(Lisandus: Mõned lugejad märkisid, et ülaltoodud väide ei ole päris range, seega teen siinkohal väikese täpsustuse. Täisarvud moodustavad liitmise suhtes Abeli rühma. Naturaalarvud N ei moodusta liitmise suhtes Abeli rühma, näiteks arvul 3 puudub pöördelement -3, kuna -3 ei ole naturaalarv. Nullist erinevad reaalarvud, nullist erinevad ratsionaalarvud ja nullist erinevad kompleksarvud moodustavad korrutamise suhtes Abeli rühma. Algse teksti analoogia eesmärk oli peamiselt aidata algajatel haarata "kommutatiivsuse vs mittekommutatiivsuse" põhiintuitsioonist.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U ja U R järjestus annab erineva tulemuse - esimene osa" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U ja U R järjestus annab erineva tulemuse - teine osa" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

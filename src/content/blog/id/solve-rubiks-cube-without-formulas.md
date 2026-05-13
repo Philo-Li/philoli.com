@@ -70,6 +70,8 @@ Perkalian yang kita pelajari di sekolah dasar adalah operasi komutatif, di mana 
 
 Selamat, Anda kini telah memahami perbedaan antara grup Abel (seperti perkalian dan penjumlahan) dan grup non-Abel (seperti grup kubus Rubik).
 
+(Tambahan: Ada pembaca yang menunjukkan bahwa pernyataan di atas kurang rigor, jadi saya berikan sedikit penjelasan. Bilangan bulat dapat membentuk grup Abelian di bawah operasi penjumlahan. Bilangan asli N di bawah operasi penjumlahan bukanlah grup Abelian; contohnya, 3 tidak memiliki invers -3, karena -3 bukan bilangan asli. Bilangan real bukan nol, bilangan rasional bukan nol, dan bilangan kompleks bukan nol membentuk grup Abelian di bawah operasi perkalian. Analogi pada tulisan aslinya utamanya bertujuan agar pemula dapat menangkap intuisi inti "komutatif vs non-komutatif".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="Urutan R U dan U R menghasilkan efek berbeda - Bagian Pertama" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="Urutan R U dan U R menghasilkan efek berbeda - Bagian Kedua" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

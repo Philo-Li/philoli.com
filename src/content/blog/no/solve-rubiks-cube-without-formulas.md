@@ -70,6 +70,8 @@ Multiplikasjon, som vi lærte på barneskolen, er en kommutativ operasjon; resul
 
 Gratulerer, du har nå lært forskjellen mellom abelske grupper (multiplikasjon og addisjon er abelske grupper) og ikke-abelske grupper (Rubiks kube-gruppen).
 
+(Tillegg: En leser har påpekt at utsagnet over ikke er helt presist, så her er en liten presisering. Heltall under addisjon danner en abelsk gruppe, mens naturlige tall N under addisjon ikke er en abelsk gruppe, for eksempel har 3 ingen invers -3, og -3 er ikke et naturlig tall. Ikke-null reelle tall, ikke-null rasjonale tall og ikke-null komplekse tall danner en abelsk gruppe under multiplikasjon. Den opprinnelige analogien var primært ment for å gi nybegynnere en intuitiv forståelse av "kommutativ vs. ikke-kommutativ".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U og U R rekkefølge er forskjellig og effekten er forskjellig - del én" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U og U R rekkefølge er forskjellig og effekten er forskjellig - del to" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

@@ -70,6 +70,8 @@ Take multiplication, which we learned in elementary school; it's a commutative o
 
 Congratulations! You've just learned the distinction between an Abelian group (like multiplication and addition) and a non-Abelian group (like the Rubik's Cube group).
 
+(Addendum: A reader pointed out that the previous statement wasn't entirely rigorous, so I'm adding a small note. Integers form an Abelian group under addition. Natural numbers (N) do not form an Abelian group under addition; for instance, 3 does not have an inverse -3, as -3 is not a natural number. Non-zero real numbers, non-zero rational numbers, and non-zero complex numbers all form Abelian groups under multiplication. The original analogy was primarily intended to help beginners grasp the core intuition of "commutative vs non-commutative.")
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 顺序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 顺序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

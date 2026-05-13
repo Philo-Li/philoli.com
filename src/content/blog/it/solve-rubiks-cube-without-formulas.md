@@ -70,6 +70,8 @@ La moltiplicazione, che abbiamo imparato alle elementari, è un'operazione commu
 
 Congratulazioni, hai già imparato la differenza tra gruppi abeliani (come la moltiplicazione e l'addizione) e gruppi non abeliani (come il gruppo del Cubo di Rubik).
 
+(Aggiunta: Un lettore ha fatto notare che l'affermazione precedente non era del tutto rigorosa, quindi aggiungo una precisazione. Gli interi, con l'addizione, formano un gruppo abeliano, mentre i numeri naturali N, con l'addizione, non formano un gruppo abeliano; ad esempio, per 3 non esiste l'elemento inverso -3, dato che -3 non è un numero naturale. I numeri reali non nulli, i numeri razionali non nulli e i numeri complessi non nulli, con la moltiplicazione, formano gruppi abeliani. L'analogia nel testo originale era principalmente intesa a far cogliere ai principianti l'intuizione fondamentale di "commutativo vs non commutativo".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 顺序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 顺序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

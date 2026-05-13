@@ -70,6 +70,8 @@ Phép nhân mà chúng ta đã học ở tiểu học là một phép toán có 
 
 Chúc mừng bạn, bạn đã phân biệt được giữa nhóm Abel (phép nhân và phép cộng đều là nhóm Abel) và nhóm không Abel (nhóm Rubik).
 
+(Bổ sung: Có độc giả đã chỉ ra rằng nhận định trên chưa thực sự chặt chẽ, nên tôi xin bổ sung một chút. Tập hợp số nguyên (Z) với phép cộng có thể tạo thành một nhóm Abel. Tập hợp số tự nhiên (N) với phép cộng thì không phải là nhóm Abel, ví dụ như số 3 không có phần tử nghịch đảo là -3, vì -3 không phải là số tự nhiên. Tập hợp các số thực khác 0, số hữu tỉ khác 0, và số phức khác 0 với phép nhân đều tạo thành nhóm Abel. Phép so sánh trong bài viết gốc chủ yếu nhằm giúp người mới bắt đầu nắm bắt trực giác cốt lõi về khía cạnh "giao hoán hay không giao hoán".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U và U R theo thứ tự khác nhau sẽ có hiệu quả khác nhau - Phần một" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U và U R theo thứ tự khác nhau sẽ có hiệu quả khác nhau - Phần hai" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

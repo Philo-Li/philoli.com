@@ -70,6 +70,8 @@ La multiplication, que nous avons apprise à l'école primaire, est une opérati
 
 Félicitations, vous venez de comprendre la différence entre un groupe abélien (comme la multiplication et l'addition) et un groupe non abélien (comme le groupe du Rubik's Cube).
 
+(Complément : Un lecteur a fait remarquer que l'affirmation ci-dessus n'était pas tout à fait rigoureuse, j'apporte donc quelques précisions. Les entiers relatifs, munis de l'addition, forment un groupe abélien. Les nombres naturels N, munis de l'addition, ne forment pas un groupe abélien ; par exemple, 3 n'a pas d'inverse -3 puisque -3 n'est pas un nombre naturel. Les nombres réels non nuls, les nombres rationnels non nuls et les nombres complexes non nuls, munis de la multiplication, constituent des groupes abéliens. L'analogie de l'article original visait principalement à aider les débutants à saisir l'intuition fondamentale de la distinction entre « commutatif et non commutatif ».)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U et U R, l'ordre fait une différence - Partie 1" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U et U R, l'ordre fait une différence - Partie 2" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

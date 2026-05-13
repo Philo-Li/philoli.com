@@ -70,6 +70,8 @@ Vermenigvuldiging, iets wat we op de basisschool al leerden, is een commutatieve
 
 Gefeliciteerd! Je hebt nu het verschil geleerd tussen een abelse groep (vermenigvuldiging en optelling zijn abelse groepen) en een niet-abelse groep (de Rubik's kubus groep).
 
+(Aanvulling: Een lezer merkte op dat de bovenstaande bewering niet erg rigoureus was, vandaar deze kleine aanvulling. De gehele getallen vormen onder optelling een Abelse groep, maar de natuurlijke getallen N vormen onder optelling géén Abelse groep, bijvoorbeeld omdat 3 geen inverse -3 heeft en -3 geen natuurlijk getal is. De niet-nul reële, rationale en complexe getallen vormen onder vermenigvuldiging een Abelse groep. De analogie in het oorspronkelijke artikel was voornamelijk bedoeld om beginners te helpen de kernintuïtie van "commutatief versus niet-commutatief" te vatten.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U en U R hebben verschillende effecten door verschillende volgorde - Deel één" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U en U R hebben verschillende effecten door verschillende volgorde - Deel twee" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

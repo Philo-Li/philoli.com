@@ -70,6 +70,8 @@ Peki, Rubik Küpü ile grup teorisinin ne alakası var? Rubik Küpü aslında bi
 
 Tebrikler, artık değişmeli grup (çarpma ve toplama gibi) ile değişmeli olmayan grup (Rubik Küpü grubu gibi) arasındaki farkı öğrenmiş oldunuz.
 
+(Ek: Bazı okuyucular yukarıdaki ifadenin çok titiz olmadığını belirtti, bu yüzden biraz ekleme yapıyorum. Tam sayılar toplama altında bir değişmeli grup oluşturabilirken, doğal sayılar N toplama altında bir değişmeli grup değildir; örneğin 3'ün -3 ters elemanı yoktur ve -3 bir doğal sayı değildir. Sıfırdan farklı gerçek sayılar, sıfırdan farklı rasyonel sayılar ve sıfırdan farklı karmaşık sayılar çarpma altında bir değişmeli grup oluşturur. Orijinal metindeki benzetme, esas olarak yeni başlayanların "değişmeli vs değişmeli olmayan" temel sezgisini kavramasına yardımcı olmak içindi.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 顺序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 顺序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

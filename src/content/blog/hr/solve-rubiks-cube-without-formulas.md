@@ -70,6 +70,8 @@ Množenje, koje smo učili u osnovnoj školi, komutativna je operacija – rezul
 
 Čestitam, upravo ste naučili razliku između Abelove grupe (množenje i zbrajanje su Abelove grupe) i ne-Abelove grupe (grupa Rubikove kocke).
 
+(Dopuna: Neki su čitatelji istaknuli da gornja tvrdnja nije bila sasvim stroga, pa evo male dopune. Cijeli brojevi čine Abelovu grupu s obzirom na zbrajanje, dok prirodni brojevi N s obzirom na zbrajanje ne čine Abelovu grupu, budući da, primjerice, za 3 ne postoji inverz -3, jer -3 nije prirodan broj. Nenulti realni brojevi, nenulti racionalni brojevi i nenulti kompleksni brojevi čine Abelovu grupu s obzirom na množenje. Analogija u izvornom tekstu prvenstveno je imala za cilj da početnici shvate ključnu intuiciju "komutativno vs nekomutativno".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 顺序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 顺序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

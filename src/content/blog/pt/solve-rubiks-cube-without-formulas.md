@@ -70,6 +70,8 @@ A multiplicação, que aprendemos no ensino fundamental, é uma operação comut
 
 Parabéns, você já compreendeu a diferença entre grupos abelianos (onde a multiplicação e a adição são exemplos) e grupos não-abelianos (como o grupo do Cubo Mágico).
 
+(Adendo: Um leitor apontou que a afirmação anterior não era muito rigorosa, por isso faço uma pequena complementação. Os números inteiros formam um grupo abeliano sob a adição; os números naturais N não são um grupo abeliano sob a adição, por exemplo, 3 não possui o elemento inverso -3, já que -3 não é um número natural. Números reais não nulos, números racionais não nulos e números complexos não nulos formam um grupo abeliano sob a multiplicação. A analogia no texto original tinha como objetivo principal ajudar os iniciantes a compreender a intuição central da comutatividade vs. não comutatividade.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U e U R produzem efeitos diferentes - Parte Um" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U e U R produzem efeitos diferentes - Parte Dois" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

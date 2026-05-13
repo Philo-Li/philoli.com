@@ -70,6 +70,8 @@ Množenje, ki smo se ga učili v osnovni šoli, je komutativna operacija, kjer j
 
 Čestitamo, naučili ste se razlike med Abelovo grupo (množenje in seštevanje sta Abelovi grupi) in ne-Abelovo grupo (grupa Rubikove kocke).
 
+(Dopolnilo: Nekateri bralci so opozorili, da zgornja izjava ni bila povsem stroga, zato dodajam nekaj pojasnil. Cela števila z operacijo seštevanja tvorijo Abelovo grupo, naravna števila N z operacijo seštevanja niso Abelova grupa, saj na primer število 3 nima inverza -3, ker -3 ni naravno število. Neničelna realna števila, neničelna racionalna števila in neničelna kompleksna števila z operacijo množenja tvorijo Abelovo grupo. Prvotna analogija je bila namenjena predvsem začetnikom, da bi razumeli bistveno intuicijo "komutativno proti nekomutativnemu".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U in U R imata različne učinke glede na vrstni red - prvi del" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U in U R imata različne učinke glede na vrstni red - drugi del" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

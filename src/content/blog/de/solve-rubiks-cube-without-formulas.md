@@ -70,6 +70,8 @@ Die Multiplikation, die wir in der Grundschule gelernt haben, ist eine kommutati
 
 Herzlichen Glückwunsch, du hast soeben den Unterschied zwischen einer Abelschen Gruppe (Multiplikation und Addition sind Abelsche Gruppen) und einer nicht-Abelschen Gruppe (die Zauberwürfel-Gruppe) gelernt.
 
+(Ergänzung: Einige Leser haben darauf hingewiesen, dass die obige Aussage nicht ganz präzise ist, daher eine kleine Ergänzung dazu. Die ganzen Zahlen bilden unter der Addition eine abelsche Gruppe, während die natürlichen Zahlen N unter der Addition keine abelsche Gruppe bilden, da zum Beispiel 3 kein inverses Element -3 besitzt und -3 keine natürliche Zahl ist. Die reellen Zahlen ungleich null, die rationalen Zahlen ungleich null und die komplexen Zahlen ungleich null bilden unter der Multiplikation ebenfalls abelsche Gruppen. Die Analogie im Originaltext diente hauptsächlich dazu, Anfängern die Kernintuition von „kommutativ vs. nicht-kommutativ" zu vermitteln.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U und U R unterschiedliche Reihenfolge, unterschiedliche Effekte - Teil 1" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U und U R unterschiedliche Reihenfolge, unterschiedliche Effekte - Teil 2" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

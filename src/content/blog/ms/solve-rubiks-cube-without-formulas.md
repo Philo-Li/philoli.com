@@ -70,6 +70,8 @@ Pendaraban yang kita pelajari di sekolah rendah adalah operasi yang boleh dituka
 
 Tahniah, anda kini telah memahami perbezaan antara kumpulan Abel (pendaraban dan penambahan adalah kumpulan Abel) dan kumpulan bukan Abel (kumpulan Kiub Rubik).
 
+(Nota Tambahan: Ada pembaca yang menyatakan bahawa kenyataan di atas kurang jitu, oleh itu sedikit tambahan diberikan. Integer boleh membentuk kumpulan Abelian di bawah operasi penambahan, manakala nombor asli N bukan kumpulan Abelian di bawah operasi penambahan. Contohnya, 3 tidak mempunyai unsur songsang -3, dan -3 bukan nombor asli. Nombor nyata bukan sifar, nombor nisbah bukan sifar, dan nombor kompleks bukan sifar pula membentuk kumpulan Abelian di bawah operasi pendaraban. Analogi dalam artikel asal bertujuan utama untuk membantu pemula memahami intuisi teras 'komutatif lwn tak komutatif' ini.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U dan U R urutan yang berbeza menghasilkan kesan yang berbeza - Bahagian Pertama" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U dan U R urutan yang berbeza menghasilkan kesan yang berbeza - Bahagian Kedua" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

@@ -70,6 +70,8 @@ Mnożenie, którego uczyliśmy się w szkole podstawowej, jest operacją przemie
 
 Gratulacje! Właśnie poznałeś różnicę między grupami abelowymi (gdzie mnożenie i dodawanie są przemienne) a grupami nieabelowymi (do których należy grupa kostki Rubika).
 
+(Uzupełnienie: Jeden z czytelników zauważył, że powyższe stwierdzenie nie jest do końca precyzyjne, dlatego dodaję małe uzupełnienie. Liczby całkowite tworzą grupę abelową względem dodawania, natomiast liczby naturalne N nie tworzą grupy abelowej względem dodawania, np. dla 3 nie istnieje element odwrotny -3, a -3 nie jest liczbą naturalną. Niezerowe liczby rzeczywiste, niezerowe liczby wymierne oraz niezerowe liczby zespolone tworzą grupę abelową względem mnożenia. Pierwotna analogia miała na celu głównie uchwycenie przez początkujących kluczowej intuicji "przemienny vs nieprzemienny".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U i U R dają różne efekty - Część pierwsza" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U i U R dają różne efekty - Część druga" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

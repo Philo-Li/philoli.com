@@ -70,6 +70,8 @@ Ang multiplication na natutunan natin sa elementarya ay isang "commutative" na o
 
 Congratulations! Nalaman mo na ang pagkakaiba ng Abelian group (kung saan ang multiplication at addition ay parehong Abelian group) at non-Abelian group (tulad ng Rubik's Cube group).
 
+(Dagdag pa: May mambabasa ang nagturo na hindi ganoon kahigpit ang pahayag sa itaas, kaya nililinaw namin ito. Ang mga integer, sa ilalim ng addition, ay bumubuo ng isang Abelian group. Ang mga natural na numero (N), sa ilalim ng addition, ay hindi isang Abelian group; halimbawa, ang 3 ay walang inverse na -3, at ang -3 ay hindi isang natural na numero. Ang mga hindi-serong real number, hindi-serong rational number, at hindi-serong complex number, sa ilalim ng multiplication, ay bumubuo ng isang Abelian group. Ang analohiya sa orihinal na post ay pangunahing upang matulungan ang mga nagsisimula na maunawaan ang pangunahing ideya ng "commutative vs. non-commutative".)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U 和 U R 顺序不同效果不同 - 第一部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U 和 U R 顺序不同效果不同 - 第二部分" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />

@@ -70,6 +70,8 @@ Az általános iskolában tanult szorzás egy kommutatív művelet: A × B és B
 
 Gratulálok, máris megértetted az Abel-csoportok (a szorzás és az összeadás is Abel-csoport) és a nem-Abel-csoportok (a Rubik-kocka csoportja) közötti különbséget.
 
+(Kiegészítés: Egy olvasó felhívta a figyelmet, hogy a fenti állítás nem volt teljesen precíz, ezért kiegészítem. Az egészek az összeadásra nézve Abel-csoportot alkotnak, a természetes számok (N) az összeadásra nézve nem alkotnak Abel-csoportot, például 3-nak nincs inverze (-3), mivel -3 nem természetes szám. A nem nulla valós számok, nem nulla racionális számok és nem nulla komplex számok a szorzásra nézve Abel-csoportot alkotnak. Az eredeti analógia célja elsősorban az volt, hogy a kezdők megértsék a "kommutatív vs. nem kommutatív" alapvető intuícióját.)
+
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/04-ru-vs-ur-part1.gif" alt="R U és U R eltérő sorrendje eltérő hatásokat eredményez - Első rész" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-without-formulas/05-ru-vs-ur-part2.gif" alt="R U és U R eltérő sorrendje eltérő hatásokat eredményez - Második rész" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
