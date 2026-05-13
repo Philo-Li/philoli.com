@@ -343,7 +343,12 @@ async function callOpenAICompat(
     body: JSON.stringify({
       model: opts.model,
       temperature: findTone(opts.tone ?? '').temperature,
-      max_tokens: 16384,
+      // OpenAI's GPT-5 / o-series reasoning models reject `max_tokens` and require
+      // `max_completion_tokens`; their older models accept both. Other openai-compat
+      // providers (DeepSeek, Qwen, GLM, Kimi, ...) still only know `max_tokens`.
+      ...(opts.provider === 'openai'
+        ? { max_completion_tokens: 16384 }
+        : { max_tokens: 16384 }),
       messages: [
         { role: 'system', content: SYSTEM_PROMPT(opts.sourceLang, opts.targetLang, opts.tone) },
         { role: 'user', content: buildBatchPrompt(passages) },
@@ -497,7 +502,10 @@ async function callOpenAICompatVision(
     body: JSON.stringify({
       model: opts.model,
       temperature: 0,
-      max_tokens: 8192,
+      // See note in callOpenAICompat — OpenAI new models require max_completion_tokens.
+      ...(opts.provider === 'openai'
+        ? { max_completion_tokens: 8192 }
+        : { max_tokens: 8192 }),
       messages: [
         { role: 'system', content: OCR_SYSTEM_PROMPT(opts.sourceLanguageHint) },
         {
