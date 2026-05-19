@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Gallery from '../Gallery.tsx';
-import { fetchAllArtworks, shuffleArtworks } from '../../lib/philoart';
+import { fetchAllArtworks, getPhiloArtPhotoUrl, shuffleArtworks } from '../../lib/philoart';
 import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
 import '../../styles/gallery.css';
 
@@ -20,9 +20,7 @@ const galleryData = artworks.map(a => ({
   srcSmall: a.srcSmall,
   srcLarge: a.srcLarge,
   year: a.year,
-  sourceUrl: a.slug
-    ? `https://philoart.io/photo/${a.slug}-${a.id}`
-    : `https://philoart.io/photo/${a.id}`,
+  sourceUrl: getPhiloArtPhotoUrl(a),
 }));
 ---
 

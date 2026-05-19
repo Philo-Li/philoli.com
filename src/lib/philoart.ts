@@ -124,3 +124,35 @@ export function getUniqueTypes(artworks: PhiloArtwork[]): string[] {
   const types = new Set(artworks.map(a => a.type));
   return Array.from(types).sort();
 }
+
+export function getPhiloArtPhotoUrl(photo: Pick<PhiloArtwork, 'id' | 'slug'>): string {
+  const baseUrl = 'https://philoart.io/photo';
+  const { id, slug } = photo;
+
+  if (!slug) {
+    return `${baseUrl}/${id}`;
+  }
+
+  const trimmedSlug = slug.trim().replace(/^-+|-+$/g, '');
+  if (!trimmedSlug) {
+    return `${baseUrl}/${id}`;
+  }
+
+  if (trimmedSlug === id || trimmedSlug.endsWith(`-${id}`)) {
+    return `${baseUrl}/${trimmedSlug}`;
+  }
+
+  const slugParts = trimmedSlug.split('-').filter(Boolean);
+  const idParts = id.split('-').filter(Boolean);
+  const overlapSize = Math.min(slugParts.length, idParts.length);
+
+  for (let size = overlapSize; size > 0; size--) {
+    const slugSuffix = slugParts.slice(-size).join('-');
+    const idPrefix = idParts.slice(0, size).join('-');
+    if (slugSuffix === idPrefix) {
+      return `${baseUrl}/${id}`;
+    }
+  }
+
+  return `${baseUrl}/${trimmedSlug}-${id}`;
+}
