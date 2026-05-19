@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Sao chép liên kết chia sẻ",
-      "copied": "Đã sao chép!"
+      "copied": "Đã sao chép!",
+      "button": "Chia s?"
     },
     "gif": {
       "exportButton": "Xuất GIF",
@@ -341,7 +342,9 @@
       "generate": "Tạo GIF",
       "generating": "Đang tạo… {percent}%",
       "errorGeneric": "Không thể tạo GIF. Vui lòng thử lại.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Hãy thêm các bước giải trước khi xuất GIF.",
+      "sceneNotReady": "Khối lập phương vẫn đang tải. Vui lòng thử lại sau ít phút."
     },
     "customHide": {
       "button": "Ẩn tùy chỉnh",

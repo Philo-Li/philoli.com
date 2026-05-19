@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopiuj link do udostępniania",
-      "copied": "Skopiowano!"
+      "copied": "Skopiowano!",
+      "button": "Udost?pnij"
     },
     "gif": {
       "exportButton": "Eksportuj GIF",
@@ -341,7 +342,9 @@
       "generate": "Generuj GIF",
       "generating": "Generowanie… {percent}%",
       "errorGeneric": "Nie udało się wygenerować GIF-a. Spróbuj ponownie.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Dodaj najpierw kroki rozwiązania, zanim wyeksportujesz GIF.",
+      "sceneNotReady": "Kostka wciąż się ładuje. Spróbuj ponownie za chwilę."
     },
     "customHide": {
       "button": "Niestandardowe ukrywanie",

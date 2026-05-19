@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopiraj poveznicu za dijeljenje",
-      "copied": "Kopirano!"
+      "copied": "Kopirano!",
+      "button": "Podijeli"
     },
     "gif": {
       "exportButton": "Izvezi GIF",
@@ -341,7 +342,9 @@
       "generate": "Generiraj GIF",
       "generating": "Generiranje… {percent}%",
       "errorGeneric": "Generiranje GIF-a nije uspjelo. Molimo pokušajte ponovno.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Dodajte korake rješenja prije izvoza GIF-a.",
+      "sceneNotReady": "Kocka se još učitava. Pokušajte ponovno za trenutak."
     },
     "customHide": {
       "button": "Prilagođeno skrivanje",

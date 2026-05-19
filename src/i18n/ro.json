@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Copiază linkul de partajare",
-      "copied": "Copiat!"
+      "copied": "Copiat!",
+      "button": "Distribuie"
     },
     "gif": {
       "exportButton": "Exportă GIF",
@@ -341,7 +342,9 @@
       "generate": "Generează GIF",
       "generating": "Se generează… {percent}%",
       "errorGeneric": "Generarea GIF-ului a eșuat. Te rugăm să încerci din nou.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Adăugați mai întâi câțiva pași de rezolvare înainte de a exporta un GIF.",
+      "sceneNotReady": "Cubul încă se încarcă. Încercați din nou peste câteva momente."
     },
     "customHide": {
       "button": "Ascundere personalizată",

@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopyahin ang link sa pagbabahagi",
-      "copied": "Nakopya na!"
+      "copied": "Nakopya na!",
+      "button": "Ibahagi"
     },
     "gif": {
       "exportButton": "I-export ang GIF",
@@ -341,7 +342,9 @@
       "generate": "Bumuo ng GIF",
       "generating": "Bumubuo… {percent}%",
       "errorGeneric": "Nabigong bumuo ng GIF. Pakisubukang muli.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Magdagdag muna ng ilang hakbang ng solusyon bago mag-export ng GIF.",
+      "sceneNotReady": "Nilo-load pa ang cube. Subukan muli maya-maya."
     },
     "customHide": {
       "button": "Pasadyang pagtago",

@@ -1,4 +1,5 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
+import { SiFacebook, SiReddit, SiTelegram, SiWhatsapp, SiX } from '@icons-pack/react-simple-icons';
 import { useTranslations } from '../i18n';
 import { parseAlgorithm } from '../lib/cube/parser';
 import { applyMove, solvedState } from '../lib/cube/state';
@@ -77,6 +78,88 @@ const LAYER_AXES: { axis: 'y' | 'x' | 'z'; rowKey: 'updown' | 'leftright' | 'fro
   { axis: 'z', rowKey: 'frontback' },
 ];
 
+const SOCIAL_SHARE_TARGETS = [
+  {
+    key: 'x',
+    label: 'X',
+    href: (url: string, text: string) =>
+      `https://x.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`,
+  },
+  {
+    key: 'facebook',
+    label: 'Facebook',
+    href: (url: string) =>
+      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+  },
+  {
+    key: 'whatsapp',
+    label: 'WhatsApp',
+    href: (url: string, text: string) =>
+      `https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`,
+  },
+  {
+    key: 'telegram',
+    label: 'Telegram',
+    href: (url: string, text: string) =>
+      `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`,
+  },
+  {
+    key: 'reddit',
+    label: 'Reddit',
+    href: (url: string, text: string) =>
+      `https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(text)}`,
+  },
+] as const;
+
+function ShareIcon({ type }: { type: 'copy' | (typeof SOCIAL_SHARE_TARGETS)[number]['key'] }) {
+  if (type === 'copy') {
+    return (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="9" y="9" width="10" height="10" rx="2" />
+        <path d="M7 15H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v1" />
+      </svg>
+    );
+  }
+  // X's brand mark is intentionally monochrome — its "color" is the contrast
+  // color of the background. Keeping currentColor lets it flip black/white
+  // with the theme like it does on x.com itself.
+  if (type === 'x') {
+    return (
+      <SiX width={24} height={24} />
+    );
+  }
+  if (type === 'facebook') {
+    return (
+      <SiFacebook width={24} height={24} color="default" />
+    );
+  }
+  if (type === 'whatsapp') {
+    return (
+      <SiWhatsapp width={24} height={24} color="default" />
+    );
+  }
+  if (type === 'telegram') {
+    return (
+      <SiTelegram width={24} height={24} color="default" />
+    );
+  }
+  return (
+    <SiReddit width={24} height={24} color="default" />
+  );
+}
+
+function ShareTriggerIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="18" cy="5" r="2.5" />
+      <circle cx="6" cy="12" r="2.5" />
+      <circle cx="18" cy="19" r="2.5" />
+      <path d="M8.2 10.9 15.8 6.1" />
+      <path d="m8.2 13.1 7.6 4.8" />
+    </svg>
+  );
+}
+
 function inverseMove(m: Move): Move {
   return {
     ...m,
@@ -126,6 +209,8 @@ export default function RubiksCube({ locale, tutorial = null }: Props) {
   const [sceneReady, setSceneReady] = useState(false);
   const [gifOpen, setGifOpen] = useState(false);
   const [gifProgress, setGifProgress] = useState(0);
+  const [gifHint, setGifHint] = useState('');
+  const [shareMenuOpen, setShareMenuOpen] = useState(false);
   const [notationOpen, setNotationOpen] = useState(false);
   const [customHideMode, setCustomHideMode] = useState(false);
   const [showFormulaOverlay, setShowFormulaOverlay] = useState(true);
@@ -136,6 +221,8 @@ export default function RubiksCube({ locale, tutorial = null }: Props) {
   const canvasRef = useRef<HTMLDivElement>(null);
   const overlayCanvasRef = useRef<HTMLCanvasElement>(null);
   const sceneRef = useRef<CubeSceneT | null>(null);
+  const shareMenuRef = useRef<HTMLDivElement>(null);
+  const gifHintTimerRef = useRef<number | null>(null);
   const animatingRef = useRef(false);
   // Set when stepNext/stepPrev finishes — tells the currentState effect
   // that cubies are already in the right physical state, so it should
@@ -160,6 +247,30 @@ export default function RubiksCube({ locale, tutorial = null }: Props) {
   useEffect(() => {
     learningRef.current = learning;
   }, [learning]);
+  useEffect(() => () => {
+    if (gifHintTimerRef.current !== null) {
+      window.clearTimeout(gifHintTimerRef.current);
+    }
+  }, []);
+  useEffect(() => {
+    if (!shareMenuOpen) return;
+    const handlePointerDown = (event: MouseEvent) => {
+      if (!shareMenuRef.current?.contains(event.target as Node)) {
+        setShareMenuOpen(false);
+      }
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setShareMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handlePointerDown);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handlePointerDown);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [shareMenuOpen]);
 
   // ---------- Parsing ----------
   const scrambleParse = useMemo(() => parseAlgorithm(scramble), [scramble]);
@@ -499,17 +610,37 @@ export default function RubiksCube({ locale, tutorial = null }: Props) {
   };
 
   // ---------- Share ----------
-  const copyShareLink = async () => {
+  const shareUrl = useMemo(() => {
+    if (typeof window === 'undefined') return '';
     const state: ShareState = { scramble, solution, learning, step };
     const hash = encodeShareState(state);
-    const url = `${window.location.origin}${window.location.pathname}${hash}`;
+    return `${window.location.origin}${window.location.pathname}${hash}`;
+  }, [scramble, solution, learning, step]);
+
+  const shareText = useMemo(() => {
+    if (typeof document !== 'undefined' && document.title) {
+      return document.title;
+    }
+    return t('rubiksCube.title');
+  }, [t]);
+
+  const socialShareLinks = useMemo(
+    () => SOCIAL_SHARE_TARGETS.map((target) => ({
+      ...target,
+      url: target.href(shareUrl, shareText),
+    })),
+    [shareText, shareUrl],
+  );
+
+  const copyShareLink = async () => {
     try {
-      await navigator.clipboard.writeText(url);
+      await navigator.clipboard.writeText(shareUrl);
       setCopied(true);
+      setShareMenuOpen(false);
       window.setTimeout(() => setCopied(false), 1500);
     } catch {
       // Clipboard may be unavailable; user can copy from the address bar after we update history.
-      window.history.replaceState(null, '', hash || ' ');
+      window.history.replaceState(null, '', shareUrl ? new URL(shareUrl).hash || ' ' : ' ');
     }
   };
 
@@ -548,6 +679,30 @@ export default function RubiksCube({ locale, tutorial = null }: Props) {
     setPlaying(false);
   };
 
+  const showGifHint = (message: string) => {
+    setGifHint(message);
+    if (gifHintTimerRef.current !== null) {
+      window.clearTimeout(gifHintTimerRef.current);
+    }
+    gifHintTimerRef.current = window.setTimeout(() => {
+      setGifHint('');
+      gifHintTimerRef.current = null;
+    }, 2200);
+  };
+
+  const openGifDialog = () => {
+    if (!sceneReady) {
+      showGifHint(t('rubiksCube.gif.sceneNotReady'));
+      return;
+    }
+    if (totalSteps === 0) {
+      showGifHint(t('rubiksCube.gif.needSteps'));
+      return;
+    }
+    setGifHint('');
+    setGifOpen(true);
+  };
+
   // ---------- UI ----------
   const totalSteps = solutionMoves.length;
   const speedIndex = SPEED_STOPS.indexOf(speed);
@@ -555,26 +710,64 @@ export default function RubiksCube({ locale, tutorial = null }: Props) {
   return (
     <main className="rc">
       <header className="rc__header">
-        <p className="rc__eyebrow">PROJECT</p>
-        <h1 className="rc__title">{t('rubiksCube.title')}</h1>
-        <p className="rc__intro">{t('rubiksCube.intro')}</p>
-      </header>
-
-      <div className="rc__topbar">
-        <div aria-hidden="true" />
-        <div className="rc__share rc__share--top">
-          <button type="button" onClick={copyShareLink}>
-            {copied ? t('rubiksCube.share.copied') : t('rubiksCube.share.copy')}
-          </button>
-          <button
-            type="button"
-            onClick={() => setGifOpen(true)}
-            disabled={totalSteps === 0 || !sceneReady}
-          >
-            {t('rubiksCube.gif.exportButton')}
-          </button>
+        <div className="rc__header-copy">
+          <p className="rc__eyebrow">PROJECT</p>
+          <h1 className="rc__title">{t('rubiksCube.title')}</h1>
+          <p className="rc__intro">{t('rubiksCube.intro')}</p>
         </div>
-      </div>
+        <div className="rc__header-tools">
+          <div className="rc__share-hint" aria-live="polite">
+            {gifHint}
+          </div>
+          <div className="rc__share rc__share--top">
+            <div className="rc__share-menu" ref={shareMenuRef}>
+              <button
+                type="button"
+                className="rc__share-toggle"
+                aria-expanded={shareMenuOpen}
+                aria-haspopup="dialog"
+                aria-label={t('rubiksCube.share.button')}
+                title={t('rubiksCube.share.button')}
+                onClick={() => setShareMenuOpen((open) => !open)}
+              >
+                <ShareTriggerIcon />
+              </button>
+              {shareMenuOpen && (
+                <div className="rc__share-popover">
+                  <button
+                    type="button"
+                    className="rc__share-item rc__share-item--copy"
+                    onClick={copyShareLink}
+                  >
+                    <span className="rc__share-item-icon" aria-hidden="true"><ShareIcon type="copy" /></span>
+                    <span>{copied ? t('rubiksCube.share.copied') : t('rubiksCube.share.copy')}</span>
+                  </button>
+                  <div className="rc__share-list">
+                    {socialShareLinks.map((target) => (
+                      <a
+                        key={target.key}
+                        className="rc__share-item rc__share-item--social"
+                        href={target.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={() => setShareMenuOpen(false)}
+                      >
+                        <span className="rc__share-item-icon" aria-hidden="true">
+                          <ShareIcon type={target.key} />
+                        </span>
+                        <span>{target.label}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+            <button type="button" onClick={openGifDialog}>
+              {t('rubiksCube.gif.exportButton')}
+            </button>
+          </div>
+        </div>
+      </header>
 
       <div className="rc__stage">
         <section className={`rc__canvas${customHideMode ? ' rc__canvas--picking' : ''}`}>

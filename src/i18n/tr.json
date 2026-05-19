@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Paylaşım bağlantısını kopyala",
-      "copied": "Kopyalandı!"
+      "copied": "Kopyalandı!",
+      "button": "Payla?"
     },
     "gif": {
       "exportButton": "GIF dışa aktar",
@@ -341,7 +342,9 @@
       "generate": "GIF oluştur",
       "generating": "Oluşturuluyor… %{percent}",
       "errorGeneric": "GIF oluşturulamadı. Lütfen tekrar deneyin.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "GIF dışa aktarmadan önce birkaç çözüm adımı ekleyin.",
+      "sceneNotReady": "Küp hâlâ yükleniyor. Birazdan tekrar deneyin."
     },
     "customHide": {
       "button": "Özel gizleme",

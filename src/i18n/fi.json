@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopioi jakolinkki",
-      "copied": "Kopioitu!"
+      "copied": "Kopioitu!",
+      "button": "Jaa"
     },
     "gif": {
       "exportButton": "Vie GIF-muotoon",
@@ -341,7 +342,9 @@
       "generate": "Luo GIF",
       "generating": "Luodaan… {percent}%",
       "errorGeneric": "GIF-tiedoston luominen epäonnistui. Yritä uudelleen.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Lisää ensin ratkaisuvaiheita ennen GIFin vientiä.",
+      "sceneNotReady": "Kuutiota ladataan vielä. Yritä hetken kuluttua uudelleen."
     },
     "customHide": {
       "button": "Mukautettu piilotus",

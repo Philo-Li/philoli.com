@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopiera delningslänk",
-      "copied": "Kopierad!"
+      "copied": "Kopierad!",
+      "button": "Dela"
     },
     "gif": {
       "exportButton": "Exportera GIF",
@@ -341,7 +342,9 @@
       "generate": "Generera GIF",
       "generating": "Genererar… {percent}%",
       "errorGeneric": "Misslyckades med att generera GIF. Försök igen.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Lägg till några lösningssteg innan du exporterar en GIF.",
+      "sceneNotReady": "Kuben laddas fortfarande. Försök igen om en liten stund."
     },
     "customHide": {
       "button": "Anpassad döljning",

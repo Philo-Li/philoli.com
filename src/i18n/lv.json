@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopēt kopīgošanas saiti",
-      "copied": "Nokopēts!"
+      "copied": "Nokopēts!",
+      "button": "Kop?got"
     },
     "gif": {
       "exportButton": "Eksportēt GIF",
@@ -341,7 +342,9 @@
       "generate": "Ģenerēt GIF",
       "generating": "Ģenerē… {percent}%",
       "errorGeneric": "Neizdevās ģenerēt GIF. Lūdzu, mēģiniet vēlreiz.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Pirms GIF eksportēšanas pievienojiet risinājuma soļus.",
+      "sceneNotReady": "Kubs vēl tiek ielādēts. Mēģiniet vēlreiz pēc brīža."
     },
     "customHide": {
       "button": "Pielāgota slēpšana",

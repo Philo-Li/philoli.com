@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopeeri jagamislink",
-      "copied": "Kopeeritud!"
+      "copied": "Kopeeritud!",
+      "button": "Jaga"
     },
     "gif": {
       "exportButton": "Ekspordi GIF",
@@ -341,7 +342,9 @@
       "generate": "Genereeri GIF",
       "generating": "Genereerimine… {percent}%",
       "errorGeneric": "GIF-i genereerimine ebaõnnestus. Palun proovi uuesti.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Enne GIF-i eksportimist lisa lahenduse sammud.",
+      "sceneNotReady": "Kuubik alles laadib. Proovi hetke pärast uuesti."
     },
     "customHide": {
       "button": "Kohandatud peitmine",

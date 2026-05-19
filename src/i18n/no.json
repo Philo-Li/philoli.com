@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopier delingslenke",
-      "copied": "Kopiert!"
+      "copied": "Kopiert!",
+      "button": "Del"
     },
     "gif": {
       "exportButton": "Eksporter GIF",
@@ -341,7 +342,9 @@
       "generate": "Generer GIF",
       "generating": "Genererer… {percent}%",
       "errorGeneric": "Kunne ikke generere GIF. Vennligst prøv igjen.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Legg til noen løsningssteg før du eksporterer en GIF.",
+      "sceneNotReady": "Kuben lastes fortsatt inn. Prøv igjen om et øyeblikk."
     },
     "customHide": {
       "button": "Egendefinert skjul",

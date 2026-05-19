@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "העתק קישור לשיתוף",
-      "copied": "הועתק!"
+      "copied": "הועתק!",
+      "button": "?????"
     },
     "gif": {
       "exportButton": "ייצוא GIF",
@@ -341,7 +342,9 @@
       "generate": "צור GIF",
       "generating": "יוצר… {percent}%",
       "errorGeneric": "יצירת ה-GIF נכשלה. אנא נסה שוב.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "יש להוסיף צעדי פתרון לפני ייצוא GIF.",
+      "sceneNotReady": "הקובייה עדיין נטענת. נסו שוב בעוד רגע."
     },
     "customHide": {
       "button": "הסתרה מותאמת אישית",

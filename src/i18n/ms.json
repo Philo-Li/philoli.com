@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Salin pautan kongsi",
-      "copied": "Disalin!"
+      "copied": "Disalin!",
+      "button": "Kongsi"
     },
     "gif": {
       "exportButton": "Eksport GIF",
@@ -341,7 +342,9 @@
       "generate": "Jana GIF",
       "generating": "Sedang menjana… {percent}%",
       "errorGeneric": "Gagal menjana GIF. Sila cuba lagi.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Tambahkan beberapa langkah penyelesaian sebelum mengeksport GIF.",
+      "sceneNotReady": "Kiub masih dimuat. Cuba lagi sebentar nanti."
     },
     "customHide": {
       "button": "Sembunyi tersuai",

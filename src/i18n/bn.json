@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "শেয়ার লিঙ্ক কপি করুন",
-      "copied": "কপি হয়েছে!"
+      "copied": "কপি হয়েছে!",
+      "button": "????? ????"
     },
     "gif": {
       "exportButton": "GIF এক্সপোর্ট করুন",
@@ -341,7 +342,9 @@
       "generate": "GIF তৈরি করুন",
       "generating": "তৈরি হচ্ছে… {percent}%",
       "errorGeneric": "GIF তৈরি করা ব্যর্থ হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "GIF এক্সপোর্ট করার আগে কিছু সমাধানের ধাপ যোগ করুন।",
+      "sceneNotReady": "কিউব এখনও লোড হচ্ছে। একটু পরে আবার চেষ্টা করুন।"
     },
     "customHide": {
       "button": "কাস্টম লুকান",

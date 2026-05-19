@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Megosztási link másolása",
-      "copied": "Másolva!"
+      "copied": "Másolva!",
+      "button": "Megoszt?s"
     },
     "gif": {
       "exportButton": "GIF exportálása",
@@ -341,7 +342,9 @@
       "generate": "GIF generálása",
       "generating": "Generálás… {percent}%",
       "errorGeneric": "A GIF generálása sikertelen. Kérlek, próbáld újra.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "GIF exportálása előtt adj meg néhány megoldási lépést.",
+      "sceneNotReady": "A kocka még töltődik. Próbáld meg újra egy pillanat múlva."
     },
     "customHide": {
       "button": "Egyéni elrejtés",

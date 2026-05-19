@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "공유 링크 복사",
-      "copied": "복사되었습니다!"
+      "copied": "복사되었습니다!",
+      "button": "??"
     },
     "gif": {
       "exportButton": "GIF 내보내기",
@@ -341,7 +342,9 @@
       "generate": "GIF 생성",
       "generating": "생성 중… {percent}%",
       "errorGeneric": "GIF 생성에 실패했습니다. 다시 시도해 주세요.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "GIF를 내보내기 전에 풀이 수순을 먼저 입력하세요.",
+      "sceneNotReady": "큐브를 아직 불러오는 중입니다. 잠시 후 다시 시도하세요."
     },
     "customHide": {
       "button": "사용자 지정 숨기기",

@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Salin tautan berbagi",
-      "copied": "Tersalin!"
+      "copied": "Tersalin!",
+      "button": "Bagikan"
     },
     "gif": {
       "exportButton": "Ekspor GIF",
@@ -341,7 +342,9 @@
       "generate": "Buat GIF",
       "generating": "Sedang membuat… {percent}%",
       "errorGeneric": "Gagal membuat GIF. Silakan coba lagi.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Tambahkan beberapa langkah solusi sebelum mengekspor GIF.",
+      "sceneNotReady": "Kubus masih dimuat. Coba lagi sebentar lagi."
     },
     "customHide": {
       "button": "Sembunyikan kustom",

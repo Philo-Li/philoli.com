@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Αντιγραφή συνδέσμου κοινής χρήσης",
-      "copied": "Αντιγράφηκε!"
+      "copied": "Αντιγράφηκε!",
+      "button": "???????????"
     },
     "gif": {
       "exportButton": "Εξαγωγή GIF",
@@ -341,7 +342,9 @@
       "generate": "Δημιουργία GIF",
       "generating": "Δημιουργία… {percent}%",
       "errorGeneric": "Αποτυχία δημιουργίας GIF. Παρακαλώ προσπαθήστε ξανά.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Προσθέστε πρώτα μερικά βήματα λύσης πριν εξαγάγετε GIF.",
+      "sceneNotReady": "Ο κύβος φορτώνει ακόμη. Δοκιμάστε ξανά σε λίγο."
     },
     "customHide": {
       "button": "Προσαρμοσμένη απόκρυψη",

@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "คัดลอกลิงก์แชร์",
-      "copied": "คัดลอกแล้ว!"
+      "copied": "คัดลอกแล้ว!",
+      "button": "????"
     },
     "gif": {
       "exportButton": "ส่งออก GIF",
@@ -341,7 +342,9 @@
       "generate": "สร้าง GIF",
       "generating": "กำลังสร้าง… {percent}%",
       "errorGeneric": "สร้าง GIF ไม่สำเร็จ โปรดลองใหม่อีกครั้ง",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "โปรดใส่ขั้นตอนการแก้ก่อนส่งออก GIF",
+      "sceneNotReady": "คิวบ์ยังโหลดไม่เสร็จ โปรดลองอีกครั้งในอีกสักครู่"
     },
     "customHide": {
       "button": "ซ่อนแบบกำหนดเอง",

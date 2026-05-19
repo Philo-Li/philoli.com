@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Deellink kopiëren",
-      "copied": "Gekopieerd!"
+      "copied": "Gekopieerd!",
+      "button": "Delen"
     },
     "gif": {
       "exportButton": "Exporteer GIF",
@@ -341,7 +342,9 @@
       "generate": "Genereer GIF",
       "generating": "Bezig met genereren… {percent}%",
       "errorGeneric": "Genereren van GIF mislukt. Probeer het opnieuw.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Voeg eerst oplossingsstappen toe voordat je een GIF exporteert.",
+      "sceneNotReady": "De kubus wordt nog geladen. Probeer het zo opnieuw."
     },
     "customHide": {
       "button": "Aangepast verbergen",

@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopírovat odkaz pro sdílení",
-      "copied": "Zkopírováno!"
+      "copied": "Zkopírováno!",
+      "button": "Sd?let"
     },
     "gif": {
       "exportButton": "Exportovat GIF",
@@ -341,7 +342,9 @@
       "generate": "Generovat GIF",
       "generating": "Generování… {percent}%",
       "errorGeneric": "Generování GIF selhalo. Zkuste to prosím znovu.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Než vyexportujete GIF, přidejte nejprve kroky řešení.",
+      "sceneNotReady": "Kostka se ještě načítá. Zkuste to za chvíli znovu."
     },
     "customHide": {
       "button": "Vlastní skrytí",

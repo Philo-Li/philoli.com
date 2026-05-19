@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopijuoti bendrinimo nuorodą",
-      "copied": "Nukopijuota!"
+      "copied": "Nukopijuota!",
+      "button": "Bendrinti"
     },
     "gif": {
       "exportButton": "Eksportuoti GIF",
@@ -341,7 +342,9 @@
       "generate": "Generuoti GIF",
       "generating": "Generuojama… {percent}%",
       "errorGeneric": "Nepavyko sugeneruoti GIF. Bandykite dar kartą.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Prieš eksportuodami GIF, pirmiausia pridėkite sprendimo žingsnius.",
+      "sceneNotReady": "Kubas vis dar įkeliamas. Po akimirkos bandykite dar kartą."
     },
     "customHide": {
       "button": "Pasirinktinis slėpimas",

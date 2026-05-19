@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Teilen-Link kopieren",
-      "copied": "Kopiert!"
+      "copied": "Kopiert!",
+      "button": "Teilen"
     },
     "gif": {
       "exportButton": "GIF exportieren",
@@ -341,7 +342,9 @@
       "generate": "GIF generieren",
       "generating": "Generiere… {percent}%",
       "errorGeneric": "GIF-Generierung fehlgeschlagen. Bitte erneut versuchen.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Füge erst Lösungsschritte hinzu, bevor du ein GIF exportierst.",
+      "sceneNotReady": "Der Würfel lädt noch. Bitte versuche es gleich noch einmal."
     },
     "customHide": {
       "button": "Benutzerdefiniertes Ausblenden",

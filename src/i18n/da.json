@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Kopiér delingslink",
-      "copied": "Kopieret!"
+      "copied": "Kopieret!",
+      "button": "Del"
     },
     "gif": {
       "exportButton": "Eksporter GIF",
@@ -341,7 +342,9 @@
       "generate": "Generer GIF",
       "generating": "Genererer… {percent}%",
       "errorGeneric": "Kunne ikke generere GIF. Prøv venligst igen.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Tilføj nogle løsningsskridt, før du eksporterer en GIF.",
+      "sceneNotReady": "Terningen indlæses stadig. Prøv igen om et øjeblik."
     },
     "customHide": {
       "button": "Brugerdefineret skjul",

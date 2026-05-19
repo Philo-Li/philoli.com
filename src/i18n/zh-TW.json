@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "複製分享連結",
-      "copied": "已複製！"
+      "copied": "已複製！",
+      "button": "??"
     },
     "gif": {
       "exportButton": "匯出 GIF",
@@ -341,7 +342,9 @@
       "generate": "生成 GIF",
       "generating": "生成中… {percent}%",
       "errorGeneric": "GIF 生成失敗。請再試一次。",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "請先輸入一些解法步驟，再匯出 GIF。",
+      "sceneNotReady": "魔術方塊仍在載入中，請稍後再試。"
     },
     "customHide": {
       "button": "自訂隱藏",

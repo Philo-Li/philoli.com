@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "Скопировать ссылку",
-      "copied": "Скопировано!"
+      "copied": "Скопировано!",
+      "button": "??????????"
     },
     "gif": {
       "exportButton": "Экспорт GIF",
@@ -341,7 +342,9 @@
       "generate": "Создать GIF",
       "generating": "Создание… {percent}%",
       "errorGeneric": "Не удалось создать GIF. Пожалуйста, попробуйте снова.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "Сначала добавьте шаги решения, а потом экспортируйте GIF.",
+      "sceneNotReady": "Кубик ещё загружается. Попробуйте снова через минуту."
     },
     "customHide": {
       "button": "Скрыть выборочно",

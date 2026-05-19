@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "کپی لینک اشتراک‌گذاری",
-      "copied": "کپی شد!"
+      "copied": "کپی شد!",
+      "button": "????????????"
     },
     "gif": {
       "exportButton": "خروجی GIF",
@@ -341,7 +342,9 @@
       "generate": "تولید GIF",
       "generating": "در حال تولید… {percent}%",
       "errorGeneric": "تولید GIF ناموفق بود. لطفاً دوباره تلاش کنید.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "پیش از خروجی گرفتن GIF، چند مرحلهٔ حل اضافه کنید.",
+      "sceneNotReady": "مکعب هنوز در حال بارگذاری است. کمی بعد دوباره امتحان کنید."
     },
     "customHide": {
       "button": "پنهان‌سازی سفارشی",

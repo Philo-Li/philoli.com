@@ -326,7 +326,8 @@
     },
     "share": {
       "copy": "نسخ رابط المشاركة",
-      "copied": "تم النسخ!"
+      "copied": "تم النسخ!",
+      "button": "??????"
     },
     "gif": {
       "exportButton": "تصدير GIF",
@@ -341,7 +342,9 @@
       "generate": "إنشاء GIF",
       "generating": "جاري الإنشاء... {percent}%",
       "errorGeneric": "فشل إنشاء GIF. يرجى المحاولة مجدداً.",
-      "filenamePrefix": "rubiks-cube"
+      "filenamePrefix": "rubiks-cube",
+      "needSteps": "أضف بعض خطوات الحل قبل تصدير ملف GIF.",
+      "sceneNotReady": "المكعب لا يزال قيد التحميل. حاول مرة أخرى بعد قليل."
     },
     "customHide": {
       "button": "إخفاء مخصص",
