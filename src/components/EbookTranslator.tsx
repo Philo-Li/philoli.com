@@ -16,7 +16,16 @@ import {
   visionModelsForProvider,
   ocrImage,
   type ProviderId,
+  type GlossaryTerm,
 } from '../lib/llm';
+import {
+  deleteGlossary,
+  listGlossaries,
+  loadGlossary,
+  parseCsvGlossary,
+  saveGlossary,
+  type GlossarySummary,
+} from '../lib/glossary-store';
 import type { OcrPageProgress, ParaTag } from '../lib/pdf';
 import {
   deleteEbookSession,
@@ -274,6 +283,14 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const parsedBlobCacheRef = useRef<{ parsed: ParsedEpub | null; blob: Blob | null }>({ parsed: null, blob: null });
   const [history, setHistory] = useState<EbookSessionSummary[]>([]);
 
+  // Glossary state — picker shows the user's library, the selected one is per-book
+  // and persisted alongside other session fields. Entries are loaded on demand.
+  const [glossaries, setGlossaries] = useState<GlossarySummary[]>([]);
+  const [selectedGlossaryId, setSelectedGlossaryId] = useState<string | null>(null);
+  const [activeGlossaryTerms, setActiveGlossaryTerms] = useState<GlossaryTerm[]>([]);
+  const activeGlossaryTermsRef = useRef<GlossaryTerm[]>([]);
+  useEffect(() => { activeGlossaryTermsRef.current = activeGlossaryTerms; }, [activeGlossaryTerms]);
+
   // Mirror translations to a ref so async loops can read latest without stale closures
   const allTranslationsRef = useRef(allTranslations);
   useEffect(() => { allTranslationsRef.current = allTranslations; }, [allTranslations]);
@@ -313,6 +330,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     setTranslatingAllPages(false);
     translatingAllPagesRef.current = null;
     translatedTitleRef.current = '';
+    setSelectedGlossaryId(snap.selectedGlossaryId ?? null);
     if ((snap.sourceKind === 'epub' || snap.sourceKind === 'pdf-text' || snap.sourceKind === 'pdf-ocr') && (restoredFile || restored.parsedBlob)) {
       setParsing(true);
       try {
@@ -391,6 +409,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
           pageErrors: Array.from(pageErrors.entries()),
           totalNodes,
           totalPages: pdfMeta?.pageCount ?? 0,
+          selectedGlossaryId,
         };
         await saveEbookSession({
           id,
@@ -419,6 +438,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     parsed,
     pdfMeta,
     previewPage,
+    selectedGlossaryId,
     selectedIdx,
     sessionSourceKind,
     sidebarCollapsed,
@@ -440,6 +460,44 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     })();
     return () => { cancelled = true; };
   }, [step]);
+
+  /** Reload the user's glossary library — kept fresh whenever the picker is likely to open. */
+  const refreshGlossaries = async () => {
+    try {
+      const list = await listGlossaries();
+      setGlossaries(list);
+    } catch (err) {
+      console.warn('[ebook-translator] failed to list glossaries', err);
+    }
+  };
+
+  // Initial library load (once per mount); picker can also force-refresh after upload.
+  useEffect(() => { void refreshGlossaries(); }, []);
+
+  // Hydrate the actual entries when the user (or a restored session) selects a glossary.
+  useEffect(() => {
+    if (!selectedGlossaryId) {
+      setActiveGlossaryTerms([]);
+      return;
+    }
+    let cancelled = false;
+    void (async () => {
+      try {
+        const g = await loadGlossary(selectedGlossaryId);
+        if (cancelled) return;
+        if (!g) {
+          // Glossary was deleted out from under us — clear the selection.
+          setSelectedGlossaryId(null);
+          setActiveGlossaryTerms([]);
+          return;
+        }
+        setActiveGlossaryTerms(g.entries);
+      } catch (err) {
+        console.warn('[ebook-translator] failed to load glossary', err);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [selectedGlossaryId]);
 
   const provider = useMemo(() => findProvider(settings.provider), [settings.provider]);
 
@@ -534,6 +592,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     setPagePhase(new Map());
     setPageResults(new Map());
     setPageErrors(new Map());
+    setSelectedGlossaryId(null);
     if (translatingAllPagesRef.current) translatingAllPagesRef.current.aborted = true;
     setTranslatingAllPages(false);
     try {
@@ -556,6 +615,25 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     } finally {
       setParsing(false);
     }
+  }
+
+  async function uploadGlossaryFile(file: File): Promise<void> {
+    const text = await file.text();
+    const entries = parseCsvGlossary(text);
+    const baseName = file.name.replace(/\.(csv|tsv|txt)$/i, '').trim() || 'glossary';
+    const saved = await saveGlossary({ name: baseName, entries });
+    await refreshGlossaries();
+    setSelectedGlossaryId(saved.id);
+  }
+
+  async function removeGlossary(id: string): Promise<void> {
+    try {
+      await deleteGlossary(id);
+    } catch (err) {
+      console.warn('[ebook-translator] failed to delete glossary', err);
+    }
+    if (id === selectedGlossaryId) setSelectedGlossaryId(null);
+    await refreshGlossaries();
   }
 
   /** Open a previously-translated book from the history list. */
@@ -689,6 +767,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     setPageErrors(new Map());
     setTranslatingAllPages(false);
     translatingAllPagesRef.current = null;
+    setSelectedGlossaryId(null);
     sessionIdRef.current = null;
   }
 
@@ -729,6 +808,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
       targetLang: settings.targetLang,
       tone: settings.tone,
       customEndpoint: settings.customEndpoint,
+      glossary: activeGlossaryTermsRef.current,
     });
     return {
       pageIndex: pageNumber,
@@ -840,6 +920,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
               tone: settings.tone,
               signal: ctl.signal,
               customEndpoint: settings.customEndpoint,
+              glossary: activeGlossaryTermsRef.current,
             }).then(tr => ({ b, tr }))
           )
         );
@@ -937,6 +1018,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
         targetLang: settings.targetLang,
         tone: settings.tone,
         customEndpoint: settings.customEndpoint,
+        glossary: activeGlossaryTermsRef.current,
       });
       const t = (result[0] || '').trim() || original;
       translatedTitleRef.current = t;
@@ -1306,6 +1388,15 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
                       );
                     })}
                   </select>
+                  <GlossaryPicker
+                    t={t}
+                    glossaries={glossaries}
+                    selectedId={selectedGlossaryId}
+                    onSelect={setSelectedGlossaryId}
+                    onUpload={uploadGlossaryFile}
+                    onDelete={removeGlossary}
+                    disabled={chapterIsRunning}
+                  />
                   {chapterIsRunning ? (
                     <button type="button" className="bt__btn bt__btn--small" onClick={() => cancelChapter(chapter)}>
                       {t('ebookTranslator.actions.cancel')}
@@ -1344,6 +1435,15 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
                       );
                     })}
                   </select>
+                  <GlossaryPicker
+                    t={t}
+                    glossaries={glossaries}
+                    selectedId={selectedGlossaryId}
+                    onSelect={setSelectedGlossaryId}
+                    onUpload={uploadGlossaryFile}
+                    onDelete={removeGlossary}
+                    disabled={singlePageBusy || translatingAllPages || !!ocrProgress}
+                  />
                   <button
                     type="button"
                     className="bt__btn bt__btn--small bt__btn--primary"
@@ -1759,6 +1859,148 @@ function HistoryRow({
         ×
       </button>
     </li>
+  );
+}
+
+function GlossaryPicker({
+  t,
+  glossaries,
+  selectedId,
+  onSelect,
+  onUpload,
+  onDelete,
+  disabled,
+}: {
+  t: TFn;
+  glossaries: GlossarySummary[];
+  selectedId: string | null;
+  onSelect: (id: string | null) => void;
+  onUpload: (file: File) => Promise<void>;
+  onDelete: (id: string) => Promise<void>;
+  disabled?: boolean;
+}) {
+  const [open, setOpen] = useState(false);
+  const [uploadError, setUploadError] = useState<string | null>(null);
+  const [uploading, setUploading] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
+
+  // Close on outside click and on Escape.
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent) => {
+      if (!rootRef.current?.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false); };
+    document.addEventListener('mousedown', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
+  const selected = glossaries.find(g => g.id === selectedId) ?? null;
+  const buttonLabel = selected
+    ? `${t('ebookTranslator.glossary.label')}: ${selected.name}`
+    : `${t('ebookTranslator.glossary.label')}: ${t('ebookTranslator.glossary.none')}`;
+
+  return (
+    <div className="bt__glossary" ref={rootRef}>
+      <button
+        type="button"
+        className={`bt__btn bt__btn--small bt__glossary-toggle ${selected ? 'bt__glossary-toggle--active' : ''}`}
+        onClick={() => setOpen(v => !v)}
+        disabled={disabled}
+        title={t('ebookTranslator.glossary.title')}
+        aria-haspopup="menu"
+        aria-expanded={open}
+      >
+        {buttonLabel}
+      </button>
+      {open && (
+        <div className="bt__glossary-popover" role="menu">
+          <button
+            type="button"
+            className={`bt__glossary-item bt__glossary-item--none ${selectedId === null ? 'bt__glossary-item--selected' : ''}`}
+            onClick={() => { onSelect(null); setOpen(false); }}
+          >
+            {t('ebookTranslator.glossary.none')}
+          </button>
+          {glossaries.length === 0 ? (
+            <div className="bt__glossary-empty">{t('ebookTranslator.glossary.empty')}</div>
+          ) : (
+            <ul className="bt__glossary-list">
+              {glossaries.map(g => (
+                <li key={g.id} className="bt__glossary-row">
+                  <button
+                    type="button"
+                    className={`bt__glossary-item ${selectedId === g.id ? 'bt__glossary-item--selected' : ''}`}
+                    onClick={() => { onSelect(g.id); setOpen(false); }}
+                  >
+                    <span className="bt__glossary-name" title={g.name}>{g.name}</span>
+                    <span className="bt__glossary-count">
+                      {t('ebookTranslator.glossary.entryCount').replace('{n}', String(g.entryCount))}
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    className="bt__glossary-delete"
+                    onClick={e => {
+                      e.stopPropagation();
+                      if (window.confirm(t('ebookTranslator.glossary.deleteConfirm').replace('{name}', g.name))) {
+                        void onDelete(g.id);
+                      }
+                    }}
+                    aria-label={t('ebookTranslator.glossary.delete')}
+                    title={t('ebookTranslator.glossary.delete')}
+                  >
+                    ×
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+          <div className="bt__glossary-footer">
+            <button
+              type="button"
+              className="bt__btn bt__btn--small bt__btn--primary"
+              onClick={() => fileRef.current?.click()}
+              disabled={uploading}
+            >
+              {uploading
+                ? t('ebookTranslator.glossary.uploading')
+                : t('ebookTranslator.glossary.upload')}
+            </button>
+            <input
+              ref={fileRef}
+              type="file"
+              accept=".csv,.tsv,.txt,text/csv,text/tab-separated-values,text/plain"
+              style={{ display: 'none' }}
+              onChange={async e => {
+                const f = e.target.files?.[0];
+                if (!f) return;
+                setUploadError(null);
+                setUploading(true);
+                try {
+                  await onUpload(f);
+                } catch (err) {
+                  setUploadError(err instanceof Error ? err.message : String(err));
+                } finally {
+                  setUploading(false);
+                  // Reset so re-selecting the same file fires onChange again.
+                  if (fileRef.current) fileRef.current.value = '';
+                }
+              }}
+            />
+            <div className="bt__glossary-hint">{t('ebookTranslator.glossary.hint')}</div>
+            {uploadError && (
+              <div className="bt__glossary-error">{uploadError}</div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 

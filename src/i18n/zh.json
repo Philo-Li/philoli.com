@@ -216,6 +216,18 @@
       "translatingLabel": "翻译中…",
       "buildFailed": "生成 EPUB 失败："
     },
+    "glossary": {
+      "label": "术语表",
+      "title": "为本书中的术语强制指定译法 —— 适合技术、专业或领域类书籍。",
+      "none": "无",
+      "empty": "尚未上传任何术语表。",
+      "entryCount": "{n} 条",
+      "upload": "上传 CSV…",
+      "uploading": "上传中…",
+      "hint": "两列 CSV：原文，译文。可选第三列：备注。首行可为表头。UTF-8。",
+      "delete": "删除术语表",
+      "deleteConfirm": "确定删除术语表「{name}」？正在使用它的书将回退为不使用术语表。"
+    },
     "tones": {
       "idiomatic": {
         "label": "地道",

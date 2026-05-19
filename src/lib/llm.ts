@@ -235,6 +235,13 @@ export function findTone(id: string): ToneOption {
   return TONES.find(t => t.id === id) ?? TONES[0];
 }
 
+export interface GlossaryTerm {
+  source: string;
+  target: string;
+  /** Optional clarifier shown to the LLM (e.g. disambiguating context). */
+  note?: string;
+}
+
 export interface TranslateOptions {
   provider: ProviderId;
   model: string;
@@ -246,14 +253,58 @@ export interface TranslateOptions {
   signal?: AbortSignal;
   /** Override endpoint URL — used by the "custom" provider. */
   customEndpoint?: string;
+  /**
+   * User-supplied terminology overrides. Only entries whose `source` appears in
+   * the current batch's passages are injected into the system prompt — keeps the
+   * prompt short on long books with large glossaries.
+   */
+  glossary?: GlossaryTerm[];
 }
 
-const SYSTEM_PROMPT = (sourceLang: string, targetLang: string, toneId: string | undefined) => {
-  const tone = findTone(toneId ?? 'literary');
-  return `You are a professional translator. Translate the user's text from ${sourceLang} into ${targetLang}.
+function escapeRegex(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/** True if a glossary source term is safe to match with `\b` word boundaries. */
+function isWordBoundarySafe(s: string): boolean {
+  // Latin/Greek/Cyrillic scripts have word boundaries; CJK and others don't.
+  // We approximate "alphabetic script" as ASCII letters + a few separators.
+  return /^[A-Za-z0-9][A-Za-z0-9\s\-_'']*$/.test(s);
+}
+
+/**
+ * Find glossary entries whose `source` appears anywhere in `passages`. Case-insensitive.
+ * Returned entries are sorted by source length descending so the prompt lists more specific
+ * terms before generic ones (helps the LLM apply the longest match).
+ */
+export function matchGlossary(passages: string[], glossary: GlossaryTerm[] | undefined): GlossaryTerm[] {
+  if (!glossary || glossary.length === 0) return [];
+  const haystack = passages.join('\n');
+  const hits: GlossaryTerm[] = [];
+  for (const entry of glossary) {
+    const src = entry.source.trim();
+    if (!src || !entry.target.trim()) continue;
+    const pattern = isWordBoundarySafe(src)
+      ? new RegExp(`\\b${escapeRegex(src)}\\b`, 'i')
+      : new RegExp(escapeRegex(src), 'i');
+    if (pattern.test(haystack)) hits.push(entry);
+  }
+  hits.sort((a, b) => b.source.length - a.source.length);
+  return hits;
+}
+
+const SYSTEM_PROMPT = (passages: string[], opts: TranslateOptions): string => {
+  const tone = findTone(opts.tone ?? 'literary');
+  const hits = matchGlossary(passages, opts.glossary);
+  const glossaryBlock = hits.length === 0
+    ? ''
+    : `\n\nGlossary — when the source contains any of the following terms, translate them EXACTLY as specified. These overrides take precedence over your own word choice:\n${hits
+        .map(h => `- "${h.source}" → "${h.target}"${h.note ? ` (${h.note})` : ''}`)
+        .join('\n')}\n`;
+  return `You are a professional translator. Translate the user's text from ${opts.sourceLang} into ${opts.targetLang}.
 
 Style: ${tone.guidance}
-
+${glossaryBlock}
 Rules:
 - Output ONLY the translation. No explanations, no notes, no quotes around it.
 - Preserve paragraph breaks exactly as in the input.
@@ -350,7 +401,7 @@ async function callOpenAICompat(
         ? { max_completion_tokens: 16384 }
         : { max_tokens: 16384 }),
       messages: [
-        { role: 'system', content: SYSTEM_PROMPT(opts.sourceLang, opts.targetLang, opts.tone) },
+        { role: 'system', content: SYSTEM_PROMPT(passages, opts) },
         { role: 'user', content: buildBatchPrompt(passages) },
       ],
     }),
@@ -378,7 +429,7 @@ async function callAnthropic(
       model: opts.model,
       max_tokens: 8192,
       temperature: findTone(opts.tone ?? '').temperature,
-      system: SYSTEM_PROMPT(opts.sourceLang, opts.targetLang, opts.tone),
+      system: SYSTEM_PROMPT(passages, opts),
       messages: [{ role: 'user', content: buildBatchPrompt(passages) }],
     }),
   });
@@ -398,7 +449,7 @@ async function callGemini(
     headers: { 'Content-Type': 'application/json' },
     signal: opts.signal,
     body: JSON.stringify({
-      systemInstruction: { parts: [{ text: SYSTEM_PROMPT(opts.sourceLang, opts.targetLang, opts.tone) }] },
+      systemInstruction: { parts: [{ text: SYSTEM_PROMPT(passages, opts) }] },
       contents: [{ role: 'user', parts: [{ text: buildBatchPrompt(passages) }] }],
       generationConfig: {
         temperature: findTone(opts.tone ?? '').temperature,

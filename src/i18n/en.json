@@ -219,6 +219,18 @@
       "translatingLabel": "translating…",
       "buildFailed": "Failed to build EPUB:"
     },
+    "glossary": {
+      "label": "Glossary",
+      "title": "Force specific translations for terms in this book — useful for technical, professional, or domain-specific works.",
+      "none": "None",
+      "empty": "No glossaries uploaded yet.",
+      "entryCount": "{n} terms",
+      "upload": "Upload CSV…",
+      "uploading": "Uploading…",
+      "hint": "CSV with two columns: source term, translation. Optional third column: note. First row may be a header. UTF-8.",
+      "delete": "Remove glossary",
+      "deleteConfirm": "Remove the glossary \"{name}\"? Any books using it will fall back to no glossary."
+    },
     "tones": {
       "idiomatic": {
         "label": "Idiomatic",

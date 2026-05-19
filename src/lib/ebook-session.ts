@@ -42,6 +42,8 @@ export interface PersistedEbookSessionSnapshot {
   // did not write them.
   totalNodes?: number;
   totalPages?: number;
+  /** ID of the user's glossary attached to this book, or null/undefined when none. */
+  selectedGlossaryId?: string | null;
 }
 
 interface PersistedEbookSessionRecord {
