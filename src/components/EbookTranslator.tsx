@@ -18,6 +18,12 @@ import {
   type ProviderId,
 } from '../lib/llm';
 import type { OcrPageProgress, ParaTag } from '../lib/pdf';
+import {
+  clearEbookSession,
+  loadEbookSession,
+  saveEbookSession,
+  type PersistedEbookSessionSnapshot,
+} from '../lib/ebook-session';
 
 interface SinglePageItem {
   type: ParaTag;
@@ -81,6 +87,7 @@ const MODEL_HINT_KEYS: Record<string, string> = {
 
 type Step = 'settings' | 'upload' | 'browse';
 type ChapterStatus = 'pending' | 'translating' | 'done' | 'partial' | 'error';
+type SessionSourceKind = 'epub' | 'pdf-preview' | 'pdf-text' | 'pdf-ocr' | null;
 
 interface Settings {
   provider: ProviderId;
@@ -179,9 +186,15 @@ function pagePhaseIcon(phase: PagePhase): string {
        : STATUS_ICONS.pending;
 }
 
+function fileFromBlob(blob: Blob, name: string, type: string): File {
+  if (blob instanceof File && blob.name === name && blob.type === type) return blob;
+  return new File([blob], name, { type: type || blob.type || 'application/octet-stream' });
+}
+
 export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const t = useTranslations(locale);
   const [step, setStep] = useState<Step>('settings');
+  const [sessionSourceKind, setSessionSourceKind] = useState<SessionSourceKind>(null);
   const [settings, setSettings] = useState<Settings>(() =>
     typeof window === 'undefined'
       ? { provider: 'gemini', model: 'gemini-3-flash-preview', apiKey: '', rememberKey: true, sourceLang: 'English', targetLang: 'Chinese (Simplified)', tone: 'idiomatic', customEndpoint: '', customModel: '' }
@@ -255,6 +268,9 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const translateAllAbortRef = useRef<AbortController | null>(null);
   // Cache translated title so we don't call the API more than once for it.
   const translatedTitleRef = useRef<string>('');
+  const sessionHydratedRef = useRef(false);
+  const saveSeqRef = useRef(0);
+  const parsedBlobCacheRef = useRef<{ parsed: ParsedEpub | null; blob: Blob | null }>({ parsed: null, blob: null });
 
   // Mirror translations to a ref so async loops can read latest without stale closures
   const allTranslationsRef = useRef(allTranslations);
@@ -265,6 +281,129 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   useEffect(() => { runningRef.current = running; }, [running]);
 
   useEffect(() => { persistSettings(settings); }, [settings]);
+
+  useEffect(() => {
+    let cancelled = false;
+    void (async () => {
+      try {
+        const restored = await loadEbookSession();
+        if (cancelled || !restored) return;
+        const snap = restored.snapshot;
+        const restoredFile = restored.fileBlob && snap.fileName
+          ? fileFromBlob(restored.fileBlob, snap.fileName, snap.fileType || restored.fileBlob.type)
+          : null;
+        setSessionSourceKind(snap.sourceKind);
+        setStep(snap.step);
+        setFile(restoredFile);
+        setPdfMeta(snap.pdfMeta);
+        setParseError(snap.parseError);
+        setSelectedIdx(snap.selectedIdx);
+        setPreviewPage(snap.previewPage);
+        setSidebarCollapsed(snap.sidebarCollapsed);
+        setChapterStatus(new Map(snap.chapterStatus as Array<[string, ChapterStatus]>));
+        setAllTranslations(new Map(snap.allTranslations.map(([href, entries]) => [href, new Map(entries)])));
+        setChapterErrors(new Map(snap.chapterErrors));
+        setPagePhase(new Map(snap.pagePhase as Array<[number, PagePhase]>));
+        setPageResults(new Map(snap.pageResults as Array<[number, SinglePageResult]>));
+        setPageErrors(new Map(snap.pageErrors));
+        setNeedsVisionModel(null);
+        setOcrProgress(null);
+        setRunning(new Set());
+        setTranslatingAllPages(false);
+        translatingAllPagesRef.current = null;
+        translatedTitleRef.current = '';
+        if ((snap.sourceKind === 'epub' || snap.sourceKind === 'pdf-text' || snap.sourceKind === 'pdf-ocr') && (restoredFile || restored.parsedBlob)) {
+          setParsing(true);
+          try {
+            let parsedResult: ParsedEpub;
+            if (snap.sourceKind === 'epub' && restoredFile) {
+              parsedResult = await parseEpub(restoredFile);
+            } else if (snap.sourceKind === 'pdf-text' && restoredFile) {
+              const pdfMod = await import('../lib/pdf');
+              parsedResult = await pdfMod.parsePdf(restoredFile);
+            } else if (snap.sourceKind === 'pdf-ocr' && restored.parsedBlob) {
+              parsedResult = await parseEpub(restored.parsedBlob);
+            } else {
+              throw new Error('Saved ebook session is incomplete');
+            }
+            if (!cancelled) setParsed(parsedResult);
+          } finally {
+            if (!cancelled) setParsing(false);
+          }
+        } else {
+          setParsed(null);
+        }
+      } catch (err) {
+        console.warn('[ebook-translator] failed to restore saved session', err);
+        void clearEbookSession();
+      } finally {
+        if (!cancelled) sessionHydratedRef.current = true;
+      }
+    })();
+    return () => { cancelled = true; };
+  }, []);
+
+  useEffect(() => {
+    if (!sessionHydratedRef.current) return;
+    const hasRecoverableState = !!file || !!parsed || !!pdfMeta;
+    const saveSeq = ++saveSeqRef.current;
+    const timer = window.setTimeout(() => {
+      void (async () => {
+        if (!hasRecoverableState) {
+          await clearEbookSession();
+          return;
+        }
+        let parsedBlob: Blob | null = null;
+        if (sessionSourceKind === 'pdf-ocr' && parsed) {
+          if (parsedBlobCacheRef.current.parsed === parsed && parsedBlobCacheRef.current.blob) {
+            parsedBlob = parsedBlobCacheRef.current.blob;
+          } else {
+            parsedBlob = await parsed.zip.generateAsync({ type: 'blob', mimeType: 'application/epub+zip' });
+            parsedBlobCacheRef.current = { parsed, blob: parsedBlob };
+          }
+        }
+        const snapshot: PersistedEbookSessionSnapshot = {
+          version: 1,
+          sourceKind: sessionSourceKind,
+          step,
+          fileName: file?.name ?? null,
+          fileType: file?.type ?? null,
+          selectedIdx,
+          previewPage,
+          sidebarCollapsed,
+          pdfMeta,
+          parseError,
+          chapterStatus: Array.from(chapterStatus.entries()),
+          allTranslations: Array.from(allTranslations.entries(), ([href, translations]) => [href, Array.from(translations.entries())]),
+          chapterErrors: Array.from(chapterErrors.entries()),
+          pagePhase: Array.from(pagePhase.entries()),
+          pageResults: Array.from(pageResults.entries()),
+          pageErrors: Array.from(pageErrors.entries()),
+        };
+        await saveEbookSession(snapshot, file, parsedBlob);
+      })().catch(err => {
+        if (saveSeq !== saveSeqRef.current) return;
+        console.warn('[ebook-translator] failed to save session', err);
+      });
+    }, 400);
+    return () => window.clearTimeout(timer);
+  }, [
+    allTranslations,
+    chapterErrors,
+    chapterStatus,
+    file,
+    pageErrors,
+    pagePhase,
+    pageResults,
+    parseError,
+    parsed,
+    pdfMeta,
+    previewPage,
+    selectedIdx,
+    sessionSourceKind,
+    sidebarCollapsed,
+    step,
+  ]);
 
   const provider = useMemo(() => findProvider(settings.provider), [settings.provider]);
 
@@ -280,8 +419,9 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     });
   }
 
-  function finishParse(result: ParsedEpub) {
+  function finishParse(result: ParsedEpub, sourceKind: Exclude<SessionSourceKind, null>) {
     setParsed(result);
+    setSessionSourceKind(sourceKind);
     const initial = new Map<string, ChapterStatus>();
     result.chapters.forEach(c => initial.set(c.href, c.nodes.length === 0 ? 'done' : 'pending'));
     setChapterStatus(initial);
@@ -324,11 +464,14 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
    *     The user reviews pages and clicks "Continue" / "Start OCR" before any heavy work runs.
    */
   async function handleFile(f: File) {
+    parsedBlobCacheRef.current = { parsed: null, blob: null };
     setFile(f);
+    translatedTitleRef.current = '';
     setParsing(true);
     setParseError(null);
     setParsed(null);
     setPdfMeta(null);
+    setSessionSourceKind(null);
     setNeedsVisionModel(null);
     setOcrProgress(null);
     setSelectedIdx(0);
@@ -347,12 +490,13 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
       if (isPdf) {
         const pdfMod = await import('../lib/pdf');
         const status = await pdfMod.detectPdfScannedStatus(f);
+        setSessionSourceKind('pdf-preview');
         setPdfMeta({ pageCount: status.pageCount, isScanned: status.isScanned });
         setStep('browse');
       } else {
         const result = await parseEpub(f);
         if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
-        finishParse(result);
+        finishParse(result, 'epub');
       }
     } catch (e) {
       if ((e as Error)?.name !== 'AbortError') {
@@ -386,13 +530,13 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
         setOcrProgress({ total: pdfMeta.pageCount, done: 0, failed: 0 });
         const result = await runOcrOn(file, modelForOcr);
         if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
-        finishParse(result);
+        finishParse(result, 'pdf-ocr');
       } else {
         // Text-layer PDF — parse may still throw ScannedPdfError if our quick detection was wrong.
         try {
           const result = await pdfMod.parsePdf(file);
           if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
-          finishParse(result);
+          finishParse(result, 'pdf-text');
         } catch (e) {
           if (e instanceof pdfMod.ScannedPdfError) {
             // Detection missed — fall back to OCR path.
@@ -404,7 +548,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
             setOcrProgress({ total: e.pageCount, done: 0, failed: 0 });
             const result = await runOcrOn(file, modelForOcr);
             if (result.chapters.length === 0) throw new Error(t('ebookTranslator.upload.noChapters'));
-            finishParse(result);
+            finishParse(result, 'pdf-ocr');
           } else {
             throw e;
           }
@@ -423,6 +567,36 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
 
   function cancelOcr() {
     ocrAbortRef.current?.abort();
+  }
+
+  function clearLoadedBook() {
+    ocrAbortRef.current?.abort();
+    translateAllAbortRef.current?.abort();
+    abortRefs.current.forEach(c => c.abort());
+    abortRefs.current.clear();
+    ocrAbortRef.current = null;
+    translateAllAbortRef.current = null;
+    parsedBlobCacheRef.current = { parsed: null, blob: null };
+    translatedTitleRef.current = '';
+    setSessionSourceKind(null);
+    setFile(null);
+    setParsed(null);
+    setPdfMeta(null);
+    setNeedsVisionModel(null);
+    setParseError(null);
+    setOcrProgress(null);
+    setSelectedIdx(0);
+    setChapterStatus(new Map());
+    setAllTranslations(new Map());
+    setChapterErrors(new Map());
+    setRunning(new Set());
+    setPreviewPage(1);
+    setPagePhase(new Map());
+    setPageResults(new Map());
+    setPageErrors(new Map());
+    setTranslatingAllPages(false);
+    translatingAllPagesRef.current = null;
+    void clearEbookSession();
   }
 
   /**
@@ -983,10 +1157,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
                   type="button"
                   className="bt__btn bt__btn--small"
                   onClick={() => {
-                    setFile(null);
-                    setPdfMeta(null);
-                    setNeedsVisionModel(null);
-                    setParseError(null);
+                    clearLoadedBook();
                     setStep('upload');
                   }}
                   disabled={parsing}
