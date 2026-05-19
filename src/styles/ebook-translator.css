@@ -415,7 +415,6 @@
 
 .bt__sidebar-header {
   padding: var(--space-sm);
-  border-bottom: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -437,8 +436,8 @@
   font-size: 0.85rem;
   color: var(--color-text-subtle);
   cursor: pointer;
+  border: 0;
   border-left: 2px solid transparent;
-  border-bottom: 1px solid var(--color-border);
   background: transparent;
   width: 100%;
   text-align: left;
@@ -494,7 +493,6 @@
 
 .bt__sidebar-footer {
   padding: var(--space-sm);
-  border-top: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -544,8 +542,6 @@
   letter-spacing: 0.04em;
   color: var(--color-heading);
   background: var(--color-bg-elevated);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
   word-break: break-word;
 }
 
