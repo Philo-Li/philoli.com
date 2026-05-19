@@ -932,6 +932,11 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const donePages = Array.from(pagePhase.values()).filter(p => p === 'done').length;
   const pagesPct = totalPages > 0 ? (donePages / totalPages) * 100 : 0;
 
+  // Show a decimal when there's real progress but it would round to 0%, so the
+  // counter doesn't sit at "0%" after the user has clearly translated something.
+  const formatPct = (pct: number) =>
+    pct > 0 && pct < 1 ? pct.toFixed(1) : pct.toFixed(0);
+
   const chapter = parsed?.chapters[selectedIdx] ?? null;
   const chapterTranslations = chapter ? allTranslations.get(chapter.href) ?? new Map<string, string>() : new Map<string, string>();
   const chapterIsRunning = chapter ? running.has(chapter.href) : false;
@@ -1009,7 +1014,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
               <div className="bt__progress-bar" style={{ width: 140 }}>
                 <div className="bt__progress-fill" style={{ width: `${overallPct}%` }} />
               </div>
-              <span className="bt__progress-pct">{overallPct.toFixed(0)}%</span>
+              <span className="bt__progress-pct">{formatPct(overallPct)}%</span>
             </div>
           </>
         )}
@@ -1042,7 +1047,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
               <div className="bt__progress-bar" style={{ width: 140 }}>
                 <div className="bt__progress-fill" style={{ width: `${pagesPct}%` }} />
               </div>
-              <span className="bt__progress-pct">{pagesPct.toFixed(0)}%</span>
+              <span className="bt__progress-pct">{formatPct(pagesPct)}%</span>
             </div>
           </>
         )}
