@@ -423,6 +423,10 @@
           "lse": "LSE (Utolsó hat él)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Tovább"
     }
   }
 }

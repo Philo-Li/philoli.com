@@ -423,6 +423,10 @@
           "lse": "LSE (Enam Tepi Terakhir)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Baca Selengkapnya"
     }
   }
 }

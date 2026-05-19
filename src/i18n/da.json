@@ -423,6 +423,10 @@
           "lse": "LSE (Sidste seks kanter)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Læs mere"
     }
   }
 }

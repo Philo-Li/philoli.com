@@ -423,6 +423,10 @@
           "lse": "LSE (Últimas seis aristas)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Leer más"
     }
   }
 }

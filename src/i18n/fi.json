@@ -423,6 +423,10 @@
           "lse": "LSE (Viimeiset kuusi reunapalaa)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blogi",
+      "cta": "Lue lisää"
     }
   }
 }

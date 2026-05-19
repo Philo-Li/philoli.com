@@ -423,6 +423,10 @@
           "lse": "LSE (Letzte sechs Kanten)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Mehr lesen"
     }
   }
 }

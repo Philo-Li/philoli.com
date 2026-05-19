@@ -423,6 +423,10 @@
           "lse": "LSE (Ultimele șase muchii)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Citește mai mult"
     }
   }
 }

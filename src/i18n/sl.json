@@ -423,6 +423,10 @@
           "lse": "LSE (Zadnjih šest robov)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Preberi več"
     }
   }
 }

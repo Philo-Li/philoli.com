@@ -423,6 +423,10 @@
           "lse": "LSE (Laatste zes randen)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Lees meer"
     }
   }
 }

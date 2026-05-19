@@ -423,6 +423,10 @@
           "lse": "LSE (Posledních šest hran)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Číst dále"
     }
   }
 }

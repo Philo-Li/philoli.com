@@ -423,6 +423,10 @@
           "lse": "LSE (Pēdējās sešas šķautnes)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blogs",
+      "cta": "Lasīt vairāk"
     }
   }
 }

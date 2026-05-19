@@ -423,6 +423,10 @@
           "lse": "LSE (Son Altı Kenar)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Daha Fazla Oku"
     }
   }
 }

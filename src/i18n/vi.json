@@ -423,6 +423,10 @@
           "lse": "LSE (Sáu cạnh cuối cùng)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Đọc thêm"
     }
   }
 }

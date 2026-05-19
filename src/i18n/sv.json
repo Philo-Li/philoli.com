@@ -423,6 +423,10 @@
           "lse": "LSE (Last Six Edges)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blogg",
+      "cta": "Läs mer"
     }
   }
 }

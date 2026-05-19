@@ -1,15 +1,33 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
 import RubiksCube from '../RubiksCube.tsx';
-import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
+import { DEFAULT_LOCALE, formatDate, isLocale, localizedPath, useTranslations } from '../../i18n';
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
+const allPosts = await getCollection('blog');
+const tutorialSlug = 'solve-rubiks-cube-without-formulas';
+const tutorialPost = allPosts.find(post => post.id === `${locale}/${tutorialSlug}`)
+  ?? allPosts.find(post => post.id === `${DEFAULT_LOCALE}/${tutorialSlug}`)
+  ?? allPosts.find(post => post.id === `zh/${tutorialSlug}`);
+const tutorialLocale = tutorialPost?.id.split('/')[0];
+const tutorialHref = tutorialPost && tutorialLocale && isLocale(tutorialLocale)
+  ? localizedPath(`/blog/${tutorialSlug}`, tutorialLocale)
+  : null;
 ---
 
 <BaseLayout
   title={t('rubiksCube.metadata.title')}
   description={t('rubiksCube.metadata.description')}
 >
-  <RubiksCube client:load locale={locale} />
+  <RubiksCube
+    client:load
+    locale={locale}
+    tutorial={tutorialPost && tutorialHref ? {
+      title: tutorialPost.data.title,
+      href: tutorialHref,
+      meta: formatDate(tutorialPost.data.date, locale, { year: 'numeric', month: 'short', day: 'numeric' }),
+    } : null}
+  />
 </BaseLayout>

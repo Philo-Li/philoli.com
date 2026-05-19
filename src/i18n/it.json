@@ -423,6 +423,10 @@
           "lse": "LSE (Ultimi sei spigoli)"
         }
       }
+    },
+    "tutorialCard": {
+      "eyebrow": "Blog",
+      "cta": "Leggi di più"
     }
   }
 }

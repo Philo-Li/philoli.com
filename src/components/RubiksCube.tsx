@@ -25,6 +25,11 @@ import '../styles/rubiks-cube.css';
 
 interface Props {
   locale?: string;
+  tutorial?: {
+    title: string;
+    href: string;
+    meta?: string;
+  } | null;
 }
 
 const SPEED_STOPS = [0.25, 0.5, 1, 2, 4];
@@ -108,7 +113,7 @@ function generateScramble(length = 20): string {
   return out.join(' ');
 }
 
-export default function RubiksCube({ locale }: Props) {
+export default function RubiksCube({ locale, tutorial = null }: Props) {
   const t = useTranslations(locale);
 
   const [scramble, setScramble] = useState('');
@@ -555,6 +560,22 @@ export default function RubiksCube({ locale }: Props) {
         <p className="rc__intro">{t('rubiksCube.intro')}</p>
       </header>
 
+      <div className="rc__topbar">
+        <div aria-hidden="true" />
+        <div className="rc__share rc__share--top">
+          <button type="button" onClick={copyShareLink}>
+            {copied ? t('rubiksCube.share.copied') : t('rubiksCube.share.copy')}
+          </button>
+          <button
+            type="button"
+            onClick={() => setGifOpen(true)}
+            disabled={totalSteps === 0 || !sceneReady}
+          >
+            {t('rubiksCube.gif.exportButton')}
+          </button>
+        </div>
+      </div>
+
       <div className="rc__stage">
         <section className={`rc__canvas${customHideMode ? ' rc__canvas--picking' : ''}`}>
           <div ref={canvasRef} className="rc__canvas-mount" />
@@ -670,128 +691,129 @@ export default function RubiksCube({ locale }: Props) {
               </div>
             )}
           </div>
-          <div className="rc__share">
-            <button type="button" onClick={copyShareLink}>
-              {copied ? t('rubiksCube.share.copied') : t('rubiksCube.share.copy')}
-            </button>
-            <button
-              type="button"
-              onClick={() => setGifOpen(true)}
-              disabled={totalSteps === 0 || !sceneReady}
-            >
-              {t('rubiksCube.gif.exportButton')}
-            </button>
-          </div>
         </section>
       </div>
 
-      <section className="rc__learning">
-        <header className="rc__learning-header">
-          <h2 className="rc__learning-title">{t('rubiksCube.learning.title')}</h2>
-          <span className="rc__field-actions">
-            <button
-              type="button"
-              className="rc__field-action"
-              aria-pressed={customHideMode}
-              onClick={() => setCustomHideMode((m) => !m)}
-            >
-              {customHideMode
-                ? t('rubiksCube.customHide.exit')
-                : t('rubiksCube.customHide.button')}
-            </button>
-            <button
-              type="button"
-              className="rc__field-action"
-              onClick={() => setNotationOpen(true)}
-            >
-              {t('rubiksCube.notation.button')}
-            </button>
-          </span>
-        </header>
+      <div className={`rc__learning-layout${tutorial ? ' rc__learning-layout--with-tutorial' : ''}`}>
+        <section className="rc__learning">
+          <header className="rc__learning-header">
+            <h2 className="rc__learning-title">{t('rubiksCube.learning.title')}</h2>
+            <span className="rc__field-actions">
+              <button
+                type="button"
+                className="rc__field-action"
+                aria-pressed={customHideMode}
+                onClick={() => setCustomHideMode((m) => !m)}
+              >
+                {customHideMode
+                  ? t('rubiksCube.customHide.exit')
+                  : t('rubiksCube.customHide.button')}
+              </button>
+              <button
+                type="button"
+                className="rc__field-action"
+                onClick={() => setNotationOpen(true)}
+              >
+                {t('rubiksCube.notation.button')}
+              </button>
+            </span>
+          </header>
 
-        {customHideMode && (
-          <div className="rc__custom-hide-bar">
-            <span className="rc__custom-hide-instr">
-              {t('rubiksCube.customHide.instructions')}
-            </span>
-            <span className="rc__custom-hide-actions">
+          {customHideMode && (
+            <div className="rc__custom-hide-bar">
+              <span className="rc__custom-hide-instr">
+                {t('rubiksCube.customHide.instructions')}
+              </span>
+              <span className="rc__custom-hide-actions">
+                <button
+                  type="button"
+                  className="rc__field-action"
+                  onClick={customHideHideAll}
+                  disabled={learning.hiddenCubies.size === 27}
+                >
+                  {t('rubiksCube.customHide.hideAll')}
+                </button>
+                <button
+                  type="button"
+                  className="rc__field-action"
+                  onClick={customHideReset}
+                  disabled={
+                    learning.hiddenCubies.size === 0 &&
+                    learning.highlightedCubies.size === 0
+                  }
+                >
+                  {t('rubiksCube.customHide.reset')}
+                </button>
+              </span>
+              <span className="rc__custom-hide-summary">
+                {t('rubiksCube.customHide.summary')
+                  .replace('{hidden}', String(learning.hiddenCubies.size))
+                  .replace('{highlighted}', String(learning.highlightedCubies.size))}
+              </span>
+            </div>
+          )}
+          <div className="rc__learning-row">
+            <span className="rc__learning-label">{t('rubiksCube.learning.hideColors')}</span>
+            {COLORS.map(({ color, key, swatch }) => (
               <button
+                key={key}
                 type="button"
-                className="rc__field-action"
-                onClick={customHideHideAll}
-                disabled={learning.hiddenCubies.size === 27}
+                className="rc__swatch"
+                style={{ background: swatch }}
+                aria-pressed={learning.hiddenColors.has(color)}
+                aria-label={t(`rubiksCube.learning.colorLabel.${key}`)}
+                title={t(`rubiksCube.learning.colorLabel.${key}`)}
+                onClick={() => toggleHiddenColor(color)}
               >
-                {t('rubiksCube.customHide.hideAll')}
+                {learning.hiddenColors.has(color) ? '×' : ''}
               </button>
-              <button
-                type="button"
-                className="rc__field-action"
-                onClick={customHideReset}
-                disabled={
-                  learning.hiddenCubies.size === 0 &&
-                  learning.highlightedCubies.size === 0
-                }
-              >
-                {t('rubiksCube.customHide.reset')}
-              </button>
-            </span>
-            <span className="rc__custom-hide-summary">
-              {t('rubiksCube.customHide.summary')
-                .replace('{hidden}', String(learning.hiddenCubies.size))
-                .replace('{highlighted}', String(learning.highlightedCubies.size))}
-            </span>
+            ))}
           </div>
-        )}
-        <div className="rc__learning-row">
-          <span className="rc__learning-label">{t('rubiksCube.learning.hideColors')}</span>
-          {COLORS.map(({ color, key, swatch }) => (
-            <button
-              key={key}
-              type="button"
-              className="rc__swatch"
-              style={{ background: swatch }}
-              aria-pressed={learning.hiddenColors.has(color)}
-              aria-label={t(`rubiksCube.learning.colorLabel.${key}`)}
-              title={t(`rubiksCube.learning.colorLabel.${key}`)}
-              onClick={() => toggleHiddenColor(color)}
-            >
-              {learning.hiddenColors.has(color) ? '×' : ''}
-            </button>
-          ))}
-        </div>
-        <div className="rc__learning-row">
-          <span className="rc__learning-label">{t('rubiksCube.learning.hideFaces')}</span>
-          {FACES.map(({ face, key }) => (
-            <button
-              key={key}
-              type="button"
-              className="rc__face-btn"
-              aria-pressed={learning.hiddenFaces.has(face)}
-              title={t(`rubiksCube.learning.faceLabel.${key}`)}
-              onClick={() => toggleHiddenFace(face)}
-            >
-              {key}
-            </button>
-          ))}
-        </div>
-        {LAYER_AXES.map(({ axis, rowKey }) => (
-          <div key={axis} className="rc__learning-row">
-            <span className="rc__learning-label">{t(`rubiksCube.learning.hideLayers.${rowKey}`)}</span>
-            {LAYERS.map(({ layer, key }) => (
+          <div className="rc__learning-row">
+            <span className="rc__learning-label">{t('rubiksCube.learning.hideFaces')}</span>
+            {FACES.map(({ face, key }) => (
               <button
                 key={key}
                 type="button"
                 className="rc__face-btn"
-                aria-pressed={learning.hiddenLayers[axis].has(layer)}
-                title={t(`rubiksCube.learning.layerLabel.${rowKey}.${key}`)}
-                onClick={() => toggleHiddenLayer(axis, layer)}
+                aria-pressed={learning.hiddenFaces.has(face)}
+                title={t(`rubiksCube.learning.faceLabel.${key}`)}
+                onClick={() => toggleHiddenFace(face)}
               >
                 {key}
               </button>
             ))}
           </div>
-        ))}
-      </section>
+          {LAYER_AXES.map(({ axis, rowKey }) => (
+            <div key={axis} className="rc__learning-row">
+              <span className="rc__learning-label">{t(`rubiksCube.learning.hideLayers.${rowKey}`)}</span>
+              {LAYERS.map(({ layer, key }) => (
+                <button
+                  key={key}
+                  type="button"
+                  className="rc__face-btn"
+                  aria-pressed={learning.hiddenLayers[axis].has(layer)}
+                  title={t(`rubiksCube.learning.layerLabel.${rowKey}.${key}`)}
+                  onClick={() => toggleHiddenLayer(axis, layer)}
+                >
+                  {key}
+                </button>
+              ))}
+            </div>
+          ))}
+        </section>
+
+        {tutorial && (
+          <aside className="rc__tutorial-card">
+            <div className="rc__tutorial-eyebrow">{t('rubiksCube.tutorialCard.eyebrow')}</div>
+            <a href={tutorial.href} className="rc__tutorial-link">
+              <h2 className="rc__tutorial-title">{tutorial.title}</h2>
+              {tutorial.meta && <p className="rc__tutorial-meta">{tutorial.meta}</p>}
+              <span className="rc__tutorial-cta">{t('rubiksCube.tutorialCard.cta')} →</span>
+            </a>
+          </aside>
+        )}
+      </div>
 
       <section className="rc__methods">
         <header className="rc__learning-header">
