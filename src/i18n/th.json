@@ -170,7 +170,17 @@
       "modelLacksVision": "โมเดล \"{model}\" ของ {provider} ที่คุณเลือกไม่รองรับอินพุตที่เป็นรูปภาพ จึงไม่สามารถทำ OCR หน้าที่สแกนมาได้",
       "switchToVision": "เปลี่ยนไปใช้:",
       "runOcr": "เริ่มทำ OCR",
-      "providerHasNoVision": "{provider} ไม่มีโมเดลที่รองรับการมองเห็นในตัวเลือกนี้ โปรดเปิดการตั้งค่าเพื่อเปลี่ยนผู้ให้บริการ (Gemini, OpenAI หรือ Claude รองรับการทำ OCR ทั้งหมด)"
+      "providerHasNoVision": "{provider} ไม่มีโมเดลที่รองรับการมองเห็นในตัวเลือกนี้ โปรดเปิดการตั้งค่าเพื่อเปลี่ยนผู้ให้บริการ (Gemini, OpenAI หรือ Claude รองรับการทำ OCR ทั้งหมด)",
+      "recentBooks": "หนังสือล่าสุด",
+      "progressParagraphs": "{done} / {total} ย่อหน้า",
+      "progressPages": "{done} / {total} หน้า",
+      "deleteBook": "ลบออกจากประวัติ",
+      "deleteConfirm": "ลบ \"{name}\" ออกจากประวัติใช่หรือไม่? ไฟล์และคำแปลของไฟล์นี้จะถูกลบออก",
+      "untitled": "ไม่มีชื่อ",
+      "relativeJustNow": "เมื่อสักครู่",
+      "relativeMinutesAgo": "{n} นาทีที่แล้ว",
+      "relativeHoursAgo": "{n} ชั่วโมงที่แล้ว",
+      "relativeDaysAgo": "{n} วันที่แล้ว"
     },
     "preview": {
       "pages": "{count} หน้า",

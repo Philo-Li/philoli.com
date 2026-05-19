@@ -1,7 +1,8 @@
 const DB_NAME = 'ebook-translator';
 const DB_VERSION = 1;
 const STORE_NAME = 'sessions';
-const ACTIVE_SESSION_KEY = 'active';
+const LEGACY_ACTIVE_KEY = 'active';
+const MAX_SESSIONS = 10;
 
 export interface PersistedSinglePageItem {
   type: string;
@@ -36,6 +37,11 @@ export interface PersistedEbookSessionSnapshot {
   pagePhase: Array<[number, string]>;
   pageResults: Array<[number, PersistedSinglePageResult]>;
   pageErrors: Array<[number, string]>;
+  // Totals are denormalized so the history list can show progress without
+  // re-parsing the source file. Optional because legacy records pre-history
+  // did not write them.
+  totalNodes?: number;
+  totalPages?: number;
 }
 
 interface PersistedEbookSessionRecord {
@@ -43,12 +49,30 @@ interface PersistedEbookSessionRecord {
   snapshot: PersistedEbookSessionSnapshot;
   fileBlob: Blob | null;
   parsedBlob: Blob | null;
+  lastOpenedAt: number;
+  fileName: string | null;
+  fileSize: number;
+  fileType: string | null;
 }
 
 export interface LoadedEbookSession {
+  id: string;
   snapshot: PersistedEbookSessionSnapshot;
   fileBlob: Blob | null;
   parsedBlob: Blob | null;
+}
+
+export interface EbookSessionSummary {
+  id: string;
+  fileName: string | null;
+  fileSize: number;
+  fileType: string | null;
+  sourceKind: PersistedEbookSessionSnapshot['sourceKind'];
+  lastOpenedAt: number;
+  translatedNodes: number;
+  totalNodes: number;
+  donePages: number;
+  totalPages: number;
 }
 
 let dbPromise: Promise<IDBDatabase> | null = null;
@@ -76,48 +100,174 @@ function runRequest<T>(request: IDBRequest<T>): Promise<T> {
   });
 }
 
-export async function saveEbookSession(
-  snapshot: PersistedEbookSessionSnapshot,
-  fileBlob: Blob | null,
-  parsedBlob: Blob | null,
-): Promise<void> {
-  const db = await openDb();
-  const tx = db.transaction(STORE_NAME, 'readwrite');
-  const store = tx.objectStore(STORE_NAME);
-  store.put({
-    id: ACTIVE_SESSION_KEY,
-    snapshot,
-    fileBlob,
-    parsedBlob,
-  } satisfies PersistedEbookSessionRecord);
-  await new Promise<void>((resolve, reject) => {
+function txDone(tx: IDBTransaction): Promise<void> {
+  return new Promise((resolve, reject) => {
     tx.oncomplete = () => resolve();
-    tx.onerror = () => reject(tx.error ?? new Error('Failed to save ebook session'));
-    tx.onabort = () => reject(tx.error ?? new Error('Aborted while saving ebook session'));
+    tx.onerror = () => reject(tx.error ?? new Error('IndexedDB transaction failed'));
+    tx.onabort = () => reject(tx.error ?? new Error('IndexedDB transaction aborted'));
   });
 }
 
-export async function loadEbookSession(): Promise<LoadedEbookSession | null> {
+function generateId(): string {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID();
+  }
+  return `s_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 10)}`;
+}
+
+let migrationPromise: Promise<void> | null = null;
+
+/**
+ * One-shot migration for users who had the pre-history single-session schema
+ * (record keyed by 'active'). Converts it into a normal history entry so the
+ * book and its translations are not lost when the new code first loads.
+ */
+async function migrateLegacyActiveRecord(): Promise<void> {
   const db = await openDb();
-  const tx = db.transaction(STORE_NAME, 'readonly');
+  const tx = db.transaction(STORE_NAME, 'readwrite');
   const store = tx.objectStore(STORE_NAME);
-  const record = await runRequest(store.get(ACTIVE_SESSION_KEY) as IDBRequest<PersistedEbookSessionRecord | undefined>);
-  if (!record) return null;
+  const legacy = await runRequest(
+    store.get(LEGACY_ACTIVE_KEY) as IDBRequest<PersistedEbookSessionRecord | undefined>,
+  );
+  if (!legacy) return;
+  const id = generateId();
+  const fileBlob = legacy.fileBlob ?? null;
+  const migrated: PersistedEbookSessionRecord = {
+    id,
+    snapshot: legacy.snapshot,
+    fileBlob,
+    parsedBlob: legacy.parsedBlob ?? null,
+    lastOpenedAt: typeof legacy.lastOpenedAt === 'number' ? legacy.lastOpenedAt : Date.now(),
+    fileName: legacy.snapshot?.fileName ?? null,
+    fileSize: fileBlob?.size ?? 0,
+    fileType: legacy.snapshot?.fileType ?? fileBlob?.type ?? null,
+  };
+  store.put(migrated);
+  store.delete(LEGACY_ACTIVE_KEY);
+  await txDone(tx);
+}
+
+function ensureMigrated(): Promise<void> {
+  if (!migrationPromise) {
+    migrationPromise = migrateLegacyActiveRecord().catch(err => {
+      console.warn('[ebook-session] legacy migration failed', err);
+    });
+  }
+  return migrationPromise;
+}
+
+function summarize(r: PersistedEbookSessionRecord): EbookSessionSummary {
+  let translatedNodes = 0;
+  for (const [, entries] of r.snapshot.allTranslations) translatedNodes += entries.length;
+  const donePages = r.snapshot.pagePhase.reduce((n, [, phase]) => (phase === 'done' ? n + 1 : n), 0);
   return {
-    snapshot: record.snapshot,
-    fileBlob: record.fileBlob,
-    parsedBlob: record.parsedBlob,
+    id: r.id,
+    fileName: r.fileName,
+    fileSize: r.fileSize,
+    fileType: r.fileType,
+    sourceKind: r.snapshot.sourceKind,
+    lastOpenedAt: r.lastOpenedAt,
+    translatedNodes,
+    totalNodes: r.snapshot.totalNodes ?? translatedNodes,
+    donePages,
+    totalPages: r.snapshot.totalPages ?? r.snapshot.pdfMeta?.pageCount ?? 0,
   };
 }
 
-export async function clearEbookSession(): Promise<void> {
+export async function listEbookSessions(): Promise<EbookSessionSummary[]> {
+  await ensureMigrated();
+  const db = await openDb();
+  const tx = db.transaction(STORE_NAME, 'readonly');
+  const store = tx.objectStore(STORE_NAME);
+  const records = await runRequest(store.getAll() as IDBRequest<PersistedEbookSessionRecord[]>);
+  return records
+    .filter(r => r.id !== LEGACY_ACTIVE_KEY)
+    .map(summarize)
+    .sort((a, b) => b.lastOpenedAt - a.lastOpenedAt);
+}
+
+export async function loadMostRecentSession(): Promise<LoadedEbookSession | null> {
+  await ensureMigrated();
+  const db = await openDb();
+  const tx = db.transaction(STORE_NAME, 'readonly');
+  const store = tx.objectStore(STORE_NAME);
+  const records = await runRequest(store.getAll() as IDBRequest<PersistedEbookSessionRecord[]>);
+  const usable = records.filter(r => r.id !== LEGACY_ACTIVE_KEY);
+  if (usable.length === 0) return null;
+  usable.sort((a, b) => b.lastOpenedAt - a.lastOpenedAt);
+  const r = usable[0];
+  return { id: r.id, snapshot: r.snapshot, fileBlob: r.fileBlob, parsedBlob: r.parsedBlob };
+}
+
+export async function loadEbookSession(id: string): Promise<LoadedEbookSession | null> {
+  await ensureMigrated();
+  const db = await openDb();
+  const tx = db.transaction(STORE_NAME, 'readonly');
+  const store = tx.objectStore(STORE_NAME);
+  const record = await runRequest(
+    store.get(id) as IDBRequest<PersistedEbookSessionRecord | undefined>,
+  );
+  if (!record) return null;
+  return { id: record.id, snapshot: record.snapshot, fileBlob: record.fileBlob, parsedBlob: record.parsedBlob };
+}
+
+export async function findSessionByFile(fileName: string, fileSize: number): Promise<string | null> {
+  await ensureMigrated();
+  const db = await openDb();
+  const tx = db.transaction(STORE_NAME, 'readonly');
+  const store = tx.objectStore(STORE_NAME);
+  const records = await runRequest(store.getAll() as IDBRequest<PersistedEbookSessionRecord[]>);
+  const match = records.find(r => r.id !== LEGACY_ACTIVE_KEY && r.fileName === fileName && r.fileSize === fileSize);
+  return match ? match.id : null;
+}
+
+export interface SaveSessionParams {
+  id: string;
+  snapshot: PersistedEbookSessionSnapshot;
+  fileBlob: Blob | null;
+  parsedBlob: Blob | null;
+  fileName: string | null;
+  fileSize: number;
+  fileType: string | null;
+}
+
+export async function saveEbookSession(params: SaveSessionParams): Promise<void> {
+  await ensureMigrated();
   const db = await openDb();
   const tx = db.transaction(STORE_NAME, 'readwrite');
   const store = tx.objectStore(STORE_NAME);
-  store.delete(ACTIVE_SESSION_KEY);
-  await new Promise<void>((resolve, reject) => {
-    tx.oncomplete = () => resolve();
-    tx.onerror = () => reject(tx.error ?? new Error('Failed to clear ebook session'));
-    tx.onabort = () => reject(tx.error ?? new Error('Aborted while clearing ebook session'));
-  });
+  const record: PersistedEbookSessionRecord = {
+    id: params.id,
+    snapshot: params.snapshot,
+    fileBlob: params.fileBlob,
+    parsedBlob: params.parsedBlob,
+    lastOpenedAt: Date.now(),
+    fileName: params.fileName,
+    fileSize: params.fileSize,
+    fileType: params.fileType,
+  };
+  store.put(record);
+  // LRU prune: keep at most MAX_SESSIONS records (excluding the legacy key, which
+  // will be cleaned up by migration on next read).
+  const all = await runRequest(store.getAll() as IDBRequest<PersistedEbookSessionRecord[]>);
+  const candidates = all
+    .filter(r => r.id !== LEGACY_ACTIVE_KEY && r.id !== params.id)
+    .sort((a, b) => a.lastOpenedAt - b.lastOpenedAt);
+  while (candidates.length + 1 > MAX_SESSIONS) {
+    const oldest = candidates.shift();
+    if (!oldest) break;
+    store.delete(oldest.id);
+  }
+  await txDone(tx);
 }
+
+export async function deleteEbookSession(id: string): Promise<void> {
+  await ensureMigrated();
+  const db = await openDb();
+  const tx = db.transaction(STORE_NAME, 'readwrite');
+  const store = tx.objectStore(STORE_NAME);
+  store.delete(id);
+  await txDone(tx);
+}
+
+export { generateId as newEbookSessionId };

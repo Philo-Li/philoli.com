@@ -170,7 +170,17 @@
       "modelLacksVision": "Wybrany model {provider} „{model}” nie obsługuje danych wejściowych w formie obrazu, więc nie może wykonać OCR zeskanowanych stron.",
       "switchToVision": "Przełącz na:",
       "runOcr": "Uruchom OCR",
-      "providerHasNoVision": "{provider} nie oferuje modelu z funkcją rozpoznawania obrazu w tym selektorze. Otwórz Ustawienia, aby zmienić dostawcę (Gemini, OpenAI lub Claude obsługują OCR)."
+      "providerHasNoVision": "{provider} nie oferuje modelu z funkcją rozpoznawania obrazu w tym selektorze. Otwórz Ustawienia, aby zmienić dostawcę (Gemini, OpenAI lub Claude obsługują OCR).",
+      "recentBooks": "Ostatnie książki",
+      "progressParagraphs": "{done} / {total} akapitów",
+      "progressPages": "{done} / {total} stron",
+      "deleteBook": "Usuń z historii",
+      "deleteConfirm": "Usunąć \"{name}\" z historii? Plik oraz jego tłumaczenia zostaną usunięte.",
+      "untitled": "Bez tytułu",
+      "relativeJustNow": "przed chwilą",
+      "relativeMinutesAgo": "{n} min. temu",
+      "relativeHoursAgo": "{n} godz. temu",
+      "relativeDaysAgo": "{n} dni temu"
     },
     "preview": {
       "pages": "{count} stron",

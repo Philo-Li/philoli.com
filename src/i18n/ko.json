@@ -170,7 +170,17 @@
       "modelLacksVision": "선택하신 {provider} 모델 \"{model}\"은(는) 이미지 입력을 지원하지 않아 스캔된 페이지를 OCR 처리할 수 없습니다.",
       "switchToVision": "전환 대상:",
       "runOcr": "OCR 실행",
-      "providerHasNoVision": "{provider}은(는) 이 선택기에서 시각 인식 모델을 제공하지 않습니다. 설정에서 제공자를 변경하세요(Gemini, OpenAI, Claude 모두 OCR을 지원합니다)."
+      "providerHasNoVision": "{provider}은(는) 이 선택기에서 시각 인식 모델을 제공하지 않습니다. 설정에서 제공자를 변경하세요(Gemini, OpenAI, Claude 모두 OCR을 지원합니다).",
+      "recentBooks": "최근 도서",
+      "progressParagraphs": "{done} / {total} 문단",
+      "progressPages": "{done} / {total} 페이지",
+      "deleteBook": "기록에서 삭제",
+      "deleteConfirm": "\"{name}\"을(를) 기록에서 삭제할까요? 파일과 해당 번역본이 삭제됩니다.",
+      "untitled": "제목 없음",
+      "relativeJustNow": "방금 전",
+      "relativeMinutesAgo": "{n}분 전",
+      "relativeHoursAgo": "{n}시간 전",
+      "relativeDaysAgo": "{n}일 전"
     },
     "preview": {
       "pages": "{count} 페이지",

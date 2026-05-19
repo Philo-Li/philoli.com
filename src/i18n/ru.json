@@ -170,7 +170,17 @@
       "modelLacksVision": "Выбранная вами модель {provider} «{model}» не поддерживает ввод изображений, поэтому она не может распознать сканированные страницы.",
       "switchToVision": "Переключиться на:",
       "runOcr": "Запустить OCR",
-      "providerHasNoVision": "{provider} не предлагает модели с поддержкой зрения в этом списке. Откройте настройки, чтобы сменить провайдера (Gemini, OpenAI или Claude поддерживают OCR)."
+      "providerHasNoVision": "{provider} не предлагает модели с поддержкой зрения в этом списке. Откройте настройки, чтобы сменить провайдера (Gemini, OpenAI или Claude поддерживают OCR).",
+      "recentBooks": "Недавние книги",
+      "progressParagraphs": "{done} / {total} абзацев",
+      "progressPages": "{done} / {total} страниц",
+      "deleteBook": "Удалить из истории",
+      "deleteConfirm": "Удалить «{name}» из истории? Файл и его переводы будут удалены.",
+      "untitled": "Без названия",
+      "relativeJustNow": "только что",
+      "relativeMinutesAgo": "{n} мин. назад",
+      "relativeHoursAgo": "{n} ч. назад",
+      "relativeDaysAgo": "{n} д. назад"
     },
     "preview": {
       "pages": "{count} страниц",

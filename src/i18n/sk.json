@@ -170,7 +170,17 @@
       "modelLacksVision": "Vami zvolený model {provider} „{model}“ neprijíma obrázkové vstupy, takže nedokáže vykonať OCR skenovaných stránok.",
       "switchToVision": "Prepnúť na:",
       "runOcr": "Spustiť OCR",
-      "providerHasNoVision": "{provider} neponúka v tomto výbere model schopný spracovať obraz. Otvorte Nastavenia a prepnite poskytovateľa (Gemini, OpenAI alebo Claude podporujú OCR)."
+      "providerHasNoVision": "{provider} neponúka v tomto výbere model schopný spracovať obraz. Otvorte Nastavenia a prepnite poskytovateľa (Gemini, OpenAI alebo Claude podporujú OCR).",
+      "recentBooks": "Nedávne knihy",
+      "progressParagraphs": "{done} / {total} odsekov",
+      "progressPages": "{done} / {total} strán",
+      "deleteBook": "Odstrániť z histórie",
+      "deleteConfirm": "Odstrániť „{name}“ z histórie? Súbor a jeho preklady budú vymazané.",
+      "untitled": "Bez názvu",
+      "relativeJustNow": "práve teraz",
+      "relativeMinutesAgo": "pred {n} min.",
+      "relativeHoursAgo": "pred {n} hod.",
+      "relativeDaysAgo": "pred {n} dňami"
     },
     "preview": {
       "pages": "{count} strán",

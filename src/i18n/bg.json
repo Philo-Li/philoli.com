@@ -170,7 +170,17 @@
       "modelLacksVision": "Избраният от вас модел \"{model}\" на {provider} не приема изображения, така че не може да извърши OCR на сканирани страници.",
       "switchToVision": "Превключи към:",
       "runOcr": "Стартирай OCR",
-      "providerHasNoVision": "{provider} не предлага модел с възможност за разпознаване на изображения в този списък. Отворете Настройки, за да смените доставчика (Gemini, OpenAI или Claude поддържат OCR)."
+      "providerHasNoVision": "{provider} не предлага модел с възможност за разпознаване на изображения в този списък. Отворете Настройки, за да смените доставчика (Gemini, OpenAI или Claude поддържат OCR).",
+      "recentBooks": "Скорошни книги",
+      "progressParagraphs": "{done} / {total} параграфа",
+      "progressPages": "{done} / {total} страници",
+      "deleteBook": "Премахване от историята",
+      "deleteConfirm": "Премахване на „{name}“ от историята? Файлът и неговите преводи ще бъдат изтрити.",
+      "untitled": "Без заглавие",
+      "relativeJustNow": "току-що",
+      "relativeMinutesAgo": "преди {n} мин.",
+      "relativeHoursAgo": "преди {n} ч.",
+      "relativeDaysAgo": "преди {n} д."
     },
     "preview": {
       "pages": "{count} страници",

@@ -170,7 +170,17 @@
       "modelLacksVision": "Seçtiğiniz {provider} modeli \"{model}\" görsel girdisi kabul etmiyor, bu yüzden taranmış sayfaları OCR'dan geçiremez.",
       "switchToVision": "Şuna geç:",
       "runOcr": "OCR'ı çalıştır",
-      "providerHasNoVision": "{provider}, bu seçicide görsel yeteneği olan bir model sunmuyor. Sağlayıcıyı değiştirmek için Ayarlar'ı açın (Gemini, OpenAI veya Claude'un hepsi OCR'ı destekler)."
+      "providerHasNoVision": "{provider}, bu seçicide görsel yeteneği olan bir model sunmuyor. Sağlayıcıyı değiştirmek için Ayarlar'ı açın (Gemini, OpenAI veya Claude'un hepsi OCR'ı destekler).",
+      "recentBooks": "Son kitaplar",
+      "progressParagraphs": "{done} / {total} paragraf",
+      "progressPages": "{done} / {total} sayfa",
+      "deleteBook": "Geçmişten kaldır",
+      "deleteConfirm": "\"{name}\" geçmişten kaldırılsın mı? Dosya ve çevirileri silinecektir.",
+      "untitled": "Başlıksız",
+      "relativeJustNow": "az önce",
+      "relativeMinutesAgo": "{n} dk önce",
+      "relativeHoursAgo": "{n} sa önce",
+      "relativeDaysAgo": "{n} gün önce"
     },
     "preview": {
       "pages": "{count} sayfa",

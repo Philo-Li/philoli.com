@@ -173,7 +173,17 @@
       "modelLacksVision": "Your selected {provider} model \"{model}\" doesn't accept image input, so it can't OCR scanned pages.",
       "switchToVision": "Switch to:",
       "runOcr": "Run OCR",
-      "providerHasNoVision": "{provider} doesn't offer a vision-capable model in this picker. Open Settings to switch provider (Gemini, OpenAI, or Claude all support OCR)."
+      "providerHasNoVision": "{provider} doesn't offer a vision-capable model in this picker. Open Settings to switch provider (Gemini, OpenAI, or Claude all support OCR).",
+      "recentBooks": "Recent books",
+      "progressParagraphs": "{done} / {total} paragraphs",
+      "progressPages": "{done} / {total} pages",
+      "deleteBook": "Remove from history",
+      "deleteConfirm": "Remove \"{name}\" from history? The file and its translations will be deleted.",
+      "untitled": "Untitled",
+      "relativeJustNow": "just now",
+      "relativeMinutesAgo": "{n} min ago",
+      "relativeHoursAgo": "{n} h ago",
+      "relativeDaysAgo": "{n} d ago"
     },
     "preview": {
       "pages": "{count} pages",

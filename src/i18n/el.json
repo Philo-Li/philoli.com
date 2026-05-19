@@ -170,7 +170,17 @@
       "modelLacksVision": "Το επιλεγμένο μοντέλο {provider} \"{model}\" δεν δέχεται είσοδο εικόνας, επομένως δεν μπορεί να κάνει OCR σε σαρωμένες σελίδες.",
       "switchToVision": "Εναλλαγή σε:",
       "runOcr": "Εκτέλεση OCR",
-      "providerHasNoVision": "Το {provider} δεν προσφέρει μοντέλο με δυνατότητα όρασης σε αυτή την επιλογή. Ανοίξτε τις Ρυθμίσεις για να αλλάξετε πάροχο (Gemini, OpenAI ή Claude υποστηρίζουν όλα OCR)."
+      "providerHasNoVision": "Το {provider} δεν προσφέρει μοντέλο με δυνατότητα όρασης σε αυτή την επιλογή. Ανοίξτε τις Ρυθμίσεις για να αλλάξετε πάροχο (Gemini, OpenAI ή Claude υποστηρίζουν όλα OCR).",
+      "recentBooks": "Πρόσφατα βιβλία",
+      "progressParagraphs": "{done} / {total} παράγραφοι",
+      "progressPages": "{done} / {total} σελίδες",
+      "deleteBook": "Αφαίρεση από το ιστορικό",
+      "deleteConfirm": "Αφαίρεση του \"{name}\" από το ιστορικό; Το αρχείο και οι μεταφράσεις του θα διαγραφούν.",
+      "untitled": "Χωρίς τίτλο",
+      "relativeJustNow": "μόλις τώρα",
+      "relativeMinutesAgo": "πριν από {n} λεπτό",
+      "relativeHoursAgo": "πριν από {n} ώρα",
+      "relativeDaysAgo": "πριν από {n} ημέρα"
     },
     "preview": {
       "pages": "{count} σελίδες",

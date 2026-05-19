@@ -170,7 +170,17 @@
       "modelLacksVision": "Vámi vybraný model {provider} „{model}“ nepřijímá obrázkové vstupy, takže nemůže provést OCR skenovaných stránek.",
       "switchToVision": "Přepnout na:",
       "runOcr": "Spustit OCR",
-      "providerHasNoVision": "{provider} v tomto výběru nenabízí model schopný analýzy obrazu. Otevřete Nastavení a přepněte poskytovatele (Gemini, OpenAI nebo Claude podporují OCR)."
+      "providerHasNoVision": "{provider} v tomto výběru nenabízí model schopný analýzy obrazu. Otevřete Nastavení a přepněte poskytovatele (Gemini, OpenAI nebo Claude podporují OCR).",
+      "recentBooks": "Nedávné knihy",
+      "progressParagraphs": "{done} / {total} odstavců",
+      "progressPages": "{done} / {total} stran",
+      "deleteBook": "Odstranit z historie",
+      "deleteConfirm": "Odstranit „{name}“ z historie? Soubor a jeho překlady budou smazány.",
+      "untitled": "Bez názvu",
+      "relativeJustNow": "právě teď",
+      "relativeMinutesAgo": "před {n} min.",
+      "relativeHoursAgo": "před {n} h.",
+      "relativeDaysAgo": "před {n} d."
     },
     "preview": {
       "pages": "{count} stran",

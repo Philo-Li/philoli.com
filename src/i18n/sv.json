@@ -170,7 +170,17 @@
       "modelLacksVision": "Din valda {provider}-modell \"{model}\" accepterar inte bildinmatning, så den kan inte OCR-behandla skannade sidor.",
       "switchToVision": "Växla till:",
       "runOcr": "Kör OCR",
-      "providerHasNoVision": "{provider} erbjuder ingen modell med bildigenkänning i detta val. Öppna Inställningar för att byta leverantör (Gemini, OpenAI eller Claude har alla stöd för OCR)."
+      "providerHasNoVision": "{provider} erbjuder ingen modell med bildigenkänning i detta val. Öppna Inställningar för att byta leverantör (Gemini, OpenAI eller Claude har alla stöd för OCR).",
+      "recentBooks": "Senaste böcker",
+      "progressParagraphs": "{done} / {total} stycken",
+      "progressPages": "{done} / {total} sidor",
+      "deleteBook": "Ta bort från historik",
+      "deleteConfirm": "Ta bort \"{name}\" från historik? Filen och dess översättningar kommer att raderas.",
+      "untitled": "Namnlös",
+      "relativeJustNow": "precis nu",
+      "relativeMinutesAgo": "{n} min sedan",
+      "relativeHoursAgo": "{n} h sedan",
+      "relativeDaysAgo": "{n} d sedan"
     },
     "preview": {
       "pages": "{count} sidor",

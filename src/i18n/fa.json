@@ -170,7 +170,17 @@
       "modelLacksVision": "مدل انتخاب‌شده شما از {provider} یعنی \"{model}\" ورودی تصویر را نمی‌پذیرد، بنابراین نمی‌تواند صفحات اسکن‌شده را OCR کند.",
       "switchToVision": "تغییر به:",
       "runOcr": "اجرای OCR",
-      "providerHasNoVision": "{provider} مدل دارای قابلیت بینایی در این انتخابگر ارائه نمی‌دهد. برای تغییر ارائه‌دهنده، تنظیمات را باز کنید (Gemini، OpenAI یا Claude همگی از OCR پشتیبانی می‌کنند)."
+      "providerHasNoVision": "{provider} مدل دارای قابلیت بینایی در این انتخابگر ارائه نمی‌دهد. برای تغییر ارائه‌دهنده، تنظیمات را باز کنید (Gemini، OpenAI یا Claude همگی از OCR پشتیبانی می‌کنند).",
+      "recentBooks": "کتاب‌های اخیر",
+      "progressParagraphs": "{done} / {total} پاراگراف",
+      "progressPages": "{done} / {total} صفحه",
+      "deleteBook": "حذف از تاریخچه",
+      "deleteConfirm": "\"{name}\" از تاریخچه حذف شود؟ فایل و ترجمه‌های آن پاک خواهند شد.",
+      "untitled": "بدون عنوان",
+      "relativeJustNow": "همین الان",
+      "relativeMinutesAgo": "{n} دقیقه پیش",
+      "relativeHoursAgo": "{n} ساعت پیش",
+      "relativeDaysAgo": "{n} روز پیش"
     },
     "preview": {
       "pages": "{count} صفحه",

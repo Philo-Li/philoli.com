@@ -100,6 +100,92 @@
   padding: var(--space-md);
 }
 
+.bt__history {
+  margin-top: var(--space-md);
+}
+
+.bt__history-list {
+  list-style: none;
+  margin: var(--space-xs) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bt__history-item {
+  display: flex;
+  align-items: stretch;
+  background: var(--color-bg-elevated);
+}
+
+.bt__history-row {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: baseline;
+  gap: var(--space-md);
+  padding: 0.6rem 0.8rem;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  text-align: left;
+  transition: background 0.15s ease;
+}
+
+.bt__history-row:hover {
+  background: var(--color-surface);
+}
+
+.bt__history-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.bt__history-progress {
+  font-size: 0.8rem;
+  color: var(--color-text-subtle);
+  white-space: nowrap;
+}
+
+.bt__history-time {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.bt__history-delete {
+  border: 0;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0 0.7rem;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.bt__history-delete:hover {
+  color: #d94c4c;
+  background: var(--color-surface);
+}
+
+@media (max-width: 640px) {
+  .bt__history-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+  .bt__history-progress,
+  .bt__history-time {
+    font-size: 0.75rem;
+  }
+}
+
 .bt__field {
   display: block;
   margin-bottom: var(--space-sm);
@@ -325,11 +411,13 @@
   color: var(--color-text);
   margin-bottom: 0.4rem;
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .bt__bi-tr {
   color: var(--color-text);
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 /* Inline-rendered Markdown (OCR'd content with tables/lists) inside bilingual blocks. */
@@ -395,13 +483,19 @@
 
 .bt__browse {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 280px minmax(0, 1fr);
   gap: var(--space-sm);
   border: 1px solid var(--color-border);
   background: var(--color-surface);
   /* Fill viewport minus nav + compact header + steps. */
   height: calc(100vh - var(--nav-height) - 160px);
   min-height: 540px;
+}
+
+/* PDF page-preview mode: rows are just a thumbnail + "Page N", so the column
+   doesn't need full chapter-list width. */
+.bt__browse--pdf {
+  grid-template-columns: 180px minmax(0, 1fr);
 }
 
 .bt__sidebar {
@@ -567,6 +661,7 @@
   padding: var(--space-md);
   overflow-y: auto;
   min-height: 0;
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }

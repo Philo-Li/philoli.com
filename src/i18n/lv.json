@@ -170,7 +170,17 @@
       "modelLacksVision": "Jūsu izvēlētais {provider} modelis \"{model}\" nepieņem attēlus, tāpēc tas nevar veikt OCR skenētām lapām.",
       "switchToVision": "Pārslēgties uz:",
       "runOcr": "Veikt OCR",
-      "providerHasNoVision": "{provider} nepiedāvā redzes spējīgu modeli šajā izvēlnē. Atveriet iestatījumus, lai pārslēgtu pakalpojumu sniedzēju (Gemini, OpenAI vai Claude atbalsta OCR)."
+      "providerHasNoVision": "{provider} nepiedāvā redzes spējīgu modeli šajā izvēlnē. Atveriet iestatījumus, lai pārslēgtu pakalpojumu sniedzēju (Gemini, OpenAI vai Claude atbalsta OCR).",
+      "recentBooks": "Jaunākās grāmatas",
+      "progressParagraphs": "{done} / {total} rindkopas",
+      "progressPages": "{done} / {total} lappuses",
+      "deleteBook": "Dzēst no vēstures",
+      "deleteConfirm": "Dzēst \"{name}\" no vēstures? Fails un tā tulkojumi tiks izdzēsti.",
+      "untitled": "Bez nosaukuma",
+      "relativeJustNow": "tikko",
+      "relativeMinutesAgo": "pirms {n} min.",
+      "relativeHoursAgo": "pirms {n} st.",
+      "relativeDaysAgo": "pirms {n} d."
     },
     "preview": {
       "pages": "{count} lapas",

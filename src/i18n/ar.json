@@ -170,7 +170,17 @@
       "modelLacksVision": "نموذج {provider} الذي اخترته \"{model}\" لا يقبل مدخلات الصور، لذا لا يمكنه إجراء OCR للصفحات الممسوحة ضوئياً.",
       "switchToVision": "التبديل إلى:",
       "runOcr": "تشغيل OCR",
-      "providerHasNoVision": "لا يوفر {provider} نموذجاً يدعم الرؤية في هذا الاختيار. افتح الإعدادات لتبديل المزود (Gemini أو OpenAI أو Claude جميعها تدعم OCR)."
+      "providerHasNoVision": "لا يوفر {provider} نموذجاً يدعم الرؤية في هذا الاختيار. افتح الإعدادات لتبديل المزود (Gemini أو OpenAI أو Claude جميعها تدعم OCR).",
+      "recentBooks": "الكتب الأخيرة",
+      "progressParagraphs": "{done} / {total} فقرة",
+      "progressPages": "{done} / {total} صفحة",
+      "deleteBook": "إزالة من السجل",
+      "deleteConfirm": "هل تريد إزالة \"{name}\" من السجل؟ سيتم حذف الملف وترجماته.",
+      "untitled": "بدون عنوان",
+      "relativeJustNow": "الآن",
+      "relativeMinutesAgo": "منذ {n} دقيقة",
+      "relativeHoursAgo": "منذ {n} ساعة",
+      "relativeDaysAgo": "منذ {n} يوم"
     },
     "preview": {
       "pages": "{count} صفحات",

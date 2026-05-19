@@ -170,7 +170,17 @@
       "modelLacksVision": "Le modèle {provider} sélectionné « {model} » n'accepte pas les images en entrée, il ne peut donc pas effectuer l'OCR des pages numérisées.",
       "switchToVision": "Passer à :",
       "runOcr": "Exécuter l'OCR",
-      "providerHasNoVision": "{provider} ne propose pas de modèle doté de vision dans ce sélecteur. Ouvrez les paramètres pour changer de fournisseur (Gemini, OpenAI ou Claude prennent tous en charge l'OCR)."
+      "providerHasNoVision": "{provider} ne propose pas de modèle doté de vision dans ce sélecteur. Ouvrez les paramètres pour changer de fournisseur (Gemini, OpenAI ou Claude prennent tous en charge l'OCR).",
+      "recentBooks": "Livres récents",
+      "progressParagraphs": "{done} / {total} paragraphes",
+      "progressPages": "{done} / {total} pages",
+      "deleteBook": "Supprimer de l'historique",
+      "deleteConfirm": "Supprimer « {name} » de l'historique ? Le fichier et ses traductions seront supprimés.",
+      "untitled": "Sans titre",
+      "relativeJustNow": "à l'instant",
+      "relativeMinutesAgo": "il y a {n} min",
+      "relativeHoursAgo": "il y a {n} h",
+      "relativeDaysAgo": "il y a {n} j"
     },
     "preview": {
       "pages": "{count} pages",

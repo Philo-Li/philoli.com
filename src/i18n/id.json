@@ -170,7 +170,17 @@
       "modelLacksVision": "Model {provider} \"{model}\" yang Anda pilih tidak menerima input gambar, sehingga tidak dapat melakukan OCR pada halaman hasil pindai.",
       "switchToVision": "Beralih ke:",
       "runOcr": "Jalankan OCR",
-      "providerHasNoVision": "{provider} tidak menawarkan model dengan kemampuan visi di pemilih ini. Buka Pengaturan untuk beralih penyedia (Gemini, OpenAI, atau Claude semuanya mendukung OCR)."
+      "providerHasNoVision": "{provider} tidak menawarkan model dengan kemampuan visi di pemilih ini. Buka Pengaturan untuk beralih penyedia (Gemini, OpenAI, atau Claude semuanya mendukung OCR).",
+      "recentBooks": "Buku terbaru",
+      "progressParagraphs": "{done} / {total} paragraf",
+      "progressPages": "{done} / {total} halaman",
+      "deleteBook": "Hapus dari riwayat",
+      "deleteConfirm": "Hapus \"{name}\" dari riwayat? File dan terjemahannya akan dihapus.",
+      "untitled": "Tanpa judul",
+      "relativeJustNow": "baru saja",
+      "relativeMinutesAgo": "{n} menit yang lalu",
+      "relativeHoursAgo": "{n} jam yang lalu",
+      "relativeDaysAgo": "{n} hari yang lalu"
     },
     "preview": {
       "pages": "{count} halaman",

@@ -170,7 +170,17 @@
       "modelLacksVision": "Jūsų pasirinktas {provider} modelis „{model}“ nepriima vaizdų, todėl negali atlikti nuskaitytų puslapių OCR.",
       "switchToVision": "Perjungti į:",
       "runOcr": "Vykdyti OCR",
-      "providerHasNoVision": "{provider} šiame pasirinkime nesiūlo modelio su vaizdo atpažinimo funkcija. Atidarykite nustatymus, kad pakeistumėte tiekėją (Gemini, OpenAI arba Claude palaiko OCR)."
+      "providerHasNoVision": "{provider} šiame pasirinkime nesiūlo modelio su vaizdo atpažinimo funkcija. Atidarykite nustatymus, kad pakeistumėte tiekėją (Gemini, OpenAI arba Claude palaiko OCR).",
+      "recentBooks": "Naujausios knygos",
+      "progressParagraphs": "{done} / {total} pastraipų",
+      "progressPages": "{done} / {total} puslapių",
+      "deleteBook": "Pašalinti iš istorijos",
+      "deleteConfirm": "Pašalinti „{name}“ iš istorijos? Failas ir jo vertimai bus ištrinti.",
+      "untitled": "Be pavadinimo",
+      "relativeJustNow": "ką tik",
+      "relativeMinutesAgo": "prieš {n} min.",
+      "relativeHoursAgo": "prieš {n} val.",
+      "relativeDaysAgo": "prieš {n} d."
     },
     "preview": {
       "pages": "{count} puslapiai",

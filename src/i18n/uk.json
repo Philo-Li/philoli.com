@@ -170,7 +170,17 @@
       "modelLacksVision": "Вибрана вами модель {provider} \"{model}\" не підтримує введення зображень, тому не може розпізнати скановані сторінки.",
       "switchToVision": "Перемкнути на:",
       "runOcr": "Запустити OCR",
-      "providerHasNoVision": "{provider} не пропонує модель із підтримкою зору в цьому списку. Відкрийте Налаштування, щоб змінити провайдера (Gemini, OpenAI або Claude підтримують OCR)."
+      "providerHasNoVision": "{provider} не пропонує модель із підтримкою зору в цьому списку. Відкрийте Налаштування, щоб змінити провайдера (Gemini, OpenAI або Claude підтримують OCR).",
+      "recentBooks": "Останні книги",
+      "progressParagraphs": "{done} / {total} абзаців",
+      "progressPages": "{done} / {total} сторінок",
+      "deleteBook": "Видалити з історії",
+      "deleteConfirm": "Видалити \"{name}\" з історії? Файл та його переклади будуть видалені.",
+      "untitled": "Без назви",
+      "relativeJustNow": "щойно",
+      "relativeMinutesAgo": "{n} хв тому",
+      "relativeHoursAgo": "{n} год тому",
+      "relativeDaysAgo": "{n} д тому"
     },
     "preview": {
       "pages": "{count} сторінок",

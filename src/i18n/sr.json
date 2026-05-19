@@ -170,7 +170,17 @@
       "modelLacksVision": "Izabrani {provider} model „{model}” ne prihvata slike kao ulaz, tako da ne može da izvrši OCR skeniranih stranica.",
       "switchToVision": "Prebaci na:",
       "runOcr": "Pokreni OCR",
-      "providerHasNoVision": "{provider} ne nudi model sa mogućnošću prepoznavanja slike u ovom izborniku. Otvorite Podešavanja da promenite provajdera (Gemini, OpenAI ili Claude podržavaju OCR)."
+      "providerHasNoVision": "{provider} ne nudi model sa mogućnošću prepoznavanja slike u ovom izborniku. Otvorite Podešavanja da promenite provajdera (Gemini, OpenAI ili Claude podržavaju OCR).",
+      "recentBooks": "Nedavne knjige",
+      "progressParagraphs": "{done} / {total} pasusa",
+      "progressPages": "{done} / {total} stranica",
+      "deleteBook": "Ukloni iz istorije",
+      "deleteConfirm": "Ukloniti \"{name}\" iz istorije? Datoteka i njeni prevodi će biti obrisani.",
+      "untitled": "Bez naslova",
+      "relativeJustNow": "upravo sada",
+      "relativeMinutesAgo": "pre {n} min",
+      "relativeHoursAgo": "pre {n} č",
+      "relativeDaysAgo": "pre {n} d"
     },
     "preview": {
       "pages": "{count} stranica",

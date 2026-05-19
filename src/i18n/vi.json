@@ -170,7 +170,17 @@
       "modelLacksVision": "Mô hình {provider} \"{model}\" bạn chọn không hỗ trợ đầu vào là hình ảnh, vì vậy nó không thể OCR các trang dạng quét.",
       "switchToVision": "Chuyển sang:",
       "runOcr": "Chạy OCR",
-      "providerHasNoVision": "{provider} không cung cấp mô hình có khả năng xử lý hình ảnh trong bộ chọn này. Mở Cài đặt để chuyển đổi nhà cung cấp (Gemini, OpenAI, hoặc Claude đều hỗ trợ OCR)."
+      "providerHasNoVision": "{provider} không cung cấp mô hình có khả năng xử lý hình ảnh trong bộ chọn này. Mở Cài đặt để chuyển đổi nhà cung cấp (Gemini, OpenAI, hoặc Claude đều hỗ trợ OCR).",
+      "recentBooks": "Sách gần đây",
+      "progressParagraphs": "{done} / {total} đoạn văn",
+      "progressPages": "{done} / {total} trang",
+      "deleteBook": "Xóa khỏi lịch sử",
+      "deleteConfirm": "Xóa \"{name}\" khỏi lịch sử? Tệp tin và các bản dịch của nó sẽ bị xóa.",
+      "untitled": "Không tiêu đề",
+      "relativeJustNow": "vừa xong",
+      "relativeMinutesAgo": "{n} phút trước",
+      "relativeHoursAgo": "{n} giờ trước",
+      "relativeDaysAgo": "{n} ngày trước"
     },
     "preview": {
       "pages": "{count} trang",

@@ -170,7 +170,17 @@
       "modelLacksVision": "Model {provider} pilihan anda \"{model}\" tidak menerima input imej, jadi ia tidak boleh melakukan OCR pada halaman imbasan.",
       "switchToVision": "Tukar kepada:",
       "runOcr": "Jalankan OCR",
-      "providerHasNoVision": "{provider} tidak menawarkan model berkeupayaan penglihatan dalam pemilih ini. Buka Tetapan untuk menukar penyedia (Gemini, OpenAI, atau Claude semuanya menyokong OCR)."
+      "providerHasNoVision": "{provider} tidak menawarkan model berkeupayaan penglihatan dalam pemilih ini. Buka Tetapan untuk menukar penyedia (Gemini, OpenAI, atau Claude semuanya menyokong OCR).",
+      "recentBooks": "Buku terkini",
+      "progressParagraphs": "{done} / {total} perenggan",
+      "progressPages": "{done} / {total} halaman",
+      "deleteBook": "Buang daripada sejarah",
+      "deleteConfirm": "Buang \"{name}\" daripada sejarah? Fail dan terjemahannya akan dipadamkan.",
+      "untitled": "Tanpa tajuk",
+      "relativeJustNow": "baru sahaja",
+      "relativeMinutesAgo": "{n} minit yang lalu",
+      "relativeHoursAgo": "{n} jam yang lalu",
+      "relativeDaysAgo": "{n} hari yang lalu"
     },
     "preview": {
       "pages": "{count} halaman",

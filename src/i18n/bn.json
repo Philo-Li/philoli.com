@@ -170,7 +170,17 @@
       "modelLacksVision": "আপনার নির্বাচিত {provider} মডেল \"{model}\" ইমেজ ইনপুট গ্রহণ করে না, তাই এটি স্ক্যান করা পৃষ্ঠার OCR করতে পারবে না।",
       "switchToVision": "পরিবর্তন করুন:",
       "runOcr": "OCR চালান",
-      "providerHasNoVision": "{provider} এই পিকারে কোনো ভিশন-সক্ষম মডেল অফার করে না। প্রোভাইডার পরিবর্তন করতে সেটিংস খুলুন (Gemini, OpenAI, বা Claude সবাই OCR সমর্থন করে)।"
+      "providerHasNoVision": "{provider} এই পিকারে কোনো ভিশন-সক্ষম মডেল অফার করে না। প্রোভাইডার পরিবর্তন করতে সেটিংস খুলুন (Gemini, OpenAI, বা Claude সবাই OCR সমর্থন করে)।",
+      "recentBooks": "সাম্প্রতিক বই",
+      "progressParagraphs": "{done} / {total} অনুচ্ছেদ",
+      "progressPages": "{done} / {total} পৃষ্ঠা",
+      "deleteBook": "ইতিহাস থেকে সরান",
+      "deleteConfirm": "ইতিহাস থেকে \"{name}\" সরিয়ে ফেলবেন? ফাইল এবং এর অনুবাদগুলো মুছে ফেলা হবে।",
+      "untitled": "শিরোনামহীন",
+      "relativeJustNow": "এইমাত্র",
+      "relativeMinutesAgo": "{n} মিনিট আগে",
+      "relativeHoursAgo": "{n} ঘণ্টা আগে",
+      "relativeDaysAgo": "{n} দিন আগে"
     },
     "preview": {
       "pages": "{count} পৃষ্ঠা",

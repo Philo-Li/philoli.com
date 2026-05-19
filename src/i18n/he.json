@@ -170,7 +170,17 @@
       "modelLacksVision": "מודל ה-{provider} שבחרת \"{model}\" אינו מקבל קלט תמונה, לכן לא ניתן לבצע OCR לדפים סרוקים.",
       "switchToVision": "החלף ל-:",
       "runOcr": "הרץ OCR",
-      "providerHasNoVision": "{provider} לא מציע מודל בעל יכולת ראייה בבורר זה. פתח את ההגדרות כדי להחליף ספק (Gemini, OpenAI, או Claude כולם תומכים ב-OCR)."
+      "providerHasNoVision": "{provider} לא מציע מודל בעל יכולת ראייה בבורר זה. פתח את ההגדרות כדי להחליף ספק (Gemini, OpenAI, או Claude כולם תומכים ב-OCR).",
+      "recentBooks": "ספרים אחרונים",
+      "progressParagraphs": "{done} / {total} פסקאות",
+      "progressPages": "{done} / {total} עמודים",
+      "deleteBook": "הסרה מההיסטוריה",
+      "deleteConfirm": "להסיר את \"{name}\" מההיסטוריה? הקובץ והתרגומים שלו יימחקו.",
+      "untitled": "ללא כותרת",
+      "relativeJustNow": "ממש עכשיו",
+      "relativeMinutesAgo": "לפני {n} דק׳",
+      "relativeHoursAgo": "לפני {n} ש׳",
+      "relativeDaysAgo": "לפני {n} ימים"
     },
     "preview": {
       "pages": "{count} עמודים",

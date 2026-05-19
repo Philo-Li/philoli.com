@@ -170,7 +170,17 @@
       "modelLacksVision": "Din valgte {provider}-model \"{model}\" accepterer ikke billedinput, så den kan ikke OCR-behandle scannede sider.",
       "switchToVision": "Skift til:",
       "runOcr": "Kør OCR",
-      "providerHasNoVision": "{provider} tilbyder ikke en model med billedgenkendelse i denne vælger. Åbn Indstillinger for at skifte udbyder (Gemini, OpenAI eller Claude understøtter alle OCR)."
+      "providerHasNoVision": "{provider} tilbyder ikke en model med billedgenkendelse i denne vælger. Åbn Indstillinger for at skifte udbyder (Gemini, OpenAI eller Claude understøtter alle OCR).",
+      "recentBooks": "Nylige bøger",
+      "progressParagraphs": "{done} / {total} afsnit",
+      "progressPages": "{done} / {total} sider",
+      "deleteBook": "Fjern fra historik",
+      "deleteConfirm": "Fjern \"{name}\" fra historik? Filen og dens oversættelser vil blive slettet.",
+      "untitled": "Uden titel",
+      "relativeJustNow": "lige nu",
+      "relativeMinutesAgo": "{n} min siden",
+      "relativeHoursAgo": "{n} t siden",
+      "relativeDaysAgo": "{n} d siden"
     },
     "preview": {
       "pages": "{count} sider",

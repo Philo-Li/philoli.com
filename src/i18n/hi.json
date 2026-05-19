@@ -170,7 +170,17 @@
       "modelLacksVision": "आपका चुना हुआ {provider} मॉडल \"{model}\" इमेज इनपुट स्वीकार नहीं करता है, इसलिए यह स्कैन किए गए पेजों की OCR नहीं कर सकता।",
       "switchToVision": "बदलें:",
       "runOcr": "OCR चलाएं",
-      "providerHasNoVision": "{provider} इस पिकर में विजन-सक्षम मॉडल प्रदान नहीं करता है। प्रदाता बदलने के लिए सेटिंग्स खोलें (Gemini, OpenAI, या Claude सभी OCR का समर्थन करते हैं)।"
+      "providerHasNoVision": "{provider} इस पिकर में विजन-सक्षम मॉडल प्रदान नहीं करता है। प्रदाता बदलने के लिए सेटिंग्स खोलें (Gemini, OpenAI, या Claude सभी OCR का समर्थन करते हैं)।",
+      "recentBooks": "हाल की पुस्तकें",
+      "progressParagraphs": "{done} / {total} अनुच्छेद",
+      "progressPages": "{done} / {total} पृष्ठ",
+      "deleteBook": "इतिहास से हटाएं",
+      "deleteConfirm": "क्या \"{name}\" को इतिहास से हटाना चाहते हैं? फ़ाइल और उसके अनुवाद हटा दिए जाएंगे।",
+      "untitled": "बिना शीर्षक",
+      "relativeJustNow": "अभी-अभी",
+      "relativeMinutesAgo": "{n} मिनट पहले",
+      "relativeHoursAgo": "{n} घंटे पहले",
+      "relativeDaysAgo": "{n} दिन पहले"
     },
     "preview": {
       "pages": "{count} पेज",

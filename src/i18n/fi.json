@@ -170,7 +170,17 @@
       "modelLacksVision": "Valitsemasi {provider}-malli \"{model}\" ei tue kuvia, joten se ei voi suorittaa OCR-tunnistusta skannatuille sivuille.",
       "switchToVision": "Vaihda malliin:",
       "runOcr": "Suorita OCR",
-      "providerHasNoVision": "{provider} ei tarjoa kuvantunnistukseen kykenevää mallia tässä valikossa. Avaa asetukset vaihtaaksesi palveluntarjoajaa (Gemini, OpenAI tai Claude tukevat kaikki OCR-tunnistusta)."
+      "providerHasNoVision": "{provider} ei tarjoa kuvantunnistukseen kykenevää mallia tässä valikossa. Avaa asetukset vaihtaaksesi palveluntarjoajaa (Gemini, OpenAI tai Claude tukevat kaikki OCR-tunnistusta).",
+      "recentBooks": "Viimeisimmät kirjat",
+      "progressParagraphs": "{done} / {total} kappaletta",
+      "progressPages": "{done} / {total} sivua",
+      "deleteBook": "Poista historiasta",
+      "deleteConfirm": "Poistetaanko \"{name}\" historiasta? Tiedosto ja sen käännökset poistetaan.",
+      "untitled": "Nimetön",
+      "relativeJustNow": "juuri nyt",
+      "relativeMinutesAgo": "{n} min sitten",
+      "relativeHoursAgo": "{n} t sitten",
+      "relativeDaysAgo": "{n} pv sitten"
     },
     "preview": {
       "pages": "{count} sivua",

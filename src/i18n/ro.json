@@ -170,7 +170,17 @@
       "modelLacksVision": "Modelul {provider} selectat „{model}” nu acceptă input de tip imagine, deci nu poate efectua OCR pe paginile scanate.",
       "switchToVision": "Comută la:",
       "runOcr": "Rulează OCR",
-      "providerHasNoVision": "{provider} nu oferă un model cu capabilități vizuale în acest selector. Deschide Setări pentru a schimba furnizorul (Gemini, OpenAI sau Claude suportă toate OCR)."
+      "providerHasNoVision": "{provider} nu oferă un model cu capabilități vizuale în acest selector. Deschide Setări pentru a schimba furnizorul (Gemini, OpenAI sau Claude suportă toate OCR).",
+      "recentBooks": "Cărți recente",
+      "progressParagraphs": "{done} / {total} paragrafe",
+      "progressPages": "{done} / {total} pagini",
+      "deleteBook": "Elimină din istoric",
+      "deleteConfirm": "Elimini „{name}” din istoric? Fișierul și traducerile sale vor fi șterse.",
+      "untitled": "Fără titlu",
+      "relativeJustNow": "chiar acum",
+      "relativeMinutesAgo": "acum {n} min",
+      "relativeHoursAgo": "acum {n} h",
+      "relativeDaysAgo": "acum {n} z"
     },
     "preview": {
       "pages": "{count} pagini",

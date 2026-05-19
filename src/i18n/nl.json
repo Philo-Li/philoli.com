@@ -170,7 +170,17 @@
       "modelLacksVision": "Het door jou geselecteerde {provider}-model \"{model}\" accepteert geen afbeeldingen, dus het kan geen gescande pagina's via OCR verwerken.",
       "switchToVision": "Overschakelen naar:",
       "runOcr": "OCR uitvoeren",
-      "providerHasNoVision": "{provider} biedt geen model met visuele ondersteuning in deze keuzelijst. Open Instellingen om van provider te wisselen (Gemini, OpenAI of Claude ondersteunen allemaal OCR)."
+      "providerHasNoVision": "{provider} biedt geen model met visuele ondersteuning in deze keuzelijst. Open Instellingen om van provider te wisselen (Gemini, OpenAI of Claude ondersteunen allemaal OCR).",
+      "recentBooks": "Recente boeken",
+      "progressParagraphs": "{done} / {total} alinea's",
+      "progressPages": "{done} / {total} pagina's",
+      "deleteBook": "Verwijderen uit geschiedenis",
+      "deleteConfirm": "\"{name}\" uit geschiedenis verwijderen? Het bestand en de bijbehorende vertalingen worden verwijderd.",
+      "untitled": "Naamloos",
+      "relativeJustNow": "zojuist",
+      "relativeMinutesAgo": "{n} min. geleden",
+      "relativeHoursAgo": "{n} u. geleden",
+      "relativeDaysAgo": "{n} d. geleden"
     },
     "preview": {
       "pages": "{count} pagina's",

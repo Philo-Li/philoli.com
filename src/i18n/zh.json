@@ -170,7 +170,17 @@
       "modelLacksVision": "你当前选择的 {provider} 模型「{model}」不支持图像输入，无法识别扫描页。",
       "switchToVision": "切换到：",
       "runOcr": "开始识别",
-      "providerHasNoVision": "{provider} 在此选择器中没有支持视觉的模型。请到设置切换 provider（Gemini / OpenAI / Claude 都支持 OCR）。"
+      "providerHasNoVision": "{provider} 在此选择器中没有支持视觉的模型。请到设置切换 provider（Gemini / OpenAI / Claude 都支持 OCR）。",
+      "recentBooks": "最近的书",
+      "progressParagraphs": "{done} / {total} 段",
+      "progressPages": "{done} / {total} 页",
+      "deleteBook": "从历史中删除",
+      "deleteConfirm": "从历史中删除「{name}」？文件和译文将一并删除。",
+      "untitled": "未命名",
+      "relativeJustNow": "刚刚",
+      "relativeMinutesAgo": "{n} 分钟前",
+      "relativeHoursAgo": "{n} 小时前",
+      "relativeDaysAgo": "{n} 天前"
     },
     "preview": {
       "pages": "{count} 页",

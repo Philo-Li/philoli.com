@@ -170,7 +170,17 @@
       "modelLacksVision": "選択した {provider} のモデル「{model}」は画像入力を受け付けないため、スキャンされたページをOCR処理できません。",
       "switchToVision": "切り替え先：",
       "runOcr": "OCRを実行",
-      "providerHasNoVision": "{provider} は、この選択肢の中に画像認識対応モデルを提供していません。設定を開いてプロバイダーを切り替えてください（Gemini、OpenAI、ClaudeはすべてOCRに対応しています）。"
+      "providerHasNoVision": "{provider} は、この選択肢の中に画像認識対応モデルを提供していません。設定を開いてプロバイダーを切り替えてください（Gemini、OpenAI、ClaudeはすべてOCRに対応しています）。",
+      "recentBooks": "最近読んだ本",
+      "progressParagraphs": "{done} / {total} 段落",
+      "progressPages": "{done} / {total} ページ",
+      "deleteBook": "履歴から削除",
+      "deleteConfirm": "\"{name}\" を履歴から削除しますか？ファイルとその翻訳は削除されます。",
+      "untitled": "無題",
+      "relativeJustNow": "たった今",
+      "relativeMinutesAgo": "{n} 分前",
+      "relativeHoursAgo": "{n} 時間前",
+      "relativeDaysAgo": "{n} 日前"
     },
     "preview": {
       "pages": "{count} ページ",

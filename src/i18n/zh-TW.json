@@ -170,7 +170,17 @@
       "modelLacksVision": "您選擇的 {provider} 模型「{model}」不支援圖片輸入，因此無法對掃描頁面進行 OCR。",
       "switchToVision": "切換至：",
       "runOcr": "執行 OCR",
-      "providerHasNoVision": "{provider} 在此選單中未提供具備視覺辨識能力的模型。請開啟設定以切換服務供應商（Gemini、OpenAI 或 Claude 皆支援 OCR）。"
+      "providerHasNoVision": "{provider} 在此選單中未提供具備視覺辨識能力的模型。請開啟設定以切換服務供應商（Gemini、OpenAI 或 Claude 皆支援 OCR）。",
+      "recentBooks": "近期書籍",
+      "progressParagraphs": "{done} / {total} 段落",
+      "progressPages": "{done} / {total} 頁",
+      "deleteBook": "從歷史記錄中移除",
+      "deleteConfirm": "確定要從歷史記錄中移除「{name}」嗎？該檔案及其翻譯內容將會被刪除。",
+      "untitled": "未命名",
+      "relativeJustNow": "剛剛",
+      "relativeMinutesAgo": "{n} 分鐘前",
+      "relativeHoursAgo": "{n} 小時前",
+      "relativeDaysAgo": "{n} 天前"
     },
     "preview": {
       "pages": "{count} 頁",

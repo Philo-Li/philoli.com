@@ -170,7 +170,17 @@
       "modelLacksVision": "Das von dir gewählte {provider}-Modell „{model}“ akzeptiert keine Bildeingaben, daher können keine gescannten Seiten per OCR verarbeitet werden.",
       "switchToVision": "Wechseln zu:",
       "runOcr": "OCR ausführen",
-      "providerHasNoVision": "{provider} bietet in dieser Auswahl kein bildfähiges Modell an. Öffne die Einstellungen, um den Anbieter zu wechseln (Gemini, OpenAI oder Claude unterstützen alle OCR)."
+      "providerHasNoVision": "{provider} bietet in dieser Auswahl kein bildfähiges Modell an. Öffne die Einstellungen, um den Anbieter zu wechseln (Gemini, OpenAI oder Claude unterstützen alle OCR).",
+      "recentBooks": "Kürzliche Bücher",
+      "progressParagraphs": "{done} / {total} Absätze",
+      "progressPages": "{done} / {total} Seiten",
+      "deleteBook": "Aus Verlauf entfernen",
+      "deleteConfirm": "\"{name}\" aus dem Verlauf entfernen? Die Datei und ihre Übersetzungen werden gelöscht.",
+      "untitled": "Ohne Titel",
+      "relativeJustNow": "gerade eben",
+      "relativeMinutesAgo": "vor {n} Min.",
+      "relativeHoursAgo": "vor {n} Std.",
+      "relativeDaysAgo": "vor {n} T."
     },
     "preview": {
       "pages": "{count} Seiten",

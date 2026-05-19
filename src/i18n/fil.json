@@ -170,7 +170,17 @@
       "modelLacksVision": "Ang napili mong {provider} model na \"{model}\" ay hindi tumatanggap ng input na imahe, kaya hindi nito kayang mag-OCR ng mga na-scan na pahina.",
       "switchToVision": "Lumipat sa:",
       "runOcr": "Patakbuhin ang OCR",
-      "providerHasNoVision": "Ang {provider} ay walang model na may kakayahang vision sa picker na ito. Buksan ang Settings para lumipat ng provider (ang Gemini, OpenAI, o Claude ay sumusuporta lahat sa OCR)."
+      "providerHasNoVision": "Ang {provider} ay walang model na may kakayahang vision sa picker na ito. Buksan ang Settings para lumipat ng provider (ang Gemini, OpenAI, o Claude ay sumusuporta lahat sa OCR).",
+      "recentBooks": "Mga kamakailang libro",
+      "progressParagraphs": "{done} / {total} na talata",
+      "progressPages": "{done} / {total} na pahina",
+      "deleteBook": "Alisin sa kasaysayan",
+      "deleteConfirm": "Alisin ang \"{name}\" sa kasaysayan? Mabubura ang file at ang mga salin nito.",
+      "untitled": "Walang pamagat",
+      "relativeJustNow": "kailan lang",
+      "relativeMinutesAgo": "{n} min ang nakalipas",
+      "relativeHoursAgo": "{n} oras ang nakalipas",
+      "relativeDaysAgo": "{n} araw ang nakalipas"
     },
     "preview": {
       "pages": "{count} na pahina",

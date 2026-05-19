@@ -170,7 +170,17 @@
       "modelLacksVision": "A kiválasztott {provider} modell („{model}”) nem fogad el képbemenetet, így nem tudja elvégezni a szkennelt oldalak OCR-ezését.",
       "switchToVision": "Váltás erre:",
       "runOcr": "OCR futtatása",
-      "providerHasNoVision": "A(z) {provider} nem kínál látásalapú modellt ebben a választóban. Nyissa meg a Beállításokat a szolgáltató váltásához (a Gemini, az OpenAI és a Claude mind támogatja az OCR-t)."
+      "providerHasNoVision": "A(z) {provider} nem kínál látásalapú modellt ebben a választóban. Nyissa meg a Beállításokat a szolgáltató váltásához (a Gemini, az OpenAI és a Claude mind támogatja az OCR-t).",
+      "recentBooks": "Legutóbbi könyvek",
+      "progressParagraphs": "{done} / {total} bekezdés",
+      "progressPages": "{done} / {total} oldal",
+      "deleteBook": "Eltávolítás az előzményekből",
+      "deleteConfirm": "Eltávolítja a(z) „{name}” elemet az előzményekből? A fájl és a hozzá tartozó fordítások törlődnek.",
+      "untitled": "Cím nélküli",
+      "relativeJustNow": "éppen most",
+      "relativeMinutesAgo": "{n} perce",
+      "relativeHoursAgo": "{n} órája",
+      "relativeDaysAgo": "{n} napja"
     },
     "preview": {
       "pages": "{count} oldal",

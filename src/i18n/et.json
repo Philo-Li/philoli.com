@@ -170,7 +170,17 @@
       "modelLacksVision": "Sinu valitud {provider} mudel \"{model}\" ei toeta piltide sisestamist, seega ei saa see skannitud lehekülgi OCR-töödelda.",
       "switchToVision": "Vali:",
       "runOcr": "Käivita OCR",
-      "providerHasNoVision": "{provider} ei paku selles valikus nägemisvõimelist mudelit. Ava seaded, et vahetada teenusepakkujat (Gemini, OpenAI või Claude toetavad kõik OCR-i)."
+      "providerHasNoVision": "{provider} ei paku selles valikus nägemisvõimelist mudelit. Ava seaded, et vahetada teenusepakkujat (Gemini, OpenAI või Claude toetavad kõik OCR-i).",
+      "recentBooks": "Hiljutised raamatud",
+      "progressParagraphs": "{done} / {total} lõiku",
+      "progressPages": "{done} / {total} lehekülge",
+      "deleteBook": "Eemalda ajaloost",
+      "deleteConfirm": "Kas eemaldada \"{name}\" ajaloost? Fail ja selle tõlked kustutatakse.",
+      "untitled": "Pealkirjata",
+      "relativeJustNow": "just nüüd",
+      "relativeMinutesAgo": "{n} min tagasi",
+      "relativeHoursAgo": "{n} t tagasi",
+      "relativeDaysAgo": "{n} p tagasi"
     },
     "preview": {
       "pages": "{count} lehekülge",
