@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Proyekto",
-    "title": "Bilingguwal na Tagasalin ng Ebook",
+    "title": "Libreng Ebook Translator",
     "subtitle": "Mag-upload ng EPUB, gamitin ang sarili mong LLM API key, at kumuha ng bilingguwal na edisyon kung saan magkasunod ang orihinal at isinaling teksto bawat talata. Ang file ay sinusuri nang buo sa iyong browser — hindi kailanman mapupunta ang iyong libro sa anumang server.",
     "steps": {
       "settings": "mga setting",

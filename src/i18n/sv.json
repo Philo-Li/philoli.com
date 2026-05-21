@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekt",
-    "title": "Tvåspråkig e-boksöversättare",
+    "title": "Gratis e-boköversättare",
     "subtitle": "Ladda upp en EPUB, använd din egen LLM API key och få tillbaka en tvåspråkig utgåva med originaltexten och den översatta texten varvad stycke för stycke. Filen analyseras helt i din webbläsare — din bok rör aldrig någon server.",
     "steps": {
       "settings": "inställningar",

@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekt",
-    "title": "Bilingualer E-Book-Übersetzer",
+    "title": "Kostenloser E-Book-Übersetzer",
     "subtitle": "Lade ein EPUB hoch, nutze deinen eigenen LLM API key und erhalte eine zweisprachige Ausgabe, bei der Originaltext und Übersetzung Absatz für Absatz verschachtelt sind. Die Datei wird vollständig in deinem Browser verarbeitet — dein Buch gelangt nie auf einen Server.",
     "steps": {
       "settings": "einstellungen",

@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekti",
-    "title": "Kaksikielinen e-kirjan kääntäjä",
+    "title": "Ilmainen e-kirjankääntäjä",
     "subtitle": "Lataa EPUB, käytä omaa LLM API key -avaintasi ja saat takaisin kaksikielisen painoksen, jossa alkuperäinen ja käännetty teksti on lomitettu kappaleittain. Tiedosto käsitellään kokonaan selaimessasi — kirjasi ei koskaan päädy palvelimelle.",
     "steps": {
       "settings": "asetukset",

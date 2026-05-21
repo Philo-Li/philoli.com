@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Project",
-    "title": "Tweetalige E-book Vertaler",
+    "title": "Gratis ebookvertaler",
     "subtitle": "Upload een EPUB, gebruik je eigen LLM API key en ontvang een tweetalige editie waarbij de originele en vertaalde tekst alinea voor alinea zijn afgewisseld. Het bestand wordt volledig in je browser verwerkt — je boek komt nooit op een server terecht.",
     "steps": {
       "settings": "instellingen",

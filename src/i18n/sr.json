@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekat",
-    "title": "Dvojezični prevodilac e-knjiga",
+    "title": "Besplatni prevodilac e-knjiga",
     "subtitle": "Otpremite EPUB, unesite sopstveni LLM API key i dobićete dvojezično izdanje sa originalnim i prevedenim tekstom isprepletenim pasus po pasus. Datoteka se obrađuje isključivo u vašem pregledaču — vaša knjiga nikada ne dotiče nijedan server.",
     "steps": {
       "settings": "podešavanja",

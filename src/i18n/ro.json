@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Proiect",
-    "title": "Traducător Bilingv de E-book-uri",
+    "title": "Traducător gratuit de ebook-uri",
     "subtitle": "Încarcă un EPUB, folosește propria cheie API LLM și primește o ediție bilingvă cu textul original și cel tradus intercalate paragraf cu paragraf. Fișierul este procesat integral în browserul tău — cartea ta nu ajunge niciodată pe vreun server.",
     "steps": {
       "settings": "setări",

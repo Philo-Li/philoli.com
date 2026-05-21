@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekt",
-    "title": "Dvojezični prevajalnik e-knjig",
+    "title": "Brezplačni prevajalnik e-knjig",
     "subtitle": "Naložite EPUB, uporabite svoj LLM API key in prejmite dvojezično izdajo z izvirnim in prevedenim besedilom, prepletenim odstavek za odstavkom. Datoteka se obdela v celoti v vašem brskalniku — vaša knjiga nikoli ne doseže nobenega strežnika.",
     "steps": {
       "settings": "nastavitve",

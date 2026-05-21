@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projek",
-    "title": "Penterjemah E-buku Dwibahasa",
+    "title": "Penterjemah E-buku Percuma",
     "subtitle": "Muat naik EPUB, gunakan API key LLM anda sendiri, dan dapatkan semula edisi dwibahasa dengan teks asal dan terjemahan yang diselang-seli perenggan demi perenggan. Fail dianalisis sepenuhnya dalam pelayar anda — buku anda tidak akan menyentuh mana-mana pelayan.",
     "steps": {
       "settings": "tetapan",

@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projeto",
-    "title": "Tradutor de E-books Bilíngue",
+    "title": "Tradutor de Ebooks Grátis",
     "subtitle": "Faça o upload de um EPUB, use sua própria API key de LLM e receba uma edição bilíngue com o texto original e traduzido intercalados parágrafo por parágrafo. O arquivo é processado inteiramente no seu navegador — seu livro nunca toca nenhum servidor.",
     "steps": {
       "settings": "configurações",

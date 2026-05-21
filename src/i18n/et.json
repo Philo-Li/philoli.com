@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekt",
-    "title": "Kakskeelne e-raamatute tõlkija",
+    "title": "Tasuta e-raamatute tõlkija",
     "subtitle": "Laadi üles EPUB, kasuta oma LLM API key-d ja saa vastu kakskeelne väljaanne, kus algne ja tõlgitud tekst on lõikude kaupa vaheldumisi. Faili töödeldakse täielikult sinu brauseris — sinu raamat ei jõua kunagi ühtegi serverisse.",
     "steps": {
       "settings": "seaded",

@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekt",
-    "title": "Dwujęzyczny tłumacz e-booków",
+    "title": "Darmowy tłumacz ebooków",
     "subtitle": "Prześlij EPUB, użyj własnego API key LLM i otrzymaj wydanie dwujęzyczne z tekstem oryginalnym i przetłumaczonym przeplatanym akapit po akapicie. Plik jest przetwarzany w całości w przeglądarce — Twoja książka nigdy nie trafia na żaden serwer.",
     "steps": {
       "settings": "ustawienia",

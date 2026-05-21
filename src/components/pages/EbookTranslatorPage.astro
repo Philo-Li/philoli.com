@@ -11,5 +11,12 @@ const t = useTranslations(locale);
   title={t('metadata.ebookTranslatorTitle')}
   description={t('metadata.ebookTranslatorDescription')}
 >
-  <EbookTranslator client:only="react" locale={locale} />
+  <div class="bt" id="bt-root">
+    <header class="bt__header">
+      <div class="bt__eyebrow">{t('ebookTranslator.eyebrow')}</div>
+      <h1 class="bt__title">{t('ebookTranslator.title')}</h1>
+      <p class="bt__subtitle">{t('ebookTranslator.subtitle')}</p>
+    </header>
+    <EbookTranslator client:only="react" locale={locale} />
+  </div>
 </BaseLayout>

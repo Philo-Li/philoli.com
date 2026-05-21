@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekt",
-    "title": "Tosproget e-bogsoversætter",
+    "title": "Gratis e-bogsoversætter",
     "subtitle": "Upload en EPUB, brug din egen LLM API-nøgle, og få en tosproget udgave tilbage, hvor den originale og oversatte tekst er flettet sammen afsnit for afsnit. Filen analyseres udelukkende i din browser — din bog rører aldrig nogen server.",
     "steps": {
       "settings": "indstillinger",

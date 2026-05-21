@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Proje",
-    "title": "İki Dilli E-kitap Çevirmeni",
+    "title": "Ücretsiz E-Kitap Çevirmeni",
     "subtitle": "Bir EPUB yükleyin, kendi LLM API key'inizi getirin ve orijinal ile çevrilmiş metnin paragraf paragraf iç içe geçtiği iki dilli bir sürüm elde edin. Dosya tamamen tarayıcınızda ayrıştırılır — kitabınız asla herhangi bir sunucuya dokunmaz.",
     "steps": {
       "settings": "ayarlar",

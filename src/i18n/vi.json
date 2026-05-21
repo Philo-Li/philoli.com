@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Dự án",
-    "title": "Trình dịch sách điện tử song ngữ",
+    "title": "Trình dịch ebook miễn phí",
     "subtitle": "Tải lên tệp EPUB, sử dụng API key LLM của bạn và nhận lại bản song ngữ với văn bản gốc và bản dịch xen kẽ từng đoạn. Tệp được xử lý hoàn toàn trong trình duyệt của bạn — sách của bạn không bao giờ được gửi lên bất kỳ máy chủ nào.",
     "steps": {
       "settings": "cài đặt",

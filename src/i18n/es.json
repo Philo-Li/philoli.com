@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Proyecto",
-    "title": "Traductor de Ebooks Bilingües",
+    "title": "Traductor de ebooks gratis",
     "subtitle": "Sube un EPUB, usa tu propia API key de LLM y obtén una edición bilingüe con el texto original y traducido intercalado párrafo por párrafo. El archivo se procesa íntegramente en tu navegador; tu libro nunca toca ningún servidor.",
     "steps": {
       "settings": "ajustes",

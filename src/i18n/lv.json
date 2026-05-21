@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekts",
-    "title": "Divvalodu e-grāmatu tulkotājs",
+    "title": "Bezmaksas e-grāmatu tulkotājs",
     "subtitle": "Augšupielādējiet EPUB, izmantojiet savu LLM API key un saņemiet divvalodu izdevumu, kurā oriģinālais un tulkotais teksts ir sakārtots pa rindkopām. Fails tiek apstrādāts tikai jūsu pārlūkprogrammā — jūsu grāmata nekad nenonāk nevienā serverī.",
     "steps": {
       "settings": "iestatījumi",

@@ -203,6 +203,14 @@ function fileFromBlob(blob: Blob, name: string, type: string): File {
 export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const t = useTranslations(locale);
   const [step, setStep] = useState<Step>('settings');
+  // Sync the browse-step modifier onto the SSR-rendered wrapper so CSS
+  // (.bt--browse .bt__header etc.) still applies after we lifted the header
+  // out of React into the Astro page for SEO crawlability.
+  useEffect(() => {
+    const root = document.getElementById('bt-root');
+    if (!root) return;
+    root.classList.toggle('bt--browse', step === 'browse');
+  }, [step]);
   const [sessionSourceKind, setSessionSourceKind] = useState<SessionSourceKind>(null);
   const [settings, setSettings] = useState<Settings>(() =>
     typeof window === 'undefined'
@@ -1143,13 +1151,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const currentModelLabel = provider.models.find(m => m.id === effectiveModelId())?.label ?? effectiveModelId();
 
   return (
-    <div className={`bt bt--${step}`}>
-      <header className="bt__header">
-        <div className="bt__eyebrow">{t('ebookTranslator.eyebrow')}</div>
-        <h1 className="bt__title">{t('ebookTranslator.title')}</h1>
-        <p className="bt__subtitle">{t('ebookTranslator.subtitle')}</p>
-      </header>
-
+    <>
       <div className="bt__steps">
         {(['settings', 'upload', 'browse'] as const).map((s, i) => {
           const active = s === step;
@@ -1578,7 +1580,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
           </section>
         </div>
       )}
-    </div>
+    </>
   );
 }
 

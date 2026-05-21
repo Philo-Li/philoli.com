@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "项目",
-    "title": "双语电子书翻译器",
+    "title": "免费电子书翻译器",
     "subtitle": "上传 EPUB 或 PDF，使用你自己的 LLM API key，即可获得原文与译文逐段对照的双语版本。文件完全在浏览器中解析 —— 你的书籍绝不会上传到任何服务器。",
     "steps": {
       "settings": "设置",

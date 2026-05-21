@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekt",
-    "title": "Bilingválny prekladač e-kníh",
+    "title": "Bezplatný prekladač e-kníh",
     "subtitle": "Nahrajte EPUB, použite svoj vlastný LLM API key a získajte bilingválne vydanie s pôvodným a preloženým textom striedajúcim sa po odsekoch. Súbor sa spracováva výhradne vo vašom prehliadači — vaša kniha sa nikdy nedostane na žiadny server.",
     "steps": {
       "settings": "nastavenia",

@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projektas",
-    "title": "Dvikalbių el. knygų vertėjas",
+    "title": "Nemokamas el. knygų vertėjas",
     "subtitle": "Įkelkite EPUB, naudokite savo LLM API key ir gaukite dvikalbį leidimą, kuriame originalus ir išverstas tekstas pateikiami pakaitomis po kiekvienos pastraipos. Failas apdorojamas tik jūsų naršyklėje — jūsų knyga niekada nepasiekia jokio serverio.",
     "steps": {
       "settings": "nustatymai",

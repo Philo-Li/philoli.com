@@ -115,7 +115,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Project",
-    "title": "Bilingual Ebook Translator",
+    "title": "Free Ebook Translator",
     "subtitle": "Upload an EPUB or PDF, bring your own LLM API key, and get back a bilingual edition with the original and translated text interleaved paragraph by paragraph. The file is parsed entirely in your browser — your book never touches any server.",
     "steps": {
       "settings": "settings",

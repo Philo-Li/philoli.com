@@ -112,7 +112,7 @@
   },
   "ebookTranslator": {
     "eyebrow": "Projekt",
-    "title": "Kétnyelvű e-könyv fordító",
+    "title": "Ingyenes e-könyv fordító",
     "subtitle": "Töltsön fel egy EPUB fájlt, használja saját LLM API key-ét, és kapjon egy kétnyelvű kiadást, ahol az eredeti és a lefordított szöveg bekezdésenként váltakozik. A fájl feldolgozása teljes egészében a böngészőjében történik — a könyve soha nem kerül szerverre.",
     "steps": {
       "settings": "beállítások",
