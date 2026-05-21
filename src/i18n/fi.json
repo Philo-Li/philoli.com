@@ -21,8 +21,8 @@
     "projectsDescription": "Philo Lin projekteja.",
     "newsletterTitle": "Uutiskirje — Philo Li",
     "newsletterDescription": "Tilaa Philo Lin uutiskirjeet.",
-    "ebookTranslatorTitle": "Kaksikielinen e-kirjojen kääntäjä — Philo Li",
-    "ebookTranslatorDescription": "Lataa EPUB-tiedosto ja käännä se kaksikieliseksi versioksi omalla LLM API key -avaimellasi. Toimii kokonaan selaimessasi.",
+    "ebookTranslatorTitle": "Ilmainen e-kirjankääntäjä — EPUB / PDF / AI / 40 kieltä",
+    "ebookTranslatorDescription": "Ilmainen AI-e-kirjakääntäjä, joka toimii kokonaan selaimessasi. Käännä EPUB- ja PDF-tiedostoja yli 40 kielelle kaksikielisellä rinnakkaisnäytöllä. Käytä omaa API-avaintasi.",
     "rubiksCubeTitle": "3D Rubikin kuutio — Philo Li",
     "rubiksCubeDescription": "Interaktiivinen 3D Rubikin kuutio. Aseta sekoitus ja ratkaisu, pelaa vaihe vaiheelta, piilota värejä tai sivuja muistiharjoittelua varten."
   },

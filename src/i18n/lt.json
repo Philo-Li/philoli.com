@@ -21,8 +21,8 @@
     "projectsDescription": "Philo Li projektai.",
     "newsletterTitle": "Naujienlaiškis — Philo Li",
     "newsletterDescription": "Prenumeruokite Philo Li naujienlaiškius.",
-    "ebookTranslatorTitle": "Dvikalbis el. knygų vertėjas — Philo Li",
-    "ebookTranslatorDescription": "Įkelkite EPUB ir išverskite jį į dvikalbį leidimą naudodami savo LLM API key. Veikia tiesiogiai jūsų naršyklėje.",
+    "ebookTranslatorTitle": "Nemokamas el. knygų vertėjas — EPUB / PDF / AI / 40 kalbų",
+    "ebookTranslatorDescription": "Nemokamas AI el. knygų vertėjas, veikiantis visiškai jūsų naršyklėje. Verskite EPUB ir PDF failus į 40+ kalbų su dvikalbe gretima išvestimi. Naudokite savo API raktą.",
     "rubiksCubeTitle": "3D Rubiko kubas — Philo Li",
     "rubiksCubeDescription": "Interaktyvus 3D Rubiko kubas. Nustatykite sumaišymą ir sprendimą, žaiskite žingsnis po žingsnio, paslėpkite spalvas ar sienas įsiminimo pratimams."
   },

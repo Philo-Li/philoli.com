@@ -21,8 +21,8 @@
     "projectsDescription": "Philo Li-এর প্রজেক্টসমূহ।",
     "newsletterTitle": "নিউজলেটার — Philo Li",
     "newsletterDescription": "Philo Li-এর নিউজলেটারে সাবস্ক্রাইব করুন।",
-    "ebookTranslatorTitle": "দ্বিভাষিক ই-বুক অনুবাদক — Philo Li",
-    "ebookTranslatorDescription": "একটি EPUB আপলোড করুন এবং আপনার নিজস্ব LLM API key দিয়ে এটিকে একটি দ্বিভাষিক সংস্করণে অনুবাদ করুন। এটি সম্পূর্ণভাবে আপনার ব্রাউজারে চলে।",
+    "ebookTranslatorTitle": "ফ্রি ইবুক অনুবাদক — EPUB / PDF / AI / 40টি ভাষা",
+    "ebookTranslatorDescription": "ব্রাউজারে চলা ফ্রি AI ইবুক অনুবাদক। EPUB এবং PDF ফাইলকে 40+ ভাষায় অনুবাদ করুন, পাশাপাশি দ্বিভাষিক আউটপুটসহ। নিজের API key ব্যবহার করুন।",
     "rubiksCubeTitle": "3D রুবিকস কিউব — Philo Li",
     "rubiksCubeDescription": "ইন্টারঅ্যাক্টিভ 3D রুবিকস কিউব। একটি স্ক্র্যাম্বল এবং সমাধান সেট করুন, ধাপে ধাপে খেলুন, মুখস্থ করার অনুশীলনের জন্য রঙ বা তলগুলো লুকিয়ে রাখুন।"
   },

@@ -21,8 +21,8 @@
     "projectsDescription": "โปรเจกต์โดย Philo Li",
     "newsletterTitle": "จดหมายข่าว — Philo Li",
     "newsletterDescription": "ติดตามจดหมายข่าวของ Philo Li",
-    "ebookTranslatorTitle": "เครื่องมือแปลอีบุ๊กสองภาษา — Philo Li",
-    "ebookTranslatorDescription": "อัปโหลดไฟล์ EPUB และแปลเป็นฉบับสองภาษาด้วย API key ของ LLM ของคุณเอง ทำงานบนเบราว์เซอร์ของคุณทั้งหมด",
+    "ebookTranslatorTitle": "เครื่องมือแปลอีบุ๊กฟรี — EPUB / PDF / AI / 40 ภาษา",
+    "ebookTranslatorDescription": "เครื่องมือแปลอีบุ๊กฟรีด้วย AI ทำงานในเบราว์เซอร์ของคุณทั้งหมด แปลไฟล์ EPUB และ PDF เป็นกว่า 40 ภาษา พร้อมผลลัพธ์สองภาษาเทียบเคียง ใช้ API key ของคุณเอง",
     "rubiksCubeTitle": "รูบิค 3 มิติ — Philo Li",
     "rubiksCubeDescription": "รูบิค 3 มิติแบบโต้ตอบได้ ตั้งค่าการสลับและการแก้ปัญหา เล่นทีละขั้นตอน ซ่อนสีหรือด้านเพื่อฝึกการจดจำ"
   },

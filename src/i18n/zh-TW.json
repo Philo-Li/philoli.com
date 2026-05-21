@@ -21,8 +21,8 @@
     "projectsDescription": "Philo Li 的專案作品。",
     "newsletterTitle": "電子報 — Philo Li",
     "newsletterDescription": "訂閱 Philo Li 的電子報。",
-    "ebookTranslatorTitle": "雙語電子書翻譯器 — Philo Li",
-    "ebookTranslatorDescription": "上傳 EPUB 檔案，並使用您自己的 LLM API key 翻譯成雙語版本。完全在瀏覽器中運行。",
+    "ebookTranslatorTitle": "免費電子書翻譯器 — EPUB / PDF / AI / 40 種語言",
+    "ebookTranslatorDescription": "免費線上電子書翻譯器，在瀏覽器中執行，使用自己的 API Key 即可。AI 智慧翻譯 EPUB 與 PDF，輸出雙語對照版本，支援 40+ 種語言。",
     "rubiksCubeTitle": "3D 魔術方塊 — Philo Li",
     "rubiksCubeDescription": "互動式 3D 魔術方塊。設定打亂與解法，逐步操作，並可隱藏顏色或面以進行記憶訓練。"
   },

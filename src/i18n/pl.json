@@ -21,8 +21,8 @@
     "projectsDescription": "Projekty autorstwa Philo Li.",
     "newsletterTitle": "Newsletter — Philo Li",
     "newsletterDescription": "Subskrybuj newslettery Philo Li.",
-    "ebookTranslatorTitle": "Dwujęzyczny tłumacz ebooków — Philo Li",
-    "ebookTranslatorDescription": "Prześlij plik EPUB i przetłumacz go na wydanie dwujęzyczne za pomocą własnego klucza API key LLM. Działa w całości w przeglądarce.",
+    "ebookTranslatorTitle": "Darmowy tłumacz ebooków — EPUB / PDF / AI / 40 języków",
+    "ebookTranslatorDescription": "Darmowy tłumacz ebooków oparty na AI, działa w całości w przeglądarce. Tłumacz pliki EPUB i PDF na ponad 40 języków z dwujęzycznym wyjściem obok siebie. Używaj własnego klucza API.",
     "rubiksCubeTitle": "Kostka Rubika 3D — Philo Li",
     "rubiksCubeDescription": "Interaktywna Kostka Rubika 3D. Ustaw pomieszanie i rozwiązanie, odtwarzaj krok po kroku, ukrywaj kolory lub ścianki do ćwiczeń zapamiętywania."
   },

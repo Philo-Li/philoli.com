@@ -21,8 +21,8 @@
     "projectsDescription": "Projekt av Philo Li.",
     "newsletterTitle": "Nyhetsbrev — Philo Li",
     "newsletterDescription": "Prenumerera på Philo Lis nyhetsbrev.",
-    "ebookTranslatorTitle": "Tvåspråkig e-boksöversättare — Philo Li",
-    "ebookTranslatorDescription": "Ladda upp en EPUB och översätt den till en tvåspråkig utgåva med din egen LLM API key. Körs helt i din webbläsare.",
+    "ebookTranslatorTitle": "Gratis e-boköversättare — EPUB / PDF / AI / 40 språk",
+    "ebookTranslatorDescription": "Gratis AI-e-boköversättare som körs helt i din webbläsare. Översätt EPUB- och PDF-filer till över 40 språk med tvåspråkig utdata sida vid sida. Använd din egen API-nyckel.",
     "rubiksCubeTitle": "3D Rubiks kub — Philo Li",
     "rubiksCubeDescription": "Interaktiv 3D Rubiks kub. Ställ in en blandning och en lösning, spela steg för steg, dölj färger eller sidor för minnesträning."
   },

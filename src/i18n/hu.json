@@ -21,8 +21,8 @@
     "projectsDescription": "Philo Li projektjei.",
     "newsletterTitle": "Hírlevél — Philo Li",
     "newsletterDescription": "Iratkozz fel Philo Li hírleveleire.",
-    "ebookTranslatorTitle": "Kétnyelvű e-könyv fordító — Philo Li",
-    "ebookTranslatorDescription": "Tölts fel egy EPUB fájlt, és fordítsd le kétnyelvű kiadássá a saját LLM API key-eddel. Teljesen a böngésződben fut.",
+    "ebookTranslatorTitle": "Ingyenes e-könyv fordító — EPUB / PDF / AI / 40 nyelv",
+    "ebookTranslatorDescription": "Ingyenes AI e-könyv fordító, amely teljes egészében a böngészőben fut. Fordíts EPUB és PDF fájlokat 40+ nyelvre kétnyelvű egymás melletti kimenettel. Használd a saját API kulcsodat.",
     "rubiksCubeTitle": "3D Rubik-kocka — Philo Li",
     "rubiksCubeDescription": "Interaktív 3D Rubik-kocka. Állíts be keverést és megoldást, játszd le lépésről lépésre, rejts el színeket vagy oldalakat a memorizáláshoz."
   },

@@ -14,8 +14,8 @@
     "projectsDescription": "Projects by Philo Li.",
     "newsletterTitle": "Newsletter — Philo Li",
     "newsletterDescription": "Subscribe to Philo Li's newsletters.",
-    "ebookTranslatorTitle": "Bilingual Ebook Translator — Philo Li",
-    "ebookTranslatorDescription": "Upload an EPUB and translate it into a bilingual edition with your own LLM API key. Runs entirely in your browser.",
+    "ebookTranslatorTitle": "Free Ebook Translator — EPUB / PDF / AI / 40 Languages",
+    "ebookTranslatorDescription": "Free AI ebook translator that runs entirely in your browser. Translate EPUB and PDF files into 40+ languages with side-by-side bilingual output. Use your own API key.",
     "rubiksCubeTitle": "3D Rubik's Cube — Philo Li",
     "rubiksCubeDescription": "Interactive 3D Rubik's Cube. Set a scramble and a solution, play step by step, hide colors or faces for memorization drills."
   },

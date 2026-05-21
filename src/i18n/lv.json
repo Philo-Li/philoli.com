@@ -21,8 +21,8 @@
     "projectsDescription": "Philo Li projekti.",
     "newsletterTitle": "Biļetens — Philo Li",
     "newsletterDescription": "Pieraksties Philo Li jaunumiem.",
-    "ebookTranslatorTitle": "Divvalodu e-grāmatu tulkotājs — Philo Li",
-    "ebookTranslatorDescription": "Augšupielādē EPUB un pārtulko to divvalodu izdevumā, izmantojot savu LLM API key. Darbojas pilnībā tavā pārlūkprogrammā.",
+    "ebookTranslatorTitle": "Bezmaksas e-grāmatu tulkotājs — EPUB / PDF / AI / 40 valodu",
+    "ebookTranslatorDescription": "Bezmaksas AI e-grāmatu tulkotājs, kas pilnībā darbojas jūsu pārlūkprogrammā. Tulkojiet EPUB un PDF failus 40+ valodās ar divvalodu paralēlu izvadi. Izmantojiet savu API atslēgu.",
     "rubiksCubeTitle": "3D Rubika kubs — Philo Li",
     "rubiksCubeDescription": "Interaktīvs 3D Rubika kubs. Iestati sajaukšanu un atrisinājumu, spēlē soli pa solim, paslēp krāsas vai skaldnes iegaumēšanas treniņiem."
   },

@@ -21,8 +21,8 @@
     "projectsDescription": "Projekty od Philo Li.",
     "newsletterTitle": "Newsletter — Philo Li",
     "newsletterDescription": "Prihláste sa na odber newsletterov Philo Li.",
-    "ebookTranslatorTitle": "Dvojjazyčný prekladač e-kníh — Philo Li",
-    "ebookTranslatorDescription": "Nahrajte EPUB a preložte ho do dvojjazyčného vydania pomocou vlastného API key pre LLM. Beží úplne vo vašom prehliadači.",
+    "ebookTranslatorTitle": "Bezplatný prekladač e-kníh — EPUB / PDF / AI / 40 jazykov",
+    "ebookTranslatorDescription": "Bezplatný AI prekladač e-kníh, ktorý beží úplne vo vašom prehliadači. Prekladajte súbory EPUB a PDF do viac ako 40 jazykov s dvojjazyčným paralelným výstupom. Použite vlastný API kľúč.",
     "rubiksCubeTitle": "3D Rubikova kocka — Philo Li",
     "rubiksCubeDescription": "Interaktívna 3D Rubikova kocka. Nastavte si zamiešanie a riešenie, hrajte krok za krokom, skryte farby alebo steny pre nácvik pamäte."
   },

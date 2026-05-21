@@ -21,8 +21,8 @@
     "projectsDescription": "Các dự án của Philo Li.",
     "newsletterTitle": "Bản tin — Philo Li",
     "newsletterDescription": "Đăng ký nhận bản tin của Philo Li.",
-    "ebookTranslatorTitle": "Trình dịch sách điện tử song ngữ — Philo Li",
-    "ebookTranslatorDescription": "Tải lên tệp EPUB và dịch sang bản song ngữ bằng API key LLM của riêng bạn. Chạy hoàn toàn trên trình duyệt.",
+    "ebookTranslatorTitle": "Trình dịch ebook miễn phí — EPUB / PDF / AI / 40 ngôn ngữ",
+    "ebookTranslatorDescription": "Trình dịch ebook AI miễn phí chạy hoàn toàn trên trình duyệt. Dịch tệp EPUB và PDF sang hơn 40 ngôn ngữ với đầu ra song ngữ đối chiếu. Sử dụng API key của bạn.",
     "rubiksCubeTitle": "Khối Rubik 3D — Philo Li",
     "rubiksCubeDescription": "Khối Rubik 3D tương tác. Thiết lập xáo trộn và lời giải, chơi từng bước, ẩn màu hoặc các mặt để luyện trí nhớ."
   },
