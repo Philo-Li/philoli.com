@@ -3,10 +3,10 @@ layout: blog
 title: シンプルで便利なバイリンガル電子書籍翻訳ツールをご紹介
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: ブラウザだけで完結する電子書籍翻訳ツール。EPUBとPDFに対応し、40以上の言語間で相互翻訳、バイリンガル表示で出力します。
 ---
 

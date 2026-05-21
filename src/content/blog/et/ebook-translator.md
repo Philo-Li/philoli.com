@@ -3,10 +3,10 @@ layout: blog
 title: Tutvustan lihtsat ja tõhusat kakskeelset e-raamatute tõlkijat
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: E-raamatute tõlkeprogramm, mis töötab täielikult brauseris. Toetab EPUB ja PDF formaate, tõlgib üle 40 keele vahel ning esitab teksti paralleelselt.
 ---
 

@@ -3,10 +3,10 @@ layout: blog
 title: Deling af et simpelt og effektivt tosproget e-bogsoversætterværktøj
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Et e-bogsoversættelsesværktøj, der kører direkte i browseren, understøtter EPUB og PDF, oversættelse mellem over 40 sprog og tosproget output side om side.
 ---
 

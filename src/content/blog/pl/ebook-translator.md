@@ -3,10 +3,10 @@ layout: blog
 title: Przedstawiam prosty i wygodny tłumacz e-booków z widokiem dwujęzycznym
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Narzędzie do tłumaczenia e-booków, które działa w całości w przeglądarce. Obsługuje formaty EPUB i PDF, umożliwia wzajemne tłumaczenie w ponad 40 językach i generuje tekst w widoku dwujęzycznym.
 ---
 

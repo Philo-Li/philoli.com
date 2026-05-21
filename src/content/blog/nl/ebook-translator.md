@@ -3,10 +3,10 @@ layout: blog
 title: Introductie van een eenvoudige en effectieve tweetalige e-boekvertaler
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Een e-boekvertaler die volledig in de browser werkt, met ondersteuning voor EPUB en PDF, vertalingen tussen meer dan 40 talen en uitvoer in twee talen naast elkaar.
 ---
 

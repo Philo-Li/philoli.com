@@ -3,10 +3,10 @@ layout: blog
 title: Un traducător de cărți electronice bilingv, simplu și eficient
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Un instrument de traducere a cărților electronice care rulează integral în browser, suportă EPUB și PDF, permite traducerea între peste 40 de limbi și oferă o ieșire bilingvă comparativă.
 ---
 

@@ -3,10 +3,10 @@ layout: blog
 title: Kullanışlı ve Basit Bir İki Dilli E-Kitap Çevirmeni Paylaşıyorum
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Tamamen tarayıcı tabanlı çalışan, EPUB ve PDF desteği sunan, 40'tan fazla dil arasında karşılıklı çeviri yapabilen ve iki dilli karşılaştırmalı çıktı veren bir e-kitap çeviri aracı.
 ---
 

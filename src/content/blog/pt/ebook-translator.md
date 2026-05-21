@@ -3,10 +3,10 @@ layout: blog
 title: Compartilhando um Tradutor de E-books Bilíngue Simples e Poderoso
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Uma ferramenta de tradução de e-books que funciona totalmente no navegador, suportando EPUB e PDF, tradução mútua entre mais de 40 idiomas e saída bilíngue lado a lado.
 ---
 

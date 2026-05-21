@@ -3,10 +3,10 @@ layout: blog
 title: Ein einfacher und nützlicher E-Book-Übersetzer für zweisprachiges Lesen
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Ein vollständig im Browser laufendes E-Book-Übersetzungstool, das EPUB und PDF unterstützt, über 40 Sprachen bidirektional übersetzt und zweisprachige Ausgaben liefert.
 ---
 

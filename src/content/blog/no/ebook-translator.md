@@ -3,10 +3,10 @@ layout: blog
 title: En enkel og nyttig tospråklig e-bokoversetter
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: En e-bokoversetter som kjører fullstendig i nettleseren, støtter EPUB og PDF, oversetter mellom over 40 språk og gir tospråklig utdata.
 ---
 

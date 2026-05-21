@@ -3,10 +3,10 @@ layout: blog
 title: Bemutatunk egy egyszerű és praktikus kétnyelvű e-könyv fordítót
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Egy teljesen böngészőben futó e-könyv fordító eszköz, amely támogatja az EPUB és PDF formátumokat, több mint 40 nyelvre fordít és vissza, kétnyelvű, összehasonlító kimenettel.
 ---
 

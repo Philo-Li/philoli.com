@@ -3,8 +3,8 @@ layout: blog
 title: Partager un traducteur d'e-books bilingue simple et efficace
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
 categories: Présentation de projet
 description: Un outil de traduction d'e-books entièrement exécuté dans le navigateur, prenant en charge les formats EPUB et PDF, la traduction entre plus de 40 langues, avec sortie bilingue côte à côte.

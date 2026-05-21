@@ -3,10 +3,10 @@ layout: blog
 title: Un traductor de libros electrónicos bilingüe sencillo y eficaz
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Una herramienta de traducción de libros electrónicos que funciona completamente en el navegador, compatible con EPUB y PDF, con traducción bidireccional entre más de 40 idiomas y salida bilingüe.
 ---
 

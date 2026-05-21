@@ -3,10 +3,10 @@ layout: blog
 title: Chia sẻ một công cụ dịch sách điện tử song ngữ đơn giản và tiện lợi
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Một công cụ dịch sách điện tử chạy hoàn toàn trên trình duyệt, hỗ trợ EPUB và PDF, dịch qua lại hơn 40 ngôn ngữ, xuất bản song ngữ đối chiếu.
 ---
 

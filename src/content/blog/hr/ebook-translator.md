@@ -3,10 +3,10 @@ layout: blog
 title: Predstavljam jednostavan i praktičan prevoditelj e-knjiga za dvojezično čitanje
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Alat za prevođenje e-knjiga koji u potpunosti radi u vašem pregledniku, podržava EPUB i PDF, prevođenje između 40+ jezika i dvojezični izlaz.
 ---
 

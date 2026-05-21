@@ -3,10 +3,10 @@ layout: blog
 title: Enkel och effektiv översättare för tvåspråkiga e-böcker
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Ett e-boksöversättningsverktyg som körs helt i webbläsaren, stöder EPUB och PDF, översätter mellan över 40 språk och levererar tvåspråkig utdata.
 ---
 

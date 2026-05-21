@@ -3,10 +3,10 @@ layout: blog
 title: Berbagi Alat Penerjemah E-book Dwibahasa yang Simpel dan Praktis
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Alat terjemah e-book yang berjalan sepenuhnya di browser, mendukung EPUB dan PDF, mampu menerjemahkan lebih dari 40 bahasa, dan menampilkan output dwibahasa.
 ---
 

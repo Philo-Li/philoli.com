@@ -3,10 +3,10 @@ layout: blog
 title: Introducing an Easy-to-Use Bilingual Ebook Translator
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: A fully browser-based ebook translation tool, supporting EPUB and PDF, 40+ language pairs, and bilingual output.
 ---
 

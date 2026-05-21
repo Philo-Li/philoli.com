@@ -3,10 +3,10 @@ layout: blog
 title: Představuji jednoduchý a praktický překladač e-knih pro bilingvní čtení
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Nástroj pro překlad e-knih, který běží kompletně v prohlížeči. Podporuje formáty EPUB a PDF, obousměrný překlad do více než 40 jazyků a výstup s dvojjazyčným srovnáním.
 ---
 

@@ -1,12 +1,12 @@
 ---
 layout: blog
-title: Ipinapakilala: Simple at Mabisang Tagasalin ng Ebook na May Dalawang Wika
+title: "Ipinapakilala: Simple at Mabisang Tagasalin ng Ebook na May Dalawang Wika"
 date: 2026-05-21 12:00:00
 tags:
-  - 工具
-  - 阅读
+  - tools
+  - reading
   - AI
-categories: 项目分享
+categories: Project Sharing
 description: Isang tool sa pagsasalin ng ebook na ganap na gumagana sa browser, sumusuporta sa EPUB at PDF, may pagsasalin sa mahigit 40 wika, at naglalabas ng dual-language na bersyon.
 ---
 
