@@ -63,6 +63,14 @@
     "headline": "好奇心を持ち続けよう。",
     "desc": "アート、人生、そしてものづくりについての思考を、あなたのインボックスへお届けします。"
   },
+  "blogPost": {
+    "ctaHeadline": "楽しんでいただけましたか？",
+    "ctaDesc": "購読して、新しいエッセイをメールで受け取りましょう。",
+    "licensePrefix": "ライセンス：",
+    "moreReading": "もっと読む",
+    "previous": "前へ",
+    "next": "次へ"
+  },
   "subscribeForm": {
     "languageLabel": "言語",
     "placeholder": "your@email.com",

@@ -51,6 +51,14 @@
     "headline": "Stay curious.",
     "desc": "Thoughts on art, life, and building things — delivered to your inbox."
   },
+  "blogPost": {
+    "ctaHeadline": "Enjoyed this?",
+    "ctaDesc": "Subscribe to get new essays in your inbox.",
+    "licensePrefix": "Licensed under",
+    "moreReading": "More reading",
+    "previous": "Previous",
+    "next": "Next"
+  },
   "subscribeForm": {
     "languageLabel": "Language",
     "placeholder": "your@email.com",

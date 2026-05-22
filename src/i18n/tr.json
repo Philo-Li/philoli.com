@@ -63,6 +63,14 @@
     "headline": "Meraklı kal.",
     "desc": "Sanat, yaşam ve bir şeyler inşa etmek üzerine düşünceler — gelen kutunuza teslim edilir."
   },
+  "blogPost": {
+    "ctaHeadline": "Beğendin mi?",
+    "ctaDesc": "Yeni denemeleri gelen kutuna almak için abone ol.",
+    "licensePrefix": "Lisans sahibi:",
+    "moreReading": "Daha fazla okuma",
+    "previous": "Önceki",
+    "next": "Sonraki"
+  },
   "subscribeForm": {
     "languageLabel": "Dil",
     "placeholder": "your@email.com",

@@ -8,7 +8,13 @@ tags:
   - AI
 categories: 專案分享
 description: 一個完全在瀏覽器端運行的電子書翻譯工具，支援 EPUB 和 PDF，40+ 種語言互譯，雙語對照輸出。
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="分享一個簡單好上手的雙語電子書翻譯工具" />
+</figure>
 
 我一直都有閱讀英文原文書的習慣，但說實話，每當遇到生澀字詞或複雜句型時，閱讀體驗就會大打折扣。而市面上的翻譯工具，不是只能翻譯網頁，就是翻譯品質差強人意，不然就是設計不夠簡潔，反而塞了一堆不必要的功能。
 

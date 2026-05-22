@@ -10,6 +10,7 @@ tags:
   - metoda Roux
 categories: Codzienne zmagania
 description: Krok po kroku nauczę Cię, jak ułożyć kostkę 3x3x3 bez zapamiętywania żadnych algorytmów, wykorzystując koncepcję komutatorów z teorii grup oraz metodę mostkową Roux.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

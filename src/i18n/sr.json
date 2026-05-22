@@ -63,6 +63,14 @@
     "headline": "Ostani radoznalan.",
     "desc": "Misli o umetnosti, životu i stvaranju — pravo u tvoje sanduče."
   },
+  "blogPost": {
+    "ctaHeadline": "Dopalo vam se?",
+    "ctaDesc": "Prijavite se da dobijate nove eseje u svoje sanduče.",
+    "licensePrefix": "Licencirano pod",
+    "moreReading": "Još čitanja",
+    "previous": "Prethodno",
+    "next": "Sledeće"
+  },
   "subscribeForm": {
     "languageLabel": "Jezik",
     "placeholder": "your@email.com",

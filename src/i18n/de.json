@@ -63,6 +63,14 @@
     "headline": "Bleib neugierig.",
     "desc": "Gedanken über Kunst, das Leben und das Erschaffen von Dingen — direkt in dein Postfach."
   },
+  "blogPost": {
+    "ctaHeadline": "Hat es dir gefallen?",
+    "ctaDesc": "Abonniere, um neue Essays in deinem Posteingang zu erhalten.",
+    "licensePrefix": "Lizenziert unter",
+    "moreReading": "Mehr lesen",
+    "previous": "Zurück",
+    "next": "Weiter"
+  },
   "subscribeForm": {
     "languageLabel": "Sprache",
     "placeholder": "your@email.com",

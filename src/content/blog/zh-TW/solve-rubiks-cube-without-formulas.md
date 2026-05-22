@@ -10,6 +10,7 @@ tags:
   - Roux方法
 categories: 日常折腾
 description: 結合群論交換子的概念與 Roux 橋式解法，一步步帶你從零開始，不用背任何公式就能還原三階魔術方塊。
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

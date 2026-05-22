@@ -63,6 +63,14 @@
     "headline": "Оставайтесь любознательными.",
     "desc": "Мысли об искусстве, жизни и созидании — прямо в ваш почтовый ящик."
   },
+  "blogPost": {
+    "ctaHeadline": "Понравилось?",
+    "ctaDesc": "Подпишитесь, чтобы получать новые эссе на почту.",
+    "licensePrefix": "Лицензия:",
+    "moreReading": "Ещё почитать",
+    "previous": "Назад",
+    "next": "Далее"
+  },
   "subscribeForm": {
     "languageLabel": "Язык",
     "placeholder": "your@email.com",

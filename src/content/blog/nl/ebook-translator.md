@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Een e-boekvertaler die volledig in de browser werkt, met ondersteuning voor EPUB en PDF, vertalingen tussen meer dan 40 talen en uitvoer in twee talen naast elkaar.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Introductie van een eenvoudige en effectieve tweetalige e-boekvertaler" />
+</figure>
 
 Ik lees al jaren graag Engelstalige boeken in de originele taal. Maar eerlijk is eerlijk, zodra ik op onbekende woorden of complexe zinsconstructies stuit, gaat het leesplezier er flink op achteruit. De vertaaltools die op de markt zijn, vertalen ofwel alleen webpagina's, leveren een twijfelachtige kwaliteit, of ze zijn te ingewikkeld ontworpen met veel te veel onnodige functies.
 

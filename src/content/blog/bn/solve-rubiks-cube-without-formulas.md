@@ -10,6 +10,7 @@ tags:
   - Roux পদ্ধতি
 categories: দৈনন্দিন ঝক্কি
 description: গ্রুপ থিওরির কমিউটেটর ধারণা এবং রু (Roux) ব্রিজ পদ্ধতি ব্যবহার করে, শূন্য থেকে শুরু করে ধাপে ধাপে শেখানো হবে কীভাবে কোনো সূত্র মুখস্থ না করেই একটি ৩x৩ রুবিকস কিউব সমাধান করা যায়।
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

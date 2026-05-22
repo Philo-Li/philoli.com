@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Ett e-boksöversättningsverktyg som körs helt i webbläsaren, stöder EPUB och PDF, översätter mellan över 40 språk och levererar tvåspråkig utdata.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Enkel och effektiv översättare för tvåspråkiga e-böcker" />
+</figure>
 
 Jag har alltid haft för vana att läsa böcker på engelska i original, men ärligt talat är läsupplevelsen ofta lidande när jag stöter på ovanliga ord eller komplexa meningsbyggnader. De översättningsverktyg som finns på marknaden kan antingen bara översätta webbsidor, har tveksam översättningskvalitet, eller är för komplicerade med en massa onödiga funktioner.
 

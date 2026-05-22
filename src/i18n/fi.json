@@ -63,6 +63,14 @@
     "headline": "Pysy uteliaana.",
     "desc": "Ajatuksia taiteesta, elämästä ja asioiden rakentamisesta — suoraan sähköpostiisi."
   },
+  "blogPost": {
+    "ctaHeadline": "Piditkö tästä?",
+    "ctaDesc": "Tilaa uudet esseet sähköpostiisi.",
+    "licensePrefix": "Lisenssi:",
+    "moreReading": "Lisää luettavaa",
+    "previous": "Edellinen",
+    "next": "Seuraava"
+  },
   "subscribeForm": {
     "languageLabel": "Kieli",
     "placeholder": "your@email.com",

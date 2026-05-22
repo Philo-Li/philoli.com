@@ -10,6 +10,7 @@ tags:
   - Méthode Roux
 categories: 日常折腾
 description: Découvrez comment résoudre un Rubik's Cube 3x3 de A à Z, sans aucune formule à mémoriser, en utilisant les concepts de commutateurs de la théorie des groupes et la méthode Roux.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

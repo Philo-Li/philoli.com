@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Projek Dikongsi
 description: Alat penterjemah e-buku yang berfungsi sepenuhnya dalam pelayar, menyokong EPUB dan PDF, menterjemah antara 40+ bahasa, serta menghasilkan output dwibahasa secara selari.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Memperkenalkan Penterjemah E-buku Dwibahasa yang Ringkas dan Berkesan" />
+</figure>
 
 Saya memang sudah biasa membaca buku-buku asli dalam bahasa Inggeris. Namun, sejujurnya, apabila terserempak dengan perkataan yang jarang ditemui atau ayat yang kompleks, pengalaman membaca saya akan terjejas teruk. Alat penterjemah yang ada di pasaran selalunya hanya mampu menterjemah laman web, kualiti terjemahannya pula meragukan, atau reka bentuknya tidak cukup ringkas kerana terlalu banyak ciri yang tidak perlu.
 

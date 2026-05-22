@@ -10,6 +10,7 @@ tags:
   - Roux-módszer
 categories: 日常折腾
 description: A csoportelmélet kommuntátorainak és a Roux-híd módszernek az alkalmazásával lépésről lépésre megtanulhatod, hogyan rakhatsz ki egy 3x3-as Rubik-kockát anélkül, hogy egyetlen képletet is memorizálnod kellene.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

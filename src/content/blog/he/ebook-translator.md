@@ -8,7 +8,13 @@ tags:
   - AI
 categories: שיתוף פרויקטים
 description: כלי תרגום ספרים אלקטרוניים שפועל כולו בדפדפן, תומך ב-EPUB ו-PDF, מתרגם בין למעלה מ-40 שפות ומציג פלט דו-לשוני זה לצד זה.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="מציג" />
+</figure>
 
 תמיד הייתה לי אהבה לקרוא ספרים באנגלית במקורם, אבל אם להיות כנה, כשאני נתקל במילים נדירות או במשפטים מורכבים, חווית הקריאה נפגמת משמעותית. כלי התרגום הקיימים בשוק, או שהם מתרגמים רק דפי אינטרנט, או שאיכות התרגום שלהם ירודה, או שהם פשוט עמוסים מדי בפונקציות מיותרות שפוגעות בפשטות השימוש.
 

@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Présentation de projet
 description: Un outil de traduction d'e-books entièrement exécuté dans le navigateur, prenant en charge les formats EPUB et PDF, la traduction entre plus de 40 langues, avec sortie bilingue côte à côte.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Partager un traducteur d'e-books bilingue simple et efficace" />
+</figure>
 
 J'ai toujours eu l'habitude de lire des livres en version originale anglaise, mais soyons honnêtes, l'expérience de lecture est souvent gâchée par un vocabulaire rare ou des tournures de phrases complexes. Les outils de traduction disponibles sur le marché sont soit limités aux pages web, soit leur qualité de traduction laisse à désirer, soit leur conception est trop chargée de fonctionnalités superflues, loin de la simplicité que l'on attend.
 

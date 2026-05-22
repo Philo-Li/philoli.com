@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Một công cụ dịch sách điện tử chạy hoàn toàn trên trình duyệt, hỗ trợ EPUB và PDF, dịch qua lại hơn 40 ngôn ngữ, xuất bản song ngữ đối chiếu.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Chia sẻ một công cụ dịch sách điện tử song ngữ đơn giản và tiện lợi" />
+</figure>
 
 Tôi vẫn giữ thói quen đọc sách gốc tiếng Anh, nhưng phải thành thật mà nói, mỗi khi vấp phải từ vựng lạ hay câu cú phức tạp, trải nghiệm đọc lại giảm đi đáng kể. Các công cụ dịch hiện có trên thị trường thì hoặc chỉ dịch được trang web, hoặc chất lượng dịch kém, hoặc thiết kế quá rườm rà với nhiều tính năng thừa thãi.
 

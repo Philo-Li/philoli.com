@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Selaimessa täysin paikallisesti toimiva e-kirjankääntäjä, joka tukee EPUB- ja PDF-tiedostoja, yli 40 kielen käännöstä ja kaksikielistä rinnakkaisnäyttöä.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Esittelyssä kätevä kaksikielinen e-kirjankääntäjä" />
+</figure>
 
 Olen aina lukenut englanninkielisiä alkuperäisteoksia, mutta totta puhuen, vieraiden sanojen tai monimutkaisten lauseiden kohdalla lukukokemus kärsii merkittävästi. Markkinoilla olevat käännöstyökalut joko kääntävät vain verkkosivuja, niiden käännöslaatu on kyseenalainen, tai ne ovat liian monimutkaisia ja sisältävät tarpeettomia ominaisuuksia.
 

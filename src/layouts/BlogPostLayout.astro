@@ -1,7 +1,15 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import { DEFAULT_LOCALE, formatDate, isLocale } from '../i18n';
+import SubscribeForm from '../components/forms/SubscribeForm.astro';
+import { DEFAULT_LOCALE, formatDate, isLocale, localizedPath, useTranslations } from '../i18n';
 import type { MarkdownHeading } from 'astro';
+
+interface RelatedPost {
+  slug: string;
+  title: string;
+  cover: string | null;
+  date: Date;
+}
 
 interface Props {
   title: string;
@@ -9,14 +17,26 @@ interface Props {
   tags?: string | string[];
   toc?: boolean;
   headings?: MarkdownHeading[];
+  prev?: RelatedPost | null;
+  next?: RelatedPost | null;
+  moreReading?: RelatedPost[];
 }
 
-const { title, date, tags, toc, headings } = Astro.props;
+const { title, date, tags, toc, headings, prev, next, moreReading = [] } = Astro.props;
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
 const formattedDate = formatDate(date, locale, { year: 'numeric', month: 'long', day: 'numeric' });
 const tagList = Array.isArray(tags) ? tags : tags ? [tags] : [];
 const tocItems = toc && headings ? headings.filter(h => h.depth >= 2 && h.depth <= 3) : [];
 const showToc = tocItems.length > 0;
+
+const BRAND_BY_LANG: Record<string, string> = {
+  zh: 'Philo 说会儿',
+  'zh-TW': 'Philo 說會兒',
+};
+const brand = BRAND_BY_LANG[locale] ?? "Philo's Reflections";
+const year = new Date().getFullYear();
+const CC_URL = 'https://creativecommons.org/licenses/by-nc-sa/4.0/';
 ---
 
 <BaseLayout title={`${title} — Philo Li`} type="article">
@@ -31,6 +51,65 @@ const showToc = tocItems.length > 0;
     <div class="blog-post__content">
       <slot />
     </div>
+
+    <footer class="blog-post__footer">
+      <section class="blog-post__cta" aria-label={t('newsletterCta.label')}>
+        <div class="blog-post__cta-brand">
+          <span class="blog-post__cta-brand-name">{brand}</span>
+          <span class="blog-post__cta-divider" aria-hidden="true"></span>
+          <span class="blog-post__cta-headline">{t('blogPost.ctaHeadline')}</span>
+        </div>
+        <SubscribeForm />
+      </section>
+
+      {moreReading.length > 0 && (
+        <section class="blog-more" aria-label={t('blogPost.moreReading')}>
+          <div class="blog-more__label">{t('blogPost.moreReading')}</div>
+          <ul class="blog-more__list">
+            {moreReading.map((p) => {
+              const href = localizedPath(`/blog/${p.slug.toLowerCase()}`, locale);
+              return (
+                <li class="blog-more__item">
+                  <a href={href} class="blog-more__link">
+                    <div class:list={['blog-more__cover', { 'blog-more__cover--placeholder': !p.cover }]}>
+                      {p.cover
+                        ? <img src={p.cover} alt="" loading="lazy" />
+                        : <span class="blog-more__cover-glyph" aria-hidden="true">{p.title.charAt(0)}</span>}
+                    </div>
+                    <h3 class="blog-more__title">{p.title}</h3>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+
+      {(prev || next) && (
+        <nav class="blog-nav" aria-label="Article navigation">
+          <div class="blog-nav__side blog-nav__side--prev">
+            {prev && (
+              <a href={localizedPath(`/blog/${prev.slug.toLowerCase()}`, locale)} class="blog-nav__link">
+                <span class="blog-nav__label">← {t('blogPost.previous')}</span>
+                <span class="blog-nav__title">{prev.title}</span>
+              </a>
+            )}
+          </div>
+          <div class="blog-nav__side blog-nav__side--next">
+            {next && (
+              <a href={localizedPath(`/blog/${next.slug.toLowerCase()}`, locale)} class="blog-nav__link">
+                <span class="blog-nav__label">{t('blogPost.next')} →</span>
+                <span class="blog-nav__title">{next.title}</span>
+              </a>
+            )}
+          </div>
+        </nav>
+      )}
+
+      <p class="blog-post__license">
+        © {year} Philo Li · {t('blogPost.licensePrefix')} <a href={CC_URL} target="_blank" rel="noopener license">CC BY-NC-SA 4.0</a>
+      </p>
+    </footer>
   </article>
   {showToc && (
     <aside class="blog-toc" aria-label="Table of contents">
@@ -236,6 +315,175 @@ const showToc = tocItems.length > 0;
       grid-template-columns: 1fr;
     }
   }
+  .blog-post__footer {
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+  }
+  .blog-post__cta {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+  }
+  .blog-post__cta-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-bottom: var(--space-sm);
+    text-align: center;
+  }
+  .blog-post__cta-brand-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-heading);
+  }
+  .blog-post__cta-divider {
+    width: 18px;
+    height: 2px;
+    background: var(--color-accent);
+    display: inline-block;
+  }
+  .blog-post__cta-headline {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+  .blog-post__cta :global(.subscribe-form) {
+    max-width: 28rem;
+    margin: 0 auto;
+  }
+
+  /* ---- More reading ---- */
+  .blog-more {
+    margin-top: var(--space-md);
+  }
+  .blog-more__label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+  }
+  .blog-more__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+  }
+  .blog-more__item {
+    margin: 0;
+  }
+  .blog-more__link {
+    display: block;
+    color: var(--color-text);
+    transition: opacity 0.2s ease;
+  }
+  .blog-more__link:hover {
+    opacity: 0.75;
+  }
+  .blog-more__cover {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+  }
+  .blog-more__cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .blog-more__cover--placeholder {
+    background: color-mix(in srgb, var(--color-accent) 14%, var(--color-bg));
+    color: var(--color-accent);
+  }
+  .blog-more__cover-glyph {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    opacity: 0.85;
+  }
+  .blog-more__title {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--color-heading);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ---- Prev / Next nav ---- */
+  .blog-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+  }
+  .blog-nav__side {
+    min-width: 0;
+  }
+  .blog-nav__side--next {
+    text-align: right;
+  }
+  .blog-nav__link {
+    display: inline-block;
+    color: var(--color-text-subtle);
+    transition: color 0.2s ease;
+  }
+  .blog-nav__link:hover {
+    color: var(--color-heading);
+  }
+  .blog-nav__label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-text-muted);
+    margin-bottom: 4px;
+  }
+  .blog-nav__title {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--color-heading);
+  }
+
+  .blog-post__license {
+    margin: var(--space-md) 0 0;
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .blog-post__license a {
+    color: var(--color-text-muted);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .blog-post__license a:hover {
+    color: var(--color-heading);
+  }
+
+  @media (max-width: 600px) {
+    .blog-more__list {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .blog-toc {
     position: fixed;
     top: calc(var(--nav-height) + var(--space-lg));

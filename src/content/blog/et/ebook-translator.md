@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: E-raamatute tõlkeprogramm, mis töötab täielikult brauseris. Toetab EPUB ja PDF formaate, tõlgib üle 40 keele vahel ning esitab teksti paralleelselt.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Tutvustan lihtsat ja tõhusat kakskeelset e-raamatute tõlkijat" />
+</figure>
 
 Olen alati armastanud lugeda raamatuid inglise keeles, kuid pean tunnistama, et haruldaste sõnade või keeruliste lausetega kokku puutudes langeb lugemiskogemus märgatavalt. Enamik turul leiduvaid tõlkeprogramme piirduvad veebilehtede tõlkimisega, pakuvad kahtlast kvaliteeti või on üle koormatud ebavajalike funktsioonidega, mis muudavad kasutamise keeruliseks.
 

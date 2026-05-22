@@ -4,18 +4,49 @@ import BlogPostLayout from '../../layouts/BlogPostLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  return posts
-    .filter(post => post.id.startsWith('en/'))
-    .map(post => ({
-      params: { slug: post.id.slice('en/'.length) },
-      props: { post },
-    }));
+  const enPosts = posts
+    .filter(p => p.id.startsWith('en/'))
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+  return enPosts.map((post, i) => {
+    const slug = post.id.slice('en/'.length);
+    // Sorted newest → oldest: next (newer) is i-1, previous (older) is i+1.
+    const newer = enPosts[i - 1];
+    const older = enPosts[i + 1];
+    const summarize = (p: typeof post) => ({
+      slug: p.id.slice('en/'.length),
+      title: p.data.title,
+      cover: p.data.cover ?? null,
+      date: p.data.date,
+    });
+    const moreReading = post.data.hideMoreReading
+      ? []
+      : enPosts.filter((_, idx) => idx !== i).slice(0, 3).map(summarize);
+    return {
+      params: { slug },
+      props: {
+        post,
+        prev: older ? summarize(older) : null,
+        next: newer ? summarize(newer) : null,
+        moreReading,
+      },
+    };
+  });
 }
 
-const { post } = Astro.props;
+const { post, prev, next, moreReading } = Astro.props;
 const { Content, headings } = await render(post);
 ---
 
-<BlogPostLayout title={post.data.title} date={post.data.date} tags={post.data.tags} toc={post.data.toc} headings={headings}>
+<BlogPostLayout
+  title={post.data.title}
+  date={post.data.date}
+  tags={post.data.tags}
+  toc={post.data.toc}
+  headings={headings}
+  prev={prev}
+  next={next}
+  moreReading={moreReading}
+>
   <Content />
 </BlogPostLayout>

@@ -10,6 +10,7 @@ tags:
   - Метод Ру
 categories: 日常折腾
 description: З нуля, крок за кроком, без запам'ятовування жодної формули, ви дізнаєтесь, як скласти кубик Рубіка 3х3, спираючись на принципи теорії груп та мостовий метод Roux.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

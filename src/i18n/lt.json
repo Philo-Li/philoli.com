@@ -63,6 +63,14 @@
     "headline": "Išlikite smalsūs.",
     "desc": "Mintys apie meną, gyvenimą ir kūrybą — tiesiai į jūsų pašto dėžutę."
   },
+  "blogPost": {
+    "ctaHeadline": "Patiko?",
+    "ctaDesc": "Prenumeruokite, kad gautumėte naujus esė į savo pašto dėžutę.",
+    "licensePrefix": "Licencijuota pagal",
+    "moreReading": "Daugiau skaitymo",
+    "previous": "Ankstesnis",
+    "next": "Kitas"
+  },
   "subscribeForm": {
     "languageLabel": "Kalba",
     "placeholder": "your@email.com",

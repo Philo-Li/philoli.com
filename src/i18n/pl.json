@@ -63,6 +63,14 @@
     "headline": "Bądź ciekawy.",
     "desc": "Myśli o sztuce, życiu i tworzeniu rzeczy — prosto do Twojej skrzynki."
   },
+  "blogPost": {
+    "ctaHeadline": "Podobało Ci się?",
+    "ctaDesc": "Zasubskrybuj, aby otrzymywać nowe eseje na swoją skrzynkę.",
+    "licensePrefix": "Na licencji",
+    "moreReading": "Więcej do czytania",
+    "previous": "Poprzedni",
+    "next": "Następny"
+  },
   "subscribeForm": {
     "languageLabel": "Język",
     "placeholder": "your@email.com",

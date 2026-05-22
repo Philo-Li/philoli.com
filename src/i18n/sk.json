@@ -63,6 +63,14 @@
     "headline": "Zostaňte zvedaví.",
     "desc": "Myšlienky o umení, živote a tvorení vecí — doručené do vašej schránky."
   },
+  "blogPost": {
+    "ctaHeadline": "Páčilo sa vám to?",
+    "ctaDesc": "Prihláste sa na odber a dostávajte nové eseje do svojej schránky.",
+    "licensePrefix": "Licencované pod",
+    "moreReading": "Viac čítania",
+    "previous": "Predchádzajúce",
+    "next": "Nasledujúce"
+  },
   "subscribeForm": {
     "languageLabel": "Jazyk",
     "placeholder": "your@email.com",

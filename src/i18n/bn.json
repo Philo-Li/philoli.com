@@ -63,6 +63,14 @@
     "headline": "কৌতূহলী থাকুন।",
     "desc": "শিল্প, জীবন এবং নতুন কিছু গড়া নিয়ে ভাবনা — সরাসরি আপনার ইনবক্সে।"
   },
+  "blogPost": {
+    "ctaHeadline": "ভালো লেগেছে?",
+    "ctaDesc": "নতুন প্রবন্ধগুলো আপনার ইনবক্সে পেতে সাবস্ক্রাইব করুন।",
+    "licensePrefix": "লাইসেন্সকৃত",
+    "moreReading": "আরও পড়ুন",
+    "previous": "পূর্ববর্তী",
+    "next": "পরবর্তী"
+  },
   "subscribeForm": {
     "languageLabel": "ভাষা",
     "placeholder": "your@email.com",

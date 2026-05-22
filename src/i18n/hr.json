@@ -63,6 +63,14 @@
     "headline": "Ostani znatiželjan.",
     "desc": "Misli o umjetnosti, životu i stvaranju — dostavljene u tvoj sandučić."
   },
+  "blogPost": {
+    "ctaHeadline": "Svidjelo ti se?",
+    "ctaDesc": "Pretplati se za primanje novih eseja u svoj pretinac.",
+    "licensePrefix": "Licencirano pod",
+    "moreReading": "Još čitanja",
+    "previous": "Prethodno",
+    "next": "Sljedeće"
+  },
   "subscribeForm": {
     "languageLabel": "Jezik",
     "placeholder": "your@email.com",

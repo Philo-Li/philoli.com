@@ -63,6 +63,14 @@
     "headline": "Restez curieux.",
     "desc": "Réflexions sur l'art, la vie et la création — livrées dans votre boîte de réception."
   },
+  "blogPost": {
+    "ctaHeadline": "Vous avez aimé ?",
+    "ctaDesc": "Abonnez-vous pour recevoir les nouveaux essais dans votre boîte de réception.",
+    "licensePrefix": "Sous licence",
+    "moreReading": "Plus de lectures",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
   "subscribeForm": {
     "languageLabel": "Langue",
     "placeholder": "your@email.com",

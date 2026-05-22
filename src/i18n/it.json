@@ -63,6 +63,14 @@
     "headline": "Resta curioso.",
     "desc": "Riflessioni su arte, vita e creare cose — consegnate nella tua casella di posta."
   },
+  "blogPost": {
+    "ctaHeadline": "Ti è piaciuto?",
+    "ctaDesc": "Iscriviti per ricevere i nuovi saggi nella tua casella di posta.",
+    "licensePrefix": "Con licenza sotto",
+    "moreReading": "Altre letture",
+    "previous": "Precedente",
+    "next": "Successivo"
+  },
   "subscribeForm": {
     "languageLabel": "Lingua",
     "placeholder": "your@email.com",

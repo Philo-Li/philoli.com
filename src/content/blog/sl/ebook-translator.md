@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Predstavitev projekta
 description: Orodje za prevajanje e-knjig, ki v celoti deluje v brskalniku. Podpira formata EPUB in PDF, omogoča prevajanje med več kot 40 jeziki ter izpis v dvojezični obliki.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Predstavljam preprost in učinkovit prevajalnik dvojezičnih e-knjig" />
+</figure>
 
 Vedno sem imel navado brati knjige v izvirniku, še posebej angleške. A roko na srce, ko naletiš na neznane besede ali zapletene stavčne strukture, se bralna izkušnja hitro poslabša. Večina prevajalskih orodij na trgu pa je bodisi omejena na prevajanje spletnih strani, bodisi je kakovost prevoda vprašljiva, ali pa so preveč zapletena in preobložena z nepotrebnimi funkcijami.
 

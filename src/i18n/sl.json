@@ -63,6 +63,14 @@
     "headline": "Ostani radoveden.",
     "desc": "Misli o umetnosti, življenju in ustvarjanju — v vašem poštnem nabiralniku."
   },
+  "blogPost": {
+    "ctaHeadline": "Vam je bilo všeč?",
+    "ctaDesc": "Naročite se in prejemajte nove eseje v svoj poštni predal.",
+    "licensePrefix": "Licencirano pod",
+    "moreReading": "Več branja",
+    "previous": "Nazaj",
+    "next": "Naprej"
+  },
   "subscribeForm": {
     "languageLabel": "Jezik",
     "placeholder": "your@email.com",

@@ -10,6 +10,7 @@ tags:
   - Roux 방법
 categories: 日常折腾
 description: 군론 교환자의 원리와 루(Roux) 브릿지 해법을 활용해, 공식 하나 외우지 않고 3x3 큐브를 처음부터 끝까지 풀어내는 방법을 단계별로 알려드립니다.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

@@ -10,6 +10,7 @@ tags:
   - Roux metoda
 categories: Svakodnevna zanimacija
 description: Koristeći se idejom komutatora iz teorije grupa i Roux metodom mostova, naučićete korak po korak kako da rešite 3x3 Rubikovu kocku bez učenja ijedne formule.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

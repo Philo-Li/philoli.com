@@ -10,6 +10,7 @@ tags:
   - Rouxメソッド
 categories: 日常折腾
 description: 群論の交換子の考え方とRouxブリッジ解法を使って、公式を一切覚えることなく3x3ルービックキューブをゼロから段階的に解く方法を教えます。
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

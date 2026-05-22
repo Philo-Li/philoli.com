@@ -63,6 +63,14 @@
     "headline": "ابقَ فضولياً.",
     "desc": "أفكار حول الفن، والحياة، وبناء الأشياء — تصل إلى بريدك الوارد."
   },
+  "blogPost": {
+    "ctaHeadline": "هل أعجبك هذا؟",
+    "ctaDesc": "اشترك لتصلك مقالات جديدة إلى بريدك الإلكتروني.",
+    "licensePrefix": "مرخص بموجب",
+    "moreReading": "المزيد من القراءة",
+    "previous": "السابق",
+    "next": "التالي"
+  },
   "subscribeForm": {
     "languageLabel": "اللغة",
     "placeholder": "your@email.com",

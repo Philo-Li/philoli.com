@@ -10,6 +10,7 @@ tags:
   - Método Roux
 categories: Divagações Cotidianas
 description: Usando a lógica de comutadores da teoria dos grupos + o método Roux Bridge, aprenda passo a passo a resolver um Cubo Mágico 3x3 do zero, sem memorizar nenhuma fórmula.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Un instrument de traducere a cărților electronice care rulează integral în browser, suportă EPUB și PDF, permite traducerea între peste 40 de limbi și oferă o ieșire bilingvă comparativă.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Un traducător de cărți electronice bilingv, simplu și eficient" />
+</figure>
 
 Am avut mereu obiceiul de a citi cărți în engleză în original, dar, sincer, de fiecare dată când dădeam peste cuvinte mai puțin cunoscute sau structuri de propoziții complexe, experiența de lectură avea mult de suferit. Instrumentele de traducere disponibile pe piață fie se limitau la pagini web, fie calitatea traducerilor era îndoielnică, fie designul lor era prea complicat, adăugând prea multe funcții inutile.
 

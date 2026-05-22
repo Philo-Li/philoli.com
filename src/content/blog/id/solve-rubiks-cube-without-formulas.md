@@ -10,6 +10,7 @@ tags:
   - Metode Roux
 categories: 日常折腾
 description: Dengan pendekatan komutator dari teori grup dan metode Roux, saya akan memandu Anda langkah demi langkah untuk menyelesaikan kubus Rubik 3x3 tanpa menghafal rumus apa pun, dari nol.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

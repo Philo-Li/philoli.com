@@ -63,6 +63,14 @@
     "headline": "Forbliv nysgerrig.",
     "desc": "Tanker om kunst, livet og at bygge ting — leveret til din indbakke."
   },
+  "blogPost": {
+    "ctaHeadline": "Kunne du lide dette?",
+    "ctaDesc": "Tilmeld dig for at få nye essays direkte i din indbakke.",
+    "licensePrefix": "Licenseret under",
+    "moreReading": "Mere læsning",
+    "previous": "Forrige",
+    "next": "Næste"
+  },
   "subscribeForm": {
     "languageLabel": "Sprog",
     "placeholder": "your@email.com",

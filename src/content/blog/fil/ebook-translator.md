@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Isang tool sa pagsasalin ng ebook na ganap na gumagana sa browser, sumusuporta sa EPUB at PDF, may pagsasalin sa mahigit 40 wika, at naglalabas ng dual-language na bersyon.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Ipinapakilala" />
+</figure>
 
 Matagal na akong mahilig magbasa ng mga orihinal na aklat sa Ingles. Pero sa totoo lang, kapag nakakatagpo ako ng mga hindi pamilyar na salita o kumplikadong pangungusap, malaki ang nababawas sa sarap ng pagbabasa. Yung mga translation tool na available sa merkado, either pang-website lang, o di kaya'y kaduda-duda ang kalidad ng pagsasalin, o kaya naman masyadong kumplikado at puno ng kung anu-anong feature na hindi naman kailangan.
 

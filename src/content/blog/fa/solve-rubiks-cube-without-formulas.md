@@ -10,6 +10,7 @@ tags:
   - روش Roux
 categories: 日常折腾
 description: با استفاده از رویکرد تعویض‌گرها در نظریه گروه‌ها و روش پل Roux، گام به گام به شما آموزش می‌دهیم که چگونه مکعب روبیک 3x3 را بدون حفظ کردن هیچ فرمولی حل کنید.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

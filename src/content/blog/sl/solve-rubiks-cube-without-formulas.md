@@ -10,6 +10,7 @@ tags:
   - metoda Roux
 categories: Dnevne peripetije
 description: Z uporabo koncepta komutatorjev iz teorije grup in Rouxove metode mostov te bomo korak za korakom naučili, kako sestaviti Rubikovo kocko 3x3 od začetka, ne da bi si zapomnili eno samo formulo.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

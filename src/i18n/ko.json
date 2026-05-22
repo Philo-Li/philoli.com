@@ -63,6 +63,14 @@
     "headline": "호기심을 잃지 마세요.",
     "desc": "예술, 삶, 그리고 무언가를 만드는 것에 대한 생각 — 편지함으로 전해드립니다."
   },
+  "blogPost": {
+    "ctaHeadline": "재미있게 읽으셨나요?",
+    "ctaDesc": "구독하고 새로운 에세이를 이메일로 받아보세요.",
+    "licensePrefix": "라이선스:",
+    "moreReading": "더 읽기",
+    "previous": "이전",
+    "next": "다음"
+  },
   "subscribeForm": {
     "languageLabel": "언어",
     "placeholder": "your@email.com",

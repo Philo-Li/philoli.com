@@ -10,6 +10,7 @@ tags:
   - Roux metoda
 categories: 日常折腾
 description: Naučte se krok za krokem složit Rubikovu kostku 3x3 od základů, bez memorování jakýchkoli algoritmů, za použití principů komutátorů z teorie grup a Rouxovy mostové metody.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

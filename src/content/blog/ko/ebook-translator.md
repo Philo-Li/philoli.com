@@ -8,7 +8,13 @@ tags:
   - AI
 categories: 프로젝트 소개
 description: 브라우저에서 직접 실행되는 전자책 번역 도구입니다. EPUB과 PDF를 지원하며, 40개 이상의 언어를 상호 번역하고 이중 언어 대조 형식으로 출력합니다.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="간단하고 유용한 이중 언어 전자책 번역 도구 소개" />
+</figure>
 
 저는 평소 영어 원서를 즐겨 읽는 편입니다. 하지만 솔직히 말해, 낯선 어휘나 복잡한 문장을 마주할 때마다 독서 경험이 크게 저하되곤 했습니다. 시중에 나와 있는 번역 도구들은 대부분 웹 페이지만 번역하거나, 번역 품질이 실망스럽거나, 아니면 너무 많은 불필요한 기능들로 복잡하게 디자인되어 있어 아쉬웠습니다.
 

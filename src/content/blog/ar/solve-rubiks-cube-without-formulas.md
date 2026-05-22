@@ -10,6 +10,7 @@ tags:
   - طريقة رو
 categories: 日常折腾
 description: باستخدام منهج نظرية الزمر والمُبدِّل (Commutator) مع طريقة روكس (Roux) للجسر، سنعلمك خطوة بخطوة كيف تحل مكعب روبيك ثلاثي الأبعاد من الصفر دون حفظ أي معادلات.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

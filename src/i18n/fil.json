@@ -63,6 +63,14 @@
     "headline": "Manatiling mausisa.",
     "desc": "Mga kaisipan tungkol sa sining, buhay, at pagbuo ng mga bagay — ipinapadala sa iyong inbox."
   },
+  "blogPost": {
+    "ctaHeadline": "Nagustuhan mo ba ito?",
+    "ctaDesc": "Mag-subscribe para makatanggap ng mga bagong sanaysay sa iyong inbox.",
+    "licensePrefix": "Lisensyado sa ilalim ng",
+    "moreReading": "Higit pang babasahin",
+    "previous": "Nakaraan",
+    "next": "Susunod"
+  },
   "subscribeForm": {
     "languageLabel": "Wika",
     "placeholder": "your@email.com",

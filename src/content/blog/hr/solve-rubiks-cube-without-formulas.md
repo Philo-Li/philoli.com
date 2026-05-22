@@ -10,6 +10,7 @@ tags:
   - Roux metoda
 categories: 日常折腾
 description: Koristeći se idejom komutatora iz teorije grupa i Roux mostnom metodom, naučite korak po korak, od nule i bez ijedne formule, kako složiti Rubikovu kocku 3x3.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Uma ferramenta de tradução de e-books que funciona totalmente no navegador, suportando EPUB e PDF, tradução mútua entre mais de 40 idiomas e saída bilíngue lado a lado.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Compartilhando um Tradutor de E-books Bilíngue Simples e Poderoso" />
+</figure>
 
 Sempre tive o hábito de ler livros em inglês no original, mas, para ser sincero, a experiência de leitura pode ser bastante prejudicada quando me deparo com vocabulário incomum ou estruturas de frases complexas. As ferramentas de tradução disponíveis no mercado ou só traduzem páginas da web, ou a qualidade da tradução é questionável, ou o design não é simples o suficiente, adicionando muitas funcionalidades desnecessárias.
 

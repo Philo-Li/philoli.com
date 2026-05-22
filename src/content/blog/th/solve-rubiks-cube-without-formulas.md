@@ -10,6 +10,7 @@ tags:
   - วิธี Roux
 categories: 日常折腾
 description: ใช้แนวคิด Commutator จากทฤษฎีกรุป และวิธี Roux Bridge จะสอนคุณทีละขั้นตอนตั้งแต่เริ่มต้น ให้แก้รูบิค 3x3 ได้โดยไม่ต้องจำสูตรใดๆ เลย
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

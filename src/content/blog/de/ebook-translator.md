@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Ein vollständig im Browser laufendes E-Book-Übersetzungstool, das EPUB und PDF unterstützt, über 40 Sprachen bidirektional übersetzt und zweisprachige Ausgaben liefert.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Ein einfacher und nützlicher E-Book-Übersetzer für zweisprachiges Lesen" />
+</figure>
 
 Ich habe schon immer gerne englische Originalbücher gelesen, aber ehrlich gesagt leidet das Lesevergnügen erheblich, wenn man auf ungewöhnliche Vokabeln oder komplexe Satzstrukturen stößt. Die auf dem Markt erhältlichen Übersetzungstools können entweder nur Webseiten übersetzen, liefern eine fragwürdige Übersetzungsqualität oder sind überladen mit unnötigen Funktionen, die das Design kompliziert machen.
 

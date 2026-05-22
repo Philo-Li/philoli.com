@@ -63,6 +63,14 @@
     "headline": "הישארו סקרנים.",
     "desc": "מחשבות על אמנות, חיים ובניית דברים — נשלח לתיבת הדואר הנכנס שלך."
   },
+  "blogPost": {
+    "ctaHeadline": "נהניתם?",
+    "ctaDesc": "הירשמו כדי לקבל מאמרים חדשים לתיבת הדואר הנכנס שלכם.",
+    "licensePrefix": "מורשה תחת",
+    "moreReading": "קריאה נוספת",
+    "previous": "הקודם",
+    "next": "הבא"
+  },
   "subscribeForm": {
     "languageLabel": "שפה",
     "placeholder": "your@email.com",

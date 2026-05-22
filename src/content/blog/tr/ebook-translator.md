@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Tamamen tarayıcı tabanlı çalışan, EPUB ve PDF desteği sunan, 40'tan fazla dil arasında karşılıklı çeviri yapabilen ve iki dilli karşılaştırmalı çıktı veren bir e-kitap çeviri aracı.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Kullanışlı ve Basit Bir İki Dilli E-Kitap Çevirmeni Paylaşıyorum" />
+</figure>
 
 İngilizce orijinal kitaplar okuma alışkanlığım her zaman vardı. Ancak açık konuşmak gerekirse, bilmediğim kelimelerle veya karmaşık cümle yapılarıyla karşılaştığımda okuma keyfim bir hayli azalıyordu. Piyasadaki çeviri araçları ya sadece web sayfalarını çeviriyor, ya çeviri kaliteleri endişe verici düzeydeydi, ya da çok basit olmayan tasarımlarıyla gereksiz birçok özellik barındırıyordu.
 

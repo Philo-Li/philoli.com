@@ -10,6 +10,7 @@ tags:
   - Roux-menetelmä
 categories: 日常折腾
 description: Opi ratkaisemaan 3x3 Rubikin kuutio askel askeleelta, ilman ulkoa opeteltavia kaavoja, hyödyntäen ryhmäteorian kommutaattoreita ja Roux-menetelmän silta-ajattelua.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

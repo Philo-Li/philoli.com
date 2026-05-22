@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: En e-bokoversetter som kjører fullstendig i nettleseren, støtter EPUB og PDF, oversetter mellom over 40 språk og gir tospråklig utdata.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="En enkel og nyttig tospråklig e-bokoversetter" />
+</figure>
 
 Jeg har alltid hatt for vane å lese engelske originalbøker, men for å være ærlig, når jeg støter på sjeldne ord eller kompliserte setningsstrukturer, svekker det leseopplevelsen betraktelig. Oversettelsesverktøyene som finnes, kan enten bare oversette nettsider, har tvilsom oversettelseskvalitet, eller er overlesset med unødvendige funksjoner som gjør dem kompliserte å bruke.
 

@@ -63,6 +63,14 @@
     "headline": "Mantenha a curiosidade.",
     "desc": "Reflexões sobre arte, vida e construção de coisas — entregues na sua caixa de entrada."
   },
+  "blogPost": {
+    "ctaHeadline": "Gostou disto?",
+    "ctaDesc": "Inscreva-se para receber novos ensaios na sua caixa de entrada.",
+    "licensePrefix": "Licenciado sob",
+    "moreReading": "Mais leituras",
+    "previous": "Anterior",
+    "next": "Próximo"
+  },
   "subscribeForm": {
     "languageLabel": "Idioma",
     "placeholder": "your@email.com",

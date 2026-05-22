@@ -63,6 +63,14 @@
     "headline": "Saglabā zinātkāri.",
     "desc": "Pārdomas par mākslu, dzīvi un lietu radīšanu — tavā iesūtnē."
   },
+  "blogPost": {
+    "ctaHeadline": "Patika?",
+    "ctaDesc": "Abonējiet, lai saņemtu jaunas esejas savā e-pastā.",
+    "licensePrefix": "Licencēts saskaņā ar",
+    "moreReading": "Vairāk lasāmvielas",
+    "previous": "Iepriekšējais",
+    "next": "Nākamais"
+  },
   "subscribeForm": {
     "languageLabel": "Valoda",
     "placeholder": "your@email.com",

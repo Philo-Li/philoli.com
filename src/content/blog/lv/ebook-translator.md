@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Projektu dalīšanās
 description: E-grāmatu tulkošanas rīks, kas pilnībā darbojas pārlūkprogrammā, atbalsta EPUB un PDF formātus, tulko vairāk nekā 40 valodās un nodrošina divvalodu izvadi.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Vienkāršs un ērts divvalodu e-grāmatu tulkotājs" />
+</figure>
 
 Man vienmēr paticis lasīt grāmatas angļu oriģinālvalodā, taču jāatzīst, ka sastopoties ar retāk lietotiem vārdiem vai sarežģītām teikumu konstrukcijām, lasīšanas baudījums ievērojami samazinās. Pieejamie tulkošanas rīki parasti tulko tikai tīmekļa lapas, to kvalitāte bieži vien nav apmierinoša, vai arī tie ir pārslogoti ar nevajadzīgām funkcijām, kas apgrūtina lietošanu.
 

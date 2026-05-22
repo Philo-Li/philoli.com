@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Zdieľanie projektov
 description: Nástroj na preklad e-kníh, ktorý funguje výlučne v prehliadači, podporuje formáty EPUB a PDF, obojsmerný preklad do viac ako 40 jazykov a výstup v dvojjazyčnom formáte.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Predstavujem jednoduchý a efektívny prekladač dvojjazyčných e-kníh" />
+</figure>
 
 Už dlho mám vo zvyku čítať originálne anglické knihy, no úprimne povedané, keď narazím na neznámu slovnú zásobu alebo zložité vetné konštrukcie, zážitok z čítania sa výrazne zhorší. Prekladače, ktoré sú dostupné na trhu, buď prekladajú len webové stránky, alebo ich kvalita prekladu je pochybná, prípadne majú príliš komplikovaný dizajn a zbytočné funkcie.
 

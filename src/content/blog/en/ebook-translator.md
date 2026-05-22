@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: A fully browser-based ebook translation tool, supporting EPUB and PDF, 40+ language pairs, and bilingual output.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Introducing an Easy-to-Use Bilingual Ebook Translator" />
+</figure>
 
 I've always made it a habit to read original English books. But honestly, encountering obscure vocabulary or complex sentence structures often diminishes the reading experience significantly. Existing translation tools on the market either only translate webpages, offer questionable translation quality, or their designs are overly complicated with too many unnecessary features.
 

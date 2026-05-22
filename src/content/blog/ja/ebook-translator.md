@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: ブラウザだけで完結する電子書籍翻訳ツール。EPUBとPDFに対応し、40以上の言語間で相互翻訳、バイリンガル表示で出力します。
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="シンプルで便利なバイリンガル電子書籍翻訳ツールをご紹介" />
+</figure>
 
 私は以前から英語の原書を読む習慣があるのですが、正直なところ、あまり馴染みのない単語や複雑な構文に出くわすと、読書体験が著しく損なわれると感じていました。市販されている翻訳ツールは、ウェブページしか翻訳できなかったり、翻訳の質がひどかったり、あるいはシンプルさに欠けて不要な機能が多すぎたり、と不満がありました。
 

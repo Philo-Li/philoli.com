@@ -63,6 +63,14 @@
     "headline": "Maradj kíváncsi.",
     "desc": "Gondolatok a művészetről, az életről és az alkotásról — egyenesen a postaládádba."
   },
+  "blogPost": {
+    "ctaHeadline": "Tetszett?",
+    "ctaDesc": "Iratkozz fel, hogy megkapd az új esszéket a postaládádba.",
+    "licensePrefix": "Licenc:",
+    "moreReading": "További olvasnivalók",
+    "previous": "Előző",
+    "next": "Következő"
+  },
   "subscribeForm": {
     "languageLabel": "Nyelv",
     "placeholder": "your@email.com",

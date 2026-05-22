@@ -63,6 +63,14 @@
     "headline": "Rămâi curios.",
     "desc": "Gânduri despre artă, viață și construirea de lucruri — livrate în căsuța de e-mail."
   },
+  "blogPost": {
+    "ctaHeadline": "Ți-a plăcut?",
+    "ctaDesc": "Abonează-te pentru a primi eseuri noi în căsuța ta poștală.",
+    "licensePrefix": "Licențiat sub",
+    "moreReading": "Mai multă lectură",
+    "previous": "Anterior",
+    "next": "Următor"
+  },
   "subscribeForm": {
     "languageLabel": "Limbă",
     "placeholder": "your@email.com",

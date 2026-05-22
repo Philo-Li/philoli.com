@@ -63,6 +63,14 @@
     "headline": "Kekal ingin tahu.",
     "desc": "Pemikiran tentang seni, kehidupan, dan membina sesuatu — dihantar ke peti masuk anda."
   },
+  "blogPost": {
+    "ctaHeadline": "Suka dengan ini?",
+    "ctaDesc": "Langgan untuk menerima esei baharu dalam peti masuk anda.",
+    "licensePrefix": "Dilesenkan di bawah",
+    "moreReading": "Bacaan lanjut",
+    "previous": "Sebelumnya",
+    "next": "Seterusnya"
+  },
   "subscribeForm": {
     "languageLabel": "Bahasa",
     "placeholder": "your@email.com",

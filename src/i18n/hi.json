@@ -63,6 +63,14 @@
     "headline": "जिज्ञासु बने रहें।",
     "desc": "कला, जीवन और निर्माण पर विचार — सीधे आपके इनबॉक्स में।"
   },
+  "blogPost": {
+    "ctaHeadline": "यह पसंद आया?",
+    "ctaDesc": "नए निबंध अपने इनबॉक्स में पाने के लिए सब्सक्राइब करें।",
+    "licensePrefix": "इसके अंतर्गत लाइसेंस प्राप्त:",
+    "moreReading": "और पढ़ें",
+    "previous": "पिछला",
+    "next": "अगला"
+  },
   "subscribeForm": {
     "languageLabel": "भाषा",
     "placeholder": "your@email.com",

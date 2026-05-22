@@ -63,6 +63,14 @@
     "headline": "保持好奇。",
     "desc": "关于艺术、生活和创造的思考 —— 直接发送至您的收件箱。"
   },
+  "blogPost": {
+    "ctaHeadline": "喜欢这篇文章吗？",
+    "ctaDesc": "订阅以在收件箱中获取新文章。",
+    "licensePrefix": "授权协议：",
+    "moreReading": "更多阅读",
+    "previous": "上一篇",
+    "next": "下一篇"
+  },
   "subscribeForm": {
     "languageLabel": "语言",
     "placeholder": "your@email.com",

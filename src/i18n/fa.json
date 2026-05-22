@@ -63,6 +63,14 @@
     "headline": "کنجکاو بمانید.",
     "desc": "تاملاتی درباره هنر، زندگی و ساختن چیزها — ارسال شده به صندوق ورودی شما."
   },
+  "blogPost": {
+    "ctaHeadline": "از این مطلب لذت بردید؟",
+    "ctaDesc": "مشترک شوید تا مقالات جدید را در صندوق ورودی خود دریافت کنید.",
+    "licensePrefix": "تحت مجوز",
+    "moreReading": "مطالعه بیشتر",
+    "previous": "قبلی",
+    "next": "بعدی"
+  },
   "subscribeForm": {
     "languageLabel": "زبان",
     "placeholder": "your@email.com",

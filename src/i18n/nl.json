@@ -63,6 +63,14 @@
     "headline": "Blijf nieuwsgierig.",
     "desc": "Gedachten over kunst, het leven en dingen bouwen — in je inbox bezorgd."
   },
+  "blogPost": {
+    "ctaHeadline": "Vond je dit leuk?",
+    "ctaDesc": "Abonneer je om nieuwe essays in je inbox te ontvangen.",
+    "licensePrefix": "Gelicentieerd onder",
+    "moreReading": "Meer lezen",
+    "previous": "Vorige",
+    "next": "Volgende"
+  },
   "subscribeForm": {
     "languageLabel": "Taal",
     "placeholder": "your@email.com",

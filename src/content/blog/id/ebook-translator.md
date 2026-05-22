@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Alat terjemah e-book yang berjalan sepenuhnya di browser, mendukung EPUB dan PDF, mampu menerjemahkan lebih dari 40 bahasa, dan menampilkan output dwibahasa.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Berbagi Alat Penerjemah E-book Dwibahasa yang Simpel dan Praktis" />
+</figure>
 
 Saya memang punya kebiasaan membaca buku-buku asli berbahasa Inggris. Tapi, sejujurnya, saat bertemu kosakata yang jarang atau struktur kalimat yang rumit, kenikmatan membaca jadi berkurang drastis. Alat terjemah yang ada di pasaran biasanya hanya bisa menerjemahkan halaman web, atau kualitas terjemahannya diragukan, atau desainnya terlalu rumit dengan fitur-fitur yang sebenarnya tidak kita butuhkan.
 

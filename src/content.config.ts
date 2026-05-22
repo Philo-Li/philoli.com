@@ -10,6 +10,7 @@ const blog = defineCollection({
     categories: z.union([z.string(), z.array(z.string())]).optional().default([]),
     description: z.string().optional(),
     cover: z.string().optional(),
+    hideMoreReading: z.boolean().optional().default(false),
     toc: z.boolean().optional().default(false),
   }),
 });

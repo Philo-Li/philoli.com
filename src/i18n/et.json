@@ -63,6 +63,14 @@
     "headline": "Püsi uudishimulik.",
     "desc": "Mõtted kunstist, elust ja asjade loomisest — otse sinu postkasti."
   },
+  "blogPost": {
+    "ctaHeadline": "Meeldis?",
+    "ctaDesc": "Telli, et saada uusi esseid oma postkasti.",
+    "licensePrefix": "Litsents:",
+    "moreReading": "Veel lugemist",
+    "previous": "Eelmine",
+    "next": "Järgmine"
+  },
   "subscribeForm": {
     "languageLabel": "Keel",
     "placeholder": "your@email.com",

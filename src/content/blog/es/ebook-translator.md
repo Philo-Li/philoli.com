@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Una herramienta de traducción de libros electrónicos que funciona completamente en el navegador, compatible con EPUB y PDF, con traducción bidireccional entre más de 40 idiomas y salida bilingüe.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Un traductor de libros electrónicos bilingüe sencillo y eficaz" />
+</figure>
 
 Siempre he tenido el hábito de leer libros originales en inglés, pero, para ser honesto, cuando me encuentro con vocabulario desconocido o estructuras oracionales complejas, la experiencia de lectura se resiente considerablemente. Las herramientas de traducción disponibles en el mercado o solo traducen páginas web, o su calidad de traducción es cuestionable, o su diseño no es lo suficientemente simple y añaden demasiadas funciones innecesarias.
 

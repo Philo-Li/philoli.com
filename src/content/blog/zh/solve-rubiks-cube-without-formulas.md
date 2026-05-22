@@ -10,6 +10,7 @@ tags:
   - Roux方法
 categories: 日常折腾
 description: 用群论交换子的思路 + Roux 桥式解法，从零开始一步步教你不背任何公式解开三阶魔方。
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

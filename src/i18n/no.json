@@ -63,6 +63,14 @@
     "headline": "Forbli nysgjerrig.",
     "desc": "Tanker om kunst, livet og å skape ting — levert til innboksen din."
   },
+  "blogPost": {
+    "ctaHeadline": "Likte du dette?",
+    "ctaDesc": "Abonner for å få nye essays rett i innboksen.",
+    "licensePrefix": "Lisensiert under",
+    "moreReading": "Mer lesing",
+    "previous": "Forrige",
+    "next": "Neste"
+  },
   "subscribeForm": {
     "languageLabel": "Språk",
     "placeholder": "your@email.com",

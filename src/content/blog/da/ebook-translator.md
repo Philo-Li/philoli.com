@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Et e-bogsoversættelsesværktøj, der kører direkte i browseren, understøtter EPUB og PDF, oversættelse mellem over 40 sprog og tosproget output side om side.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Deling af et simpelt og effektivt tosproget e-bogsoversætterværktøj" />
+</figure>
 
 Jeg har altid haft for vane at læse bøger på originalsproget, men for at være ærlig, når jeg støder på sjældne ord eller komplekse sætningsstrukturer, bliver læseoplevelsen markant forringet. De oversættelsesværktøjer, der findes på markedet, kan enten kun oversætte websider, har en tvivlsom oversættelseskvalitet, eller er simpelthen for komplicerede med for mange unødvendige funktioner.
 

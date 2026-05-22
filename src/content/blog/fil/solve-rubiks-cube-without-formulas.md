@@ -10,6 +10,7 @@ tags:
   - Roux Method
 categories: 日常折腾
 description: Gamit ang lohika ng commutator mula sa Group Theory + Roux bridge method, ituturo sa iyo nang paunti-unti mula simula kung paano ayusin ang isang 3x3 Rubik's Cube nang hindi nagme-memorize ng anumang formula.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

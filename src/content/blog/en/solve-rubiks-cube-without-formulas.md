@@ -10,6 +10,7 @@ tags:
   - Roux method
 categories: Daily Shenanigans
 description: Learn to solve a 3x3 Rubik's Cube from scratch without memorizing a single algorithm, using commutator logic from group theory and the Roux bridge method. Step-by-step guidance, suitable for everyone.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

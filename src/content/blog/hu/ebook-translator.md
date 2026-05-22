@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Egy teljesen böngészőben futó e-könyv fordító eszköz, amely támogatja az EPUB és PDF formátumokat, több mint 40 nyelvre fordít és vissza, kétnyelvű, összehasonlító kimenettel.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Bemutatunk egy egyszerű és praktikus kétnyelvű e-könyv fordítót" />
+</figure>
 
 Régóta szokásom angol nyelvű eredeti könyveket olvasni, de őszintén szólva, ha ritka szavakkal vagy bonyolult mondatszerkezetekkel találkozom, az jelentősen rontja az olvasási élményt. A piacon elérhető fordítóeszközök vagy csak weboldalakat tudnak fordítani, vagy a fordítás minősége hagy kívánnivalót maga után, vagy a designjuk túl bonyolult, és felesleges funkciókkal vannak tele.
 

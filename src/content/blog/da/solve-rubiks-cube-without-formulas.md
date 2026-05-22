@@ -10,6 +10,7 @@ tags:
   - Roux-metoden
 categories: 日常折腾
 description: Ved hjælp af gruppeteoriens kommutator-principper og Roux-bro-metoden lærer du trin for trin at løse en 3x3 Rubiks terning fra bunden, uden at huske en eneste formel.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

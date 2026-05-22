@@ -10,6 +10,7 @@ tags:
   - Roux-metoden
 categories: 日常折腾
 description: Använd logiken bakom gruppteorins kommutatorer och Roux bro-metoden för att lära dig steg för steg hur du löser en 3x3 Rubiks kub från grunden, utan att memorera några formler.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

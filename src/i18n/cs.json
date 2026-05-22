@@ -63,6 +63,14 @@
     "headline": "Zůstaňte zvídaví.",
     "desc": "Myšlenky o umění, životě a tvoření věcí — doručené do vaší schránky."
   },
+  "blogPost": {
+    "ctaHeadline": "Líbilo se vám to?",
+    "ctaDesc": "Přihlaste se k odběru a dostávejte nové eseje přímo do své schránky.",
+    "licensePrefix": "Licencováno pod",
+    "moreReading": "Další čtení",
+    "previous": "Předchozí",
+    "next": "Další"
+  },
   "subscribeForm": {
     "languageLabel": "Jazyk",
     "placeholder": "your@email.com",

@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Narzędzie do tłumaczenia e-booków, które działa w całości w przeglądarce. Obsługuje formaty EPUB i PDF, umożliwia wzajemne tłumaczenie w ponad 40 językach i generuje tekst w widoku dwujęzycznym.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Przedstawiam prosty i wygodny tłumacz e-booków z widokiem dwujęzycznym" />
+</figure>
 
 Od dawna mam w zwyczaju czytać książki w oryginalnym języku angielskim. Ale szczerze mówiąc, gdy napotykam na rzadkie słownictwo lub skomplikowane konstrukcje zdań, cała przyjemność z czytania znacznie spada. Dostępne na rynku narzędzia do tłumaczenia albo potrafią tłumaczyć tylko strony internetowe, albo ich jakość tłumaczenia pozostawia wiele do życzenia, albo są zbyt przekombinowane i zawierają zbyt wiele zbędnych funkcji.
 

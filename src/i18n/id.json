@@ -63,6 +63,14 @@
     "headline": "Tetaplah penasaran.",
     "desc": "Pemikiran tentang seni, kehidupan, dan membangun sesuatu — dikirim ke kotak masuk Anda."
   },
+  "blogPost": {
+    "ctaHeadline": "Menyukainya?",
+    "ctaDesc": "Berlangganan untuk mendapatkan esai baru di kotak masuk Anda.",
+    "licensePrefix": "Dilisensikan di bawah",
+    "moreReading": "Bacaan lainnya",
+    "previous": "Sebelumnya",
+    "next": "Berikutnya"
+  },
   "subscribeForm": {
     "languageLabel": "Bahasa",
     "placeholder": "your@email.com",

@@ -10,6 +10,7 @@ tags:
   - שיטת Roux
 categories: התעסקויות יומיומיות
 description: נלמד אותך צעד אחר צעד, מאפס, איך לפתור קובייה הונגרית 3x3 בלי לשנן שום נוסחה, תוך שימוש ברעיון הקומוטטורים מתורת החבורות ובשיטת Roux (שיטת הגשר).
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

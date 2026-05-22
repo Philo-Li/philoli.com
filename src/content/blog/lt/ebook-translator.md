@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Projekto pristatymas
 description: Elektroninių knygų vertimo įrankis, veikiantis visiškai naršyklėje. Palaiko EPUB ir PDF formatus, verčia tarp daugiau nei 40 kalbų ir pateikia dvikalbį tekstą.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Dalinuosi paprastu ir patogiu dvikalbiu el. knygų vertėju" />
+</figure>
 
 Visada mėgau skaityti knygas originalo kalba, ypač anglų. Tačiau, tiesą pasakius, susidūrus su retais žodžiais ar sudėtingomis sakinio struktūromis, skaitymo malonumas smarkiai sumažėdavo. Rinkoje esantys vertimo įrankiai dažniausiai verčia tik tinklalapius, jų vertimo kokybė kelia abejonių arba jie tiesiog perkrauti nereikalingomis funkcijomis ir nėra pakankamai paprasti.
 

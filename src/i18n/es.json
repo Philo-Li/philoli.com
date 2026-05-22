@@ -63,6 +63,14 @@
     "headline": "Mantén la curiosidad.",
     "desc": "Reflexiones sobre arte, vida y construir cosas — directo a tu bandeja de entrada."
   },
+  "blogPost": {
+    "ctaHeadline": "¿Te ha gustado?",
+    "ctaDesc": "Suscríbete para recibir nuevos ensayos en tu bandeja de entrada.",
+    "licensePrefix": "Bajo licencia de",
+    "moreReading": "Más lecturas",
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
   "subscribeForm": {
     "languageLabel": "Idioma",
     "placeholder": "your@email.com",

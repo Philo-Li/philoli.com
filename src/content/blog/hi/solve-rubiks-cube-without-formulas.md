@@ -10,6 +10,7 @@ tags:
   - Roux विधि
 categories: रोज़मर्रा की उथल-पुथल
 description: ग्रुप थ्योरी के कम्यूटेटर के सिद्धांत और रूक्स ब्रिज विधि का उपयोग करके, आपको बिना कोई फॉर्मूला रटे, शुरू से ही 3x3 रुबिक्स क्यूब को कदम-दर-कदम सुलझाना सिखाया जाएगा।
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

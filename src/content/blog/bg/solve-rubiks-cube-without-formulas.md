@@ -10,6 +10,7 @@ tags:
   - Roux метод
 categories: 日常折腾
 description: Използвайки идеята за комутатори от теорията на групите + метода на Roux за сглобяване на "мост", ще ви науча стъпка по стъпка как да наредите кубчето на Рубик 3x3 от нулата, без да наизустявате нито една формула.
+cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true
 ---
 

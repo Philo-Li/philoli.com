@@ -63,6 +63,14 @@
     "headline": "Håll dig nyfiken.",
     "desc": "Tankar om konst, livet och att skapa saker — levererade till din inkorg."
   },
+  "blogPost": {
+    "ctaHeadline": "Gillade du det här?",
+    "ctaDesc": "Prenumerera för att få nya essäer i din inkorg.",
+    "licensePrefix": "Licensierad under",
+    "moreReading": "Mer läsning",
+    "previous": "Föregående",
+    "next": "Nästa"
+  },
   "subscribeForm": {
     "languageLabel": "Språk",
     "placeholder": "your@email.com",

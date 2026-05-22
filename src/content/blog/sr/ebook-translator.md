@@ -8,7 +8,13 @@ tags:
   - AI
 categories: Project Sharing
 description: Alat za prevođenje e-knjiga koji u potpunosti radi u pregledaču, podržava EPUB i PDF, prevođenje između preko 40 jezika i dvojezični izlaz.
+cover: /uploads/images/ebook-translator/ebook-translator-02.webp
+hideMoreReading: true
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/ebook-translator/ebook-translator-02.webp" alt="Predstavljam jednostavan i efikasan dvojezični prevodilac e-knjiga" />
+</figure>
 
 Oduvek sam imao naviku da čitam originalne knjige na engleskom, ali iskreno, kada bih naišao na nepoznate reči ili složene rečenice, iskustvo čitanja bi se znatno pogoršalo. Postojeći alati za prevođenje na tržištu ili prevode samo veb-stranice, ili im je kvalitet prevoda upitan, ili su previše komplikovani za korišćenje sa previše nepotrebnih funkcija.
 
