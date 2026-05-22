@@ -13,4 +13,9 @@ export default defineConfig({
       'astro:content': resolve(__dirname, 'src/__mocks__/astro-content.ts'),
     },
   },
+  test: {
+    // Sub-packages under services/ have their own vitest config and runtime.
+    // `npm run subscribe:test` runs them; the root `npm test` skips them.
+    exclude: ['**/node_modules/**', '**/dist/**', 'services/**'],
+  },
 });

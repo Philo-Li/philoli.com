@@ -1,0 +1,18 @@
+name = "philoli-subscribe-api"
+main = "src/index.ts"
+compatibility_date = "2026-05-21"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "newsletter-db"
+database_id = "2492d993-35b1-418c-87cb-cca686e334cd"
+
+[vars]
+SITE_URL = "https://philoli.com"
+WORKER_URL = "https://subscribe.philoli.com"
+FROM_EMAIL = "Philo <hi@philoli.com>"
+
+[[routes]]
+pattern = "subscribe.philoli.com"
+custom_domain = true

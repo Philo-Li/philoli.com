@@ -16,7 +16,11 @@
     "test:watch": "vitest",
     "i18n:translate": "node scripts/i18n/translate-i18n.mjs",
     "proxy:dev": "npx wrangler dev -c services/custom-llm-proxy/wrangler.jsonc",
-    "proxy:deploy": "npx wrangler deploy -c services/custom-llm-proxy/wrangler.jsonc"
+    "proxy:deploy": "npx wrangler deploy -c services/custom-llm-proxy/wrangler.jsonc",
+    "subscribe:dev": "npx wrangler dev -c services/subscribe-api/wrangler.toml",
+    "subscribe:deploy": "npx wrangler deploy -c services/subscribe-api/wrangler.toml",
+    "subscribe:sync-i18n": "node services/subscribe-api/scripts/sync-email-i18n.mjs",
+    "subscribe:test": "npm --prefix services/subscribe-api run test"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.0",
