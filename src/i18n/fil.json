@@ -76,6 +76,7 @@
     "confirmHeading": "Isa pang hakbang",
     "confirmBody": "I-click ang button sa ibaba para kumpirmahin ang iyong subscription. Kung hindi ka nag-subscribe, maaari mong balewalain ang email na ito.",
     "confirmCta": "Kumpirmahin ang subscription",
+    "confirmFallback": "Kung hindi gumagana ang button, kopyahin at i-paste ang link na ito sa iyong browser:",
     "footerUnsubscribe": "Mag-unsubscribe"
   },
   "blogPage": {

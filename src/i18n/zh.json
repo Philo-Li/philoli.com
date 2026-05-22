@@ -76,6 +76,7 @@
     "confirmHeading": "只差最后一步",
     "confirmBody": "点击下方按钮确认您的订阅。如果您并未订阅，可以忽略此邮件。",
     "confirmCta": "确认订阅",
+    "confirmFallback": "如果按钮无法使用，请将此链接复制并粘贴到您的浏览器中：",
     "footerUnsubscribe": "取消订阅"
   },
   "blogPage": {

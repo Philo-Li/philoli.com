@@ -76,6 +76,7 @@
     "confirmHeading": "Un ultimo passaggio",
     "confirmBody": "Clicca sul pulsante qui sotto per confermare la tua iscrizione. Se non ti sei iscritto, puoi ignorare questa email.",
     "confirmCta": "Conferma iscrizione",
+    "confirmFallback": "Se il pulsante non funziona, copia e incolla questo link nel tuo browser:",
     "footerUnsubscribe": "Disiscriviti"
   },
   "blogPage": {

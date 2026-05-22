@@ -1,4 +1,5 @@
 import { sign, verify } from './lib/jwt';
+import { EMAIL_I18N, type SubscribeEmailStrings } from './i18n';
 import { Resend } from 'resend';
 
 interface Env {
@@ -61,23 +62,74 @@ function escapeHtml(s: string): string {
     .replace(/'/g, '&#39;');
 }
 
-function renderConfirmEmail(confirmUrl: string, unsubscribeUrl: string): { subject: string; html: string; text: string } {
-  const subject = 'Confirm your subscription to philoli.com';
+const BRAND_BY_LANG: Record<string, string> = {
+  zh: 'Philo 说会儿',
+  'zh-TW': 'Philo 說會兒',
+};
+const DEFAULT_BRAND = "Philo's Reflections";
+
+function brandFor(lang: string): string {
+  return BRAND_BY_LANG[lang] ?? DEFAULT_BRAND;
+}
+
+function stringsFor(lang: string): SubscribeEmailStrings {
+  return EMAIL_I18N[lang] ?? EMAIL_I18N.en;
+}
+
+function renderConfirmEmail(lang: string, confirmUrl: string, unsubscribeUrl: string): { subject: string; html: string; text: string } {
+  const t = stringsFor(lang);
+  const brand = brandFor(lang);
+  const subject = t.confirmSubject;
+  const safeConfirm = escapeHtml(confirmUrl);
+  const safeUnsub = escapeHtml(unsubscribeUrl);
+  const safeBrand = escapeHtml(brand);
+  const safeHeading = escapeHtml(t.confirmHeading);
+  const safeBody = escapeHtml(t.confirmBody);
+  const safeCta = escapeHtml(t.confirmCta);
+  const safeUnsubLabel = escapeHtml(t.footerUnsubscribe);
+  const safeFallback = escapeHtml(t.confirmFallback);
+
   const html = `<!doctype html>
-<html><body style="margin:0;padding:24px;background:#f6f6f4;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;">
-  <div style="max-width:480px;margin:0 auto;background:#fff;padding:32px;">
-    <p style="font-size:15px;line-height:1.6;margin:0 0 16px;">Thanks for subscribing to philoli.com.</p>
-    <p style="font-size:15px;line-height:1.6;margin:0 0 24px;">Click below to confirm your email.</p>
-    <p style="margin:0 0 24px;"><a href="${escapeHtml(confirmUrl)}" style="display:inline-block;background:#1a1a1a;color:#fff;padding:12px 24px;text-decoration:none;">Confirm subscription</a></p>
-    <p style="font-size:12px;color:#999;margin:24px 0 0;border-top:1px solid #eee;padding-top:16px;"><a href="${escapeHtml(unsubscribeUrl)}" style="color:#999;">Unsubscribe</a></p>
-  </div>
+<html lang="${escapeHtml(lang)}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${escapeHtml(subject)}</title>
+</head>
+<body style="margin:0;padding:0;background:#f3eadb;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Microsoft YaHei',Arial,sans-serif;color:#221a12;-webkit-font-smoothing:antialiased;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f3eadb;padding:48px 16px;">
+    <tr><td align="center">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:520px;background:#fbf4e8;border:1px solid rgba(86,62,31,0.14);">
+        <tr><td style="padding:48px 44px 0;text-align:center;">
+          <div style="font-size:24px;font-weight:600;letter-spacing:0.5px;color:#16110d;line-height:1.3;">${safeBrand}</div>
+          <div style="width:36px;height:2px;background:#cf4f2d;margin:20px auto 0;line-height:2px;font-size:0;">&nbsp;</div>
+        </td></tr>
+        <tr><td style="padding:32px 44px 0;">
+          <h1 style="font-size:20px;font-weight:600;color:#16110d;margin:0 0 16px;line-height:1.4;">${safeHeading}</h1>
+          <p style="font-size:16px;line-height:1.75;margin:0 0 28px;color:#3a2e22;">${safeBody}</p>
+        </td></tr>
+        <tr><td style="padding:0 44px 32px;text-align:center;">
+          <a href="${safeConfirm}" style="display:inline-block;background:#cf4f2d;color:#fbf4e8;padding:16px 36px;text-decoration:none;font-size:17px;font-weight:500;">${safeCta}</a>
+        </td></tr>
+        <tr><td style="padding:0 44px 36px;">
+          <p style="font-size:13px;line-height:1.6;color:#7a6b5b;margin:0 0 8px;">${safeFallback}</p>
+          <p style="font-size:13px;line-height:1.5;margin:0;word-break:break-all;"><a href="${safeConfirm}" style="color:#cf4f2d;text-decoration:underline;">${safeConfirm}</a></p>
+        </td></tr>
+        <tr><td style="padding:24px 44px 28px;border-top:1px solid rgba(86,62,31,0.1);text-align:center;">
+          <a href="${safeUnsub}" style="font-size:13px;color:#7a6b5b;text-decoration:underline;letter-spacing:0.3px;">${safeUnsubLabel}</a>
+        </td></tr>
+      </table>
+      <div style="font-size:12px;color:#7a6b5b;margin-top:16px;letter-spacing:0.5px;">philoli.com</div>
+    </td></tr>
+  </table>
 </body></html>`;
-  const text = `Thanks for subscribing to philoli.com.\nClick below to confirm your email.\n\nConfirm: ${confirmUrl}\n\nUnsubscribe: ${unsubscribeUrl}\n`;
+
+  const text = `${brand}\n${'-'.repeat(brand.length)}\n\n${t.confirmHeading}\n\n${t.confirmBody}\n\n${t.confirmCta}: ${confirmUrl}\n\n${t.confirmFallback}\n${confirmUrl}\n\n${t.footerUnsubscribe}: ${unsubscribeUrl}\n`;
   return { subject, html, text };
 }
 
-async function sendConfirmEmail(env: Env, to: string, confirmUrl: string, unsubscribeUrl: string): Promise<void> {
-  const { subject, html, text } = renderConfirmEmail(confirmUrl, unsubscribeUrl);
+async function sendConfirmEmail(env: Env, to: string, lang: string, confirmUrl: string, unsubscribeUrl: string): Promise<void> {
+  const { subject, html, text } = renderConfirmEmail(lang, confirmUrl, unsubscribeUrl);
   const resend = new Resend(env.RESEND_API_KEY);
   const result = await resend.emails.send({ from: env.FROM_EMAIL, to, subject, html, text });
   if (result.error) throw new Error(`Resend failed: ${result.error.message}`);
@@ -97,12 +149,12 @@ async function findByEmail(db: D1Database, email: string): Promise<SubscriberRow
   return row ?? null;
 }
 
-async function mintAndSend(env: Env, email: string): Promise<void> {
+async function mintAndSend(env: Env, email: string, lang: string): Promise<void> {
   const confirmToken = await sign({ email, type: 'confirm' }, env.JWT_SECRET, CONFIRM_TTL);
   const unsubToken = await sign({ email, type: 'unsubscribe' }, env.JWT_SECRET, UNSUB_TTL);
   const confirmUrl = `${env.WORKER_URL}/confirm?token=${confirmToken}`;
   const unsubscribeUrl = `${env.WORKER_URL}/unsubscribe?token=${unsubToken}`;
-  await sendConfirmEmail(env, email, confirmUrl, unsubscribeUrl);
+  await sendConfirmEmail(env, email, lang, confirmUrl, unsubscribeUrl);
 }
 
 async function handleSubscribe(env: Env, body: { email?: string; lang?: string; hp?: string }, origin: string | null): Promise<Response> {
@@ -121,7 +173,7 @@ async function handleSubscribe(env: Env, body: { email?: string; lang?: string; 
       .prepare("INSERT INTO subscribers (email, lang, status) VALUES (?1, ?2, 'pending')")
       .bind(email, lang)
       .run();
-    await mintAndSend(env, email);
+    await mintAndSend(env, email, lang);
     return json(200, { ok: true, code: 'sent' }, origin);
   }
 
@@ -134,7 +186,7 @@ async function handleSubscribe(env: Env, body: { email?: string; lang?: string; 
     .prepare("UPDATE subscribers SET lang = ?1, status = 'pending' WHERE email = ?2")
     .bind(lang, email)
     .run();
-  await mintAndSend(env, email);
+  await mintAndSend(env, email, lang);
   return json(200, { ok: true, code: existing.status === 'unsubscribed' ? 'reactivated' : 'resent' }, origin);
 }
 

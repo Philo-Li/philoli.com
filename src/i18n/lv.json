@@ -76,6 +76,7 @@
     "confirmHeading": "Vēl viens solis",
     "confirmBody": "Noklikšķiniet uz zemāk esošās pogas, lai apstiprinātu savu abonementu. Ja jūs neabonējāt, varat ignorēt šo e-pastu.",
     "confirmCta": "Apstiprināt abonementu",
+    "confirmFallback": "Ja poga nedarbojas, nokopējiet un ielīmējiet šo saiti savā pārlūkprogrammā:",
     "footerUnsubscribe": "Atteikties no abonēšanas"
   },
   "blogPage": {

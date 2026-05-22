@@ -76,6 +76,7 @@
     "confirmHeading": "Une dernière étape",
     "confirmBody": "Cliquez sur le bouton ci-dessous pour confirmer votre abonnement. Si vous ne vous êtes pas inscrit, vous pouvez ignorer cet e-mail.",
     "confirmCta": "Confirmer l'abonnement",
+    "confirmFallback": "Si le bouton ne fonctionne pas, copiez et collez ce lien dans votre navigateur :",
     "footerUnsubscribe": "Se désabonner"
   },
   "blogPage": {

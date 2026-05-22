@@ -76,6 +76,7 @@
     "confirmHeading": "あと一歩です",
     "confirmBody": "下のボタンをクリックして購読を確定してください。もし心当たりがない場合は、このメールを無視してください。",
     "confirmCta": "購読を確定する",
+    "confirmFallback": "ボタンが機能しない場合は、このリンクをコピーしてブラウザに貼り付けてください：",
     "footerUnsubscribe": "登録解除"
   },
   "blogPage": {

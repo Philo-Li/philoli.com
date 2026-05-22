@@ -69,6 +69,7 @@
     "confirmHeading": "One more step",
     "confirmBody": "Click the button below to confirm your subscription. If you didn't subscribe, you can ignore this email.",
     "confirmCta": "Confirm subscription",
+    "confirmFallback": "If the button doesn't work, copy and paste this link into your browser:",
     "footerUnsubscribe": "Unsubscribe"
   },
   "blogPage": {

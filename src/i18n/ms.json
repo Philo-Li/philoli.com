@@ -76,6 +76,7 @@
     "confirmHeading": "Satu langkah lagi",
     "confirmBody": "Klik butang di bawah untuk mengesahkan langganan anda. Jika anda tidak melanggan, anda boleh abaikan e-mel ini.",
     "confirmCta": "Sahkan langganan",
+    "confirmFallback": "Jika butang tidak berfungsi, salin dan tampal pautan ini ke dalam pelayar anda:",
     "footerUnsubscribe": "Nyahlanggan"
   },
   "blogPage": {

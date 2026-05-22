@@ -76,6 +76,7 @@
     "confirmHeading": "Še en korak",
     "confirmBody": "Kliknite spodnji gumb za potrditev naročnine. Če se niste naročili, lahko to e-poštno sporočilo prezrete.",
     "confirmCta": "Potrdi naročnino",
+    "confirmFallback": "Če gumb ne deluje, kopirajte in prilepite to povezavo v svoj brskalnik:",
     "footerUnsubscribe": "Odjavi se"
   },
   "blogPage": {

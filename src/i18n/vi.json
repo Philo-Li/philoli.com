@@ -76,6 +76,7 @@
     "confirmHeading": "Thêm một bước nữa",
     "confirmBody": "Nhấp vào nút bên dưới để xác nhận đăng ký của bạn. Nếu bạn không thực hiện đăng ký, bạn có thể bỏ qua email này.",
     "confirmCta": "Xác nhận đăng ký",
+    "confirmFallback": "Nếu nút không hoạt động, hãy sao chép và dán liên kết này vào trình duyệt của bạn:",
     "footerUnsubscribe": "Hủy đăng ký"
   },
   "blogPage": {

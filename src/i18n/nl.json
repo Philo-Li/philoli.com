@@ -76,6 +76,7 @@
     "confirmHeading": "Nog één stap",
     "confirmBody": "Klik op de onderstaande knop om je abonnement te bevestigen. Als je je niet hebt aangemeld, kun je deze e-mail negeren.",
     "confirmCta": "Abonnement bevestigen",
+    "confirmFallback": "Als de knop niet werkt, kopieer en plak deze link dan in je browser:",
     "footerUnsubscribe": "Uitschrijven"
   },
   "blogPage": {

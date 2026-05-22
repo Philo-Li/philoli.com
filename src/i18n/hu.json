@@ -76,6 +76,7 @@
     "confirmHeading": "Még egy lépés",
     "confirmBody": "Kattints az alábbi gombra a feliratkozás megerősítéséhez. Ha nem te iratkoztál fel, figyelmen kívül hagyhatod ezt az e-mailt.",
     "confirmCta": "Feliratkozás megerősítése",
+    "confirmFallback": "Ha a gomb nem működik, másold ki és illeszd be ezt a linket a böngésződbe:",
     "footerUnsubscribe": "Leiratkozás"
   },
   "blogPage": {

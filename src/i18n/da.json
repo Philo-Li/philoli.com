@@ -76,6 +76,7 @@
     "confirmHeading": "Et skridt mere",
     "confirmBody": "Klik på knappen herunder for at bekræfte din tilmelding. Hvis du ikke har tilmeldt dig, kan du ignorere denne e-mail.",
     "confirmCta": "Bekræft tilmelding",
+    "confirmFallback": "Hvis knappen ikke virker, så kopiér og indsæt dette link i din browser:",
     "footerUnsubscribe": "Afmeld"
   },
   "blogPage": {

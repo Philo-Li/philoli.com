@@ -76,6 +76,7 @@
     "confirmHeading": "마지막 단계",
     "confirmBody": "아래 버튼을 클릭하여 구독을 확인해 주세요. 본인이 구독하지 않았다면 이 이메일을 무시하셔도 됩니다.",
     "confirmCta": "구독 확인",
+    "confirmFallback": "버튼이 작동하지 않으면, 이 링크를 복사하여 브라우저에 붙여넣으세요:",
     "footerUnsubscribe": "구독 취소"
   },
   "blogPage": {

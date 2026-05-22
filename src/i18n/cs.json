@@ -76,6 +76,7 @@
     "confirmHeading": "Ještě jeden krok",
     "confirmBody": "Klikněte na tlačítko níže pro potvrzení odběru. Pokud jste se k odběru nepřihlásili, můžete tento e-mail ignorovat.",
     "confirmCta": "Potvrdit odběr",
+    "confirmFallback": "Pokud tlačítko nefunguje, zkopírujte a vložte tento odkaz do svého prohlížeče:",
     "footerUnsubscribe": "Zrušit odběr"
   },
   "blogPage": {

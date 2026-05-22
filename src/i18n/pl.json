@@ -76,6 +76,7 @@
     "confirmHeading": "Jeszcze jeden krok",
     "confirmBody": "Kliknij poniższy przycisk, aby potwierdzić subskrypcję. Jeśli nie dokonywałeś subskrypcji, możesz zignorować tę wiadomość.",
     "confirmCta": "Potwierdź subskrypcję",
+    "confirmFallback": "Jeśli przycisk nie działa, skopiuj i wklej ten link do swojej przeglądarki:",
     "footerUnsubscribe": "Anuluj subskrypcję"
   },
   "blogPage": {

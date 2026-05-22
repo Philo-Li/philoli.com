@@ -76,6 +76,7 @@
     "confirmHeading": "Încă un pas",
     "confirmBody": "Apasă butonul de mai jos pentru a confirma abonarea. Dacă nu te-ai abonat, poți ignora acest e-mail.",
     "confirmCta": "Confirmă abonarea",
+    "confirmFallback": "Dacă butonul nu funcționează, copiază și lipește acest link în browserul tău:",
     "footerUnsubscribe": "Dezabonează-te"
   },
   "blogPage": {

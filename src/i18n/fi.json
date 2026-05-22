@@ -76,6 +76,7 @@
     "confirmHeading": "Vielä yksi vaihe",
     "confirmBody": "Klikkaa alla olevaa painiketta vahvistaaksesi tilauksesi. Jos et tehnyt tilausta, voit jättää tämän sähköpostin huomiotta.",
     "confirmCta": "Vahvista tilaus",
+    "confirmFallback": "Jos painike ei toimi, kopioi ja liitä tämä linkki selaimeesi:",
     "footerUnsubscribe": "Peru tilaus"
   },
   "blogPage": {

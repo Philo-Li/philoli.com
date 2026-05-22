@@ -76,6 +76,7 @@
     "confirmHeading": "Veel üks samm",
     "confirmBody": "Klõpsa tellimuse kinnitamiseks allolevat nuppu. Kui sa tellimust ei teinud, võid seda e-kirja eirata.",
     "confirmCta": "Kinnita tellimus",
+    "confirmFallback": "Kui nupp ei tööta, kopeeri see link ja kleebi see oma brauserisse:",
     "footerUnsubscribe": "Tühista tellimus"
   },
   "blogPage": {

@@ -76,6 +76,7 @@
     "confirmHeading": "Bir adım daha",
     "confirmBody": "Aboneliğinizi onaylamak için aşağıdaki düğmeye tıklayın. Eğer abone olmadıysanız, bu e-postayı görmezden gelebilirsiniz.",
     "confirmCta": "Aboneliği onayla",
+    "confirmFallback": "Eğer buton çalışmıyorsa, bu bağlantıyı kopyalayıp tarayıcınıza yapıştırın:",
     "footerUnsubscribe": "Abonelikten çık"
   },
   "blogPage": {

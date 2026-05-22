@@ -76,6 +76,7 @@
     "confirmHeading": "Još jedan korak",
     "confirmBody": "Klikni na gumb ispod kako bi potvrdio/la svoju pretplatu. Ako se nisi pretplatio/la, možeš zanemariti ovu e-poruku.",
     "confirmCta": "Potvrdi pretplatu",
+    "confirmFallback": "Ako gumb ne radi, kopirajte i zalijepite ovu poveznicu u svoj preglednik:",
     "footerUnsubscribe": "Odjavi se"
   },
   "blogPage": {

@@ -76,6 +76,7 @@
     "confirmHeading": "Dar vienas žingsnis",
     "confirmBody": "Spustelėkite žemiau esantį mygtuką, kad patvirtintumėte prenumeratą. Jei neužsiprenumeravote, galite ignoruoti šį el. laišką.",
     "confirmCta": "Patvirtinti prenumeratą",
+    "confirmFallback": "Jei mygtukas neveikia, nukopijuokite ir įklijuokite šią nuorodą į savo naršyklę:",
     "footerUnsubscribe": "Atsisakyti prenumeratos"
   },
   "blogPage": {

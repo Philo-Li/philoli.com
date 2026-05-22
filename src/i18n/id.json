@@ -76,6 +76,7 @@
     "confirmHeading": "Satu langkah lagi",
     "confirmBody": "Klik tombol di bawah untuk mengonfirmasi langganan Anda. Jika Anda tidak merasa berlangganan, Anda bisa mengabaikan email ini.",
     "confirmCta": "Konfirmasi langganan",
+    "confirmFallback": "Jika tombol tidak berfungsi, salin dan tempel tautan ini ke browser Anda:",
     "footerUnsubscribe": "Berhenti berlangganan"
   },
   "blogPage": {

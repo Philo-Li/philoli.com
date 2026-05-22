@@ -76,6 +76,7 @@
     "confirmHeading": "Ett steg till",
     "confirmBody": "Klicka på knappen nedan för att bekräfta din prenumeration. Om du inte har prenumererat kan du ignorera detta mejl.",
     "confirmCta": "Bekräfta prenumeration",
+    "confirmFallback": "Om knappen inte fungerar, kopiera och klistra in den här länken i din webbläsare:",
     "footerUnsubscribe": "Avsluta prenumeration"
   },
   "blogPage": {
