@@ -5,29 +5,31 @@ import SubscribeForm from '../forms/SubscribeForm.astro';
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
-
-const confirmed    = Astro.url.searchParams.get('confirmed') === '1';
-const unsubscribed = Astro.url.searchParams.get('unsubscribed') === '1';
-const tokenError   = Astro.url.searchParams.get('error') === 'invalid_token';
 ---
 
 <BaseLayout title={t('metadata.newsletterTitle')} description={t('metadata.newsletterDescription')}>
   <main class="newsletter-page">
-    {confirmed && (
-      <div class="newsletter-page__banner newsletter-page__banner--ok">
-        {t('subscribeForm.successBanner')}
-      </div>
-    )}
-    {unsubscribed && (
-      <div class="newsletter-page__banner newsletter-page__banner--ok">
-        {t('subscribeForm.unsubscribedBanner')}
-      </div>
-    )}
-    {tokenError && (
-      <div class="newsletter-page__banner newsletter-page__banner--err">
-        {t('subscribeForm.invalidTokenBanner')}
-      </div>
-    )}
+    <div
+      class="newsletter-page__banner newsletter-page__banner--ok"
+      data-banner="confirmed"
+      hidden
+    >
+      {t('subscribeForm.successBanner')}
+    </div>
+    <div
+      class="newsletter-page__banner newsletter-page__banner--ok"
+      data-banner="unsubscribed"
+      hidden
+    >
+      {t('subscribeForm.unsubscribedBanner')}
+    </div>
+    <div
+      class="newsletter-page__banner newsletter-page__banner--err"
+      data-banner="invalid_token"
+      hidden
+    >
+      {t('subscribeForm.invalidTokenBanner')}
+    </div>
     <h1 class="newsletter-page__title">{t('newsletterPage.title')}</h1>
     <div class="newsletter-page__grid">
       <div class="newsletter-card">
@@ -38,6 +40,18 @@ const tokenError   = Astro.url.searchParams.get('error') === 'invalid_token';
     </div>
   </main>
 </BaseLayout>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  let key: string | null = null;
+  if (params.get('confirmed') === '1') key = 'confirmed';
+  else if (params.get('unsubscribed') === '1') key = 'unsubscribed';
+  else if (params.get('error') === 'invalid_token') key = 'invalid_token';
+  if (key) {
+    const el = document.querySelector(`[data-banner="${key}"]`);
+    if (el instanceof HTMLElement) el.hidden = false;
+  }
+</script>
 
 <style>
   .newsletter-page {
