@@ -58,6 +58,26 @@
     "headline": "Blijf nieuwsgierig.",
     "desc": "Gedachten over kunst, het leven en dingen bouwen — in je inbox bezorgd."
   },
+  "subscribeForm": {
+    "languageLabel": "Taal",
+    "placeholder": "your@email.com",
+    "button": "Abonneren",
+    "submitting": "Bezig met abonneren…",
+    "successInbox": "🎉 Bedankt voor je aanmelding! Controleer je inbox om te bevestigen.",
+    "alreadySubscribed": "Je bent al geabonneerd.",
+    "invalidEmail": "Voer een geldig e-mailadres in.",
+    "networkError": "Netwerkfout. Probeer het opnieuw.",
+    "successBanner": "🎉 Je bent geabonneerd.",
+    "unsubscribedBanner": "Je bent uitgeschreven.",
+    "invalidTokenBanner": "Deze link is ongeldig of verlopen."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Bevestig je abonnement op philoli.com",
+    "confirmHeading": "Nog één stap",
+    "confirmBody": "Klik op de onderstaande knop om je abonnement te bevestigen. Als je je niet hebt aangemeld, kun je deze e-mail negeren.",
+    "confirmCta": "Abonnement bevestigen",
+    "footerUnsubscribe": "Uitschrijven"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Vertalen",
       "translatingLabel": "vertalen…",
       "buildFailed": "EPUB maken mislukt:"
+    },
+    "glossary": {
+      "label": "Woordenlijst",
+      "title": "Forceer specifieke vertalingen voor termen in dit boek — handig voor technische, professionele of domeinspecifieke werken.",
+      "none": "Geen",
+      "empty": "Nog geen woordenlijsten geüpload.",
+      "entryCount": "{n} termen",
+      "upload": "CSV uploaden…",
+      "uploading": "Bezig met uploaden…",
+      "hint": "CSV met twee kolommen: bronterm, vertaling. Optionele derde kolom: opmerking. De eerste rij mag een koptekst zijn. UTF-8.",
+      "delete": "Woordenlijst verwijderen",
+      "deleteConfirm": "De woordenlijst \"{name}\" verwijderen? Boeken die deze gebruiken, vallen terug naar geen woordenlijst."
     },
     "tones": {
       "idiomatic": {

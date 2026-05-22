@@ -58,6 +58,26 @@
     "headline": "Bleib neugierig.",
     "desc": "Gedanken über Kunst, das Leben und das Erschaffen von Dingen — direkt in dein Postfach."
   },
+  "subscribeForm": {
+    "languageLabel": "Sprache",
+    "placeholder": "your@email.com",
+    "button": "Abonnieren",
+    "submitting": "Abonniere…",
+    "successInbox": "🎉 Danke für dein Abonnement! Überprüfe deinen Posteingang, um es zu bestätigen.",
+    "alreadySubscribed": "Du bist bereits abonniert.",
+    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "networkError": "Netzwerkfehler. Bitte versuche es erneut.",
+    "successBanner": "🎉 Du bist abonniert.",
+    "unsubscribedBanner": "Du bist abgemeldet.",
+    "invalidTokenBanner": "Dieser Link ist ungültig oder abgelaufen."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Bestätige dein Abonnement für philoli.com",
+    "confirmHeading": "Ein Schritt noch",
+    "confirmBody": "Klicke auf die Schaltfläche unten, um dein Abonnement zu bestätigen. Falls du dich nicht angemeldet hast, kannst du diese E-Mail ignorieren.",
+    "confirmCta": "Abonnement bestätigen",
+    "footerUnsubscribe": "Abmelden"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Wird übersetzt",
       "translatingLabel": "übersetze…",
       "buildFailed": "EPUB-Erstellung fehlgeschlagen:"
+    },
+    "glossary": {
+      "label": "Glossar",
+      "title": "Erzwinge spezifische Übersetzungen für Begriffe in diesem Buch – nützlich für technische, professionelle oder fachspezifische Arbeiten.",
+      "none": "Keine",
+      "empty": "Noch keine Glossare hochgeladen.",
+      "entryCount": "{n} Begriffe",
+      "upload": "CSV hochladen…",
+      "uploading": "Hochladen…",
+      "hint": "CSV mit zwei Spalten: Quellbegriff, Übersetzung. Optionale dritte Spalte: Notiz. Die erste Zeile kann eine Kopfzeile sein. UTF-8.",
+      "delete": "Glossar entfernen",
+      "deleteConfirm": "Das Glossar \"{name}\" entfernen? Alle Bücher, die es verwenden, greifen dann auf kein Glossar mehr zurück."
     },
     "tones": {
       "idiomatic": {

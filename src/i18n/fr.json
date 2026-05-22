@@ -58,6 +58,26 @@
     "headline": "Restez curieux.",
     "desc": "Réflexions sur l'art, la vie et la création — livrées dans votre boîte de réception."
   },
+  "subscribeForm": {
+    "languageLabel": "Langue",
+    "placeholder": "your@email.com",
+    "button": "S'abonner",
+    "submitting": "Abonnement en cours…",
+    "successInbox": "🎉 Merci de votre inscription ! Consultez votre boîte de réception pour confirmer.",
+    "alreadySubscribed": "Vous êtes déjà abonné.",
+    "invalidEmail": "Veuillez saisir une adresse e-mail valide.",
+    "networkError": "Erreur réseau. Veuillez réessayer.",
+    "successBanner": "🎉 Vous êtes abonné.",
+    "unsubscribedBanner": "Vous êtes désabonné.",
+    "invalidTokenBanner": "Ce lien est invalide ou a expiré."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Confirmez votre abonnement à philoli.com",
+    "confirmHeading": "Une dernière étape",
+    "confirmBody": "Cliquez sur le bouton ci-dessous pour confirmer votre abonnement. Si vous ne vous êtes pas inscrit, vous pouvez ignorer cet e-mail.",
+    "confirmCta": "Confirmer l'abonnement",
+    "footerUnsubscribe": "Se désabonner"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Traduction en cours",
       "translatingLabel": "traduction en cours…",
       "buildFailed": "Échec de la création de l'EPUB :"
+    },
+    "glossary": {
+      "label": "Glossaire",
+      "title": "Forcez des traductions spécifiques pour les termes de ce livre — utile pour les ouvrages techniques, professionnels ou spécialisés.",
+      "none": "Aucun",
+      "empty": "Aucun glossaire n'a encore été téléchargé.",
+      "entryCount": "{n} termes",
+      "upload": "Téléverser un CSV…",
+      "uploading": "Téléversement en cours…",
+      "hint": "CSV avec deux colonnes : terme source, traduction. Troisième colonne optionnelle : note. La première ligne peut être un en-tête. UTF-8.",
+      "delete": "Supprimer le glossaire",
+      "deleteConfirm": "Supprimer le glossaire \"{name}\" ? Tous les livres l'utilisant reviendront à l'absence de glossaire."
     },
     "tones": {
       "idiomatic": {

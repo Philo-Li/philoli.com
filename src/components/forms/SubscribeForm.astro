@@ -1,0 +1,196 @@
+---
+import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
+
+const LOCALES = [
+  'en', 'zh', 'zh-TW', 'es', 'fr', 'de', 'ja', 'ko', 'pt', 'ru', 'ar',
+  'hi', 'it', 'nl', 'pl', 'tr', 'vi', 'th', 'id', 'ms', 'sv',
+  'da', 'no', 'fi', 'el', 'cs', 'ro', 'hu', 'uk', 'bg', 'hr',
+  'sk', 'sl', 'sr', 'lt', 'lv', 'et', 'he', 'fa', 'bn', 'fil',
+] as const;
+
+const LANG_NAMES: Record<string, string> = {
+  en: 'English', zh: '中文', 'zh-TW': '繁體中文', es: 'Español', fr: 'Français',
+  de: 'Deutsch', ja: '日本語', ko: '한국어', pt: 'Português', ru: 'Русский',
+  ar: 'العربية', hi: 'हिन्दी', it: 'Italiano', nl: 'Nederlands', pl: 'Polski',
+  tr: 'Türkçe', vi: 'Tiếng Việt', th: 'ไทย', id: 'Bahasa Indonesia', ms: 'Bahasa Melayu',
+  sv: 'Svenska', da: 'Dansk', no: 'Norsk', fi: 'Suomi', el: 'Ελληνικά',
+  cs: 'Čeština', ro: 'Română', hu: 'Magyar', uk: 'Українська', bg: 'Български',
+  hr: 'Hrvatski', sk: 'Slovenčina', sl: 'Slovenščina', sr: 'Српски',
+  lt: 'Lietuvių', lv: 'Latviešu', et: 'Eesti', he: 'עברית', fa: 'فارسی',
+  bn: 'বাংলা', fil: 'Filipino',
+};
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+const WORKER_URL = 'https://subscribe.philoli.com';
+
+const msg = {
+  successInbox: t('subscribeForm.successInbox'),
+  alreadySubscribed: t('subscribeForm.alreadySubscribed'),
+  invalidEmail: t('subscribeForm.invalidEmail'),
+  networkError: t('subscribeForm.networkError'),
+};
+---
+
+<form class="subscribe-form" data-subscribe data-worker-url={WORKER_URL}>
+  <label class="visually-hidden" for="subscribe-lang">{t('subscribeForm.languageLabel')}</label>
+  <select id="subscribe-lang" name="lang" class="subscribe-form__lang">
+    {LOCALES.map((l) => (
+      <option value={l} selected={l === locale}>{LANG_NAMES[l] ?? l}</option>
+    ))}
+  </select>
+
+  <label class="visually-hidden" for="subscribe-email">{t('subscribeForm.placeholder')}</label>
+  <input
+    id="subscribe-email"
+    name="email"
+    type="email"
+    required
+    autocomplete="email"
+    placeholder={t('subscribeForm.placeholder')}
+    class="subscribe-form__email"
+  />
+
+  <input
+    name="hp"
+    type="text"
+    tabindex="-1"
+    autocomplete="off"
+    aria-hidden="true"
+    class="subscribe-form__hp"
+  />
+
+  <button type="submit" class="subscribe-form__button">
+    <span data-label-idle>{t('subscribeForm.button')}</span>
+    <span data-label-submitting hidden>{t('subscribeForm.submitting')}</span>
+  </button>
+
+  <p class="subscribe-form__status" data-status hidden></p>
+</form>
+
+<script is:inline define:vars={{ msg }}>
+  document.querySelectorAll('[data-subscribe]').forEach((form) => {
+    form.addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      const f = ev.currentTarget;
+      const url = f.dataset.workerUrl + '/subscribe';
+      const status = f.querySelector('[data-status]');
+      const button = f.querySelector('button[type="submit"]');
+      const idle = button.querySelector('[data-label-idle]');
+      const submitting = button.querySelector('[data-label-submitting]');
+
+      const body = {
+        email: f.elements.email.value.trim(),
+        lang:  f.elements.lang.value,
+        hp:    f.elements.hp.value,
+      };
+
+      button.disabled = true;
+      idle.hidden = true;
+      submitting.hidden = false;
+      status.hidden = true;
+      status.className = 'subscribe-form__status';
+
+      try {
+        const res = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (data.ok && (data.code === 'sent' || data.code === 'resent' || data.code === 'reactivated' || data.code === 'honeypot')) {
+          status.textContent = msg.successInbox;
+          status.classList.add('subscribe-form__status--ok');
+        } else if (data.code === 'already_subscribed') {
+          status.textContent = msg.alreadySubscribed;
+          status.classList.add('subscribe-form__status--ok');
+        } else if (data.code === 'invalid_email') {
+          status.textContent = msg.invalidEmail;
+          status.classList.add('subscribe-form__status--err');
+        } else {
+          status.textContent = msg.networkError;
+          status.classList.add('subscribe-form__status--err');
+        }
+      } catch {
+        status.textContent = msg.networkError;
+        status.classList.add('subscribe-form__status--err');
+      } finally {
+        status.hidden = false;
+        button.disabled = false;
+        idle.hidden = false;
+        submitting.hidden = true;
+      }
+    });
+  });
+</script>
+
+<style>
+  .subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    align-items: stretch;
+  }
+  .subscribe-form__lang,
+  .subscribe-form__email,
+  .subscribe-form__button {
+    height: 3.5rem;
+    font: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  .subscribe-form__lang {
+    padding: 0 0.5rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg-elevated);
+    color: var(--color-text);
+    color-scheme: inherit;
+    width: 5.5rem;
+    flex: 0 0 5.5rem;
+  }
+  .subscribe-form__lang option {
+    background-color: var(--color-bg-elevated);
+    color: var(--color-text);
+  }
+  .subscribe-form__email {
+    flex: 1 1 14rem;
+    min-width: 0;
+    padding: 0 1rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text);
+  }
+  .subscribe-form__button {
+    padding: 0 1.25rem;
+    background: var(--color-accent);
+    color: var(--color-white);
+    border: 0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .subscribe-form__button:hover { background: var(--color-accent-hover); }
+  .subscribe-form__button:disabled { opacity: 0.6; cursor: progress; }
+  .subscribe-form__hp {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+  .subscribe-form__status {
+    flex-basis: 100%;
+    margin: var(--space-xs) 0 0;
+    font-size: 1.275rem;
+  }
+  .subscribe-form__status--ok  { color: var(--color-accent); }
+  .subscribe-form__status--err { color: #c0392b; }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+</style>

@@ -58,6 +58,26 @@
     "headline": "ابقَ فضولياً.",
     "desc": "أفكار حول الفن، والحياة، وبناء الأشياء — تصل إلى بريدك الوارد."
   },
+  "subscribeForm": {
+    "languageLabel": "اللغة",
+    "placeholder": "your@email.com",
+    "button": "اشترك",
+    "submitting": "جاري الاشتراك…",
+    "successInbox": "🎉 شكراً لاشتراكك! تحقق من بريدك الوارد للتأكيد.",
+    "alreadySubscribed": "أنت مشترك بالفعل.",
+    "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صالح.",
+    "networkError": "خطأ في الشبكة. يرجى المحاولة مجدداً.",
+    "successBanner": "🎉 تم الاشتراك بنجاح.",
+    "unsubscribedBanner": "تم إلغاء اشتراكك.",
+    "invalidTokenBanner": "هذا الرابط غير صالح أو منتهي الصلاحية."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "أكّد اشتراكك في philoli.com",
+    "confirmHeading": "خطوة أخيرة",
+    "confirmBody": "اضغط على الزر أدناه لتأكيد اشتراكك. إذا لم تقم بالاشتراك، يمكنك تجاهل هذه الرسالة.",
+    "confirmCta": "تأكيد الاشتراك",
+    "footerUnsubscribe": "إلغاء الاشتراك"
+  },
   "blogPage": {
     "title": "المدونة",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "جاري الترجمة",
       "translatingLabel": "جاري الترجمة…",
       "buildFailed": "فشل إنشاء EPUB:"
+    },
+    "glossary": {
+      "label": "مسرد المصطلحات",
+      "title": "فرض ترجمات محددة للمصطلحات في هذا الكتاب — مفيد للأعمال التقنية أو المهنية أو المتخصصة في مجال معين.",
+      "none": "لا يوجد",
+      "empty": "لم يتم رفع أي مسارد بعد.",
+      "entryCount": "{n} مصطلح",
+      "upload": "رفع ملف CSV…",
+      "uploading": "جاري الرفع…",
+      "hint": "ملف CSV بعمودين: المصطلح الأصلي، والترجمة. عمود ثالث اختياري: ملاحظة. يمكن أن يكون الصف الأول ترويسة. ترميز UTF-8.",
+      "delete": "إزالة المسرد",
+      "deleteConfirm": "هل تريد إزالة المسرد \"{name}\"؟ أي كتب تستخدمه ستعود إلى حالة عدم وجود مسرد."
     },
     "tones": {
       "idiomatic": {

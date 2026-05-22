@@ -58,6 +58,26 @@
     "headline": "Tetaplah penasaran.",
     "desc": "Pemikiran tentang seni, kehidupan, dan membangun sesuatu — dikirim ke kotak masuk Anda."
   },
+  "subscribeForm": {
+    "languageLabel": "Bahasa",
+    "placeholder": "your@email.com",
+    "button": "Berlangganan",
+    "submitting": "Sedang berlangganan…",
+    "successInbox": "🎉 Terima kasih telah berlangganan! Periksa kotak masuk Anda untuk konfirmasi.",
+    "alreadySubscribed": "Anda sudah berlangganan.",
+    "invalidEmail": "Harap masukkan alamat email yang valid.",
+    "networkError": "Kesalahan jaringan. Harap coba lagi.",
+    "successBanner": "🎉 Anda telah berlangganan.",
+    "unsubscribedBanner": "Anda telah berhenti berlangganan.",
+    "invalidTokenBanner": "Tautan ini tidak valid atau sudah kedaluwarsa."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Konfirmasi langganan Anda ke philoli.com",
+    "confirmHeading": "Satu langkah lagi",
+    "confirmBody": "Klik tombol di bawah untuk mengonfirmasi langganan Anda. Jika Anda tidak merasa berlangganan, Anda bisa mengabaikan email ini.",
+    "confirmCta": "Konfirmasi langganan",
+    "footerUnsubscribe": "Berhenti berlangganan"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Menerjemahkan",
       "translatingLabel": "menerjemahkan…",
       "buildFailed": "Gagal membuat EPUB:"
+    },
+    "glossary": {
+      "label": "Glosarium",
+      "title": "Paksa terjemahan spesifik untuk istilah dalam buku ini — berguna untuk karya teknis, profesional, atau spesifik domain.",
+      "none": "Tidak ada",
+      "empty": "Belum ada glosarium yang diunggah.",
+      "entryCount": "{n} istilah",
+      "upload": "Unggah CSV…",
+      "uploading": "Sedang mengunggah…",
+      "hint": "CSV dengan dua kolom: istilah sumber, terjemahan. Kolom ketiga opsional: catatan. Baris pertama boleh berupa header. UTF-8.",
+      "delete": "Hapus glosarium",
+      "deleteConfirm": "Hapus glosarium \"{name}\"? Buku apa pun yang menggunakannya akan kembali ke tanpa glosarium."
     },
     "tones": {
       "idiomatic": {

@@ -58,6 +58,26 @@
     "headline": "הישארו סקרנים.",
     "desc": "מחשבות על אמנות, חיים ובניית דברים — נשלח לתיבת הדואר הנכנס שלך."
   },
+  "subscribeForm": {
+    "languageLabel": "שפה",
+    "placeholder": "your@email.com",
+    "button": "הירשם",
+    "submitting": "נרשם…",
+    "successInbox": "🎉 תודה שנרשמת! בדוק את תיבת הדואר הנכנס שלך כדי לאשר.",
+    "alreadySubscribed": "אתה כבר רשום.",
+    "invalidEmail": "אנא הזן כתובת אימייל תקינה.",
+    "networkError": "שגיאת רשת. אנא נסה שוב.",
+    "successBanner": "🎉 אתה רשום.",
+    "unsubscribedBanner": "הרישום שלך בוטל.",
+    "invalidTokenBanner": "קישור זה אינו תקין או שפג תוקפו."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "אשר את הרישום שלך ל-philoli.com",
+    "confirmHeading": "צעד אחד נוסף",
+    "confirmBody": "לחץ על הכפתור למטה כדי לאשר את הרישום שלך. אם לא נרשמת, באפשרותך להתעלם מהודעה זו.",
+    "confirmCta": "אשר רישום",
+    "footerUnsubscribe": "בטל רישום"
+  },
   "blogPage": {
     "title": "בלוג",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "מתרגם",
       "translatingLabel": "מתרגם…",
       "buildFailed": "בניית EPUB נכשלה:"
+    },
+    "glossary": {
+      "label": "מילון מונחים",
+      "title": "כפה תרגומים ספציפיים למונחים בספר זה — שימושי לעבודות טכניות, מקצועיות או ממוקדות תחום.",
+      "none": "ללא",
+      "empty": "טרם הועלו מילוני מונחים.",
+      "entryCount": "{n} מונחים",
+      "upload": "העלה CSV…",
+      "uploading": "מעלה…",
+      "hint": "קובץ CSV עם שתי עמודות: מונח מקור, תרגום. עמודה שלישית אופציונלית: הערה. השורה הראשונה יכולה להיות כותרת. UTF-8.",
+      "delete": "הסר מילון מונחים",
+      "deleteConfirm": "להסיר את מילון המונחים \"{name}\"? כל ספר שישתמש בו יחזור למצב ללא מילון מונחים."
     },
     "tones": {
       "idiomatic": {

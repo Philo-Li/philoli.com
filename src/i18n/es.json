@@ -58,6 +58,26 @@
     "headline": "Mantén la curiosidad.",
     "desc": "Reflexiones sobre arte, vida y construir cosas — directo a tu bandeja de entrada."
   },
+  "subscribeForm": {
+    "languageLabel": "Idioma",
+    "placeholder": "your@email.com",
+    "button": "Suscribirse",
+    "submitting": "Suscribiendo…",
+    "successInbox": "🎉 ¡Gracias por suscribirte! Revisa tu bandeja de entrada para confirmar.",
+    "alreadySubscribed": "Ya estás suscrito.",
+    "invalidEmail": "Por favor, introduce una dirección de correo electrónico válida.",
+    "networkError": "Error de red. Por favor, inténtalo de nuevo.",
+    "successBanner": "🎉 Ya estás suscrito.",
+    "unsubscribedBanner": "Te has dado de baja.",
+    "invalidTokenBanner": "Este enlace no es válido o ha caducado."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Confirma tu suscripción a philoli.com",
+    "confirmHeading": "Un paso más",
+    "confirmBody": "Haz clic en el botón de abajo para confirmar tu suscripción. Si no te has suscrito, puedes ignorar este correo.",
+    "confirmCta": "Confirmar suscripción",
+    "footerUnsubscribe": "Darse de baja"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Traduciendo",
       "translatingLabel": "traduciendo…",
       "buildFailed": "Error al generar el EPUB:"
+    },
+    "glossary": {
+      "label": "Glosario",
+      "title": "Fuerza traducciones específicas para términos en este libro; útil para trabajos técnicos, profesionales o de dominios específicos.",
+      "none": "Ninguno",
+      "empty": "Aún no se han subido glosarios.",
+      "entryCount": "{n} términos",
+      "upload": "Subir CSV…",
+      "uploading": "Subiendo…",
+      "hint": "CSV con dos columnas: término original, traducción. Tercera columna opcional: nota. La primera fila puede ser un encabezado. UTF-8.",
+      "delete": "Eliminar glosario",
+      "deleteConfirm": "¿Eliminar el glosario \"{name}\"? Cualquier libro que lo utilice volverá a no tener glosario."
     },
     "tones": {
       "idiomatic": {

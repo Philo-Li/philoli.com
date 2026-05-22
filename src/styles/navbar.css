@@ -24,10 +24,10 @@
 }
 
 .navbar__logo {
-  font-size: 1.15rem;
+  font-size: 1.38rem;
   font-weight: 800;
   letter-spacing: 3px;
-  color: var(--color-heading);
+  color: var(--color-text-muted);
   text-transform: uppercase;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .navbar__link {
-  font-size: 0.85rem;
+  font-size: 1.02rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color-text-muted);

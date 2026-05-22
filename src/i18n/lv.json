@@ -58,6 +58,26 @@
     "headline": "Saglabā zinātkāri.",
     "desc": "Pārdomas par mākslu, dzīvi un lietu radīšanu — tavā iesūtnē."
   },
+  "subscribeForm": {
+    "languageLabel": "Valoda",
+    "placeholder": "your@email.com",
+    "button": "Abonēt",
+    "submitting": "Abonē…",
+    "successInbox": "🎉 Paldies par abonēšanu! Pārbaudiet savu e-pastu, lai apstiprinātu.",
+    "alreadySubscribed": "Jūs jau esat abonējis.",
+    "invalidEmail": "Lūdzu, ievadiet derīgu e-pasta adresi.",
+    "networkError": "Tīkla kļūda. Lūdzu, mēģiniet vēlreiz.",
+    "successBanner": "🎉 Jūs esat abonējis.",
+    "unsubscribedBanner": "Jūs esat atteicies no abonēšanas.",
+    "invalidTokenBanner": "Šī saite nav derīga vai ir beidzies tās derīguma termiņš."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Apstipriniet savu abonementu vietnē philoli.com",
+    "confirmHeading": "Vēl viens solis",
+    "confirmBody": "Noklikšķiniet uz zemāk esošās pogas, lai apstiprinātu savu abonementu. Ja jūs neabonējāt, varat ignorēt šo e-pastu.",
+    "confirmCta": "Apstiprināt abonementu",
+    "footerUnsubscribe": "Atteikties no abonēšanas"
+  },
   "blogPage": {
     "title": "Blogs",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Tulko",
       "translatingLabel": "tulko…",
       "buildFailed": "Neizdevās izveidot EPUB:"
+    },
+    "glossary": {
+      "label": "Glosārijs",
+      "title": "Uzspiest konkrētus tulkojumus šīs grāmatas terminiem — noderīgi tehniskiem, profesionāliem vai specifiskiem darbiem.",
+      "none": "Nav",
+      "empty": "Vēl nav augšupielādēts neviens glosārijs.",
+      "entryCount": "{n} termini",
+      "upload": "Augšupielādēt CSV…",
+      "uploading": "Augšupielādē…",
+      "hint": "CSV ar divām kolonnām: avota termins, tulkojums. Papildu trešā kolonna: piezīme. Pirmā rinda var būt galvene. UTF-8.",
+      "delete": "Noņemt glosāriju",
+      "deleteConfirm": "Noņemt glosāriju \"{name}\"? Visas grāmatas, kas to izmanto, atgriezīsies pie glosārija neizmantošanas."
     },
     "tones": {
       "idiomatic": {

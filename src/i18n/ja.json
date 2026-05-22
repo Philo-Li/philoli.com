@@ -58,6 +58,26 @@
     "headline": "好奇心を持ち続けよう。",
     "desc": "アート、人生、そしてものづくりについての思考を、あなたのインボックスへお届けします。"
   },
+  "subscribeForm": {
+    "languageLabel": "言語",
+    "placeholder": "your@email.com",
+    "button": "登録する",
+    "submitting": "登録中…",
+    "successInbox": "🎉 ご登録ありがとうございます！受信トレイを確認して承認してください。",
+    "alreadySubscribed": "すでに登録済みです。",
+    "invalidEmail": "有効なメールアドレスを入力してください。",
+    "networkError": "ネットワークエラーが発生しました。もう一度お試しください。",
+    "successBanner": "🎉 登録が完了しました。",
+    "unsubscribedBanner": "登録を解除しました。",
+    "invalidTokenBanner": "このリンクは無効か、期限切れです。"
+  },
+  "subscribeEmail": {
+    "confirmSubject": "philoli.comの購読確認",
+    "confirmHeading": "あと一歩です",
+    "confirmBody": "下のボタンをクリックして購読を確定してください。もし心当たりがない場合は、このメールを無視してください。",
+    "confirmCta": "購読を確定する",
+    "footerUnsubscribe": "登録解除"
+  },
   "blogPage": {
     "title": "ブログ",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "翻訳中",
       "translatingLabel": "翻訳中…",
       "buildFailed": "EPUBの作成に失敗しました："
+    },
+    "glossary": {
+      "label": "用語集",
+      "title": "本書内の用語を特定の訳語に固定します。技術文書や専門書、特定の分野の翻訳に便利です。",
+      "none": "なし",
+      "empty": "用語集がまだアップロードされていません。",
+      "entryCount": "{n} 個の用語",
+      "upload": "CSVをアップロード…",
+      "uploading": "アップロード中…",
+      "hint": "2列のCSV形式：原文、訳語。3列目にメモを追加可能（任意）。1行目はヘッダーでも可。UTF-8形式。",
+      "delete": "用語集を削除",
+      "deleteConfirm": "用語集「{name}」を削除しますか？これを使用しているすべての書籍で用語集が適用されなくなります。"
     },
     "tones": {
       "idiomatic": {

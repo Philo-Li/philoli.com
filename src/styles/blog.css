@@ -32,8 +32,9 @@
   color: var(--color-text-subtle);
 }
 
-.blog-post-card__link:hover {
-  color: var(--color-heading);
+.blog-post-card__link:hover,
+.blog-post-card__link:hover .blog-post-card__title {
+  color: var(--color-accent);
 }
 
 .blog-post-card__title {

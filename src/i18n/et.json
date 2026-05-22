@@ -58,6 +58,26 @@
     "headline": "Püsi uudishimulik.",
     "desc": "Mõtted kunstist, elust ja asjade loomisest — otse sinu postkasti."
   },
+  "subscribeForm": {
+    "languageLabel": "Keel",
+    "placeholder": "your@email.com",
+    "button": "Telli",
+    "submitting": "Tellimine…",
+    "successInbox": "🎉 Aitäh tellimuse eest! Kinnitamiseks kontrolli oma postkasti.",
+    "alreadySubscribed": "Oled juba tellija.",
+    "invalidEmail": "Palun sisesta kehtiv e-posti aadress.",
+    "networkError": "Võrguviga. Palun proovi uuesti.",
+    "successBanner": "🎉 Oled tellinud.",
+    "unsubscribedBanner": "Oled tellimuse tühistanud.",
+    "invalidTokenBanner": "See link on kehtetu või aegunud."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Kinnita oma tellimus saidile philoli.com",
+    "confirmHeading": "Veel üks samm",
+    "confirmBody": "Klõpsa tellimuse kinnitamiseks allolevat nuppu. Kui sa tellimust ei teinud, võid seda e-kirja eirata.",
+    "confirmCta": "Kinnita tellimus",
+    "footerUnsubscribe": "Tühista tellimus"
+  },
   "blogPage": {
     "title": "Blogi",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Tõlkimine",
       "translatingLabel": "tõlkimine…",
       "buildFailed": "EPUB-i loomine ebaõnnestus:"
+    },
+    "glossary": {
+      "label": "Sõnastik",
+      "title": "Määra raamatus kasutatavatele terminitele kindlad tõlked — kasulik tehniliste, professionaalsete või valdkonnaspetsiifiliste tööde puhul.",
+      "none": "Puudub",
+      "empty": "Ühtegi sõnastikku pole veel üles laaditud.",
+      "entryCount": "{n} terminit",
+      "upload": "Laadi üles CSV…",
+      "uploading": "Laadin üles…",
+      "hint": "CSV kahe veeruga: lähtetermin, tõlge. Valikuline kolmas veerg: märkus. Esimene rida võib olla päis. UTF-8.",
+      "delete": "Eemalda sõnastik",
+      "deleteConfirm": "Kas eemaldada sõnastik \"{name}\"? Kõik seda kasutavad raamatud lähevad tagasi sõnastiku puudumise režiimi."
     },
     "tones": {
       "idiomatic": {

@@ -51,6 +51,26 @@
     "headline": "Stay curious.",
     "desc": "Thoughts on art, life, and building things — delivered to your inbox."
   },
+  "subscribeForm": {
+    "languageLabel": "Language",
+    "placeholder": "your@email.com",
+    "button": "Subscribe",
+    "submitting": "Subscribing…",
+    "successInbox": "🎉 Thanks for subscribing! Check your inbox to confirm.",
+    "alreadySubscribed": "You're already subscribed.",
+    "invalidEmail": "Please enter a valid email address.",
+    "networkError": "Network error. Please try again.",
+    "successBanner": "🎉 You're subscribed.",
+    "unsubscribedBanner": "You're unsubscribed.",
+    "invalidTokenBanner": "This link is invalid or has expired."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Confirm your subscription to philoli.com",
+    "confirmHeading": "One more step",
+    "confirmBody": "Click the button below to confirm your subscription. If you didn't subscribe, you can ignore this email.",
+    "confirmCta": "Confirm subscription",
+    "footerUnsubscribe": "Unsubscribe"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"

@@ -58,6 +58,26 @@
     "headline": "Išlikite smalsūs.",
     "desc": "Mintys apie meną, gyvenimą ir kūrybą — tiesiai į jūsų pašto dėžutę."
   },
+  "subscribeForm": {
+    "languageLabel": "Kalba",
+    "placeholder": "your@email.com",
+    "button": "Prenumeruoti",
+    "submitting": "Prenumeruojama…",
+    "successInbox": "🎉 Dėkojame, kad užsiprenumeravote! Patikrinkite savo el. pašto dėžutę ir patvirtinkite prenumeratą.",
+    "alreadySubscribed": "Jūs jau užsiprenumeravę.",
+    "invalidEmail": "Įveskite galiojantį el. pašto adresą.",
+    "networkError": "Tinklo klaida. Bandykite dar kartą.",
+    "successBanner": "🎉 Jūs užsiprenumeravote.",
+    "unsubscribedBanner": "Jūs atsisakėte prenumeratos.",
+    "invalidTokenBanner": "Ši nuoroda netinkama arba nebegalioja."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Patvirtinkite savo prenumeratą philoli.com",
+    "confirmHeading": "Dar vienas žingsnis",
+    "confirmBody": "Spustelėkite žemiau esantį mygtuką, kad patvirtintumėte prenumeratą. Jei neužsiprenumeravote, galite ignoruoti šį el. laišką.",
+    "confirmCta": "Patvirtinti prenumeratą",
+    "footerUnsubscribe": "Atsisakyti prenumeratos"
+  },
   "blogPage": {
     "title": "Tinklaraštis",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Verčiama",
       "translatingLabel": "verčiama…",
       "buildFailed": "Nepavyko sukurti EPUB:"
+    },
+    "glossary": {
+      "label": "Žodynėlis",
+      "title": "Nustatykite konkrečius vertimus šios knygos terminams — naudinga techniniams, profesiniams ar specifinės srities darbams.",
+      "none": "Nėra",
+      "empty": "Žodynėlių dar neįkelta.",
+      "entryCount": "{n} terminai",
+      "upload": "Įkelti CSV…",
+      "uploading": "Įkeliama…",
+      "hint": "CSV su dviem stulpeliais: šaltinio terminas, vertimas. Papildomas trečias stulpelis: pastaba. Pirma eilutė gali būti antraštė. UTF-8.",
+      "delete": "Pašalinti žodynėlį",
+      "deleteConfirm": "Pašalinti žodynėlį „{name}“? Visos jį naudojančios knygos bus grąžintos į būseną be žodynėlio."
     },
     "tones": {
       "idiomatic": {

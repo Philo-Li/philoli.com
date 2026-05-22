@@ -58,6 +58,26 @@
     "headline": "保持好奇。",
     "desc": "關於藝術、生活與創作的思考 — 直接發送到您的收件匣。"
   },
+  "subscribeForm": {
+    "languageLabel": "語言",
+    "placeholder": "your@email.com",
+    "button": "訂閱",
+    "submitting": "訂閱中…",
+    "successInbox": "🎉 感謝您的訂閱！請檢查您的收件匣以進行確認。",
+    "alreadySubscribed": "您已經訂閱過了。",
+    "invalidEmail": "請輸入有效的電子郵件地址。",
+    "networkError": "網路錯誤。請再試一次。",
+    "successBanner": "🎉 您已成功訂閱。",
+    "unsubscribedBanner": "您已取消訂閱。",
+    "invalidTokenBanner": "此連結無效或已過期。"
+  },
+  "subscribeEmail": {
+    "confirmSubject": "確認您對 philoli.com 的訂閱",
+    "confirmHeading": "最後一步",
+    "confirmBody": "點擊下方按鈕以確認您的訂閱。如果您並未訂閱，可以忽略此郵件。",
+    "confirmCta": "確認訂閱",
+    "footerUnsubscribe": "取消訂閱"
+  },
   "blogPage": {
     "title": "部落格",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "正在翻譯",
       "translatingLabel": "翻譯中…",
       "buildFailed": "建立 EPUB 失敗："
+    },
+    "glossary": {
+      "label": "術語表",
+      "title": "為本書中的術語強制指定翻譯——適用於技術、專業或特定領域的作品。",
+      "none": "無",
+      "empty": "尚未上傳術語表。",
+      "entryCount": "{n} 個術語",
+      "upload": "上傳 CSV…",
+      "uploading": "上傳中…",
+      "hint": "包含兩欄的 CSV：原文術語、譯文。可選第三欄：備註。第一列可作為標題。編碼為 UTF-8。",
+      "delete": "移除術語表",
+      "deleteConfirm": "確定要移除術語表「{name}」嗎？任何使用此術語表的書籍將恢復為無術語表狀態。"
     },
     "tones": {
       "idiomatic": {

@@ -58,6 +58,26 @@
     "headline": "Ostani znatiželjan.",
     "desc": "Misli o umjetnosti, životu i stvaranju — dostavljene u tvoj sandučić."
   },
+  "subscribeForm": {
+    "languageLabel": "Jezik",
+    "placeholder": "your@email.com",
+    "button": "Pretplati se",
+    "submitting": "Pretplata u tijeku…",
+    "successInbox": "🎉 Hvala na pretplati! Provjerite pristiglu poštu kako biste potvrdili.",
+    "alreadySubscribed": "Već si pretplaćen/a.",
+    "invalidEmail": "Molimo unesi valjanu adresu e-pošte.",
+    "networkError": "Mrežna pogreška. Molimo pokušaj ponovno.",
+    "successBanner": "🎉 Pretplatio/la si se.",
+    "unsubscribedBanner": "Odjavljen/a si.",
+    "invalidTokenBanner": "Ova poveznica nije valjana ili je istekla."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Potvrdi svoju pretplatu na philoli.com",
+    "confirmHeading": "Još jedan korak",
+    "confirmBody": "Klikni na gumb ispod kako bi potvrdio/la svoju pretplatu. Ako se nisi pretplatio/la, možeš zanemariti ovu e-poruku.",
+    "confirmCta": "Potvrdi pretplatu",
+    "footerUnsubscribe": "Odjavi se"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Prevođenje",
       "translatingLabel": "prevođenje…",
       "buildFailed": "Pogreška pri izradi EPUB-a:"
+    },
+    "glossary": {
+      "label": "Pojmovnik",
+      "title": "Nametni specifične prijevode za pojmove u ovoj knjizi — korisno za tehnička, profesionalna ili domenski specifična djela.",
+      "none": "Nijedan",
+      "empty": "Još nije učitan nijedan pojmovnik.",
+      "entryCount": "{n} pojmova",
+      "upload": "Učitaj CSV…",
+      "uploading": "Učitavanje…",
+      "hint": "CSV s dva stupca: izvorni pojam, prijevod. Opcionalni treći stupac: napomena. Prvi redak može biti zaglavlje. UTF-8.",
+      "delete": "Ukloni pojmovnik",
+      "deleteConfirm": "Ukloniti pojmovnik \"{name}\"? Sve knjige koje ga koriste vratit će se na postavku bez pojmovnika."
     },
     "tones": {
       "idiomatic": {

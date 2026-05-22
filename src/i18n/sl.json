@@ -58,6 +58,26 @@
     "headline": "Ostani radoveden.",
     "desc": "Misli o umetnosti, življenju in ustvarjanju — v vašem poštnem nabiralniku."
   },
+  "subscribeForm": {
+    "languageLabel": "Jezik",
+    "placeholder": "your@email.com",
+    "button": "Naroči se",
+    "submitting": "Naročanje…",
+    "successInbox": "🎉 Hvala za prijavo! Preverite svoj poštni predal za potrditev.",
+    "alreadySubscribed": "Že ste naročeni.",
+    "invalidEmail": "Prosimo, vnesite veljaven e-poštni naslov.",
+    "networkError": "Omrežna napaka. Prosimo, poskusite znova.",
+    "successBanner": "🎉 Naročeni ste.",
+    "unsubscribedBanner": "Odjavljeni ste.",
+    "invalidTokenBanner": "Ta povezava ni veljavna ali pa je potekla."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Potrdite svojo naročnino na philoli.com",
+    "confirmHeading": "Še en korak",
+    "confirmBody": "Kliknite spodnji gumb za potrditev naročnine. Če se niste naročili, lahko to e-poštno sporočilo prezrete.",
+    "confirmCta": "Potrdi naročnino",
+    "footerUnsubscribe": "Odjavi se"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Prevajanje",
       "translatingLabel": "prevajanje…",
       "buildFailed": "Napaka pri izdelavi EPUB:"
+    },
+    "glossary": {
+      "label": "Slovar",
+      "title": "Vsili določene prevode za izraze v tej knjigi — uporabno za tehnična, strokovna ali domensko specifična dela.",
+      "none": "Brez",
+      "empty": "Slovarji še niso naloženi.",
+      "entryCount": "{n} izrazov",
+      "upload": "Naloži CSV…",
+      "uploading": "Nalaganje…",
+      "hint": "CSV z dvema stolpcema: izvorni izraz, prevod. Neobvezen tretji stolpec: opomba. Prva vrstica je lahko glava. UTF-8.",
+      "delete": "Odstrani slovar",
+      "deleteConfirm": "Odstranim slovar \"{name}\"? Vse knjige, ki ga uporabljajo, bodo prešle na stanje brez slovarja."
     },
     "tones": {
       "idiomatic": {

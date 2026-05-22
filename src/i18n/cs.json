@@ -58,6 +58,26 @@
     "headline": "Zůstaňte zvídaví.",
     "desc": "Myšlenky o umění, životě a tvoření věcí — doručené do vaší schránky."
   },
+  "subscribeForm": {
+    "languageLabel": "Jazyk",
+    "placeholder": "your@email.com",
+    "button": "Odebírat",
+    "submitting": "Probíhá přihlašování…",
+    "successInbox": "🎉 Děkujeme za přihlášení k odběru! Zkontrolujte svou e-mailovou schránku a potvrďte jej.",
+    "alreadySubscribed": "Už jste přihlášeni k odběru.",
+    "invalidEmail": "Zadejte prosím platnou e-mailovou adresu.",
+    "networkError": "Chyba sítě. Zkuste to prosím znovu.",
+    "successBanner": "🎉 Jste přihlášeni k odběru.",
+    "unsubscribedBanner": "Odběr byl zrušen.",
+    "invalidTokenBanner": "Tento odkaz je neplatný nebo vypršel."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Potvrďte svůj odběr na philoli.com",
+    "confirmHeading": "Ještě jeden krok",
+    "confirmBody": "Klikněte na tlačítko níže pro potvrzení odběru. Pokud jste se k odběru nepřihlásili, můžete tento e-mail ignorovat.",
+    "confirmCta": "Potvrdit odběr",
+    "footerUnsubscribe": "Zrušit odběr"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Překládání",
       "translatingLabel": "překládání…",
       "buildFailed": "Nepodařilo se vytvořit EPUB:"
+    },
+    "glossary": {
+      "label": "Glosář",
+      "title": "Vynutit konkrétní překlady pro termíny v této knize — užitečné pro technická, odborná nebo oborově specifická díla.",
+      "none": "Žádný",
+      "empty": "Zatím nebyly nahrány žádné glosáře.",
+      "entryCount": "{n} termínů",
+      "upload": "Nahrát CSV…",
+      "uploading": "Nahrávání…",
+      "hint": "CSV se dvěma sloupci: zdrojový termín, překlad. Volitelný třetí sloupec: poznámka. První řádek může obsahovat záhlaví. UTF-8.",
+      "delete": "Odstranit glosář",
+      "deleteConfirm": "Odstranit glosář „{name}“? Všechny knihy, které jej používají, se vrátí k nastavení bez glosáře."
     },
     "tones": {
       "idiomatic": {

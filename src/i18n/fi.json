@@ -58,6 +58,26 @@
     "headline": "Pysy uteliaana.",
     "desc": "Ajatuksia taiteesta, elämästä ja asioiden rakentamisesta — suoraan sähköpostiisi."
   },
+  "subscribeForm": {
+    "languageLabel": "Kieli",
+    "placeholder": "your@email.com",
+    "button": "Tilaa",
+    "submitting": "Tilataan…",
+    "successInbox": "🎉 Kiitos tilauksesta! Tarkista sähköpostisi vahvistaaksesi tilauksen.",
+    "alreadySubscribed": "Olet jo tilannut.",
+    "invalidEmail": "Syötä kelvollinen sähköpostiosoite.",
+    "networkError": "Verkkovirhe. Yritä uudelleen.",
+    "successBanner": "🎉 Olet tilannut.",
+    "unsubscribedBanner": "Tilauksesi on peruttu.",
+    "invalidTokenBanner": "Tämä linkki on virheellinen tai vanhentunut."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Vahvista tilauksesi sivustolle philoli.com",
+    "confirmHeading": "Vielä yksi vaihe",
+    "confirmBody": "Klikkaa alla olevaa painiketta vahvistaaksesi tilauksesi. Jos et tehnyt tilausta, voit jättää tämän sähköpostin huomiotta.",
+    "confirmCta": "Vahvista tilaus",
+    "footerUnsubscribe": "Peru tilaus"
+  },
   "blogPage": {
     "title": "Blogi",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Käännetään",
       "translatingLabel": "käännetään…",
       "buildFailed": "EPUB-tiedoston luominen epäonnistui:"
+    },
+    "glossary": {
+      "label": "Sanasto",
+      "title": "Pakota tietyt käännökset tämän kirjan termeille — hyödyllistä teknisissä, ammatillisissa tai alakohtaisissa teoksissa.",
+      "none": "Ei mitään",
+      "empty": "Sanastoja ei ole vielä ladattu.",
+      "entryCount": "{n} termiä",
+      "upload": "Lataa CSV…",
+      "uploading": "Ladataan…",
+      "hint": "CSV, jossa on kaksi saraketta: lähdetermi, käännös. Valinnainen kolmas sarake: huomautus. Ensimmäinen rivi voi olla otsikkorivi. UTF-8.",
+      "delete": "Poista sanasto",
+      "deleteConfirm": "Poistetaanko sanasto \"{name}\"? Kaikki sitä käyttävät kirjat palaavat tilaan, jossa sanastoa ei ole käytössä."
     },
     "tones": {
       "idiomatic": {

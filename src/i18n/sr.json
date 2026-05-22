@@ -58,6 +58,26 @@
     "headline": "Ostani radoznalan.",
     "desc": "Misli o umetnosti, životu i stvaranju — pravo u tvoje sanduče."
   },
+  "subscribeForm": {
+    "languageLabel": "Jezik",
+    "placeholder": "your@email.com",
+    "button": "Prijavi se",
+    "submitting": "Prijava u toku…",
+    "successInbox": "🎉 Hvala na pretplati! Proverite svoje sanduče da biste potvrdili.",
+    "alreadySubscribed": "Već si prijavljen/a.",
+    "invalidEmail": "Molimo unesi ispravnu adresu e-pošte.",
+    "networkError": "Greška u mreži. Molimo pokušaj ponovo.",
+    "successBanner": "🎉 Uspešno si se prijavio/la.",
+    "unsubscribedBanner": "Uspešno si se odjavio/la.",
+    "invalidTokenBanner": "Ovaj link nije ispravan ili je istekao."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Potvrdi svoju pretplatu na philoli.com",
+    "confirmHeading": "Još jedan korak",
+    "confirmBody": "Klikni na dugme ispod da potvrdiš svoju pretplatu. Ako se nisi prijavio/la, možeš ignorisati ovu poruku.",
+    "confirmCta": "Potvrdi pretplatu",
+    "footerUnsubscribe": "Odjavi se"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Prevođenje",
       "translatingLabel": "prevodim…",
       "buildFailed": "Neuspešno pravljenje EPUB-a:"
+    },
+    "glossary": {
+      "label": "Pojmovnik",
+      "title": "Nametni specifične prevode za termine u ovoj knjizi — korisno za tehnička, profesionalna ili stručna dela.",
+      "none": "Nijedan",
+      "empty": "Nema otpremljenih pojmovnika.",
+      "entryCount": "{n} termina",
+      "upload": "Otpremi CSV…",
+      "uploading": "Otpremanje…",
+      "hint": "CSV sa dve kolone: izvorni termin, prevod. Opciona treća kolona: napomena. Prvi red može biti zaglavlje. UTF-8.",
+      "delete": "Ukloni pojmovnik",
+      "deleteConfirm": "Ukloniti pojmovnik \"{name}\"? Sve knjige koje ga koriste vratiće se na podrazumevano stanje bez pojmovnika."
     },
     "tones": {
       "idiomatic": {

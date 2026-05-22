@@ -58,6 +58,26 @@
     "headline": "Kekal ingin tahu.",
     "desc": "Pemikiran tentang seni, kehidupan, dan membina sesuatu — dihantar ke peti masuk anda."
   },
+  "subscribeForm": {
+    "languageLabel": "Bahasa",
+    "placeholder": "your@email.com",
+    "button": "Langgan",
+    "submitting": "Sedang melanggan…",
+    "successInbox": "🎉 Terima kasih kerana melanggan! Semak peti masuk anda untuk pengesahan.",
+    "alreadySubscribed": "Anda sudah melanggan.",
+    "invalidEmail": "Sila masukkan alamat e-mel yang sah.",
+    "networkError": "Ralat rangkaian. Sila cuba lagi.",
+    "successBanner": "🎉 Anda telah melanggan.",
+    "unsubscribedBanner": "Anda telah menyahlanggan.",
+    "invalidTokenBanner": "Pautan ini tidak sah atau telah tamat tempoh."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Sahkan langganan anda ke philoli.com",
+    "confirmHeading": "Satu langkah lagi",
+    "confirmBody": "Klik butang di bawah untuk mengesahkan langganan anda. Jika anda tidak melanggan, anda boleh abaikan e-mel ini.",
+    "confirmCta": "Sahkan langganan",
+    "footerUnsubscribe": "Nyahlanggan"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Menterjemah",
       "translatingLabel": "menterjemah…",
       "buildFailed": "Gagal membina EPUB:"
+    },
+    "glossary": {
+      "label": "Glosari",
+      "title": "Paksa terjemahan khusus untuk istilah dalam buku ini — berguna untuk karya teknikal, profesional, atau khusus domain.",
+      "none": "Tiada",
+      "empty": "Belum ada glosari dimuat naik.",
+      "entryCount": "{n} istilah",
+      "upload": "Muat naik CSV…",
+      "uploading": "Sedang memuat naik…",
+      "hint": "CSV dengan dua lajur: istilah sumber, terjemahan. Lajur ketiga pilihan: nota. Baris pertama boleh menjadi pengepala. UTF-8.",
+      "delete": "Buang glosari",
+      "deleteConfirm": "Buang glosari \"{name}\"? Mana-mana buku yang menggunakannya akan kembali kepada tiada glosari."
     },
     "tones": {
       "idiomatic": {

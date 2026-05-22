@@ -58,6 +58,26 @@
     "headline": "保持好奇。",
     "desc": "关于艺术、生活和创造的思考 —— 直接发送至您的收件箱。"
   },
+  "subscribeForm": {
+    "languageLabel": "语言",
+    "placeholder": "your@email.com",
+    "button": "订阅",
+    "submitting": "正在订阅…",
+    "successInbox": "🎉 感谢订阅！请检查您的收件箱以完成确认。",
+    "alreadySubscribed": "您已订阅。",
+    "invalidEmail": "请输入有效的电子邮件地址。",
+    "networkError": "网络错误。请重试。",
+    "successBanner": "🎉 您已订阅成功。",
+    "unsubscribedBanner": "您已取消订阅。",
+    "invalidTokenBanner": "此链接无效或已过期。"
+  },
+  "subscribeEmail": {
+    "confirmSubject": "确认您对 philoli.com 的订阅",
+    "confirmHeading": "只差最后一步",
+    "confirmBody": "点击下方按钮确认您的订阅。如果您并未订阅，可以忽略此邮件。",
+    "confirmCta": "确认订阅",
+    "footerUnsubscribe": "取消订阅"
+  },
   "blogPage": {
     "title": "博客",
     "rssLabel": "RSS"

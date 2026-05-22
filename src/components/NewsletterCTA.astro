@@ -1,5 +1,6 @@
 ---
 import { DEFAULT_LOCALE, isLocale, useTranslations } from '../i18n';
+import SubscribeForm from './forms/SubscribeForm.astro';
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
@@ -8,7 +9,9 @@ const t = useTranslations(locale);
 <section class="newsletter-cta">
   <div class="newsletter-cta__inner">
     <div class="newsletter-cta__text">
-      <span class="newsletter-cta__label">{t('newsletterCta.label')}</span>
+      <a href="https://shuo.philoli.com" target="_blank" rel="noopener noreferrer" class="newsletter-cta__button">
+        Philo 说会儿
+      </a>
       <h2 class="newsletter-cta__headline">
         {t('newsletterCta.headline')}
       </h2>
@@ -17,9 +20,7 @@ const t = useTranslations(locale);
       </p>
     </div>
     <div class="newsletter-cta__actions">
-      <a href="https://shuo.philoli.com" target="_blank" rel="noopener noreferrer" class="newsletter-cta__button">
-        Philo 说会儿 <span class="newsletter-cta__lang">中文</span>
-      </a>
+      <SubscribeForm />
     </div>
   </div>
 </section>
@@ -41,13 +42,8 @@ const t = useTranslations(locale);
     border-radius: 0;
   }
 
-  .newsletter-cta__label {
-    font-size: 0.6rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: var(--color-text-muted);
-    display: block;
-    margin-bottom: var(--space-sm);
+  .newsletter-cta__text > .newsletter-cta__button {
+    margin-bottom: var(--space-md);
   }
 
   .newsletter-cta__headline {
@@ -63,7 +59,7 @@ const t = useTranslations(locale);
 
   .newsletter-cta__desc {
     margin-top: var(--space-xs);
-    font-size: 0.85rem;
+    font-size: 1.275rem;
     color: var(--color-text-muted);
     max-width: 400px;
   }
@@ -71,7 +67,8 @@ const t = useTranslations(locale);
   .newsletter-cta__actions {
     display: flex;
     gap: var(--space-sm);
-    flex-shrink: 0;
+    flex: 1 1 22rem;
+    min-width: 0;
   }
 
   .newsletter-cta__button {

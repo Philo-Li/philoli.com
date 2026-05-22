@@ -58,6 +58,26 @@
     "headline": "Maradj kíváncsi.",
     "desc": "Gondolatok a művészetről, az életről és az alkotásról — egyenesen a postaládádba."
   },
+  "subscribeForm": {
+    "languageLabel": "Nyelv",
+    "placeholder": "your@email.com",
+    "button": "Feliratkozás",
+    "submitting": "Feliratkozás…",
+    "successInbox": "🎉 Köszönöm a feliratkozást! Ellenőrizd a postafiókodat a megerősítéshez.",
+    "alreadySubscribed": "Már feliratkoztál.",
+    "invalidEmail": "Kérlek, adj meg egy érvényes e-mail címet.",
+    "networkError": "Hálózati hiba. Kérlek, próbáld újra.",
+    "successBanner": "🎉 Sikeresen feliratkoztál.",
+    "unsubscribedBanner": "Leiratkoztál.",
+    "invalidTokenBanner": "Ez a link érvénytelen vagy lejárt."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Erősítsd meg a feliratkozásodat a philoli.com oldalra",
+    "confirmHeading": "Még egy lépés",
+    "confirmBody": "Kattints az alábbi gombra a feliratkozás megerősítéséhez. Ha nem te iratkoztál fel, figyelmen kívül hagyhatod ezt az e-mailt.",
+    "confirmCta": "Feliratkozás megerősítése",
+    "footerUnsubscribe": "Leiratkozás"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Fordítás",
       "translatingLabel": "fordítás…",
       "buildFailed": "Sikertelen EPUB létrehozás:"
+    },
+    "glossary": {
+      "label": "Szójegyzék",
+      "title": "Kényszeríts konkrét fordításokat a könyv kifejezéseire – hasznos technikai, szakmai vagy szakterületi munkákhoz.",
+      "none": "Nincs",
+      "empty": "Még nincs feltöltött szójegyzék.",
+      "entryCount": "{n} kifejezés",
+      "upload": "CSV feltöltése…",
+      "uploading": "Feltöltés…",
+      "hint": "CSV két oszloppal: forráskifejezés, fordítás. Opcionális harmadik oszlop: megjegyzés. Az első sor lehet fejléc. UTF-8.",
+      "delete": "Szójegyzék eltávolítása",
+      "deleteConfirm": "Eltávolítod a(z) \"{name}\" szójegyzéket? Az ezt használó könyvek szójegyzék nélkül fognak tovább működni."
     },
     "tones": {
       "idiomatic": {

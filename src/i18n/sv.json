@@ -58,6 +58,26 @@
     "headline": "Håll dig nyfiken.",
     "desc": "Tankar om konst, livet och att skapa saker — levererade till din inkorg."
   },
+  "subscribeForm": {
+    "languageLabel": "Språk",
+    "placeholder": "your@email.com",
+    "button": "Prenumerera",
+    "submitting": "Prenumererar…",
+    "successInbox": "🎉 Tack för att du prenumererar! Kontrollera din inkorg för att bekräfta.",
+    "alreadySubscribed": "Du prenumererar redan.",
+    "invalidEmail": "Vänligen ange en giltig e-postadress.",
+    "networkError": "Nätverksfel. Vänligen försök igen.",
+    "successBanner": "🎉 Du prenumererar nu.",
+    "unsubscribedBanner": "Du har avslutat din prenumeration.",
+    "invalidTokenBanner": "Denna länk är ogiltig eller har gått ut."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Bekräfta din prenumeration på philoli.com",
+    "confirmHeading": "Ett steg till",
+    "confirmBody": "Klicka på knappen nedan för att bekräfta din prenumeration. Om du inte har prenumererat kan du ignorera detta mejl.",
+    "confirmCta": "Bekräfta prenumeration",
+    "footerUnsubscribe": "Avsluta prenumeration"
+  },
   "blogPage": {
     "title": "Blogg",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Översätter",
       "translatingLabel": "översätter…",
       "buildFailed": "Misslyckades med att skapa EPUB:"
+    },
+    "glossary": {
+      "label": "Ordlista",
+      "title": "Tvinga fram specifika översättningar för termer i denna bok — användbart för tekniska, professionella eller domänspecifika verk.",
+      "none": "Inga",
+      "empty": "Inga ordlistor har laddats upp än.",
+      "entryCount": "{n} termer",
+      "upload": "Ladda upp CSV…",
+      "uploading": "Laddar upp…",
+      "hint": "CSV med två kolumner: källterm, översättning. Valfri tredje kolumn: notering. Första raden kan vara en rubrik. UTF-8.",
+      "delete": "Ta bort ordlista",
+      "deleteConfirm": "Ta bort ordlistan \"{name}\"? Alla böcker som använder den kommer att återgå till att inte ha någon ordlista."
     },
     "tones": {
       "idiomatic": {

@@ -58,6 +58,26 @@
     "headline": "Meraklı kal.",
     "desc": "Sanat, yaşam ve bir şeyler inşa etmek üzerine düşünceler — gelen kutunuza teslim edilir."
   },
+  "subscribeForm": {
+    "languageLabel": "Dil",
+    "placeholder": "your@email.com",
+    "button": "Abone ol",
+    "submitting": "Abone olunuyor…",
+    "successInbox": "🎉 Abone olduğunuz için teşekkürler! Onaylamak için gelen kutunuzu kontrol edin.",
+    "alreadySubscribed": "Zaten abonesiniz.",
+    "invalidEmail": "Lütfen geçerli bir e-posta adresi girin.",
+    "networkError": "Ağ hatası. Lütfen tekrar deneyin.",
+    "successBanner": "🎉 Abone oldunuz.",
+    "unsubscribedBanner": "Abonelikten çıktınız.",
+    "invalidTokenBanner": "Bu bağlantı geçersiz veya süresi dolmuş."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "philoli.com aboneliğinizi onaylayın",
+    "confirmHeading": "Bir adım daha",
+    "confirmBody": "Aboneliğinizi onaylamak için aşağıdaki düğmeye tıklayın. Eğer abone olmadıysanız, bu e-postayı görmezden gelebilirsiniz.",
+    "confirmCta": "Aboneliği onayla",
+    "footerUnsubscribe": "Abonelikten çık"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Çevriliyor",
       "translatingLabel": "çevriliyor…",
       "buildFailed": "EPUB oluşturulamadı:"
+    },
+    "glossary": {
+      "label": "Sözlük",
+      "title": "Bu kitaptaki terimler için belirli çevirileri zorunlu kılın — teknik, profesyonel veya alana özgü çalışmalar için kullanışlıdır.",
+      "none": "Yok",
+      "empty": "Henüz sözlük yüklenmedi.",
+      "entryCount": "{n} terim",
+      "upload": "CSV yükle…",
+      "uploading": "Yükleniyor…",
+      "hint": "İki sütunlu CSV: kaynak terim, çeviri. İsteğe bağlı üçüncü sütun: not. İlk satır başlık olabilir. UTF-8.",
+      "delete": "Sözlüğü kaldır",
+      "deleteConfirm": "\"{name}\" sözlüğü kaldırılsın mı? Bunu kullanan tüm kitaplar sözlüksüz duruma dönecektir."
     },
     "tones": {
       "idiomatic": {

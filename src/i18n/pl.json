@@ -58,6 +58,26 @@
     "headline": "Bądź ciekawy.",
     "desc": "Myśli o sztuce, życiu i tworzeniu rzeczy — prosto do Twojej skrzynki."
   },
+  "subscribeForm": {
+    "languageLabel": "Język",
+    "placeholder": "your@email.com",
+    "button": "Subskrybuj",
+    "submitting": "Subskrybowanie…",
+    "successInbox": "🎉 Dziękujemy za subskrypcję! Sprawdź swoją skrzynkę odbiorczą, aby potwierdzić.",
+    "alreadySubscribed": "Jesteś już zasubskrybowany.",
+    "invalidEmail": "Proszę podać prawidłowy adres e-mail.",
+    "networkError": "Błąd sieci. Spróbuj ponownie.",
+    "successBanner": "🎉 Jesteś zasubskrybowany.",
+    "unsubscribedBanner": "Anulowano subskrypcję.",
+    "invalidTokenBanner": "Ten link jest nieprawidłowy lub wygasł."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Potwierdź swoją subskrypcję philoli.com",
+    "confirmHeading": "Jeszcze jeden krok",
+    "confirmBody": "Kliknij poniższy przycisk, aby potwierdzić subskrypcję. Jeśli nie dokonywałeś subskrypcji, możesz zignorować tę wiadomość.",
+    "confirmCta": "Potwierdź subskrypcję",
+    "footerUnsubscribe": "Anuluj subskrypcję"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Tłumaczenie",
       "translatingLabel": "tłumaczenie…",
       "buildFailed": "Błąd generowania EPUB:"
+    },
+    "glossary": {
+      "label": "Słownik",
+      "title": "Wymuś konkretne tłumaczenia terminów w tej książce — przydatne w pracach technicznych, profesjonalnych lub specjalistycznych.",
+      "none": "Brak",
+      "empty": "Nie przesłano jeszcze żadnych słowników.",
+      "entryCount": "{n} terminów",
+      "upload": "Prześlij CSV…",
+      "uploading": "Przesyłanie…",
+      "hint": "Plik CSV z dwiema kolumnami: termin źródłowy, tłumaczenie. Opcjonalna trzecia kolumna: notatka. Pierwszy wiersz może być nagłówkiem. UTF-8.",
+      "delete": "Usuń słownik",
+      "deleteConfirm": "Usunąć słownik \"{name}\"? Wszystkie książki, które z niego korzystają, powrócą do braku słownika."
     },
     "tones": {
       "idiomatic": {

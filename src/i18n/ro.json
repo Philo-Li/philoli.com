@@ -58,6 +58,26 @@
     "headline": "Rămâi curios.",
     "desc": "Gânduri despre artă, viață și construirea de lucruri — livrate în căsuța de e-mail."
   },
+  "subscribeForm": {
+    "languageLabel": "Limbă",
+    "placeholder": "your@email.com",
+    "button": "Abonează-te",
+    "submitting": "Se abonează…",
+    "successInbox": "🎉 Mulțumesc pentru abonare! Verifică-ți inbox-ul pentru confirmare.",
+    "alreadySubscribed": "Ești deja abonat.",
+    "invalidEmail": "Te rugăm să introduci o adresă de e-mail validă.",
+    "networkError": "Eroare de rețea. Te rugăm să încerci din nou.",
+    "successBanner": "🎉 Ești abonat.",
+    "unsubscribedBanner": "Te-ai dezabonat.",
+    "invalidTokenBanner": "Acest link este invalid sau a expirat."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Confirmă-ți abonarea la philoli.com",
+    "confirmHeading": "Încă un pas",
+    "confirmBody": "Apasă butonul de mai jos pentru a confirma abonarea. Dacă nu te-ai abonat, poți ignora acest e-mail.",
+    "confirmCta": "Confirmă abonarea",
+    "footerUnsubscribe": "Dezabonează-te"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Se traduce",
       "translatingLabel": "se traduce…",
       "buildFailed": "Eșec la generarea EPUB:"
+    },
+    "glossary": {
+      "label": "Glosar",
+      "title": "Impune traduceri specifice pentru termenii din această carte — util pentru lucrări tehnice, profesionale sau specifice unui domeniu.",
+      "none": "Niciunul",
+      "empty": "Nu există glosare încărcate încă.",
+      "entryCount": "{n} termeni",
+      "upload": "Încarcă CSV…",
+      "uploading": "Se încarcă…",
+      "hint": "CSV cu două coloane: termen sursă, traducere. A treia coloană opțională: notă. Primul rând poate fi un antet. UTF-8.",
+      "delete": "Elimină glosarul",
+      "deleteConfirm": "Elimini glosarul \"{name}\"? Orice carte care îl folosește va reveni la starea fără glosar."
     },
     "tones": {
       "idiomatic": {

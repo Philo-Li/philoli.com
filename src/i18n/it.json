@@ -58,6 +58,26 @@
     "headline": "Resta curioso.",
     "desc": "Riflessioni su arte, vita e creare cose — consegnate nella tua casella di posta."
   },
+  "subscribeForm": {
+    "languageLabel": "Lingua",
+    "placeholder": "your@email.com",
+    "button": "Iscriviti",
+    "submitting": "Iscrizione in corso…",
+    "successInbox": "🎉 Grazie per esserti iscritto! Controlla la tua casella di posta per confermare.",
+    "alreadySubscribed": "Sei già iscritto.",
+    "invalidEmail": "Inserisci un indirizzo email valido.",
+    "networkError": "Errore di rete. Riprova.",
+    "successBanner": "🎉 Sei iscritto.",
+    "unsubscribedBanner": "Ti sei disiscritto.",
+    "invalidTokenBanner": "Questo link non è valido o è scaduto."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Conferma la tua iscrizione a philoli.com",
+    "confirmHeading": "Un ultimo passaggio",
+    "confirmBody": "Clicca sul pulsante qui sotto per confermare la tua iscrizione. Se non ti sei iscritto, puoi ignorare questa email.",
+    "confirmCta": "Conferma iscrizione",
+    "footerUnsubscribe": "Disiscriviti"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Traduzione in corso",
       "translatingLabel": "traduzione in corso…",
       "buildFailed": "Errore nella creazione dell'EPUB:"
+    },
+    "glossary": {
+      "label": "Glossario",
+      "title": "Forza traduzioni specifiche per i termini in questo libro — utile per opere tecniche, professionali o specifiche di un settore.",
+      "none": "Nessuno",
+      "empty": "Nessun glossario caricato finora.",
+      "entryCount": "{n} termini",
+      "upload": "Carica CSV…",
+      "uploading": "Caricamento in corso…",
+      "hint": "CSV con due colonne: termine originale, traduzione. Terza colonna opzionale: nota. La prima riga può essere un'intestazione. UTF-8.",
+      "delete": "Rimuovi glossario",
+      "deleteConfirm": "Rimuovere il glossario \"{name}\"? Tutti i libri che lo utilizzano torneranno a non avere alcun glossario."
     },
     "tones": {
       "idiomatic": {

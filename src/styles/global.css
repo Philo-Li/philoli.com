@@ -6,8 +6,8 @@
   --color-surface: rgba(255, 255, 255, 0.04);
   --color-border: rgba(255, 255, 255, 0.06);
   --color-text: rgba(255, 255, 255, 0.85);
-  --color-text-muted: rgba(255, 255, 255, 0.35);
-  --color-text-subtle: rgba(255, 255, 255, 0.6);
+  --color-text-muted: #d8d8d8;
+  --color-text-subtle: #d8d8d8;
   --color-heading: #ffffff;
   --color-accent: #e8572a;
   --color-accent-hover: #ff6b3d;
@@ -37,8 +37,8 @@
   --color-surface: rgba(122, 88, 46, 0.075);
   --color-border: rgba(86, 62, 31, 0.14);
   --color-text: rgba(34, 26, 18, 0.88);
-  --color-text-muted: rgba(34, 26, 18, 0.45);
-  --color-text-subtle: rgba(34, 26, 18, 0.72);
+  --color-text-muted: #5e5e5e;
+  --color-text-subtle: #5e5e5e;
   --color-heading: #16110d;
   --color-accent: #cf4f2d;
   --color-accent-hover: #b84324;

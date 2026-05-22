@@ -58,6 +58,26 @@
     "headline": "Luôn tò mò.",
     "desc": "Những suy nghĩ về nghệ thuật, cuộc sống và sáng tạo — gửi thẳng đến hộp thư của bạn."
   },
+  "subscribeForm": {
+    "languageLabel": "Ngôn ngữ",
+    "placeholder": "your@email.com",
+    "button": "Đăng ký",
+    "submitting": "Đang đăng ký…",
+    "successInbox": "🎉 Cảm ơn bạn đã đăng ký! Hãy kiểm tra hộp thư đến để xác nhận.",
+    "alreadySubscribed": "Bạn đã đăng ký rồi.",
+    "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ.",
+    "networkError": "Lỗi mạng. Vui lòng thử lại.",
+    "successBanner": "🎉 Bạn đã đăng ký thành công.",
+    "unsubscribedBanner": "Bạn đã hủy đăng ký.",
+    "invalidTokenBanner": "Liên kết này không hợp lệ hoặc đã hết hạn."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Xác nhận đăng ký của bạn với philoli.com",
+    "confirmHeading": "Thêm một bước nữa",
+    "confirmBody": "Nhấp vào nút bên dưới để xác nhận đăng ký của bạn. Nếu bạn không thực hiện đăng ký, bạn có thể bỏ qua email này.",
+    "confirmCta": "Xác nhận đăng ký",
+    "footerUnsubscribe": "Hủy đăng ký"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Đang dịch",
       "translatingLabel": "đang dịch…",
       "buildFailed": "Lỗi khi tạo EPUB:"
+    },
+    "glossary": {
+      "label": "Bảng thuật ngữ",
+      "title": "Ép buộc các bản dịch cụ thể cho các thuật ngữ trong cuốn sách này — hữu ích cho các tác phẩm kỹ thuật, chuyên môn hoặc chuyên ngành.",
+      "none": "Không có",
+      "empty": "Chưa có bảng thuật ngữ nào được tải lên.",
+      "entryCount": "{n} thuật ngữ",
+      "upload": "Tải lên CSV…",
+      "uploading": "Đang tải lên…",
+      "hint": "CSV với hai cột: thuật ngữ gốc, bản dịch. Cột thứ ba tùy chọn: ghi chú. Hàng đầu tiên có thể là tiêu đề. UTF-8.",
+      "delete": "Xóa bảng thuật ngữ",
+      "deleteConfirm": "Xóa bảng thuật ngữ \"{name}\"? Bất kỳ cuốn sách nào đang sử dụng nó sẽ quay về trạng thái không có bảng thuật ngữ."
     },
     "tones": {
       "idiomatic": {

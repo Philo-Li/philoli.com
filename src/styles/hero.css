@@ -37,7 +37,7 @@
 }
 
 .hero__tagline {
-  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  font-size: 1.275rem;
   color: var(--color-text-muted);
   line-height: 1.8;
   max-width: 380px;

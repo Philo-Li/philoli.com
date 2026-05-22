@@ -58,6 +58,26 @@
     "headline": "Manatiling mausisa.",
     "desc": "Mga kaisipan tungkol sa sining, buhay, at pagbuo ng mga bagay — ipinapadala sa iyong inbox."
   },
+  "subscribeForm": {
+    "languageLabel": "Wika",
+    "placeholder": "your@email.com",
+    "button": "Mag-subscribe",
+    "submitting": "Nagsu-subscribe…",
+    "successInbox": "🎉 Salamat sa pag-subscribe! Suriin ang iyong inbox para kumpirmahin.",
+    "alreadySubscribed": "Naka-subscribe ka na.",
+    "invalidEmail": "Mangyaring maglagay ng wastong email address.",
+    "networkError": "Error sa network. Pakisubukang muli.",
+    "successBanner": "🎉 Naka-subscribe ka na.",
+    "unsubscribedBanner": "Naka-unsubscribe ka na.",
+    "invalidTokenBanner": "Ang link na ito ay hindi wasto o paso na."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Kumpirmahin ang iyong subscription sa philoli.com",
+    "confirmHeading": "Isa pang hakbang",
+    "confirmBody": "I-click ang button sa ibaba para kumpirmahin ang iyong subscription. Kung hindi ka nag-subscribe, maaari mong balewalain ang email na ito.",
+    "confirmCta": "Kumpirmahin ang subscription",
+    "footerUnsubscribe": "Mag-unsubscribe"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Isinasalin",
       "translatingLabel": "isinasalin…",
       "buildFailed": "Nabigong buuin ang EPUB:"
+    },
+    "glossary": {
+      "label": "Glossary",
+      "title": "Magtakda ng mga partikular na salin para sa mga termino sa aklat na ito — kapaki-pakinabang para sa mga teknikal, propesyonal, o espesyalisadong gawa.",
+      "none": "Wala",
+      "empty": "Wala pang na-upload na glossary.",
+      "entryCount": "{n} termino",
+      "upload": "Mag-upload ng CSV…",
+      "uploading": "Nag-a-upload…",
+      "hint": "CSV na may dalawang column: source term, salin. Opsyonal na ikatlong column: tala. Ang unang row ay maaaring header. UTF-8.",
+      "delete": "Alisin ang glossary",
+      "deleteConfirm": "Alisin ang glossary na \"{name}\"? Ang anumang aklat na gumagamit nito ay babalik sa walang glossary."
     },
     "tones": {
       "idiomatic": {

@@ -58,6 +58,26 @@
     "headline": "Forbliv nysgerrig.",
     "desc": "Tanker om kunst, livet og at bygge ting — leveret til din indbakke."
   },
+  "subscribeForm": {
+    "languageLabel": "Sprog",
+    "placeholder": "your@email.com",
+    "button": "Tilmeld",
+    "submitting": "Tilmelder…",
+    "successInbox": "🎉 Tak fordi du tilmeldte dig! Tjek din indbakke for at bekræfte.",
+    "alreadySubscribed": "Du er allerede tilmeldt.",
+    "invalidEmail": "Indtast venligst en gyldig e-mailadresse.",
+    "networkError": "Netværksfejl. Prøv igen.",
+    "successBanner": "🎉 Du er tilmeldt.",
+    "unsubscribedBanner": "Du er afmeldt.",
+    "invalidTokenBanner": "Dette link er ugyldigt eller udløbet."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Bekræft din tilmelding til philoli.com",
+    "confirmHeading": "Et skridt mere",
+    "confirmBody": "Klik på knappen herunder for at bekræfte din tilmelding. Hvis du ikke har tilmeldt dig, kan du ignorere denne e-mail.",
+    "confirmCta": "Bekræft tilmelding",
+    "footerUnsubscribe": "Afmeld"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Oversætter",
       "translatingLabel": "oversætter…",
       "buildFailed": "Kunne ikke oprette EPUB:"
+    },
+    "glossary": {
+      "label": "Ordliste",
+      "title": "Tving specifikke oversættelser for termer i denne bog — nyttigt til tekniske, professionelle eller domænespecifikke værker.",
+      "none": "Ingen",
+      "empty": "Ingen ordlister uploadet endnu.",
+      "entryCount": "{n} termer",
+      "upload": "Upload CSV…",
+      "uploading": "Uploader…",
+      "hint": "CSV med to kolonner: kildeterm, oversættelse. Valgfri tredje kolonne: note. Første række kan være en overskrift. UTF-8.",
+      "delete": "Fjern ordliste",
+      "deleteConfirm": "Fjern ordlisten \"{name}\"? Alle bøger, der bruger den, vil vende tilbage til ingen ordliste."
     },
     "tones": {
       "idiomatic": {

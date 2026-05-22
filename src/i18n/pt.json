@@ -58,6 +58,26 @@
     "headline": "Mantenha a curiosidade.",
     "desc": "Reflexões sobre arte, vida e construção de coisas — entregues na sua caixa de entrada."
   },
+  "subscribeForm": {
+    "languageLabel": "Idioma",
+    "placeholder": "your@email.com",
+    "button": "Inscrever-se",
+    "submitting": "Inscrevendo…",
+    "successInbox": "🎉 Obrigado por se inscrever! Verifique sua caixa de entrada para confirmar.",
+    "alreadySubscribed": "Você já está inscrito.",
+    "invalidEmail": "Por favor, insira um endereço de e-mail válido.",
+    "networkError": "Erro de rede. Por favor, tente novamente.",
+    "successBanner": "🎉 Você está inscrito.",
+    "unsubscribedBanner": "Você foi removido da lista.",
+    "invalidTokenBanner": "Este link é inválido ou expirou."
+  },
+  "subscribeEmail": {
+    "confirmSubject": "Confirme sua inscrição em philoli.com",
+    "confirmHeading": "Mais um passo",
+    "confirmBody": "Clique no botão abaixo para confirmar sua inscrição. Se você não se inscreveu, pode ignorar este e-mail.",
+    "confirmCta": "Confirmar inscrição",
+    "footerUnsubscribe": "Cancelar inscrição"
+  },
   "blogPage": {
     "title": "Blog",
     "rssLabel": "RSS"
@@ -215,6 +235,18 @@
       "translatingAria": "Traduzindo",
       "translatingLabel": "traduzindo…",
       "buildFailed": "Falha ao criar EPUB:"
+    },
+    "glossary": {
+      "label": "Glossário",
+      "title": "Force traduções específicas para termos neste livro — útil para trabalhos técnicos, profissionais ou de domínio específico.",
+      "none": "Nenhum",
+      "empty": "Nenhum glossário enviado ainda.",
+      "entryCount": "{n} termos",
+      "upload": "Enviar CSV…",
+      "uploading": "Enviando…",
+      "hint": "CSV com duas colunas: termo original, tradução. Terceira coluna opcional: nota. A primeira linha pode ser um cabeçalho. UTF-8.",
+      "delete": "Remover glossário",
+      "deleteConfirm": "Remover o glossário \"{name}\"? Quaisquer livros que o utilizem voltarão a não ter glossário."
     },
     "tones": {
       "idiomatic": {
