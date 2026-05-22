@@ -7,7 +7,12 @@ tags:
     - دل‌نوشته
     - هنر
 categories: گپ‌وگفت روزمره
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="نمایشگاه مونه در توکیو: از رنج آب مروارید تا ضربات قلم‌موی جاودانه" />
+</figure>
 
 چند روز پیش، درست در لحظات پایانی، بالاخره موفق شدم نمایشگاه مونه را که مدت‌ها در انتظارش بودم، ببینم. مونه یکی از نقاشان مورد علاقه من و همچنین یکی از محبوب‌ترین نقاشان امپرسیونیست من است.
 

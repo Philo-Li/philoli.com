@@ -7,6 +7,7 @@ tags:
   - Knygų sąrašas
 categories: Kasdienybė
 description: 12 knygų, perskaitytų 2025 m. ir įvertintų keturiomis žvaigždutėmis ir daugiau, rekomendacijos. Apima rašymą, meną, psichologiją, socialinius mokslus, finansus ir asmeninį tobulėjimą.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Praėjusiais metais perskaičiau 47 knygas. Dėl įvairių priežasčių metai buvo itin įtempti, todėl nepavyko pasiekti 2024-ųjų tikslo – perskaityti 100 knygų. Vis dėlto, perskaičiau nemažai nuostabių kūrinių. Skaitytos knygos apėmė įvairias sritis: rašymą, meną, psichologiją, socialinius mokslus, finansus, asmeninį tobulėjimą. Tarp jų buvo daug tokių, kurios perskaitytos ilgam įstrigo atmintyje, todėl nusprendžiau parengti rekomendacijas. Tikrai yra daugybė puikių ir skaityti vertų knygų, tačiau, kad rekomendacijų sąrašas nebūtų pernelyg ilgas, atrinkau tik 12, įvertintų keturiomis arba net penkiomis žvaigždutėmis.

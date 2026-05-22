@@ -7,7 +7,12 @@ tags:
   - Pagbabasa
   - Sikolohiya
 categories: Pagbabasa笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Hindi Lang Puro Talento: Ang Katotohanan Tungkol sa IQ, Sadyang Pagsasanay, at Pagkamalikhain" />
+</figure>
 
 Si Scott Barry Kaufman, isang cognitive scientist, ay nakatuon sa pag-aaral ng talino, pagkamalikhain, at potensyal ng tao. Sa kanyang libro, sinaliksik niya kung paano tayo natututo at sinikap niyang basagin ang makitid na pagkaunawa ng marami sa "IQ" at "talento." Ibinahagi rin niya ang kanyang sariling karanasan upang magbigay ng bagong pag-asa at posibilidad sa mga nabansagan ng "learning disability."
 

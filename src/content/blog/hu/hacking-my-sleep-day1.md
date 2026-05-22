@@ -7,7 +7,12 @@ tags:
   - Alvás
   - Önfejlesztés
 categories: Hétköznapi Csevegés
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Alhatnék jobban, kevesebb alvással? Egy alvási önkísérlet 1. napja" />
+</figure>
 
 Belevágtam egy alváskísérletbe, melynek célja, hogy étrendem és életmódom megváltoztatásával javítsam az alvásminőségemet és az energiaszintemet, hogy éberebb és energikusabb legyek.
 

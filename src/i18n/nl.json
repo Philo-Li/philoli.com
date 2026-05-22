@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Nieuwsbrief",
-    "subscribe": "Inschrijven →"
+    "subscribe": "Inschrijven →",
+    "welcomeTitle": "Je bent erbij.",
+    "welcomeBody": "Fijn dat je er bent. Hieronder staan een paar essays om mee te beginnen — kies degene die je aanspreekt. Je hoort van me zodra ik iets nieuws publiceer.",
+    "startHere": "Begin hier",
+    "browseAll": "Bekijk alle berichten →",
+    "replyInvite": "Beantwoord elke e-mail — ik lees ze allemaal."
   },
   "metadata": {
     "siteTitle": "Philo Li — Kunstenaar, Schrijver, Maker",

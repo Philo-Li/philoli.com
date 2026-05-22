@@ -7,7 +7,12 @@ tags:
     - Funderingar
     - Konst
 categories: Vardagssnack
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monet-utställningen i Tokyo: Från gråstarrens plåga till odödliga penseldrag" />
+</figure>
 
 För några dagar sedan, precis innan den stängde, lyckades jag äntligen besöka Monet-utställningen jag så länge sett fram emot. Monet är en av mina absoluta favoritkonstnärer, och definitivt min favoritmålare inom impressionismen.
 

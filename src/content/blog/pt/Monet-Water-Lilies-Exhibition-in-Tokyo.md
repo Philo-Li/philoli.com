@@ -7,7 +7,12 @@ tags:
     - Reflexões
     - Arte
 categories: Divagações do Dia a Dia
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Exposição de Monet em Tóquio: Da Luta Contra a Catarata às Pinceladas Imortais" />
+</figure>
 
 Nos últimos dias, consegui finalmente visitar a tão desejada exposição de Monet, mesmo na reta final. Monet é um dos meus pintores favoritos e, sem dúvida, o meu impressionista predileto.
 

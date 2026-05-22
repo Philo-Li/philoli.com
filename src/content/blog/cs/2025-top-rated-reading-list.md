@@ -7,6 +7,7 @@ tags:
   - Seznam knih
 categories: Denní povídání
 description: Doporučení 12 skvělých knih s hodnocením čtyři a více hvězdiček, přečtených v roce 2025, zahrnující témata jako psaní, umění, psychologie, sociální vědy, finance a osobní rozvoj.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 V loňském roce jsem přečetl 47 knih. Z různých důvodů byl můj loňský rok nesmírně, ale opravdu nesmírně hektický, a tak se mi nepodařilo splnit cíl 100 knih jako v roce 2024. Přesto jsem si ale užil spoustu skvělých děl. Četl jsem knihy z nejrůznějších oblastí – psaní, umění, psychologie, sociální vědy, finance, osobní rozvoj – a mnoho z nich mi utkvělo v paměti i dlouho poté, co jsem je dočetl. Proto jsem se rozhodl sepsat toto doporučení. Opravdu skvělých a čteníhodných knih je spousta, ale aby nebyl seznam příliš dlouhý, vybral jsem jen 12 kousků, kterým jsem dal čtyři nebo dokonce pět hvězdiček.

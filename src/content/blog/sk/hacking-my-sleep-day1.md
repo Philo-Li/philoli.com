@@ -7,7 +7,12 @@ tags:
   - Spánok
   - Sebarozvoj
 categories: Každodenné úvahy
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Môžem spať lepšie za menej času? Sebakexperiment so spánkom Deň 1" />
+</figure>
 
 Spustil som experiment so spánkom, ktorého cieľom je zlepšiť kvalitu môjho spánku a úroveň energie úpravou stravy a životných návykov, aby som si udržal bdelší a vitálnejší stav.
 

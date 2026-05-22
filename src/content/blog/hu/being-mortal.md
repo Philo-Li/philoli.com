@@ -6,7 +6,12 @@ tags:
   - Gondolatok
   - Olvasás
 categories: Olvasás笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="A legjobb búcsú: Amit az öregedésről és a halálról elengedhetetlen tudni" />
+</figure>
 
 Valószínűleg azok, akik ezt a cikket olvassák, még messze vannak az öregkortól. Nehezen tudják elképzelni az igazi idős kori életet, és egyszerre éreznek idegenséget és félelmet az öregedés és a halál iránt. De az ember végül is halandó. Tudnunk kell, mi vár ránk akkor, milyen folyamatokat és lelkiállapotokat fogunk átélni? És mi magunk mit tehetünk? Hogyan reformálódhat az orvostudomány ennek érdekében? A félelem csak az ismeretlen megszüntetésével oszlatható el.
 

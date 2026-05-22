@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Sulat-balita",
-    "subscribe": "Mag-subscribe →"
+    "subscribe": "Mag-subscribe →",
+    "welcomeTitle": "Pasok ka na.",
+    "welcomeBody": "Natutuwa akong nandito ka. Narito ang ilang sanaysay na maaari mong simulan — pumili ng anumang makatawag ng iyong pansin. Makakatanggap ka ng balita mula sa akin kapag may bago akong nailathala.",
+    "startHere": "Magsimula rito",
+    "browseAll": "Tingnan ang lahat ng post →",
+    "replyInvite": "Sumagot sa kahit anong email — binabasa ko ang bawat isa."
   },
   "metadata": {
     "siteTitle": "Philo Li — Artista, Manunulat, Tagalikha",

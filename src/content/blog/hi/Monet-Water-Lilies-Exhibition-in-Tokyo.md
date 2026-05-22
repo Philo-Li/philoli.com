@@ -7,7 +7,12 @@ tags:
     - निबंध
     - कला
 categories: रोज़मर्रा की बातें
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="टोक्यो मोनेट प्रदर्शनी: मोतियाबिंद की परेशानी से अमर ब्रशस्ट्रोक तक" />
+</figure>
 
 कुछ दिन पहले, मैं आखिरकार उस मोनेट प्रदर्शनी को देखने में कामयाब रहा जिसका मैं बहुत दिनों से इंतज़ार कर रहा था। मोनेट मेरे सबसे पसंदीदा चित्रकारों में से एक हैं, और प्रभाववाद (Impressionism) के भी मेरे पसंदीदा कलाकारों में से एक।
 

@@ -6,7 +6,12 @@ tags:
   - Essays
   - Lesen
 categories: Lesen笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Der beste Abschied: Was man über Altern und Sterben wissen sollte" />
+</figure>
 
 Die meisten, die diesen Artikel lesen, dürften noch weit vom eigenen Alter entfernt sein und können sich ein echtes Leben im Alter kaum vorstellen. Altern und Sterben sind ihnen fremd und beängstigend zugleich. Doch der Tod ist unausweichlich. Es ist wichtig zu wissen, was uns erwartet, wenn es so weit ist. Welche Prozesse und psychischen Zustände werden wir durchlaufen? Was können wir selbst tun? Und wie kann sich die Medizin darauf einstellen und reformieren? Nur indem wir das Unbekannte entmystifizieren, können wir die Angst überwinden.
 

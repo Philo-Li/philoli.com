@@ -7,7 +7,12 @@ tags:
   - Čitanje
   - Psihologija
 categories: Beleške o knjigama
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Nije sve u talentu: Istina o inteligenciji, promišljenoj praksi i kreativnosti" />
+</figure>
 
 Kognitivni naučnik Skot Beri Kaufman posvećen je proučavanju inteligencije, kreativnosti i ljudskog potencijala. U svojoj knjizi istražuje kako učimo i nastoji da opovrgne ustaljeno, usko shvatanje "IQ-a" i "talenta", donoseći, kroz sopstveno iskustvo, nove mogućnosti i nadu onima koji su etiketirani kao "osobe sa poteškoćama u učenju".
 

@@ -3,7 +3,12 @@ title: 如何激發天馬行空的想像力
 date: 2022-03-19 20:53:13
 tags: 隨筆
 categories: 日常閒聊
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="如何激發天馬行空的想像力" />
+</figure>
 想像力人人都有，關鍵在於不知道如何發揮。其實，我想談的並不是「如何獲得想像力」，而是「如何釋放你的想像力」。因此，這篇文章主要會聚焦在所謂『天馬行空』的想像上。
 
 <!--more-->

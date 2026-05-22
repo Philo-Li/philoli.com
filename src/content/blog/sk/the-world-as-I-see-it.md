@@ -4,7 +4,12 @@ title: Môj svetonázor
 date: 2024-12-25 18:19:46
 tags: úvaha
 categories: Denné úvahy
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Môj svetonázor" />
+</figure>
 
 Albert Einstein napísal knihu „Môj svetonázor“, ktorá zhromažďuje jeho listy, články a verejné prejavy. Jeden z textov v nej nesie rovnaký názov ako samotná kniha. Aj ja by som sa chcela podeliť o svoje „Môj svetonázor“.
 

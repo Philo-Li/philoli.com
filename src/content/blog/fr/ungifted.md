@@ -7,7 +7,12 @@ tags:
   - Lecture
   - Psychologie
 categories: Lecture笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Le mythe du don inné : QI, pratique délibérée et la vérité sur la créativité" />
+</figure>
 
 Scott Barry Kaufman, un scientifique cognitiviste, consacre ses recherches à l'intelligence, à la créativité et au potentiel humain. Dans son ouvrage, il explore les mécanismes de l'apprentissage et s'efforce de déconstruire les idées reçues et limitées sur le "QI" et le "talent inné". S'appuyant sur son propre parcours, il apporte un message d'espoir et ouvre de nouvelles perspectives pour ceux qui ont été étiquetés comme "ayant des troubles d'apprentissage".
 

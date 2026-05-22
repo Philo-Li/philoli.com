@@ -3,7 +3,12 @@ title: Comment libérer une imagination débordante
 date: 2022-03-19 20:53:13
 tags: Essais
 categories: Pensées du quotidien
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Comment libérer une imagination débordante" />
+</figure>
 Chaque être humain possède une imagination, mais la clé est de savoir comment la libérer. En fait, ma question n'est pas « comment acquérir l'imagination », mais plutôt « comment la libérer ». C'est pourquoi je vais me concentrer ici sur ce que l'on appelle l'imagination débordante.
 
 <!--more-->

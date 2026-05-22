@@ -7,6 +7,7 @@ tags:
   - Boekenlijst
 categories: Dagelijkse praatjes
 description: Een selectie van 12 boeken die ik in 2025 las en die vier sterren of meer kregen, over schrijven, kunst, psychologie, sociale wetenschappen, financiën en persoonlijke ontwikkeling.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Vorig jaar las ik 47 boeken. Door allerlei omstandigheden was het een buitengewoon druk jaar, waardoor ik mijn doel van 100 boeken, zoals in 2024, niet heb gehaald. Toch heb ik nog steeds veel prachtige werken gelezen. De boeken die ik las, bestreken diverse gebieden zoals schrijven, kunst, psychologie, sociale wetenschappen, financiën en persoonlijke ontwikkeling. Er zaten veel werken tussen die me na het lezen nog lang zijn bijgebleven, dus heb ik besloten om een selectie aan te bevelen. Er zijn zoveel uitstekende en lezenswaardige boeken, maar om de aanbevelingslijst niet te lang te maken, heb ik me beperkt tot de 12 exemplaren die ik vier of zelfs vijf sterren heb gegeven.

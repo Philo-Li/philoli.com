@@ -3,7 +3,12 @@ title: Kuidas vallandada ohjeldamatu fantaasia
 date: 2022-03-19 20:53:13
 tags: Essee
 categories: Igapäevajutud
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Kuidas vallandada ohjeldamatu fantaasia" />
+</figure>
 Igal inimesel on kujutlusvõime olemas, kusjuures oluline on teada, kuidas seda rakendada. Tegelikult ei vasta ma küsimusele „kuidas kujutlusvõimet saada“, vaid pigem „kuidas oma fantaasiat vallandada“. Seega keskendun siin nn piiramatule fantaasiale.
 
 <!--more-->

@@ -6,7 +6,12 @@ tags:
   - razmišljanje
   - branje
 categories: Zapiski ob branju
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Najboljše slovo: Splošno znanje o staranju in smrti, ki ga morate poznati" />
+</figure>
 
 Tisti, ki berete ta članek, ste verjetno še daleč od starosti in si težko predstavljate, kako je zares živeti v poznih letih. Zato se vam staranje in smrt zdita tuja in strašljiva. Kljub temu pa je smrt neizogibna usoda vseh nas. Zato moramo vedeti, kaj nas čaka takrat, kakšen proces in kakšna psihična stanja bomo preživeli? In kaj lahko storimo mi sami, kako se lahko zdravstvo preoblikuje, da se bo temu primerno odzvalo? Le z odpravljanjem neznanega lahko premagamo strah.
 

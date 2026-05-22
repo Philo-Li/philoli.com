@@ -4,7 +4,12 @@ title: Mijn Wereldbeeld
 date: 2024-12-25 18:19:46
 tags: Persoonlijke overpeinzing
 categories: Dagelijkse gedachten
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Mijn Wereldbeeld" />
+</figure>
 
 Einstein had een boek met de titel 'Mijn Wereldbeeld'. Het bevatte een verzameling van zijn brieven, artikelen en openbare toespraken, waaronder één tekst die dezelfde naam droeg als het boek. Ik voel de behoefte om ook mijn eigen 'Mijn Wereldbeeld' te schrijven.
 

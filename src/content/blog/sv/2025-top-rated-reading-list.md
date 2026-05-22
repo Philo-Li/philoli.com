@@ -7,6 +7,7 @@ tags:
   - Boklista
 categories: Vardagsprat
 description: Rekommendationer för 12 böcker från 2025 som fått fyra stjärnor eller högre, inom ämnen som skrivande, konst, psykologi, samhällsvetenskap, finans och personlig utveckling.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Förra året läste jag 47 böcker. Av olika anledningar var mitt förra år otroligt hektiskt, så jag lyckades inte nå mitt mål på 100 böcker som jag gjorde 2024. Trots det hann jag med många fantastiska verk. Böckerna jag läste spände över flera områden som skrivande, konst, psykologi, samhällsvetenskap, finans och personlig utveckling. Många av dem gjorde ett sådant intryck att de fortfarande etsat sig fast i minnet, så jag har sammanställt en rekommendationslista. Det finns förstås otaliga utmärkta och läsvärda böcker. För att rekommendationslistan inte skulle bli alltför lång har jag enbart valt ut de 12 som jag gav fyra eller till och med fem stjärnor.

@@ -7,7 +7,12 @@ tags:
   - 수면
   - 자기 계발
 categories: 일상 잡담
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="더 적게 자면서 더 잘 잘 수 있을까? 수면에 대한 자가 실험 Day 1" />
+</figure>
 
 식단과 생활 습관을 조절하여 수면의 질과 에너지 수준을 개선하고, 더 맑고 활기찬 상태를 유지하기 위한 수면 실험을 시작했습니다.
 

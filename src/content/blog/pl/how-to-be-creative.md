@@ -3,7 +3,12 @@ title: Jak osiągnąć nieokiełznaną wyobraźnię
 date: 2022-03-19 20:53:13
 tags: Eseje
 categories: Codzienne pogadanki
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Jak osiągnąć nieokiełznaną wyobraźnię" />
+</figure>
 Każdy człowiek posiada wyobraźnię, lecz często nie wie, jak ją w pełni wykorzystać. Moim celem nie jest odpowiedź na pytanie „jak zdobyć wyobraźnię”, lecz raczej „jak uwolnić swoją wyobraźnię”, dlatego skupię się tu na tzw. nieokiełznanej, swobodnej imaginacji.
 
 <!--more-->

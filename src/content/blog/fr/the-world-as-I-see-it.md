@@ -4,7 +4,12 @@ title: Ma vision du monde
 date: 2024-12-25 18:19:46
 tags: Essais
 categories: Pensées du quotidien
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Ma vision du monde" />
+</figure>
 
 Albert Einstein a publié un recueil d'essais, de lettres et de discours intitulé « Ma vision du monde », dont l'un des textes porte le même titre. J'ai eu à mon tour l'envie de coucher sur papier ma propre « vision du monde ».
 

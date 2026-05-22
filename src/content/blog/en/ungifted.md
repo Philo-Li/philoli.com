@@ -6,7 +6,12 @@ tags:
   - Essays
   - Reading
 categories: Reading笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Ungifted: Intelligence Redefined" />
+</figure>
 
 Last year (2024) I fulfilled my goal of reading one hundred books. The list spanned science, medicine, psychology, the arts, social science, literature, and investing. Outstanding titles were plentiful; to keep the recommendations concise, I have distilled the very best — volumes that earned at least four, often five, stars in my journal.
 

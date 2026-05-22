@@ -7,6 +7,7 @@ tags:
   - grāmatu saraksts
 categories: Ikdienas tērzēšana
 description: 12 ieteicamās četru un piecu zvaigžņu grāmatas, kas lasītas 2025. gadā, aptverot rakstīšanu, mākslu, psiholoģiju, sociālās zinātnes, finanses un personīgo izaugsmi.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Pagājušajā gadā izlasīju 47 grāmatas. Dažādu iemeslu dēļ pagājušais gads man bija ārkārtīgi saspringts, tāpēc neizdevās sasniegt 2024. gada mērķi – izlasīt 100 grāmatas, taču es tomēr izlasīju daudzus brīnišķīgus darbus. Lasītie darbi aptvēra dažādas jomas – rakstīšanu, mākslu, psiholoģiju, sociālās zinātnes, finanses un personīgo izaugsmi. Starp tiem bija daudz tādu, kas pēc izlasīšanas palika man atmiņā, tāpēc esmu tos apkopojis ieteikumu sarakstā. Lielisku un lasīšanas vērtu darbu ir patiešām daudz. Lai ieteikumu saraksts nekļūtu pārāk garš, esmu izvēlējies tikai 12 grāmatas, kurām piešķīru četras vai pat piecas zvaigznes.

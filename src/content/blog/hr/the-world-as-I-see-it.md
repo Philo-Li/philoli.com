@@ -4,7 +4,12 @@ title: Moj svjetonazor
 date: 2024-12-25 18:19:46
 tags: Esej
 categories: Svakodnevne misli
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Moj svjetonazor" />
+</figure>
 
 Einstein je napisao knjigu "Moj pogled na svijet", koja je obuhvaćala niz njegovih objavljenih pisama, članaka i javnih govora, a jedan od tih članaka nosio je isti naslov kao i knjiga. I ja bih željela napisati tekst pod nazivom "Moj svjetonazor".
 

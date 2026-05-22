@@ -4,7 +4,12 @@ title: Mano pasaulėžiūra
 date: 2024-12-25 18:19:46
 tags: Esė
 categories: Kasdienybė
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Mano pasaulėžiūra" />
+</figure>
 
 Albertas Einsteinas yra parašęs knygą „Mano pasaulėžiūra“, kurioje surinkta daugybė jo laiškų, straipsnių ir viešų kalbų. Vienas iš šių tekstų pavadintas lygiai taip pat, kaip ir pati knyga. Ir aš noriu parašyti savo „Mano pasaulėžiūrą“.
 

@@ -7,7 +7,12 @@ tags:
   - Tidur
   - Pengembangan Diri
 categories: Obrolan Santai Sehari-hari
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Bisakah Aku Tidur Lebih Berkualitas dalam Waktu Lebih Singkat? Eksperimen Tidurku Hari Ke-1" />
+</figure>
 
 Aku memulai sebuah eksperimen tidur. Tujuannya adalah untuk meningkatkan kualitas tidur dan tingkat energiku, serta menjaga tubuh agar tetap lebih segar dan berenergi, melalui penyesuaian pola makan dan gaya hidup.
 

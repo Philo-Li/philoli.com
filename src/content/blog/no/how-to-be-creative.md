@@ -3,7 +3,12 @@ title: Hvordan slippe løs en grenseløs fantasi
 date: 2022-03-19 20:53:13
 tags: Betraktninger
 categories: Hverdagssnakk
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Hvordan slippe løs en grenseløs fantasi" />
+</figure>
 Alle mennesker har fantasi, men utfordringen er ofte å vite hvordan man skal bruke den. Spørsmålet jeg egentlig ønsker å besvare, er ikke "hvordan få fantasi", men snarere "hvordan slippe løs fantasien din". Derfor vil jeg her konsentrere meg om det vi kaller **grenseløs fantasi**.
 
 <!--more-->

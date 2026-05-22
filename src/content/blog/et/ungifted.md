@@ -7,7 +7,12 @@ tags:
   - Lugemine
   - Psühholoogia
 categories: Lugemispäevik
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Pole sugugi anne: IQ, sihipärane harjutamine ja loovuse tõde" />
+</figure>
 
 Kognitiivteadlane Scott Barry Kaufman on pühendunud intelligentsuse, loovuse ja inimvõimete uurimisele. Oma raamatus süveneb ta sellesse, kuidas me õpime, püüdes ümber lükata laialt levinud kitsarinnalisi arusaamu IQ-st ja "andekusest". Tuginedes oma isiklikule kogemusele, pakub ta uusi võimalusi ja lootust neile, keda on sildistatud "õpiraskustega".
 

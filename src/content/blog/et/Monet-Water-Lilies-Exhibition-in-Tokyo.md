@@ -7,7 +7,12 @@ tags:
     - mõtisklus
     - kunst
 categories: Argimõtisklused
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monet' näitus Tokyos: Katarakti vaevustest surematute pintslitõmmeteni" />
+</figure>
 
 Mõned päevad tagasi jõudsin viimasel hetkel ära vaadata kauaoodatud Monet' näituse. Ta on ju üks mu lemmikmaalijaid ja ühtlasi mu lemmikimpressioniste.
 

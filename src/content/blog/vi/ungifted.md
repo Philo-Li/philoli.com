@@ -7,7 +7,12 @@ tags:
   - Đọc sách
   - Tâm lý học
 categories: Đọc sách笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Không Chỉ Là Năng Khiếu: Sự Thật Về IQ, Luyện Tập Có Chủ Đích và Sáng Tạo" />
+</figure>
 
 Scott Barry Kaufman, một nhà khoa học nhận thức, chuyên nghiên cứu về trí thông minh, sự sáng tạo và tiềm năng con người. Trong các tác phẩm của mình, ông không chỉ khám phá cách chúng ta học hỏi, mà còn thách thức những định kiến hẹp hòi của số đông về "chỉ số IQ" và "năng khiếu bẩm sinh". Kết hợp với trải nghiệm cá nhân, ông đã mở ra những khả năng và hy vọng mới cho những người bị gắn mác "có khó khăn trong học tập".
 

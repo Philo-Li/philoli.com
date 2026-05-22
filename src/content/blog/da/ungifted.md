@@ -7,7 +7,12 @@ tags:
   - Læsning
   - Psykologi
 categories: Læsning笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Talent er ikke alt: Sandheden om IQ, bevidst træning og kreativitet" />
+</figure>
 
 Kognitiv videnskabsmand Scott Barry Kaufman fokuserer på forskning inden for intelligens, kreativitet og menneskeligt potentiale. I sin bog udforsker han, hvordan vi lærer, og forsøger at udfordre den gængse, snævre opfattelse af "IQ" og "talent". Med udgangspunkt i sine egne erfaringer bringer han nye muligheder og håb til dem, der er blevet stemplet med "indlæringsvanskeligheder".
 

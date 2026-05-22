@@ -7,7 +7,12 @@ tags:
     - Deneme
     - Sanat
 categories: Günlük Sohbetler
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Tokyo Monet Sergisi: Kataraktın Sıkıntılarından Ölümsüz Fırça Darbelerine" />
+</figure>
 
 Son günlerine yetişerek nihayet uzun zamandır görmek istediğim Monet sergisini gezdim. Monet, hem en sevdiğim ressamlardan hem de en sevdiğim empresyonist sanatçılardan biri.
 

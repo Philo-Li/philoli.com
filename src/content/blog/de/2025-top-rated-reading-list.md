@@ -7,6 +7,7 @@ tags:
   - Bücherliste
 categories: Alltägliches
 description: Empfehlungen für 12 Bücher, die ich 2025 mit vier oder fünf Sternen bewertet habe, aus den Bereichen Schreiben, Kunst, Psychologie, Sozialwissenschaften, Finanzen und Persönlichkeitsentwicklung.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Im letzten Jahr habe ich 47 Bücher gelesen. Aus verschiedenen Gründen war ich sehr, sehr beschäftigt, sodass ich mein Ziel von 100 Büchern, wie ich es 2024 erreicht hatte, nicht erreichen konnte. Dennoch habe ich viele beeindruckende Werke gelesen. Die gelesenen Werke stammen aus vielfältigen Bereichen wie Schreiben, Kunst, Psychologie, Sozialwissenschaften, Finanzen und Persönlichkeitsentwicklung. Viele davon sind mir auch nach dem Lesen noch lebhaft in Erinnerung geblieben, weshalb ich sie hier zusammengestellt habe, um sie zu empfehlen. Es gibt wirklich unzählige hervorragende und lesenswerte Bücher. Um die Empfehlungsliste nicht zu lang werden zu lassen, habe ich nur die 12 Werke ausgewählt, die ich mit vier oder sogar fünf Sternen bewertet habe.

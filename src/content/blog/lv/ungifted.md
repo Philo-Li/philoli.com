@@ -7,7 +7,12 @@ tags:
   - Lasīšana
   - Psiholoģija
 categories: Lasīšana笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Ne talants vien: Intelekta, apzinātas prakses un radošuma patiesība" />
+</figure>
 
 Kognitīvais zinātnieks Skots Berijs Kaufmans savā darbā koncentrējas uz intelekta, radošuma un cilvēka potenciāla izpēti. Grāmatā viņš pēta mācīšanās procesus, cenšoties apgāzt sabiedrībā iesakņojušos šauro priekšstatu par "intelekta koeficientu" un "talantu", un, balstoties savā pieredzē, sniedz jaunas iespējas un cerību tiem, kuriem ir piesprausta "mācīšanās traucējumu" birka.
 

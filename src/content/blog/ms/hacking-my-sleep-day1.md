@@ -7,7 +7,12 @@ tags:
   - Tidur
   - Peningkatan Diri
 categories: Bicara Santai Harian
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Bolehkah Saya Tidur Lebih Lena dengan Masa yang Kurang? Eksperimen Kendiri Mengenai Tidur Hari 1" />
+</figure>
 
 Saya telah memulakan sebuah eksperimen tidur, dengan tujuan untuk meningkatkan kualiti tidur dan tahap tenaga, serta mengekalkan keadaan yang lebih segar dan bertenaga melalui pelarasan diet dan gaya hidup.
 

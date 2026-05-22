@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "뉴스레터",
-    "subscribe": "구독하기 →"
+    "subscribe": "구독하기 →",
+    "welcomeTitle": "입장하셨습니다.",
+    "welcomeBody": "만나서 반갑습니다. 아래에 읽기 좋은 에세이 몇 편을 골라두었습니다. 마음에 드는 것을 선택해 보세요. 새로운 글을 발행하면 소식을 전해드리겠습니다.",
+    "startHere": "여기서 시작하기",
+    "browseAll": "모든 글 둘러보기 →",
+    "replyInvite": "답장을 보내주세요 — 하나도 빠짐없이 모두 읽고 있습니다."
   },
   "metadata": {
     "siteTitle": "Philo Li — 예술가, 작가, 크리에이터",

@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Newsletter",
-    "subscribe": "Odebírat →"
+    "subscribe": "Odebírat →",
+    "welcomeTitle": "Jste v tom.",
+    "welcomeBody": "Jsem rád, že jste tady. Níže je několik esejí, kterými můžete začít — vyberte si tu, která vás zaujme. Až publikuji něco nového, dám vám vědět.",
+    "startHere": "Začněte zde",
+    "browseAll": "Prohlédnout všechny příspěvky →",
+    "replyInvite": "Odpovězte na jakýkoli e-mail — čtu každý z nich."
   },
   "metadata": {
     "siteTitle": "Philo Li — umělec, spisovatel, tvůrce",

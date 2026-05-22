@@ -4,7 +4,12 @@ title: 私の世界観
 date: 2024-12-25 18:19:46
 tags: エッセイ
 categories: 日常雑談
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="私の世界観" />
+</figure>
 
 アインシュタインには『私の世界観』という本があり、アインシュタインが発表した書簡、論文、公開講演などが数多く収録されていますが、その中にはまさにこのタイトルと同名の文章も含まれています。私も『私の世界観』という記事を書いてみたいと思いました。
 

@@ -4,7 +4,12 @@ title: 我的世界观
 date: 2024-12-25 18:19:46
 tags: 随笔
 categories: 日常闲聊
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="我的世界观" />
+</figure>
 
 爱因斯坦有一本书《我的世界观》，其中收录了一系列爱因斯坦发表的书信文章还有公开演讲，其中一篇就是和书名同名的文章。我也想写一篇《我的世界观》。
 

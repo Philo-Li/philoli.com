@@ -7,7 +7,12 @@ tags:
     - মুক্তচিন্তা
     - শিল্প
 categories: দৈনন্দিন আড্ডা
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="টোকিওতে মোনের প্রদর্শনী: ছানি রোগের প্রতিকূলতা থেকে অমর তুলির আঁচড়" />
+</figure>
 
 ক’দিন আগে শেষ মুহূর্তে গিয়ে বহুদিনের প্রতীক্ষিত মোনে প্রদর্শনীটি দেখে আসলাম। মোনে আমার অন্যতম প্রিয় চিত্রশিল্পী, এবং অন্যতম প্রিয় ইম্প্রেশনিস্ট শিল্পীও বটে।
 

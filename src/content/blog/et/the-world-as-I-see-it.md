@@ -4,7 +4,12 @@ title: Minu maailmavaade
 date: 2024-12-25 18:19:46
 tags: Mõtisklused
 categories: Igapäevane jutt
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Minu maailmavaade" />
+</figure>
 
 Einsteinil oli raamat „Minu maailmavaade“, mis koondas tema avaldatud kirju, artikleid ja avalikke kõnesid. Üks neist tekstidest kandis sama pealkirja, mis raamat. Minagi soovin kirjutada oma „Minu maailmavaade“.
 

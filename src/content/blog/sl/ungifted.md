@@ -7,7 +7,12 @@ tags:
   - Branje
   - Psihologija
 categories: Bralni zapiski
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Ni zgolj talent: Resnica o IQ, namerni praksi in ustvarjalnosti" />
+</figure>
 
 Kognitivni znanstvenik Scott Barry Kaufman se posveča raziskovanju inteligence, ustvarjalnosti in človeškega potenciala. V svoji knjigi raziskuje, kako se učimo, in poskuša ovreči splošno uveljavljena ozka prepričanja o "inteligenčnem kvocientu" in "talentu". S pomočjo lastnih izkušenj prinaša nove možnosti in upanje tistim, ki so bili označeni z "učnimi težavami".
 

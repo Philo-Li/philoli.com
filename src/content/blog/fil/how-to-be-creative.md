@@ -3,7 +3,12 @@ title: Paano Palayain ang Iyong Walang Limitasyong Imahinasyon
 date: 2022-03-19 20:53:13
 tags: Mga Pagninilay
 categories: Kwentuhan
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Paano Palayain ang Iyong Walang Limitasyong Imahinasyon" />
+</figure>
 Lahat ng tao ay may imahinasyon, ang mahalaga ay hindi natin alam kung paano ito palayain. Ang sasagutin ko talaga ay hindi "paano magkaroon ng imahinasyon," kundi "paano palayain ang iyong imahinasyon." Kaya rito, pag-uusapan natin ang tungkol sa tinatawag na walang limitasyong imahinasyon.
 
 <!--more-->

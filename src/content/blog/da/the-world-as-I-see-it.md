@@ -4,7 +4,12 @@ title: Mit Verdenssyn
 date: 2024-12-25 18:19:46
 tags: Essays
 categories: Hverdagssnak
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Mit Verdenssyn" />
+</figure>
 
 Albert Einstein skrev en bog med titlen "Min Verdensanskuelse", der indeholder en række af hans udgivne breve, artikler og offentlige taler, herunder en artikel med samme navn som bogen. Jeg vil også gerne skrive en artikel med titlen "Mit Verdenssyn".
 

@@ -6,7 +6,12 @@ tags:
   - Essays
   - Creativity
 categories: Casual Thoughts
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Beyond the Algorithm: How to Spark Creativity Without AI" />
+</figure>
 
 Imagination is the birthright of every human being. The real question is not *how to acquire* it, but *how to unleash* it. What follows, therefore, is less a manual for "getting imagination" and more a guide to releasing your own — especially the free-ranging, sky-galloping variety we loosely call *fantasy*.
 

@@ -7,6 +7,7 @@ tags:
   - Könyvlista
 categories: Hétköznapi Csevegés
 description: "12 könyvajánló 2025-ből, amelyek négy vagy annál több csillagot kaptak tőlem. Témájuk: írás, művészet, pszichológia, társadalomtudomány, pénzügy és személyes fejlődés."
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Tavaly 47 könyvet olvastam. Különböző okok miatt rendkívül elfoglalt voltam, így nem sikerült elérnem a 2024-es évben kitűzött 100 könyves célt, ennek ellenére számos nagyszerű művet sikerült elolvasnom. Az olvasmányaim számos területet érintettek, mint például az írás, művészet, pszichológia, társadalomtudomány, pénzügy és személyes fejlődés. Sok olyan alkotás volt köztük, ami még az elolvasás után is élénken élt bennem, ezért úgy döntöttem, összeállítok egy ajánlólistát. Rengeteg kiváló és olvasásra érdemes mű létezik, de hogy az ajánló ne legyen túl hosszú, csak azt a 12-t választottam ki, amelytől négy vagy akár öt csillagot kapott tőlem.

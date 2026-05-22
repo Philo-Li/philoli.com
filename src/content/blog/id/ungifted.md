@@ -7,7 +7,12 @@ tags:
   - Buku
   - Psikologi
 categories: Catatan Buku
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Bukan Sekadar Bakat: Mengungkap Kebenaran di Balik IQ, Latihan Terencana, dan Kreativitas" />
+</figure>
 
 Scott Barry Kaufman, seorang ilmuwan kognitif, mengabdikan dirinya untuk meneliti kecerdasan, kreativitas, dan potensi manusia. Dalam bukunya, ia menyelami cara kita belajar, sekaligus menantang pandangan sempit masyarakat tentang 'IQ' dan 'bakat'. Dengan membagikan pengalamannya sendiri, Kaufman menawarkan harapan dan peluang baru bagi individu-individu yang sebelumnya dicap memiliki 'gangguan belajar'.
 

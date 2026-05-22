@@ -7,7 +7,12 @@ tags:
   - Giấc ngủ
   - Phát triển bản thân
 categories: Tâm sự hàng ngày
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Tôi có thể ngủ ít hơn mà vẫn ngon giấc không? Tự thử nghiệm về giấc ngủ - Ngày 1" />
+</figure>
 
 Tôi vừa bắt đầu một thử nghiệm về giấc ngủ, nhằm mục đích cải thiện chất lượng giấc ngủ và mức năng lượng thông qua việc điều chỉnh chế độ ăn uống và thói quen sinh hoạt, để duy trì trạng thái tỉnh táo và tràn đầy sức sống hơn.
 

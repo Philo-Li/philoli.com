@@ -7,7 +7,12 @@ tags:
   - نوم
   - تطوير الذات
 categories: أحاديث يومية
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="هل يمكنني النوم بشكل أفضل في وقت أقل؟ تجربة ذاتية حول النوم - اليوم الأول" />
+</figure>
 
 لقد بدأت تجربة نوم تهدف إلى تحسين جودة نومي ومستوى طاقتي، والبقاء في حالة أكثر يقظة وحيوية، وذلك من خلال تعديل عاداتي الغذائية ونمط حياتي.
 

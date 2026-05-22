@@ -6,7 +6,12 @@ tags:
   - Tùy bút
   - Đọc sách
 categories: Ghi chú đọc sách
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Lời từ biệt đẹp nhất: Những kiến thức cơ bản bạn cần biết về lão hóa và cái chết" />
+</figure>
 
 Độc giả đang đọc bài viết này có lẽ còn khá xa tuổi già, khó mà hình dung được cuộc sống tuổi già thực sự sẽ như thế nào, đồng thời cảm thấy vừa lạ lẫm vừa sợ hãi trước sự lão hóa và cái chết. Thế nhưng, ai rồi cũng phải chết, và chúng ta cần biết, khi thời điểm đó đến, chúng ta sẽ đối mặt với những gì, sẽ trải qua những quá trình và trạng thái tâm lý ra sao? Và chúng ta có thể làm gì, ngành y tế có thể cải cách như thế nào để ứng phó? Chỉ khi hiểu rõ, nỗi sợ mới biến mất.
 

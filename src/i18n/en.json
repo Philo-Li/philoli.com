@@ -123,6 +123,11 @@
   "newsletterPage": {
     "title": "Newsletter",
     "subscribe": "Subscribe →",
+    "welcomeTitle": "You're in.",
+    "welcomeBody": "Glad to have you here. Below are a few essays to start with — pick whichever catches your eye. You'll hear from me when I publish something new.",
+    "startHere": "Start here",
+    "browseAll": "Browse all posts →",
+    "replyInvite": "Reply to any email — I read every one.",
     "shuo": {
       "name": "Philo 说会儿",
       "lang": "中文",

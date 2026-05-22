@@ -7,7 +7,12 @@ tags:
   - 독서
   - 심리학
 categories: 독서笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="재능이 전부는 아니다: 지능, 의도적 연습, 창의성의 진실" />
+</figure>
 
 인지과학자 스콧 배리 카우프만은 지능, 창의성, 인간 잠재력 연구에 몰두하고 있습니다. 그는 책에서 우리가 어떻게 학습하는지에 대해 탐구하며, 대중이 '지능지수(IQ)'와 '재능'에 대해 가지고 있는 고정관념과 편협한 인식을 뒤엎으려 시도합니다. 자신의 경험을 바탕으로 '학습 장애'라는 꼬리표가 붙은 사람들에게 새로운 가능성과 희망을 제시하기도 합니다.
 

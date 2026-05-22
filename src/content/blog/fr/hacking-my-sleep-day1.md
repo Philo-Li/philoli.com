@@ -7,7 +7,12 @@ tags:
   - Sommeil
   - Développement personnel
 categories: Pensées du quotidien
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Puis-je mieux dormir en moins de temps ? Une auto-expérience sur le sommeil - Jour 1" />
+</figure>
 
 J'ai lancé une expérience sur le sommeil, avec pour objectif d'améliorer ma qualité de sommeil et mon niveau d'énergie en ajustant mon régime alimentaire et mes habitudes de vie, afin de rester plus alerte et dynamique.
 

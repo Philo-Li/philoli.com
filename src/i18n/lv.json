@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Jaunumu vēstule",
-    "subscribe": "Abonēt →"
+    "subscribe": "Abonēt →",
+    "welcomeTitle": "Esat iekšā.",
+    "welcomeBody": "Prieks, ka esat šeit. Zemāk ir daži esejas, ar ko sākt — izvēlieties to, kas piesaista jūsu uzmanību. Jūs saņemsiet ziņu no manis, kad publicēšu kaut ko jaunu.",
+    "startHere": "Sākt šeit",
+    "browseAll": "Pārlūkot visus ierakstus →",
+    "replyInvite": "Atbildiet uz jebkuru e-pastu — es izlasu katru no tiem."
   },
   "metadata": {
     "siteTitle": "Philo Li — mākslinieks, rakstnieks, radītājs",

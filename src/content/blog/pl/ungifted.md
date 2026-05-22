@@ -7,7 +7,12 @@ tags:
   - Czytanie książek
   - Psychologia
 categories: Czytanie książek笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="To nie tylko talent: IQ, celowa praktyka i prawda o kreatywności" />
+</figure>
 
 Scott Barry Kaufman, naukowiec kognitywista, zajmuje się badaniem inteligencji, kreatywności i ludzkiego potencjału. W swojej książce analizuje proces uczenia się, podważając powszechne, często zbyt wąskie, postrzeganie IQ i "talentu". Opierając się na własnych doświadczeniach, oferuje nowe perspektywy i nadzieję tym, którzy zostali naznaczeni etykietą "trudności w nauce".
 

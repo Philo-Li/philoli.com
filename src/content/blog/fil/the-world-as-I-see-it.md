@@ -4,7 +4,12 @@ title: Ang Aking Pananaw sa Mundo
 date: 2024-12-25 18:19:46
 tags: Mga Pagninilay
 categories: Kwentuhan
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Ang Aking Pananaw sa Mundo" />
+</figure>
 
 May aklat si Einstein na pinamagatang "Ang Aking Pananaw sa Mundo," na naglalaman ng koleksyon ng kanyang mga sulat, artikulo, at pampublikong talumpati. Isa sa mga ito ay ang mismong sanaysay na kapareho ng pamagat ng libro. Ako man ay nagnanais sumulat ng sarili kong "Ang Aking Pananaw sa Mundo."
 

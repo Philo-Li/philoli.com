@@ -7,6 +7,7 @@ tags:
   - Lista de livros
 categories: Conversas do dia a dia
 description: Uma seleção de 12 livros classificados com quatro estrelas ou mais que li em 2025, abrangendo escrita, arte, psicologia, ciências sociais, finanças e desenvolvimento pessoal.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 No ano passado, li 47 livros. Por diversas razões, 2025 foi um ano extremamente agitado para mim, o que me impediu de alcançar a meta de 100 livros, como fiz em 2024. Ainda assim, tive o prazer de mergulhar em muitas obras notáveis. As leituras abrangeram diversas áreas, como escrita, arte, psicologia, ciências sociais, finanças e desenvolvimento pessoal. Entre elas, muitas obras me marcaram profundamente, e por isso decidi organizá-las para esta recomendação. Há inúmeros livros excelentes e que valem a pena, mas para que a lista não ficasse excessivamente longa, selecionei apenas 12 que classifiquei com quatro ou até cinco estrelas.

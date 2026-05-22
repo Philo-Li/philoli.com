@@ -6,7 +6,12 @@ tags:
   - 에세이
   - 독서
 categories: 독서笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="최고의 작별: 노화와 죽음에 관하여 꼭 알아야 할 상식" />
+</figure>
 
 이 글을 읽는 대부분의 독자분들은 아마도 노화와는 아직 거리가 멀어, 진정한 노년의 삶을 상상하기 어려울 겁니다. 그래서 노화와 죽음에 대해 낯설고 두려움을 느끼는 것도 당연하죠. 하지만 사람은 누구나 죽음을 맞이합니다. 그때가 되면 우리가 무엇을 겪게 될지, 어떤 과정과 심리 상태를 경험하게 될지 미리 알아둘 필요가 있습니다. 그렇다면 우리는 무엇을 할 수 있고, 의료 시스템은 또 어떻게 변화해야 할까요? 미지의 영역을 해소해야만 두려움도 사라지는 법이니까요.
 

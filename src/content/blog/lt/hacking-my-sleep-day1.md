@@ -7,7 +7,12 @@ tags:
   - Miegas
   - Savęs tobulinimas
 categories: Kasdienybė
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Ar galiu geriau išsimiegoti per trumpesnį laiką? Miego savęs eksperimentas. 1 diena" />
+</figure>
 
 Pradėjau miego eksperimentą. Juo siekiu, pakoregavęs mitybą ir gyvenimo būdą, pagerinti miego kokybę bei energijos lygį, kad jausčiausi budresnis ir energingesnis.
 

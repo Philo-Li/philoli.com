@@ -6,7 +6,12 @@ tags:
   - Eseu
   - Lectură
 categories: Note de lectură
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Cel mai bun adio: Ce trebuie să știi despre îmbătrânire și moarte" />
+</figure>
 
 Cei care citesc acest articol sunt, cel mai probabil, încă departe de bătrânețe, le este greu să-și imagineze cum este cu adevărat viața la o vârstă înaintată, iar îmbătrânirea și moartea le sunt străine și le provoacă teamă. Dar, până la urmă, toți suntem muritori, și trebuie să știm ce ne așteaptă atunci, prin ce procese și stări psihologice vom trece? Ce putem face noi înșine și cum ar trebui să se reformeze sistemul medical în acest sens? Doar eliminând necunoscutul putem alunga frica.
 

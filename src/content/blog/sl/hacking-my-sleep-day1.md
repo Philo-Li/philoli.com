@@ -7,7 +7,12 @@ tags:
   - Spanje
   - Osebna rast
 categories: Dnevni pogovori
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Ali lahko spim bolje v manj časa? Moj osebni spalni eksperiment – 1. dan" />
+</figure>
 
 Začel sem s spalnim eksperimentom, s katerim želim z uravnavanjem prehrane in življenjskih navad izboljšati kakovost spanja in raven energije ter ohraniti bolj budno in vitalno stanje.
 

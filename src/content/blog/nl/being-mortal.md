@@ -6,7 +6,12 @@ tags:
   - Essay
   - Boeken
 categories: Leesnotities
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Het beste afscheid: Wat je moet weten over ouderdom en sterfelijkheid" />
+</figure>
 
 De meeste lezers van dit artikel staan waarschijnlijk nog ver af van de ouderdom en kunnen zich het echte ouder worden moeilijk voorstellen. Ze ervaren zowel onbekendheid als angst voor ouderdom en sterfelijkheid. Maar de dood is onvermijdelijk. We moeten weten wat ons dan te wachten staat, welke processen we zullen doormaken en in welke psychologische staat we zullen verkeren. Wat kunnen we zelf doen, en hoe kan de gezondheidszorg zich hierop aanpassen? Alleen door het onbekende weg te nemen, verdwijnt de angst.
 

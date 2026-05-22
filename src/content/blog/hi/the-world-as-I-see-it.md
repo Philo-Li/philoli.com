@@ -4,7 +4,12 @@ title: मेरा विश्व-दृष्टिकोण
 date: 2024-12-25 18:19:46
 tags: निबंध
 categories: रोज़मर्रा की बातें
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="मेरा विश्व-दृष्टिकोण" />
+</figure>
 
 आइंस्टीन की एक किताब है, जिसका नाम है 'मेरा विश्व-दृष्टिकोण'। इसमें उनके कई पत्र, लेख और सार्वजनिक भाषण शामिल हैं, और इन्हीं में से एक लेख का शीर्षक भी किताब के नाम पर ही है। मैं भी 'मेरा विश्व-दृष्टिकोण' पर कुछ लिखना चाहती हूँ।
 

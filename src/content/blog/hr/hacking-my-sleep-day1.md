@@ -7,7 +7,12 @@ tags:
   - Spavanje
   - Samopoboljšanje
 categories: Svakodnevna razmišljanja
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Mogu li bolje spavati s manje sna? Osobni eksperiment sa spavanjem, Dan 1" />
+</figure>
 
 Pokrenuo sam osobni eksperiment sa spavanjem s ciljem da, prilagodbom prehrane i životnih navika, poboljšam kvalitetu sna i razinu energije te tako ostanem budniji i vitalniji.
 

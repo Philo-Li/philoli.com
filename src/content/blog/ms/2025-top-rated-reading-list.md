@@ -7,6 +7,7 @@ tags:
   - Senarai Buku
 categories: Sembang Santai
 description: Cadangan 12 buku hebat berpenarafan empat bintang ke atas yang dibaca pada tahun 2025, meliputi penulisan, seni, psikologi, sains sosial, kewangan, dan pembangunan diri.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Tahun lepas, saya berjaya membaca 47 buah buku. Atas pelbagai sebab, tahun lalu memang sangat sibuk bagi saya, jadi saya tidak dapat mencapai sasaran 100 buah buku seperti pada tahun 2024. Walau bagaimanapun, saya masih sempat menikmati banyak karya yang menarik. Buku-buku yang saya baca merangkumi pelbagai bidang seperti penulisan, seni, psikologi, sains sosial, kewangan, dan pembangunan diri. Tidak kurang juga banyak karya yang meninggalkan kesan mendalam dalam ingatan saya walaupun selepas selesai membacanya, justeru saya susun semula untuk dikongsikan sebagai cadangan. Sebenarnya, terlalu banyak karya hebat dan berbaloi untuk dibaca. Untuk memastikan senarai cadangan ini tidak terlalu panjang, saya hanya memilih 12 buah buku yang saya berikan penarafan empat atau bahkan lima bintang.

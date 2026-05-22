@@ -4,7 +4,12 @@ title: Maailmankuvani
 date: 2024-12-25 18:19:46
 tags: Mietteitä
 categories: Arkipäivän jutustelu
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Maailmankuvani" />
+</figure>
 
 Albert Einsteinilla on kirja nimeltä ”Maailmankuvani”, joka sisältää kokoelman hänen julkaistuja kirjeitään, artikkeleitaan ja julkisia puheitaan. Yksi näistä teksteistä on kirjan nimen kanssa samanniminen. Minäkin haluan kirjoittaa oman ”Maailmankuvani”.
 

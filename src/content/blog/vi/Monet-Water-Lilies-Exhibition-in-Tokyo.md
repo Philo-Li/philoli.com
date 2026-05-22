@@ -7,7 +7,12 @@ tags:
     - Tùy bút
     - Nghệ thuật
 categories: Chuyện trò hằng ngày
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Triển lãm Monet tại Tokyo: Từ nỗi ám ảnh đục thủy tinh thể đến những nét cọ bất hủ" />
+</figure>
 
 Vài ngày trước, tôi đã kịp xem triển lãm Monet mà mình hằng mong ngóng, trước khi nó kết thúc. Monet là một trong những họa sĩ tôi yêu thích nhất, và cũng là một trong những bậc thầy trường phái Ấn tượng mà tôi ngưỡng mộ nhất.
 

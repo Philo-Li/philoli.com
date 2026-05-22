@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Newsletter",
-    "subscribe": "Abonnieren →"
+    "subscribe": "Abonnieren →",
+    "welcomeTitle": "Du bist dabei.",
+    "welcomeBody": "Schön, dass du hier bist. Unten findest du ein paar Essays für den Anfang – such dir aus, was dich anspricht. Du hörst von mir, sobald ich etwas Neues veröffentliche.",
+    "startHere": "Hier anfangen",
+    "browseAll": "Alle Beiträge durchstöbern →",
+    "replyInvite": "Antworte auf eine beliebige E-Mail – ich lese jede einzelne."
   },
   "metadata": {
     "siteTitle": "Philo Li — Künstler, Autor, Schöpfer",

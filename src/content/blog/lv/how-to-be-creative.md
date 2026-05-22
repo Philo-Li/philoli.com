@@ -3,7 +3,12 @@ title: Kā atraisīt neierobežotu iztēli
 date: 2022-03-19 20:53:13
 tags: Pārdomas
 categories: Ikdienas sarunas
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Kā atraisīt neierobežotu iztēli" />
+</figure>
 Iztēle piemīt ikvienam no mums, bet bieži vien nezinām, kā to atraisīt un pielietot. Patiesībā es neatbildēšu uz jautājumu "kā iegūt iztēli", bet gan "kā atbrīvot savu iztēli". Tāpēc šajā rakstā galvenokārt runāsim par to, ko dēvē par savvaļīgu, neierobežotu iztēli.
 
 <!--more-->

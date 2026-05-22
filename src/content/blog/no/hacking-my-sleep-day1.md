@@ -7,7 +7,12 @@ tags:
   - Søvn
   - selvutvikling
 categories: Daglig prat
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Kan jeg sove bedre på kortere tid? Et selv-eksperiment om søvn Dag 1" />
+</figure>
 
 Jeg har satt i gang et søvneksperiment. Målet er å forbedre søvnkvaliteten og energinivået mitt ved å justere kosthold og livsstilsvaner, slik at jeg kan være klarere og mer energisk i hverdagen.
 

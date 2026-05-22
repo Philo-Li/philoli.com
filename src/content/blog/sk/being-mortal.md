@@ -6,7 +6,12 @@ tags:
   - Úvaha
   - Knihy
 categories: Čitateľský denník
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Najlepšia rozlúčka: Čo musíte vedieť o starnutí a smrti" />
+</figure>
 
 Tí, ktorí čítajú tento článok, sú pravdepodobne ešte ďaleko od staroby a len ťažko si dokážu predstaviť skutočný život seniorov. Starnutie a smrť sú pre nich neznáme, a zároveň vzbudzujú strach. No smrť je neodvratná súčasť života každého z nás, a preto potrebujeme vedieť, čo nás vtedy čaká. Akým procesom prejdeme a aké psychické stavy zažijeme? Čo môžeme urobiť my sami a ako sa môže prispôsobiť zdravotníctvo? Len odstránením neznámeho sa dá zbaviť strachu.
 

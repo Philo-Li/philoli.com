@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "通讯",
-    "subscribe": "订阅 →"
+    "subscribe": "订阅 →",
+    "welcomeTitle": "你已加入。",
+    "welcomeBody": "很高兴你能来。以下是一些入门文章，选一篇你感兴趣的读读看。每当我发布新内容时，你都会收到通知。",
+    "startHere": "从这里开始",
+    "browseAll": "浏览所有文章 →",
+    "replyInvite": "回复任何邮件——我每一封都会读。"
   },
   "metadata": {
     "siteTitle": "Philo Li — 艺术家、作家、创作者",

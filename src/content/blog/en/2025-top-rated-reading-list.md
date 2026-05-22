@@ -7,6 +7,7 @@ tags:
   - books
 categories: Daily Chat
 description: A 12-book 2025 reading list featuring standout titles in writing, art, psychology, social sciences, finance, and personal growth.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Last year, I read 47 books. Between various commitments, it was an incredibly hectic year, so I didn't quite hit the 100-book milestone I reached in 2024. Still, I managed to discover some truly remarkable works. My reading spanned across writing, art, psychology, social sciences, finance, and personal growth—many of which have stayed with me long after I closed the covers. To keep this list concise, I’ve narrowed it down to 12 titles that earned a solid four or five-star rating.

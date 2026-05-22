@@ -4,7 +4,12 @@ title: Pandangan Duniaku
 date: 2024-12-25 18:19:46
 tags: Renungan
 categories: Obrolan Santai
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Pandangan Duniaku" />
+</figure>
 
 Albert Einstein memiliki sebuah buku berjudul 'Pandangan Duniaku', yang mengumpulkan serangkaian surat, artikel, dan pidato publik yang pernah diterbitkan olehnya. Salah satu esai di dalamnya memiliki judul yang sama dengan bukunya. Saya juga ingin menulis esai serupa dengan judul 'Pandangan Duniaku'.
 

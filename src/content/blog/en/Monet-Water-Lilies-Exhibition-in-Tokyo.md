@@ -6,7 +6,12 @@ tags:
   - Essays
   - Art
 categories: Casual Thoughts
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monet's Water Lilies: A Visit That Left My Heart Afloat" />
+</figure>
 
 A few days ago, I finally caught — literally at the last possible moment — the monumental Monet exhibition I'd been longing to see. Claude Monet is one of my dearest painters, and unquestionably my favorite Impressionist.
 

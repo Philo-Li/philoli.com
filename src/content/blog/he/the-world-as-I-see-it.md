@@ -4,7 +4,12 @@ title: השקפת עולמי
 date: 2024-12-25 18:19:46
 tags: הגיגים
 categories: הגיגים יומיומיים
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="השקפת עולמי" />
+</figure>
 
 לאלברט איינשטיין יש ספר בשם "השקפת עולמי", המכיל אוסף של מכתבים, מאמרים ונאומים פומביים שפרסם. אחד המאמרים הללו נושא את שם הספר. גם אני רוצה לכתוב מאמר בשם "השקפת עולמי".
 

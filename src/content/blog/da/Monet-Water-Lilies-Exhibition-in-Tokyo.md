@@ -7,7 +7,12 @@ tags:
     - Betragtning
     - Kunst
 categories: Hverdagsrefleksioner
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monet-udstillingen i Tokyo: Fra grå stær til udødelige penselstrøg" />
+</figure>
 
 Lige inden udstillingen lukkede, fik jeg for et par dage siden endelig set den Monet-udstilling, jeg havde glædet mig så meget til. Monet er en af mine absolutte yndlingsmalere og min foretrukne impressionist.
 

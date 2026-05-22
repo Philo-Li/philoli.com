@@ -4,7 +4,12 @@ title: Benim Dünya Görüşüm
 date: 2024-12-25 18:19:46
 tags: Deneme
 categories: Gündelik Sohbetler
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Benim Dünya Görüşüm" />
+</figure>
 
 Albert Einstein'ın "Benim Dünya Görüşüm" adında bir kitabı vardı; içinde Einstein'ın yayımlanmış mektupları, makaleleri ve halka açık konuşmaları yer alır, hatta bunlardan biri kitabın adıyla aynı başlığı taşır. Ben de "Benim Dünya Görüşüm" başlıklı bir yazı kaleme almak istedim.
 

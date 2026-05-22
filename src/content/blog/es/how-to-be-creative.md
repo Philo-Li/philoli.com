@@ -3,7 +3,12 @@ title: Cómo desatar una imaginación desbordante
 date: 2022-03-19 20:53:13
 tags: Ensayos
 categories: Charlas cotidianas
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Cómo desatar una imaginación desbordante" />
+</figure>
 Todos los seres humanos poseen imaginación, pero la clave está en cómo desarrollarla. En realidad, mi objetivo no es responder a "cómo obtener imaginación", sino a "cómo liberar tu imaginación". Por eso, aquí me centraré en lo que llamo imaginación desbordante.
 
 <!--more-->

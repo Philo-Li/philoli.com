@@ -7,7 +7,12 @@ tags:
     - esej
     - umetnost
 categories: Dnevna razmišljanja
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monetova razstava v Tokiu: Od težav s sivo mreno do nesmrtnih potez čopiča" />
+</figure>
 
 Pred nekaj dnevi, tik pred zdajci, sem si končno ogledal dolgo pričakovano Monetovo razstavo. Monet je namreč eden mojih najljubših slikarjev in hkrati eden mojih najljubših impresionistov.
 

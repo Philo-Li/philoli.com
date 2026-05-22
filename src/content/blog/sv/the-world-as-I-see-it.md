@@ -4,7 +4,12 @@ title: Min världsbild
 date: 2024-12-25 18:19:46
 tags: Funderingar
 categories: Vardagssnack
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Min världsbild" />
+</figure>
 
 Einstein hade en bok som heter "Min världsbild", som samlar en rad av hans publicerade brev, artiklar och offentliga tal. En av texterna hade samma titel som boken. Jag vill också skriva en text som heter "Min världsbild".
 

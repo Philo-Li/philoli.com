@@ -4,7 +4,12 @@ title: Meine Weltanschauung
 date: 2024-12-25 18:19:46
 tags: Essays
 categories: Alltägliches
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Meine Weltanschauung" />
+</figure>
 
 Albert Einstein schrieb ein Buch mit dem Titel „Meine Weltanschauung“, das eine Sammlung seiner Briefe, Artikel und öffentlichen Reden enthält. Einer dieser Beiträge trägt denselben Titel wie das Buch. Auch ich möchte einen Text über „Meine Weltanschauung“ verfassen.
 

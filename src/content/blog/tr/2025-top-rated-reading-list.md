@@ -7,6 +7,7 @@ tags:
   - Kitap Listesi
 categories: Günlük Sohbetler
 description: 2025 yılında okuduğum, yazım, sanat, psikoloji, sosyal bilimler, finans ve kişisel gelişim alanlarını kapsayan, dört yıldız ve üzeri puan verdiğim 12 harika kitap önerisi.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Geçen yıl 47 kitap okudum. Çeşitli sebeplerden ötürü oldukça yoğun bir yıl geçirdiğim için 2024'teki gibi 100 kitap hedefine ulaşamasam da yine de birçok harika eserle buluştum. Okuduğum eserler yazım, sanat, psikoloji, sosyal bilimler, finans ve kişisel gelişim gibi birçok farklı alanı kapsıyordu. İçlerinde beni okuduktan sonra bile derinden etkileyen, zihnimde yer eden pek çok çalışma vardı, bu yüzden onları toparlayıp sizinle paylaşmak istedim. Gerçekten de okunmaya değer o kadar çok harika eser var ki, bu tavsiye listesini çok uzatmamak adına sadece dört veya beş yıldız verdiğim 12 tanesini seçtim.

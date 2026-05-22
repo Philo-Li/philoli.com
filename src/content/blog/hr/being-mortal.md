@@ -6,7 +6,12 @@ tags:
   - Razmišljanje
   - Knjige
 categories: Bilješke o knjigama
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Najbolji oproštaj: Što trebate znati o starenju i smrti" />
+</figure>
 
 Većina ljudi koji čitaju ovaj članak vjerojatno su još daleko od starosti i teško im je zamisliti pravi život u poznim godinama. Starenje i smrt su im nepoznati i izazivaju strah. No, svi smo smrtni, i stoga je važno znati što nas čeka kad dođe to vrijeme – kroz kakve ćemo procese proći i kakva će nam biti psihička stanja. Što mi sami možemo učiniti, i kako se zdravstveni sustav može reformirati da bi se bolje nosio s tim? Uklanjanjem nepoznatog uklanjamo i strah.
 

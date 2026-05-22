@@ -6,7 +6,12 @@ tags:
   - Zamyšlení
   - Knihy
 categories: Knihy笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Nejlepší loučení: Co musíte vědět o stárnutí a smrti" />
+</figure>
 
 Ti, kdo čtou tento článek, jsou pravděpodobně ještě daleko od stáří a jen stěží si dokážou představit skutečný seniorský život. Stáří i smrt jsou pro ně neznámé a zároveň děsivé. Ale smrt čeká na každého z nás. Musíme vědět, co nás čeká, až ten čas přijde – jaké procesy a psychické stavy prožijeme? A co můžeme udělat my sami, a jak se k tomu může přizpůsobit zdravotnictví? Jen odstraněním neznáma můžeme překonat strach.
 

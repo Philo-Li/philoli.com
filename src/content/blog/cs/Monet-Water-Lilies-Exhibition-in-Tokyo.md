@@ -7,7 +7,12 @@ tags:
     - úvaha
     - umění
 categories: Denní povídání
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monetova výstava v Tokiu: Od trápení s šedým zákalem k nesmrtelným tahům štětce" />
+</figure>
 
 Před pár dny jsem se na poslední chvíli konečně dostal na dlouho očekávanou Monetovu výstavu. Monet je jedním z mých nejoblíbenějších malířů a zároveň jedním z mých nejoblíbenějších impresionistů.
 

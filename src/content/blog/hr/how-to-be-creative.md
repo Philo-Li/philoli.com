@@ -3,7 +3,12 @@ title: Kako razviti nesputanu maštu
 date: 2022-03-19 20:53:13
 tags: Razmišljanja
 categories: Opušteno čavrljanje
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Kako razviti nesputanu maštu" />
+</figure>
 Svi ljudi posjeduju maštu, no često ne znamo kako je iskoristiti. Stoga, umjesto da govorim o tome 'kako steći maštu', radije ću se usredotočiti na to 'kako osloboditi svoju maštu' – onu nesputanu i fantastičnu.
 
 <!--more-->

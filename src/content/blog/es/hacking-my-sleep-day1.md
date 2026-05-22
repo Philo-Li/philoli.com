@@ -7,7 +7,12 @@ tags:
   - Sueño
   - Superación personal
 categories: Charlas cotidianas
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="¿Puedo dormir mejor en menos tiempo? Un autoexperimento sobre el sueño - Día 1" />
+</figure>
 
 He iniciado un experimento sobre el sueño con el objetivo de mejorar la calidad de mi descanso y mis niveles de energía, a través de ajustes en mi dieta y estilo de vida, para mantenerme más despierto y con más vitalidad.
 

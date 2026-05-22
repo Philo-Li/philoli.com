@@ -4,7 +4,12 @@ title: Thế giới quan của tôi
 date: 2024-12-25 18:19:46
 tags: Tản văn
 categories: Tâm sự hàng ngày
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Thế giới quan của tôi" />
+</figure>
 
 Einstein từng có một cuốn sách mang tên "Thế giới quan của tôi", tập hợp những bức thư, bài viết và diễn văn công khai của ông. Trong đó có một bài viết trùng tên với tựa sách. Tôi cũng muốn viết một bài về "Thế giới quan của tôi".
 

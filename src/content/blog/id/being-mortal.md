@@ -6,7 +6,12 @@ tags:
   - Esai
   - Buku
 categories: Catatan Bacaan
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Perpisahan Terbaik: Fakta Dasar tentang Penuaan dan Kematian yang Wajib Kamu Tahu" />
+</figure>
 
 Mereka yang membaca artikel ini kemungkinan besar masih jauh dari usia lanjut, sulit membayangkan kehidupan di masa tua yang sesungguhnya, dan merasakan asing sekaligus takut akan penuaan dan kematian. Namun, setiap manusia pasti akan mati. Kita perlu tahu apa yang akan kita hadapi nanti, serta proses dan kondisi mental seperti apa yang akan kita alami? Lalu, apa yang bisa kita lakukan? Dan bagaimana sistem kesehatan bisa beradaptasi untuk ini? Menghilangkan ketidaktahuan adalah cara untuk menghilangkan rasa takut.
 

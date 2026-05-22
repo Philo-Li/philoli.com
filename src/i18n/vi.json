@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Bản tin",
-    "subscribe": "Đăng ký →"
+    "subscribe": "Đăng ký →",
+    "welcomeTitle": "Bạn đã tham gia.",
+    "welcomeBody": "Rất vui khi có bạn ở đây. Dưới đây là một vài bài viết để bắt đầu — hãy chọn bất cứ bài nào bạn thấy hứng thú. Bạn sẽ nhận được thông báo từ tôi khi tôi đăng bài mới.",
+    "startHere": "Bắt đầu tại đây",
+    "browseAll": "Xem tất cả bài viết →",
+    "replyInvite": "Hãy trả lời bất kỳ email nào — tôi đều đọc tất cả."
   },
   "metadata": {
     "siteTitle": "Philo Li — Nghệ sĩ, Người viết, Người sáng tạo",

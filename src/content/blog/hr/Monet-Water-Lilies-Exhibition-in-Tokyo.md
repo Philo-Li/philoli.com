@@ -7,7 +7,12 @@ tags:
     - Esej
     - Umjetnost
 categories: Svakodnevne misli
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monetova izložba u Tokiju: Od borbe s kataraktom do besmrtnih poteza kistom" />
+</figure>
 
 Prije nekoliko dana, u zadnji čas, napokon sam posjetio dugo željenu izložbu Moneta. On je jedan od mojih omiljenih slikara, a ujedno i jedan od mojih najdražih impresionista.
 

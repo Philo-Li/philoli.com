@@ -4,7 +4,12 @@ title: Mi visión del mundo
 date: 2024-12-25 18:19:46
 tags: Ensayos
 categories: Charlas cotidianas
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Mi visión del mundo" />
+</figure>
 
 Albert Einstein escribió un libro titulado «Mi visión del mundo», que recopila una serie de cartas, artículos y discursos públicos suyos. Uno de esos textos lleva el mismo nombre que la obra. Yo también deseo plasmar mi propia «Visión del mundo».
 

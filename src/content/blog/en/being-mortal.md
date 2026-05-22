@@ -6,7 +6,12 @@ tags:
   - Essays
   - Reading
 categories: Reading笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Essential Truths About Aging and Death" />
+</figure>
 
 Last year (2024) I reached my goal of reading one hundred books — works ranging from science, medicine, psychology, and the arts to social science, literature, and investing. Among them were many outstanding titles. To keep this recommendation list from growing unwieldy, I have chosen only the finest: every book below earned at least four, and often five, stars in my personal ledger.
 

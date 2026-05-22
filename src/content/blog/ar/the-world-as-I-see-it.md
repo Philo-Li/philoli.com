@@ -4,7 +4,12 @@ title: رؤيتي للعالم
 date: 2024-12-25 18:19:46
 tags: خواطر
 categories: أحاديث يومية
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="رؤيتي للعالم" />
+</figure>
 
 كان لأينشتاين كتاب بعنوان «رؤيتي للعالم»، ضم مجموعة من رسائله ومقالاته وخطبه العامة، وكان أحد هذه النصوص يحمل نفس عنوان الكتاب. أردتُ أنا أيضًا أن أكتب مقالًا بعنوان «رؤيتي للعالم».
 

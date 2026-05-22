@@ -7,7 +7,12 @@ tags:
   - Somn
   - Dezvoltare personală
 categories: Povești cotidiene
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Mai puțin timp, somn mai bun? Un auto-experiment despre somn Ziua 1" />
+</figure>
 
 Am demarat un experiment personal legat de somn, având ca scop îmbunătățirea calității repausului și a nivelului de energie. Prin ajustarea dietei și a stilului de viață, îmi propun să rămân într-o stare mai lucidă și mai plină de vitalitate.
 

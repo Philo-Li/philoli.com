@@ -3,7 +3,12 @@ title: Ako rozvinúť nespútanú predstavivosť
 date: 2022-03-19 20:53:13
 tags: Esej
 categories: Každodenné rozhovory
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Ako rozvinúť nespútanú predstavivosť" />
+</figure>
 Predstavivosť má každý človek, kľúčové je len vedieť, ako ju naplno využiť. V skutočnosti nechcem odpovedať na otázku „ako získať predstavivosť“, ale skôr na to, „ako oslobodiť svoju predstavivosť“. Preto sa tu zameriam na to, čo nazývam nespútanou, bujnou fantáziou.
 
 <!--more-->

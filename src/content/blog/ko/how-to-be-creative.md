@@ -3,7 +3,12 @@ title: 천마행공(天馬行空) 같은 상상력을 얻는 법
 date: 2022-03-19 20:53:13
 tags: 에세이
 categories: 일상 이야기
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="천마행공(天馬行空) 같은 상상력을 얻는 법" />
+</figure>
 상상력은 모든 인간이 가지고 있지만, 어떻게 발휘해야 할지 모르는 것이 문제입니다. 제가 여기서 답하려는 것은 '상상력을 얻는 방법'이 아니라 '상상력을 해방하는 방법'입니다. 따라서 주로 이른바 천마행공 같은 상상력에 대해 이야기해 볼까 합니다.
 
 <!--more-->

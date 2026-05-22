@@ -7,7 +7,12 @@ tags:
   - خواب
   - خودسازی
 categories: گپ‌وگفت روزمره
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="آیا می‌توانم با زمان کمتری بهتر بخوابم؟ یک خودآزمایی درباره خواب - روز اول" />
+</figure>
 
 من یک آزمایش خواب را کلید زده‌ام. هدفم این است که با تغییراتی در رژیم غذایی و سبک زندگی‌ام، کیفیت خواب و سطح انرژی‌ام را بالا ببرم تا همیشه هوشیارتر و پرانرژی‌تر باشم.
 

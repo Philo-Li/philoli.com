@@ -6,7 +6,12 @@ tags:
   - mõtisklused
   - lugemine
 categories: lugemismärkmed
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Parim hüvastijätt: Mida peaksid vananemise ja surma kohta teadma" />
+</figure>
 
 Tõenäoliselt on need, kes seda artiklit loevad, vanadusest veel kaugel ning neil on raske ette kujutada tõelist vanaduspõlve. Vananemine ja surm on neile nii võõrad kui ka hirmuäratavad. Kuid inimene on surelik. Seepärast on vaja teada, mis meid ees ootab – milliseid protsesse ja vaimseid seisundeid me läbi elame. Mida me ise saame teha ja kuidas peaks meditsiin selleks muutuma? Tundmatuse kõrvaldamine on ainus viis hirmu hajutamiseks.
 

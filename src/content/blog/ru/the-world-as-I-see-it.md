@@ -4,7 +4,12 @@ title: Моё мировоззрение
 date: 2024-12-25 18:19:46
 tags: Эссе
 categories: Повседневные мысли
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Моё мировоззрение" />
+</figure>
 
 У Альберта Эйнштейна есть книга «Моё мировоззрение», в которую вошли его письма, статьи и публичные выступления. Одна из статей носит то же название, что и книга. Мне тоже захотелось изложить своё мировоззрение.
 

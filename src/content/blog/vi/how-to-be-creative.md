@@ -3,7 +3,12 @@ title: Làm thế nào để có được trí tưởng tượng bay bổng như
 date: 2022-03-19 20:53:13
 tags: Tản văn
 categories: Tâm sự hàng ngày
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Làm thế nào để có được trí tưởng tượng bay bổng như ngựa trời" />
+</figure>
 Mọi người đều có trí tưởng tượng, nhưng điều quan trọng là không biết cách khai thác nó. Thực ra, điều tôi muốn giải đáp không phải là "làm thế nào để có được trí tưởng tượng", mà là "làm thế nào để giải phóng trí tưởng tượng của bạn". Vì vậy, ở đây tôi sẽ chủ yếu nói về cái gọi là trí tưởng tượng bay bổng không giới hạn.
 
 <!--more-->

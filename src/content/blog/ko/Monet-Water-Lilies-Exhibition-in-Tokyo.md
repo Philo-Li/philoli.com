@@ -7,7 +7,12 @@ tags:
     - 에세이
     - 예술
 categories: 일상 이야기
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="도쿄 모네전: 백내장의 고뇌에서 불멸의 붓터치까지" />
+</figure>
 
 며칠 전, 마감 직전에야 겨우 고대하던 모네 전시회를 보고 왔다. 모네는 내가 가장 좋아하는 화가 중 한 명이자, 가장 사랑하는 인상파 화가이기도 하다.
 

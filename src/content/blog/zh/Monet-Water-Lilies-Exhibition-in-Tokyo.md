@@ -7,7 +7,12 @@ tags:
     - 随笔
     - 艺术
 categories: 日常闲聊
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="东京莫奈展：从白内障的困扰到不朽的笔触" />
+</figure>
 
 前几天赶在最后终于把心心念念的莫奈展看了，莫奈是我最爱的画家之一，也是我最爱的印象派画家之一。
 

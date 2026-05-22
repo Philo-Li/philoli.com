@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Uudiskiri",
-    "subscribe": "Telli →"
+    "subscribe": "Telli →",
+    "welcomeTitle": "Oled sees.",
+    "welcomeBody": "Hea, et oled siin. Allpool on mõned esseed, millest alustada – vali see, mis silma jääb. Annan endast märku, kui avaldan midagi uut.",
+    "startHere": "Alusta siit",
+    "browseAll": "Sirvi kõiki postitusi →",
+    "replyInvite": "Vasta ükskõik millisele e-kirjale – loen igaüht neist."
   },
   "metadata": {
     "siteTitle": "Philo Li — kunstnik, kirjanik, looja",

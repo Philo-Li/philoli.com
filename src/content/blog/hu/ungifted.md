@@ -7,7 +7,12 @@ tags:
   - olvasás
   - pszichológia
 categories: olvasónapló
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Nem tehetség kérdése: Az IQ, a tudatos gyakorlás és a kreativitás igazsága" />
+</figure>
 
 Scott Barry Kaufman kognitív tudós az intelligencia, a kreativitás és az emberi potenciál kutatására specializálódott. Könyvében azt vizsgálja, hogyan tanulunk, és megpróbálja megdönteni az IQ-ról és a "tehetségről" alkotott, széles körben elterjedt, szűk látókörű elképzeléseket. Saját tapasztalatait felhasználva új lehetőségeket és reményt kínál azoknak, akiket "tanulási zavarral" címkéztek meg.
 

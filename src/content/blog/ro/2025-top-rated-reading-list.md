@@ -7,6 +7,7 @@ tags:
   - listă de cărți
 categories: Povești de zi cu zi
 description: Recomandări pentru 12 cărți excelente, cotate cu patru stele sau mai mult, citite în 2025, care abordează scrierea, arta, psihologia, științele sociale, finanțele și dezvoltarea personală.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Anul trecut am citit 47 de cărți. Din diverse motive, anul 2025 a fost extrem de aglomerat pentru mine, așa că nu am reușit să ating obiectivul de 100 de cărți, așa cum am făcut în 2024. Cu toate acestea, am parcurs o mulțime de opere remarcabile. Lecturile mele au acoperit diverse domenii, precum scrierea, arta, psihologia, științele sociale, finanțele și dezvoltarea personală. Printre ele s-au numărat multe opere care mi-au rămas întipărite în minte mult timp după ce le-am terminat, așa că am decis să le adun și să le recomand. Există cu adevărat multe cărți excelente și demne de citit. Pentru a nu lungi prea mult lista de recomandări, am ales doar 12 dintre ele, pe care le-am cotat cu patru sau chiar cinci stele.

@@ -3,7 +3,12 @@ title: Cum să-ți dezvolți o imaginație debordantă
 date: 2022-03-19 20:53:13
 tags: Reflecții personale
 categories: Discuții cotidiene
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Cum să-ți dezvolți o imaginație debordantă" />
+</figure>
 Fiecare om are imaginație, însă cheia este să știm cum să o punem în valoare. De fapt, nu voi răspunde la întrebarea „cum să obții imaginație”, ci mai degrabă la „cum să-ți eliberezi imaginația”. Așadar, aici vom discuta în principal despre ceea ce numim o imaginație debordantă.
 
 <!--more-->

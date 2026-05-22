@@ -3,7 +3,12 @@ title: Kaip išlaisvinti beribę vaizduotę
 date: 2022-03-19 20:53:13
 tags: Esė
 categories: Kasdienybė
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Kaip išlaisvinti beribę vaizduotę" />
+</figure>
 Vaizduotę turi kiekvienas žmogus, tačiau pagrindinis iššūkis – nežinojimas, kaip ją išnaudoti. Iš tiesų, aš ketinu atsakyti ne į klausimą „kaip įgyti vaizduotę“, o „kaip išlaisvinti savo vaizduotę“. Todėl čia daugiausia kalbėsiu apie vadinamąją beribę vaizduotę.
 
 <!--more-->

@@ -7,6 +7,7 @@ tags:
   - Danh sách sách
 categories: Tâm sự hàng ngày
 description: Tuyển chọn 12 cuốn sách đạt từ 4 sao trở lên đã đọc trong năm 2025, thuộc các lĩnh vực viết lách, nghệ thuật, tâm lý học, khoa học xã hội, tài chính và phát triển cá nhân.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Năm ngoái tôi đã đọc 47 cuốn sách. Vì nhiều lý do, năm đó tôi vô cùng bận rộn, nên không thể đạt được mục tiêu 100 cuốn sách như năm 2024, nhưng tôi vẫn đọc được không ít tác phẩm xuất sắc. Các tác phẩm tôi đọc bao gồm nhiều lĩnh vực như viết lách, nghệ thuật, tâm lý học, khoa học xã hội, tài chính và phát triển cá nhân. Trong số đó, có không ít tác phẩm để lại ấn tượng sâu sắc cho tôi sau khi đọc xong. Vì vậy, tôi đã tổng hợp lại để giới thiệu đến mọi người. Thực sự có rất nhiều tác phẩm hay và đáng đọc. Để danh sách đề xuất không quá dài, tôi chỉ chọn ra 12 cuốn đạt từ bốn sao trở lên, thậm chí có cuốn đạt năm sao.

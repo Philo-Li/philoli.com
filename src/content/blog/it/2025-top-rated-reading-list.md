@@ -7,6 +7,7 @@ tags:
   - Lista libri
 categories: Pensieri quotidiani
 description: Consigli su 12 ottimi libri (4 stelle o più) letti nel 2025, che toccano scrittura, arte, psicologia, scienze sociali, finanza e crescita personale.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 L'anno scorso ho letto 47 libri. Per diverse ragioni, è stato un anno estremamente impegnativo per me, quindi non sono riuscito a raggiungere l'obiettivo dei 100 libri come nel 2024, ma ho comunque avuto modo di immergermi in molte opere straordinarie. Le letture hanno spaziato in vari campi come la scrittura, l'arte, la psicologia, le scienze sociali, la finanza e la crescita personale. Tra queste, molte sono opere che mi sono rimaste impresse a lungo dopo averle finite, per questo ho deciso di raccoglierle e farne un elenco consigliato. Ci sono davvero tantissime opere eccellenti e degne di essere lette, ma per non rendere questa lista troppo lunga, ho selezionato solo le 12 che ho valutato con quattro o addirittura cinque stelle.

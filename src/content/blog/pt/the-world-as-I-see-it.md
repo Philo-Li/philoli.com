@@ -4,7 +4,12 @@ title: Minha Visão de Mundo
 date: 2024-12-25 18:19:46
 tags: Ensaios
 categories: Conversas do dia a dia
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Minha Visão de Mundo" />
+</figure>
 
 Einstein tinha um livro intitulado «Minha Visão de Mundo», que compilava uma série de cartas, artigos e discursos públicos que ele havia publicado. Um desses textos tinha o mesmo nome do livro. Eu também quero escrever um artigo chamado «Minha Visão de Mundo».
 

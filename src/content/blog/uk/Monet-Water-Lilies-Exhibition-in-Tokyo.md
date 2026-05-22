@@ -7,7 +7,12 @@ tags:
     - Есе
     - Мистецтво
 categories: Щоденні розмови
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Виставка Моне в Токіо: від боротьби з катарактою до безсмертних мазків" />
+</figure>
 
 Днями, в останній момент, мені нарешті вдалося відвідати омріяну виставку Моне. Він — один з моїх найулюбленіших художників, і, безумовно, мій фаворит серед імпресіоністів.
 

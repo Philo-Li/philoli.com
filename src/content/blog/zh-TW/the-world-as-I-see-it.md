@@ -4,7 +4,12 @@ title: 我的世界觀
 date: 2024-12-25 18:19:46
 tags: 隨筆
 categories: 日常閒聊
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="我的世界觀" />
+</figure>
 
 愛因斯坦有本書叫《我的世界觀》，裡面收錄了他發表的一系列書信文章和公開演講，其中一篇就和書名同名。我也一直想寫一篇屬於自己的《我的世界觀》。
 

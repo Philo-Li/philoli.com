@@ -7,7 +7,12 @@ tags:
   - uni
   - eneseareng
 categories: Igapäevajutud
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Kas ma saan vähema ajaga paremini magada? Une-iseeksperiment, 1. päev" />
+</figure>
 
 Olen alustanud une-eksperimenti, millega soovin muuta oma toitumis- ja elustiiliharjumusi, et parandada unekvaliteeti ja energiataset ning püsida seeläbi ärksam ja elujõulisem.
 

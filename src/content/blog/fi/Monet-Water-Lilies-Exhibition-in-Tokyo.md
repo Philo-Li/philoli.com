@@ -7,7 +7,12 @@ tags:
     - Mietteitä
     - Taide
 categories: Arkipäivän jutustelu
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Tokion Monet-näyttely: Kaihin haasteista kuolemattomiin siveltimenvetoihin" />
+</figure>
 
 Muutama päivä sitten, aivan viime hetkellä, ehdin vihdoin nähdä sen kauan odottamani Monet-näyttelyn. Monet on yksi suosikkitaiteilijoistani ja ehdottomasti lempimpressionistini.
 

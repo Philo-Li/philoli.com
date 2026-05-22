@@ -7,7 +7,12 @@ tags:
     - Eseje
     - Sztuka
 categories: Codzienne pogadanki
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Wystawa Moneta w Tokio: Od zmagań z zaćmą po nieśmiertelne pociągnięcia pędzla" />
+</figure>
 
 Kilka dni temu, w ostatniej chwili, udało mi się wreszcie zobaczyć długo wyczekiwaną wystawę Moneta. Jest on jednym z moich ulubionych malarzy, a także jednym z moich ulubionych impresjonistów.
 

@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Buletin",
-    "subscribe": "Berlangganan →"
+    "subscribe": "Berlangganan →",
+    "welcomeTitle": "Anda sudah masuk.",
+    "welcomeBody": "Senang Anda ada di sini. Di bawah ini ada beberapa esai untuk memulai — pilih mana saja yang menarik perhatian Anda. Anda akan mendengar kabar dari saya saat saya menerbitkan sesuatu yang baru.",
+    "startHere": "Mulai dari sini",
+    "browseAll": "Telusuri semua tulisan →",
+    "replyInvite": "Balas email apa pun — saya membaca semuanya."
   },
   "metadata": {
     "siteTitle": "Philo Li — Seniman, Penulis, Kreator",

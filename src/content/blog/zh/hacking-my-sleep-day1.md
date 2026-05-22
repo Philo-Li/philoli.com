@@ -7,7 +7,12 @@ tags:
   - 睡眠
   - 自我提升
 categories: 日常闲聊
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="我能用更少的时间睡得更好吗？一个关于睡眠的自我实验 Day 1" />
+</figure>
 
 我开启了一项睡眠实验，旨在通过调整饮食和生活习惯，来改善睡眠质量和精力水平，保持更清醒更有活力的状态。
 

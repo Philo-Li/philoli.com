@@ -3,7 +3,12 @@ title: 天馬行空の想像力を手に入れるには
 date: 2022-03-19 20:53:13
 tags: 随筆
 categories: 日常雑談
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="天馬行空の想像力を手に入れるには" />
+</figure>
 想像力は誰しもが持っているものですが、それをどう発揮すれば良いのか分からない、というのが肝心な点でしょう。私がここで答えたいのは、実は「どうすれば想像力を手に入れられるか」ではなく、「どうすれば自分の想像力を解き放てるか」なのです。そこで今回は、いわゆる「天馬行空」のような、自由奔放な想像について深掘りしていきたいと思います。
 
 <!--more-->

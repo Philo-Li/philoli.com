@@ -7,7 +7,12 @@ tags:
     - Eseu
     - Artă
 categories: Povești cotidiene
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Expoziția Monet la Tokyo: De la chinurile cataractei la tușe nemuritoare" />
+</figure>
 
 Cu câteva zile în urmă, chiar înainte de a se încheia, am reușit să văd în sfârșit expoziția Monet la care tânjeam de mult. Monet este unul dintre pictorii mei preferați și, de asemenea, unul dintre artiștii impresioniști pe care îi admir cel mai mult.
 

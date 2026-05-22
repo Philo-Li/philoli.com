@@ -7,6 +7,7 @@ tags:
   - Bogliste
 categories: Hverdagssnak
 description: Anbefalinger af 12 bøger vurderet til fire stjerner eller derover, læst i 2025, inden for områder som skrivning, kunst, psykologi, samfundsvidenskab, finans og personlig udvikling.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Sidste år læste jeg 47 bøger. Af forskellige årsager var 2025 et utroligt travlt år for mig, så jeg nåede ikke mit mål på 100 bøger som i 2024. Men jeg fik dog læst en del fantastiske værker. De bøger, jeg læste, dækkede mange områder som skrivning, kunst, psykologi, samfundsvidenskab, finans og personlig udvikling. Blandt dem var der adskillige værker, som har sat sig dybt i min hukommelse, og dem vil jeg nu anbefale. Der er så mange fremragende og læseværdige bøger derude. For ikke at gøre anbefalingslisten for lang har jeg kun udvalgt de 12, jeg bedømte til fire eller fem stjerner.

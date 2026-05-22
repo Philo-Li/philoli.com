@@ -7,6 +7,7 @@ tags:
   - Zoznam kníh
 categories: Každodenné rozhovory
 description: Odporúčam 12 výnimočných kníh (4 a viac hviezdičiek), ktoré som prečítal v roku 2025. Pokrývajú písanie, umenie, psychológiu, spoločenské vedy, financie a osobný rozvoj.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Minulý rok som prečítal 47 kníh. Z rôznych dôvodov bol pre mňa mimoriadne rušný, takže sa mi nepodarilo splniť cieľ 100 kníh, ako to bolo v roku 2024. Napriek tomu som sa ponoril do mnohých úžasných diel. Čítal som knihy z rôznych oblastí, ako sú písanie, umenie, psychológia, sociálne vedy, financie a osobný rozvoj. Medzi nimi bolo veľa takých, ktoré mi aj po prečítaní zostali hlboko v pamäti, a tak som sa rozhodol ich zhrnúť a odporučiť. Existuje naozaj mnoho vynikajúcich a hodnotných diel, ale aby nebol tento zoznam príliš dlhý, vybral som len 12 z nich, ktorým som udelil štyri alebo dokonca päť hviezdičiek.

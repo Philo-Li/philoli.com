@@ -7,7 +7,12 @@ tags:
   - Knygos
   - Psichologija
 categories: Knygos笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Ne vien tik talentas: IQ, tikslinga praktika ir tiesa apie kūrybiškumą" />
+</figure>
 
 Kognityvinis mokslininkas Scottas Barry Kaufmanas savo tyrimuose daugiausia dėmesio skiria intelektui, kūrybiškumui ir žmogaus potencialui. Savo knygoje jis nagrinėja, kaip mes mokomės, ir siekia paneigti visuomenėje įsitvirtinusį siaurą „intelekto koeficiento“ (IQ) ir „talento“ suvokimą. Remdamasis asmenine patirtimi, jis atveria naujas galimybes ir teikia vilties tiems, kurie buvo apibūdinti kaip turintys „mokymosi sunkumų“.
 

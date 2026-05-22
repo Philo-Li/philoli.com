@@ -7,7 +7,12 @@ tags:
   - ঘুম
   - আত্ম-উন্নতি
 categories: দৈনন্দিন আলাপ
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="আমি কি কম ঘুমিয়েও আরও ভালো ঘুমাতে পারি? একটি ঘুম নিয়ে ব্যক্তিগত পরীক্ষা – দিন ১" />
+</figure>
 
 আমি ঘুম নিয়ে একটি নতুন পরীক্ষা শুরু করেছি। এর উদ্দেশ্য হলো, খাদ্যাভ্যাস ও জীবনযাপনে কিছু পরিবর্তন এনে ঘুমের মান এবং আমার দৈনন্দিন কর্মশক্তি বাড়ানো, যাতে আমি আরও সজাগ ও প্রাণবন্ত বোধ করি।
 

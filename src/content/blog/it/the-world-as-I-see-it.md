@@ -4,7 +4,12 @@ title: La mia visione del mondo
 date: 2024-12-25 18:19:46
 tags: Saggi
 categories: Pensieri quotidiani
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="La mia visione del mondo" />
+</figure>
 
 Albert Einstein ha scritto un libro intitolato "La mia visione del mondo", una raccolta di lettere, articoli e discorsi pubblici, tra cui un saggio con lo stesso titolo del libro. Anch'io desidero scrivere un saggio intitolato "La mia visione del mondo".
 

@@ -3,7 +3,12 @@ title: Como Liberar uma Imaginação Sem Limites
 date: 2022-03-19 20:53:13
 tags: Ensaios
 categories: Conversas do dia a dia
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Como Liberar uma Imaginação Sem Limites" />
+</figure>
 Todos os seres humanos possuem imaginação; o desafio é saber como usá-la. Na verdade, a minha intenção não é responder "como adquirir imaginação", mas sim "como libertar a sua". Por isso, o foco aqui será naquilo que chamamos de imaginação sem limites.
 
 <!--more-->

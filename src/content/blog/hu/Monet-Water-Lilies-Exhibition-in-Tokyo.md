@@ -7,7 +7,12 @@ tags:
     - esszé
     - művészet
 categories: hétköznapi beszélgetések
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monet kiállítás Tokióban: A szürkehályog gyötrelmeitől a halhatatlan ecsetvonásokig" />
+</figure>
 
 Néhány nappal ezelőtt, az utolsó pillanatban sikerült megnéznem a régóta várt Monet-kiállítást. Monet az egyik kedvenc festőm, és egyben a legkedvesebb impresszionista művészem.
 

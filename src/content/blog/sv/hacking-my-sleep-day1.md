@@ -7,7 +7,12 @@ tags:
   - Sömn
   - Självförbättring
 categories: Vardagssnack
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Kan jag sova bättre på mindre tid? Ett självexperiment om sömn – Dag 1" />
+</figure>
 
 Jag har påbörjat ett sömnexperiment. Målet är att förbättra min sömnkvalitet och energinivåer, och att känna mig piggare och mer vital, genom att justera min kost och mina livsstilsvanor.
 

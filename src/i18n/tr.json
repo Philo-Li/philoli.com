@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Bülten",
-    "subscribe": "Abone ol →"
+    "subscribe": "Abone ol →",
+    "welcomeTitle": "İçeridesin.",
+    "welcomeBody": "Seni burada görmek güzel. Başlamak için aşağıda birkaç deneme var; gözüne kestirdiğini seçebilirsin. Yeni bir şey yayınladığımda benden haber alacaksın.",
+    "startHere": "Buradan başla",
+    "browseAll": "Tüm gönderilere göz at →",
+    "replyInvite": "Herhangi bir e-postaya yanıt ver — hepsini okuyorum."
   },
   "metadata": {
     "siteTitle": "Philo Li — Sanatçı, Yazar, Üretici",

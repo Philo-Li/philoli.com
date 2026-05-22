@@ -6,7 +6,12 @@ tags:
   - Eseje
   - Czytanie książek
 categories: Czytanie książek笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Najlepsze pożegnanie: Prawdy o starzeniu się i śmierci, które musisz znać" />
+</figure>
 
 Osoby, które czytają ten artykuł, najprawdopodobniej są jeszcze daleko od starości i trudno im sobie wyobrazić prawdziwe życie w podeszłym wieku. Czują zarówno obcość, jak i lęk przed starzeniem się i śmiercią. Ale każdy z nas kiedyś umrze. Musimy wiedzieć, czego możemy się spodziewać, jakie procesy i stany psychiczne nas czekają, gdy nadejdzie ten czas. Co możemy zrobić, i jak medycyna może się do tego przygotować? Tylko eliminacja niewiedzy może usunąć strach.
 

@@ -4,7 +4,12 @@ title: Mój światopogląd
 date: 2024-12-25 18:19:46
 tags: Esej
 categories: Codzienne Rozmyślania
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Mój światopogląd" />
+</figure>
 
 Einstein napisał książkę „Mój światopogląd”, która zawierała zbiór jego listów, artykułów i publicznych wystąpień. Jeden z tekstów nosił ten sam tytuł co książka. Ja również chciałabym napisać swój „Mój światopogląd”.
 

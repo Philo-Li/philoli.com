@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Nyhetsbrev",
-    "subscribe": "Prenumerera →"
+    "subscribe": "Prenumerera →",
+    "welcomeTitle": "Du är inne.",
+    "welcomeBody": "Kul att du är här. Nedan följer några essäer att börja med — välj den som fångar ditt intresse. Du kommer att höra från mig när jag publicerar något nytt.",
+    "startHere": "Börja här",
+    "browseAll": "Bläddra bland alla inlägg →",
+    "replyInvite": "Svara på valfritt mejl — jag läser varenda ett."
   },
   "metadata": {
     "siteTitle": "Philo Li — Konstnär, skribent, kreatör",

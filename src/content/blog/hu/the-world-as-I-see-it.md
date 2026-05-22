@@ -4,7 +4,12 @@ title: A világnézetem
 date: 2024-12-25 18:19:46
 tags: Gondolatok
 categories: Csevegés
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="A világnézetem" />
+</figure>
 
 Einsteinnek volt egy könyve, *A világnézetem* címmel, amely leveleket, cikkeket és nyilvános beszédeket gyűjtött össze, és az egyik írás pontosan a könyv címét viselte. Én is szeretnék egy *A világnézetem* című cikket írni.
 

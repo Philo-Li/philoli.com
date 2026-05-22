@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "ニュースレター",
-    "subscribe": "購読する →"
+    "subscribe": "購読する →",
+    "welcomeTitle": "登録が完了しました。",
+    "welcomeBody": "ようこそ。まずは以下のエッセイから、気になるものを読んでみてください。新しい記事を公開した際にまたお知らせします。",
+    "startHere": "はじめに",
+    "browseAll": "すべての記事を見る →",
+    "replyInvite": "メールへの返信はすべて読んでいます。お気軽にどうぞ。"
   },
   "metadata": {
     "siteTitle": "Philo Li — アーティスト、ライター、クリエイター",

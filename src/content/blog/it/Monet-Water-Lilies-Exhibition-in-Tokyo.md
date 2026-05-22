@@ -7,7 +7,12 @@ tags:
     - Pensieri
     - Arte
 categories: Chiacchiere quotidiane
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Mostra di Monet a Tokyo: Dalla Sofferenza della Cataratta ai Tocchi Immortali" />
+</figure>
 
 Qualche giorno fa, proprio all'ultimo momento utile, sono finalmente riuscito a visitare la mostra di Monet che tanto desideravo vedere. È uno dei miei pittori preferiti e, senza dubbio, uno dei maestri impressionisti che amo di più.
 

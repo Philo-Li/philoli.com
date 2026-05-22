@@ -7,7 +7,12 @@ tags:
     - Essay
     - Kunst
 categories: Hverdagslige betraktninger
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monet-utstillingen i Tokyo: Fra plager med grå stær til udødelige penselstrøk" />
+</figure>
 
 For noen dager siden, i siste liten, fikk jeg endelig sett Monet-utstillingen jeg hadde gledet meg sånn til. Monet er en av mine absolutt favorittmalere, og min favoritt blant impresjonistene.
 

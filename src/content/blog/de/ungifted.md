@@ -7,7 +7,12 @@ tags:
   - Lesen
   - Psychologie
 categories: Buchnotizen
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Kein reines Talent: Die Wahrheit über Intelligenz, bewusstes Üben und Kreativität" />
+</figure>
 
 Der Kognitionswissenschaftler Scott Barry Kaufman widmet seine Forschung der Intelligenz, Kreativität und dem menschlichen Potenzial. In seinem Buch untersucht er, wie wir lernen, und versucht, gängige, enge Vorstellungen von "IQ" und "Talent" zu widerlegen. Dabei schöpft er aus eigenen Erfahrungen, um Menschen, die als "lernbehindert" abgestempelt wurden, neue Möglichkeiten und Hoffnung zu schenken.
 

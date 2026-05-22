@@ -7,7 +7,12 @@ tags:
     - Apmąstymai
     - Menas
 categories: Kasdieniai pokalbiai
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monė paroda Tokijuje: nuo kataraktos kančių iki nemirtingų potėpių" />
+</figure>
 
 Prieš kelias dienas, paskutinę akimirką, pagaliau aplankiau taip ilgai lauktą Monė parodą. Juk Monė – vienas mano mėgstamiausių dailininkų ir mylimiausių impresionistų.
 

@@ -7,7 +7,12 @@ tags:
   - Lectură
   - Psihologie
 categories: Note de lectură
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Nu e doar talentul: Adevărul despre IQ, practica deliberată și creativitate" />
+</figure>
 
 Scott Barry Kaufman, un cercetător în științe cognitive, se dedică studiului inteligenței, creativității și potențialului uman. În cărțile sale, el explorează modul în care învățăm și încearcă să destrame percepțiile înguste și înrădăcinate ale publicului larg despre „IQ” și „talentul înnăscut”. Pornind de la propria sa experiență, aduce noi perspective și speranță celor etichetați cu „dificultăți de învățare”.
 

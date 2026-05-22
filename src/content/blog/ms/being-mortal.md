@@ -6,7 +6,12 @@ tags:
   - Esei
   - Pembacaan
 categories: Nota Pembacaan
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Perpisahan Terbaik: Perkara Asas Tentang Penuaan dan Kematian yang Perlu Anda Tahu" />
+</figure>
 
 Pembaca artikel ini mungkin masih jauh daripada usia tua, sukar membayangkan kehidupan sebenar warga emas, dan merasakan penuaan serta kematian itu asing lagi menakutkan. Tetapi manusia pasti akan mati. Kita perlu tahu, apa yang akan kita hadapi, proses dan keadaan psikologi bagaimana yang akan kita lalui apabila saat itu tiba? Dan apa yang boleh kita lakukan, serta bagaimana pula sistem perubatan boleh direformasi untuk tujuan ini? Menghapuskan ketidaktahuan adalah kunci untuk menghapuskan ketakutan.
 

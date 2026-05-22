@@ -4,7 +4,12 @@ title: Pandangan Dunia Saya
 date: 2024-12-25 18:19:46
 tags: Esei
 categories: Sembang Santai
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Pandangan Dunia Saya" />
+</figure>
 
 Albert Einstein pernah menulis sebuah buku bertajuk "Pandangan Dunia Saya", yang menghimpunkan koleksi surat, artikel, dan ucapan awam beliau. Salah satu daripada karya dalam buku itu adalah sebuah esei dengan judul yang sama. Saya juga ingin menulis sebuah artikel dengan tajuk "Pandangan Dunia Saya".
 

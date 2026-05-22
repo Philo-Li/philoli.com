@@ -4,7 +4,12 @@ title: Moj svetovni nazor
 date: 2024-12-25 18:19:46
 tags: eseji
 categories: vsakdanji pogovori
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Moj svetovni nazor" />
+</figure>
 
 Albert Einstein je napisal knjigo z naslovom »Moj svetovni nazor«, ki vsebuje zbirko njegovih objavljenih pisem, esejev in javnih govorov. Eden izmed teh člankov nosi enak naslov kot knjiga. Tudi jaz bi rada napisala nekaj o svojem svetovnem nazoru.
 

@@ -7,6 +7,7 @@ tags:
   - kirjasuositukset
 categories: Arjen pohdintoja
 description: Suosituksia kahdestatoista vuonna 2025 lukemastani neljän tai viiden tähden kirjasta. Aiheina kirjoittaminen, taide, psykologia, yhteiskuntatieteet, talous ja henkilökohtainen kasvu.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Viime vuonna luin 47 kirjaa. Vuosi oli monestakin syystä valtavan kiireinen, enkä siksi yltänyt vuoden 2024 tapaan sadan kirjan tavoitteeseeni. Siitä huolimatta luin monia todella vaikuttavia teoksia. Lukemani kirjat käsittelivät muun muassa kirjoittamista, taidetta, psykologiaa, yhteiskuntatieteitä, taloutta ja henkilökohtaista kasvua. Moni niistä jäi mieleeni pitkäksi aikaa, joten päätin koota niistä suosituslistan. Upeita ja lukemisen arvoisia teoksia on valtavasti, mutta jotta listasta ei tulisi liian pitkä, valitsin mukaan vain ne 12, jotka arvioin neljällä tai viidellä tähdellä.

@@ -6,7 +6,12 @@ tags:
   - Saggi
   - Lettura
 categories: Lettura笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Il miglior addio: Le verità che devi conoscere su invecchiamento e morte" />
+</figure>
 
 Chi legge questo articolo, con ogni probabilità, è ancora lontano dalla vecchiaia e fatica a immaginare cosa significhi davvero vivere la terza età. Di fronte all'invecchiamento e alla morte, proviamo sia estraneità che paura. Ma la morte è una certezza per tutti. Dobbiamo quindi prepararci, cercando di capire cosa ci aspetta, quali processi e stati d'animo affronteremo. Cosa possiamo fare noi, e come può la medicina evolversi per supportarci? Solo dissipando l'ignoto si può vincere la paura.
 

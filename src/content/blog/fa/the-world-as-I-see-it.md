@@ -4,7 +4,12 @@ title: جهان‌بینی من
 date: 2024-12-25 18:19:46
 tags: دل‌نوشته
 categories: گپ‌وگفت روزمره
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="جهان‌بینی من" />
+</figure>
 
 آلبرت اینشتین کتابی با عنوان «جهان‌بینی من» داشت که مجموعه‌ای از نامه‌ها، مقالات و سخنرانی‌های عمومی او را در بر می‌گرفت؛ یکی از مقالات این مجموعه نیز همنام کتاب بود. من هم می‌خواهم مقاله‌ای با عنوان «جهان‌بینی من» بنویسم.
 

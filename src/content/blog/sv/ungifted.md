@@ -7,7 +7,12 @@ tags:
   - Bokläsning
   - Psykologi
 categories: Bokläsning笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Inte bara medfödd talang: Sanningen om IQ, målmedveten träning och kreativitet" />
+</figure>
 
 Kognitionsforskaren Scott Barry Kaufman specialiserar sig på intelligens, kreativitet och mänsklig potential. I sina böcker utforskar han hur vi lär oss och försöker utmana den snäva och förutfattade uppfattningen om "IQ" och "talang" som många har. Genom att dela med sig av sina egna erfarenheter vill han erbjuda nya möjligheter och hopp för dem som blivit stämplade med "inlärningssvårigheter".
 

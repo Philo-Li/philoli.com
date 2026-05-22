@@ -7,7 +7,12 @@ tags:
   - Pembacaan
   - Psikologi
 categories: Nota Pembacaan
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Bukan Bakat Semata-mata: Kebenaran di Sebalik IQ, Latihan Berfokus, dan Kreativiti" />
+</figure>
 
 Pakar sains kognitif, Scott Barry Kaufman, menumpukan penyelidikannya pada bidang kecerdasan, kreativiti, dan potensi manusia. Dalam bukunya, beliau meneroka bagaimana kita belajar, dan berusaha untuk menolak tanggapan sempit dan tradisional masyarakat tentang "IQ" dan "bakat". Menggabungkan pengalaman peribadinya, beliau membawa dimensi kemungkinan dan harapan baharu kepada mereka yang dilabel sebagai "bermasalah pembelajaran".
 

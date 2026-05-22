@@ -7,7 +7,12 @@ tags:
   - Uyku
   - Kişisel Gelişim
 categories: Gündelik Sohbetler
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Daha Az Uyuyarak Daha İyi Uyuyabilir miyim? Bir Uyku Üzerine Kişisel Deney - 1. Gün" />
+</figure>
 
 Beslenme ve yaşam alışkanlıklarımı düzenleyerek uyku kalitemi ve enerji seviyemi artırmak, böylece daha uyanık ve enerjik kalmak amacıyla bir uyku deneyi başlattım.
 

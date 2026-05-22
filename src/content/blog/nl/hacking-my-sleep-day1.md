@@ -7,7 +7,12 @@ tags:
   - Slaap
   - Zelfverbetering
 categories: Dagelijkse praatjes
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Kan ik beter slapen in minder tijd? Een zelfexperiment over slaap – Dag 1" />
+</figure>
 
 Ik ben een slaapexperiment gestart, met als doel mijn slaapkwaliteit en energieniveau te verbeteren door mijn dieet en levensstijl aan te passen. Zo hoop ik me alerter en vitaler te voelen.
 

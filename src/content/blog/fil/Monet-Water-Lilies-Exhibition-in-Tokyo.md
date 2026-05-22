@@ -7,7 +7,12 @@ tags:
     - Mga Pagninilay
     - Sining
 categories: Kwentuhan
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monet Exhibition sa Tokyo: Mula sa Hamon ng Katarata Tungo sa Walang Kamatayang Sining" />
+</figure>
 
 Ilang araw lang ang nakakaraan, sa wakas ay nakita ko na ang Monet exhibition na matagal ko nang gustong puntahan, bago pa man ito matapos. Si Monet ay isa sa mga paborito kong pintor, at isa rin sa mga pinakagusto kong Impressionist artist.
 

@@ -6,7 +6,12 @@ tags:
   - Essays
   - Self-improvement
 categories: Casual Thoughts
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Hacking My Sleep: Day 1 of a Personal Experiment" />
+</figure>
 
 I've embarked on a sleep experiment. My goal is to improve my sleep quality and energy levels by adjusting my diet and lifestyle, aiming to maintain a more alert and vibrant state of being.
 

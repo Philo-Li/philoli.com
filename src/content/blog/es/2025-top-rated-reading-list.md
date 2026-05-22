@@ -7,6 +7,7 @@ tags:
   - Lista de libros
 categories: Charlas cotidianas
 description: Recomendaciones de 12 libros excelentes (4 estrellas o más) leídos en 2025, abarcando escritura, arte, psicología, ciencias sociales, finanzas y crecimiento personal.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 El año pasado leí 47 libros. Por diversas razones, fue un año extremadamente ajetreado, lo que me impidió alcanzar mi objetivo de 100 libros como en 2024. No obstante, tuve la oportunidad de sumergirme en muchas obras fascinantes. Mis lecturas abarcaron múltiples campos: escritura, arte, psicología, ciencias sociales, finanzas y desarrollo personal. Entre ellas, varias obras me dejaron una huella tan profunda que decidí recopilarlas para compartirlas con ustedes. Realmente hay muchísimas obras excelentes y dignas de leer. Para que la lista de recomendaciones no se hiciera interminable, seleccioné solo las 12 que califiqué con cuatro o incluso cinco estrellas.

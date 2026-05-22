@@ -6,7 +6,12 @@ tags:
   - 随笔
   - 读书
 categories: 读书笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="最好的告别：关于衰老与死亡，你必须知道的常识" />
+</figure>
 
 能阅读到这篇文章的人，大概率距离衰老还很遥远，难以想象真正的老年生活，对于衰老和死亡既有陌生也有恐惧。但是人终有一死，我们需要知道，等到那时候我们会遇到什么，会经历什么样的过程和心理状态？而我们又可以做什么，医疗又可以如何为此改革？消除未知才能消除恐惧。
 

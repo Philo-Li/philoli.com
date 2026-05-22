@@ -7,6 +7,7 @@ tags:
   - daftar-buku
 categories: Obrolan Santai Sehari-hari
 description: Rekomendasi 12 buku bagus dengan rating empat bintang atau lebih yang dibaca pada tahun 2025, mencakup bidang menulis, seni, psikologi, ilmu sosial, keuangan, dan pengembangan diri.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Tahun lalu, saya berhasil membaca 47 buku. Karena berbagai kesibukan, saya tidak bisa mencapai target 100 buku seperti pada tahun 2024. Namun, saya tetap menikmati banyak karya yang sangat menarik. Buku-buku yang saya baca mencakup beragam bidang seperti penulisan, seni, psikologi, ilmu sosial, keuangan, dan pengembangan diri. Banyak di antaranya meninggalkan kesan yang begitu mendalam sehingga saya masih mengingatnya dengan jelas. Maka, saya rangkum beberapa di antaranya untuk Anda. Ada begitu banyak karya luar biasa yang patut dibaca. Agar daftar rekomendasi ini tidak terlalu panjang, saya hanya memilih 12 buku yang saya beri rating empat atau bahkan lima bintang.

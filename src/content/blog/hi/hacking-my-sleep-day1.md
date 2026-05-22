@@ -7,7 +7,12 @@ tags:
   - नींद
   - आत्म-सुधार
 categories: दैनिक चर्चा
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="क्या मैं कम समय में बेहतर सो सकता हूँ? नींद पर एक व्यक्तिगत प्रयोग - दिन 1" />
+</figure>
 
 मैंने नींद पर एक प्रयोग शुरू किया है, जिसका लक्ष्य खान-पान और जीवनशैली में बदलाव करके नींद की गुणवत्ता और ऊर्जा के स्तर को सुधारना है, ताकि मैं ज़्यादा सचेत और ऊर्जावान महसूस कर सकूँ।
 

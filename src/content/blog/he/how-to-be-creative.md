@@ -3,7 +3,12 @@ title: איך לשחרר את הדמיון הפרוע שלך
 date: 2022-03-19 20:53:13
 tags: הגיגים
 categories: הגיגים יומיומיים
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="איך לשחרר את הדמיון הפרוע שלך" />
+</figure>
 לכל אדם יש דמיון, אבל הקושי הוא לדעת איך לממש אותו. למעשה, השאלה שאני רוצה לענות עליה כאן היא לא "איך לרכוש דמיון", אלא "איך לשחרר את הדמיון שלך". לכן, אתמקד כאן בעיקר במה שאני מכנה "דמיון פרוע וחסר גבולות".
 
 <!--more-->

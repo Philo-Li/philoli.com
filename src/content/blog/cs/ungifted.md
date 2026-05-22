@@ -7,7 +7,12 @@ tags:
   - Knihy
   - Psychologie
 categories: Čtenářské poznámky
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Není to jen talent: IQ, záměrná praxe a skutečná podstata kreativity" />
+</figure>
 
 Kognitivní vědec Scott Barry Kaufman se specializuje na výzkum inteligence, kreativity a lidského potenciálu. Ve své knize se zabývá tím, jak se učíme, a snaží se vyvrátit zakořeněné, úzkoprsé představy veřejnosti o „IQ“ a „talentu“. Na základě vlastních zkušeností pak přináší nové možnosti a naději těm, kteří byli označeni nálepkou „porucha učení“.
 

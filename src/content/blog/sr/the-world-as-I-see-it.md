@@ -4,7 +4,12 @@ title: Moj pogled na svet
 date: 2024-12-25 18:19:46
 tags: Esej
 categories: Dnevne priče
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Moj pogled na svet" />
+</figure>
 
 Albert Ajnštajn je napisao knjigu pod nazivom „Moj pogled na svet“, u kojoj su sabrani njegovi objavljeni članci, pisma i javni govori. Jedan od tih tekstova nosi isti naslov kao i sama knjiga. I ja sam poželela da napišem nešto slično – „Moj pogled na svet“.
 

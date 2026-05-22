@@ -7,7 +7,12 @@ tags:
     - Ensayos
     - Arte
 categories: Charlas cotidianas
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Exposición de Monet en Tokio: De la aflicción de las cataratas a las pinceladas inmortales" />
+</figure>
 
 Hace unos días, justo antes de que terminara, pude visitar por fin la tan esperada exposición de Monet. Monet es uno de mis pintores favoritos y, sin duda, mi impresionista predilecto.
 

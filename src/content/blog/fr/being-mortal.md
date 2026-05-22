@@ -6,7 +6,12 @@ tags:
   - Essais
   - Lecture
 categories: Lecture笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Le meilleur des adieux : L'essentiel à savoir sur la vieillesse et la mort" />
+</figure>
 
 Ceux qui lisent cet article sont sans doute encore loin de la vieillesse et peinent à imaginer ce qu'est réellement la vie de senior. Face au vieillissement et à la mort, ils ressentent probablement à la fois de l'inconnu et de la peur. Mais la mort est inévitable pour chacun d'entre nous. Il est donc essentiel de savoir ce qui nous attend, quels processus et états psychologiques nous traverserons le moment venu. Et que pouvons-nous faire, nous ? Comment la médecine peut-elle s'adapter et se réformer pour y faire face ? Seule la connaissance peut dissiper la peur de l'inconnu.
 

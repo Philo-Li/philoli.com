@@ -7,7 +7,12 @@ tags:
   - uni
   - itsekehitys
 categories: Arjen pohdintoja
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Voinko nukkua paremmin vähemmällä unella? Unikokeiluni – Päivä 1" />
+</figure>
 
 Olen aloittanut unikokeilun, jonka tarkoituksena on parantaa unen laatua ja energiatasoja ruokavalion ja elämäntapojen muutoksilla, jotta pysyisin virkeämpänä ja elinvoimaisempana.
 

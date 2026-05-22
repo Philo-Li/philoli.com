@@ -7,6 +7,7 @@ tags:
   - 书单
 categories: Hverdagsbetraktninger
 description: En anbefaling av 12 bøker rangert fire stjerner eller høyere fra 2025, innen skriving, kunst, psykologi, samfunnsvitenskap, finans og personlig utvikling.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 I fjor leste jeg 47 bøker. Av ulike grunner var fjoråret mitt utrolig travelt, så jeg klarte ikke å nå målet mitt på 100 bøker, slik jeg gjorde i 2024. Men jeg kom meg likevel gjennom mange fantastiske verk. Bøkene dekket et bredt spekter av sjangre, inkludert skriving, kunst, psykologi, samfunnsvitenskap, finans og personlig utvikling. Mange av dem gjorde et varig inntrykk, og jeg har derfor satt sammen en anbefalingsliste. Det finnes utrolig mange gode og lesverdige bøker der ute. For å holde anbefalingslisten håndterlig, har jeg kun plukket ut de 12 jeg ga fire eller fem stjerner.

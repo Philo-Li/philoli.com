@@ -7,7 +7,12 @@ tags:
   - sono
   - autoaperfeiçoamento
 categories: Conversas do Dia a Dia
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Conseguirei dormir melhor em menos tempo? Um autoexperimento sobre o sono - Dia 1" />
+</figure>
 
 Iniciei um experimento focado no sono, com o objetivo de melhorar a qualidade do meu descanso e os meus níveis de energia, ajustando a alimentação e os hábitos de vida, para me manter mais alerta e vital.
 

@@ -7,6 +7,7 @@ tags:
   - Seznam knjig
 categories: Dnevni pogovori
 description: Priporočila 12 odličnih knjig iz leta 2025 z oceno štiri zvezdice ali več, ki zajemajo področja pisanja, umetnosti, psihologije, družbenih ved, financ in osebne rasti.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Lani sem prebral 47 knjig. Zaradi različnih razlogov je bilo lansko leto zame izjemno, izjemno naporno, zato mi ni uspelo doseči cilja 100 knjig, kot leta 2024. Kljub temu sem prebral kar nekaj izjemnih del. Prebrana dela so zajemala različna področja, kot so pisanje, umetnost, psihologija, družbene vede, finance in osebna rast. Med njimi je bilo kar nekaj takšnih, ki so mi po branju ostala globoko v spominu, zato sem jih zbral in jih priporočam. Odličnih in branja vrednih del je bilo res veliko, a da seznam priporočil ne bi bil predolg, sem izbral le 12 tistih, ki sem jim dodelil štiri ali celo pet zvezdic.

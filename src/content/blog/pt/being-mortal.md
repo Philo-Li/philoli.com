@@ -6,7 +6,12 @@ tags:
   - Ensaios
   - Leitura
 categories: Leitura笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="O Melhor Adeus: O que você precisa saber sobre envelhecimento e morte" />
+</figure>
 
 Quem lê este artigo provavelmente ainda está bem distante da velhice, mal consegue imaginar a vida na terceira idade e encara o envelhecimento e a morte com uma mistura de estranhamento e temor. Mas a morte é uma certeza para todos. Precisamos saber o que nos espera quando essa hora chegar, que processos e estados psicológicos vivenciaremos. E o que podemos fazer a respeito? Como a área da saúde pode se reformar para lidar com isso? Só eliminamos o medo quando desvendamos o desconhecido.
 

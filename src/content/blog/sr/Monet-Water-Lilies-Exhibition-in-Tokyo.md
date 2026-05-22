@@ -7,7 +7,12 @@ tags:
     - Razmišljanja
     - Umetnost
 categories: Svakodnevno ćaskanje
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monetova izložba u Tokiju: Od problema sa kataraktom do besmrtnog poteza četkice" />
+</figure>
 
 Pre nekoliko dana, u poslednjem trenutku, konačno sam uspela da posetim dugo iščekivanu izložbu Kloda Moneta, koji je, uzgred rečeno, jedan od mojih najdražih slikara, a samim tim i jedan od najomiljenijih impresionista.
 

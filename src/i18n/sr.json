@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Bilten",
-    "subscribe": "Pretplati se →"
+    "subscribe": "Pretplati se →",
+    "welcomeTitle": "Unutra ste.",
+    "welcomeBody": "Drago mi je što ste ovde. Ispod je nekoliko eseja za početak — izaberite onaj koji vam privuče pažnju. Čućemo se kada objavim nešto novo.",
+    "startHere": "Počnite ovde",
+    "browseAll": "Pregledajte sve objave →",
+    "replyInvite": "Odgovorite na bilo koji mejl — čitam svaki."
   },
   "metadata": {
     "siteTitle": "Philo Li — umetnik, pisac, stvaralac",

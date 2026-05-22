@@ -7,7 +7,12 @@ tags:
     - Réflexion
     - Art
 categories: Discussions Quotidiennes
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Exposition Monet à Tokyo : Des affres de la cataracte aux touches immortelles" />
+</figure>
 
 Il y a quelques jours, j'ai enfin pu visiter l'exposition Monet que j'attendais avec tant d'impatience, juste avant sa fermeture. Monet est l'un de mes peintres préférés, et sans conteste mon impressionniste favori.
 

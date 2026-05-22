@@ -3,7 +3,12 @@ title: Kako pridobiti nebrzdano domišljijo
 date: 2022-03-19 20:53:13
 tags: Razmišljanja
 categories: Dnevni pogovori
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Kako pridobiti nebrzdano domišljijo" />
+</figure>
 Vsak človek ima domišljijo, ključno pa je, da ne vemo, kako jo izkoristiti. Pravzaprav ne želim odgovoriti na vprašanje "kako pridobiti domišljijo", ampak na "kako sprostiti svojo domišljijo". Zato se bom tukaj osredotočil predvsem na tako imenovano nebrzdano domišljijo.
 
 <!--more-->

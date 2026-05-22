@@ -7,7 +7,12 @@ tags:
   -שינה
   -שיפור עצמי
 categories: יומיום
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="האם אני יכול לישון טוב יותר בפחות זמן? ניסוי שינה עצמי - יום 1" />
+</figure>
 
 התחלתי בניסוי שינה, שמטרתו לשפר את איכות השינה ורמות האנרגיה שלי, ולשמור על ערנות וחיוניות גבוהה יותר, באמצעות התאמת הרגלי התזונה ואורח החיים שלי.
 

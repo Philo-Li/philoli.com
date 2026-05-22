@@ -6,7 +6,12 @@ tags:
   - Eseja
   - Lasīšana
 categories: Lasīšana笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Labākās atvadas: Kas jāzina par novecošanu un nāvi" />
+</figure>
 
 Visticamāk, tie, kas lasa šo rakstu, vēl ir tālu no vecumdienām un viņiem ir grūti iedomāties, kāda patiesībā ir dzīve vecam cilvēkam. Novecošana un nāve viņiem šķiet gan svešas, gan biedējošas. Taču visi mirst. Mums ir jāzina, ar ko sastapsimies, kāds būs process un psiholoģiskais stāvoklis, kad tas brīdis pienāks. Ko mēs varam darīt, un kā medicīna varētu reformēties, lai tam sagatavotos? Tikai izkliedējot nezināmo, varam atbrīvoties no bailēm.
 

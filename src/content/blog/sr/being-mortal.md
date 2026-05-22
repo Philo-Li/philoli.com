@@ -6,7 +6,12 @@ tags:
   - Esej
   - Čitanje
 categories: Beleške o knjigama
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Najbolji oproštaj: Šta morate znati o starenju i smrti" />
+</figure>
 
 Velika je verovatnoća da su oni koji čitaju ovaj članak još uvek daleko od starosti, teško im je da zamisle kako zaista izgleda život u poznim godinama, a starenje i smrt su im istovremeno nepoznati i zastrašujući. Ipak, smrt je neizbežna. Moramo znati šta nas čeka kada dođe to vreme, kakav ćemo proces proći i kakvo će nam biti psihičko stanje. Šta mi sami možemo učiniti, i kako se zdravstveni sistem može reformisati da bi se nosio sa ovim izazovima? Jer, samo eliminisanjem nepoznatog možemo eliminisati strah.
 

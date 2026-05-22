@@ -4,7 +4,12 @@ title: The World as I See It
 date: 2024-12-25 18:19:46
 tags: Essays
 categories: Casual Thoughts
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="The World as I See It" />
+</figure>
 Albert Einstein had a book called *The World as I See It*. It was a collection of his letters, articles, and speeches. One of them was the essay that gave the book its name. I want to write my own "The World as I See It".
 
 I am writing this to organize my thoughts. And to write down the things that are important to me. To hold myself to them. To remind myself, when I am low, what strength it is that pushes me forward. What my way is. I hope not to lose my direction. I hope to keep my courage and my curiosity.

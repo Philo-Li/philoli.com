@@ -6,7 +6,12 @@ tags:
   - ensayo
   - lectura
 categories: Notas de lectura
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="La mejor despedida: Lo que debes saber sobre el envejecimiento y la muerte" />
+</figure>
 
 Quienes leen este artículo probablemente estén aún muy lejos de la vejez, y les resulte difícil imaginar lo que es la vida en la tercera edad. Para ellos, el envejecimiento y la muerte son desconocidos y, a la vez, fuentes de miedo. Sin embargo, la muerte es el destino ineludible de todos. Necesitamos saber qué encontraremos y qué procesos y estados psicológicos viviremos cuando llegue ese momento. ¿Qué podemos hacer al respecto? ¿Y cómo puede reformarse el sistema médico para afrontarlo? Solo al disipar lo desconocido podremos disipar el miedo.
 

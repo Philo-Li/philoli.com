@@ -7,7 +7,12 @@ tags:
   - Сон
   - Саморозвиток
 categories: Щоденні розмови
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Чи можу я спати краще за менший час? Самоексперимент зі сном. День 1" />
+</figure>
 
 Я розпочав(-ла) експеримент зі сном. Моя мета — покращити якість сну та рівень енергії, щоб почуватися бадьоріше й активніше. Досягти цього планую через корекцію харчування та способу життя.
 

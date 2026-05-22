@@ -7,6 +7,7 @@ tags:
   - Listahan ng Aklat
 categories: Kwentuhan
 description: Mga rekomendasyon para sa 12 mahuhusay na aklat na nabasa ko noong 2025 na may apat na bituin o higit pa, sumasaklaw sa pagsusulat, sining, sikolohiya, agham panlipunan, pananalapi, at personal na pag-unlad.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Nakabasa ako ng 47 na aklat noong nakaraang taon. Naging napakasibsib ng 2025 para sa akin, sa dami ng mga kadahilanan, kaya hindi ko naabot ang target kong 100 aklat tulad noong 2024. Pero, marami pa rin akong nabasang mga kamangha-manghang akda. Ang mga nabasa kong aklat ay sumasaklaw sa iba't ibang larangan tulad ng pagsusulat, sining, sikolohiya, agham panlipunan, pananalapi, at personal na pag-unlad. Sa dami ng mga ito, marami ang talagang tumatak sa aking isipan matapos kong basahin. Kaya naman, inayos ko ang mga ito para ibahagi sa inyo. Napakaraming mahuhusay at karapat-dapat basahin na akda. Pero para hindi masyadong humaba ang listahan ng rekomendasyon, pinili ko lang ang 12 aklat na nakakuha ng apat o limang bituin sa aking rating.

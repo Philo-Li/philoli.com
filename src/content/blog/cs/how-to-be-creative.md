@@ -3,7 +3,12 @@ title: Jak probudit nespoutanou představivost
 date: 2022-03-19 20:53:13
 tags: Zamyšlení
 categories: Denní povídání
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Jak probudit nespoutanou představivost" />
+</figure>
 Představivost má každý člověk, ale klíčové je vědět, jak ji využít. Ve skutečnosti se nebudu zabývat otázkou ‚jak získat představivost‘, nýbrž ‚jak ji osvobodit‘. Proto se zde zaměřím především na to, čemu říkáme nespoutaná, divoká představivost.
 
 <!--more-->

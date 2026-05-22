@@ -7,7 +7,12 @@ tags:
   - 睡眠
   - 自己改善
 categories: 日常雑談
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="もっと短い睡眠時間で、もっと質の高い睡眠を取れるだろうか？睡眠に関する自己実験 Day 1" />
+</figure>
 
 食生活と生活習慣を見直すことで、睡眠の質と日中のエネルギーレベルを向上させ、よりクリアで活力ある状態を保つことを目指し、この度、睡眠に関する自己実験を開始しました。
 

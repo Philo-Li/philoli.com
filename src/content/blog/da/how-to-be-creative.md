@@ -3,7 +3,12 @@ title: Sådan får du en vild og utæmmet fantasi
 date: 2022-03-19 20:53:13
 tags: Essays
 categories: Hverdagssnak
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Sådan får du en vild og utæmmet fantasi" />
+</figure>
 Alle mennesker har fantasi, men mange ved ikke, hvordan de skal udnytte den. Mit mål er egentlig ikke at svare på "hvordan man får fantasi", men snarere "hvordan du slipper din fantasi løs". Derfor vil jeg her primært fokusere på den såkaldte "vilde og utæmmede fantasi".
 
 <!--more-->

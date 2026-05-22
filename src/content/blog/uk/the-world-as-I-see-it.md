@@ -4,7 +4,12 @@ title: Мій світогляд
 date: 2024-12-25 18:19:46
 tags: Роздуми
 categories: Щоденні розмови
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Мій світогляд" />
+</figure>
 
 В Ейнштейна є книга «Мій світ, яким я його бачу». У ній зібрано серію листів, статей та публічних виступів Ейнштейна, і одна з них носить таку ж назву, як і сама книга. Я теж захотіла написати про свій світогляд.
 

@@ -7,7 +7,12 @@ tags:
   - leitura
   - psicologia
 categories: Notas de Leitura
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Muito Além do Talento: QI, Prática Deliberada e a Verdade por Trás da Criatividade" />
+</figure>
 
 O cientista cognitivo Scott Barry Kaufman dedica-se ao estudo da inteligência, criatividade e potencial humano. Em seus livros, ele explora como aprendemos e procura desmistificar as noções estreitas e preconceituosas que o público tem sobre "QI" e "talento". Combinando sua própria experiência, Kaufman oferece novas possibilidades e esperança para aqueles rotulados com "dificuldades de aprendizagem".
 

@@ -6,7 +6,12 @@ tags:
   - 隨筆
   - 讀書
 categories: 讀書筆記
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="最好的告別：關於老化與死亡，你必須知道的常識" />
+</figure>
 
 能閱讀到這篇文章的人，多半距離老化還很遙遠，很難想像真正年老後的生活。對於老化與死亡，他們既感到陌生，也充滿恐懼。但人終究一死，我們需要知道，當那天來臨時，我們會遇到什麼？會經歷怎樣的過程和心理狀態？而我們又能做些什麼？醫療體系又該如何為此改革呢？唯有消除未知，方能消除恐懼。
 

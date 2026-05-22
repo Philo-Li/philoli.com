@@ -7,7 +7,12 @@ tags:
   - lukeminen
   - psykologia
 categories: lukumuistiinpanot
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Ei vain lahjakkuutta: Älykkyysosamäärän, harkitun harjoittelun ja luovuuden todellisuus" />
+</figure>
 
 Kognitiotieteilijä Scott Barry Kaufman keskittyy älykkyyden, luovuuden ja inhimillisen potentiaalin tutkimukseen. Kirjassaan hän käsittelee sitä, miten opimme, ja pyrkii murtamaan yleisiä, kapeakatseisia käsityksiä "älykkyysosamäärästä" ja "lahjakkuudesta". Omien kokemustensa kautta hän tarjoaa uusia mahdollisuuksia ja toivoa niille, jotka on leimattu "oppimisvaikeuksiksi".
 

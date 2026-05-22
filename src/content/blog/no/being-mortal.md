@@ -6,7 +6,12 @@ tags:
   - tanker
   - lesing
 categories: Boknotater
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Den beste avskjeden: Hva du må vite om aldring og død" />
+</figure>
 
 De fleste som leser dette, er nok fortsatt langt unna alderdommen, og har vanskelig for å forestille seg hvordan det er å være gammel. For mange er aldring og død både fremmed og skremmende. Men døden er uunngåelig for oss alle. Vi trenger å forstå hva vi vil møte når den tiden kommer, hvilke prosesser vi vil gjennomgå, og hvilke tanker og følelser vi vil ha. Hva kan vi selv gjøre, og hvordan kan helsevesenet tilpasse seg dette? Det er først når vi fjerner det ukjente at vi kan overvinne frykten.
 

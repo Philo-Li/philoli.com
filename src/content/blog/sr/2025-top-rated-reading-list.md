@@ -7,6 +7,7 @@ tags:
   - Lista knjiga
 categories: Dnevne priče
 description: 2025 年读过的 12 本四星及以上好书推荐，涉及写作、Umetnost、Psihologija、社会科学、金融与个人成长。
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Prošle godine sam pročitao 47 knjiga. Zbog raznih okolnosti, prošla godina mi je bila izuzetno, izuzetno naporna, pa nisam uspeo da dostignem cilj od 100 knjiga kao 2024. Ipak, pročitao sam mnogo izvanrednih dela. Čitao sam iz raznih oblasti – pisanja, umetnosti, psihologije, društvenih nauka, finansija i ličnog razvoja. Među njima je bilo mnogo dela koja su mi ostala duboko urezana u pamćenje i nakon čitanja, pa sam ih sada pripremio za preporuku. Izvanrednih i vrednih knjiga je zaista mnogo, a da lista preporuka ne bi bila predugačka, izdvojio sam samo 12 onih koje su dobile četiri, pa čak i pet zvezdica.

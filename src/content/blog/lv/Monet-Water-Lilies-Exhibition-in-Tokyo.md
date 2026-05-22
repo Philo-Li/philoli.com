@@ -7,7 +7,12 @@ tags:
     - Eseja
     - Māksla
 categories: Ikdienas sarunas
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monē izstāde Tokijā: No kataraktas grūtībām līdz nemirstīgajiem otas vilcieniem" />
+</figure>
 
 Pirms dažām dienām, pašā pēdējā brīdī, beidzot tiku apskatīt ilgi gaidīto Monē izstādi. Monē ir viens no maniem mīļākajiem gleznotājiem un vismīļākais impresionists.
 

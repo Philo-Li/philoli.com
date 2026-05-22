@@ -3,7 +3,12 @@ title: Bagaimana Membebaskan Imajinasi Liar Tanpa Batas
 date: 2022-03-19 20:53:13
 tags: Esai
 categories: Obrolan Santai
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Bagaimana Membebaskan Imajinasi Liar Tanpa Batas" />
+</figure>
 Setiap manusia memiliki imajinasi, masalahnya adalah banyak yang tidak tahu bagaimana mengembangkannya. Sebenarnya, pertanyaan yang ingin saya jawab bukanlah 'bagaimana mendapatkan imajinasi', melainkan 'bagaimana melepaskan imajinasi Anda'. Oleh karena itu, di sini saya akan lebih banyak membahas tentang imajinasi yang liar dan tanpa batas.
 
 <!--more-->

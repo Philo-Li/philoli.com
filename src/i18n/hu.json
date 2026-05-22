@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Hírlevél",
-    "subscribe": "Feliratkozás →"
+    "subscribe": "Feliratkozás →",
+    "welcomeTitle": "Bent vagy.",
+    "welcomeBody": "Örülök, hogy itt vagy. Alább találsz néhány esszét kezdésnek – válaszd azt, amelyik felkelti az érdeklődésedet. Értesíteni foglak, ha valami újat teszek közzé.",
+    "startHere": "Kezdd itt",
+    "browseAll": "Összes bejegyzés böngészése →",
+    "replyInvite": "Válaszolj bármelyik e-mailre – mindet elolvasom."
   },
   "metadata": {
     "siteTitle": "Philo Li — Művész, író, alkotó",

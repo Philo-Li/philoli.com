@@ -6,7 +6,12 @@ tags:
   - Esė
   - Knygos
 categories: Dėmesio vertos knygos
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Geriausias atsisveikinimas: ką privalote žinoti apie senėjimą ir mirtį" />
+</figure>
 
 Tikėtina, kad tie, kurie skaito šį straipsnį, dar toli nuo senatvės ir vargu ar gali įsivaizduoti tikrąjį gyvenimą joje; senėjimas ir mirtis jiems kelia ir svetimumą, ir baimę. Tačiau mirtis neišvengiama. Mums reikia žinoti, kas mūsų laukia, kokius procesus ir psichologines būsenas patirsime, kai ateis tas metas. Ką galime padaryti patys, ir kaip medicinos sistema galėtų reformuotis, kad geriau tam pasiruoštų? Tik išsklaidę nežinomybę galime įveikti baimę.
 

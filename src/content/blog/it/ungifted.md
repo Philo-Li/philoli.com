@@ -7,7 +7,12 @@ tags:
   - Lettura
   - Psicologia
 categories: Lettura笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Non solo talento: la verità su QI, pratica deliberata e creatività" />
+</figure>
 
 Scott Barry Kaufman, scienziato cognitivo, concentra le sue ricerche sull'intelligenza, la creatività e il potenziale umano. Nel suo libro, esplora le dinamiche dell'apprendimento e si propone di sfatare le percezioni ristrette e preconcette del pubblico riguardo a "QI" e "talento". Attraverso la sua esperienza personale, offre nuove prospettive e speranza a coloro che sono stati etichettati con "disturbi dell'apprendimento".
 

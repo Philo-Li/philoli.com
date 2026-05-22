@@ -7,7 +7,12 @@ tags:
   - Miegs
   - Pašizaugsme
 categories: Ikdienas sarunas
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Vai es varu gulēt labāk mazākā laikā? Pašeksperiments par miegu, 1. diena" />
+</figure>
 
 Esmu uzsācis miega eksperimentu, kura mērķis ir, pielāgojot uzturu un dzīvesveida paradumus, uzlabot miega kvalitāti un enerģijas līmeni, lai uzturētu skaidrāku un enerģiskāku stāvokli.
 

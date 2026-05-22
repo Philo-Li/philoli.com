@@ -7,7 +7,12 @@ tags:
     - 隨筆
     - 藝術
 categories: 日常閒聊
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="東京莫內展：從飽受白內障之苦到不朽的畫筆" />
+</figure>
 
 前幾天趕在最後一刻，終於把心心念念的莫內畫展看完了。莫內是我最喜歡的畫家之一，也是我最愛的印象派畫家之一。
 

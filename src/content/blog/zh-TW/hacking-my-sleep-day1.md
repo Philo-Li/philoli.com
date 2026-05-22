@@ -7,7 +7,12 @@ tags:
   - 睡眠
   - 自我提升
 categories: 日常閒聊
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="我能用更少的時間睡得更好嗎？一項關於睡眠的自我實驗 Day 1" />
+</figure>
 
 我展開了一項睡眠實驗，目的是希望透過調整飲食和生活習慣，來改善睡眠品質和精神狀況，讓自己維持更清醒、更有活力的狀態。
 

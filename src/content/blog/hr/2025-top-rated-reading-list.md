@@ -7,6 +7,7 @@ tags:
   - preporuke knjiga
 categories: Svakodnevne priče
 description: Preporuke za 12 izvrsnih knjiga pročitanih 2025. godine, ocijenjenih s četiri ili više zvjezdica, iz područja pisanja, umjetnosti, psihologije, društvenih znanosti, financija i osobnog razvoja.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Prošle godine pročitao/la sam 47 knjiga. Iako mi je godina bila izuzetno naporna iz raznih razloga i nisam uspio/jela dostići cilj od 100 naslova kao 2024., ipak sam uživao/uživala u mnogim izvrsnim djelima. Pročitana djela obuhvaćala su različita područja poput pisanja, umjetnosti, psihologije, društvenih znanosti, financija i osobnog razvoja. Mnoge od tih knjiga ostavile su na mene snažan dojam i nakon čitanja, pa sam ih odlučio/la ovdje preporučiti. Zaista je mnogo izvrsnih i vrijednih knjiga, no kako lista preporuka ne bi bila predugačka, izdvojio/la sam samo 12 onih koje sam ocijenio/la s četiri ili čak pet zvjezdica.

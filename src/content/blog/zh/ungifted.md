@@ -7,7 +7,12 @@ tags:
   - 读书
   - 心理学
 categories: 读书笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="绝非天赋：智商、刻意练习与创造力的真相" />
+</figure>
 
 认知科学家 Scott Barry Kaufman 专注于智力、创造力和人类潜能研究。他在书中探讨了我们如何学习，并试图推翻大众对"智商"和"天赋"的固有狭隘认知，结合自身经历为被贴上"学习障碍"标签的人带来新的可能性和希望。
 

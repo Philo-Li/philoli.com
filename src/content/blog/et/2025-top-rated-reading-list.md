@@ -7,6 +7,7 @@ tags:
   - Raamatunimekiri
 categories: Igapäevane jutt
 description: 2025. aastal loetud 12 nelja- või viietärnilise raamatu soovitused, mis hõlmavad kirjutamist, kunsti, psühholoogiat, sotsiaalteadusi, rahandust ja isiklikku arengut.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 Eelmisel aastal lugesin 47 raamatut. Kuigi möödunud aasta oli mitmetel põhjustel äärmiselt kiire ja ma ei suutnud saavutada oma 2024. aasta eesmärki lugeda 100 raamatut, sain siiski nautida hulgaliselt suurepäraseid teoseid. Need raamatud hõlmasid erinevaid valdkondi nagu kirjutamine, kunst, psühholoogia, sotsiaalteadused, rahandus ja isiklik areng. Paljud neist jäid mulle pärast lugemist sügavalt meelde, mistõttu otsustasin neist soovituste nimekirja koostada. Kuigi suurepäraseid ja lugemisväärilisi teoseid on tohutult palju, valisin ma nimekirja lühendamiseks välja vaid 12 raamatut, mis pälvisid minult neli või isegi viis tärni.

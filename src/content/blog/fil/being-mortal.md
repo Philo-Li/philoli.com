@@ -6,7 +6,12 @@ tags:
   - Mga Pagninilay
   - Pagbabasa
 categories: Pagbabasa笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Ang Pinakamagandang Pamamaalam: Mga Karaniwang Kaalaman Tungkol sa Pagtanda at Kamatayan na Dapat Mong Malaman" />
+</figure>
 
 Para sa mga nagbabasa nito, malamang na malayo pa kayo sa katandaan, at mahirap pang isipin ang tunay na buhay ng isang matanda. May pagtataka at takot tayo tungkol sa pagtanda at kamatayan. Ngunit, darating ang panahon na lahat tayo ay mamamatay. Kaya kailangan nating malaman kung ano ang sasalubong sa atin sa panahong iyon — anong mga proseso at kalagayan ng isip ang ating mararanasan? At ano ang kaya nating gawin, at paano dapat magbago ang sistema ng medisina para dito? Para mawala ang takot, kailangan nating alisin ang mga hindi natin nalalaman.
 

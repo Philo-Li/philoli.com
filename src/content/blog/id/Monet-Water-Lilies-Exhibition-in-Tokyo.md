@@ -7,7 +7,12 @@ tags:
     - Esai
     - Seni
 categories: Obrolan Santai Sehari-hari
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Pameran Monet di Tokyo: Dari Gangguan Katarak hingga Goresan Abadi" />
+</figure>
 
 Beberapa hari yang lalu, menjelang akhir masa pameran, saya akhirnya bisa mengunjungi pameran Monet yang sudah lama saya nantikan. Monet adalah salah satu pelukis favorit saya, sekaligus salah satu pelukis impresionis paling saya kagumi.
 

@@ -7,6 +7,7 @@ tags:
   - Liste de lecture
 categories: Pensées du quotidien
 description: Une sélection de 12 livres notés quatre étoiles ou plus, lus en 2025, couvrant l'écriture, l'art, la psychologie, les sciences sociales, la finance et le développement personnel.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 L'année dernière, j'ai lu 47 livres. Mon année a été incroyablement chargée pour diverses raisons, ce qui m'a empêché d'atteindre mon objectif de 100 livres comme en 2024. Néanmoins, j'ai eu la chance de découvrir de nombreuses œuvres passionnantes. Les ouvrages abordaient des domaines variés tels que l'écriture, l'art, la psychologie, les sciences sociales, la finance et le développement personnel. Parmi eux, plusieurs m'ont profondément marqué, si bien que j'ai décidé de vous en faire une sélection. Il y a tant d'œuvres excellentes et dignes d'être lues ! Pour que cette liste ne soit pas trop longue, je n'ai retenu que les 12 livres auxquels j'ai attribué quatre, voire cinq étoiles.

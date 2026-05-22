@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Uutiskirje",
-    "subscribe": "Tilaa →"
+    "subscribe": "Tilaa →",
+    "welcomeTitle": "Olet mukana.",
+    "welcomeBody": "Mukava saada sinut tänne. Alla on muutama essee, joista voit aloittaa – valitse se, joka kiinnostaa eniten. Saat minulta viestin, kun julkaisen jotain uutta.",
+    "startHere": "Aloita tästä",
+    "browseAll": "Selaa kaikkia julkaisuja →",
+    "replyInvite": "Vastaa mihin tahansa sähköpostiin – luen jokaisen."
   },
   "metadata": {
     "siteTitle": "Philo Li — Taiteilija, kirjoittaja, luoja",

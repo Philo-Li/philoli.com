@@ -7,7 +7,12 @@ tags:
     - エッセイ
     - アート
 categories: 日常雑談
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="東京モネ展：白内障の苦悩から不朽の筆致へ" />
+</figure>
 
 先日、会期終了間際に、ずっと心待ちにしていたモネ展へようやく足を運ぶことができました。モネは私が最も好きな画家の一人であり、印象派の中でも特に思い入れのある画家です。
 

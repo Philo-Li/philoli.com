@@ -7,7 +7,12 @@ tags:
   - Schlaf
   - Selbstentwicklung
 categories: Alltägliches
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Kann ich mit weniger Schlaf besser schlafen? Ein Selbstexperiment zum Thema Schlaf – Tag 1" />
+</figure>
 
 Ich habe ein Schlafexperiment gestartet. Mein Ziel ist es, durch eine Anpassung meiner Ernährung und meiner Lebensgewohnheiten meine Schlafqualität und mein Energielevel zu verbessern, um wacher und vitaler zu sein.
 

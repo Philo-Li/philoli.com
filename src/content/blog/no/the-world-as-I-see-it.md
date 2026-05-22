@@ -4,7 +4,12 @@ title: Mitt verdensbilde
 date: 2024-12-25 18:19:46
 tags: Betraktninger
 categories: Hverdagssnakk
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Mitt verdensbilde" />
+</figure>
 
 Einstein skrev en bok som het «Mitt verdensbilde», en samling av hans publiserte brev, artikler og offentlige taler. Én av tekstene i boken hadde samme tittel som boken selv. Nå ønsker jeg også å skrive min egen versjon av «Mitt verdensbilde».
 

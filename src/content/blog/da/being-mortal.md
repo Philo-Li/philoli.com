@@ -6,7 +6,12 @@ tags:
   - Essays
   - Læsning
 categories: Læsning笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Den bedste afsked: Det du bør vide om aldring og død" />
+</figure>
 
 De fleste, der læser dette indlæg, er sandsynligvis stadig langt fra alderdommen og har svært ved at forestille sig et ægte seniorliv, og møder derfor aldring og død med både fremmedhed og frygt. Men da vi alle skal dø en dag, har vi brug for at vide, hvad vi vil møde til den tid, og hvilke processer og psykologiske tilstande vi vil gennemgå. Og hvad kan vi selv gøre? Hvordan kan sundhedsvæsenet reformeres for at imødekomme dette? Kun ved at fjerne det ukendte kan vi fjerne frygten.
 

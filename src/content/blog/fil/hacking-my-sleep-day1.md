@@ -7,7 +7,12 @@ tags:
   - Pagtulog
   - Pagpapaunlad ng Sarili
 categories: Kwentuhan
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Mas Makakatulog Ba Ako Nang Mas Mahusay sa Mas Kaunting Oras? Isang Sariling Eksperimento sa Pagtulog, Araw 1" />
+</figure>
 
 Nagsimula ako sa isang eksperimento sa pagtulog. Ang layunin ay mapabuti ang kalidad ng aking pagtulog at lebel ng enerhiya sa pamamagitan ng pagbabago ng aking diyeta at mga gawi sa pamumuhay, upang manatiling mas gising at mas masigla.
 

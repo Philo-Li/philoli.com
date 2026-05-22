@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Buletin informativ",
-    "subscribe": "Abonează-te →"
+    "subscribe": "Abonează-te →",
+    "welcomeTitle": "Ai intrat.",
+    "welcomeBody": "Mă bucur că ești aici. Mai jos sunt câteva eseuri cu care poți începe — alege-l pe cel care îți atrage atenția. Vei primi vești de la mine când public ceva nou.",
+    "startHere": "Începe aici",
+    "browseAll": "Răsfoiește toate postările →",
+    "replyInvite": "Răspunde la orice e-mail — le citesc pe toate."
   },
   "metadata": {
     "siteTitle": "Philo Li — Artist, Scriitor, Creator",

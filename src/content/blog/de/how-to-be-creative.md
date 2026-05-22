@@ -3,7 +3,12 @@ title: Wie man eine grenzenlose Vorstellungskraft entwickelt
 date: 2022-03-19 20:53:13
 tags: Essays
 categories: Alltägliches
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Wie man eine grenzenlose Vorstellungskraft entwickelt" />
+</figure>
 Jeder Mensch besitzt Vorstellungskraft, doch oft wissen wir nicht, wie wir sie entfalten können. Meine eigentliche Frage ist also nicht „Wie erlangt man Vorstellungskraft?“, sondern „Wie entfesselt man seine Vorstellungskraft?“. Daher soll es hier primär um die sogenannte grenzenlose Fantasie gehen.
 
 <!--more-->

@@ -7,7 +7,12 @@ tags:
     - Gedanken
     - Kunst
 categories: Alltagsgeschichten
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monet-Ausstellung in Tokio: Von der Last des Katarakts zu unvergänglichen Pinselstrichen" />
+</figure>
 
 Vor ein paar Tagen habe ich es in letzter Minute doch noch geschafft, die lang ersehnte Monet-Ausstellung zu besuchen. Monet ist schließlich einer meiner absoluten Lieblingsmaler und auch einer der Impressionisten, die ich am meisten bewundere.
 

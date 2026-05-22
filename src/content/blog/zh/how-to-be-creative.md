@@ -3,7 +3,12 @@ title: 如何获得天马行空般的想象力
 date: 2022-03-19 20:53:13
 tags: 随笔
 categories: 日常闲聊
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="如何获得天马行空般的想象力" />
+</figure>
 想象力每个人类都有，关键是不知道如何去发挥。我要回答的其实不是「如何获得想象力」，而是「如何释放你的想象力」，所以这里主要讲讲所谓天马行空的想象。
 
 <!--more-->

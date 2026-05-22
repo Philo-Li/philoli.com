@@ -7,7 +7,12 @@ tags:
   - lezen
   - psychologie
 categories: Boeknotities
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Absoluut geen talent: De waarheid over IQ, doelgerichte oefening en creativiteit" />
+</figure>
 
 Cognitief wetenschapper Scott Barry Kaufman richt zich op onderzoek naar intelligentie, creativiteit en menselijk potentieel. In zijn boek onderzoekt hij niet alleen hoe we leren, maar probeert hij ook de gangbare, beperkte opvattingen over 'IQ' en 'talent' te ontkrachten. Door zijn eigen ervaringen te delen, opent hij nieuwe mogelijkheden en biedt hij hoop aan mensen die met het label 'leerstoornis' zijn bestempeld.
 

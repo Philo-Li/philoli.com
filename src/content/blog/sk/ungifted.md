@@ -7,7 +7,12 @@ tags:
   - Čítanie kníh
   - Psychológia
 categories: Čítanie kníh笔记
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Nie je to len talent: Pravda o IQ, zámernom cvičení a kreativite" />
+</figure>
 
 Kognitívny vedec Scott Barry Kaufman sa venuje výskumu inteligencie, kreativity a ľudského potenciálu. Vo svojej knihe skúma, ako sa učíme, a snaží sa vyvrátiť zaužívané, úzke predstavy verejnosti o „IQ“ a „talente“. Na základe vlastných skúseností prináša nové možnosti a nádej pre tých, ktorí sú označení nálepkou „poruchy učenia“.
 

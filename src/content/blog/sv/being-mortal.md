@@ -6,7 +6,12 @@ tags:
   - Funderingar
   - Bokläsning
 categories: Bokläsning笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Det bästa avskedet: Sunt förnuft om åldrande och döden som du behöver känna till" />
+</figure>
 
 De flesta som läser den här artikeln är förmodligen långt ifrån ålderdomen, har svårt att föreställa sig hur ett verkligt äldre liv ser ut och känner både främlingskap och rädsla inför åldrande och döden. Men alla ska vi dö, och vi behöver veta vad vi kommer att möta då, vilken process och vilket psykologiskt tillstånd vi kommer att uppleva. Vad kan vi själva göra, och hur kan sjukvården reformeras för att bättre möta detta? Endast genom att eliminera det okända kan vi eliminera rädslan.
 

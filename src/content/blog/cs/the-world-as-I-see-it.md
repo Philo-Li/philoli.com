@@ -4,7 +4,12 @@ title: Můj světonázor
 date: 2024-12-25 18:19:46
 tags: Zamyšlení
 categories: Denní povídání
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Můj světonázor" />
+</figure>
 
 Einstein napsal knihu „Můj světonázor“, ve které shromáždil řadu svých dopisů, článků a veřejných projevů. Jeden z těchto textů nesl stejný název jako celá kniha. I já bych ráda napsala text s názvem „Můj světonázor“.
 

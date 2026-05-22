@@ -7,6 +7,7 @@ tags:
   - Listy książek
 categories: Codzienne pogadanki
 description: Rekomendacja 12 książek ocenionych na cztery gwiazdki lub więcej, przeczytanych w 2025 roku, obejmujących pisanie, sztukę, psychologię, nauki społeczne, finanse i rozwój osobisty.
+cover: /uploads/images/2025-reading-list/cover.jpg
 ---
 
 W zeszłym roku przeczytałem 47 książek. Z różnych powodów ubiegły rok był dla mnie niezwykle intensywny, dlatego nie udało mi się osiągnąć celu 100 książek, jak w 2024 roku. Mimo to, pochłonąłem sporo wspaniałych lektur. Moje lektury obejmowały różnorodne dziedziny, takie jak pisanie, sztuka, psychologia, nauki społeczne, finanse i rozwój osobisty. Wiele z nich zapadło mi w pamięć na długo po przeczytaniu, dlatego postanowiłem je zebrać i polecić. Naprawdę wiele jest wybitnych i wartych przeczytania pozycji. Aby jednak lista rekomendacji nie była zbyt długa, wybrałem tylko 12 tych, które oceniłem na cztery, a nawet pięć gwiazdek.

@@ -4,7 +4,12 @@ title: 나의 세계관
 date: 2024-12-25 18:19:46
 tags: 에세이
 categories: 일상 이야기
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="나의 세계관" />
+</figure>
 
 아인슈타인에게는 『나의 세계관』이라는 책이 있습니다. 이 책에는 그가 발표한 서신, 글, 공개 강연 등이 실려 있는데, 그중 한 편이 책 제목과 같은 글입니다. 저도 『나의 세계관』을 한 번 써보고 싶었습니다.
 

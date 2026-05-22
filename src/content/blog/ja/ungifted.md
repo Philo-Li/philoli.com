@@ -7,7 +7,12 @@ tags:
   - 読書
   - 心理学
 categories: 読書ノート
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="才能ではない：IQ、意図的な練習、そして創造性の真実" />
+</figure>
 
 認知科学者のスコット・バリー・カウフマンは、知能、創造性、そして人間の潜在能力の研究を専門としています。彼はその著書で、私たちがどのように学ぶかを探求するだけでなく、世間が抱く「IQ」や「才能」に対する固定観念を打ち破ろうと試みています。自身の経験も踏まえ、「学習障害」のレッテルを貼られた人々に、新たな可能性と希望を与えています。
 

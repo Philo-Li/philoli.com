@@ -7,7 +7,12 @@ tags:
     - خواطر
     - فن
 categories: أحاديث يومية
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="معرض مونيه في طوكيو: من معاناة إعتام عدسة العين إلى لمسات خالدة" />
+</figure>
 
 قبل أيام قليلة، تمكنت أخيرًا من زيارة معرض مونيه الذي كنت أتشوق إليه كثيرًا، في اللحظات الأخيرة قبل انتهائه. فمونيه هو أحد رساميي المفضلين، وأيضًا أحد فناني الانطباعية الأحب إلى قلبي.
 

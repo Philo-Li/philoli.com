@@ -3,7 +3,12 @@ title: كيف تطلق العنان لخيالك الجامح
 date: 2022-03-19 20:53:13
 tags: خواطر
 categories: أحاديث يومية
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="كيف تطلق العنان لخيالك الجامح" />
+</figure>
 يمتلك كل إنسان قدرة على التخيل، لكن التحدي يكمن في كيفية إطلاق العنان لهذه القدرة. سأجيب في هذا المقال على سؤال "كيف تحرر خيالك؟" وليس "كيف تكتسب الخيال؟"، لذا سأركز هنا على ما نسميه "الخيال الجامح".
 
 <!--more-->

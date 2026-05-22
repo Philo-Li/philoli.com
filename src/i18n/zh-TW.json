@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "電子報",
-    "subscribe": "訂閱 →"
+    "subscribe": "訂閱 →",
+    "welcomeTitle": "您已加入。",
+    "welcomeBody": "很高興您來到這裡。以下是幾篇適合入門的文章——選一篇您感興趣的閱讀吧。每當我有新發布時，您都會收到通知。",
+    "startHere": "從這裡開始",
+    "browseAll": "瀏覽所有文章 →",
+    "replyInvite": "回覆任何郵件——每一封我都會讀。"
   },
   "metadata": {
     "siteTitle": "Philo Li — 藝術家、作家、創作者",

@@ -7,7 +7,12 @@ tags:
   - Сон
   - Саморазвитие
 categories: Повседневные беседы
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Могу ли я спать лучше за меньшее время? Самоэксперимент со сном. День 1" />
+</figure>
 
 Я запускаю эксперимент со сном, цель которого — улучшить качество сна и уровень энергии, а также стать бодрее и активнее за счёт корректировки диеты и образа жизни.
 

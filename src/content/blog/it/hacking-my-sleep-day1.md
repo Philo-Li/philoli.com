@@ -7,7 +7,12 @@ tags:
   - Sonno
   - Crescita personale
 categories: Pensieri quotidiani
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Posso dormire meglio in meno tempo? Un esperimento sul sonno – Giorno 1" />
+</figure>
 
 Ho avviato un esperimento sul sonno con l'obiettivo di migliorare la qualità del riposo e i livelli di energia, mantenendo uno stato di maggiore lucidità e vitalità, attraverso l'adeguamento della mia dieta e delle mie abitudini.
 

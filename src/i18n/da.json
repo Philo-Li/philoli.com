@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Nyhedsbrev",
-    "subscribe": "Tilmeld →"
+    "subscribe": "Tilmeld →",
+    "welcomeTitle": "Du er inde.",
+    "welcomeBody": "Dejligt at have dig med. Herunder er et par essays at starte med — vælg det, der fanger din interesse. Du hører fra mig, når jeg udgiver noget nyt.",
+    "startHere": "Start her",
+    "browseAll": "Gennemse alle indlæg →",
+    "replyInvite": "Svar på enhver e-mail — jeg læser dem alle."
   },
   "metadata": {
     "siteTitle": "Philo Li — Kunstner, forfatter, skaber",

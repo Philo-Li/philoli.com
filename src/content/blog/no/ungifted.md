@@ -7,7 +7,12 @@ tags:
   - Lesing
   - Psykologi
 categories: Lesenotater
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Ikke medfødt talent: Sannheten om IQ, målrettet praksis og kreativitet" />
+</figure>
 
 Kognitiv forsker Scott Barry Kaufman er spesialisert på studiet av intelligens, kreativitet og menneskelig potensial. I boken sin utforsker han hvordan vi lærer, og utfordrer de innarbeidede og snevre oppfatningene mange har av "IQ" og "talent". Gjennom egne erfaringer gir han nytt håp og nye muligheter til dem som er blitt stemplet med "lærevansker".
 

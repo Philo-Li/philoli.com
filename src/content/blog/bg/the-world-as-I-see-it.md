@@ -4,7 +4,12 @@ title: Моят светоглед
 date: 2024-12-25 18:19:46
 tags: Размисли
 categories: Ежедневни разговори
+cover: /uploads/images/featured/the-world-as-i-see-it.jpg
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/the-world-as-i-see-it.jpg" alt="Моят светоглед" />
+</figure>
 
 Айнщайн има книга, озаглавена „Моят светоглед“, която събира поредица от негови писма, статии и публични лекции. Една от тези статии носи същото заглавие като книгата. Аз също искам да напиша своя „Моят светоглед“.
 

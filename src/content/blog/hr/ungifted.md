@@ -7,7 +7,12 @@ tags:
   - Čitanje
   - Psihologija
 categories: Bilješke o knjigama
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="Nije stvar u darovitosti: Istina o inteligenciji, promišljenoj praksi i kreativnosti" />
+</figure>
 
 Kognitivni znanstvenik Scott Barry Kaufman posvećen je istraživanju inteligencije, kreativnosti i ljudskog potencijala. U svojoj knjizi istražuje kako učimo te nastoji srušiti ustaljene, uske predodžbe o "IQ-u" i "talentu". Koristeći se vlastitim iskustvom, nudi nove mogućnosti i nadu onima koji su etiketirani kao osobe s "poteškoćama u učenju".
 

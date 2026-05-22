@@ -3,7 +3,12 @@ title: Hogyan engedhetjük szabadjára a szárnyaló fantáziánkat?
 date: 2022-03-19 20:53:13
 tags: Gondolatok
 categories: Csevegés
+cover: /uploads/images/featured/how-to-be-creative.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/how-to-be-creative.png" alt="Hogyan engedhetjük szabadjára a szárnyaló fantáziánkat?" />
+</figure>
 Minden ember rendelkezik képzelőerővel, a kulcs az, hogy nem tudjuk, hogyan aknázzuk ki. Valójában nem arra keresem a választ, hogy „hogyan szerezzünk képzelőerőt”, hanem arra, hogy „hogyan engedjük szabadjára a képzelőerőnket”, így itt elsősorban a szárnyaló fantáziáról lesz szó.
 
 <!--more-->

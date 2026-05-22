@@ -7,7 +7,12 @@ tags:
   - Lectura
   - Psicología
 categories: Notas de lectura
+cover: /uploads/images/featured/ungifted.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/ungifted.png" alt="No es Cuestión de Talento: La Verdad sobre el CI, la Práctica Deliberada y la Creatividad" />
+</figure>
 
 El científico cognitivo Scott Barry Kaufman se especializa en el estudio de la inteligencia, la creatividad y el potencial humano. En su libro, explora cómo aprendemos y busca derribar las percepciones arraigadas y estrechas que el público tiene sobre el "cociente intelectual" (CI) y el "talento innato". Además, al compartir su propia experiencia, ofrece nuevas posibilidades y esperanza a quienes han sido etiquetados con "dificultades de aprendizaje".
 

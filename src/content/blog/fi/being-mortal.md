@@ -6,7 +6,12 @@ tags:
   - Mietteitä
   - Lukeminen
 categories: Lukeminen笔记
+cover: /uploads/images/featured/being-mortal.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/being-mortal.png" alt="Paras jäähyväinen: Ikääntymisestä ja kuolemasta – perusasiat, jotka sinun tulee tietää" />
+</figure>
 
 Todennäköisesti suurin osa tämän artikkelin lukijoista on vielä kaukana vanhuudesta, eikä heidän ole helppoa kuvitella todellista elämää iäkkäänä. Ikääntyminen ja kuolema herättävät usein vierautta ja pelkoa. On kuitenkin tosiasia, että jokainen meistä kuolee aikanaan. Siksi on tärkeää tietää, mitä meitä odottaa, millaisia prosesseja ja mielentiloja silloin koemme. Mitä me itse voimme tehdä, ja miten terveydenhuoltoa tulisi kehittää vastaamaan näihin haasteisiin? Vain tuntemalla asiat voimme poistaa niihin liittyvän pelon.
 

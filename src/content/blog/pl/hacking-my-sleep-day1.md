@@ -7,7 +7,12 @@ tags:
   - sen
   - rozwój osobisty
 categories: Codzienne Rozmyślania
+cover: /uploads/images/featured/hacking-my-sleep.webp
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/hacking-my-sleep.webp" alt="Czy da się spać lepiej, śpiąc mniej? Mój eksperyment ze snem – Dzień 1" />
+</figure>
 
 Rozpocząłem eksperyment ze snem, którego celem jest poprawa jakości snu i poziomu energii poprzez zmianę diety i nawyków życiowych, tak abym mógł czuć się bardziej rześko i być pełen wigoru.
 

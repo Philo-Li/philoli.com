@@ -7,7 +7,12 @@ tags:
     - Esej
     - Umenie
 categories: Každodenné rozhovory
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Výstava Moneta v Tokiu: Od trápenia s kataraktou k nesmrteľným ťahom štetca" />
+</figure>
 
 Len pred pár dňami, tesne pred koncom, som si konečne pozrel výstavu Moneta, na ktorú som sa tak veľmi tešil. Monet je jedným z mojich najobľúbenejších maliarov a zároveň aj jedným z mojich najmilších impresionistov.
 

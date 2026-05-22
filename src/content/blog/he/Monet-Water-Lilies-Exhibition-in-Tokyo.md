@@ -7,7 +7,12 @@ tags:
     - הגיגים
     - אמנות
 categories: קשקושי יומיום
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="תערוכת מונה בטוקיו: ממצוקת הקטרקט אל משיכות המכחול האלמותיות" />
+</figure>
 
 לפני כמה ימים, ממש ברגע האחרון, הגעתי סוף סוף לתערוכה של מונה שכל כך ציפיתי לה. מונה הוא אחד הציירים האהובים עליי ביותר, ובפרט, אמן האימפרסיוניזם המועדף עליי.
 

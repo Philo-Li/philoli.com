@@ -7,7 +7,12 @@
       "subscribe": "Subscribe →"
     },
     "title": "Naujienlaiškis",
-    "subscribe": "Prenumeruoti →"
+    "subscribe": "Prenumeruoti →",
+    "welcomeTitle": "Jūs prisijungėte.",
+    "welcomeBody": "Džiaugiuosi, kad esate čia. Žemiau pateikiami keli esė, nuo kurių galite pradėti – išsirinkite tą, kuri patrauks jūsų dėmesį. Kai paskelbsiu ką nors naujo, gausite pranešimą.",
+    "startHere": "Pradėkite čia",
+    "browseAll": "Naršyti visus įrašus →",
+    "replyInvite": "Atsakykite į bet kurį el. laišką – perskaitau kiekvieną."
   },
   "metadata": {
     "siteTitle": "Philo Li — menininkas, rašytojas, kūrėjas",

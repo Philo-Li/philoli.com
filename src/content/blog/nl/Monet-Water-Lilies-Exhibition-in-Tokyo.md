@@ -7,7 +7,12 @@ tags:
     - essay
     - kunst
 categories: dagelijkse praat
+cover: /uploads/images/featured/monet-water-lilies.png
 ---
+
+<figure class="post-cover">
+  <img src="/uploads/images/featured/monet-water-lilies.png" alt="Monet-tentoonstelling in Tokio: Van de strijd tegen staar tot tijdloze penseelstreken" />
+</figure>
 
 Een paar dagen geleden, net op het nippertje, heb ik eindelijk de langverwachte Monet-tentoonstelling bezocht. Monet is een van mijn favoriete schilders, en ook een van mijn meest geliefde impressionisten.
 
