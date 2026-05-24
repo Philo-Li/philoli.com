@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page not found — Philo Li" noAutoLocale>
+  <main class="not-found">
+    <p class="not-found__code">404</p>
+    <h1 class="not-found__title">This page doesn't exist.</h1>
+    <p class="not-found__hint">The link may be broken, or the page may have moved.</p>
+    <a href="/" class="not-found__home">Go home</a>
+  </main>
+</BaseLayout>
+
+<style>
+  .not-found {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: calc(var(--nav-height) + var(--space-xl)) var(--space-md) var(--space-xl);
+    text-align: center;
+  }
+  .not-found__code {
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    letter-spacing: -2px;
+    margin: 0;
+    line-height: 1;
+  }
+  .not-found__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-heading);
+    margin: var(--space-md) 0 var(--space-xs);
+  }
+  .not-found__hint {
+    font-size: 1rem;
+    color: var(--color-text-subtle);
+    margin: 0 0 var(--space-lg);
+  }
+  .not-found__home {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+  }
+  .not-found__home:hover {
+    color: var(--color-accent-hover);
+  }
+</style>

@@ -10,19 +10,21 @@ interface Props {
   description?: string;
   image?: string;
   type?: 'website' | 'article';
+  noAutoLocale?: boolean;
 }
 
-const { title, description, image, type } = Astro.props;
+const { title, description, image, type, noAutoLocale } = Astro.props;
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const dir = RTL_LOCALES.has(locale) ? 'rtl' : 'ltr';
 const isDefaultLocale = locale === DEFAULT_LOCALE;
+const autoLocaleEnabled = isDefaultLocale && !noAutoLocale;
 const supportedLocalesJson = JSON.stringify(LOCALES);
 ---
 
 <!doctype html>
 <html lang={locale} dir={dir}>
   <head>
-    {isDefaultLocale && (
+    {autoLocaleEnabled && (
       <script is:inline set:html={`(() => {
         try {
           var SUPPORTED = ${supportedLocalesJson};
@@ -40,8 +42,11 @@ const supportedLocalesJson = JSON.stringify(LOCALES);
           }
           if (target) {
             var path = location.pathname;
-            var newPath = path === '/' ? '/' + target + '/' : '/' + target + path;
-            location.replace(newPath + location.search + location.hash);
+            var firstSeg = path.split('/')[1] || '';
+            if (SUPPORTED.indexOf(firstSeg) === -1) {
+              var newPath = path === '/' ? '/' + target + '/' : '/' + target + path;
+              location.replace(newPath + location.search + location.hash);
+            }
           }
         } catch (e) {}
       })();`} />
