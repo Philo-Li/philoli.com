@@ -44,8 +44,8 @@ export const PROVIDERS: ProviderConfig[] = [
     api: 'gemini',
     keyHelp: 'https://aistudio.google.com/apikey',
     models: [
-      { id: 'gemini-3-flash-preview', label: 'Gemini 3 Flash (preview)', hint: 'newest, fast', vision: true },
-      { id: 'gemini-3.1-flash-lite-preview', label: 'Gemini 3.1 Flash Lite (preview)', hint: 'cheapest', vision: true },
+      { id: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash', hint: 'newest, fast', vision: true },
+      { id: 'gemini-3.1-flash-lite', label: 'Gemini 3.1 Flash Lite', hint: 'cheapest', vision: true },
       { id: 'gemini-3.1-pro-preview', label: 'Gemini 3.1 Pro (preview)', hint: 'best quality', vision: true },
     ],
   },
@@ -91,11 +91,11 @@ export const PROVIDERS: ProviderConfig[] = [
     // China region (DashScope). Mainland keys / mainland users.
     endpoint: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
     keyHelp: 'https://bailian.console.aliyun.com/?apiKey=1',
-    // Qwen3.6 chat line is text-only on DashScope; image input requires the qwen3-vl-* IDs below.
+    // Qwen text chat line is text-only on DashScope; image input requires the qwen3-vl-* IDs below.
     models: [
-      { id: 'qwen3.6-flash', label: 'Qwen 3.6 Flash', hint: 'cheapest, fast' },
-      { id: 'qwen3.6-plus', label: 'Qwen 3.6 Plus', hint: 'balanced' },
-      { id: 'qwen3.6-max-preview', label: 'Qwen 3.6 Max (preview)', hint: 'best quality' },
+      { id: 'qwen3.5-flash', label: 'Qwen 3.5 Flash', hint: 'cheapest, fast' },
+      { id: 'qwen3.5-plus', label: 'Qwen 3.5 Plus', hint: 'balanced' },
+      { id: 'qwen3-max', label: 'Qwen 3 Max', hint: 'best quality' },
       { id: 'qwen3-vl-flash', label: 'Qwen3-VL Flash', hint: 'vision, fast', vision: true },
       { id: 'qwen3-vl-plus', label: 'Qwen3-VL Plus', hint: 'vision, balanced', vision: true },
       { id: 'qwen-vl-max', label: 'Qwen-VL Max', hint: 'vision, best quality', vision: true },
@@ -110,8 +110,8 @@ export const PROVIDERS: ProviderConfig[] = [
     // GLM chat line is text-only; vision lives on the *V suffix variants.
     models: [
       { id: 'glm-4.7-flash', label: 'GLM-4.7 Flash', hint: 'free tier, fast' },
-      { id: 'glm-4.7', label: 'GLM-4.7', hint: 'flagship coding/agentic' },
-      { id: 'glm-5', label: 'GLM-5', hint: 'best quality' },
+      { id: 'glm-5', label: 'GLM-5', hint: 'flagship coding/agentic' },
+      { id: 'glm-5.1', label: 'GLM-5.1', hint: 'best quality' },
       { id: 'glm-4.6v', label: 'GLM-4.6V', hint: 'vision, balanced', vision: true },
       { id: 'glm-5v-turbo', label: 'GLM-5V Turbo', hint: 'vision, best quality', vision: true },
     ],

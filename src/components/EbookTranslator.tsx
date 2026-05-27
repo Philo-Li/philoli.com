@@ -214,7 +214,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const [sessionSourceKind, setSessionSourceKind] = useState<SessionSourceKind>(null);
   const [settings, setSettings] = useState<Settings>(() =>
     typeof window === 'undefined'
-      ? { provider: 'gemini', model: 'gemini-3-flash-preview', apiKey: '', rememberKey: true, sourceLang: 'English', targetLang: 'Chinese (Simplified)', tone: 'idiomatic', customEndpoint: '', customModel: '' }
+      ? { provider: 'gemini', model: 'gemini-3.5-flash', apiKey: '', rememberKey: true, sourceLang: 'English', targetLang: 'Chinese (Simplified)', tone: 'idiomatic', customEndpoint: '', customModel: '' }
       : loadSettings()
   );
 
