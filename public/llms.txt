@@ -1,0 +1,61 @@
+# Philo Li
+
+> Personal website of Philo Li, an artist, writer, and developer. The site includes essays on art, philosophy, reading, and building things, plus interactive software projects and an art gallery.
+
+## Core Pages
+
+- [Home](https://philoli.com/) - Main entry point for the site. Introduces Philo Li and links to writing, projects, art, and newsletter pages.
+- [About](https://philoli.com/about/) - Background on Philo Li as an artist, writer, and developer, including current work and project context.
+- [Blog](https://philoli.com/blog/) - Index of essays and project writeups. Best place to browse long-form writing.
+- [Projects](https://philoli.com/projects/) - Overview of software and creative projects built by Philo Li.
+- [Art](https://philoli.com/art/) - Photography, painting, and digital art gallery.
+- [Newsletter](https://philoli.com/newsletter/) - Newsletter landing page and recommended essays for new readers.
+
+## Key Projects
+
+- [Free Ebook Translator](https://philoli.com/projects/ebook-translator/) - Browser-based AI ebook translator for EPUB and PDF. Supports 40+ languages, side-by-side bilingual output, local processing, and user-supplied API keys.
+- [3D Rubik's Cube](https://philoli.com/projects/rubiks-cube/) - Interactive 3D Rubik's Cube tool for scrambles, solutions, playback, drills, and learning notation.
+
+## Representative Writing
+
+- [Introducing an Easy-to-Use Bilingual Ebook Translator](https://philoli.com/blog/ebook-translator/) - Project writeup explaining the motivation, features, and usage of the browser-based ebook translation tool.
+- [How to Solve a Rubik's Cube Without Memorizing Algorithms: Even a Kid Can Understand](https://philoli.com/blog/solve-rubiks-cube-without-formulas/) - Detailed tutorial on solving a 3x3 Rubik's Cube from first principles using commutator logic and the Roux method.
+- [12 Standout Books: My 2025 Top-Rated Reading List](https://philoli.com/blog/2025-top-rated-reading-list/) - Curated reading list covering writing, art, psychology, finance, and personal growth.
+
+## All English Articles
+
+- [12 Standout Books: My 2025 Top-Rated Reading List](https://philoli.com/blog/2025-top-rated-reading-list/) - A 12-book 2025 reading list featuring standout titles in writing, art, psychology, social sciences, finance, and personal growth.
+- [Unnamed Love Notes](https://philoli.com/blog/a-love-letter-to-nobody/) - Poetic writing and reflections.
+- [Essential Truths About Aging and Death](https://philoli.com/blog/being-mortal/) - Reflections on aging, mortality, and care.
+- [After Five Years of Procrastination, I Finally Finished 'The Procrastination Equation'](https://philoli.com/blog/book-procrastination/) - Reading notes and takeaways.
+- [A Concise Guide to Building a Hexo Blog from Scratch (2024 Edition)](https://philoli.com/blog/building-a-blog-from-scratch/) - Practical guide to setting up and customizing a Hexo blog.
+- [Philo's Thought Experiments (2019)](https://philoli.com/blog/collection-of-my-interesting-ideas-2019/) - Short idea collection and speculative notes.
+- [Short Poem Collection (2019)](https://philoli.com/blog/collection-of-my-short-poems-2019/) - Collection of short poems.
+- [Enough with the Glorification of Teachers](https://philoli.com/blog/do-not-flatter-the-teachers/) - Opinion essay on teaching and social narratives.
+- [Introducing an Easy-to-Use Bilingual Ebook Translator](https://philoli.com/blog/ebook-translator/) - A fully browser-based ebook translation tool, supporting EPUB and PDF, 40+ language pairs, and bilingual output.
+- [Eternal Creations (A Series of Tweets)](https://philoli.com/blog/eternal-creations/) - Collected short-form creative thoughts.
+- [Hacking My Sleep: Day 1 of a Personal Experiment](https://philoli.com/blog/hacking-my-sleep-day1/) - Personal experiment log on sleep and recovery.
+- [Hello 2019](https://philoli.com/blog/hello2019/) - Year-opening personal note.
+- [Hello 2020](https://philoli.com/blog/hello2020/) - Year-opening personal note.
+- [Beyond the Algorithm: How to Spark Creativity Without AI](https://philoli.com/blog/how-to-be-creative/) - Essay on creativity, imagination, and original thinking.
+- [I Can't Believe I Missed the Official Graduate Entrance Exam Registration](https://philoli.com/blog/i-missed-an-important-test/) - Personal story and reflection.
+- [The Game of Life](https://philoli.com/blog/life-is-a-game/) - Philosophical reflections on life and strategy.
+- [Monet's Water Lilies: A Visit That Left My Heart Afloat](https://philoli.com/blog/monet-water-lilies-exhibition-in-tokyo/) - Exhibition notes on Monet's Water Lilies and the Tokyo show.
+- [My Thoughts on the Banning of "Devotion"](https://philoli.com/blog/my-view-on-devotion-being-blocked/) - Commentary on censorship and the game Devotion.
+- [Common Advanced Python Syntax in Data Science](https://philoli.com/blog/python-tutorails-advanced-level/) - Python patterns and syntax notes for data science work.
+- [Common Python Syntax for Data Science (Basic)](https://philoli.com/blog/python-tutorails-basic-level/) - Basic Python syntax notes for data science beginners.
+- [How to Solve a Rubik's Cube Without Memorizing Algorithms: Even a Kid Can Understand](https://philoli.com/blog/solve-rubiks-cube-without-formulas/) - Learn to solve a 3x3 Rubik's Cube from scratch without memorizing a single algorithm, using commutator logic from group theory and the Roux bridge method.
+- [The Way of Trading](https://philoli.com/blog/tao-of-trading/) - Reflections on trading mindset and practice.
+- [The World as I See It](https://philoli.com/blog/the-world-as-i-see-it/) - Personal worldview and core beliefs.
+- [Thoughts on Success and Failure](https://philoli.com/blog/thoughts-on-success-and-failure/) - Essay on achievement, setbacks, and perspective.
+- [A Trip to Lamma Island](https://philoli.com/blog/trip-to-lamma-island/) - Travel writing and observations from Lamma Island.
+- [Ungifted: Intelligence Redefined](https://philoli.com/blog/ungifted/) - Reading notes and reflections on intelligence, deliberate practice, and creativity.
+
+## Feeds
+
+- [RSS](https://philoli.com/rss.xml) - Machine-readable feed of recent English posts.
+
+## Notes
+
+- Canonical URLs on this site are the `https://philoli.com/...` pages above.
+- The site also contains many translated versions of posts under locale-prefixed paths such as `/zh/`, `/zh-TW/`, `/ja/`, and others.

@@ -9,7 +9,7 @@
     "predev": "node scripts/copy-pdfjs-assets.mjs",
     "dev": "astro dev",
     "prebuild": "node scripts/copy-pdfjs-assets.mjs",
-    "build": "astro build",
+    "build": "astro build && node scripts/alias-sitemap.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest run",
