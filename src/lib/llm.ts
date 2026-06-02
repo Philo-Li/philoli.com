@@ -35,6 +35,8 @@ export interface ProviderConfig {
   api: ApiShape;
   /** Full chat-completions endpoint URL (for `openai-compat` only). */
   endpoint?: string;
+  /** Default model ID for new users. Falls back to `models[0].id` if unset. */
+  defaultModel?: string;
 }
 
 export const PROVIDERS: ProviderConfig[] = [
@@ -43,10 +45,15 @@ export const PROVIDERS: ProviderConfig[] = [
     label: 'Google Gemini',
     api: 'gemini',
     keyHelp: 'https://aistudio.google.com/apikey',
+    defaultModel: 'gemini-2.5-flash-lite',
     models: [
       { id: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash', hint: 'newest, fast', vision: true },
       { id: 'gemini-3.1-flash-lite', label: 'Gemini 3.1 Flash Lite', hint: 'cheapest', vision: true },
       { id: 'gemini-3.1-pro-preview', label: 'Gemini 3.1 Pro (preview)', hint: 'best quality', vision: true },
+      { id: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash', hint: 'legacy, balanced', vision: true },
+      { id: 'gemini-2.5-flash-lite', label: 'Gemini 2.5 Flash Lite', hint: 'legacy, cheapest', vision: true },
+      { id: 'gemini-2.0-flash', label: 'Gemini 2.0 Flash', hint: 'deprecated', vision: true },
+      { id: 'gemini-2.0-flash-lite', label: 'Gemini 2.0 Flash Lite', hint: 'deprecated', vision: true },
     ],
   },
   {
@@ -164,6 +171,12 @@ export function findProvider(id: ProviderId): ProviderConfig {
   const p = PROVIDERS.find(x => x.id === id);
   if (!p) throw new Error(`Unknown provider: ${id}`);
   return p;
+}
+
+/** Default model ID for a provider — explicit `defaultModel` wins, otherwise first listed. */
+export function defaultModelFor(cfg: ProviderConfig): string {
+  if (cfg.defaultModel && cfg.models.some(m => m.id === cfg.defaultModel)) return cfg.defaultModel;
+  return cfg.models[0].id;
 }
 
 /** Providers where the user types a free-text model ID — we can't statically know vision support. */

@@ -9,6 +9,7 @@ import {
 import {
   PROVIDERS,
   TONES,
+  defaultModelFor,
   findProvider,
   translateBatch,
   chunkPassages,
@@ -148,7 +149,7 @@ function loadSettings(): Settings {
   const provider = (localStorage.getItem(STORAGE_PREFIX + 'provider') as ProviderId) || 'gemini';
   const providerCfg = findProvider(provider);
   const savedModel = localStorage.getItem(STORAGE_PREFIX + 'model') || '';
-  const model = providerCfg.models.some(m => m.id === savedModel) ? savedModel : providerCfg.models[0].id;
+  const model = providerCfg.models.some(m => m.id === savedModel) ? savedModel : defaultModelFor(providerCfg);
   const remember = localStorage.getItem(STORAGE_PREFIX + 'rememberKey') !== 'false';
   const apiKey = remember ? (localStorage.getItem(STORAGE_PREFIX + 'apiKey-' + provider) || '') : '';
   const savedSource = localStorage.getItem(STORAGE_PREFIX + 'sourceLang') || '';
@@ -214,7 +215,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
   const [sessionSourceKind, setSessionSourceKind] = useState<SessionSourceKind>(null);
   const [settings, setSettings] = useState<Settings>(() =>
     typeof window === 'undefined'
-      ? { provider: 'gemini', model: 'gemini-3.5-flash', apiKey: '', rememberKey: true, sourceLang: 'English', targetLang: 'Chinese (Simplified)', tone: 'idiomatic', customEndpoint: '', customModel: '' }
+      ? { provider: 'gemini', model: 'gemini-2.5-flash-lite', apiKey: '', rememberKey: true, sourceLang: 'English', targetLang: 'Chinese (Simplified)', tone: 'idiomatic', customEndpoint: '', customModel: '' }
       : loadSettings()
   );
 
@@ -513,7 +514,7 @@ export default function EbookTranslator({ locale }: EbookTranslatorProps = {}) {
     setSettings(prev => {
       const next = { ...prev, ...patch };
       if (patch.provider && patch.provider !== prev.provider) {
-        next.model = findProvider(patch.provider).models[0].id;
+        next.model = defaultModelFor(findProvider(patch.provider));
         const savedKey = next.rememberKey ? localStorage.getItem(STORAGE_PREFIX + 'apiKey-' + patch.provider) : null;
         next.apiKey = savedKey || '';
       }
