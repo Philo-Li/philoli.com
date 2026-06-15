@@ -200,7 +200,7 @@ interface PageImage {
   mimeType: string;
 }
 
-const EMBED_MAX_DIM = 800;
+const EMBED_MAX_DIM = 1600;
 const EMBED_QUALITY = 0.75;
 
 /** Bucket consecutive same-page paragraphs into PdfPage records. */
