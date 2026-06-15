@@ -45,8 +45,6 @@ const sortedLocales = [
       <line x1="2" y1="12" x2="22" y2="12" />
       <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
     </svg>
-    <span class="lang-switcher__current">{LOCALE_NAMES[currentLocale]}</span>
-    <span class="lang-switcher__caret" aria-hidden="true">▾</span>
   </button>
   <ul class="lang-switcher__menu" id="lang-menu" role="listbox" aria-label={t('languageSwitcher.label')}>
     {sortedLocales.map(locale => (
@@ -119,21 +117,20 @@ const sortedLocales = [
   .lang-switcher__trigger {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 4px 10px;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
     background: transparent;
-    border: 1px solid var(--color-border);
+    border: none;
     border-radius: 0;
     color: var(--color-text-subtle);
-    font-size: 0.7rem;
-    letter-spacing: 0.5px;
     cursor: pointer;
-    transition: border-color 0.2s ease, color 0.2s ease;
+    transition: color 0.2s ease;
   }
 
   .lang-switcher__trigger:hover {
-    border-color: var(--color-accent);
-    color: var(--color-heading);
+    color: var(--color-accent);
   }
 
   .lang-switcher__icon {
@@ -141,18 +138,6 @@ const sortedLocales = [
     height: 19px;
     display: block;
     flex-shrink: 0;
-  }
-
-  .lang-switcher__current {
-    max-width: 10ch;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .lang-switcher__caret {
-    font-size: 0.6rem;
-    opacity: 0.6;
   }
 
   .lang-switcher__menu {
@@ -219,31 +204,5 @@ const sortedLocales = [
   :global(html[dir='rtl']) .lang-switcher__menu {
     right: auto;
     left: 0;
-  }
-
-  @media (max-width: 768px) {
-    .lang-switcher__trigger {
-      border: none;
-      padding: 0;
-      width: 32px;
-      height: 32px;
-      justify-content: center;
-      color: var(--color-heading);
-    }
-
-    .lang-switcher__trigger:hover {
-      border-color: transparent;
-      color: var(--color-accent);
-    }
-
-    .lang-switcher__current,
-    .lang-switcher__caret {
-      display: none;
-    }
-
-    .lang-switcher__icon {
-      width: 19px;
-      height: 19px;
-    }
   }
 </style>
