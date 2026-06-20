@@ -2,13 +2,18 @@
 import { DEFAULT_LOCALE, isLocale, useTranslations } from '../i18n';
 import '../styles/hero.css';
 
+interface Photo {
+  base: string;
+  alt: string;
+}
+
 interface Props {
-  photos?: { src: string; alt: string }[];
+  photos?: Photo[];
 }
 
 const { photos = [
-  { src: '/images/hero1.webp', alt: 'Artwork 1' },
-  { src: '/images/hero2.webp', alt: 'Artwork 2' },
+  { base: 'hero1', alt: 'Artwork 1' },
+  { base: 'hero2', alt: 'Artwork 2' },
 ] } = Astro.props;
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
@@ -23,6 +28,14 @@ function splitDot(s: string): { text: string; dot: string } {
 const line1 = splitDot(t('hero.line1'));
 const line2 = splitDot(t('hero.line2'));
 const line3 = splitDot(t('hero.line3'));
+
+function srcset(base: string): string {
+  return [
+    `/images/optimized/${base}-sm.webp 450w`,
+    `/images/optimized/${base}-md.webp 900w`,
+    `/images/optimized/${base}-lg.webp 1800w`,
+  ].join(', ');
+}
 ---
 
 <section class="hero">
@@ -38,9 +51,30 @@ const line3 = splitDot(t('hero.line3'));
       </p>
     </div>
     <div class="hero__photos">
-      {photos.map(photo => (
+      <a href="/art" class="hero__photo">
+        <img
+          src={`/images/optimized/${photos[0].base}-md.webp`}
+          srcset={srcset(photos[0].base)}
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt={photos[0].alt}
+          width="900"
+          height="1200"
+          fetchpriority="high"
+          decoding="sync"
+        />
+      </a>
+      {photos.slice(1).map(photo => (
         <a href="/art" class="hero__photo">
-          <img src={photo.src} alt={photo.alt} loading="eager" />
+          <img
+            src={`/images/optimized/${photo.base}-md.webp`}
+            srcset={srcset(photo.base)}
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt={photo.alt}
+            width="900"
+            height="1200"
+            loading="lazy"
+            decoding="async"
+          />
         </a>
       ))}
     </div>
