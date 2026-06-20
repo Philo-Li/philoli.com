@@ -14,6 +14,8 @@ interface RelatedPost {
 interface Props {
   title: string;
   date: Date;
+  description?: string;
+  cover?: string;
   tags?: string | string[];
   toc?: boolean;
   headings?: MarkdownHeading[];
@@ -22,7 +24,7 @@ interface Props {
   moreReading?: RelatedPost[];
 }
 
-const { title, date, tags, toc, headings, prev, next, moreReading = [] } = Astro.props;
+const { title, date, description, cover, tags, toc, headings, prev, next, moreReading = [] } = Astro.props;
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
 const formattedDate = formatDate(date, locale, { year: 'numeric', month: 'long', day: 'numeric' });
@@ -37,9 +39,25 @@ const BRAND_BY_LANG: Record<string, string> = {
 const brand = BRAND_BY_LANG[locale] ?? "Philo's Reflections";
 const year = new Date().getFullYear();
 const CC_URL = 'https://creativecommons.org/licenses/by-nc-sa/4.0/';
+
+const site = String(Astro.site).replace(/\/+$/, '');
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const articleSchema = [
+  {
+    '@type': 'Article' as const,
+    headline: title,
+    url: pageUrl,
+    datePublished: date.toISOString(),
+    author: { '@type': 'Person' as const, name: 'Philo Li', url: site },
+    publisher: { '@type': 'Organization' as const, name: 'Philo Li', url: site },
+    image: cover ? new URL(cover, Astro.site).toString() : undefined,
+    description,
+  },
+];
 ---
 
-<BaseLayout title={`${title} — Philo Li`} type="article">
+<BaseLayout title={`${title} — Philo Li`} type="article" structuredData={articleSchema}>
   <article class="blog-post">
     <header class="blog-post__header">
       <h1 class="blog-post__title">{title}</h1>

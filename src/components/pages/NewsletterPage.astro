@@ -38,9 +38,12 @@ function pickPost(slug: string) {
 const featuredPosts = FEATURED_SLUGS
   .map(slug => ({ slug, post: pickPost(slug) }))
   .filter((x): x is { slug: string; post: NonNullable<ReturnType<typeof pickPost>> } => x.post !== undefined);
+
+const site = String(Astro.site).replace(/\/+$/, '');
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
-<BaseLayout title={t('metadata.newsletterTitle')} description={t('metadata.newsletterDescription')}>
+<BaseLayout title={t('metadata.newsletterTitle')} description={t('metadata.newsletterDescription')} structuredData={[{ '@type': 'WebPage' as const, name: t('metadata.newsletterTitle'), url: pageUrl, isPartOf: { '@type': 'WebSite' as const, name: 'Philo Li', url: site } }]}>
   <main class="newsletter-page">
     <div
       class="newsletter-page__banner newsletter-page__banner--err"
@@ -72,7 +75,7 @@ const featuredPosts = FEATURED_SLUGS
       <header class="welcome__hero">
         <div class="welcome__brand">{brand}</div>
         <div class="welcome__divider" aria-hidden="true"></div>
-        <h1 class="welcome__title">{t('newsletterPage.welcomeTitle')}</h1>
+        <h2 class="welcome__title">{t('newsletterPage.welcomeTitle')}</h2>
         <p class="welcome__body">{t('newsletterPage.welcomeBody')}</p>
       </header>
 

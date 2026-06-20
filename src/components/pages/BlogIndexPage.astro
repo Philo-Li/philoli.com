@@ -9,6 +9,18 @@ import '../../styles/blog.css';
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
 const rssHref = feedUrlFor(locale);
+const site = String(Astro.site).replace(/\/+$/, '');
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const blogIndexSchema = [
+  {
+    '@type': 'CollectionPage' as const,
+    name: t('metadata.blogTitle'),
+    url: pageUrl,
+    description: t('metadata.blogDescription'),
+    isPartOf: { '@type': 'WebSite' as const, name: 'Philo Li', url: site },
+  },
+];
 
 const allPosts = await getCollection('blog');
 
@@ -32,7 +44,7 @@ const posts = allPosts
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<BaseLayout title={t('metadata.blogTitle')} description={t('metadata.blogDescription')}>
+<BaseLayout title={t('metadata.blogTitle')} description={t('metadata.blogDescription')} structuredData={blogIndexSchema}>
   <main class="blog-page">
     <div class="blog-page__header">
       <h1 class="blog-page__title">{t('blogPage.title')}</h1>

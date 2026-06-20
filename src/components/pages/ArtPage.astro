@@ -7,6 +7,8 @@ import '../../styles/gallery.css';
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
+const site = String(Astro.site).replace(/\/+$/, '');
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
 
 const artworks = shuffleArtworks(await fetchAllArtworks());
 
@@ -22,9 +24,19 @@ const galleryData = artworks.map(a => ({
   year: a.year,
   sourceUrl: getPhiloArtPhotoUrl(a),
 }));
+
+const artSchema = [
+  {
+    '@type': 'CollectionPage' as const,
+    name: t('metadata.artTitle'),
+    url: pageUrl,
+    description: t('metadata.artDescription'),
+    isPartOf: { '@type': 'WebSite' as const, name: 'Philo Li', url: site },
+  },
+];
 ---
 
-<BaseLayout title={t('metadata.artTitle')} description={t('metadata.artDescription')}>
+<BaseLayout title={t('metadata.artTitle')} description={t('metadata.artDescription')} structuredData={artSchema}>
   <main class="art-page">
     <h1 class="art-page__title">{t('artPage.title')}</h1>
     <Gallery client:load artworks={galleryData} locale={locale} />

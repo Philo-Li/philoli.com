@@ -1,0 +1,70 @@
+---
+export interface OrganizationSchema {
+  '@type': 'Organization';
+  name: string;
+  url: string;
+  logo?: string;
+  sameAs?: string[];
+}
+
+export interface WebSiteSchema {
+  '@type': 'WebSite';
+  name: string;
+  url: string;
+  potentialAction?: {
+    '@type': 'SearchAction';
+    target: { '@type': 'EntryPoint'; urlTemplate: string };
+    'query-input': string;
+  };
+}
+
+export interface PersonSchema {
+  '@type': 'Person';
+  name: string;
+  url: string;
+  image?: string;
+  sameAs?: string[];
+  jobTitle?: string;
+  description?: string;
+}
+
+export interface ArticleSchema {
+  '@type': 'Article';
+  headline: string;
+  url: string;
+  datePublished: string;
+  dateModified?: string;
+  author: { '@type': 'Person'; name: string; url: string };
+  publisher: { '@type': 'Organization'; name: string; url: string };
+  image?: string;
+  description?: string;
+}
+
+export interface WebPageSchema {
+  '@type': 'WebPage';
+  name: string;
+  url: string;
+  description?: string;
+  isPartOf?: { '@type': 'WebSite'; name: string; url: string };
+}
+
+export interface CollectionPageSchema {
+  '@type': 'CollectionPage';
+  name: string;
+  url: string;
+  description?: string;
+  isPartOf?: { '@type': 'WebSite'; name: string; url: string };
+}
+
+type Schemas = OrganizationSchema | WebSiteSchema | PersonSchema | ArticleSchema | WebPageSchema | CollectionPageSchema;
+
+interface Props {
+  schemas: Schemas[];
+}
+
+const { schemas } = Astro.props;
+const site = String(Astro.site).replace(/\/+$/, '');
+const json = schemas.map(s => ({ '@context': 'https://schema.org', ...s }));
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(json, null, 0)}></script>

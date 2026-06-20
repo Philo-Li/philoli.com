@@ -4,6 +4,18 @@ import { DEFAULT_LOCALE, isLocale, localizedPath, useTranslations } from '../../
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
+const site = String(Astro.site).replace(/\/+$/, '');
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const projectsSchema = [
+  {
+    '@type': 'CollectionPage' as const,
+    name: t('metadata.projectsTitle'),
+    url: pageUrl,
+    description: t('metadata.projectsDescription'),
+    isPartOf: { '@type': 'WebSite' as const, name: 'Philo Li', url: site },
+  },
+];
 
 const projects = [
   {
@@ -33,7 +45,7 @@ const projects = [
 const openLabel = t('projectsPage.openLink');
 ---
 
-<BaseLayout title={t('metadata.projectsTitle')} description={t('metadata.projectsDescription')}>
+<BaseLayout title={t('metadata.projectsTitle')} description={t('metadata.projectsDescription')} structuredData={projectsSchema}>
   <main class="projects-page">
     <h1 class="projects-page__title">{t('projectsPage.title')}</h1>
     <div class="projects-page__grid">

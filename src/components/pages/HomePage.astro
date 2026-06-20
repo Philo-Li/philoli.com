@@ -8,9 +8,29 @@ import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
+const site = String(Astro.site).replace(/\/+$/, '');
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const homeSchema = [
+  {
+    '@type': 'Organization' as const,
+    name: 'Philo Li',
+    url: site,
+    sameAs: [
+      'https://x.com/philo2022',
+      'https://github.com/philo2022',
+      'https://philoart.io',
+    ],
+  },
+  {
+    '@type': 'WebSite' as const,
+    name: 'Philo Li',
+    url: site,
+  },
+];
 ---
 
-<BaseLayout title={t('metadata.siteTitle')}>
+<BaseLayout title={t('metadata.siteTitle')} structuredData={homeSchema}>
   <Hero />
   <ArtworkStrip />
   <RecentPosts />

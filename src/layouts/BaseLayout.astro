@@ -1,9 +1,26 @@
 ---
 import SEOHead from '../components/SEOHead.astro';
+import StructuredData from '../components/StructuredData.astro';
+import type {
+  OrganizationSchema,
+  WebSiteSchema,
+  PersonSchema,
+  ArticleSchema,
+  WebPageSchema,
+  CollectionPageSchema,
+} from '../components/StructuredData.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import { DEFAULT_LOCALE, LOCALES, RTL_LOCALES, isLocale } from '../i18n';
 import '../styles/global.css';
+
+type Schema =
+  | OrganizationSchema
+  | WebSiteSchema
+  | PersonSchema
+  | ArticleSchema
+  | WebPageSchema
+  | CollectionPageSchema;
 
 interface Props {
   title: string;
@@ -11,9 +28,13 @@ interface Props {
   image?: string;
   type?: 'website' | 'article';
   noAutoLocale?: boolean;
+  structuredData?: Schema[];
 }
 
-const { title, description, image, type, noAutoLocale } = Astro.props;
+const { title, description, image, type, noAutoLocale, structuredData: externalSchema } = Astro.props;
+const site = String(Astro.site).replace(/\/+$/, '');
+const FALLBACK_WEBPAGE = { '@type': 'WebPage' as const, name: title, url: new URL(Astro.url.pathname, Astro.site).toString(), isPartOf: { '@type': 'WebSite' as const, name: 'Philo Li', url: site } };
+const sd = externalSchema ?? [FALLBACK_WEBPAGE];
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const dir = RTL_LOCALES.has(locale) ? 'rtl' : 'ltr';
 const isDefaultLocale = locale === DEFAULT_LOCALE;
@@ -51,7 +72,15 @@ const supportedLocalesJson = JSON.stringify(LOCALES);
         } catch (e) {}
       })();`} />
     )}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://api.goshipfast.com" />
     <SEOHead title={title} description={description} image={image} type={type} />
+    <StructuredData schemas={sd} />
     <script is:inline>
       (() => {
         const root = document.documentElement;

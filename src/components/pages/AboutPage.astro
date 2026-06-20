@@ -5,9 +5,25 @@ import { DEFAULT_LOCALE, isLocale, localizedPath, useTranslations } from '../../
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
+const site = String(Astro.site).replace(/\/+$/, '');
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const aboutSchema = [
+  {
+    '@type': 'Person' as const,
+    name: 'Philo Li',
+    url: site,
+    image: new URL('/images/avatar.jpg', Astro.site).toString(),
+    sameAs: [
+      'https://x.com/philo2022',
+      'https://github.com/philo2022',
+    ],
+    description: t('aboutPage.bioP1'),
+  },
+];
 ---
 
-<BaseLayout title={t('metadata.aboutTitle')} description={t('metadata.aboutDescription')}>
+<BaseLayout title={t('metadata.aboutTitle')} description={t('metadata.aboutDescription')} structuredData={aboutSchema}>
   <main class="about-page">
     <div class="about-page__hero">
       <img src="/images/avatar.jpg" alt="Philo Li" class="about-page__avatar" />
