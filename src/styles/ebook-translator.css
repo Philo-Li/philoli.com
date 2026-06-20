@@ -51,6 +51,38 @@
   line-height: 1.55;
 }
 
+.bt__blog-link {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.bt__blog-link-title {
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: color 0.15s ease;
+}
+
+.bt__blog-link-arrow {
+  display: inline-block;
+  color: var(--color-accent);
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.bt__blog-link:hover .bt__blog-link-title {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.bt__blog-link:hover .bt__blog-link-arrow {
+  color: var(--color-accent-hover);
+  transform: translateX(0.2em);
+}
+
 .bt__steps {
   display: flex;
   gap: var(--space-sm);

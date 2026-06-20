@@ -1,10 +1,20 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EbookTranslator from '../EbookTranslator.tsx';
-import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
+import { DEFAULT_LOCALE, isLocale, localizedPath, useTranslations } from '../../i18n';
 
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
+
+// Pull the title from the matching blog post (current locale, falling back to zh).
+const posts = await getCollection('blog');
+const contentLocale = locale.toLowerCase();
+const blogPost =
+  posts.find(p => p.id === `${contentLocale}/ebook-translator`) ??
+  posts.find(p => p.id === 'zh/ebook-translator');
+const blogTitle = blogPost?.data.title;
+const blogHref = localizedPath('/blog/ebook-translator/', locale);
 ---
 
 <BaseLayout
@@ -16,6 +26,12 @@ const t = useTranslations(locale);
       <div class="bt__eyebrow">{t('ebookTranslator.eyebrow')}</div>
       <h1 class="bt__title">{t('ebookTranslator.title')}</h1>
       <p class="bt__subtitle">{t('ebookTranslator.subtitle')}</p>
+      {blogTitle && (
+        <a class="bt__blog-link" href={blogHref}>
+          <span class="bt__blog-link-title">{blogTitle}</span>
+          <span class="bt__blog-link-arrow" aria-hidden="true">→</span>
+        </a>
+      )}
     </header>
     <EbookTranslator client:only="react" locale={locale} />
   </div>
