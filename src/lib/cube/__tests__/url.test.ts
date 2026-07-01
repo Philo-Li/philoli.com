@@ -12,6 +12,7 @@ const emptyLearning = () => ({
   },
   hiddenCubies: new Set<number>(),
   highlightedCubies: new Set<number>(),
+  hiddenStickers: new Set<number>(),
 });
 
 describe('share state codec', () => {
@@ -30,6 +31,7 @@ describe('share state codec', () => {
         },
         hiddenCubies: new Set<number>(),
         highlightedCubies: new Set<number>(),
+        hiddenStickers: new Set<number>(),
       },
       step: 2,
     };

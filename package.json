@@ -26,6 +26,7 @@
     "@astrojs/react": "^5.0.0",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.1",
+    "@fontsource/inter": "^5.2.8",
     "@icons-pack/react-simple-icons": "^13.13.0",
     "astro": "^6.0.5",
     "gif.js": "^0.2.0",

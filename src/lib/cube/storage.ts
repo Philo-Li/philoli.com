@@ -19,6 +19,8 @@ interface StoredV1 {
     hiddenCubies?: number[];
     /** Custom per-cubie highlight list. */
     highlightedCubies?: number[];
+    /** Per-sticker hide list keyed by facelet index. */
+    hiddenStickers?: number[];
   };
   step: number;
 }
@@ -43,6 +45,7 @@ export function saveShareState(state: ShareState): void {
         },
         hiddenCubies: [...state.learning.hiddenCubies],
         highlightedCubies: [...state.learning.highlightedCubies],
+        hiddenStickers: [...state.learning.hiddenStickers],
       },
       step: state.step,
     };
@@ -76,6 +79,7 @@ export function loadShareState(): ShareState | null {
         },
         hiddenCubies: new Set(parsed.learning?.hiddenCubies ?? []),
         highlightedCubies: new Set(parsed.learning?.highlightedCubies ?? []),
+        hiddenStickers: new Set(parsed.learning?.hiddenStickers ?? []),
       },
       step: parsed.step ?? 0,
     };

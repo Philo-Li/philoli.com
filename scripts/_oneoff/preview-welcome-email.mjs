@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 // Render welcome (confirm) email previews to ./email-preview/{lang}.html
 // Pulls the same template + i18n the worker uses, with dummy URLs.
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = join(__dirname, '..', '..');
-const workerSrc = readFileSync(join(repoRoot, 'services/subscribe-api/src/index.ts'), 'utf8');
 const i18nSrc = readFileSync(join(repoRoot, 'services/subscribe-api/src/i18n.ts'), 'utf8');
 
 // Extract EMAIL_I18N object literal from the generated file.

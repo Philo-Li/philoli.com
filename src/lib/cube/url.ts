@@ -69,6 +69,7 @@ function unpackLearning(mask: number): LearningMode {
     // preference, persisted via localStorage instead.
     hiddenCubies: new Set<number>(),
     highlightedCubies: new Set<number>(),
+    hiddenStickers: new Set<number>(),
   };
 }
 

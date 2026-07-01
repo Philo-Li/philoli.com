@@ -24,66 +24,63 @@ const {
   image = '',
 } = Astro.props;
 
-let ld: Record<string, unknown>;
-
-if (type === 'Organization') {
-  ld = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Philo Li',
-    url: 'https://philoli.com',
-    description: 'Personal site of Philo Li — artist, writer, and developer.',
-    sameAs: [
-      'https://x.com/philo2022',
-      'https://medium.com/@philo2018',
-      'https://philoart.io',
-    ],
-  };
-} else if (type === 'WebSite') {
-  ld = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name,
-    url,
-    description,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${url}/blog?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
-  };
-} else if (type === 'Article') {
-  ld = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline,
-    description,
-    url,
-    datePublished,
-    dateModified: dateModified || datePublished,
-    author: {
-      '@type': 'Person',
-      name: authorName,
-    },
-    image: image || `${url}/images/optimized/hero.webp`,
-    publisher: {
-      '@type': 'Organization',
-      name: 'Philo Li',
-    },
-  };
-} else if (type === 'BreadcrumbList') {
-  ld = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://philoli.com' },
-      { '@type': 'ListItem', position: 2, name, item: url },
-    ],
-  };
-}
+const ld: Record<string, unknown> =
+  type === 'Organization'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Philo Li',
+        url: 'https://philoli.com',
+        description: 'Personal site of Philo Li — artist, writer, and developer.',
+        sameAs: [
+          'https://x.com/philo2022',
+          'https://medium.com/@philo2018',
+          'https://philoart.io',
+        ],
+      }
+    : type === 'WebSite'
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name,
+          url,
+          description,
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: {
+              '@type': 'EntryPoint',
+              urlTemplate: `${url}/blog?q={search_term_string}`,
+            },
+            'query-input': 'required name=search_term_string',
+          },
+        }
+      : type === 'Article'
+        ? {
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline,
+            description,
+            url,
+            datePublished,
+            dateModified: dateModified || datePublished,
+            author: {
+              '@type': 'Person',
+              name: authorName,
+            },
+            image: image || `${url}/images/optimized/hero.webp`,
+            publisher: {
+              '@type': 'Organization',
+              name: 'Philo Li',
+            },
+          }
+        : {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://philoli.com' },
+              { '@type': 'ListItem', position: 2, name, item: url },
+            ],
+          };
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(ld)}></script>
+<script is:inline type="application/ld+json" set:html={JSON.stringify(ld)}></script>

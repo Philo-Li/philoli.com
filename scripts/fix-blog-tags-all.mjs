@@ -46,7 +46,7 @@ const LANG_NAMES = {
   'fil': 'Filipino',
 };
 
-async function getTranslations(langCode, langName) {
+async function getTranslations(langName) {
   const allTerms = [...ZH_TAGS, ...ZH_CATS];
   const prompt = `Translate these Chinese blog tag/category names to ${langName}. Output ONLY a JSON object mapping each Chinese term to its ${langName} translation. Keep "Python" as "Python".
 
@@ -110,7 +110,7 @@ async function main() {
 
     console.log(`[${locale}] Getting translations for ${LANG_NAMES[locale]}...`);
     try {
-      const translations = await getTranslations(locale, LANG_NAMES[locale]);
+      const translations = await getTranslations(LANG_NAMES[locale]);
       const files = readdirSync(dir).filter(f => f.endsWith('.md'));
       let count = 0;
       for (const f of files) {

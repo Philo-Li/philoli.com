@@ -6,7 +6,7 @@
  * Usage:
  *   node scripts/translate-post-tags.mjs solve-rubiks-cube-without-formulas.md
  */
-import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 

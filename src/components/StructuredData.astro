@@ -63,8 +63,7 @@ interface Props {
 }
 
 const { schemas } = Astro.props;
-const site = String(Astro.site).replace(/\/+$/, '');
 const json = schemas.map(s => ({ '@context': 'https://schema.org', ...s }));
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(json, null, 0)}></script>
+<script is:inline type="application/ld+json" set:html={JSON.stringify(json, null, 0)}></script>

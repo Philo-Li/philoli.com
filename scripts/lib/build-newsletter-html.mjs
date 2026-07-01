@@ -22,7 +22,7 @@ const style = {
 
 function styleToken(md, tokenType, css) {
   const original = md.renderer.rules[tokenType] ||
-    ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options));
+    ((tokens, idx, options, _env, self) => self.renderToken(tokens, idx, options));
   md.renderer.rules[tokenType] = (tokens, idx, options, env, self) => {
     const token = tokens[idx];
     const resolved = typeof css === 'function' ? css(token) : css;

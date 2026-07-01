@@ -257,7 +257,6 @@ async function translateLocale(target, items = translatable) {
 
   let nextIdx = 0;
   let completed = 0;
-  const total = batches.length;
   const errors = [];
 
   async function worker() {
@@ -308,7 +307,7 @@ function getByPath(obj, path) {
   return path.split('.').reduce((o, k) => (o == null ? o : o[k]), obj);
 }
 
-function buildLocaleJson(target, translations) {
+function buildLocaleJson(translations) {
   const out = {};
   // Preserved values: copy verbatim from en.json
   for (const leaf of preserved) {
@@ -361,7 +360,7 @@ async function processLocale(target) {
   }
   const t0 = Date.now();
   const translations = await translateLocale(target);
-  const localeJson = buildLocaleJson(target, translations);
+  const localeJson = buildLocaleJson(translations);
   writeFileSync(outPath, JSON.stringify(localeJson, null, 2) + '\n', 'utf8');
   const dt = ((Date.now() - t0) / 1000).toFixed(1);
   console.log(`[${target.code}] ${target.name.padEnd(22)} ${dt}s`);

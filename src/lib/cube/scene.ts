@@ -76,7 +76,6 @@ export class CubeScene {
    * fixed on screen — the user is "rotating the cube", not the studio. */
   private studio!: THREE.Group;
   private currentState: Facelets | null = null;
-  private currentLearning: LearningMode | undefined;
   private dirty = true;
   private animating = false;
   private rafId: number | null = null;
@@ -359,7 +358,6 @@ export class CubeScene {
   /** Update sticker materials from a Facelets array, applying learning mode. */
   public setFacelets(state: Facelets, learning?: LearningMode): void {
     this.currentState = state;
-    this.currentLearning = learning;
     const enabled = !!learning?.enabled;
     const layers = learning?.hiddenLayers;
     const hideAnyLayer =
@@ -423,7 +421,6 @@ export class CubeScene {
   /** Re-apply the most recent learning mode (used when toggling masks). */
   public refreshLearning(learning: LearningMode | undefined): void {
     if (this.currentState) this.setFacelets(this.currentState, learning);
-    else this.currentLearning = learning;
   }
 
   /** Reset all cubies to their canonical positions and apply the given facelet state. */

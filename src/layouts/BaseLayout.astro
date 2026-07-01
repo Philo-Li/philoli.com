@@ -1,4 +1,10 @@
 ---
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter/800.css';
+import '@fontsource/inter/900.css';
 import SEOHead from '../components/SEOHead.astro';
 import StructuredData from '../components/StructuredData.astro';
 import type {
@@ -29,9 +35,22 @@ interface Props {
   type?: 'website' | 'article';
   noAutoLocale?: boolean;
   structuredData?: Schema[];
+  lcpImage?: string;
+  lcpImageSrcSet?: string;
+  lcpImageSizes?: string;
 }
 
-const { title, description, image, type, noAutoLocale, structuredData: externalSchema } = Astro.props;
+const {
+  title,
+  description,
+  image,
+  type,
+  noAutoLocale,
+  structuredData: externalSchema,
+  lcpImage,
+  lcpImageSrcSet,
+  lcpImageSizes,
+} = Astro.props;
 const site = String(Astro.site).replace(/\/+$/, '');
 const FALLBACK_WEBPAGE = { '@type': 'WebPage' as const, name: title, url: new URL(Astro.url.pathname, Astro.site).toString(), isPartOf: { '@type': 'WebSite' as const, name: 'Philo Li', url: site } };
 const sd = externalSchema ?? [FALLBACK_WEBPAGE];
@@ -72,13 +91,18 @@ const supportedLocalesJson = JSON.stringify(LOCALES);
         } catch (e) {}
       })();`} />
     )}
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-    <link rel="dns-prefetch" href="https://api.goshipfast.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://api.goshipfast.com" />
+    {lcpImage && (
+      <link
+        rel="preload"
+        as="image"
+        href={lcpImage}
+        imagesrcset={lcpImageSrcSet}
+        imagesizes={lcpImageSizes}
+        fetchpriority="high"
+      />
+    )}
     <SEOHead title={title} description={description} image={image} type={type} />
     <StructuredData schemas={sd} />
     <script is:inline>
@@ -94,26 +118,38 @@ const supportedLocalesJson = JSON.stringify(LOCALES);
         }
       })();
     </script>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V10E8BFFM0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(...args: unknown[]) { window.dataLayer.push(args); }
-      gtag('js', new Date());
-      gtag('config', 'G-V10E8BFFM0');
-    </script>
-    <!-- goshipfast analytics -->
-    <script
-      is:inline
-      async
-      src="https://api.goshipfast.com/tracker.js"
-      data-project="cmp4s0v08006cf9ys27kd289j"
-      data-endpoint="https://api.goshipfast.com"
-    ></script>
   </head>
   <body>
     <Navbar />
     <slot />
     <Footer />
+    <script is:inline>
+      (() => {
+        const loadAnalytics = () => {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-V10E8BFFM0';
+          document.head.appendChild(s);
+          s.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-V10E8BFFM0');
+          };
+          var t = document.createElement('script');
+          t.async = true;
+          t.src = 'https://api.goshipfast.com/tracker.js';
+          t.setAttribute('data-project', 'cmp4s0v08006cf9ys27kd289j');
+          t.setAttribute('data-endpoint', 'https://api.goshipfast.com');
+          document.head.appendChild(t);
+        };
+        if (window.requestIdleCallback) {
+          requestIdleCallback(loadAnalytics, { timeout: 3000 });
+        } else {
+          setTimeout(loadAnalytics, 3000);
+        }
+      })();
+    </script>
   </body>
 </html>
+

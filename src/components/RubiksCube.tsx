@@ -428,6 +428,7 @@ export default function RubiksCube({ locale, tutorial = null }: Props) {
       },
       hiddenCubies: new Set(initial.learning.hiddenCubies),
       highlightedCubies: new Set(initial.learning.highlightedCubies),
+      hiddenStickers: new Set(initial.learning.hiddenStickers),
     });
   }, []);
 

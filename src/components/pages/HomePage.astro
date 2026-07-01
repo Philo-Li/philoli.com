@@ -9,7 +9,6 @@ import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
 const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
 const t = useTranslations(locale);
 const site = String(Astro.site).replace(/\/+$/, '');
-const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
 
 const homeSchema = [
   {
@@ -30,9 +29,16 @@ const homeSchema = [
 ];
 ---
 
-<BaseLayout title={t('metadata.siteTitle')} structuredData={homeSchema}>
+<BaseLayout
+  title={t('metadata.siteTitle')}
+  structuredData={homeSchema}
+  lcpImage="/images/optimized/hero1-md.webp"
+  lcpImageSrcSet="/images/optimized/hero1-sm.webp 450w, /images/optimized/hero1-md.webp 900w, /images/optimized/hero1-lg.webp 1800w"
+  lcpImageSizes="(max-width: 768px) 100vw, 50vw"
+>
   <Hero />
   <ArtworkStrip />
   <RecentPosts />
   <NewsletterCTA />
 </BaseLayout>
+
