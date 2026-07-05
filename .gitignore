@@ -2,6 +2,12 @@ node_modules/
 dist/
 .astro/
 .wrangler/
-.env
+.env*
+.dev.vars
 .claude/
 public/pdfjs/
+
+# newsletter send tooling + email content/template (keep private)
+scripts/send-blog-to-subscribers.mjs
+scripts/send-test-email.mjs
+scripts/lib/build-newsletter-html.mjs
