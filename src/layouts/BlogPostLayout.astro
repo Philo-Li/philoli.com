@@ -43,6 +43,8 @@ const CC_URL = 'https://creativecommons.org/licenses/by-nc-sa/4.0/';
 const site = String(Astro.site).replace(/\/+$/, '');
 const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
 
+const coverUrl = cover ? new URL(cover, Astro.site).toString() : undefined;
+
 const articleSchema = [
   {
     '@type': 'Article' as const,
@@ -51,13 +53,13 @@ const articleSchema = [
     datePublished: date.toISOString(),
     author: { '@type': 'Person' as const, name: 'Philo Li', url: site },
     publisher: { '@type': 'Organization' as const, name: 'Philo Li', url: site },
-    image: cover ? new URL(cover, Astro.site).toString() : undefined,
+    image: coverUrl,
     description,
   },
 ];
 ---
 
-<BaseLayout title={`${title} — Philo Li`} type="article" structuredData={articleSchema}>
+<BaseLayout title={`${title} — Philo Li`} description={description} image={coverUrl} type="article" structuredData={articleSchema}>
   <article class="blog-post">
     <header class="blog-post__header">
       <h1 class="blog-post__title">{title}</h1>
