@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "My Body Clock Isn't 24 Hours: Living with DSPD and Non-24"
+title: "My Day Is 24.5 Hours Long"
 date: 2026-07-05 12:00:00
 tags:
   - Sleep

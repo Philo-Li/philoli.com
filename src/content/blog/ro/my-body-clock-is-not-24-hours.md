@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Ceasul meu biologic nu are 24 de ore: Despre DSPD și tulburarea de somn Non-24"
+title: "Ziua mea durează 24,5 ore"
 date: 2026-07-05 12:00:00
 tags:
   - Somn

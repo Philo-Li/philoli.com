@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mon horloge biologique n'est pas de 24 heures : parlons du TSPS et du Non-24"
+title: "Ma journée dure 24,5 heures"
 date: 2026-07-05 12:00:00
 tags:
   - Sommeil

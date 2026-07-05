@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "我的生物钟不是 24 小时：聊聊 DSPD 与 Non-24 睡眠障碍"
+title: "我的一天有 24.5 小时"
 date: 2026-07-05 12:00:00
 tags:
   - 睡眠

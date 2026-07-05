@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Moja biološka ura ni 24-urna: Pogovor o DSPD in ne-24-urnem sindromu spanja in budnosti"
+title: "Moj dan traja 24,5 ure"
 date: 2026-07-05 12:00:00
 tags:
   - Spanje

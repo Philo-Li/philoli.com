@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Il mio orologio biologico non è di 24 ore: tra DSPD e disturbo del sonno Non-24"
+title: "La mia giornata dura 24,5 ore"
 date: 2026-07-05 12:00:00
 tags:
   - Sonno

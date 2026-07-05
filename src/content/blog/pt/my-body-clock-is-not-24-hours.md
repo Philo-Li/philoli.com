@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Meu relógio biológico não é de 24 horas: Falando sobre DSPD e o Distúrbio do Sono Non-24"
+title: "O meu dia tem 24,5 horas"
 date: 2026-07-05 12:00:00
 tags:
   - Sono

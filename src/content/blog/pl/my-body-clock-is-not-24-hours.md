@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mój zegar biologiczny nie trwa 24 godzin: Porozmawiajmy o DSPD i Non-24 – zaburzeniach snu"
+title: "Moja doba trwa 24,5 godziny"
 date: 2026-07-05 12:00:00
 tags:
   - Sen

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "A belső órám nem 24 órás: DSPD és Non-24 alvászavarokról"
+title: "Az én napom 24,5 óra hosszú"
 date: 2026-07-05 12:00:00
 tags:
   - Alvás

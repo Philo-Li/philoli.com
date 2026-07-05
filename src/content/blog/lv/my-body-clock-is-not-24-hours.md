@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mans bioloģiskais pulkstenis nav 24 stundas: parunāsim par DSPD un Non-24 miega traucējumiem"
+title: "Mana diennakts ilgst 24,5 stundas"
 date: 2026-07-05 12:00:00
 tags:
   - Miegs

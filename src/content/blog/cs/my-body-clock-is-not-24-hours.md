@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Můj biorytmus není 24 hodin: Povídání o DSPD a poruchách spánku Non-24"
+title: "Můj den trvá 24,5 hodiny"
 date: 2026-07-05 12:00:00
 tags:
   - Spánek

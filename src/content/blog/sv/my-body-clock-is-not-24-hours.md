@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Min biologiska klocka är inte 24 timmar: En diskussion om DSPD och Non-24 sömnstörningar"
+title: "Mitt dygn är 24,5 timmar långt"
 date: 2026-07-05 12:00:00
 tags:
   - Sömn

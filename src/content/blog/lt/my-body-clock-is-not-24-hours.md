@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mano biologinis laikrodis nėra 24 valandų: pokalbis apie DSPD ir Non-24 miego sutrikimus"
+title: "Mano para trunka 24,5 valandos"
 date: 2026-07-05 12:00:00
 tags:
   - Miegas

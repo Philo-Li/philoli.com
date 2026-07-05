@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Đồng hồ sinh học của tôi không phải 24 giờ: Trò chuyện về Rối loạn giấc ngủ DSPD và Non-24"
+title: "Một ngày của tôi dài 24,5 giờ"
 date: 2026-07-05 12:00:00
 tags:
   - Giấc ngủ

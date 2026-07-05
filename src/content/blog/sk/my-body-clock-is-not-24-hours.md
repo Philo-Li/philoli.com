@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Moje biologické hodiny nemajú 24 hodín: Pohľad na DSPD a Non-24 poruchy spánku"
+title: "Môj deň trvá 24,5 hodiny"
 date: 2026-07-05 12:00:00
 tags:
   - Spánok

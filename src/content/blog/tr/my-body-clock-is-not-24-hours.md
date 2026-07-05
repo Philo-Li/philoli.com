@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Biyolojik Saatimin Süresi 24 Saat Değil: DSPD ve Non-24 Uyku Bozuklukları Üzerine"
+title: "Benim günüm 24,5 saat sürüyor"
 date: 2026-07-05 12:00:00
 tags:
   - Uyku

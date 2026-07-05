@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Meine innere Uhr tickt nicht im 24-Stunden-Takt: Über DSPD und Non-24 Schlafstörungen"
+title: "Mein Tag hat 24,5 Stunden"
 date: 2026-07-05 12:00:00
 tags:
   - Schlaf

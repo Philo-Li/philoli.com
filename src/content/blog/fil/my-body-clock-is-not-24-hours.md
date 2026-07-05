@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Hindi 24 Oras ang Aking Biological Clock: Usap-usapan tungkol sa DSPD at Non-24 Sleep Disorder"
+title: "Ang araw ko ay 24.5 oras"
 date: 2026-07-05 12:00:00
 tags:
   - Tulog

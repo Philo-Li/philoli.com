@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Biologinen kelloni ei ole 24 tuntia: Keskustelua DSPD:stä ja Non-24-unihäiriöstä"
+title: "Vuorokauteni on 24,5 tuntia pitkä"
 date: 2026-07-05 12:00:00
 tags:
   - Uni

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mit biologiske ur er ikke 24 timer: Om DSPD og Non-24 søvnforstyrrelser"
+title: "Mit døgn er 24,5 timer langt"
 date: 2026-07-05 12:00:00
 tags:
   - Søvn

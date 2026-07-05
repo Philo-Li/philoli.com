@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Moj biološki sat nije 24 sata: Priča o DSPD i Non-24 poremećajima spavanja"
+title: "Мој дан траје 24,5 сата"
 date: 2026-07-05 12:00:00
 tags:
   - Сан
