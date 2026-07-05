@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "O meu dia tem 24,5 horas: Falando sobre DSPD e o Distúrbio do Sono Non-24"
+title: "O meu dia tem 24,5 horas: Falando sobre o relógio biológico e o Distúrbio do Sono Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Sono
@@ -67,7 +67,7 @@ Cientificamente, isso é chamado de circuito de feedback negativo de transcriç�
   <figcaption>Substituindo a analogia da fábrica pela terminologia científica, um ciclo completo é: Transcrição → Acúmulo → Inibição → Degradação → Desinibição, completando uma volta em aproximadamente 24 horas. © Philo</figcaption>
 </figure>
 
-Michael Young também descobriu outros dois atores cruciais que tornam esse relógio ainda mais preciso: uma proteína chamada TIM (Timeless), responsável por ajudar a proteína PER a entrar no núcleo da célula durante a noite para "apertar o botão de parada"; e outra chamada DBT (Doubletime), cuja função é desacelerar a taxa de acúmulo da proteína PER. É exatamente esse "retardamento" que calibra o ciclo com precisão para aproximadamente 24 horas, em vez de completá-lo em apenas algumas horas.
+Michael Young também descobriu outros dois atores cruciais que tornam esse relógio ainda mais preciso: uma proteína chamada TIM (Timeless), responsável por ajudar a proteína PER a entrar no núcleo da célula durante a noite para "apertar o botão de parada"; e outra chamada DBT (Doubletime), cuja função é degradar a proteína PER para desacelerar sua taxa de acúmulo. É exatamente esse "retardamento" que calibra o ciclo com precisão para aproximadamente 24 horas, em vez de completá-lo em apenas algumas horas.
 
 Cada célula possui sua própria "fábrica" de auto feedback da proteína PER, e o SCN no cérebro atua como o maestro de todos esses pequenos relógios, garantindo que funcionem em sincronia. A duração exata de um ciclo completo é, em grande parte, determinada geneticamente.
 
@@ -84,6 +84,10 @@ A descoberta desse mecanismo não foi um evento único: já em 1971, Konopka e B
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Os três laureados com o Prêmio Nobel de Fisiologia ou Medicina de 2017" />
   <figcaption>O desfecho: Prêmio Nobel de Fisiologia ou Medicina de 2017, concedido a Hall, Rosbash e Young.</figcaption>
 </figure>
+
+Ainda assim, as proteínas do relógio não são exatamente iguais na mosca-da-fruta e nos mamíferos. Na mosca, PER vai se acumulando e então entra no núcleo da célula junto com TIM (uma chave), e é TIM quem tem permissão para parar a linha de produção. Já nas células humanas, PER entra no núcleo junto com CRY (uma chave), e é CRY quem tem a autoridade para desligar a produção.
+
+E se apenas um elo dessa corrente falhar, o relógio biológico deixa de marcar a hora corretamente.
 
 ## A maioria dos relógios biológicos não é de 24 horas
 

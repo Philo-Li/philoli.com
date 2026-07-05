@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mana diennakts ilgst 24,5 stundas: parunāsim par DSPD un Non-24 miega traucējumiem"
+title: "Mana diennakts ilgst 24,5 stundas: parunāsim par bioloģisko pulksteni un Non-24 miega traucējumiem"
 date: 2026-07-05 12:00:00
 tags:
   - Miegs
@@ -67,7 +67,7 @@ Zinātniski to sauc par transkripcijas-translācijas negatīvās atgriezeniskās
   <figcaption>Aizstājot rūpnīcas analoģiju ar zinātniskiem nosaukumiem, pilns cikls ir: transkripcija → uzkrāšanās → inhibīcija → degradācija → dezinhibīcija, kas aizņem aptuveni 24 stundas. © Philo</figcaption>
 </figure>
 
-Maikls Jangs atklāja arī divas citas galvenās lomas, kas padara šo pulksteni vēl precīzāku: proteīns TIM (*Timeless*), kas naktī palīdz PER proteīnam iekļūt šūnas kodolā un nospiest apturēšanas pogu; un DBT (*Doubletime*), kura uzdevums ir palēnināt PER proteīna uzkrāšanās ātrumu – tieši šī "palēnināšana" precīzi kalibrē ciklu tuvu 24 stundām, nevis ļauj tam pabeigt apli dažu stundu laikā.
+Maikls Jangs atklāja arī divas citas galvenās lomas, kas padara šo pulksteni vēl precīzāku: proteīns TIM (*Timeless*), kas naktī palīdz PER proteīnam iekļūt šūnas kodolā un nospiest apturēšanas pogu; un DBT (*Doubletime*), kura uzdevums ir, noārdot PER proteīnu, palēnināt tā uzkrāšanās ātrumu – tieši šī "palēnināšana" precīzi kalibrē ciklu tuvu 24 stundām, nevis ļauj tam pabeigt apli dažu stundu laikā.
 
 Katrā šūnā ir šāda PER proteīna pašregulējoša rūpnīca, savukārt SCN smadzenēs ir visu šo mazo pulksteņu galvenais diriģents, kas nodrošina to saskaņotu darbību. Un tas, cik ilgi ilgst viens cikls, lielā mērā ir ģenētiski noteikts.
 
@@ -84,6 +84,10 @@ Jā, bioloģiskais pulkstenis patiešām pastāv, tas nav ilūzija.
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017. gada Nobela prēmijas fizioloģijā vai medicīnā trīs laureāti" />
   <figcaption>Noslēgums: 2017. gada Nobela prēmija fizioloģijā vai medicīnā piešķirta Holam, Rosbašam un Jangam.</figcaption>
 </figure>
+
+Pulksteņa proteīni augļu mušiņām un zīdītājiem tomēr nedaudz atšķiras. Mušiņai PER nepārtraukti uzkrājas un pēc tam kopā ar TIM (atslēgu) nonāk šūnas kodolā, un TIM ir tiesības apturēt ražošanas līniju. Cilvēka šūnās turpretī PER kopā ar CRY (atslēgu) nonāk kodolā, un tieši CRY ir pilnvaras izslēgt ražošanu.
+
+Un ja sabojājas kaut viens vienīgs šīs ķēdes posms, bioloģiskais pulkstenis vairs neiet pareizi.
 
 ## Lielākās daļas cilvēku bioloģiskais pulkstenis nav 24 stundas
 

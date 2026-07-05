@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Ma journée dure 24,5 heures : parlons du TSPS et du Non-24"
+title: "Ma journée dure 24,5 heures : parlons de l'horloge biologique et du Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Sommeil
@@ -41,7 +41,7 @@ Cette horloge est nichée dans l'hypothalamus du cerveau, au sein d'un minuscule
 
 Mais comment l'horloge biologique est-elle régulée avec une telle précision ?
 
-Trois scientifiques – Jeffrey Hall, Michael Rosbash et Michael Young – ont découvert le "moteur" de l'horloge biologique chez la minuscule mouche du vinaigre. Et ce qui est étonnant, c'est que ce moteur ne se trouve pas dans le cerveau, mais dans chaque cellule : presque toutes les cellules de votre corps abritent leur propre horloge.
+Dans les années 1980, trois scientifiques – Jeffrey Hall, Michael Rosbash et Michael Young – ont découvert le "moteur" de l'horloge biologique chez la minuscule mouche du vinaigre. Et ce qui est étonnant, c'est que ce moteur ne se trouve pas dans le cerveau, mais dans chaque cellule : presque toutes les cellules de votre corps abritent leur propre horloge.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis magazine sur la découverte" />
@@ -56,16 +56,16 @@ Son principe de fonctionnement peut être compris à travers la métaphore d'une
 4.  **Vidage des stocks :** Sans nouvelle instruction, la production de protéine PER cesse, et les protéines existantes sont progressivement dégradées, vidant ainsi le "magasin".
 5.  **Redémarrage :** Le magasin étant vide, le "bouton d'arrêt de production" est relâché, le gène se réactive, et l'usine recommence à produire...
 
-Ce cycle complet de "production → accumulation → auto-arrêt → vidage → nouvelle production" dure environ 24 heures. C'est un "tic-tac" de l'horloge biologique.
+Ce cycle complet de "transcription → accumulation → inhibition → dégradation → désinhibition" dure environ 24 heures. C'est un "tic-tac" de l'horloge biologique.
 
-Scientifiquement, on appelle cela une boucle de rétroaction négative transcription-traduction (TTFL). Le nom peut paraître intimidant, mais il décrit simplement cette usine qui s'auto-régule : une protéine, une fois produite en quantité suffisante, inhibe sa propre production. C'est grâce à cette alternance d'accumulation et de vidage que la cellule parvient à mesurer la durée d'une journée.
+Scientifiquement, on appelle cela une boucle de rétroaction négative transcription-traduction (TTFL). Il décrit simplement cette usine qui s'auto-régule : une protéine, une fois produite en quantité suffisante, inhibe sa propre production. C'est grâce à cette alternance d'accumulation et de vidage que la cellule parvient à mesurer la durée d'une journée.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Diagramme du cycle TTFL" />
   <figcaption>Si l'on remplace la métaphore de l'usine par la terminologie scientifique, un cycle complet correspond à : transcription → accumulation → inhibition → dégradation → désinhibition. Un tour dure environ 24 heures. © Philo</figcaption>
 </figure>
 
-Michael Young a également découvert deux autres acteurs clés qui affinent la précision de cette horloge : la protéine TIM (Timeless), qui aide la protéine PER à pénétrer dans le noyau cellulaire la nuit pour activer le bouton d'arrêt de production ; et la protéine DBT (Doubletime), dont le rôle est de ralentir le rythme d'accumulation de la protéine PER. C'est précisément ce "ralentissement" qui calibre le cycle à près de 24 heures, plutôt qu'à une douzaine d'heures seulement.
+Michael Young a également découvert deux autres acteurs clés qui affinent la précision de cette horloge : la protéine TIM (Timeless), qui aide la protéine PER à pénétrer dans le noyau cellulaire la nuit pour activer le bouton d'arrêt de production ; et la protéine DBT (Doubletime), dont le rôle est de dégrader la protéine PER afin de ralentir son rythme d'accumulation. C'est précisément ce "ralentissement" qui calibre le cycle à près de 24 heures, plutôt qu'à une douzaine d'heures seulement.
 
 Chaque cellule abrite ainsi sa propre usine de rétroaction de la protéine PER, tandis que le NSC dans le cerveau agit comme le chef d'orchestre de toutes ces petites horloges, veillant à leur synchronisation. Et la durée exacte de ce cycle est, pour une grande part, inscrite dans nos gènes.
 
@@ -82,6 +82,10 @@ La découverte de ce mécanisme ne s'est pas faite en un jour : dès 1971, Konop
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Lauréats du Prix Nobel 2017" />
   <figcaption>L'aboutissement : le Prix Nobel de physiologie ou médecine 2017, décerné à Hall, Rosbash et Young.</figcaption>
 </figure>
+
+Les protéines de l'horloge ne sont toutefois pas tout à fait identiques chez la mouche du vinaigre et chez les mammifères. Chez la mouche, PER s'accumule puis pénètre dans le noyau cellulaire accompagnée de TIM (une clé), et c'est TIM qui a l'autorisation d'arrêter la chaîne de production. Dans les cellules humaines, en revanche, PER pénètre dans le noyau accompagnée de CRY (une clé), et c'est CRY qui détient le pouvoir d'éteindre la production.
+
+Et s'il suffit qu'un seul maillon de cette chaîne flanche, l'horloge biologique cesse de donner l'heure juste.
 
 ## La plupart des horloges biologiques ne font pas 24 heures
 

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Moj dan traje 24,5 sata: Razgovor o DSPD-u i Non-24 poremećajima spavanja"
+title: "Moj dan traje 24,5 sata: Razgovor o biološkom satu i Non-24 poremećajima spavanja"
 date: 2026-07-05 12:00:00
 tags:
   - San
@@ -67,7 +67,7 @@ U znanosti se to naziva transkripcijsko-translacijska negativna povratna petlja 
   <figcaption>Ako se metafora tvornice zamijeni znanstvenim nazivima, cijeli krug izgleda ovako: transkripcija → akumulacija → inhibicija → degradacija → dezinhibicija, a jedan ciklus traje otprilike 24 sata. © Philo</figcaption>
 </figure>
 
-Michael Young je otkrio i dva druga ključna igrača koja su učinila ovaj sat još preciznijim: protein TIM (Timeless), koji noću pomaže PER proteinu da uđe u staničnu jezgru i pritisne gumb za zaustavljanje proizvodnje; te protein DBT (Doubletime), čija je uloga usporavanje brzine akumulacije PER proteina. Upravo to "usporavanje" precizno kalibrira ciklus na gotovo 24 sata, umjesto da se završi za desetak sati.
+Michael Young je otkrio i dva druga ključna igrača koja su učinila ovaj sat još preciznijim: protein TIM (Timeless), koji noću pomaže PER proteinu da uđe u staničnu jezgru i pritisne gumb za zaustavljanje proizvodnje; te protein DBT (Doubletime), čija je uloga razgradnjom PER proteina usporiti brzinu njegove akumulacije. Upravo to "usporavanje" precizno kalibrira ciklus na gotovo 24 sata, umjesto da se završi za desetak sati.
 
 Svaka stanica sadrži ovakvu tvornicu PER proteina s vlastitom povratnom spregom, dok je SCN u mozgu glavni dirigent svih tih malih satova, zadužen da ih uskladi. Duljina trajanja jednog ciklusa uvelike je genetski predodređena.
 
@@ -84,6 +84,10 @@ Otkriće ovog mehanizma nije se dogodilo preko noći: već 1971. godine Konopka 
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Troje dobitnika Nobelove nagrade za fiziologiju ili medicinu 2017." />
   <figcaption>Kraj: Nobelova nagrada za fiziologiju ili medicinu 2017. godine, dodijeljena Hallu, Rosbashu i Youngu.</figcaption>
 </figure>
+
+Proteini sata ipak se donekle razlikuju kod vinskih mušica i sisavaca. Kod mušice se PER neprestano nakuplja i zatim zajedno s TIM-om (ključem) ulazi u staničnu jezgru, pri čemu TIM ima ovlast zaustaviti proizvodnu liniju. U ljudskim stanicama PER se pak povezuje s CRY-em (ključem) i s njim ulazi u jezgru, a upravo CRY ima ovlast isključiti proizvodnju.
+
+A ako zakaže samo jedna karika u ovom lancu, biološki sat prestaje ispravno raditi.
 
 ## Većina ljudi nema biološki sat od 24 sata
 

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Một ngày của tôi dài 24,5 giờ: Trò chuyện về Rối loạn giấc ngủ DSPD và Non-24"
+title: "Một ngày của tôi dài 24,5 giờ: Trò chuyện về đồng hồ sinh học và Rối loạn giấc ngủ Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Giấc ngủ
@@ -67,7 +67,7 @@ Trong khoa học, đây được gọi là vòng lặp phản hồi âm phiên m
   <figcaption>Nếu thay ẩn dụ nhà máy bằng thuật ngữ khoa học, một chu trình hoàn chỉnh sẽ là: phiên mã → tích lũy → ức chế → phân hủy → giải ức chế, hoàn thành một vòng khoảng 24 giờ. © Philo</figcaption>
 </figure>
 
-Michael Young còn tìm thấy hai vai trò quan trọng khác, giúp chiếc đồng hồ này trở nên chính xác hơn: một là protein TIM (Timeless), chịu trách nhiệm giúp protein PER đi vào nhân tế bào để nhấn nút dừng sản xuất vào ban đêm; và một loại nữa là DBT (Doubletime), có tác dụng làm chậm tốc độ tích tụ của protein PER – chính nhờ sự "làm chậm" này mà chu trình được hiệu chỉnh chính xác gần 24 giờ, thay vì chỉ chạy xong trong mười mấy giờ.
+Michael Young còn tìm thấy hai vai trò quan trọng khác, giúp chiếc đồng hồ này trở nên chính xác hơn: một là protein TIM (Timeless), chịu trách nhiệm giúp protein PER đi vào nhân tế bào để nhấn nút dừng sản xuất vào ban đêm; và một loại nữa là DBT (Doubletime), có tác dụng phân hủy protein PER để làm chậm tốc độ tích tụ của nó – chính nhờ sự "làm chậm" này mà chu trình được hiệu chỉnh chính xác gần 24 giờ, thay vì chỉ chạy xong trong mười mấy giờ.
 
 Mỗi tế bào đều có một "nhà máy tự phản hồi" của protein PER như vậy, còn SCN trong não là tổng chỉ huy của tất cả những chiếc đồng hồ nhỏ này, có nhiệm vụ điều phối chúng hoạt động đồng bộ. Và chu trình này chạy một vòng mất bao lâu thì phần lớn đã được "ghi chết" trong gen.
 
@@ -84,6 +84,10 @@ Việc khám phá ra cơ chế này không phải là chuyện một sớm một
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
   <figcaption>Điểm đến: Giải Nobel Sinh lý học hoặc Y học năm 2017 đã được trao cho Hall, Rosbash, Young.</figcaption>
 </figure>
+
+Tuy nhiên, các protein đồng hồ ở ruồi giấm và ở động vật có vú hơi khác nhau. Ở ruồi giấm, PER liên tục tích tụ rồi mang theo protein TIM (một chiếc chìa khóa) cùng đi vào nhân tế bào, và TIM có quyền dừng dây chuyền sản xuất. Còn ở tế bào người, PER mang theo protein CRY (một chiếc chìa khóa) cùng đi vào nhân tế bào, và chính CRY mới có quyền tắt dây chuyền sản xuất.
+
+Và chỉ cần một mắt xích bất kỳ trong chuỗi này gặp trục trặc, đồng hồ sinh học sẽ chạy không còn chuẩn nữa.
 
 ## Đại đa số đồng hồ sinh học của con người không phải 24 giờ
 

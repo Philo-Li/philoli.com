@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Мој дан траје 24,5 сата: Priča o DSPD i Non-24 poremećajima spavanja"
+title: "Мој дан траје 24,5 сата: Priča o biološkom satu i Non-24 poremećajima spavanja"
 date: 2026-07-05 12:00:00
 tags:
   - Сан
@@ -69,7 +69,7 @@ U nauci se ovo naziva transkripciono-translaciona negativna povratna sprega (TTF
   <figcaption>Ako metaforu fabrike zamenimo naučnim nazivima, ceo krug je: transkripcija → akumulacija → inhibicija → degradacija → dezinhibicija, što traje oko 24 sata. © Philo</figcaption>
 </figure>
 
-Michael Young je takođe otkrio još dva ključna igrača koja čine ovaj sat preciznijim: protein nazvan TIM (Timeless), koji noću pomaže PER proteinu da uđe u ćelijsko jezgro i pritisne dugme za zaustavljanje proizvodnje; i DBT (Doubletime), čija je uloga da uspori brzinu akumulacije PER proteina – upravo to "usporavanje" precizno kalibriše ciklus na skoro 24 sata, umesto da se završi za desetak sati.
+Michael Young je takođe otkrio još dva ključna igrača koja čine ovaj sat preciznijim: protein nazvan TIM (Timeless), koji noću pomaže PER proteinu da uđe u ćelijsko jezgro i pritisne dugme za zaustavljanje proizvodnje; i DBT (Doubletime), čija je uloga da razgradnjom PER proteina uspori brzinu njegove akumulacije – upravo to "usporavanje" precizno kalibriše ciklus na skoro 24 sata, umesto da se završi za desetak sati.
 
 Svaka ćelija ima ovakvu fabriku PER proteina sa samopovratnom spregom, dok je SCN u mozgu glavni komandant svih tih malih satova, odgovoran za usklađivanje njihovog ritma. A to koliko dugo traje jedan ciklus, u velikoj meri je genetski predodređeno.
 
@@ -86,6 +86,10 @@ Otkriće ovog mehanizma nije se desilo preko noći: još 1971. godine, Konopka i
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Dobitnici Nobelove nagrade za fiziologiju ili medicinu 2017." />
   <figcaption>Kraj: Nobelova nagrada za fiziologiju ili medicinu 2017. godine, dodeljena Hallu, Rosbashu i Youngu.</figcaption>
 </figure>
+
+Proteini sata se ipak donekle razlikuju kod vinskih mušica i sisara. Kod mušice se PER neprestano nakuplja i zatim zajedno sa TIM-om (ključem) ulazi u ćelijsko jezgro, pri čemu TIM ima ovlašćenje da zaustavi proizvodnu liniju. U ljudskim ćelijama se PER pak povezuje sa CRY-em (ključem) i sa njim ulazi u jezgro, a upravo CRY ima ovlašćenje da isključi proizvodnju.
+
+A ako zakaže makar samo jedna karika u ovom lancu, biološki sat prestaje ispravno da radi.
 
 ## Većina ljudi nema biološki sat od 24 sata
 

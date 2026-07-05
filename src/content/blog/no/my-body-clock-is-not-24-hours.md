@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mitt døgn er 24,5 timer langt: En prat om DSPD og Non-24 søvnforstyrrelser"
+title: "Mitt døgn er 24,5 timer langt: En prat om den biologiske klokken og Non-24 søvnforstyrrelser"
 date: 2026-07-05 12:00:00
 tags:
   - Søvn
@@ -41,7 +41,7 @@ Denne klokken befinner seg i hypothalamus i hjernen, nærmere bestemt i en liten
 
 Men hvordan blir denne biologiske klokken egentlig så nøyaktig regulert?
 
-Tre forskere, Jeffrey Hall, Michael Rosbash og Michael Young, fant den biologiske klokkens «motor» i den lille bananfluen. Det mest forbløffende er at denne motoren ikke sitter i hjernen, men i hver eneste celle – nesten hver eneste celle i kroppen din bærer sin egen lille klokke.
+På 1980-tallet fant tre forskere, Jeffrey Hall, Michael Rosbash og Michael Young, den biologiske klokkens «motor» i den lille bananfluen. Det mest forbløffende er at denne motoren ikke sitter i hjernen, men i hver eneste celle – nesten hver eneste celle i kroppen din bærer sin egen lille klokke.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis Magazine rapporterer om funnet" />
@@ -58,16 +58,16 @@ Tenk deg en liten fabrikk inne i en celle, som dag og natt produserer et produkt
 4.  **Tømming av lager**: Uten nye instruksjoner stopper produksjonen av PER-protein, samtidig som de gamle proteinene gradvis brytes ned og lageret tømmes.
 5.  **Gjenopptakelse av produksjon**: Når lageret er tomt, slippes «stoppknappen», genet aktiveres på nytt, og fabrikken begynner å produsere igjen...
 
-Denne hele runden med «produksjon → akkumulering → selvstengning → tømming → gjenopptakelse av produksjon» tar omtrent 24 timer å fullføre. Dette er den biologiske klokkens «tikk».
+Denne hele runden med «transkripsjon → akkumulering → hemming → nedbrytning → de-hemming» tar omtrent 24 timer å fullføre. Dette er den biologiske klokkens «tikk».
 
-Vitenskapelig kalles dette en transkripsjons-translasjons negativ tilbakekoblingssløyfe (TTFL). Navnet er imponerende, men i bunn og grunn er det den selvbremsende fabrikken nevnt ovenfor – et protein hemmer sin egen produksjon når det når et visst nivå. Ved hjelp av denne «akkumulering-tømming»-syklusen klarer cellene å «måle» lengden på en dag.
+Vitenskapelig kalles dette en transkripsjons-translasjons negativ tilbakekoblingssløyfe (TTFL). I bunn og grunn er det den selvbremsende fabrikken nevnt ovenfor – et protein hemmer sin egen produksjon når det når et visst nivå. Ved hjelp av denne «akkumulering-tømming»-syklusen klarer cellene å «måle» lengden på en dag.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Skjematisk diagram over transkripsjons-translasjons negativ tilbakekoblingssløyfe (TTFL)" />
   <figcaption>Hvis vi bytter ut fabrikkmetaforen med vitenskapelige termer, blir en hel syklus: transkripsjon → akkumulering → hemming → nedbrytning → de-hemming, som tar rundt 24 timer å fullføre. © Philo</figcaption>
 </figure>
 
-Michael Young fant også to andre nøkkelaktører som gjør denne klokken enda mer presis: et protein kalt TIM (Timeless), som hjelper PER-proteinet inn i cellekjernen om natten for å trykke på stoppknappen; og et protein kalt DBT (Doubletime), hvis rolle er å bremse akkumuleringen av PER-protein – det er denne «bremsingen» som kalibrerer syklusen nøyaktig til nær 24 timer, i stedet for å fullføre den på bare et dusin timer.
+Michael Young fant også to andre nøkkelaktører som gjør denne klokken enda mer presis: et protein kalt TIM (Timeless), som hjelper PER-proteinet inn i cellekjernen om natten for å trykke på stoppknappen; og et protein kalt DBT (Doubletime), hvis rolle er å bremse akkumuleringen av PER-protein ved å bryte ned proteinet – det er denne «bremsingen» som kalibrerer syklusen nøyaktig til nær 24 timer, i stedet for å fullføre den på bare et dusin timer.
 
 Hver celle har en slik selvregulerende fabrikk for PER-protein, mens SCN i hjernen er dirigenten for alle disse små klokkene, og sørger for at de holder tritt. Hvor lang denne syklusen faktisk er, er i stor grad genetisk bestemt.
 
@@ -84,6 +84,10 @@ Oppdagelsen av denne mekanismen skjedde ikke over natten: Allerede i 1971 oppdag
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="De tre nobelprisvinnerne i fysiologi eller medisin i 2017" />
   <figcaption>Sluttpunktet: Nobelprisen i fysiologi eller medisin i 2017, tildelt Hall, Rosbash og Young.</figcaption>
 </figure>
+
+Klokkeproteinene er imidlertid ikke helt like hos bananfluer og pattedyr. Hos fluen fortsetter PER å hope seg opp og følger så med TIM (en nøkkel) inn i cellekjernen, der TIM har tillatelse til å stanse produksjonslinjen. I menneskeceller følger PER derimot med CRY (en nøkkel) inn i cellekjernen, og det er CRY som har fullmakt til å slå av produksjonen.
+
+Og svikter bare ett eneste ledd i denne kjeden, slutter den biologiske klokken å gå riktig.
 
 ## De fleste menneskers biologiske klokker er ikke 24 timer
 

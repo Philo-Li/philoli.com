@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Hari saya berdurasi 24,5 jam: Bicara tentang DSPD dan Gangguan Tidur Non-24"
+title: "Hari saya berdurasi 24,5 jam: Bicara tentang jam biologis dan Gangguan Tidur Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Tidur
@@ -67,7 +67,7 @@ Secara ilmiah, ini disebut *transcriptional-translational feedback loop* (TTFL).
   <figcaption>Mengganti perumpamaan pabrik dengan nama ilmiah, satu siklus penuh adalah: transkripsi → akumulasi → inhibisi → degradasi → de-inhibisi, yang memakan waktu sekitar 24 jam. © Philo</figcaption>
 </figure>
 
-Michael Young juga menemukan dua peran penting lainnya yang membuat jam ini lebih presisi: protein TIM (Timeless), yang bertugas membantu protein PER masuk ke inti sel untuk menekan tombol berhenti produksi di malam hari; dan DBT (Doubletime), yang berfungsi memperlambat laju akumulasi protein PER—"perlambatan" inilah yang mengkalibrasi siklus secara tepat mendekati 24 jam, bukannya selesai dalam belasan jam.
+Michael Young juga menemukan dua peran penting lainnya yang membuat jam ini lebih presisi: protein TIM (Timeless), yang bertugas membantu protein PER masuk ke inti sel untuk menekan tombol berhenti produksi di malam hari; dan DBT (Doubletime), yang berfungsi mengurai protein PER untuk memperlambat laju akumulasinya—"perlambatan" inilah yang mengkalibrasi siklus secara tepat mendekati 24 jam, bukannya selesai dalam belasan jam.
 
 Setiap sel memiliki pabrik *self-feedback* protein PER semacam ini, sementara SCN di otak adalah "komandan utama" dari semua jam-jam kecil ini, bertugas menyelaraskan langkah mereka. Dan berapa lama satu siklus ini berlangsung, sebagian besar sudah "tertulis" dalam gen.
 
@@ -84,6 +84,10 @@ Penemuan mekanisme ini tidak terjadi dalam semalam: Pada tahun 1971, Konopka dan
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
   <figcaption>Puncaknya: Hadiah Nobel Fisiologi atau Kedokteran 2017 dianugerahkan kepada Hall, Rosbash, dan Young.</figcaption>
 </figure>
+
+Namun, protein jam ini sedikit berbeda antara lalat buah dan mamalia. Pada lalat buah, PER terus menumpuk lalu masuk ke inti sel bersama TIM (sebuah kunci), dan TIM memiliki wewenang untuk menghentikan lini produksi. Pada sel manusia, PER justru masuk ke inti sel bersama CRY (sebuah kunci), dan CRY-lah yang memiliki wewenang untuk mematikan produksi.
+
+Dan jika satu saja mata rantai dalam rangkaian ini bermasalah, jam biologis akan mulai melenceng.
 
 ## Jam Biologis Sebagian Besar Orang Bukan 24 Jam
 

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Hari saya selama 24.5 jam: Bincangkan DSPD dan Gangguan Tidur Non-24"
+title: "Hari saya selama 24.5 jam: Bincangkan jam biologi dan Gangguan Tidur Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Tidur
@@ -67,7 +67,7 @@ Dalam sains, ini dikenali sebagai kitaran suap balik negatif transkripsi-transla
   <figcaption>Jika analogi kilang ditukar kepada nama saintifik, satu pusingan lengkap adalah: Transkripsi → Pengumpulan → Penekanan → Degradasi → Penyahaktifan, mengambil masa kira-kira 24 jam untuk diselesaikan. © Philo</figcaption>
 </figure>
 
-Michael Young juga menemui dua lagi watak penting yang menjadikan jam ini lebih tepat: satu dipanggil protein TIM (Timeless), yang bertanggungjawab membantu protein PER masuk ke nukleus sel pada waktu malam untuk menekan butang henti pengeluaran; dan satu lagi dipanggil DBT (Doubletime), yang berfungsi melambatkan kadar pengumpulan protein PER. Kelambatan inilah yang menyelaraskan kitaran dengan tepat kepada hampir 24 jam, dan bukan selesai dalam beberapa belas jam sahaja.
+Michael Young juga menemui dua lagi watak penting yang menjadikan jam ini lebih tepat: satu dipanggil protein TIM (Timeless), yang bertanggungjawab membantu protein PER masuk ke nukleus sel pada waktu malam untuk menekan butang henti pengeluaran; dan satu lagi dipanggil DBT (Doubletime), yang berfungsi menguraikan protein PER untuk melambatkan kadar pengumpulannya. Kelambatan inilah yang menyelaraskan kitaran dengan tepat kepada hampir 24 jam, dan bukan selesai dalam beberapa belas jam sahaja.
 
 Setiap sel mempunyai kilang suap balik protein PER sendiri, manakala SCN di dalam otak berfungsi sebagai 'komandan utama' semua 'jam-jam kecil' ini, memastikan ia bergerak seiring. Berapa lama sebenarnya satu pusingan kitaran ini diselesaikan, sebahagian besarnya telah 'terprogram' dalam gen kita.
 
@@ -84,6 +84,10 @@ Penemuan mekanisme ini bukanlah sesuatu yang berlaku sekelip mata: seawal tahun 
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Tiga pemenang Hadiah Nobel dalam Fisiologi atau Perubatan 2017" />
   <figcaption>Penghujung: Hadiah Nobel dalam Fisiologi atau Perubatan 2017 dianugerahkan kepada Hall, Rosbash, dan Young.</figcaption>
 </figure>
+
+Namun, protein jam ini sedikit berbeza antara lalat buah dan mamalia. Pada lalat buah, PER terus terkumpul dan kemudian masuk ke nukleus sel bersama TIM (sebuah kunci), dan TIM mempunyai kebenaran untuk menghentikan barisan pengeluaran. Pada sel manusia pula, PER masuk ke nukleus bersama CRY (sebuah kunci), dan CRY inilah yang mempunyai kuasa untuk mematikan pengeluaran.
+
+Dan jika satu sahaja pautan dalam rantaian ini gagal, jam biologi akan mula tersasar.
 
 ## Jam Biologi Kebanyakan Orang Bukan 24 Jam
 

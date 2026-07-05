@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "My Day Is 24.5 Hours Long: Living with DSPD and Non-24"
+title: "My Day Is 24.5 Hours Long: On the Body Clock and Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Sleep
@@ -67,7 +67,7 @@ Scientists call this the transcription-translation feedback loop (TTFL). It's ju
   <figcaption>Swap the factory metaphor for the real names, and one full loop reads: transcription → accumulation → repression → degradation → derepression, roughly 24 hours per turn. © Philo</figcaption>
 </figure>
 
-Michael Young found two more players that sharpen the clock. One is TIM protein (Timeless), which helps PER slip into the nucleus at night to hit the stop button. The other is DBT (Doubletime), which slows PER's buildup, and it's that braking that tunes the whole loop to nearly 24 hours instead of racing through in a dozen.
+Michael Young found two more players that sharpen the clock. One is TIM protein (Timeless), which helps PER slip into the nucleus at night to hit the stop button. The other is DBT (Doubletime), which slows PER's buildup by degrading the protein, and it's that braking that tunes the whole loop to nearly 24 hours instead of racing through in a dozen.
 
 Every cell holds one of these self-braking PER factories, and the SCN in the brain is the conductor keeping them all in step. Exactly how long each loop runs is, to a large degree, written into your genes.
 
@@ -84,6 +84,10 @@ None of this came together overnight. Back in 1971, Konopka and Benzer spotted f
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="The three 2017 Nobel laureates" />
   <figcaption>Where it landed: the 2017 Nobel Prize in Physiology or Medicine, awarded to Hall, Rosbash, and Young.</figcaption>
 </figure>
+
+That said, the clock proteins aren't quite identical in fruit flies and mammals. In the fly, PER keeps piling up and then rides into the nucleus together with TIM (Timeless), a key that has the clearance to shut the production line down. In human cells, PER instead pairs with CRY (a key) to slip into the nucleus, and it's CRY that holds the authority to switch production off.
+
+And if any single link in this chain breaks, the body clock stops keeping proper time.
 
 ## Almost nobody's clock runs on exactly 24 hours
 

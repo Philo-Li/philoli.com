@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Vuorokauteni on 24,5 tuntia pitkä: Keskustelua DSPD:stä ja Non-24-unihäiriöstä"
+title: "Vuorokauteni on 24,5 tuntia pitkä: Keskustelua biologisesta kellosta ja Non-24-unihäiriöstä"
 date: 2026-07-05 12:00:00
 tags:
   - Uni
@@ -41,7 +41,7 @@ Tämä kello sijaitsee aivojen hypotalamuksessa, pienessä hermosolurykelmässä
 
 Miten sitten tämä biologinen kello tarkalleen ottaen säätelee toimintaansa?
 
-Kolme tiedemiestä, Jeffrey Hall, Michael Rosbash ja Michael Young, löysivät biologisen kellon "moottorin" pienten banaanikärpästen avulla. Ja mikä hämmästyttävintä, tämä moottori ei sijaitse aivoissa, vaan jokaisessa solussa – lähes jokaisessa kehosi solussa on oma sisäänrakennettu kellonsa.
+1980-luvulla kolme tiedemiestä, Jeffrey Hall, Michael Rosbash ja Michael Young, löysivät biologisen kellon "moottorin" pienten banaanikärpästen avulla. Ja mikä hämmästyttävintä, tämä moottori ei sijaitse aivoissa, vaan jokaisessa solussa – lähes jokaisessa kehosi solussa on oma sisäänrakennettu kellonsa.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis-lehden artikkeli tästä löydöstä" />
@@ -58,16 +58,16 @@ Kuvittele soluun pieni tehdas, joka tuottaa yötä päivää PER-proteiiniksi (P
 4. Tuotteet tyhjenevät: Ilman uusia käskyjä PER-proteiinin tuotanto lakkaa, ja vanhat proteiinit hajoavat vähitellen, jolloin varasto tyhjenee.
 5. Uusi aloitus: Varaston tyhjentyessä "tuotannon pysäytysnappi" vapautuu, geeni aktivoituu uudelleen, ja tehdas aloittaa tuotannon alusta…
 
-Tämä koko "tuotanto → kertyminen → itsesammutus → tyhjennys → uudelleen tuotanto" -sykli kestää noin 24 tuntia. Se on yksi biologisen kellon "tikitys".
+Tämä koko "Transkriptio → Akkumulaatio → Estyminen → Hajoaminen → Esto poistuu" -sykli kestää noin 24 tuntia. Se on yksi biologisen kellon "tikitys".
 
-Tieteellisesti tätä kutsutaan transkriptio-translaatio-negatiiviseksi palautesilmukaksi (TTFL). Nimi kuulostaa pelottavalta, mutta pohjimmiltaan kyse on yllä kuvatusta tehtaasta, joka jarruttaa itseään – proteiini estää omaa tuotantoaan, kun sitä on kertynyt riittävästi. Tämän "kertymisen ja tyhjenemisen" nousun ja laskun avulla solu onnistuu mittaamaan päivän pituuden.
+Tieteellisesti tätä kutsutaan transkriptio-translaatio-negatiiviseksi palautesilmukaksi (TTFL). Pohjimmiltaan kyse on yllä kuvatusta tehtaasta, joka jarruttaa itseään – proteiini estää omaa tuotantoaan, kun sitä on kertynyt riittävästi. Tämän "kertymisen ja tyhjenemisen" nousun ja laskun avulla solu onnistuu mittaamaan päivän pituuden.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkriptio-translaatio-negatiivisen palautesilmukan (TTFL) kaavio" />
   <figcaption>Jos tehdasvertaus vaihdetaan tieteellisiin termeihin, kokonainen kierros on: Transkriptio → Akkumulaatio → Estyminen → Hajoaminen → Esto poistuu, ja yksi kierros kestää noin 24 tuntia. © Philo</figcaption>
 </figure>
 
-Michael Young löysi myös kaksi muuta avainroolia, jotka tekevät tästä kellosta entistä tarkemman: TIM-proteiini (Timeless), joka auttaa PER-proteiinia pääsemään solun tumaan yöllä painamaan tuotannon pysäytysnappia; ja DBT (Doubletime), jonka tehtävänä on hidastaa PER-proteiinin kertymisnopeutta. Juuri tämä "hidastaminen" kalibroi syklin tarkasti lähelle 24 tuntia, eikä anna sen kiertää loppuun jo muutamassa tunnissa.
+Michael Young löysi myös kaksi muuta avainroolia, jotka tekevät tästä kellosta entistä tarkemman: TIM-proteiini (Timeless), joka auttaa PER-proteiinia pääsemään solun tumaan yöllä painamaan tuotannon pysäytysnappia; ja DBT (Doubletime), jonka tehtävänä on hajottaa PER-proteiinia ja siten hidastaa sen kertymisnopeutta. Juuri tämä "hidastaminen" kalibroi syklin tarkasti lähelle 24 tuntia, eikä anna sen kiertää loppuun jo muutamassa tunnissa.
 
 Jokaisessa solussa on tällainen PER-proteiinin itsepalautetehdas, ja aivojen SCN on kaikkien näiden pienten kellojen ylin johtaja, joka varmistaa niiden toimivan yhdessä. Ja se, kuinka pitkä yksi sykli lopulta on, on suurelta osin kirjoitettu geeneihin.
 
@@ -84,6 +84,10 @@ Tämän mekanismin löytyminen ei tapahtunut yhdessä yössä: jo vuonna 1971 Ko
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Vuoden 2017 fysiologian tai lääketieteen Nobel-palkinnon kolme saajaa" />
   <figcaption>Huipentuma: Vuoden 2017 fysiologian tai lääketieteen Nobel-palkinto myönnettiin Hallille, Rosbashille ja Youngille.</figcaption>
 </figure>
+
+Kellon proteiinit eivät kuitenkaan ole aivan samat banaanikärpäsillä ja nisäkkäillä. Kärpäsellä PER kertyy jatkuvasti ja kulkeutuu sitten yhdessä TIM:n (avaimen) kanssa solun tumaan, ja TIM:llä on valtuudet pysäyttää tuotantolinja. Ihmissoluissa PER taas liittyy CRY:hyn (avaimeen) ja kulkeutuu sen kanssa tumaan, ja juuri CRY:llä on valtuudet sammuttaa tuotanto.
+
+Ja jos vaikka yksikin lenkki tässä ketjussa pettää, biologinen kello lakkaa käymästä oikein.
 
 ## Useimpien ihmisten biologinen kello ei ole 24 tuntia
 

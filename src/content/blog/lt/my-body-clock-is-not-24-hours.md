@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mano para trunka 24,5 valandos: pokalbis apie DSPD ir Non-24 miego sutrikimus"
+title: "Mano para trunka 24,5 valandos: pokalbis apie biologinį laikrodį ir Non-24 miego sutrikimus"
 date: 2026-07-05 12:00:00
 tags:
   - Miegas
@@ -67,7 +67,7 @@ Moksliškai tai vadinama transkripcijos-transliacijos neigiamo grįžtamojo ryš
   <figcaption>Pakeitus gamyklos metaforą moksline terminologija, visas ciklas atrodo taip: transkripcija → kaupimasis → slopinimas → degradacija → desupresija, o vienas ciklas trunka apie 24 valandas. © Philo</figcaption>
 </figure>
 
-Michael Young taip pat atrado dar du pagrindinius veikėjus, kurie daro šį laikrodį tikslesnį: baltymą TIM (Timeless), kuris naktį padeda PER baltymui patekti į ląstelės branduolį ir paspausti gamybos sustabdymo mygtuką; ir baltymą DBT (Doubletime), kurio funkcija yra sulėtinti PER baltymo kaupimosi greitį. Būtent šis „sulėtinimas“ tiksliai sukalibruoja ciklą iki beveik 24 valandų, užuot leidęs jam pasibaigti per keliolika valandų.
+Michael Young taip pat atrado dar du pagrindinius veikėjus, kurie daro šį laikrodį tikslesnį: baltymą TIM (Timeless), kuris naktį padeda PER baltymui patekti į ląstelės branduolį ir paspausti gamybos sustabdymo mygtuką; ir baltymą DBT (Doubletime), kurio funkcija yra skaidant PER baltymą sulėtinti jo kaupimosi greitį. Būtent šis „sulėtinimas“ tiksliai sukalibruoja ciklą iki beveik 24 valandų, užuot leidęs jam pasibaigti per keliolika valandų.
 
 Kiekvienoje ląstelėje veikia tokia PER baltymo savireguliacijos gamykla, o smegenyse esantys SCN yra visų šių mažų laikrodžių „dirigentai“, atsakingi už jų sinchronizavimą. O kiek laiko trunka vienas šio ciklo apsisukimas, didžiąja dalimi yra užkoduota genuose.
 
@@ -84,6 +84,10 @@ Taip, biologinis laikrodis tikrai egzistuoja, tai nėra iliuzija.
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 m. Nobelio fiziologijos ar medicinos premijos laureatai" />
   <figcaption>Pabaiga: 2017 m. Nobelio fiziologijos ar medicinos premija skirta Hallui, Rosbashui ir Youngui.</figcaption>
 </figure>
+
+Vis dėlto laikrodžio baltymai vaisinėse muselėse ir žinduoliuose šiek tiek skiriasi. Muselėje PER nuolat kaupiasi ir tada kartu su TIM (raktu) patenka į ląstelės branduolį, o TIM turi teisę sustabdyti gamybos liniją. Žmogaus ląstelėse PER susijungia su CRY (raktu) ir su juo patenka į branduolį, ir būtent CRY turi teisę išjungti gamybą.
+
+Ir jei sutrinka kad ir viena šios grandinės grandis, biologinis laikrodis nustoja eiti tinkamai.
 
 ## Daugumos žmonių biologinis laikrodis nėra 24 valandų
 

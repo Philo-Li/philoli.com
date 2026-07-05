@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Můj den trvá 24,5 hodiny: Povídání o DSPD a poruchách spánku Non-24"
+title: "Můj den trvá 24,5 hodiny: Povídání o biologických hodinách a poruchách spánku Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Spánek
@@ -41,7 +41,7 @@ Tyto hodiny se skrývají v hypothalamu mozku a tvoří je shluk neuronů zvaný
 
 Jak přesně jsou tedy biologické hodiny regulovány?
 
-Tři vědci, Jeffrey Hall, Michael Rosbash a Michael Young, objevili "motor" biologických hodin u malých octomilek. A co je překvapivé, tento motor se nenachází v mozku, ale v každé buňce – téměř každá buňka ve vašem těle si nese své vlastní hodiny.
+V 80. letech tři vědci, Jeffrey Hall, Michael Rosbash a Michael Young, objevili "motor" biologických hodin u malých octomilek. A co je překvapivé, tento motor se nenachází v mozku, ale v každé buňce – téměř každá buňka ve vašem těle si nese své vlastní hodiny.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
@@ -58,16 +58,16 @@ Představte si malou továrnu v buňce, která dnem i nocí vyrábí produkt zva
 4.  **Vyprázdnění produktu:** Bez nových pokynů se výroba PER proteinu zastaví a starý protein se postupně rozloží. Sklad se pomalu vyprázdní.
 5.  **Nové spuštění:** Když je sklad prázdný, "tlačítko zastavení výroby" se uvolní, gen se znovu aktivuje a továrna začne znovu vyrábět...
 
-Celý tento cyklus "výroby → hromadění → samovypnutí → vyprázdnění → opětovné výroby" trvá přibližně 24 hodin. To je jedno "tiknutí" biologických hodin.
+Celý tento cyklus "transkripce → akumulace → inhibice → degradace → de-inhibice" trvá přibližně 24 hodin. To je jedno "tiknutí" biologických hodin.
 
-Vědecky se tomu říká transkripčně-translační negativní zpětnovazebná smyčka (TTFL). Název zní hrozivě, ale v podstatě jde o výše zmíněnou továrnu, která sama šlape na brzdy – protein se v určitém množství hromadí a pak sám potlačí svou produkci. Díky tomuto "hromadění a vyprázdnění", tedy vzestupu a poklesu, buňka dokáže odměřit délku jednoho dne.
+Vědecky se tomu říká transkripčně-translační negativní zpětnovazebná smyčka (TTFL). V podstatě jde o výše zmíněnou továrnu, která sama šlape na brzdy – protein se v určitém množství hromadí a pak sám potlačí svou produkci. Díky tomuto "hromadění a vyprázdnění", tedy vzestupu a poklesu, buňka dokáže odměřit délku jednoho dne.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
   <figcaption>Převedeme-li přirovnání továrny na vědecké názvosloví, celý cyklus je: transkripce → akumulace → inhibice → degradace → de-inhibice, dokončení jednoho cyklu trvá asi 24 hodin. © Philo</figcaption>
 </figure>
 
-Michael Young také objevil další dvě klíčové postavy, které tyto hodiny ještě zpřesňují: protein zvaný TIM (Timeless), který v noci pomáhá PER proteinu vstoupit do buněčného jádra a stisknout tlačítko zastavení výroby; a protein DBT (Doubletime), jehož úkolem je zpomalit rychlost hromadění PER proteinu – právě toto "zpomalení" kalibruje cyklus přesně na téměř 24 hodin, místo aby proběhl za tucet hodin.
+Michael Young také objevil další dvě klíčové postavy, které tyto hodiny ještě zpřesňují: protein zvaný TIM (Timeless), který v noci pomáhá PER proteinu vstoupit do buněčného jádra a stisknout tlačítko zastavení výroby; a protein DBT (Doubletime), jehož úkolem je rozkládáním PER proteinu zpomalit rychlost jeho hromadění – právě toto "zpomalení" kalibruje cyklus přesně na téměř 24 hodin, místo aby proběhl za tucet hodin.
 
 Každá buňka má takovou továrnu na PER protein se zpětnou vazbou a SCN v mozku je hlavním velitelem všech těchto malých hodin, který zajišťuje jejich synchronizaci. Délka jednoho cyklu je do značné míry zapsána v genech.
 
@@ -84,6 +84,10 @@ Objev tohoto mechanismu nebyl okamžitý: již v roce 1971 Konopka a Benzer obje
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
   <figcaption>Vyvrcholení: Nobelova cena za fyziologii nebo medicínu v roce 2017 udělena Hallovi, Rosbashovi a Youngovi.</figcaption>
 </figure>
+
+Hodinové proteiny se ovšem u octomilek a savců trochu liší. U octomilky se PER neustále hromadí a pak spolu s TIM (klíčem) vstupuje do buněčného jádra, přičemž TIM má oprávnění zastavit výrobní linku. V lidských buňkách se však PER spojuje s CRY (klíčem) a vstupuje s ním do jádra, a je to právě CRY, kdo má pravomoc výrobu vypnout.
+
+A pokud selže byť jediný článek tohoto řetězce, biologické hodiny přestanou jít správně.
 
 ## Biologické hodiny většiny lidí nejsou 24hodinové
 

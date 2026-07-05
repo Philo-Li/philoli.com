@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Benim günüm 24,5 saat sürüyor: DSPD ve Non-24 Uyku Bozuklukları Üzerine"
+title: "Benim günüm 24,5 saat sürüyor: Biyolojik Saat ve Non-24 Uyku Bozukluğu Üzerine"
 date: 2026-07-05 12:00:00
 tags:
   - Uyku
@@ -67,7 +67,7 @@ Bilimsel olarak buna transkripsiyon-translasyon negatif geri besleme döngüsü 
   <figcaption>Fabrika benzetmesini bilimsel isimlerle değiştirdiğimizde, tam döngü şöyledir: Transkripsiyon → Birikim → İnhibisyon → Bozunma → De-inhibisyon. Bir turu yaklaşık 24 saat sürer. © Philo</figcaption>
 </figure>
 
-Michael Young, bu saati daha da hassas hale getiren iki önemli rol daha keşfetti: Biri TIM proteini (Timeless), geceleyin PER proteininin hücre çekirdeğine girerek üretim durdurma düğmesine basmasına yardımcı olur; diğeri ise DBT (Doubletime), PER proteininin birikme hızını yavaşlatır – işte bu "yavaşlatma" sayesinde döngü, birkaç saatte değil, tam da 24 saate yakın bir süreye hassas bir şekilde ayarlanır.
+Michael Young, bu saati daha da hassas hale getiren iki önemli rol daha keşfetti: Biri TIM proteini (Timeless), geceleyin PER proteininin hücre çekirdeğine girerek üretim durdurma düğmesine basmasına yardımcı olur; diğeri ise DBT (Doubletime), PER proteinini parçalayarak birikme hızını yavaşlatır – işte bu "yavaşlatma" sayesinde döngü, birkaç saatte değil, tam da 24 saate yakın bir süreye hassas bir şekilde ayarlanır.
 
 Her hücrede böyle bir PER proteininin kendi kendini düzenleyen fabrikası bulunur. Beyindeki SCN ise tüm bu küçük saatlerin başkomutanıdır ve onların senkronize çalışmasını sağlar. Bu döngünün bir turunun ne kadar sürdüğü ise büyük ölçüde genlerimizde kodlanmıştır.
 
@@ -84,6 +84,10 @@ Bu mekanizmanın keşfi bir çırpıda gerçekleşmedi: Daha 1971'de Konopka ve 
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 Nobel Fizyoloji veya Tıp Ödülü'nün üç sahibi" />
   <figcaption>Son nokta: 2017 Nobel Fizyoloji veya Tıp Ödülü, Hall, Rosbash, Young'a verildi.</figcaption>
 </figure>
+
+Ne var ki saat proteinleri meyve sinekleri ile memelilerde biraz farklıdır. Sinekte PER sürekli birikir ve ardından TIM (bir anahtar) ile birlikte hücre çekirdeğine girer; üretim hattını durdurma yetkisi TIM'dedir. İnsan hücrelerinde ise PER, CRY (bir anahtar) ile birlikte çekirdeğe girer ve üretimi kapatma yetkisi CRY'dedir.
+
+Ve bu zincirin tek bir halkası bile aksarsa, biyolojik saat düzgün işlemeyi bırakır.
 
 ## Çoğu İnsanın Biyolojik Saati 24 Saat Değildir
 

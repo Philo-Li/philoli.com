@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "La mia giornata dura 24,5 ore: tra DSPD e disturbo del sonno Non-24"
+title: "La mia giornata dura 24,5 ore: tra l'orologio biologico e il disturbo del sonno Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Sonno
@@ -43,7 +43,7 @@ Questo "orologio" è nascosto nell'ipotalamo del cervello, in un piccolo gruppo 
 
 Ma come fa l'orologio biologico a essere regolato con tanta precisione?
 
-Tre scienziati, Jeffrey Hall, Michael Rosbash e Michael Young, hanno scoperto il "motore" dell'orologio biologico nella minuscola mosca della frutta. E, sorprendentemente, questo motore non si trova nel cervello, ma in ogni singola cellula: quasi ogni cellula del tuo corpo porta con sé un proprio orologio.
+Negli anni '80, tre scienziati, Jeffrey Hall, Michael Rosbash e Michael Young, hanno scoperto il "motore" dell'orologio biologico nella minuscola mosca della frutta. E, sorprendentemente, questo motore non si trova nel cervello, ma in ogni singola cellula: quasi ogni cellula del tuo corpo porta con sé un proprio orologio.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
@@ -69,7 +69,7 @@ Questo processo è scientificamente noto come circuito di feedback negativo tras
   <figcaption>Sostituendo la metafora della fabbrica con la terminologia scientifica, un ciclo completo è: trascrizione → accumulo → inibizione → degradazione → disinibizione, per un totale di circa 24 ore. © Philo</figcaption>
 </figure>
 
-Michael Young ha anche scoperto altri due attori chiave che rendono questo orologio ancora più preciso: una proteina chiamata TIM (Timeless), che di notte aiuta la proteina PER a entrare nel nucleo cellulare per premere il pulsante di stop della produzione; e una chiamata DBT (Doubletime), il cui ruolo è quello di rallentare la velocità di accumulo della proteina PER. È proprio questo "rallentamento" che calibra il ciclo con precisione a circa 24 ore, anziché farlo completare in una dozzina di ore.
+Michael Young ha anche scoperto altri due attori chiave che rendono questo orologio ancora più preciso: una proteina chiamata TIM (Timeless), che di notte aiuta la proteina PER a entrare nel nucleo cellulare per premere il pulsante di stop della produzione; e una chiamata DBT (Doubletime), il cui ruolo è quello di degradare la proteina PER per rallentarne la velocità di accumulo. È proprio questo "rallentamento" che calibra il ciclo con precisione a circa 24 ore, anziché farlo completare in una dozzina di ore.
 
 Ogni cellula contiene una fabbrica di auto-regolazione della proteina PER come questa, mentre l'SCN nel cervello funge da direttore d'orchestra per tutti questi piccoli orologi, assicurandosi che siano sincronizzati. La durata esatta di questo ciclo è, in gran parte, inscritta nel nostro DNA.
 
@@ -86,6 +86,10 @@ La scoperta di questo meccanismo non è avvenuta in un solo giorno: già nel 197
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
   <figcaption>Il punto d'arrivo: nel 2017, il Premio Nobel per la Fisiologia o la Medicina è stato assegnato a Hall, Rosbash e Young.</figcaption>
 </figure>
+
+Le proteine dell'orologio, però, non sono del tutto identiche nel moscerino della frutta e nei mammiferi. Nel moscerino, PER continua ad accumularsi e poi entra nel nucleo cellulare insieme a TIM (una chiave), ed è TIM ad avere l'autorizzazione a fermare la linea di produzione. Nelle cellule umane, invece, PER entra nel nucleo insieme a CRY (una chiave), ed è CRY ad avere l'autorità di spegnere la produzione.
+
+E se cede anche un solo anello di questa catena, l'orologio biologico smette di segnare l'ora giusta.
 
 ## La maggior parte degli orologi biologici non è di 24 ore
 

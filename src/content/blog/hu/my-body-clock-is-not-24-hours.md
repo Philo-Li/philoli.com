@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Az én napom 24,5 óra hosszú: DSPD és Non-24 alvászavarokról"
+title: "Az én napom 24,5 óra hosszú: A biológiai óráról és a Non-24 alvászavarokról"
 date: 2026-07-05 12:00:00
 tags:
   - Alvás
@@ -67,7 +67,7 @@ Tudományos nyelven ezt transzkripciós-transzlációs negatív visszacsatolási
   <figcaption>Ha a gyárhasonlatot tudományos terminológiára cseréljük, a teljes ciklus a következő: transzkripció → felhalmozódás → gátlás → lebontás → gátlás feloldása. Egy kör nagyjából 24 órát vesz igénybe. © Philo</figcaption>
 </figure>
 
-Michael Young további két kulcsfontosságú szereplőt is azonosított, amelyek még pontosabbá teszik ezt az órát: az egyik a TIM fehérje (Timeless), amely éjszaka segíti a PER fehérjét bejutni a sejtmagba, hogy megnyomja a "leállítás gombot"; a másik a DBT (Doubletime), amelynek feladata a PER fehérje felhalmozódási sebességének lassítása. Éppen ez a "lassítás" az, ami a ciklust pontosan 24 órához igazítja, ahelyett, hogy tizenegynéhány óra alatt lefutna.
+Michael Young további két kulcsfontosságú szereplőt is azonosított, amelyek még pontosabbá teszik ezt az órát: az egyik a TIM fehérje (Timeless), amely éjszaka segíti a PER fehérjét bejutni a sejtmagba, hogy megnyomja a "leállítás gombot"; a másik a DBT (Doubletime), amelynek feladata, hogy a PER fehérje lebontásával lassítsa annak felhalmozódási sebességét. Éppen ez a "lassítás" az, ami a ciklust pontosan 24 órához igazítja, ahelyett, hogy tizenegynéhány óra alatt lefutna.
 
 Minden sejtben létezik egy ilyen PER fehérje alapú önvisszacsatolásos "gyár", az agyban található SCN pedig az összes ilyen kis óra fő irányítója, amely azért felelős, hogy azok szinkronban működjenek. Az, hogy ez a ciklus pontosan mennyi ideig tart, nagyrészt genetikailag kódolt.
 
@@ -84,6 +84,10 @@ Ennek a mechanizmusnak a felfedezése nem egyik napról a másikra történt: m�
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="A 2017-es fiziológiai vagy orvostudományi Nobel-díj három díjazottja" />
   <figcaption>A végállomás: 2017-ben Hall, Rosbash és Young megkapta a fiziológiai vagy orvostudományi Nobel-díjat.</figcaption>
 </figure>
+
+Az óra fehérjéi azonban a muslicákban és az emlősökben kissé eltérnek. A muslicában a PER folyamatosan felhalmozódik, majd a TIM-mel (egy kulccsal) együtt lép be a sejtmagba, és a TIM jogosult leállítani a gyártósort. Az emberi sejtekben viszont a PER a CRY-jal (egy kulccsal) együtt jut a sejtmagba, és a CRY az, amelynek felhatalmazása van a termelés leállítására.
+
+És ha akár egyetlen láncszem is felmondja a szolgálatot ebben a láncban, a biológiai óra már nem jár pontosan.
 
 ## A legtöbb ember biológiai órája sem pontosan 24 órás
 

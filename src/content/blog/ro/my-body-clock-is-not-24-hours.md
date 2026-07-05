@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Ziua mea durează 24,5 ore: Despre DSPD și tulburarea de somn Non-24"
+title: "Ziua mea durează 24,5 ore: Despre ceasul biologic și tulburarea de somn Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Somn
@@ -67,7 +67,7 @@ Imaginează-ți o mică fabrică într-o celulă, care produce zi și noapte o p
   <figcaption>Înlocuind analogia fabricii cu denumirile științifice, un ciclu complet este: transcripție → acumulare → inhibare → degradare → dezinhibare, parcurgând o rundă în aproximativ 24 de ore. © Philo</figcaption>
 </figure>
 
-Michael Young a descoperit și alte două elemente cheie care sporesc precizia acestui ceas: o proteină numită TIM (Timeless), responsabilă de a ajuta proteina PER să intre în nucleul celulei noaptea pentru a apăsa butonul de oprire; și o alta, numită DBT (Doubletime), al cărei rol este de a încetini rata de acumulare a proteinei PER – tocmai această „încetinire” calibrează cu precizie ciclul la aproape 24 de ore, în loc să-l parcurgă în doar câteva ore.
+Michael Young a descoperit și alte două elemente cheie care sporesc precizia acestui ceas: o proteină numită TIM (Timeless), responsabilă de a ajuta proteina PER să intre în nucleul celulei noaptea pentru a apăsa butonul de oprire; și o alta, numită DBT (Doubletime), al cărei rol este de a încetini rata de acumulare a proteinei PER prin degradarea acesteia – tocmai această „încetinire” calibrează cu precizie ciclul la aproape 24 de ore, în loc să-l parcurgă în doar câteva ore.
 
 Fiecare celulă conține o astfel de fabrică de auto-feedback a proteinei PER, iar SCN-ul din creier este comandantul general al tuturor acestor ceasuri mici, responsabil pentru sincronizarea lor. Durata exactă a acestui ciclu este, în mare măsură, codificată genetic.
 
@@ -84,6 +84,10 @@ Descoperirea acestui mecanism nu a fost un eveniment singular: încă din 1971, 
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
   <figcaption>Punctul culminant: Premiul Nobel pentru Fiziologie sau Medicină din 2017, acordat lui Hall, Rosbash, Young.</figcaption>
 </figure>
+
+Totuși, proteinele ceasului nu sunt chiar identice la musculițele de oțet și la mamifere. La musculiță, PER se acumulează continuu și apoi intră în nucleul celulei împreună cu TIM (o cheie), iar TIM are permisiunea de a opri linia de producție. În celulele umane, în schimb, PER se asociază cu CRY (o cheie) și intră cu el în nucleu, iar CRY este cel care are autoritatea de a opri producția.
+
+Iar dacă cedează fie și o singură verigă a acestui lanț, ceasul biologic nu mai merge cum trebuie.
 
 ## Majoritatea oamenilor nu au un ceas biologic de 24 de ore
 

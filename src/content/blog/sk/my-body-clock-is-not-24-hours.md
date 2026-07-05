@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Môj deň trvá 24,5 hodiny: Pohľad na DSPD a Non-24 poruchy spánku"
+title: "Môj deň trvá 24,5 hodiny: Pohľad na biologické hodiny a Non-24 poruchy spánku"
 date: 2026-07-05 12:00:00
 tags:
   - Spánok
@@ -67,7 +67,7 @@ Veda to nazýva transkripčno-translačný okruh negatívnej spätnej väzby (TT
   <figcaption>Ak metaforu továrne nahradíme vedeckými názvami, celý cyklus je: transkripcia → akumulácia → inhibícia → degradácia → dezinhibícia, pričom jeden cyklus trvá približne 24 hodín. © Philo</figcaption>
 </figure>
 
-Michael Young objavil aj ďalšie dve kľúčové postavy, ktoré tieto hodiny robia ešte presnejšími: proteín TIM (Timeless), ktorý v noci pomáha PER proteínu vstúpiť do bunkového jadra a stlačiť tlačidlo zastavenia výroby; a proteín DBT (Doubletime), ktorého úlohou je spomaliť rýchlosť hromadenia PER proteínu – práve toto „spomalenie“ kalibruje cyklus presne na približne 24 hodín, namiesto toho, aby prebehol za tucet hodín.
+Michael Young objavil aj ďalšie dve kľúčové postavy, ktoré tieto hodiny robia ešte presnejšími: proteín TIM (Timeless), ktorý v noci pomáha PER proteínu vstúpiť do bunkového jadra a stlačiť tlačidlo zastavenia výroby; a proteín DBT (Doubletime), ktorého úlohou je rozkladom PER proteínu spomaliť rýchlosť jeho hromadenia – práve toto „spomalenie“ kalibruje cyklus presne na približne 24 hodín, namiesto toho, aby prebehol za tucet hodín.
 
 V každej bunke existuje takáto továreň s vlastnou spätnou väzbou PER proteínu, zatiaľ čo SCN v mozgu je hlavným dirigentom všetkých týchto malých hodín a zabezpečuje ich synchronizáciu. A ako dlho trvá jeden takýto cyklus, je vo veľkej miere zapísané v génoch.
 
@@ -84,6 +84,10 @@ Objav tohto mechanizmu nebol jednorazovou záležitosťou: Už v roku 1971 Konop
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Traja laureáti Nobelovej ceny za fyziológiu alebo medicínu v roku 2017" />
   <figcaption>Vyvrcholenie: Nobelova cena za fyziológiu alebo medicínu v roku 2017 udelená Hallovi, Rosbashovi a Youngovi.</figcaption>
 </figure>
+
+Hodinové proteíny sa však u octomilky a cicavcov trochu líšia. U octomilky sa PER neustále hromadí a potom spolu s TIM (kľúčom) vstupuje do bunkového jadra, pričom TIM má oprávnenie zastaviť výrobnú linku. V ľudských bunkách sa však PER spája s CRY (kľúčom) a vstupuje s ním do jadra, a je to práve CRY, kto má právomoc výrobu vypnúť.
+
+A ak zlyhá čo i len jediný článok tejto reťaze, biologické hodiny prestanú ísť správne.
 
 ## Biologické hodiny väčšiny ľudí nemajú 24 hodín
 

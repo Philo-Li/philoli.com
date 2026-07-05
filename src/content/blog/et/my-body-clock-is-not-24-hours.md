@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Minu ööpäev kestab 24,5 tundi: Vestlus DSPD ja Non-24 unehäiretest"
+title: "Minu ööpäev kestab 24,5 tundi: Vestlus bioloogilisest kellast ja Non-24 unehäiretest"
 date: 2026-07-05 12:00:00
 tags:
   - Uni
@@ -67,7 +67,7 @@ Teaduslikult nimetatakse seda transkriptsiooni-translatsiooni negatiivse tagasis
   <figcaption>Kui tehase metafoor asendada teaduslike nimetustega, on täisring: transkriptsioon → akumulatsioon → inhibeerimine → lagundamine → de-inhibeerimine, mis võtab aega umbes 24 tundi. © Philo</figcaption>
 </figure>
 
-Michael Young leidis ka kaks teist võtmerolli, mis muudavad selle kella veelgi täpsemaks: üks neist on TIM-valk (Timeless), mis aitab öösel PER-valgul rakutuuma siseneda ja tootmise peatamise nuppu vajutada; teine on DBT (Doubletime), mille ülesanne on PER-valgu kogunemise kiirust aeglustada – just see "aeglustamine" kalibreerib tsükli täpselt ligi 24 tunnile, mitte ei lase sellel mõne tunni jooksul läbi joosta.
+Michael Young leidis ka kaks teist võtmerolli, mis muudavad selle kella veelgi täpsemaks: üks neist on TIM-valk (Timeless), mis aitab öösel PER-valgul rakutuuma siseneda ja tootmise peatamise nuppu vajutada; teine on DBT (Doubletime), mille ülesanne on PER-valku lagundades selle kogunemise kiirust aeglustada – just see "aeglustamine" kalibreerib tsükli täpselt ligi 24 tunnile, mitte ei lase sellel mõne tunni jooksul läbi joosta.
 
 Igas rakus on selline PER-valgu isereguleeruv tehas, ja ajus asuv SCN on kõigi nende väikeste kellade peakorraldaja, vastutades nende ühtlustamise eest. See, kui kaua üks selline tsükkel kestab, on suures osas geenidesse sisse kirjutatud.
 
@@ -84,6 +84,10 @@ Selle mehhanismi avastamine ei sündinud üleöö: juba 1971. aastal avastasid K
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017. aasta Nobeli füsioloogia- või meditsiinipreemia kolm laureaati" />
   <figcaption>Lõpp-punkt: 2017. aasta Nobeli füsioloogia- või meditsiinipreemia anti Hallile, Rosbashile ja Youngile.</figcaption>
 </figure>
+
+Kella valgud on äädikakärbestel ja imetajatel siiski veidi erinevad. Kärbsel koguneb PER üha juurde ja siseneb siis koos TIM-iga (võtmega) rakutuuma, kusjuures TIM-il on õigus tootmisliin seisata. Inimrakkudes seevastu ühineb PER CRY-ga (võtmega) ja siseneb sellega tuuma, ning just CRY-l on volitus tootmine välja lülitada.
+
+Ja kui selles ahelas veab alt kas või üksainus lüli, ei käi bioloogiline kell enam õigesti.
 
 ## Enamiku inimeste bioloogiline kell ei ole 24 tundi
 

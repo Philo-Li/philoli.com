@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Moj dan traja 24,5 ure: Pogovor o DSPD in ne-24-urnem sindromu spanja in budnosti"
+title: "Moj dan traja 24,5 ure: Pogovor o biološki uri in ne-24-urnem sindromu spanja in budnosti"
 date: 2026-07-05 12:00:00
 tags:
   - Spanje
@@ -67,7 +67,7 @@ V znanosti se to imenuje transkripcijsko-translacijska negativna povratna zanka 
   <figcaption>Če prispodobo tovarne zamenjamo z znanstvenim poimenovanjem, celoten krog zajema: transkripcija → akumulacija → inhibicija → degradacija → dehibicija, in traja približno 24 ur. © Philo</figcaption>
 </figure>
 
-Michael Young je našel še dva ključna igralca, ki to uro naredita še natančnejšo: protein TIM (Timeless), ki ponoči pomaga proteinu PER vstopiti v celično jedro in pritisniti gumb za zaustavitev proizvodnje; ter protein DBT (Doubletime), katerega naloga je upočasniti kopičenje proteina PER. Ravno to "upočasnjevanje" cikel natančno kalibrira na približno 24 ur, namesto da bi se končal v dvanajstih urah.
+Michael Young je našel še dva ključna igralca, ki to uro naredita še natančnejšo: protein TIM (Timeless), ki ponoči pomaga proteinu PER vstopiti v celično jedro in pritisniti gumb za zaustavitev proizvodnje; ter protein DBT (Doubletime), katerega naloga je z razgradnjo proteina PER upočasniti njegovo kopičenje. Ravno to "upočasnjevanje" cikel natančno kalibrira na približno 24 ur, namesto da bi se končal v dvanajstih urah.
 
 Vsaka celica ima takšno tovarno s samopovratno zanko PER proteina, medtem ko je SCN v možganih glavni poveljnik vseh teh malih ur, odgovoren za njihovo usklajeno delovanje. In kako dolg je ta cikel, je v veliki meri zapisano v genih.
 
@@ -84,6 +84,10 @@ Odkritje tega mehanizma ni bilo enostavno: že leta 1971 sta Konopka in Benzer o
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Trije dobitniki Nobelove nagrade za fiziologijo ali medicino leta 2017" />
   <figcaption>Zaključek: Nobelova nagrada za fiziologijo ali medicino leta 2017 je bila podeljena Hallu, Rosbashu in Youngu.</figcaption>
 </figure>
+
+Urni proteini pa se pri vinskih mušicah in sesalcih nekoliko razlikujejo. Pri mušici se PER nenehno kopiči in nato skupaj s TIM (ključem) vstopi v celično jedro, pri čemer ima TIM pooblastilo, da ustavi proizvodno linijo. V človeških celicah pa PER skupaj s CRY (ključem) vstopi v jedro in prav CRY ima pooblastilo, da izklopi proizvodnjo.
+
+In če odpove le en sam člen te verige, biološka ura ne teče več pravilno.
 
 ## Biološka ura večine ljudi ni 24-urna
 

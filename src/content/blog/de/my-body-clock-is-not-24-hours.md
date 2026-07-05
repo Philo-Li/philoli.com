@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mein Tag hat 24,5 Stunden: Über DSPD und Non-24 Schlafstörungen"
+title: "Mein Tag hat 24,5 Stunden: Über die innere Uhr und Non-24 Schlafstörungen"
 date: 2026-07-05 12:00:00
 tags:
   - Schlaf
@@ -41,7 +41,7 @@ Diese Uhr ist im Hypothalamus des Gehirns verborgen und besteht aus einer kleine
 
 Doch wie genau wird diese innere Uhr eigentlich gesteuert?
 
-Die drei Wissenschaftler Jeffrey Hall, Michael Rosbash und Michael Young entdeckten den "Motor" der inneren Uhr in kleinen Fruchtfliegen. Und das Erstaunliche daran: Dieser Motor sitzt nicht im Gehirn, sondern in jeder einzelnen Zelle – fast jede Zelle in unserem Körper trägt eine eigene Uhr in sich.
+In den 1980er Jahren entdeckten die drei Wissenschaftler Jeffrey Hall, Michael Rosbash und Michael Young den "Motor" der inneren Uhr in kleinen Fruchtfliegen. Und das Erstaunliche daran: Dieser Motor sitzt nicht im Gehirn, sondern in jeder einzelnen Zelle – fast jede Zelle in unserem Körper trägt eine eigene Uhr in sich.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis Magazin 'Der Großmeister der Zeit in der Natur': Wie drei Wissenschaftler die innere Uhr in Fruchtfliegen entdeckten." />
@@ -58,16 +58,16 @@ Stellen Sie sich eine kleine Fabrik in einer Zelle vor, die Tag und Nacht ein Pr
 4.  **Produkträumung**: Ohne neue Befehle stoppt die Produktion von PER-Proteinen, während die alten langsam abgebaut werden und das Lager allmählich leer wird.
 5.  **Neustart**: Ist das Lager leer, löst sich der "Produktionsstopp-Knopf", das Gen wird reaktiviert, und die Fabrik beginnt erneut mit der Produktion...
 
-Dieser gesamte Kreislauf aus "Produktion → Akkumulation → Selbstabschaltung → Räumung → Neustart" dauert etwa 24 Stunden. Das ist ein "Tick" der inneren Uhr.
+Dieser gesamte Kreislauf aus "Transkription → Akkumulation → Inhibition → Degradation → De-Inhibition" dauert etwa 24 Stunden. Das ist ein "Tick" der inneren Uhr.
 
-Wissenschaftlich wird dies als Transkriptions-Translations-Negativ-Feedback-Schleife (TTFL) bezeichnet. Der Name klingt beeindruckend, doch im Wesentlichen ist es die oben beschriebene Fabrik, die sich selbst bremst: Sobald ein Protein eine bestimmte Menge erreicht, hemmt es seine eigene Produktion. Durch dieses "Anhäufen und Leeren", dieses Auf und Ab, misst die Zelle quasi die Länge eines Tages.
+Wissenschaftlich wird dies als Transkriptions-Translations-Negativ-Feedback-Schleife (TTFL) bezeichnet. Im Wesentlichen ist es die oben beschriebene Fabrik, die sich selbst bremst: Sobald ein Protein eine bestimmte Menge erreicht, hemmt es seine eigene Produktion. Durch dieses "Anhäufen und Leeren", dieses Auf und Ab, misst die Zelle quasi die Länge eines Tages.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkriptions-Translations-Negativ-Feedback-Schleife (TTFL) Schema" />
   <figcaption>Ersetzt man die Fabrik-Metapher durch wissenschaftliche Begriffe, so lautet der gesamte Zyklus: Transkription → Akkumulation → Inhibition → Degradation → De-Inhibition. Eine Runde dauert etwa 24 Stunden. © Philo</figcaption>
 </figure>
 
-Michael Young entdeckte zudem zwei weitere Schlüsselakteure, die diese Uhr noch präziser machen: Ein Protein namens TIM (Timeless) hilft dem PER-Protein nachts dabei, in den Zellkern zu gelangen, um den Produktionsstopp-Knopf zu drücken. Ein weiteres, DBT (Doubletime), verlangsamt die Akkumulationsgeschwindigkeit des PER-Proteins – und genau dieses "Verlangsamen" kalibriert den Zyklus präzise auf nahezu 24 Stunden, anstatt ihn in nur wenigen Stunden zu durchlaufen.
+Michael Young entdeckte zudem zwei weitere Schlüsselakteure, die diese Uhr noch präziser machen: Ein Protein namens TIM (Timeless) hilft dem PER-Protein nachts dabei, in den Zellkern zu gelangen, um den Produktionsstopp-Knopf zu drücken. Ein weiteres, DBT (Doubletime), verlangsamt die Akkumulationsgeschwindigkeit des PER-Proteins, indem es das Protein abbaut – und genau dieses "Verlangsamen" kalibriert den Zyklus präzise auf nahezu 24 Stunden, anstatt ihn in nur wenigen Stunden zu durchlaufen.
 
 Jede Zelle besitzt eine solche Selbstregulierungsfabrik für PER-Proteine. Der SCN im Gehirn ist der Oberbefehlshaber all dieser kleinen Uhren und sorgt dafür, dass sie im Gleichschritt ticken. Und wie lange ein solcher Zyklus dauert, ist maßgeblich in unseren Genen festgelegt.
 
@@ -84,6 +84,10 @@ Die Entdeckung dieses Mechanismus war kein schneller Erfolg: Bereits 1971 entdec
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Der Höhepunkt: Der Nobelpreis für Physiologie oder Medizin 2017, verliehen an Hall, Rosbash und Young." />
   <figcaption>Der Höhepunkt: Der Nobelpreis für Physiologie oder Medizin 2017, verliehen an Hall, Rosbash und Young.</figcaption>
 </figure>
+
+Allerdings unterscheiden sich die Uhr-Proteine bei Taufliegen und Säugetieren ein wenig. Bei der Fliege sammelt sich PER immer weiter an und gelangt dann zusammen mit TIM (einem Schlüssel) in den Zellkern, wobei TIM die Berechtigung hat, die Produktionslinie stillzulegen. In menschlichen Zellen dagegen gelangt PER zusammen mit CRY (einem Schlüssel) in den Zellkern, und es ist CRY, das die Befugnis besitzt, die Produktion abzuschalten.
+
+Und sobald auch nur ein einziges Glied in dieser Kette versagt, geht die innere Uhr nicht mehr ganz richtig.
 
 ## Die innere Uhr der meisten Menschen tickt nicht im 24-Stunden-Takt
 

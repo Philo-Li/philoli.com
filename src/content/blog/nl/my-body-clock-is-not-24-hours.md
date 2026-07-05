@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mijn dag duurt 24,5 uur: een gesprek over DSPD en Non-24 slaapstoornissen"
+title: "Mijn dag duurt 24,5 uur: een gesprek over de biologische klok en Non-24 slaapstoornissen"
 date: 2026-07-05 12:00:00
 tags:
   - Slaap
@@ -67,7 +67,7 @@ Wetenschappelijk staat dit bekend als de transcriptie-translatie negatieve feedb
   <figcaption>Als we de metafoor van de fabriek vervangen door wetenschappelijke termen, dan is een volledige cyclus: transcriptie → accumulatie → inhibitie → degradatie → de-inhibitie, wat ongeveer 24 uur duurt. © Philo</figcaption>
 </figure>
 
-Michael Young ontdekte nog twee cruciale spelers die deze klok nog preciezer maakten: het TIM-eiwit (Timeless), dat 's nachts helpt om het PER-eiwit de celkern in te leiden om de 'stop-productieknop' in te drukken; en DBT (Doubletime), dat de snelheid van de PER-eiwitaccumulatie vertraagt. Het is juist deze 'vertraging' die de cyclus nauwkeurig afstelt op bijna 24 uur, in plaats van dat deze al in een tiental uren wordt voltooid.
+Michael Young ontdekte nog twee cruciale spelers die deze klok nog preciezer maakten: het TIM-eiwit (Timeless), dat 's nachts helpt om het PER-eiwit de celkern in te leiden om de 'stop-productieknop' in te drukken; en DBT (Doubletime), dat de snelheid van de PER-eiwitaccumulatie vertraagt door het PER-eiwit af te breken. Het is juist deze 'vertraging' die de cyclus nauwkeurig afstelt op bijna 24 uur, in plaats van dat deze al in een tiental uren wordt voltooid.
 
 Elke cel bevat zo'n zelfregulerende PER-eiwitfabriek. De SCN in de hersenen fungeert als de centrale dirigent van al deze kleine klokken en zorgt ervoor dat ze synchroon lopen. Hoe lang deze cyclus precies duurt, is grotendeels vastgelegd in onze genen.
 
@@ -84,6 +84,10 @@ De ontdekking van dit mechanisme was geen kwestie van één nacht. Al in 1971 on
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Drie winnaars van de Nobelprijs voor Fysiologie of Geneeskunde 2017" />
   <figcaption>Het hoogtepunt: De Nobelprijs voor Fysiologie of Geneeskunde 2017 werd toegekend aan Hall, Rosbash, Young.</figcaption>
 </figure>
+
+De klokeiwitten zijn bij fruitvliegen en zoogdieren overigens niet helemaal hetzelfde. Bij de vlieg blijft PER zich opstapelen en gaat het samen met TIM (een sleutel) de celkern in, waarbij TIM de bevoegdheid heeft om de productielijn stil te leggen. In menselijke cellen gaat PER daarentegen samen met CRY (een sleutel) de celkern in, en het is CRY dat de bevoegdheid heeft om de productie uit te schakelen.
+
+En zodra ook maar één schakel in deze keten hapert, loopt de biologische klok niet meer helemaal gelijk.
 
 ## De biologische klok van de meeste mensen is niet 24 uur
 

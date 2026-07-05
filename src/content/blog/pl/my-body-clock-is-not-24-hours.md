@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Moja doba trwa 24,5 godziny: Porozmawiajmy o DSPD i Non-24 – zaburzeniach snu"
+title: "Moja doba trwa 24,5 godziny: Porozmawiajmy o zegarze biologicznym i Non-24 – zaburzeniach snu"
 date: 2026-07-05 12:00:00
 tags:
   - Sen
@@ -67,7 +67,7 @@ W nauce nazywa się to pętlą ujemnego sprzężenia zwrotnego transkrypcji-tran
   <figcaption>Zastępując metaforę fabryki nazewnictwem naukowym, pełny cykl to: transkrypcja → akumulacja → inhibicja → degradacja → dezinhibicja. Jeden obrót trwa około 24 godziny. © Philo</figcaption>
 </figure>
 
-Michael Young odkrył także dwie inne kluczowe role, które sprawiają, że ten zegar jest jeszcze bardziej precyzyjny: białko TIM (Timeless), które w nocy pomaga białku PER dostać się do jądra komórkowego, by nacisnąć przycisk „zatrzymania produkcji”; oraz białko DBT (Doubletime), którego zadaniem jest spowolnienie tempa gromadzenia się białka PER. To właśnie to „spowolnienie” precyzyjnie kalibruje cykl do około 24 godzin, zamiast pozwolić mu zakończyć się po kilkunastu godzinach.
+Michael Young odkrył także dwie inne kluczowe role, które sprawiają, że ten zegar jest jeszcze bardziej precyzyjny: białko TIM (Timeless), które w nocy pomaga białku PER dostać się do jądra komórkowego, by nacisnąć przycisk „zatrzymania produkcji”; oraz białko DBT (Doubletime), którego zadaniem jest rozkładanie białka PER, aby spowolnić tempo jego gromadzenia się. To właśnie to „spowolnienie” precyzyjnie kalibruje cykl do około 24 godzin, zamiast pozwolić mu zakończyć się po kilkunastu godzinach.
 
 Każda komórka posiada taką właśnie fabrykę białka PER, działającą na zasadzie sprzężenia zwrotnego, natomiast SCN w mózgu pełni rolę głównego dyrygenta wszystkich tych małych zegarów, dbając o ich synchronizację. A to, jak długo trwa jeden pełny cykl, jest w dużej mierze zapisane w naszych genach.
 
@@ -84,6 +84,10 @@ Odkrycie tego mechanizmu nie nastąpiło z dnia na dzień: już w 1971 roku Kono
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Trzej laureaci Nagrody Nobla w dziedzinie fizjologii lub medycyny z 2017 roku" />
   <figcaption>Zakończenie: Nagroda Nobla w dziedzinie fizjologii lub medycyny za rok 2017, przyznana Hallowi, Rosbashowi i Youngowi.</figcaption>
 </figure>
+
+Białka zegara nie są jednak identyczne u muszki owocowej i u ssaków. U muszki PER wciąż się gromadzi, a następnie wraz z TIM (kluczem) wnika do jądra komórkowego, przy czym to TIM ma uprawnienia, by zatrzymać linię produkcyjną. W komórkach ludzkich natomiast PER wnika do jądra wraz z CRY (kluczem) i to właśnie CRY ma władzę, by wyłączyć produkcję.
+
+A jeśli zawiedzie choćby jedno ogniwo tego łańcucha, zegar biologiczny przestaje chodzić prawidłowo.
 
 ## Większość zegarów biologicznych nie trwa 24 godzin
 

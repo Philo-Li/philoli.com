@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mi día dura 24,5 horas: Hablemos del DSPD y el trastorno del sueño Non-24"
+title: "Mi día dura 24,5 horas: Hablemos del reloj biológico y el trastorno del sueño Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Sueño
@@ -41,7 +41,7 @@ Este reloj se encuentra en el hipotálamo del cerebro, en un pequeño grupo de n
 
 Entonces, ¿cómo se regula con tanta precisión el reloj biológico?
 
-Tres científicos, Jeffrey Hall, Michael Rosbash y Michael Young, descubrieron el "motor" del reloj biológico en la humilde mosca de la fruta. Y lo asombroso es que este motor no reside en el cerebro, sino en cada una de nuestras células: prácticamente todas las células de tu cuerpo llevan su propio reloj.
+En la década de 1980, tres científicos, Jeffrey Hall, Michael Rosbash y Michael Young, descubrieron el "motor" del reloj biológico en la humilde mosca de la fruta. Y lo asombroso es que este motor no reside en el cerebro, sino en cada una de nuestras células: prácticamente todas las células de tu cuerpo llevan su propio reloj.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
@@ -58,16 +58,16 @@ Imagina que dentro de una célula hay una pequeña fábrica que produce día y n
 4.  **Vaciado del producto:** Sin nuevas órdenes, la producción de proteína PER se detiene, y las proteínas existentes se degradan lentamente, vaciando progresivamente el almacén.
 5.  **Reinicio de la producción:** Una vez vacío el almacén, el "botón de parada" se libera, el gen se reactiva y la fábrica vuelve a producir…
 
-Este ciclo completo de "producción → acumulación → autodesconexión → vaciado → reinicio de la producción" tarda aproximadamente 24 horas en completarse. Es el "tic-tac" del reloj biológico.
+Este ciclo completo de "transcripción → acumulación → inhibición → degradación → desinhibición" tarda aproximadamente 24 horas en completarse. Es el "tic-tac" del reloj biológico.
 
-Científicamente, esto se denomina bucle de retroalimentación negativa transcripcional-traslacional (TTFL). El nombre suena imponente, pero en esencia es la fábrica que se frena sola que mencionamos: cuando una proteína alcanza cierto nivel, inhibe su propia producción. Mediante este flujo y reflujo de "acumulación y vaciado", la célula logra medir la duración de un día.
+Científicamente, esto se denomina bucle de retroalimentación negativa transcripcional-traslacional (TTFL). En esencia es la fábrica que se frena sola que mencionamos: cuando una proteína alcanza cierto nivel, inhibe su propia producción. Mediante este flujo y reflujo de "acumulación y vaciado", la célula logra medir la duración de un día.
 
 <figure class="post-figure">
   <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
   <figcaption>Cambiando la metáfora de la fábrica por la terminología científica, un ciclo completo sería: transcripción → acumulación → inhibición → degradación → desinhibición, completándose en unas 24 horas. © Philo</figcaption>
 </figure>
 
-Michael Young también descubrió otros dos actores clave que hacen este reloj aún más preciso: una proteína llamada TIM (Timeless), que ayuda a la proteína PER a entrar en el núcleo celular por la noche para pulsar el botón de parada de producción; y otra llamada DBT (Doubletime), cuya función es ralentizar la acumulación de la proteína PER. Es precisamente esta "ralentización" la que calibra el ciclo con precisión a unas 24 horas, en lugar de completarlo en solo una docena de horas.
+Michael Young también descubrió otros dos actores clave que hacen este reloj aún más preciso: una proteína llamada TIM (Timeless), que ayuda a la proteína PER a entrar en el núcleo celular por la noche para pulsar el botón de parada de producción; y otra llamada DBT (Doubletime), cuya función es degradar la proteína PER para ralentizar su acumulación. Es precisamente esta "ralentización" la que calibra el ciclo con precisión a unas 24 horas, en lugar de completarlo en solo una docena de horas.
 
 Cada célula contiene una de estas fábricas de autorregulación de la proteína PER, mientras que el SCN en el cerebro actúa como el director general de todos estos pequeños relojes, asegurándose de que funcionen al unísono. Y la duración exacta de este ciclo está, en gran medida, codificada en nuestros genes.
 
@@ -84,6 +84,10 @@ El descubrimiento de este mecanismo no fue un logro de la noche a la mañana: ya
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
   <figcaption>El culmen: el Premio Nobel de Fisiología o Medicina de 2017, otorgado a Hall, Rosbash y Young.</figcaption>
 </figure>
+
+Con todo, las proteínas del reloj no son del todo iguales en la mosca de la fruta y en los mamíferos. En la mosca, PER se va acumulando y luego entra en el núcleo celular junto con TIM (una llave), y es TIM quien tiene permiso para detener la línea de producción. En las células humanas, en cambio, PER entra en el núcleo junto con CRY (una llave), y es CRY quien tiene la autoridad para apagar la producción.
+
+Y si falla un solo eslabón de esta cadena, el reloj biológico deja de marcar bien la hora.
 
 ## El reloj biológico de la mayoría de las personas no es de 24 horas
 

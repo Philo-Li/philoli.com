@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mit døgn er 24,5 timer langt: Om DSPD og Non-24 søvnforstyrrelser"
+title: "Mit døgn er 24,5 timer langt: Om det biologiske ur og Non-24 søvnforstyrrelser"
 date: 2026-07-05 12:00:00
 tags:
   - Søvn
@@ -67,7 +67,7 @@ Videnskabeligt kaldes dette et transkriptions-translationelt negativt feedback-l
   <figcaption>Skematisk fremstilling af transkriptions-translationelt negativt feedback-loop (TTFL). Hvis fabrik-metaforen udskiftes med videnskabelige termer, er en hel cyklus: transkription → akkumulering → hæmning → nedbrydning → de-hæmning, og en runde tager ca. 24 timer. © Philo</figcaption>
 </figure>
 
-Michael Young fandt også yderligere to nøgleaktører, der gør dette ur endnu mere præcist: et protein kaldet TIM (Timeless), som om natten hjælper PER-proteinet med at trænge ind i cellekernen for at trykke på stopknappen; og et andet kaldet DBT (Doubletime), hvis rolle er at forsinke ophobningshastigheden af PER-protein – det er netop denne "forsinkelse", der præcist kalibrerer cyklussen til næsten 24 timer, i stedet for at den gennemføres på blot et dusin timer.
+Michael Young fandt også yderligere to nøgleaktører, der gør dette ur endnu mere præcist: et protein kaldet TIM (Timeless), som om natten hjælper PER-proteinet med at trænge ind i cellekernen for at trykke på stopknappen; og et andet kaldet DBT (Doubletime), hvis rolle er at nedbryde PER-proteinet og dermed forsinke ophobningshastigheden af PER-protein – det er netop denne "forsinkelse", der præcist kalibrerer cyklussen til næsten 24 timer, i stedet for at den gennemføres på blot et dusin timer.
 
 Hver celle indeholder således en selvregulerende PER-protein-fabrik, og SCN i hjernen fungerer som den øverste dirigent for alle disse små ure, der sørger for, at de holder trit. Og hvor lang tid denne cyklus præcis tager, er i høj grad nedfældet i vores gener.
 
@@ -84,6 +84,10 @@ Opdagelsen af denne mekanisme skete ikke over natten: Allerede i 1971 opdagede K
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Slutningen: Nobelprisen i fysiologi eller medicin i 2017 blev tildelt Hall, Rosbash og Young." />
   <figcaption>Slutningen: Nobelprisen i fysiologi eller medicin i 2017 blev tildelt Hall, Rosbash og Young.</figcaption>
 </figure>
+
+Dog er ur-proteinerne ikke helt ens hos bananfluer og pattedyr. Hos fluen bliver PER ved med at ophobe sig og følges så med TIM (en nøgle) ind i cellekernen, hvor TIM har tilladelse til at lukke produktionslinjen ned. I menneskeceller følges PER derimod med CRY (en nøgle) ind i cellekernen, og det er CRY, der har beføjelsen til at slukke for produktionen.
+
+Og hvis blot ét enkelt led i denne kæde svigter, holder det biologiske ur op med at gå rigtigt.
 
 ## De fleste menneskers biologiske ur er ikke 24 timer
 

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mitt dygn är 24,5 timmar långt: En diskussion om DSPD och Non-24 sömnstörningar"
+title: "Mitt dygn är 24,5 timmar långt: En diskussion om den biologiska klockan och Non-24 sömnstörningar"
 date: 2026-07-05 12:00:00
 tags:
   - Sömn
@@ -67,7 +67,7 @@ Vetenskapligt kallas detta en transkriptionell-translationell negativ återkoppl
   <figcaption>Om vi byter ut fabriksliknelsen mot vetenskapliga termer, är en hel cykel: transkription → ackumulering → hämning → nedbrytning → de-hämning, och en runda tar cirka 24 timmar. © Philo</figcaption>
 </figure>
 
-Michael Young fann också ytterligare två nyckelroller som gjorde klockan ännu mer precis: ett protein kallat TIM-protein (Timeless), som under natten hjälper PER-proteinet att ta sig in i cellkärnan för att trycka på stoppknappen; och ett annat kallat DBT (Doubletime), vars uppgift är att sakta ner ackumuleringen av PER-proteinet – det är just denna "fördröjning" som kalibrerar cykeln till nära 24 timmar, istället för att den skulle slutföras på bara ett tiotal timmar.
+Michael Young fann också ytterligare två nyckelroller som gjorde klockan ännu mer precis: ett protein kallat TIM-protein (Timeless), som under natten hjälper PER-proteinet att ta sig in i cellkärnan för att trycka på stoppknappen; och ett annat kallat DBT (Doubletime), vars uppgift är att sakta ner ackumuleringen av PER-proteinet genom att bryta ner proteinet – det är just denna "fördröjning" som kalibrerar cykeln till nära 24 timmar, istället för att den skulle slutföras på bara ett tiotal timmar.
 
 Varje cell innehåller en sådan självåterkopplande PER-proteinfabrik, och SCN i hjärnan är den övergripande dirigenten för alla dessa små klockor, ansvarig för att de håller takten. Och hur lång tid en sådan cykel tar är till stor del inprogrammerat i generna.
 
@@ -84,6 +84,10 @@ Upptäckten av denna mekanism skedde inte över en natt: Redan 1971 upptäckte K
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
   <figcaption>Slutpunkten: 2017 års Nobelpris i fysiologi eller medicin tilldelades Hall, Rosbash och Young.</figcaption>
 </figure>
+
+Klockproteinerna är dock inte riktigt likadana hos bananflugor och däggdjur. Hos flugan fortsätter PER att hopa sig och följer sedan med TIM (en nyckel) in i cellkärnan, där TIM har behörighet att stänga ner produktionslinjen. I mänskliga celler följer PER i stället med CRY (en nyckel) in i cellkärnan, och det är CRY som har befogenheten att stänga av produktionen.
+
+Och om så bara en enda länk i denna kedja fallerar, slutar den biologiska klockan att gå rätt.
 
 ## De flesta människors biologiska klockor är inte 24 timmar
 

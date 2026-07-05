@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Ang araw ko ay 24.5 oras: Usap-usapan tungkol sa DSPD at Non-24 Sleep Disorder"
+title: "Ang araw ko ay 24.5 oras: Usap-usapan tungkol sa biological clock at Non-24 Sleep Disorder"
 date: 2026-07-05 12:00:00
 tags:
   - Tulog
@@ -67,7 +67,7 @@ Sa siyensiya, tinatawag itong Transcription-Translation Feedback Loop (TTFL). Na
   <figcaption>Kung papalitan ang pabrika ng siyentipikong pangalan, ang isang buong ikot ay: Transcription → Accumulation → Inhibition → Degradation → De-inhibition, na umaabot ng humigit-kumulang 24 oras. © Philo</figcaption>
 </figure>
 
-Natuklasan din ni Michael Young ang dalawa pang mahalagang bahagi na nagpapadalisay sa orasan na ito: ang TIM protein (Timeless), na tumutulong sa PER protein na makapasok sa cell nucleus tuwing gabi para pindutin ang 'shutdown button'; at ang DBT (Doubletime), na ang papel ay pabagalin ang pag-ipon ng PER protein – ang 'pagpapabagal' na ito ang nag-aayos ng siklo nang eksakto sa halos 24 oras, sa halip na matapos ito sa loob lamang ng ilang oras.
+Natuklasan din ni Michael Young ang dalawa pang mahalagang bahagi na nagpapadalisay sa orasan na ito: ang TIM protein (Timeless), na tumutulong sa PER protein na makapasok sa cell nucleus tuwing gabi para pindutin ang 'shutdown button'; at ang DBT (Doubletime), na ang papel ay sirain ang PER protein upang pabagalin ang pag-ipon nito – ang 'pagpapabagal' na ito ang nag-aayos ng siklo nang eksakto sa halos 24 oras, sa halip na matapos ito sa loob lamang ng ilang oras.
 
 Bawat selula ay may ganitong 'self-feedback factory' ng PER protein, at ang SCN sa utak naman ang nagsisilbing 'general commander' ng lahat ng maliliit na orasan na ito, na tinitiyak na sabay-sabay ang kanilang galaw. At kung gaano katagal ang isang buong siklo ay nakasulat na sa ating mga gene.
 
@@ -84,6 +84,10 @@ Hindi naging madali ang pagtuklas sa mekanismong ito: noong 1971 pa lang, natukl
   <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
   <figcaption>Ang katapusan: Ang 2017 Nobel Prize in Physiology or Medicine ay iginawad kina Hall, Rosbash, at Young.</figcaption>
 </figure>
+
+Gayunpaman, bahagyang nagkakaiba ang mga clock protein sa fruit fly at sa mga mammal. Sa fruit fly, patuloy na naiipon ang PER at pumapasok ito sa cell nucleus kasama ang TIM (isang susi), at ang TIM ang may awtoridad na ipatigil ang production line. Sa mga selula ng tao naman, sumasama ang PER sa CRY (isang susi) papasok sa nucleus, at ang CRY ang may kapangyarihang isara ang produksyon.
+
+At kung mabigo kahit isang kawing lamang sa kadenang ito, hihinto na sa tamang pag-andar ang biological clock.
 
 ## Karamihan ng Biological Clock ng Tao ay Hindi 24 Oras
 
