@@ -11,6 +11,9 @@ tags:
 categories: Discussion quotidienne
 description: "Mon horloge biologique n'est pas de 24 heures, mais de 24,5 heures. Partant du mécanisme moléculaire récompensé par le Prix Nobel 2017, je vous parle des troubles du rythme circadien que sont le TSPS et le Non-24, et pourquoi j'ai choisi de m'y adapter plutôt que de les combattre."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Mais comment l'horloge biologique est-elle régulée avec une telle précision ?
 
 Trois scientifiques – Jeffrey Hall, Michael Rosbash et Michael Young – ont découvert le "moteur" de l'horloge biologique chez la minuscule mouche du vinaigre. Et ce qui est étonnant, c'est que ce moteur ne se trouve pas dans le cerveau, mais dans chaque cellule : presque toutes les cellules de votre corps abritent leur propre horloge.
 
-![Brandeis magazine sur la découverte](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*The Master Timekeeper of Nature* du magazine Brandeis : Comment les trois scientifiques ont découvert l'horloge biologique chez la mouche du vinaigre.
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis magazine sur la découverte" />
+  <figcaption><em>The Master Timekeeper of Nature</em> du magazine Brandeis : Comment les trois scientifiques ont découvert l'horloge biologique chez la mouche du vinaigre.</figcaption>
+</figure>
 
 Son principe de fonctionnement peut être compris à travers la métaphore d'une "usine qui s'arrête d'elle-même" :
 
@@ -55,8 +60,10 @@ Ce cycle complet de "production → accumulation → auto-arrêt → vidage → 
 
 Scientifiquement, on appelle cela une boucle de rétroaction négative transcription-traduction (TTFL). Le nom peut paraître intimidant, mais il décrit simplement cette usine qui s'auto-régule : une protéine, une fois produite en quantité suffisante, inhibe sa propre production. C'est grâce à cette alternance d'accumulation et de vidage que la cellule parvient à mesurer la durée d'une journée.
 
-![Diagramme du cycle TTFL](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Si l'on remplace la métaphore de l'usine par la terminologie scientifique, un cycle complet correspond à : transcription → accumulation → inhibition → dégradation → désinhibition. Un tour dure environ 24 heures. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Diagramme du cycle TTFL" />
+  <figcaption>Si l'on remplace la métaphore de l'usine par la terminologie scientifique, un cycle complet correspond à : transcription → accumulation → inhibition → dégradation → désinhibition. Un tour dure environ 24 heures. © Philo</figcaption>
+</figure>
 
 Michael Young a également découvert deux autres acteurs clés qui affinent la précision de cette horloge : la protéine TIM (Timeless), qui aide la protéine PER à pénétrer dans le noyau cellulaire la nuit pour activer le bouton d'arrêt de production ; et la protéine DBT (Doubletime), dont le rôle est de ralentir le rythme d'accumulation de la protéine PER. C'est précisément ce "ralentissement" qui calibre le cycle à près de 24 heures, plutôt qu'à une douzaine d'heures seulement.
 
@@ -66,11 +73,15 @@ Oui, l'horloge biologique existe bel et bien, ce n'est pas une illusion.
 
 La découverte de ce mécanisme ne s'est pas faite en un jour : dès 1971, Konopka et Benzer avaient identifié des mouches du vinaigre mutantes présentant des horloges biologiques anormales. En 1984, les laboratoires de Hall, Rosbash et Young ont presque simultanément cloné le gène *period* crucial. Ce n'est qu'au cours des années 1990 qu'ils ont progressivement assemblé le puzzle de ce circuit de rétroaction négative (par exemple, Young a découvert le gène *timeless* en 1994). Cette série de travaux a finalement été récompensée par le Prix Nobel de physiologie ou médecine en 2017.
 
-![PNAS revue de la recherche de Konopka et Benzer](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Le point de départ de l'histoire : en 1971, Konopka et Benzer ont découvert des mouches du vinaigre mutantes avec une horloge biologique anormale.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS revue de la recherche de Konopka et Benzer" />
+  <figcaption>Le point de départ de l'histoire : en 1971, Konopka et Benzer ont découvert des mouches du vinaigre mutantes avec une horloge biologique anormale.</figcaption>
+</figure>
 
-![Lauréats du Prix Nobel 2017](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*L'aboutissement : le Prix Nobel de physiologie ou médecine 2017, décerné à Hall, Rosbash et Young.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Lauréats du Prix Nobel 2017" />
+  <figcaption>L'aboutissement : le Prix Nobel de physiologie ou médecine 2017, décerné à Hall, Rosbash et Young.</figcaption>
+</figure>
 
 ## La plupart des horloges biologiques ne font pas 24 heures
 
@@ -80,15 +91,19 @@ Si une personne est complètement isolée des repères temporels externes, quell
 
 La réponse est environ 24,2 heures, soit légèrement plus de 24 heures. En d'autres termes, l'horloge biologique de presque chacun de nous est naturellement un peu plus lente que le rythme terrestre.
 
-![Étude de Science sur le rythme circadien humain](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Étude de Czeisler et al., publiée dans *Science* en 1999, mesurant un rythme endogène humain d'environ 24,18 heures.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Étude de Science sur le rythme circadien humain" />
+  <figcaption>Étude de Czeisler et al., publiée dans <em>Science</em> en 1999, mesurant un rythme endogène humain d'environ 24,18 heures.</figcaption>
+</figure>
 
 Alors pourquoi la plupart des gens parviennent-ils à maintenir un rythme régulier ? La réponse : la lumière.
 
 Votre rétine contient un type de cellules spéciales (les ipRGC) qui ne sont pas responsables de la formation des images, mais uniquement de signaler au NSC la présence ou l'absence de lumière. Ce processus s'appelle l'entraînement par la lumière. Chaque matin, la lumière du jour fait avancer un peu cette horloge interne un peu trop lente, la recalibrant sur 24 heures. Grâce à ce mécanisme, les personnes sans trouble parviennent à compenser ces quelques minutes supplémentaires chaque jour.
 
-![Cycle de sommeil normal](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Cycle de sommeil normal : les heures d'endormissement et de réveil sont stables, le fuseau de sommeil reste fixe et ne dérive pas. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Cycle de sommeil normal" />
+  <figcaption>Cycle de sommeil normal : les heures d'endormissement et de réveil sont stables, le fuseau de sommeil reste fixe et ne dérive pas. © Philo</figcaption>
+</figure>
 
 Chez une minorité de personnes, ce mécanisme de "réglage quotidien par la lumière" présente des dysfonctionnements, se manifestant par les deux troubles du sommeil que nous allons aborder.
 
@@ -100,15 +115,19 @@ Le TSPS (Trouble du Sommeil à Phase Retardée) est une perturbation chronique d
 
 En clair, le TSPS signifie que vous ne pouvez pas vous endormir avant deux ou trois heures du matin, mais une fois cette heure passée, vous vous endormez sans problème. Après 7 à 8 heures de sommeil, vous vous réveillez et passez une journée pleine d'énergie. De plus, de nombreuses études récentes ont révélé une forte corrélation entre le TDAH adulte et le TSPS, ce dernier étant le trouble du rythme circadien le plus fréquent chez ces personnes.
 
-![Cycle de sommeil du TSPS](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*Cycle de sommeil du TSPS : le rythme est stable et ne dérive pas, mais la période de sommeil est nettement plus tardive que celle des personnes normales. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Cycle de sommeil du TSPS" />
+  <figcaption>Cycle de sommeil du TSPS : le rythme est stable et ne dérive pas, mais la période de sommeil est nettement plus tardive que celle des personnes normales. © Philo</figcaption>
+</figure>
 
 Le Trouble du Sommeil Veille-Éveil Non-24 Heures (Non-24) est une forme rare de perturbation du rythme circadien. L'horloge biologique des personnes atteintes dépasse 24 heures (généralement autour de 25 heures), ce qui décale leurs heures d'endormissement et de réveil de 1 à 2 heures chaque jour. Elles ne peuvent donc pas s'adapter aux horaires sociaux normaux.
 
 En d'autres termes, avec le Non-24, l'heure d'endormissement de chaque jour est plus tardive que la veille, et ce décalage se poursuit indéfiniment jusqu'à ce que le cycle veille-sommeil soit complètement inversé, puis revienne à la normale, formant ainsi une boucle complète. C'est un cycle incessant, sans début ni fin.
 
-![Cycle de sommeil du Non-24](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Cycle de sommeil du Non-24 : l'heure d'endormissement recule de jour en jour, glissant sans cesse comme un escalier, dans un mouvement perpétuel. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Cycle de sommeil du Non-24" />
+  <figcaption>Cycle de sommeil du Non-24 : l'heure d'endormissement recule de jour en jour, glissant sans cesse comme un escalier, dans un mouvement perpétuel. © Philo</figcaption>
+</figure>
 
 Mais pourquoi certaines personnes perdent-elles complètement la capacité d'être recalibrées par la lumière ? Cela s'observe le plus souvent chez les personnes totalement aveugles, une très grande proportion d'entre elles (surtout celles qui n'ont aucune perception lumineuse) développant des symptômes de Non-24. En effet, le signal lumineux qui calibre l'horloge biologique passe par les yeux ; sans cette réception de lumière, l'horloge ne peut que dériver. Cependant, un très petit nombre de personnes ayant une vision normale sont également incapables de recalibrer leur horloge biologique avec la lumière.
 
@@ -120,8 +139,10 @@ Alors, comment savoir à quel type d'horloge biologique on appartient ?
 
 La méthode la plus simple consiste à tenir un journal de sommeil pendant plusieurs semaines. Si vous possédez une montre connectée, celle-ci enregistrera également vos cycles de sommeil. Il s'agit ensuite d'observer, sans réglage d'alarme intentionnel, à quelle heure vous avez tendance à vous coucher et à vous lever, si cet état est stable, et si vous vous sentez plein d'énergie ou manquant de sommeil au réveil.
 
-![Suivi de la cohérence du sommeil sur montre connectée](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Voici à quoi ressemblent les enregistrements de sommeil sur une montre connectée ou une application : quelques semaines de suivi suffisent à révéler si votre rythme est stable ou s'il dérive.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Suivi de la cohérence du sommeil sur montre connectée" />
+  <figcaption>Voici à quoi ressemblent les enregistrements de sommeil sur une montre connectée ou une application : quelques semaines de suivi suffisent à révéler si votre rythme est stable ou s'il dérive.</figcaption>
+</figure>
 
 En observant, vous devriez pouvoir vous situer : si vous vous couchez systématiquement tard – par exemple, toujours entre deux et trois heures du matin, mais que vous êtes en pleine forme après avoir dormi suffisamment – cela ressemble davantage au TSPS ; si votre heure d'endormissement est plus tardive chaque jour que la veille et ne cesse de dériver, il s'agit du Non-24 ; et si, à l'inverse, vous vous couchez et vous réveillez extrêmement tôt, c'est le SFPSA. Bien entendu, un diagnostic définitif doit être posé par une clinique du sommeil spécialisée.
 
@@ -153,11 +174,6 @@ Je vous souhaite à toutes et à tous une bonne nuit de sommeil.
 4.  Forte corrélation entre le TDAH adulte et le trouble de phase de sommeil retardée/les perturbations du rythme circadien : [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Incidence élevée du Non-24 chez les personnes totalement aveugles, essais cliniques de phase III du Tasimelteon (SET et RESET) : Lockley et al., *The Lancet*, 2015, [lien](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Le Tasimelteon (Hetlioz) a été approuvé par la FDA en janvier 2014, devenant le premier médicament spécifiquement destiné au traitement du Non-24 : [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Pour en savoir plus
-
-- [Puis-je mieux dormir en moins de temps ? Une auto-expérimentation sur le sommeil - Jour 1](/zh/blog/hacking-my-sleep-day1)
-- [Comment résoudre un Rubik's Cube sans mémoriser de formules : même les écoliers peuvent comprendre](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

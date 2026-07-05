@@ -11,6 +11,9 @@ tags:
 categories: Napi csevegés
 description: "A biológiai órám nem 24 órás, hanem 24,5 órás. A 2017-es Nobel-díj molekuláris mechanizmusától kiindulva beszéljünk a DSPD és a Non-24 kétféle cirkadián ritmusú alvászavarról, és arról, miért döntöttem úgy, hogy alkalmazkodom, ahelyett, hogy harcolnék ellene."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ De hogyan is szabályozza pontosan a biológiai óra a testünket?
 
 Három tudós, Jeffrey Hall, Michael Rosbash és Michael Young, a kis gyümölcslegyeken találták meg a biológiai óra "motorját". Megdöbbentő módon ez a motor nem az agyban van, hanem minden egyes sejtben – szinte minden sejt a testedben hordozza a saját óráját.
 
-![Brandeis magazin a felfedezésről szóló jelentése](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*A Brandeis magazin "A természet fő időmérője" című cikkének illusztrációja: Hogyan találták meg a három tudós a biológiai órát gyümölcslegyeken.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis magazin a felfedezésről szóló jelentése" />
+  <figcaption>A Brandeis magazin "A természet fő időmérője" című cikkének illusztrációja: Hogyan találták meg a három tudós a biológiai órát gyümölcslegyeken.</figcaption>
+</figure>
 
 Működési elvét egy "önmagát leállító gyár" hasonlatával érthetjük meg:
 
@@ -57,8 +62,10 @@ Ez a teljes körforgás – "termelés → felhalmozódás → önműködő leá
 
 Tudományos nyelven ezt transzkripciós-transzlációs negatív visszacsatolási huroknak (TTFL) nevezik. Bár a neve ijesztően hangzik, lényegében arról az "önfékező" gyárról van szó, amit fentebb leírtunk: egy fehérje, ha elér egy bizonyos koncentrációt, gátolja a saját termelését. Ezzel a "felhalmozódás-ürítés" hullámzással a sejt képes mérni a nap hosszát.
 
-![A transzkripciós-transzlációs negatív visszacsatolási hurok (TTFL) vázlatos ábrája](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Ha a gyárhasonlatot tudományos terminológiára cseréljük, a teljes ciklus a következő: transzkripció → felhalmozódás → gátlás → lebontás → gátlás feloldása. Egy kör nagyjából 24 órát vesz igénybe. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="A transzkripciós-transzlációs negatív visszacsatolási hurok (TTFL) vázlatos ábrája" />
+  <figcaption>Ha a gyárhasonlatot tudományos terminológiára cseréljük, a teljes ciklus a következő: transzkripció → felhalmozódás → gátlás → lebontás → gátlás feloldása. Egy kör nagyjából 24 órát vesz igénybe. © Philo</figcaption>
+</figure>
 
 Michael Young további két kulcsfontosságú szereplőt is azonosított, amelyek még pontosabbá teszik ezt az órát: az egyik a TIM fehérje (Timeless), amely éjszaka segíti a PER fehérjét bejutni a sejtmagba, hogy megnyomja a "leállítás gombot"; a másik a DBT (Doubletime), amelynek feladata a PER fehérje felhalmozódási sebességének lassítása. Éppen ez a "lassítás" az, ami a ciklust pontosan 24 órához igazítja, ahelyett, hogy tizenegynéhány óra alatt lefutna.
 
@@ -68,11 +75,15 @@ Igen, a biológiai óra tényleg létezik, nem csupán illúzió.
 
 Ennek a mechanizmusnak a felfedezése nem egyik napról a másikra történt: már 1971-ben Konopka és Benzer azonosítottak mutáns gyümölcslegyeket, amelyeknek rendellenes volt a biológiai órájuk; 1984-ben Hall, Rosbash és Young laboratóriumai szinte egy időben klónozták a kulcsfontosságú *period* gént; majd az 1990-es évek során fokozatosan rakták össze a fent leírt negatív visszacsatolási hurok mechanizmusát (például Young 1994-ben találta meg a *timeless* gént). Ez a munkasorozat végül 2017-ben elnyerte a fiziológiai vagy orvostudományi Nobel-díjat.
 
-![PNAS áttekintés Konopka és Benzer kutatásáról](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*A történet kezdete: 1971-ben Konopka és Benzer mutáns gyümölcslegyeket fedeztek fel, amelyeknek rendellenes volt a biológiai órájuk.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS áttekintés Konopka és Benzer kutatásáról" />
+  <figcaption>A történet kezdete: 1971-ben Konopka és Benzer mutáns gyümölcslegyeket fedeztek fel, amelyeknek rendellenes volt a biológiai órájuk.</figcaption>
+</figure>
 
-![A 2017-es fiziológiai vagy orvostudományi Nobel-díj három díjazottja](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*A végállomás: 2017-ben Hall, Rosbash és Young megkapta a fiziológiai vagy orvostudományi Nobel-díjat.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="A 2017-es fiziológiai vagy orvostudományi Nobel-díj három díjazottja" />
+  <figcaption>A végállomás: 2017-ben Hall, Rosbash és Young megkapta a fiziológiai vagy orvostudományi Nobel-díjat.</figcaption>
+</figure>
 
 ## A legtöbb ember biológiai órája sem pontosan 24 órás
 
@@ -82,15 +93,19 @@ Ha egy ember teljesen elszigetelődik a külső időjelzésektől, hány órásr
 
 A válasz: körülbelül 24,2 óra, ami alig több mint 24. Ez azt jelenti, hogy szinte minden ember biológiai órája genetikailag egy kicsit lassabb, mint a Föld forgása.
 
-![Science folyóirat: emberi cirkadián ritmus közel 24 óra kutatás](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler és társai 1999-ben publikálták a Science-ben, hogy az emberi endogén ritmus körülbelül 24,18 óra.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science folyóirat: emberi cirkadián ritmus közel 24 óra kutatás" />
+  <figcaption>Czeisler és társai 1999-ben publikálták a Science-ben, hogy az emberi endogén ritmus körülbelül 24,18 óra.</figcaption>
+</figure>
 
 Akkor miért van az, hogy a legtöbb ember mégis képes fenntartani a szabályos alvásrendet? A válasz: a fény.
 
 A retinádban található egy speciális sejttípus (ipRGC), amely nem a képalkotásért felel, hanem kizárólag azt jelenti az SCN-nek, hogy "van-e fény". Ezt a folyamatot fényvezérlésnek (entrainment) nevezik. Minden reggel a fény "előrébb állítja" a kissé lemaradó órát, és újra beigazítja 24 órára. A normális emberek ezen a mechanizmuson keresztül korrigálják a napi plusz néhány percet.
 
-![Normális ember alvási ciklusa](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Normális ember alvás-ébrenlét ciklusa: az elalvás és ébredés ideje stabil, az alvási sáv nem mozdul el. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Normális ember alvási ciklusa" />
+  <figcaption>Normális ember alvás-ébrenlét ciklusa: az elalvás és ébredés ideje stabil, az alvási sáv nem mozdul el. © Philo</figcaption>
+</figure>
 
 Azonban néhány embernél ez a "napi fény általi időbeállítás" mechanizmus meghibásodik, ami az alábbiakban tárgyalandó kétféle alvászavarban nyilvánul meg.
 
@@ -102,15 +117,19 @@ A **DSPD (Késleltetett Alvásfázis Szindróma)** egy krónikus cirkadián ritm
 
 Egyszerűen fogalmazva, a DSPD azt jelenti, hogy éjjel kettő-három óra előtt nem tudsz elaludni, de ha eljön az idő, biztosan elalszol, és 7-8 óra alvás után frissen ébredsz, és napközben is energikus vagy. Ráadásul az utóbbi években számos kutatás kimutatta, hogy a felnőttkori ADHD és a DSPD szorosan összefügg egymással, a DSPD az ADHD-s betegek leggyakoribb cirkadián ritmuszavara.
 
-![DSPD alvási ciklus](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*DSPD alvás-ébrenlét ciklusa: a napi ritmus stabil, nem mozdul el, de az alvásidő jelentősen későbbre esik, mint a normális embereké. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD alvási ciklus" />
+  <figcaption>DSPD alvás-ébrenlét ciklusa: a napi ritmus stabil, nem mozdul el, de az alvásidő jelentősen későbbre esik, mint a normális embereké. © Philo</figcaption>
+</figure>
 
 A **Nem 24 órás Alvás-Ébrenlét Zavar (Non-24-hour sleep-wake disorder, röviden Non-24)** egy ritka cirkadián ritmuszavar. Az érintettek biológiai órája meghaladja a 24 órát (általában körülbelül 25 óra), ami azt eredményezi, hogy az elalvás és ébredés ideje naponta 1-2 órával eltolódik, így képtelenek alkalmazkodni a normális társadalmi időbeosztáshoz.
 
 Egyszerűen szólva, a Non-24 azt jelenti, hogy az elalvás időpontja minden nap későbbre tolódik, mint az előző napon, és ez folyamatosan így megy, míg a nappal és az éjszaka fel nem cserélődik, majd ismét előrehalad, teljes körforgást alkotva. Nincs eleje vagy vége, csak egy folytonos ciklus.
 
-![Non-24 alvási ciklus](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Non-24 alvás-ébrenlét ciklusa: az elalvás ideje napról napra későbbre tolódik, mint egy lépcsőfok, folyamatosan lefelé haladva, újra és újra. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 alvási ciklus" />
+  <figcaption>Non-24 alvás-ébrenlét ciklusa: az elalvás ideje napról napra későbbre tolódik, mint egy lépcsőfok, folyamatosan lefelé haladva, újra és újra. © Philo</figcaption>
+</figure>
 
 Akkor miért van az, hogy egyesek teljesen elveszítik a fény általi kalibrálás képességét? Ez leggyakrabban a teljesen vak emberek körében fordul elő; a teljesen vakok nagyon nagy százaléka (különösen azok, akik egyáltalán nem érzékelik a fényt) mutat Non-24 tüneteket – mivel a biológiai órát kalibráló fényjel a szemeken keresztül érkezik, és ha nincs fényérzékelés, az óra csak magától sodródik. De létezik egy nagyon kis számú látó ember is, akik szintén képtelenek a fényt használni a biológiai órájuk beállítására.
 
@@ -122,8 +141,10 @@ De hogyan tudhatod meg, hogy a biológiai órád milyen állapotban van?
 
 A legegyszerűbb módszer az, ha több héten keresztül vezetsz alvásnaplót. Ha van okosórád, az is rögzíti az alvási ciklusokat. Figyeld meg, hogy szándékos ébresztőóra beállítása nélkül mikor szoktál elaludni és felkelni, stabil-e ez az állapot, és ébredés után frissnek érzed-e magad, vagy alváshiányosnak.
 
-![Alvásrekord okosórában](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Így néz ki egy okosóra / alkalmazás alvásrekordja – több hetes folyamatos rögzítés után láthatod, hogy a napi ritmusod stabil-e vagy eltolódik.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Alvásrekord okosórában" />
+  <figcaption>Így néz ki egy okosóra / alkalmazás alvásrekordja – több hetes folyamatos rögzítés után láthatod, hogy a napi ritmusod stabil-e vagy eltolódik.</figcaption>
+</figure>
 
 Megfigyelés alapján nagyjából be tudod azonosítani: ha stabilan későn fekszel le – mindig kettő-három óra körül alszol el, de ha eleget alszol, akkor is friss vagy –, az inkább DSPD-re utal; ha az elalvás időpontja minden nap későbbre tolódik, folyamatosan elmozdul, az Non-24; ha épp ellenkezőleg, nagyon korán fekszel le és nagyon korán ébredsz, az FASPS. Természetesen a pontos diagnózishoz szakorvosi alvásklinikai vizsgálat szükséges.
 
@@ -155,11 +176,6 @@ Kívánok mindenkinek jó alvást!
 4.  A felnőttkori ADHD és a késleltetett alvásfázis / cirkadián ritmuszavar szoros összefüggése: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/)、[Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Non-24 magas előfordulása a teljesen vakok körében, Tasimelteon harmadik fázisú klinikai vizsgálatok (SET és RESET): Lockley et al., *The Lancet*, 2015, [link](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  A Tasimelteon (Hetlioz) 2014 januárjában kapott FDA engedélyt, mint az első, kifejezetten Non-24 kezelésére szolgáló gyógyszer: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## További olvasnivaló
-
--   [Tudok-e jobban aludni kevesebb idő alatt? Egy alvással kapcsolatos önkísérlet 1. nap](/zh/blog/hacking-my-sleep-day1)
--   [Hogyan oldd meg a Rubik-kockát képletek nélkül: amit egy általános iskolás is megért](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

@@ -11,6 +11,9 @@ tags:
 categories: Chiacchiere quotidiane
 description: "Il mio orologio biologico non è di 24 ore, ma di 24,5 ore. Partendo dal meccanismo molecolare del Premio Nobel 2017, parleremo di DSPD e Non-24, due disturbi del ritmo circadiano del sonno, e del perché ho scelto di assecondarli anziché combatterli."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -42,8 +45,10 @@ Ma come fa l'orologio biologico a essere regolato con tanta precisione?
 
 Tre scienziati, Jeffrey Hall, Michael Rosbash e Michael Young, hanno scoperto il "motore" dell'orologio biologico nella minuscola mosca della frutta. E, sorprendentemente, questo motore non si trova nel cervello, ma in ogni singola cellula: quasi ogni cellula del tuo corpo porta con sé un proprio orologio.
 
-![Brandeis 杂志对这项发现的报道](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*La rivista Brandeis, "Il Cronometrista Maestro della Natura": come tre scienziati hanno scoperto l'orologio biologico nella mosca della frutta.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <figcaption>La rivista Brandeis, "Il Cronometrista Maestro della Natura": come tre scienziati hanno scoperto l'orologio biologico nella mosca della frutta.</figcaption>
+</figure>
 
 Il suo funzionamento può essere compreso attraverso la metafora di una "fabbrica che si auto-spegne":
 
@@ -59,8 +64,10 @@ L'intero ciclo di "produzione → accumulo → auto-stop → svuotamento → ria
 
 Questo processo è scientificamente noto come circuito di feedback negativo trascrizione-traduzione (TTFL). Il nome può sembrare intimidatorio, ma in sostanza è la fabbrica di cui sopra che si auto-regola: una volta che una proteina raggiunge una certa quantità, inibisce la propria produzione. Attraverso questo "accumulo-svuotamento", questo saliscendi, la cellula riesce a scandire la durata di un giorno.
 
-![转录-翻译负反馈回路（TTFL）示意图](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Sostituendo la metafora della fabbrica con la terminologia scientifica, un ciclo completo è: trascrizione → accumulo → inibizione → degradazione → disinibizione, per un totale di circa 24 ore. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <figcaption>Sostituendo la metafora della fabbrica con la terminologia scientifica, un ciclo completo è: trascrizione → accumulo → inibizione → degradazione → disinibizione, per un totale di circa 24 ore. © Philo</figcaption>
+</figure>
 
 Michael Young ha anche scoperto altri due attori chiave che rendono questo orologio ancora più preciso: una proteina chiamata TIM (Timeless), che di notte aiuta la proteina PER a entrare nel nucleo cellulare per premere il pulsante di stop della produzione; e una chiamata DBT (Doubletime), il cui ruolo è quello di rallentare la velocità di accumulo della proteina PER. È proprio questo "rallentamento" che calibra il ciclo con precisione a circa 24 ore, anziché farlo completare in una dozzina di ore.
 
@@ -70,11 +77,15 @@ Sì, l'orologio biologico esiste davvero, non è un'illusione.
 
 La scoperta di questo meccanismo non è avvenuta in un solo giorno: già nel 1971, Konopka e Benzer avevano individuato mosche della frutta mutate con orologi biologici anomali; nel 1984, i tre laboratori di Hall, Rosbash e Young clonarono quasi contemporaneamente il gene chiave *period*; e poi, per tutti gli anni '90, hanno gradualmente ricostruito il meccanismo del circuito di feedback negativo descritto sopra (ad esempio, Young ha trovato il gene *timeless* nel 1994). Questa serie di lavori ha infine meritato il Premio Nobel per la Fisiologia o la Medicina nel 2017.
 
-![PNAS 回顾 Konopka 与 Benzer 的研究](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*L'inizio della storia: nel 1971 Konopka e Benzer scoprirono mosche della frutta mutate con orologi biologici anomali.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <figcaption>L'inizio della storia: nel 1971 Konopka e Benzer scoprirono mosche della frutta mutate con orologi biologici anomali.</figcaption>
+</figure>
 
-![2017 年诺贝尔生理学或医学奖三位得主](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Il punto d'arrivo: nel 2017, il Premio Nobel per la Fisiologia o la Medicina è stato assegnato a Hall, Rosbash e Young.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <figcaption>Il punto d'arrivo: nel 2017, il Premio Nobel per la Fisiologia o la Medicina è stato assegnato a Hall, Rosbash e Young.</figcaption>
+</figure>
 
 ## La maggior parte degli orologi biologici non è di 24 ore
 
@@ -84,15 +95,19 @@ Se una persona fosse completamente isolata da ogni indicazione temporale esterna
 
 La risposta è circa 24,2 ore, leggermente più di 24. In altre parole, l'orologio biologico di quasi tutti è naturalmente un po' più lento di quello terrestre.
 
-![Science 期刊：人类昼夜节律接近 24 小时的研究](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Pubblicato su 'Science' da Czeisler et al. nel 1999, lo studio ha misurato un ritmo endogeno umano di circa 24,18 ore.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <figcaption>Pubblicato su 'Science' da Czeisler et al. nel 1999, lo studio ha misurato un ritmo endogeno umano di circa 24,18 ore.</figcaption>
+</figure>
 
 Allora perché la maggior parte delle persone riesce comunque a mantenere orari regolari? La risposta è: la luce.
 
 Nella tua retina ci sono cellule speciali (ipRGC) che non si occupano della vista, ma solo di segnalare all'SCN "se c'è luce in questo momento". Questo processo si chiama *entrainment* (sincronizzazione). La luce del mattino serve proprio a far avanzare un po' l'orologio che va lento, riallineandolo alle 24 ore. Le persone normali, grazie a questo meccanismo, ogni giorno "azzerano" quei minuti in più.
 
-![正常人的睡眠周期](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Ciclo di sonno normale: orari di addormentamento e risveglio stabili, il ciclo del sonno non si sposta. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <figcaption>Ciclo di sonno normale: orari di addormentamento e risveglio stabili, il ciclo del sonno non si sposta. © Philo</figcaption>
+</figure>
 
 In una minoranza di persone, però, questo meccanismo di "sincronizzazione quotidiana tramite la luce" presenta dei problemi, manifestandosi nelle due tipologie di disturbi del sonno che andremo a descrivere.
 
@@ -104,15 +119,19 @@ Il DSPD (Disturbo da Fase del Sonno Ritardata) è un disturbo cronico del ritmo 
 
 In parole semplici, il DSPD significa che non riesci ad addormentarti prima delle due o tre di notte, ma quando arriva la tua ora, ti addormenti senza problemi, dormi 7-8 ore e ti svegli comunque sentendoti riposato ed energico durante il giorno. Negli ultimi anni, numerose ricerche hanno evidenziato una forte correlazione tra l'ADHD negli adulti e il DSPD, che risulta essere il disturbo del ritmo circadiano più comune tra loro.
 
-![DSPD 的睡眠周期](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*Ciclo di sonno nel DSPD: orari stabili e non fluttuanti, ma il periodo di sonno è significativamente più tardi rispetto alle persone normali. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <figcaption>Ciclo di sonno nel DSPD: orari stabili e non fluttuanti, ma il periodo di sonno è significativamente più tardi rispetto alle persone normali. © Philo</figcaption>
+</figure>
 
 Il Disturbo del Ciclo Sonno-Veghia Non-24 ore (Non-24-hour sleep-wake disorder, o semplicemente Non-24) è una rara discronia circadiana. In questo caso, l'orologio biologico interno del paziente supera le 24 ore (solitamente circa 25 ore), causando un ritardo di 1-2 ore ogni giorno negli orari di addormentamento e risveglio, rendendo impossibile adattarsi ai normali ritmi sociali.
 
 In parole semplici, il Non-24 significa che l'ora di andare a dormire è ogni giorno più tardi del precedente, un ritardo continuo che porta a un'inversione completa del ciclo giorno-notte, per poi ricominciare. È un ciclo senza inizio né fine, che si ripete incessantemente.
 
-![Non-24 的睡眠周期](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Ciclo di sonno nel Non-24: l'ora di addormentamento si sposta progressivamente in avanti ogni giorno, scivolando come una scala, in un ciclo continuo. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <figcaption>Ciclo di sonno nel Non-24: l'ora di addormentamento si sposta progressivamente in avanti ogni giorno, scivolando come una scala, in un ciclo continuo. © Philo</figcaption>
+</figure>
 
 Allora perché alcune persone perdono completamente la capacità di sincronizzarsi con la luce? Questo è più comune tra i non vedenti, dove una percentuale molto alta (specialmente coloro che non percepiscono affatto la luce) manifesta i sintomi del Non-24. Questo accade perché il segnale luminoso per la sincronizzazione dell'orologio biologico passa attraverso gli occhi, e senza ricezione di luce, l'orologio non può che spostarsi autonomamente. Esiste però anche una piccolissima minoranza di persone con vista normale che, nonostante ciò, non riesce a sincronizzare il proprio orologio biologico con la luce.
 
@@ -124,8 +143,10 @@ Ma come si può capire a quale tipo di orologio biologico si appartiene?
 
 Il metodo più semplice è tenere un diario del sonno per diverse settimane. Se si possiede uno smartwatch, molti di essi registrano anche i cicli del sonno. L'obiettivo è osservare a che ora si tende ad andare a dormire e a svegliarsi senza l'uso di sveglie, se questo stato è stabile e se al risveglio ci si sente riposati ed energici o in debito di sonno.
 
-![智能手表里的睡眠记录](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Ecco come appare la registrazione del sonno su uno smartwatch o un'app: registrando per alcune settimane, si può capire se i propri orari sono stabili o se tendono a spostarsi.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <figcaption>Ecco come appare la registrazione del sonno su uno smartwatch o un'app: registrando per alcune settimane, si può capire se i propri orari sono stabili o se tendono a spostarsi.</figcaption>
+</figure>
 
 Dall'osservazione, si può grosso modo identificare: se i tuoi orari sono stabilmente ritardati – vai a dormire sempre alle due o tre di notte, ma ti senti comunque energico dopo aver dormito a sufficienza – è più probabile che tu abbia il DSPD; se l'ora di addormentamento è ogni giorno più tarda del precedente, spostandosi continuamente, si tratta di Non-24; se, al contrario, vai a dormire estremamente presto e ti svegli estremamente presto, allora è FASPS. Ovviamente, una diagnosi definitiva richiede sempre una clinica del sonno specializzata.
 
@@ -157,11 +178,6 @@ Auguro a tutti di dormire bene.
 4.  Forte correlazione tra ADHD negli adulti e ritardo della fase del sonno/disturbo del ritmo circadiano: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Elevata incidenza di Non-24 tra i non vedenti, studi clinici di fase III su Tasimelteon (SET e RESET): Lockley et al., *The Lancet*, 2015, [Link](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Tasimelteon (Hetlioz) approvato dalla FDA a gennaio 2014, primo farmaco specifico per il trattamento del Non-24: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Per approfondire
-
-- [Posso dormire meglio in meno tempo? Un auto-esperimento sul sonno - Giorno 1](/zh/blog/hacking-my-sleep-day1)
-- [Come risolvere il cubo di Rubik senza formule: anche i bambini possono imparare](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

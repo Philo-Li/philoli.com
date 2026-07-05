@@ -11,6 +11,9 @@ tags:
 categories: Alltagsgespräch
 description: "Meine innere Uhr tickt nicht im 24-Stunden-Takt, sondern im 24,5-Stunden-Takt. Ausgehend vom molekularen Mechanismus des Nobelpreises 2017 beleuchte ich die zirkadianen Schlaf-Wach-Rhythmusstörungen DSPD und Non-24 und erkläre, warum ich mich entschieden habe, mich ihnen anzupassen, anstatt gegen sie anzukämpfen."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Doch wie genau wird diese innere Uhr eigentlich gesteuert?
 
 Die drei Wissenschaftler Jeffrey Hall, Michael Rosbash und Michael Young entdeckten den "Motor" der inneren Uhr in kleinen Fruchtfliegen. Und das Erstaunliche daran: Dieser Motor sitzt nicht im Gehirn, sondern in jeder einzelnen Zelle – fast jede Zelle in unserem Körper trägt eine eigene Uhr in sich.
 
-![Brandeis Magazin 'Der Großmeister der Zeit in der Natur': Wie drei Wissenschaftler die innere Uhr in Fruchtfliegen entdeckten.](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Brandeis Magazin „Der Großmeister der Zeit in der Natur“: Wie drei Wissenschaftler die innere Uhr in Fruchtfliegen entdeckten.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis Magazin 'Der Großmeister der Zeit in der Natur': Wie drei Wissenschaftler die innere Uhr in Fruchtfliegen entdeckten." />
+  <figcaption>Brandeis Magazin „Der Großmeister der Zeit in der Natur“: Wie drei Wissenschaftler die innere Uhr in Fruchtfliegen entdeckten.</figcaption>
+</figure>
 
 Sein Funktionsprinzip lässt sich mit der Metapher einer "sich selbst abschaltenden Fabrik" verstehen:
 
@@ -57,8 +62,10 @@ Dieser gesamte Kreislauf aus "Produktion → Akkumulation → Selbstabschaltung 
 
 Wissenschaftlich wird dies als Transkriptions-Translations-Negativ-Feedback-Schleife (TTFL) bezeichnet. Der Name klingt beeindruckend, doch im Wesentlichen ist es die oben beschriebene Fabrik, die sich selbst bremst: Sobald ein Protein eine bestimmte Menge erreicht, hemmt es seine eigene Produktion. Durch dieses "Anhäufen und Leeren", dieses Auf und Ab, misst die Zelle quasi die Länge eines Tages.
 
-![Transkriptions-Translations-Negativ-Feedback-Schleife (TTFL) Schema](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Ersetzt man die Fabrik-Metapher durch wissenschaftliche Begriffe, so lautet der gesamte Zyklus: Transkription → Akkumulation → Inhibition → Degradation → De-Inhibition. Eine Runde dauert etwa 24 Stunden. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkriptions-Translations-Negativ-Feedback-Schleife (TTFL) Schema" />
+  <figcaption>Ersetzt man die Fabrik-Metapher durch wissenschaftliche Begriffe, so lautet der gesamte Zyklus: Transkription → Akkumulation → Inhibition → Degradation → De-Inhibition. Eine Runde dauert etwa 24 Stunden. © Philo</figcaption>
+</figure>
 
 Michael Young entdeckte zudem zwei weitere Schlüsselakteure, die diese Uhr noch präziser machen: Ein Protein namens TIM (Timeless) hilft dem PER-Protein nachts dabei, in den Zellkern zu gelangen, um den Produktionsstopp-Knopf zu drücken. Ein weiteres, DBT (Doubletime), verlangsamt die Akkumulationsgeschwindigkeit des PER-Proteins – und genau dieses "Verlangsamen" kalibriert den Zyklus präzise auf nahezu 24 Stunden, anstatt ihn in nur wenigen Stunden zu durchlaufen.
 
@@ -68,11 +75,15 @@ Ja, die innere Uhr existiert wirklich, sie ist keine Illusion.
 
 Die Entdeckung dieses Mechanismus war kein schneller Erfolg: Bereits 1971 entdeckten Konopka und Benzer mutierte Fruchtfliegen mit einer abnormalen inneren Uhr. 1984 klonten die drei Labore von Hall, Rosbash und Young fast gleichzeitig das entscheidende *period*-Gen. Erst im Laufe der 1990er Jahre setzten sie schrittweise den Mechanismus der oben beschriebenen negativen Feedback-Schleife zusammen (so fand Young beispielsweise 1994 das *timeless*-Gen). Diese Reihe von Arbeiten wurde schließlich 2017 mit dem Nobelpreis für Physiologie oder Medizin ausgezeichnet.
 
-![Der Beginn der Geschichte: 1971 entdeckten Konopka und Benzer mutierte Fruchtfliegen mit einer abnormalen inneren Uhr.](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Der Beginn der Geschichte: 1971 entdeckten Konopka und Benzer mutierte Fruchtfliegen mit einer abnormalen inneren Uhr.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="Der Beginn der Geschichte: 1971 entdeckten Konopka und Benzer mutierte Fruchtfliegen mit einer abnormalen inneren Uhr." />
+  <figcaption>Der Beginn der Geschichte: 1971 entdeckten Konopka und Benzer mutierte Fruchtfliegen mit einer abnormalen inneren Uhr.</figcaption>
+</figure>
 
-![Der Höhepunkt: Der Nobelpreis für Physiologie oder Medizin 2017, verliehen an Hall, Rosbash und Young.](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Der Höhepunkt: Der Nobelpreis für Physiologie oder Medizin 2017, verliehen an Hall, Rosbash und Young.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Der Höhepunkt: Der Nobelpreis für Physiologie oder Medizin 2017, verliehen an Hall, Rosbash und Young." />
+  <figcaption>Der Höhepunkt: Der Nobelpreis für Physiologie oder Medizin 2017, verliehen an Hall, Rosbash und Young.</figcaption>
+</figure>
 
 ## Die innere Uhr der meisten Menschen tickt nicht im 24-Stunden-Takt
 
@@ -82,15 +93,19 @@ Wenn ein Mensch vollständig von äußeren Zeitgebern isoliert wird, wie lang wi
 
 Die Antwort liegt bei etwa 24,2 Stunden, also geringfügig länger als 24 Stunden. Das bedeutet: Fast jede innere Uhr ist von Natur aus ein kleines bisschen langsamer als die Erdrotation.
 
-![Science-Magazin: Studie über den menschlichen zirkadianen Rhythmus, der nahezu 24 Stunden beträgt.](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler et al., veröffentlicht 1999 in *Science*, maß den menschlichen endogenen Rhythmus auf etwa 24,18 Stunden.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science-Magazin: Studie über den menschlichen zirkadianen Rhythmus, der nahezu 24 Stunden beträgt." />
+  <figcaption>Czeisler et al., veröffentlicht 1999 in <em>Science</em>, maß den menschlichen endogenen Rhythmus auf etwa 24,18 Stunden.</figcaption>
+</figure>
 
 Warum können die meisten Menschen dann einen regelmäßigen Tagesablauf beibehalten? Die Antwort ist: Licht.
 
 In Ihrer Netzhaut gibt es spezielle Zellen (ipRGCs), die nicht für die Bildgebung zuständig sind, sondern lediglich dem SCN melden, ob gerade Licht vorhanden ist. Dieser Prozess wird als Entrainment (Synchronisation) bezeichnet. Das Licht am Morgen schiebt die zu langsam gehende Uhr ein wenig nach vorne und richtet sie wieder auf 24 Stunden aus. Normale Menschen nutzen diesen Mechanismus, um die täglich überschüssigen Minuten auszugleichen.
 
-![Schlafzyklus normaler Menschen: Einschlaf- und Aufwachzeiten sind stabil, der Schlaf-Wach-Rhythmus ist ausgerichtet und driftet nicht. © Philo](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Schlafzyklus normaler Menschen: Einschlaf- und Aufwachzeiten sind stabil, der Schlaf-Wach-Rhythmus ist ausgerichtet und driftet nicht. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Schlafzyklus normaler Menschen: Einschlaf- und Aufwachzeiten sind stabil, der Schlaf-Wach-Rhythmus ist ausgerichtet und driftet nicht. © Philo" />
+  <figcaption>Schlafzyklus normaler Menschen: Einschlaf- und Aufwachzeiten sind stabil, der Schlaf-Wach-Rhythmus ist ausgerichtet und driftet nicht. © Philo</figcaption>
+</figure>
 
 Bei einer Minderheit funktioniert dieser Mechanismus der täglichen "Licht-Synchronisation" nicht richtig, was sich in den folgenden zwei Schlafstörungen äußert.
 
@@ -102,15 +117,19 @@ DSPD (Delayed Sleep-Phase Disorder, verzögerte Schlafphasenstörung) ist eine c
 
 Einfach ausgedrückt bedeutet DSPD: Man kann vor zwei oder drei Uhr nachts nicht einschlafen, aber wenn es dann soweit ist, schläft man problemlos ein, schläft seine 7-8 Stunden und ist danach tagsüber voller Energie. Zudem zeigen zahlreiche Studien der letzten Jahre, dass ADHS bei Erwachsenen stark mit DSPD korreliert, wobei DSPD die häufigste zirkadiane Rhythmusstörung bei ihnen ist.
 
-![Schlafzyklus bei DSPD: Der Rhythmus ist stabil und driftet nicht, aber die gesamte Schlafphase liegt deutlich später als bei normalen Menschen. © Philo](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*Schlafzyklus bei DSPD: Der Rhythmus ist stabil und driftet nicht, aber die gesamte Schlafphase liegt deutlich später als bei normalen Menschen. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Schlafzyklus bei DSPD: Der Rhythmus ist stabil und driftet nicht, aber die gesamte Schlafphase liegt deutlich später als bei normalen Menschen. © Philo" />
+  <figcaption>Schlafzyklus bei DSPD: Der Rhythmus ist stabil und driftet nicht, aber die gesamte Schlafphase liegt deutlich später als bei normalen Menschen. © Philo</figcaption>
+</figure>
 
 Die Non-24-Stunden-Schlaf-Wach-Störung (Non-24) ist eine seltene zirkadiane Rhythmusstörung. Bei Betroffenen ist die innere Uhr länger als 24 Stunden (typischerweise etwa 25 Stunden), was dazu führt, dass sich die Einschlaf- und Aufwachzeiten täglich um 1 bis 2 Stunden nach hinten verschieben. Eine Anpassung an den normalen gesellschaftlichen Rhythmus ist dadurch unmöglich.
 
 Kurz gesagt, bei Non-24 verschiebt sich die Einschlafzeit jeden Tag weiter nach hinten, bis Tag und Nacht vertauscht sind, und dann wieder nach vorne, wodurch ein vollständiger Zyklus entsteht. Es gibt keinen festen Anfang oder Ende, nur einen ununterbrochenen Kreislauf.
 
-![Schlafzyklus bei Non-24: Die Einschlafzeit verschiebt sich täglich nach hinten, gleitet wie eine Treppe immer weiter ab, immer wieder. © Philo](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Schlafzyklus bei Non-24: Die Einschlafzeit verschiebt sich täglich nach hinten, gleitet wie eine Treppe immer weiter ab, immer wieder. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Schlafzyklus bei Non-24: Die Einschlafzeit verschiebt sich täglich nach hinten, gleitet wie eine Treppe immer weiter ab, immer wieder. © Philo" />
+  <figcaption>Schlafzyklus bei Non-24: Die Einschlafzeit verschiebt sich täglich nach hinten, gleitet wie eine Treppe immer weiter ab, immer wieder. © Philo</figcaption>
+</figure>
 
 Warum verlieren manche Menschen die Fähigkeit, sich durch Licht zu synchronisieren? Am häufigsten tritt dies bei vollständig blinden Menschen auf; ein sehr hoher Anteil von ihnen (insbesondere jene ohne jegliche Lichtwahrnehmung) entwickelt Non-24-Symptome. Das liegt daran, dass die Lichtsignale zur Synchronisation der inneren Uhr über die Augen laufen müssen. Ohne Lichteinfall kann die Uhr nur von selbst nach hinten driften. Es gibt aber auch eine sehr kleine Zahl sehender Menschen, die ihre innere Uhr ebenfalls nicht durch Licht synchronisieren können.
 
@@ -122,8 +141,10 @@ Wie lässt sich also herausfinden, wie die eigene innere Uhr tickt?
 
 Die einfachste Methode ist, über mehrere Wochen ein Schlaftagebuch zu führen. Wer eine Smartwatch besitzt, kann auch deren Schlaftracking-Daten nutzen. Beobachten Sie, zu welchen Zeiten Sie tendenziell einschlafen und aufwachen, wenn Sie keinen Wecker stellen. Achten Sie darauf, ob dieser Zustand stabil ist und ob Sie sich nach dem Aufwachen energiegeladen oder unausgeschlafen fühlen.
 
-![Schlafaufzeichnungen in Smartwatches/Apps sehen so aus – wenn Sie sie mehrere Wochen lang kontinuierlich aufzeichnen, können Sie erkennen, ob Ihr Schlaf-Wach-Rhythmus stabil ist oder driftet.](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Schlafaufzeichnungen in Smartwatches/Apps sehen so aus – wenn Sie sie mehrere Wochen lang kontinuierlich aufzeichnen, können Sie erkennen, ob Ihr Schlaf-Wach-Rhythmus stabil ist oder driftet.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Schlafaufzeichnungen in Smartwatches/Apps sehen so aus – wenn Sie sie mehrere Wochen lang kontinuierlich aufzeichnen, können Sie erkennen, ob Ihr Schlaf-Wach-Rhythmus stabil ist oder driftet." />
+  <figcaption>Schlafaufzeichnungen in Smartwatches/Apps sehen so aus – wenn Sie sie mehrere Wochen lang kontinuierlich aufzeichnen, können Sie erkennen, ob Ihr Schlaf-Wach-Rhythmus stabil ist oder driftet.</figcaption>
+</figure>
 
 Aus den Beobachtungen lässt sich eine grobe Zuordnung treffen: Wenn Sie konstant spät ins Bett gehen – immer erst um zwei oder drei Uhr nachts, aber nach ausreichend Schlaf trotzdem fit sind –, deutet das eher auf DSPD hin. Wenn Ihre Einschlafzeit jeden Tag später ist als am Vortag und immer weiter nach hinten driftet, handelt es sich um Non-24. Und wenn Sie umgekehrt extrem früh schlafen gehen und extrem früh aufwachen, ist es FASPS. Die tatsächliche Diagnose erfordert natürlich immer den Besuch einer spezialisierten Schlafambulanz.
 
@@ -155,11 +176,6 @@ Ich wünsche allen einen erholsamen Schlaf.
 4.  Starke Korrelation zwischen ADHS bei Erwachsenen und verzögerter Schlafphase/zirkadianen Rhythmusstörungen: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Hohe Prävalenz von Non-24 bei vollständig blinden Menschen, Tasimelteon Phase-III-Studien (SET und RESET): Lockley et al., *The Lancet*, 2015, [Link](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Tasimelteon (Hetlioz) von der FDA im Januar 2014 zugelassen, erstes Medikament speziell zur Behandlung von Non-24: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Weitere Lektüre
-
--   [Kann ich mit weniger Schlaf besser schlafen? Ein Selbstversuch zum Thema Schlaf – Tag 1](/zh/blog/hacking-my-sleep-day1)
--   [Wie man einen Zauberwürfel ohne Formeln löst: Auch für Grundschüler verständlich](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

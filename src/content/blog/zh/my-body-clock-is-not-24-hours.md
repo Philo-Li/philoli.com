@@ -11,6 +11,9 @@ tags:
 categories: 日常闲聊
 description: "我的生物钟不是 24 小时，是 24.5 小时。从 2017 诺奖的分子机制讲起，聊聊 DSPD 与 Non-24 两种昼夜节律睡眠障碍，以及我为什么选择顺应而不是对抗。"
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -38,10 +41,12 @@ toc: true
 
 那么生物钟到底是怎么精确调控的？
 
-三位科学家 Jeffrey Hall、Michael Rosbash 和 Michael Young，在小小的果蝇身上找到了生物钟的"发动机"。而且惊人的是，这台发动机不在大脑里，它就在每一个细胞里——你身上几乎每个细胞，都揣着一台自己的钟。
+上世纪 80 年代，三位科学家 Jeffrey Hall、Michael Rosbash 和 Michael Young，在小小的果蝇身上找到了生物钟的"发动机"。而且惊人的是，这台发动机不在大脑里，它就在每一个细胞里——你身上几乎每个细胞，都揣着一台自己的钟。
 
-![Brandeis 杂志对这项发现的报道](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Brandeis 杂志《自然的总计时者》：三位科学家如何在果蝇身上找到生物钟。*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <figcaption>Brandeis 杂志《自然的总计时者》：三位科学家如何在果蝇身上找到生物钟。</figcaption>
+</figure>
 
 它的运作原理，可以用一个"工厂自我关停"的比喻来理解：
 
@@ -53,12 +58,14 @@ toc: true
 4. 产品清空：没有了新指令，PER 蛋白停止生产，同时旧的慢慢被降解掉，仓库渐渐清空。
 5. 重新开工：仓库空了，那个"停产按钮"松开，基因重新启动，工厂又开始生产……
 
-这一整轮"生产 → 堆积 → 自我关停 → 清空 → 重新生产"的循环，走完一遍差不多是 24 小时。这就是生物钟的一次"滴答"。
+这一整轮"转录 → 累积 → 抑制 → 降解 → 去抑制"的循环，走完一遍差不多是 24 小时。这就是生物钟的一次"滴答"。
 
-这在科学上叫转录-翻译负反馈回路（TTFL）。名字很唬人，本质就是上面那个会自己踩刹车的工厂——一个蛋白质多到一定程度就抑制自己生产，靠这个"堆积—清空"的一涨一落，细胞硬是数出了一天的长度。
+这在科学上叫转录-翻译负反馈回路（TTFL）。本质就是上面那个会自己踩刹车的工厂——一个蛋白质多到一定程度就抑制自己生产，靠这个"堆积—清空"的一涨一落，细胞硬是数出了一天的长度。
 
-![转录-翻译负反馈回路（TTFL）示意图](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*把工厂比喻换成科学命名，一整圈就是：转录 → 累积 → 抑制 → 降解 → 去抑制，走完一轮约 24 小时。© Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <figcaption>把工厂比喻换成科学命名，一整圈就是：转录 → 累积 → 抑制 → 降解 → 去抑制，走完一轮约 24 小时。© Philo</figcaption>
+</figure>
 
 Michael Young 还找到了另外两个关键角色，让这台钟更精密：一个叫 TIM 蛋白（Timeless），负责在夜里帮 PER 蛋白进入细胞核去按下停产按钮；还有一个叫 DBT（Doubletime），它的作用是拖慢 PER 蛋白的堆积速度——正是这个"拖慢"，把循环精确地校准在接近 24 小时，而不是十几个小时就跑完一圈。
 
@@ -68,11 +75,15 @@ Michael Young 还找到了另外两个关键角色，让这台钟更精密：一
 
 这套机制的发现并非一蹴而就：早在 1971 年，Konopka 和 Benzer 就发现了生物钟异常的突变果蝇；1984 年，Hall、Rosbash、Young 三个实验室几乎同时克隆出了关键的 period 基因；此后整个 1990 年代，他们才逐步拼出上面这套负反馈回路的机制（比如 Young 在 1994 年找到了 timeless 基因）。这一系列工作，最终获得了 2017 年的诺贝尔生理学或医学奖。
 
-![PNAS 回顾 Konopka 与 Benzer 的研究](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*故事的起点：1971 年 Konopka 与 Benzer 发现了生物钟异常的突变果蝇。*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <figcaption>故事的起点：1971 年 Konopka 与 Benzer 发现了生物钟异常的突变果蝇。</figcaption>
+</figure>
 
-![2017 年诺贝尔生理学或医学奖三位得主](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*终点：2017 年诺贝尔生理学或医学奖，授予 Hall、Rosbash、Young。*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <figcaption>终点：2017 年诺贝尔生理学或医学奖，授予 Hall、Rosbash、Young。</figcaption>
+</figure>
 
 ## 绝大多数人的生物钟都不是 24 小时
 
@@ -82,15 +93,19 @@ Michael Young 还找到了另外两个关键角色，让这台钟更精密：一
 
 答案是 24.2 小时左右，略大于 24。也就是说，几乎每个人的生物钟天生都比地球慢一点点。
 
-![Science 期刊：人类昼夜节律接近 24 小时的研究](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler 等人 1999 年发表于《Science》，测得人类内源节律约 24.18 小时。*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <figcaption>Czeisler 等人 1999 年发表于《Science》，测得人类内源节律约 24.18 小时。</figcaption>
+</figure>
 
 那为什么大多数人还能维持规律作息？答案是：光。
 
 你视网膜里有一类特殊细胞（ipRGC），它们不负责成像，只负责把"现在有没有光"汇报给 SCN，这个过程叫光牵引（Entrainment）。每天清晨的光，就是把那个走慢的钟往前拨一点，重新对齐到 24 小时。正常人靠这套机制，每天把自己那多出来的十几分钟抹平。
 
-![正常人的睡眠周期](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*正常人的睡眠周期：入睡、起床时间稳定，睡眠带齐平不漂移。© Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <figcaption>正常人的睡眠周期：入睡、起床时间稳定，睡眠带齐平不漂移。© Philo</figcaption>
+</figure>
 
 而少数人这套"每天靠光对时"的机制出了问题，就表现为下面要讲的两种睡眠障碍。
 
@@ -102,15 +117,19 @@ DSPD（睡眠相位后移障碍）是一种慢性昼夜节律紊乱，患者的�
 
 DSPD 简单来说，就是你不到夜里两三点睡不着，但是到点一定能睡着，睡上 7-8 小时照样起床，醒来之后的白天一样精力很好。而且近些年有大量研究发现，成人 ADHD 和 DSPD 高度相关，DSPD 是他们最常见的昼夜节律障碍。
 
-![DSPD 的睡眠周期](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*DSPD 的睡眠周期：作息稳定不漂移，但整段睡眠比正常人明显偏晚。© Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <figcaption>DSPD 的睡眠周期：作息稳定不漂移，但整段睡眠比正常人明显偏晚。© Philo</figcaption>
+</figure>
 
 非 24 小时睡眠觉醒障碍（Non-24-hour sleep-wake disorder, 简称 Non-24）是一种罕见的昼夜节律紊乱。患者体内的生物钟超过 24 小时（通常为 25 小时左右），导致入睡和起床时间每天向后推迟 1 至 2 小时，无法适应正常的社会作息。
 
 简单说，Non-24 就是每一天的入睡时间都比前一天更晚，不断晚下去，直到昼夜颠倒，再往前，形成完整的循环。无所谓开始和结束，就是不断循环。
 
-![Non-24 的睡眠周期](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Non-24 的睡眠周期：入睡时间逐日往后，像楼梯一样不断下滑，周而复始。© Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <figcaption>Non-24 的睡眠周期：入睡时间逐日往后，像楼梯一样不断下滑，周而复始。© Philo</figcaption>
+</figure>
 
 那为什么有的人会彻底失去被光校准的能力？最常见于全盲群体，非常大比例的全盲人士（尤其是完全没有光感的人）就会出现 Non-24 症状——因为校准生物钟的光信号要走眼睛这条路，收不到光，钟就只能自己往后漂。但也有极少数视力正常的人，同样无法用光校准生物钟。
 
@@ -122,8 +141,10 @@ DSPD 简单来说，就是你不到夜里两三点睡不着，但是到点一定
 
 最简单的方法就是，连续几周记录睡眠日记，如果还有智能手表，现在的智能手表也会有睡眠周期记录，然后观察如果不刻意定闹钟，自己会倾向于几点睡觉几点起床，并且这个状态是否稳定，起床之后是觉得精力良好还是睡眠不足。
 
-![智能手表里的睡眠记录](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*智能手表 / App 里的睡眠记录长这样——连续记录几周，就能看出自己的作息是稳定还是在漂移。*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <figcaption>智能手表 / App 里的睡眠记录长这样——连续记录几周，就能看出自己的作息是稳定还是在漂移。</figcaption>
+</figure>
 
 观察下来大致能对号入座：如果你稳定地偏晚——总在两三点才睡、但睡够了照样精神——更像 DSPD；如果入睡时间每天都比前一天更晚、不断往后漂，是 Non-24；如果反过来极早睡、极早醒，则是 FASPS。当然，真正的确诊还得靠专业的睡眠门诊。
 
@@ -155,11 +176,6 @@ DSPD 简单来说，就是你不到夜里两三点睡不着，但是到点一定
 4. 成人 ADHD 与睡眠时相延迟/昼夜节律紊乱高度相关：[ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/)、[Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5. Non-24 在全盲人群中高发、Tasimelteon 三期临床试验（SET 与 RESET）：Lockley et al., *The Lancet*, 2015，[链接](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6. Tasimelteon（Hetlioz）于 2014 年 1 月获 FDA 批准，为首个专门治疗 Non-24 的药物：[Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## 更多阅读
-
-- [我能用更少的时间睡得更好吗？一个关于睡眠的自我实验 Day 1](/zh/blog/hacking-my-sleep-day1)
-- [如何不背公式解开魔方：小学生也能看懂](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

@@ -11,6 +11,9 @@ tags:
 categories: Günlük sohbet
 description: "Biyolojik saatim 24 değil, 24.5 saat. 2017 Nobel Ödüllü moleküler mekanizmadan başlayarak, DSPD ve Non-24 adlı iki sirkadiyen ritim uyku bozukluğunu ve neden onlara karşı savaşmak yerine uyum sağlamayı seçtiğimi anlatıyorum."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Peki, biyolojik saat tam olarak nasıl bir hassasiyetle düzenleniyor?
 
 Jeffrey Hall, Michael Rosbash ve Michael Young adlı üç bilim insanı, biyolojik saatin "motorunu" küçücük meyve sineklerinde buldu. Ve şaşırtıcı olan şu ki, bu motor beyinde değil, her hücrenin içinde yer alıyor – vücudunuzdaki hemen hemen her hücre, kendi saatini taşıyor.
 
-![Brandeis dergisinin bu keşfi hakkındaki haberi](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Brandeis dergisinin "Doğanın Büyük Zaman Tutucusu" başlıklı yazısı: Üç bilim insanı biyolojik saati meyve sineklerinde nasıl buldu.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis dergisinin bu keşfi hakkındaki haberi" />
+  <figcaption>Brandeis dergisinin "Doğanın Büyük Zaman Tutucusu" başlıklı yazısı: Üç bilim insanı biyolojik saati meyve sineklerinde nasıl buldu.</figcaption>
+</figure>
 
 Çalışma prensibini, bir "kendi kendini kapatan fabrika" benzetmesiyle anlayabiliriz:
 
@@ -57,8 +62,10 @@ Bu "üretim → birikim → kendi kendini durdurma → boşaltma → yeniden ür
 
 Bilimsel olarak buna transkripsiyon-translasyon negatif geri besleme döngüsü (TTFL) deniyor. İsmi kulağa karmaşık gelse de, özünde yukarıda bahsettiğimiz kendi kendine fren yapan fabrika gibidir – bir protein belirli bir seviyeye ulaştığında kendi üretimini engeller. İşte bu "birikme-boşalma" döngüsü sayesinde hücreler, bir günün uzunluğunu adeta sayar.
 
-![Transkripsiyon-Translasyon Negatif Geri Besleme Döngüsü (TTFL) şeması](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Fabrika benzetmesini bilimsel isimlerle değiştirdiğimizde, tam döngü şöyledir: Transkripsiyon → Birikim → İnhibisyon → Bozunma → De-inhibisyon. Bir turu yaklaşık 24 saat sürer. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkripsiyon-Translasyon Negatif Geri Besleme Döngüsü (TTFL) şeması" />
+  <figcaption>Fabrika benzetmesini bilimsel isimlerle değiştirdiğimizde, tam döngü şöyledir: Transkripsiyon → Birikim → İnhibisyon → Bozunma → De-inhibisyon. Bir turu yaklaşık 24 saat sürer. © Philo</figcaption>
+</figure>
 
 Michael Young, bu saati daha da hassas hale getiren iki önemli rol daha keşfetti: Biri TIM proteini (Timeless), geceleyin PER proteininin hücre çekirdeğine girerek üretim durdurma düğmesine basmasına yardımcı olur; diğeri ise DBT (Doubletime), PER proteininin birikme hızını yavaşlatır – işte bu "yavaşlatma" sayesinde döngü, birkaç saatte değil, tam da 24 saate yakın bir süreye hassas bir şekilde ayarlanır.
 
@@ -68,11 +75,15 @@ Evet, biyolojik saat gerçekten var, bir yanılsama değil.
 
 Bu mekanizmanın keşfi bir çırpıda gerçekleşmedi: Daha 1971'de Konopka ve Benzer, biyolojik saati anormal olan mutant meyve sineklerini keşfetmişlerdi; 1984'te Hall, Rosbash ve Young'ın üç laboratuvarı neredeyse eş zamanlı olarak kritik *period* genini klonladı; ardından 1990'lar boyunca, yukarıda anlatılan negatif geri besleme döngüsünün mekanizmasını (örneğin Young, 1994'te *timeless* genini buldu) kademeli olarak bir araya getirdiler. Bu çalışmaların tümü, nihayetinde 2017 Nobel Fizyoloji veya Tıp Ödülü'nü kazandırdı.
 
-![PNAS, Konopka ve Benzer'in araştırmasını gözden geçiriyor](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Hikayenin başlangıcı: 1971'de Konopka ve Benzer, biyolojik saati anormal olan mutant meyve sineklerini keşfetti.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS, Konopka ve Benzer'in araştırmasını gözden geçiriyor" />
+  <figcaption>Hikayenin başlangıcı: 1971'de Konopka ve Benzer, biyolojik saati anormal olan mutant meyve sineklerini keşfetti.</figcaption>
+</figure>
 
-![2017 Nobel Fizyoloji veya Tıp Ödülü'nün üç sahibi](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Son nokta: 2017 Nobel Fizyoloji veya Tıp Ödülü, Hall, Rosbash, Young'a verildi.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 Nobel Fizyoloji veya Tıp Ödülü'nün üç sahibi" />
+  <figcaption>Son nokta: 2017 Nobel Fizyoloji veya Tıp Ödülü, Hall, Rosbash, Young'a verildi.</figcaption>
+</figure>
 
 ## Çoğu İnsanın Biyolojik Saati 24 Saat Değildir
 
@@ -82,15 +93,19 @@ Bir kişi dış zaman ipuçlarından tamamen izole edildiğinde, uyku-uyanıklı
 
 Cevap yaklaşık 24.2 saat, yani 24'ten biraz daha uzun. Bu da demek oluyor ki, neredeyse herkesin biyolojik saati doğuştan dünyanınkinden biraz daha yavaş işler.
 
-![Science dergisinden: İnsan sirkadiyen ritmi 24 saate yakın](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler ve arkadaşları, 1999'da *Science* dergisinde yayımlanan çalışmalarında insan içsel ritminin yaklaşık 24.18 saat olduğunu ölçtü.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science dergisinden: İnsan sirkadiyen ritmi 24 saate yakın" />
+  <figcaption>Czeisler ve arkadaşları, 1999'da <em>Science</em> dergisinde yayımlanan çalışmalarında insan içsel ritminin yaklaşık 24.18 saat olduğunu ölçtü.</figcaption>
+</figure>
 
 Peki, çoğu insan neden düzenli bir uyku düzenini sürdürebiliyor? Cevap: Işık.
 
 Retinanızda, görüntülemeden sorumlu olmayan, sadece "şu an ışık var mı" bilgisini SCN'e bildiren özel bir hücre tipi (ipRGC) bulunur. Bu sürece foto-entrainment (ışıkla uyumlanma) denir. Her sabahki ışık, o yavaş çalışan saati biraz ileri alarak 24 saate yeniden hizalar. Normal insanlar bu mekanizma sayesinde her gün o fazladan on küsur dakikayı dengeler.
 
-![Normal insanların uyku döngüsü](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Normal insanların uyku döngüsü: Uykuya dalma ve uyanma saatleri sabit, uyku bandı düz ve kaymaz. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Normal insanların uyku döngüsü" />
+  <figcaption>Normal insanların uyku döngüsü: Uykuya dalma ve uyanma saatleri sabit, uyku bandı düz ve kaymaz. © Philo</figcaption>
+</figure>
 
 Ancak bazı kişilerde bu "her gün ışıkla ayar çekme" mekanizması sorunlu olduğunda, aşağıda bahsedeceğimiz iki uyku bozukluğu ortaya çıkar.
 
@@ -102,15 +117,19 @@ DSPD (Gecikmiş Uyku Fazı Bozukluğu), hastanın biyolojik saatinin normal zama
 
 Basitçe ifade etmek gerekirse, DSPD, gece iki-üçe kadar uyuyamamanız ama zamanı geldiğinde kesinlikle uykuya dalabilmeniz, 7-8 saat uyuduktan sonra yine uyanabilmeniz ve uyandıktan sonra gün içinde enerjinizin yerinde olması demektir. Ayrıca son yıllarda yapılan çok sayıda araştırma, yetişkin DEHB ile DSPD arasında güçlü bir ilişki olduğunu ve DSPD'nin bu kişilerde en sık görülen sirkadiyen ritim bozukluğu olduğunu ortaya koymuştur.
 
-![DSPD'li kişilerin uyku döngüsü](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*DSPD'li kişilerin uyku döngüsü: Düzen sabittir, kayma göstermez, ancak tüm uyku süresi normal insanlardan belirgin şekilde daha geçtir. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD'li kişilerin uyku döngüsü" />
+  <figcaption>DSPD'li kişilerin uyku döngüsü: Düzen sabittir, kayma göstermez, ancak tüm uyku süresi normal insanlardan belirgin şekilde daha geçtir. © Philo</figcaption>
+</figure>
 
 24 Saatten Uzun Uyku-Uyanıklık Bozukluğu (Non-24), nadir görülen bir sirkadiyen ritim bozukluğudur. Bu bozukluğa sahip kişilerin iç biyolojik saati 24 saati aşar (genellikle 25 saat civarı), bu da uykuya dalma ve uyanma saatlerinin her gün 1 ila 2 saat ileri kaymasına neden olur ve normal sosyal düzene uyum sağlamalarını imkansız hale getirir.
 
 Basitçe söylemek gerekirse, Non-24, her gün uykuya dalma saatinin bir önceki günden daha geç olması, sürekli ertelenerek gündüzle gecenin yer değiştirmesi ve sonra tekrar ileri giderek tam bir döngü oluşturmasıdır. Başlangıcı veya sonu olmayan, sürekli devam eden bir döngü.
 
-![Non-24 uyku döngüsü](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Non-24 uyku döngüsü: Uykuya dalma saati her gün geriye doğru kayar, bir merdiven gibi sürekli aşağı iner ve bu durum tekrar tekrar devam eder. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 uyku döngüsü" />
+  <figcaption>Non-24 uyku döngüsü: Uykuya dalma saati her gün geriye doğru kayar, bir merdiven gibi sürekli aşağı iner ve bu durum tekrar tekrar devam eder. © Philo</figcaption>
+</figure>
 
 Peki, bazı insanlar neden ışıkla senkronize olma yeteneğini tamamen kaybeder? Bu durum en sık tam görme engelli kişilerde görülür; tam görme engelli kişilerin (özellikle hiç ışık algısı olmayanların) çok büyük bir kısmında Non-24 semptomları ortaya çıkar – çünkü biyolojik saati ayarlayan ışık sinyalleri gözler yoluyla ilerler ve ışık algılanmadığında saat kendi kendine geriye kaymaya başlar. Ancak, çok az sayıda görme yetisi normal olan kişi de biyolojik saatini ışıkla ayarlayamaz.
 
@@ -122,8 +141,10 @@ Peki, kendi biyolojik saatinizin hangi türde olduğunu nasıl anlayabilirsiniz?
 
 En basit yöntem, birkaç hafta boyunca uyku günlüğü tutmaktır. Eğer akıllı saatiniz varsa, günümüz akıllı saatleri de uyku döngülerini kaydeder. Ardından, bilerek alarm kurmadan kaçta uyuyup kaçta uyandığınızı, bu durumun istikrarlı olup olmadığını ve uyandıktan sonra kendinizi enerjik mi yoksa uykusuz mu hissettiğinizi gözlemleyin.
 
-![Akıllı saat / uygulamalardaki uyku kayıtları](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Akıllı saat / uygulamalardaki uyku kayıtları bu şekildedir – birkaç hafta boyunca sürekli kayıt tutarak, uyku düzeninizin istikrarlı mı yoksa kaygan mı olduğunu görebilirsiniz.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Akıllı saat / uygulamalardaki uyku kayıtları" />
+  <figcaption>Akıllı saat / uygulamalardaki uyku kayıtları bu şekildedir – birkaç hafta boyunca sürekli kayıt tutarak, uyku düzeninizin istikrarlı mı yoksa kaygan mı olduğunu görebilirsiniz.</figcaption>
+</figure>
 
 Gözlemler sonucunda kabaca kendinizi konumlandırabilirsiniz: Eğer sürekli geç yatıyorsanız – hep iki-üç gibi uyuyor, ancak yeterince uyuduğunuzda yine de enerjik oluyorsanız – bu daha çok DSPD'ye benzer; eğer uykuya dalma saatiniz her gün bir önceki günden daha geç oluyor, sürekli geriye kayıyorsa, bu Non-24'tür; tam tersi çok erken yatıp çok erken uyanıyorsanız, o zaman FASPS'tir. Elbette, kesin tanı için profesyonel bir uyku kliniğine başvurmak gerekir.
 
@@ -155,11 +176,6 @@ Herkese iyi uykular dilerim.
 4.  Yetişkin DEHB ile uyku fazı gecikmesi/sirkadiyen ritim bozuklukları yüksek oranda ilişkilidir: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Non-24, tam kör popülasyonda yüksek oranda görülür, Tasimelteon Faz III klinik denemeleri (SET ve RESET): Lockley et al., *The Lancet*, 2015, [Bağlantı](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Tasimelteon (Hetlioz), Non-24 tedavisi için ilk spesifik ilaç olarak FDA onayı aldı (Ocak 2014): [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Daha Fazla Okuma
-
--   [Daha Az Uyuyarak Daha İyi Uyuyabilir Miyim? Bir Uyku Deneyimi Gün 1](/zh/blog/hacking-my-sleep-day1)
--   [Formül Ezberlemeden Rubik Küpü Nasıl Çözülür: İlkokul Çocukları Bile Anlayabilir](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

@@ -11,6 +11,9 @@ tags:
 categories: Codzienne rozmowy
 description: "Mój zegar biologiczny nie trwa 24 godzin, lecz 24,5 godziny. Zaczynając od mechanizmu molekularnego nagrody Nobla z 2017 roku, opowiadam o dwóch zaburzeniach rytmu dobowego – DSPD i Non-24 – oraz o tym, dlaczego wybrałem dostosowanie się, a nie walkę."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Jak zatem zegar biologiczny jest precyzyjnie regulowany?
 
 Trzej naukowcy – Jeffrey Hall, Michael Rosbash i Michael Young – odkryli „silnik” zegara biologicznego w niewielkich muszkach owocowych. Co zaskakujące, ten „silnik” nie znajduje się w mózgu, lecz w każdej pojedynczej komórce – niemal każda komórka w twoim ciele nosi swój własny zegar.
 
-![Magazyn Brandeis 'Główny Chronometrażysta Natury': Jak trzej naukowcy odkryli zegar biologiczny u muszek owocowych.](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Magazyn Brandeis „Główny Chronometrażysta Natury”: Jak trzej naukowcy odkryli zegar biologiczny u muszek owocowych.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Magazyn Brandeis 'Główny Chronometrażysta Natury': Jak trzej naukowcy odkryli zegar biologiczny u muszek owocowych." />
+  <figcaption>Magazyn Brandeis „Główny Chronometrażysta Natury”: Jak trzej naukowcy odkryli zegar biologiczny u muszek owocowych.</figcaption>
+</figure>
 
 Zasadę jego działania można zrozumieć, posługując się metaforą „samowyłączającej się fabryki”:
 
@@ -57,8 +62,10 @@ Cały ten cykl – „produkcja → akumulacja → samowyłączenie → opróżn
 
 W nauce nazywa się to pętlą ujemnego sprzężenia zwrotnego transkrypcji-translacji (TTFL). Nazwa brzmi skomplikowanie, ale w istocie jest to ta wspomniana wcześniej fabryka, która sama potrafi nacisnąć hamulec – białko, gdy osiągnie pewien poziom, hamuje swoją własną produkcję. Dzięki temu „gromadzeniu-opróżnianiu”, temu cyklowi wzlotów i upadków, komórka jest w stanie odmierzyć długość jednego dnia.
 
-![Schemat pętli ujemnego sprzężenia zwrotnego transkrypcji-translacji (TTFL)](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Zastępując metaforę fabryki nazewnictwem naukowym, pełny cykl to: transkrypcja → akumulacja → inhibicja → degradacja → dezinhibicja. Jeden obrót trwa około 24 godziny. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Schemat pętli ujemnego sprzężenia zwrotnego transkrypcji-translacji (TTFL)" />
+  <figcaption>Zastępując metaforę fabryki nazewnictwem naukowym, pełny cykl to: transkrypcja → akumulacja → inhibicja → degradacja → dezinhibicja. Jeden obrót trwa około 24 godziny. © Philo</figcaption>
+</figure>
 
 Michael Young odkrył także dwie inne kluczowe role, które sprawiają, że ten zegar jest jeszcze bardziej precyzyjny: białko TIM (Timeless), które w nocy pomaga białku PER dostać się do jądra komórkowego, by nacisnąć przycisk „zatrzymania produkcji”; oraz białko DBT (Doubletime), którego zadaniem jest spowolnienie tempa gromadzenia się białka PER. To właśnie to „spowolnienie” precyzyjnie kalibruje cykl do około 24 godzin, zamiast pozwolić mu zakończyć się po kilkunastu godzinach.
 
@@ -68,11 +75,15 @@ Tak, zegar biologiczny naprawdę istnieje i nie jest to żadne złudzenie.
 
 Odkrycie tego mechanizmu nie nastąpiło z dnia na dzień: już w 1971 roku Konopka i Benzer odkryli zmutowane muszki owocowe z zaburzeniami zegara biologicznego; w 1984 roku trzy laboratoria – Halla, Rosbasha i Younga – niemal jednocześnie sklonowały kluczowy gen *period*; dopiero później, przez całe lata 90., stopniowo składali mechanizm wspomnianej pętli ujemnego sprzężenia zwrotnego (np. Young w 1994 roku odnalazł gen *timeless*). Cała ta seria prac ostatecznie zaowocowała Nagrodą Nobla w dziedzinie fizjologii lub medycyny w 2017 roku.
 
-![Artykuł PNAS przeglądający badania Konopki i Benzera](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Początek historii: W 1971 roku Konopka i Benzer odkryli zmutowane muszki owocowe z zaburzeniami zegara biologicznego.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="Artykuł PNAS przeglądający badania Konopki i Benzera" />
+  <figcaption>Początek historii: W 1971 roku Konopka i Benzer odkryli zmutowane muszki owocowe z zaburzeniami zegara biologicznego.</figcaption>
+</figure>
 
-![Trzej laureaci Nagrody Nobla w dziedzinie fizjologii lub medycyny z 2017 roku](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Zakończenie: Nagroda Nobla w dziedzinie fizjologii lub medycyny za rok 2017, przyznana Hallowi, Rosbashowi i Youngowi.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Trzej laureaci Nagrody Nobla w dziedzinie fizjologii lub medycyny z 2017 roku" />
+  <figcaption>Zakończenie: Nagroda Nobla w dziedzinie fizjologii lub medycyny za rok 2017, przyznana Hallowi, Rosbashowi i Youngowi.</figcaption>
+</figure>
 
 ## Większość zegarów biologicznych nie trwa 24 godzin
 
@@ -82,15 +93,19 @@ Ile godzin będzie trwał cykl snu i czuwania osoby całkowicie odizolowanej od 
 
 Odpowiedź to około 24,2 godziny, czyli nieco więcej niż 24. Oznacza to, że niemal każdy zegar biologiczny jest z natury nieco wolniejszy niż rytm Ziemi.
 
-![Artykuł w Science: Badanie ludzkiego rytmu okołodobowego zbliżonego do 24 godzin](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler i inni, artykuł opublikowany w „Science” w 1999 roku, zmierzyli endogenny rytm ludzki na około 24,18 godziny.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Artykuł w Science: Badanie ludzkiego rytmu okołodobowego zbliżonego do 24 godzin" />
+  <figcaption>Czeisler i inni, artykuł opublikowany w „Science” w 1999 roku, zmierzyli endogenny rytm ludzki na około 24,18 godziny.</figcaption>
+</figure>
 
 Dlaczego zatem większość ludzi potrafi utrzymać regularny rytm dnia? Odpowiedź brzmi: światło.
 
 W twojej siatkówce znajdują się specjalne komórki (ipRGC), które nie odpowiadają za widzenie, lecz wyłącznie za przekazywanie informacji do SCN o tym, „czy jest teraz światło”. Ten proces nazywamy synchronizacją świetlną (Entrainment). Światło każdego poranka „przestawia” ten wolniejszy zegar nieco do przodu, ponownie kalibrując go do 24 godzin. Dzięki temu mechanizmowi zdrowi ludzie każdego dnia „niwelują” te dodatkowe kilkanaście minut.
 
-![Cykl snu osoby bez zaburzeń](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Cykl snu osoby bez zaburzeń: Stabilne godziny zasypiania i budzenia, równy i stabilny rytm snu. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Cykl snu osoby bez zaburzeń" />
+  <figcaption>Cykl snu osoby bez zaburzeń: Stabilne godziny zasypiania i budzenia, równy i stabilny rytm snu. © Philo</figcaption>
+</figure>
 
 U nielicznych osób, u których ten mechanizm „codziennego synchronizowania zegara światłem” zawodzi, pojawiają się dwa rodzaje zaburzeń snu, o których opowiem poniżej.
 
@@ -102,15 +117,19 @@ DSPD (zespół opóźnionej fazy snu) to przewlekłe zaburzenie rytmu dobowego, 
 
 W uproszczeniu, DSPD oznacza, że nie jesteś w stanie zasnąć przed drugą lub trzecią w nocy, ale gdy nadejdzie „twój” czas, bez problemu zaśniesz. Po 7-8 godzinach snu obudzisz się i będziesz mieć dużo energii w ciągu dnia. Co więcej, w ostatnich latach liczne badania wykazały silny związek między ADHD u dorosłych a DSPD, które jest najczęstszym zaburzeniem rytmu dobowego u osób z ADHD.
 
-![Cykl snu DSPD](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*Cykl snu DSPD: Rytm snu stabilny, ale cały okres snu jest wyraźnie opóźniony w porównaniu do osób bez zaburzeń. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Cykl snu DSPD" />
+  <figcaption>Cykl snu DSPD: Rytm snu stabilny, ale cały okres snu jest wyraźnie opóźniony w porównaniu do osób bez zaburzeń. © Philo</figcaption>
+</figure>
 
 Non-24 (Non-24-hour sleep-wake disorder) to rzadkie zaburzenie rytmu dobowego. Zegar biologiczny pacjentów przekracza 24 godziny (zazwyczaj wynosi około 25 godzin), co skutkuje codziennym przesunięciem godzin zasypiania i budzenia o 1 do 2 godzin do tyłu. Uniemożliwia to dostosowanie się do normalnego, społecznie akceptowanego rytmu dnia.
 
 Mówiąc prościej, Non-24 oznacza, że godzina zasypiania każdego dnia jest późniejsza niż poprzedniego. Ten cykl postępuje, aż do całkowitego odwrócenia rytmu dnia i nocy, po czym ponownie się przesuwa, tworząc pełne koło. To niekończący się, ciągły cykl, bez wyraźnego początku czy końca.
 
-![Cykl snu Non-24](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Cykl snu Non-24: Czas zasypiania przesuwa się każdego dnia do tyłu, stopniowo opadając niczym po schodach, w kółko. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Cykl snu Non-24" />
+  <figcaption>Cykl snu Non-24: Czas zasypiania przesuwa się każdego dnia do tyłu, stopniowo opadając niczym po schodach, w kółko. © Philo</figcaption>
+</figure>
 
 Dlaczego zatem niektórzy ludzie całkowicie tracą zdolność do synchronizacji przez światło? Najczęściej występuje to u osób całkowicie niewidomych, zwłaszcza tych pozbawionych jakiejkolwiek percepcji światła. U nich bardzo często pojawiają się objawy Non-24, ponieważ sygnał świetlny służący do kalibracji zegara biologicznego trafia do mózgu właśnie przez oczy. Bez odbioru światła zegar po prostu „dryfuje” do tyłu. Istnieje jednak również niewielka grupa osób z normalnym wzrokiem, które również nie są w stanie kalibrować swojego zegara biologicznego za pomocą światła.
 
@@ -122,8 +141,10 @@ Jak zatem można dowiedzieć się, jaki jest typ twojego zegara biologicznego?
 
 Najprostszym sposobem jest prowadzenie dziennika snu przez kilka tygodni. Jeśli posiadasz smartwatcha, te nowoczesne urządzenia również rejestrują cykle snu. Następnie obserwuj, o której godzinie masz tendencję do zasypiania i budzenia się, jeśli nie nastawiasz budzika. Zwróć uwagę, czy ten stan jest stabilny i czy po przebudzeniu czujesz się wypoczęty i pełen energii, czy raczej cierpisz na niedobór snu.
 
-![Monitorowanie spójności snu w smartwatchu](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Tak wyglądają zapisy snu w smartwatchu / aplikacji – po kilku tygodniach ciągłego monitorowania można zauważyć, czy twój rytm jest stabilny, czy też dryfuje.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Monitorowanie spójności snu w smartwatchu" />
+  <figcaption>Tak wyglądają zapisy snu w smartwatchu / aplikacji – po kilku tygodniach ciągłego monitorowania można zauważyć, czy twój rytm jest stabilny, czy też dryfuje.</figcaption>
+</figure>
 
 Po dokonaniu obserwacji możesz z grubsza przypisać się do jednej z kategorii: jeśli konsekwentnie zasypiasz późno – zawsze około drugiej lub trzeciej, ale po wystarczającej ilości snu i tak jesteś pełen energii – to bardziej przypomina DSPD; jeśli czas zasypiania jest każdego dnia późniejszy niż poprzedniego i stale się przesuwa, to jest to Non-24; jeśli natomiast zasypiasz bardzo wcześnie i budzisz się bardzo wcześnie, to mamy do czynienia z FASPS. Oczywiście, prawdziwa diagnoza wymaga wizyty w specjalistycznej klinice snu.
 
@@ -155,11 +176,6 @@ Chcę powiedzieć: nie jesteś leniwy, ani nie brakuje ci samodyscypliny. Po pro
 4.  ADHD u dorosłych i opóźnienie fazy snu/zaburzenia rytmu dobowego są ze sobą silnie powiązane: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Non-24 często występuje u osób całkowicie niewidomych, badania kliniczne fazy III Tasimelteonu (SET i RESET): Lockley et al., *The Lancet*, 2015, [link](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Tasimelteon (Hetlioz) został zatwierdzony przez FDA w styczniu 2014 roku jako pierwszy lek specjalnie do leczenia Non-24: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Więcej do poczytania
-
-- [Czy mogę spać lepiej, śpiąc krócej? Mój eksperyment ze snem – Dzień 1](/zh/blog/hacking-my-sleep-day1)
-- [Jak rozwiązać kostkę Rubika bez formuł: Przewodnik dla każdego, nawet dla dzieci](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

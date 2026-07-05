@@ -11,6 +11,9 @@ tags:
 categories: Hverdagsprat
 description: "Min biologiske klokke er ikke 24 timer, men 24,5 timer. Med utgangspunkt i de molekylære mekanismene bak nobelprisen i 2017, snakker vi om to døgnrytmeforstyrrelser: DSPD og Non-24. Samt hvorfor jeg velger å tilpasse meg i stedet for å kjempe imot."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Men hvordan blir denne biologiske klokken egentlig så nøyaktig regulert?
 
 Tre forskere, Jeffrey Hall, Michael Rosbash og Michael Young, fant den biologiske klokkens «motor» i den lille bananfluen. Det mest forbløffende er at denne motoren ikke sitter i hjernen, men i hver eneste celle – nesten hver eneste celle i kroppen din bærer sin egen lille klokke.
 
-![Brandeis Magazine rapporterer om funnet](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Brandeis Magazine, «Naturens hovedtidsmåler»: Hvordan de tre forskerne fant den biologiske klokken i bananfluen.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis Magazine rapporterer om funnet" />
+  <figcaption>Brandeis Magazine, «Naturens hovedtidsmåler»: Hvordan de tre forskerne fant den biologiske klokken i bananfluen.</figcaption>
+</figure>
 
 Dens virkemåte kan forstås gjennom en metafor om en «fabrikk som stenger seg selv ned»:
 
@@ -57,8 +62,10 @@ Denne hele runden med «produksjon → akkumulering → selvstengning → tømmi
 
 Vitenskapelig kalles dette en transkripsjons-translasjons negativ tilbakekoblingssløyfe (TTFL). Navnet er imponerende, men i bunn og grunn er det den selvbremsende fabrikken nevnt ovenfor – et protein hemmer sin egen produksjon når det når et visst nivå. Ved hjelp av denne «akkumulering-tømming»-syklusen klarer cellene å «måle» lengden på en dag.
 
-![Skjematisk diagram over transkripsjons-translasjons negativ tilbakekoblingssløyfe (TTFL)](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Hvis vi bytter ut fabrikkmetaforen med vitenskapelige termer, blir en hel syklus: transkripsjon → akkumulering → hemming → nedbrytning → de-hemming, som tar rundt 24 timer å fullføre. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Skjematisk diagram over transkripsjons-translasjons negativ tilbakekoblingssløyfe (TTFL)" />
+  <figcaption>Hvis vi bytter ut fabrikkmetaforen med vitenskapelige termer, blir en hel syklus: transkripsjon → akkumulering → hemming → nedbrytning → de-hemming, som tar rundt 24 timer å fullføre. © Philo</figcaption>
+</figure>
 
 Michael Young fant også to andre nøkkelaktører som gjør denne klokken enda mer presis: et protein kalt TIM (Timeless), som hjelper PER-proteinet inn i cellekjernen om natten for å trykke på stoppknappen; og et protein kalt DBT (Doubletime), hvis rolle er å bremse akkumuleringen av PER-protein – det er denne «bremsingen» som kalibrerer syklusen nøyaktig til nær 24 timer, i stedet for å fullføre den på bare et dusin timer.
 
@@ -68,11 +75,15 @@ Ja, den biologiske klokken eksisterer virkelig, det er ingen illusjon.
 
 Oppdagelsen av denne mekanismen skjedde ikke over natten: Allerede i 1971 oppdaget Konopka og Benzer muterte bananfluer med unormal biologisk klokke; i 1984 klonet de tre laboratoriene til Hall, Rosbash og Young nesten samtidig det avgjørende *period*-genet; og deretter, gjennom hele 1990-tallet, satte de gradvis sammen mekanismen for den negative tilbakekoblingssløyfen beskrevet ovenfor (for eksempel fant Young *timeless*-genet i 1994). Dette arbeidet kulminerte med Nobelprisen i fysiologi eller medisin i 2017.
 
-![PNAS gjennomgår Konopka og Benzers forskning](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Starten på historien: I 1971 oppdaget Konopka og Benzer muterte bananfluer med unormal biologisk klokke.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS gjennomgår Konopka og Benzers forskning" />
+  <figcaption>Starten på historien: I 1971 oppdaget Konopka og Benzer muterte bananfluer med unormal biologisk klokke.</figcaption>
+</figure>
 
-![De tre nobelprisvinnerne i fysiologi eller medisin i 2017](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Sluttpunktet: Nobelprisen i fysiologi eller medisin i 2017, tildelt Hall, Rosbash og Young.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="De tre nobelprisvinnerne i fysiologi eller medisin i 2017" />
+  <figcaption>Sluttpunktet: Nobelprisen i fysiologi eller medisin i 2017, tildelt Hall, Rosbash og Young.</figcaption>
+</figure>
 
 ## De fleste menneskers biologiske klokker er ikke 24 timer
 
@@ -82,15 +93,19 @@ Hvis en person er fullstendig isolert fra ytre tidsreferanser, hvor lang blir da
 
 Svaret er rundt 24,2 timer, altså litt lengre enn 24. Dette betyr at nesten alle menneskers biologiske klokke er naturlig litt tregere enn jordens rotasjon.
 
-![Science Journal: Forskning på menneskelig døgnrytme nær 24 timer](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler et al. publiserte i *Science* i 1999, hvor de målte menneskers endogene rytme til å være ca. 24,18 timer.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science Journal: Forskning på menneskelig døgnrytme nær 24 timer" />
+  <figcaption>Czeisler et al. publiserte i <em>Science</em> i 1999, hvor de målte menneskers endogene rytme til å være ca. 24,18 timer.</figcaption>
+</figure>
 
 Så hvorfor klarer de fleste å opprettholde en jevn døgnrytme? Svaret er: lys.
 
 I netthinnen din finnes det en spesiell type celler (ipRGC) som ikke er ansvarlige for bildeformasjon, men kun for å rapportere «er det lys nå?» til SCN. Denne prosessen kalles lys-synkronisering (Entrainment). Hver morgen justerer lyset den saktegående klokken litt frem, slik at den synkroniseres til 24 timer igjen. Ved hjelp av denne mekanismen utjevner normale mennesker de ekstra minuttene hver dag.
 
-![Normal søvnsyklus](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Normal søvnsyklus: Stabile innsovnings- og oppvåkningstider, søvnfasen er jevn og driver ikke. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Normal søvnsyklus" />
+  <figcaption>Normal søvnsyklus: Stabile innsovnings- og oppvåkningstider, søvnfasen er jevn og driver ikke. © Philo</figcaption>
+</figure>
 
 For et mindretall av mennesker fungerer denne «daglige lysjusteringen»-mekanismen ikke som den skal, noe som manifesterer seg som de to søvnforstyrrelsene vi skal snakke om nå.
 
@@ -102,15 +117,19 @@ DSPD (Delayed Sleep Phase Disorder) er en kronisk døgnrytmelidelse der pasiente
 
 Enkelt sagt, med DSPD får du ikke sove før kl. to-tre om natten, men når du først sovner, sover du godt. Etter 7-8 timer våkner du likevel og har god energi gjennom dagen. De siste årene har mye forskning vist en sterk sammenheng mellom ADHD hos voksne og DSPD, der DSPD er den vanligste døgnrytmelidelsen blant dem.
 
-![DSPD søvnsyklus](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*DSPD-søvnsyklus: Døgnrytmen er stabil og driver ikke, men hele søvnperioden er betydelig forsinket sammenlignet med normale mennesker. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD søvnsyklus" />
+  <figcaption>DSPD-søvnsyklus: Døgnrytmen er stabil og driver ikke, men hele søvnperioden er betydelig forsinket sammenlignet med normale mennesker. © Philo</figcaption>
+</figure>
 
 Non-24-hour Sleep-Wake Disorder, forkortet Non-24, er en sjelden døgnrytmelidelse. Pasientens biologiske klokke er lengre enn 24 timer (vanligvis rundt 25 timer), noe som fører til at innsovnings- og oppvåkningstiden forskyves 1 til 2 timer bakover hver dag, og de klarer ikke å tilpasse seg en normal sosial døgnrytme.
 
 Enkelt sagt, med Non-24 blir innsovningstiden senere hver dag enn den var dagen før, og dette fortsetter til døgnrytmen er snudd på hodet, før den fortsetter fremover igjen, og danner en komplett syklus. Det er ingen begynnelse eller slutt, bare en konstant syklus.
 
-![Non-24 søvnsyklus](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Non-24 søvnsyklus: Innsovningstiden forskyves dag for dag, sklir nedover som en trapp, og gjentar seg i det uendelige. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 søvnsyklus" />
+  <figcaption>Non-24 søvnsyklus: Innsovningstiden forskyves dag for dag, sklir nedover som en trapp, og gjentar seg i det uendelige. © Philo</figcaption>
+</figure>
 
 Hvorfor mister noen mennesker fullstendig evnen til å synkroniseres av lys? Dette er mest vanlig blant blinde, der en svært stor andel (spesielt de som ikke har noen lysfølelse i det hele tatt) utvikler Non-24-symptomer – fordi lyssignalene som kalibrerer den biologiske klokken, går via øynene. Uten lys, vil klokken bare drive bakover av seg selv. Men det finnes også et svært lite antall mennesker med normalt syn som likevel ikke klarer å kalibrere sin biologiske klokke med lys.
 
@@ -122,8 +141,10 @@ Så, hvordan kan du finne ut hvilken type biologisk klokke du har?
 
 Den enkleste måten er å føre en søvndagbok i flere uker. Har du en smartklokke, vil den også registrere søvnsyklusen din. Observer deretter når du pleier å legge deg og stå opp hvis du ikke bevisst setter en alarm, om denne tilstanden er stabil, og om du føler deg uthvilt eller søvnberøvet etter å ha våknet.
 
-![Søvnregistreringer i smartklokken](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Slik kan søvnregistreringer i smartklokker/apper se ut – ved å registrere i flere uker, kan du se om døgnrytmen din er stabil eller om den driver.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Søvnregistreringer i smartklokken" />
+  <figcaption>Slik kan søvnregistreringer i smartklokker/apper se ut – ved å registrere i flere uker, kan du se om døgnrytmen din er stabil eller om den driver.</figcaption>
+</figure>
 
 Etter observasjon kan du stort sett plassere deg i riktig kategori: Hvis du stabilt legger deg sent – alltid sovner i to-tre-tiden, men er likevel uthvilt når du har fått nok søvn – ligner det mer på DSPD. Hvis innsovningstiden er senere hver dag enn dagen før og stadig forskyves bakover, er det Non-24. Og hvis du derimot legger deg ekstremt tidlig og våkner ekstremt tidlig, er det FASPS. Selvfølgelig krever en endelig diagnose en profesjonell søvnklinikk.
 
@@ -155,11 +176,6 @@ Jeg ønsker alle en god natts søvn.
 4.  Sterk sammenheng mellom ADHD hos voksne og forsinket søvnfase/døgnrytmelidelser: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Høy forekomst av Non-24 blant blinde, Tasimelteon fase III kliniske studier (SET og RESET): Lockley et al., *The Lancet*, 2015, [lenke](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Tasimelteon (Hetlioz) ble godkjent av FDA i januar 2014, som det første legemiddelet spesielt for behandling av Non-24: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Mer lesestoff
-
-- [Kan jeg sove bedre på mindre tid? Et søvn-selveksperiment Dag 1](/zh/blog/hacking-my-sleep-day1)
-- [Hvordan løse en Rubiks kube uten formler: Selv barneskoleelever kan forstå det](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

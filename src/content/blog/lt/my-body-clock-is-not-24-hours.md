@@ -11,6 +11,9 @@ tags:
 categories: Kasdienis pokalbis
 description: "Mano biologinis laikrodis nėra 24 valandų – jis yra 24,5 valandos. Aptarsiu DSPD ir Non-24 cirkadinius miego sutrikimus, pradėdamas nuo 2017 m. Nobelio premijos laureatų atrastų molekulinių mechanizmų, ir paaiškinsiu, kodėl renkuosi prisitaikyti prie savo ritmo, o ne jam priešintis."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Kaip gi tiksliai reguliuojamas šis biologinis laikrodis?
 
 Trys mokslininkai – Jeffrey Hall, Michael Rosbash ir Michael Young – mažytėse vaisinėse muselėse atrado biologinio laikrodžio „variklį“. Ir stebėtina, kad šis variklis yra ne smegenyse, o kiekvienoje ląstelėje – beveik kiekviena jūsų kūno ląstelė turi savo vidinį laikrodį.
 
-![Brandeis žurnalo straipsnis apie šį atradimą](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Žurnalo „Brandeis“ straipsnis „Gamtos pagrindinis laiko matuoklis“: kaip trys mokslininkai atrado biologinį laikrodį vaisinėse muselėse.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis žurnalo straipsnis apie šį atradimą" />
+  <figcaption>Žurnalo „Brandeis“ straipsnis „Gamtos pagrindinis laiko matuoklis“: kaip trys mokslininkai atrado biologinį laikrodį vaisinėse muselėse.</figcaption>
+</figure>
 
 Jo veikimo principą galima suprasti pasitelkus „gamyklos savaiminio uždarymo“ analogiją:
 
@@ -57,8 +62,10 @@ Visas šis „gamybos → kaupimosi → savaiminio sustabdymo → ištuštinimo 
 
 Moksliškai tai vadinama transkripcijos-transliacijos neigiamo grįžtamojo ryšio kilpa (TTFL). Nors pavadinimas skamba sudėtingai, iš esmės tai yra ta pati „gamykla“, kuri pati sau paspaudžia stabdį: baltymui pasiekus tam tikrą kiekį, jis slopina savo paties gamybą. Per šį „kaupimosi-ištuštinimo“ bangavimą ląstelė kažkaip suskaičiuoja dienos ilgį.
 
-![Transkripcijos-transliacijos neigiamo grįžtamojo ryšio kilpos (TTFL) diagrama](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Pakeitus gamyklos metaforą moksline terminologija, visas ciklas atrodo taip: transkripcija → kaupimasis → slopinimas → degradacija → desupresija, o vienas ciklas trunka apie 24 valandas. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkripcijos-transliacijos neigiamo grįžtamojo ryšio kilpos (TTFL) diagrama" />
+  <figcaption>Pakeitus gamyklos metaforą moksline terminologija, visas ciklas atrodo taip: transkripcija → kaupimasis → slopinimas → degradacija → desupresija, o vienas ciklas trunka apie 24 valandas. © Philo</figcaption>
+</figure>
 
 Michael Young taip pat atrado dar du pagrindinius veikėjus, kurie daro šį laikrodį tikslesnį: baltymą TIM (Timeless), kuris naktį padeda PER baltymui patekti į ląstelės branduolį ir paspausti gamybos sustabdymo mygtuką; ir baltymą DBT (Doubletime), kurio funkcija yra sulėtinti PER baltymo kaupimosi greitį. Būtent šis „sulėtinimas“ tiksliai sukalibruoja ciklą iki beveik 24 valandų, užuot leidęs jam pasibaigti per keliolika valandų.
 
@@ -68,11 +75,15 @@ Taip, biologinis laikrodis tikrai egzistuoja, tai nėra iliuzija.
 
 Šios mechanizmo atradimas nebuvo staigus: jau 1971 m. Konopka ir Benzeris atrado vaisines museles su mutavusiu, nenormaliu biologiniu laikrodžiu; 1984 m. Hall, Rosbash ir Young laboratorijos beveik vienu metu klonavo pagrindinį *period* geną; vėliau, visą dešimtąjį dešimtmetį, jie palaipsniui sudėjo aukščiau aprašytą neigiamo grįžtamojo ryšio kilpos mechanizmą (pavyzdžiui, Young 1994 m. atrado *timeless* geną). Visa ši darbų serija galiausiai pelnė 2017 m. Nobelio fiziologijos ar medicinos premiją.
 
-![PNAS apžvelgia Konopkos ir Benzerio tyrimus](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Istorijos pradžia: 1971 m. Konopka ir Benzeris atrado vaisines museles su mutavusiu, nenormaliu biologiniu laikrodžiu.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS apžvelgia Konopkos ir Benzerio tyrimus" />
+  <figcaption>Istorijos pradžia: 1971 m. Konopka ir Benzeris atrado vaisines museles su mutavusiu, nenormaliu biologiniu laikrodžiu.</figcaption>
+</figure>
 
-![2017 m. Nobelio fiziologijos ar medicinos premijos laureatai](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Pabaiga: 2017 m. Nobelio fiziologijos ar medicinos premija skirta Hallui, Rosbashui ir Youngui.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 m. Nobelio fiziologijos ar medicinos premijos laureatai" />
+  <figcaption>Pabaiga: 2017 m. Nobelio fiziologijos ar medicinos premija skirta Hallui, Rosbashui ir Youngui.</figcaption>
+</figure>
 
 ## Daugumos žmonių biologinis laikrodis nėra 24 valandų
 
@@ -82,15 +93,19 @@ Jei žmogus yra visiškai izoliuotas nuo išorinių laiko signalų, kiek valand�
 
 Atsakymas yra maždaug 24,2 valandos, šiek tiek daugiau nei 24. Tai reiškia, kad beveik kiekvieno žmogaus biologinis laikrodis iš prigimties yra šiek tiek lėtesnis nei Žemės sukimasis.
 
-![Žurnalas „Science“: tyrimas apie žmogaus cirkadinį ritmą, artimą 24 valandoms](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler ir kt. 1999 m. žurnale „Science“ paskelbė, kad žmogaus endogeninis ritmas trunka maždaug 24,18 valandos.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Žurnalas „Science“: tyrimas apie žmogaus cirkadinį ritmą, artimą 24 valandoms" />
+  <figcaption>Czeisler ir kt. 1999 m. žurnale „Science“ paskelbė, kad žmogaus endogeninis ritmas trunka maždaug 24,18 valandos.</figcaption>
+</figure>
 
 Tai kodėl dauguma žmonių vis tiek išlaiko reguliarų miego režimą? Atsakymas yra: šviesa.
 
 Jūsų tinklainėje yra specialių ląstelių (ipRGC), kurios nėra atsakingos už vaizdo formavimą. Jos tik perduoda informaciją „ar dabar yra šviesa“ į SCN. Šis procesas vadinamas sinchronizavimu (Entrainment). Kasdieninė ryto šviesa šiek tiek pasuka tą lėtai einantį laikrodį į priekį, vėl sulygiuodama jį iki 24 valandų. Normalūs žmonės, naudodamiesi šiuo mechanizmu, kasdien „išlygina“ tas papildomas keliolika minučių.
 
-![Normalaus žmogaus miego ciklas](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Normalaus žmogaus miego ciklas: užmigimo ir pabudimo laikas yra stabilus, miego juosta tolygi ir nenukrypstanti. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Normalaus žmogaus miego ciklas" />
+  <figcaption>Normalaus žmogaus miego ciklas: užmigimo ir pabudimo laikas yra stabilus, miego juosta tolygi ir nenukrypstanti. © Philo</figcaption>
+</figure>
 
 Tačiau nedidelei daliai žmonių ši „kasdienio laiko derinimo šviesa“ mechanika sutrinka, ir tai pasireiškia dviem miego sutrikimais, kuriuos aptarsiu toliau.
 
@@ -102,15 +117,19 @@ DSPD (uždelsto miego fazės sutrikimas) yra lėtinis cirkadinis ritmo sutrikima
 
 Paprasčiau tariant, DSPD reiškia, kad negalite užmigti iki antros ar trečios valandos nakties, tačiau atėjus laikui tikrai užmiegate, pamiegote 7-8 valandas ir atsikėlę jaučiatės puikiai. Pastaraisiais metais daugybė tyrimų parodė, kad suaugusiųjų ADHD yra glaudžiai susijęs su DSPD, ir DSPD yra dažniausias jų cirkadinis ritmo sutrikimas.
 
-![DSPD miego ciklas](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*DSPD miego ciklas: režimas stabilus, nenukrypstantis, tačiau visas miego laikotarpis yra gerokai vėlesnis nei normalių žmonių. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD miego ciklas" />
+  <figcaption>DSPD miego ciklas: režimas stabilus, nenukrypstantis, tačiau visas miego laikotarpis yra gerokai vėlesnis nei normalių žmonių. © Philo</figcaption>
+</figure>
 
 Ne 24 valandų miego-budrumo sutrikimas (Non-24-hour sleep-wake disorder, trumpiau Non-24) yra retas cirkadinis ritmo sutrikimas. Pacientų biologinis laikrodis viršija 24 valandas (dažniausiai apie 25 valandas), todėl užmigimo ir pabudimo laikas kasdien vėluoja 1–2 valandas, ir jie negali prisitaikyti prie normalaus socialinio režimo.
 
 Paprasčiau tariant, Non-24 reiškia, kad kiekvieną dieną užmiegama vėliau nei ankstesnę, vėlavimas tęsiasi tol, kol diena ir naktis susikeičia vietomis, o tada ciklas vėl grįžta į pradinę padėtį. Tai nuolatinis ciklas be aiškios pradžios ar pabaigos.
 
-![Non-24 miego ciklas](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Non-24 miego ciklas: užmigimo laikas kasdien vėluoja, slinkdamas žemyn tarsi laiptais, ir taip kartojasi vėl ir vėl. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 miego ciklas" />
+  <figcaption>Non-24 miego ciklas: užmigimo laikas kasdien vėluoja, slinkdamas žemyn tarsi laiptais, ir taip kartojasi vėl ir vėl. © Philo</figcaption>
+</figure>
 
 Tai kodėl kai kurie žmonės visiškai praranda gebėjimą sinchronizuotis su šviesa? Dažniausiai tai pasitaiko tarp aklųjų: labai didelė dalis visiškai aklų žmonių (ypač tie, kurie visai nejaučia šviesos) patiria Non-24 simptomus. Taip yra todėl, kad šviesos signalas, skirtas biologinio laikrodžio kalibravimui, eina per akis, o negavus šviesos, laikrodis tiesiog ima vėluoti. Tačiau yra ir labai nedaug žmonių, turinčių normalų regėjimą, kurie taip pat negali sinchronizuoti savo biologinio laikrodžio su šviesa.
 
@@ -122,8 +141,10 @@ Taigi, kaip sužinoti, kokio tipo yra jūsų biologinis laikrodis?
 
 Paprasčiausias būdas – kelias savaites iš eilės pildyti miego dienoraštį. Jei turite išmanųjį laikrodį, jis taip pat fiksuoja miego ciklus. Tada stebėkite, kada linkę eiti miegoti ir kada pabusti, jei nenaudojate žadintuvo, ar ši būsena stabili, ir ar pabudę jaučiatės žvalūs, ar neišsimiegoję.
 
-![Miego įrašai išmaniajame laikrodyje](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Štai kaip atrodo miego įrašai išmaniuosiuose laikrodžiuose / programėlėse – kelias savaites iš eilės juos stebėdami, galėsite nustatyti, ar jūsų miego režimas yra stabilus, ar kinta.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Miego įrašai išmaniajame laikrodyje" />
+  <figcaption>Štai kaip atrodo miego įrašai išmaniuosiuose laikrodžiuose / programėlėse – kelias savaites iš eilės juos stebėdami, galėsite nustatyti, ar jūsų miego režimas yra stabilus, ar kinta.</figcaption>
+</figure>
 
 Apibendrinant stebėjimus, galite apytiksliai priskirti save vienam iš tipų: jei stabiliai vėluojate – visada užmiegate tik antrą ar trečią valandą nakties, bet pakankamai pamiegoję jaučiatės žvalūs – tai labiau panašu į DSPD; jei užmigimo laikas kasdien vėluoja, nuolat slinkdamas atgal, tai Non-24; jei, priešingai, einate miegoti labai anksti ir anksti pabundate, tai FASPS. Žinoma, tikrai diagnozei nustatyti būtina kreiptis į specialistą miego klinikoje.
 
@@ -155,11 +176,6 @@ Linkiu visiems gerai išsimiegoti.
 4.  Suaugusiųjų ADHD ir miego fazės vėlavimas / cirkadinio ritmo sutrikimai yra glaudžiai susiję: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Non-24 paplitimas tarp visiškai aklųjų, Tasimelteono III fazės klinikiniai tyrimai (SET ir RESET): Lockley et al., *The Lancet*, 2015, [nuoroda](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Tasimelteonas (Hetlioz) 2014 m. sausio mėn. patvirtintas FDA kaip pirmasis vaistas, skirtas specialiai Non-24 gydymui: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Daugiau skaitykite
-
-- [Ar galiu geriau išsimiegoti per trumpesnį laiką? Miego savęs eksperimento 1 diena](/zh/blog/hacking-my-sleep-day1)
-- [Kaip išspręsti Rubiko kubą be formulių: suprantama net pradinukams](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

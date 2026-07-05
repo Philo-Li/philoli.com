@@ -11,6 +11,9 @@ tags:
 categories: Svakodnevni razgovor
 description: "Moj biološki sat ne traje 24 sata, već 24,5 sati. Počevši od molekularnog mehanizma Nobelove nagrade iz 2017., razgovaramo o dva poremećaja cirkadijalnog ritma spavanja, DSPD-u i Non-24, te zašto sam odabrao prilagoditi se umjesto boriti se."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Kako se točno biološki sat precizno regulira?
 
 Trojica znanstvenika – Jeffrey Hall, Michael Rosbash i Michael Young – otkrila su "motor" biološkog sata u maloj voćnoj mušici. Iznenađujuće, taj motor nije u mozgu, već u svakoj pojedinoj stanici – gotovo svaka stanica u vašem tijelu nosi svoj vlastiti sat.
 
-![Brandeis magazin izvještava o ovom otkriću](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Brandeis Magazine "Glavni mjerač vremena prirode": Kako su trojica znanstvenika otkrila biološki sat u voćnim mušicama.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis magazin izvještava o ovom otkriću" />
+  <figcaption>Brandeis Magazine "Glavni mjerač vremena prirode": Kako su trojica znanstvenika otkrila biološki sat u voćnim mušicama.</figcaption>
+</figure>
 
 Princip njegova rada može se objasniti usporedbom s "tvornicom koja se sama isključuje":
 
@@ -57,8 +62,10 @@ Cijeli ovaj ciklus "proizvodnja → akumulacija → samostalno isključivanje �
 
 U znanosti se to naziva transkripcijsko-translacijska negativna povratna petlja (TTFL). Iako naziv zvuči komplicirano, u suštini je riječ o spomenutoj tvornici koja sama sebi stisne kočnicu – kada se određeni protein nakupi do određene razine, on inhibira vlastitu proizvodnju. Kroz ovaj ciklus "akumulacije i pražnjenja", stanica nekako uspijeva izmjeriti duljinu jednog dana.
 
-![Shematski prikaz transkripcijsko-translacijske negativne povratne petlje (TTFL)](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Ako se metafora tvornice zamijeni znanstvenim nazivima, cijeli krug izgleda ovako: transkripcija → akumulacija → inhibicija → degradacija → dezinhibicija, a jedan ciklus traje otprilike 24 sata. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Shematski prikaz transkripcijsko-translacijske negativne povratne petlje (TTFL)" />
+  <figcaption>Ako se metafora tvornice zamijeni znanstvenim nazivima, cijeli krug izgleda ovako: transkripcija → akumulacija → inhibicija → degradacija → dezinhibicija, a jedan ciklus traje otprilike 24 sata. © Philo</figcaption>
+</figure>
 
 Michael Young je otkrio i dva druga ključna igrača koja su učinila ovaj sat još preciznijim: protein TIM (Timeless), koji noću pomaže PER proteinu da uđe u staničnu jezgru i pritisne gumb za zaustavljanje proizvodnje; te protein DBT (Doubletime), čija je uloga usporavanje brzine akumulacije PER proteina. Upravo to "usporavanje" precizno kalibrira ciklus na gotovo 24 sata, umjesto da se završi za desetak sati.
 
@@ -68,11 +75,15 @@ Da, biološki sat zaista postoji, nije iluzija.
 
 Otkriće ovog mehanizma nije se dogodilo preko noći: već 1971. godine Konopka i Benzer otkrili su mutiranu voćnu mušicu s abnormalnim biološkim satom; 1984. godine, tri laboratorija – Hall, Rosbash i Young – gotovo istovremeno su klonirala ključni gen *period*; tek tijekom 1990-ih postupno su sklopili mehanizam spomenute negativne povratne petlje (primjerice, Young je 1994. pronašao gen *timeless*). Ova serija radova na kraju je 2017. godine nagrađena Nobelovom nagradom za fiziologiju ili medicinu.
 
-![PNAS recenzija istraživanja Konopke i Benzera](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Početak priče: 1971. godine Konopka i Benzer otkrili su mutiranu voćnu mušicu s abnormalnim biološkim satom.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS recenzija istraživanja Konopke i Benzera" />
+  <figcaption>Početak priče: 1971. godine Konopka i Benzer otkrili su mutiranu voćnu mušicu s abnormalnim biološkim satom.</figcaption>
+</figure>
 
-![Troje dobitnika Nobelove nagrade za fiziologiju ili medicinu 2017.](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Kraj: Nobelova nagrada za fiziologiju ili medicinu 2017. godine, dodijeljena Hallu, Rosbashu i Youngu.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Troje dobitnika Nobelove nagrade za fiziologiju ili medicinu 2017." />
+  <figcaption>Kraj: Nobelova nagrada za fiziologiju ili medicinu 2017. godine, dodijeljena Hallu, Rosbashu i Youngu.</figcaption>
+</figure>
 
 ## Većina ljudi nema biološki sat od 24 sata
 
@@ -82,15 +93,19 @@ Koliko bi sati trajao ciklus spavanja i budnosti osobe kada bi bila potpuno izol
 
 Odgovor je oko 24,2 sata, što je nešto duže od 24 sata. Drugim riječima, gotovo svačiji biološki sat prirodno malo zaostaje za Zemljinim ritmom.
 
-![Časopis Science: Istraživanje o ljudskom cirkadijalnom ritmu bliskom 24 sata](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler i suradnici, objavljeno u *Science* 1999., izmjerili su da unutarnji ritam čovjeka iznosi približno 24,18 sati.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Časopis Science: Istraživanje o ljudskom cirkadijalnom ritmu bliskom 24 sata" />
+  <figcaption>Czeisler i suradnici, objavljeno u <em>Science</em> 1999., izmjerili su da unutarnji ritam čovjeka iznosi približno 24,18 sati.</figcaption>
+</figure>
 
 Zašto onda većina ljudi uspijeva održati redovit raspored spavanja? Odgovor je: svjetlost.
 
 U vašoj mrežnici postoje posebne stanice (ipRGC) koje nisu zadužene za stvaranje slike, već samo za slanje informacije "ima li sada svjetla" u SCN. Taj se proces naziva povlačenje svjetlom (Entrainment). Jutarnja svjetlost svakog dana pomiče taj malo sporiji sat naprijed, usklađujući ga ponovno na 24 sata. Normalni ljudi, uz pomoć ovog mehanizma, svakodnevno "brišu" tih dodatnih desetak minuta.
 
-![Ciklus spavanja normalne osobe](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Ciklus spavanja normalne osobe: stabilno vrijeme uspavljivanja i buđenja, ravna linija spavanja bez odstupanja. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Ciklus spavanja normalne osobe" />
+  <figcaption>Ciklus spavanja normalne osobe: stabilno vrijeme uspavljivanja i buđenja, ravna linija spavanja bez odstupanja. © Philo</figcaption>
+</figure>
 
 Međutim, kod malog broja ljudi, ovaj mehanizam "svakodnevnog usklađivanja s pomoću svjetla" ne funkcionira ispravno, što se manifestira kroz dva poremećaja spavanja o kojima ćemo govoriti u nastavku.
 
@@ -102,15 +117,19 @@ DSPD (poremećaj odgođene faze spavanja) je kronični poremećaj cirkadijalnog 
 
 Jednostavno rečeno, kod DSPD-a ne možete zaspati prije dva ili tri ujutro, ali kad jednom zaspite, spavate 7-8 sati i budite se s puno energije. Nedavna istraživanja pokazala su visoku korelaciju između ADHD-a kod odraslih i DSPD-a, pri čemu je DSPD najčešći cirkadijalni poremećaj kod te populacije.
 
-![Ciklus spavanja kod DSPD-a](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*Ciklus spavanja kod DSPD-a: raspored je stabilan i ne odstupa, ali je cjelokupno razdoblje spavanja znatno kasnije nego kod normalnih ljudi. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Ciklus spavanja kod DSPD-a" />
+  <figcaption>Ciklus spavanja kod DSPD-a: raspored je stabilan i ne odstupa, ali je cjelokupno razdoblje spavanja znatno kasnije nego kod normalnih ljudi. © Philo</figcaption>
+</figure>
 
 Non-24-hour sleep-wake disorder (skraćeno Non-24) rijedak je poremećaj cirkadijalnog ritma. Biološki sat pacijenata traje dulje od 24 sata (obično oko 25 sati), što uzrokuje pomicanje vremena uspavljivanja i buđenja unatrag za 1 do 2 sata svakog dana, čineći nemogućim prilagođavanje normalnom društvenom rasporedu.
 
 Jednostavno rečeno, kod Non-24, vrijeme uspavljivanja je svakim danom sve kasnije, pomičući se kontinuirano unatrag dok se dan i noć potpuno ne preokrenu, a zatim se ciklus ponovno kreće naprijed, stvarajući potpuni krug. Nema početka ni kraja, samo neprekidno kruženje.
 
-![Ciklus spavanja kod Non-24](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Ciklus spavanja kod Non-24: vrijeme uspavljivanja pomiče se svakim danom unatrag, neprestano klizeći poput stepenica, iznova i iznova. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Ciklus spavanja kod Non-24" />
+  <figcaption>Ciklus spavanja kod Non-24: vrijeme uspavljivanja pomiče se svakim danom unatrag, neprestano klizeći poput stepenica, iznova i iznova. © Philo</figcaption>
+</figure>
 
 Zašto neki ljudi potpuno izgube sposobnost usklađivanja s pomoću svjetla? To je najčešće kod potpuno slijepih osoba, gdje velik postotak (posebno onih koji nemaju nikakav osjećaj za svjetlost) razvije simptome Non-24 – jer svjetlosni signali za kalibraciju biološkog sata putuju kroz oči, a bez prijema svjetlosti, sat se jednostavno pomiče unatrag. No, postoji i vrlo mali broj ljudi s normalnim vidom koji također ne mogu koristiti svjetlost za kalibraciju biološkog sata.
 
@@ -122,8 +141,10 @@ Kako onda možete saznati kakav je vaš biološki sat?
 
 Najjednostavniji način je da nekoliko tjedana vodite dnevnik spavanja. Ako imate pametni sat, i on bilježi cikluse spavanja. Zatim promatrajte kada biste prirodno išli spavati i budili se ako ne biste namjerno postavljali budilicu, je li to stanje stabilno, te osjećate li se nakon buđenja energično ili pospano.
 
-![Zapisi spavanja u pametnom satu](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Ovako izgledaju zapisi spavanja u pametnom satu / aplikaciji – kontinuiranim bilježenjem tijekom nekoliko tjedana možete vidjeti je li vaš raspored stabilan ili se pomiče.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Zapisi spavanja u pametnom satu" />
+  <figcaption>Ovako izgledaju zapisi spavanja u pametnom satu / aplikaciji – kontinuiranim bilježenjem tijekom nekoliko tjedana možete vidjeti je li vaš raspored stabilan ili se pomiče.</figcaption>
+</figure>
 
 Nakon promatranja, otprilike možete prepoznati svoj tip: ako stabilno idete spavati kasno – uvijek oko dva ili tri ujutro, ali se nakon dovoljno sna osjećate odmorno – to više nalikuje DSPD-u; ako se vrijeme uspavljivanja svakim danom pomiče unatrag, to je Non-24; a ako obrnuto, idete spavati vrlo rano i budite se vrlo rano, onda je to FASPS. Naravno, za pravu dijagnozu potrebna je specijalizirana klinika za spavanje.
 
@@ -155,11 +176,6 @@ Međutim, s društvenog stajališta, budući da su rad i društvene aktivnosti u
 4.  Visoka povezanost ADHD-a kod odraslih s odgođenom fazom spavanja / poremećajima cirkadijalnog ritma: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Visoka učestalost Non-24 kod potpuno slijepih osoba, klinička ispitivanja faze III Tasimelteona (SET i RESET): Lockley et al., *The Lancet*, 2015., [link](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Tasimelteon (Hetlioz) odobren od strane FDA u siječnju 2014., kao prvi lijek specifično za liječenje Non-24: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Više za čitanje
-
-- [Mogu li spavati bolje u manje vremena? Samostalni eksperiment o spavanju, Dan 1](/zh/blog/hacking-my-sleep-day1)
-- [Kako složiti Rubikovu kocku bez formula: Čak i osnovnoškolci mogu razumjeti](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

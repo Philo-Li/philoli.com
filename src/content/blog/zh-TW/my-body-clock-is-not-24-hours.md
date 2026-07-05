@@ -11,6 +11,9 @@ tags:
 categories: 日常閒聊
 description: "我的生理時鐘不是 24 小時，而是 24.5 小時。這篇文章將從 2017 年諾貝爾獎的分子機制談起，聊聊 DSPD 與 Non-24 這兩種晝夜節律睡眠障礙，以及我為何選擇順應而非對抗它。"
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ toc: true
 
 三位科學家 Jeffrey Hall、Michael Rosbash 和 Michael Young，在小小的果蠅身上找到了生理時鐘的「發動機」。更令人驚訝的是，這台發動機並不在大腦裡，而是存在於每一個細胞中——你身上幾乎每個細胞，都帶著一台自己的時鐘。
 
-![Brandeis 雜誌對這項發現的報導](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*布蘭戴斯（Brandeis）雜誌《自然界的總計時器》：三位科學家如何在果蠅身上找到生理時鐘。*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 雜誌對這項發現的報導" />
+  <figcaption>布蘭戴斯（Brandeis）雜誌《自然界的總計時器》：三位科學家如何在果蠅身上找到生理時鐘。</figcaption>
+</figure>
 
 它的運作原理，可以用一個「工廠自我關閉」的比喻來理解：
 
@@ -57,8 +62,10 @@ toc: true
 
 這在科學上稱為「轉錄-轉譯負回饋迴路」（TTFL）。這個名字聽起來很嚇人，但本質上就是上面那個會自己踩煞車的工廠——當蛋白質累積到一定程度後，就會抑制自己的生產。細胞就是靠著這種「堆積—清空」的漲落，硬是數出了一天的長度。
 
-![轉錄-轉譯負回饋迴路（TTFL）示意圖](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*如果把工廠的比喻換成科學命名，一整圈就是：轉錄 → 累積 → 抑制 → 降解 → 去抑制，跑完一輪約 24 小時。© Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="轉錄-轉譯負回饋迴路（TTFL）示意圖" />
+  <figcaption>如果把工廠的比喻換成科學命名，一整圈就是：轉錄 → 累積 → 抑制 → 降解 → 去抑制，跑完一輪約 24 小時。© Philo</figcaption>
+</figure>
 
 Michael Young 還找到另外兩個關鍵角色，讓這座時鐘更為精密：一個稱為 TIM 蛋白（Timeless），負責在夜裡幫助 PER 蛋白進入細胞核去按下停產按鈕；另一個稱為 DBT（Doubletime），它的作用是拖慢 PER 蛋白的累積速度——正是這個「拖慢」，將循環精確地校準在接近 24 小時，而不是十幾個小時就跑完一圈。
 
@@ -68,11 +75,15 @@ Michael Young 還找到另外兩個關鍵角色，讓這座時鐘更為精密：
 
 這套機制的發現並非一蹴可幾：早在 1971 年，Konopka 和 Benzer 就發現了生理時鐘異常的突變果蠅；1984 年，Hall、Rosbash、Young 三個實驗室幾乎同時複製出了關鍵的 period 基因；此後整個 1990 年代，他們才逐步拼湊出上述這套負回饋迴路的機制（例如 Young 在 1994 年找到了 timeless 基因）。這一系列的研究工作，最終讓他們獲得了 2017 年的諾貝爾生理學或醫學獎。
 
-![PNAS 回顧 Konopka 與 Benzer 的研究](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*故事的起點：1971 年，Konopka 與 Benzer 發現了生理時鐘異常的突變果蠅。*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顧 Konopka 與 Benzer 的研究" />
+  <figcaption>故事的起點：1971 年，Konopka 與 Benzer 發現了生理時鐘異常的突變果蠅。</figcaption>
+</figure>
 
-![2017 年諾貝爾生理學或醫學獎三位得主](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*終點：2017 年諾貝爾生理學或醫學獎，頒發給 Hall、Rosbash、Young。*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年諾貝爾生理學或醫學獎三位得主" />
+  <figcaption>終點：2017 年諾貝爾生理學或醫學獎，頒發給 Hall、Rosbash、Young。</figcaption>
+</figure>
 
 ## 絕大多數人的生理時鐘都不是 24 小時
 
@@ -82,15 +93,19 @@ Michael Young 還找到另外兩個關鍵角色，讓這座時鐘更為精密：
 
 答案大約是 24.2 小時，略大於 24 小時。也就是說，幾乎每個人的生理時鐘天生都比地球慢一點點。
 
-![Science 期刊：人類晝夜節律接近 24 小時的研究](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler 等人於 1999 年發表在《Science》期刊的研究，測得人類內源節律約 24.18 小時。*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人類晝夜節律接近 24 小時的研究" />
+  <figcaption>Czeisler 等人於 1999 年發表在《Science》期刊的研究，測得人類內源節律約 24.18 小時。</figcaption>
+</figure>
 
 那為什麼大多數人還能維持規律作息呢？答案就是：光線。
 
 你的視網膜裡有一類特殊的細胞（ipRGC），它們不負責成像，只負責把「現在有沒有光線」回報給 SCN。這個過程稱為「光牽引」（Entrainment）。每天清晨的光線，就是把那個走慢的時鐘往前撥一點，重新校準到 24 小時。正常人就是靠著這套機制，每天將自己多出來的十幾分鐘抹平。
 
-![正常人的睡眠週期](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*正常人的睡眠週期：入睡、起床時間穩定，睡眠帶齊平不漂移。© Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠週期" />
+  <figcaption>正常人的睡眠週期：入睡、起床時間穩定，睡眠帶齊平不漂移。© Philo</figcaption>
+</figure>
 
 然而，少數人這套「每天靠光線對時」的機制出了問題，就會表現出接下來要講的兩種睡眠障礙。
 
@@ -102,15 +117,19 @@ DSPD（睡眠相位後移障礙）是一種慢性晝夜節律紊亂，患者的�
 
 簡單來說，DSPD 就是不到夜裡兩三點你就是睡不著，但時間一到卻一定能睡著。睡上 7-8 小時後，你一樣能起床，醒來之後的白天也同樣精力充沛。而且近年有大量研究發現，成人 ADHD 和 DSPD 高度相關，DSPD 是他們最常見的晝夜節律障礙。
 
-![DSPD 的睡眠週期](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*DSPD 的睡眠週期：作息穩定不漂移，但整段睡眠比正常人明顯偏晚。© Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠週期" />
+  <figcaption>DSPD 的睡眠週期：作息穩定不漂移，但整段睡眠比正常人明顯偏晚。© Philo</figcaption>
+</figure>
 
 非 24 小時睡眠覺醒障礙（Non-24-hour sleep-wake disorder, 簡稱 Non-24）是一種罕見的晝夜節律紊亂。患者體內的生理時鐘超過 24 小時（通常約 25 小時左右），導致入睡和起床時間每天向後推遲 1 至 2 小時，因此無法適應正常的社會作息。
 
 簡單來說，Non-24 就是每一天的入睡時間都比前一天更晚，會不斷往後延遲，直到晝夜顛倒，然後再慢慢往前，形成完整的循環。沒有所謂的開始與結束，它就是不斷地循環著。
 
-![Non-24 的睡眠週期](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Non-24 的睡眠週期：入睡時間逐日往後，像樓梯一樣不斷下滑，週而復始。© Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠週期" />
+  <figcaption>Non-24 的睡眠週期：入睡時間逐日往後，像樓梯一樣不斷下滑，週而復始。© Philo</figcaption>
+</figure>
 
 那為什麼有些人會徹底失去被光線校準的能力呢？這最常發生在全盲人士身上，非常高比例的全盲者（尤其是完全沒有光感的人）就會出現 Non-24 的症狀——因為校準生理時鐘的光訊號需要透過眼睛傳遞，如果收不到光線，時鐘就只能自己往後漂移。但也有極少數視力正常的人，同樣無法用光線校準生理時鐘。
 
@@ -122,8 +141,10 @@ DSPD（睡眠相位後移障礙）是一種慢性晝夜節律紊亂，患者的�
 
 最簡單的方法就是，連續幾週記錄睡眠日記。如果你有智慧手錶，現在的智慧手錶也會有睡眠週期記錄功能。接著觀察，如果自己不刻意設定鬧鐘，會傾向於幾點睡覺、幾點起床，並且這個狀態是否穩定，起床之後是覺得精力充沛還是睡眠不足。
 
-![智慧手錶裡的睡眠記錄](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*智慧手錶 / App 裡的睡眠記錄會長這樣——連續記錄幾週，就能看出自己的作息是穩定還是在漂移。*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智慧手錶裡的睡眠記錄" />
+  <figcaption>智慧手錶 / App 裡的睡眠記錄會長這樣——連續記錄幾週，就能看出自己的作息是穩定還是在漂移。</figcaption>
+</figure>
 
 觀察下來大致能對號入座：如果你穩定地偏晚——總是兩三點才睡、但睡夠了照樣精神飽滿——那更像是 DSPD；如果入睡時間每天都比前一天更晚、不斷往後漂移，則是 Non-24；如果反過來極早睡、極早醒，那就是 FASPS。當然，真正的確診還是得靠專業的睡眠門診。
 
@@ -155,11 +176,6 @@ DSPD（睡眠相位後移障礙）是一種慢性晝夜節律紊亂，患者的�
 4. 成人 ADHD 與睡眠時相延遲/晝夜節律紊亂高度相關：[ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/)、[Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5. Non-24 在全盲人群中高發、Tasimelteon 三期臨床試驗（SET 與 RESET）：Lockley et al., *The Lancet*, 2015，[連結](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6. Tasimelteon（Hetlioz）於 2014 年 1 月獲 FDA 批准，為首個專門治療 Non-24 的藥物：[Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## 更多閱讀
-
-- [我能用更少的時間睡得更好嗎？一個關於睡眠的自我實驗 Day 1](/zh/blog/hacking-my-sleep-day1)
-- [如何不背公式解開魔方：小學生也能看懂](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

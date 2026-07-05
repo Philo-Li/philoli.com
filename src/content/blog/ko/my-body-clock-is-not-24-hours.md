@@ -11,6 +11,9 @@ tags:
 categories: 일상
 description: "제 생체 시계는 24시간이 아니라 24.5시간입니다. 2017년 노벨상 수상 연구의 분자 메커니즘부터 시작하여 DSPD와 Non-24라는 두 가지 일주기 리듬 수면 장애, 그리고 제가 왜 맞서 싸우기보다 순응하기를 택했는지 이야기해 봅니다."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ toc: true
 
 세 명의 과학자, 제프리 홀(Jeffrey Hall), 마이클 로스배시(Michael Rosbash), 마이클 영(Michael Young)은 작은 초파리에서 생체 시계의 '엔진'을 발견했습니다. 놀랍게도 이 엔진은 뇌 속에 있는 것이 아니라, 우리 몸의 거의 모든 세포 속에 각자의 시계처럼 존재하고 있었습니다.
 
-![Brandeis 잡지의 해당 발견 보도](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Brandeis 잡지 '자연의 총시계지기': 세 명의 과학자가 초파리에서 생체 시계를 찾아낸 과정.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 잡지의 해당 발견 보도" />
+  <figcaption>Brandeis 잡지 '자연의 총시계지기': 세 명의 과학자가 초파리에서 생체 시계를 찾아낸 과정.</figcaption>
+</figure>
 
 이 작동 원리는 '공장의 자율 정지'라는 비유로 이해할 수 있습니다.
 
@@ -57,8 +62,10 @@ toc: true
 
 과학적으로는 이를 전사-번역 음성 피드백 회로(TTFL)라고 부릅니다. 이름은 거창하지만, 본질은 위에서 설명한 스스로 브레이크를 밟는 공장과 같습니다. 특정 단백질이 일정 수준 이상 많아지면 스스로의 생산을 억제하고, 이 '축적-비우기'의 오르내림을 통해 세포는 하루의 길이를 정확히 세어내는 것이죠.
 
-![전사-번역 음성 피드백 회로(TTFL) 개요도](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*공장 비유를 과학적 용어로 바꾸면, 한 바퀴는 '전사 → 축적 → 억제 → 분해 → 억제 해제'로 진행되며 약 24시간이 걸립니다. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="전사-번역 음성 피드백 회로(TTFL) 개요도" />
+  <figcaption>공장 비유를 과학적 용어로 바꾸면, 한 바퀴는 '전사 → 축적 → 억제 → 분해 → 억제 해제'로 진행되며 약 24시간이 걸립니다. © Philo</figcaption>
+</figure>
 
 마이클 영은 이 시계를 더욱 정밀하게 만드는 두 가지 핵심적인 역할을 하는 단백질을 추가로 발견했습니다. 하나는 TIM 단백질(Timeless)로, 밤에 PER 단백질이 세포 핵 안으로 들어가 생산 중단 버튼을 누르는 것을 돕습니다. 다른 하나는 DBT(Doubletime)로, PER 단백질의 축적 속도를 늦추는 역할을 합니다. 바로 이 '속도 지연' 덕분에 순환 주기가 10여 시간 만에 끝나지 않고, 24시간에 가깝게 정확히 맞춰지는 것입니다.
 
@@ -68,11 +75,15 @@ toc: true
 
 이 메커니즘의 발견은 한 번에 이루어진 것이 아닙니다. 1971년 코놉카(Konopka)와 벤저(Benzer)는 생체 시계 이상이 있는 돌연변이 초파리를 발견했습니다. 1984년에는 홀, 로스배시, 영 세 연구실이 거의 동시에 핵심 유전자 *period*를 복제했습니다. 그 후 1990년대 내내 이들은 위에서 설명한 음성 피드백 회로의 메커니즘을 점차적으로 밝혀냈습니다(예를 들어, 영은 1994년에 *timeless* 유전자를 발견했습니다). 이 일련의 연구는 2017년 노벨 생리의학상으로 이어졌습니다.
 
-![PNAS의 코놉카와 벤저 연구 회고](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*이야기의 시작: 1971년 코놉카와 벤저가 생체 시계 이상이 있는 돌연변이 초파리를 발견했습니다.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS의 코놉카와 벤저 연구 회고" />
+  <figcaption>이야기의 시작: 1971년 코놉카와 벤저가 생체 시계 이상이 있는 돌연변이 초파리를 발견했습니다.</figcaption>
+</figure>
 
-![2017년 노벨 생리의학상 세 명의 수상자](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*결실: 2017년 노벨 생리의학상은 홀, 로스배시, 영에게 수여되었습니다.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017년 노벨 생리의학상 세 명의 수상자" />
+  <figcaption>결실: 2017년 노벨 생리의학상은 홀, 로스배시, 영에게 수여되었습니다.</figcaption>
+</figure>
 
 ## 대부분의 사람 생체 시계는 24시간이 아닙니다
 
@@ -82,15 +93,19 @@ toc: true
 
 정답은 약 24.2시간으로, 24시간보다 약간 깁니다. 즉, 거의 모든 사람의 생체 시계는 선천적으로 지구의 시간보다 조금씩 느리게 작동한다는 뜻입니다.
 
-![Science 저널: 인간 일주기 리듬이 24시간에 가깝다는 연구](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler 등은 1999년 'Science'에 발표한 연구에서 인간의 내인성 리듬이 약 24.18시간임을 측정했습니다.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 저널: 인간 일주기 리듬이 24시간에 가깝다는 연구" />
+  <figcaption>Czeisler 등은 1999년 'Science'에 발표한 연구에서 인간의 내인성 리듬이 약 24.18시간임을 측정했습니다.</figcaption>
+</figure>
 
 그렇다면 왜 대부분의 사람들은 규칙적인 생활을 유지할 수 있을까요? 답은 '빛'입니다.
 
 우리 망막에는 특별한 세포(ipRGC)가 있습니다. 이 세포들은 이미지를 형성하는 역할은 하지 않고, 단지 '지금 빛이 있는지 없는지'를 SCN에 보고하는 역할을 합니다. 이 과정을 '광동조(Entrainment)'라고 합니다. 매일 아침의 빛은 느리게 가는 시계를 조금 앞당겨 다시 24시간에 맞춰주는 역할을 합니다. 정상적인 사람들은 이 메커니즘을 통해 매일 조금씩 늘어나는 10여 분을 조절합니다.
 
-![정상인의 수면 주기](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*정상인의 수면 주기: 잠드는 시간과 일어나는 시간이 일정하고, 수면 패턴이 흐트러지지 않습니다. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="정상인의 수면 주기" />
+  <figcaption>정상인의 수면 주기: 잠드는 시간과 일어나는 시간이 일정하고, 수면 패턴이 흐트러지지 않습니다. © Philo</figcaption>
+</figure>
 
 하지만 소수의 사람들에게는 이 '매일 빛으로 시간을 맞추는' 메커니즘에 문제가 생겨, 아래에서 설명할 두 가지 수면 장애로 나타나게 됩니다.
 
@@ -102,15 +117,19 @@ toc: true
 
 DSPD를 간단히 설명하자면, 밤 2~3시가 되기 전에는 잠이 오지 않지만, 일단 잠이 들면 7~8시간을 자고 나면 개운하게 일어날 수 있고, 낮 동안에도 에너지가 넘친다는 것입니다. 최근에는 성인 ADHD와 DSPD가 높은 상관관계를 보이며, DSPD가 ADHD 환자에게 가장 흔한 일주기 리듬 장애로 밝혀지는 연구가 많습니다.
 
-![DSPD의 수면 주기](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*DSPD의 수면 주기: 생활 리듬이 안정적으로 흐트러지지 않지만, 전체 수면 시간이 정상인보다 확연히 늦습니다. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD의 수면 주기" />
+  <figcaption>DSPD의 수면 주기: 생활 리듬이 안정적으로 흐트러지지 않지만, 전체 수면 시간이 정상인보다 확연히 늦습니다. © Philo</figcaption>
+</figure>
 
 **비24시간 수면-각성 장애(Non-24-hour sleep-wake disorder, 줄여서 Non-24)**는 희귀한 일주기 리듬 교란입니다. 환자의 생체 시계 주기가 24시간을 초과하여(보통 25시간 정도) 잠드는 시간과 일어나는 시간이 매일 1~2시간씩 뒤로 밀려나며, 정상적인 사회생활 리듬에 적응할 수 없습니다.
 
 간단히 말해, Non-24는 매일 잠드는 시간이 전날보다 늦어지고 계속해서 밀려나다가 밤낮이 뒤바뀌고, 다시 앞으로 돌아오며 완전한 순환을 형성하는 것입니다. 시작도 끝도 없이 계속 순환하는 것이죠.
 
-![Non-24의 수면 주기](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Non-24의 수면 주기: 잠드는 시간이 매일 뒤로 밀려나 계단처럼 계속해서 하강하며 반복됩니다. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24의 수면 주기" />
+  <figcaption>Non-24의 수면 주기: 잠드는 시간이 매일 뒤로 밀려나 계단처럼 계속해서 하강하며 반복됩니다. © Philo</figcaption>
+</figure>
 
 그렇다면 어떤 사람들은 왜 빛에 의해 시계가 맞춰지는 능력을 완전히 잃게 될까요? 가장 흔한 경우는 전맹(완전 실명) 환자들입니다. 매우 많은 비율의 전맹 환자들(특히 빛을 전혀 감지하지 못하는 사람들)에게서 Non-24 증상이 나타납니다. 생체 시계를 조절하는 빛 신호가 눈을 통해 전달되어야 하는데, 빛을 받지 못하면 시계는 그저 뒤로 밀려날 수밖에 없기 때문입니다. 하지만 시력이 정상인 사람들 중에서도 극히 일부는 빛으로 생체 시계를 조절하지 못하는 경우가 있습니다.
 
@@ -122,8 +141,10 @@ DSPD를 간단히 설명하자면, 밤 2~3시가 되기 전에는 잠이 오지 
 
 가장 간단한 방법은 몇 주 동안 꾸준히 수면 일기를 기록하는 것입니다. 스마트 워치가 있다면 요즘 스마트 워치에도 수면 주기 기록 기능이 있으니 활용해 보세요. 그리고 의도적으로 알람을 맞추지 않았을 때 자신이 몇 시에 잠들고 몇 시에 일어나는 경향이 있는지, 그리고 이 상태가 안정적인지, 일어난 후에는 에너지가 넘치는지 아니면 수면 부족을 느끼는지 관찰해 보는 것입니다.
 
-![스마트 워치 속 수면 기록](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*스마트 워치/앱의 수면 기록은 이렇게 생겼습니다. 몇 주간 꾸준히 기록하면 자신의 수면 패턴이 안정적인지 아니면 불규칙한지 알 수 있습니다.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="스마트 워치 속 수면 기록" />
+  <figcaption>스마트 워치/앱의 수면 기록은 이렇게 생겼습니다. 몇 주간 꾸준히 기록하면 자신의 수면 패턴이 안정적인지 아니면 불규칙한지 알 수 있습니다.</figcaption>
+</figure>
 
 관찰 결과를 통해 대략적으로 자신에게 맞는 유형을 찾을 수 있습니다. 만약 안정적으로 늦게 자는 경향이 있다면(항상 2~3시에 잠들지만 충분히 자면 정신이 맑다면) DSPD에 가깝습니다. 만약 잠드는 시간이 매일 전날보다 늦어지고 계속 뒤로 밀린다면 Non-24입니다. 반대로 아주 일찍 잠들고 아주 일찍 깬다면 FASPS입니다. 물론, 정확한 진단은 전문 수면 클리닉에서 받아야 합니다.
 
@@ -155,11 +176,6 @@ DSPD를 간단히 설명하자면, 밤 2~3시가 되기 전에는 잠이 오지 
 4.  성인 ADHD와 수면 위상 지연/일주기 리듬 교란의 높은 상관관계: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Non-24는 전맹 집단에서 높은 발병률, Tasimelteon 3상 임상 시험 (SET 및 RESET): Lockley et al., *The Lancet*, 2015, [링크](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Tasimelteon (Hetlioz)은 2014년 1월 FDA 승인을 받은 최초의 Non-24 치료제: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## 더 읽어보기
-
-- [더 적은 시간을 자고도 더 잘 잘 수 있을까? 수면에 대한 나의 자기 실험 Day 1](/zh/blog/hacking-my-sleep-day1)
-- [공식 없이 루빅스 큐브를 푸는 방법: 초등학생도 이해할 수 있습니다](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

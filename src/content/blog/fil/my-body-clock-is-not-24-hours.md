@@ -11,6 +11,9 @@ tags:
 categories: Pang-araw-araw na kwentuhan
 description: "Hindi 24 oras ang aking biological clock, kundi 24.5 oras. Magsisimula tayo sa molecular mechanism ng 2017 Nobel Prize, tatalakayin ang DSPD at Non-24 – dalawang uri ng circadian rhythm sleep disorder – at kung bakit ko piniling sumunod sa aking natural na ritmo sa halip na labanan ito."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Paano nga ba eksaktong kinokontrol ng biological clock ang lahat?
 
 Ang tatlong siyentipiko na sina Jeffrey Hall, Michael Rosbash, at Michael Young ay natuklasan ang "makina" ng biological clock sa maliliit na langaw. At ang nakakagulat, hindi ito nasa utak; nasa bawat selula ng ating katawan – halos bawat selula mo ay may sariling orasan.
 
-![Brandeis 杂志对这项发现的报道](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Brandeis Magazine "The Master Timers of Nature": Paano natuklasan ng tatlong siyentipiko ang biological clock sa mga langaw.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <figcaption>Brandeis Magazine "The Master Timers of Nature": Paano natuklasan ng tatlong siyentipiko ang biological clock sa mga langaw.</figcaption>
+</figure>
 
 Ang prinsipyo ng paggana nito ay maiintindihan sa pamamagitan ng paghahambing sa isang "pabrika na kusang humihinto ang operasyon":
 
@@ -57,8 +62,10 @@ Ang buong siklo ng "paggawa → pag-ipon → kusang paghinto → pag-ubos → mu
 
 Sa siyensiya, tinatawag itong Transcription-Translation Feedback Loop (TTFL). Nakakatakot pakinggan ang pangalan, pero ang esensya nito ay ang pabrika na kusang nagpepreno – kapag dumami nang husto ang isang protina, pinipigilan nito ang sarili nitong paggawa. Sa pamamagitan nitong "pag-ipon-pag-ubos" na pagtaas at pagbaba, nagagawa ng mga selula na sukatin ang haba ng isang araw.
 
-![转录-翻译负反馈回路（TTFL）示意图](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Kung papalitan ang pabrika ng siyentipikong pangalan, ang isang buong ikot ay: Transcription → Accumulation → Inhibition → Degradation → De-inhibition, na umaabot ng humigit-kumulang 24 oras. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <figcaption>Kung papalitan ang pabrika ng siyentipikong pangalan, ang isang buong ikot ay: Transcription → Accumulation → Inhibition → Degradation → De-inhibition, na umaabot ng humigit-kumulang 24 oras. © Philo</figcaption>
+</figure>
 
 Natuklasan din ni Michael Young ang dalawa pang mahalagang bahagi na nagpapadalisay sa orasan na ito: ang TIM protein (Timeless), na tumutulong sa PER protein na makapasok sa cell nucleus tuwing gabi para pindutin ang 'shutdown button'; at ang DBT (Doubletime), na ang papel ay pabagalin ang pag-ipon ng PER protein – ang 'pagpapabagal' na ito ang nag-aayos ng siklo nang eksakto sa halos 24 oras, sa halip na matapos ito sa loob lamang ng ilang oras.
 
@@ -68,11 +75,15 @@ Oo, tunay na umiiral ang biological clock, hindi lang ito ilusyon.
 
 Hindi naging madali ang pagtuklas sa mekanismong ito: noong 1971 pa lang, natuklasan na nina Konopka at Benzer ang mga mutant na langaw na may abnormal na biological clock; noong 1984, halos sabay-sabay na na-clone ng tatlong laboratoryo nina Hall, Rosbash, at Young ang kritikal na gene na *period*; pagkatapos, sa buong dekada 1990, unti-unti nilang nabuo ang mekanismo ng negative feedback loop na binanggit sa itaas (halimbawa, natagpuan ni Young ang gene na *timeless* noong 1994). Ang serye ng mga pag-aaral na ito ang siyang nagbigay sa kanila ng Nobel Prize in Physiology or Medicine noong 2017.
 
-![PNAS 回顾 Konopka 与 Benzer 的研究](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Ang simula ng kuwento: Noong 1971, natuklasan nina Konopka at Benzer ang mga mutant na langaw na may abnormal na biological clock.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <figcaption>Ang simula ng kuwento: Noong 1971, natuklasan nina Konopka at Benzer ang mga mutant na langaw na may abnormal na biological clock.</figcaption>
+</figure>
 
-![2017 年诺贝尔生理学或医学奖三位得主](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Ang katapusan: Ang 2017 Nobel Prize in Physiology or Medicine ay iginawad kina Hall, Rosbash, at Young.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <figcaption>Ang katapusan: Ang 2017 Nobel Prize in Physiology or Medicine ay iginawad kina Hall, Rosbash, at Young.</figcaption>
+</figure>
 
 ## Karamihan ng Biological Clock ng Tao ay Hindi 24 Oras
 
@@ -82,15 +93,19 @@ Kung ang isang tao ay ganap na walang pahiwatig mula sa oras sa labas, gaano kah
 
 Ang sagot ay humigit-kumulang 24.2 oras, bahagyang mas mahaba kaysa sa 24. Ibig sabihin, halos lahat ng biological clock ng tao ay natural na mas mabagal nang kaunti kaysa sa pag-ikot ng mundo.
 
-![Science 期刊：人类昼夜节律接近 24 小时的研究](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler et al., 1999, na inilathala sa *Science*, ay sumukat na ang endogenous rhythm ng tao ay humigit-kumulang 24.18 oras.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <figcaption>Czeisler et al., 1999, na inilathala sa <em>Science</em>, ay sumukat na ang endogenous rhythm ng tao ay humigit-kumulang 24.18 oras.</figcaption>
+</figure>
 
 Kung gayon, bakit karamihan sa mga tao ay nakakapagpanatili pa rin ng regular na iskedyul ng pagtulog? Ang sagot ay: liwanag.
 
 Sa iyong retina, may isang uri ng espesyal na selula (ipRGC) na hindi para sa pagbuo ng imahe, kundi para lang mag-ulat sa SCN kung "may liwanag ba ngayon." Ang prosesong ito ay tinatawag na photoentrainment. Ang sikat ng araw tuwing umaga ang nagtutulak sa mabagal na orasan upang umusad nang kaunti, at muling itugma ito sa 24 oras. Sa mekanismong ito, naitatama ng mga normal na tao ang labis na sampu o higit pang minuto araw-araw.
 
-![正常人的睡眠周期](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Ang sleep cycle ng normal na tao: Ang oras ng pagtulog at paggising ay stable, at ang sleep band ay hindi gumagala. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <figcaption>Ang sleep cycle ng normal na tao: Ang oras ng pagtulog at paggising ay stable, at ang sleep band ay hindi gumagala. © Philo</figcaption>
+</figure>
 
 Pero sa iilang tao, nagkakaroon ng problema ang mekanismong ito ng "pag-aayos ng oras gamit ang liwanag," na nagpapakita sa dalawang uri ng sleep disorder na ating tatalakayin.
 
@@ -102,15 +117,19 @@ Ang DSPD (Delayed Sleep Phase Disorder) ay isang chronic circadian rhythm disord
 
 Sa madaling salita, ang DSPD ay nangangahulugang hindi ka makatulog bago mag-alas-dos o alas-tres ng madaling araw, ngunit kapag dumating na ang iyong natural na oras ng pagtulog, tiyak na makakatulog ka. Pagkatapos ng 7-8 oras na tulog, makakabangon ka at magiging masigla sa buong maghapon. Bukod pa rito, maraming pag-aaral kamakailan ang nakatuklas ng malaking kaugnayan sa pagitan ng adult ADHD at DSPD, kung saan ang DSPD ang pinakakaraniwang circadian rhythm disorder sa kanila.
 
-![DSPD 的睡眠周期](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*Ang sleep cycle ng DSPD: Stable ang sleep schedule at hindi gumagala, ngunit ang buong tulog ay mas huli kaysa sa normal na tao. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <figcaption>Ang sleep cycle ng DSPD: Stable ang sleep schedule at hindi gumagala, ngunit ang buong tulog ay mas huli kaysa sa normal na tao. © Philo</figcaption>
+</figure>
 
 Ang Non-24-hour sleep-wake disorder, o Non-24, ay isang pambihirang circadian rhythm disorder. Ang internal na biological clock ng pasyente ay lumalampas sa 24 oras (karaniwan ay nasa 25 oras), na nagiging dahilan upang maantala ang oras ng pagtulog at paggising ng 1 hanggang 2 oras araw-araw, kaya hindi sila makapag-adjust sa normal na iskedyul ng lipunan.
 
 Sa madaling salita, ang Non-24 ay nangangahulugang ang oras ng pagtulog sa bawat araw ay mas huli kaysa sa nakaraang araw, at patuloy itong nauusog, hanggang sa maging baliktad ang araw at gabi, bago ito umusad muli, na bumubuo ng isang kumpletong siklo. Walang simula o katapusan, tuloy-tuloy lang ang pag-ikot.
 
-![Non-24 的睡眠周期](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Ang sleep cycle ng Non-24: Ang oras ng pagtulog ay unti-unting lumalayo araw-araw, tulad ng isang hagdan na patuloy na bumababa, paulit-ulit. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <figcaption>Ang sleep cycle ng Non-24: Ang oras ng pagtulog ay unti-unting lumalayo araw-araw, tulad ng isang hagdan na patuloy na bumababa, paulit-ulit. © Philo</figcaption>
+</figure>
 
 Kung gayon, bakit may mga taong tuluyang nawawalan ng kakayahang i-calibrate ang kanilang biological clock gamit ang liwanag? Karaniwan ito sa mga ganap na bulag, kung saan napakalaking porsyento ng mga bulag (lalo na ang mga walang kakayahang makaramdam ng liwanag) ang nagpapakita ng sintomas ng Non-24 – dahil ang signal ng liwanag na nag-aayos ng biological clock ay dumadaan sa mata. Kung walang natatanggap na liwanag, ang orasan ay kusang umiikot paurong. Ngunit mayroon ding napakaliit na bilang ng mga taong may normal na paningin na hindi rin kayang i-calibrate ang kanilang biological clock gamit ang liwanag.
 
@@ -122,8 +141,10 @@ Paano mo malalaman kung anong uri ng biological clock ang mayroon ka?
 
 Ang pinakasimpleng paraan ay ang pagtatala ng sleep diary sa loob ng ilang linggo. Kung mayroon kang smartwatch, makakatulong din ang mga ito dahil may kakayahan na silang mag-record ng sleep cycle. Pagkatapos, obserbahan kung anong oras ka natural na natutulog at nagigising nang walang alarm clock, at kung stable ba ang estado na ito. Bukod pa rito, tingnan kung gising ka nang masigla o kung pakiramdam mo ay kulang ka sa tulog.
 
-![智能手表里的睡眠记录](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Ganito ang hitsura ng sleep record sa smartwatch / App — sa ilang linggong tuloy-tuloy na pagtatala, makikita mo kung stable o gumagala ang iyong sleep schedule.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <figcaption>Ganito ang hitsura ng sleep record sa smartwatch / App — sa ilang linggong tuloy-tuloy na pagtatala, makikita mo kung stable o gumagala ang iyong sleep schedule.</figcaption>
+</figure>
 
 Mula sa iyong obserbasyon, maaari kang makapagsabi kung saan ka nabibilang: kung palagi kang nahuhuli sa pagtulog – palaging alas-dos o alas-tres na bago matulog, pero masigla ka pa rin pagkatapos ng sapat na tulog – mas malamang na DSPD ito; kung ang oras ng pagtulog mo ay palaging mas huli kaysa sa nakaraang araw, at patuloy itong nauusog, ito ay Non-24; kung kabaliktaran naman, napakaaga mong matulog at napakaaga ring magising, ito ay FASPS. Siyempre, ang tunay na diagnosis ay kailangan pa ring kumpirmahin ng isang propesyonal sa sleep clinic.
 
@@ -155,11 +176,6 @@ Sana'y makatulog tayong lahat nang mahimbing.
 4.  Mataas ang Kaugnayan ng Adult ADHD sa Delayed Sleep Phase / Circadian Rhythm Disorder: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/)、[Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Mataas ang Insidente ng Non-24 sa mga Totally Blind, Clinical Trials ng Tasimelteon Phase III (SET at RESET): Lockley et al., *The Lancet*, 2015，[Link](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Ang Tasimelteon (Hetlioz) ay Inaprubahan ng FDA noong Enero 2014, ang Una at Tanging Gamot na Partikular para sa Non-24: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Higit pang Babasahin
-
--   [Maaari ba akong matulog nang mas mahusay sa mas kaunting oras? Isang self-experiment tungkol sa pagtulog Araw 1](/zh/blog/hacking-my-sleep-day1)
--   [Paano lutasin ang Rubik's Cube nang hindi gumagamit ng pormula: Maiintindihan maging ng mga elementarya](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

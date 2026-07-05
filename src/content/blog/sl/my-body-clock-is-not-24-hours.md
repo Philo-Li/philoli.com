@@ -11,6 +11,9 @@ tags:
 categories: Vsakdanji klepet
 description: "Moja biološka ura ni 24-urna, ampak 24,5-urna. Od molekularnih mehanizmov Nobelove nagrade leta 2017 do pogovora o dveh vrstah motenj cirkadianega ritma spanja, DSPD in Non-24, ter zakaj sem se odločil prilagoditi namesto upirati."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Kako pa biološka ura natančno uravnava te procese?
 
 Trije znanstveniki, Jeffrey Hall, Michael Rosbash in Michael Young, so v majhni vinski mušici odkrili "motor" biološke ure. In presenetljivo je, da ta motor ni v možganih, ampak v vsaki posamezni celici – skoraj vsaka celica v tvojem telesu nosi svojo lastno uro.
 
-![Brandeis revija o tem odkritju](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Revija Brandeis "Naravni glavni urar": Kako so trije znanstveniki odkrili biološko uro v vinski mušici.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis revija o tem odkritju" />
+  <figcaption>Revija Brandeis "Naravni glavni urar": Kako so trije znanstveniki odkrili biološko uro v vinski mušici.</figcaption>
+</figure>
 
 Način njenega delovanja lahko razumemo s prispodobo "tovarne, ki se samodejno zaustavi":
 
@@ -57,8 +62,10 @@ Celoten cikel "proizvodnja → kopičenje → samodejna zaustavitev → izprazni
 
 V znanosti se to imenuje transkripcijsko-translacijska negativna povratna zanka (TTFL). Ime zveni zapleteno, a v bistvu gre za omenjeno tovarno, ki sama pritiska zavoro – ko je določenega proteina preveč, zavre lastno proizvodnjo. S tem "kopičenjem-izpraznjevanjem", z vzponom in padcem, celica nekako izmeri dolžino enega dne.
 
-![Shematski prikaz transkripcijsko-translacijske negativne povratne zanke (TTFL)](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Če prispodobo tovarne zamenjamo z znanstvenim poimenovanjem, celoten krog zajema: transkripcija → akumulacija → inhibicija → degradacija → dehibicija, in traja približno 24 ur. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Shematski prikaz transkripcijsko-translacijske negativne povratne zanke (TTFL)" />
+  <figcaption>Če prispodobo tovarne zamenjamo z znanstvenim poimenovanjem, celoten krog zajema: transkripcija → akumulacija → inhibicija → degradacija → dehibicija, in traja približno 24 ur. © Philo</figcaption>
+</figure>
 
 Michael Young je našel še dva ključna igralca, ki to uro naredita še natančnejšo: protein TIM (Timeless), ki ponoči pomaga proteinu PER vstopiti v celično jedro in pritisniti gumb za zaustavitev proizvodnje; ter protein DBT (Doubletime), katerega naloga je upočasniti kopičenje proteina PER. Ravno to "upočasnjevanje" cikel natančno kalibrira na približno 24 ur, namesto da bi se končal v dvanajstih urah.
 
@@ -68,11 +75,15 @@ Da, biološka ura res obstaja, ni iluzija.
 
 Odkritje tega mehanizma ni bilo enostavno: že leta 1971 sta Konopka in Benzer odkrila mutirane vinske mušice z nenormalno biološko uro; leta 1984 so trije laboratoriji – Hall, Rosbash in Young – skoraj istočasno klonirali ključni gen *period*; nato so v devetdesetih letih postopoma sestavili mehanizem zgoraj opisane negativne povratne zanke (na primer, Young je leta 1994 odkril gen *timeless*). Celotna serija teh del je končno prejela Nobelovo nagrado za fiziologijo ali medicino leta 2017.
 
-![PNAS recenzija raziskave Konopke in Benzerja](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Začetek zgodbe: Leta 1971 sta Konopka in Benzer odkrila mutirane vinske mušice z nenormalno biološko uro.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS recenzija raziskave Konopke in Benzerja" />
+  <figcaption>Začetek zgodbe: Leta 1971 sta Konopka in Benzer odkrila mutirane vinske mušice z nenormalno biološko uro.</figcaption>
+</figure>
 
-![Trije dobitniki Nobelove nagrade za fiziologijo ali medicino leta 2017](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Zaključek: Nobelova nagrada za fiziologijo ali medicino leta 2017 je bila podeljena Hallu, Rosbashu in Youngu.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Trije dobitniki Nobelove nagrade za fiziologijo ali medicino leta 2017" />
+  <figcaption>Zaključek: Nobelova nagrada za fiziologijo ali medicino leta 2017 je bila podeljena Hallu, Rosbashu in Youngu.</figcaption>
+</figure>
 
 ## Biološka ura večine ljudi ni 24-urna
 
@@ -82,15 +93,19 @@ Tukaj je podatek, ki ga mnogi ne poznajo.
 
 Odgovor je približno 24,2 ure, kar je nekoliko več kot 24. To pomeni, da je biološka ura skoraj vsakega človeka naravno malce počasnejša od Zemlje.
 
-![Revija Science: Raziskava o človeškem cirkadianem ritmu, ki je blizu 24 uram](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler in sodelavci, objavljeno v reviji Science leta 1999, so izmerili, da endogeni ritem človeka traja približno 24,18 ur.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Revija Science: Raziskava o človeškem cirkadianem ritmu, ki je blizu 24 uram" />
+  <figcaption>Czeisler in sodelavci, objavljeno v reviji Science leta 1999, so izmerili, da endogeni ritem človeka traja približno 24,18 ur.</figcaption>
+</figure>
 
 Zakaj pa lahko večina ljudi vzdržuje reden spalni ritem? Odgovor je: svetloba.
 
 V mrežnici tvojih oči obstaja posebna vrsta celic (ipRGC), ki niso odgovorne za vidno sliko, temveč le sporočajo SCN-u, ali je "zdaj svetloba prisotna". Ta proces se imenuje sinhronizacija s svetlobo (entrainment). Jutranja svetloba vsak dan malo premakne to počasnejšo uro naprej in jo ponovno uskladi na 24 ur. Normalni ljudje s tem mehanizmom vsak dan izravnajo tistih nekaj dodatnih minut.
 
-![Normalni spalni cikel](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Normalni spalni cikel: Stabilen čas za spanje in zbujanje, spalni ritem se ne premika. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Normalni spalni cikel" />
+  <figcaption>Normalni spalni cikel: Stabilen čas za spanje in zbujanje, spalni ritem se ne premika. © Philo</figcaption>
+</figure>
 
 Pri redkih posameznikih pa ta mehanizem "dnevne uskladitve s svetlobo" ne deluje pravilno, kar se kaže kot spodaj opisani dve motnji spanja.
 
@@ -102,15 +117,19 @@ DSPD (sindrom zakasnjene faze spanja) je kronična motnja cirkadianega ritma, pr
 
 Preprosto povedano, DSPD pomeni, da ne moreš zaspati pred drugo ali tretjo uro zjutraj, a ko pride ta ura, zagotovo zaspiš. Ko odspiš 7-8 ur, se zbudiš in si čez dan prav tako poln energije. Poleg tega so številne nedavne raziskave pokazale visoko korelacijo med ADHD pri odraslih in DSPD, pri čemer je DSPD najpogostejša motnja cirkadianega ritma pri njih.
 
-![Spalni cikel pri DSPD](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*Spalni cikel pri DSPD: Urnik spanja je stabilen in se ne premika, vendar je celoten cikel spanja bistveno kasnejši kot pri normalnih ljudeh. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Spalni cikel pri DSPD" />
+  <figcaption>Spalni cikel pri DSPD: Urnik spanja je stabilen in se ne premika, vendar je celoten cikel spanja bistveno kasnejši kot pri normalnih ljudeh. © Philo</figcaption>
+</figure>
 
 Ne-24-urni sindrom spanja in budnosti (Non-24-hour sleep-wake disorder, skrajšano Non-24) je redka motnja cirkadianega ritma. Biološka ura prizadetih posameznikov je daljša od 24 ur (običajno okoli 25 ur), kar povzroči, da se čas za spanje in zbujanje vsak dan zamakne za eno do dve uri, kar onemogoča prilagajanje običajnemu družbenemu urniku.
 
 Preprosto povedano, Non-24 pomeni, da je čas za spanje vsak dan kasnejši kot prejšnji dan, in to se nadaljuje, dokler se dan ne obrne v noč, nato pa se cikel ponovno premakne naprej in tvori celoten krog. Brez jasnega začetka ali konca, le nenehno ponavljanje.
 
-![Spalni cikel pri Non-24](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Spalni cikel pri Non-24: Čas za spanje se vsak dan premika nazaj, kot stopnišče, ki nenehno drsi navzdol, v neskončnem ciklu. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Spalni cikel pri Non-24" />
+  <figcaption>Spalni cikel pri Non-24: Čas za spanje se vsak dan premika nazaj, kot stopnišče, ki nenehno drsi navzdol, v neskončnem ciklu. © Philo</figcaption>
+</figure>
 
 Zakaj pa nekateri ljudje popolnoma izgubijo sposobnost, da bi se njihova ura sinhronizirala s svetlobo? To je najpogosteje pri popolnoma slepih ljudeh; zelo velik delež popolnoma slepih posameznikov (še posebej tistih, ki nimajo nobenega občutka za svetlobo) razvije simptome Non-24 – ker svetlobni signal za sinhronizacijo biološke ure potuje skozi oči. Če ne prejmejo svetlobe, se ura preprosto premika nazaj. Obstaja pa tudi zelo majhno število ljudi z normalnim vidom, ki prav tako ne morejo sinhronizirati svoje biološke ure s svetlobo.
 
@@ -122,8 +141,10 @@ Kako torej ugotovite, kakšna je vaša biološka ura?
 
 Najpreprostejša metoda je, da si nekaj tednov zaporedoma beležite spalni dnevnik. Če imate pametno uro, ta prav tako beleži cikle spanja. Nato opazujte, ob kateri uri ponavadi zaspite in se zbudite, če ne uporabljate budilke, in ali je to stanje stabilno. Prav tako zabeležite, ali se zbudite spočiti ali se počutite, kot da ste premalo spali.
 
-![Zapis spanja v pametni uri](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Zapisi spanja v pametni uri / aplikaciji izgledajo takole – po nekaj tednih neprekinjenega beleženja boste videli, ali je vaš spalni ritem stabilen ali se premika.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Zapis spanja v pametni uri" />
+  <figcaption>Zapisi spanja v pametni uri / aplikaciji izgledajo takole – po nekaj tednih neprekinjenega beleženja boste videli, ali je vaš spalni ritem stabilen ali se premika.</figcaption>
+</figure>
 
 Na podlagi opazovanj se lahko približno uvrstite: če dosledno spite pozneje – vedno zaspite šele ob dveh ali treh zjutraj, a ste po zadostnem spancu sveži – je to bolj podobno DSPD. Če se čas za spanje vsak dan premika nazaj, je to Non-24. Če pa se, nasprotno, zbudite in zaspite izjemno zgodaj, gre za FASPS. Seveda, za pravo diagnozo je potrebna strokovna pomoč v specialistični ambulanti za motnje spanja.
 
@@ -155,11 +176,6 @@ Vendar pa iz družbenega vidika, ker so delovni in družabni urniki v družbi fi
 4.  ADHD pri odraslih je močno povezan z zamikom spalne faze / motnjami cirkadianega ritma: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Non-24 je pogost pri popolnoma slepih, klinična preskušanja Tasimelteona faze III (SET in RESET): Lockley et al., *The Lancet*, 2015, [povezava](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Tasimelteon (Hetlioz) je bil januarja 2014 odobren s strani FDA kot prvo zdravilo, posebej namenjeno za zdravljenje Non-24: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Več za branje
-
-- [Ali lahko spim manj in bolje? Samoeksperiment s spanjem, 1. dan](/zh/blog/hacking-my-sleep-day1)
-- [Kako rešiti Rubikovo kocko brez formul: Razumljivo tudi za osnovnošolce](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

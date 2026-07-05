@@ -11,6 +11,9 @@ tags:
 categories: Arkipäivän jutut
 description: "Biologinen kelloni ei ole 24 tuntia, vaan 24,5 tuntia. Puhun tässä DSPD:stä ja Non-24-unihäiriöstä, kahdesta vuorokausirytmin häiriöstä, alkaen vuoden 2017 Nobelin palkinnosta niiden molekyylimekanismeihin liittyen – ja kerron, miksi olen päättänyt mukautua enkä taistella vastaan."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Miten sitten tämä biologinen kello tarkalleen ottaen säätelee toimintaansa?
 
 Kolme tiedemiestä, Jeffrey Hall, Michael Rosbash ja Michael Young, löysivät biologisen kellon "moottorin" pienten banaanikärpästen avulla. Ja mikä hämmästyttävintä, tämä moottori ei sijaitse aivoissa, vaan jokaisessa solussa – lähes jokaisessa kehosi solussa on oma sisäänrakennettu kellonsa.
 
-![Brandeis-lehden artikkeli tästä löydöstä](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Brandeis-lehden artikkeli "Luonnon pääkellonpitäjä": Kuinka kolme tiedemiestä löysi biologisen kellon banaanikärpäsestä.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis-lehden artikkeli tästä löydöstä" />
+  <figcaption>Brandeis-lehden artikkeli "Luonnon pääkellonpitäjä": Kuinka kolme tiedemiestä löysi biologisen kellon banaanikärpäsestä.</figcaption>
+</figure>
 
 Sen toimintaperiaatteen voi ymmärtää vertaamalla sitä "tehtaaseen, joka sammuttaa itsensä":
 
@@ -57,8 +62,10 @@ Tämä koko "tuotanto → kertyminen → itsesammutus → tyhjennys → uudellee
 
 Tieteellisesti tätä kutsutaan transkriptio-translaatio-negatiiviseksi palautesilmukaksi (TTFL). Nimi kuulostaa pelottavalta, mutta pohjimmiltaan kyse on yllä kuvatusta tehtaasta, joka jarruttaa itseään – proteiini estää omaa tuotantoaan, kun sitä on kertynyt riittävästi. Tämän "kertymisen ja tyhjenemisen" nousun ja laskun avulla solu onnistuu mittaamaan päivän pituuden.
 
-![Transkriptio-translaatio-negatiivisen palautesilmukan (TTFL) kaavio](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Jos tehdasvertaus vaihdetaan tieteellisiin termeihin, kokonainen kierros on: Transkriptio → Akkumulaatio → Estyminen → Hajoaminen → Esto poistuu, ja yksi kierros kestää noin 24 tuntia. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkriptio-translaatio-negatiivisen palautesilmukan (TTFL) kaavio" />
+  <figcaption>Jos tehdasvertaus vaihdetaan tieteellisiin termeihin, kokonainen kierros on: Transkriptio → Akkumulaatio → Estyminen → Hajoaminen → Esto poistuu, ja yksi kierros kestää noin 24 tuntia. © Philo</figcaption>
+</figure>
 
 Michael Young löysi myös kaksi muuta avainroolia, jotka tekevät tästä kellosta entistä tarkemman: TIM-proteiini (Timeless), joka auttaa PER-proteiinia pääsemään solun tumaan yöllä painamaan tuotannon pysäytysnappia; ja DBT (Doubletime), jonka tehtävänä on hidastaa PER-proteiinin kertymisnopeutta. Juuri tämä "hidastaminen" kalibroi syklin tarkasti lähelle 24 tuntia, eikä anna sen kiertää loppuun jo muutamassa tunnissa.
 
@@ -68,11 +75,15 @@ Kyllä, biologinen kello on todellinen, ei mikään harha.
 
 Tämän mekanismin löytyminen ei tapahtunut yhdessä yössä: jo vuonna 1971 Konopka ja Benzer löysivät mutanttibanaanikärpäsiä, joiden biologinen kello oli epänormaali; vuonna 1984 Hallin, Rosbashin ja Youngin kolme laboratoriota kloonasivat lähes samanaikaisesti avainasemassa olevan *period*-geenin; ja vasta 1990-luvun aikana he kokosivat vähitellen yllä kuvatun negatiivisen palautesilmukan mekanismin (esimerkiksi Young löysi *timeless*-geenin vuonna 1994). Tämä uraauurtava työ palkittiin lopulta vuoden 2017 fysiologian tai lääketieteen Nobel-palkinnolla.
 
-![PNAS-katsaus Konopkan ja Benzerin tutkimukseen](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Tarinan alku: Vuonna 1971 Konopka ja Benzer löysivät mutanttibanaanikärpäsiä, joiden biologinen kello oli epänormaali.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS-katsaus Konopkan ja Benzerin tutkimukseen" />
+  <figcaption>Tarinan alku: Vuonna 1971 Konopka ja Benzer löysivät mutanttibanaanikärpäsiä, joiden biologinen kello oli epänormaali.</figcaption>
+</figure>
 
-![Vuoden 2017 fysiologian tai lääketieteen Nobel-palkinnon kolme saajaa](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Huipentuma: Vuoden 2017 fysiologian tai lääketieteen Nobel-palkinto myönnettiin Hallille, Rosbashille ja Youngille.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Vuoden 2017 fysiologian tai lääketieteen Nobel-palkinnon kolme saajaa" />
+  <figcaption>Huipentuma: Vuoden 2017 fysiologian tai lääketieteen Nobel-palkinto myönnettiin Hallille, Rosbashille ja Youngille.</figcaption>
+</figure>
 
 ## Useimpien ihmisten biologinen kello ei ole 24 tuntia
 
@@ -82,15 +93,19 @@ Jos ihminen eristettäisiin täysin ulkoisista aikamerkeistä, kuinka pitkäksi 
 
 Vastaus on noin 24,2 tuntia, eli hieman yli 24. Toisin sanoen lähes jokaisen ihmisen biologinen kello on luonnostaan hieman maapalloa hitaampi.
 
-![Science-lehti: Tutkimus ihmisen vuorokausirytmistä, joka on lähellä 24 tuntia](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler ym. julkaisivat Science-lehdessä vuonna 1999 tutkimuksen, jossa ihmisen endogeeninen rytmi mitattiin noin 24,18 tunniksi.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science-lehti: Tutkimus ihmisen vuorokausirytmistä, joka on lähellä 24 tuntia" />
+  <figcaption>Czeisler ym. julkaisivat Science-lehdessä vuonna 1999 tutkimuksen, jossa ihmisen endogeeninen rytmi mitattiin noin 24,18 tunniksi.</figcaption>
+</figure>
 
 Miksi sitten useimmat ihmiset voivat ylläpitää säännöllistä vuorokausirytmiä? Vastaus on: valo.
 
 Verkkokalvossasi on erityisiä soluja (ipRGC), jotka eivät vastaa kuvien muodostamisesta, vaan ainoastaan raportoivat SCN:lle "onko valoa". Tätä prosessia kutsutaan viritykseksi (Entrainment). Joka aamuinen valo siirtää sitä hitaasti käyvää kelloa hieman eteenpäin, kohdistaen sen takaisin 24 tuntiin. Normaalit ihmiset käyttävät tätä mekanismia tasoittaakseen ne muutamat ylimääräiset minuutit joka päivä.
 
-![Normaalin ihmisen unisykli](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Normaalin ihmisen unisykli: nukahtamis- ja heräämisajat ovat vakaat, unijakso tasainen eikä siirry. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Normaalin ihmisen unisykli" />
+  <figcaption>Normaalin ihmisen unisykli: nukahtamis- ja heräämisajat ovat vakaat, unijakso tasainen eikä siirry. © Philo</figcaption>
+</figure>
 
 Harvoilla ihmisillä tämä "päivittäinen valolla synkronointi" -mekanismi toimii puutteellisesti, mikä ilmenee seuraavina kahdenlaisina unihäiriöinä.
 
@@ -102,15 +117,19 @@ DSPD (viivästynyt unijaksohäiriö) on krooninen vuorokausirytmin häiriö, jos
 
 Yksinkertaisesti sanottuna DSPD tarkoittaa, että et saa unta ennen kahta tai kolmea yöllä, mutta kun on aika, nukahdat varmasti, nukut 7–8 tuntia ja heräät sen jälkeen pirteänä päivään. Lisäksi viime vuosina on tehty paljon tutkimusta, joka osoittaa vahvan yhteyden aikuisten ADHD:n ja DSPD:n välillä, ja DSPD onkin yleisin vuorokausirytmin häiriö ADHD-potilailla.
 
-![DSPD:n unisykli](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*DSPD:n unisykli: rytmi on vakaa eikä siirry, mutta koko unijakso on selvästi myöhäisempi kuin normaaleilla ihmisillä. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD:n unisykli" />
+  <figcaption>DSPD:n unisykli: rytmi on vakaa eikä siirry, mutta koko unijakso on selvästi myöhäisempi kuin normaaleilla ihmisillä. © Philo</figcaption>
+</figure>
 
 Ei-24-tunnin uni-valverytmin häiriö (Non-24-hour sleep-wake disorder, lyhyesti Non-24) on harvinainen vuorokausirytmin häiriö. Potilaan biologinen kello on yli 24 tuntia (yleensä noin 25 tuntia), mikä aiheuttaa sen, että nukahtamis- ja heräämisajat siirtyvät 1–2 tuntia myöhemmäksi joka päivä, mikä tekee normaaliin yhteiskunnalliseen rytmiin mukautumisen mahdottomaksi.
 
 Yksinkertaisesti sanottuna Non-24 tarkoittaa, että nukahtamisaika siirtyy joka päivä myöhemmäksi kuin edellisenä päivänä, jatkuvasti eteenpäin, kunnes vuorokausirytmi on kääntynyt päälaelleen, ja sitten taas eteenpäin, muodostaen täyden syklin. Ei ole alkua eikä loppua, vain jatkuva kiertokulku.
 
-![Non-24:n unisykli](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Non-24:n unisykli: nukahtamisaika siirtyy päivä päivältä myöhemmäksi, liukuen alaspäin kuin portaat, syklisesti toistuen. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24:n unisykli" />
+  <figcaption>Non-24:n unisykli: nukahtamisaika siirtyy päivä päivältä myöhemmäksi, liukuen alaspäin kuin portaat, syklisesti toistuen. © Philo</figcaption>
+</figure>
 
 Miksi sitten jotkut ihmiset menettävät täysin kykynsä säätyä valon mukaan? Tämä on yleisintä täysin sokeiden keskuudessa, joista erittäin suuri osa (erityisesti ne, joilla ei ole lainkaan valonhavainnointikykyä) kärsii Non-24-oireista – koska biologisen kellon virittämiseen tarvittava valosignaali kulkee silmien kautta. Jos valoa ei vastaanoteta, kello voi vain ajautua taaksepäin itsestään. On kuitenkin myös hyvin harvoja näkeviä ihmisiä, jotka eivät myöskään pysty virittämään biologista kelloaan valon avulla.
 
@@ -122,8 +141,10 @@ Miten sitten voi selvittää, millainen biologinen kello itsellä on?
 
 Yksinkertaisin tapa on pitää unikuvapäiväkirjaa useiden viikkojen ajan. Jos käytössäsi on älykello, nykyaikaiset älykellot tallentavat myös unisyklejä. Tarkkaile sitten, mihin aikaan nukahdat ja heräät, jos et tarkoituksella aseta herätystä, onko tämä tila vakaa, ja tunnetko herättyäsi virkeäksi vai uneliaaksi.
 
-![Älykellon unitiedot](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Älykellon unitiedot näyttävät tältä – muutaman viikon jatkuva tallennus paljastaa, onko rytmisi vakaa vai ajautuuko se.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Älykellon unitiedot" />
+  <figcaption>Älykellon unitiedot näyttävät tältä – muutaman viikon jatkuva tallennus paljastaa, onko rytmisi vakaa vai ajautuuko se.</figcaption>
+</figure>
 
 Tarkkailun perusteella voit karkeasti sijoittaa itsesi johonkin kategoriaan: jos nukahdat tasaisesti myöhään – aina kahden tai kolmen aikaan, mutta olet silti pirteä nukuttuasi tarpeeksi – kyseessä on todennäköisemmin DSPD; jos nukahtamisaikasi siirtyy joka päivä myöhemmäksi ja ajautuu jatkuvasti taaksepäin, kyseessä on Non-24; jos taas nukahdat ja heräät erittäin aikaisin, kyseessä on FASPS. Lopullisen diagnoosin saa tietysti vain ammattilaisen uniklinikalta.
 
@@ -155,11 +176,6 @@ Toivon kaikille hyviä unia.
 4. Aikuisten ADHD ja viivästynyt unijakso/vuorokausirytmin häiriö ovat vahvasti yhteydessä toisiinsa: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/)、[Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5. Non-24 on yleinen täysin sokeiden keskuudessa, Tasimelteonin vaiheen III kliiniset tutkimukset (SET ja RESET): Lockley et al., *The Lancet*, 2015, [linkki](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6. Tasimelteon (Hetlioz) sai FDA:n hyväksynnän tammikuussa 2014, ensimmäinen erityisesti Non-24:n hoitoon tarkoitettu lääke: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Lisälukemista
-
-- [Voinko nukkua paremmin vähemmällä unella? Uni-itsekokeiluni päivä 1](/zh/blog/hacking-my-sleep-day1)
-- [Kuinka ratkaista Rubikin kuutio ilman kaavoja: jopa alakoululaiset ymmärtävät](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 

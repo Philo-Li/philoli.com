@@ -11,6 +11,9 @@ tags:
 categories: Každodenné rozhovory
 description: "Moje biologické hodiny nemajú 24 hodín, ale 24,5 hodiny. Počnúc molekulárnym mechanizmom objaveným v roku 2017, oceneným Nobelovou cenou, rozoberám dve poruchy cirkadiánneho rytmu spánku, DSPD a Non-24, a prečo som sa rozhodol prispôsobiť sa im, namiesto toho, aby som s nimi bojoval."
 cover: /uploads/images/my-body-clock-is-not-24-hours/cover.webp
+related:
+  - hacking-my-sleep-day1
+  - solve-rubiks-cube-without-formulas
 toc: true
 ---
 
@@ -40,8 +43,10 @@ Ako presne sú teda biologické hodiny regulované?
 
 Traja vedci, Jeffrey Hall, Michael Rosbash a Michael Young, objavili „motor“ biologických hodín v malej ovocnej muške. A čo je prekvapujúce, tento motor nie je v mozgu, ale v každej jednej bunke – takmer každá bunka vo vašom tele si so sebou nesie vlastné hodiny.
 
-![Brandeis magazín o tomto objave](/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp)
-*Časopis Brandeis, „Hlavný časomerač prírody“: Ako traja vedci objavili biologické hodiny v ovocnej muške.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis magazín o tomto objave" />
+  <figcaption>Časopis Brandeis, „Hlavný časomerač prírody“: Ako traja vedci objavili biologické hodiny v ovocnej muške.</figcaption>
+</figure>
 
 Jeho princíp fungovania možno pochopiť pomocou metafory „samovypínacej továrne“:
 
@@ -57,8 +62,10 @@ Celý tento cyklus „produkcia → hromadenie → samovypnutie → vyprázdneni
 
 Veda to nazýva transkripčno-translačný okruh negatívnej spätnej väzby (TTFL). Názov znie zložito, no v podstate ide o spomínanú továreň, ktorá sama stlačí brzdu – keď sa nahromadí určité množstvo proteínu, inhibuje vlastnú produkciu. Vďaka tomuto „hromadeniu a vyprázdňovaniu“, stúpaniu a klesaniu, bunka dokáže odmerať dĺžku jedného dňa.
 
-![Schéma transkripčno-translačného okruhu negatívnej spätnej väzby (TTFL)](/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp)
-*Ak metaforu továrne nahradíme vedeckými názvami, celý cyklus je: transkripcia → akumulácia → inhibícia → degradácia → dezinhibícia, pričom jeden cyklus trvá približne 24 hodín. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Schéma transkripčno-translačného okruhu negatívnej spätnej väzby (TTFL)" />
+  <figcaption>Ak metaforu továrne nahradíme vedeckými názvami, celý cyklus je: transkripcia → akumulácia → inhibícia → degradácia → dezinhibícia, pričom jeden cyklus trvá približne 24 hodín. © Philo</figcaption>
+</figure>
 
 Michael Young objavil aj ďalšie dve kľúčové postavy, ktoré tieto hodiny robia ešte presnejšími: proteín TIM (Timeless), ktorý v noci pomáha PER proteínu vstúpiť do bunkového jadra a stlačiť tlačidlo zastavenia výroby; a proteín DBT (Doubletime), ktorého úlohou je spomaliť rýchlosť hromadenia PER proteínu – práve toto „spomalenie“ kalibruje cyklus presne na približne 24 hodín, namiesto toho, aby prebehol za tucet hodín.
 
@@ -68,11 +75,15 @@ V každej bunke existuje takáto továreň s vlastnou spätnou väzbou PER prote
 
 Objav tohto mechanizmu nebol jednorazovou záležitosťou: Už v roku 1971 Konopka a Benzer objavili mutantné ovocné mušky s abnormálnymi biologickými hodinami; v roku 1984 tri laboratóriá Halla, Rosbasha a Younga takmer súčasne klonovali kľúčový gén *period*; a až v priebehu 90. rokov postupne poskladali mechanizmus vyššie opísaného okruhu negatívnej spätnej väzby (napríklad Young objavil gén *timeless* v roku 1994). Táto séria prác nakoniec viedla k udeleniu Nobelovej ceny za fyziológiu alebo medicínu v roku 2017.
 
-![PNAS recenzuje štúdiu Konopku a Benzera](/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp)
-*Začiatok príbehu: V roku 1971 Konopka a Benzer objavili mutantné ovocné mušky s abnormálnymi biologickými hodinami.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS recenzuje štúdiu Konopku a Benzera" />
+  <figcaption>Začiatok príbehu: V roku 1971 Konopka a Benzer objavili mutantné ovocné mušky s abnormálnymi biologickými hodinami.</figcaption>
+</figure>
 
-![Traja laureáti Nobelovej ceny za fyziológiu alebo medicínu v roku 2017](/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp)
-*Vyvrcholenie: Nobelova cena za fyziológiu alebo medicínu v roku 2017 udelená Hallovi, Rosbashovi a Youngovi.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Traja laureáti Nobelovej ceny za fyziológiu alebo medicínu v roku 2017" />
+  <figcaption>Vyvrcholenie: Nobelova cena za fyziológiu alebo medicínu v roku 2017 udelená Hallovi, Rosbashovi a Youngovi.</figcaption>
+</figure>
 
 ## Biologické hodiny väčšiny ľudí nemajú 24 hodín
 
@@ -82,15 +93,19 @@ Ak by bol človek úplne odizolovaný od vonkajších časových podnetov, aký 
 
 Odpoveď je približne 24,2 hodiny, čo je o niečo viac ako 24. To znamená, že biologické hodiny takmer každého človeka sú prirodzene o niečo pomalšie ako rotácia Zeme.
 
-![Science Journal: Štúdia o ľudských cirkadiánnych rytmoch blízkych 24 hodinám](/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp)
-*Czeisler a kol., publikované v *Science*, 1999, namerali endogénny rytmus človeka približne 24,18 hodiny.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science Journal: Štúdia o ľudských cirkadiánnych rytmoch blízkych 24 hodinám" />
+  <figcaption>Czeisler a kol., publikované v <em>Science</em>, 1999, namerali endogénny rytmus človeka približne 24,18 hodiny.</figcaption>
+</figure>
 
 Prečo si teda väčšina ľudí dokáže udržať pravidelný spánkový režim? Odpoveď je: svetlo.
 
 Vo vašej sietnici existuje špeciálny typ buniek (ipRGC), ktoré nie sú zodpovedné za videnie obrazov, ale iba za hlásenie „či je teraz svetlo“ do SCN. Tento proces sa nazýva fotické nastavenie (Entrainment). Ranné svetlo každý deň posunie tie pomalšie hodiny trochu dopredu a znovu ich zosynchronizuje na 24 hodín. Normálni ľudia pomocou tohto mechanizmu každý deň vyrovnávajú tých pár minút navyše.
 
-![Spánkový cyklus normálneho človeka](/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp)
-*Spánkový cyklus normálneho človeka: čas zaspávania a prebúdzania je stabilný, spánok je rovnomerný a neposúva sa. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Spánkový cyklus normálneho človeka" />
+  <figcaption>Spánkový cyklus normálneho človeka: čas zaspávania a prebúdzania je stabilný, spánok je rovnomerný a neposúva sa. © Philo</figcaption>
+</figure>
 
 U menšiny ľudí, u ktorých je tento mechanizmus „dennej synchronizácie svetlom“ narušený, sa prejavujú dve poruchy spánku, o ktorých budeme hovoriť nižšie.
 
@@ -102,15 +117,19 @@ DSPD (porucha oneskorenej fázy spánku) je chronická porucha cirkadiánneho ry
 
 Jednoducho povedané, DSPD znamená, že nedokážete zaspať pred druhou alebo treťou hodinou ráno, no keď už zaspíte, určite spíte 7-8 hodín a zobudíte sa s dostatkom energie na celý deň. Okrem toho, v posledných rokoch množstvo štúdií zistilo, že ADHD u dospelých je vysoko spojená s DSPD, pričom DSPD je ich najčastejšou poruchou cirkadiánneho rytmu.
 
-![Spánkový cyklus pri DSPD](/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp)
-*Spánkový cyklus pri DSPD: režim je stabilný a neposúva sa, ale celý spánok je výrazne posunutý na neskoršie hodiny ako u normálnych ľudí. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Spánkový cyklus pri DSPD" />
+  <figcaption>Spánkový cyklus pri DSPD: režim je stabilný a neposúva sa, ale celý spánok je výrazne posunutý na neskoršie hodiny ako u normálnych ľudí. © Philo</figcaption>
+</figure>
 
 Non-24-hodinová porucha spánku a bdelosti (skrátene Non-24) je zriedkavá porucha cirkadiánneho rytmu. Biologické hodiny pacienta presahujú 24 hodín (zvyčajne sú okolo 25 hodín), čo spôsobuje, že čas zaspávania a prebúdzania sa každý deň posúva o 1 až 2 hodiny, čím sa nedokáže prispôsobiť bežnému spoločenskému režimu.
 
 Jednoducho povedané, Non-24 znamená, že čas zaspávania je každý deň neskorší ako predchádzajúci deň, neustále sa posúva, až kým sa deň a noc neobrátia, a potom sa posunie znova dopredu, čím sa vytvorí kompletný cyklus. Bez ohľadu na začiatok alebo koniec, ide o neustále opakovanie.
 
-![Spánkový cyklus pri Non-24](/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp)
-*Spánkový cyklus pri Non-24: čas zaspávania sa posúva každý deň, neustále klesá ako po schodoch, a takto sa opakuje. © Philo*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Spánkový cyklus pri Non-24" />
+  <figcaption>Spánkový cyklus pri Non-24: čas zaspávania sa posúva každý deň, neustále klesá ako po schodoch, a takto sa opakuje. © Philo</figcaption>
+</figure>
 
 Prečo niektorí ľudia úplne strácajú schopnosť synchronizovať sa svetlom? Najčastejšie sa to vyskytuje u úplne nevidiacich ľudí, kde veľmi veľké percento (najmä tých, ktorí nemajú žiadne vnímanie svetla) prejavuje príznaky Non-24 – pretože svetelný signál na kalibráciu biologických hodín prechádza cez oči, a bez prijímania svetla sa hodiny môžu len samy posúvať. Existuje však aj veľmi malé percento ľudí s normálnym zrakom, ktorí rovnako nedokážu synchronizovať svoje biologické hodiny svetlom.
 
@@ -122,8 +141,10 @@ Ako teda zistiť, aký je stav vašich biologických hodín?
 
 Najjednoduchším spôsobom je viesť si spánkový denník niekoľko týždňov. Ak máte inteligentné hodinky, tie tiež zaznamenávajú spánkové cykly. Potom sledujte, kedy máte tendenciu ísť spať a kedy sa zobudiť, ak si nenastavujete budík. Sledujte tiež, či je tento stav stabilný a či sa po prebudení cítite plní energie alebo s nedostatkom spánku.
 
-![Záznamy spánku v inteligentných hodinkách](/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp)
-*Záznamy spánku v inteligentných hodinkách / aplikácii vyzerajú takto – po niekoľkých týždňoch nepretržitého zaznamenávania uvidíte, či je váš spánkový režim stabilný alebo sa posúva.*
+<figure class="post-figure">
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Záznamy spánku v inteligentných hodinkách" />
+  <figcaption>Záznamy spánku v inteligentných hodinkách / aplikácii vyzerajú takto – po niekoľkých týždňoch nepretržitého zaznamenávania uvidíte, či je váš spánkový režim stabilný alebo sa posúva.</figcaption>
+</figure>
 
 Na základe pozorovania sa môžete zhruba zaradiť: ak stabilne chodíte spať neskôr – vždy až o druhej alebo tretej, ale po dostatočnom spánku ste stále čulí – je to skôr DSPD; ak sa čas zaspávania každý deň posúva dozadu a neustále sa oneskoruje, je to Non-24; ak naopak extrémne skoro zaspávate a extrémne skoro sa budíte, je to FASPS. Samozrejme, skutočnú diagnózu musí stanoviť špecializovaná spánková klinika.
 
@@ -155,11 +176,6 @@ Chcem povedať, že nie ste leniví, ani neschopní sebadisciplíny, jednoducho 
 4.  ADHD u dospelých a oneskorená fáza spánku/poruchy cirkadiánneho rytmu sú vysoko korelované: [ADHD as a circadian rhythm disorder (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12728042/), [Adult ADHD and clinical correlates of DSPD](https://www.sciencedirect.com/science/article/abs/pii/S0165178119324564)
 5.  Vysoký výskyt Non-24 u úplne nevidiacich ľudí, klinické skúšky fázy III Tasimelteonu (SET a RESET): Lockley et al., *The Lancet*, 2015, [link](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60031-9/abstract)
 6.  Tasimelteon (Hetlioz) bol schválený FDA v januári 2014 ako prvý liek špeciálne na liečbu Non-24: [Hetlioz FDA Approval History](https://www.drugs.com/history/hetlioz.html)
-
-## Viac na čítanie
-
--   [Dokážem spať lepšie za kratší čas? Môj vlastný experiment so spánkom – Deň 1](/zh/blog/hacking-my-sleep-day1)
--   [Ako vyriešiť Rubikovu kocku bez vzorcov: Pochopia aj žiaci základnej školy](/zh/blog/solve-rubiks-cube-without-formulas)
 
 ---
 
