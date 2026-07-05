@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mitt dygn är 24,5 timmar långt"
+title: "Mitt dygn är 24,5 timmar långt: En diskussion om DSPD och Non-24 sömnstörningar"
 date: 2026-07-05 12:00:00
 tags:
   - Sömn

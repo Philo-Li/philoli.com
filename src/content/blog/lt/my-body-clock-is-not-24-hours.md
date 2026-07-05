@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mano para trunka 24,5 valandos"
+title: "Mano para trunka 24,5 valandos: pokalbis apie DSPD ir Non-24 miego sutrikimus"
 date: 2026-07-05 12:00:00
 tags:
   - Miegas

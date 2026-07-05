@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mein Tag hat 24,5 Stunden"
+title: "Mein Tag hat 24,5 Stunden: Über DSPD und Non-24 Schlafstörungen"
 date: 2026-07-05 12:00:00
 tags:
   - Schlaf

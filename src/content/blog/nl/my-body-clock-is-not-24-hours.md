@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mijn dag duurt 24,5 uur"
+title: "Mijn dag duurt 24,5 uur: een gesprek over DSPD en Non-24 slaapstoornissen"
 date: 2026-07-05 12:00:00
 tags:
   - Slaap

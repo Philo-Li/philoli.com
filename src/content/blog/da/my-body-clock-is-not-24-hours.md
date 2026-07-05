@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mit døgn er 24,5 timer langt"
+title: "Mit døgn er 24,5 timer langt: Om DSPD og Non-24 søvnforstyrrelser"
 date: 2026-07-05 12:00:00
 tags:
   - Søvn

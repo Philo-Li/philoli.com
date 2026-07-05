@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Vuorokauteni on 24,5 tuntia pitkä"
+title: "Vuorokauteni on 24,5 tuntia pitkä: Keskustelua DSPD:stä ja Non-24-unihäiriöstä"
 date: 2026-07-05 12:00:00
 tags:
   - Uni

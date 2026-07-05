@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Mi día dura 24,5 horas"
+title: "Mi día dura 24,5 horas: Hablemos del DSPD y el trastorno del sueño Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Sueño

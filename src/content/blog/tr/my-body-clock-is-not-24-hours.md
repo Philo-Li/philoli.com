@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Benim günüm 24,5 saat sürüyor"
+title: "Benim günüm 24,5 saat sürüyor: DSPD ve Non-24 Uyku Bozuklukları Üzerine"
 date: 2026-07-05 12:00:00
 tags:
   - Uyku

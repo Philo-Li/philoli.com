@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Một ngày của tôi dài 24,5 giờ"
+title: "Một ngày của tôi dài 24,5 giờ: Trò chuyện về Rối loạn giấc ngủ DSPD và Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Giấc ngủ

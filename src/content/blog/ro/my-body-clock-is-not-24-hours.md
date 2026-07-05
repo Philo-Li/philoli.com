@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Ziua mea durează 24,5 ore"
+title: "Ziua mea durează 24,5 ore: Despre DSPD și tulburarea de somn Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Somn

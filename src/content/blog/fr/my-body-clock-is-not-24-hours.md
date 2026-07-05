@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Ma journée dure 24,5 heures"
+title: "Ma journée dure 24,5 heures : parlons du TSPS et du Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Sommeil

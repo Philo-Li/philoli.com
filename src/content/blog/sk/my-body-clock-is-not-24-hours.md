@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Môj deň trvá 24,5 hodiny"
+title: "Môj deň trvá 24,5 hodiny: Pohľad na DSPD a Non-24 poruchy spánku"
 date: 2026-07-05 12:00:00
 tags:
   - Spánok

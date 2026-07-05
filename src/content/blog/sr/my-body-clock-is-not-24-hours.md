@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Мој дан траје 24,5 сата"
+title: "Мој дан траје 24,5 сата: Priča o DSPD i Non-24 poremećajima spavanja"
 date: 2026-07-05 12:00:00
 tags:
   - Сан

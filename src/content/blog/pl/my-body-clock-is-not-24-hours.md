@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Moja doba trwa 24,5 godziny"
+title: "Moja doba trwa 24,5 godziny: Porozmawiajmy o DSPD i Non-24 – zaburzeniach snu"
 date: 2026-07-05 12:00:00
 tags:
   - Sen

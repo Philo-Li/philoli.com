@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Hari saya selama 24.5 jam"
+title: "Hari saya selama 24.5 jam: Bincangkan DSPD dan Gangguan Tidur Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Tidur

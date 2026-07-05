@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "O meu dia tem 24,5 horas"
+title: "O meu dia tem 24,5 horas: Falando sobre DSPD e o Distúrbio do Sono Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Sono

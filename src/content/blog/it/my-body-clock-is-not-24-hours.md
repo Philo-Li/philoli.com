@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "La mia giornata dura 24,5 ore"
+title: "La mia giornata dura 24,5 ore: tra DSPD e disturbo del sonno Non-24"
 date: 2026-07-05 12:00:00
 tags:
   - Sonno

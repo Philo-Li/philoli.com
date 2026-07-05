@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Ang araw ko ay 24.5 oras"
+title: "Ang araw ko ay 24.5 oras: Usap-usapan tungkol sa DSPD at Non-24 Sleep Disorder"
 date: 2026-07-05 12:00:00
 tags:
   - Tulog
