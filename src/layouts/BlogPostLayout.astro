@@ -247,6 +247,19 @@ const articleSchema = [
     border-radius: 0;
     margin: var(--space-md) 0;
   }
+  .blog-post__content :global(.post-figure) {
+    margin: var(--space-md) 0;
+    text-align: center;
+  }
+  .blog-post__content :global(.post-figure img) {
+    margin: 0 auto var(--space-xs);
+  }
+  .blog-post__content :global(.post-figure figcaption) {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--color-text-subtle);
+    text-align: center;
+  }
   .blog-post__content :global(.post-cover) {
     margin: var(--space-md) 0 var(--space-lg);
   }

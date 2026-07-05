@@ -8,6 +8,8 @@ export async function getStaticPaths() {
     .filter(p => p.id.startsWith('en/'))
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
+  const enBySlug = new Map(enPosts.map(p => [p.id.slice('en/'.length), p]));
+
   return enPosts.map((post, i) => {
     const slug = post.id.slice('en/'.length);
     // Sorted newest → oldest: next (newer) is i-1, previous (older) is i+1.
@@ -19,9 +21,14 @@ export async function getStaticPaths() {
       cover: p.data.cover ?? null,
       date: p.data.date,
     });
+    const relatedPosts = (post.data.related ?? [])
+      .map(s => enBySlug.get(s))
+      .filter((p): p is typeof post => !!p);
     const moreReading = post.data.hideMoreReading
       ? []
-      : enPosts.filter((_, idx) => idx !== i).slice(0, 3).map(summarize);
+      : relatedPosts.length
+        ? relatedPosts.map(summarize)
+        : enPosts.filter((_, idx) => idx !== i).slice(0, 3).map(summarize);
     return {
       params: { slug },
       props: {

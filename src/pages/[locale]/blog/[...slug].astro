@@ -41,9 +41,14 @@ export async function getStaticPaths() {
       const [slug, post] = ordered[i];
       const newer = ordered[i - 1];
       const older = ordered[i + 1];
+      const relatedEntries = (post.data.related ?? [])
+        .map((s: string) => { const e = slugMap.get(s); return e ? ([s, e] as [string, any]) : null; })
+        .filter((x): x is [string, any] => x !== null);
       const moreReading = post.data.hideMoreReading
         ? []
-        : ordered.filter((_, idx) => idx !== i).slice(0, 3).map(summarize);
+        : relatedEntries.length
+          ? relatedEntries.map(summarize)
+          : ordered.filter((_, idx) => idx !== i).slice(0, 3).map(summarize);
       paths.push({
         params: { locale, slug },
         props: {
