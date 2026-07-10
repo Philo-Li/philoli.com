@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import Lightbox from './Lightbox';
 import { useTranslations } from '../i18n';
+import { computeEagerIndices, estimateColumnTops } from '../lib/gallery-layout';
 
 interface Artwork {
   id: string;
@@ -20,21 +21,32 @@ interface GalleryProps {
   locale?: string;
 }
 
-const FILTER_ORDER = ['Photograph', 'Painting', 'Drawing', 'Digital Art'];
+export const FILTER_ORDER = ['Photograph', 'Painting', 'Drawing', 'Digital Art'];
 
-function GalleryItem({ art, onClick }: { art: Artwork; onClick: () => void }) {
-  const [loaded, setLoaded] = useState(false);
+interface GalleryItemProps {
+  art: Artwork;
+  eager: boolean;
+  priority: boolean;
+  onClick: () => void;
+}
+
+function GalleryItem({ art, eager, priority, onClick }: GalleryItemProps) {
+  // All images render visible from SSR so a paint is never blocked on JS.
+  // Below-the-fold (lazy) images still in flight at hydration get a fade-in;
+  // eager first-viewport images (LCP candidates) are never hidden by JS.
+  const [loaded, setLoaded] = useState(true);
   const imageRef = useRef<HTMLImageElement | null>(null);
   const handleLoad = useCallback(() => setLoaded(true), []);
   const aspectRatio = art.width && art.height ? art.width / art.height : 4 / 3;
   const bgColor = art.color || '#84B0B3';
 
   useEffect(() => {
+    if (eager) return;
     const image = imageRef.current;
-    if (image?.complete) {
-      setLoaded(true);
+    if (image && !image.complete) {
+      setLoaded(false);
     }
-  }, [art.srcSmall]);
+  }, [art.srcSmall, eager]);
 
   return (
     <div
@@ -46,7 +58,9 @@ function GalleryItem({ art, onClick }: { art: Artwork; onClick: () => void }) {
         ref={imageRef}
         src={art.srcSmall}
         alt={art.title}
-        loading="lazy"
+        loading={eager ? 'eager' : 'lazy'}
+        fetchPriority={priority ? 'high' : undefined}
+        decoding="async"
         style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.3s ease' }}
         onLoad={handleLoad}
       />
@@ -60,6 +74,8 @@ export default function Gallery({ artworks, locale }: GalleryProps) {
   const [selectedArtworkId, setSelectedArtworkId] = useState<string | null>(null);
 
   const filtered = artworks.filter(a => a.type === filter);
+  const eagerIndices = computeEagerIndices(filtered);
+  const priorityIndices = new Set(estimateColumnTops(filtered, 2));
   const currentIndex = selectedArtworkId
     ? filtered.findIndex((art) => art.id === selectedArtworkId)
     : -1;
@@ -91,8 +107,14 @@ export default function Gallery({ artworks, locale }: GalleryProps) {
         ))}
       </div>
       <div className="gallery__grid">
-        {filtered.map((art) => (
-          <GalleryItem key={art.id} art={art} onClick={() => setSelectedArtworkId(art.id)} />
+        {filtered.map((art, index) => (
+          <GalleryItem
+            key={art.id}
+            art={art}
+            eager={eagerIndices.has(index)}
+            priority={priorityIndices.has(index)}
+            onClick={() => setSelectedArtworkId(art.id)}
+          />
         ))}
       </div>
       {current && (

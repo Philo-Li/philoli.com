@@ -51,28 +51,16 @@ function srcset(base: string): string {
       </p>
     </div>
     <div class="hero__photos">
-      <a href="/art" class="hero__photo">
-        <img
-          src={`/images/optimized/${photos[0].base}-md.webp`}
-          srcset={srcset(photos[0].base)}
-          sizes="(max-width: 768px) 100vw, 50vw"
-          alt={photos[0].alt}
-          width="900"
-          height="1200"
-          fetchpriority="high"
-          decoding="async"
-        />
-      </a>
-      {photos.slice(1).map(photo => (
+      {photos.map(photo => (
         <a href="/art" class="hero__photo">
           <img
             src={`/images/optimized/${photo.base}-md.webp`}
             srcset={srcset(photo.base)}
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 50vw, 25vw"
             alt={photo.alt}
             width="900"
             height="1200"
-            loading="lazy"
+            fetchpriority="high"
             decoding="async"
           />
         </a>

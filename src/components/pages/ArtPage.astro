@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Gallery from '../Gallery.tsx';
+import Gallery, { FILTER_ORDER } from '../Gallery.tsx';
 import { fetchAllArtworks, getPhiloArtPhotoUrl, shuffleArtworks } from '../../lib/philoart';
+import { estimateColumnTops } from '../../lib/gallery-layout';
 import { DEFAULT_LOCALE, isLocale, useTranslations } from '../../i18n';
 import '../../styles/gallery.css';
 
@@ -25,6 +26,12 @@ const galleryData = artworks.map(a => ({
   sourceUrl: getPhiloArtPhotoUrl(a),
 }));
 
+// Preload the images at the top of each mobile column — the LCP candidates.
+const defaultFiltered = galleryData.filter(a => a.type === FILTER_ORDER[0]);
+const lcpImageUrls = estimateColumnTops(defaultFiltered, 2)
+  .map(i => defaultFiltered[i]?.srcSmall)
+  .filter((src): src is string => Boolean(src));
+
 const artSchema = [
   {
     '@type': 'CollectionPage' as const,
@@ -37,6 +44,11 @@ const artSchema = [
 ---
 
 <BaseLayout title={t('metadata.artTitle')} description={t('metadata.artDescription')} structuredData={artSchema}>
+  <Fragment slot="head">
+    {lcpImageUrls.map(href => (
+      <link rel="preload" as="image" href={href} fetchpriority="high" />
+    ))}
+  </Fragment>
   <main class="art-page">
     <h1 class="art-page__title">{t('artPage.title')}</h1>
     <Gallery client:load artworks={galleryData} locale={locale} />

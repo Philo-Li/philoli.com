@@ -14,6 +14,8 @@ export default defineConfig({
   site: 'https://philoli.com',
   integrations: [react(), sitemap({ i18n: { defaultLocale: 'en', locales: Object.fromEntries(LOCALES.map(l => [l, l])) } })],
   output: 'static',
+  // Inline all page CSS to remove render-blocking stylesheet requests (LCP).
+  build: { inlineStylesheets: 'always' },
   i18n: {
     defaultLocale: 'en',
     locales: LOCALES,
