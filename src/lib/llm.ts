@@ -45,15 +45,14 @@ export const PROVIDERS: ProviderConfig[] = [
     label: 'Google Gemini',
     api: 'gemini',
     keyHelp: 'https://aistudio.google.com/apikey',
-    defaultModel: 'gemini-2.5-flash-lite',
+    defaultModel: 'gemini-3.5-flash-lite',
     models: [
-      { id: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash', hint: 'newest, fast', vision: true },
-      { id: 'gemini-3.1-flash-lite', label: 'Gemini 3.1 Flash Lite', hint: 'cheapest', vision: true },
+      { id: 'gemini-3.6-flash', label: 'Gemini 3.6 Flash', hint: 'newest, fast', vision: true },
+      { id: 'gemini-3.5-flash-lite', label: 'Gemini 3.5 Flash Lite', hint: 'cheapest', vision: true },
+      { id: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash', hint: 'balanced', vision: true },
       { id: 'gemini-3.1-pro-preview', label: 'Gemini 3.1 Pro (preview)', hint: 'best quality', vision: true },
       { id: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash', hint: 'legacy, balanced', vision: true },
       { id: 'gemini-2.5-flash-lite', label: 'Gemini 2.5 Flash Lite', hint: 'legacy, cheapest', vision: true },
-      { id: 'gemini-2.0-flash', label: 'Gemini 2.0 Flash', hint: 'deprecated', vision: true },
-      { id: 'gemini-2.0-flash-lite', label: 'Gemini 2.0 Flash Lite', hint: 'deprecated', vision: true },
     ],
   },
   {
@@ -63,9 +62,10 @@ export const PROVIDERS: ProviderConfig[] = [
     endpoint: 'https://api.openai.com/v1/chat/completions',
     keyHelp: 'https://platform.openai.com/api-keys',
     models: [
-      { id: 'gpt-5.4-nano', label: 'GPT-5.4 nano', hint: 'cheapest, fast', vision: true },
-      { id: 'gpt-5.4-mini', label: 'GPT-5.4 mini', hint: 'balanced', vision: true },
-      { id: 'gpt-5.5', label: 'GPT-5.5', hint: 'best quality', vision: true },
+      { id: 'gpt-5.6-luna', label: 'GPT-5.6 Luna', hint: 'cheapest, fast', vision: true },
+      { id: 'gpt-5.6-terra', label: 'GPT-5.6 Terra', hint: 'balanced', vision: true },
+      { id: 'gpt-5.6-sol', label: 'GPT-5.6 Sol', hint: 'best quality', vision: true },
+      { id: 'gpt-5.5', label: 'GPT-5.5', hint: 'legacy flagship', vision: true },
     ],
   },
   {
@@ -75,8 +75,8 @@ export const PROVIDERS: ProviderConfig[] = [
     keyHelp: 'https://console.anthropic.com/settings/keys',
     models: [
       { id: 'claude-haiku-4-5', label: 'Claude Haiku 4.5', hint: 'cheapest, fast', vision: true },
-      { id: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6', hint: 'higher quality', vision: true },
-      { id: 'claude-opus-4-7', label: 'Claude Opus 4.7', hint: 'best quality', vision: true },
+      { id: 'claude-sonnet-5', label: 'Claude Sonnet 5', hint: 'higher quality', vision: true },
+      { id: 'claude-opus-5', label: 'Claude Opus 5', hint: 'best quality', vision: true },
     ],
   },
   {
@@ -100,12 +100,11 @@ export const PROVIDERS: ProviderConfig[] = [
     keyHelp: 'https://bailian.console.aliyun.com/?apiKey=1',
     // Qwen text chat line is text-only on DashScope; image input requires the qwen3-vl-* IDs below.
     models: [
-      { id: 'qwen3.5-flash', label: 'Qwen 3.5 Flash', hint: 'cheapest, fast' },
-      { id: 'qwen3.5-plus', label: 'Qwen 3.5 Plus', hint: 'balanced' },
-      { id: 'qwen3-max', label: 'Qwen 3 Max', hint: 'best quality' },
+      { id: 'qwen3.6-flash', label: 'Qwen 3.6 Flash', hint: 'cheapest, fast' },
+      { id: 'qwen3.7-plus', label: 'Qwen 3.7 Plus', hint: 'balanced' },
+      { id: 'qwen3.7-max', label: 'Qwen 3.7 Max', hint: 'best quality' },
       { id: 'qwen3-vl-flash', label: 'Qwen3-VL Flash', hint: 'vision, fast', vision: true },
       { id: 'qwen3-vl-plus', label: 'Qwen3-VL Plus', hint: 'vision, balanced', vision: true },
-      { id: 'qwen-vl-max', label: 'Qwen-VL Max', hint: 'vision, best quality', vision: true },
     ],
   },
   {
@@ -117,8 +116,8 @@ export const PROVIDERS: ProviderConfig[] = [
     // GLM chat line is text-only; vision lives on the *V suffix variants.
     models: [
       { id: 'glm-4.7-flash', label: 'GLM-4.7 Flash', hint: 'free tier, fast' },
-      { id: 'glm-5', label: 'GLM-5', hint: 'flagship coding/agentic' },
-      { id: 'glm-5.1', label: 'GLM-5.1', hint: 'best quality' },
+      { id: 'glm-5.2', label: 'GLM-5.2', hint: 'best quality' },
+      { id: 'glm-5.1', label: 'GLM-5.1', hint: 'previous flagship' },
       { id: 'glm-4.6v', label: 'GLM-4.6V', hint: 'vision, balanced', vision: true },
       { id: 'glm-5v-turbo', label: 'GLM-5V Turbo', hint: 'vision, best quality', vision: true },
     ],
@@ -130,11 +129,10 @@ export const PROVIDERS: ProviderConfig[] = [
     endpoint: 'https://api.moonshot.ai/v1/chat/completions',
     keyHelp: 'https://platform.moonshot.ai/console/api-keys',
     models: [
-      { id: 'kimi-k2.6', label: 'Kimi K2.6', hint: 'latest flagship, 262K context', vision: true },
+      { id: 'kimi-k3', label: 'Kimi K3', hint: 'best quality', vision: true },
+      { id: 'kimi-k2.6', label: 'Kimi K2.6', hint: 'balanced', vision: true },
       { id: 'moonshot-v1-128k', label: 'Moonshot v1 128K', hint: 'long context, stable' },
-      { id: 'moonshot-v1-32k', label: 'Moonshot v1 32K', hint: 'cheaper' },
       { id: 'moonshot-v1-128k-vision-preview', label: 'Moonshot v1 128K Vision (preview)', hint: 'vision, long context', vision: true },
-      { id: 'moonshot-v1-32k-vision-preview', label: 'Moonshot v1 32K Vision (preview)', hint: 'vision, cheaper', vision: true },
     ],
   },
   {
@@ -425,6 +423,12 @@ async function callOpenAICompat(
   return parseBatchResponse(text, passages.length);
 }
 
+// Claude Sonnet 5 / Opus 5 (and Opus 4.7+) removed `temperature` — sending a
+// non-default value returns a 400. Only these older families still accept it.
+function anthropicAcceptsTemperature(model: string): boolean {
+  return /^claude-(haiku|3|sonnet-4|opus-4-[0-6])/.test(model);
+}
+
 async function callAnthropic(
   passages: string[],
   opts: TranslateOptions,
@@ -440,8 +444,12 @@ async function callAnthropic(
     signal: opts.signal,
     body: JSON.stringify({
       model: opts.model,
-      max_tokens: 8192,
-      temperature: findTone(opts.tone ?? '').temperature,
+      // Claude 5 models think by default and thinking shares this budget, so
+      // keep headroom above the expected translation length.
+      max_tokens: 16384,
+      ...(anthropicAcceptsTemperature(opts.model)
+        ? { temperature: findTone(opts.tone ?? '').temperature }
+        : {}),
       system: SYSTEM_PROMPT(passages, opts),
       messages: [{ role: 'user', content: buildBatchPrompt(passages) }],
     }),
@@ -605,8 +613,9 @@ async function callAnthropicVision(opts: OcrOptions): Promise<string> {
     signal: opts.signal,
     body: JSON.stringify({
       model: opts.model,
-      max_tokens: 8192,
-      temperature: 0,
+      // See note in callAnthropic — thinking shares the budget on Claude 5.
+      max_tokens: 16384,
+      ...(anthropicAcceptsTemperature(opts.model) ? { temperature: 0 } : {}),
       system: OCR_SYSTEM_PROMPT(opts.sourceLanguageHint),
       messages: [
         {
