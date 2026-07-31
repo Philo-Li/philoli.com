@@ -9,6 +9,7 @@ interface Env {
   SITE_URL: string;
   WORKER_URL: string;
   FROM_EMAIL: string;
+  REPORT_EMAIL: string;
 }
 
 const ALLOWED_ORIGINS = new Set([
@@ -218,6 +219,126 @@ async function handleUnsubscribe(env: Env, token: string): Promise<Response> {
   return Response.redirect(localePath(env.SITE_URL, lang, 'unsubscribed=1'), 302);
 }
 
+const WEEK_SECONDS = 7 * 24 * 60 * 60;
+const MONTH_SECONDS = 30 * 24 * 60 * 60;
+
+function beijingDate(ts: number): string {
+  const d = new Date((ts + 8 * 3600) * 1000);
+  const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const dd = String(d.getUTCDate()).padStart(2, '0');
+  return `${d.getUTCFullYear()}-${mm}-${dd}`;
+}
+
+interface StatusCount {
+  status: string;
+  c: number;
+}
+
+interface RecentSubscriber {
+  email: string;
+  lang: string;
+  status: string;
+  created_at: number;
+}
+
+async function sendWeeklyReport(env: Env, now: number): Promise<void> {
+  const since = now - WEEK_SECONDS;
+
+  const signups = await env.DB
+    .prepare('SELECT COUNT(*) AS c FROM subscribers WHERE created_at >= ?1')
+    .bind(since)
+    .first<{ c: number }>();
+  const confirmed = await env.DB
+    .prepare('SELECT COUNT(*) AS c FROM subscribers WHERE confirmed_at >= ?1')
+    .bind(since)
+    .first<{ c: number }>();
+  const sinceMonth = now - MONTH_SECONDS;
+  const monthSignups = await env.DB
+    .prepare('SELECT COUNT(*) AS c FROM subscribers WHERE created_at >= ?1')
+    .bind(sinceMonth)
+    .first<{ c: number }>();
+  const monthConfirmed = await env.DB
+    .prepare('SELECT COUNT(*) AS c FROM subscribers WHERE confirmed_at >= ?1')
+    .bind(sinceMonth)
+    .first<{ c: number }>();
+  const totals = await env.DB
+    .prepare('SELECT status, COUNT(*) AS c FROM subscribers GROUP BY status')
+    .all<StatusCount>();
+  const recent = await env.DB
+    .prepare('SELECT email, lang, status, created_at FROM subscribers WHERE created_at >= ?1 ORDER BY created_at DESC LIMIT 100')
+    .bind(sinceMonth)
+    .all<RecentSubscriber>();
+
+  const byStatus: Record<string, number> = {};
+  for (const row of totals.results) byStatus[row.status] = row.c;
+  const active = byStatus.active ?? 0;
+  const pending = byStatus.pending ?? 0;
+  const unsubscribed = byStatus.unsubscribed ?? 0;
+  const newSignups = signups?.c ?? 0;
+  const newConfirmed = confirmed?.c ?? 0;
+  const monthNewSignups = monthSignups?.c ?? 0;
+  const monthNewConfirmed = monthConfirmed?.c ?? 0;
+
+  const range = `${beijingDate(since)} 至 ${beijingDate(now)}`;
+  const subject = `每周订阅汇总：新增 ${newSignups} 个订阅申请，${newConfirmed} 个确认（${range}）`;
+
+  const rowsHtml = recent.results.length
+    ? recent.results
+        .map((s) => {
+          const weekBadge =
+            s.created_at >= since
+              ? ' <span style="display:inline-block;background:#cf4f2d;color:#fbf4e8;font-size:11px;padding:1px 6px;border-radius:2px;vertical-align:middle;">本周</span>'
+              : '';
+          return `<tr><td style="padding:8px 12px;border-bottom:1px solid rgba(86,62,31,0.1);font-size:14px;">${escapeHtml(s.email)}${weekBadge}</td><td style="padding:8px 12px;border-bottom:1px solid rgba(86,62,31,0.1);font-size:14px;">${escapeHtml(s.lang)}</td><td style="padding:8px 12px;border-bottom:1px solid rgba(86,62,31,0.1);font-size:14px;">${escapeHtml(s.status)}</td><td style="padding:8px 12px;border-bottom:1px solid rgba(86,62,31,0.1);font-size:14px;white-space:nowrap;">${beijingDate(s.created_at)}</td></tr>`;
+        })
+        .join('')
+    : `<tr><td colspan="4" style="padding:12px;font-size:14px;color:#7a6b5b;">近 30 天没有新增订阅申请</td></tr>`;
+
+  const html = `<!doctype html>
+<html lang="zh">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(subject)}</title></head>
+<body style="margin:0;padding:0;background:#f3eadb;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Microsoft YaHei',Arial,sans-serif;color:#221a12;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f3eadb;padding:48px 16px;">
+    <tr><td align="center">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:560px;background:#fbf4e8;border:1px solid rgba(86,62,31,0.14);">
+        <tr><td style="padding:40px 40px 0;text-align:center;">
+          <div style="font-size:22px;font-weight:600;color:#16110d;">Newsletter 每周订阅汇总</div>
+          <div style="font-size:14px;color:#7a6b5b;margin-top:8px;">${escapeHtml(range)}（北京时间）</div>
+          <div style="width:36px;height:2px;background:#cf4f2d;margin:20px auto 0;font-size:0;">&nbsp;</div>
+        </td></tr>
+        <tr><td style="padding:28px 40px 0;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td style="text-align:center;padding:12px;"><div style="font-size:28px;font-weight:600;color:#cf4f2d;">${newSignups}</div><div style="font-size:13px;color:#7a6b5b;margin-top:4px;">本周新增申请</div></td>
+              <td style="text-align:center;padding:12px;"><div style="font-size:28px;font-weight:600;color:#cf4f2d;">${newConfirmed}</div><div style="font-size:13px;color:#7a6b5b;margin-top:4px;">本周确认订阅</div></td>
+              <td style="text-align:center;padding:12px;"><div style="font-size:28px;font-weight:600;color:#16110d;">${active}</div><div style="font-size:13px;color:#7a6b5b;margin-top:4px;">当前有效订阅</div></td>
+            </tr>
+          </table>
+          <p style="font-size:14px;color:#3a2e22;text-align:center;margin:12px 0 0;">过去 30 天：新增申请 <strong style="color:#cf4f2d;">${monthNewSignups}</strong> · 确认订阅 <strong style="color:#cf4f2d;">${monthNewConfirmed}</strong></p>
+          <p style="font-size:13px;color:#7a6b5b;text-align:center;margin:8px 0 0;">待确认 ${pending} · 已退订 ${unsubscribed}</p>
+        </td></tr>
+        <tr><td style="padding:28px 40px 36px;">
+          <div style="font-size:15px;font-weight:600;color:#16110d;margin-bottom:12px;">近 30 天新增明细（邮箱 · 语言 · 状态 · 日期）</div>
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-top:1px solid rgba(86,62,31,0.14);">${rowsHtml}</table>
+        </td></tr>
+      </table>
+      <div style="font-size:12px;color:#7a6b5b;margin-top:16px;">subscribe.philoli.com 每周一自动发送</div>
+    </td></tr>
+  </table>
+</body></html>`;
+
+  const textRows = recent.results.length
+    ? recent.results
+        .map((s) => `- ${s.email} (${s.lang}, ${s.status}, ${beijingDate(s.created_at)}${s.created_at >= since ? ', 本周' : ''})`)
+        .join('\n')
+    : '近 30 天没有新增订阅申请';
+  const text = `Newsletter 每周订阅汇总（${range}，北京时间）\n\n本周新增申请: ${newSignups}\n本周确认订阅: ${newConfirmed}\n过去 30 天新增申请: ${monthNewSignups}\n过去 30 天确认订阅: ${monthNewConfirmed}\n当前有效订阅: ${active}\n待确认: ${pending}\n已退订: ${unsubscribed}\n\n近 30 天新增明细:\n${textRows}\n`;
+
+  const resend = new Resend(env.RESEND_API_KEY);
+  const result = await resend.emails.send({ from: env.FROM_EMAIL, to: env.REPORT_EMAIL, subject, html, text });
+  if (result.error) throw new Error(`Resend failed: ${result.error.message}`);
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
@@ -254,6 +375,16 @@ export default {
     } catch (err) {
       console.error('subscribe-api error:', err);
       return json(500, { ok: false, code: 'server_error' }, origin);
+    }
+  },
+
+  async scheduled(controller: ScheduledController, env: Env): Promise<void> {
+    try {
+      await sendWeeklyReport(env, Math.floor(controller.scheduledTime / 1000));
+      console.log('weekly report sent');
+    } catch (err) {
+      console.error('weekly report error:', err);
+      throw err;
     }
   },
 };

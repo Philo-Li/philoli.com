@@ -12,6 +12,11 @@ database_id = "2492d993-35b1-418c-87cb-cca686e334cd"
 SITE_URL = "https://philoli.com"
 WORKER_URL = "https://subscribe.philoli.com"
 FROM_EMAIL = "Philo <hi@philoli.com>"
+REPORT_EMAIL = "philoart42@gmail.com"
+
+# Monday 01:00 UTC = Monday 09:00 Beijing — weekly subscriber report
+[triggers]
+crons = ["0 1 * * 1"]
 
 [[routes]]
 pattern = "subscribe.philoli.com"
