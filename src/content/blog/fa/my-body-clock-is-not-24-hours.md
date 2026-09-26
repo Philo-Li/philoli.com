@@ -44,7 +44,7 @@ toc: true
 سه دانشمند به نام‌های جفری هال (Jeffrey Hall)، مایکل راش‌باش (Michael Rosbash) و مایکل یانگ (Michael Young)، «موتور» ساعت بیولوژیکی را در مگس‌های کوچک میوه کشف کردند. نکته‌ی شگفت‌انگیز این بود که این موتور در مغز قرار نداشت، بلکه در هر سلول بدن یافت می‌شد؛ تقریباً هر سلول بدن شما یک ساعت مخصوص به خود را حمل می‌کند.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="گزارش مجله Brandeis از این کشف" />
   <figcaption>مجله‌ی Brandeis با عنوان «زمان‌نگار اصلی طبیعت»: چگونه سه دانشمند ساعت بیولوژیکی را در مگس میوه کشف کردند.</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ toc: true
 در علم، این پدیده را حلقه‌ی بازخورد منفی رونویسی-ترجمه (TTFL) می‌نامند. نامش کمی ترسناک به نظر می‌رسد، اما در اصل همان کارخانه‌ای است که خودش ترمز می‌کند؛ یعنی یک پروتئین وقتی به اندازه‌ی خاصی زیاد می‌شود، تولید خودش را مهار می‌کند. سلول‌ها با تکیه بر این «تجمع-تخلیه» و فراز و نشیب آن، طول یک روز را اندازه‌گیری می‌کنند.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="نمودار حلقه بازخورد رونویسی-ترجمه (TTFL)" />
   <figcaption>اگر تمثیل کارخانه را با نام‌های علمی جایگزین کنیم، یک چرخه‌ی کامل عبارت است از: رونویسی ← تجمع ← مهار ← تجزیه ← رفع مهار، که تکمیل آن حدود ۲۴ ساعت به طول می‌انجامد. © Philo</figcaption>
 </figure>
 
@@ -76,12 +76,12 @@ toc: true
 کشف این سازوکار یک‌شبه اتفاق نیفتاد: اوایل سال ۱۹۷۱، کونوپکا (Konopka) و بنزر (Benzer) مگس‌های میوه‌ی جهش‌یافته‌ای را کشف کردند که ساعت بیولوژیکی غیرعادی داشتند؛ در سال ۱۹۸۴، سه آزمایشگاه هال، راش‌باش و یانگ تقریباً همزمان ژن کلیدی *period* را کلون کردند؛ پس از آن، در طول دهه‌ی ۱۹۹۰، آن‌ها به تدریج مکانیزم حلقه‌ی بازخورد منفی را که در بالا توضیح داده شد، تکمیل کردند (برای مثال، یانگ در سال ۱۹۹۴ ژن *timeless* را کشف کرد). این مجموعه‌ی کارها، در نهایت منجر به دریافت جایزه‌ی نوبل فیزیولوژی یا پزشکی در سال ۲۰۱۷ شد.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="مقاله PNAS درباره پژوهش Konopka و Benzer" />
   <figcaption>نقطه‌ی آغاز داستان: در سال ۱۹۷۱ کونوپکا و بنزر مگس‌های میوه‌ی جهش‌یافته‌ای را کشف کردند که ساعت بیولوژیکی غیرعادی داشتند.</figcaption>
 </figure>
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="سه برنده جایزه نوبل ۲۰۱۷" />
   <figcaption>نقطه‌ی پایان: جایزه‌ی نوبل فیزیولوژی یا پزشکی ۲۰۱۷، به هال، راش‌باش و یانگ اهدا شد.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ toc: true
 پاسخ حدود ۲۴.۲ ساعت است، کمی بیشتر از ۲۴ ساعت. این بدان معناست که ساعت بیولوژیکی تقریباً همه‌ی انسان‌ها ذاتاً کمی کُندتر از ساعت زمین است.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science: پژوهش درباره ریتم شبانه‌روزی نزدیک به ۲۴ ساعت در انسان" />
   <figcaption>Czeisler و همکاران در سال ۱۹۹۹ در مجله‌ی «Science» منتشر کردند که ریتم درونی انسان حدود ۲۴.۱۸ ساعت است.</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ toc: true
 در شبکیه‌ی چشم شما نوع خاصی از سلول‌ها (ipRGC) وجود دارد که مسئول تصویرسازی نیستند، بلکه فقط وظیفه دارند «وجود یا عدم وجود نور در حال حاضر» را به SCN گزارش دهند. این فرایند «کشیدگی نوری» (Entrainment) نامیده می‌شود. نور صبحگاهی هر روز، آن ساعت کُند را کمی به جلو می‌کشد و دوباره آن را با ۲۴ ساعت هماهنگ می‌کند. افراد عادی با کمک این سازوکار، هر روز آن چند دقیقه‌ی اضافی را جبران می‌کنند.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="چرخه خواب عادی" />
   <figcaption>چرخه‌ی خواب یک فرد عادی: زمان خواب و بیداری ثابت است و الگوی خواب جابه‌جا نمی‌شود. © Philo</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ DSPD (اختلال فاز تأخیری خواب) یک اختلال مزمن ری
 به زبان ساده، DSPD یعنی تا ساعت دو یا سه نیمه‌شب خوابتان نمی‌برد، اما وقتی زمانش برسد، حتماً می‌خوابید و پس از ۷-۸ ساعت خواب بیدار می‌شوید و در طول روز هم انرژی خوبی دارید. علاوه بر این، تحقیقات گسترده‌ی سال‌های اخیر نشان داده است که ADHD بزرگسالان و DSPD ارتباط نزدیکی با هم دارند و DSPD شایع‌ترین اختلال ریتم شبانه‌روزی در این افراد است.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="چرخه خواب در DSPD" />
   <figcaption>چرخه‌ی خواب DSPD: برنامه‌ی خواب ثابت و بدون جابه‌جایی است، اما کل دوره‌ی خواب به طور محسوسی دیرتر از افراد عادی است. © Philo</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ DSPD (اختلال فاز تأخیری خواب) یک اختلال مزمن ری
 به زبان ساده، در Non-24 زمان خواب هر روز دیرتر از روز قبل می‌شود و این تأخیر ادامه پیدا می‌کند تا جایی که شب و روز جابه‌جا شده و دوباره به حالت قبل برگردد و یک چرخه‌ی کامل را تشکیل دهد. این یک چرخه‌ی مداوم است، بدون آغاز و پایان مشخص.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="چرخه خواب در Non-24" />
   <figcaption>چرخه‌ی خواب Non-24: زمان خواب روز به روز به تأخیر می‌افتد، مانند پله‌هایی که به طور مداوم به پایین می‌روند، و این چرخه تکرار می‌شود. © Philo</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ DSPD (اختلال فاز تأخیری خواب) یک اختلال مزمن ری
 ساده‌ترین روش این است که برای چندین هفته متوالی، یک دفترچه‌ی خاطرات خواب داشته باشید. اگر ساعت هوشمند هم دارید، ساعت‌های هوشمند امروزی نیز چرخه‌های خواب را ثبت می‌کنند. سپس مشاهده کنید که اگر عمداً زنگ بیدارباش تنظیم نکنید، خودتان تمایل دارید چه ساعتی بخوابید و چه ساعتی بیدار شوید، و آیا این وضعیت پایدار است، و آیا پس از بیداری احساس انرژی خوب دارید یا کمبود خواب؟
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="ثبت خواب در ساعت هوشمند" />
   <figcaption>ثبت خواب در ساعت هوشمند / اپلیکیشن به این شکل است — با ثبت مداوم برای چند هفته، می‌توانید ببینید که برنامه‌ی خوابتان پایدار است یا در حال جابه‌جایی.</figcaption>
 </figure>
 

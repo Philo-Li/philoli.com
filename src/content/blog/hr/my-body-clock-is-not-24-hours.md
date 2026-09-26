@@ -63,7 +63,7 @@ Cijeli ovaj ciklus "proizvodnja → akumulacija → samostalno isključivanje �
 U znanosti se to naziva transkripcijsko-translacijska negativna povratna petlja (TTFL). Iako naziv zvuči komplicirano, u suštini je riječ o spomenutoj tvornici koja sama sebi stisne kočnicu – kada se određeni protein nakupi do određene razine, on inhibira vlastitu proizvodnju. Kroz ovaj ciklus "akumulacije i pražnjenja", stanica nekako uspijeva izmjeriti duljinu jednog dana.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Shematski prikaz transkripcijsko-translacijske negativne povratne petlje (TTFL)" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Shematski prikaz transkripcijsko-translacijske negativne povratne petlje (TTFL)" />
   <figcaption>Ako se metafora tvornice zamijeni znanstvenim nazivima, cijeli krug izgleda ovako: transkripcija → akumulacija → inhibicija → degradacija → dezinhibicija, a jedan ciklus traje otprilike 24 sata. © Philo</figcaption>
 </figure>
 

@@ -63,7 +63,7 @@ Satu pusingan lengkap kitaran "pengeluaran → pengumpulan → henti sendiri →
 Dalam sains, ini dikenali sebagai kitaran suap balik negatif transkripsi-translasi (TTFL). Namanya mungkin kedengaran menakutkan, tetapi pada dasarnya ia adalah kilang yang 'membrek' dirinya sendiri seperti analogi di atas—apabila protein mencapai tahap tertentu, ia akan menghalang pengeluarannya sendiri. Melalui proses 'pengumpulan-pengosongan' ini, sel berjaya mengukur tempoh satu hari.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Rajah skema kitaran suap balik negatif transkripsi-translasi (TTFL)" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Rajah skema kitaran suap balik negatif transkripsi-translasi (TTFL)" />
   <figcaption>Jika analogi kilang ditukar kepada nama saintifik, satu pusingan lengkap adalah: Transkripsi → Pengumpulan → Penekanan → Degradasi → Penyahaktifan, mengambil masa kira-kira 24 jam untuk diselesaikan. © Philo</figcaption>
 </figure>
 

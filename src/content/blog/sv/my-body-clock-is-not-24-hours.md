@@ -44,7 +44,7 @@ Men hur exakt regleras den biologiska klockan?
 De tre forskarna Jeffrey Hall, Michael Rosbash och Michael Young hittade den biologiska klockans "motor" i den lilla bananflugan. Det häpnadsväckande är att denna motor inte sitter i hjärnan, utan i varje enskild cell – nästan varje cell i din kropp bär på sin egen klocka.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis Magazine om upptäckten" />
   <figcaption>Brandeis Magazine "Naturens övervakare av tiden": Hur de tre forskarna upptäckte den biologiska klockan hos bananflugor.</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Hela denna cykel av "produktion → ackumulering → självavstängning → töm
 Vetenskapligt kallas detta en transkriptionell-translationell negativ återkopplingsslinga (TTFL). Namnet kan låta skrämmande, men i grund och botten är det den där fabriken som självmant bromsar – ett protein som, när det når en viss nivå, hämmar sin egen produktion. Genom denna "ackumulering-tömning", denna uppgång och nedgång, lyckas cellen mäta ut en dag.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Schema över transkriptions-translations-återkopplingsslingan (TTFL)" />
   <figcaption>Om vi byter ut fabriksliknelsen mot vetenskapliga termer, är en hel cykel: transkription → ackumulering → hämning → nedbrytning → de-hämning, och en runda tar cirka 24 timmar. © Philo</figcaption>
 </figure>
 
@@ -76,12 +76,12 @@ Ja, den biologiska klockan existerar verkligen, det är ingen illusion.
 Upptäckten av denna mekanism skedde inte över en natt: Redan 1971 upptäckte Konopka och Benzer bananflugor med muterade gener som gav en avvikande biologisk klocka. 1984 klonade Hall, Rosbash och Young nästan samtidigt den avgörande *period*-genen i tre olika laboratorier. Under hela 1990-talet pusslade de sedan gradvis ihop mekanismen för den negativa återkopplingsslingan som beskrivs ovan (till exempel hittade Young *timeless*-genen 1994). Denna serie av arbeten belönades slutligen med Nobelpriset i fysiologi eller medicin 2017.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS om Konopkas och Benzers forskning" />
   <figcaption>Starten på historien: 1971 upptäckte Konopka och Benzer bananflugor med muterade gener som gav en avvikande biologisk klocka.</figcaption>
 </figure>
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="De tre Nobelpristagarna 2017" />
   <figcaption>Slutpunkten: 2017 års Nobelpris i fysiologi eller medicin tilldelades Hall, Rosbash och Young.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Om en person är helt isolerad från yttre tidssignaler, hur lång blir då denn
 Svaret är cirka 24,2 timmar, alltså något längre än 24. Det betyder att nästan alla människors biologiska klocka är naturligt lite långsammare än jordens.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science: forskning om människans nästan 24-timmars dygnsrytm" />
   <figcaption>Czeisler et al., publicerad i Science 1999, mätte den mänskliga endogena rytmen till cirka 24,18 timmar.</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Varför kan då de flesta människor upprätthålla regelbundna rutiner? Svaret 
 I din näthinna finns en särskild typ av celler (ipRGC) som inte ansvarar för bildseende, utan enbart för att rapportera "finns det ljus nu?" till SCN. Denna process kallas för ljusdragning (Entrainment). Morgonljuset varje dag är det som drar den långsammare klockan framåt lite, och återställer den till 24 timmar. Normala människor använder denna mekanism för att varje dag kompensera för de extra tiotal minuter deras klocka ligger efter.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="En normal sömncykel" />
   <figcaption>Normala människors sömncykel: Jämna insomnings- och uppvakningstider, sömnperioden är stabil och driver inte. © Philo</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ DSPD (försenad sömnfasstörning) är en kronisk dygnsrytmstörning där patien
 Enkelt uttryckt betyder DSPD att du inte kan somna förrän klockan två eller tre på natten, men när du väl somnar, sover du garanterat och kan vakna efter 7–8 timmar och känna dig pigg under dagen. Dessutom har omfattande forskning under senare år visat att det finns en stark koppling mellan ADHD hos vuxna och DSPD, där DSPD är den vanligaste dygnsrytmstörningen bland dem.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="En sömncykel vid DSPD" />
   <figcaption>DSPD:s sömncykel: Regelbundna rutiner som inte driver, men hela sömnperioden är betydligt senare än för normala människor. © Philo</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Non-24-hour Sleep-Wake Disorder (förkortat Non-24) är en sällsynt dygnsrytmst
 Enkelt uttryckt innebär Non-24 att insomningstiden varje dag är senare än föregående dag, och detta fortsätter tills dygnet är helt vänt, för att sedan återgå, och bilda en komplett cykel. Det finns ingen början eller slut, bara en konstant cykel.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="En sömncykel vid Non-24" />
   <figcaption>Non-24:s sömncykel: Insomningstiden förskjuts dagligen bakåt, glider nedåt som en trappa, om och om igen. © Philo</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Hur kan man då veta vilken typ av biologisk klocka man har?
 Det enklaste sättet är att föra en sömndagbok under flera veckor. Om du har en smartklocka, brukar dessa också registrera sömncykler. Observera sedan vilken tid du tenderar att somna och vakna om du inte medvetet ställer en väckarklocka, om detta tillstånd är stabilt, och om du känner dig pigg eller sömnbristig när du vaknar.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Sömnlogg i en smartklocka" />
   <figcaption>Sömnregistreringar i smartklockor / appar ser ut så här – efter att ha registrerat i flera veckor kan du se om dina rutiner är stabila eller driver.</figcaption>
 </figure>
 

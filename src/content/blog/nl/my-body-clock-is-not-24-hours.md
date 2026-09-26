@@ -63,7 +63,7 @@ Deze hele cyclus van 'productie → stapeling → zelfuitschakeling → leegmake
 Wetenschappelijk staat dit bekend als de transcriptie-translatie negatieve feedbacklus (TTFL). De naam klinkt misschien indrukwekkend, maar in essentie is het precies die zelfremmende fabriek die ik zojuist beschreef: een eiwit dat, zodra het een bepaalde concentratie bereikt, zijn eigen productie remt. Door dit 'stapel-en-leegmaken'-principe, deze constante opbouw en afbraak, 'telt' de cel als het ware de lengte van een dag.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Schematische weergave van de transcriptie-translatie negatieve feedbacklus (TTFL)" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Schematische weergave van de transcriptie-translatie negatieve feedbacklus (TTFL)" />
   <figcaption>Als we de metafoor van de fabriek vervangen door wetenschappelijke termen, dan is een volledige cyclus: transcriptie → accumulatie → inhibitie → degradatie → de-inhibitie, wat ongeveer 24 uur duurt. © Philo</figcaption>
 </figure>
 

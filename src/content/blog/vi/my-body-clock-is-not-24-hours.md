@@ -44,7 +44,7 @@ Vậy thì, đồng hồ sinh học được điều chỉnh chính xác như th
 Ba nhà khoa học Jeffrey Hall, Michael Rosbash và Michael Young đã tìm thấy "động cơ" của đồng hồ sinh học trong cơ thể loài ruồi giấm bé nhỏ. Điều đáng kinh ngạc hơn nữa là "động cơ" này không nằm trong não, mà nằm trong *mọi tế bào* – gần như mỗi tế bào trên cơ thể bạn đều mang trong mình một chiếc đồng hồ riêng.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Bài viết của Brandeis Magazine về phát hiện này" />
   <figcaption>Tạp chí Brandeis với bài viết "Bộ điều phối thời gian tổng thể của tự nhiên": Ba nhà khoa học đã tìm thấy đồng hồ sinh học trên ruồi giấm như thế nào.</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Chu trình hoàn chỉnh "sản xuất → tích tụ → tự động dừng �
 Trong khoa học, đây được gọi là vòng lặp phản hồi âm phiên mã-dịch mã (TTFL). Tên gọi có vẻ phức tạp, nhưng bản chất chính là nhà máy tự phanh như đã mô tả ở trên – một loại protein khi đạt đến một lượng nhất định sẽ ức chế quá trình sản xuất của chính nó. Nhờ sự "tích tụ – dọn kho" này, tế bào có thể "đếm" được độ dài của một ngày.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Sơ đồ vòng phản hồi phiên mã - dịch mã (TTFL)" />
   <figcaption>Nếu thay ẩn dụ nhà máy bằng thuật ngữ khoa học, một chu trình hoàn chỉnh sẽ là: phiên mã → tích lũy → ức chế → phân hủy → giải ức chế, hoàn thành một vòng khoảng 24 giờ. © Philo</figcaption>
 </figure>
 
@@ -76,12 +76,12 @@ Vâng, đồng hồ sinh học thực sự tồn tại, không phải là ảo �
 Việc khám phá ra cơ chế này không phải là chuyện một sớm một chiều: ngay từ năm 1971, Konopka và Benzer đã phát hiện ra những con ruồi giấm đột biến có đồng hồ sinh học bất thường; năm 1984, ba phòng thí nghiệm của Hall, Rosbash, Young gần như đồng thời đã nhân bản được gen *period* chủ chốt; sau đó, trong suốt những năm 1990, họ mới dần dần ghép nối được cơ chế vòng lặp phản hồi âm như đã mô tả ở trên (chẳng hạn như Young đã tìm thấy gen *timeless* vào năm 1994). Chuỗi công trình này cuối cùng đã được trao giải Nobel Sinh lý học hoặc Y học năm 2017.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS về nghiên cứu của Konopka và Benzer" />
   <figcaption>Khởi nguồn của câu chuyện: Năm 1971, Konopka và Benzer đã phát hiện ra những con ruồi giấm đột biến có đồng hồ sinh học bất thường.</figcaption>
 </figure>
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Ba nhà khoa học đoạt giải Nobel 2017" />
   <figcaption>Điểm đến: Giải Nobel Sinh lý học hoặc Y học năm 2017 đã được trao cho Hall, Rosbash, Young.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Nếu một người hoàn toàn tách biệt khỏi các tín hiệu thời gia
 Câu trả lời là khoảng 24.2 giờ, tức là hơi lớn hơn 24 giờ một chút. Điều này có nghĩa là, gần như đồng hồ sinh học của mỗi người bẩm sinh đều chạy chậm hơn Trái Đất một chút.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science: nghiên cứu về nhịp sinh học gần 24 giờ ở người" />
   <figcaption>Nghiên cứu của Czeisler và cộng sự đăng trên tạp chí 《Science》 năm 1999, đo được nhịp nội sinh của con người khoảng 24.18 giờ.</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Vậy tại sao hầu hết mọi người vẫn duy trì được lịch trình
 Trong võng mạc của bạn có một loại tế bào đặc biệt (ipRGC), chúng không chịu trách nhiệm tạo ảnh, mà chỉ có nhiệm vụ báo cáo "hiện tại có ánh sáng hay không" cho SCN. Quá trình này được gọi là kéo theo ánh sáng (Entrainment). Ánh sáng vào mỗi buổi sáng chính là thứ giúp điều chỉnh chiếc đồng hồ chạy chậm đó tiến lên một chút, căn chỉnh lại đúng 24 giờ. Người bình thường nhờ cơ chế này mà mỗi ngày có thể "san bằng" được mười mấy phút chênh lệch đó.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Chu kỳ ngủ bình thường" />
   <figcaption>Chu kỳ giấc ngủ của người bình thường: Thời gian đi ngủ và thức dậy ổn định, không bị lệch pha hay trôi dạt. © Philo</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ DSPD (Rối loạn pha giấc ngủ trì hoãn) là một dạng rối loạn nh
 Nói một cách đơn giản, với DSPD, bạn sẽ không thể ngủ trước 2-3 giờ sáng, nhưng khi đến đúng giờ đó, bạn chắc chắn sẽ ngủ được. Sau khi ngủ đủ 7-8 tiếng, bạn vẫn dậy bình thường và có đầy đủ năng lượng trong suốt cả ngày. Hơn nữa, nhiều nghiên cứu gần đây đã chỉ ra rằng ADHD ở người trưởng thành có mối liên hệ mật thiết với DSPD, và DSPD là dạng rối loạn nhịp sinh học phổ biến nhất ở những người này.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Chu kỳ ngủ DSPD" />
   <figcaption>Chu kỳ giấc ngủ của DSPD: Giờ giấc ổn định, không trôi dạt, nhưng toàn bộ thời gian ngủ diễn ra muộn hơn đáng kể so với người bình thường. © Philo</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Rối loạn chu kỳ ngủ-thức không phải 24 giờ (Non-24-hour sleep-wak
 Nói một cách đơn giản, Non-24 là tình trạng thời gian đi ngủ mỗi ngày đều muộn hơn ngày hôm trước, cứ thế lùi dần cho đến khi ngày đêm đảo lộn, rồi lại tiến về phía trước, tạo thành một chu trình hoàn chỉnh. Không có điểm bắt đầu hay kết thúc, chỉ là một vòng lặp không ngừng.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Chu kỳ ngủ Non-24" />
   <figcaption>Chu kỳ giấc ngủ của Non-24: Thời gian đi ngủ lùi dần từng ngày, như một bậc thang trượt dài không ngừng, rồi lại lặp lại từ đầu. © Philo</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Vậy làm thế nào để biết đồng hồ sinh học của mình thuộc l
 Cách đơn giản nhất là ghi nhật ký giấc ngủ liên tục trong vài tuần. Nếu có đồng hồ thông minh, các thiết bị này cũng sẽ có chức năng ghi lại chu kỳ giấc ngủ. Sau đó, hãy quan sát xem nếu không cố ý đặt báo thức, bạn có xu hướng ngủ và dậy vào mấy giờ, trạng thái này có ổn định không, và sau khi thức dậy bạn cảm thấy tràn đầy năng lượng hay thiếu ngủ.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Nhật ký giấc ngủ trên đồng hồ thông minh" />
   <figcaption>Ghi chú giấc ngủ trong đồng hồ thông minh / ứng dụng trông như thế này – ghi lại liên tục trong vài tuần, bạn sẽ thấy được lịch trình của mình ổn định hay đang bị trôi dạt.</figcaption>
 </figure>
 

@@ -63,7 +63,7 @@ Kogu see tsükkel – tootmine → kogunemine → iseeneslik seiskamine → tüh
 Teaduslikult nimetatakse seda transkriptsiooni-translatsiooni negatiivse tagasiside ahelaks (TTFL). See nimi kõlab keeruliselt, kuid sisuliselt on tegemist just selle tehasega, mis ise pidurit vajutab: kui valku on teatud kogus, pärsib see omaenda tootmist. Nii suudab rakk selle "kogunemise-tühjenemise" kaudu ühe päeva pikkuse välja lugeda.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkriptsiooni-translatsiooni negatiivse tagasiside ahela (TTFL) skemaatiline diagramm" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Transkriptsiooni-translatsiooni negatiivse tagasiside ahela (TTFL) skemaatiline diagramm" />
   <figcaption>Kui tehase metafoor asendada teaduslike nimetustega, on täisring: transkriptsioon → akumulatsioon → inhibeerimine → lagundamine → de-inhibeerimine, mis võtab aega umbes 24 tundi. © Philo</figcaption>
 </figure>
 

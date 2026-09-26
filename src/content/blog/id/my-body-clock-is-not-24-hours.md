@@ -44,7 +44,7 @@ Lalu, bagaimana jam biologis ini diatur dengan sangat presisi?
 Tiga ilmuwan, Jeffrey Hall, Michael Rosbash, dan Michael Young, menemukan "mesin" jam biologis pada lalat buah kecil. Dan yang mengejutkan, mesin ini tidak berada di otak, melainkan di setiap sel—hampir setiap sel dalam tubuhmu membawa jamnya sendiri.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis Magazine tentang penemuan ini" />
   <figcaption>Majalah Brandeis, 'The Nature's Master Timekeeper': Bagaimana tiga ilmuwan menemukan jam biologis pada lalat buah.</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Satu siklus penuh "produksi → akumulasi → berhenti sendiri → kosong → pr
 Secara ilmiah, ini disebut *transcriptional-translational feedback loop* (TTFL). Namanya memang terdengar rumit, tetapi intinya adalah pabrik yang bisa mengerem sendiri seperti yang dijelaskan tadi—sebuah protein yang mencapai jumlah tertentu akan menghambat produksinya sendiri. Melalui "penumpukan dan pengosongan" ini, sel berhasil menghitung durasi satu hari.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Diagram lingkaran umpan balik transkripsi-translasi (TTFL)" />
   <figcaption>Mengganti perumpamaan pabrik dengan nama ilmiah, satu siklus penuh adalah: transkripsi → akumulasi → inhibisi → degradasi → de-inhibisi, yang memakan waktu sekitar 24 jam. © Philo</figcaption>
 </figure>
 
@@ -76,12 +76,12 @@ Ya, jam biologis itu benar-benar ada, bukan ilusi.
 Penemuan mekanisme ini tidak terjadi dalam semalam: Pada tahun 1971, Konopka dan Benzer telah menemukan lalat buah mutan dengan jam biologis abnormal; pada tahun 1984, tiga laboratorium—Hall, Rosbash, dan Young—secara hampir bersamaan mengkloning gen *period* yang krusial; setelah itu, sepanjang tahun 1990-an, mereka secara bertahap merangkai mekanisme *negative feedback loop* di atas (misalnya, Young menemukan gen *timeless* pada tahun 1994). Serangkaian karya ini akhirnya dianugerahi Hadiah Nobel Fisiologi atau Kedokteran pada tahun 2017.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS tentang penelitian Konopka dan Benzer" />
   <figcaption>Titik awal kisah ini: Pada tahun 1971, Konopka dan Benzer menemukan lalat buah mutan dengan jam biologis yang abnormal.</figcaption>
 </figure>
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Tiga peraih Nobel 2017" />
   <figcaption>Puncaknya: Hadiah Nobel Fisiologi atau Kedokteran 2017 dianugerahkan kepada Hall, Rosbash, dan Young.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Jika seseorang benar-benar terputus dari petunjuk waktu eksternal, berapa jamkah
 Jawabannya adalah sekitar 24,2 jam, sedikit lebih lama dari 24. Ini berarti, secara alami, jam biologis hampir setiap orang sedikit lebih lambat dari jam bumi.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science: penelitian ritme sirkadian manusia yang mendekati 24 jam" />
   <figcaption>Czeisler et al., diterbitkan di <em>Science</em> pada tahun 1999, mengukur ritme endogen manusia sekitar 24,18 jam.</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Lalu mengapa sebagian besar orang masih bisa mempertahankan jadwal tidur yang te
 Di retinamu ada jenis sel khusus (ipRGC) yang tidak bertanggung jawab untuk membentuk gambar, melainkan hanya melaporkan keberadaan cahaya ke SCN. Proses ini disebut *entrainment*. Cahaya di pagi hari setiap hari inilah yang menggeser jam yang melambat itu sedikit maju, menyelaraskannya kembali ke 24 jam. Orang normal mengandalkan mekanisme ini untuk mengkompensasi kelebihan belasan menit setiap hari.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Siklus tidur normal" />
   <figcaption>Siklus tidur orang normal: Waktu tidur dan bangun stabil, pola tidur tetap rata dan tidak bergeser. © Philo</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ DSPD (*Delayed Sleep Phase Disorder*) adalah gangguan ritme sirkadian kronis di 
 Sederhananya, DSPD berarti kamu tidak bisa tidur sebelum pukul dua atau tiga pagi, tetapi begitu waktunya tiba, kamu pasti bisa tidur. Setelah tidur 7-8 jam, kamu akan bangun dan merasa energik sepanjang hari. Selain itu, banyak penelitian baru-baru ini menemukan hubungan erat antara ADHD pada orang dewasa dan DSPD; DSPD adalah gangguan ritme sirkadian yang paling umum di antara mereka.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Siklus tidur DSPD" />
   <figcaption>Siklus tidur DSPD: Jadwal tidur stabil dan tidak bergeser, tetapi periode tidurnya secara signifikan lebih larut dari orang normal. © Philo</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Gangguan tidur-bangun non-24 jam (*Non-24-hour sleep-wake disorder*, disingkat N
 Sederhananya, Non-24 berarti waktu tidur setiap hari lebih lambat dari hari sebelumnya, terus bergeser hingga siang dan malam terbalik, lalu bergeser lagi ke depan, membentuk siklus lengkap. Tidak ada awal atau akhir yang jelas, hanya siklus yang terus berputar.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Siklus tidur Non-24" />
   <figcaption>Siklus tidur Non-24: Waktu tidur bergeser mundur setiap hari, terus menurun seperti tangga, berulang tanpa henti. © Philo</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Jadi, bagaimana kita bisa tahu jenis jam biologis apa yang kita miliki?
 Cara termudah adalah dengan mencatat jurnal tidur selama beberapa minggu berturut-turut. Jika kamu punya *smartwatch*, perangkat tersebut juga biasanya merekam siklus tidurmu. Kemudian, amati pukul berapa kamu cenderung tidur dan bangun jika tidak sengaja memasang alarm, apakah kondisi ini stabil, dan apakah kamu merasa segar atau kurang tidur setelah bangun.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Catatan tidur di jam tangan pintar" />
   <figcaption>Rekaman tidur di <em>smartwatch</em> / aplikasi terlihat seperti ini—dengan merekam selama beberapa minggu berturut-turut, kamu bisa melihat apakah jadwal tidurmu stabil atau bergeser.</figcaption>
 </figure>
 

@@ -44,7 +44,7 @@ Jak přesně jsou tedy biologické hodiny regulovány?
 V 80. letech tři vědci, Jeffrey Hall, Michael Rosbash a Michael Young, objevili "motor" biologických hodin u malých octomilek. A co je překvapivé, tento motor se nenachází v mozku, ale v každé buňce – téměř každá buňka ve vašem těle si nese své vlastní hodiny.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis Magazine o tomto objevu" />
   <figcaption>Brandeis Magazine, 'Hlavní časoměřič přírody': Jak tři vědci objevili biologické hodiny u octomilek.</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Celý tento cyklus "transkripce → akumulace → inhibice → degradace → de-
 Vědecky se tomu říká transkripčně-translační negativní zpětnovazebná smyčka (TTFL). V podstatě jde o výše zmíněnou továrnu, která sama šlape na brzdy – protein se v určitém množství hromadí a pak sám potlačí svou produkci. Díky tomuto "hromadění a vyprázdnění", tedy vzestupu a poklesu, buňka dokáže odměřit délku jednoho dne.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Schéma transkripčně-translační zpětnovazebné smyčky (TTFL)" />
   <figcaption>Převedeme-li přirovnání továrny na vědecké názvosloví, celý cyklus je: transkripce → akumulace → inhibice → degradace → de-inhibice, dokončení jednoho cyklu trvá asi 24 hodin. © Philo</figcaption>
 </figure>
 
@@ -76,12 +76,12 @@ Ano, biologické hodiny opravdu existují, nejsou to iluze.
 Objev tohoto mechanismu nebyl okamžitý: již v roce 1971 Konopka a Benzer objevili mutantní octomilky s abnormálními biologickými hodinami; v roce 1984 tři laboratoře – Hallova, Rosbashova a Youngova – téměř současně klonovaly klíčový gen *period*; a teprve v průběhu 90. let postupně složili celý mechanismus výše zmíněné negativní zpětnovazebné smyčky (například Young našel gen *timeless* v roce 1994). Tato série prací nakonec v roce 2017 získala Nobelovu cenu za fyziologii nebo medicínu.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS o práci Konopky a Benzera" />
   <figcaption>Počátek příběhu: V roce 1971 Konopka a Benzer objevili mutantní octomilky s abnormálními biologickými hodinami.</figcaption>
 </figure>
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Tři laureáti Nobelovy ceny za rok 2017" />
   <figcaption>Vyvrcholení: Nobelova cena za fyziologii nebo medicínu v roce 2017 udělena Hallovi, Rosbashovi a Youngovi.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Pokud by byl člověk zcela izolován od vnějších časových podnětů, jak d
 Odpověď zní: přibližně 24,2 hodiny, tedy o něco více než 24. To znamená, že biologické hodiny téměř každého člověka jsou přirozeně o něco pomalejší než Země.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science: výzkum téměř 24hodinového cirkadiánního rytmu člověka" />
   <figcaption>Studie Czeislera a kol. publikovaná v časopise Science v roce 1999 zjistila, že endogenní cirkadiánní rytmus člověka je přibližně 24,18 hodiny.</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Proč si tedy většina lidí dokáže udržet pravidelný spánkový režim? Od
 Ve vaší sítnici existuje speciální typ buněk (ipRGC), které nejsou zodpovědné za vidění, ale pouze hlásí "přítomnost světla" do SCN. Tento proces se nazývá fotická synchronizace (entrainment). Světlo každé ráno posune tyto pomalejší hodiny trochu dopředu a znovu je srovná na 24 hodin. Normální lidé díky tomuto mechanismu každý den "vymažou" těch několik přebytečných minut.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Normální spánkový cyklus" />
   <figcaption>Spánkový cyklus normálního člověka: stabilní doba usínání a probouzení, rovná spánková fáze bez posunů. © Philo</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ Syndrom zpožděné fáze spánku (DSPD) je chronická porucha cirkadiánního r
 Zjednodušeně řečeno, DSPD znamená, že nemůžete usnout před druhou nebo třetí hodinou ranní, ale jakmile přijde váš čas, usnete, spíte 7-8 hodin a probudíte se plni energie na celý den. Navíc, v posledních letech mnoho studií zjistilo silnou souvislost mezi ADHD u dospělých a DSPD, přičemž DSPD je u nich nejčastější poruchou cirkadiánního rytmu.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Spánkový cyklus při DSPD" />
   <figcaption>Spánkový cyklus DSPD: stabilní režim bez posunů, ale celá spánková fáze je výrazně posunutá na pozdější dobu než u normálních lidí. © Philo</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Syndrom nespavosti/hyper somnie s ne-24hodinovým cirkadiánním rytmem (Non-24-
 Jednoduše řečeno, Non-24 znamená, že doba usínání se každý den posouvá na pozdější dobu než den předtím, a to stále dál, dokud se den a noc nepřevrátí, a pak se posouvá zpět, čímž se vytvoří kompletní cyklus. Je to neustálý cyklus bez začátku a konce.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Spánkový cyklus při Non-24" />
   <figcaption>Spánkový cyklus Non-24: doba usínání se denně posouvá dozadu, neustále klesá jako po schodech, stále dokola. © Philo</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Jak tedy můžete zjistit, jaký typ biologických hodin máte?
 Nejjednodušší metodou je vést si několik týdnů spánkový deník. Pokud máte chytré hodinky, ty také zaznamenávají spánkové cykly. Poté sledujte, v kolik hodin máte tendenci jít spát a probouzet se, pokud si záměrně nenastavíte budík, zda je tento stav stabilní a zda se po probuzení cítíte plní energie nebo spíše nedostatečně vyspalí.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Záznam spánku v chytrých hodinkách" />
   <figcaption>Záznam spánku v chytrých hodinkách/aplikaci vypadá takto – po několika týdnech záznamů uvidíte, zda je váš spánkový režim stabilní, nebo se posouvá.</figcaption>
 </figure>
 

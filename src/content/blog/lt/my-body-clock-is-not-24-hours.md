@@ -63,7 +63,7 @@ Visas šis „gamybos → kaupimosi → savaiminio sustabdymo → ištuštinimo 
 Moksliškai tai vadinama transkripcijos-transliacijos neigiamo grįžtamojo ryšio kilpa (TTFL). Nors pavadinimas skamba sudėtingai, iš esmės tai yra ta pati „gamykla“, kuri pati sau paspaudžia stabdį: baltymui pasiekus tam tikrą kiekį, jis slopina savo paties gamybą. Per šį „kaupimosi-ištuštinimo“ bangavimą ląstelė kažkaip suskaičiuoja dienos ilgį.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkripcijos-transliacijos neigiamo grįžtamojo ryšio kilpos (TTFL) diagrama" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Transkripcijos-transliacijos neigiamo grįžtamojo ryšio kilpos (TTFL) diagrama" />
   <figcaption>Pakeitus gamyklos metaforą moksline terminologija, visas ciklas atrodo taip: transkripcija → kaupimasis → slopinimas → degradacija → desupresija, o vienas ciklas trunka apie 24 valandas. © Philo</figcaption>
 </figure>
 

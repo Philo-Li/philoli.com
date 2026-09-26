@@ -63,7 +63,7 @@ Celý tento cyklus „produkcia → hromadenie → samovypnutie → vyprázdneni
 Veda to nazýva transkripčno-translačný okruh negatívnej spätnej väzby (TTFL). Názov znie zložito, no v podstate ide o spomínanú továreň, ktorá sama stlačí brzdu – keď sa nahromadí určité množstvo proteínu, inhibuje vlastnú produkciu. Vďaka tomuto „hromadeniu a vyprázdňovaniu“, stúpaniu a klesaniu, bunka dokáže odmerať dĺžku jedného dňa.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Schéma transkripčno-translačného okruhu negatívnej spätnej väzby (TTFL)" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Schéma transkripčno-translačného okruhu negatívnej spätnej väzby (TTFL)" />
   <figcaption>Ak metaforu továrne nahradíme vedeckými názvami, celý cyklus je: transkripcia → akumulácia → inhibícia → degradácia → dezinhibícia, pričom jeden cyklus trvá približne 24 hodín. © Philo</figcaption>
 </figure>
 

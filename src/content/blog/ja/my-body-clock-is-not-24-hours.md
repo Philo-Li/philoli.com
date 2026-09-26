@@ -46,7 +46,7 @@ toc: true
 ジェフリー・ホール、マイケル・ロスバッシュ、マイケル・ヤングという3人の科学者は、小さなハエ（ショウジョウバエ）を使って、体内時計の「エンジン」を発見しました。驚くべきことに、このエンジンは脳の中にあるのではなく、一つひとつの細胞の中に存在していたのです。私たちの体のほぼすべての細胞が、それぞれ独自の時計を持っているというわけです。
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 雑誌对这项发现的报道" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="この発見を伝える Brandeis Magazine の記事" />
   <figcaption>ブランダイス誌「自然の総計時者」：3人の科学者はいかにしてショウジョウバエから体内時計を発見したか。</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ toc: true
 これは科学的には「転写・翻訳ネガティブフィードバックループ（TTFL）」と呼ばれます。いかにも難しそうな名前ですが、本質的には、先ほどの「自分でブレーキを踏む工場」と同じです。あるタンパク質が一定量に達すると、自身の生産を抑制する。この「蓄積と排出」という増減によって、細胞はなんとか一日の長さを計っているのです。
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="転写・翻訳フィードバックループ（TTFL）の模式図" />
   <figcaption>工場の例えを科学的な名称に置き換えると、一周は「転写 → 蓄積 → 抑制 → 分解 → 脱抑制」となり、約24時間で一巡します。© Philo</figcaption>
 </figure>
 
@@ -78,12 +78,12 @@ toc: true
 このメカニズムの発見は、一朝一夕に成し遂げられたものではありません。遡ること1971年には、コノプカとベンザーが体内時計に異常を持つ突然変異ショウジョウバエを発見していました。1984年には、ホール、ロスバッシュ、ヤングの3つの研究室がほぼ同時に、鍵となる*period*遺伝子をクローン化。そして1990年代を通じて、彼らは上述のネガティブフィードバックループのメカニズムを段階的に解明していったのです（例えば、ヤングは1994年に*timeless*遺伝子を発見しました）。これら一連の研究が、最終的に2017年のノーベル生理学・医学賞受賞へと繋がりました。
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="Konopka と Benzer の研究を振り返る PNAS の記事" />
   <figcaption>物語の始まり：1971年、コノプカとベンザーが体内時計に異常を持つ突然変異ショウジョウバエを発見。</figcaption>
 </figure>
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017年ノーベル生理学・医学賞の受賞者3人" />
   <figcaption>終着点：2017年ノーベル生理学・医学賞は、ホール、ロスバッシュ、ヤングに授与されました。</figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ toc: true
 答えは、約24.2時間。24時間をわずかに上回ります。つまり、ほとんどすべての人の体内時計は、生まれつき地球の時間より少しだけゆっくり進むようにできているのです。
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 誌：ヒトの概日リズムが24時間に近いことを示した研究" />
   <figcaption>チェイズラーらによる1999年の『Science』誌掲載論文では、人間の内因性リズムは約24.18時間と測定されています。</figcaption>
 </figure>
 
@@ -109,7 +109,7 @@ toc: true
 あなたの網膜には特殊な細胞（ipRGC）があり、これらは視覚情報ではなく、「今、光があるかどうか」をSCNに報告する役割を担っています。このプロセスは「光同調（Entrainment）」と呼ばれます。毎朝の光は、少し遅れがちな体内時計を前に進めて、再び24時間に合わせる役割を果たしているのです。普通の人はこのメカニズムのおかげで、毎日生じる数十分のずれを修正しています。
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="通常の睡眠サイクル" />
   <figcaption>正常な人の睡眠周期：入眠・起床時間が安定しており、睡眠帯は平坦でずれがない。© Philo</figcaption>
 </figure>
 
@@ -124,7 +124,7 @@ DSPD（睡眠相後退症候群）は、慢性的な概日リズムの乱れで�
 DSPDを簡単に言うと、夜中の2時や3時にならないと眠れないけれど、その時間になれば必ず眠りにつけ、7〜8時間寝ればすっきり目覚め、日中も元気でいられる、という状態です。また、近年多くの研究で、成人ADHDとDSPDが高い相関関係にあることが分かっており、DSPDはADHD患者に最もよく見られる概日リズム障害の一つです。
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD の睡眠サイクル" />
   <figcaption>DSPDの睡眠周期：生活リズムは安定してずれがないが、睡眠全体が健常者よりも明らかに遅い。© Philo</figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ DSPDを簡単に言うと、夜中の2時や3時にならないと眠れない�
 簡単に言えば、Non-24は毎日寝る時間が前日よりさらに遅くなり、それが続き、やがて昼夜が逆転し、また元に戻るという完全なサイクルを形成します。始まりも終わりもなく、ひたすら循環し続ける状態です。
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 の睡眠サイクル" />
   <figcaption>Non-24の睡眠周期：入眠時間が日ごとに後ろにずれ、階段を下りるように滑り落ちていき、それが繰り返される。© Philo</figcaption>
 </figure>
 
@@ -148,7 +148,7 @@ DSPDを簡単に言うと、夜中の2時や3時にならないと眠れない�
 最も簡単な方法は、数週間にわたって睡眠日誌をつけることです。もしスマートウォッチをお持ちなら、最近のスマートウォッチには睡眠周期の記録機能もあります。そして、無理に目覚まし時計をセットしない場合、自分が何時に寝て何時に起きる傾向があるか、その状態が安定しているか、目覚めた後に体がすっきりしているか、それとも睡眠不足を感じるかを観察します。
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="スマートウォッチの睡眠記録" />
   <figcaption>スマートウォッチやアプリの睡眠記録はこのような形をしています。数週間連続で記録すれば、自分の生活リズムが安定しているか、それともずれているかが分かります。</figcaption>
 </figure>
 

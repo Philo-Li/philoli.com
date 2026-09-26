@@ -63,7 +63,7 @@ Denne hele cyklus af "produktion → ophobning → selv-stop → tømning → ge
 Videnskabeligt kaldes dette et transkriptions-translationelt negativt feedback-loop (TTFL). Navnet lyder måske skræmmende, men i bund og grund er det den selvbremsende fabrik, vi lige har beskrevet – et protein hæmmer sin egen produktion, når det når et bestemt niveau, og ved hjælp af denne "ophobning-tømning" stigning og fald formår cellen at måle længden af en dag.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Skematisk fremstilling af transkriptions-translationelt negativt feedback-loop (TTFL). Hvis fabrik-metaforen udskiftes med videnskabelige termer, er en hel cyklus: transkription → akkumulering → hæmning → nedbrydning → de-hæmning, og en runde tager ca. 24 timer. © Philo" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Skematisk fremstilling af transkriptions-translationelt negativt feedback-loop (TTFL). Hvis fabrik-metaforen udskiftes med videnskabelige termer, er en hel cyklus: transkription → akkumulering → hæmning → nedbrydning → de-hæmning, og en runde tager ca. 24 timer. © Philo" />
   <figcaption>Skematisk fremstilling af transkriptions-translationelt negativt feedback-loop (TTFL). Hvis fabrik-metaforen udskiftes med videnskabelige termer, er en hel cyklus: transkription → akkumulering → hæmning → nedbrydning → de-hæmning, og en runde tager ca. 24 timer. © Philo</figcaption>
 </figure>
 

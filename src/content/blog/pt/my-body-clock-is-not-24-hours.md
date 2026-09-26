@@ -63,7 +63,7 @@ Todo este ciclo de "produção → acúmulo → autodesligamento → esvaziament
 Cientificamente, isso é chamado de circuito de feedback negativo de transcrição-tradução (TTFL). O nome pode parecer intimidante, mas a essência é a mesma daquela fábrica que aciona o próprio freio: quando uma proteína atinge uma certa quantidade, ela inibe sua própria produção. É através desse "acumular-esvaziar", desse fluxo e refluxo, que a célula consegue, de alguma forma, medir a duração de um dia.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Diagrama esquemático do circuito de feedback negativo de transcrição-tradução (TTFL)" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Diagrama esquemático do circuito de feedback negativo de transcrição-tradução (TTFL)" />
   <figcaption>Substituindo a analogia da fábrica pela terminologia científica, um ciclo completo é: Transcrição → Acúmulo → Inibição → Degradação → Desinibição, completando uma volta em aproximadamente 24 horas. © Philo</figcaption>
 </figure>
 

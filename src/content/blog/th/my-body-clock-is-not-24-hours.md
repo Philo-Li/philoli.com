@@ -44,7 +44,7 @@ toc: true
 นักวิทยาศาสตร์สามท่าน คือ Jeffrey Hall, Michael Rosbash และ Michael Young ได้ค้นพบ "กลไกขับเคลื่อน" ของนาฬิกาชีวิตในแมลงวันทองตัวเล็กๆ ที่น่าทึ่งก็คือ กลไกขับเคลื่อนนี้ไม่ได้อยู่ในสมอง แต่มันอยู่ในเซลล์ทุกเซลล์ของเราเลยค่ะ แทบทุกเซลล์ในร่างกายของคุณ ล้วนมีนาฬิกาเป็นของตัวเอง
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="บทความของ Brandeis Magazine เกี่ยวกับการค้นพบนี้" />
   <figcaption>จากนิตยสาร Brandeis เรื่อง 'Nature's Master Timekeeper': นักวิทยาศาสตร์สามท่านค้นพบนาฬิกาชีวิตในแมลงวันทองได้อย่างไร</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ toc: true
 ในทางวิทยาศาสตร์ สิ่งนี้เรียกว่า วงจรป้อนกลับเชิงลบของการถอดรหัสและการแปลรหัส (TTFL, Transcription-Translation Feedback Loop) ชื่ออาจจะดูซับซ้อน แต่จริงๆ แล้วมันคือโรงงานที่เหยียบเบรกตัวเองได้ตามที่อธิบายไปข้างต้นนั่นแหละค่ะ — เมื่อโปรตีนมีปริมาณมากถึงระดับหนึ่ง มันก็จะยับยั้งการผลิตตัวเอง อาศัยการ "สะสม-กำจัด" ที่เพิ่มขึ้นและลดลงนี้ ทำให้เซลล์สามารถนับระยะเวลาของวันได้
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="แผนภาพวงจรป้อนกลับการถอดรหัส-การแปลรหัส (TTFL)" />
   <figcaption>เมื่อเปลี่ยนคำเปรียบเทียบโรงงานเป็นชื่อทางวิทยาศาสตร์ วงจรหนึ่งรอบคือ: การถอดรหัส → การสะสม → การยับยั้ง → การสลาย → การปลดการยับยั้ง ซึ่งใช้เวลาประมาณ 24 ชั่วโมงต่อหนึ่งรอบ © Philo</figcaption>
 </figure>
 
@@ -76,12 +76,12 @@ Michael Young ยังค้นพบตัวละครสำคัญอี
 การค้นพบกลไกนี้ไม่ได้เกิดขึ้นในชั่วข้ามคืน: ย้อนกลับไปในปี 1971 Konopka และ Benzer ได้ค้นพบแมลงวันทองกลายพันธุ์ที่มีนาฬิกาชีวิตผิดปกติ; ในปี 1984 ห้องปฏิบัติการของ Hall, Rosbash และ Young เกือบจะพร้อมกันในการโคลนยีน *period* ที่สำคัญ; หลังจากนั้นตลอดทศวรรษ 1990 พวกเขาจึงค่อยๆ รวบรวมกลไกวงจรป้อนกลับเชิงลบที่กล่าวมาข้างต้น (เช่น Young ค้นพบยีน *timeless* ในปี 1994) ผลงานต่อเนื่องชุดนี้ ในที่สุดก็ได้รับรางวัลโนเบลสาขาสรีรวิทยาหรือการแพทย์ในปี 2017
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS ย้อนดูงานวิจัยของ Konopka และ Benzer" />
   <figcaption>จุดเริ่มต้นของเรื่องราว: ในปี 1971 Konopka และ Benzer ค้นพบแมลงวันทองกลายพันธุ์ที่มีนาฬิกาชีวิตผิดปกติ</figcaption>
 </figure>
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="ผู้ได้รับรางวัลโนเบลปี 2017 ทั้งสามคน" />
   <figcaption>บทสรุป: รางวัลโนเบลสาขาสรีรวิทยาหรือการแพทย์ประจำปี 2017 มอบให้แก่ Hall, Rosbash และ Young</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Michael Young ยังค้นพบตัวละครสำคัญอี
 คำตอบคือ ประมาณ 24.2 ชั่วโมง ซึ่งนานกว่า 24 ชั่วโมงเล็กน้อย นั่นหมายความว่า นาฬิกาชีวิตของคนเราเกือบทุกคน โดยธรรมชาติแล้วจะเดินช้ากว่านาฬิกาโลกอยู่เล็กน้อยค่ะ
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science: งานวิจัยเรื่องนาฬิกาชีวภาพของมนุษย์ที่ใกล้เคียง 24 ชั่วโมง" />
   <figcaption>Czeisler และคณะ ตีพิมพ์ในวารสาร Science ปี 1999 ระบุว่าจังหวะชีวิตภายในของมนุษย์อยู่ที่ประมาณ 24.18 ชั่วโมง</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Michael Young ยังค้นพบตัวละครสำคัญอี
 ในเรตินาของดวงตาคุณ มีเซลล์พิเศษชนิดหนึ่ง (ipRGC) ซึ่งไม่ได้มีหน้าที่ในการสร้างภาพ แต่มีหน้าที่เพียงแค่รายงานว่า 'ตอนนี้มีแสงหรือไม่' ไปยัง SCN กระบวนการนี้เรียกว่า Photopic Entrainment แสงในยามเช้าตรู่ทุกวันนี่เอง ที่จะช่วยปรับนาฬิกาที่เดินช้าให้เดินเร็วขึ้นเล็กน้อย เพื่อกลับมาตรงกับ 24 ชั่วโมงอีกครั้ง คนปกติอาศัยกลไกนี้ในการปรับเวลาที่เกินมาสิบกว่านาทีในแต่ละวันให้กลับมาเป็นปกติ
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="วงจรการนอนปกติ" />
   <figcaption>วงจรการนอนหลับของคนปกติ: เวลานอนหลับและตื่นนอนคงที่ แถบนอนหลับเรียบและไม่เปลี่ยนแปลง © Philo</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ DSPD (ภาวะการหลับล่าช้า) เป็นภาว
 พูดง่ายๆ ก็คือ DSPD หมายถึง คุณจะนอนไม่หลับจนกว่าจะถึงตีสองตีสาม แต่พอถึงเวลาก็จะหลับได้แน่นอน และจะตื่นขึ้นมาหลังจากนอนไป 7-8 ชั่วโมง โดยที่ในตอนกลางวันก็ยังคงมีพลังงานดีอยู่เหมือนเดิม นอกจากนี้ ในช่วงไม่กี่ปีที่ผ่านมา มีงานวิจัยจำนวนมากพบว่า ADHD ในผู้ใหญ่มีความสัมพันธ์อย่างมากกับ DSPD โดย DSPD เป็นความผิดปกติของจังหวะชีวิตประจำวันที่พบได้บ่อยที่สุดในกลุ่มคนเหล่านี้
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="วงจรการนอนของ DSPD" />
   <figcaption>วงจรการนอนหลับของ DSPD: การใช้ชีวิตประจำวันคงที่และไม่เปลี่ยนแปลง แต่ช่วงเวลาการนอนทั้งหมดจะช้ากว่าคนปกติอย่างเห็นได้ชัด © Philo</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ DSPD (ภาวะการหลับล่าช้า) เป็นภาว
 พูดง่ายๆ ก็คือ Non-24 คือการที่เวลานอนหลับในแต่ละวันจะช้ากว่าวันก่อนหน้าไปเรื่อยๆ ช้าลงไปเรื่อยๆ จนกระทั่งกลางวันกลางคืนกลับตาลปัตร แล้วก็กลับมาวนซ้ำอีกครั้ง กลายเป็นวงจรที่สมบูรณ์ ไม่มีจุดเริ่มต้นหรือจุดสิ้นสุดที่ตายตัว มีแต่การวนซ้ำไปเรื่อยๆ
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="วงจรการนอนของ Non-24" />
   <figcaption>วงจรการนอนหลับของ Non-24: เวลาเข้านอนจะเลื่อนไปข้างหลังในแต่ละวัน คล้ายกับการเลื่อนลงบันไดไปเรื่อยๆ วนเวียนซ้ำๆ ไม่มีที่สิ้นสุด © Philo</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ DSPD (ภาวะการหลับล่าช้า) เป็นภาว
 วิธีที่ง่ายที่สุดคือ การจดบันทึกการนอนหลับติดต่อกันหลายสัปดาห์ หากคุณมีสมาร์ทวอทช์ สมาร์ทวอทช์ในปัจจุบันก็สามารถบันทึกวงจรการนอนหลับได้เช่นกัน จากนั้นให้สังเกตว่า หากคุณไม่ตั้งนาฬิกาปลุก คุณมีแนวโน้มที่จะเข้านอนและตื่นนอนเวลาใด และสภาวะนี้มีความคงที่หรือไม่ หลังจากตื่นนอนแล้ว คุณรู้สึกมีพลังงานดี หรือรู้สึกว่านอนไม่พอ
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="บันทึกการนอนในสมาร์ตวอทช์" />
   <figcaption>บันทึกการนอนหลับในสมาร์ทวอทช์ / แอป จะมีลักษณะแบบนี้ — หากบันทึกติดต่อกันหลายสัปดาห์ คุณก็จะสามารถเห็นได้ว่าวงจรชีวิตประจำวันของคุณคงที่ หรือกำลังเปลี่ยนแปลงไปเรื่อยๆ</figcaption>
 </figure>
 

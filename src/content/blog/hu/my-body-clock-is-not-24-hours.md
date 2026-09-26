@@ -63,7 +63,7 @@ Ez a teljes körforgás – "termelés → felhalmozódás → önműködő leá
 Tudományos nyelven ezt transzkripciós-transzlációs negatív visszacsatolási huroknak (TTFL) nevezik. Bár a neve ijesztően hangzik, lényegében arról az "önfékező" gyárról van szó, amit fentebb leírtunk: egy fehérje, ha elér egy bizonyos koncentrációt, gátolja a saját termelését. Ezzel a "felhalmozódás-ürítés" hullámzással a sejt képes mérni a nap hosszát.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="A transzkripciós-transzlációs negatív visszacsatolási hurok (TTFL) vázlatos ábrája" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="A transzkripciós-transzlációs negatív visszacsatolási hurok (TTFL) vázlatos ábrája" />
   <figcaption>Ha a gyárhasonlatot tudományos terminológiára cseréljük, a teljes ciklus a következő: transzkripció → felhalmozódás → gátlás → lebontás → gátlás feloldása. Egy kör nagyjából 24 órát vesz igénybe. © Philo</figcaption>
 </figure>
 

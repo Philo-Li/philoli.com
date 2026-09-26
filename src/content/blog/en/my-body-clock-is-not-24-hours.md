@@ -63,7 +63,7 @@ One full loop, transcription → accumulation → repression → degradation →
 Scientists call this the transcription-translation feedback loop (TTFL). It's just the self-braking factory above: a protein that, once abundant enough, suppresses its own production. That slow rise and fall is how a cell counts out a day.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="The transcription-translation feedback loop (TTFL)" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="The transcription-translation feedback loop (TTFL)" />
   <figcaption>Swap the factory metaphor for the real names, and one full loop reads: transcription → accumulation → repression → degradation → derepression, roughly 24 hours per turn. © Philo</figcaption>
 </figure>
 

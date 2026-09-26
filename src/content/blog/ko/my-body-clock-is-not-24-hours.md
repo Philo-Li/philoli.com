@@ -63,7 +63,7 @@ toc: true
 과학적으로는 이를 전사-번역 음성 피드백 회로(TTFL)라고 부릅니다. 이름은 거창하지만, 본질은 위에서 설명한 스스로 브레이크를 밟는 공장과 같습니다. 특정 단백질이 일정 수준 이상 많아지면 스스로의 생산을 억제하고, 이 '축적-비우기'의 오르내림을 통해 세포는 하루의 길이를 정확히 세어내는 것이죠.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="전사-번역 음성 피드백 회로(TTFL) 개요도" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="전사-번역 음성 피드백 회로(TTFL) 개요도" />
   <figcaption>공장 비유를 과학적 용어로 바꾸면, 한 바퀴는 '전사 → 축적 → 억제 → 분해 → 억제 해제'로 진행되며 약 24시간이 걸립니다. © Philo</figcaption>
 </figure>
 

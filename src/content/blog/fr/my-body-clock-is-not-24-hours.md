@@ -61,7 +61,7 @@ Ce cycle complet de "transcription → accumulation → inhibition → dégradat
 Scientifiquement, on appelle cela une boucle de rétroaction négative transcription-traduction (TTFL). Il décrit simplement cette usine qui s'auto-régule : une protéine, une fois produite en quantité suffisante, inhibe sa propre production. C'est grâce à cette alternance d'accumulation et de vidage que la cellule parvient à mesurer la durée d'une journée.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Diagramme du cycle TTFL" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Diagramme du cycle TTFL" />
   <figcaption>Si l'on remplace la métaphore de l'usine par la terminologie scientifique, un cycle complet correspond à : transcription → accumulation → inhibition → dégradation → désinhibition. Un tour dure environ 24 heures. © Philo</figcaption>
 </figure>
 

@@ -65,7 +65,7 @@ Ceo ovaj ciklus "proizvodnje → akumulacije → samozaustavljanja → pražnjen
 U nauci se ovo naziva transkripciono-translaciona negativna povratna sprega (TTFL). Naziv možda zvuči zastrašujuće, ali u suštini je reč o fabrici koja sama koči – protein, kada dostigne određeni nivo, inhibira sopstvenu proizvodnju. Kroz ovaj ciklus "akumulacije i pražnjenja", ćelija nekako meri dužinu jednog dana.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Dijagram transkripciono-translacionog negativnog povratnog ciklusa (TTFL)" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Dijagram transkripciono-translacionog negativnog povratnog ciklusa (TTFL)" />
   <figcaption>Ako metaforu fabrike zamenimo naučnim nazivima, ceo krug je: transkripcija → akumulacija → inhibicija → degradacija → dezinhibicija, što traje oko 24 sata. © Philo</figcaption>
 </figure>
 

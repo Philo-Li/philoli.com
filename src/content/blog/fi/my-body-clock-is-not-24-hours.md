@@ -63,7 +63,7 @@ Tämä koko "Transkriptio → Akkumulaatio → Estyminen → Hajoaminen → Esto
 Tieteellisesti tätä kutsutaan transkriptio-translaatio-negatiiviseksi palautesilmukaksi (TTFL). Pohjimmiltaan kyse on yllä kuvatusta tehtaasta, joka jarruttaa itseään – proteiini estää omaa tuotantoaan, kun sitä on kertynyt riittävästi. Tämän "kertymisen ja tyhjenemisen" nousun ja laskun avulla solu onnistuu mittaamaan päivän pituuden.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkriptio-translaatio-negatiivisen palautesilmukan (TTFL) kaavio" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Transkriptio-translaatio-negatiivisen palautesilmukan (TTFL) kaavio" />
   <figcaption>Jos tehdasvertaus vaihdetaan tieteellisiin termeihin, kokonainen kierros on: Transkriptio → Akkumulaatio → Estyminen → Hajoaminen → Esto poistuu, ja yksi kierros kestää noin 24 tuntia. © Philo</figcaption>
 </figure>
 

@@ -63,7 +63,7 @@ Cały ten cykl – „produkcja → akumulacja → samowyłączenie → opróżn
 W nauce nazywa się to pętlą ujemnego sprzężenia zwrotnego transkrypcji-translacji (TTFL). Nazwa brzmi skomplikowanie, ale w istocie jest to ta wspomniana wcześniej fabryka, która sama potrafi nacisnąć hamulec – białko, gdy osiągnie pewien poziom, hamuje swoją własną produkcję. Dzięki temu „gromadzeniu-opróżnianiu”, temu cyklowi wzlotów i upadków, komórka jest w stanie odmierzyć długość jednego dnia.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Schemat pętli ujemnego sprzężenia zwrotnego transkrypcji-translacji (TTFL)" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Schemat pętli ujemnego sprzężenia zwrotnego transkrypcji-translacji (TTFL)" />
   <figcaption>Zastępując metaforę fabryki nazewnictwem naukowym, pełny cykl to: transkrypcja → akumulacja → inhibicja → degradacja → dezinhibicja. Jeden obrót trwa około 24 godziny. © Philo</figcaption>
 </figure>
 

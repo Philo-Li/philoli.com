@@ -63,7 +63,7 @@ Iedomājieties šūnu, kurā ir maza rūpnīca, kas dienu un nakti ražo produkt
 Zinātniski to sauc par transkripcijas-translācijas negatīvās atgriezeniskās saites cilpu (TTFL). Nosaukums izklausās sarežģīti, taču būtībā tas ir iepriekš aprakstītā rūpnīca, kas pati bremzē – proteīns, sasniedzot noteiktu daudzumu, nomāc savu ražošanu. Ar šo "uzkrāšanās-iztukšošanās" ciklu šūna burtiski saskaita dienas garumu.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkripcijas-translācijas negatīvās atgriezeniskās saites cilpas (TTFL) shēma" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Transkripcijas-translācijas negatīvās atgriezeniskās saites cilpas (TTFL) shēma" />
   <figcaption>Aizstājot rūpnīcas analoģiju ar zinātniskiem nosaukumiem, pilns cikls ir: transkripcija → uzkrāšanās → inhibīcija → degradācija → dezinhibīcija, kas aizņem aptuveni 24 stundas. © Philo</figcaption>
 </figure>
 

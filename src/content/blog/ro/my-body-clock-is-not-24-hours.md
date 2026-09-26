@@ -44,7 +44,7 @@ Dar cum anume este reglat cu precizie ceasul biologic?
 Trei oameni de știință – Jeffrey Hall, Michael Rosbash și Michael Young – au descoperit „motorul” ceasului biologic la micile musculițe de oțet. Și, surprinzător, acest motor nu se află în creier, ci în fiecare celulă – aproape fiecare celulă din corpul tău poartă propriul său ceas.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis Magazine despre descoperire" />
   <figcaption>Revista Brandeis, „Cronometrorul Suprem al Naturii”: Cum au descoperit trei oameni de știință ceasul biologic la musculițele de oțet.</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Imaginează-ți o mică fabrică într-o celulă, care produce zi și noapte o p
 În termeni științifici, acest proces se numește bucla de feedback negativ transcripție-traducere (TTFL). Numele sună complicat, dar în esență este fabrica aceea care își pune singură frână – o proteină, odată ce atinge un anumit nivel, își inhibă propria producție. Prin acest „acumulare-golire”, celula reușește să măsoare durata unei zile.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Schema buclei de feedback transcripție-translație (TTFL)" />
   <figcaption>Înlocuind analogia fabricii cu denumirile științifice, un ciclu complet este: transcripție → acumulare → inhibare → degradare → dezinhibare, parcurgând o rundă în aproximativ 24 de ore. © Philo</figcaption>
 </figure>
 
@@ -76,12 +76,12 @@ Da, ceasul biologic există cu adevărat, nu este o iluzie.
 Descoperirea acestui mecanism nu a fost un eveniment singular: încă din 1971, Konopka și Benzer au descoperit musculițe de oțet mutante cu ceasuri biologice anormale; în 1984, laboratoarele lui Hall, Rosbash și Young au clonat aproape simultan gena crucială *period*; abia apoi, pe parcursul anilor ’90, au reconstituit treptat mecanismul buclei de feedback negativ descrise mai sus (de exemplu, Young a descoperit gena *timeless* în 1994). Această serie de lucrări le-a adus în cele din urmă Premiul Nobel pentru Fiziologie sau Medicină în 2017.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS despre cercetarea lui Konopka și Benzer" />
   <figcaption>Punctul de plecare al poveștii: În 1971, Konopka și Benzer au descoperit musculițe de oțet mutante cu ceasuri biologice anormale.</figcaption>
 </figure>
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Cei trei laureați ai Premiului Nobel din 2017" />
   <figcaption>Punctul culminant: Premiul Nobel pentru Fiziologie sau Medicină din 2017, acordat lui Hall, Rosbash, Young.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Dacă o persoană ar fi complet izolată de indicii temporale externe, câte ore
 Răspunsul este de aproximativ 24,2 ore, adică puțin mai mult de 24. Altfel spus, aproape ceasul biologic al fiecărei persoane este, în mod natural, puțin mai lent decât cel al Pământului.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science: cercetare despre ritmul circadian uman de aproape 24 de ore" />
   <figcaption>Czeisler și colaboratorii, publicați în „Science” în 1999, au măsurat ritmul endogen uman la aproximativ 24,18 ore.</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Atunci, de ce majoritatea oamenilor reușesc să-și mențină un program regula
 În retina ta există un tip special de celule (ipRGC) care nu sunt responsabile de formarea imaginilor, ci doar de a raporta SCN-ului „dacă există lumină acum”. Acest proces se numește sincronizare luminoasă (Entrainment). Lumina de dimineață devreme este cea care împinge puțin înainte ceasul care merge mai lent, realiniindu-l la 24 de ore. Oamenii normali folosesc acest mecanism pentru a compensa cele câteva minute în plus în fiecare zi.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Un ciclu de somn normal" />
   <figcaption>Ciclul de somn al unei persoane normale: ora de culcare și de trezire sunt stabile, iar perioada de somn este constantă și nu se modifică. © Philo</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ DSPD (Tulburarea de Fază de Somn Întârziată) este o tulburare cronică a rit
 Simplu spus, DSPD înseamnă că nu poți adormi până la două-trei dimineața, dar odată ce adormi, dormi 7-8 ore și te trezești plin de energie pe parcursul zilei. Mai mult, studii recente ample au descoperit o corelație puternică între ADHD la adulți și DSPD, aceasta fiind cea mai frecventă tulburare de ritm circadian la aceștia.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Un ciclu de somn cu DSPD" />
   <figcaption>Ciclul de somn DSPD: program stabil, fără abateri, dar întreaga perioadă de somn este semnificativ mai târzie decât la persoanele normale. © Philo</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Tulburarea de somn-veghe non-24 de ore (pe scurt, Non-24) este o tulburare rară
 Pe scurt, Non-24 înseamnă că ora de culcare din fiecare zi este mai târzie decât cea din ziua precedentă, decalându-se continuu până când ziua și noaptea se inversează, apoi revine, formând un ciclu complet. Nu există un început sau un sfârșit clar, ci doar o ciclitate continuă.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Un ciclu de somn cu Non-24" />
   <figcaption>Ciclul de somn Non-24: ora de culcare se decalează zilnic, coborând continuu ca o scară, într-o repetare perpetuă. © Philo</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Deci, cum poți afla care este situația ceasului tău biologic?
 Cea mai simplă metodă este să ții un jurnal de somn timp de câteva săptămâni. Dacă ai și un smartwatch, acestea înregistrează ciclurile de somn. Apoi, observă la ce oră ai tendința să te culci și să te trezești fără să folosești un ceas deșteptător, dacă această stare este stabilă și dacă te simți energic sau obosit după trezire.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Jurnal de somn pe un ceas inteligent" />
   <figcaption>Înregistrările de somn din smartwatch-uri / aplicații arată așa – înregistrând timp de câteva săptămâni consecutive, poți vedea dacă programul tău de somn este stabil sau se decalează.</figcaption>
 </figure>
 

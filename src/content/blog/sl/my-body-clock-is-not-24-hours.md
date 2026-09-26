@@ -63,7 +63,7 @@ Celoten cikel "proizvodnja → kopičenje → samodejna zaustavitev → izprazni
 V znanosti se to imenuje transkripcijsko-translacijska negativna povratna zanka (TTFL). Ime zveni zapleteno, a v bistvu gre za omenjeno tovarno, ki sama pritiska zavoro – ko je določenega proteina preveč, zavre lastno proizvodnjo. S tem "kopičenjem-izpraznjevanjem", z vzponom in padcem, celica nekako izmeri dolžino enega dne.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Shematski prikaz transkripcijsko-translacijske negativne povratne zanke (TTFL)" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Shematski prikaz transkripcijsko-translacijske negativne povratne zanke (TTFL)" />
   <figcaption>Če prispodobo tovarne zamenjamo z znanstvenim poimenovanjem, celoten krog zajema: transkripcija → akumulacija → inhibicija → degradacija → dehibicija, in traja približno 24 ur. © Philo</figcaption>
 </figure>
 

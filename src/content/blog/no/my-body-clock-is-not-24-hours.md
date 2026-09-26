@@ -63,7 +63,7 @@ Denne hele runden med «transkripsjon → akkumulering → hemming → nedbrytni
 Vitenskapelig kalles dette en transkripsjons-translasjons negativ tilbakekoblingssløyfe (TTFL). I bunn og grunn er det den selvbremsende fabrikken nevnt ovenfor – et protein hemmer sin egen produksjon når det når et visst nivå. Ved hjelp av denne «akkumulering-tømming»-syklusen klarer cellene å «måle» lengden på en dag.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Skjematisk diagram over transkripsjons-translasjons negativ tilbakekoblingssløyfe (TTFL)" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Skjematisk diagram over transkripsjons-translasjons negativ tilbakekoblingssløyfe (TTFL)" />
   <figcaption>Hvis vi bytter ut fabrikkmetaforen med vitenskapelige termer, blir en hel syklus: transkripsjon → akkumulering → hemming → nedbrytning → de-hemming, som tar rundt 24 timer å fullføre. © Philo</figcaption>
 </figure>
 

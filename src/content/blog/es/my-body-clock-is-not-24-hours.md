@@ -44,7 +44,7 @@ Entonces, ¿cómo se regula con tanta precisión el reloj biológico?
 En la década de 1980, tres científicos, Jeffrey Hall, Michael Rosbash y Michael Young, descubrieron el "motor" del reloj biológico en la humilde mosca de la fruta. Y lo asombroso es que este motor no reside en el cerebro, sino en cada una de nuestras células: prácticamente todas las células de tu cuerpo llevan su propio reloj.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis 杂志对这项发现的报道" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/brandeis-master-timekeeper.webp" alt="Brandeis Magazine sobre el descubrimiento" />
   <figcaption>Revista Brandeis, "El Cronometrador Maestro de la Naturaleza": Cómo tres científicos descubrieron el reloj biológico en la mosca de la fruta.</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Este ciclo completo de "transcripción → acumulación → inhibición → degr
 Científicamente, esto se denomina bucle de retroalimentación negativa transcripcional-traslacional (TTFL). En esencia es la fábrica que se frena sola que mencionamos: cuando una proteína alcanza cierto nivel, inhibe su propia producción. Mediante este flujo y reflujo de "acumulación y vaciado", la célula logra medir la duración de un día.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="转录-翻译负反馈回路（TTFL）示意图" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Esquema del bucle de retroalimentación transcripción-traducción (TTFL)" />
   <figcaption>Cambiando la metáfora de la fábrica por la terminología científica, un ciclo completo sería: transcripción → acumulación → inhibición → degradación → desinhibición, completándose en unas 24 horas. © Philo</figcaption>
 </figure>
 
@@ -76,12 +76,12 @@ Sí, el reloj biológico existe de verdad; no es una ilusión.
 El descubrimiento de este mecanismo no fue un logro de la noche a la mañana: ya en 1971, Konopka y Benzer descubrieron moscas de la fruta mutantes con relojes biológicos anómalos; en 1984, los laboratorios de Hall, Rosbash y Young clonaron casi simultáneamente el gen *period*, clave para el proceso; y a lo largo de la década de 1990, fueron ensamblando gradualmente el mecanismo de bucle de retroalimentación negativa descrito anteriormente (por ejemplo, Young identificó el gen *timeless* en 1994). Toda esta serie de trabajos culminó con el Premio Nobel de Fisiología o Medicina en 2017.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS 回顾 Konopka 与 Benzer 的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/konopka-benzer-pnas.webp" alt="PNAS sobre el trabajo de Konopka y Benzer" />
   <figcaption>El punto de partida de la historia: en 1971, Konopka y Benzer descubrieron moscas de la fruta mutantes con relojes biológicos anómalos.</figcaption>
 </figure>
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="2017 年诺贝尔生理学或医学奖三位得主" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/nobel-2017-laureates.webp" alt="Los tres galardonados con el Nobel de 2017" />
   <figcaption>El culmen: el Premio Nobel de Fisiología o Medicina de 2017, otorgado a Hall, Rosbash y Young.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Si una persona se aísla completamente de las señales horarias externas, ¿cuá
 La respuesta es aproximadamente 24.2 horas, un poco más de 24. Es decir, casi todos los relojes biológicos nacen con un ligero retraso respecto al tiempo terrestre.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science 期刊：人类昼夜节律接近 24 小时的研究" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/czeisler-1999-science.webp" alt="Science: investigación sobre el ritmo circadiano humano de casi 24 horas" />
   <figcaption>Czeisler et al., publicado en Science en 1999, midió el ritmo endógeno humano en aproximadamente 24.18 horas.</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Entonces, ¿por qué la mayoría de la gente logra mantener un horario regular? 
 En tu retina existe un tipo especial de células (ipRGC) que no se encargan de la visión, sino únicamente de informar al SCN si "hay luz ahora mismo". Este proceso se llama arrastre o sincronización (Entrainment). La luz del amanecer cada día es lo que adelanta un poco ese reloj que se retrasa, volviéndolo a alinear con las 24 horas. Las personas con un ritmo normal utilizan este mecanismo para compensar esos minutos extra que se acumularían cada día.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="正常人的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/normal-sleep-cycle.webp" alt="Un ciclo de sueño normal" />
   <figcaption>Ciclo de sueño de una persona normal: horas de acostarse y levantarse estables, con un patrón de sueño consistente que no se desplaza. © Philo</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ El Trastorno de la Fase del Sueño Retrasada (DSPD) es una alteración crónica 
 En pocas palabras, el DSPD significa que no puedes dormir antes de las dos o tres de la madrugada, pero una vez que llega tu hora, te duermes sin problema, y tras 7-8 horas de sueño, te levantas con la misma energía durante el día. Además, en los últimos años, numerosas investigaciones han revelado una alta correlación entre el TDAH en adultos y el DSPD, siendo este último el trastorno del ritmo circadiano más común entre ellos.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="DSPD 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/dspd-sleep-cycle.webp" alt="Un ciclo de sueño con DSPD" />
   <figcaption>Ciclo de sueño del DSPD: horario estable y sin desviaciones, pero el periodo de sueño completo es notablemente más tardío que el de una persona normal. © Philo</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ El Trastorno de Sueño-Vigilia No de 24 Horas (Non-24) es una alteración rara d
 En pocas palabras, el Non-24 implica que la hora de dormir se retrasa cada día un poco más que el anterior, en un proceso continuo que lleva a una inversión del ciclo día-noche, y luego de vuelta, formando un bucle completo. No hay un principio ni un fin, solo una rotación constante.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Non-24 的睡眠周期" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/non-24-sleep-cycle.webp" alt="Un ciclo de sueño con Non-24" />
   <figcaption>Ciclo de sueño del Non-24: la hora de acostarse se retrasa día a día, descendiendo continuamente como una escalera, en un ciclo perpetuo. © Philo</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Entonces, ¿cómo puedes saber qué tipo de reloj biológico tienes?
 El método más sencillo es llevar un diario de sueño durante varias semanas. Si además tienes un reloj inteligente, estos suelen registrar los ciclos de sueño. Luego, observa a qué hora tiendes a acostarte y levantarte si no usas un despertador intencionadamente, si ese estado es estable, y si te sientes con energía o si, por el contrario, notas falta de sueño al despertar.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="智能手表里的睡眠记录" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/sleep-consistency-tracker.webp" alt="Registro de sueño en un reloj inteligente" />
   <figcaption>Así se ve un registro de sueño en un reloj inteligente / aplicación: registrando durante varias semanas, podrás observar si tu patrón de sueño es estable o si se está desplazando.</figcaption>
 </figure>
 

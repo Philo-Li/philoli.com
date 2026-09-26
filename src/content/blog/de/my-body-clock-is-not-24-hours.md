@@ -63,7 +63,7 @@ Dieser gesamte Kreislauf aus "Transkription → Akkumulation → Inhibition → 
 Wissenschaftlich wird dies als Transkriptions-Translations-Negativ-Feedback-Schleife (TTFL) bezeichnet. Im Wesentlichen ist es die oben beschriebene Fabrik, die sich selbst bremst: Sobald ein Protein eine bestimmte Menge erreicht, hemmt es seine eigene Produktion. Durch dieses "Anhäufen und Leeren", dieses Auf und Ab, misst die Zelle quasi die Länge eines Tages.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkriptions-Translations-Negativ-Feedback-Schleife (TTFL) Schema" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Transkriptions-Translations-Negativ-Feedback-Schleife (TTFL) Schema" />
   <figcaption>Ersetzt man die Fabrik-Metapher durch wissenschaftliche Begriffe, so lautet der gesamte Zyklus: Transkription → Akkumulation → Inhibition → Degradation → De-Inhibition. Eine Runde dauert etwa 24 Stunden. © Philo</figcaption>
 </figure>
 

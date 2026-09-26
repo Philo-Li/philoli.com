@@ -63,7 +63,7 @@ Bu "üretim → birikim → kendi kendini durdurma → boşaltma → yeniden ür
 Bilimsel olarak buna transkripsiyon-translasyon negatif geri besleme döngüsü (TTFL) deniyor. İsmi kulağa karmaşık gelse de, özünde yukarıda bahsettiğimiz kendi kendine fren yapan fabrika gibidir – bir protein belirli bir seviyeye ulaştığında kendi üretimini engeller. İşte bu "birikme-boşalma" döngüsü sayesinde hücreler, bir günün uzunluğunu adeta sayar.
 
 <figure class="post-figure">
-  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle.webp" alt="Transkripsiyon-Translasyon Negatif Geri Besleme Döngüsü (TTFL) şeması" />
+  <img src="/uploads/images/my-body-clock-is-not-24-hours/ttfl-cycle-en.webp" alt="Transkripsiyon-Translasyon Negatif Geri Besleme Döngüsü (TTFL) şeması" />
   <figcaption>Fabrika benzetmesini bilimsel isimlerle değiştirdiğimizde, tam döngü şöyledir: Transkripsiyon → Birikim → İnhibisyon → Bozunma → De-inhibisyon. Bir turu yaklaşık 24 saat sürer. © Philo</figcaption>
 </figure>
 
