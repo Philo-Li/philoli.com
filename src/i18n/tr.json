@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Ücretsiz E-Kitap Çevirmeni — EPUB / PDF / AI / 40 Dil",
     "ebookTranslatorDescription": "Tamamen tarayıcınızda çalışan ücretsiz AI e-kitap çevirmeni. EPUB ve PDF dosyalarını 40'tan fazla dile çevirin, yan yana iki dilli çıktı alın. Kendi API anahtarınızı kullanın.",
     "rubiksCubeTitle": "3D Rubik Küpü — Philo Li",
-    "rubiksCubeDescription": "Etkileşimli 3D Rubik Küpü. Bir karıştırma ve çözüm ayarlayın, adım adım oynayın, ezberleme çalışmaları için renkleri veya yüzleri gizleyin."
+    "rubiksCubeDescription": "Etkileşimli 3D Rubik Küpü. Bir karıştırma ve çözüm ayarlayın, adım adım oynayın, ezberleme çalışmaları için renkleri veya yüzleri gizleyin.",
+    "cubeAnalyzerTitle": "csTimer Analiz Aracı — Rubik Küpü Gelişim Grafikleri",
+    "cubeAnalyzerDescription": "csTimer dışa aktarım dosyanızı bırakın ve gelişim grafiklerinizi alın: Ao5/Ao12/Ao100 trendleri, PB geçmişi, dönüm noktaları, günlük hacim ve güç yasası öğrenme eğrisi. Tamamen tarayıcınızda çalışır."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "3D Rubik Küpü",
         "description": "Etkileşimli bir 3D küp üzerinde karıştırma ve çözüm adımlarını izleyin. Öğrenme modu, algoritma pratikleri için renkleri ve yüzleri gizler.",
         "cta": "Küpü aç →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analiz Aracı",
+        "description": "csTimer dışa aktarım dosyanızı bırakın ve gelişiminizi görün: hareketli ortalamalar, PB geçmişi, dönüm noktaları ve güç yasası öğrenme eğrisi. Hiçbir veri tarayıcınızdan dışarı çıkmaz.",
+        "cta": "Çözümlerimi analiz et →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Daha Fazla Oku"
+    },
+    "analyzerCard": {
+      "eyebrow": "Araç",
+      "title": "csTimer Analiz Aracı",
+      "desc": "csTimer oturumlarınızı dışa aktarın ve gelişim grafiklerinizi görün.",
+      "cta": "Çözümlerimi analiz et"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Araç",
+    "title": "csTimer Analiz Aracı",
+    "intro": "Oturumlarınızı csTimer'dan dışa aktarın ve nasıl ilerlediğinizi görmek için dosyayı buraya bırakın: hareketli ortalamalar, PB geçmişi, dönüm noktaları, günlük hacim ve güç yasası öğrenme eğrisi. Her şey tarayıcınızda çalışır — hiçbir şey yüklenmez.",
+    "howTo": {
+      "title": "csTimer'dan nasıl dışa aktarılır",
+      "step1": "cstimer.net adresini açın ve sol üst köşedeki dişli simgesine tıklayın.",
+      "step2": "\"Import / Export\" (İçe / Dışa Aktar) kısmına kaydırın ve \"Export to file\" (Dosyaya aktar) seçeneğini seçin.",
+      "step3": "İndirilen dosyayı aşağıya bırakın."
+    },
+    "drop": {
+      "label": "csTimer dışa aktarım dosyanızı buraya bırakın veya dosya seçmek için tıklayın",
+      "loadSample": "Veya örnek olarak kendi verilerimi yükle",
+      "loading": "Yükleniyor…",
+      "loaded": "{name} yüklendi",
+      "sample": "Örnek veri: Roux yolculuğum, Mayıs–Ekim 2026"
+    },
+    "errors": {
+      "notJson": "Bu bir csTimer dışa aktarım dosyasına benzemiyor (geçerli bir JSON değil).",
+      "noSessions": "Bu dosyada çözüm içeren hiçbir oturum bulunamadı.",
+      "generic": "Dosya okunamadı. Lütfen tekrar deneyin."
+    },
+    "session": {
+      "label": "Oturum",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} çözüm · {days} gün pratik"
+    },
+    "stats": {
+      "total": "Çözümler",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "En iyi tekli",
+      "bestSub": "Tekli PB",
+      "mean": "Ortalama",
+      "meanSub": "Medyan {median}",
+      "stdev": "Standart sapma",
+      "stdevSub": "Tutarlılık — düşük olması daha istikrarlı olduğunu gösterir",
+      "bestAo5": "En iyi Ao5",
+      "bestAo12": "En iyi Ao12",
+      "bestAo50": "En iyi Ao50",
+      "bestAo100": "En iyi Ao100",
+      "currentSub": "Mevcut {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Tekli çözümler",
+        "desc": "Sırasıyla her çözüm. Vurgulanan noktalar yeni kişisel rekorlardır."
+      },
+      "ao": {
+        "title": "Hareketli ortalamalar (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Son çözümlerinizin eğilimi — gelişimin gerçek ölçütü budur.",
+        "linear": "Doğrusal",
+        "log": "Logaritmik"
+      },
+      "hist": {
+        "title": "Zaman dağılımı",
+        "desc": "Çözüm sürelerinizin nasıl dağıldığı."
+      },
+      "daily": {
+        "title": "Günlük hacim",
+        "desc": "Pratik yapılan gün başına çözüm sayısı."
+      },
+      "pb": {
+        "title": "Kişisel rekor geçmişi",
+        "desc": "Zaman içindeki en iyi tekli / Ao5 / Ao12 / Ao100 değerleri, her yeni rekorla kademeli düşüş."
+      },
+      "dailyAvg": {
+        "title": "Günlük ortalama",
+        "desc": "Günlük ortalama çözüm süresi — iyi ve kötü günleri gösterir."
+      },
+      "hourly": {
+        "title": "Günün saati",
+        "desc": "Yerel saate göre ne zaman pratik yaptığınız."
+      },
+      "speedup": {
+        "title": "İlk güne göre hızlanma (log₂)",
+        "desc": "Her günün ilk gününüze göre kaç kat daha hızlı olduğu. +1 = iki kat hızlı, +2 = dört kat, +3 = sekiz kat. Her adım aynı miktarda gelişimi temsil eder."
+      },
+      "powerLaw": {
+        "title": "Beceri ve kümülatif pratik (güç yasası)",
+        "desc": "Dikey: −ln(günlük ortalama saniye). Yatay: kümülatif çözümler, log ölçeği. Pratik Güç Yasası düz bir çizgi öngörür — trendin üzeri bir atılımı, altı ise bir duraklamayı temsil eder."
+      }
+    },
+    "axis": {
+      "solveIndex": "Çözüm #",
+      "seconds": "Süre (sn)",
+      "avgSeconds": "Ortalama (sn)",
+      "avgSecondsLog": "Ortalama (sn, log)",
+      "count": "Çözümler",
+      "bucket": "Süre aralığı",
+      "log2": "log₂(1. gün ÷ gün)",
+      "cumulative": "Kümülatif çözümler (log)",
+      "skill": "−ln(saniye)"
+    },
+    "series": {
+      "single": "Tekli (sn)",
+      "pb": "Yeni PB",
+      "count": "Çözümler",
+      "dailyAvg": "Günlük ortalama (sn)",
+      "speedup": "log₂ hızlanma",
+      "skill": "Günlük beceri endeksi",
+      "trend": "Güç yasası eğilimi",
+      "pbSingle": "PB tekli"
+    },
+    "tooltip": {
+      "noData": "Veri yok",
+      "speedup": "{v} katlanma ({mult}× daha hızlı)",
+      "baseline": "Gün ortalaması {avg} · ilk gün ortalaması {base}",
+      "trend": "Eğilim: {v}",
+      "cumulative": "Şimdiye kadar {n} çözüm · gün ortalaması {avg}",
+      "skill": "Beceri endeksi {v}"
+    },
+    "powerLaw": {
+      "slope": "Eğim b",
+      "halving": "Pratiği ikiye katla → süre şu kadar düşer",
+      "reading": "Okunuyor",
+      "band": {
+        "regressing": "Geriliyor (negatif eğim)",
+        "plateau": "Çok yavaş — plato veya darboğaz",
+        "steady": "Yüksek seviyede istikrarlı öğrenme",
+        "healthy": "Sağlıklı öğrenme hızı (tipik orta seviye)",
+        "fast": "Hızlı gelişim",
+        "veryFast": "Çok hızlı (ilk günler veya yöntem yükseltmesi)",
+        "none": "Yetersiz veri"
+      }
+    },
+    "milestones": {
+      "title": "Kilometre taşları",
+      "desc": "Her serinin bir eşiğin altına ilk düştüğü zaman ve bunun kaçıncı güne denk geldiği.",
+      "threshold": "Altında",
+      "single": "Tekli",
+      "never": "—",
+      "dayN": "{n}. gün"
+    },
+    "recent": {
+      "title": "Son 20 çözüm",
+      "desc": "Bu oturumdaki en son çözümleriniz.",
+      "time": "Ne zaman",
+      "solve": "Süre",
+      "scramble": "Karıştırma"
+    },
+    "links": {
+      "cube": "3D küpü aç →"
+    },
+    "footer": "Verileriniz tarayıcınızdan asla çıkmaz. “Ezberlemeden küp çözme” serisiyle birlikte hazırlandı."
   }
 }

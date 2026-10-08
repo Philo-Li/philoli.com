@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Kostenloser E-Book-Übersetzer — EPUB / PDF / KI / 40 Sprachen",
     "ebookTranslatorDescription": "Kostenloser KI-E-Book-Übersetzer, der vollständig in deinem Browser läuft. Übersetze EPUB- und PDF-Dateien in über 40 Sprachen mit zweisprachiger Gegenüberstellung. Nutze deinen eigenen API-Schlüssel.",
     "rubiksCubeTitle": "3D-Zauberwürfel — Philo Li",
-    "rubiksCubeDescription": "Interaktiver 3D-Zauberwürfel. Lege eine Verdrehung und eine Lösung fest, spiele Schritt für Schritt, blende Farben oder Seiten für Gedächtnisübungen aus."
+    "rubiksCubeDescription": "Interaktiver 3D-Zauberwürfel. Lege eine Verdrehung und eine Lösung fest, spiele Schritt für Schritt, blende Farben oder Seiten für Gedächtnisübungen aus.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Fortschrittsdiagramme für den Zauberwürfel",
+    "cubeAnalyzerDescription": "Ziehe deinen csTimer-Export hierher und erhalte Fortschrittsdiagramme: Ao5/Ao12/Ao100-Trends, PB-Historie, Meilensteine, tägliches Volumen und eine Lernkurve nach dem Potenzgesetz. Läuft vollständig in deinem Browser."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "3D-Zauberwürfel",
         "description": "Gehe Scrambles und Lösungen auf einem interaktiven 3D-Würfel Schritt für Schritt durch. Der Lernmodus blendet Farben und Flächen für Algorithmus-Übungen aus.",
         "cta": "Würfel öffnen →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Ziehe deinen csTimer-Export hierher und sieh dir deinen Fortschritt an: gleitende Durchschnitte, PB-Historie, Meilensteine und eine Lernkurve nach dem Potenzgesetz. Nichts verlässt deinen Browser.",
+        "cta": "Meine Zeiten analysieren →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Mehr lesen"
+    },
+    "analyzerCard": {
+      "eyebrow": "Tool",
+      "title": "csTimer Analyzer",
+      "desc": "Exportiere deine csTimer-Sitzungen und sieh dir deine Fortschrittsdiagramme an.",
+      "cta": "Meine Zeiten analysieren"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Tool",
+    "title": "csTimer Analyzer",
+    "intro": "Exportiere deine Sitzungen aus csTimer und ziehe die Datei hierher, um zu sehen, wie du wirklich vorankommst: gleitende Durchschnitte, PB-Historie, Meilensteine, tägliches Volumen und eine Lernkurve nach dem Potenzgesetz. Alles läuft in deinem Browser — es wird nichts hochgeladen.",
+    "howTo": {
+      "title": "So exportierst du aus csTimer",
+      "step1": "Öffne cstimer.net und klicke auf das Zahnradsymbol in der oberen linken Ecke.",
+      "step2": "Scrolle zu „Import / Export“ und wähle „Export to file“.",
+      "step3": "Ziehe die heruntergeladene Datei hierher."
+    },
+    "drop": {
+      "label": "Ziehe deinen csTimer-Export hierher oder klicke, um eine Datei auszuwählen",
+      "loadSample": "Oder lade meine eigenen Daten als Beispiel",
+      "loading": "Lädt…",
+      "loaded": "{name} geladen",
+      "sample": "Beispieldaten: Meine Roux-Reise, Mai–Okt 2026"
+    },
+    "errors": {
+      "notJson": "Das sieht nicht nach einem csTimer-Export aus (kein gültiges JSON).",
+      "noSessions": "In dieser Datei wurden keine Sitzungen mit gelösten Würfeln gefunden.",
+      "generic": "Datei konnte nicht gelesen werden. Bitte versuche es erneut."
+    },
+    "session": {
+      "label": "Sitzung",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} gelöste Würfel · {days} Übungstage"
+    },
+    "stats": {
+      "total": "Gelöste Würfel",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Beste Einzelzeit",
+      "bestSub": "Einzelne PB",
+      "mean": "Mittelwert",
+      "meanSub": "Median {median}",
+      "stdev": "Standardabweichung",
+      "stdevSub": "Konsistenz — niedriger ist beständiger",
+      "bestAo5": "Bester Ao5",
+      "bestAo12": "Bester Ao12",
+      "bestAo50": "Bester Ao50",
+      "bestAo100": "Bester Ao100",
+      "currentSub": "Aktuell {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Einzelne Solves",
+        "desc": "Jeder Solve in der Reihenfolge. Hervorgehobene Punkte sind neue persönliche Bestleistungen."
+      },
+      "ao": {
+        "title": "Gleitende Durchschnitte (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Der Trend deiner letzten Solves — das ist das wahre Maß für Fortschritt.",
+        "linear": "Linear",
+        "log": "Logarithmisch"
+      },
+      "hist": {
+        "title": "Zeitverteilung",
+        "desc": "Wie deine Solve-Zeiten verteilt sind."
+      },
+      "daily": {
+        "title": "Tägliches Volumen",
+        "desc": "Solves pro Übungstag."
+      },
+      "pb": {
+        "title": "Historie der persönlichen Bestleistungen",
+        "desc": "Bester Einzelwert / Ao5 / Ao12 / Ao100 im Zeitverlauf, absteigend mit jedem neuen Rekord."
+      },
+      "dailyAvg": {
+        "title": "Tagesdurchschnitt",
+        "desc": "Durchschnittliche Solve-Zeit pro Tag — zeigt gute und schlechte Tage."
+      },
+      "hourly": {
+        "title": "Tageszeit",
+        "desc": "Wann du übst, nach lokaler Stunde."
+      },
+      "speedup": {
+        "title": "Beschleunigung vs. erster Tag (log₂)",
+        "desc": "Wie viel schneller jeder Tag im Vergleich zum ersten Tag ist. +1 = doppelt so schnell, +2 = viermal, +3 = achtmal. Jeder Schritt entspricht der gleichen Verbesserungsgröße."
+      },
+      "powerLaw": {
+        "title": "Können vs. kumulierte Übung (Potenzgesetz)",
+        "desc": "Vertikal: −ln(tägliche Durchschnittssekunden). Horizontal: kumulierte Solves, logarithmische Skala. Das Potenzgesetz des Übens sagt eine gerade Linie voraus — über dem Trend liegt ein Durchbruch, darunter ein Plateau."
+      }
+    },
+    "axis": {
+      "solveIndex": "Lösen #",
+      "seconds": "Zeit (s)",
+      "avgSeconds": "Durchschnitt (s)",
+      "avgSecondsLog": "Durchschnitt (s, log)",
+      "count": "Lösungen",
+      "bucket": "Zeitbereich",
+      "log2": "log₂(Tag 1 ÷ Tag)",
+      "cumulative": "Kumulative Lösungen (log)",
+      "skill": "−ln(Sekunden)"
+    },
+    "series": {
+      "single": "Einzeln (s)",
+      "pb": "Neue Bestzeit",
+      "count": "Lösungen",
+      "dailyAvg": "Tagesdurchschnitt (s)",
+      "speedup": "log₂ Beschleunigung",
+      "skill": "Täglicher Fähigkeitsindex",
+      "trend": "Potenzgesetz-Trend",
+      "pbSingle": "Beste Einzelzeit"
+    },
+    "tooltip": {
+      "noData": "Keine Daten",
+      "speedup": "{v} Verdopplungen ({mult}× schneller)",
+      "baseline": "Tagesdurchschnitt {avg} · Durchschnitt Tag eins {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} Lösungen bisher · Tagesdurchschnitt {avg}",
+      "skill": "Fähigkeitsindex {v}"
+    },
+    "powerLaw": {
+      "slope": "Steigung b",
+      "halving": "Verdopplung der Übung → Zeit sinkt um",
+      "reading": "Lesen",
+      "band": {
+        "regressing": "Rückläufig (negative Steigung)",
+        "plateau": "Sehr langsam — Plateau oder Engpass",
+        "steady": "Stetiges Lernen auf hohem Niveau",
+        "healthy": "Gesunde Lernrate (typisch für Fortgeschrittene)",
+        "fast": "Schnelle Verbesserung",
+        "veryFast": "Sehr schnell (Anfangsphase oder Methoden-Upgrade)",
+        "none": "Nicht genügend Daten"
+      }
+    },
+    "milestones": {
+      "title": "Meilensteine",
+      "desc": "Der erste Zeitpunkt, an dem jede Serie unter einen Schwellenwert fiel, und wie viele Tage das dauerte.",
+      "threshold": "Unter",
+      "single": "Einzeln",
+      "never": "—",
+      "dayN": "Tag {n}"
+    },
+    "recent": {
+      "title": "Letzte 20 Lösungen",
+      "desc": "Deine aktuellsten Lösungen in dieser Sitzung.",
+      "time": "Wann",
+      "solve": "Zeit",
+      "scramble": "Scramble"
+    },
+    "links": {
+      "cube": "Den 3D-Würfel öffnen →"
+    },
+    "footer": "Deine Daten verlassen niemals deinen Browser. Entwickelt begleitend zur Serie „den Würfel lösen ohne Auswendiglernen“."
   }
 }

@@ -31,6 +31,8 @@ interface Props {
     href: string;
     meta?: string;
   } | null;
+  /** Link to the csTimer analyzer tool; shown under the tutorial card. */
+  analyzerHref?: string | null;
 }
 
 const SPEED_STOPS = [0.25, 0.5, 1, 2, 4];
@@ -196,7 +198,7 @@ function generateScramble(length = 20): string {
   return out.join(' ');
 }
 
-export default function RubiksCube({ locale, tutorial = null }: Props) {
+export default function RubiksCube({ locale, tutorial = null, analyzerHref = null }: Props) {
   const t = useTranslations(locale);
 
   const [scramble, setScramble] = useState('');
@@ -888,7 +890,7 @@ export default function RubiksCube({ locale, tutorial = null }: Props) {
         </section>
       </div>
 
-      <div className={`rc__learning-layout${tutorial ? ' rc__learning-layout--with-tutorial' : ''}`}>
+      <div className={`rc__learning-layout${tutorial || analyzerHref ? ' rc__learning-layout--with-tutorial' : ''}`}>
         <section className="rc__learning">
           <header className="rc__learning-header">
             <h2 className="rc__learning-title">{t('rubiksCube.learning.title')}</h2>
@@ -997,14 +999,28 @@ export default function RubiksCube({ locale, tutorial = null }: Props) {
           ))}
         </section>
 
-        {tutorial && (
+        {(tutorial || analyzerHref) && (
           <aside className="rc__tutorial-card">
-            <div className="rc__tutorial-eyebrow">{t('rubiksCube.tutorialCard.eyebrow')}</div>
-            <a href={tutorial.href} className="rc__tutorial-link">
-              <h2 className="rc__tutorial-title">{tutorial.title}</h2>
-              {tutorial.meta && <p className="rc__tutorial-meta">{tutorial.meta}</p>}
-              <span className="rc__tutorial-cta">{t('rubiksCube.tutorialCard.cta')} →</span>
-            </a>
+            {tutorial && (
+              <>
+                <div className="rc__tutorial-eyebrow">{t('rubiksCube.tutorialCard.eyebrow')}</div>
+                <a href={tutorial.href} className="rc__tutorial-link">
+                  <h2 className="rc__tutorial-title">{tutorial.title}</h2>
+                  {tutorial.meta && <p className="rc__tutorial-meta">{tutorial.meta}</p>}
+                  <span className="rc__tutorial-cta">{t('rubiksCube.tutorialCard.cta')} →</span>
+                </a>
+              </>
+            )}
+            {analyzerHref && (
+              <>
+                <div className={`rc__tutorial-eyebrow${tutorial ? ' rc__tutorial-eyebrow--stacked' : ''}`}>{t('rubiksCube.analyzerCard.eyebrow')}</div>
+                <a href={analyzerHref} className="rc__tutorial-link">
+                  <h2 className="rc__tutorial-title">{t('rubiksCube.analyzerCard.title')}</h2>
+                  <p className="rc__tutorial-meta">{t('rubiksCube.analyzerCard.desc')}</p>
+                  <span className="rc__tutorial-cta">{t('rubiksCube.analyzerCard.cta')} →</span>
+                </a>
+              </>
+            )}
           </aside>
         )}
       </div>

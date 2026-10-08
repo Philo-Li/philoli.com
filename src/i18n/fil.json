@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Libreng Ebook Translator — EPUB / PDF / AI / 40 Wika",
     "ebookTranslatorDescription": "Libreng AI ebook translator na ganap na gumagana sa iyong browser. Isalin ang mga EPUB at PDF file sa 40+ wika na may magkasabay na dalawang-wikang output. Gamitin ang iyong sariling API key.",
     "rubiksCubeTitle": "3D Rubik's Cube — Philo Li",
-    "rubiksCubeDescription": "Interaktibong 3D Rubik's Cube. Magtakda ng scramble at solusyon, maglaro nang sunud-sunod, itago ang mga kulay o mukha para sa mga pagsasanay sa pagsasaulo."
+    "rubiksCubeDescription": "Interaktibong 3D Rubik's Cube. Magtakda ng scramble at solusyon, maglaro nang sunud-sunod, itago ang mga kulay o mukha para sa mga pagsasanay sa pagsasaulo.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Mga Chart ng Pag-unlad sa Rubik's Cube",
+    "cubeAnalyzerDescription": "I-drop ang iyong csTimer export at kumuha ng mga chart ng pag-unlad: mga trend ng Ao5/Ao12/Ao100, kasaysayan ng PB, mga milestone, pang-araw-araw na volume, at power-law learning curve. Tumatakbo nang buo sa iyong browser."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "3D Rubik's Cube",
         "description": "Sundan ang mga scramble at solusyon sa isang interactive na 3D cube. Itinatago ng mode ng pag-aaral ang mga kulay at mukha para sa mga pagsasanay sa algoritmo.",
         "cta": "Buksan ang cube →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "I-drop ang iyong csTimer export at tingnan ang iyong pag-unlad: mga rolling average, kasaysayan ng PB, mga milestone, at power-law learning curve. Walang lumalabas sa iyong browser.",
+        "cta": "Suriin ang aking mga solve →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Magbasa Pa"
+    },
+    "analyzerCard": {
+      "eyebrow": "Tool",
+      "title": "csTimer Analyzer",
+      "desc": "I-export ang iyong mga session sa csTimer at tingnan ang iyong mga chart ng pag-unlad.",
+      "cta": "Suriin ang aking mga solve"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Tool",
+    "title": "csTimer Analyzer",
+    "intro": "I-export ang iyong mga session mula sa csTimer at i-drop ang file dito para makita kung paano ka talaga umuunlad: mga rolling average, kasaysayan ng PB, mga milestone, pang-araw-araw na volume, at power-law learning curve. Lahat ay tumatakbo sa iyong browser — walang na-a-upload.",
+    "howTo": {
+      "title": "Paano mag-export mula sa csTimer",
+      "step1": "Buksan ang cstimer.net at i-click ang icon ng gear sa kaliwang sulok sa itaas.",
+      "step2": "Mag-scroll sa Import / Export at piliin ang \"Export to file\".",
+      "step3": "I-drop ang na-download na file sa ibaba."
+    },
+    "drop": {
+      "label": "I-drop ang iyong csTimer export dito, o i-click para pumili ng file",
+      "loadSample": "O i-load ang sarili kong data bilang sample",
+      "loading": "Naglo-load…",
+      "loaded": "Na-load ang {name}",
+      "sample": "Sample data: ang aking paglalakbay sa Roux, Mayo–Oktubre 2026"
+    },
+    "errors": {
+      "notJson": "Hindi ito mukhang csTimer export (hindi ito valid na JSON).",
+      "noSessions": "Walang nakitang mga session na may mga solve sa file na iyon.",
+      "generic": "Hindi mabasa ang file na iyon. Pakisubukang muli."
+    },
+    "session": {
+      "label": "Session",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} na mga solve · {days} na araw ng pagsasanay"
+    },
+    "stats": {
+      "total": "Mga solve",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Pinakamahusay na single",
+      "bestSub": "Pinakamabilis na PB",
+      "mean": "Mean",
+      "meanSub": "Median {median}",
+      "stdev": "Std. deviation",
+      "stdevSub": "Consistency — mas mababa, mas matatag",
+      "bestAo5": "Pinakamahusay na Ao5",
+      "bestAo12": "Pinakamahusay na Ao12",
+      "bestAo50": "Pinakamahusay na Ao50",
+      "bestAo100": "Pinakamahusay na Ao100",
+      "currentSub": "Kasalukuyan {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Mga solong solve",
+        "desc": "Bawat solve ayon sa pagkakasunod-sunod. Ang mga naka-highlight na puntos ay mga bagong personal best."
+      },
+      "ao": {
+        "title": "Rolling averages (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Ang trend ng iyong mga kamakailang solve — ito ang tunay na sukatan ng pag-unlad.",
+        "linear": "Linear",
+        "log": "Log"
+      },
+      "hist": {
+        "title": "Distribusyon ng oras",
+        "desc": "Kung paano nakakalat ang iyong mga oras ng pag-solve."
+      },
+      "daily": {
+        "title": "Dami bawat araw",
+        "desc": "Mga solve bawat araw ng pagsasanay."
+      },
+      "pb": {
+        "title": "Kasaysayan ng personal best",
+        "desc": "Pinakamahusay na single / Ao5 / Ao12 / Ao100 sa paglipas ng panahon, bumababa sa bawat bagong record."
+      },
+      "dailyAvg": {
+        "title": "Average bawat araw",
+        "desc": "Mean na oras ng pag-solve bawat araw — ipinapakita ang maganda at masamang mga araw."
+      },
+      "hourly": {
+        "title": "Oras ng araw",
+        "desc": "Kung kailan ka nagsasanay, ayon sa lokal na oras."
+      },
+      "speedup": {
+        "title": "Bilis kumpara sa unang araw (log₂)",
+        "desc": "Ilang beses na mas mabilis ang bawat araw kumpara sa iyong unang araw. +1 = dalawang beses na mas mabilis, +2 = apat na beses, +3 = walong beses. Ang bawat hakbang ay may parehong laki ng pag-unlad."
+      },
+      "powerLaw": {
+        "title": "Husay kumpara sa kabuuang pagsasanay (power law)",
+        "desc": "Vertical: −ln(daily average seconds). Horizontal: kabuuang solves, log scale. Ang Power Law of Practice ay humuhula ng tuwid na linya — ang nasa itaas ng trend ay isang breakthrough, ang nasa ibaba nito ay isang plateau."
+      }
+    },
+    "axis": {
+      "solveIndex": "Lutasin ang #",
+      "seconds": "Oras (s)",
+      "avgSeconds": "Average (s)",
+      "avgSecondsLog": "Average (s, log)",
+      "count": "Mga solusyon",
+      "bucket": "Saklaw ng oras",
+      "log2": "log₂(araw 1 ÷ araw)",
+      "cumulative": "Pinagsama-samang solusyon (log)",
+      "skill": "−ln(segundo)"
+    },
+    "series": {
+      "single": "Single (s)",
+      "pb": "Bagong PB",
+      "count": "Mga solusyon",
+      "dailyAvg": "Pang-araw-araw na average (s)",
+      "speedup": "log₂ bilis",
+      "skill": "Index ng kasanayan sa araw",
+      "trend": "Trend ng power-law",
+      "pbSingle": "PB single"
+    },
+    "tooltip": {
+      "noData": "Walang data",
+      "speedup": "{v} pagdodoble ({mult}× mas mabilis)",
+      "baseline": "Average ng araw {avg} · average ng unang araw {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} solusyon sa ngayon · average ng araw {avg}",
+      "skill": "Index ng kasanayan {v}"
+    },
+    "powerLaw": {
+      "slope": "Slope b",
+      "halving": "Doblehin ang pagsasanay → ang oras ay bababa ng",
+      "reading": "Nagbabasa",
+      "band": {
+        "regressing": "Regressing (negatibong slope)",
+        "plateau": "Napakabagal — plateau o bottleneck",
+        "steady": "Tuloy-tuloy na pagkatuto sa mataas na antas",
+        "healthy": "Malusog na bilis ng pagkatuto (karaniwang intermediate)",
+        "fast": "Mabilis na pag-unlad",
+        "veryFast": "Napakabilis (mga unang araw o pag-upgrade ng metodo)",
+        "none": "Kulang sa datos"
+      }
+    },
+    "milestones": {
+      "title": "Mga milestone",
+      "desc": "Ang unang pagkakataon na bumaba ang bawat serye sa ilalim ng threshold, at kung ilang araw ang lumipas.",
+      "threshold": "Sa ilalim",
+      "single": "Isahan",
+      "never": "—",
+      "dayN": "araw {n}"
+    },
+    "recent": {
+      "title": "Huling 20 solve",
+      "desc": "Ang iyong mga pinakabagong solve sa sesyong ito.",
+      "time": "Kailan",
+      "solve": "Oras",
+      "scramble": "Scramble"
+    },
+    "links": {
+      "cube": "Buksan ang 3D cube →"
+    },
+    "footer": "Hindi lumalabas ang iyong datos sa iyong browser. Binuo kasabay ng seryeng “solve the cube without memorizing”."
   }
 }

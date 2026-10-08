@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "免费电子书翻译器 — EPUB / PDF / AI / 40 种语言",
     "ebookTranslatorDescription": "免费在线电子书翻译器，浏览器内运行，自带 API Key 即可使用。AI 智能翻译 EPUB 与 PDF，输出双语对照版本，支持 40+ 种语言。",
     "rubiksCubeTitle": "3D 魔方 — Philo Li",
-    "rubiksCubeDescription": "交互式 3D 魔方。设置打乱和解法，逐步播放，隐藏颜色或面以进行记忆训练。"
+    "rubiksCubeDescription": "交互式 3D 魔方。设置打乱和解法，逐步播放，隐藏颜色或面以进行记忆训练。",
+    "cubeAnalyzerTitle": "csTimer Analyzer — 魔方进度图表",
+    "cubeAnalyzerDescription": "拖入你的 csTimer 导出文件以获取进度图表：Ao5/Ao12/Ao100 趋势、PB 历史、里程碑、每日练习量以及幂律学习曲线。完全在浏览器中运行。"
   },
   "nav": {
     "blog": "博客",
@@ -137,6 +139,11 @@
         "name": "3D 魔方",
         "description": "在交互式 3D 魔方上逐步查看打乱和解法。学习模式可隐藏颜色和面，用于公式练习。",
         "cta": "打开魔方 →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "拖入你的 csTimer 导出文件以查看进度：滚动平均值、PB 历史、里程碑和幂律学习曲线。数据不会离开你的浏览器。",
+        "cta": "分析我的成绩 →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "博客",
       "cta": "阅读更多"
+    },
+    "analyzerCard": {
+      "eyebrow": "工具",
+      "title": "csTimer Analyzer",
+      "desc": "导出你的 csTimer 会话并查看进度图表。",
+      "cta": "分析我的成绩"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "工具",
+    "title": "csTimer Analyzer",
+    "intro": "从 csTimer 导出你的会话并拖入此处，查看你的真实进步：滚动平均值、PB 历史、里程碑、每日练习量以及幂律学习曲线。一切都在浏览器中运行——不会上传任何数据。",
+    "howTo": {
+      "title": "如何从 csTimer 导出",
+      "step1": "打开 cstimer.net 并点击左上角的齿轮图标。",
+      "step2": "滚动至“导入/导出”(Import / Export) 并选择“导出到文件”(Export to file)。",
+      "step3": "将下载的文件拖入下方。"
+    },
+    "drop": {
+      "label": "在此处拖入你的 csTimer 导出文件，或点击选择文件",
+      "loadSample": "或加载我自己的数据作为示例",
+      "loading": "加载中…",
+      "loaded": "已加载 {name}",
+      "sample": "示例数据：我的 Roux 历程，2026 年 5 月至 10 月"
+    },
+    "errors": {
+      "notJson": "这看起来不像 csTimer 导出文件（JSON 格式无效）。",
+      "noSessions": "在该文件中未找到包含成绩的会话。",
+      "generic": "无法读取该文件。请重试。"
+    },
+    "session": {
+      "label": "会话",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} 次成绩 · {days} 个练习日"
+    },
+    "stats": {
+      "total": "成绩",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "单次最好成绩",
+      "bestSub": "单次最好成绩",
+      "mean": "平均值",
+      "meanSub": "中位数 {median}",
+      "stdev": "标准差",
+      "stdevSub": "一致性 — 数值越低越稳定",
+      "bestAo5": "最佳 Ao5",
+      "bestAo12": "最佳 Ao12",
+      "bestAo50": "最佳 Ao50",
+      "bestAo100": "最佳 Ao100",
+      "currentSub": "当前 {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "单次还原",
+        "desc": "按顺序排列的每一次还原。高亮显示的点为新的个人最好成绩。"
+      },
+      "ao": {
+        "title": "滚动平均值 (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "近期还原趋势 — 这是衡量进步的真正指标。",
+        "linear": "线性",
+        "log": "对数"
+      },
+      "hist": {
+        "title": "时间分布",
+        "desc": "还原时间的分布情况。"
+      },
+      "daily": {
+        "title": "每日练习量",
+        "desc": "每日练习的还原次数。"
+      },
+      "pb": {
+        "title": "个人最好成绩历史",
+        "desc": "随时间变化的单次/Ao5/Ao12/Ao100 最佳成绩，每打破一次纪录便会下降一个台阶。"
+      },
+      "dailyAvg": {
+        "title": "每日平均值",
+        "desc": "每日平均还原时间 — 反映状态好坏。"
+      },
+      "hourly": {
+        "title": "一天中的时间段",
+        "desc": "按本地时间统计的练习时段。"
+      },
+      "speedup": {
+        "title": "相比首日的提速 (log₂)",
+        "desc": "每一天比第一天快多少倍。+1 = 快两倍，+2 = 快四倍，+3 = 快八倍。每一级的提升幅度相同。"
+      },
+      "powerLaw": {
+        "title": "技能与累计练习量 (幂律)",
+        "desc": "纵轴：−ln(每日平均秒数)。横轴：累计还原次数，对数刻度。练习幂律预测会呈现一条直线 — 高于趋势线代表突破，低于趋势线代表平台期。"
+      }
+    },
+    "axis": {
+      "solveIndex": "解法 #",
+      "seconds": "时间 (秒)",
+      "avgSeconds": "平均值 (秒)",
+      "avgSecondsLog": "平均值 (秒，对数)",
+      "count": "解法次数",
+      "bucket": "时间范围",
+      "log2": "log₂(第1天 ÷ 当天)",
+      "cumulative": "累计解法次数 (对数)",
+      "skill": "−ln(秒)"
+    },
+    "series": {
+      "single": "单次 (秒)",
+      "pb": "新个人最好成绩 (PB)",
+      "count": "解法次数",
+      "dailyAvg": "日平均值 (秒)",
+      "speedup": "log₂ 加速比",
+      "skill": "每日技能指数",
+      "trend": "幂律趋势",
+      "pbSingle": "个人最好成绩 (PB) 单次"
+    },
+    "tooltip": {
+      "noData": "无数据",
+      "speedup": "{v} 倍增 ({mult}× 更快)",
+      "baseline": "日平均值 {avg} · 首日平均值 {base}",
+      "trend": "趋势：{v}",
+      "cumulative": "已完成 {n} 次解法 · 日平均值 {avg}",
+      "skill": "技能指数 {v}"
+    },
+    "powerLaw": {
+      "slope": "斜率 b",
+      "halving": "练习量加倍 → 时间缩短",
+      "reading": "阅读中",
+      "band": {
+        "regressing": "退步中 (负斜率)",
+        "plateau": "非常缓慢 — 平台期或瓶颈",
+        "steady": "高水平下的稳定学习",
+        "healthy": "健康的学习速率 (典型中级水平)",
+        "fast": "快速提升",
+        "veryFast": "非常快（早期阶段或方法升级）",
+        "none": "数据不足"
+      }
+    },
+    "milestones": {
+      "title": "里程碑",
+      "desc": "每个系列首次低于阈值的时间，以及在该阶段经历的天数。",
+      "threshold": "低于",
+      "single": "单次",
+      "never": "—",
+      "dayN": "第 {n} 天"
+    },
+    "recent": {
+      "title": "最近 20 次还原",
+      "desc": "您在此次会话中的最近还原记录。",
+      "time": "时间点",
+      "solve": "用时",
+      "scramble": "打乱"
+    },
+    "links": {
+      "cube": "打开 3D 魔方 →"
+    },
+    "footer": "您的数据绝不会离开您的浏览器。与“无需记忆还原魔方”系列共同构建。"
   }
 }

@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Bezmaksas e-grāmatu tulkotājs — EPUB / PDF / AI / 40 valodu",
     "ebookTranslatorDescription": "Bezmaksas AI e-grāmatu tulkotājs, kas pilnībā darbojas jūsu pārlūkprogrammā. Tulkojiet EPUB un PDF failus 40+ valodās ar divvalodu paralēlu izvadi. Izmantojiet savu API atslēgu.",
     "rubiksCubeTitle": "3D Rubika kubs — Philo Li",
-    "rubiksCubeDescription": "Interaktīvs 3D Rubika kubs. Iestati sajaukšanu un atrisinājumu, spēlē soli pa solim, paslēp krāsas vai skaldnes iegaumēšanas treniņiem."
+    "rubiksCubeDescription": "Interaktīvs 3D Rubika kubs. Iestati sajaukšanu un atrisinājumu, spēlē soli pa solim, paslēp krāsas vai skaldnes iegaumēšanas treniņiem.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Rubika kuba progresa diagrammas",
+    "cubeAnalyzerDescription": "Iemet savu csTimer eksportu un iegūsti progresa diagrammas: Ao5/Ao12/Ao100 tendences, PB vēsturi, atskaites punktus, ikdienas apjomu un varas likuma mācīšanās līkni. Darbojas pilnībā tavā pārlūkprogrammā."
   },
   "nav": {
     "blog": "Blogs",
@@ -137,6 +139,11 @@
         "name": "3D Rubika kubs",
         "description": "Izpētiet sajaukumus un risinājumus interaktīvā 3D kubā. Mācību režīms paslēpj krāsas un skaldnes algoritmu treniņiem.",
         "cta": "Atvērt kubu →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Iemet savu csTimer eksportu un redzi savu progresu: mainīgos vidējos rādītājus, PB vēsturi, atskaites punktus un varas likuma mācīšanās līkni. Nekas nepamet tavu pārlūkprogrammu.",
+        "cta": "Analizēt manus risinājumus →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blogs",
       "cta": "Lasīt vairāk"
+    },
+    "analyzerCard": {
+      "eyebrow": "Rīks",
+      "title": "csTimer Analyzer",
+      "desc": "Eksportē savas csTimer sesijas un redzi savas progresa diagrammas.",
+      "cta": "Analizēt manus risinājumus"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Rīks",
+    "title": "csTimer Analyzer",
+    "intro": "Eksportē savas sesijas no csTimer un iemet failu šeit, lai redzētu, kā tev patiesībā veicas: mainīgie vidējie rādītāji, PB vēsture, atskaites punkti, ikdienas apjoms un varas likuma mācīšanās līkne. Viss darbojas tavā pārlūkprogrammā — nekas netiek augšupielādēts.",
+    "howTo": {
+      "title": "Kā eksportēt no csTimer",
+      "step1": "Atver cstimer.net un noklikšķini uz zobrata ikonas augšējā kreisajā stūrī.",
+      "step2": "Ritini līdz Import / Export un izvēlies \"Export to file\".",
+      "step3": "Iemet lejupielādēto failu zemāk."
+    },
+    "drop": {
+      "label": "Iemet savu csTimer eksportu šeit vai noklikšķini, lai izvēlētos failu",
+      "loadSample": "Vai ielādēt manus datus kā paraugu",
+      "loading": "Ielādē…",
+      "loaded": "Ielādēts {name}",
+      "sample": "Datu paraugs: mans Roux ceļojums, 2026. gada maijs–oktobris"
+    },
+    "errors": {
+      "notJson": "Tas neizskatās pēc csTimer eksporta (tas nav derīgs JSON).",
+      "noSessions": "Šajā failā netika atrastas sesijas ar risinājumiem.",
+      "generic": "Neizdevās nolasīt šo failu. Lūdzu, mēģini vēlreiz."
+    },
+    "session": {
+      "label": "Sesija",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} risinājumi · {days} treniņu dienas"
+    },
+    "stats": {
+      "total": "Risinājumi",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Labākais rezultāts",
+      "bestSub": "Labākais viens",
+      "mean": "Vidējais",
+      "meanSub": "Mediāna {median}",
+      "stdev": "Standartnovirze",
+      "stdevSub": "Konsekvence — mazāks skaitlis nozīmē stabilāku sniegumu",
+      "bestAo5": "Labākais Ao5",
+      "bestAo12": "Labākais Ao12",
+      "bestAo50": "Labākais Ao50",
+      "bestAo100": "Labākais Ao100",
+      "currentSub": "Pašreizējais {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Atsevišķi mēģinājumi",
+        "desc": "Katrs mēģinājums secībā. Iezīmētie punkti ir jauni personīgie rekordi."
+      },
+      "ao": {
+        "title": "Slīdošie vidējie (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Tavu neseno mēģinājumu tendence — tas ir īstais progresa rādītājs.",
+        "linear": "Lineārs",
+        "log": "Logaritmisks"
+      },
+      "hist": {
+        "title": "Laika sadalījums",
+        "desc": "Kā izkliedēti tavi mēģinājumu laiki."
+      },
+      "daily": {
+        "title": "Ikdienas apjoms",
+        "desc": "Mēģinājumi dienā."
+      },
+      "pb": {
+        "title": "Personīgo rekordu vēsture",
+        "desc": "Labākais viens / Ao5 / Ao12 / Ao100 laika gaitā, samazinoties ar katru jaunu rekordu."
+      },
+      "dailyAvg": {
+        "title": "Dienas vidējais",
+        "desc": "Vidējais mēģinājuma laiks dienā — parāda labās un sliktās dienas."
+      },
+      "hourly": {
+        "title": "Diennakts laiks",
+        "desc": "Kad trenējies, pēc vietējā laika stundām."
+      },
+      "speedup": {
+        "title": "Ātruma pieaugums pret pirmo dienu (log₂)",
+        "desc": "Cik reižu ātrāka ir katra diena salīdzinājumā ar pirmo dienu. +1 = divreiz ātrāk, +2 = četreiz, +3 = astoņreiz. Katrs solis ir vienāda lieluma uzlabojums."
+      },
+      "powerLaw": {
+        "title": "Prasme pret kopējo treniņu skaitu (varas likums)",
+        "desc": "Vertikāli: −ln(dienas vidējās sekundes). Horizontāli: kopējie mēģinājumi, logaritmiskā skala. Treniņu varas likums paredz taisnu līniju — virs tendences ir izrāviens, zem tās — stagnācija."
+      }
+    },
+    "axis": {
+      "solveIndex": "Atrisināt #",
+      "seconds": "Laiks (s)",
+      "avgSeconds": "Vidējais (s)",
+      "avgSecondsLog": "Vidējais (s, log)",
+      "count": "Atrisinājumi",
+      "bucket": "Laika diapazons",
+      "log2": "log₂(1. diena ÷ diena)",
+      "cumulative": "Kumulatīvie atrisinājumi (log)",
+      "skill": "−ln(sekundes)"
+    },
+    "series": {
+      "single": "Viens (s)",
+      "pb": "Jauns PB",
+      "count": "Atrisinājumi",
+      "dailyAvg": "Dienas vidējais (s)",
+      "speedup": "log₂ paātrinājums",
+      "skill": "Dienas prasmju indekss",
+      "trend": "Pakāpes likuma tendence",
+      "pbSingle": "PB viens"
+    },
+    "tooltip": {
+      "noData": "Nav datu",
+      "speedup": "{v} dubultojumi ({mult}× ātrāk)",
+      "baseline": "Dienas vidējais {avg} · pirmās dienas vidējais {base}",
+      "trend": "Tendence: {v}",
+      "cumulative": "{n} atrisinājumi līdz šim · dienas vidējais {avg}",
+      "skill": "Prasmju indekss {v}"
+    },
+    "powerLaw": {
+      "slope": "Slīpums b",
+      "halving": "Dubultot praksi → laiks samazinās par",
+      "reading": "Lasīšana",
+      "band": {
+        "regressing": "Regresija (negatīvs slīpums)",
+        "plateau": "Ļoti lēni — plato vai vājais posms",
+        "steady": "Stabila mācīšanās augstā līmenī",
+        "healthy": "Veselīgs mācīšanās temps (tipisks vidējais līmenis)",
+        "fast": "Straujš uzlabojums",
+        "veryFast": "Ļoti ātri (sākuma posms vai metodes uzlabojums)",
+        "none": "Nepietiekami datu"
+      }
+    },
+    "milestones": {
+      "title": "Atskaites punkti",
+      "desc": "Pirmā reize, kad katra sērija nokritās zem sliekšņa, un cik dienas tas prasīja.",
+      "threshold": "Zem",
+      "single": "Viens",
+      "never": "—",
+      "dayN": "{n}. diena"
+    },
+    "recent": {
+      "title": "Pēdējie 20 risinājumi",
+      "desc": "Tavi pēdējie risinājumi šajā sesijā.",
+      "time": "Kad",
+      "solve": "Laiks",
+      "scramble": "Jaukums"
+    },
+    "links": {
+      "cube": "Atvērt 3D kubu →"
+    },
+    "footer": "Tavi dati nekad neatstāj pārlūkprogrammu. Izveidots līdztekus sērijai “atrisini kubu bez iegaumēšanas”."
   }
 }

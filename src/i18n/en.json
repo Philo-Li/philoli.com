@@ -17,7 +17,9 @@
     "ebookTranslatorTitle": "Free Ebook Translator — EPUB / PDF / AI / 40 Languages",
     "ebookTranslatorDescription": "Free AI ebook translator that runs entirely in your browser. Translate EPUB and PDF files into 40+ languages with side-by-side bilingual output. Use your own API key.",
     "rubiksCubeTitle": "3D Rubik's Cube — Philo Li",
-    "rubiksCubeDescription": "Interactive 3D Rubik's Cube. Set a scramble and a solution, play step by step, hide colors or faces for memorization drills."
+    "rubiksCubeDescription": "Interactive 3D Rubik's Cube. Set a scramble and a solution, play step by step, hide colors or faces for memorization drills.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Rubik's Cube Progress Charts",
+    "cubeAnalyzerDescription": "Drop your csTimer export and get progress charts: Ao5/Ao12/Ao100 trends, PB history, milestones, daily volume and a power-law learning curve. Runs entirely in your browser."
   },
   "nav": {
     "blog": "Blog",
@@ -125,6 +127,11 @@
         "name": "3D Rubik's Cube",
         "description": "Step through scrambles and solutions on an interactive 3D cube. Learning mode hides colors and faces for algorithm drills.",
         "cta": "Open the cube →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Drop your csTimer export and see your progress: rolling averages, PB history, milestones and a power-law learning curve. Nothing leaves your browser.",
+        "cta": "Analyze my solves →"
       }
     }
   },
@@ -489,6 +496,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Read More"
+    },
+    "analyzerCard": {
+      "eyebrow": "Tool",
+      "title": "csTimer Analyzer",
+      "desc": "Export your csTimer sessions and see your progress charts.",
+      "cta": "Analyze my solves"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Tool",
+    "title": "csTimer Analyzer",
+    "intro": "Export your sessions from csTimer and drop the file here to see how you're really progressing: rolling averages, PB history, milestones, daily volume and a power-law learning curve. Everything runs in your browser — nothing is uploaded.",
+    "howTo": {
+      "title": "How to export from csTimer",
+      "step1": "Open cstimer.net and click the gear icon in the top-left corner.",
+      "step2": "Scroll to Import / Export and choose \"Export to file\".",
+      "step3": "Drop the downloaded file below."
+    },
+    "drop": {
+      "label": "Drop your csTimer export here, or click to choose a file",
+      "loadSample": "Or load my own data as a sample",
+      "loading": "Loading…",
+      "loaded": "Loaded {name}",
+      "sample": "Sample data: my Roux journey, May–Oct 2026"
+    },
+    "errors": {
+      "notJson": "That doesn't look like a csTimer export (it isn't valid JSON).",
+      "noSessions": "No sessions with solves were found in that file.",
+      "generic": "Couldn't read that file. Please try again."
+    },
+    "session": {
+      "label": "Session",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} solves · {days} practice days"
+    },
+    "stats": {
+      "total": "Solves",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Best single",
+      "bestSub": "Single PB",
+      "mean": "Mean",
+      "meanSub": "Median {median}",
+      "stdev": "Std. deviation",
+      "stdevSub": "Consistency — lower is steadier",
+      "bestAo5": "Best Ao5",
+      "bestAo12": "Best Ao12",
+      "bestAo50": "Best Ao50",
+      "bestAo100": "Best Ao100",
+      "currentSub": "Current {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Single solves",
+        "desc": "Every solve in order. Highlighted points are new personal bests."
+      },
+      "ao": {
+        "title": "Rolling averages (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "The trend of your recent solves — this is the real measure of progress.",
+        "linear": "Linear",
+        "log": "Log"
+      },
+      "hist": {
+        "title": "Time distribution",
+        "desc": "How your solve times are spread."
+      },
+      "daily": {
+        "title": "Daily volume",
+        "desc": "Solves per practice day."
+      },
+      "pb": {
+        "title": "Personal best history",
+        "desc": "Best single / Ao5 / Ao12 / Ao100 over time, stepping down with each new record."
+      },
+      "dailyAvg": {
+        "title": "Daily average",
+        "desc": "Mean solve time per day — shows good and bad days."
+      },
+      "hourly": {
+        "title": "Time of day",
+        "desc": "When you practice, by local hour."
+      },
+      "speedup": {
+        "title": "Speed-up vs. day one (log₂)",
+        "desc": "How many times faster each day is than your first day. +1 = twice as fast, +2 = four times, +3 = eight times. Each step is the same size of improvement."
+      },
+      "powerLaw": {
+        "title": "Skill vs. cumulative practice (power law)",
+        "desc": "Vertical: −ln(daily average seconds). Horizontal: cumulative solves, log scale. The Power Law of Practice predicts a straight line — above the trend is a breakthrough, below it a plateau."
+      }
+    },
+    "axis": {
+      "solveIndex": "Solve #",
+      "seconds": "Time (s)",
+      "avgSeconds": "Average (s)",
+      "avgSecondsLog": "Average (s, log)",
+      "count": "Solves",
+      "bucket": "Time range",
+      "log2": "log₂(day 1 ÷ day)",
+      "cumulative": "Cumulative solves (log)",
+      "skill": "−ln(seconds)"
+    },
+    "series": {
+      "single": "Single (s)",
+      "pb": "New PB",
+      "count": "Solves",
+      "dailyAvg": "Daily average (s)",
+      "speedup": "log₂ speed-up",
+      "skill": "Daily skill index",
+      "trend": "Power-law trend",
+      "pbSingle": "PB single"
+    },
+    "tooltip": {
+      "noData": "No data",
+      "speedup": "{v} doublings ({mult}× faster)",
+      "baseline": "Day avg {avg} · day-one avg {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} solves so far · day avg {avg}",
+      "skill": "Skill index {v}"
+    },
+    "powerLaw": {
+      "slope": "Slope b",
+      "halving": "Double the practice → time drops by",
+      "reading": "Reading",
+      "band": {
+        "regressing": "Regressing (negative slope)",
+        "plateau": "Very slow — plateau or bottleneck",
+        "steady": "Steady learning at a high level",
+        "healthy": "Healthy learning rate (typical intermediate)",
+        "fast": "Rapid improvement",
+        "veryFast": "Very fast (early days or a method upgrade)",
+        "none": "Not enough data"
+      }
+    },
+    "milestones": {
+      "title": "Milestones",
+      "desc": "The first time each series dipped under a threshold, and how many days in that was.",
+      "threshold": "Under",
+      "single": "Single",
+      "never": "—",
+      "dayN": "day {n}"
+    },
+    "recent": {
+      "title": "Last 20 solves",
+      "desc": "Your most recent solves in this session.",
+      "time": "When",
+      "solve": "Time",
+      "scramble": "Scramble"
+    },
+    "links": {
+      "cube": "Open the 3D cube →"
+    },
+    "footer": "Your data never leaves your browser. Built alongside the “solve the cube without memorizing” series."
   }
 }

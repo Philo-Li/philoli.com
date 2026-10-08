@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Traducteur d'ebooks gratuit — EPUB / PDF / IA / 40 langues",
     "ebookTranslatorDescription": "Traducteur d'ebooks gratuit basé sur l'IA, fonctionnant entièrement dans votre navigateur. Traduisez vos fichiers EPUB et PDF en plus de 40 langues avec un affichage bilingue côte à côte. Utilisez votre propre clé API.",
     "rubiksCubeTitle": "Rubik's Cube 3D — Philo Li",
-    "rubiksCubeDescription": "Rubik's Cube 3D interactif. Définissez un mélange et une solution, jouez étape par étape, masquez des couleurs ou des faces pour des exercices de mémorisation."
+    "rubiksCubeDescription": "Rubik's Cube 3D interactif. Définissez un mélange et une solution, jouez étape par étape, masquez des couleurs ou des faces pour des exercices de mémorisation.",
+    "cubeAnalyzerTitle": "Analyseur csTimer — Graphiques de progression pour Rubik's Cube",
+    "cubeAnalyzerDescription": "Déposez votre export csTimer pour obtenir des graphiques de progression : tendances Ao5/Ao12/Ao100, historique des PB, jalons, volume quotidien et courbe d'apprentissage en loi de puissance. Fonctionne entièrement dans votre navigateur."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "Rubik's Cube 3D",
         "description": "Parcourez les mélanges et les solutions sur un cube 3D interactif. Le mode d'apprentissage masque les couleurs et les faces pour s'entraîner aux algorithmes.",
         "cta": "Ouvrir le cube →"
+      },
+      "cubeAnalyzer": {
+        "name": "Analyseur csTimer",
+        "description": "Déposez votre export csTimer pour visualiser votre progression : moyennes mobiles, historique des PB, jalons et courbe d'apprentissage en loi de puissance. Rien ne quitte votre navigateur.",
+        "cta": "Analyser mes résolutions →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Lire la suite"
+    },
+    "analyzerCard": {
+      "eyebrow": "Outil",
+      "title": "Analyseur csTimer",
+      "desc": "Exportez vos sessions csTimer et visualisez vos graphiques de progression.",
+      "cta": "Analyser mes résolutions"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Outil",
+    "title": "Analyseur csTimer",
+    "intro": "Exportez vos sessions depuis csTimer et déposez le fichier ici pour voir votre progression réelle : moyennes mobiles, historique des PB, jalons, volume quotidien et courbe d'apprentissage en loi de puissance. Tout s'exécute dans votre navigateur — rien n'est téléchargé sur un serveur.",
+    "howTo": {
+      "title": "Comment exporter depuis csTimer",
+      "step1": "Ouvrez cstimer.net et cliquez sur l'icône en forme d'engrenage dans le coin supérieur gauche.",
+      "step2": "Faites défiler jusqu'à Import / Export et choisissez \"Export to file\".",
+      "step3": "Déposez le fichier téléchargé ci-dessous."
+    },
+    "drop": {
+      "label": "Déposez votre export csTimer ici, ou cliquez pour choisir un fichier",
+      "loadSample": "Ou charger mes propres données en guise d'exemple",
+      "loading": "Chargement…",
+      "loaded": "{name} chargé",
+      "sample": "Données d'exemple : mon parcours Roux, mai–oct. 2026"
+    },
+    "errors": {
+      "notJson": "Cela ne ressemble pas à un export csTimer (ce n'est pas un JSON valide).",
+      "noSessions": "Aucune session avec des résolutions n'a été trouvée dans ce fichier.",
+      "generic": "Impossible de lire ce fichier. Veuillez réessayer."
+    },
+    "session": {
+      "label": "Session",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} résolutions · {days} jours de pratique"
+    },
+    "stats": {
+      "total": "Résolutions",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Meilleure résolution simple",
+      "bestSub": "Meilleur temps",
+      "mean": "Moyenne",
+      "meanSub": "Médiane {median}",
+      "stdev": "Écart-type",
+      "stdevSub": "Constance — plus c'est bas, plus c'est stable",
+      "bestAo5": "Meilleure M5",
+      "bestAo12": "Meilleure M12",
+      "bestAo50": "Meilleure M50",
+      "bestAo100": "Meilleure M100",
+      "currentSub": "Actuel {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Temps individuels",
+        "desc": "Chaque résolution dans l'ordre. Les points mis en évidence sont de nouveaux records personnels."
+      },
+      "ao": {
+        "title": "Moyennes mobiles (M5 / M12 / M50 / M100)",
+        "desc": "La tendance de vos résolutions récentes — c'est la véritable mesure de votre progression.",
+        "linear": "Linéaire",
+        "log": "Logarithmique"
+      },
+      "hist": {
+        "title": "Distribution des temps",
+        "desc": "Comment vos temps de résolution sont répartis."
+      },
+      "daily": {
+        "title": "Volume quotidien",
+        "desc": "Résolutions par jour d'entraînement."
+      },
+      "pb": {
+        "title": "Historique des records personnels",
+        "desc": "Meilleur temps / M5 / M12 / M100 au fil du temps, avec chaque nouveau record."
+      },
+      "dailyAvg": {
+        "title": "Moyenne quotidienne",
+        "desc": "Temps de résolution moyen par jour — montre les bons et les mauvais jours."
+      },
+      "hourly": {
+        "title": "Heure de la journée",
+        "desc": "Quand vous vous entraînez, par heure locale."
+      },
+      "speedup": {
+        "title": "Accélération vs premier jour (log₂)",
+        "desc": "Combien de fois chaque jour est plus rapide que votre premier jour. +1 = deux fois plus rapide, +2 = quatre fois, +3 = huit fois. Chaque palier représente la même ampleur d'amélioration."
+      },
+      "powerLaw": {
+        "title": "Compétence vs entraînement cumulé (loi de puissance)",
+        "desc": "Verticale : −ln(moyenne quotidienne en secondes). Horizontale : résolutions cumulées, échelle logarithmique. La loi de puissance de l'entraînement prédit une ligne droite — au-dessus de la tendance, c'est une percée ; en dessous, un plateau."
+      }
+    },
+    "axis": {
+      "solveIndex": "Résoudre #",
+      "seconds": "Temps (s)",
+      "avgSeconds": "Moyenne (s)",
+      "avgSecondsLog": "Moyenne (s, log)",
+      "count": "Résolutions",
+      "bucket": "Plage de temps",
+      "log2": "log₂(jour 1 ÷ jour)",
+      "cumulative": "Résolutions cumulées (log)",
+      "skill": "−ln(secondes)"
+    },
+    "series": {
+      "single": "Unique (s)",
+      "pb": "Nouveau record personnel",
+      "count": "Résolutions",
+      "dailyAvg": "Moyenne quotidienne (s)",
+      "speedup": "Accélération log₂",
+      "skill": "Indice de compétence quotidien",
+      "trend": "Tendance de loi de puissance",
+      "pbSingle": "Record personnel unique"
+    },
+    "tooltip": {
+      "noData": "Aucune donnée",
+      "speedup": "{v} doublements ({mult}× plus rapide)",
+      "baseline": "Moyenne du jour {avg} · moyenne du premier jour {base}",
+      "trend": "Tendance : {v}",
+      "cumulative": "{n} résolutions jusqu'ici · moyenne du jour {avg}",
+      "skill": "Indice de compétence {v}"
+    },
+    "powerLaw": {
+      "slope": "Pente b",
+      "halving": "Doubler l'entraînement → le temps diminue de",
+      "reading": "Lecture",
+      "band": {
+        "regressing": "Régression (pente négative)",
+        "plateau": "Très lent — plateau ou goulot d'étranglement",
+        "steady": "Apprentissage stable à un niveau élevé",
+        "healthy": "Taux d'apprentissage sain (intermédiaire typique)",
+        "fast": "Amélioration rapide",
+        "veryFast": "Très rapide (débuts ou mise à jour de méthode)",
+        "none": "Données insuffisantes"
+      }
+    },
+    "milestones": {
+      "title": "Étapes clés",
+      "desc": "La première fois que chaque série est passée sous un seuil, et le nombre de jours écoulés.",
+      "threshold": "Sous",
+      "single": "Unique",
+      "never": "—",
+      "dayN": "jour {n}"
+    },
+    "recent": {
+      "title": "20 dernières résolutions",
+      "desc": "Vos résolutions les plus récentes lors de cette session.",
+      "time": "Quand",
+      "solve": "Temps",
+      "scramble": "Mélange"
+    },
+    "links": {
+      "cube": "Ouvrir le cube 3D →"
+    },
+    "footer": "Vos données ne quittent jamais votre navigateur. Créé en parallèle de la série « résoudre le cube sans mémoriser »."
   }
 }

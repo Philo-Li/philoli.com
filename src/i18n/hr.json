@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Besplatni prevoditelj e-knjiga — EPUB / PDF / AI / 40 jezika",
     "ebookTranslatorDescription": "Besplatni AI prevoditelj e-knjiga koji u potpunosti radi u vašem pregledniku. Prevedite EPUB i PDF datoteke na 40+ jezika s dvojezičnim izlazom jedan pored drugog. Koristite vlastiti API ključ.",
     "rubiksCubeTitle": "3D Rubikova kocka — Philo Li",
-    "rubiksCubeDescription": "Interaktivna 3D Rubikova kocka. Postavite miješanje i rješenje, igrajte korak po korak, sakrijte boje ili plohe za vježbe pamćenja."
+    "rubiksCubeDescription": "Interaktivna 3D Rubikova kocka. Postavite miješanje i rješenje, igrajte korak po korak, sakrijte boje ili plohe za vježbe pamćenja.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Grafikoni napretka za Rubikovu kocku",
+    "cubeAnalyzerDescription": "Ubacite svoj csTimer izvoz i dobijte grafikone napretka: trendovi Ao5/Ao12/Ao100, povijest PB-a, prekretnice, dnevni volumen i krivulja učenja prema zakonu potencije. Radi u potpunosti u vašem pregledniku."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "3D Rubikova kocka",
         "description": "Prolazite kroz miješanja i rješenja na interaktivnoj 3D kocki. Način za učenje skriva boje i plohe za vježbanje algoritama.",
         "cta": "Otvori kocku →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Ubacite svoj csTimer izvoz i pogledajte svoj napredak: pomični prosjeci, povijest PB-a, prekretnice i krivulja učenja prema zakonu potencije. Ništa ne napušta vaš preglednik.",
+        "cta": "Analiziraj moje rezultate →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Pročitaj više"
+    },
+    "analyzerCard": {
+      "eyebrow": "Alat",
+      "title": "csTimer Analyzer",
+      "desc": "Izvezite svoje csTimer sesije i pogledajte grafikone svog napretka.",
+      "cta": "Analiziraj moje rezultate"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Alat",
+    "title": "csTimer Analyzer",
+    "intro": "Izvezite svoje sesije iz csTimer-a i ispustite datoteku ovdje kako biste vidjeli kako zaista napredujete: pomični prosjeci, povijest PB-a, prekretnice, dnevni volumen i krivulja učenja prema zakonu potencije. Sve se izvodi u vašem pregledniku — ništa se ne učitava na poslužitelj.",
+    "howTo": {
+      "title": "Kako izvesti podatke iz csTimer-a",
+      "step1": "Otvorite cstimer.net i kliknite na ikonu zupčanika u gornjem lijevom kutu.",
+      "step2": "Pomaknite se do Import / Export i odaberite \"Export to file\".",
+      "step3": "Ispustite preuzetu datoteku ispod."
+    },
+    "drop": {
+      "label": "Ispustite svoj csTimer izvoz ovdje ili kliknite za odabir datoteke",
+      "loadSample": "Ili učitaj moje vlastite podatke kao primjer",
+      "loading": "Učitavanje…",
+      "loaded": "Učitano {name}",
+      "sample": "Primjer podataka: moje Roux putovanje, svibanj–listopad 2026."
+    },
+    "errors": {
+      "notJson": "To ne izgleda kao csTimer izvoz (nije valjan JSON).",
+      "noSessions": "U toj datoteci nisu pronađene sesije s rezultatima.",
+      "generic": "Datoteka se nije mogla pročitati. Molimo pokušajte ponovno."
+    },
+    "session": {
+      "label": "Sesija",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} rezultata · {days} dana vježbanja"
+    },
+    "stats": {
+      "total": "Rezultati",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Najbolji pojedinačni rezultat",
+      "bestSub": "Pojedinačni PB",
+      "mean": "Prosjek",
+      "meanSub": "Medijan {median}",
+      "stdev": "Standardna devijacija",
+      "stdevSub": "Dosljednost — manje je stabilnije",
+      "bestAo5": "Najbolji Ao5",
+      "bestAo12": "Najbolji Ao12",
+      "bestAo50": "Najbolji Ao50",
+      "bestAo100": "Najbolji Ao100",
+      "currentSub": "Trenutno {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Pojedinačna rješenja",
+        "desc": "Svako rješenje redom. Istaknute točke su novi osobni rekordi."
+      },
+      "ao": {
+        "title": "Klizni prosjeci (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Trend vaših nedavnih rješenja — ovo je pravo mjerilo napretka.",
+        "linear": "Linearno",
+        "log": "Logaritamsko"
+      },
+      "hist": {
+        "title": "Raspodjela vremena",
+        "desc": "Kako su raspoređena vaša vremena rješavanja."
+      },
+      "daily": {
+        "title": "Dnevni volumen",
+        "desc": "Rješenja po danu vježbanja."
+      },
+      "pb": {
+        "title": "Povijest osobnih rekorda",
+        "desc": "Najbolje pojedinačno / Ao5 / Ao12 / Ao100 kroz vrijeme, smanjuje se sa svakim novim rekordom."
+      },
+      "dailyAvg": {
+        "title": "Dnevni prosjek",
+        "desc": "Prosječno vrijeme rješavanja po danu — prikazuje dobre i loše dane."
+      },
+      "hourly": {
+        "title": "Doba dana",
+        "desc": "Kada vježbate, prema lokalnom satu."
+      },
+      "speedup": {
+        "title": "Ubrzanje u odnosu na prvi dan (log₂)",
+        "desc": "Koliko je svaki dan brži od vašeg prvog dana. +1 = dvostruko brže, +2 = četiri puta, +3 = osam puta. Svaki korak je jednaka veličina napretka."
+      },
+      "powerLaw": {
+        "title": "Vještina u odnosu na kumulativnu praksu (zakon potencije)",
+        "desc": "Okomito: −ln(dnevni prosjek sekundi). Vodoravno: kumulativna rješenja, logaritamska skala. Zakon potencije vježbanja predviđa ravnu liniju — iznad trenda je napredak, ispod njega je stagnacija."
+      }
+    },
+    "axis": {
+      "solveIndex": "Riješi #",
+      "seconds": "Vrijeme (s)",
+      "avgSeconds": "Prosjek (s)",
+      "avgSecondsLog": "Prosjek (s, log)",
+      "count": "Rješenja",
+      "bucket": "Raspon vremena",
+      "log2": "log₂(dan 1 ÷ dan)",
+      "cumulative": "Kumulativna rješenja (log)",
+      "skill": "−ln(sekunde)"
+    },
+    "series": {
+      "single": "Pojedinačno (s)",
+      "pb": "Novi PB",
+      "count": "Rješenja",
+      "dailyAvg": "Dnevni prosjek (s)",
+      "speedup": "log₂ ubrzanje",
+      "skill": "Dnevni indeks vještine",
+      "trend": "Trend zakona potencije",
+      "pbSingle": "PB pojedinačno"
+    },
+    "tooltip": {
+      "noData": "Nema podataka",
+      "speedup": "{v} udvostručenja ({mult}× brže)",
+      "baseline": "Dnevni prosjek {avg} · prosjek prvog dana {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} rješenja do sada · dnevni prosjek {avg}",
+      "skill": "Indeks vještine {v}"
+    },
+    "powerLaw": {
+      "slope": "Nagib b",
+      "halving": "Udvostruči vježbu → vrijeme pada za",
+      "reading": "Čitanje",
+      "band": {
+        "regressing": "Nazadovanje (negativan nagib)",
+        "plateau": "Vrlo sporo — plato ili usko grlo",
+        "steady": "Stabilno učenje na visokoj razini",
+        "healthy": "Zdrava stopa učenja (tipično za srednju razinu)",
+        "fast": "Brzo poboljšanje",
+        "veryFast": "Vrlo brzo (početna faza ili nadogradnja metode)",
+        "none": "Nedovoljno podataka"
+      }
+    },
+    "milestones": {
+      "title": "Prekretnice",
+      "desc": "Prvi put kada je svaka serija pala ispod praga, i koliko je dana trebalo za to.",
+      "threshold": "Ispod",
+      "single": "Pojedinačno",
+      "never": "—",
+      "dayN": "dan {n}"
+    },
+    "recent": {
+      "title": "Zadnjih 20 rješenja",
+      "desc": "Vaša najnovija rješenja u ovoj sesiji.",
+      "time": "Kada",
+      "solve": "Vrijeme",
+      "scramble": "Miješanje"
+    },
+    "links": {
+      "cube": "Otvori 3D kocku →"
+    },
+    "footer": "Vaši podaci nikada ne napuštaju vaš preglednik. Izrađeno uz seriju „riješi kocku bez pamćenja”."
   }
 }

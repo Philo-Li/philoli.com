@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Penterjemah E-buku Percuma — EPUB / PDF / AI / 40 Bahasa",
     "ebookTranslatorDescription": "Penterjemah e-buku AI percuma yang berjalan sepenuhnya dalam pelayar anda. Terjemah fail EPUB dan PDF ke lebih 40 bahasa dengan output dwibahasa bersebelahan. Guna kunci API anda sendiri.",
     "rubiksCubeTitle": "Kiub Rubik 3D — Philo Li",
-    "rubiksCubeDescription": "Kiub Rubik 3D interaktif. Tetapkan susunan rawak dan penyelesaian, main langkah demi langkah, sembunyikan warna atau muka untuk latihan hafalan."
+    "rubiksCubeDescription": "Kiub Rubik 3D interaktif. Tetapkan susunan rawak dan penyelesaian, main langkah demi langkah, sembunyikan warna atau muka untuk latihan hafalan.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Carta Kemajuan Rubik's Cube",
+    "cubeAnalyzerDescription": "Lepaskan eksport csTimer anda dan dapatkan carta kemajuan: trend Ao5/Ao12/Ao100, sejarah PB, pencapaian, jumlah harian dan keluk pembelajaran kuasa. Berjalan sepenuhnya dalam pelayar anda."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "Kiub Rubik 3D",
         "description": "Lalui langkah-langkah susunan rawak dan penyelesaian pada kiub 3D interaktif. Mod pembelajaran menyembunyikan warna dan muka untuk latihan algoritma.",
         "cta": "Buka kiub →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Lepaskan eksport csTimer anda dan lihat kemajuan anda: purata bergerak, sejarah PB, pencapaian dan keluk pembelajaran kuasa. Tiada apa yang keluar dari pelayar anda.",
+        "cta": "Analisis penyelesaian saya →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Baca Lagi"
+    },
+    "analyzerCard": {
+      "eyebrow": "Alat",
+      "title": "csTimer Analyzer",
+      "desc": "Eksport sesi csTimer anda dan lihat carta kemajuan anda.",
+      "cta": "Analisis penyelesaian saya"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Alat",
+    "title": "csTimer Analyzer",
+    "intro": "Eksport sesi anda dari csTimer dan lepaskan fail di sini untuk melihat kemajuan sebenar anda: purata bergerak, sejarah PB, pencapaian, jumlah harian dan keluk pembelajaran kuasa. Semuanya berjalan dalam pelayar anda — tiada apa yang dimuat naik.",
+    "howTo": {
+      "title": "Cara mengeksport dari csTimer",
+      "step1": "Buka cstimer.net dan klik ikon gear di sudut kiri atas.",
+      "step2": "Tatal ke Import / Export dan pilih \"Export to file\".",
+      "step3": "Lepaskan fail yang dimuat turun di bawah."
+    },
+    "drop": {
+      "label": "Lepaskan eksport csTimer anda di sini, atau klik untuk memilih fail",
+      "loadSample": "Atau muatkan data saya sendiri sebagai sampel",
+      "loading": "Memuatkan…",
+      "loaded": "{name} telah dimuatkan",
+      "sample": "Data sampel: perjalanan Roux saya, Mei–Okt 2026"
+    },
+    "errors": {
+      "notJson": "Itu tidak kelihatan seperti eksport csTimer (ia bukan JSON yang sah).",
+      "noSessions": "Tiada sesi dengan penyelesaian ditemui dalam fail tersebut.",
+      "generic": "Gagal membaca fail itu. Sila cuba lagi."
+    },
+    "session": {
+      "label": "Sesi",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} penyelesaian · {days} hari latihan"
+    },
+    "stats": {
+      "total": "Penyelesaian",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Terbaik tunggal",
+      "bestSub": "PB Tunggal",
+      "mean": "Purata",
+      "meanSub": "Median {median}",
+      "stdev": "Sisihan piawai",
+      "stdevSub": "Ketekalan — lebih rendah lebih stabil",
+      "bestAo5": "Ao5 Terbaik",
+      "bestAo12": "Ao12 Terbaik",
+      "bestAo50": "Ao50 Terbaik",
+      "bestAo100": "Ao100 Terbaik",
+      "currentSub": "Semasa {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Penyelesaian tunggal",
+        "desc": "Setiap penyelesaian mengikut urutan. Titik yang diserlahkan ialah rekod peribadi baharu."
+      },
+      "ao": {
+        "title": "Purata bergerak (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Trend penyelesaian terkini anda — ini adalah ukuran sebenar kemajuan.",
+        "linear": "Linear",
+        "log": "Log"
+      },
+      "hist": {
+        "title": "Taburan masa",
+        "desc": "Bagaimana masa penyelesaian anda tersebar."
+      },
+      "daily": {
+        "title": "Jumlah harian",
+        "desc": "Penyelesaian setiap hari latihan."
+      },
+      "pb": {
+        "title": "Sejarah rekod peribadi",
+        "desc": "Tunggal / Ao5 / Ao12 / Ao100 terbaik sepanjang masa, menurun dengan setiap rekod baharu."
+      },
+      "dailyAvg": {
+        "title": "Purata harian",
+        "desc": "Purata masa penyelesaian setiap hari — menunjukkan hari yang baik dan buruk."
+      },
+      "hourly": {
+        "title": "Waktu dalam sehari",
+        "desc": "Waktu anda berlatih, mengikut jam tempatan."
+      },
+      "speedup": {
+        "title": "Peningkatan kelajuan vs. hari pertama (log₂)",
+        "desc": "Berapa kali lebih pantas setiap hari berbanding hari pertama anda. +1 = dua kali lebih pantas, +2 = empat kali, +3 = lapan kali. Setiap langkah adalah saiz peningkatan yang sama."
+      },
+      "powerLaw": {
+        "title": "Kemahiran vs. latihan kumulatif (hukum kuasa)",
+        "desc": "Menegak: −ln(purata saat harian). Melintang: penyelesaian kumulatif, skala log. Hukum Kuasa Latihan meramalkan garis lurus — di atas trend bermakna kejayaan, di bawahnya bermakna dataran."
+      }
+    },
+    "axis": {
+      "solveIndex": "Selesaikan #",
+      "seconds": "Masa (s)",
+      "avgSeconds": "Purata (s)",
+      "avgSecondsLog": "Purata (s, log)",
+      "count": "Selesai",
+      "bucket": "Julat masa",
+      "log2": "log₂(hari 1 ÷ hari)",
+      "cumulative": "Selesai kumulatif (log)",
+      "skill": "−ln(saat)"
+    },
+    "series": {
+      "single": "Tunggal (s)",
+      "pb": "PB baharu",
+      "count": "Selesai",
+      "dailyAvg": "Purata harian (s)",
+      "speedup": "log₂ pecutan",
+      "skill": "Indeks kemahiran harian",
+      "trend": "Trend hukum kuasa",
+      "pbSingle": "PB tunggal"
+    },
+    "tooltip": {
+      "noData": "Tiada data",
+      "speedup": "{v} penggandaan ({mult}× lebih pantas)",
+      "baseline": "Purata hari {avg} · purata hari pertama {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} selesai setakat ini · purata hari {avg}",
+      "skill": "Indeks kemahiran {v}"
+    },
+    "powerLaw": {
+      "slope": "Cerun b",
+      "halving": "Gandakan latihan → masa berkurang sebanyak",
+      "reading": "Membaca",
+      "band": {
+        "regressing": "Regresi (cerun negatif)",
+        "plateau": "Sangat perlahan — dataran atau kesesakan",
+        "steady": "Pembelajaran stabil pada tahap tinggi",
+        "healthy": "Kadar pembelajaran sihat (pertengahan tipikal)",
+        "fast": "Penambahbaikan pantas",
+        "veryFast": "Sangat pantas (peringkat awal atau peningkatan kaedah)",
+        "none": "Data tidak mencukupi"
+      }
+    },
+    "milestones": {
+      "title": "Pencapaian penting",
+      "desc": "Kali pertama setiap siri melepasi ambang, dan berapa hari ia diambil.",
+      "threshold": "Bawah",
+      "single": "Tunggal",
+      "never": "—",
+      "dayN": "hari {n}"
+    },
+    "recent": {
+      "title": "20 penyelesaian terakhir",
+      "desc": "Penyelesaian terbaharu anda dalam sesi ini.",
+      "time": "Bila",
+      "solve": "Masa",
+      "scramble": "Kocak"
+    },
+    "links": {
+      "cube": "Buka kiub 3D →"
+    },
+    "footer": "Data anda tidak pernah meninggalkan pelayar anda. Dibina seiring dengan siri “selesaikan kiub tanpa menghafal”."
   }
 }

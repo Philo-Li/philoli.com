@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Gratis e-bogsoversætter — EPUB / PDF / AI / 40 sprog",
     "ebookTranslatorDescription": "Gratis AI-e-bogsoversætter, der kører helt i din browser. Oversæt EPUB- og PDF-filer til 40+ sprog med tosproget output side om side. Brug din egen API-nøgle.",
     "rubiksCubeTitle": "3D Rubiks terning — Philo Li",
-    "rubiksCubeDescription": "Interaktiv 3D Rubiks terning. Indstil en blanding og en løsning, afspil trin for trin, skjul farver eller sider til udenadslære."
+    "rubiksCubeDescription": "Interaktiv 3D Rubiks terning. Indstil en blanding og en løsning, afspil trin for trin, skjul farver eller sider til udenadslære.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Fremskridtsgrafer for Rubik's Cube",
+    "cubeAnalyzerDescription": "Slip din csTimer-eksport og få fremskridtsgrafer: Ao5/Ao12/Ao100-tendenser, PB-historik, milepæle, dagligt volumen og en læringskurve baseret på potenslov. Kører udelukkende i din browser."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "3D Rubik's terning",
         "description": "Gennemgå blandinger og løsninger på en interaktiv 3D-terning. Læringstilstand skjuler farver og sider til algoritmeøvelser.",
         "cta": "Åbn terningen →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Slip din csTimer-eksport og se dine fremskridt: rullende gennemsnit, PB-historik, milepæle og en læringskurve baseret på potenslov. Intet forlader din browser.",
+        "cta": "Analysér mine løsninger →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Læs mere"
+    },
+    "analyzerCard": {
+      "eyebrow": "Værktøj",
+      "title": "csTimer Analyzer",
+      "desc": "Eksportér dine csTimer-sessioner og se dine fremskridtsgrafer.",
+      "cta": "Analysér mine løsninger"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Værktøj",
+    "title": "csTimer Analyzer",
+    "intro": "Eksportér dine sessioner fra csTimer og slip filen her for at se, hvordan du virkelig gør fremskridt: rullende gennemsnit, PB-historik, milepæle, dagligt volumen og en læringskurve baseret på potenslov. Alt kører i din browser — intet bliver uploadet.",
+    "howTo": {
+      "title": "Sådan eksporterer du fra csTimer",
+      "step1": "Åbn cstimer.net og klik på tandhjulsikonet i øverste venstre hjørne.",
+      "step2": "Rul til Import / Export og vælg \"Export to file\".",
+      "step3": "Slip den downloadede fil herunder."
+    },
+    "drop": {
+      "label": "Slip din csTimer-eksport her, eller klik for at vælge en fil",
+      "loadSample": "Eller indlæs mine egne data som et eksempel",
+      "loading": "Indlæser…",
+      "loaded": "Indlæst {name}",
+      "sample": "Eksempeldata: min Roux-rejse, maj–okt 2026"
+    },
+    "errors": {
+      "notJson": "Det ligner ikke en csTimer-eksport (den er ikke gyldig JSON).",
+      "noSessions": "Ingen sessioner med løsninger blev fundet i den fil.",
+      "generic": "Kunne ikke læse filen. Prøv venligst igen."
+    },
+    "session": {
+      "label": "Session",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} løsninger · {days} træningsdage"
+    },
+    "stats": {
+      "total": "Løsninger",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Bedste single",
+      "bestSub": "Enkelt PB",
+      "mean": "Gennemsnit",
+      "meanSub": "Median {median}",
+      "stdev": "Standardafvigelse",
+      "stdevSub": "Konsistens — lavere er mere stabilt",
+      "bestAo5": "Bedste Ao5",
+      "bestAo12": "Bedste Ao12",
+      "bestAo50": "Bedste Ao50",
+      "bestAo100": "Bedste Ao100",
+      "currentSub": "Nuværende {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Enkelte løsninger",
+        "desc": "Hver løsning i rækkefølge. Fremhævede punkter er nye personlige rekorder."
+      },
+      "ao": {
+        "title": "Rullende gennemsnit (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Tendensen i dine nylige løsninger — dette er det sande mål for fremskridt.",
+        "linear": "Lineær",
+        "log": "Logaritmisk"
+      },
+      "hist": {
+        "title": "Tidsfordeling",
+        "desc": "Hvordan dine løsningstider er fordelt."
+      },
+      "daily": {
+        "title": "Daglig volumen",
+        "desc": "Løsninger pr. træningsdag."
+      },
+      "pb": {
+        "title": "Historik over personlige rekorder",
+        "desc": "Bedste enkelt / Ao5 / Ao12 / Ao100 over tid, der falder for hver ny rekord."
+      },
+      "dailyAvg": {
+        "title": "Dagligt gennemsnit",
+        "desc": "Gennemsnitlig løsningstid pr. dag — viser gode og dårlige dage."
+      },
+      "hourly": {
+        "title": "Tidspunkt på dagen",
+        "desc": "Hvornår du træner, efter lokal time."
+      },
+      "speedup": {
+        "title": "Hastighedsforøgelse vs. første dag (log₂)",
+        "desc": "Hvor mange gange hurtigere hver dag er i forhold til din første dag. +1 = dobbelt så hurtig, +2 = fire gange, +3 = otte gange. Hvert trin er den samme forbedringsstørrelse."
+      },
+      "powerLaw": {
+        "title": "Færdighed vs. akkumuleret træning (potenslov)",
+        "desc": "Vertikal: −ln(dagligt gennemsnit i sekunder). Horisontal: akkumulerede løsninger, logaritmisk skala. Træningens potenslov forudsiger en ret linje — over tendensen er et gennembrud, under den er et plateau."
+      }
+    },
+    "axis": {
+      "solveIndex": "Løsning #",
+      "seconds": "Tid (s)",
+      "avgSeconds": "Gennemsnit (s)",
+      "avgSecondsLog": "Gennemsnit (s, log)",
+      "count": "Løsninger",
+      "bucket": "Tidsinterval",
+      "log2": "log₂(dag 1 ÷ dag)",
+      "cumulative": "Kumulative løsninger (log)",
+      "skill": "−ln(sekunder)"
+    },
+    "series": {
+      "single": "Single (s)",
+      "pb": "Ny PB",
+      "count": "Løsninger",
+      "dailyAvg": "Dagligt gennemsnit (s)",
+      "speedup": "log₂ hastighedsforøgelse",
+      "skill": "Dagligt færdighedsindeks",
+      "trend": "Potensfunktionstendens",
+      "pbSingle": "PB single"
+    },
+    "tooltip": {
+      "noData": "Ingen data",
+      "speedup": "{v} fordoblinger ({mult}× hurtigere)",
+      "baseline": "Dagligt gns. {avg} · dag ét gns. {base}",
+      "trend": "Tendens: {v}",
+      "cumulative": "{n} løsninger indtil videre · dagligt gns. {avg}",
+      "skill": "Færdighedsindeks {v}"
+    },
+    "powerLaw": {
+      "slope": "Hældning b",
+      "halving": "Fordobl øvelsen → tiden falder med",
+      "reading": "Læser",
+      "band": {
+        "regressing": "Regressiv (negativ hældning)",
+        "plateau": "Meget langsom — plateau eller flaskehals",
+        "steady": "Stabil læring på et højt niveau",
+        "healthy": "Sund læringsrate (typisk øvet)",
+        "fast": "Hurtig forbedring",
+        "veryFast": "Meget hurtig (tidlige dage eller en metodeopgradering)",
+        "none": "Ikke nok data"
+      }
+    },
+    "milestones": {
+      "title": "Milepæle",
+      "desc": "Første gang hver serie kom under en tærskel, og hvor mange dage der var gået.",
+      "threshold": "Under",
+      "single": "Enkelt",
+      "never": "—",
+      "dayN": "dag {n}"
+    },
+    "recent": {
+      "title": "Seneste 20 løsninger",
+      "desc": "Dine seneste løsninger i denne session.",
+      "time": "Hvornår",
+      "solve": "Tid",
+      "scramble": "Scramble"
+    },
+    "links": {
+      "cube": "Åbn 3D-terningen →"
+    },
+    "footer": "Dine data forlader aldrig din browser. Bygget sideløbende med serien \"løs terningen uden at memorere\"."
   }
 }

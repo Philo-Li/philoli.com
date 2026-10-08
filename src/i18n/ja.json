@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "無料の電子書籍翻訳ツール — EPUB / PDF / AI / 40言語対応",
     "ebookTranslatorDescription": "ブラウザ内で動作する無料のAI電子書籍翻訳ツール。EPUBとPDFを40以上の言語に翻訳し、対訳版として出力。自分のAPIキーを使用。",
     "rubiksCubeTitle": "3D ルービックキューブ — Philo Li",
-    "rubiksCubeDescription": "インタラクティブな 3D ルービックキューブ。スクランブルと手順を設定し、一歩ずつ再生したり、暗記の練習のために色や面を非表示にしたりできます。"
+    "rubiksCubeDescription": "インタラクティブな 3D ルービックキューブ。スクランブルと手順を設定し、一歩ずつ再生したり、暗記の練習のために色や面を非表示にしたりできます。",
+    "cubeAnalyzerTitle": "csTimer Analyzer — ルービックキューブの進捗チャート",
+    "cubeAnalyzerDescription": "csTimerの書き出しファイルをドロップして進捗チャートを表示：Ao5/Ao12/Ao100の推移、PB履歴、マイルストーン、日々の練習量、べき乗則学習曲線。すべてブラウザ上で動作します。"
   },
   "nav": {
     "blog": "ブログ",
@@ -137,6 +139,11 @@
         "name": "3Dルービックキューブ",
         "description": "インタラクティブな3Dキューブで、スクランブルや解法をステップごとに確認。学習モードでは色や面を非表示にして、アルゴリズムの練習が可能です。",
         "cta": "キューブを開く →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "csTimerの書き出しファイルをドロップして進捗を確認：ローリング平均、PB履歴、マイルストーン、べき乗則学習曲線。データはブラウザから一切外部へ送信されません。",
+        "cta": "タイムを分析する →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "ブログ",
       "cta": "続きを読む"
+    },
+    "analyzerCard": {
+      "eyebrow": "ツール",
+      "title": "csTimer Analyzer",
+      "desc": "csTimerのセッションを書き出して進捗チャートを確認しましょう。",
+      "cta": "タイムを分析する"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "ツール",
+    "title": "csTimer Analyzer",
+    "intro": "csTimerからセッションを書き出し、ファイルをここにドロップして実際の進捗を確認しましょう：ローリング平均、PB履歴、マイルストーン、日々の練習量、べき乗則学習曲線。すべてブラウザ上で動作し、アップロードは行われません。",
+    "howTo": {
+      "title": "csTimerからの書き出し方法",
+      "step1": "cstimer.netを開き、左上の歯車アイコンをクリックします。",
+      "step2": "「Import / Export」までスクロールし、「Export to file」を選択します。",
+      "step3": "ダウンロードしたファイルを以下にドロップしてください。"
+    },
+    "drop": {
+      "label": "csTimerの書き出しファイルをここにドロップ、またはクリックしてファイルを選択",
+      "loadSample": "またはサンプルとして自分のデータで読み込む",
+      "loading": "読み込み中…",
+      "loaded": "{name} を読み込みました",
+      "sample": "サンプルデータ：私のRouxメソッドの軌跡、2026年5月〜10月"
+    },
+    "errors": {
+      "notJson": "csTimerの書き出しファイルではないようです（有効なJSONではありません）。",
+      "noSessions": "そのファイル内に記録のあるセッションが見つかりませんでした。",
+      "generic": "ファイルを読み込めませんでした。もう一度お試しください。"
+    },
+    "session": {
+      "label": "セッション",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} 回の記録 · {days} 日間の練習"
+    },
+    "stats": {
+      "total": "記録",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "ベストシングル",
+      "bestSub": "自己ベスト（単発）",
+      "mean": "平均",
+      "meanSub": "中央値 {median}",
+      "stdev": "標準偏差",
+      "stdevSub": "一貫性 — 低いほど安定",
+      "bestAo5": "Ao5ベスト",
+      "bestAo12": "Ao12ベスト",
+      "bestAo50": "Ao50ベスト",
+      "bestAo100": "Ao100ベスト",
+      "currentSub": "現在 {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "単発の記録",
+        "desc": "全ての記録を時系列で表示。ハイライトされた点は自己ベスト更新です。"
+      },
+      "ao": {
+        "title": "ローリング平均 (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "直近の記録の傾向 — これこそが真の進歩の指標です。",
+        "linear": "線形",
+        "log": "対数"
+      },
+      "hist": {
+        "title": "タイム分布",
+        "desc": "タイムのばらつき具合。"
+      },
+      "daily": {
+        "title": "1日の練習量",
+        "desc": "練習日ごとの記録数。"
+      },
+      "pb": {
+        "title": "自己ベストの履歴",
+        "desc": "自己ベスト（単発 / Ao5 / Ao12 / Ao100）の推移。記録更新ごとに段階的に下がります。"
+      },
+      "dailyAvg": {
+        "title": "1日の平均",
+        "desc": "1日あたりの平均タイム — 調子の良し悪しがわかります。"
+      },
+      "hourly": {
+        "title": "時間帯",
+        "desc": "練習した時間帯（現地時間）。"
+      },
+      "speedup": {
+        "title": "初日との速度比較 (log₂)",
+        "desc": "初日と比べて何倍速いか。+1で2倍、+2で4倍、+3で8倍。各ステップは同じ改善幅を表します。"
+      },
+      "powerLaw": {
+        "title": "スキルと累積練習量の関係（べき乗則）",
+        "desc": "縦軸：−ln(1日の平均秒数)。横軸：累積記録数（対数スケール）。練習のべき乗則では直線になると予測されます。トレンドより上なら飛躍、下なら停滞を意味します。"
+      }
+    },
+    "axis": {
+      "solveIndex": "解答 #",
+      "seconds": "時間 (秒)",
+      "avgSeconds": "平均 (秒)",
+      "avgSecondsLog": "平均 (秒, 対数)",
+      "count": "解答数",
+      "bucket": "時間範囲",
+      "log2": "log₂(1日目 ÷ 日数)",
+      "cumulative": "累積解答数 (対数)",
+      "skill": "−ln(秒)"
+    },
+    "series": {
+      "single": "シングル (秒)",
+      "pb": "自己ベスト更新",
+      "count": "解答数",
+      "dailyAvg": "日次平均 (秒)",
+      "speedup": "log₂ スピードアップ",
+      "skill": "日次スキル指数",
+      "trend": "べき乗則トレンド",
+      "pbSingle": "自己ベストシングル"
+    },
+    "tooltip": {
+      "noData": "データなし",
+      "speedup": "{v} 倍化 ({mult}× 高速)",
+      "baseline": "日次平均 {avg} · 初日平均 {base}",
+      "trend": "トレンド: {v}",
+      "cumulative": "これまでの解答数 {n} · 日次平均 {avg}",
+      "skill": "スキル指数 {v}"
+    },
+    "powerLaw": {
+      "slope": "傾き b",
+      "halving": "練習量が2倍になると → 時間が短縮",
+      "reading": "読書中",
+      "band": {
+        "regressing": "後退中 (負の傾き)",
+        "plateau": "非常に遅い — 停滞またはボトルネック",
+        "steady": "高水準で安定した学習",
+        "healthy": "健全な学習速度 (典型的な中級者)",
+        "fast": "急速な改善",
+        "veryFast": "非常に高速（初期段階または手法のアップグレード）",
+        "none": "データ不足"
+      }
+    },
+    "milestones": {
+      "title": "マイルストーン",
+      "desc": "各シリーズが初めてしきい値を下回った時点と、そこに至るまでの日数。",
+      "threshold": "未満",
+      "single": "シングル",
+      "never": "—",
+      "dayN": "{n}日目"
+    },
+    "recent": {
+      "title": "直近20回の記録",
+      "desc": "このセッションでの直近の記録です。",
+      "time": "日時",
+      "solve": "タイム",
+      "scramble": "スクランブル"
+    },
+    "links": {
+      "cube": "3Dキューブを開く →"
+    },
+    "footer": "データはブラウザから一切外部へ送信されません。「暗記なしでキューブを解く」シリーズと並行して開発されました。"
   }
 }

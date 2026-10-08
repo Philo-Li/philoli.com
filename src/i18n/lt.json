@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Nemokamas el. knygų vertėjas — EPUB / PDF / AI / 40 kalbų",
     "ebookTranslatorDescription": "Nemokamas AI el. knygų vertėjas, veikiantis visiškai jūsų naršyklėje. Verskite EPUB ir PDF failus į 40+ kalbų su dvikalbe gretima išvestimi. Naudokite savo API raktą.",
     "rubiksCubeTitle": "3D Rubiko kubas — Philo Li",
-    "rubiksCubeDescription": "Interaktyvus 3D Rubiko kubas. Nustatykite sumaišymą ir sprendimą, žaiskite žingsnis po žingsnio, paslėpkite spalvas ar sienas įsiminimo pratimams."
+    "rubiksCubeDescription": "Interaktyvus 3D Rubiko kubas. Nustatykite sumaišymą ir sprendimą, žaiskite žingsnis po žingsnio, paslėpkite spalvas ar sienas įsiminimo pratimams.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Rubiko kubo pažangos diagramos",
+    "cubeAnalyzerDescription": "Įkelkite savo csTimer eksportuotą failą ir gaukite pažangos diagramas: Ao5/Ao12/Ao100 tendencijas, PB istoriją, pasiekimus, kasdienę apimtį ir galios dėsnio mokymosi kreivę. Veikia tik jūsų naršyklėje."
   },
   "nav": {
     "blog": "Tinklaraštis",
@@ -137,6 +139,11 @@
         "name": "3D Rubiko kubas",
         "description": "Peržiūrėkite sumaišymus ir sprendimus interaktyviame 3D kube. Mokymosi režimas paslepia spalvas ir sienas algoritmų pratimams.",
         "cta": "Atidaryti kubą →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Įkelkite savo csTimer eksportuotą failą ir stebėkite savo pažangą: slenkančius vidurkius, PB istoriją, pasiekimus ir galios dėsnio mokymosi kreivę. Nieko neišeina iš jūsų naršyklės.",
+        "cta": "Analizuoti mano sprendimus →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Tinklaraštis",
       "cta": "Skaityti daugiau"
+    },
+    "analyzerCard": {
+      "eyebrow": "Įrankis",
+      "title": "csTimer Analyzer",
+      "desc": "Eksportuokite savo csTimer sesijas ir peržiūrėkite savo pažangos diagramas.",
+      "cta": "Analizuoti mano sprendimus"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Įrankis",
+    "title": "csTimer Analyzer",
+    "intro": "Eksportuokite savo sesijas iš csTimer ir įkelkite failą čia, kad pamatytumėte, kaip iš tikrųjų tobulėjate: slenkančius vidurkius, PB istoriją, pasiekimus, kasdienę apimtį ir galios dėsnio mokymosi kreivę. Viskas veikia jūsų naršyklėje — niekas nėra įkeliama į serverį.",
+    "howTo": {
+      "title": "Kaip eksportuoti iš csTimer",
+      "step1": "Atidarykite cstimer.net ir spustelėkite krumpliaračio piktogramą viršutiniame kairiajame kampe.",
+      "step2": "Slinkite iki „Import / Export“ ir pasirinkite „Export to file“.",
+      "step3": "Įkelkite atsisiųstą failą žemiau."
+    },
+    "drop": {
+      "label": "Įkelkite savo csTimer eksportuotą failą čia arba spustelėkite, kad pasirinktumėte failą",
+      "loadSample": "Arba įkelkite mano paties duomenis kaip pavyzdį",
+      "loading": "Įkeliama…",
+      "loaded": "Įkelta {name}",
+      "sample": "Pavyzdiniai duomenys: mano Roux kelionė, 2026 m. gegužė–spalis"
+    },
+    "errors": {
+      "notJson": "Tai nepanašu į csTimer eksportuotą failą (jis nėra tinkamas JSON).",
+      "noSessions": "Šiame faile nerasta jokių sesijų su sprendimais.",
+      "generic": "Nepavyko nuskaityti šio failo. Prašome bandyti dar kartą."
+    },
+    "session": {
+      "label": "Sesija",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} sprendimų · {days} praktikos dienų"
+    },
+    "stats": {
+      "total": "Sprendimai",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Geriausias vienas sprendimas",
+      "bestSub": "Geriausias vienas",
+      "mean": "Vidurkis",
+      "meanSub": "Mediana {median}",
+      "stdev": "Standartinis nuokrypis",
+      "stdevSub": "Nuoseklumas — mažesnis skaičius reiškia didesnį stabilumą",
+      "bestAo5": "Geriausias Ao5",
+      "bestAo12": "Geriausias Ao12",
+      "bestAo50": "Geriausias Ao50",
+      "bestAo100": "Geriausias Ao100",
+      "currentSub": "Dabartinis {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Atskiri sprendimai",
+        "desc": "Kiekvienas sprendimas eilės tvarka. Išryškinti taškai yra nauji asmeniniai rekordai."
+      },
+      "ao": {
+        "title": "Slenkantys vidurkiai (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Jūsų pastarųjų sprendimų tendencija — tai tikrasis pažangos matas.",
+        "linear": "Tiesinis",
+        "log": "Logaritminis"
+      },
+      "hist": {
+        "title": "Laiko pasiskirstymas",
+        "desc": "Kaip pasiskirsto jūsų sprendimų laikai."
+      },
+      "daily": {
+        "title": "Dienos apimtis",
+        "desc": "Sprendimų skaičius per treniruočių dieną."
+      },
+      "pb": {
+        "title": "Asmeninių rekordų istorija",
+        "desc": "Geriausias vienas / Ao5 / Ao12 / Ao100 bėgant laikui, mažėjantis su kiekvienu nauju rekordu."
+      },
+      "dailyAvg": {
+        "title": "Dienos vidurkis",
+        "desc": "Vidutinis sprendimo laikas per dieną — parodo geras ir blogas dienas."
+      },
+      "hourly": {
+        "title": "Paros laikas",
+        "desc": "Kada treniruojatės, pagal vietos valandą."
+      },
+      "speedup": {
+        "title": "Pagreitis lyginant su pirmąja diena (log₂)",
+        "desc": "Kiek kartų greitesnė kiekviena diena nei pirmoji. +1 = du kartus greičiau, +2 = keturis kartus, +3 = aštuonis kartus. Kiekvienas žingsnis yra vienodo dydžio patobulinimas."
+      },
+      "powerLaw": {
+        "title": "Įgūdžiai vs. sukaupta praktika (galios dėsnis)",
+        "desc": "Vertikaliai: −ln(dienos vidurkis sekundėmis). Horizontaliai: sukaupti sprendimai, logaritminė skalė. Praktikos galios dėsnis numato tiesią liniją — virš tendencijos yra proveržis, žemiau jos — stagnacija."
+      }
+    },
+    "axis": {
+      "solveIndex": "Sprendimas #",
+      "seconds": "Laikas (s)",
+      "avgSeconds": "Vidurkis (s)",
+      "avgSecondsLog": "Vidurkis (s, log)",
+      "count": "Sprendimai",
+      "bucket": "Laiko intervalas",
+      "log2": "log₂(1 diena ÷ diena)",
+      "cumulative": "Sukaupti sprendimai (log)",
+      "skill": "−ln(sekundės)"
+    },
+    "series": {
+      "single": "Vienas (s)",
+      "pb": "Naujas PB",
+      "count": "Sprendimai",
+      "dailyAvg": "Dienos vidurkis (s)",
+      "speedup": "log₂ pagreitis",
+      "skill": "Dienos įgūdžių indeksas",
+      "trend": "Galios dėsnio tendencija",
+      "pbSingle": "PB vienas"
+    },
+    "tooltip": {
+      "noData": "Nėra duomenų",
+      "speedup": "{v} padvigubinimai ({mult}× greičiau)",
+      "baseline": "Dienos vidurkis {avg} · pirmos dienos vidurkis {base}",
+      "trend": "Tendencija: {v}",
+      "cumulative": "{n} sprendimų iki šiol · dienos vidurkis {avg}",
+      "skill": "Įgūdžių indeksas {v}"
+    },
+    "powerLaw": {
+      "slope": "Nuolydis b",
+      "halving": "Dvigubai daugiau praktikos → laikas sumažėja",
+      "reading": "Skaitoma",
+      "band": {
+        "regressing": "Regresija (neigiamas nuolydis)",
+        "plateau": "Labai lėtai — plokštuma arba kliūtis",
+        "steady": "Stabilus mokymasis aukštu lygiu",
+        "healthy": "Sveikas mokymosi tempas (tipiškas vidutiniokas)",
+        "fast": "Spartus tobulėjimas",
+        "veryFast": "Labai greitai (pradinis etapas arba metodo atnaujinimas)",
+        "none": "Nepakanka duomenų"
+      }
+    },
+    "milestones": {
+      "title": "Etapai",
+      "desc": "Pirmas kartas, kai kiekviena serija nukrito žemiau ribos, ir kiek dienų tai užtruko.",
+      "threshold": "Žemiau",
+      "single": "Vienas",
+      "never": "—",
+      "dayN": "{n} diena"
+    },
+    "recent": {
+      "title": "Paskutiniai 20 rinkimų",
+      "desc": "Jūsų naujausi rinkimai šios sesijos metu.",
+      "time": "Kada",
+      "solve": "Laikas",
+      "scramble": "Maišymas"
+    },
+    "links": {
+      "cube": "Atidaryti 3D kubą →"
+    },
+    "footer": "Jūsų duomenys niekada nepalieka naršyklės. Sukurta kartu su „išspręsk kubą be įsiminimo“ serija."
   }
 }

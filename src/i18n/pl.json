@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Darmowy tłumacz ebooków — EPUB / PDF / AI / 40 języków",
     "ebookTranslatorDescription": "Darmowy tłumacz ebooków oparty na AI, działa w całości w przeglądarce. Tłumacz pliki EPUB i PDF na ponad 40 języków z dwujęzycznym wyjściem obok siebie. Używaj własnego klucza API.",
     "rubiksCubeTitle": "Kostka Rubika 3D — Philo Li",
-    "rubiksCubeDescription": "Interaktywna Kostka Rubika 3D. Ustaw pomieszanie i rozwiązanie, odtwarzaj krok po kroku, ukrywaj kolory lub ścianki do ćwiczeń zapamiętywania."
+    "rubiksCubeDescription": "Interaktywna Kostka Rubika 3D. Ustaw pomieszanie i rozwiązanie, odtwarzaj krok po kroku, ukrywaj kolory lub ścianki do ćwiczeń zapamiętywania.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Wykresy postępów w układaniu kostki Rubika",
+    "cubeAnalyzerDescription": "Upuść swój eksport z csTimer i uzyskaj wykresy postępów: trendy Ao5/Ao12/Ao100, historia PB, kamienie milowe, dzienny wolumen i krzywa uczenia się (potęgowa). Działa w całości w Twojej przeglądarce."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "Kostka Rubika 3D",
         "description": "Przeglądaj krok po kroku pomieszania i rozwiązania na interaktywnej kostce 3D. Tryb nauki ukrywa kolory i ścianki do ćwiczenia algorytmów.",
         "cta": "Otwórz kostkę →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Upuść swój eksport z csTimer i zobacz swoje postępy: średnie kroczące, historia PB, kamienie milowe i krzywa uczenia się (potęgowa). Nic nie opuszcza Twojej przeglądarki.",
+        "cta": "Analizuj moje ułożenia →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Czytaj więcej"
+    },
+    "analyzerCard": {
+      "eyebrow": "Narzędzie",
+      "title": "csTimer Analyzer",
+      "desc": "Wyeksportuj swoje sesje z csTimer i zobacz wykresy swoich postępów.",
+      "cta": "Analizuj moje ułożenia"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Narzędzie",
+    "title": "csTimer Analyzer",
+    "intro": "Wyeksportuj swoje sesje z csTimer i upuść plik tutaj, aby zobaczyć, jak naprawdę robisz postępy: średnie kroczące, historia PB, kamienie milowe, dzienny wolumen i krzywa uczenia się (potęgowa). Wszystko działa w Twojej przeglądarce — nic nie jest przesyłane na serwer.",
+    "howTo": {
+      "title": "Jak wyeksportować dane z csTimer",
+      "step1": "Otwórz cstimer.net i kliknij ikonę koła zębatego w lewym górnym rogu.",
+      "step2": "Przewiń do Import / Export i wybierz \"Export to file\".",
+      "step3": "Upuść pobrany plik poniżej."
+    },
+    "drop": {
+      "label": "Upuść tutaj swój eksport z csTimer lub kliknij, aby wybrać plik",
+      "loadSample": "Lub załaduj moje własne dane jako przykład",
+      "loading": "Ładowanie…",
+      "loaded": "Załadowano {name}",
+      "sample": "Przykładowe dane: moja droga z metodą Roux, maj–paź 2026"
+    },
+    "errors": {
+      "notJson": "To nie wygląda na eksport z csTimer (plik nie jest poprawnym plikiem JSON).",
+      "noSessions": "W tym pliku nie znaleziono żadnych sesji z ułożeniami.",
+      "generic": "Nie udało się odczytać pliku. Spróbuj ponownie."
+    },
+    "session": {
+      "label": "Sesja",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} ułożeń · {days} dni ćwiczeń"
+    },
+    "stats": {
+      "total": "Ułożenia",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Najlepszy wynik (single)",
+      "bestSub": "Pojedynczy PB",
+      "mean": "Średnia",
+      "meanSub": "Mediana {median}",
+      "stdev": "Odchylenie std.",
+      "stdevSub": "Spójność — im niższa, tym stabilniej",
+      "bestAo5": "Najlepsza Ao5",
+      "bestAo12": "Najlepsza Ao12",
+      "bestAo50": "Najlepsza Ao50",
+      "bestAo100": "Najlepsza Ao100",
+      "currentSub": "Bieżąca {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Pojedyncze ułożenia",
+        "desc": "Każde ułożenie w kolejności. Wyróżnione punkty to nowe rekordy życiowe."
+      },
+      "ao": {
+        "title": "Średnie kroczące (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Trend twoich ostatnich ułożeń — to prawdziwa miara postępu.",
+        "linear": "Liniowa",
+        "log": "Logarytmiczna"
+      },
+      "hist": {
+        "title": "Rozkład czasów",
+        "desc": "Jak rozkładają się twoje czasy ułożeń."
+      },
+      "daily": {
+        "title": "Dzienna liczba ułożeń",
+        "desc": "Liczba ułożeń na dzień treningowy."
+      },
+      "pb": {
+        "title": "Historia rekordów życiowych",
+        "desc": "Najlepszy pojedynczy wynik / Ao5 / Ao12 / Ao100 w czasie, z zaznaczonymi kolejnymi rekordami."
+      },
+      "dailyAvg": {
+        "title": "Średnia dzienna",
+        "desc": "Średni czas ułożenia na dzień — pokazuje dobre i złe dni."
+      },
+      "hourly": {
+        "title": "Pora dnia",
+        "desc": "Kiedy trenujesz, według godziny lokalnej."
+      },
+      "speedup": {
+        "title": "Przyspieszenie względem pierwszego dnia (log₂)",
+        "desc": "Ile razy szybciej układasz danego dnia w porównaniu do pierwszego. +1 = dwa razy szybciej, +2 = cztery razy, +3 = osiem razy. Każdy krok to taka sama skala poprawy."
+      },
+      "powerLaw": {
+        "title": "Umiejętności a skumulowany trening (prawo potęgowe)",
+        "desc": "Pionowo: −ln(średnia dzienna w sekundach). Poziomo: skumulowane ułożenia, skala logarytmiczna. Prawo potęgowe treningu przewiduje linię prostą — powyżej trendu to przełom, poniżej to stagnacja."
+      }
+    },
+    "axis": {
+      "solveIndex": "Rozwiąż #",
+      "seconds": "Czas (s)",
+      "avgSeconds": "Średnia (s)",
+      "avgSecondsLog": "Średnia (s, log)",
+      "count": "Rozwiązania",
+      "bucket": "Zakres czasu",
+      "log2": "log₂(dzień 1 ÷ dzień)",
+      "cumulative": "Skumulowane rozwiązania (log)",
+      "skill": "−ln(sekundy)"
+    },
+    "series": {
+      "single": "Pojedynczy (s)",
+      "pb": "Nowy PB",
+      "count": "Rozwiązania",
+      "dailyAvg": "Średnia dzienna (s)",
+      "speedup": "log₂ przyspieszenia",
+      "skill": "Dzienny wskaźnik umiejętności",
+      "trend": "Trend potęgowy",
+      "pbSingle": "PB pojedynczy"
+    },
+    "tooltip": {
+      "noData": "Brak danych",
+      "speedup": "{v} podwojenia ({mult}× szybciej)",
+      "baseline": "Średnia dnia {avg} · średnia pierwszego dnia {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} rozwiązań do tej pory · średnia dnia {avg}",
+      "skill": "Wskaźnik umiejętności {v}"
+    },
+    "powerLaw": {
+      "slope": "Nachylenie b",
+      "halving": "Podwojenie praktyki → czas spada o",
+      "reading": "Czytanie",
+      "band": {
+        "regressing": "Regresja (ujemne nachylenie)",
+        "plateau": "Bardzo wolno — plateau lub wąskie gardło",
+        "steady": "Stałe uczenie się na wysokim poziomie",
+        "healthy": "Zdrowe tempo uczenia się (typowe dla średniozaawansowanych)",
+        "fast": "Szybka poprawa",
+        "veryFast": "Bardzo szybko (wczesny etap lub ulepszenie metody)",
+        "none": "Brak wystarczających danych"
+      }
+    },
+    "milestones": {
+      "title": "Kamienie milowe",
+      "desc": "Pierwszy raz, gdy każda seria spadła poniżej progu, oraz po ilu dniach to nastąpiło.",
+      "threshold": "Poniżej",
+      "single": "Pojedynczy",
+      "never": "—",
+      "dayN": "dzień {n}"
+    },
+    "recent": {
+      "title": "Ostatnie 20 ułożeń",
+      "desc": "Twoje najnowsze ułożenia w tej sesji.",
+      "time": "Kiedy",
+      "solve": "Czas",
+      "scramble": "Scramble"
+    },
+    "links": {
+      "cube": "Otwórz kostkę 3D →"
+    },
+    "footer": "Twoje dane nigdy nie opuszczają przeglądarki. Stworzono równolegle z serią „ułóż kostkę bez zapamiętywania”."
   }
 }

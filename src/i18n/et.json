@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Tasuta e-raamatute tõlkija — EPUB / PDF / AI / 40 keelt",
     "ebookTranslatorDescription": "Tasuta AI e-raamatute tõlkija, mis töötab täielikult teie brauseris. Tõlkige EPUB- ja PDF-faile 40+ keelde kakskeelse kõrvuti väljundiga. Kasutage oma API võtit.",
     "rubiksCubeTitle": "3D Rubiku kuubik — Philo Li",
-    "rubiksCubeDescription": "Interaktiivne 3D Rubiku kuubik. Määra segamine ja lahendus, mängi samm-sammult, peida värve või külgi meeldejätmise harjutamiseks."
+    "rubiksCubeDescription": "Interaktiivne 3D Rubiku kuubik. Määra segamine ja lahendus, mängi samm-sammult, peida värve või külgi meeldejätmise harjutamiseks.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Rubiku kuubiku arengugraafikud",
+    "cubeAnalyzerDescription": "Lohista oma csTimeri ekspordifail ja vaata arengugraafikuid: Ao5/Ao12/Ao100 trendid, PB ajalugu, verstapostid, päevane maht ja astmefunktsioonil põhinev õppimiskõver. Töötab täielikult sinu brauseris."
   },
   "nav": {
     "blog": "Blogi",
@@ -137,6 +139,11 @@
         "name": "3D Rubiku kuubik",
         "description": "Jälgi segamisi ja lahendusi interaktiivsel 3D-kuubikul. Õpperežiim peidab värvid ja tahud algoritmide harjutamiseks.",
         "cta": "Ava kuubik →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Lohista oma csTimeri ekspordifail ja vaata oma arengut: libisevad keskmised, PB ajalugu, verstapostid ja astmefunktsioonil põhinev õppimiskõver. Midagi ei lahku sinu brauserist.",
+        "cta": "Analüüsi minu lahendusi →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blogi",
       "cta": "Loe edasi"
+    },
+    "analyzerCard": {
+      "eyebrow": "Tööriist",
+      "title": "csTimer Analyzer",
+      "desc": "Ekspordi oma csTimeri sessioonid ja vaata oma arengugraafikuid.",
+      "cta": "Analüüsi minu lahendusi"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Tööriist",
+    "title": "csTimer Analyzer",
+    "intro": "Ekspordi oma sessioonid csTimerist ja lohista fail siia, et näha, kuidas sa tegelikult arened: libisevad keskmised, PB ajalugu, verstapostid, päevane maht ja astmefunktsioonil põhinev õppimiskõver. Kõik töötab sinu brauseris — midagi ei laadita üles.",
+    "howTo": {
+      "title": "Kuidas csTimerist eksportida",
+      "step1": "Ava cstimer.net ja klõpsa vasakus ülanurgas hammasratta ikoonil.",
+      "step2": "Keri jaotiseni Import / Export ja vali \"Export to file\".",
+      "step3": "Lohista allalaaditud fail allapoole."
+    },
+    "drop": {
+      "label": "Lohista oma csTimeri ekspordifail siia või klõpsa faili valimiseks",
+      "loadSample": "Või laadi minu enda andmed näidisena",
+      "loading": "Laadimine…",
+      "loaded": "Laaditud {name}",
+      "sample": "Näidisandmed: minu Roux teekond, mai–okt 2026"
+    },
+    "errors": {
+      "notJson": "See ei paista olevat csTimeri ekspordifail (see ei ole kehtiv JSON).",
+      "noSessions": "Sellest failist ei leitud ühtegi lahendustega sessiooni.",
+      "generic": "Faili lugemine ebaõnnestus. Palun proovi uuesti."
+    },
+    "session": {
+      "label": "Sessioon",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} lahendust · {days} harjutuspäeva"
+    },
+    "stats": {
+      "total": "Lahendused",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Parim üksiklahendus",
+      "bestSub": "Üksik PB",
+      "mean": "Keskmine",
+      "meanSub": "Mediaan {median}",
+      "stdev": "Standardhälve",
+      "stdevSub": "Järjepidevus — madalam on stabiilsem",
+      "bestAo5": "Parim Ao5",
+      "bestAo12": "Parim Ao12",
+      "bestAo50": "Parim Ao50",
+      "bestAo100": "Parim Ao100",
+      "currentSub": "Praegune {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Üksikud lahendused",
+        "desc": "Iga lahendus järjekorras. Esiletõstetud punktid on uued isiklikud rekordid."
+      },
+      "ao": {
+        "title": "Libisevad keskmised (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Sinu hiljutiste lahenduste trend — see on tõeline edusammude mõõdupuu.",
+        "linear": "Lineaarne",
+        "log": "Logaritmiline"
+      },
+      "hist": {
+        "title": "Aja jaotus",
+        "desc": "Kuidas sinu lahendusajad jaotuvad."
+      },
+      "daily": {
+        "title": "Päevane maht",
+        "desc": "Lahendusi harjutuspäeva kohta."
+      },
+      "pb": {
+        "title": "Isiklike rekordite ajalugu",
+        "desc": "Parim üksik / Ao5 / Ao12 / Ao100 ajas, liikudes iga uue rekordiga allapoole."
+      },
+      "dailyAvg": {
+        "title": "Päevane keskmine",
+        "desc": "Keskmine lahendusaeg päevas — näitab häid ja halbu päevi."
+      },
+      "hourly": {
+        "title": "Kellaaeg",
+        "desc": "Millal sa harjutad, kohaliku tunni järgi."
+      },
+      "speedup": {
+        "title": "Kiirenemine võrreldes esimese päevaga (log₂)",
+        "desc": "Mitu korda kiirem on iga päev võrreldes sinu esimese päevaga. +1 = kaks korda kiirem, +2 = neli korda, +3 = kaheksa korda. Iga samm on sama suur areng."
+      },
+      "powerLaw": {
+        "title": "Oskused vs. kumulatiivne harjutamine (astmeseadus)",
+        "desc": "Vertikaalselt: −ln(päevane keskmine sekundites). Horisontaalselt: kumulatiivsed lahendused, logaritmiline skaala. Harjutamise astmeseadus ennustab sirgjoont — trendist kõrgemal on läbimurre, madalamal paigalseis."
+      }
+    },
+    "axis": {
+      "solveIndex": "Lahenda #",
+      "seconds": "Aeg (s)",
+      "avgSeconds": "Keskmine (s)",
+      "avgSecondsLog": "Keskmine (s, log)",
+      "count": "Lahendused",
+      "bucket": "Ajavahemik",
+      "log2": "log₂(1. päev ÷ päev)",
+      "cumulative": "Kumulatiivsed lahendused (log)",
+      "skill": "−ln(sekundid)"
+    },
+    "series": {
+      "single": "Üksik (s)",
+      "pb": "Uus isiklik rekord",
+      "count": "Lahendused",
+      "dailyAvg": "Päeva keskmine (s)",
+      "speedup": "log₂ kiirendus",
+      "skill": "Päeva oskusindeks",
+      "trend": "Astmefunktsiooni trend",
+      "pbSingle": "Isiklik rekord (üksik)"
+    },
+    "tooltip": {
+      "noData": "Andmed puuduvad",
+      "speedup": "{v} kahekordistumist ({mult}× kiiremini)",
+      "baseline": "Päeva keskmine {avg} · esimese päeva keskmine {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} lahendust seni · päeva keskmine {avg}",
+      "skill": "Oskusindeks {v}"
+    },
+    "powerLaw": {
+      "slope": "Tõus b",
+      "halving": "Harjutamise kahekordistamine → aeg väheneb võrra",
+      "reading": "Lugemine",
+      "band": {
+        "regressing": "Taandareng (negatiivne tõus)",
+        "plateau": "Väga aeglane — platoo või kitsaskoht",
+        "steady": "Stabiilne õppimine kõrgel tasemel",
+        "healthy": "Tervislik õppimistempo (tüüpiline kesktase)",
+        "fast": "Kiire paranemine",
+        "veryFast": "Väga kiire (algusaeg või meetodi täiendus)",
+        "none": "Pole piisavalt andmeid"
+      }
+    },
+    "milestones": {
+      "title": "Teetähised",
+      "desc": "Esimene kord, kui iga seeria langes alla piirmäära, ja mitmes päev see oli.",
+      "threshold": "Alla",
+      "single": "Üksik",
+      "never": "—",
+      "dayN": "päev {n}"
+    },
+    "recent": {
+      "title": "Viimased 20 lahendust",
+      "desc": "Sinu viimased lahendused sellel sessioonil.",
+      "time": "Millal",
+      "solve": "Aeg",
+      "scramble": "Segamine"
+    },
+    "links": {
+      "cube": "Ava 3D-kuubik →"
+    },
+    "footer": "Sinu andmed ei lahku kunagi brauserist. Ehitatud koos „lahenda kuubik ilma pähe õppimata“ seeriaga."
   }
 }

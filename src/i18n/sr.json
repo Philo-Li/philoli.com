@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Besplatni prevodilac e-knjiga — EPUB / PDF / AI / 40 jezika",
     "ebookTranslatorDescription": "Besplatni AI prevodilac e-knjiga koji potpuno radi u vašem pregledaču. Prevedite EPUB i PDF datoteke na 40+ jezika sa dvojezičnim izlazom jedan pored drugog. Koristite svoj API ključ.",
     "rubiksCubeTitle": "3D Rubikova kocka — Philo Li",
-    "rubiksCubeDescription": "Interaktivna 3D Rubikova kocka. Podesite mešanje i rešenje, igrajte korak po korak, sakrijte boje ili strane za vežbe memorisanja."
+    "rubiksCubeDescription": "Interaktivna 3D Rubikova kocka. Podesite mešanje i rešenje, igrajte korak po korak, sakrijte boje ili strane za vežbe memorisanja.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Grafikoni napretka u slaganju Rubikove kocke",
+    "cubeAnalyzerDescription": "Ubacite svoj csTimer export i dobijte grafikone napretka: trendovi Ao5/Ao12/Ao100, istorija PB-a, prekretnice, dnevni obim i kriva učenja po zakonu snage. Radi u potpunosti u vašem pretraživaču."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "3D Rubikova kocka",
         "description": "Prolazite kroz nasumična mešanja i rešenja na interaktivnoj 3D kocki. Režim učenja sakriva boje i strane za vežbanje algoritama.",
         "cta": "Otvori kocku →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Ubacite svoj csTimer export i pogledajte svoj napredak: pokretni proseci, istorija PB-a, prekretnice i kriva učenja po zakonu snage. Ništa ne napušta vaš pretraživač.",
+        "cta": "Analiziraj moje slaganja →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Pročitaj više"
+    },
+    "analyzerCard": {
+      "eyebrow": "Alat",
+      "title": "csTimer Analyzer",
+      "desc": "Izvezite svoje csTimer sesije i pogledajte grafikone svog napretka.",
+      "cta": "Analiziraj moje slaganja"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Alat",
+    "title": "csTimer Analyzer",
+    "intro": "Izvezite svoje sesije iz csTimer-a i ubacite datoteku ovde da vidite kako zaista napredujete: pokretni proseci, istorija PB-a, prekretnice, dnevni obim i kriva učenja po zakonu snage. Sve radi u vašem pretraživaču — ništa se ne otprema.",
+    "howTo": {
+      "title": "Kako izvesti podatke iz csTimer-a",
+      "step1": "Otvorite cstimer.net i kliknite na ikonicu zupčanika u gornjem levom uglu.",
+      "step2": "Skrolujte do Import / Export i izaberite \"Export to file\".",
+      "step3": "Ubacite preuzetu datoteku ispod."
+    },
+    "drop": {
+      "label": "Ubacite svoj csTimer export ovde, ili kliknite da izaberete datoteku",
+      "loadSample": "Ili učitaj moje podatke kao primer",
+      "loading": "Učitavanje…",
+      "loaded": "Učitano {name}",
+      "sample": "Primer podataka: moje Roux putovanje, maj–okt 2026."
+    },
+    "errors": {
+      "notJson": "To ne izgleda kao csTimer export (nije validan JSON).",
+      "noSessions": "U toj datoteci nisu pronađene sesije sa slaganjima.",
+      "generic": "Nije bilo moguće pročitati tu datoteku. Molimo pokušajte ponovo."
+    },
+    "session": {
+      "label": "Sesija",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} slaganja · {days} dana vežbanja"
+    },
+    "stats": {
+      "total": "Slaganja",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Najbolji pojedinačni rezultat",
+      "bestSub": "Najbolji pojedinačni rezultat",
+      "mean": "Srednja vrednost",
+      "meanSub": "Medijana {median}",
+      "stdev": "Standardna devijacija",
+      "stdevSub": "Doslednost — manje je stabilnije",
+      "bestAo5": "Najbolji Ao5",
+      "bestAo12": "Najbolji Ao12",
+      "bestAo50": "Najbolji Ao50",
+      "bestAo100": "Najbolji Ao100",
+      "currentSub": "Trenutno {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Pojedinačna rešavanja",
+        "desc": "Svako rešavanje po redu. Istaknute tačke su novi lični rekordi."
+      },
+      "ao": {
+        "title": "Klizni proseci (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Trend vaših nedavnih rešavanja — ovo je pravi pokazatelj napretka.",
+        "linear": "Linearno",
+        "log": "Logaritamsko"
+      },
+      "hist": {
+        "title": "Raspodela vremena",
+        "desc": "Kako su raspoređena vaša vremena rešavanja."
+      },
+      "daily": {
+        "title": "Dnevni obim",
+        "desc": "Broj rešavanja po danu vežbanja."
+      },
+      "pb": {
+        "title": "Istorija ličnih rekorda",
+        "desc": "Najbolji pojedinačni rezultat / Ao5 / Ao12 / Ao100 kroz vreme, opadajući sa svakim novim rekordom."
+      },
+      "dailyAvg": {
+        "title": "Dnevni prosek",
+        "desc": "Prosečno vreme rešavanja po danu — prikazuje dobre i loše dane."
+      },
+      "hourly": {
+        "title": "Doba dana",
+        "desc": "Kada vežbate, po lokalnom satu."
+      },
+      "speedup": {
+        "title": "Ubrzanje u odnosu na prvi dan (log₂)",
+        "desc": "Koliko je svaki dan brži od vašeg prvog dana. +1 = duplo brže, +2 = četiri puta, +3 = osam puta. Svaki korak predstavlja istu veličinu napretka."
+      },
+      "powerLaw": {
+        "title": "Veština u odnosu na kumulativno vežbanje (zakon stepena)",
+        "desc": "Vertikalno: −ln(dnevni prosek u sekundama). Horizontalno: kumulativna rešavanja, logaritamska skala. Zakon vežbanja predviđa pravu liniju — iznad trenda je proboj, ispod njega je stagnacija."
+      }
+    },
+    "axis": {
+      "solveIndex": "Rešavanje #",
+      "seconds": "Vreme (s)",
+      "avgSeconds": "Prosek (s)",
+      "avgSecondsLog": "Prosek (s, log)",
+      "count": "Rešavanja",
+      "bucket": "Vremenski opseg",
+      "log2": "log₂(dan 1 ÷ dan)",
+      "cumulative": "Kumulativna rešavanja (log)",
+      "skill": "−ln(sekundi)"
+    },
+    "series": {
+      "single": "Pojedinačno (s)",
+      "pb": "Novi PB",
+      "count": "Rešavanja",
+      "dailyAvg": "Dnevni prosek (s)",
+      "speedup": "log₂ ubrzanje",
+      "skill": "Dnevni indeks veštine",
+      "trend": "Trend zakona stepena",
+      "pbSingle": "PB pojedinačno"
+    },
+    "tooltip": {
+      "noData": "Nema podataka",
+      "speedup": "{v} udvostručavanja ({mult}× brže)",
+      "baseline": "Dnevni prosek {avg} · prosek prvog dana {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} rešavanja do sada · dnevni prosek {avg}",
+      "skill": "Indeks veštine {v}"
+    },
+    "powerLaw": {
+      "slope": "Nagib b",
+      "halving": "Udvostruči vežbanje → vreme opada za",
+      "reading": "Čitanje",
+      "band": {
+        "regressing": "Nazadovanje (negativan nagib)",
+        "plateau": "Veoma sporo — plato ili usko grlo",
+        "steady": "Stabilno učenje na visokom nivou",
+        "healthy": "Zdrava stopa učenja (tipično za srednji nivo)",
+        "fast": "Brzo poboljšanje",
+        "veryFast": "Veoma brzo (rani dani ili unapređenje metode)",
+        "none": "Nedovoljno podataka"
+      }
+    },
+    "milestones": {
+      "title": "Prekretnice",
+      "desc": "Prvi put kada je svaka serija pala ispod praga, i koliko dana je za to bilo potrebno.",
+      "threshold": "Ispod",
+      "single": "Pojedinačno",
+      "never": "—",
+      "dayN": "dan {n}"
+    },
+    "recent": {
+      "title": "Poslednjih 20 slaganja",
+      "desc": "Vaša najnovija slaganja u ovoj sesiji.",
+      "time": "Kada",
+      "solve": "Vreme",
+      "scramble": "Mešanje"
+    },
+    "links": {
+      "cube": "Otvori 3D kocku →"
+    },
+    "footer": "Vaši podaci nikada ne napuštaju vaš pretraživač. Napravljeno uz seriju „složite kocku bez pamćenja”."
   }
 }

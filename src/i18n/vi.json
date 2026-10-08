@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Trình dịch ebook miễn phí — EPUB / PDF / AI / 40 ngôn ngữ",
     "ebookTranslatorDescription": "Trình dịch ebook AI miễn phí chạy hoàn toàn trên trình duyệt. Dịch tệp EPUB và PDF sang hơn 40 ngôn ngữ với đầu ra song ngữ đối chiếu. Sử dụng API key của bạn.",
     "rubiksCubeTitle": "Khối Rubik 3D — Philo Li",
-    "rubiksCubeDescription": "Khối Rubik 3D tương tác. Thiết lập xáo trộn và lời giải, chơi từng bước, ẩn màu hoặc các mặt để luyện trí nhớ."
+    "rubiksCubeDescription": "Khối Rubik 3D tương tác. Thiết lập xáo trộn và lời giải, chơi từng bước, ẩn màu hoặc các mặt để luyện trí nhớ.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Biểu đồ tiến độ Rubik",
+    "cubeAnalyzerDescription": "Thả tệp xuất từ csTimer của bạn vào đây để xem biểu đồ tiến độ: xu hướng Ao5/Ao12/Ao100, lịch sử PB, các cột mốc, khối lượng luyện tập hàng ngày và đường cong học tập theo luật lũy thừa. Chạy hoàn toàn trên trình duyệt của bạn."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "Khối Rubik 3D",
         "description": "Theo dõi từng bước xáo trộn và giải đố trên khối 3D tương tác. Chế độ học tập ẩn màu sắc và các mặt để luyện tập thuật toán.",
         "cta": "Mở khối Rubik →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Thả tệp xuất từ csTimer của bạn vào đây để xem tiến độ: các mức trung bình trượt, lịch sử PB, các cột mốc và đường cong học tập theo luật lũy thừa. Không có dữ liệu nào rời khỏi trình duyệt của bạn.",
+        "cta": "Phân tích các lần giải của tôi →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Đọc thêm"
+    },
+    "analyzerCard": {
+      "eyebrow": "Công cụ",
+      "title": "csTimer Analyzer",
+      "desc": "Xuất các phiên csTimer của bạn và xem biểu đồ tiến độ.",
+      "cta": "Phân tích các lần giải của tôi"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Công cụ",
+    "title": "csTimer Analyzer",
+    "intro": "Xuất các phiên của bạn từ csTimer và thả tệp vào đây để xem bạn thực sự tiến bộ như thế nào: các mức trung bình trượt, lịch sử PB, các cột mốc, khối lượng luyện tập hàng ngày và đường cong học tập theo luật lũy thừa. Mọi thứ chạy trên trình duyệt của bạn — không có dữ liệu nào được tải lên.",
+    "howTo": {
+      "title": "Cách xuất dữ liệu từ csTimer",
+      "step1": "Mở cstimer.net và nhấp vào biểu tượng bánh răng ở góc trên bên trái.",
+      "step2": "Cuộn đến phần Import / Export và chọn \"Export to file\".",
+      "step3": "Thả tệp đã tải xuống vào bên dưới."
+    },
+    "drop": {
+      "label": "Thả tệp xuất csTimer của bạn vào đây, hoặc nhấp để chọn tệp",
+      "loadSample": "Hoặc tải dữ liệu của riêng tôi làm mẫu",
+      "loading": "Đang tải…",
+      "loaded": "Đã tải {name}",
+      "sample": "Dữ liệu mẫu: hành trình Roux của tôi, tháng 5–tháng 10 năm 2026"
+    },
+    "errors": {
+      "notJson": "Tệp này không giống tệp xuất từ csTimer (không phải JSON hợp lệ).",
+      "noSessions": "Không tìm thấy phiên nào có dữ liệu giải trong tệp đó.",
+      "generic": "Không thể đọc tệp đó. Vui lòng thử lại."
+    },
+    "session": {
+      "label": "Phiên",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} lần giải · {days} ngày luyện tập"
+    },
+    "stats": {
+      "total": "Các lần giải",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Thành tích tốt nhất (Single)",
+      "bestSub": "PB đơn lẻ",
+      "mean": "Trung bình",
+      "meanSub": "Trung vị {median}",
+      "stdev": "Độ lệch chuẩn",
+      "stdevSub": "Độ ổn định — thấp hơn nghĩa là ổn định hơn",
+      "bestAo5": "Ao5 tốt nhất",
+      "bestAo12": "Ao12 tốt nhất",
+      "bestAo50": "Ao50 tốt nhất",
+      "bestAo100": "Ao100 tốt nhất",
+      "currentSub": "Hiện tại {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Các lần giải đơn lẻ",
+        "desc": "Mọi lần giải theo thứ tự. Các điểm được đánh dấu là kỷ lục cá nhân mới."
+      },
+      "ao": {
+        "title": "Trung bình trượt (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Xu hướng các lần giải gần đây của bạn — đây mới là thước đo thực sự của sự tiến bộ.",
+        "linear": "Tuyến tính",
+        "log": "Logarit"
+      },
+      "hist": {
+        "title": "Phân phối thời gian",
+        "desc": "Cách thời gian giải của bạn được phân bổ."
+      },
+      "daily": {
+        "title": "Khối lượng hàng ngày",
+        "desc": "Số lần giải mỗi ngày luyện tập."
+      },
+      "pb": {
+        "title": "Lịch sử kỷ lục cá nhân",
+        "desc": "Kỷ lục đơn lẻ / Ao5 / Ao12 / Ao100 tốt nhất theo thời gian, giảm dần với mỗi kỷ lục mới."
+      },
+      "dailyAvg": {
+        "title": "Trung bình hàng ngày",
+        "desc": "Thời gian giải trung bình mỗi ngày — cho thấy những ngày tốt và ngày xấu."
+      },
+      "hourly": {
+        "title": "Thời gian trong ngày",
+        "desc": "Thời điểm bạn luyện tập, theo giờ địa phương."
+      },
+      "speedup": {
+        "title": "Tốc độ so với ngày đầu tiên (log₂)",
+        "desc": "Mỗi ngày nhanh hơn ngày đầu tiên của bạn bao nhiêu lần. +1 = nhanh gấp đôi, +2 = gấp bốn, +3 = gấp tám. Mỗi bước là một mức cải thiện tương đương nhau."
+      },
+      "powerLaw": {
+        "title": "Kỹ năng so với luyện tập tích lũy (định luật lũy thừa)",
+        "desc": "Trục dọc: −ln(giây trung bình hàng ngày). Trục ngang: tổng số lần giải, thang đo logarit. Định luật Lũy thừa trong Luyện tập dự đoán một đường thẳng — nằm trên xu hướng là một bước đột phá, nằm dưới là giai đoạn chững lại."
+      }
+    },
+    "axis": {
+      "solveIndex": "Giải #",
+      "seconds": "Thời gian (giây)",
+      "avgSeconds": "Trung bình (giây)",
+      "avgSecondsLog": "Trung bình (giây, log)",
+      "count": "Số lần giải",
+      "bucket": "Khoảng thời gian",
+      "log2": "log₂(ngày 1 ÷ ngày)",
+      "cumulative": "Tổng số lần giải (log)",
+      "skill": "−ln(giây)"
+    },
+    "series": {
+      "single": "Đơn lẻ (giây)",
+      "pb": "Kỷ lục cá nhân mới",
+      "count": "Số lần giải",
+      "dailyAvg": "Trung bình hàng ngày (giây)",
+      "speedup": "log₂ tốc độ tăng",
+      "skill": "Chỉ số kỹ năng hàng ngày",
+      "trend": "Xu hướng lũy thừa",
+      "pbSingle": "Kỷ lục cá nhân đơn lẻ"
+    },
+    "tooltip": {
+      "noData": "Không có dữ liệu",
+      "speedup": "{v} lần gấp đôi ({mult}× nhanh hơn)",
+      "baseline": "Trung bình ngày {avg} · trung bình ngày đầu {base}",
+      "trend": "Xu hướng: {v}",
+      "cumulative": "{n} lần giải cho đến nay · trung bình ngày {avg}",
+      "skill": "Chỉ số kỹ năng {v}"
+    },
+    "powerLaw": {
+      "slope": "Độ dốc b",
+      "halving": "Gấp đôi thời gian luyện tập → thời gian giảm đi",
+      "reading": "Đang đọc",
+      "band": {
+        "regressing": "Đang thoái lui (độ dốc âm)",
+        "plateau": "Rất chậm — chững lại hoặc bị tắc nghẽn",
+        "steady": "Học tập ổn định ở trình độ cao",
+        "healthy": "Tốc độ học tập lành mạnh (trình độ trung bình điển hình)",
+        "fast": "Cải thiện nhanh chóng",
+        "veryFast": "Rất nhanh (giai đoạn đầu hoặc nâng cấp phương pháp)",
+        "none": "Không đủ dữ liệu"
+      }
+    },
+    "milestones": {
+      "title": "Các cột mốc",
+      "desc": "Lần đầu tiên mỗi chuỗi giảm xuống dưới ngưỡng, và mất bao nhiêu ngày để đạt được điều đó.",
+      "threshold": "Dưới",
+      "single": "Đơn lẻ",
+      "never": "—",
+      "dayN": "ngày {n}"
+    },
+    "recent": {
+      "title": "20 lần giải gần nhất",
+      "desc": "Các lần giải gần đây nhất của bạn trong phiên này.",
+      "time": "Khi nào",
+      "solve": "Thời gian",
+      "scramble": "Xáo trộn"
+    },
+    "links": {
+      "cube": "Mở khối lập phương 3D →"
+    },
+    "footer": "Dữ liệu của bạn không bao giờ rời khỏi trình duyệt. Được xây dựng cùng với loạt bài “giải khối lập phương mà không cần ghi nhớ”."
   }
 }

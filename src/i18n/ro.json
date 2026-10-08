@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Traducător gratuit de ebook-uri — EPUB / PDF / IA / 40 limbi",
     "ebookTranslatorDescription": "Traducător gratuit de ebook-uri cu IA, care rulează complet în browserul tău. Tradu fișiere EPUB și PDF în peste 40 de limbi cu ieșire bilingvă alăturată. Folosește propria cheie API.",
     "rubiksCubeTitle": "Cub Rubik 3D — Philo Li",
-    "rubiksCubeDescription": "Cub Rubik 3D interactiv. Setează o amestecare și o soluție, parcurge pas cu pas, ascunde culori sau fețe pentru exerciții de memorare."
+    "rubiksCubeDescription": "Cub Rubik 3D interactiv. Setează o amestecare și o soluție, parcurge pas cu pas, ascunde culori sau fețe pentru exerciții de memorare.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Grafice de progres pentru Cubul Rubik",
+    "cubeAnalyzerDescription": "Încarcă exportul tău csTimer și obține grafice de progres: tendințe Ao5/Ao12/Ao100, istoricul PB, etape importante, volum zilnic și o curbă de învățare de tip legea puterii. Rulează în întregime în browserul tău."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "Cub Rubik 3D",
         "description": "Parcurge amestecările și soluțiile pe un cub 3D interactiv. Modul de învățare ascunde culorile și fețele pentru exersarea algoritmilor.",
         "cta": "Deschide cubul →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Încarcă exportul tău csTimer și vezi-ți progresul: medii mobile, istoricul PB, etape importante și o curbă de învățare de tip legea puterii. Nimic nu părăsește browserul tău.",
+        "cta": "Analizează-mi rezolvările →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Citește mai mult"
+    },
+    "analyzerCard": {
+      "eyebrow": "Instrument",
+      "title": "csTimer Analyzer",
+      "desc": "Exportă sesiunile tale csTimer și vezi graficele de progres.",
+      "cta": "Analizează-mi rezolvările"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Instrument",
+    "title": "csTimer Analyzer",
+    "intro": "Exportă sesiunile din csTimer și plasează fișierul aici pentru a vedea cum progresezi cu adevărat: medii mobile, istoricul PB, etape importante, volum zilnic și o curbă de învățare de tip legea puterii. Totul rulează în browserul tău — nimic nu este încărcat pe server.",
+    "howTo": {
+      "title": "Cum să exporți din csTimer",
+      "step1": "Deschide cstimer.net și dă click pe pictograma rotiță din colțul stânga-sus.",
+      "step2": "Derulează până la Import / Export și alege „Export to file”.",
+      "step3": "Plasează fișierul descărcat mai jos."
+    },
+    "drop": {
+      "label": "Plasează exportul tău csTimer aici sau dă click pentru a alege un fișier",
+      "loadSample": "Sau încarcă propriile mele date ca exemplu",
+      "loading": "Se încarcă…",
+      "loaded": "{name} încărcat",
+      "sample": "Date eșantion: călătoria mea Roux, mai–oct 2026"
+    },
+    "errors": {
+      "notJson": "Aceasta nu pare a fi un export csTimer (nu este un JSON valid).",
+      "noSessions": "Nu au fost găsite sesiuni cu rezolvări în acel fișier.",
+      "generic": "Nu s-a putut citi fișierul. Te rugăm să încerci din nou."
+    },
+    "session": {
+      "label": "Sesiune",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} rezolvări · {days} zile de practică"
+    },
+    "stats": {
+      "total": "Rezolvări",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Cel mai bun timp individual",
+      "bestSub": "Cel mai bun timp (PB)",
+      "mean": "Medie",
+      "meanSub": "Mediană {median}",
+      "stdev": "Deviație standard",
+      "stdevSub": "Consistență — o valoare mai mică înseamnă mai multă stabilitate",
+      "bestAo5": "Cel mai bun Ao5",
+      "bestAo12": "Cel mai bun Ao12",
+      "bestAo50": "Cel mai bun Ao50",
+      "bestAo100": "Cel mai bun Ao100",
+      "currentSub": "Curent {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Rezolvări individuale",
+        "desc": "Fiecare rezolvare în ordine. Punctele evidențiate sunt noi recorduri personale."
+      },
+      "ao": {
+        "title": "Medii mobile (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Evoluția rezolvărilor tale recente — aceasta este adevărata măsură a progresului.",
+        "linear": "Liniar",
+        "log": "Logaritmic"
+      },
+      "hist": {
+        "title": "Distribuția timpilor",
+        "desc": "Cum sunt repartizați timpii tăi de rezolvare."
+      },
+      "daily": {
+        "title": "Volum zilnic",
+        "desc": "Rezolvări per zi de practică."
+      },
+      "pb": {
+        "title": "Istoricul recordurilor personale",
+        "desc": "Cel mai bun timp individual / Ao5 / Ao12 / Ao100 în timp, scăzând cu fiecare nou record."
+      },
+      "dailyAvg": {
+        "title": "Media zilnică",
+        "desc": "Media timpului de rezolvare pe zi — arată zilele bune și pe cele rele."
+      },
+      "hourly": {
+        "title": "Ora din zi",
+        "desc": "Când exersezi, în funcție de ora locală."
+      },
+      "speedup": {
+        "title": "Accelerare față de prima zi (log₂)",
+        "desc": "De câte ori mai rapidă este fiecare zi față de prima. +1 = de două ori mai rapid, +2 = de patru ori, +3 = de opt ori. Fiecare pas reprezintă aceeași mărime a îmbunătățirii."
+      },
+      "powerLaw": {
+        "title": "Abilitate vs. practică cumulată (legea puterii)",
+        "desc": "Vertical: −ln(media zilnică în secunde). Orizontal: rezolvări cumulate, scară logaritmică. Legea puterii în practică prezice o linie dreaptă — deasupra trendului este un progres major, sub el un platou."
+      }
+    },
+    "axis": {
+      "solveIndex": "Rezolvă #",
+      "seconds": "Timp (s)",
+      "avgSeconds": "Medie (s)",
+      "avgSecondsLog": "Medie (s, log)",
+      "count": "Rezolvări",
+      "bucket": "Interval de timp",
+      "log2": "log₂(ziua 1 ÷ zi)",
+      "cumulative": "Rezolvări cumulate (log)",
+      "skill": "−ln(secunde)"
+    },
+    "series": {
+      "single": "Singur (s)",
+      "pb": "PB nou",
+      "count": "Rezolvări",
+      "dailyAvg": "Medie zilnică (s)",
+      "speedup": "log₂ accelerare",
+      "skill": "Indice de abilitate zilnic",
+      "trend": "Tendință legea puterii",
+      "pbSingle": "PB singur"
+    },
+    "tooltip": {
+      "noData": "Fără date",
+      "speedup": "{v} dublări ({mult}× mai rapid)",
+      "baseline": "Medie zi {avg} · medie prima zi {base}",
+      "trend": "Tendință: {v}",
+      "cumulative": "{n} rezolvări până acum · medie zi {avg}",
+      "skill": "Indice de abilitate {v}"
+    },
+    "powerLaw": {
+      "slope": "Pantă b",
+      "halving": "Dublează practica → timpul scade cu",
+      "reading": "Citire",
+      "band": {
+        "regressing": "Regresie (pantă negativă)",
+        "plateau": "Foarte lent — platou sau blocaj",
+        "steady": "Învățare constantă la un nivel ridicat",
+        "healthy": "Rată de învățare sănătoasă (intermediar tipic)",
+        "fast": "Îmbunătățire rapidă",
+        "veryFast": "Foarte rapid (începuturi sau o actualizare a metodei)",
+        "none": "Date insuficiente"
+      }
+    },
+    "milestones": {
+      "title": "Etape importante",
+      "desc": "Prima dată când fiecare serie a scăzut sub un prag și după câte zile s-a întâmplat acest lucru.",
+      "threshold": "Sub",
+      "single": "Singur",
+      "never": "—",
+      "dayN": "ziua {n}"
+    },
+    "recent": {
+      "title": "Ultimele 20 de rezolvări",
+      "desc": "Cele mai recente rezolvări ale tale din această sesiune.",
+      "time": "Când",
+      "solve": "Timp",
+      "scramble": "Amestecare"
+    },
+    "links": {
+      "cube": "Deschide cubul 3D →"
+    },
+    "footer": "Datele tale nu părăsesc niciodată browserul. Creat alături de seria „rezolvă cubul fără memorare”."
   }
 }

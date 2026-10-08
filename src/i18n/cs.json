@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Bezplatný překladač e-knih — EPUB / PDF / AI / 40 jazyků",
     "ebookTranslatorDescription": "Bezplatný překladač e-knih s AI, který běží kompletně ve vašem prohlížeči. Překládejte soubory EPUB a PDF do více než 40 jazyků s dvojjazyčným výstupem vedle sebe. Použijte vlastní API klíč.",
     "rubiksCubeTitle": "3D Rubikova kostka — Philo Li",
-    "rubiksCubeDescription": "Interaktivní 3D Rubikova kostka. Nastavte si zamíchání a řešení, hrajte krok za krokem, skryjte barvy nebo stěny pro nácvik paměti."
+    "rubiksCubeDescription": "Interaktivní 3D Rubikova kostka. Nastavte si zamíchání a řešení, hrajte krok za krokem, skryjte barvy nebo stěny pro nácvik paměti.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Grafy pokroku v Rubikově kostce",
+    "cubeAnalyzerDescription": "Vložte svůj export z csTimer a získejte grafy pokroku: trendy Ao5/Ao12/Ao100, historie PB, milníky, denní objem a mocninná křivka učení. Běží kompletně ve vašem prohlížeči."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "3D Rubikova kostka",
         "description": "Procházejte míchání a řešení na interaktivní 3D kostce. Výukový režim skrývá barvy a stěny pro nácvik algoritmů.",
         "cta": "Otevřít kostku →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Vložte svůj export z csTimer a podívejte se na svůj pokrok: klouzavé průměry, historie PB, milníky a mocninná křivka učení. Nic neopustí váš prohlížeč.",
+        "cta": "Analyzovat mé časy →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Číst dále"
+    },
+    "analyzerCard": {
+      "eyebrow": "Nástroj",
+      "title": "csTimer Analyzer",
+      "desc": "Exportujte své relace z csTimer a podívejte se na grafy svého pokroku.",
+      "cta": "Analyzovat mé časy"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Nástroj",
+    "title": "csTimer Analyzer",
+    "intro": "Exportujte své relace z csTimer a vložte soubor sem, abyste viděli, jak se skutečně zlepšujete: klouzavé průměry, historie PB, milníky, denní objem a mocninná křivka učení. Vše běží ve vašem prohlížeči — nic se nenahrává na server.",
+    "howTo": {
+      "title": "Jak exportovat z csTimer",
+      "step1": "Otevřete cstimer.net a klikněte na ikonu ozubeného kola v levém horním rohu.",
+      "step2": "Sjeďte dolů na Import / Export a zvolte „Export to file“.",
+      "step3": "Vložte stažený soubor níže."
+    },
+    "drop": {
+      "label": "Vložte svůj export z csTimer sem, nebo klikněte pro výběr souboru",
+      "loadSample": "Nebo načíst má vlastní data jako ukázku",
+      "loading": "Načítání…",
+      "loaded": "Načteno {name}",
+      "sample": "Ukázková data: má cesta s Roux, květen–říjen 2026"
+    },
+    "errors": {
+      "notJson": "To nevypadá jako export z csTimer (není to platný JSON).",
+      "noSessions": "V tomto souboru nebyly nalezeny žádné relace s časy.",
+      "generic": "Soubor se nepodařilo přečíst. Zkuste to prosím znovu."
+    },
+    "session": {
+      "label": "Relace",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} řešení · {days} dní tréninku"
+    },
+    "stats": {
+      "total": "Řešení",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Nejlepší jednotlivý čas",
+      "bestSub": "Nejlepší jednotlivý čas",
+      "mean": "Průměr",
+      "meanSub": "Medián {median}",
+      "stdev": "Směrodatná odchylka",
+      "stdevSub": "Konzistence — nižší hodnota znamená větší stabilitu",
+      "bestAo5": "Nejlepší Ao5",
+      "bestAo12": "Nejlepší Ao12",
+      "bestAo50": "Nejlepší Ao50",
+      "bestAo100": "Nejlepší Ao100",
+      "currentSub": "Aktuální {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Jednotlivé pokusy",
+        "desc": "Každý pokus v pořadí. Zvýrazněné body jsou nové osobní rekordy."
+      },
+      "ao": {
+        "title": "Klouzavé průměry (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Trend vašich nedávných pokusů — toto je skutečné měřítko pokroku.",
+        "linear": "Lineární",
+        "log": "Logaritmické"
+      },
+      "hist": {
+        "title": "Rozložení časů",
+        "desc": "Jak jsou vaše časy pokusů rozprostřeny."
+      },
+      "daily": {
+        "title": "Denní objem",
+        "desc": "Počet pokusů za tréninkový den."
+      },
+      "pb": {
+        "title": "Historie osobních rekordů",
+        "desc": "Nejlepší jednotlivý čas / Ao5 / Ao12 / Ao100 v čase, klesající s každým novým rekordem."
+      },
+      "dailyAvg": {
+        "title": "Denní průměr",
+        "desc": "Průměrný čas pokusu za den — ukazuje dobré i špatné dny."
+      },
+      "hourly": {
+        "title": "Denní doba",
+        "desc": "Kdy trénujete, podle místní hodiny."
+      },
+      "speedup": {
+        "title": "Zrychlení oproti prvnímu dni (log₂)",
+        "desc": "Kolikrát je každý den rychlejší než váš první den. +1 = dvakrát rychlejší, +2 = čtyřikrát, +3 = osmkrát. Každý krok představuje stejnou míru zlepšení."
+      },
+      "powerLaw": {
+        "title": "Dovednost vs. kumulativní trénink (mocninný zákon)",
+        "desc": "Svisle: −ln(průměrné sekundy za den). Vodorovně: kumulativní počet pokusů, logaritmické měřítko. Mocninný zákon tréninku předpovídá přímku — nad trendem je průlom, pod ním stagnace."
+      }
+    },
+    "axis": {
+      "solveIndex": "Vyřešit #",
+      "seconds": "Čas (s)",
+      "avgSeconds": "Průměr (s)",
+      "avgSecondsLog": "Průměr (s, log)",
+      "count": "Řešení",
+      "bucket": "Časový rozsah",
+      "log2": "log₂(1. den ÷ den)",
+      "cumulative": "Kumulativní řešení (log)",
+      "skill": "−ln(sekundy)"
+    },
+    "series": {
+      "single": "Jednotlivý čas (s)",
+      "pb": "Nový osobní rekord",
+      "count": "Řešení",
+      "dailyAvg": "Denní průměr (s)",
+      "speedup": "log₂ zrychlení",
+      "skill": "Index denních dovedností",
+      "trend": "Trend mocninného zákona",
+      "pbSingle": "Osobní rekord"
+    },
+    "tooltip": {
+      "noData": "Žádná data",
+      "speedup": "{v} zdvojení ({mult}× rychlejší)",
+      "baseline": "Denní průměr {avg} · průměr 1. dne {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} řešení celkem · denní průměr {avg}",
+      "skill": "Index dovedností {v}"
+    },
+    "powerLaw": {
+      "slope": "Sklon b",
+      "halving": "Zdvojnásobení tréninku → čas klesne o",
+      "reading": "Čtení",
+      "band": {
+        "regressing": "Regrese (záporný sklon)",
+        "plateau": "Velmi pomalé — stagnace nebo úzké hrdlo",
+        "steady": "Stabilní učení na vysoké úrovni",
+        "healthy": "Zdravé tempo učení (typické pro středně pokročilé)",
+        "fast": "Rychlé zlepšení",
+        "veryFast": "Velmi rychlé (počátky nebo vylepšení metody)",
+        "none": "Nedostatek dat"
+      }
+    },
+    "milestones": {
+      "title": "Milníky",
+      "desc": "První okamžik, kdy se každá série dostala pod hranici, a kolikátý to byl den.",
+      "threshold": "Pod",
+      "single": "Jednotlivé",
+      "never": "—",
+      "dayN": "den {n}"
+    },
+    "recent": {
+      "title": "Posledních 20 složení",
+      "desc": "Vaše nejnovější složení v této relaci.",
+      "time": "Kdy",
+      "solve": "Čas",
+      "scramble": "Zamíchání"
+    },
+    "links": {
+      "cube": "Otevřít 3D kostku →"
+    },
+    "footer": "Vaše data nikdy neopustí prohlížeč. Vytvořeno souběžně se sérií „jak složit kostku bez učení se nazpaměť“."
   }
 }

@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Ingyenes e-könyv fordító — EPUB / PDF / AI / 40 nyelv",
     "ebookTranslatorDescription": "Ingyenes AI e-könyv fordító, amely teljes egészében a böngészőben fut. Fordíts EPUB és PDF fájlokat 40+ nyelvre kétnyelvű egymás melletti kimenettel. Használd a saját API kulcsodat.",
     "rubiksCubeTitle": "3D Rubik-kocka — Philo Li",
-    "rubiksCubeDescription": "Interaktív 3D Rubik-kocka. Állíts be keverést és megoldást, játszd le lépésről lépésre, rejts el színeket vagy oldalakat a memorizáláshoz."
+    "rubiksCubeDescription": "Interaktív 3D Rubik-kocka. Állíts be keverést és megoldást, játszd le lépésről lépésre, rejts el színeket vagy oldalakat a memorizáláshoz.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Rubik-kocka fejlődési diagramok",
+    "cubeAnalyzerDescription": "Húzd be a csTimer exportfájlodat és kapj fejlődési diagramokat: Ao5/Ao12/Ao100 trendek, PB-történet, mérföldkövek, napi mennyiség és hatványfüggvény alapú tanulási görbe. Teljesen a böngésződben fut."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "3D Rubik-kocka",
         "description": "Kövesse végig a keveréseket és megoldásokat egy interaktív 3D kockán. A tanuló mód elrejti a színeket és oldalakat az algoritmusgyakorlatokhoz.",
         "cta": "Kocka megnyitása →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Húzd be a csTimer exportfájlodat és lásd a fejlődésedet: gördülő átlagok, PB-történet, mérföldkövek és hatványfüggvény alapú tanulási görbe. Semmi sem hagyja el a böngésződet.",
+        "cta": "Kirakások elemzése →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Tovább"
+    },
+    "analyzerCard": {
+      "eyebrow": "Eszköz",
+      "title": "csTimer Analyzer",
+      "desc": "Exportáld a csTimer munkameneteidet és lásd a fejlődési diagramjaidat.",
+      "cta": "Kirakások elemzése"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Eszköz",
+    "title": "csTimer Analyzer",
+    "intro": "Exportáld a munkameneteidet csTimerből és húzd be a fájlt ide, hogy lásd, hogyan fejlődsz valójában: gördülő átlagok, PB-történet, mérföldkövek, napi mennyiség és hatványfüggvény alapú tanulási görbe. Minden a böngésződben fut — semmi sem kerül feltöltésre.",
+    "howTo": {
+      "title": "Hogyan exportálj csTimerből",
+      "step1": "Nyisd meg a cstimer.net oldalt és kattints a fogaskerék ikonra a bal felső sarokban.",
+      "step2": "Görgess az Import / Export részhez és válaszd az \"Export to file\" lehetőséget.",
+      "step3": "Húzd be a letöltött fájlt alább."
+    },
+    "drop": {
+      "label": "Húzd ide a csTimer exportfájlodat, vagy kattints a fájl kiválasztásához",
+      "loadSample": "Vagy töltsd be a saját adataimat mintaként",
+      "loading": "Betöltés…",
+      "loaded": "{name} betöltve",
+      "sample": "Mintaadatok: a Roux utam, 2026. május–október"
+    },
+    "errors": {
+      "notJson": "Ez nem úgy néz ki, mint egy csTimer export (nem érvényes JSON).",
+      "noSessions": "Nem találhatók kirakások a munkamenetekben ebben a fájlban.",
+      "generic": "Nem sikerült beolvasni a fájlt. Kérlek, próbáld újra."
+    },
+    "session": {
+      "label": "Munkamenet",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} kirakás · {days} gyakorlási nap"
+    },
+    "stats": {
+      "total": "Kirakások",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Legjobb egyes",
+      "bestSub": "Legjobb egyéni",
+      "mean": "Átlag",
+      "meanSub": "Medián {median}",
+      "stdev": "Szórás",
+      "stdevSub": "Konzisztencia — az alacsonyabb az egyenletesebb",
+      "bestAo5": "Legjobb Ao5",
+      "bestAo12": "Legjobb Ao12",
+      "bestAo50": "Legjobb Ao50",
+      "bestAo100": "Legjobb Ao100",
+      "currentSub": "Aktuális {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Egyéni kirakások",
+        "desc": "Minden kirakás sorrendben. A kiemelt pontok új egyéni csúcsok."
+      },
+      "ao": {
+        "title": "Gördülő átlagok (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "A legutóbbi kirakásaid trendje — ez a fejlődés valódi mérőszáma.",
+        "linear": "Lineáris",
+        "log": "Logaritmikus"
+      },
+      "hist": {
+        "title": "Időeloszlás",
+        "desc": "Hogyan oszlanak el a kirakási idők."
+      },
+      "daily": {
+        "title": "Napi mennyiség",
+        "desc": "Kirakások száma gyakorlási naponként."
+      },
+      "pb": {
+        "title": "Egyéni csúcsok története",
+        "desc": "Legjobb egyéni / Ao5 / Ao12 / Ao100 az idő függvényében, minden új rekordnál lefelé lépve."
+      },
+      "dailyAvg": {
+        "title": "Napi átlag",
+        "desc": "Átlagos kirakási idő naponta — megmutatja a jó és rossz napokat."
+      },
+      "hourly": {
+        "title": "Napszak",
+        "desc": "Mikor gyakorolsz, helyi óra szerint."
+      },
+      "speedup": {
+        "title": "Gyorsulás az első naphoz képest (log₂)",
+        "desc": "Hányszor gyorsabb az adott nap az első napodnál. +1 = kétszer olyan gyors, +2 = négyszer, +3 = nyolcszor. Minden lépés azonos mértékű fejlődést jelent."
+      },
+      "powerLaw": {
+        "title": "Készség vs. összesített gyakorlás (hatványtörvény)",
+        "desc": "Függőleges: −ln(napi átlag másodpercben). Vízszintes: összesített kirakások, logaritmikus skála. A gyakorlás hatványtörvénye egy egyenest jósol — a trendvonal felett áttörés, alatta stagnálás tapasztalható."
+      }
+    },
+    "axis": {
+      "solveIndex": "Megoldás #",
+      "seconds": "Idő (mp)",
+      "avgSeconds": "Átlag (mp)",
+      "avgSecondsLog": "Átlag (mp, log)",
+      "count": "Megoldások",
+      "bucket": "Időtartomány",
+      "log2": "log₂(1. nap ÷ nap)",
+      "cumulative": "Kumulatív megoldások (log)",
+      "skill": "−ln(másodperc)"
+    },
+    "series": {
+      "single": "Egyéni (mp)",
+      "pb": "Új PB",
+      "count": "Megoldások",
+      "dailyAvg": "Napi átlag (mp)",
+      "speedup": "log₂ gyorsulás",
+      "skill": "Napi képességindex",
+      "trend": "Hatványfüggvény-trend",
+      "pbSingle": "PB egyéni"
+    },
+    "tooltip": {
+      "noData": "Nincs adat",
+      "speedup": "{v} duplázás ({mult}× gyorsabb)",
+      "baseline": "Napi átlag {avg} · első napi átlag {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} megoldás eddig · napi átlag {avg}",
+      "skill": "Képességindex {v}"
+    },
+    "powerLaw": {
+      "slope": "Meredekség b",
+      "halving": "Dupla gyakorlás → az idő csökkenése",
+      "reading": "Olvasás",
+      "band": {
+        "regressing": "Visszaesés (negatív meredekség)",
+        "plateau": "Nagyon lassú — stagnálás vagy szűk keresztmetszet",
+        "steady": "Stabil fejlődés magas szinten",
+        "healthy": "Egészséges tanulási ütem (tipikus középhaladó)",
+        "fast": "Gyors javulás",
+        "veryFast": "Nagyon gyors (kezdeti szakasz vagy módszerfejlesztés)",
+        "none": "Nincs elég adat"
+      }
+    },
+    "milestones": {
+      "title": "Mérföldkövek",
+      "desc": "Az első alkalom, amikor az egyes sorozatok egy küszöbérték alá estek, és hogy ez hányadik napon történt.",
+      "threshold": "Alatt",
+      "single": "Egyetlen",
+      "never": "—",
+      "dayN": "{n}. nap"
+    },
+    "recent": {
+      "title": "Utolsó 20 kirakás",
+      "desc": "A legutóbbi kirakásaid ebben a munkamenetben.",
+      "time": "Mikor",
+      "solve": "Idő",
+      "scramble": "Keverés"
+    },
+    "links": {
+      "cube": "3D kocka megnyitása →"
+    },
+    "footer": "Az adataid sosem hagyják el a böngésződet. A „kocka kirakása memorizálás nélkül” sorozat mellett készült."
   }
 }

@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Gratis ebookvertaler — EPUB / PDF / AI / 40 talen",
     "ebookTranslatorDescription": "Gratis AI-ebookvertaler die volledig in je browser draait. Vertaal EPUB- en PDF-bestanden naar 40+ talen met tweetalige output naast elkaar. Gebruik je eigen API-sleutel.",
     "rubiksCubeTitle": "3D Rubik's Kubus — Philo Li",
-    "rubiksCubeDescription": "Interactieve 3D Rubik's Kubus. Stel een scramble en een oplossing in, speel stap voor stap af, verberg kleuren of vlakken voor memorisatie-oefeningen."
+    "rubiksCubeDescription": "Interactieve 3D Rubik's Kubus. Stel een scramble en een oplossing in, speel stap voor stap af, verberg kleuren of vlakken voor memorisatie-oefeningen.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Voortgangsgrafieken voor de Rubik's Cube",
+    "cubeAnalyzerDescription": "Sleep je csTimer-export hierheen voor voortgangsgrafieken: Ao5/Ao12/Ao100-trends, PB-geschiedenis, mijlpalen, dagelijks volume en een machtswet-leerkromme. Draait volledig in je browser."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "3D Rubiks kubus",
         "description": "Doorloop husselingen en oplossingen op een interactieve 3D-kubus. De leermodus verbergt kleuren en vlakken voor algoritme-oefeningen.",
         "cta": "Open de kubus →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Sleep je csTimer-export hierheen en bekijk je voortgang: voortschrijdende gemiddelden, PB-geschiedenis, mijlpalen en een machtswet-leerkromme. Niets verlaat je browser.",
+        "cta": "Analyseer mijn solves →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Lees meer"
+    },
+    "analyzerCard": {
+      "eyebrow": "Tool",
+      "title": "csTimer Analyzer",
+      "desc": "Exporteer je csTimer-sessies en bekijk je voortgangsgrafieken.",
+      "cta": "Analyseer mijn solves"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Tool",
+    "title": "csTimer Analyzer",
+    "intro": "Exporteer je sessies vanuit csTimer en sleep het bestand hierheen om te zien hoe je echt vooruitgaat: voortschrijdende gemiddelden, PB-geschiedenis, mijlpalen, dagelijks volume en een machtswet-leerkromme. Alles draait in je browser — er wordt niets geüpload.",
+    "howTo": {
+      "title": "Hoe exporteer je vanuit csTimer",
+      "step1": "Open cstimer.net en klik op het tandwielicoon in de linkerbovenhoek.",
+      "step2": "Scroll naar Import / Export en kies \"Export to file\".",
+      "step3": "Sleep het gedownloade bestand hieronder."
+    },
+    "drop": {
+      "label": "Sleep je csTimer-export hierheen, of klik om een bestand te kiezen",
+      "loadSample": "Of laad mijn eigen data als voorbeeld",
+      "loading": "Laden…",
+      "loaded": "{name} geladen",
+      "sample": "Voorbeelddata: mijn Roux-reis, mei–okt 2026"
+    },
+    "errors": {
+      "notJson": "Dat ziet er niet uit als een csTimer-export (het is geen geldige JSON).",
+      "noSessions": "Er zijn geen sessies met solves gevonden in dat bestand.",
+      "generic": "Kon dat bestand niet lezen. Probeer het opnieuw."
+    },
+    "session": {
+      "label": "Sessie",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} solves · {days} oefendagen"
+    },
+    "stats": {
+      "total": "Solves",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Beste single",
+      "bestSub": "Enkelvoudig PB",
+      "mean": "Gemiddelde",
+      "meanSub": "Mediaan {median}",
+      "stdev": "Standaardafwijking",
+      "stdevSub": "Consistentie — lager is stabieler",
+      "bestAo5": "Beste Ao5",
+      "bestAo12": "Beste Ao12",
+      "bestAo50": "Beste Ao50",
+      "bestAo100": "Beste Ao100",
+      "currentSub": "Huidige {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Enkelvoudige solves",
+        "desc": "Elke solve op volgorde. Gemarkeerde punten zijn nieuwe persoonlijke records."
+      },
+      "ao": {
+        "title": "Voortschrijdende gemiddelden (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "De trend van je recente solves — dit is de echte maatstaf voor vooruitgang.",
+        "linear": "Lineair",
+        "log": "Logaritmisch"
+      },
+      "hist": {
+        "title": "Tijdsverdeling",
+        "desc": "Hoe je solve-tijden verspreid zijn."
+      },
+      "daily": {
+        "title": "Dagelijks volume",
+        "desc": "Solves per oefendag."
+      },
+      "pb": {
+        "title": "Geschiedenis van persoonlijke records",
+        "desc": "Beste enkelvoudige / Ao5 / Ao12 / Ao100 door de tijd heen, met een stap omlaag bij elk nieuw record."
+      },
+      "dailyAvg": {
+        "title": "Dagelijks gemiddelde",
+        "desc": "Gemiddelde solve-tijd per dag — toont goede en slechte dagen."
+      },
+      "hourly": {
+        "title": "Tijdstip van de dag",
+        "desc": "Wanneer je oefent, per lokaal uur."
+      },
+      "speedup": {
+        "title": "Snelheidswinst t.o.v. dag één (log₂)",
+        "desc": "Hoeveel keer sneller elke dag is dan je eerste dag. +1 = twee keer zo snel, +2 = vier keer, +3 = acht keer. Elke stap is dezelfde omvang van verbetering."
+      },
+      "powerLaw": {
+        "title": "Vaardigheid t.o.v. cumulatief oefenen (machtswet)",
+        "desc": "Verticaal: −ln(dagelijks gemiddelde in seconden). Horizontaal: cumulatieve solves, logaritmische schaal. De machtswet van oefenen voorspelt een rechte lijn — boven de trend is een doorbraak, eronder een plateau."
+      }
+    },
+    "axis": {
+      "solveIndex": "Oplossing #",
+      "seconds": "Tijd (s)",
+      "avgSeconds": "Gemiddelde (s)",
+      "avgSecondsLog": "Gemiddelde (s, log)",
+      "count": "Oplossingen",
+      "bucket": "Tijdsbereik",
+      "log2": "log₂(dag 1 ÷ dag)",
+      "cumulative": "Cumulatieve oplossingen (log)",
+      "skill": "−ln(seconden)"
+    },
+    "series": {
+      "single": "Single (s)",
+      "pb": "Nieuw PB",
+      "count": "Oplossingen",
+      "dailyAvg": "Dagelijks gemiddelde (s)",
+      "speedup": "log₂ versnelling",
+      "skill": "Dagelijkse vaardigheidsindex",
+      "trend": "Machtswet-trend",
+      "pbSingle": "PB single"
+    },
+    "tooltip": {
+      "noData": "Geen gegevens",
+      "speedup": "{v} verdubbelingen ({mult}× sneller)",
+      "baseline": "Dag-gemiddelde {avg} · dag-één gemiddelde {base}",
+      "trend": "Trend: {v}",
+      "cumulative": "{n} oplossingen tot nu toe · dag-gemiddelde {avg}",
+      "skill": "Vaardigheidsindex {v}"
+    },
+    "powerLaw": {
+      "slope": "Helling b",
+      "halving": "Verdubbel de oefening → tijd daalt met",
+      "reading": "Lezen",
+      "band": {
+        "regressing": "Regressie (negatieve helling)",
+        "plateau": "Zeer traag — plateau of knelpunt",
+        "steady": "Gestage leercurve op hoog niveau",
+        "healthy": "Gezond leertempo (typisch gemiddeld)",
+        "fast": "Snelle verbetering",
+        "veryFast": "Zeer snel (beginfase of een methode-upgrade)",
+        "none": "Onvoldoende gegevens"
+      }
+    },
+    "milestones": {
+      "title": "Mijlpalen",
+      "desc": "De eerste keer dat elke reeks onder een drempelwaarde zakte, en na hoeveel dagen dat was.",
+      "threshold": "Onder",
+      "single": "Enkel",
+      "never": "—",
+      "dayN": "dag {n}"
+    },
+    "recent": {
+      "title": "Laatste 20 oplossingen",
+      "desc": "Je meest recente oplossingen in deze sessie.",
+      "time": "Wanneer",
+      "solve": "Tijd",
+      "scramble": "Scramble"
+    },
+    "links": {
+      "cube": "Open de 3D-kubus →"
+    },
+    "footer": "Je gegevens verlaten nooit je browser. Gebouwd naast de “los de kubus op zonder memoriseren”-serie."
   }
 }

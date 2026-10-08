@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Traductor de ebooks gratis — EPUB / PDF / IA / 40 idiomas",
     "ebookTranslatorDescription": "Traductor de ebooks gratuito con IA que funciona completamente en tu navegador. Traduce archivos EPUB y PDF a más de 40 idiomas con salida bilingüe en paralelo. Usa tu propia API key.",
     "rubiksCubeTitle": "Cubo de Rubik 3D — Philo Li",
-    "rubiksCubeDescription": "Cubo de Rubik 3D interactivo. Configura una mezcla y una solución, juega paso a paso, oculta colores o caras para ejercicios de memorización."
+    "rubiksCubeDescription": "Cubo de Rubik 3D interactivo. Configura una mezcla y una solución, juega paso a paso, oculta colores o caras para ejercicios de memorización.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Gráficos de progreso del Cubo de Rubik",
+    "cubeAnalyzerDescription": "Suelta tu exportación de csTimer y obtén gráficos de progreso: tendencias de Ao5/Ao12/Ao100, historial de PB, hitos, volumen diario y una curva de aprendizaje de ley de potencia. Se ejecuta completamente en tu navegador."
   },
   "nav": {
     "blog": "Blog",
@@ -137,6 +139,11 @@
         "name": "Cubo de Rubik 3D",
         "description": "Sigue mezclas y soluciones paso a paso en un cubo 3D interactivo. El modo de aprendizaje oculta colores y caras para practicar algoritmos.",
         "cta": "Abrir el cubo →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Suelta tu exportación de csTimer y mira tu progreso: promedios móviles, historial de PB, hitos y una curva de aprendizaje de ley de potencia. Nada sale de tu navegador.",
+        "cta": "Analizar mis resoluciones →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blog",
       "cta": "Leer más"
+    },
+    "analyzerCard": {
+      "eyebrow": "Herramienta",
+      "title": "csTimer Analyzer",
+      "desc": "Exporta tus sesiones de csTimer y mira tus gráficos de progreso.",
+      "cta": "Analizar mis resoluciones"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Herramienta",
+    "title": "csTimer Analyzer",
+    "intro": "Exporta tus sesiones de csTimer y suelta el archivo aquí para ver cómo estás progresando realmente: promedios móviles, historial de PB, hitos, volumen diario y una curva de aprendizaje de ley de potencia. Todo se ejecuta en tu navegador — no se sube nada.",
+    "howTo": {
+      "title": "Cómo exportar desde csTimer",
+      "step1": "Abre cstimer.net y haz clic en el icono de engranaje en la esquina superior izquierda.",
+      "step2": "Desplázate hasta Import / Export y elige \"Export to file\".",
+      "step3": "Suelta el archivo descargado a continuación."
+    },
+    "drop": {
+      "label": "Suelta tu exportación de csTimer aquí, o haz clic para elegir un archivo",
+      "loadSample": "O carga mis propios datos como muestra",
+      "loading": "Cargando…",
+      "loaded": "{name} cargado",
+      "sample": "Datos de muestra: mi trayectoria en Roux, mayo–octubre de 2026"
+    },
+    "errors": {
+      "notJson": "Eso no parece una exportación de csTimer (no es un JSON válido).",
+      "noSessions": "No se encontraron sesiones con resoluciones en ese archivo.",
+      "generic": "No se pudo leer ese archivo. Por favor, inténtalo de nuevo."
+    },
+    "session": {
+      "label": "Sesión",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} resoluciones · {days} días de práctica"
+    },
+    "stats": {
+      "total": "Resoluciones",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Mejor tiempo individual",
+      "bestSub": "Mejor marca individual",
+      "mean": "Media",
+      "meanSub": "Mediana {median}",
+      "stdev": "Desviación estándar",
+      "stdevSub": "Consistencia — cuanto más bajo, más estable",
+      "bestAo5": "Mejor Ao5",
+      "bestAo12": "Mejor Ao12",
+      "bestAo50": "Mejor Ao50",
+      "bestAo100": "Mejor Ao100",
+      "currentSub": "Actual {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Resoluciones individuales",
+        "desc": "Cada resolución en orden. Los puntos resaltados son nuevos récords personales."
+      },
+      "ao": {
+        "title": "Promedios móviles (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "La tendencia de tus resoluciones recientes: esta es la verdadera medida del progreso.",
+        "linear": "Lineal",
+        "log": "Logarítmica"
+      },
+      "hist": {
+        "title": "Distribución de tiempos",
+        "desc": "Cómo se reparten tus tiempos de resolución."
+      },
+      "daily": {
+        "title": "Volumen diario",
+        "desc": "Resoluciones por día de práctica."
+      },
+      "pb": {
+        "title": "Historial de récords personales",
+        "desc": "Mejor individual / Ao5 / Ao12 / Ao100 a lo largo del tiempo, descendiendo con cada nuevo récord."
+      },
+      "dailyAvg": {
+        "title": "Promedio diario",
+        "desc": "Tiempo medio de resolución por día: muestra los días buenos y malos."
+      },
+      "hourly": {
+        "title": "Hora del día",
+        "desc": "Cuándo practicas, por hora local."
+      },
+      "speedup": {
+        "title": "Aceleración vs. primer día (log₂)",
+        "desc": "Cuántas veces más rápido es cada día respecto al primero. +1 = el doble de rápido, +2 = cuatro veces, +3 = ocho veces. Cada paso representa la misma magnitud de mejora."
+      },
+      "powerLaw": {
+        "title": "Habilidad vs. práctica acumulada (ley de potencia)",
+        "desc": "Vertical: −ln(promedio diario en segundos). Horizontal: resoluciones acumuladas, escala logarítmica. La Ley de Potencia de la Práctica predice una línea recta: por encima de la tendencia es un avance, por debajo es un estancamiento."
+      }
+    },
+    "axis": {
+      "solveIndex": "Resolver #",
+      "seconds": "Tiempo (s)",
+      "avgSeconds": "Promedio (s)",
+      "avgSecondsLog": "Promedio (s, log)",
+      "count": "Resoluciones",
+      "bucket": "Rango de tiempo",
+      "log2": "log₂(día 1 ÷ día)",
+      "cumulative": "Resoluciones acumuladas (log)",
+      "skill": "−ln(segundos)"
+    },
+    "series": {
+      "single": "Único (s)",
+      "pb": "Nuevo PB",
+      "count": "Resoluciones",
+      "dailyAvg": "Promedio diario (s)",
+      "speedup": "Aceleración log₂",
+      "skill": "Índice de habilidad diario",
+      "trend": "Tendencia de ley de potencia",
+      "pbSingle": "PB único"
+    },
+    "tooltip": {
+      "noData": "Sin datos",
+      "speedup": "{v} duplicaciones ({mult}× más rápido)",
+      "baseline": "Promedio del día {avg} · promedio del primer día {base}",
+      "trend": "Tendencia: {v}",
+      "cumulative": "{n} resoluciones hasta ahora · promedio del día {avg}",
+      "skill": "Índice de habilidad {v}"
+    },
+    "powerLaw": {
+      "slope": "Pendiente b",
+      "halving": "Duplicar la práctica → el tiempo disminuye en",
+      "reading": "Lectura",
+      "band": {
+        "regressing": "Regresión (pendiente negativa)",
+        "plateau": "Muy lento — estancamiento o cuello de botella",
+        "steady": "Aprendizaje constante a un nivel alto",
+        "healthy": "Tasa de aprendizaje saludable (intermedio típico)",
+        "fast": "Mejora rápida",
+        "veryFast": "Muy rápido (etapa inicial o mejora de método)",
+        "none": "Datos insuficientes"
+      }
+    },
+    "milestones": {
+      "title": "Hitos",
+      "desc": "La primera vez que cada serie bajó de un umbral, y cuántos días tomó.",
+      "threshold": "Debajo",
+      "single": "Único",
+      "never": "—",
+      "dayN": "día {n}"
+    },
+    "recent": {
+      "title": "Últimas 20 resoluciones",
+      "desc": "Tus resoluciones más recientes en esta sesión.",
+      "time": "Cuándo",
+      "solve": "Tiempo",
+      "scramble": "Mezcla"
+    },
+    "links": {
+      "cube": "Abrir el cubo 3D →"
+    },
+    "footer": "Tus datos nunca salen de tu navegador. Creado junto a la serie “resuelve el cubo sin memorizar”."
   }
 }

@@ -29,7 +29,9 @@
     "ebookTranslatorTitle": "Ilmainen e-kirjankääntäjä — EPUB / PDF / AI / 40 kieltä",
     "ebookTranslatorDescription": "Ilmainen AI-e-kirjakääntäjä, joka toimii kokonaan selaimessasi. Käännä EPUB- ja PDF-tiedostoja yli 40 kielelle kaksikielisellä rinnakkaisnäytöllä. Käytä omaa API-avaintasi.",
     "rubiksCubeTitle": "3D Rubikin kuutio — Philo Li",
-    "rubiksCubeDescription": "Interaktiivinen 3D Rubikin kuutio. Aseta sekoitus ja ratkaisu, pelaa vaihe vaiheelta, piilota värejä tai sivuja muistiharjoittelua varten."
+    "rubiksCubeDescription": "Interaktiivinen 3D Rubikin kuutio. Aseta sekoitus ja ratkaisu, pelaa vaihe vaiheelta, piilota värejä tai sivuja muistiharjoittelua varten.",
+    "cubeAnalyzerTitle": "csTimer Analyzer — Edistymiskaaviot Rubikin kuution ratkaisuille",
+    "cubeAnalyzerDescription": "Pudota csTimer-vientitiedostosi ja näe edistymiskaaviot: Ao5/Ao12/Ao100-trendit, PB-historia, virstanpylväät, päivittäinen määrä ja potenssilakiin perustuva oppimiskäyrä. Toimii kokonaan selaimessasi."
   },
   "nav": {
     "blog": "Blogi",
@@ -137,6 +139,11 @@
         "name": "3D-Rubikin kuutio",
         "description": "Käy läpi sekoitukset ja ratkaisut interaktiivisella 3D-kuutiolla. Oppimistila piilottaa värejä ja tahkoja algoritmiharjoituksia varten.",
         "cta": "Avaa kuutio →"
+      },
+      "cubeAnalyzer": {
+        "name": "csTimer Analyzer",
+        "description": "Pudota csTimer-vientitiedostosi ja näe edistymisesi: liukuvat keskiarvot, PB-historia, virstanpylväät ja potenssilakiin perustuva oppimiskäyrä. Mikään ei poistu selaimestasi.",
+        "cta": "Analysoi ratkaisuni →"
       }
     }
   },
@@ -486,6 +493,159 @@
     "tutorialCard": {
       "eyebrow": "Blogi",
       "cta": "Lue lisää"
+    },
+    "analyzerCard": {
+      "eyebrow": "Työkalu",
+      "title": "csTimer Analyzer",
+      "desc": "Vie csTimer-istuntosi ja näe edistymiskaaviosi.",
+      "cta": "Analysoi ratkaisuni"
     }
+  },
+  "cubeAnalyzer": {
+    "eyebrow": "Työkalu",
+    "title": "csTimer Analyzer",
+    "intro": "Vie istuntosi csTimerista ja pudota tiedosto tähän nähdäksesi, miten todella edistyt: liukuvat keskiarvot, PB-historia, virstanpylväät, päivittäinen määrä ja potenssilakiin perustuva oppimiskäyrä. Kaikki toimii selaimessasi — mitään ei ladata palvelimelle.",
+    "howTo": {
+      "title": "Miten viedä tietoja csTimerista",
+      "step1": "Avaa cstimer.net ja napsauta rataskuvaketta vasemmassa yläkulmassa.",
+      "step2": "Vieritä kohtaan Import / Export ja valitse \"Export to file\".",
+      "step3": "Pudota ladattu tiedosto alle."
+    },
+    "drop": {
+      "label": "Pudota csTimer-vientitiedostosi tähän tai napsauta valitaksesi tiedoston",
+      "loadSample": "Tai lataa omat tietoni näytteeksi",
+      "loading": "Ladataan…",
+      "loaded": "Ladattu {name}",
+      "sample": "Esimerkkidata: Roux-matkani, touko–lokakuu 2026"
+    },
+    "errors": {
+      "notJson": "Tämä ei näytä csTimer-vientitiedostolta (se ei ole kelvollinen JSON).",
+      "noSessions": "Tiedostosta ei löytynyt istuntoja, joissa olisi ratkaisuja.",
+      "generic": "Tiedoston lukeminen epäonnistui. Yritä uudelleen."
+    },
+    "session": {
+      "label": "Istunto",
+      "option": "{name} ({count})"
+    },
+    "summary": {
+      "range": "{from} – {to} · {count} ratkaisua · {days} harjoituspäivää"
+    },
+    "stats": {
+      "total": "Ratkaisut",
+      "totalSub": "{dnf} DNF · {plus2} +2",
+      "best": "Paras yksittäinen",
+      "bestSub": "Yksittäinen ennätys",
+      "mean": "Keskiarvo",
+      "meanSub": "Mediaani {median}",
+      "stdev": "Keskihajonta",
+      "stdevSub": "Johdonmukaisuus — pienempi on vakaampi",
+      "bestAo5": "Paras Ao5",
+      "bestAo12": "Paras Ao12",
+      "bestAo50": "Paras Ao50",
+      "bestAo100": "Paras Ao100",
+      "currentSub": "Nykyinen {v}"
+    },
+    "charts": {
+      "singles": {
+        "title": "Yksittäiset suoritukset",
+        "desc": "Jokainen suoritus järjestyksessä. Korostetut kohdat ovat uusia henkilökohtaisia ennätyksiä."
+      },
+      "ao": {
+        "title": "Liukuvat keskiarvot (Ao5 / Ao12 / Ao50 / Ao100)",
+        "desc": "Viimeaikaisten suoritustesi trendi — tämä on todellinen edistymisen mittari.",
+        "linear": "Lineaarinen",
+        "log": "Logaritminen"
+      },
+      "hist": {
+        "title": "Ajan jakautuminen",
+        "desc": "Miten suoritusaikasi jakautuvat."
+      },
+      "daily": {
+        "title": "Päivittäinen määrä",
+        "desc": "Suoritukset harjoituspäivää kohden."
+      },
+      "pb": {
+        "title": "Henkilökohtaisten ennätysten historia",
+        "desc": "Paras yksittäinen / Ao5 / Ao12 / Ao100 ajan myötä, laskien jokaisen uuden ennätyksen myötä."
+      },
+      "dailyAvg": {
+        "title": "Päivittäinen keskiarvo",
+        "desc": "Keskimääräinen suoritusaika päivässä — näyttää hyvät ja huonot päivät."
+      },
+      "hourly": {
+        "title": "Kellonaika",
+        "desc": "Milloin harjoittelet, paikallisen tunnin mukaan."
+      },
+      "speedup": {
+        "title": "Nopeusero ensimmäiseen päivään (log₂)",
+        "desc": "Kuinka monta kertaa nopeampi kukin päivä on kuin ensimmäinen päiväsi. +1 = kaksi kertaa nopeampi, +2 = neljä kertaa, +3 = kahdeksan kertaa. Jokainen askel on yhtä suuri parannus."
+      },
+      "powerLaw": {
+        "title": "Taito vs. kumulatiivinen harjoittelu (potenssilaki)",
+        "desc": "Pystyakseli: −ln(päivittäinen keskiarvo sekunneissa). Vaaka-akseli: kumulatiiviset suoritukset, logaritminen asteikko. Harjoittelun potenssilaki ennustaa suoran viivan — trendin yläpuolella on läpimurto, alapuolella tasanko."
+      }
+    },
+    "axis": {
+      "solveIndex": "Ratkaisu #",
+      "seconds": "Aika (s)",
+      "avgSeconds": "Keskiarvo (s)",
+      "avgSecondsLog": "Keskiarvo (s, log)",
+      "count": "Ratkaisut",
+      "bucket": "Aikaväli",
+      "log2": "log₂(päivä 1 ÷ päivä)",
+      "cumulative": "Kumulatiiviset ratkaisut (log)",
+      "skill": "−ln(sekuntia)"
+    },
+    "series": {
+      "single": "Yksittäinen (s)",
+      "pb": "Uusi PB",
+      "count": "Ratkaisut",
+      "dailyAvg": "Päivittäinen keskiarvo (s)",
+      "speedup": "log₂ nopeutuminen",
+      "skill": "Päivittäinen taitotasoindeksi",
+      "trend": "Potenssilakisuuntaus",
+      "pbSingle": "PB yksittäinen"
+    },
+    "tooltip": {
+      "noData": "Ei tietoja",
+      "speedup": "{v} tuplausta ({mult}× nopeampi)",
+      "baseline": "Päivän ka. {avg} · ensimmäisen päivän ka. {base}",
+      "trend": "Suuntaus: {v}",
+      "cumulative": "{n} ratkaisua tähän mennessä · päivän ka. {avg}",
+      "skill": "Taitotasoindeksi {v}"
+    },
+    "powerLaw": {
+      "slope": "Kulmakerroin b",
+      "halving": "Tuplaa harjoittelu → aika laskee",
+      "reading": "Lukeminen",
+      "band": {
+        "regressing": "Taantuminen (negatiivinen kulmakerroin)",
+        "plateau": "Erittäin hidas — tasoittuminen tai pullonkaula",
+        "steady": "Tasainen oppiminen korkealla tasolla",
+        "healthy": "Terve oppimisvauhti (tyypillinen keskitaso)",
+        "fast": "Nopea kehitys",
+        "veryFast": "Erittäin nopea (alkuvaihe tai menetelmäpäivitys)",
+        "none": "Ei riittävästi tietoa"
+      }
+    },
+    "milestones": {
+      "title": "Virstanpylväät",
+      "desc": "Ensimmäinen kerta, kun kukin sarja laski kynnyksen alle, ja kuinka monta päivää siihen kului.",
+      "threshold": "Alle",
+      "single": "Yksittäinen",
+      "never": "—",
+      "dayN": "päivä {n}"
+    },
+    "recent": {
+      "title": "20 viimeisintä ratkaisua",
+      "desc": "Viimeisimmät ratkaisusi tässä istunnossa.",
+      "time": "Milloin",
+      "solve": "Aika",
+      "scramble": "Sekoitus"
+    },
+    "links": {
+      "cube": "Avaa 3D-kuutio →"
+    },
+    "footer": "Tietosi eivät koskaan poistu selaimestasi. Rakennettu ”ratkaise kuutio ilman ulkoa opettelua” -sarjan ohella."
   }
 }
