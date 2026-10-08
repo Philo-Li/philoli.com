@@ -18,6 +18,8 @@
     "ebookTranslatorDescription": "Free AI ebook translator that runs entirely in your browser. Translate EPUB and PDF files into 40+ languages with side-by-side bilingual output. Use your own API key.",
     "rubiksCubeTitle": "3D Rubik's Cube — Philo Li",
     "rubiksCubeDescription": "Interactive 3D Rubik's Cube. Set a scramble and a solution, play step by step, hide colors or faces for memorization drills.",
+    "cubeRouxTitle": "Roux Method — Blocks, CMLL and LSE",
+    "cubeRouxDescription": "Every algorithm you need for the Roux method, one tab per stage: block-building inserts, two-look CMLL, and the M/U algorithms for edge orientation, UL/UR and the last four edges. Each case has a diagram and opens in the interactive 3D cube.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Rubik's Cube Progress Charts",
     "cubeAnalyzerDescription": "Drop your csTimer export and get progress charts: Ao5/Ao12/Ao100 trends, PB history, milestones, daily volume and a power-law learning curve. Runs entirely in your browser."
   },
@@ -502,6 +504,101 @@
       "title": "csTimer Analyzer",
       "desc": "Export your csTimer sessions and see your progress charts.",
       "cta": "Analyze my solves"
+    },
+    "rouxCard": {
+      "eyebrow": "Method",
+      "title": "Roux Method",
+      "desc": "Blocks, two-look CMLL and LSE — every case with a diagram you can open on this cube.",
+      "cta": "Browse the library"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Method",
+    "title": "Roux Method (Beginner-Friendly)",
+    "intro": "The Roux method has four stages: build the left 1×2×3 block, build the right one, solve the top corners (CMLL), then finish the last six edges with only M and U turns (LSE).",
+    "tabsLabel": "Roux stages",
+    "tabs": {
+      "fb": "First block (FB)",
+      "sb": "Second block (SB)",
+      "cmll": "CMLL (two-look)",
+      "lse": "LSE"
+    },
+    "openInCube": "Details",
+    "fb": {
+      "intro": "The first block is a 1×2×3 on the left: the DL edge, the two bottom-left corners and their two edges. There are no fixed algorithms — you look, pair a corner with its edge, and insert. These are the hand-moves that come up over and over. Hold the cube with the block on the left and the empty slot at the front.",
+      "insert": {
+        "title": "Pairing and inserting",
+        "desc": "Each case opens in the 3D cube with the pair already in position; watch where the two pieces start and how the turns bring them home without disturbing the rest of the block.",
+        "cases": {
+          "pairLeft": { "name": "Pair on top, left side", "hint": "Corner above the slot, edge beside it on the left. Move the pair out of the way, open the slot, drop it in." },
+          "mSlice": { "name": "Pair with the M slice", "hint": "Corner at the back-left of the top, edge at the right. M brings the edge round to meet it, then F' drops the pair in." },
+          "edgeOnTop": { "name": "Corner in the slot, edge on top", "hint": "The corner is already home, the edge sits at the right of the top. Take the corner out to meet it, then F' inserts both." },
+          "misPaired": { "name": "Pair on top, colors mismatched", "hint": "Corner and edge are next to each other on the right of the top but don't match. F' opens the slot, re-pair with L' U' L U' L' U L, F' closes it." }
+        }
+      }
+    },
+    "sb": {
+      "intro": "The second block mirrors the first on the right — but now the left block must not move. Only R, r, M and U turns are safe. The wide r turn is the Roux trick: it moves the right layer and the M slice together, so you can grab edges from the bottom without touching the left.",
+      "insert": {
+        "title": "Pairing and inserting",
+        "desc": "All four cases keep the left block untouched. The DR edge is assumed solved; these insert the front-right corner-edge pair.",
+        "cases": {
+          "pairRight": { "name": "Pair on top, right side", "hint": "Corner above the slot, edge beside it on the right. The mirror of the first-block insert." },
+          "mPair": { "name": "Pair with the M slice", "hint": "Edge at the back-left of the top, corner at the right. U then M brings the edge round to the corner, R U' R' inserts the pair." },
+          "cornerInSlot": { "name": "Corner in the slot, edge on top", "hint": "The corner is already home, the edge sits on top. U R lifts the corner out, M brings the edge to it, U' R' puts both in." },
+          "twistedCorner": { "name": "Corner in the slot, twisted", "hint": "The corner sits in its slot but turned. L F' L' flips it out through the left block and back, the M moves fetch the edge, R U' R' inserts." }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "With both blocks done, solve the four top corners in one go. Full CMLL has 42 cases; two-look splits it into orient, then permute, and needs only nine algorithms. Because the M slice gets fixed afterwards, these algorithms are free to disturb it. Yellow stickers show where the top color is; a bar on the outside means that corner's top color faces sideways.",
+      "orient": {
+        "title": "Step 1 · Orient the corners",
+        "desc": "Count how many top corners already show the top color. 0 → H or Pi. 1 → S or AS. 2 → U, T or L. Match the pattern and turn the top layer so it lines up with the diagram."
+      },
+      "permute": {
+        "title": "Step 2 · Permute the corners",
+        "desc": "If one side already matches — say both corners on one face are red — turn the top so that pair is on the left, then use the adjacent swap. If no side matches, use the diagonal swap.",
+        "cases": {
+          "adjacent": { "name": "Adjacent swap", "hint": "Put the two corners to swap on the right." },
+          "diagonal": { "name": "Diagonal swap", "hint": "Any angle works." }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Six edges remain, and only M and U turns are needed. Three steps: orient the edges so every top/bottom color faces up or down (EO), place the UL and UR edges, then finish the last four. Diagrams show the top layer's edges plus the two bottom edges DF and DB; corners are left blank because they are already solved.",
+      "eo": {
+        "title": "4a · Edge orientation",
+        "desc": "A filled edge has its top/bottom color facing up or down — good. Blank means bad. Count the bad edges on top and bottom; there are only a handful of patterns and M' U M is the move that changes them.",
+        "cases": {
+          "arrow": { "name": "Arrow", "tag": "3 up · 1 down", "hint": "Turn the top so the three bad edges point at the bad bottom edge, then M' U M fixes all four." },
+          "twoTwo": { "name": "Split pairs", "tag": "2 up · 2 down", "hint": "Shortest solution shown. The by-hand route: M' U2 M turns it into an arrow, then finish as above." },
+          "fourZero": { "name": "All on top", "tag": "4 up · 0 down", "hint": "All four top edges bad. M U2 M swaps a pair down into an arrow, then finish." },
+          "twoTop": { "name": "Both on top", "tag": "2 up · 0 down", "hint": "Not 0, not 4: M' U M makes it four bad edges in arrow shape, U2 to aim, M' U M to finish." },
+          "oneOne": { "name": "One up, one down", "tag": "1 up · 1 down", "hint": "Same idea — the first M U M creates the arrow." },
+          "twoBottom": { "name": "Both at the bottom", "tag": "0 up · 2 down", "hint": "M U M lifts them into an arrow, then finish as usual." }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL and UR",
+        "desc": "Yellow on top, white on the bottom, red block on the left: the two edges still to place are yellow-red and yellow-orange (framed in the diagrams). Sink both to the bottom so they sit opposite each other, turn the top to line up, then M2 U or M2 U'. The centers end up flipped — the next step fixes that.",
+        "cases": {
+          "bothTop": { "name": "Both on top", "hint": "Turn the top until they're opposite each other (front and back). M2 sinks both, U' lines them up, M2 U' places them." },
+          "oneBottom": { "name": "One up, one down", "hint": "U2 to line up, M U2 M' sends the top one down opposite the other; U' to line up, M2 U brings both up and places them." },
+          "bothBottom": { "name": "Both at the bottom", "hint": "Turn the top to line up, M2 brings them up, U places them." },
+          "bothBottomAlt": { "name": "Both at the bottom (other way)", "hint": "The pair sits the other way round: U2 to line up the top, then M2 U'." }
+        }
+      },
+      "l4e": {
+        "title": "4c · Last four edges (just by looking)",
+        "cases": {
+          "needM2": { "name": "Centers flipped", "hint": "The white center is on top: M2 flips it back." },
+          "oneWhite": { "name": "One white on top", "hint": "Turn the top so the white edge is at the front, then swap it with the bottom edge." },
+          "twoWhite": { "name": "Two whites on top", "hint": "Swap top and bottom edges twice, once on each side." },
+          "byLook": { "name": "Solve by looking", "hint": "No white on top, but the front and back edges are swapped: M2, turn the top, M2 back." }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

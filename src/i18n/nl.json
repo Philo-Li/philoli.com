@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Gratis AI-ebookvertaler die volledig in je browser draait. Vertaal EPUB- en PDF-bestanden naar 40+ talen met tweetalige output naast elkaar. Gebruik je eigen API-sleutel.",
     "rubiksCubeTitle": "3D Rubik's Kubus — Philo Li",
     "rubiksCubeDescription": "Interactieve 3D Rubik's Kubus. Stel een scramble en een oplossing in, speel stap voor stap af, verberg kleuren of vlakken voor memorisatie-oefeningen.",
+    "cubeRouxTitle": "Roux-methode — Blocks, CMLL en LSE",
+    "cubeRouxDescription": "Elk algoritme dat je nodig hebt voor de Roux-methode, één tabblad per fase: het invoegen bij het bouwen van blokken, two-look CMLL, en de M/U-algoritmen voor edge-oriëntatie, UL/UR en de laatste vier edges. Elk geval heeft een diagram en opent in de interactieve 3D-kubus.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Voortgangsgrafieken voor de Rubik's Cube",
     "cubeAnalyzerDescription": "Sleep je csTimer-export hierheen voor voortgangsgrafieken: Ao5/Ao12/Ao100-trends, PB-geschiedenis, mijlpalen, dagelijks volume en een machtswet-leerkromme. Draait volledig in je browser."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Exporteer je csTimer-sessies en bekijk je voortgangsgrafieken.",
       "cta": "Analyseer mijn solves"
+    },
+    "rouxCard": {
+      "eyebrow": "Methode",
+      "title": "Roux-methode",
+      "desc": "Blokken, two-look CMLL en LSE — elk geval met een diagram dat je op deze kubus kunt openen.",
+      "cta": "Blader door de bibliotheek"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Methode",
+    "title": "Roux-methode (geschikt voor beginners)",
+    "intro": "De Roux-methode heeft vier fasen: bouw het linker 1×2×3-blok, bouw het rechterblok, los de bovenste hoeken op (CMLL) en voltooi daarna de laatste zes randen met alleen M- en U-draaien (LSE).",
+    "tabsLabel": "Roux-fasen",
+    "tabs": {
+      "fb": "Eerste blok",
+      "sb": "Tweede blok",
+      "cmll": "CMLL (twee-staps)",
+      "lse": "LSE"
+    },
+    "openInCube": "Details",
+    "fb": {
+      "intro": "Het eerste blok is een 1×2×3 aan de linkerkant: de DL-edge, de twee hoeken linksonder en hun twee edges. Er zijn geen vaste algoritmen — je kijkt, koppelt een hoek met zijn edge en voegt deze in. Dit zijn de handbewegingen die steeds weer terugkomen. Houd de kubus vast met het blok aan de linkerkant en de lege plek aan de voorkant.",
+      "insert": {
+        "title": "Koppelen en invoegen",
+        "desc": "Elk geval opent in de 3D-kubus met het paar al op zijn plek; kijk waar de twee stukjes beginnen en hoe de draaien ze op hun plek brengen zonder de rest van het blok te verstoren.",
+        "cases": {
+          "pairLeft": {
+            "name": "Paar bovenop, linkerkant",
+            "hint": "Hoek boven de plek, edge ernaast aan de linkerkant. Beweeg het paar uit de weg, open de plek, laat het erin vallen."
+          },
+          "mSlice": {
+            "name": "Koppel met de M-slice",
+            "hint": "Hoek linksachter boven, edge aan de rechterkant. M brengt de edge eromheen om hem te ontmoeten, daarna plaatst F' het paar erin."
+          },
+          "edgeOnTop": {
+            "name": "Hoek in de gleuf, rand aan de bovenkant",
+            "hint": "De hoek is al op zijn plek, de rand zit rechtsboven. Haal de hoek eruit om hem te ontmoeten, en F' plaatst beide."
+          },
+          "misPaired": {
+            "name": "Paar bovenaan, kleuren komen niet overeen",
+            "hint": "Hoek en rand liggen naast elkaar rechtsboven, maar komen niet overeen. F' opent de gleuf, koppel opnieuw met L' U' L U' L' U L, F' sluit deze."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Het tweede blok spiegelt het eerste aan de rechterkant — maar nu mag het linkerblok niet bewegen. Alleen R-, r-, M- en U-draaien zijn veilig. De brede r-draai is de Roux-truc: deze beweegt de rechterlaag en de M-slice tegelijk, zodat je edges van de onderkant kunt pakken zonder de linkerkant aan te raken.",
+      "insert": {
+        "title": "Koppelen en invoegen",
+        "desc": "Alle vier de gevallen laten het linkerblok ongemoeid. Aangenomen wordt dat de DR-edge is opgelost; deze voegen het hoek-edge-paar rechtsvoor in.",
+        "cases": {
+          "pairRight": {
+            "name": "Paar bovenaan, rechterkant",
+            "hint": "Hoek boven de gleuf, rand ernaast aan de rechterkant. Het spiegelbeeld van de eerste-blok-invoeging."
+          },
+          "mPair": {
+            "name": "Koppel met de M-slice",
+            "hint": "Edge aan de achterkant links van de bovenkant, corner aan de rechterkant. U en daarna M brengt de edge naar de corner, R U' R' voegt het paar in."
+          },
+          "cornerInSlot": {
+            "name": "Hoek in de gleuf, rand aan de bovenkant",
+            "hint": "De hoek is al thuis, de rand zit aan de bovenkant. U R tilt de hoek eruit, M brengt de rand erbij, U' R' plaatst beide erin."
+          },
+          "twistedCorner": {
+            "name": "Hoek in de gleuf, gedraaid",
+            "hint": "De hoek zit in zijn gleuf maar gedraaid. L F' L' wipt hem eruit via het linkerblok en terug, de M-bewegingen halen de rand op, R U' R' plaatst hem."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Nu beide blokken klaar zijn, los je de vier bovenste hoeken in één keer op. Volledige CMLL heeft 42 gevallen; two-look splitst dit in oriënteren, dan permuteren, en heeft slechts negen algoritmen nodig. Omdat de M-slice daarna wordt hersteld, mogen deze algoritmen deze verstoren. Gele stickers tonen waar de bovenkleur zit; een balk aan de buitenkant betekent dat de bovenkleur van die hoek opzij wijst.",
+      "orient": {
+        "title": "Stap 1 · Oriënteer de hoeken",
+        "desc": "Tel hoeveel bovenhoeken de bovenkleur al tonen. 0 → H of Pi. 1 → S of AS. 2 → U, T of L. Zoek het patroon en draai de bovenlaag zodat deze overeenkomt met het diagram."
+      },
+      "permute": {
+        "title": "Stap 2 · Permuteer de hoeken",
+        "desc": "Als één kant al overeenkomt — stel dat beide hoeken op één vlak rood zijn — draai de bovenkant dan zo dat dat paar zich aan de linkerkant bevindt, en gebruik vervolgens de aangrenzende wissel. Als geen enkele kant overeenkomt, gebruik dan de diagonale wissel.",
+        "cases": {
+          "adjacent": {
+            "name": "Aangrenzende wissel",
+            "hint": "Plaats de twee hoeken die gewisseld moeten worden aan de rechterkant."
+          },
+          "diagonal": {
+            "name": "Diagonale wissel",
+            "hint": "Elke hoek werkt."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Er blijven zes randen over, en alleen M- en U-draaien zijn nodig. Drie stappen: oriënteer de randen zodat elke boven-/onderkleur naar boven of beneden wijst (EO), plaats de UL- en UR-randen, en voltooi dan de laatste vier. Diagrammen tonen de randen van de bovenlaag plus de twee onderste randen DF en DB; hoeken zijn leeg gelaten omdat ze al zijn opgelost.",
+      "eo": {
+        "title": "4a · Randoriëntatie",
+        "desc": "Een ingevulde rand heeft zijn boven-/onderkleur naar boven of beneden gericht — goed. Leeg betekent fout. Tel de foute randen aan de boven- en onderkant; er zijn slechts een handvol patronen en M' U M is de zet die ze verandert.",
+        "cases": {
+          "arrow": {
+            "name": "Pijl",
+            "tag": "3 omhoog · 1 omlaag",
+            "hint": "Draai de bovenkant zodat de drie foute randen naar de foute onderrand wijzen, dan herstelt M' U M ze alle vier."
+          },
+          "twoTwo": {
+            "name": "Gesplitste paren",
+            "tag": "2 omhoog · 2 omlaag",
+            "hint": "Kortste oplossing getoond. De handmatige route: M' U2 M verandert het in een pijl, daarna afwerken zoals hierboven."
+          },
+          "fourZero": {
+            "name": "Alles bovenaan",
+            "tag": "4 omhoog · 0 omlaag",
+            "hint": "Alle vier de bovenranden fout. M U2 M wisselt een paar naar beneden in een pijl, daarna afwerken."
+          },
+          "twoTop": {
+            "name": "Beide bovenaan",
+            "tag": "2 omhoog · 0 omlaag",
+            "hint": "Niet 0, niet 4: M' U M maakt er vier foute randen in pijlvorm van, U2 om te richten, M' U M om af te werken."
+          },
+          "oneOne": {
+            "name": "Eén omhoog, één omlaag",
+            "tag": "1 omhoog · 1 omlaag",
+            "hint": "Hetzelfde idee — de eerste M U M creëert de pijl."
+          },
+          "twoBottom": {
+            "name": "Beide onderaan",
+            "tag": "0 omhoog · 2 omlaag",
+            "hint": "M U M tilt ze in een pijl, daarna afwerken zoals gebruikelijk."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL en UR",
+        "desc": "Geel boven, wit onder, rood blok links: de twee randen die nog geplaatst moeten worden zijn geel-rood en geel-oranje (omkaderd in de diagrammen). Breng beide naar onderen zodat ze tegenover elkaar liggen, draai de bovenkant om ze uit te lijnen, en doe dan M2 U of M2 U'. De middelpunten eindigen omgedraaid — de volgende stap lost dat op.",
+        "cases": {
+          "bothTop": {
+            "name": "Beide boven",
+            "hint": "Draai de bovenkant totdat ze tegenover elkaar staan (voor en achter). M2 laat beide zakken, U' lijnt ze uit, M2 U' plaatst ze."
+          },
+          "oneBottom": {
+            "name": "Eén boven, één onder",
+            "hint": "U2 om uit te lijnen, M U2 M' stuurt de bovenste naar beneden tegenover de andere; U' om uit te lijnen, M2 U brengt beide omhoog en plaatst ze."
+          },
+          "bothBottom": {
+            "name": "Beide onder",
+            "hint": "Draai de bovenkant om uit te lijnen, M2 brengt ze omhoog, U plaatst ze."
+          },
+          "bothBottomAlt": {
+            "name": "Beide onder (andere manier)",
+            "hint": "Het paar zit andersom: U2 om de bovenkant uit te lijnen, dan M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Laatste vier randen (alleen door te kijken)",
+        "cases": {
+          "needM2": {
+            "name": "Middelstukken omgedraaid",
+            "hint": "Het witte middelstuk zit aan de bovenkant: M2 draait het terug."
+          },
+          "oneWhite": {
+            "name": "Eén wit aan de bovenkant",
+            "hint": "Draai de bovenkant zodat de witte rand aan de voorkant zit, en wissel deze vervolgens met de onderste rand."
+          },
+          "twoWhite": {
+            "name": "Twee witten aan de bovenkant",
+            "hint": "Wissel de bovenste en onderste randen twee keer, één keer aan elke kant."
+          },
+          "byLook": {
+            "name": "Oplossen door te kijken",
+            "hint": "Geen wit aan de bovenkant, maar de voor- en achterranden zijn verwisseld: M2, draai de bovenkant, M2 terug."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

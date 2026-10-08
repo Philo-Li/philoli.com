@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Penerjemah ebook AI gratis yang berjalan sepenuhnya di browser Anda. Terjemahkan file EPUB dan PDF ke 40+ bahasa dengan output dwibahasa berdampingan. Gunakan API key Anda sendiri.",
     "rubiksCubeTitle": "Kubus Rubik 3D — Philo Li",
     "rubiksCubeDescription": "Kubus Rubik 3D interaktif. Atur acakan dan solusi, mainkan langkah demi langkah, sembunyikan warna atau sisi untuk latihan menghafal.",
+    "cubeRouxTitle": "Metode Roux — Blok, CMLL, dan LSE",
+    "cubeRouxDescription": "Semua algoritma yang Anda butuhkan untuk metode Roux, satu tab per tahap: penyisipan pembangunan blok, CMLL dua langkah, dan algoritma M/U untuk orientasi edge, UL/UR, dan empat edge terakhir. Setiap kasus memiliki diagram dan terbuka di kubus 3D interaktif.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Grafik Kemajuan Rubik's Cube",
     "cubeAnalyzerDescription": "Unggah ekspor csTimer Anda dan dapatkan grafik kemajuan: tren Ao5/Ao12/Ao100, riwayat PB, pencapaian, volume harian, dan kurva pembelajaran power-law. Berjalan sepenuhnya di peramban Anda."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Ekspor sesi csTimer Anda dan lihat grafik kemajuan Anda.",
       "cta": "Analisis hasil solve saya"
+    },
+    "rouxCard": {
+      "eyebrow": "Metode",
+      "title": "Metode Roux",
+      "desc": "Blok, CMLL dua langkah, dan LSE — setiap kasus dengan diagram yang bisa Anda buka di kubus ini.",
+      "cta": "Telusuri pustaka"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metode",
+    "title": "Metode Roux (Ramah Pemula)",
+    "intro": "Metode Roux memiliki empat tahap: membangun blok 1×2×3 kiri, membangun blok kanan, menyelesaikan sudut atas (CMLL), lalu menyelesaikan enam tepi terakhir hanya dengan putaran M dan U (LSE).",
+    "tabsLabel": "Tahap Roux",
+    "tabs": {
+      "fb": "Blok pertama",
+      "sb": "Blok kedua",
+      "cmll": "CMLL (dua langkah)",
+      "lse": "LSE"
+    },
+    "openInCube": "Detail",
+    "fb": {
+      "intro": "Blok pertama adalah 1×2×3 di sisi kiri: edge DL, dua corner kiri bawah, dan dua edge-nya. Tidak ada algoritma tetap — Anda melihat, memasangkan corner dengan edge-nya, lalu menyisipkannya. Ini adalah gerakan tangan yang muncul berulang kali. Pegang kubus dengan blok di sisi kiri dan slot kosong di depan.",
+      "insert": {
+        "title": "Memasangkan dan menyisipkan",
+        "desc": "Setiap kasus terbuka di kubus 3D dengan pasangan yang sudah berada di posisi; perhatikan di mana kedua potongan dimulai dan bagaimana putaran membawanya ke tempatnya tanpa mengganggu sisa blok.",
+        "cases": {
+          "pairLeft": {
+            "name": "Pasangan di atas, sisi kiri",
+            "hint": "Corner di atas slot, edge di sampingnya di kiri. Pindahkan pasangan agar tidak menghalangi, buka slot, masukkan ke dalamnya."
+          },
+          "mSlice": {
+            "name": "Pasangkan dengan irisan M",
+            "hint": "Sudut di kiri-belakang bagian atas, tepi di sebelah kanan. M membawa tepi tersebut berputar untuk bertemu dengannya, lalu F' menjatuhkan pasangan tersebut ke dalam."
+          },
+          "edgeOnTop": {
+            "name": "Sudut di slot, sisi di atas",
+            "hint": "Sudut sudah di tempatnya, sisi berada di kanan atas. Keluarkan sudut untuk menemuinya, lalu F' memasukkan keduanya."
+          },
+          "misPaired": {
+            "name": "Pasangan di atas, warna tidak cocok",
+            "hint": "Sudut dan rusuk bersebelahan di kanan atas tetapi tidak cocok. F' membuka slot, pasangkan kembali dengan L' U' L U' L' U L, F' menutupnya."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Blok kedua mencerminkan blok pertama di sisi kanan — tetapi sekarang blok kiri tidak boleh bergerak. Hanya putaran R, r, M, dan U yang aman. Putaran lebar r adalah trik Roux: ia menggerakkan lapisan kanan dan slice M secara bersamaan, sehingga Anda bisa mengambil edge dari bawah tanpa menyentuh sisi kiri.",
+      "insert": {
+        "title": "Memasangkan dan menyisipkan",
+        "desc": "Keempat kasus menjaga blok kiri tetap utuh. Edge DR diasumsikan sudah selesai; ini menyisipkan pasangan corner-edge depan-kanan.",
+        "cases": {
+          "pairRight": {
+            "name": "Pasangan di atas, sisi kanan",
+            "hint": "Sudut di atas slot, tepi di sampingnya di sebelah kanan. Cerminan dari sisipan blok pertama."
+          },
+          "mPair": {
+            "name": "Pasangkan dengan irisan M",
+            "hint": "Edge di belakang-kiri atas, corner di kanan. U lalu M membawa edge ke arah corner, R U' R' memasukkan pasangan tersebut."
+          },
+          "cornerInSlot": {
+            "name": "Sudut di slot, tepi di atas",
+            "hint": "Sudut sudah di tempatnya, tepi berada di atas. U R mengangkat sudut keluar, M membawa tepi ke sana, U' R' memasukkan keduanya."
+          },
+          "twistedCorner": {
+            "name": "Sudut di slot, terpelintir",
+            "hint": "Sudut tersebut berada di slotnya namun terputar. L F' L' mengeluarkannya melalui blok kiri dan kembali, gerakan M mengambil edge, R U' R' memasukkannya."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Dengan kedua blok selesai, selesaikan keempat sudut atas sekaligus. CMLL penuh memiliki 42 kasus; dua-tahap membaginya menjadi orientasi, lalu permutasi, dan hanya memerlukan sembilan algoritma. Karena irisan M diperbaiki setelahnya, algoritma ini bebas mengganggunya. Stiker kuning menunjukkan di mana warna atas berada; batang di bagian luar berarti warna atas sudut tersebut menghadap ke samping.",
+      "orient": {
+        "title": "Langkah 1 · Orientasikan sudut",
+        "desc": "Hitung berapa banyak sudut atas yang sudah menunjukkan warna atas. 0 → H atau Pi. 1 → S atau AS. 2 → U, T atau L. Cocokkan polanya dan putar lapisan atas agar sejajar dengan diagram."
+      },
+      "permute": {
+        "title": "Langkah 2 · Permutasikan sudut",
+        "desc": "Jika satu sisi sudah cocok — katakanlah kedua sudut pada satu sisi berwarna merah — putar bagian atas agar pasangan tersebut berada di kiri, lalu gunakan pertukaran yang berdekatan. Jika tidak ada sisi yang cocok, gunakan pertukaran diagonal.",
+        "cases": {
+          "adjacent": {
+            "name": "Pertukaran berdekatan",
+            "hint": "Letakkan dua sudut yang akan ditukar di sebelah kanan."
+          },
+          "diagonal": {
+            "name": "Pertukaran diagonal",
+            "hint": "Sudut mana pun bisa digunakan."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Enam tepi tersisa, dan hanya putaran M dan U yang diperlukan. Tiga langkah: orientasikan tepi agar setiap warna atas/bawah menghadap ke atas atau bawah (EO), tempatkan tepi UL dan UR, lalu selesaikan empat terakhir. Diagram menunjukkan tepi lapisan atas ditambah dua tepi bawah DF dan DB; sudut dibiarkan kosong karena sudah selesai.",
+      "eo": {
+        "title": "4a · Orientasi tepi",
+        "desc": "Tepi yang terisi memiliki warna atas/bawah yang menghadap ke atas atau bawah — bagus. Kosong berarti buruk. Hitung tepi yang buruk di atas dan bawah; hanya ada beberapa pola dan M' U M adalah gerakan yang mengubahnya.",
+        "cases": {
+          "arrow": {
+            "name": "Panah",
+            "tag": "3 naik · 1 turun",
+            "hint": "Putar bagian atas agar ketiga tepi buruk mengarah ke tepi bawah yang buruk, lalu M' U M memperbaiki keempatnya."
+          },
+          "twoTwo": {
+            "name": "Pasangan terpisah",
+            "tag": "2 naik · 2 turun",
+            "hint": "Solusi terpendek ditampilkan. Cara manual: M' U2 M mengubahnya menjadi panah, lalu selesaikan seperti di atas."
+          },
+          "fourZero": {
+            "name": "Semua di atas",
+            "tag": "4 naik · 0 turun",
+            "hint": "Keempat tepi atas buruk. M U2 M menukar pasangan ke bawah menjadi panah, lalu selesaikan."
+          },
+          "twoTop": {
+            "name": "Keduanya di atas",
+            "tag": "2 naik · 0 turun",
+            "hint": "Bukan 0, bukan 4: M' U M menjadikannya empat tepi buruk dalam bentuk panah, U2 untuk membidik, M' U M untuk menyelesaikan."
+          },
+          "oneOne": {
+            "name": "Satu di atas, satu di bawah",
+            "tag": "1 naik · 1 turun",
+            "hint": "Ide yang sama — M U M pertama menciptakan panah."
+          },
+          "twoBottom": {
+            "name": "Keduanya di bawah",
+            "tag": "0 di atas · 2 di bawah",
+            "hint": "M U M mengangkatnya menjadi panah, lalu selesaikan seperti biasa."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL dan UR",
+        "desc": "Kuning di atas, putih di bawah, blok merah di kiri: dua edge yang tersisa untuk ditempatkan adalah kuning-merah dan kuning-oranye (dibingkai dalam diagram). Turunkan keduanya ke bawah agar posisinya berlawanan, putar bagian atas untuk menyejajarkan, lalu M2 U atau M2 U'. Center akhirnya terbalik — langkah berikutnya akan memperbaikinya.",
+        "cases": {
+          "bothTop": {
+            "name": "Keduanya di atas",
+            "hint": "Putar bagian atas sampai keduanya saling berhadapan (depan dan belakang). M2 menenggelamkan keduanya, U' menyejajarkannya, M2 U' menempatkannya."
+          },
+          "oneBottom": {
+            "name": "Satu di atas, satu di bawah",
+            "hint": "U2 untuk menyejajarkan, M U2 M' mengirim yang atas ke bawah berlawanan dengan yang lainnya; U' untuk menyejajarkan, M2 U membawa keduanya ke atas dan menempatkannya."
+          },
+          "bothBottom": {
+            "name": "Keduanya di bawah",
+            "hint": "Putar bagian atas untuk menyejajarkan, M2 membawanya ke atas, U menempatkannya."
+          },
+          "bothBottomAlt": {
+            "name": "Keduanya di bawah (cara lain)",
+            "hint": "Pasangan tersebut diletakkan dengan arah sebaliknya: U2 untuk menyejajarkan bagian atas, lalu M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Empat tepi terakhir (hanya dengan melihat)",
+        "cases": {
+          "needM2": {
+            "name": "Pusat terbalik",
+            "hint": "Pusat putih ada di atas: M2 membalikkannya kembali."
+          },
+          "oneWhite": {
+            "name": "Satu putih di atas",
+            "hint": "Putar bagian atas agar tepi putih ada di depan, lalu tukar dengan tepi bawah."
+          },
+          "twoWhite": {
+            "name": "Dua putih di atas",
+            "hint": "Tukar tepi atas dan bawah dua kali, sekali di setiap sisi."
+          },
+          "byLook": {
+            "name": "Selesaikan dengan melihat",
+            "hint": "Tidak ada putih di atas, tapi tepi depan dan belakang tertukar: M2, putar bagian atas, M2 kembali."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

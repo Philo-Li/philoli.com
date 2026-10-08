@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Darmowy tłumacz ebooków oparty na AI, działa w całości w przeglądarce. Tłumacz pliki EPUB i PDF na ponad 40 języków z dwujęzycznym wyjściem obok siebie. Używaj własnego klucza API.",
     "rubiksCubeTitle": "Kostka Rubika 3D — Philo Li",
     "rubiksCubeDescription": "Interaktywna Kostka Rubika 3D. Ustaw pomieszanie i rozwiązanie, odtwarzaj krok po kroku, ukrywaj kolory lub ścianki do ćwiczeń zapamiętywania.",
+    "cubeRouxTitle": "Metoda Roux — Bloki, CMLL i LSE",
+    "cubeRouxDescription": "Wszystkie algorytmy potrzebne do metody Roux, jedna karta na etap: wstawianie bloków, CMLL dwuetapowe oraz algorytmy M/U do orientacji krawędzi, UL/UR i ostatnich czterech krawędzi. Każdy przypadek posiada diagram i otwiera się w interaktywnej kostce 3D.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Wykresy postępów w układaniu kostki Rubika",
     "cubeAnalyzerDescription": "Upuść swój eksport z csTimer i uzyskaj wykresy postępów: trendy Ao5/Ao12/Ao100, historia PB, kamienie milowe, dzienny wolumen i krzywa uczenia się (potęgowa). Działa w całości w Twojej przeglądarce."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Wyeksportuj swoje sesje z csTimer i zobacz wykresy swoich postępów.",
       "cta": "Analizuj moje ułożenia"
+    },
+    "rouxCard": {
+      "eyebrow": "Metoda",
+      "title": "Metoda Roux",
+      "desc": "Bloki, CMLL dwuetapowe i LSE — każdy przypadek z diagramem, który możesz otworzyć na tej kostce.",
+      "cta": "Przeglądaj bibliotekę"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metoda",
+    "title": "Metoda Roux (dla początkujących)",
+    "intro": "Metoda Roux składa się z czterech etapów: ułożenie lewego bloku 1×2×3, ułożenie prawego, rozwiązanie górnych narożników (CMLL), a następnie dokończenie ostatnich sześciu krawędzi przy użyciu tylko ruchów M i U (LSE).",
+    "tabsLabel": "Etapy Roux",
+    "tabs": {
+      "fb": "Pierwszy blok",
+      "sb": "Drugi blok",
+      "cmll": "CMLL (dwuetapowe)",
+      "lse": "LSE"
+    },
+    "openInCube": "Szczegóły",
+    "fb": {
+      "intro": "Pierwszy blok to 1×2×3 po lewej stronie: krawędź DL, dwa dolne lewe narożniki i ich dwie krawędzie. Nie ma tu sztywnych algorytmów — patrzysz, łączysz narożnik z jego krawędzią i wstawiasz. To ruchy dłoni, które powtarzają się wielokrotnie. Trzymaj kostkę z blokiem po lewej stronie i pustym slotem z przodu.",
+      "insert": {
+        "title": "Łączenie i wstawianie",
+        "desc": "Każdy przypadek otwiera się w kostce 3D z parą już na miejscu; obserwuj, gdzie zaczynają dwa elementy i jak ruchy sprowadzają je na miejsce, nie naruszając reszty bloku.",
+        "cases": {
+          "pairLeft": {
+            "name": "Para na górze, lewa strona",
+            "hint": "Narożnik nad slotem, krawędź obok niego po lewej. Odsuń parę, otwórz slot, wstaw."
+          },
+          "mSlice": {
+            "name": "Sparuj z warstwą M",
+            "hint": "Narożnik z tyłu po lewej na górze, krawędź po prawej. M sprowadza krawędź do narożnika, a następnie F' wstawia parę na miejsce."
+          },
+          "edgeOnTop": {
+            "name": "Narożnik w szczelinie, krawędź na górze",
+            "hint": "Narożnik jest już na miejscu, krawędź znajduje się po prawej stronie góry. Wyjmij narożnik, aby go spotkać, a następnie F' wstawi oba."
+          },
+          "misPaired": {
+            "name": "Para na górze, niedopasowane kolory",
+            "hint": "Narożnik i krawędź znajdują się obok siebie po prawej stronie góry, ale nie pasują. F' otwiera slot, sparuj ponownie za pomocą L' U' L U' L' U L, F' zamyka go."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Drugi blok jest lustrzanym odbiciem pierwszego po prawej stronie — ale teraz lewy blok nie może się poruszyć. Bezpieczne są tylko ruchy R, r, M i U. Szeroki ruch r to sztuczka Roux: porusza prawą warstwą i warstwą M jednocześnie, dzięki czemu możesz pobierać krawędzie z dołu bez dotykania lewej strony.",
+      "insert": {
+        "title": "Łączenie i wstawianie",
+        "desc": "Wszystkie cztery przypadki pozostawiają lewy blok nienaruszony. Zakłada się, że krawędź DR jest już rozwiązana; te ruchy wstawiają parę narożnik-krawędź z przodu po prawej.",
+        "cases": {
+          "pairRight": {
+            "name": "Para na górze, po prawej stronie",
+            "hint": "Róg nad szczeliną, krawędź obok po prawej. Lustrzane odbicie wkładki pierwszego bloku."
+          },
+          "mPair": {
+            "name": "Sparuj z warstwą M",
+            "hint": "Krawędź z tyłu po lewej na górze, róg po prawej. U, a następnie M sprowadza krawędź do rogu, R U' R' wstawia parę."
+          },
+          "cornerInSlot": {
+            "name": "Narożnik w slocie, krawędź na górze",
+            "hint": "Narożnik jest już na miejscu, krawędź znajduje się na górze. U R wyciąga narożnik, M podstawia do niego krawędź, U' R' umieszcza oba elementy na miejscu."
+          },
+          "twistedCorner": {
+            "name": "Róg w slocie, przekręcony",
+            "hint": "Róg znajduje się w swoim slocie, ale jest obrócony. L F' L' wyrzuca go przez lewy blok i z powrotem, ruchy M sprowadzają krawędź, R U' R' wstawia."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Gdy oba bloki są gotowe, ułóż cztery górne rogi za jednym razem. Pełne CMLL ma 42 przypadki; metoda dwuetapowa dzieli je na orientację, a następnie permutację, i wymaga tylko dziewięciu algorytmów. Ponieważ warstwa M jest naprawiana później, algorytmy te mogą ją dowolnie przesuwać. Żółte naklejki pokazują, gdzie znajduje się górny kolor; pasek na zewnątrz oznacza, że górny kolor rogu jest skierowany w bok.",
+      "orient": {
+        "title": "Krok 1 · Orientacja rogów",
+        "desc": "Policz, ile górnych rogów ma już widoczny górny kolor. 0 → H lub Pi. 1 → S lub AS. 2 → U, T lub L. Dopasuj wzór i obróć górną warstwę tak, aby zgadzała się z diagramem."
+      },
+      "permute": {
+        "title": "Krok 2 · Permutacja rogów",
+        "desc": "Jeśli jedna strona już pasuje — powiedzmy, że oba rogi na jednej ściance są czerwone — obróć górę tak, aby ta para znalazła się po lewej stronie, a następnie wykonaj zamianę sąsiednich elementów. Jeśli żadna strona nie pasuje, wykonaj zamianę po przekątnej.",
+        "cases": {
+          "adjacent": {
+            "name": "Zamiana sąsiednia",
+            "hint": "Umieść dwa rogi do zamiany po prawej stronie."
+          },
+          "diagonal": {
+            "name": "Zamiana po przekątnej",
+            "hint": "Dowolny kąt zadziała."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Pozostało sześć krawędzi, potrzebne są tylko ruchy M i U. Trzy kroki: orientacja krawędzi tak, aby każdy górny/dolny kolor był skierowany do góry lub do dołu (EO), umieszczenie krawędzi UL i UR, a następnie dokończenie ostatnich czterech. Diagramy pokazują krawędzie górnej warstwy oraz dwie dolne krawędzie DF i DB; rogi pozostawiono puste, ponieważ są już ułożone.",
+      "eo": {
+        "title": "4a · Orientacja krawędzi",
+        "desc": "Wypełniona krawędź ma swój górny/dolny kolor skierowany do góry lub do dołu — to dobrze. Pusta oznacza źle. Policz złe krawędzie na górze i na dole; istnieje tylko kilka wzorów, a ruch M' U M je zmienia.",
+        "cases": {
+          "arrow": {
+            "name": "Strzałka",
+            "tag": "3 w górę · 1 w dół",
+            "hint": "Obróć górę tak, aby trzy złe krawędzie wskazywały na złą dolną krawędź, a następnie M' U M naprawi wszystkie cztery."
+          },
+          "twoTwo": {
+            "name": "Podzielone pary",
+            "tag": "2 w górę · 2 w dół",
+            "hint": "Pokazano najkrótsze rozwiązanie. Ręczna metoda: M' U2 M zmienia to w strzałkę, a następnie dokończ jak powyżej."
+          },
+          "fourZero": {
+            "name": "Wszystkie na górze",
+            "tag": "4 w górę · 0 w dół",
+            "hint": "Wszystkie cztery górne krawędzie są złe. M U2 M zamienia parę w dół w strzałkę, a następnie dokończ."
+          },
+          "twoTop": {
+            "name": "Obie na górze",
+            "tag": "2 w górę · 0 w dół",
+            "hint": "Nie 0, nie 4: M' U M tworzy cztery złe krawędzie w kształcie strzałki, U2 aby wycelować, M' U M aby dokończyć."
+          },
+          "oneOne": {
+            "name": "Jedna w górę, jedna w dół",
+            "tag": "1 w górę · 1 w dół",
+            "hint": "Ten sam pomysł — pierwsze M U M tworzy strzałkę."
+          },
+          "twoBottom": {
+            "name": "Obie na dole",
+            "tag": "0 w górę · 2 w dół",
+            "hint": "M U M unosi je w strzałkę, a następnie dokończ jak zwykle."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL i UR",
+        "desc": "Żółty na górze, biały na dole, czerwony klocek po lewej: dwie krawędzie do umieszczenia to żółto-czerwona i żółto-pomarańczowa (w ramce na diagramach). Obniż obie na dół, aby znalazły się naprzeciwko siebie, obróć górę, aby je ustawić w linii, a następnie M2 U lub M2 U'. Centra zostaną odwrócone — następny krok to naprawi.",
+        "cases": {
+          "bothTop": {
+            "name": "Obie na górze",
+            "hint": "Obracaj górną warstwę, aż znajdą się naprzeciwko siebie (przód i tył). M2 zanurza oba, U' ustawia je w linii, M2 U' umieszcza je na miejscu."
+          },
+          "oneBottom": {
+            "name": "Jedna na górze, jedna na dole",
+            "hint": "U2 aby ustawić w linii, M U2 M' przesuwa górny element w dół naprzeciw drugiego; U' aby ustawić w linii, M2 U podnosi oba i umieszcza je na miejscu."
+          },
+          "bothBottom": {
+            "name": "Obie na dole",
+            "hint": "Obróć górę, aby ustawić w linii, M2 podniesie je, U umieści na miejscu."
+          },
+          "bothBottomAlt": {
+            "name": "Obie na dole (drugi sposób)",
+            "hint": "Para jest ustawiona odwrotnie: U2, aby wyrównać górę, a następnie M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Ostatnie cztery krawędzie (tylko patrząc)",
+        "cases": {
+          "needM2": {
+            "name": "Środki odwrócone",
+            "hint": "Biały środek jest na górze: M2 odwraca go z powrotem."
+          },
+          "oneWhite": {
+            "name": "Jedna biała na górze",
+            "hint": "Obróć górę tak, aby biała krawędź była z przodu, a następnie zamień ją z dolną krawędzią."
+          },
+          "twoWhite": {
+            "name": "Dwie białe na górze",
+            "hint": "Zamień górne i dolne krawędzie dwukrotnie, po jednym razie z każdej strony."
+          },
+          "byLook": {
+            "name": "Rozwiąż patrząc",
+            "hint": "Brak białego na górze, ale przednia i tylna krawędź są zamienione: M2, obróć górę, M2 z powrotem."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

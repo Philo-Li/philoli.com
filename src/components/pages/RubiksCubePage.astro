@@ -25,6 +25,7 @@ const tutorialHref = tutorialPost && tutorialLocale && isLocale(tutorialLocale)
     client:load
     locale={locale}
     analyzerHref={localizedPath('/projects/rubiks-cube/analyzer', locale)}
+    rouxHref={localizedPath('/projects/rubiks-cube/roux', locale)}
     tutorial={tutorialPost && tutorialHref ? {
       title: tutorialPost.data.title,
       href: tutorialHref,

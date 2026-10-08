@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Traducător gratuit de ebook-uri cu IA, care rulează complet în browserul tău. Tradu fișiere EPUB și PDF în peste 40 de limbi cu ieșire bilingvă alăturată. Folosește propria cheie API.",
     "rubiksCubeTitle": "Cub Rubik 3D — Philo Li",
     "rubiksCubeDescription": "Cub Rubik 3D interactiv. Setează o amestecare și o soluție, parcurge pas cu pas, ascunde culori sau fețe pentru exerciții de memorare.",
+    "cubeRouxTitle": "Metoda Roux — Blocuri, CMLL și LSE",
+    "cubeRouxDescription": "Fiecare algoritm de care ai nevoie pentru metoda Roux, o filă pe etapă: inserări pentru construcția blocurilor, CMLL în doi pași și algoritmii M/U pentru orientarea muchiilor, UL/UR și ultimele patru muchii. Fiecare caz are o diagramă și se deschide în cubul 3D interactiv.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Grafice de progres pentru Cubul Rubik",
     "cubeAnalyzerDescription": "Încarcă exportul tău csTimer și obține grafice de progres: tendințe Ao5/Ao12/Ao100, istoricul PB, etape importante, volum zilnic și o curbă de învățare de tip legea puterii. Rulează în întregime în browserul tău."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Exportă sesiunile tale csTimer și vezi graficele de progres.",
       "cta": "Analizează-mi rezolvările"
+    },
+    "rouxCard": {
+      "eyebrow": "Metodă",
+      "title": "Metoda Roux",
+      "desc": "Blocuri, CMLL în doi pași și LSE — fiecare caz cu o diagramă pe care o poți deschide pe acest cub.",
+      "cta": "Răsfoiește biblioteca"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metodă",
+    "title": "Metoda Roux (pentru începători)",
+    "intro": "Metoda Roux are patru etape: construirea blocului stâng de 1×2×3, construirea celui drept, rezolvarea colțurilor de sus (CMLL), apoi finalizarea ultimelor șase muchii folosind doar mișcări M și U (LSE).",
+    "tabsLabel": "Etapele Roux",
+    "tabs": {
+      "fb": "Primul bloc",
+      "sb": "Al doilea bloc",
+      "cmll": "CMLL (în doi pași)",
+      "lse": "LSE"
+    },
+    "openInCube": "Detalii",
+    "fb": {
+      "intro": "Primul bloc este un 1×2×3 pe stânga: muchia DL, cele două colțuri stânga-jos și cele două muchii ale lor. Nu există algoritmi ficși — privești, cuplezi un colț cu muchia sa și inserezi. Acestea sunt mișcările de mână care apar mereu. Ține cubul cu blocul în stânga și slotul gol în față.",
+      "insert": {
+        "title": "Cuplare și inserare",
+        "desc": "Fiecare caz se deschide în cubul 3D cu perechea deja în poziție; urmărește unde încep cele două piese și cum mișcările le aduc la locul lor fără a deranja restul blocului.",
+        "cases": {
+          "pairLeft": {
+            "name": "Pereche sus, partea stângă",
+            "hint": "Colț deasupra slotului, muchie lângă el în stânga. Mută perechea din cale, deschide slotul, introdu-o."
+          },
+          "mSlice": {
+            "name": "Împerechează cu felia M",
+            "hint": "Colț în partea stângă-spate a feței superioare, muchie în dreapta. M aduce muchia în jur pentru a se întâlni cu acesta, apoi F' coboară perechea."
+          },
+          "edgeOnTop": {
+            "name": "Colț în slot, muchie deasupra",
+            "hint": "Colțul este deja la locul lui, muchia stă în dreapta sus. Scoate colțul pentru a-l întâlni, apoi F' le inserează pe amândouă."
+          },
+          "misPaired": {
+            "name": "Pereche sus, culori nepotrivite",
+            "hint": "Colțul și muchia sunt una lângă alta în dreapta sus, dar nu se potrivesc. F' deschide slotul, reîmperechează cu L' U' L U' L' U L, F' îl închide."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Al doilea bloc oglindește primul pe dreapta — dar acum blocul stâng nu trebuie să se miște. Doar rotirile R, r, M și U sunt sigure. Rotirea largă r este trucul Roux: mută stratul drept și felia M împreună, astfel încât să poți apuca muchiile de jos fără a atinge stânga.",
+      "insert": {
+        "title": "Cuplare și inserare",
+        "desc": "Toate cele patru cazuri păstrează blocul stâng neatins. Muchia DR este considerată rezolvată; acestea inserează perechea colț-muchie din dreapta-față.",
+        "cases": {
+          "pairRight": {
+            "name": "Pereche sus, în partea dreaptă",
+            "hint": "Colț deasupra slotului, muchie lângă el în dreapta. Oglinda inserției primului bloc."
+          },
+          "mPair": {
+            "name": "Împerechează cu felia M",
+            "hint": "Muchia în partea stângă-spate a feței superioare, colțul în dreapta. U apoi M aduce muchia lângă colț, R U' R' inserează perechea."
+          },
+          "cornerInSlot": {
+            "name": "Colț în slot, muchie deasupra",
+            "hint": "Colțul este deja la locul lui, muchia stă deasupra. U R ridică colțul, M aduce muchia lângă el, U' R' le pune pe amândouă la loc."
+          },
+          "twistedCorner": {
+            "name": "Colț în slot, răsucit",
+            "hint": "Colțul stă în slotul său, dar întors. L F' L' îl scoate prin blocul din stânga și înapoi, mișcările M aduc muchia, R U' R' îl inserează."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Cu ambele blocuri gata, rezolvă cele patru colțuri de sus dintr-o dată. CMLL complet are 42 de cazuri; varianta în doi pași îl împarte în orientare, apoi permutare, și necesită doar nouă algoritmi. Deoarece felia M este fixată ulterior, acești algoritmi pot să o perturbe. Autocolantele galbene arată unde este culoarea de sus; o bară pe exterior înseamnă că acea culoare de sus a colțului este orientată lateral.",
+      "orient": {
+        "title": "Pasul 1 · Orientează colțurile",
+        "desc": "Numără câte colțuri de sus arată deja culoarea de sus. 0 → H sau Pi. 1 → S sau AS. 2 → U, T sau L. Potrivește modelul și rotește stratul de sus astfel încât să se alinieze cu diagrama."
+      },
+      "permute": {
+        "title": "Pasul 2 · Permută colțurile",
+        "desc": "Dacă o latură se potrivește deja — să zicem că ambele colțuri de pe o față sunt roșii — rotește partea de sus astfel încât acea pereche să fie în stânga, apoi folosește schimbul adiacent. Dacă nicio latură nu se potrivește, folosește schimbul pe diagonală.",
+        "cases": {
+          "adjacent": {
+            "name": "Schimbare adiacentă",
+            "hint": "Pune cele două colțuri de schimbat în dreapta."
+          },
+          "diagonal": {
+            "name": "Schimbare diagonală",
+            "hint": "Orice unghi este bun."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Rămân șase muchii și sunt necesare doar mișcări M și U. Trei pași: orientează muchiile astfel încât fiecare culoare de sus/jos să fie orientată în sus sau în jos (EO), plasează muchiile UL și UR, apoi finalizează ultimele patru. Diagramele arată muchiile stratului de sus plus cele două muchii de jos DF și DB; colțurile sunt lăsate goale deoarece sunt deja rezolvate.",
+      "eo": {
+        "title": "4a · Orientarea muchiilor",
+        "desc": "O muchie plină are culoarea de sus/jos orientată în sus sau în jos — bine. Goală înseamnă rău. Numără muchiile rele de sus și de jos; există doar câteva modele, iar M' U M este mișcarea care le schimbă.",
+        "cases": {
+          "arrow": {
+            "name": "Săgeată",
+            "tag": "3 sus · 1 jos",
+            "hint": "Rotește partea de sus astfel încât cele trei muchii rele să indice spre muchia rea de jos, apoi M' U M le repară pe toate patru."
+          },
+          "twoTwo": {
+            "name": "Perechi despărțite",
+            "tag": "2 sus · 2 jos",
+            "hint": "Cea mai scurtă soluție afișată. Varianta manuală: M' U2 M o transformă într-o săgeată, apoi finalizează ca mai sus."
+          },
+          "fourZero": {
+            "name": "Toate sus",
+            "tag": "4 sus · 0 jos",
+            "hint": "Toate cele patru muchii de sus sunt rele. M U2 M schimbă o pereche în jos într-o săgeată, apoi finalizează."
+          },
+          "twoTop": {
+            "name": "Ambele sus",
+            "tag": "2 sus · 0 jos",
+            "hint": "Nu 0, nu 4: M' U M creează patru muchii rele în formă de săgeată, U2 pentru a ținti, M' U M pentru a finaliza."
+          },
+          "oneOne": {
+            "name": "Unul sus, unul jos",
+            "tag": "1 sus · 1 jos",
+            "hint": "Aceeași idee — primul M U M creează săgeata."
+          },
+          "twoBottom": {
+            "name": "Ambele jos",
+            "tag": "0 sus · 2 jos",
+            "hint": "M U M le ridică într-o săgeată, apoi finalizează ca de obicei."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL și UR",
+        "desc": "Galben sus, alb jos, bloc roșu în stânga: cele două muchii rămase de plasat sunt galben-roșu și galben-portocaliu (încadrate în diagrame). Coboară-le pe ambele jos astfel încât să fie opuse una celeilalte, rotește partea de sus pentru a le alinia, apoi M2 U sau M2 U'. Centrele ajung inversate — pasul următor rezolvă asta.",
+        "cases": {
+          "bothTop": {
+            "name": "Ambele sus",
+            "hint": "Rotește partea de sus până când sunt opuse una celeilalte (față și spate). M2 le coboară pe amândouă, U' le aliniază, M2 U' le plasează."
+          },
+          "oneBottom": {
+            "name": "Una sus, una jos",
+            "hint": "U2 pentru aliniere, M U2 M' trimite piesa de sus în partea opusă celeilalte; U' pentru aliniere, M2 U le aduce pe amândouă sus și le plasează."
+          },
+          "bothBottom": {
+            "name": "Ambele jos",
+            "hint": "Rotește partea de sus pentru a le alinia, M2 le aduce sus, U le plasează."
+          },
+          "bothBottomAlt": {
+            "name": "Ambele jos (altă metodă)",
+            "hint": "Perechea stă invers: U2 pentru a alinia partea de sus, apoi M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Ultimele patru muchii (doar privind)",
+        "cases": {
+          "needM2": {
+            "name": "Centre inversate",
+            "hint": "Centrul alb este sus: M2 îl inversează la loc."
+          },
+          "oneWhite": {
+            "name": "Un alb sus",
+            "hint": "Rotește partea de sus astfel încât muchia albă să fie în față, apoi inverseaz-o cu muchia de jos."
+          },
+          "twoWhite": {
+            "name": "Două albe sus",
+            "hint": "Inversează muchiile de sus și de jos de două ori, o dată pe fiecare parte."
+          },
+          "byLook": {
+            "name": "Rezolvă privind",
+            "hint": "Fără alb deasupra, dar marginile din față și din spate sunt inversate: M2, rotește partea de sus, M2 înapoi."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

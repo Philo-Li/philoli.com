@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Kostenloser KI-E-Book-Übersetzer, der vollständig in deinem Browser läuft. Übersetze EPUB- und PDF-Dateien in über 40 Sprachen mit zweisprachiger Gegenüberstellung. Nutze deinen eigenen API-Schlüssel.",
     "rubiksCubeTitle": "3D-Zauberwürfel — Philo Li",
     "rubiksCubeDescription": "Interaktiver 3D-Zauberwürfel. Lege eine Verdrehung und eine Lösung fest, spiele Schritt für Schritt, blende Farben oder Seiten für Gedächtnisübungen aus.",
+    "cubeRouxTitle": "Roux-Methode — Blöcke, CMLL und LSE",
+    "cubeRouxDescription": "Jeder Algorithmus, den du für die Roux-Methode brauchst, ein Tab pro Phase: Blockbau-Einfügungen, Two-Look CMLL und die M/U-Algorithmen für Kantenorientierung, UL/UR und die letzten vier Kanten. Jeder Fall hat ein Diagramm und öffnet sich im interaktiven 3D-Würfel.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Fortschrittsdiagramme für den Zauberwürfel",
     "cubeAnalyzerDescription": "Ziehe deinen csTimer-Export hierher und erhalte Fortschrittsdiagramme: Ao5/Ao12/Ao100-Trends, PB-Historie, Meilensteine, tägliches Volumen und eine Lernkurve nach dem Potenzgesetz. Läuft vollständig in deinem Browser."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Exportiere deine csTimer-Sitzungen und sieh dir deine Fortschrittsdiagramme an.",
       "cta": "Meine Zeiten analysieren"
+    },
+    "rouxCard": {
+      "eyebrow": "Methode",
+      "title": "Roux-Methode",
+      "desc": "Blöcke, Two-Look CMLL und LSE — jeder Fall mit einem Diagramm, das du auf diesem Würfel öffnen kannst.",
+      "cta": "Bibliothek durchsuchen"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Methode",
+    "title": "Roux-Methode (anfängerfreundlich)",
+    "intro": "Die Roux-Methode hat vier Stufen: den linken 1×2×3-Block bauen, den rechten bauen, die oberen Ecken lösen (CMLL) und dann die letzten sechs Kanten nur mit M- und U-Drehungen fertigstellen (LSE).",
+    "tabsLabel": "Roux-Phasen",
+    "tabs": {
+      "fb": "Erster Block",
+      "sb": "Zweiter Block",
+      "cmll": "CMLL (zwei Schritte)",
+      "lse": "LSE"
+    },
+    "openInCube": "Details",
+    "fb": {
+      "intro": "Der erste Block ist ein 1×2×3 auf der linken Seite: die DL-Kante, die zwei unteren linken Ecken und ihre zwei Kanten. Es gibt keine festen Algorithmen – du schaust, paarst eine Ecke mit ihrer Kante und fügst sie ein. Das sind die Handbewegungen, die immer wieder vorkommen. Halte den Würfel mit dem Block auf der linken Seite und dem leeren Slot vorne.",
+      "insert": {
+        "title": "Paaren und Einfügen",
+        "desc": "Jeder Fall öffnet sich im 3D-Würfel, wobei das Paar bereits in Position ist; beobachte, wo die beiden Teile starten und wie die Drehungen sie an ihren Platz bringen, ohne den Rest des Blocks zu stören.",
+        "cases": {
+          "pairLeft": {
+            "name": "Paar oben, linke Seite",
+            "hint": "Ecke über dem Slot, Kante daneben auf der linken Seite. Bewege das Paar aus dem Weg, öffne den Slot, füge es ein."
+          },
+          "mSlice": {
+            "name": "Mit der M-Ebene paaren",
+            "hint": "Ecke hinten links oben, Kante rechts. M bringt die Kante herum, um sie zu treffen, dann setzt F' das Paar ein."
+          },
+          "edgeOnTop": {
+            "name": "Ecke in den Schlitz, Kante oben",
+            "hint": "Die Ecke ist bereits zu Hause, die Kante sitzt rechts oben. Nimm die Ecke heraus, um sie zu treffen, dann setzt F' beide ein."
+          },
+          "misPaired": {
+            "name": "Paar oben, Farben passen nicht zusammen",
+            "hint": "Ecke und Kante liegen nebeneinander rechts oben, passen aber nicht zusammen. F' öffnet den Slot, neu paaren mit L' U' L U' L' U L, F' schließt ihn."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Der zweite Block spiegelt den ersten auf der rechten Seite – aber jetzt darf sich der linke Block nicht bewegen. Nur R-, r-, M- und U-Drehungen sind sicher. Die breite r-Drehung ist der Roux-Trick: Sie bewegt die rechte Ebene und die M-Ebene zusammen, sodass du Kanten von unten greifen kannst, ohne die linke Seite zu berühren.",
+      "insert": {
+        "title": "Paaren und Einfügen",
+        "desc": "Alle vier Fälle lassen den linken Block unberührt. Die DR-Kante wird als gelöst vorausgesetzt; diese fügen das vordere rechte Ecken-Kanten-Paar ein.",
+        "cases": {
+          "pairRight": {
+            "name": "Paar oben, rechte Seite",
+            "hint": "Ecke über dem Slot, Kante daneben auf der rechten Seite. Das Spiegelbild des ersten Block-Einsatzes."
+          },
+          "mPair": {
+            "name": "Paar mit dem M-Slice bilden",
+            "hint": "Kante hinten links oben, Ecke rechts. U dann M bringt die Kante zur Ecke, R U' R' fügt das Paar ein."
+          },
+          "cornerInSlot": {
+            "name": "Ecke im Slot, Kante oben",
+            "hint": "Die Ecke ist bereits an ihrem Platz, die Kante sitzt oben. U R hebt die Ecke heraus, M bringt die Kante dazu, U' R' setzt beides ein."
+          },
+          "twistedCorner": {
+            "name": "Ecke im Slot, verdreht",
+            "hint": "Die Ecke sitzt im Slot, ist aber verdreht. L F' L' befördert sie durch den linken Block nach außen und zurück, die M-Züge holen die Kante, R U' R' setzt sie ein."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Wenn beide Blöcke fertig sind, löse die vier oberen Ecken in einem Zug. Full CMLL hat 42 Fälle; Two-Look unterteilt es in Orientierung und dann Permutation und benötigt nur neun Algorithmen. Da die M-Ebene danach korrigiert wird, dürfen diese Algorithmen sie stören. Gelbe Aufkleber zeigen, wo die Oberseitenfarbe ist; ein Balken an der Außenseite bedeutet, dass die Oberseitenfarbe dieser Ecke zur Seite zeigt.",
+      "orient": {
+        "title": "Schritt 1 · Ecken orientieren",
+        "desc": "Zähle, wie viele obere Ecken bereits die Oberseitenfarbe zeigen. 0 → H oder Pi. 1 → S oder AS. 2 → U, T oder L. Gleiche das Muster ab und drehe die obere Ebene so, dass sie mit dem Diagramm übereinstimmt."
+      },
+      "permute": {
+        "title": "Schritt 2 · Ecken permutieren",
+        "desc": "Wenn eine Seite bereits übereinstimmt – sagen wir, beide Ecken auf einer Fläche sind rot –, drehe die Oberseite so, dass dieses Paar links liegt, und verwende dann den benachbarten Tausch. Wenn keine Seite übereinstimmt, verwende den diagonalen Tausch.",
+        "cases": {
+          "adjacent": {
+            "name": "Benachbarter Tausch",
+            "hint": "Lege die beiden zu tauschenden Ecken auf die rechte Seite."
+          },
+          "diagonal": {
+            "name": "Diagonaler Tausch",
+            "hint": "Jeder Winkel funktioniert."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Sechs Kanten bleiben übrig, und es werden nur M- und U-Drehungen benötigt. Drei Schritte: Orientiere die Kanten so, dass jede Ober-/Unterseitenfarbe nach oben oder unten zeigt (EO), platziere die UL- und UR-Kanten und beende dann die letzten vier. Die Diagramme zeigen die Kanten der oberen Ebene sowie die beiden unteren Kanten DF und DB; Ecken bleiben leer, da sie bereits gelöst sind.",
+      "eo": {
+        "title": "4a · Kantenorientierung",
+        "desc": "Eine ausgefüllte Kante hat ihre Ober-/Unterseitenfarbe nach oben oder unten gerichtet — gut. Leer bedeutet schlecht. Zähle die schlechten Kanten oben und unten; es gibt nur eine Handvoll Muster und M' U M ist der Zug, der sie verändert.",
+        "cases": {
+          "arrow": {
+            "name": "Pfeil",
+            "tag": "3 hoch · 1 runter",
+            "hint": "Drehe die Oberseite so, dass die drei schlechten Kanten auf die schlechte untere Kante zeigen, dann korrigiert M' U M alle vier."
+          },
+          "twoTwo": {
+            "name": "Paare teilen",
+            "tag": "2 hoch · 2 runter",
+            "hint": "Kürzeste Lösung wird gezeigt. Der manuelle Weg: M' U2 M macht daraus einen Pfeil, dann wie oben beenden."
+          },
+          "fourZero": {
+            "name": "Alle oben",
+            "tag": "4 hoch · 0 runter",
+            "hint": "Alle vier oberen Kanten schlecht. M U2 M tauscht ein Paar nach unten in einen Pfeil, dann beenden."
+          },
+          "twoTop": {
+            "name": "Beide oben",
+            "tag": "2 hoch · 0 runter",
+            "hint": "Nicht 0, nicht 4: M' U M macht daraus vier schlechte Kanten in Pfeilform, U2 zum Ausrichten, M' U M zum Beenden."
+          },
+          "oneOne": {
+            "name": "Einer oben, einer unten",
+            "tag": "1 hoch · 1 runter",
+            "hint": "Gleiche Idee — das erste M U M erzeugt den Pfeil."
+          },
+          "twoBottom": {
+            "name": "Beide unten",
+            "tag": "0 oben · 2 unten",
+            "hint": "M U M hebt sie zu einem Pfeil an, dann wie gewohnt beenden."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · Oben links und oben rechts",
+        "desc": "Gelb oben, Weiß unten, roter Block links: Die zwei noch zu platzierenden Kanten sind Gelb-Rot und Gelb-Orange (in den Diagrammen eingerahmt). Versenke beide nach unten, sodass sie sich gegenüberliegen, drehe die Oberseite zur Ausrichtung, dann M2 U oder M2 U'. Die Zentren sind am Ende gedreht – der nächste Schritt behebt das.",
+        "cases": {
+          "bothTop": {
+            "name": "Beide oben",
+            "hint": "Drehe die Oberseite, bis sie sich gegenüberliegen (vorne und hinten). M2 versenkt beide, U' richtet sie aus, M2 U' platziert sie."
+          },
+          "oneBottom": {
+            "name": "Eine oben, eine unten",
+            "hint": "U2 zum Ausrichten, M U2 M' befördert den oberen Stein gegenüber dem anderen nach unten; U' zum Ausrichten, M2 U bringt beide nach oben und setzt sie ein."
+          },
+          "bothBottom": {
+            "name": "Beide unten",
+            "hint": "Drehe die Oberseite zur Ausrichtung, M2 bringt sie nach oben, U platziert sie."
+          },
+          "bothBottomAlt": {
+            "name": "Beide unten (andere Methode)",
+            "hint": "Das Paar sitzt andersherum: U2, um die Oberseite auszurichten, dann M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Die letzten vier Kanten (nur durch Hinsehen)",
+        "cases": {
+          "needM2": {
+            "name": "Mittelstücke gedreht",
+            "hint": "Das weiße Mittelstück ist oben: M2 dreht es zurück."
+          },
+          "oneWhite": {
+            "name": "Ein weißes oben",
+            "hint": "Die Oberseite so drehen, dass die weiße Kante vorne ist, dann mit der unteren Kante tauschen."
+          },
+          "twoWhite": {
+            "name": "Zwei weiße oben",
+            "hint": "Obere und untere Kanten zweimal tauschen, einmal auf jeder Seite."
+          },
+          "byLook": {
+            "name": "Durch Hinsehen lösen",
+            "hint": "Kein Weiß oben, aber die vordere und hintere Kante sind vertauscht: M2, die Oberseite drehen, M2 zurück."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

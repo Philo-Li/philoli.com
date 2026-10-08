@@ -1,0 +1,137 @@
+---
+/**
+ * Top-down view of the U layer as an inline SVG: the 3×3 U face in the middle
+ * with the top row of each side face drawn as thin bars around it. Rendered at
+ * build time from a facelet state, so the diagrams never drift from the algs.
+ *
+ * Modes:
+ *  - corners:      only the four U-layer corners, yellow = top color (CMLL orientation)
+ *  - cornerColors: only the four U-layer corners, in their real colors (CMLL permutation)
+ *  - eo:      only the four top-layer edges: yellow when oriented, framed in the 3D
+ *             scene's highlight cyan when not (the bottom edges are described by the card's tag)
+ *  - edges:   the four top-layer edges in their real colors (last-four-edges cases)
+ *  - ulur:    full colors, but the top edges read as yellow; red/orange edge bars mean that LR
+ *             piece is on top (framed in highlight cyan), green/blue means it is at the bottom
+ *  - full:    every sticker in its real color
+ */
+import type { Facelets } from '../../lib/cube/types';
+import { topView } from '../../lib/cube/cmll';
+
+type Mode = 'corners' | 'cornerColors' | 'eo' | 'edges' | 'ulur' | 'full';
+
+interface Props {
+  state: Facelets;
+  mode?: Mode;
+  size?: number;
+  label?: string;
+}
+
+const { state, mode = 'corners', size = 160, label } = Astro.props;
+const view = topView(state);
+
+const SWATCH: Record<number, string> = {
+  0: '#fed130', 1: '#ff8a00', 2: '#009b48', 3: '#f0eee4', 4: '#c81d1f', 5: '#1c5cd6',
+};
+const U_COLOR = 0;
+const D_COLOR = 3;
+const BLANK = 'var(--ctv-blank)';
+
+const CELL = 30;
+const GAP = 0;
+const BAR = 9;
+const PAD = 6;
+const FACE = CELL * 3 + GAP * 2;
+const ORIGIN = BAR + PAD;
+const WIDTH = FACE + (BAR + PAD) * 2;
+const HIGHLIGHT = '#4dd4ff'; // same as HIGHLIGHT_BODY_COLOR in scene.ts
+const HEIGHT = WIDTH;
+
+const isCornerCell = (i: number) => i === 0 || i === 2 || i === 6 || i === 8;
+const isEdgeCell = (i: number) => i === 1 || i === 3 || i === 5 || i === 7;
+// Side bars: index 0 and 2 belong to corners, 1 to the edge.
+const isCornerBar = (i: number) => i !== 1;
+
+/** Whether this sticker is one the current mode cares about. */
+function relevantCell(i: number): boolean {
+  if (mode === 'full') return true;
+  if (mode === 'corners' || mode === 'cornerColors') return isCornerCell(i);
+  if (mode === 'ulur') return true;
+  return isEdgeCell(i);
+}
+function relevantBar(i: number): boolean {
+  if (mode === 'full') return true;
+  if (mode === 'eo') return false;
+  if (mode === 'ulur') return true;
+  if (mode === 'corners' || mode === 'cornerColors') return isCornerBar(i);
+  return !isCornerBar(i);
+}
+
+function fillFor(color: number, relevant: boolean): string {
+  if (!relevant) return BLANK;
+  if (mode === 'full' || mode === 'edges' || mode === 'cornerColors') return SWATCH[color];
+  if (mode === 'ulur') return SWATCH[color]; // real colors everywhere; top edge cells are repainted yellow below
+  if (mode === 'eo') return color === U_COLOR || color === D_COLOR ? SWATCH[U_COLOR] : BLANK;
+  return color === U_COLOR ? SWATCH[U_COLOR] : BLANK;
+}
+const isBadEoCell = (color: number, i: number) => mode === 'eo' && isEdgeCell(i) && color !== U_COLOR && color !== D_COLOR;
+
+// UL/UR step: the pieces to place are the U+L (yellow-red) and U+R (yellow-orange) edges.
+// Each top edge cell pairs with the middle bar of one side: UB↔top, UL↔left, UR↔right, UF↔bottom.
+const EDGE_SIDE: Record<number, number> = { 1: view.top[1], 3: view.left[1], 5: view.right[1], 7: view.bottom[1] };
+const isLrPiece = (a: number, b: number) => (a === U_COLOR && (b === 4 || b === 1)) || (b === U_COLOR && (a === 4 || a === 1));
+const isUlurCell = (i: number) => mode === 'ulur' && isEdgeCell(i) && isLrPiece(view.u[i], EDGE_SIDE[i]);
+const ULUR_BAR_CELL: Record<string, number> = { top: 1, left: 3, right: 5, bottom: 7 };
+const strokeFor = (_filled: boolean) => 'var(--ctv-ink)';
+
+const pos = (i: number) => ORIGIN + i * (CELL + GAP);
+
+type Bar = { x: number; y: number; w: number; h: number; color: number; relevant: boolean; side: string; idx: number };
+const bars: Bar[] = [
+  ...view.top.map((c, i) => ({ x: pos(i), y: ORIGIN - PAD - BAR, w: CELL, h: BAR, color: c, relevant: relevantBar(i), side: 'top', idx: i })),
+  ...view.bottom.map((c, i) => ({ x: pos(i), y: ORIGIN + FACE + PAD, w: CELL, h: BAR, color: c, relevant: relevantBar(i), side: 'bottom', idx: i })),
+  ...view.left.map((c, i) => ({ x: ORIGIN - PAD - BAR, y: pos(i), w: BAR, h: CELL, color: c, relevant: relevantBar(i), side: 'left', idx: i })),
+  ...view.right.map((c, i) => ({ x: ORIGIN + FACE + PAD, y: pos(i), w: BAR, h: CELL, color: c, relevant: relevantBar(i), side: 'right', idx: i })),
+];
+// Bars that are blank in this mode are left out entirely so the diagram stays quiet.
+const visibleBars = bars.filter(b => fillFor(b.color, b.relevant) !== BLANK);
+
+---
+
+<svg
+  class="ctv"
+  viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
+  width={size}
+  height={size * (HEIGHT / WIDTH)}
+  role="img"
+  aria-label={label}
+>
+  {view.u.map((c, i) => {
+    const f = fillFor(c, relevantCell(i));
+    const lr = isUlurCell(i);
+    const bad = isBadEoCell(c, i) || lr;
+    // UL/UR step: every top edge reads as yellow (EO is done); only the LR pieces are framed.
+    const fillColor = lr || (mode === 'ulur' && isEdgeCell(i)) ? SWATCH[U_COLOR] : f;
+    return (
+      <rect x={pos(i % 3)} y={pos(Math.floor(i / 3))} width={CELL} height={CELL} fill={fillColor} stroke={bad ? HIGHLIGHT : strokeFor(fillColor !== BLANK)} stroke-width={bad ? 3 : 1.4} />
+    );
+  })}
+  {visibleBars.map(b => {
+    // UL/UR step: every edge shows its side color (red/orange = that piece is on top, green/blue =
+    // it's at the bottom); only the red/orange ones are framed.
+    const lit = mode === 'ulur' && b.idx === 1 && isUlurCell(ULUR_BAR_CELL[b.side]);
+    return (
+      <rect x={b.x} y={b.y} width={b.w} height={b.h} rx="1" fill={fillFor(b.color, b.relevant)} stroke={lit ? HIGHLIGHT : 'var(--ctv-ink)'} stroke-width={lit ? 2.5 : 1.2} />
+    );
+  })}
+</svg>
+
+<style>
+  .ctv {
+    --ctv-blank: var(--color-bg-elevated);
+    --ctv-ink: var(--color-heading);
+    --ctv-ink-soft: var(--color-border);
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+</style>

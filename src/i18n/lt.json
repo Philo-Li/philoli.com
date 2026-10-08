@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Nemokamas AI el. knygų vertėjas, veikiantis visiškai jūsų naršyklėje. Verskite EPUB ir PDF failus į 40+ kalbų su dvikalbe gretima išvestimi. Naudokite savo API raktą.",
     "rubiksCubeTitle": "3D Rubiko kubas — Philo Li",
     "rubiksCubeDescription": "Interaktyvus 3D Rubiko kubas. Nustatykite sumaišymą ir sprendimą, žaiskite žingsnis po žingsnio, paslėpkite spalvas ar sienas įsiminimo pratimams.",
+    "cubeRouxTitle": "Roux metodas — blokai, CMLL ir LSE",
+    "cubeRouxDescription": "Visi algoritmai, kurių reikia Roux metodui, po vieną skirtuką kiekvienam etapui: blokų sudarymo įterpimai, dviejų žingsnių CMLL ir M/U algoritmai briaunų orientavimui, UL/UR bei paskutinėms keturioms briaunoms. Kiekvienas atvejis turi diagramą ir atsidaro interaktyviame 3D kubo modelyje.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Rubiko kubo pažangos diagramos",
     "cubeAnalyzerDescription": "Įkelkite savo csTimer eksportuotą failą ir gaukite pažangos diagramas: Ao5/Ao12/Ao100 tendencijas, PB istoriją, pasiekimus, kasdienę apimtį ir galios dėsnio mokymosi kreivę. Veikia tik jūsų naršyklėje."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Eksportuokite savo csTimer sesijas ir peržiūrėkite savo pažangos diagramas.",
       "cta": "Analizuoti mano sprendimus"
+    },
+    "rouxCard": {
+      "eyebrow": "Metodas",
+      "title": "Roux metodas",
+      "desc": "Blokai, dviejų žingsnių CMLL ir LSE — kiekvienas atvejis su diagrama, kurią galite atidaryti šiame kube.",
+      "cta": "Naršyti biblioteką"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metodas",
+    "title": "Roux metodas (pradedantiesiems)",
+    "intro": "„Roux“ metodas susideda iš keturių etapų: kairiojo 1×2×3 bloko sudėjimo, dešiniojo bloko sudėjimo, viršutinių kampų išsprendimo (CMLL) ir paskutinių šešių briaunų sutvarkymo naudojant tik M ir U pasukimus (LSE).",
+    "tabsLabel": "Roux etapai",
+    "tabs": {
+      "fb": "Pirmas blokas",
+      "sb": "Antras blokas",
+      "cmll": "CMLL (dviejų žingsnių)",
+      "lse": "LSE"
+    },
+    "openInCube": "Išsami informacija",
+    "fb": {
+      "intro": "Pirmas blokas yra 1×2×3 kairėje pusėje: DL briauna, du apatiniai kairieji kampai ir jų dvi briaunos. Nėra jokių fiksuotų algoritmų — jūs žiūrite, suporuojate kampą su jo briauna ir įterpiate. Tai rankų judesiai, kurie kartojasi vėl ir vėl. Laikykite kubą taip, kad blokas būtų kairėje, o tuščia vieta — priekyje.",
+      "insert": {
+        "title": "Suporavimas ir įterpimas",
+        "desc": "Kiekvienas atvejis atsidaro 3D kube su jau paruošta pora; stebėkite, kur abi detalės yra pradžioje ir kaip sukimai jas sugrąžina į vietą netrikdant likusio bloko.",
+        "cases": {
+          "pairLeft": {
+            "name": "Pora viršuje, kairėje pusėje",
+            "hint": "Kampas virš vietos, briauna šalia jo kairėje. Patraukite porą į šalį, atidarykite vietą, įstatykite."
+          },
+          "mSlice": {
+            "name": "Sujunkite su M sluoksniu",
+            "hint": "Kampas viršutinėje kairėje pusėje gale, briauna dešinėje. M atveda briauną, kad ši susijungtų, tada F' įstato porą į vietą."
+          },
+          "edgeOnTop": {
+            "name": "Kampas į lizdą, briauna viršuje",
+            "hint": "Kampas jau savo vietoje, briauna yra viršutinės dalies dešinėje. Išimkite kampą, kad jis susitiktų su briauna, tada F' įstatys abu."
+          },
+          "misPaired": {
+            "name": "Pora viršuje, spalvos nesutampa",
+            "hint": "Kampas ir briauna yra vienas šalia kito viršuje dešinėje, bet nesutampa. F' atidaro angą, suporuokite iš naujo su L' U' L U' L' U L, F' ją uždaro."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Antras blokas atspindi pirmąjį dešinėje — bet dabar kairysis blokas neturi judėti. Tik R, r, M ir U sukimai yra saugūs. Platus r sukimas yra Roux triukas: jis juda dešinįjį sluoksnį ir M sluoksnį kartu, todėl galite paimti briaunas iš apačios neliesdami kairės pusės.",
+      "insert": {
+        "title": "Suporavimas ir įterpimas",
+        "desc": "Visi keturi atvejai palieka kairįjį bloką nepaliestą. Daroma prielaida, kad DR briauna išspręsta; šie algoritmai įterpia priekinę dešinę kampo-briaunos porą.",
+        "cases": {
+          "pairRight": {
+            "name": "Pora viršuje, dešinėje pusėje",
+            "hint": "Kampas virš angos, briauna šalia jo dešinėje. Pirmojo bloko įstatymo veidrodinis atspindys."
+          },
+          "mPair": {
+            "name": "Sugretinkite su M sluoksniu",
+            "hint": "Briauna galinėje kairėje viršuje, kampas dešinėje. U, o tada M perkelia briauną prie kampo, R U' R' įstato porą."
+          },
+          "cornerInSlot": {
+            "name": "Kampas į vietą, briauna viršuje",
+            "hint": "Kampas jau savo vietoje, briauna guli viršuje. U R iškelia kampą, M atveda briauną prie jo, U' R' įstato abu į vietą."
+          },
+          "twistedCorner": {
+            "name": "Kampas lizde, pasuktas",
+            "hint": "Kampas yra savo lizde, bet pasuktas. L F' L' išmeta jį per kairįjį bloką ir atgal, M judesiai surenka briauną, R U' R' įstato."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Kai abu blokai baigti, išspręskite keturis viršutinius kampus vienu metu. Pilnas CMLL turi 42 atvejus; dviejų žingsnių metodas suskirsto juos į orientavimą, tada perstatymą, ir reikalauja tik devynių algoritmų. Kadangi M sluoksnis sutvarkomas vėliau, šie algoritmai gali jį laisvai keisti. Geltoni lipdukai rodo, kur yra viršutinė spalva; brūkšnys išorėje reiškia, kad to kampo viršutinė spalva nukreipta į šoną.",
+      "orient": {
+        "title": "1 žingsnis · Orientuoti kampus",
+        "desc": "Suskaičiuokite, kiek viršutinių kampų jau rodo viršutinę spalvą. 0 → H arba Pi. 1 → S arba AS. 2 → U, T arba L. Atitikite raštą ir pasukite viršutinį sluoksnį taip, kad jis sutaptų su diagrama."
+      },
+      "permute": {
+        "title": "2 žingsnis · Perstatyti kampus",
+        "desc": "Jei viena pusė jau sutampa — tarkime, abu kampai vienoje pusėje yra raudoni — pasukite viršų taip, kad ta pora būtų kairėje, tada atlikite gretimų elementų sukeitimą. Jei nė viena pusė nesutampa, atlikite įstrižinį sukeitimą.",
+        "cases": {
+          "adjacent": {
+            "name": "Sukeitimas šalia",
+            "hint": "Padėkite du sukeičiamus kampus dešinėje."
+          },
+          "diagonal": {
+            "name": "Įstrižas sukeitimas",
+            "hint": "Tinka bet koks kampas."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Lieka šešios briaunos, reikalingi tik M ir U sukimai. Trys žingsniai: orientuoti briaunas taip, kad kiekviena viršutinė/apatinė spalva būtų nukreipta į viršų arba apačią (EO), įstatyti UL ir UR briaunas, tada užbaigti paskutines keturias. Diagramos rodo viršutinio sluoksnio briaunas bei dvi apatines briaunas DF ir DB; kampai palikti tušti, nes jie jau išspręsti.",
+      "eo": {
+        "title": "4a · Briaunų orientacija",
+        "desc": "Užpildyta briauna turi viršutinę/apatinę spalvą, nukreiptą į viršų arba apačią — gerai. Tuščia reiškia blogai. Suskaičiuokite blogas briaunas viršuje ir apačioje; yra tik keletas raštų, o M' U M yra judesys, kuris juos keičia.",
+        "cases": {
+          "arrow": {
+            "name": "Rodyklė",
+            "tag": "3 aukštyn · 1 žemyn",
+            "hint": "Pasukite viršų taip, kad trys blogos briaunos rodytų į blogą apatinę briauną, tada M' U M sutvarko visas keturias."
+          },
+          "twoTwo": {
+            "name": "Padalintos poros",
+            "tag": "2 aukštyn · 2 žemyn",
+            "hint": "Parodytas trumpiausias sprendimas. Rankinis būdas: M' U2 M paverčia tai rodykle, tada užbaikite kaip aprašyta aukščiau."
+          },
+          "fourZero": {
+            "name": "Visi viršuje",
+            "tag": "4 aukštyn · 0 žemyn",
+            "hint": "Visos keturios viršutinės briaunos blogos. M U2 M sukeičia porą žemyn į rodyklę, tada užbaikite."
+          },
+          "twoTop": {
+            "name": "Abu viršuje",
+            "tag": "2 aukštyn · 0 žemyn",
+            "hint": "Ne 0, ne 4: M' U M padaro keturias blogas briaunas rodyklės formos, U2 nukreipimui, M' U M užbaigimui."
+          },
+          "oneOne": {
+            "name": "Vienas viršuje, vienas apačioje",
+            "tag": "1 aukštyn · 1 žemyn",
+            "hint": "Ta pati idėja — pirmasis M U M sukuria rodyklę."
+          },
+          "twoBottom": {
+            "name": "Abu apačioje",
+            "tag": "0 viršuje · 2 apačioje",
+            "hint": "M U M pakelia juos į rodyklę, tada užbaikite kaip įprasta."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL ir UR",
+        "desc": "Geltona viršuje, balta apačioje, raudonas blokas kairėje: dvi briaunos, kurias dar reikia įstatyti, yra geltona-raudona ir geltona-oranžinė (pažymėtos diagramose). Nuleiskite abi į apačią, kad jos atsidurtų viena priešais kitą, pasukite viršų, kad sulygiuotumėte, tada M2 U arba M2 U'. Centrai lieka apversti — kitas žingsnis tai ištaisys.",
+        "cases": {
+          "bothTop": {
+            "name": "Abi viršuje",
+            "hint": "Sukite viršų, kol jie atsidurs vienas priešais kitą (priekyje ir gale). M2 nuleidžia abu, U' juos sulygiuoja, M2 U' juos įstato."
+          },
+          "oneBottom": {
+            "name": "Viena viršuje, viena apačioje",
+            "hint": "U2 sulygiavimui, M U2 M' nuleidžia viršutinę į priešingą pusę; U' sulygiavimui, M2 U pakelia abi ir jas įstato."
+          },
+          "bothBottom": {
+            "name": "Abi apačioje",
+            "hint": "Pasukite viršų, kad sulygiuotumėte, M2 jas pakels, U įstatys į vietą."
+          },
+          "bothBottomAlt": {
+            "name": "Abi apačioje (kitas būdas)",
+            "hint": "Pora guli atvirkščiai: U2, kad sulygiuotumėte viršų, tada M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Paskutinės keturios briaunos (tik žiūrint)",
+        "cases": {
+          "needM2": {
+            "name": "Centrai apversti",
+            "hint": "Baltas centras yra viršuje: M2 jį apverčia atgal."
+          },
+          "oneWhite": {
+            "name": "Vienas baltas viršuje",
+            "hint": "Pasukite viršų taip, kad balta briauna būtų priekyje, tada sukeiskite ją su apatine briauna."
+          },
+          "twoWhite": {
+            "name": "Du balti viršuje",
+            "hint": "Sukeiskite viršutinę ir apatinę briaunas du kartus, po vieną kartą kiekvienoje pusėje."
+          },
+          "byLook": {
+            "name": "Spręsk žiūrėdamas",
+            "hint": "Viršuje nėra baltos spalvos, bet priekinis ir galinis kraštai sukeisti: M2, pasuk viršų, M2 atgal."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

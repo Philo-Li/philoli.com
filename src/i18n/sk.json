@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Bezplatný AI prekladač e-kníh, ktorý beží úplne vo vašom prehliadači. Prekladajte súbory EPUB a PDF do viac ako 40 jazykov s dvojjazyčným paralelným výstupom. Použite vlastný API kľúč.",
     "rubiksCubeTitle": "3D Rubikova kocka — Philo Li",
     "rubiksCubeDescription": "Interaktívna 3D Rubikova kocka. Nastavte si zamiešanie a riešenie, hrajte krok za krokom, skryte farby alebo steny pre nácvik pamäte.",
+    "cubeRouxTitle": "Metóda Roux — Bloky, CMLL a LSE",
+    "cubeRouxDescription": "Všetky algoritmy, ktoré potrebujete pre metódu Roux, jedna karta na každú fázu: vkladanie blokov, dvojkrokové CMLL a M/U algoritmy pre orientáciu hrán, UL/UR a posledné štyri hrany. Každý prípad má diagram a otvára sa v interaktívnej 3D kocke.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Grafy pokroku v Rubikovej kocke",
     "cubeAnalyzerDescription": "Nahrajte svoj export z csTimer a získajte grafy pokroku: trendy Ao5/Ao12/Ao100, história PB, míľniky, denný objem a mocninová krivka učenia. Beží kompletne vo vašom prehliadači."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Exportujte svoje relácie z csTimer a pozrite si grafy svojho pokroku.",
       "cta": "Analyzovať moje riešenia"
+    },
+    "rouxCard": {
+      "eyebrow": "Metóda",
+      "title": "Metóda Roux",
+      "desc": "Bloky, dvojkrokové CMLL a LSE — každý prípad s diagramom, ktorý môžete otvoriť na tejto kocke.",
+      "cta": "Prehľadávať knižnicu"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metóda",
+    "title": "Metóda Roux (vhodná pre začiatočníkov)",
+    "intro": "Metóda Roux má štyri fázy: postavenie ľavého bloku 1×2×3, postavenie pravého bloku, vyriešenie horných rohov (CMLL) a následné dokončenie posledných šiestich hrán pomocou ťahov M a U (LSE).",
+    "tabsLabel": "Fázy Roux",
+    "tabs": {
+      "fb": "Prvý blok",
+      "sb": "Druhý blok",
+      "cmll": "CMLL (dvojkroková)",
+      "lse": "LSE"
+    },
+    "openInCube": "Podrobnosti",
+    "fb": {
+      "intro": "Prvý blok je 1×2×3 na ľavej strane: hrana DL, dva dolné ľavé rohy a ich dve hrany. Neexistujú žiadne pevné algoritmy — pozeráte sa, spárujete roh s jeho hranou a vložíte. Toto sú pohyby rúk, ktoré sa neustále opakujú. Držte kocku s blokom na ľavej strane a prázdnym slotom vpredu.",
+      "insert": {
+        "title": "Párovanie a vkladanie",
+        "desc": "Každý prípad sa otvorí v 3D kocke s párom už na mieste; sledujte, kde začínajú dva dieliky a ako ich ťahy dostanú na miesto bez narušenia zvyšku bloku.",
+        "cases": {
+          "pairLeft": {
+            "name": "Pár navrchu, ľavá strana",
+            "hint": "Roh nad slotom, hrana vedľa neho naľavo. Presuňte pár nabok, otvorte slot a vložte ho dnu."
+          },
+          "mSlice": {
+            "name": "Spárujte s rezom M",
+            "hint": "Roh v zadnej ľavej časti hornej vrstvy, hrana vpravo. M posunie hranu okolo, aby sa s ním stretla, potom F' vloží pár dnu."
+          },
+          "edgeOnTop": {
+            "name": "Roh v slote, hrana navrchu",
+            "hint": "Roh je už na svojom mieste, hrana sedí vpravo hore. Vyberte roh, aby sa s ňou stretol, potom F' vloží oba."
+          },
+          "misPaired": {
+            "name": "Pár navrchu, farby nesedia",
+            "hint": "Roh a hrana sú vedľa seba vpravo navrchu, ale nesedia. F' otvorí slot, znova spáruj pomocou L' U' L U' L' U L, F' ho zatvorí."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Druhý blok zrkadlí ten prvý na pravej strane — ale teraz sa ľavý blok nesmie pohnúť. Bezpečné sú len ťahy R, r, M a U. Široký ťah r je trik metódy Roux: pohybuje pravou vrstvou a M rezom súčasne, takže môžete brať hrany zospodu bez toho, aby ste sa dotkli ľavej strany.",
+      "insert": {
+        "title": "Párovanie a vkladanie",
+        "desc": "Všetky štyri prípady ponechávajú ľavý blok nedotknutý. Predpokladá sa, že hrana DR je vyriešená; tieto prípady vkladajú pár roh-hrana vpravo vpredu.",
+        "cases": {
+          "pairRight": {
+            "name": "Pár navrchu, pravá strana",
+            "hint": "Roh nad slotom, hrana vedľa neho vpravo. Zrkadlový obraz vloženia prvého bloku."
+          },
+          "mPair": {
+            "name": "Spárujte s rezom M",
+            "hint": "Hrana vzadu vľavo hore, roh vpravo. U a následne M presunie hranu k rohu, R U' R' vloží pár."
+          },
+          "cornerInSlot": {
+            "name": "Roh v slote, hrana navrchu",
+            "hint": "Roh je už na svojom mieste, hrana sedí navrchu. U R vytiahne roh von, M k nemu privedie hranu, U' R' vloží oba dnu."
+          },
+          "twistedCorner": {
+            "name": "Roh v drážke, pretočený",
+            "hint": "Roh sedí v drážke, ale je otočený. L F' L' ho vyklopí cez ľavý blok a späť, pohyby M prinesú hranu, R U' R' ju vloží."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Keď sú oba bloky hotové, vyriešte štyri horné rohy naraz. Úplné CMLL má 42 prípadov; dvojkroková metóda ho rozdeľuje na orientáciu a následnú permutáciu, pričom vyžaduje len deväť algoritmov. Keďže sa M vrstva opravuje až potom, tieto algoritmy ju môžu narušiť. Žlté nálepky ukazujú, kde je horná farba; pruh na vonkajšej strane znamená, že horná farba daného rohu smeruje do strany.",
+      "orient": {
+        "title": "Krok 1 · Orientácia rohov",
+        "desc": "Spočítajte, koľko horných rohov už ukazuje hornú farbu. 0 → H alebo Pi. 1 → S alebo AS. 2 → U, T alebo L. Priraďte vzor a otočte hornú vrstvu tak, aby sa zhodovala s diagramom."
+      },
+      "permute": {
+        "title": "Krok 2 · Permutácia rohov",
+        "desc": "Ak sa jedna strana už zhoduje — napríklad oba rohy na jednej stene sú červené — otočte hornú časť tak, aby bol tento pár vľavo, a potom použite susednú výmenu. Ak sa nezhoduje žiadna strana, použite diagonálnu výmenu.",
+        "cases": {
+          "adjacent": {
+            "name": "Susedná výmena",
+            "hint": "Dajte dva rohy, ktoré sa majú vymeniť, na pravú stranu."
+          },
+          "diagonal": {
+            "name": "Diagonálna výmena",
+            "hint": "Akýkoľvek uhol funguje."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Zostáva šesť hrán a sú potrebné iba ťahy M a U. Tri kroky: orientovať hrany tak, aby každá horná/spodná farba smerovala nahor alebo nadol (EO), umiestniť hrany UL a UR a potom dokončiť posledné štyri. Diagramy zobrazujú hrany hornej vrstvy plus dve spodné hrany DF a DB; rohy sú prázdne, pretože sú už vyriešené.",
+      "eo": {
+        "title": "4a · Orientácia hrán",
+        "desc": "Vyplnená hrana má svoju hornú/spodnú farbu smerujúcu nahor alebo nadol — dobre. Prázdna znamená zle. Spočítajte zlé hrany navrchu a naspodku; existuje len niekoľko vzorov a ťah M' U M je ten, ktorý ich mení.",
+        "cases": {
+          "arrow": {
+            "name": "Šípka",
+            "tag": "3 hore · 1 dole",
+            "hint": "Otočte vrch tak, aby tri zlé hrany mierili na zlú spodnú hranu, potom M' U M opraví všetky štyri."
+          },
+          "twoTwo": {
+            "name": "Rozdelené páry",
+            "tag": "2 hore · 2 dole",
+            "hint": "Zobrazené najkratšie riešenie. Ručný postup: M' U2 M to zmení na šípku, potom dokončite ako vyššie."
+          },
+          "fourZero": {
+            "name": "Všetko hore",
+            "tag": "4 hore · 0 dole",
+            "hint": "Všetky štyri horné hrany zlé. M U2 M vymení pár nadol na šípku, potom dokončite."
+          },
+          "twoTop": {
+            "name": "Obe hore",
+            "tag": "2 hore · 0 dole",
+            "hint": "Nie 0, nie 4: M' U M vytvorí štyri zlé hrany v tvare šípky, U2 na zamierenie, M' U M na dokončenie."
+          },
+          "oneOne": {
+            "name": "Jeden hore, jeden dole",
+            "tag": "1 hore · 1 dole",
+            "hint": "Rovnaký nápad — prvý ťah M U M vytvorí šípku."
+          },
+          "twoBottom": {
+            "name": "Obe dole",
+            "tag": "0 hore · 2 dole",
+            "hint": "M U M ich zdvihne do šípky, potom dokončite ako zvyčajne."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL a UR",
+        "desc": "Žltá navrchu, biela naspodku, červený blok vľavo: dve hrany, ktoré treba ešte umiestniť, sú žlto-červená a žlto-oranžová (vyznačené v diagramoch). Obe presuňte nadol tak, aby boli oproti sebe, otočte vrchnú stranu do línie a potom urobte M2 U alebo M2 U'. Stredy ostanú prevrátené — nasledujúci krok to opraví.",
+        "cases": {
+          "bothTop": {
+            "name": "Obe navrchu",
+            "hint": "Otáčajte hornou stranou, kým nebudú oproti sebe (vpredu a vzadu). M2 obe potopí, U' ich zarovná, M2 U' ich umiestni."
+          },
+          "oneBottom": {
+            "name": "Jedna hore, jedna dole",
+            "hint": "U2 na zarovnanie, M U2 M' pošle horný diel nadol oproti druhému; U' na zarovnanie, M2 U vynesie oba nahor a umiestni ich."
+          },
+          "bothBottom": {
+            "name": "Obe naspodku",
+            "hint": "Otočte vrchnú stranu do línie, M2 ich vytiahne hore, U ich umiestni."
+          },
+          "bothBottomAlt": {
+            "name": "Obe naspodku (iný spôsob)",
+            "hint": "Dvojica sedí opačne: U2 na zarovnanie hornej vrstvy, potom M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Posledné štyri hrany (len pohľadom)",
+        "cases": {
+          "needM2": {
+            "name": "Stredy otočené",
+            "hint": "Biely stred je navrchu: M2 ho otočí späť."
+          },
+          "oneWhite": {
+            "name": "Jedna biela navrchu",
+            "hint": "Otoč vrchnú stranu tak, aby bola biela hrana vpredu, potom ju vymeň s dolnou hranou."
+          },
+          "twoWhite": {
+            "name": "Dve biele navrchu",
+            "hint": "Vymeň hornú a dolnú hranu dvakrát, raz na každej strane."
+          },
+          "byLook": {
+            "name": "Riešenie pohľadom",
+            "hint": "Žiadna biela navrchu, ale predná a zadná hrana sú vymenené: M2, otoč vrchnú stranu, M2 späť."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

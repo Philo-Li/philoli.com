@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Gratis KI-e-bokoversetter som kjører fullstendig i nettleseren din. Oversett EPUB- og PDF-filer til 40+ språk med tospråklig utdata side ved side. Bruk din egen API-nøkkel.",
     "rubiksCubeTitle": "3D Rubiks kube — Philo Li",
     "rubiksCubeDescription": "Interaktiv 3D Rubiks kube. Angi en blanding og en løsning, spill steg for steg, skjul farger eller sider for hukommelsestrening.",
+    "cubeRouxTitle": "Roux-metoden — Blokker, CMLL og LSE",
+    "cubeRouxDescription": "Hver algoritme du trenger for Roux-metoden, én fane per stadium: innsetting for blokkbygging, to-stegs CMLL, og M/U-algoritmer for kantorientering, UL/UR og de siste fire kantene. Hvert tilfelle har et diagram og åpnes i den interaktive 3D-kuben.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Fremdriftsdiagrammer for Rubiks kube",
     "cubeAnalyzerDescription": "Slipp csTimer-eksporten din og få fremdriftsdiagrammer: Ao5/Ao12/Ao100-trender, PB-historikk, milepæler, daglig volum og en læringskurve basert på potenslov. Kjører utelukkende i nettleseren din."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Eksporter csTimer-øktene dine og se fremdriftsdiagrammene dine.",
       "cta": "Analyser løsningene mine"
+    },
+    "rouxCard": {
+      "eyebrow": "Metode",
+      "title": "Roux-metoden",
+      "desc": "Blokker, to-stegs CMLL og LSE — hvert tilfelle med et diagram du kan åpne på denne kuben.",
+      "cta": "Bla gjennom biblioteket"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metode",
+    "title": "Roux-metoden (nybegynnervennlig)",
+    "intro": "Roux-metoden har fire stadier: bygg den venstre 1×2×3-blokken, bygg den høyre, løs de øverste hjørnene (CMLL), og fullfør deretter de siste seks kantene med kun M- og U-trekk (LSE).",
+    "tabsLabel": "Roux-stadier",
+    "tabs": {
+      "fb": "Første blokk",
+      "sb": "Andre blokk",
+      "cmll": "CMLL (to-stegs)",
+      "lse": "LSE"
+    },
+    "openInCube": "Detaljer",
+    "fb": {
+      "intro": "Den første blokken er en 1×2×3 på venstre side: DL-kanten, de to nederste venstre hjørnene og deres to kanter. Det finnes ingen faste algoritmer — du ser, parer et hjørne med kanten sin, og setter inn. Dette er håndbevegelsene som dukker opp igjen og igjen. Hold kuben med blokken på venstre side og den tomme plassen foran.",
+      "insert": {
+        "title": "Paring og innsetting",
+        "desc": "Hvert tilfelle åpnes i 3D-kuben med paret allerede på plass; se hvor de to brikkene starter og hvordan trekkene bringer dem hjem uten å forstyrre resten av blokken.",
+        "cases": {
+          "pairLeft": {
+            "name": "Par på toppen, venstre side",
+            "hint": "Hjørne over plassen, kant ved siden av til venstre. Flytt paret ut av veien, åpne plassen, slipp den inn."
+          },
+          "mSlice": {
+            "name": "Par med M-skiven",
+            "hint": "Hjørne bakerst til venstre på toppen, kant til høyre. M fører kanten rundt for å møte den, deretter slipper F' paret på plass."
+          },
+          "edgeOnTop": {
+            "name": "Hjørne i sporet, kant på toppen",
+            "hint": "Hjørnet er allerede på plass, kanten sitter til høyre på toppen. Ta ut hjørnet for å møte den, så setter F' inn begge."
+          },
+          "misPaired": {
+            "name": "Par på toppen, farger stemmer ikke overens",
+            "hint": "Hjørne og kant ligger ved siden av hverandre til høyre på toppen, men stemmer ikke overens. F' åpner sporet, par på nytt med L' U' L U' L' U L, F' lukker det."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Den andre blokken speiler den første på høyre side — men nå må ikke venstre blokk bevege seg. Kun R-, r-, M- og U-trekk er trygge. Det brede r-trekket er Roux-trikset: det flytter det høyre laget og M-skiven sammen, slik at du kan hente kanter fra bunnen uten å berøre venstre side.",
+      "insert": {
+        "title": "Paring og innsetting",
+        "desc": "Alle fire tilfellene holder venstre blokk urørt. DR-kanten antas å være løst; disse setter inn hjørne-kant-paret foran til høyre.",
+        "cases": {
+          "pairRight": {
+            "name": "Par på toppen, høyre side",
+            "hint": "Hjørne over sporet, kant ved siden av til høyre. Speilbildet av innsettingen for den første blokken."
+          },
+          "mPair": {
+            "name": "Par med M-skiven",
+            "hint": "Kant bakerst til venstre på toppen, hjørne til høyre. U og deretter M bringer kanten rundt til hjørnet, R U' R' setter inn paret."
+          },
+          "cornerInSlot": {
+            "name": "Hjørne i sporet, kant på toppen",
+            "hint": "Hjørnet er allerede på plass, kanten sitter på toppen. U R løfter hjørnet ut, M bringer kanten til det, U' R' setter begge på plass."
+          },
+          "twistedCorner": {
+            "name": "Hjørne i sporet, vridd",
+            "hint": "Hjørnet sitter i sporet sitt, men vridd. L F' L' vipper det ut gjennom den venstre blokken og tilbake, M-trekkene henter kanten, R U' R' setter det inn."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Når begge blokkene er ferdige, løses de fire øverste hjørnene i én omgang. Full CMLL har 42 tilfeller; to-stegs-metoden deler det opp i orientering, deretter permutasjon, og krever bare ni algoritmer. Siden M-skiven blir fikset etterpå, kan disse algoritmene fritt forstyrre den. Gule klistremerker viser hvor toppfargen er; en stolpe på utsiden betyr at hjørnets toppfarge vender mot siden.",
+      "orient": {
+        "title": "Steg 1 · Orienter hjørnene",
+        "desc": "Tell hvor mange topphjørner som allerede viser toppfargen. 0 → H eller Pi. 1 → S eller AS. 2 → U, T eller L. Match mønsteret og vri topplaget slik at det stemmer overens med diagrammet."
+      },
+      "permute": {
+        "title": "Steg 2 · Permuter hjørnene",
+        "desc": "Hvis én side allerede stemmer — si at begge hjørnene på én flate er røde — vri toppen slik at paret er på venstre side, og bruk deretter bytte av tilstøtende brikker. Hvis ingen sider stemmer, bruk bytte av diagonale brikker.",
+        "cases": {
+          "adjacent": {
+            "name": "Tilstøtende bytte",
+            "hint": "Plasser de to hjørnene som skal byttes på høyre side."
+          },
+          "diagonal": {
+            "name": "Diagonal bytte",
+            "hint": "Enhver vinkel fungerer."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Seks kanter gjenstår, og bare M- og U-vridninger er nødvendige. Tre steg: orienter kantene slik at hver topp-/bunnfarge vender opp eller ned (EO), plasser UL- og UR-kantene, og fullfør deretter de siste fire. Diagrammene viser topplagets kanter pluss de to bunnkantene DF og DB; hjørnene er blanke fordi de allerede er løst.",
+      "eo": {
+        "title": "4a · Kantorientering",
+        "desc": "En fylt kant har topp-/bunnfargen vendt opp eller ned — bra. Blank betyr dårlig. Tell de dårlige kantene på toppen og bunnen; det finnes bare en håndfull mønstre, og M' U M er trekket som endrer dem.",
+        "cases": {
+          "arrow": {
+            "name": "Pil",
+            "tag": "3 opp · 1 ned",
+            "hint": "Vri toppen slik at de tre dårlige kantene peker mot den dårlige bunnkanten, så fikser M' U M alle fire."
+          },
+          "twoTwo": {
+            "name": "Delte par",
+            "tag": "2 opp · 2 ned",
+            "hint": "Korteste løsning vist. Manuell metode: M' U2 M gjør den om til en pil, fullfør deretter som ovenfor."
+          },
+          "fourZero": {
+            "name": "Alle på toppen",
+            "tag": "4 opp · 0 ned",
+            "hint": "Alle fire toppkanter er dårlige. M U2 M bytter et par ned til en pil, fullfør deretter."
+          },
+          "twoTop": {
+            "name": "Begge på toppen",
+            "tag": "2 opp · 0 ned",
+            "hint": "Ikke 0, ikke 4: M' U M gjør det til fire dårlige kanter i pilform, U2 for å sikte, M' U M for å fullføre."
+          },
+          "oneOne": {
+            "name": "Én opp, én ned",
+            "tag": "1 opp · 1 ned",
+            "hint": "Samme idé — den første M U M skaper pilen."
+          },
+          "twoBottom": {
+            "name": "Begge i bunnen",
+            "tag": "0 opp · 2 ned",
+            "hint": "M U M løfter dem til en pil, fullfør deretter som vanlig."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL og UR",
+        "desc": "Gult på toppen, hvitt i bunnen, rød blokk til venstre: de to kantene som gjenstår å plassere er gul-rød og gul-oransje (innrammet i diagrammene). Senk begge til bunnen slik at de sitter motstående hverandre, vri toppen for å stille dem på linje, deretter M2 U eller M2 U'. Sentrene ender opp speilvendt — neste steg fikser det.",
+        "cases": {
+          "bothTop": {
+            "name": "Begge på toppen",
+            "hint": "Vri toppen til de er motsatt hverandre (foran og bak). M2 senker begge, U' stiller dem på linje, M2 U' plasserer dem."
+          },
+          "oneBottom": {
+            "name": "Én opp, én ned",
+            "hint": "U2 for å stille opp, M U2 M' sender den øverste ned motsatt den andre; U' for å stille opp, M2 U bringer begge opp og plasserer dem."
+          },
+          "bothBottom": {
+            "name": "Begge i bunnen",
+            "hint": "Vri toppen for å stille dem på linje, M2 bringer dem opp, U plasserer dem."
+          },
+          "bothBottomAlt": {
+            "name": "Begge i bunnen (annen metode)",
+            "hint": "Paret sitter motsatt vei: U2 for å stille opp toppen, deretter M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · De fire siste kantene (kun ved å se)",
+        "cases": {
+          "needM2": {
+            "name": "Sentre snudd",
+            "hint": "Det hvite senteret er på toppen: M2 snur det tilbake."
+          },
+          "oneWhite": {
+            "name": "Én hvit på toppen",
+            "hint": "Drei toppen slik at den hvite kanten er foran, og bytt den deretter med bunnkanten."
+          },
+          "twoWhite": {
+            "name": "To hvite på toppen",
+            "hint": "Bytt topp- og bunnkanter to ganger, én gang på hver side."
+          },
+          "byLook": {
+            "name": "Løs ved å se",
+            "hint": "Ingen hvit på toppen, men fremre og bakre kanter er byttet om: M2, vri toppen, M2 tilbake."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

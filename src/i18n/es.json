@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Traductor de ebooks gratuito con IA que funciona completamente en tu navegador. Traduce archivos EPUB y PDF a más de 40 idiomas con salida bilingüe en paralelo. Usa tu propia API key.",
     "rubiksCubeTitle": "Cubo de Rubik 3D — Philo Li",
     "rubiksCubeDescription": "Cubo de Rubik 3D interactivo. Configura una mezcla y una solución, juega paso a paso, oculta colores o caras para ejercicios de memorización.",
+    "cubeRouxTitle": "Método Roux — Bloques, CMLL y LSE",
+    "cubeRouxDescription": "Todos los algoritmos que necesitas para el método Roux, una pestaña por etapa: inserciones para bloques, CMLL de dos pasos, y los algoritmos M/U para la orientación de aristas, UL/UR y las últimas cuatro aristas. Cada caso tiene un diagrama y se abre en el cubo 3D interactivo.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Gráficos de progreso del Cubo de Rubik",
     "cubeAnalyzerDescription": "Suelta tu exportación de csTimer y obtén gráficos de progreso: tendencias de Ao5/Ao12/Ao100, historial de PB, hitos, volumen diario y una curva de aprendizaje de ley de potencia. Se ejecuta completamente en tu navegador."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Exporta tus sesiones de csTimer y mira tus gráficos de progreso.",
       "cta": "Analizar mis resoluciones"
+    },
+    "rouxCard": {
+      "eyebrow": "Método",
+      "title": "Método Roux",
+      "desc": "Bloques, CMLL de dos pasos y LSE — cada caso con un diagrama que puedes abrir en este cubo.",
+      "cta": "Explorar la biblioteca"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Método",
+    "title": "Método Roux (Apto para principiantes)",
+    "intro": "El método Roux tiene cuatro etapas: construir el bloque 1×2×3 izquierdo, construir el derecho, resolver las esquinas superiores (CMLL) y, finalmente, completar las últimas seis aristas usando solo giros M y U (LSE).",
+    "tabsLabel": "Etapas de Roux",
+    "tabs": {
+      "fb": "Primer bloque",
+      "sb": "Segundo bloque",
+      "cmll": "CMLL (dos pasos)",
+      "lse": "LSE"
+    },
+    "openInCube": "Detalles",
+    "fb": {
+      "intro": "El primer bloque es un 1×2×3 a la izquierda: la arista DL, las dos esquinas inferiores izquierdas y sus dos aristas. No hay algoritmos fijos; observas, emparejas una esquina con su arista e insertas. Estos son los movimientos manuales que aparecen una y otra vez. Sostén el cubo con el bloque a la izquierda y el espacio vacío al frente.",
+      "insert": {
+        "title": "Emparejar e insertar",
+        "desc": "Cada caso se abre en el cubo 3D con el par ya en posición; observa dónde comienzan las dos piezas y cómo los giros las llevan a su lugar sin alterar el resto del bloque.",
+        "cases": {
+          "pairLeft": {
+            "name": "Par arriba, lado izquierdo",
+            "hint": "Esquina sobre el espacio, arista a su lado a la izquierda. Mueve el par fuera del camino, abre el espacio, insértalo."
+          },
+          "mSlice": {
+            "name": "Emparejar con la capa M",
+            "hint": "Esquina en la parte posterior izquierda de la cara superior, arista a la derecha. M lleva la arista alrededor para encontrarla, luego F' inserta el par."
+          },
+          "edgeOnTop": {
+            "name": "Esquina en la ranura, arista arriba",
+            "hint": "La esquina ya está en su lugar, la arista se sitúa a la derecha de la parte superior. Saca la esquina para encontrarla, luego F' inserta ambas."
+          },
+          "misPaired": {
+            "name": "Par en la parte superior, colores desajustados",
+            "hint": "La esquina y la arista están una al lado de la otra a la derecha de la parte superior pero no coinciden. F' abre la ranura, vuelve a emparejar con L' U' L U' L' U L, F' la cierra."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "El segundo bloque es un reflejo del primero a la derecha, pero ahora el bloque izquierdo no debe moverse. Solo los giros R, r, M y U son seguros. El giro ancho r es el truco de Roux: mueve la capa derecha y la capa M juntas, para que puedas tomar aristas desde abajo sin tocar la izquierda.",
+      "insert": {
+        "title": "Emparejar e insertar",
+        "desc": "Los cuatro casos mantienen el bloque izquierdo intacto. Se asume que la arista DR está resuelta; estos insertan el par de esquina-arista frontal derecho.",
+        "cases": {
+          "pairRight": {
+            "name": "Par en la parte superior, lado derecho",
+            "hint": "Esquina sobre la ranura, arista a su lado a la derecha. El espejo de la inserción del primer bloque."
+          },
+          "mPair": {
+            "name": "Emparejar con la pieza M",
+            "hint": "Arista en la parte trasera izquierda de la cara superior, esquina a la derecha. U seguido de M lleva la arista hacia la esquina, R U' R' inserta el par."
+          },
+          "cornerInSlot": {
+            "name": "Esquina en la ranura, arista arriba",
+            "hint": "La esquina ya está en su lugar, la arista queda arriba. U R saca la esquina, M acerca la arista, U' R' coloca ambas."
+          },
+          "twistedCorner": {
+            "name": "Esquina en la ranura, girada",
+            "hint": "La esquina encaja en su ranura pero girada. L F' L' la saca a través del bloque izquierdo y de vuelta, los movimientos M traen la arista, R U' R' la inserta."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Con ambos bloques terminados, resuelve las cuatro esquinas superiores de una vez. El CMLL completo tiene 42 casos; el método de dos pasos lo divide en orientar y luego permutar, y solo necesita nueve algoritmos. Debido a que la capa M se arregla después, estos algoritmos pueden alterarla libremente. Las pegatinas amarillas muestran dónde está el color superior; una barra en el exterior significa que el color superior de esa esquina mira hacia los lados.",
+      "orient": {
+        "title": "Paso 1 · Orientar las esquinas",
+        "desc": "Cuenta cuántas esquinas superiores ya muestran el color superior. 0 → H o Pi. 1 → S o AS. 2 → U, T o L. Haz coincidir el patrón y gira la capa superior para que se alinee con el diagrama."
+      },
+      "permute": {
+        "title": "Paso 2 · Permutar las esquinas",
+        "desc": "Si un lado ya coincide —digamos que ambas esquinas de una cara son rojas— gira la parte superior para que ese par quede a la izquierda, luego usa el intercambio adyacente. Si ningún lado coincide, usa el intercambio diagonal.",
+        "cases": {
+          "adjacent": {
+            "name": "Intercambio adyacente",
+            "hint": "Coloca las dos esquinas a intercambiar a la derecha."
+          },
+          "diagonal": {
+            "name": "Intercambio diagonal",
+            "hint": "Cualquier ángulo funciona."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Quedan seis aristas y solo se necesitan movimientos M y U. Tres pasos: orientar las aristas para que cada color superior/inferior mire hacia arriba o hacia abajo (EO), colocar las aristas UL y UR, y luego terminar las últimas cuatro. Los diagramas muestran las aristas de la capa superior más las dos aristas inferiores DF y DB; las esquinas se dejan en blanco porque ya están resueltas.",
+      "eo": {
+        "title": "4a · Orientación de aristas",
+        "desc": "Una arista rellena tiene su color superior/inferior mirando hacia arriba o hacia abajo — bien. En blanco significa mal. Cuenta las aristas malas arriba y abajo; solo hay un puñado de patrones y M' U M es el movimiento que los cambia.",
+        "cases": {
+          "arrow": {
+            "name": "Flecha",
+            "tag": "3 arriba · 1 abajo",
+            "hint": "Gira la parte superior para que las tres aristas malas apunten a la arista mala inferior, luego M' U M arregla las cuatro."
+          },
+          "twoTwo": {
+            "name": "Dividir pares",
+            "tag": "2 arriba · 2 abajo",
+            "hint": "Se muestra la solución más corta. La ruta manual: M' U2 M la convierte en una flecha, luego termina como se indicó arriba."
+          },
+          "fourZero": {
+            "name": "Todos arriba",
+            "tag": "4 arriba · 0 abajo",
+            "hint": "Las cuatro aristas superiores están mal. M U2 M intercambia un par hacia abajo para formar una flecha, luego termina."
+          },
+          "twoTop": {
+            "name": "Ambos arriba",
+            "tag": "2 arriba · 0 abajo",
+            "hint": "Ni 0, ni 4: M' U M crea cuatro aristas malas en forma de flecha, U2 para apuntar, M' U M para terminar."
+          },
+          "oneOne": {
+            "name": "Uno arriba, uno abajo",
+            "tag": "1 arriba · 1 abajo",
+            "hint": "La misma idea: el primer M U M crea la flecha."
+          },
+          "twoBottom": {
+            "name": "Ambos abajo",
+            "tag": "0 arriba · 2 abajo",
+            "hint": "M U M los eleva formando una flecha, luego termina como de costumbre."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL y UR",
+        "desc": "Amarillo arriba, blanco abajo, bloque rojo a la izquierda: las dos aristas que faltan por colocar son amarillo-rojo y amarillo-naranja (marcadas en los diagramas). Bájalas ambas a la parte inferior para que queden opuestas entre sí, gira la parte superior para alinear, luego M2 U o M2 U'. Los centros quedan invertidos; el siguiente paso lo soluciona.",
+        "cases": {
+          "bothTop": {
+            "name": "Ambas arriba",
+            "hint": "Gira la parte superior hasta que queden opuestas (delante y detrás). M2 las hunde, U' las alinea, M2 U' las coloca."
+          },
+          "oneBottom": {
+            "name": "Una arriba, una abajo",
+            "hint": "U2 para alinear, M U2 M' envía la de arriba hacia abajo opuesta a la otra; U' para alinear, M2 U sube ambas y las coloca."
+          },
+          "bothBottom": {
+            "name": "Ambas abajo",
+            "hint": "Gira la parte superior para alinear, M2 las sube, U las coloca."
+          },
+          "bothBottomAlt": {
+            "name": "Ambas abajo (otra forma)",
+            "hint": "El par se coloca al revés: U2 para alinear la parte superior, luego M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Últimas cuatro aristas (solo mirando)",
+        "cases": {
+          "needM2": {
+            "name": "Centros invertidos",
+            "hint": "El centro blanco está arriba: M2 lo invierte de nuevo."
+          },
+          "oneWhite": {
+            "name": "Un blanco arriba",
+            "hint": "Gira la parte superior para que el borde blanco quede al frente, luego intercámbialo con el borde inferior."
+          },
+          "twoWhite": {
+            "name": "Dos blancos arriba",
+            "hint": "Intercambia los bordes superior e inferior dos veces, una vez en cada lado."
+          },
+          "byLook": {
+            "name": "Resolver mirando",
+            "hint": "Sin blanco arriba, pero los bordes frontal y posterior están intercambiados: M2, gira la parte superior, M2 atrás."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

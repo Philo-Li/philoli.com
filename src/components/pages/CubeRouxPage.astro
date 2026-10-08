@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CubeTopView from '../cube/CubeTopView.astro';
+import { ROUX_STAGES, rouxCaseHash, rouxCaseState, type RouxCase, type RouxStageKey } from '../../lib/cube/roux';
+import { DEFAULT_LOCALE, isLocale, localizedPath, useTranslations } from '../../i18n';
+import '../../styles/cube-roux.css';
+
+const locale = isLocale(Astro.currentLocale) ? Astro.currentLocale : DEFAULT_LOCALE;
+const t = useTranslations(locale);
+const cubeHref = localizedPath('/projects/rubiks-cube', locale);
+const analyzerHref = localizedPath('/projects/rubiks-cube/analyzer', locale);
+
+// Share link that opens the 3D cube scrambled into the case, alg loaded, irrelevant layers hidden.
+const openHref = (stage: RouxStageKey, sectionKey: string, x: RouxCase) => `${cubeHref}/${rouxCaseHash(stage, sectionKey, x)}`;
+
+const STAGE_ORDER: RouxStageKey[] = ['fb', 'sb', 'cmll', 'lse'];
+const stages = STAGE_ORDER.map(k => ROUX_STAGES.find(s => s.key === k)!);
+
+// CMLL orientation cases are named by their letter ("S 形" in Chinese, "S" in English);
+// everything else has a translated name.
+const caseName = (stageKey: string, sectionKey: string, x: RouxCase) =>
+  x.nameKey
+    ? t(`cubeRoux.${stageKey}.${sectionKey}.cases.${x.nameKey}.name`)
+    : t('cubeRoux.cmll.shape').replace('{key}', x.key);
+---
+
+<BaseLayout title={t('metadata.cubeRouxTitle')} description={t('metadata.cubeRouxDescription')}>
+  <main class="cm">
+    <header class="cm__header">
+      <div class="cm__eyebrow">{t('cubeRoux.eyebrow')}</div>
+      <h1 class="cm__title">{t('cubeRoux.title')}</h1>
+      <p class="cm__intro">{t('cubeRoux.intro')}</p>
+      <nav class="cm__links">
+        <a class="cm__link" href={cubeHref}>{t('cubeAnalyzer.links.cube')}</a>
+        <a class="cm__link" href={analyzerHref}>{t('rubiksCube.analyzerCard.title')} →</a>
+      </nav>
+    </header>
+
+    <div class="cm__tabs" role="tablist" aria-label={t('cubeRoux.tabsLabel')}>
+      {stages.map((st, i) => (
+        <button
+          type="button"
+          role="tab"
+          id={`tab-${st.key}`}
+          class="cm__tab"
+          aria-selected={i === 0 ? 'true' : 'false'}
+          aria-controls={`panel-${st.key}`}
+          data-stage={st.key}
+        >
+          <span class="cm__tab-num">{i + 1}</span>
+          {t(`cubeRoux.tabs.${st.key}`)}
+        </button>
+      ))}
+    </div>
+
+    {stages.map((st, i) => (
+      <section
+        id={`panel-${st.key}`}
+        class="cm__panel"
+        role="tabpanel"
+        aria-labelledby={`tab-${st.key}`}
+        hidden={i !== 0}
+      >
+        {!st.terse && <p class="cm__stage-intro">{t(`cubeRoux.${st.key}.intro`)}</p>}
+        {st.sections.map(sec => (
+          <div class="cm__section">
+            <h2 class="cm__section-title">{t(`cubeRoux.${st.key}.${sec.key}.title`)}</h2>
+            {(sec.showDesc || (!st.terse && !st.hideSectionDesc && !sec.hideDesc)) && <p class="cm__section-desc">{t(`cubeRoux.${st.key}.${sec.key}.desc`)}</p>}
+            <div class={`cm__grid${sec.cases.length <= 2 ? ' cm__grid--two' : ''}${sec.cases[0]?.diagram === 'none' ? ' cm__grid--text' : ''}`}>
+              {sec.cases.map(x => {
+                const name = caseName(st.key, sec.key, x);
+                return (
+                  <article class={`cm__card${x.image ? ' cm__card--photo' : ''}`}>
+                    {x.tagKey &&<span class="cm__tag">{t(`cubeRoux.${st.key}.${sec.key}.cases.${x.tagKey}.tag`)}</span>}
+                    {x.image && (
+                      <div class="cm__diagram">
+                        <img class="cm__photo" src={x.image} alt={name} width="800" height="622" loading="lazy" decoding="async" />
+                      </div>
+                    )}
+                    {!x.image && x.diagram !== 'none' && (
+                      <div class="cm__diagram">
+                        <CubeTopView state={rouxCaseState(x)} mode={x.diagram} label={name} size={150} />
+                      </div>
+                    )}
+                    {!x.hideName && <h3 class="cm__case">{name}</h3>}
+                    {!x.hideAlg && <div class="cm__alg">{x.alg}</div>}
+                    <a class="cm__btn" href={openHref(st.key, sec.key, x)}>{t('cubeRoux.openInCube')}</a>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </section>
+    ))}
+
+  </main>
+</BaseLayout>
+
+<script>
+  // Tabs: one stage visible at a time; the hash (#fb, #sb, #cmll, #lse) deep-links to a stage.
+  const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>('.cm__tab'));
+  const panels = Array.from(document.querySelectorAll<HTMLElement>('.cm__panel'));
+
+  function select(stage: string, pushHash: boolean) {
+    for (const tab of tabs) tab.setAttribute('aria-selected', tab.dataset.stage === stage ? 'true' : 'false');
+    for (const panel of panels) panel.hidden = panel.id !== `panel-${stage}`;
+    if (pushHash) history.replaceState(null, '', `#${stage}`);
+  }
+
+  for (const tab of tabs) {
+    tab.addEventListener('click', () => select(tab.dataset.stage!, true));
+  }
+
+  const initial = location.hash.replace('#', '');
+  if (tabs.some(tab => tab.dataset.stage === initial)) select(initial, false);
+  window.addEventListener('hashchange', () => {
+    const next = location.hash.replace('#', '');
+    if (tabs.some(tab => tab.dataset.stage === next)) select(next, false);
+  });
+</script>

@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Ingyenes AI e-könyv fordító, amely teljes egészében a böngészőben fut. Fordíts EPUB és PDF fájlokat 40+ nyelvre kétnyelvű egymás melletti kimenettel. Használd a saját API kulcsodat.",
     "rubiksCubeTitle": "3D Rubik-kocka — Philo Li",
     "rubiksCubeDescription": "Interaktív 3D Rubik-kocka. Állíts be keverést és megoldást, játszd le lépésről lépésre, rejts el színeket vagy oldalakat a memorizáláshoz.",
+    "cubeRouxTitle": "Roux-módszer — Blokkok, CMLL és LSE",
+    "cubeRouxDescription": "Minden algoritmus, amire a Roux-metódushoz szükséged van, szakaszonként egy-egy fülön: blokképítő beillesztések, kétlépéses CMLL, valamint az M/U algoritmusok az élorientációhoz, az UL/UR-hoz és az utolsó négy élhez. Minden esethez tartozik egy ábra, amely megnyitható az interaktív 3D kockában.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Rubik-kocka fejlődési diagramok",
     "cubeAnalyzerDescription": "Húzd be a csTimer exportfájlodat és kapj fejlődési diagramokat: Ao5/Ao12/Ao100 trendek, PB-történet, mérföldkövek, napi mennyiség és hatványfüggvény alapú tanulási görbe. Teljesen a böngésződben fut."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Exportáld a csTimer munkameneteidet és lásd a fejlődési diagramjaidat.",
       "cta": "Kirakások elemzése"
+    },
+    "rouxCard": {
+      "eyebrow": "Módszer",
+      "title": "Roux-módszer",
+      "desc": "Blokkok, kétlépéses CMLL és LSE — minden eset ábrával, amelyet ezen a kockán nyithatsz meg.",
+      "cta": "Böngészés a könyvtárban"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Módszer",
+    "title": "Roux-módszer (kezdőbarát)",
+    "intro": "A Roux-módszer négy szakaszból áll: a bal oldali 1×2×3-as blokk megépítése, a jobb oldali megépítése, a felső sarkok megoldása (CMLL), majd az utolsó hat él befejezése kizárólag M és U forgatásokkal (LSE).",
+    "tabsLabel": "Roux szakaszok",
+    "tabs": {
+      "fb": "Első blokk",
+      "sb": "Második blokk",
+      "cmll": "CMLL (kétlépéses)",
+      "lse": "LSE"
+    },
+    "openInCube": "Részletek",
+    "fb": {
+      "intro": "Az első blokk egy 1×2×3-as a bal oldalon: a DL él, a két bal alsó sarok és a hozzájuk tartozó két él. Nincsenek kötött algoritmusok — nézelődsz, párosítasz egy sarkot az élével, majd beilleszted. Ezek azok a kézmozdulatok, amelyek újra és újra előfordulnak. Tartsd a kockát úgy, hogy a blokk balra, az üres hely pedig elöl legyen.",
+      "insert": {
+        "title": "Párosítás és beillesztés",
+        "desc": "Minden eset úgy nyílik meg a 3D kockában, hogy a pár már a helyén van; figyeld meg, honnan indulnak a darabok, és hogyan kerülnek a helyükre a forgatásokkal anélkül, hogy a blokk többi részét megzavarnák.",
+        "cases": {
+          "pairLeft": {
+            "name": "Pár felül, bal oldalon",
+            "hint": "Sarok a nyílás felett, él mellette balra. Mozgasd el a párt, nyisd meg a nyílást, és ejtsd be."
+          },
+          "mSlice": {
+            "name": "Párosítás az M szelettel",
+            "hint": "Sarok a felső rész bal hátsó részén, él a jobb oldalon. Az M körbehozza az élt, hogy találkozzanak, majd az F' beejti a párt."
+          },
+          "edgeOnTop": {
+            "name": "Sarok a helyén, él a tetején",
+            "hint": "A sarok már otthon van, az él a tetejének a jobb oldalán ül. Vedd ki a sarkot, hogy találkozzon vele, majd az F' mindkettőt beilleszti."
+          },
+          "misPaired": {
+            "name": "Pár felül, a színek nem egyeznek",
+            "hint": "A sarok és az él egymás mellett vannak a felső rész jobb oldalán, de nem egyeznek. Az F' megnyitja a helyet, párosítsd újra az L' U' L U' L' U L algoritmussal, az F' pedig bezárja."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "A második blokk az elsőt tükrözi a jobb oldalon — de most a bal oldali blokk nem mozdulhat el. Csak az R, r, M és U forgatások biztonságosak. A széles r forgatás a Roux-trükk: a jobb réteget és az M szeletet együtt mozgatja, így az éleket alulról is elkaphatod anélkül, hogy a bal oldalához érnél.",
+      "insert": {
+        "title": "Párosítás és beillesztés",
+        "desc": "Mind a négy eset érintetlenül hagyja a bal oldali blokkot. A DR él megoldottnak tekintendő; ezek az esetek a jobb első sarok-él párt illesztik be.",
+        "cases": {
+          "pairRight": {
+            "name": "Pár felül, jobb oldalon",
+            "hint": "Sarok a nyílás felett, él mellette jobbra. Az első blokkba illesztett elem tükörképe."
+          },
+          "mPair": {
+            "name": "Párba állítás az M szelettel",
+            "hint": "Él a felső rész bal hátsó részén, sarok a jobb oldalon. U, majd M a sarokhoz hozza az élet, R U' R' beilleszti a párt."
+          },
+          "cornerInSlot": {
+            "name": "Sarok a helyén, él a tetején",
+            "hint": "A sarok már otthon van, az él a tetején ül. Az U R kiemeli a sarkot, az M odaviszi az élt, az U' R' pedig mindkettőt a helyére teszi."
+          },
+          "twistedCorner": {
+            "name": "Sarok a helyén, elforgatva",
+            "hint": "A sarok a helyén ül, de elfordítva. Az L F' L' kifordítja a bal oldali blokkon keresztül és vissza, az M mozdulatok behozzák az élet, az R U' R' beilleszti."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Ha mindkét blokk kész, oldd meg a négy felső sarkot egy menetben. A teljes CMLL 42 esetből áll; a kétlépéses módszer tájolásra és permutációra bontja, és mindössze kilenc algoritmust igényel. Mivel az M szelet később rendeződik, ezek az algoritmusok szabadon elmozdíthatják azt. A sárga matricák mutatják, hol van a felső szín; a külső oldalon lévő sáv azt jelenti, hogy az adott sarok felső színe oldalra néz.",
+      "orient": {
+        "title": "1. lépés · Sarkok tájolása",
+        "desc": "Számold meg, hány felső sarok mutatja már a felső színt. 0 → H vagy Pi. 1 → S vagy AS. 2 → U, T vagy L. Illeszd a mintát, és forgasd el a felső réteget úgy, hogy egy vonalba kerüljön az ábrával."
+      },
+      "permute": {
+        "title": "2. lépés · Sarkok permutálása",
+        "desc": "Ha az egyik oldal már egyezik – mondjuk egy lapon mindkét sarok piros –, fordítsd el a tetejét úgy, hogy az a pár balra kerüljön, majd használd a szomszédos cserét. Ha egyik oldal sem egyezik, használd az átlós cserét.",
+        "cases": {
+          "adjacent": {
+            "name": "Szomszédos csere",
+            "hint": "Tedd a két cserélendő sarkot a jobb oldalra."
+          },
+          "diagonal": {
+            "name": "Átlós csere",
+            "hint": "Bármilyen szög megfelel."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Hat él marad, és csak M és U forgatásokra van szükség. Három lépés: tájold az éleket úgy, hogy minden felső/alsó szín felfelé vagy lefelé nézzen (EO), helyezd el az UL és UR éleket, majd fejezd be az utolsó négyet. Az ábrák a felső réteg éleit, valamint a két alsó élt, a DF-et és a DB-t mutatják; a sarkok üresen maradnak, mivel azok már meg vannak oldva.",
+      "eo": {
+        "title": "4a · Élek tájolása",
+        "desc": "A kitöltött él felső/alsó színe felfelé vagy lefelé néz — ez jó. Az üres rosszat jelent. Számold meg a rossz éleket felül és alul; csak maroknyi minta létezik, és az M' U M az a lépés, ami megváltoztatja őket.",
+        "cases": {
+          "arrow": {
+            "name": "Nyíl",
+            "tag": "3 fel · 1 le",
+            "hint": "Fordítsd el a tetejét úgy, hogy a három rossz él a rossz alsó élre mutasson, majd az M' U M mind a négyet kijavítja."
+          },
+          "twoTwo": {
+            "name": "Párok szétválasztása",
+            "tag": "2 fel · 2 le",
+            "hint": "A legrövidebb megoldás látható. A kézi módszer: az M' U2 M nyíl alakúvá változtatja, majd fejezd be a fentiek szerint."
+          },
+          "fourZero": {
+            "name": "Mind felül",
+            "tag": "4 fel · 0 le",
+            "hint": "Mind a négy felső él rossz. Az M U2 M egy párat lejjebb cserél nyíl alakba, majd fejezd be."
+          },
+          "twoTop": {
+            "name": "Mindkettő felül",
+            "tag": "2 fel · 0 le",
+            "hint": "Nem 0, nem 4: az M' U M négy rossz élt hoz létre nyíl alakban, U2 a célzáshoz, M' U M a befejezéshez."
+          },
+          "oneOne": {
+            "name": "Egy fel, egy le",
+            "tag": "1 fel · 1 le",
+            "hint": "Ugyanaz az elv — az első M U M létrehozza a nyilat."
+          },
+          "twoBottom": {
+            "name": "Mindkettő alul",
+            "tag": "0 fel · 2 le",
+            "hint": "M U M nyíllá emeli őket, majd fejezd be a szokásos módon."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL és UR",
+        "desc": "Sárga felül, fehér alul, piros blokk balra: a két még elhelyezendő él a sárga-piros és a sárga-narancs (a diagramokon bekeretezve). Süllyeszd mindkettőt alulra úgy, hogy egymással szemben legyenek, fordítsd el a tetejét, hogy egy vonalba kerüljenek, majd M2 U vagy M2 U'. A középpontok végül megfordulnak — a következő lépés ezt korrigálja.",
+        "cases": {
+          "bothTop": {
+            "name": "Mindkettő felül",
+            "hint": "Fordítsd a tetejét, amíg szembe nem kerülnek egymással (elöl és hátul). Az M2 mindkettőt lesüllyeszti, az U' egy vonalba hozza őket, az M2 U' pedig a helyére teszi őket."
+          },
+          "oneBottom": {
+            "name": "Egy fent, egy lent",
+            "hint": "U2 az igazításhoz, M U2 M' a felsőt az ellentétes oldalra viszi; U' az igazításhoz, M2 U mindkettőt felhozza és a helyére teszi."
+          },
+          "bothBottom": {
+            "name": "Mindkettő alul",
+            "hint": "Fordítsd el a tetejét, hogy egy vonalba kerüljenek, az M2 felhozza őket, az U pedig a helyére teszi."
+          },
+          "bothBottomAlt": {
+            "name": "Mindkettő alul (másik módszer)",
+            "hint": "A pár fordítva áll: U2 a felső sorba rendezéshez, majd M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Utolsó négy él (csak ránézésre)",
+        "cases": {
+          "needM2": {
+            "name": "Középpontok megfordítva",
+            "hint": "A fehér középpont felül van: az M2 visszafordítja."
+          },
+          "oneWhite": {
+            "name": "Egy fehér felül",
+            "hint": "Fordítsd el a tetejét úgy, hogy a fehér él elöl legyen, majd cseréld ki az alsó éllel."
+          },
+          "twoWhite": {
+            "name": "Két fehér felül",
+            "hint": "Cseréld ki a felső és alsó éleket kétszer, mindkét oldalon egyszer."
+          },
+          "byLook": {
+            "name": "Megoldás ránézéssel",
+            "hint": "Nincs fehér a tetején, de az elülső és hátsó élek fel vannak cserélve: M2, fordítsd el a tetejét, M2 vissza."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Tamamen tarayıcınızda çalışan ücretsiz AI e-kitap çevirmeni. EPUB ve PDF dosyalarını 40'tan fazla dile çevirin, yan yana iki dilli çıktı alın. Kendi API anahtarınızı kullanın.",
     "rubiksCubeTitle": "3D Rubik Küpü — Philo Li",
     "rubiksCubeDescription": "Etkileşimli 3D Rubik Küpü. Bir karıştırma ve çözüm ayarlayın, adım adım oynayın, ezberleme çalışmaları için renkleri veya yüzleri gizleyin.",
+    "cubeRouxTitle": "Roux Yöntemi — Bloklar, CMLL ve LSE",
+    "cubeRouxDescription": "Roux yöntemi için ihtiyacınız olan her algoritma, her aşama için bir sekme: blok oluşturma eklemeleri, iki aşamalı CMLL ve kenar yönlendirme, UL/UR ve son dört kenar için M/U algoritmaları. Her durumun bir diyagramı vardır ve etkileşimli 3D küpte açılır.",
     "cubeAnalyzerTitle": "csTimer Analiz Aracı — Rubik Küpü Gelişim Grafikleri",
     "cubeAnalyzerDescription": "csTimer dışa aktarım dosyanızı bırakın ve gelişim grafiklerinizi alın: Ao5/Ao12/Ao100 trendleri, PB geçmişi, dönüm noktaları, günlük hacim ve güç yasası öğrenme eğrisi. Tamamen tarayıcınızda çalışır."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analiz Aracı",
       "desc": "csTimer oturumlarınızı dışa aktarın ve gelişim grafiklerinizi görün.",
       "cta": "Çözümlerimi analiz et"
+    },
+    "rouxCard": {
+      "eyebrow": "Yöntem",
+      "title": "Roux Yöntemi",
+      "desc": "Bloklar, iki aşamalı CMLL ve LSE — her durum, bu küpte açabileceğiniz bir diyagramla birlikte.",
+      "cta": "Kütüphaneye göz at"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Yöntem",
+    "title": "Roux Yöntemi (Yeni Başlayanlar İçin)",
+    "intro": "Roux yönteminin dört aşaması vardır: sol 1×2×3 bloğunu oluştur, sağ bloğu oluştur, üst köşeleri çöz (CMLL) ve ardından son altı kenarı sadece M ve U hamleleriyle tamamla (LSE).",
+    "tabsLabel": "Roux aşamaları",
+    "tabs": {
+      "fb": "İlk blok",
+      "sb": "İkinci blok",
+      "cmll": "CMLL (iki aşamalı)",
+      "lse": "LSE"
+    },
+    "openInCube": "Detaylar",
+    "fb": {
+      "intro": "İlk blok, soldaki 1×2×3'lük kısımdır: DL kenarı, alt-sol iki köşe ve onların iki kenarı. Sabit algoritmalar yoktur; bakarsınız, bir köşeyi kenarıyla eşleştirir ve yerleştirirsiniz. Bunlar tekrar tekrar karşınıza çıkan el hamleleridir. Küpü, blok solda ve boş yuva önde olacak şekilde tutun.",
+      "insert": {
+        "title": "Eşleştirme ve yerleştirme",
+        "desc": "Her durum, çift halihazırda yerindeyken 3D küpte açılır; iki parçanın nereden başladığını ve hamlelerin bloğun geri kalanını bozmadan onları nasıl yerine getirdiğini izleyin.",
+        "cases": {
+          "pairLeft": {
+            "name": "Üstte çift, sol taraf",
+            "hint": "Köşe yuvanın üzerinde, kenar solunda. Çifti yoldan çekin, yuvayı açın ve içine bırakın."
+          },
+          "mSlice": {
+            "name": "M dilimi ile eşleştir",
+            "hint": "Köşe üst kısmın sol arkasında, kenar sağda. M kenarı onunla buluşması için döndürür, ardından F' çifti yerine yerleştirir."
+          },
+          "edgeOnTop": {
+            "name": "Köşe yuvada, kenar üstte",
+            "hint": "Köşe zaten yerinde, kenar üst kısmın sağında duruyor. Köşeyi onunla buluşması için dışarı çıkar, ardından F' ikisini de yerleştirir."
+          },
+          "misPaired": {
+            "name": "Üstte çift, renkler uyumsuz",
+            "hint": "Köşe ve kenar üst kısmın sağında yan yana ancak eşleşmiyorlar. F' yuvayı açar, L' U' L U' L' U L ile tekrar eşleştirin, F' yuvayı kapatır."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "İkinci blok, sağ tarafta ilkinin aynısıdır — ancak artık sol blok hareket etmemelidir. Sadece R, r, M ve U hamleleri güvenlidir. Geniş r hamlesi Roux'nun hilesidir: sağ katmanı ve M dilimini birlikte hareket ettirir, böylece sola dokunmadan alttan kenarları alabilirsiniz.",
+      "insert": {
+        "title": "Eşleştirme ve yerleştirme",
+        "desc": "Dört durumun tamamı sol bloğu el değmeden tutar. DR kenarının çözülmüş olduğu varsayılır; bunlar ön-sağ köşe-kenar çiftini yerleştirir.",
+        "cases": {
+          "pairRight": {
+            "name": "Üstte çift, sağ tarafta",
+            "hint": "Yuvanın üzerindeki köşe, sağındaki kenar. İlk blok yerleştirmenin aynadaki yansıması."
+          },
+          "mPair": {
+            "name": "M dilimi ile eşleştir",
+            "hint": "Üst yüzün arka-sol kenarı, sağdaki köşe. U ve ardından M hamlesi kenarı köşenin etrafından getirir, R U' R' hamlesi ise çifti yerleştirir."
+          },
+          "cornerInSlot": {
+            "name": "Köşe yuvada, kenar üstte",
+            "hint": "Köşe zaten yerinde, kenar üstte duruyor. U R köşeyi dışarı çıkarır, M kenarı ona getirir, U' R' ikisini de yerine koyar."
+          },
+          "twistedCorner": {
+            "name": "Köşe yuvada, bükülmüş",
+            "hint": "Köşe yuvasında ama dönmüş durumda. L F' L' onu sol bloktan dışarı ve geriye doğru çevirir, M hamleleri kenarı getirir, R U' R' ise yerleştirir."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Her iki blok tamamlandığında, dört üst köşeyi tek seferde çözün. Tam CMLL 42 durum içerir; iki aşamalı yöntem bunu önce yönlendirme, sonra yer değiştirme olarak böler ve sadece dokuz algoritma gerektirir. M dilimi sonradan düzeltildiği için, bu algoritmalar onu bozmakta özgürdür. Sarı etiketler üst rengin nerede olduğunu gösterir; dış taraftaki bir çubuk, o köşenin üst renginin yana baktığı anlamına gelir.",
+      "orient": {
+        "title": "Adım 1 · Köşeleri yönlendir",
+        "desc": "Kaç üst köşenin halihazırda üst rengi gösterdiğini sayın. 0 → H veya Pi. 1 → S veya AS. 2 → U, T veya L. Deseni eşleştirin ve üst katmanı diyagramla hizalanacak şekilde döndürün."
+      },
+      "permute": {
+        "title": "Adım 2 · Köşelerin yerini değiştir",
+        "desc": "Eğer bir taraf zaten eşleşiyorsa — örneğin bir yüzdeki her iki köşe de kırmızıysa — üst kısmı çevirerek bu çifti sola getirin, ardından yan parça değişimini kullanın. Eğer hiçbir taraf eşleşmiyorsa, çapraz değişimini kullanın.",
+        "cases": {
+          "adjacent": {
+            "name": "Yan yana yer değiştirme",
+            "hint": "Yer değiştirecek iki köşeyi sağa getirin."
+          },
+          "diagonal": {
+            "name": "Çapraz yer değiştirme",
+            "hint": "Herhangi bir açı işe yarar."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Altı kenar kalır ve sadece M ve U dönüşleri gerekir. Üç adım: kenarları, her üst/alt renk yukarı veya aşağı bakacak şekilde yönlendirin (EO), UL ve UR kenarlarını yerleştirin, ardından son dördünü bitirin. Diyagramlar üst katmanın kenarlarını ve iki alt kenar olan DF ve DB'yi gösterir; köşeler zaten çözüldüğü için boş bırakılmıştır.",
+      "eo": {
+        "title": "4a · Kenar yönlendirme",
+        "desc": "Dolu bir kenarın üst/alt rengi yukarı veya aşağı bakıyordur — iyi. Boş olması kötü demektir. Üst ve alttaki kötü kenarları sayın; sadece birkaç desen vardır ve M' U M bunları değiştiren hamledir.",
+        "cases": {
+          "arrow": {
+            "name": "Ok",
+            "tag": "3 yukarı · 1 aşağı",
+            "hint": "Üstü, üç kötü kenar alttaki kötü kenarı gösterecek şekilde döndürün, ardından M' U M dördünü de düzeltir."
+          },
+          "twoTwo": {
+            "name": "Çiftleri ayır",
+            "tag": "2 yukarı · 2 aşağı",
+            "hint": "En kısa çözüm gösterilmiştir. Elle yapılan yol: M' U2 M onu bir oka dönüştürür, ardından yukarıdaki gibi bitirin."
+          },
+          "fourZero": {
+            "name": "Hepsi üstte",
+            "tag": "4 yukarı · 0 aşağı",
+            "hint": "Dört üst kenarın hepsi kötü. M U2 M bir çifti aşağıya, ok şekline getirir, ardından bitirin."
+          },
+          "twoTop": {
+            "name": "İkisi de üstte",
+            "tag": "2 yukarı · 0 aşağı",
+            "hint": "0 değil, 4 değil: M' U M onu ok şeklinde dört kötü kenar yapar, hizalamak için U2, bitirmek için M' U M."
+          },
+          "oneOne": {
+            "name": "Biri yukarıda, biri aşağıda",
+            "tag": "1 yukarı · 1 aşağı",
+            "hint": "Aynı fikir — ilk M U M oku oluşturur."
+          },
+          "twoBottom": {
+            "name": "İkisi de altta",
+            "tag": "0 yukarı · 2 aşağı",
+            "hint": "M U M onları bir ok şekline getirir, sonra her zamanki gibi bitirin."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL ve UR",
+        "desc": "Üstte sarı, altta beyaz, solda kırmızı blok: yerleştirilecek iki kenar sarı-kırmızı ve sarı-turuncudur (diyagramlarda çerçeve içine alınmıştır). Her ikisini de karşılıklı gelecek şekilde aşağı indirin, hizalamak için üstü çevirin, ardından M2 U veya M2 U' uygulayın. Merkezler ters dönmüş olacak — bir sonraki adım bunu düzeltir.",
+        "cases": {
+          "bothTop": {
+            "name": "İkisi de üstte",
+            "hint": "Üst kısmı birbirlerinin tam karşısına gelene kadar çevirin (ön ve arka). M2 ikisini de batırır, U' hizalar, M2 U' yerleştirir."
+          },
+          "oneBottom": {
+            "name": "Biri yukarıda, biri aşağıda",
+            "hint": "Hizalamak için U2, M U2 M' üsttekini karşı tarafa indirir; hizalamak için U', M2 U ikisini de yukarı çıkarır ve yerleştirir."
+          },
+          "bothBottom": {
+            "name": "İkisi de altta",
+            "hint": "Hizalamak için üstü çevirin, M2 onları yukarı getirir, U yerleştirir."
+          },
+          "bothBottomAlt": {
+            "name": "İkisi de altta (diğer yol)",
+            "hint": "Çift ters yönde duruyor: Üstü hizalamak için U2, ardından M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Son dört kenar (sadece bakarak)",
+        "cases": {
+          "needM2": {
+            "name": "Merkezler ters döndü",
+            "hint": "Beyaz merkez üstte: M2 onu geri çevirir."
+          },
+          "oneWhite": {
+            "name": "Üstte bir beyaz",
+            "hint": "Beyaz kenar öne gelecek şekilde üstü çevirin, ardından onu alt kenarla değiştirin."
+          },
+          "twoWhite": {
+            "name": "Üstte iki beyaz",
+            "hint": "Üst ve alt kenarları, her iki tarafta birer kez olmak üzere iki kez değiştirin."
+          },
+          "byLook": {
+            "name": "Bakarak çöz",
+            "hint": "Üstte beyaz yok, ancak ön ve arka kenarlar yer değiştirmiş: M2, üstü çevir, M2 geri."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

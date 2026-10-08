@@ -33,6 +33,8 @@ interface Props {
   } | null;
   /** Link to the csTimer analyzer tool; shown under the tutorial card. */
   analyzerHref?: string | null;
+  /** Link to the Roux algorithm library; shown under the tutorial card. */
+  rouxHref?: string | null;
 }
 
 const SPEED_STOPS = [0.25, 0.5, 1, 2, 4];
@@ -198,7 +200,7 @@ function generateScramble(length = 20): string {
   return out.join(' ');
 }
 
-export default function RubiksCube({ locale, tutorial = null, analyzerHref = null }: Props) {
+export default function RubiksCube({ locale, tutorial = null, analyzerHref = null, rouxHref = null }: Props) {
   const t = useTranslations(locale);
 
   const [scramble, setScramble] = useState('');
@@ -353,7 +355,10 @@ export default function RubiksCube({ locale, tutorial = null, analyzerHref = nul
       return;
     }
     sceneRef.current.reset(currentState, learningRef.current);
-  }, [currentState]);
+    // `sceneReady` is a dep so a state restored from the URL hash before Three.js
+    // finished loading is painted as soon as the scene exists, instead of the
+    // scene's initial solved cube sticking until the next step change.
+  }, [currentState, sceneReady]);
 
   // Learning toggles must NOT touch cubie positions — just repaint materials
   // so any drag-rotated state stays visually intact.
@@ -890,7 +895,7 @@ export default function RubiksCube({ locale, tutorial = null, analyzerHref = nul
         </section>
       </div>
 
-      <div className={`rc__learning-layout${tutorial || analyzerHref ? ' rc__learning-layout--with-tutorial' : ''}`}>
+      <div className={`rc__learning-layout${tutorial || analyzerHref || rouxHref ? ' rc__learning-layout--with-tutorial' : ''}`}>
         <section className="rc__learning">
           <header className="rc__learning-header">
             <h2 className="rc__learning-title">{t('rubiksCube.learning.title')}</h2>
@@ -999,7 +1004,7 @@ export default function RubiksCube({ locale, tutorial = null, analyzerHref = nul
           ))}
         </section>
 
-        {(tutorial || analyzerHref) && (
+        {(tutorial || analyzerHref || rouxHref) && (
           <aside className="rc__tutorial-card">
             {tutorial && (
               <>
@@ -1018,6 +1023,16 @@ export default function RubiksCube({ locale, tutorial = null, analyzerHref = nul
                   <h2 className="rc__tutorial-title">{t('rubiksCube.analyzerCard.title')}</h2>
                   <p className="rc__tutorial-meta">{t('rubiksCube.analyzerCard.desc')}</p>
                   <span className="rc__tutorial-cta">{t('rubiksCube.analyzerCard.cta')} →</span>
+                </a>
+              </>
+            )}
+            {rouxHref && (
+              <>
+                <div className={`rc__tutorial-eyebrow${tutorial || analyzerHref ? ' rc__tutorial-eyebrow--stacked' : ''}`}>{t('rubiksCube.rouxCard.eyebrow')}</div>
+                <a href={rouxHref} className="rc__tutorial-link">
+                  <h2 className="rc__tutorial-title">{t('rubiksCube.rouxCard.title')}</h2>
+                  <p className="rc__tutorial-meta">{t('rubiksCube.rouxCard.desc')}</p>
+                  <span className="rc__tutorial-cta">{t('rubiksCube.rouxCard.cta')} →</span>
                 </a>
               </>
             )}

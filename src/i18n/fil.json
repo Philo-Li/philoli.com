@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Libreng AI ebook translator na ganap na gumagana sa iyong browser. Isalin ang mga EPUB at PDF file sa 40+ wika na may magkasabay na dalawang-wikang output. Gamitin ang iyong sariling API key.",
     "rubiksCubeTitle": "3D Rubik's Cube — Philo Li",
     "rubiksCubeDescription": "Interaktibong 3D Rubik's Cube. Magtakda ng scramble at solusyon, maglaro nang sunud-sunod, itago ang mga kulay o mukha para sa mga pagsasanay sa pagsasaulo.",
+    "cubeRouxTitle": "Roux Method — Mga Block, CMLL at LSE",
+    "cubeRouxDescription": "Lahat ng algorithm na kailangan mo para sa paraang Roux, isang tab bawat yugto: mga insert para sa pagbuo ng block, two-look CMLL, at ang mga M/U algorithm para sa oryentasyon ng edge, UL/UR at ang huling apat na edge. Ang bawat case ay may diagram at bumubukas sa interactive na 3D cube.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Mga Chart ng Pag-unlad sa Rubik's Cube",
     "cubeAnalyzerDescription": "I-drop ang iyong csTimer export at kumuha ng mga chart ng pag-unlad: mga trend ng Ao5/Ao12/Ao100, kasaysayan ng PB, mga milestone, pang-araw-araw na volume, at power-law learning curve. Tumatakbo nang buo sa iyong browser."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "I-export ang iyong mga session sa csTimer at tingnan ang iyong mga chart ng pag-unlad.",
       "cta": "Suriin ang aking mga solve"
+    },
+    "rouxCard": {
+      "eyebrow": "Paraan",
+      "title": "Roux Method",
+      "desc": "Mga Block, two-look CMLL at LSE — bawat case ay may diagram na maaari mong buksan sa cube na ito.",
+      "cta": "I-browse ang library"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Paraan",
+    "title": "Roux Method (Madaling Matutunan)",
+    "intro": "Ang pamamaraang Roux ay may apat na yugto: buuin ang kaliwang 1×2×3 block, buuin ang kanan, lutasin ang mga kanto sa itaas (CMLL), at tapusin ang huling anim na gilid gamit lamang ang mga ikot na M at U (LSE).",
+    "tabsLabel": "Mga yugto ng Roux",
+    "tabs": {
+      "fb": "Unang block",
+      "sb": "Pangalawang block",
+      "cmll": "CMLL (two-look)",
+      "lse": "LSE"
+    },
+    "openInCube": "Mga Detalye",
+    "fb": {
+      "intro": "Ang unang block ay isang 1×2×3 sa kaliwa: ang DL edge, ang dalawang kanto sa ibabang-kaliwa at ang kanilang dalawang edge. Walang mga nakapirming algorithm — titingnan mo, ipapares ang isang kanto sa edge nito, at ipapasok. Ito ang mga galaw ng kamay na paulit-ulit na lumalabas. Hawakan ang cube nang ang block ay nasa kaliwa at ang bakanteng slot ay nasa harap.",
+      "insert": {
+        "title": "Pagpapares at pagpasok",
+        "desc": "Ang bawat case ay bumubukas sa 3D cube nang ang pares ay nasa posisyon na; panoorin kung saan nagsisimula ang dalawang piyesa at kung paano sila dinadala ng mga turn sa kanilang pwesto nang hindi naaabala ang natitirang bahagi ng block.",
+        "cases": {
+          "pairLeft": {
+            "name": "Pares sa itaas, kaliwang bahagi",
+            "hint": "Kanto sa itaas ng slot, edge sa tabi nito sa kaliwa. Ilayo ang pares, buksan ang slot, at ihulog ito sa loob."
+          },
+          "mSlice": {
+            "name": "Ipares sa M slice",
+            "hint": "Corner sa likod-kaliwa ng itaas, edge sa kanan. Dinadala ng M ang edge paikot para magtagpo sila, pagkatapos ay ihuhulog ng F' ang pares."
+          },
+          "edgeOnTop": {
+            "name": "Kanto sa puwang, gilid sa itaas",
+            "hint": "Ang kanto ay nasa pwesto na, ang gilid ay nasa kanan ng itaas. Ilabas ang kanto para tagpuin ito, pagkatapos ay ipapasok ng F' ang dalawa."
+          },
+          "misPaired": {
+            "name": "Magkapares sa itaas, hindi tugma ang mga kulay",
+            "hint": "Ang kanto at gilid ay magkatabi sa kanan ng itaas ngunit hindi magkatugma. Binubuksan ng F' ang slot, ipares muli gamit ang L' U' L U' L' U L, isinasara ito ng F'."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Ang pangalawang block ay salamin ng una sa kanan — ngunit ngayon ay hindi dapat gumalaw ang kaliwang block. Tanging ang mga R, r, M at U turn lamang ang ligtas. Ang malawak na r turn ang sikreto ng Roux: iginagalaw nito ang kanang layer at ang M slice nang sabay, kaya maaari kang kumuha ng mga edge mula sa ibaba nang hindi hinahawakan ang kaliwa.",
+      "insert": {
+        "title": "Pagpapares at pagpasok",
+        "desc": "Ang lahat ng apat na case ay pinapanatiling hindi nagagalaw ang kaliwang block. Ang DR edge ay itinuturing na tapos na; ang mga ito ay nagpapasok ng pares ng kanto-edge sa harap-kanan.",
+        "cases": {
+          "pairRight": {
+            "name": "Pares sa itaas, kanang bahagi",
+            "hint": "Kanto sa itaas ng slot, gilid sa tabi nito sa kanan. Ang salamin ng unang-block na insert."
+          },
+          "mPair": {
+            "name": "Ipares sa M slice",
+            "hint": "Edge sa likod-kaliwa ng itaas, corner sa kanan. U tapos M ang magdadala sa edge paikot sa corner, R U' R' ang maglalagay sa pares."
+          },
+          "cornerInSlot": {
+            "name": "Kanto sa puwang, gilid sa ibabaw",
+            "hint": "Ang kanto ay nasa bahay na, ang gilid ay nakapatong sa ibabaw. Iniaangat ng U R ang kanto palabas, dinadala ng M ang gilid dito, ibinabalik ng U' R' ang dalawa sa loob."
+          },
+          "twistedCorner": {
+            "name": "Sulok sa puwang, nakapilipit",
+            "hint": "Ang sulok ay nasa puwang nito ngunit nakapihit. Ang L F' L' ay nagpapalabas dito sa pamamagitan ng kaliwang bloke at pabalik, ang mga galaw ng M ay kumukuha sa gilid, ang R U' R' ay nagpapasok nito."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Kapag tapos na ang dalawang block, lutasin ang apat na kanto sa itaas sa isang bagsakan. Ang buong CMLL ay may 42 na kaso; hinahati ito ng two-look sa orient, pagkatapos ay permute, at nangangailangan lamang ng siyam na algorithm. Dahil inaayos ang M slice pagkatapos, malaya ang mga algorithm na ito na galawin ito. Ang mga dilaw na sticker ay nagpapakita kung nasaan ang kulay sa itaas; ang bar sa labas ay nangangahulugang ang kulay sa itaas ng kantong iyon ay nakaharap sa gilid.",
+      "orient": {
+        "title": "Hakbang 1 · I-orient ang mga kanto",
+        "desc": "Bilangin kung ilang kanto sa itaas ang nagpapakita na ng kulay sa itaas. 0 → H o Pi. 1 → S o AS. 2 → U, T o L. Itugma ang pattern at paikutin ang itaas na layer para pumantay ito sa diagram."
+      },
+      "permute": {
+        "title": "Hakbang 2 · I-permute ang mga kanto",
+        "desc": "Kung may tumutugma nang panig — halimbawa, parehong pula ang mga kanto sa isang mukha — paikutin ang itaas para mapunta ang pares sa kaliwa, pagkatapos ay gamitin ang katabing swap. Kung walang tumutugmang panig, gamitin ang diagonal swap.",
+        "cases": {
+          "adjacent": {
+            "name": "Magkatabing pagpapalit",
+            "hint": "Ilagay ang dalawang kantong pagpapalitin sa kanan."
+          },
+          "diagonal": {
+            "name": "Diagonal na pagpapalit",
+            "hint": "Kahit anong anggulo ay pwede."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Anim na gilid ang natitira, at M at U turns lang ang kailangan. Tatlong hakbang: i-orient ang mga gilid para ang bawat kulay sa itaas/ibaba ay nakaharap sa itaas o ibaba (EO), ilagay ang mga gilid na UL at UR, pagkatapos ay tapusin ang huling apat. Ang mga diagram ay nagpapakita ng mga gilid ng itaas na layer kasama ang dalawang gilid sa ibaba na DF at DB; ang mga kanto ay iniwang blangko dahil tapos na ang mga ito.",
+      "eo": {
+        "title": "4a · Oryentasyon ng gilid",
+        "desc": "Ang isang punong gilid ay may kulay sa itaas/ibaba na nakaharap sa itaas o ibaba — ayos na. Ang blangko ay nangangahulugang mali. Bilangin ang mga maling gilid sa itaas at ibaba; may iilang pattern lang at M' U M ang galaw na nagbabago sa mga ito.",
+        "cases": {
+          "arrow": {
+            "name": "Palaso",
+            "tag": "3 pataas · 1 pababa",
+            "hint": "Paikutin ang itaas para ang tatlong maling gilid ay nakaturo sa maling gilid sa ibaba, pagkatapos ay M' U M ang mag-aayos sa lahat ng apat."
+          },
+          "twoTwo": {
+            "name": "Hating pares",
+            "tag": "2 pataas · 2 pababa",
+            "hint": "Pinakamaikling solusyon ang ipinapakita. Ang manual na paraan: M' U2 M ang magpapalit dito para maging arrow, pagkatapos ay tapusin gaya ng nasa itaas."
+          },
+          "fourZero": {
+            "name": "Lahat sa itaas",
+            "tag": "4 pataas · 0 pababa",
+            "hint": "Lahat ng apat na gilid sa itaas ay mali. M U2 M ang magpapalit ng pares pababa para maging arrow, pagkatapos ay tapusin."
+          },
+          "twoTop": {
+            "name": "Parehong nasa itaas",
+            "tag": "2 pataas · 0 pababa",
+            "hint": "Hindi 0, hindi 4: M' U M ang gagawa ng apat na maling gilid sa hugis arrow, U2 para itutok, M' U M para tapusin."
+          },
+          "oneOne": {
+            "name": "Isa sa itaas, isa sa ibaba",
+            "tag": "1 pataas · 1 pababa",
+            "hint": "Parehong ideya — ang unang M U M ang gagawa ng arrow."
+          },
+          "twoBottom": {
+            "name": "Parehong nasa ibaba",
+            "tag": "0 pataas · 2 pababa",
+            "hint": "Itataas sila ng M U M para maging arrow, pagkatapos ay tapusin gaya ng dati."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL at UR",
+        "desc": "Dilaw sa itaas, puti sa ibaba, pulang bloke sa kaliwa: ang dalawang gilid na ilalagay pa ay dilaw-pula at dilaw-kahel (naka-frame sa mga diagram). Ibaon pareho sa ibaba para magkatapat sila, paikutin ang itaas para mag-align, pagkatapos ay M2 U o M2 U'. Ang mga sentro ay magiging baligtad — aayusin iyon ng susunod na hakbang.",
+        "cases": {
+          "bothTop": {
+            "name": "Parehong nasa itaas",
+            "hint": "Paikutin ang itaas hanggang sa magkatapat ang mga ito (harap at likod). Ipapalubog ng M2 ang dalawa, ipapantay sila ng U', at ilalagay sila ng M2 U'."
+          },
+          "oneBottom": {
+            "name": "Isa sa itaas, isa sa ibaba",
+            "hint": "U2 para ihanay, M U2 M' para ibaba ang nasa itaas sa tapat ng isa; U' para ihanay, M2 U para itaas ang dalawa at ilagay ang mga ito."
+          },
+          "bothBottom": {
+            "name": "Parehong nasa ibaba",
+            "hint": "Paikutin ang itaas para mag-align, iaakyat sila ng M2, ilalagay sila ng U."
+          },
+          "bothBottomAlt": {
+            "name": "Parehong nasa ibaba (ibang paraan)",
+            "hint": "Ang pares ay nakapwesto nang pabaligtad: U2 para pantayin ang itaas, pagkatapos ay M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Huling apat na gilid (sa pagtingin lang)",
+        "cases": {
+          "needM2": {
+            "name": "Binaligtad ang mga gitna",
+            "hint": "Ang puting gitna ay nasa itaas: ibinabalik ito ng M2 sa dati."
+          },
+          "oneWhite": {
+            "name": "Isang puti sa itaas",
+            "hint": "Iikot ang itaas para ang puting gilid ay nasa harap, pagkatapos ay ipagpalit ito sa gilid sa ibaba."
+          },
+          "twoWhite": {
+            "name": "Dalawang puti sa itaas",
+            "hint": "Ipagpalit ang mga gilid sa itaas at ibaba nang dalawang beses, isa sa bawat panig."
+          },
+          "byLook": {
+            "name": "Lutasin sa pamamagitan ng pagtingin",
+            "hint": "Walang puti sa itaas, ngunit ang harap at likod na mga gilid ay napagpalit: M2, paikutin ang itaas, M2 pabalik."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

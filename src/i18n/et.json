@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Tasuta AI e-raamatute tõlkija, mis töötab täielikult teie brauseris. Tõlkige EPUB- ja PDF-faile 40+ keelde kakskeelse kõrvuti väljundiga. Kasutage oma API võtit.",
     "rubiksCubeTitle": "3D Rubiku kuubik — Philo Li",
     "rubiksCubeDescription": "Interaktiivne 3D Rubiku kuubik. Määra segamine ja lahendus, mängi samm-sammult, peida värve või külgi meeldejätmise harjutamiseks.",
+    "cubeRouxTitle": "Roux' meetod — plokid, CMLL ja LSE",
+    "cubeRouxDescription": "Kõik Roux' meetodi jaoks vajalikud algoritmid, üks vahekaart etapi kohta: plokkide ehitamise sisestused, kahe-etapiline CMLL ning M/U algoritmid servade orienteerimiseks, UL/UR ja viimased neli serva. Igal juhul on diagramm ja see avaneb interaktiivses 3D-kuubikus.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Rubiku kuubiku arengugraafikud",
     "cubeAnalyzerDescription": "Lohista oma csTimeri ekspordifail ja vaata arengugraafikuid: Ao5/Ao12/Ao100 trendid, PB ajalugu, verstapostid, päevane maht ja astmefunktsioonil põhinev õppimiskõver. Töötab täielikult sinu brauseris."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Ekspordi oma csTimeri sessioonid ja vaata oma arengugraafikuid.",
       "cta": "Analüüsi minu lahendusi"
+    },
+    "rouxCard": {
+      "eyebrow": "Meetod",
+      "title": "Roux' meetod",
+      "desc": "Plokid, kahe-etapiline CMLL ja LSE — iga juhtum koos diagrammiga, mille saad sellel kuubikul avada.",
+      "cta": "Sirvi kogu"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Meetod",
+    "title": "Roux' meetod (algajasõbralik)",
+    "intro": "Roux' meetodil on neli etappi: ehita vasak 1×2×3 plokk, ehita parem plokk, lahenda ülemised nurgad (CMLL) ja seejärel lõpeta viimased kuus serva, kasutades ainult M- ja U-pöördeid (LSE).",
+    "tabsLabel": "Roux' etapid",
+    "tabs": {
+      "fb": "Esimene plokk",
+      "sb": "Teine plokk",
+      "cmll": "CMLL (kaheetapiline)",
+      "lse": "LSE"
+    },
+    "openInCube": "Üksikasjad",
+    "fb": {
+      "intro": "Esimene plokk on 1×2×3 vasakul: DL-serv, kaks alumist vasakut nurka ja nende kaks serva. Fikseeritud algoritme pole — sa vaatad, paaritad nurga selle servaga ja sisestad. Need on käeliigutused, mis korduvad ikka ja jälle. Hoia kuubikut nii, et plokk on vasakul ja tühi koht ees.",
+      "insert": {
+        "title": "Paaritamine ja sisestamine",
+        "desc": "Iga juhtum avaneb 3D-kuubikus nii, et paar on juba oma kohal; jälgi, kust kaks tükki alustavad ja kuidas pöörded nad kohale toovad, ilma et ülejäänud plokki segataks.",
+        "cases": {
+          "pairLeft": {
+            "name": "Paar peal, vasakul küljel",
+            "hint": "Nurk pesa kohal, serv selle kõrval vasakul. Liiguta paar eest ära, ava pesa, aseta see sisse."
+          },
+          "mSlice": {
+            "name": "Paarita M-kihiga",
+            "hint": "Nurk taga-vasakul üleval, serv paremal. M toob serva sellega kohtuma, seejärel F' langetab paari sisse."
+          },
+          "edgeOnTop": {
+            "name": "Nurk pesas, serv peal",
+            "hint": "Nurk on juba oma kohal, serv asub pealmise külje paremas servas. Võta nurk välja, et see servaga kohtuks, seejärel F' sisestab mõlemad."
+          },
+          "misPaired": {
+            "name": "Paar peal, värvid ei klapi",
+            "hint": "Nurk ja serv on üksteise kõrval pealmise osa paremal küljel, kuid ei klapi. F' avab pesa, paiguta uuesti valemiga L' U' L U' L' U L, F' sulgeb selle."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Teine plokk peegeldab esimest paremal — kuid nüüd ei tohi vasak plokk liikuda. Ainult R, r, M ja U pöörded on ohutud. Lai r-pööre on Roux' nipp: see liigutab paremat kihti ja M-viilu koos, nii et saad servad alt kätte ilma vasakut poolt puudutamata.",
+      "insert": {
+        "title": "Paaritamine ja sisestamine",
+        "desc": "Kõik neli juhtumit jätavad vasaku ploki puutumata. DR-serv on eeldatavalt lahendatud; need sisestavad eesmise parempoolse nurga-serva paari.",
+        "cases": {
+          "pairRight": {
+            "name": "Paar peal, paremal küljel",
+            "hint": "Nurk pesa kohal, serv selle kõrval paremal. Esimese bloki sisestuse peegeldus."
+          },
+          "mPair": {
+            "name": "Paarita M-kihiga",
+            "hint": "Serv üleval vasakul taga, nurk paremal. U ja seejärel M toob serva nurga juurde, R U' R' sisestab paari."
+          },
+          "cornerInSlot": {
+            "name": "Nurk pesas, serv peal",
+            "hint": "Nurk on juba kodus, serv istub peal. U R tõstab nurga välja, M toob serva selle juurde, U' R' paneb mõlemad sisse."
+          },
+          "twistedCorner": {
+            "name": "Nurk pesas, pööratud",
+            "hint": "Nurk on pesas, aga pööratud. L F' L' lükkab selle vasaku bloki kaudu välja ja tagasi, M-liigutused toovad servatüki kohale, R U' R' sisestab."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Kui mõlemad blokid on valmis, lahenda neli ülemist nurka ühe korraga. Täielikul CMLL-il on 42 juhtu; kahe-etapiline meetod jagab selle orienteerimiseks ja seejärel permuteerimiseks ning vajab vaid üheksat algoritmi. Kuna M-kiht fikseeritakse pärast, võivad need algoritmid seda segada. Kollased kleepsud näitavad, kus asub ülemine värv; riba välisküljel tähendab, et selle nurga ülemine värv on suunatud küljele.",
+      "orient": {
+        "title": "1. samm · Orienteeri nurgad",
+        "desc": "Loe, mitu ülemist nurka näitavad juba ülemist värvi. 0 → H või Pi. 1 → S või AS. 2 → U, T või L. Sobita muster ja keera ülemist kihti nii, et see ühtiks diagrammiga."
+      },
+      "permute": {
+        "title": "2. samm · Permuteeri nurgad",
+        "desc": "Kui üks külg juba klapib — näiteks mõlemad nurgad ühel tahul on punased — keera ülemist osa nii, et see paar oleks vasakul, seejärel kasuta külgmist vahetust. Kui ükski külg ei klapi, kasuta diagonaalset vahetust.",
+        "cases": {
+          "adjacent": {
+            "name": "Külgmine vahetus",
+            "hint": "Pane kaks vahetatavat nurka paremale."
+          },
+          "diagonal": {
+            "name": "Diagonaalne vahetus",
+            "hint": "Sobib iga nurk."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Jäänud on kuus serva ja vaja on ainult M- ja U-pöördeid. Kolm sammu: orienteeri servad nii, et iga ülemine/alumine värv oleks suunatud üles või alla (EO), aseta UL ja UR servad, seejärel lõpeta viimased neli. Diagrammid näitavad ülemise kihi servi pluss kahte alumist serva DF ja DB; nurgad on jäetud tühjaks, kuna need on juba lahendatud.",
+      "eo": {
+        "title": "4a · Servade orienteerimine",
+        "desc": "Täidetud serval on ülemine/alumine värv suunatud üles või alla – see on hea. Tühi tähendab halba. Loe halvad servad peal ja all; mustreid on vaid käputäis ja M' U M on käik, mis neid muudab.",
+        "cases": {
+          "arrow": {
+            "name": "Nool",
+            "tag": "3 üles · 1 alla",
+            "hint": "Keera ülemist osa nii, et kolm halba serva osutaksid halvale alumisele servale, seejärel M' U M parandab kõik neli."
+          },
+          "twoTwo": {
+            "name": "Jagatud paarid",
+            "tag": "2 üles · 2 alla",
+            "hint": "Näidatud on lühim lahendus. Käsitsi lahendamise tee: M' U2 M muudab selle nooleks, seejärel lõpeta nagu ülal."
+          },
+          "fourZero": {
+            "name": "Kõik üleval",
+            "tag": "4 üles · 0 alla",
+            "hint": "Kõik neli ülemist serva on halvad. M U2 M vahetab paari alla noolekujuliseks, seejärel lõpeta."
+          },
+          "twoTop": {
+            "name": "Mõlemad üleval",
+            "tag": "2 üles · 0 alla",
+            "hint": "Mitte 0, mitte 4: M' U M teeb sellest neli halba serva noole kujul, U2 sihtimiseks, M' U M lõpetamiseks."
+          },
+          "oneOne": {
+            "name": "Üks üleval, üks all",
+            "tag": "1 üles · 1 alla",
+            "hint": "Sama idee – esimene M U M loob noole."
+          },
+          "twoBottom": {
+            "name": "Mõlemad all",
+            "tag": "0 üleval · 2 all",
+            "hint": "M U M tõstab need nooleks, seejärel lõpeta nagu tavaliselt."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL ja UR",
+        "desc": "Kollane üleval, valge all, punane klots vasakul: kaks serva on veel paigutamata, need on kollane-punane ja kollane-oranž (skeemidel raamitud). Langeta mõlemad alla nii, et need oleksid vastakuti, keera ülemist kihti joondamiseks, seejärel M2 U või M2 U'. Keskosad jäävad ümberpööratuks — järgmine samm parandab selle.",
+        "cases": {
+          "bothTop": {
+            "name": "Mõlemad üleval",
+            "hint": "Keera ülemist osa, kuni need on vastakuti (ees ja taga). M2 uputab mõlemad, U' joondab need, M2 U' asetab need paika."
+          },
+          "oneBottom": {
+            "name": "Üks üleval, üks all",
+            "hint": "U2 joondamiseks, M U2 M' saadab ülemise vastaspoolele; U' joondamiseks, M2 U toob mõlemad üles ja asetab need paika."
+          },
+          "bothBottom": {
+            "name": "Mõlemad all",
+            "hint": "Keera ülemist kihti joondamiseks, M2 toob need üles, U paigutab need."
+          },
+          "bothBottomAlt": {
+            "name": "Mõlemad all (teistpidi)",
+            "hint": "Paar asetseb vastupidi: U2 joondab ülemise osa, seejärel M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Viimased neli serva (lihtsalt vaadates)",
+        "cases": {
+          "needM2": {
+            "name": "Keskused pööratud",
+            "hint": "Valge keskus on peal: M2 pöörab selle tagasi."
+          },
+          "oneWhite": {
+            "name": "Üks valge peal",
+            "hint": "Keera pealmist osa nii, et valge serv oleks ees, seejärel vaheta see alumise servaga."
+          },
+          "twoWhite": {
+            "name": "Kaks valget peal",
+            "hint": "Vaheta ülemine ja alumine serv kaks korda, üks kord kummalgi küljel."
+          },
+          "byLook": {
+            "name": "Lahenda vaadates",
+            "hint": "Valget pole peal, aga esi- ja tagaservad on vahetuses: M2, keera pealmist kihti, M2 tagasi."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

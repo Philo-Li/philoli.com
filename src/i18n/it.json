@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Traduttore di ebook gratuito basato su IA, funziona interamente nel tuo browser. Traduci file EPUB e PDF in oltre 40 lingue con output bilingue affiancato. Usa la tua API key.",
     "rubiksCubeTitle": "Cubo di Rubik 3D — Philo Li",
     "rubiksCubeDescription": "Cubo di Rubik 3D interattivo. Imposta una sequenza di rimescolamento e una soluzione, gioca passo dopo passo, nascondi colori o facce per esercizi di memorizzazione.",
+    "cubeRouxTitle": "Metodo Roux — Blocchi, CMLL e LSE",
+    "cubeRouxDescription": "Ogni algoritmo di cui hai bisogno per il metodo Roux, una scheda per ogni fase: inserimenti per la costruzione dei blocchi, CMLL a due step e gli algoritmi M/U per l'orientamento degli spigoli, UL/UR e gli ultimi quattro spigoli. Ogni caso ha un diagramma e si apre nel cubo 3D interattivo.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Grafici dei progressi con il Cubo di Rubik",
     "cubeAnalyzerDescription": "Trascina il tuo file di esportazione csTimer e ottieni grafici sui progressi: trend Ao5/Ao12/Ao100, cronologia PB, traguardi, volume giornaliero e curva di apprendimento a legge di potenza. Funziona interamente nel tuo browser."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Esporta le tue sessioni csTimer e visualizza i grafici dei tuoi progressi.",
       "cta": "Analizza le mie risoluzioni"
+    },
+    "rouxCard": {
+      "eyebrow": "Metodo",
+      "title": "Metodo Roux",
+      "desc": "Blocchi, CMLL a due step e LSE — ogni caso con un diagramma che puoi aprire su questo cubo.",
+      "cta": "Esplora la libreria"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metodo",
+    "title": "Metodo Roux (per principianti)",
+    "intro": "Il metodo Roux ha quattro fasi: costruire il blocco 1×2×3 sinistro, costruire quello destro, risolvere gli angoli superiori (CMLL), quindi completare gli ultimi sei spigoli usando solo rotazioni M e U (LSE).",
+    "tabsLabel": "Fasi Roux",
+    "tabs": {
+      "fb": "Primo blocco",
+      "sb": "Secondo blocco",
+      "cmll": "CMLL (a due passaggi)",
+      "lse": "LSE"
+    },
+    "openInCube": "Dettagli",
+    "fb": {
+      "intro": "Il primo blocco è un 1×2×3 a sinistra: lo spigolo DL, i due angoli in basso a sinistra e i loro due spigoli. Non ci sono algoritmi fissi: osservi, abbini un angolo con il suo spigolo e inserisci. Queste sono le sequenze di mosse che ricorrono più spesso. Tieni il cubo con il blocco a sinistra e lo slot vuoto davanti.",
+      "insert": {
+        "title": "Abbinamento e inserimento",
+        "desc": "Ogni caso si apre nel cubo 3D con la coppia già in posizione; osserva da dove partono i due pezzi e come le mosse li portano a destinazione senza disturbare il resto del blocco.",
+        "cases": {
+          "pairLeft": {
+            "name": "Coppia sopra, lato sinistro",
+            "hint": "Angolo sopra lo slot, spigolo di fianco a sinistra. Sposta la coppia, apri lo slot, inserisci."
+          },
+          "mSlice": {
+            "name": "Abbina con la fetta M",
+            "hint": "Angolo in alto a sinistra sul retro, spigolo a destra. M porta lo spigolo attorno per incontrarlo, poi F' inserisce la coppia."
+          },
+          "edgeOnTop": {
+            "name": "Angolo nello slot, spigolo in alto",
+            "hint": "L'angolo è già a casa, lo spigolo si trova a destra della parte superiore. Estrai l'angolo per incontrarlo, poi F' li inserisce entrambi."
+          },
+          "misPaired": {
+            "name": "Coppia in alto, colori non corrispondenti",
+            "hint": "L'angolo e lo spigolo sono adiacenti sulla destra della parte superiore ma non corrispondono. F' apre lo slot, riaccoppia con L' U' L U' L' U L, F' lo chiude."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Il secondo blocco rispecchia il primo a destra, ma ora il blocco sinistro non deve muoversi. Solo le mosse R, r, M e U sono sicure. La mossa wide r è il trucco di Roux: muove lo strato destro e la fetta M insieme, così puoi prendere gli spigoli dal basso senza toccare il sinistro.",
+      "insert": {
+        "title": "Abbinamento e inserimento",
+        "desc": "Tutti e quattro i casi mantengono intatto il blocco sinistro. Lo spigolo DR si considera risolto; questi inseriscono la coppia angolo-spigolo anteriore destra.",
+        "cases": {
+          "pairRight": {
+            "name": "Coppia in alto, lato destro",
+            "hint": "Angolo sopra lo slot, spigolo accanto sulla destra. Speculare all'inserimento del primo blocco."
+          },
+          "mPair": {
+            "name": "Abbina con la fetta M",
+            "hint": "Spigolo in alto a sinistra sul retro, angolo a destra. U poi M portano lo spigolo verso l'angolo, R U' R' inserisce la coppia."
+          },
+          "cornerInSlot": {
+            "name": "Angolo nella fessura, spigolo sopra",
+            "hint": "L'angolo è già a casa, lo spigolo si trova sopra. U R solleva l'angolo, M porta lo spigolo verso di esso, U' R' li inserisce entrambi."
+          },
+          "twistedCorner": {
+            "name": "Angolo nell'alloggiamento, ruotato",
+            "hint": "L'angolo si trova nel suo alloggiamento ma ruotato. L F' L' lo estrae attraverso il blocco sinistro e indietro, i movimenti M recuperano lo spigolo, R U' R' lo inserisce."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Con entrambi i blocchi completati, risolvi i quattro angoli superiori in una volta sola. Il CMLL completo ha 42 casi; il metodo a due step lo divide in orientamento e poi permutazione, richiedendo solo nove algoritmi. Poiché lo strato M viene sistemato successivamente, questi algoritmi possono disturbarlo liberamente. Gli adesivi gialli mostrano dove si trova il colore superiore; una barra all'esterno indica che il colore superiore di quell'angolo è rivolto lateralmente.",
+      "orient": {
+        "title": "Step 1 · Orienta gli angoli",
+        "desc": "Conta quanti angoli superiori mostrano già il colore superiore. 0 → H o Pi. 1 → S o AS. 2 → U, T o L. Abbina lo schema e ruota lo strato superiore in modo che si allinei con il diagramma."
+      },
+      "permute": {
+        "title": "Step 2 · Permuta gli angoli",
+        "desc": "Se un lato corrisponde già — ad esempio, entrambi gli angoli su una faccia sono rossi — ruota la parte superiore in modo che quella coppia si trovi a sinistra, quindi usa lo scambio adiacente. Se nessun lato corrisponde, usa lo scambio diagonale.",
+        "cases": {
+          "adjacent": {
+            "name": "Scambio adiacente",
+            "hint": "Metti i due angoli da scambiare sulla destra."
+          },
+          "diagonal": {
+            "name": "Scambio diagonale",
+            "hint": "Qualsiasi angolazione va bene."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Rimangono sei spigoli e sono necessari solo movimenti M e U. Tre passaggi: orienta gli spigoli in modo che ogni colore superiore/inferiore sia rivolto verso l'alto o verso il basso (EO), posiziona gli spigoli UL e UR, quindi completa gli ultimi quattro. I diagrammi mostrano gli spigoli dello strato superiore più i due spigoli inferiori DF e DB; gli angoli sono lasciati vuoti perché sono già risolti.",
+      "eo": {
+        "title": "4a · Orientamento spigoli",
+        "desc": "Uno spigolo pieno ha il suo colore superiore/inferiore rivolto verso l'alto o verso il basso — bene. Vuoto significa cattivo. Conta gli spigoli cattivi sopra e sotto; ci sono solo pochi schemi e M' U M è la mossa che li cambia.",
+        "cases": {
+          "arrow": {
+            "name": "Freccia",
+            "tag": "3 su · 1 giù",
+            "hint": "Ruota la parte superiore in modo che i tre spigoli cattivi puntino allo spigolo cattivo inferiore, poi M' U M li corregge tutti e quattro."
+          },
+          "twoTwo": {
+            "name": "Coppie divise",
+            "tag": "2 su · 2 giù",
+            "hint": "Mostrata la soluzione più breve. Il metodo manuale: M' U2 M lo trasforma in una freccia, poi termina come sopra."
+          },
+          "fourZero": {
+            "name": "Tutti in alto",
+            "tag": "4 su · 0 giù",
+            "hint": "Tutti e quattro gli spigoli superiori cattivi. M U2 M scambia una coppia verso il basso trasformandola in una freccia, poi termina."
+          },
+          "twoTop": {
+            "name": "Entrambi in alto",
+            "tag": "2 su · 0 giù",
+            "hint": "Non 0, non 4: M' U M crea quattro spigoli cattivi a forma di freccia, U2 per mirare, M' U M per finire."
+          },
+          "oneOne": {
+            "name": "Uno su, uno giù",
+            "tag": "1 su · 1 giù",
+            "hint": "Stessa idea — il primo M U M crea la freccia."
+          },
+          "twoBottom": {
+            "name": "Entrambi in basso",
+            "tag": "0 su · 2 giù",
+            "hint": "M U M li solleva in una freccia, poi termina come al solito."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL e UR",
+        "desc": "Giallo sopra, bianco sotto, blocco rosso a sinistra: i due spigoli ancora da posizionare sono giallo-rosso e giallo-arancione (evidenziati nei diagrammi). Portali entrambi sul fondo in modo che siano opposti tra loro, ruota lo strato superiore per allinearli, poi M2 U o M2 U'. I centri risulteranno invertiti: il passaggio successivo corregge questo aspetto.",
+        "cases": {
+          "bothTop": {
+            "name": "Entrambi sopra",
+            "hint": "Ruota la parte superiore finché non sono opposte l'una all'altra (davanti e dietro). M2 le affonda entrambe, U' le allinea, M2 U' le posiziona."
+          },
+          "oneBottom": {
+            "name": "Uno sopra, uno sotto",
+            "hint": "U2 per allineare, M U2 M' manda quello in alto giù opposto all'altro; U' per allineare, M2 U li porta entrambi su e li posiziona."
+          },
+          "bothBottom": {
+            "name": "Entrambi sul fondo",
+            "hint": "Ruota lo strato superiore per allinearli, M2 li porta su, U li posiziona."
+          },
+          "bothBottomAlt": {
+            "name": "Entrambi sul fondo (altro modo)",
+            "hint": "La coppia si posiziona al contrario: U2 per allineare la parte superiore, poi M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Ultimi quattro spigoli (solo a vista)",
+        "cases": {
+          "needM2": {
+            "name": "Centri invertiti",
+            "hint": "Il centro bianco è in alto: M2 lo riporta nella posizione corretta."
+          },
+          "oneWhite": {
+            "name": "Un bianco in alto",
+            "hint": "Ruota la parte superiore in modo che il bordo bianco sia davanti, poi scambialo con il bordo inferiore."
+          },
+          "twoWhite": {
+            "name": "Due bianchi in alto",
+            "hint": "Scambia i bordi superiore e inferiore due volte, una volta per lato."
+          },
+          "byLook": {
+            "name": "Risolvi guardando",
+            "hint": "Niente bianco sopra, ma i bordi anteriore e posteriore sono invertiti: M2, ruota la parte superiore, M2 indietro."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

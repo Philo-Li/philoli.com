@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Besplatni AI prevodilac e-knjiga koji potpuno radi u vašem pregledaču. Prevedite EPUB i PDF datoteke na 40+ jezika sa dvojezičnim izlazom jedan pored drugog. Koristite svoj API ključ.",
     "rubiksCubeTitle": "3D Rubikova kocka — Philo Li",
     "rubiksCubeDescription": "Interaktivna 3D Rubikova kocka. Podesite mešanje i rešenje, igrajte korak po korak, sakrijte boje ili strane za vežbe memorisanja.",
+    "cubeRouxTitle": "Roux metoda — Blokovi, CMLL i LSE",
+    "cubeRouxDescription": "Svaki algoritam koji vam je potreban za Roux metodu, jedna kartica po fazi: ubacivanje blokova, CMLL u dva koraka, i M/U algoritmi za orijentaciju ivica, UL/UR i poslednje četiri ivice. Svaki slučaj ima dijagram i otvara se u interaktivnoj 3D kocki.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Grafikoni napretka u slaganju Rubikove kocke",
     "cubeAnalyzerDescription": "Ubacite svoj csTimer export i dobijte grafikone napretka: trendovi Ao5/Ao12/Ao100, istorija PB-a, prekretnice, dnevni obim i kriva učenja po zakonu snage. Radi u potpunosti u vašem pretraživaču."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Izvezite svoje csTimer sesije i pogledajte grafikone svog napretka.",
       "cta": "Analiziraj moje slaganja"
+    },
+    "rouxCard": {
+      "eyebrow": "Metoda",
+      "title": "Roux metoda",
+      "desc": "Blokovi, CMLL u dva koraka i LSE — svaki slučaj sa dijagramom koji možete otvoriti na ovoj kocki.",
+      "cta": "Pregledajte biblioteku"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metoda",
+    "title": "Roux metoda (prilagođeno početnicima)",
+    "intro": "Roux metoda ima četiri faze: izgradnja levog 1×2×3 bloka, izgradnja desnog, rešavanje gornjih uglova (CMLL), a zatim završavanje poslednjih šest ivica koristeći samo M i U poteze (LSE).",
+    "tabsLabel": "Roux faze",
+    "tabs": {
+      "fb": "Prvi blok",
+      "sb": "Drugi blok",
+      "cmll": "CMLL (u dva koraka)",
+      "lse": "LSE"
+    },
+    "openInCube": "Detalji",
+    "fb": {
+      "intro": "Prvi blok je 1×2×3 na levoj strani: DL ivica, dva donja leva ćoška i njihove dve ivice. Ne postoje fiksni algoritmi — gledate, uparujete ćošak sa njegovom ivicom i ubacujete. Ovo su potezi rukom koji se stalno ponavljaju. Držite kocku sa blokom na levoj strani i praznim slotom napred.",
+      "insert": {
+        "title": "Uparivanje i ubacivanje",
+        "desc": "Svaki slučaj se otvara u 3D kocki sa parom koji je već na poziciji; posmatrajte gde se dve kockice nalaze na početku i kako ih potezi dovode na mesto bez ometanja ostatka bloka.",
+        "cases": {
+          "pairLeft": {
+            "name": "Par na vrhu, leva strana",
+            "hint": "Ćošak iznad slota, ivica pored njega sa leve strane. Pomerite par u stranu, otvorite slot, ubacite ga."
+          },
+          "mSlice": {
+            "name": "Uparite sa M slojem",
+            "hint": "Ćošak pozadi levo gore, ivica desno. M dovodi ivicu do njega, a zatim F' spušta par na mesto."
+          },
+          "edgeOnTop": {
+            "name": "Corner in the slot, edge on top",
+            "hint": "The corner is already home, the edge sits at the right of the top. Take the corner out to meet it, then F' inserts both."
+          },
+          "misPaired": {
+            "name": "Par na vrhu, boje se ne poklapaju",
+            "hint": "Ugao i ivica su jedan pored drugog na desnoj strani vrha, ali se ne poklapaju. F' otvara slot, ponovo upari sa L' U' L U' L' U L, F' ga zatvara."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Drugi blok je ogledalo prvog na desnoj strani — ali sada levi blok ne sme da se pomera. Samo R, r, M i U potezi su bezbedni. Široki r potez je Roux trik: on pomera desni sloj i M sloj zajedno, tako da možete uzeti ivice sa dna bez dodirivanja leve strane.",
+      "insert": {
+        "title": "Uparivanje i ubacivanje",
+        "desc": "Sva četiri slučaja ostavljaju levi blok netaknutim. Pretpostavlja se da je DR ivica rešena; ovi potezi ubacuju prednji-desni par ćošak-ivica.",
+        "cases": {
+          "pairRight": {
+            "name": "Par na vrhu, desna strana",
+            "hint": "Ugao iznad proreza, ivica pored njega sa desne strane. Ogledalo umetanja prvog bloka."
+          },
+          "mPair": {
+            "name": "Uparite sa M slojem",
+            "hint": "Ivica na zadnjoj levoj strani gornjeg sloja, ćošak na desnoj. U pa M dovode ivicu do ćoška, R U' R' ubacuje par."
+          },
+          "cornerInSlot": {
+            "name": "Ugao u slotu, ivica na vrhu",
+            "hint": "Ugao je već na svom mestu, ivica stoji na vrhu. U R izvlači ugao, M dovodi ivicu do njega, U' R' vraća oba na mesto."
+          },
+          "twistedCorner": {
+            "name": "Ugao u slotu, zaokrenut",
+            "hint": "Ugao stoji u svom slotu, ali zaokrenut. L F' L' ga izbacuje kroz levi blok i nazad, M potezi dovlače ivicu, R U' R' ga ubacuje."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Kada su oba bloka gotova, rešite četiri gornja ugla odjednom. Puni CMLL ima 42 slučaja; metoda u dva koraka ga deli na orijentaciju, pa permutaciju, i zahteva samo devet algoritama. Pošto se M sloj popravlja kasnije, ovi algoritmi mogu slobodno da ga poremete. Žute nalepnice pokazuju gde je gornja boja; traka sa spoljne strane znači da gornja boja tog ugla gleda u stranu.",
+      "orient": {
+        "title": "Korak 1 · Orijentišite uglove",
+        "desc": "Izbrojte koliko gornjih uglova već pokazuje gornju boju. 0 → H ili Pi. 1 → S ili AS. 2 → U, T ili L. Uparite šablon i okrenite gornji sloj tako da se poravna sa dijagramom."
+      },
+      "permute": {
+        "title": "Korak 2 · Permutujte uglove",
+        "desc": "Ako se jedna strana već poklapa — recimo da su oba ugla na jednoj strani crvena — okrenite vrh tako da taj par bude na levoj strani, a zatim primenite susednu zamenu. Ako se nijedna strana ne poklapa, primenite dijagonalnu zamenu.",
+        "cases": {
+          "adjacent": {
+            "name": "Susedna zamena",
+            "hint": "Postavite dva ugla koja menjate na desnu stranu."
+          },
+          "diagonal": {
+            "name": "Dijagonalna zamena",
+            "hint": "Bilo koji ugao je dobar."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Preostalo je šest ivica, a potrebni su samo M i U okreti. Tri koraka: orijentišite ivice tako da svaka gornja/donja boja gleda nagore ili nadole (EO), postavite UL i UR ivice, a zatim završite poslednje četiri. Dijagrami prikazuju ivice gornjeg sloja plus dve donje ivice DF i DB; uglovi su ostavljeni prazni jer su već rešeni.",
+      "eo": {
+        "title": "4a · Orijentacija ivica",
+        "desc": "Popunjena ivica ima svoju gornju/donju boju okrenutu nagore ili nadole — dobro. Prazna znači loše. Izbrojte loše ivice na vrhu i dnu; postoji samo nekoliko šablona, a M' U M je potez koji ih menja.",
+        "cases": {
+          "arrow": {
+            "name": "Strelica",
+            "tag": "3 gore · 1 dole",
+            "hint": "Okrenite vrh tako da tri loše ivice pokazuju na lošu donju ivicu, zatim M' U M popravlja sve četiri."
+          },
+          "twoTwo": {
+            "name": "Podeljeni parovi",
+            "tag": "2 gore · 2 dole",
+            "hint": "Prikazano najkraće rešenje. Ručni put: M' U2 M pretvara ovo u strelicu, zatim završite kao gore."
+          },
+          "fourZero": {
+            "name": "Sve na vrhu",
+            "tag": "4 gore · 0 dole",
+            "hint": "Sve četiri gornje ivice loše. M U2 M menja par nadole u strelicu, zatim završite."
+          },
+          "twoTop": {
+            "name": "Oba na vrhu",
+            "tag": "2 gore · 0 dole",
+            "hint": "Nije 0, nije 4: M' U M pravi četiri loše ivice u obliku strelice, U2 za ciljanje, M' U M za završetak."
+          },
+          "oneOne": {
+            "name": "Jedan gore, jedan dole",
+            "tag": "1 gore · 1 dole",
+            "hint": "Ista ideja — prvi M U M stvara strelicu."
+          },
+          "twoBottom": {
+            "name": "Oba na dnu",
+            "tag": "0 gore · 2 dole",
+            "hint": "M U M ih podiže u strelicu, a zatim završite kao i obično."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL i UR",
+        "desc": "Žuta gore, bela dole, crveni blok levo: dve ivice koje još treba postaviti su žuto-crvena i žuto-narandžasta (uokvirene na dijagramima). Spusti obe na dno tako da budu jedna naspram druge, okreni gornju stranu da se poravnaju, zatim M2 U ili M2 U'. Centri će na kraju biti obrnuti — sledeći korak to popravlja.",
+        "cases": {
+          "bothTop": {
+            "name": "Obe gore",
+            "hint": "Okrećite gornji deo dok ne budu jedan naspram drugog (napred i nazad). M2 ih spušta, U' ih poravnava, M2 U' ih postavlja."
+          },
+          "oneBottom": {
+            "name": "Jedna gore, jedna dole",
+            "hint": "U2 za poravnanje, M U2 M' šalje gornji dole naspram drugog; U' za poravnanje, M2 U podiže oba i postavlja ih."
+          },
+          "bothBottom": {
+            "name": "Obe na dnu",
+            "hint": "Okreni gornju stranu da se poravnaju, M2 ih podiže, U ih postavlja."
+          },
+          "bothBottomAlt": {
+            "name": "Obe na dnu (drugi način)",
+            "hint": "Par se postavlja obrnuto: U2 da se poravna gornja strana, zatim M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Poslednje četiri ivice (samo gledanjem)",
+        "cases": {
+          "needM2": {
+            "name": "Centri okrenuti",
+            "hint": "Beli centar je na vrhu: M2 ga vraća nazad."
+          },
+          "oneWhite": {
+            "name": "Jedna bela na vrhu",
+            "hint": "Okreni vrh tako da bela ivica bude napred, a zatim je zameni sa donjom ivicom."
+          },
+          "twoWhite": {
+            "name": "Dve bele na vrhu",
+            "hint": "Zameni gornju i donju ivicu dvaput, po jednom sa svake strane."
+          },
+          "byLook": {
+            "name": "Reši gledanjem",
+            "hint": "Bez bele boje na vrhu, ali su prednja i zadnja ivica zamenjene: M2, okreni vrh, M2 nazad."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

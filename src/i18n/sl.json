@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Brezplačni AI prevajalnik e-knjig, ki teče v celoti v vašem brskalniku. Prevedite datoteke EPUB in PDF v več kot 40 jezikov z dvojezičnim vzporednim izhodom. Uporabite svoj API ključ.",
     "rubiksCubeTitle": "3D Rubikova kocka — Philo Li",
     "rubiksCubeDescription": "Interaktivna 3D Rubikova kocka. Nastavite mešanje in rešitev, igrajte korak za korakom, skrijte barve ali ploskve za vaje pomnjenja.",
+    "cubeRouxTitle": "Metoda Roux — Bloki, CMLL in LSE",
+    "cubeRouxDescription": "Vsi algoritmi, ki jih potrebujete za metodo Roux, po en zavihek za vsako stopnjo: vstavljanje blokov, dvostopenjski CMLL ter M/U algoritmi za orientacijo robov, UL/UR in zadnje štiri robove. Vsak primer ima diagram in se odpre v interaktivni 3D kocki.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Grafi napredka pri Rubikovi kocki",
     "cubeAnalyzerDescription": "Odvrzi svojo csTimer izvozno datoteko in pridobi grafe napredka: trendi Ao5/Ao12/Ao100, zgodovina PB, mejniki, dnevni obseg in krivulja učenja po potenčnem zakonu. Deluje v celoti v tvojem brskalniku."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Izvozi svoje csTimer seje in si oglej grafe svojega napredka.",
       "cta": "Analiziraj moje rešitve"
+    },
+    "rouxCard": {
+      "eyebrow": "Metoda",
+      "title": "Metoda Roux",
+      "desc": "Bloki, dvostopenjski CMLL in LSE — vsak primer z diagramom, ki ga lahko odprete na tej kocki.",
+      "cta": "Prebrskaj knjižnico"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metoda",
+    "title": "Metoda Roux (primerno za začetnike)",
+    "intro": "Metoda Roux ima štiri stopnje: sestavi levi blok 1×2×3, sestavi desnega, reši zgornje kote (CMLL), nato dokončaj zadnjih šest robov samo z obrati M in U (LSE).",
+    "tabsLabel": "Stopnje Roux",
+    "tabs": {
+      "fb": "Prvi blok",
+      "sb": "Drugi blok",
+      "cmll": "CMLL (dvostopenjski)",
+      "lse": "LSE"
+    },
+    "openInCube": "Podrobnosti",
+    "fb": {
+      "intro": "Prvi blok je 1×2×3 na levi: DL rob, dva spodnja leva kota in njuna dva roba. Ni fiksnih algoritmov — opazujete, povežete kot z njegovim robom in vstavite. To so poteze z rokami, ki se nenehno ponavljajo. Kocko držite tako, da je blok na levi, prazna reža pa spredaj.",
+      "insert": {
+        "title": "Povezovanje in vstavljanje",
+        "desc": "Vsak primer se v 3D kocki odpre s parom, ki je že na mestu; opazujte, kje se kosa začneta in kako ju obrati spravijo na cilj, ne da bi pri tem zmotili preostanek bloka.",
+        "cases": {
+          "pairLeft": {
+            "name": "Par na vrhu, leva stran",
+            "hint": "Kot nad režo, rob ob njem na levi. Premaknite par iz poti, odprite režo, vstavite."
+          },
+          "mSlice": {
+            "name": "Poveži z rezino M",
+            "hint": "Kot na zadnji levi strani zgoraj, rob na desni. M premakne rob okoli, da se srečata, nato F' vstavi par."
+          },
+          "edgeOnTop": {
+            "name": "Kot v reži, rob na vrhu",
+            "hint": "Kot je že na svojem mestu, rob leži desno od vrha. Vzemi kot ven, da se srečata, nato F' vstavi oba."
+          },
+          "misPaired": {
+            "name": "Par na vrhu, barve se ne ujemajo",
+            "hint": "Kot in rob sta drug ob drugem na desni strani vrha, vendar se ne ujemata. F' odpre režo, ponovno ju poveži z L' U' L U' L' U L, F' jo zapre."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Drugi blok zrcali prvega na desni — vendar se levi blok zdaj ne sme premakniti. Varni so le obrati R, r, M in U. Širok obrat r je Roux trik: premakne desno plast in M rezino skupaj, tako da lahko zajamete robove s spodnjega dela, ne da bi se dotaknili levega.",
+      "insert": {
+        "title": "Povezovanje in vstavljanje",
+        "desc": "Vsi štirje primeri pustijo levi blok nedotaknjen. Predpostavlja se, da je DR rob rešen; ti primeri vstavijo sprednji desni kotno-robni par.",
+        "cases": {
+          "pairRight": {
+            "name": "Par na vrhu, desna stran",
+            "hint": "Kot nad režo, rob ob njem na desni. Zrcalna slika prvega bloka."
+          },
+          "mPair": {
+            "name": "Poveži z rezino M",
+            "hint": "Rob na zadnji levi strani zgoraj, kot na desni. U in nato M premakneta rob do kota, R U' R' vstavi par."
+          },
+          "cornerInSlot": {
+            "name": "Kot v reži, rob na vrhu",
+            "hint": "Kot je že na svojem mestu, rob leži na vrhu. U R dvigne kot ven, M ga premakne k robu, U' R' oba postavi na mesto."
+          },
+          "twistedCorner": {
+            "name": "Kot v reži, zasukan",
+            "hint": "Kot sedi v svoji reži, vendar obrnjen. L F' L' ga izbije skozi levi blok in nazaj, premiki M prinesejo rob, R U' R' ga vstavi."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Ko sta oba bloka končana, rešite štiri zgornje kote v eni potezi. Polni CMLL ima 42 primerov; metoda dveh korakov ga razdeli na orientacijo in nato permutacijo ter potrebuje le devet algoritmov. Ker se rezina M kasneje popravi, ti algoritmi lahko prosto vplivajo nanjo. Rumene nalepke prikazujejo, kje je zgornja barva; črta na zunanji strani pomeni, da je zgornja barva kota obrnjena vstran.",
+      "orient": {
+        "title": "1. korak · Orientacija kotov",
+        "desc": "Preštejte, koliko zgornjih kotov že kaže zgornjo barvo. 0 → H ali Pi. 1 → S ali AS. 2 → U, T ali L. Ujemite vzorec in obrnite zgornjo plast tako, da se poravna z diagramom."
+      },
+      "permute": {
+        "title": "2. korak · Permutacija kotov",
+        "desc": "Če se ena stran že ujema — recimo, da sta oba vogala na eni ploskvi rdeča — obrnite zgornji del tako, da je ta par na levi, nato uporabite sosednjo zamenjavo. Če se nobena stran ne ujema, uporabite diagonalno zamenjavo.",
+        "cases": {
+          "adjacent": {
+            "name": "Sosednja zamenjava",
+            "hint": "Postavite kota za zamenjavo na desno."
+          },
+          "diagonal": {
+            "name": "Diagonalna zamenjava",
+            "hint": "Kateri koli kot deluje."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Ostane šest robov, potrebni so le obrati M in U. Trije koraki: orientirajte robove tako, da vsaka zgornja/spodnja barva gleda navzgor ali navzdol (EO), postavite robova UL in UR, nato dokončajte zadnje štiri. Diagrami prikazujejo robove zgornje plasti ter spodnja robova DF in DB; koti so prazni, ker so že rešeni.",
+      "eo": {
+        "title": "4a · Orientacija robov",
+        "desc": "Zapolnjen rob ima svojo zgornjo/spodnjo barvo obrnjeno navzgor ali navzdol — dobro. Prazen pomeni slabo. Preštejte slabe robove na vrhu in dnu; obstaja le peščica vzorcev, poteza M' U M pa jih spremeni.",
+        "cases": {
+          "arrow": {
+            "name": "Puščica",
+            "tag": "3 gor · 1 dol",
+            "hint": "Obrnite vrh tako, da trije slabi robovi kažejo proti slabemu spodnjemu robu, nato M' U M popravi vse štiri."
+          },
+          "twoTwo": {
+            "name": "Razdeljeni pari",
+            "tag": "2 gor · 2 dol",
+            "hint": "Prikazana najkrajša rešitev. Ročna pot: M' U2 M ga spremeni v puščico, nato dokončajte kot zgoraj."
+          },
+          "fourZero": {
+            "name": "Vse zgoraj",
+            "tag": "4 gor · 0 dol",
+            "hint": "Vsi štirje zgornji robovi slabi. M U2 M zamenja par navzdol v puščico, nato dokončajte."
+          },
+          "twoTop": {
+            "name": "Oba na vrhu",
+            "tag": "2 gor · 0 dol",
+            "hint": "Ne 0, ne 4: M' U M ustvari štiri slabe robove v obliki puščice, U2 za usmeritev, M' U M za zaključek."
+          },
+          "oneOne": {
+            "name": "Eden gor, eden dol",
+            "tag": "1 gor · 1 dol",
+            "hint": "Enaka ideja — prvi M U M ustvari puščico."
+          },
+          "twoBottom": {
+            "name": "Oba na dnu",
+            "tag": "0 gor · 2 dol",
+            "hint": "M U M jih dvigne v puščico, nato končaj kot običajno."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · ZG in ZD",
+        "desc": "Rumena zgoraj, bela spodaj, rdeč blok na levi: robova, ki ju je treba še postaviti, sta rumeno-rdeč in rumeno-oranžen (obkrožena na diagramih). Oba potopi na dno, da si stojita nasproti, obrni zgornjo stran, da se poravnata, nato M2 U ali M2 U'. Središča ostanejo obrnjena – naslednji korak to popravi.",
+        "cases": {
+          "bothTop": {
+            "name": "Oba zgoraj",
+            "hint": "Obračaj zgornji del, dokler nista nasproti drug drugega (spredaj in zadaj). M2 potopi oba, U' ju poravna, M2 U' ju postavi na mesto."
+          },
+          "oneBottom": {
+            "name": "Eden zgoraj, eden spodaj",
+            "hint": "U2 za poravnavo, M U2 M' premakne zgornjega nasproti drugega; U' za poravnavo, M2 U oba dvigne in ju postavi na mesto."
+          },
+          "bothBottom": {
+            "name": "Oba spodaj",
+            "hint": "Obrni zgornjo stran, da se poravnata, M2 ju dvigne, U ju postavi."
+          },
+          "bothBottomAlt": {
+            "name": "Oba spodaj (drugačen način)",
+            "hint": "Par je obrnjen v nasprotno smer: U2 za poravnavo zgornje strani, nato M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Zadnji štirje robovi (samo z opazovanjem)",
+        "cases": {
+          "needM2": {
+            "name": "Središča obrnjena",
+            "hint": "Belo središče je na vrhu: M2 ga obrne nazaj."
+          },
+          "oneWhite": {
+            "name": "Ena bela na vrhu",
+            "hint": "Obrnite vrh tako, da je beli rob spredaj, nato ga zamenjajte s spodnjim robom."
+          },
+          "twoWhite": {
+            "name": "Dve beli na vrhu",
+            "hint": "Zamenjajte zgornji in spodnji rob dvakrat, enkrat na vsaki strani."
+          },
+          "byLook": {
+            "name": "Reši z opazovanjem",
+            "hint": "Brez bele na vrhu, vendar sta sprednji in zadnji rob zamenjana: M2, obrni vrh, M2 nazaj."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

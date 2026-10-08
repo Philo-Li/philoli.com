@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Bezmaksas AI e-grāmatu tulkotājs, kas pilnībā darbojas jūsu pārlūkprogrammā. Tulkojiet EPUB un PDF failus 40+ valodās ar divvalodu paralēlu izvadi. Izmantojiet savu API atslēgu.",
     "rubiksCubeTitle": "3D Rubika kubs — Philo Li",
     "rubiksCubeDescription": "Interaktīvs 3D Rubika kubs. Iestati sajaukšanu un atrisinājumu, spēlē soli pa solim, paslēp krāsas vai skaldnes iegaumēšanas treniņiem.",
+    "cubeRouxTitle": "Roux metode — Bloki, CMLL un LSE",
+    "cubeRouxDescription": "Visi Roux metodei nepieciešamie algoritmi, viena cilne katram posmam: bloku veidošanas ievietošanas gājieni, divu soļu CMLL un M/U algoritmi malu orientācijai, UL/UR un pēdējām četrām malām. Katram gadījumam ir diagramma, un tas atveras interaktīvā 3D kubā.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Rubika kuba progresa diagrammas",
     "cubeAnalyzerDescription": "Iemet savu csTimer eksportu un iegūsti progresa diagrammas: Ao5/Ao12/Ao100 tendences, PB vēsturi, atskaites punktus, ikdienas apjomu un varas likuma mācīšanās līkni. Darbojas pilnībā tavā pārlūkprogrammā."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Eksportē savas csTimer sesijas un redzi savas progresa diagrammas.",
       "cta": "Analizēt manus risinājumus"
+    },
+    "rouxCard": {
+      "eyebrow": "Metode",
+      "title": "Roux metode",
+      "desc": "Bloki, divu soļu CMLL un LSE — katrs gadījums ar diagrammu, ko var atvērt uz šī kuba.",
+      "cta": "Pārlūkot bibliotēku"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metode",
+    "title": "Roux metode (piemērota iesācējiem)",
+    "intro": "Roux metodei ir četri posmi: izveidot kreiso 1×2×3 bloku, izveidot labo, atrisināt augšējos stūrus (CMLL), tad pabeigt pēdējās sešas šķautnes, izmantojot tikai M un U pagriezienus (LSE).",
+    "tabsLabel": "Roux posmi",
+    "tabs": {
+      "fb": "Pirmais bloks",
+      "sb": "Otrais bloks",
+      "cmll": "CMLL (divos soļos)",
+      "lse": "LSE"
+    },
+    "openInCube": "Sīkāka informācija",
+    "fb": {
+      "intro": "Pirmais bloks ir 1×2×3 kreisajā pusē: DL mala, divi apakšējie kreisie stūri un to divas malas. Nav fiksētu algoritmu — jūs skatāties, sapārojat stūri ar tā malu un ievietojat. Šie ir rokas gājieni, kas atkārtojas atkal un atkal. Turiet kubu ar bloku kreisajā pusē un tukšo vietu priekšpusē.",
+      "insert": {
+        "title": "Pārošana un ievietošana",
+        "desc": "Katrs gadījums 3D kubā atveras ar jau pozīcijā esošu pāri; vērojiet, kur abi gabali atrodas sākumā un kā pagriezieni tos nogādā vietā, neizjaucot pārējo bloku.",
+        "cases": {
+          "pairLeft": {
+            "name": "Pāris augšā, kreisajā pusē",
+            "hint": "Stūris virs spraugas, mala blakus tam kreisajā pusē. Pārvietojiet pāri malā, atveriet spraugu, ievietojiet to."
+          },
+          "mSlice": {
+            "name": "Savieno ar M šķēli",
+            "hint": "Stūris augšējā aizmugurējā kreisajā pusē, šķautne labajā pusē. M pievirza šķautni tai klāt, tad F' ievieto pāri."
+          },
+          "edgeOnTop": {
+            "name": "Stūris slotā, mala augšpusē",
+            "hint": "Stūris jau ir savā vietā, mala atrodas augšpusē pa labi. Izņem stūri, lai to savienotu, tad F' ievieto abus."
+          },
+          "misPaired": {
+            "name": "Pāris augšpusē, krāsas nesakrīt",
+            "hint": "Stūris un šķautne atrodas blakus augšējās daļas labajā pusē, bet nesakrīt. F' atver slotu, izveido pāri no jauna ar L' U' L U' L' U L, F' to aizver."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Otrais bloks spoguļo pirmo labajā pusē — bet tagad kreisais bloks nedrīkst kustēties. Droši ir tikai R, r, M un U pagriezieni. Platais r pagrieziens ir Roux triks: tas pārvieto labo slāni un M šķēli kopā, tāpēc varat satvert malas no apakšas, neaizskarot kreiso pusi.",
+      "insert": {
+        "title": "Pārošana un ievietošana",
+        "desc": "Visi četri gadījumi atstāj kreiso bloku neskartu. Tiek pieņemts, ka DR mala ir atrisināta; šie ievieto labo priekšējo stūra-malas pāri.",
+        "cases": {
+          "pairRight": {
+            "name": "Pāris augšpusē, labajā pusē",
+            "hint": "Stūris virs atveres, mala blakus tam labajā pusē. Pirmā bloka ieliktņa spoguļattēls."
+          },
+          "mPair": {
+            "name": "Savieno ar M šķēli",
+            "hint": "Šķautne augšpuses aizmugurē pa kreisi, stūris pa labi. U un pēc tam M nogādā šķautni līdz stūrim, R U' R' ievieto pāri."
+          },
+          "cornerInSlot": {
+            "name": "Stūris spraugā, šķautne augšā",
+            "hint": "Stūris jau ir savā vietā, šķautne atrodas augšā. U R izceļ stūri ārā, M pievirza šķautni tam klāt, U' R' ievieto abus atpakaļ."
+          },
+          "twistedCorner": {
+            "name": "Stūris gropē, sagriezts",
+            "hint": "Stūris atrodas savā gropē, bet sagriezts. L F' L' izceļ to caur kreiso bloku un atpakaļ, M kustības atgādā šķautni, R U' R' ievieto."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Kad abi bloki ir pabeigti, atrisini četrus augšējos stūrus vienā piegājienā. Pilns CMLL sastāv no 42 gadījumiem; divu soļu metode sadala to orientēšanā un pēc tam permutēšanā, un tai nepieciešami tikai deviņi algoritmi. Tā kā M slānis tiek salabots pēc tam, šie algoritmi var to izjaukt. Dzeltenās uzlīmes parāda, kur atrodas augšējā krāsa; josla ārpusē nozīmē, ka stūra augšējā krāsa ir vērsta uz sāniem.",
+      "orient": {
+        "title": "1. solis · Orientēt stūrus",
+        "desc": "Saskaiti, cik augšējiem stūriem jau ir redzama augšējā krāsa. 0 → H vai Pi. 1 → S vai AS. 2 → U, T vai L. Saskaņo rakstu un pagriez augšējo slāni tā, lai tas sakristu ar diagrammu."
+      },
+      "permute": {
+        "title": "2. solis · Permutēt stūrus",
+        "desc": "Ja viena puse jau sakrīt — piemēram, abi stūri vienā skaldnē ir sarkani —, pagriez augšējo daļu tā, lai šis pāris atrastos kreisajā pusē, un tad izmanto blakus esošo mainīšanu. Ja neviena puse nesakrīt, izmanto diagonālo mainīšanu.",
+        "cases": {
+          "adjacent": {
+            "name": "Blakus esošo stūru maiņa",
+            "hint": "Novieto divus maināmos stūrus labajā pusē."
+          },
+          "diagonal": {
+            "name": "Diagonāla maiņa",
+            "hint": "Der jebkurš leņķis."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Atlikušas sešas malas, un nepieciešami tikai M un U pagriezieni. Trīs soļi: orientēt malas tā, lai katra augšējā/apakšējā krāsa būtu vērsta uz augšu vai leju (EO), novietot UL un UR malas, tad pabeigt pēdējās četras. Diagrammas parāda augšējā slāņa malas plus divas apakšējās malas DF un DB; stūri atstāti tukši, jo tie jau ir atrisināti.",
+      "eo": {
+        "title": "4a · Malu orientācija",
+        "desc": "Aizpildītai malai augšējā/apakšējā krāsa ir vērsta uz augšu vai leju — labi. Tukša nozīmē slikti. Saskaiti sliktās malas augšpusē un apakšpusē; ir tikai nedaudzi raksti, un M' U M ir gājiens, kas tos maina.",
+        "cases": {
+          "arrow": {
+            "name": "Bulta",
+            "tag": "3 augšā · 1 lejā",
+            "hint": "Pagriez augšpusi tā, lai trīs sliktās malas rādītu uz slikto apakšējo malu, tad M' U M salabo visas četras."
+          },
+          "twoTwo": {
+            "name": "Sadalīti pāri",
+            "tag": "2 augšā · 2 lejā",
+            "hint": "Parādīts īsākais risinājums. Manuālais ceļš: M' U2 M pārvērš to bultā, tad pabeidz kā iepriekš."
+          },
+          "fourZero": {
+            "name": "Visi augšā",
+            "tag": "4 augšā · 0 lejā",
+            "hint": "Visas četras augšējās malas sliktas. M U2 M samaina pāri uz leju bultas formā, tad pabeidz."
+          },
+          "twoTop": {
+            "name": "Abi augšā",
+            "tag": "2 augšā · 0 lejā",
+            "hint": "Ne 0, ne 4: M' U M padara tās par četrām sliktām malām bultas formā, U2, lai mērķētu, M' U M, lai pabeigtu."
+          },
+          "oneOne": {
+            "name": "Viens augšā, viens lejā",
+            "tag": "1 augšā · 1 lejā",
+            "hint": "Tā pati ideja — pirmais M U M izveido bultu."
+          },
+          "twoBottom": {
+            "name": "Abi apakšā",
+            "tag": "0 augšā · 2 lejā",
+            "hint": "M U M paceļ tos bultiņā, tad pabeidz kā parasti."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL un UR",
+        "desc": "Dzeltens augšā, balts apakšā, sarkanais bloks pa kreisi: divas malas, kuras vēl jānovieto, ir dzelteni-sarkana un dzelteni-oranža (diagrammās iezīmētas ar rāmi). Nolaid abas uz apakšu tā, lai tās atrastos viena otrai pretī, pagriez augšpusi, lai izlīdzinātu, tad M2 U vai M2 U'. Centri beigās ir apgriezti — nākamais solis to izlabo.",
+        "cases": {
+          "bothTop": {
+            "name": "Abas augšā",
+            "hint": "Pagriez augšējo daļu, līdz tās atrodas pretī viena otrai (priekšpusē un aizmugurē). M2 nogremdē abas, U' izlīdzina tās, M2 U' novieto tās vietā."
+          },
+          "oneBottom": {
+            "name": "Viena augšā, viena apakšā",
+            "hint": "U2, lai izlīdzinātu, M U2 M' nosūta augšējo uz leju pretī otram; U', lai izlīdzinātu, M2 U paceļ abus uz augšu un novieto tos."
+          },
+          "bothBottom": {
+            "name": "Abas apakšā",
+            "hint": "Pagriez augšpusi, lai izlīdzinātu, M2 tās paceļ, U tās novieto."
+          },
+          "bothBottomAlt": {
+            "name": "Abas apakšā (citādāk)",
+            "hint": "Pāris atrodas pretējā virzienā: U2, lai izlīdzinātu augšpusi, tad M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Pēdējās četras šķautnes (tikai vizuāli)",
+        "cases": {
+          "needM2": {
+            "name": "Centri apgriezti",
+            "hint": "Baltais centrs ir augšpusē: M2 to apgriež atpakaļ."
+          },
+          "oneWhite": {
+            "name": "Viena balta augšpusē",
+            "hint": "Pagriez augšpusi tā, lai baltā mala būtu priekšpusē, pēc tam samaini to ar apakšējo malu."
+          },
+          "twoWhite": {
+            "name": "Divas baltas augšpusē",
+            "hint": "Samaini augšējo un apakšējo malu divreiz, pa vienai reizei katrā pusē."
+          },
+          "byLook": {
+            "name": "Risini skatoties",
+            "hint": "Augšpusē nav baltās krāsas, bet priekšējā un aizmugurējā mala ir samainītas vietām: M2, pagriez augšpusi, M2 atpakaļ."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

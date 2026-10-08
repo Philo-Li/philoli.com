@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Besplatni AI prevoditelj e-knjiga koji u potpunosti radi u vašem pregledniku. Prevedite EPUB i PDF datoteke na 40+ jezika s dvojezičnim izlazom jedan pored drugog. Koristite vlastiti API ključ.",
     "rubiksCubeTitle": "3D Rubikova kocka — Philo Li",
     "rubiksCubeDescription": "Interaktivna 3D Rubikova kocka. Postavite miješanje i rješenje, igrajte korak po korak, sakrijte boje ili plohe za vježbe pamćenja.",
+    "cubeRouxTitle": "Roux metoda — Blokovi, CMLL i LSE",
+    "cubeRouxDescription": "Svi algoritmi koji su vam potrebni za Roux metodu, jedna kartica po fazi: umetci za slaganje blokova, CMLL u dva koraka te M/U algoritmi za orijentaciju bridova, UL/UR i zadnja četiri brida. Svaki slučaj ima dijagram i otvara se u interaktivnoj 3D kocki.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Grafikoni napretka za Rubikovu kocku",
     "cubeAnalyzerDescription": "Ubacite svoj csTimer izvoz i dobijte grafikone napretka: trendovi Ao5/Ao12/Ao100, povijest PB-a, prekretnice, dnevni volumen i krivulja učenja prema zakonu potencije. Radi u potpunosti u vašem pregledniku."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Izvezite svoje csTimer sesije i pogledajte grafikone svog napretka.",
       "cta": "Analiziraj moje rezultate"
+    },
+    "rouxCard": {
+      "eyebrow": "Metoda",
+      "title": "Roux metoda",
+      "desc": "Blokovi, CMLL u dva koraka i LSE — svaki slučaj s dijagramom koji možete otvoriti na ovoj kocki.",
+      "cta": "Pregledaj biblioteku"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Metoda",
+    "title": "Roux metoda (prilagođeno početnicima)",
+    "intro": "Roux metoda ima četiri faze: izgradnja lijevog 1×2×3 bloka, izgradnja desnog bloka, rješavanje gornjih kutova (CMLL), a zatim završavanje posljednjih šest bridova koristeći samo M i U poteze (LSE).",
+    "tabsLabel": "Roux faze",
+    "tabs": {
+      "fb": "Prvi blok",
+      "sb": "Drugi blok",
+      "cmll": "CMLL (u dva koraka)",
+      "lse": "LSE"
+    },
+    "openInCube": "Detalji",
+    "fb": {
+      "intro": "Prvi blok je 1×2×3 na lijevoj strani: DL brid, dva donja lijeva kuta i njihova dva brida. Ne postoje fiksni algoritmi — gledate, uparite kut s njegovim bridom i umetnete. Ovo su pokreti rukom koji se stalno ponavljaju. Držite kocku s blokom na lijevoj strani i praznim utorom sprijeda.",
+      "insert": {
+        "title": "Uparivanje i umetanje",
+        "desc": "Svaki se slučaj otvara u 3D kocki s parom koji je već na poziciji; promatrajte odakle dijelovi kreću i kako ih potezi dovode na mjesto bez ometanja ostatka bloka.",
+        "cases": {
+          "pairLeft": {
+            "name": "Par na vrhu, lijeva strana",
+            "hint": "Kut iznad utora, brid pored njega s lijeve strane. Pomaknite par u stranu, otvorite utor, ubacite ga."
+          },
+          "mSlice": {
+            "name": "Uparite s M rezom",
+            "hint": "Kut straga lijevo na vrhu, brid na desnoj strani. M dovodi brid uokolo da se susretnu, zatim F' spušta par unutra."
+          },
+          "edgeOnTop": {
+            "name": "Kut u utoru, brid na vrhu",
+            "hint": "Kut je već na mjestu, brid se nalazi desno od vrha. Izvadi kut da ga susretne, a zatim F' umeće oba."
+          },
+          "misPaired": {
+            "name": "Par na vrhu, boje se ne podudaraju",
+            "hint": "Kut i rub su jedan pored drugog na desnoj strani vrha, ali se ne podudaraju. F' otvara utor, ponovno upari s L' U' L U' L' U L, F' ga zatvara."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Drugi blok zrcali prvi na desnoj strani — ali sada se lijevi blok ne smije pomicati. Samo su R, r, M i U potezi sigurni. Široki r potez je Roux trik: pomiče desni sloj i M sloj zajedno, tako da možete uzeti bridove s dna bez dodirivanja lijeve strane.",
+      "insert": {
+        "title": "Uparivanje i umetanje",
+        "desc": "Sva četiri slučaja ostavljaju lijevi blok netaknutim. Pretpostavlja se da je DR brid riješen; ovi algoritmi umeću prednji desni par kuta i brida.",
+        "cases": {
+          "pairRight": {
+            "name": "Par na vrhu, desna strana",
+            "hint": "Kut iznad utora, brid pokraj njega s desne strane. Zrcalna slika umetka prvog bloka."
+          },
+          "mPair": {
+            "name": "Uparite s M slojem",
+            "hint": "Rub na stražnjoj lijevoj strani gornjeg sloja, kut na desnoj. U pa M dovode rub do kuta, R U' R' umeće par."
+          },
+          "cornerInSlot": {
+            "name": "Kut u utoru, brid na vrhu",
+            "hint": "Kut je već na mjestu, brid sjedi na vrhu. U R podiže kut van, M dovodi brid do njega, U' R' stavlja oboje unutra."
+          },
+          "twistedCorner": {
+            "name": "Kut u utoru, zakrenut",
+            "hint": "Kut sjedi u svom utoru, ali je zakrenut. L F' L' ga izbacuje kroz lijevi blok i natrag, M potezi dovlače brid, R U' R' ga umeće."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Kada su oba bloka gotova, riješite četiri gornja kuta odjednom. Potpuni CMLL ima 42 slučaja; metoda u dva koraka dijeli ga na orijentaciju, zatim permutaciju, i zahtijeva samo devet algoritama. Budući da se M sloj popravlja naknadno, ovi algoritmi ga mogu slobodno poremetiti. Žute naljepnice pokazuju gdje je gornja boja; traka na vanjskoj strani znači da gornja boja tog kuta gleda u stranu.",
+      "orient": {
+        "title": "1. korak · Orijentacija kutova",
+        "desc": "Izbrojite koliko gornjih kutova već pokazuje gornju boju. 0 → H ili Pi. 1 → S ili AS. 2 → U, T ili L. Uskladite uzorak i okrenite gornji sloj tako da se poravna s dijagramom."
+      },
+      "permute": {
+        "title": "2. korak · Permutacija kutova",
+        "desc": "Ako se jedna strana već podudara — recimo da su oba kuta na jednoj plohi crvena — okrenite vrh tako da taj par bude na lijevoj strani, a zatim upotrijebite susjednu zamjenu. Ako se nijedna strana ne podudara, upotrijebite dijagonalnu zamjenu.",
+        "cases": {
+          "adjacent": {
+            "name": "Susjedna zamjena",
+            "hint": "Postavite dva kuta za zamjenu na desnu stranu."
+          },
+          "diagonal": {
+            "name": "Dijagonalna zamjena",
+            "hint": "Bilo koji kut je dobar."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Preostalo je šest bridova, a potrebni su samo M i U okreti. Tri koraka: orijentirajte bridove tako da svaka gornja/donja boja gleda prema gore ili dolje (EO), postavite UL i UR bridove, zatim dovršite zadnja četiri. Dijagrami prikazuju bridove gornjeg sloja plus dva donja brida DF i DB; kutovi su ostavljeni prazni jer su već riješeni.",
+      "eo": {
+        "title": "4a · Orijentacija bridova",
+        "desc": "Ispunjeni brid ima svoju gornju/donju boju okrenutu prema gore ili dolje — dobro. Prazan znači loše. Izbrojite loše bridove na vrhu i dnu; postoji samo nekoliko uzoraka, a M' U M je potez koji ih mijenja.",
+        "cases": {
+          "arrow": {
+            "name": "Strelica",
+            "tag": "3 gore · 1 dolje",
+            "hint": "Okrenite vrh tako da tri loša brida pokazuju prema lošem donjem bridu, zatim M' U M popravlja sva četiri."
+          },
+          "twoTwo": {
+            "name": "Podijeljeni parovi",
+            "tag": "2 gore · 2 dolje",
+            "hint": "Prikazano najkraće rješenje. Ručni put: M' U2 M pretvara ga u strelicu, zatim dovršite kao gore."
+          },
+          "fourZero": {
+            "name": "Sve na vrhu",
+            "tag": "4 gore · 0 dolje",
+            "hint": "Sva četiri gornja brida loša. M U2 M zamjenjuje par prema dolje u strelicu, zatim dovršite."
+          },
+          "twoTop": {
+            "name": "Oba na vrhu",
+            "tag": "2 gore · 0 dolje",
+            "hint": "Nije 0, nije 4: M' U M stvara četiri loša brida u obliku strelice, U2 za ciljanje, M' U M za završetak."
+          },
+          "oneOne": {
+            "name": "Jedan gore, jedan dolje",
+            "tag": "1 gore · 1 dolje",
+            "hint": "Ista ideja — prvi M U M stvara strelicu."
+          },
+          "twoBottom": {
+            "name": "Oba na dnu",
+            "tag": "0 gore · 2 dolje",
+            "hint": "M U M ih podiže u strelicu, zatim završi kao i obično."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL i UR",
+        "desc": "Žuta na vrhu, bijela na dnu, crveni blok na lijevoj strani: dva ruba koja još treba postaviti su žuto-crveni i žuto-narančasti (označeni u dijagramima). Spusti oba na dno tako da budu jedan nasuprot drugome, okreni vrh da se poravnaju, zatim M2 U ili M2 U'. Centri na kraju ostaju okrenuti — sljedeći korak to popravlja.",
+        "cases": {
+          "bothTop": {
+            "name": "Oba na vrhu",
+            "hint": "Okrećite gornji sloj dok ne budu jedan nasuprot drugome (sprijeda i straga). M2 ih spušta, U' ih poravnava, M2 U' ih postavlja."
+          },
+          "oneBottom": {
+            "name": "Jedan gore, jedan dolje",
+            "hint": "U2 za poravnanje, M U2 M' spušta gornji nasuprot drugom; U' za poravnanje, M2 U podiže oba i postavlja ih na mjesto."
+          },
+          "bothBottom": {
+            "name": "Oba na dnu",
+            "hint": "Okreni vrh da se poravnaju, M2 ih podiže, U ih postavlja."
+          },
+          "bothBottomAlt": {
+            "name": "Oba na dnu (drugi način)",
+            "hint": "Par se postavlja obrnuto: U2 za poravnavanje vrha, zatim M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Posljednja četiri brida (samo gledanjem)",
+        "cases": {
+          "needM2": {
+            "name": "Centri okrenuti",
+            "hint": "Bijeli centar je na vrhu: M2 ga vraća natrag."
+          },
+          "oneWhite": {
+            "name": "Jedna bijela na vrhu",
+            "hint": "Okreni vrh tako da bijeli rub bude sprijeda, zatim ga zamijeni s donjim rubom."
+          },
+          "twoWhite": {
+            "name": "Dvije bijele na vrhu",
+            "hint": "Zamijeni gornje i donje rubove dvaput, jednom na svakoj strani."
+          },
+          "byLook": {
+            "name": "Riješi gledanjem",
+            "hint": "Nema bijele na vrhu, ali su prednji i stražnji rub zamijenjeni: M2, okreni vrh, M2 natrag."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

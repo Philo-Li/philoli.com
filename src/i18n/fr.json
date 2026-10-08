@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Traducteur d'ebooks gratuit basé sur l'IA, fonctionnant entièrement dans votre navigateur. Traduisez vos fichiers EPUB et PDF en plus de 40 langues avec un affichage bilingue côte à côte. Utilisez votre propre clé API.",
     "rubiksCubeTitle": "Rubik's Cube 3D — Philo Li",
     "rubiksCubeDescription": "Rubik's Cube 3D interactif. Définissez un mélange et une solution, jouez étape par étape, masquez des couleurs ou des faces pour des exercices de mémorisation.",
+    "cubeRouxTitle": "Méthode Roux — Blocs, CMLL et LSE",
+    "cubeRouxDescription": "Tous les algorithmes dont vous avez besoin pour la méthode Roux, un onglet par étape : insertions pour la construction de blocs, CMLL en deux étapes, et les algorithmes M/U pour l'orientation des arêtes, UL/UR et les quatre dernières arêtes. Chaque cas dispose d'un diagramme et s'ouvre dans le cube 3D interactif.",
     "cubeAnalyzerTitle": "Analyseur csTimer — Graphiques de progression pour Rubik's Cube",
     "cubeAnalyzerDescription": "Déposez votre export csTimer pour obtenir des graphiques de progression : tendances Ao5/Ao12/Ao100, historique des PB, jalons, volume quotidien et courbe d'apprentissage en loi de puissance. Fonctionne entièrement dans votre navigateur."
   },
@@ -499,6 +501,179 @@
       "title": "Analyseur csTimer",
       "desc": "Exportez vos sessions csTimer et visualisez vos graphiques de progression.",
       "cta": "Analyser mes résolutions"
+    },
+    "rouxCard": {
+      "eyebrow": "Méthode",
+      "title": "Méthode Roux",
+      "desc": "Blocs, CMLL en deux étapes et LSE — chaque cas avec un diagramme que vous pouvez ouvrir sur ce cube.",
+      "cta": "Parcourir la bibliothèque"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Méthode",
+    "title": "Méthode Roux (Adaptée aux débutants)",
+    "intro": "La méthode Roux comporte quatre étapes : construire le bloc 1×2×3 de gauche, construire celui de droite, résoudre les coins supérieurs (CMLL), puis terminer les six dernières arêtes avec uniquement des mouvements M et U (LSE).",
+    "tabsLabel": "Étapes Roux",
+    "tabs": {
+      "fb": "Premier bloc",
+      "sb": "Second bloc",
+      "cmll": "CMLL (en deux étapes)",
+      "lse": "LSE"
+    },
+    "openInCube": "Détails",
+    "fb": {
+      "intro": "Le premier bloc est un 1×2×3 sur la gauche : l'arête DL, les deux coins en bas à gauche et leurs deux arêtes. Il n'y a pas d'algorithmes fixes — vous regardez, appariez un coin avec son arête, et insérez. Ce sont les mouvements manuels qui reviennent sans cesse. Tenez le cube avec le bloc sur la gauche et l'emplacement vide à l'avant.",
+      "insert": {
+        "title": "Appariement et insertion",
+        "desc": "Chaque cas s'ouvre dans le cube 3D avec la paire déjà en position ; observez où les deux pièces commencent et comment les mouvements les amènent à destination sans perturber le reste du bloc.",
+        "cases": {
+          "pairLeft": {
+            "name": "Paire sur le dessus, côté gauche",
+            "hint": "Coin au-dessus de l'emplacement, arête à côté sur la gauche. Écartez la paire, ouvrez l'emplacement, insérez."
+          },
+          "mSlice": {
+            "name": "Associer avec la tranche M",
+            "hint": "Coin à l'arrière-gauche du haut, arête à droite. M amène l'arête pour la rejoindre, puis F' insère la paire."
+          },
+          "edgeOnTop": {
+            "name": "Coin dans l'emplacement, arête sur le dessus",
+            "hint": "Le coin est déjà à sa place, l'arête se trouve à droite du dessus. Sortez le coin pour le rejoindre, puis F' insère les deux."
+          },
+          "misPaired": {
+            "name": "Paire sur le dessus, couleurs dépareillées",
+            "hint": "Le coin et l'arête sont côte à côte sur la droite du dessus mais ne correspondent pas. F' ouvre l'emplacement, réappairez avec L' U' L U' L' U L, F' le referme."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Le second bloc est le miroir du premier sur la droite — mais le bloc gauche ne doit pas bouger. Seuls les mouvements R, r, M et U sont sûrs. Le mouvement large r est l'astuce Roux : il déplace la couche droite et la tranche M ensemble, vous permettant ainsi de récupérer des arêtes par le bas sans toucher à la gauche.",
+      "insert": {
+        "title": "Appariement et insertion",
+        "desc": "Les quatre cas préservent le bloc gauche intact. L'arête DR est supposée résolue ; ceux-ci insèrent la paire coin-arête avant-droite.",
+        "cases": {
+          "pairRight": {
+            "name": "Paire sur le dessus, côté droit",
+            "hint": "Coin au-dessus de l'emplacement, arête à côté sur la droite. Le miroir de l'insertion du premier bloc."
+          },
+          "mPair": {
+            "name": "Associer avec la tranche M",
+            "hint": "Arête à l'arrière-gauche du haut, coin à droite. U puis M amènent l'arête vers le coin, R U' R' insère la paire."
+          },
+          "cornerInSlot": {
+            "name": "Coin dans l'emplacement, arête sur le dessus",
+            "hint": "Le coin est déjà à sa place, l'arête est sur le dessus. U R sort le coin, M amène l'arête vers lui, U' R' remet les deux en place."
+          },
+          "twistedCorner": {
+            "name": "Coin dans l'emplacement, pivoté",
+            "hint": "Le coin est dans son emplacement mais pivoté. L F' L' l'éjecte à travers le bloc gauche et revient, les mouvements M récupèrent l'arête, R U' R' insère."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Une fois les deux blocs terminés, résolvez les quatre coins supérieurs en une seule fois. Le CMLL complet compte 42 cas ; la méthode en deux étapes le divise en orientation, puis permutation, et ne nécessite que neuf algorithmes. Comme la tranche M est corrigée après, ces algorithmes sont libres de la perturber. Les autocollants jaunes indiquent où se trouve la couleur du dessus ; une barre à l'extérieur signifie que la couleur du dessus de ce coin est orientée sur le côté.",
+      "orient": {
+        "title": "Étape 1 · Orienter les coins",
+        "desc": "Comptez combien de coins supérieurs montrent déjà la couleur du dessus. 0 → H ou Pi. 1 → S ou AS. 2 → U, T ou L. Faites correspondre le motif et tournez la couche supérieure pour qu'elle s'aligne avec le diagramme."
+      },
+      "permute": {
+        "title": "Étape 2 · Permuter les coins",
+        "desc": "Si un côté correspond déjà — disons que les deux coins d'une face sont rouges — tournez le haut pour que cette paire soit à gauche, puis utilisez l'échange adjacent. Si aucun côté ne correspond, utilisez l'échange en diagonale.",
+        "cases": {
+          "adjacent": {
+            "name": "Échange adjacent",
+            "hint": "Placez les deux coins à échanger sur la droite."
+          },
+          "diagonal": {
+            "name": "Échange diagonal",
+            "hint": "N'importe quel angle fonctionne."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Six arêtes restent, et seuls des mouvements M et U sont nécessaires. Trois étapes : orienter les arêtes pour que chaque couleur haut/bas soit orientée vers le haut ou le bas (EO), placer les arêtes UL et UR, puis terminer les quatre dernières. Les diagrammes montrent les arêtes de la couche supérieure ainsi que les deux arêtes inférieures DF et DB ; les coins sont laissés vides car ils sont déjà résolus.",
+      "eo": {
+        "title": "4a · Orientation des arêtes",
+        "desc": "Une arête pleine a sa couleur haut/bas orientée vers le haut ou le bas — c'est bon. Vide signifie mauvais. Comptez les mauvaises arêtes en haut et en bas ; il n'y a qu'une poignée de motifs et M' U M est le mouvement qui les modifie.",
+        "cases": {
+          "arrow": {
+            "name": "Flèche",
+            "tag": "3 haut · 1 bas",
+            "hint": "Tournez le dessus pour que les trois mauvaises arêtes pointent vers la mauvaise arête inférieure, puis M' U M corrige les quatre."
+          },
+          "twoTwo": {
+            "name": "Paires divisées",
+            "tag": "2 haut · 2 bas",
+            "hint": "Solution la plus courte affichée. La méthode manuelle : M' U2 M le transforme en flèche, puis terminez comme ci-dessus."
+          },
+          "fourZero": {
+            "name": "Tout en haut",
+            "tag": "4 haut · 0 bas",
+            "hint": "Les quatre arêtes supérieures sont mauvaises. M U2 M échange une paire vers le bas pour former une flèche, puis terminez."
+          },
+          "twoTop": {
+            "name": "Les deux en haut",
+            "tag": "2 haut · 0 bas",
+            "hint": "Pas 0, pas 4 : M' U M crée quatre mauvaises arêtes en forme de flèche, U2 pour viser, M' U M pour terminer."
+          },
+          "oneOne": {
+            "name": "Un en haut, un en bas",
+            "tag": "1 haut · 1 bas",
+            "hint": "Même idée — le premier M U M crée la flèche."
+          },
+          "twoBottom": {
+            "name": "Les deux en bas",
+            "tag": "0 en haut · 2 en bas",
+            "hint": "M U M les soulève en une flèche, puis terminer comme d'habitude."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL et UR",
+        "desc": "Jaune en haut, blanc en bas, bloc rouge à gauche : les deux arêtes restantes à placer sont jaune-rouge et jaune-orange (encadrées dans les schémas). Envoyez-les toutes deux en bas pour qu'elles soient opposées, tournez le haut pour aligner, puis M2 U ou M2 U'. Les centres finissent inversés — l'étape suivante corrige cela.",
+        "cases": {
+          "bothTop": {
+            "name": "Les deux en haut",
+            "hint": "Tournez le haut jusqu'à ce qu'ils soient opposés (devant et derrière). M2 les fait descendre tous les deux, U' les aligne, M2 U' les place."
+          },
+          "oneBottom": {
+            "name": "Une en haut, une en bas",
+            "hint": "U2 pour aligner, M U2 M' envoie celui du haut vers le bas à l'opposé de l'autre ; U' pour aligner, M2 U les remonte tous les deux et les place."
+          },
+          "bothBottom": {
+            "name": "Les deux en bas",
+            "hint": "Tournez le haut pour aligner, M2 les remonte, U les place."
+          },
+          "bothBottomAlt": {
+            "name": "Les deux en bas (autre méthode)",
+            "hint": "La paire est placée dans l'autre sens : U2 pour aligner le haut, puis M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Quatre dernières arêtes (juste en regardant)",
+        "cases": {
+          "needM2": {
+            "name": "Centres inversés",
+            "hint": "Le centre blanc est sur le dessus : M2 le remet en place."
+          },
+          "oneWhite": {
+            "name": "Un blanc sur le dessus",
+            "hint": "Tournez le dessus pour que l'arête blanche soit à l'avant, puis échangez-la avec l'arête du bas."
+          },
+          "twoWhite": {
+            "name": "Deux blancs sur le dessus",
+            "hint": "Échangez les arêtes du haut et du bas deux fois, une fois de chaque côté."
+          },
+          "byLook": {
+            "name": "Résoudre en observant",
+            "hint": "Pas de blanc sur le dessus, mais les arêtes avant et arrière sont inversées : M2, tourner le dessus, M2 retour."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

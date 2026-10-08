@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Trình dịch ebook AI miễn phí chạy hoàn toàn trên trình duyệt. Dịch tệp EPUB và PDF sang hơn 40 ngôn ngữ với đầu ra song ngữ đối chiếu. Sử dụng API key của bạn.",
     "rubiksCubeTitle": "Khối Rubik 3D — Philo Li",
     "rubiksCubeDescription": "Khối Rubik 3D tương tác. Thiết lập xáo trộn và lời giải, chơi từng bước, ẩn màu hoặc các mặt để luyện trí nhớ.",
+    "cubeRouxTitle": "Phương pháp Roux — Các khối, CMLL và LSE",
+    "cubeRouxDescription": "Mọi thuật toán bạn cần cho phương pháp Roux, mỗi giai đoạn một tab: chèn block-building, CMLL hai bước, và các thuật toán M/U để định hướng cạnh, UL/UR và bốn cạnh cuối. Mỗi trường hợp đều có sơ đồ và mở ra trong khối lập phương 3D tương tác.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Biểu đồ tiến độ Rubik",
     "cubeAnalyzerDescription": "Thả tệp xuất từ csTimer của bạn vào đây để xem biểu đồ tiến độ: xu hướng Ao5/Ao12/Ao100, lịch sử PB, các cột mốc, khối lượng luyện tập hàng ngày và đường cong học tập theo luật lũy thừa. Chạy hoàn toàn trên trình duyệt của bạn."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Xuất các phiên csTimer của bạn và xem biểu đồ tiến độ.",
       "cta": "Phân tích các lần giải của tôi"
+    },
+    "rouxCard": {
+      "eyebrow": "Phương pháp",
+      "title": "Phương pháp Roux",
+      "desc": "Blocks, CMLL hai bước và LSE — mọi trường hợp đều có sơ đồ mà bạn có thể mở trên khối lập phương này.",
+      "cta": "Duyệt thư viện"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Phương pháp",
+    "title": "Phương pháp Roux (Dành cho người mới bắt đầu)",
+    "intro": "Phương pháp Roux có bốn giai đoạn: xây khối 1×2×3 bên trái, xây khối bên phải, giải các góc tầng trên (CMLL), sau đó hoàn thành sáu cạnh cuối cùng chỉ với các bước xoay M và U (LSE).",
+    "tabsLabel": "Các giai đoạn Roux",
+    "tabs": {
+      "fb": "Khối thứ nhất",
+      "sb": "Khối thứ hai",
+      "cmll": "CMLL (hai bước)",
+      "lse": "LSE"
+    },
+    "openInCube": "Chi tiết",
+    "fb": {
+      "intro": "Khối thứ nhất là khối 1×2×3 ở bên trái: cạnh DL, hai góc dưới bên trái và hai cạnh của chúng. Không có thuật toán cố định nào — bạn quan sát, ghép một góc với cạnh của nó và chèn vào. Đây là các thao tác tay xuất hiện lặp đi lặp lại. Giữ khối lập phương với khối đó ở bên trái và khe trống ở phía trước.",
+      "insert": {
+        "title": "Ghép và chèn",
+        "desc": "Mỗi trường hợp mở ra trong khối lập phương 3D với cặp mảnh đã ở đúng vị trí; hãy quan sát vị trí bắt đầu của hai mảnh và cách các lượt xoay đưa chúng về đích mà không làm ảnh hưởng đến phần còn lại của khối.",
+        "cases": {
+          "pairLeft": {
+            "name": "Cặp ở trên, phía bên trái",
+            "hint": "Góc nằm trên khe, cạnh nằm bên cạnh ở phía trái. Di chuyển cặp ra khỏi vị trí, mở khe, thả nó vào."
+          },
+          "mSlice": {
+            "name": "Ghép cặp với lát cắt M",
+            "hint": "Góc ở phía sau bên trái của mặt trên, cạnh ở bên phải. M đưa cạnh vòng quanh để khớp với nó, sau đó F' thả cặp vào."
+          },
+          "edgeOnTop": {
+            "name": "Góc vào khe, cạnh ở trên",
+            "hint": "Góc đã về đúng vị trí, cạnh nằm ở bên phải phía trên. Đưa góc ra để khớp với cạnh, sau đó F' sẽ chèn cả hai vào."
+          },
+          "misPaired": {
+            "name": "Cặp ở trên, màu không khớp",
+            "hint": "Góc và cạnh nằm cạnh nhau ở bên phải mặt trên nhưng không khớp. F' mở khe, ghép lại với L' U' L U' L' U L, F' đóng khe lại."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Khối thứ hai là hình ảnh phản chiếu của khối thứ nhất ở bên phải — nhưng bây giờ khối bên trái không được di chuyển. Chỉ các lượt xoay R, r, M và U là an toàn. Lượt xoay rộng r là thủ thuật của Roux: nó di chuyển lớp bên phải và lát cắt M cùng nhau, vì vậy bạn có thể lấy các cạnh từ phía dưới mà không chạm vào bên trái.",
+      "insert": {
+        "title": "Ghép và chèn",
+        "desc": "Cả bốn trường hợp đều giữ cho khối bên trái không bị ảnh hưởng. Cạnh DR được giả định là đã giải xong; các bước này chèn cặp góc-cạnh ở phía trước bên phải.",
+        "cases": {
+          "pairRight": {
+            "name": "Cặp ở trên cùng, phía bên phải",
+            "hint": "Góc phía trên khe cắm, cạnh bên cạnh ở phía phải. Bản sao đối xứng của mảnh chèn khối đầu tiên."
+          },
+          "mPair": {
+            "name": "Ghép cặp với lát cắt M",
+            "hint": "Cạnh ở phía sau bên trái của mặt trên, góc ở bên phải. U rồi M đưa cạnh vòng tới góc, R U' R' chèn cặp vào."
+          },
+          "cornerInSlot": {
+            "name": "Góc vào khe, cạnh ở trên",
+            "hint": "Góc đã về đúng chỗ, cạnh nằm ở trên. U R nhấc góc ra, M đưa cạnh đến đó, U' R' đặt cả hai vào."
+          },
+          "twistedCorner": {
+            "name": "Góc nằm trong khe, bị xoay",
+            "hint": "Góc nằm trong khe nhưng bị xoay. L F' L' lật nó ra qua khối bên trái và quay lại, các bước M đưa cạnh vào vị trí, R U' R' chèn vào."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Khi cả hai khối đã xong, giải bốn góc trên cùng trong một lần. CMLL đầy đủ có 42 trường hợp; phương pháp hai bước chia nó thành định hướng, sau đó hoán vị, và chỉ cần chín thuật toán. Vì lớp M được sửa sau đó, các thuật toán này có thể làm xáo trộn nó một cách tự do. Các nhãn dán màu vàng cho biết màu mặt trên nằm ở đâu; một thanh ở bên ngoài nghĩa là màu mặt trên của góc đó hướng sang bên cạnh.",
+      "orient": {
+        "title": "Bước 1 · Định hướng các góc",
+        "desc": "Đếm xem có bao nhiêu góc trên cùng đã hiển thị màu mặt trên. 0 → H hoặc Pi. 1 → S hoặc AS. 2 → U, T hoặc L. Khớp với mẫu và xoay lớp trên cùng để nó thẳng hàng với sơ đồ."
+      },
+      "permute": {
+        "title": "Bước 2 · Hoán vị các góc",
+        "desc": "Nếu một mặt đã khớp — ví dụ như hai góc trên cùng một mặt đều màu đỏ — hãy xoay mặt trên sao cho cặp đó nằm bên trái, sau đó thực hiện hoán vị kề. Nếu không có mặt nào khớp, hãy thực hiện hoán vị chéo.",
+        "cases": {
+          "adjacent": {
+            "name": "Hoán đổi kề nhau",
+            "hint": "Đặt hai góc cần hoán đổi ở phía bên phải."
+          },
+          "diagonal": {
+            "name": "Hoán đổi chéo",
+            "hint": "Góc nào cũng được."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Còn lại sáu cạnh, và chỉ cần các lượt xoay M và U. Ba bước: định hướng các cạnh sao cho mọi màu trên/dưới đều hướng lên hoặc xuống (EO), đặt các cạnh UL và UR vào vị trí, sau đó hoàn thành bốn cạnh cuối cùng. Các sơ đồ hiển thị các cạnh của lớp trên cùng cộng với hai cạnh dưới DF và DB; các góc được để trống vì chúng đã được giải xong.",
+      "eo": {
+        "title": "4a · Định hướng cạnh",
+        "desc": "Một cạnh được tô màu nghĩa là màu trên/dưới của nó đang hướng lên hoặc xuống — tốt. Để trống nghĩa là xấu. Đếm các cạnh xấu ở trên và dưới; chỉ có một vài mẫu và M' U M là nước đi thay đổi chúng.",
+        "cases": {
+          "arrow": {
+            "name": "Mũi tên",
+            "tag": "3 lên · 1 xuống",
+            "hint": "Xoay lớp trên cùng để ba cạnh xấu hướng vào cạnh xấu ở dưới, sau đó M' U M sẽ sửa cả bốn."
+          },
+          "twoTwo": {
+            "name": "Chia cặp",
+            "tag": "2 lên · 2 xuống",
+            "hint": "Giải pháp ngắn nhất được hiển thị. Cách làm thủ công: M' U2 M biến nó thành hình mũi tên, sau đó hoàn thành như trên."
+          },
+          "fourZero": {
+            "name": "Tất cả ở trên",
+            "tag": "4 lên · 0 xuống",
+            "hint": "Cả bốn cạnh trên cùng đều xấu. M U2 M hoán đổi một cặp xuống thành hình mũi tên, sau đó hoàn thành."
+          },
+          "twoTop": {
+            "name": "Cả hai ở trên",
+            "tag": "2 lên · 0 xuống",
+            "hint": "Không phải 0, không phải 4: M' U M tạo thành bốn cạnh xấu hình mũi tên, U2 để nhắm hướng, M' U M để hoàn thành."
+          },
+          "oneOne": {
+            "name": "Một trên, một dưới",
+            "tag": "1 lên · 1 xuống",
+            "hint": "Tương tự — M U M đầu tiên tạo ra hình mũi tên."
+          },
+          "twoBottom": {
+            "name": "Cả hai ở dưới",
+            "tag": "0 trên · 2 dưới",
+            "hint": "M U M nâng chúng thành một mũi tên, sau đó kết thúc như bình thường."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL và UR",
+        "desc": "Màu vàng ở trên, màu trắng ở dưới, khối màu đỏ ở bên trái: hai cạnh còn lại cần đặt là vàng-đỏ và vàng-cam (được đóng khung trong sơ đồ). Đưa cả hai xuống dưới để chúng nằm đối diện nhau, xoay mặt trên để căn chỉnh, sau đó dùng M2 U hoặc M2 U'. Các tâm cuối cùng sẽ bị lật — bước tiếp theo sẽ sửa lỗi đó.",
+        "cases": {
+          "bothTop": {
+            "name": "Cả hai ở trên",
+            "hint": "Xoay mặt trên cho đến khi chúng đối diện nhau (trước và sau). M2 làm chìm cả hai, U' căn chỉnh chúng, M2 U' đặt chúng vào vị trí."
+          },
+          "oneBottom": {
+            "name": "Một trên, một dưới",
+            "hint": "U2 để căn chỉnh, M U2 M' đưa viên trên cùng xuống đối diện viên còn lại; U' để căn chỉnh, M2 U đưa cả hai lên và đặt vào vị trí."
+          },
+          "bothBottom": {
+            "name": "Cả hai ở dưới",
+            "hint": "Xoay mặt trên để căn chỉnh, M2 đưa chúng lên, U đặt chúng vào vị trí."
+          },
+          "bothBottomAlt": {
+            "name": "Cả hai ở dưới (cách khác)",
+            "hint": "Cặp này nằm theo chiều ngược lại: U2 để căn chỉnh mặt trên, sau đó là M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Bốn cạnh cuối (chỉ bằng cách nhìn)",
+        "cases": {
+          "needM2": {
+            "name": "Các tâm đã bị lật",
+            "hint": "Tâm trắng đang ở trên cùng: M2 lật nó trở lại."
+          },
+          "oneWhite": {
+            "name": "Một màu trắng ở trên cùng",
+            "hint": "Xoay mặt trên để cạnh trắng nằm ở phía trước, sau đó hoán đổi nó với cạnh dưới."
+          },
+          "twoWhite": {
+            "name": "Hai màu trắng ở trên cùng",
+            "hint": "Hoán đổi các cạnh trên và dưới hai lần, mỗi lần một bên."
+          },
+          "byLook": {
+            "name": "Giải bằng cách nhìn",
+            "hint": "Không có màu trắng ở trên, nhưng các cạnh trước và sau bị tráo đổi: M2, xoay mặt trên, M2 ngược lại."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

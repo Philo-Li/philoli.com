@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Tradutor de ebooks gratuito com IA que funciona inteiramente no seu navegador. Traduza arquivos EPUB e PDF para mais de 40 idiomas com saída bilíngue lado a lado. Use sua própria chave de API.",
     "rubiksCubeTitle": "Cubo Mágico 3D — Philo Li",
     "rubiksCubeDescription": "Cubo Mágico 3D interativo. Defina um embaralhamento e uma solução, jogue passo a passo, esconda cores ou faces para treinos de memorização.",
+    "cubeRouxTitle": "Método Roux — Blocos, CMLL e LSE",
+    "cubeRouxDescription": "Todos os algoritmos que você precisa para o método Roux, uma aba por etapa: inserções de construção de blocos, CMLL em duas etapas e os algoritmos M/U para orientação de arestas, UL/UR e as últimas quatro arestas. Cada caso possui um diagrama e abre no cubo 3D interativo.",
     "cubeAnalyzerTitle": "Analisador csTimer — Gráficos de progresso do Cubo Mágico",
     "cubeAnalyzerDescription": "Solte seu arquivo de exportação do csTimer e obtenha gráficos de progresso: tendências de Ao5/Ao12/Ao100, histórico de PB, marcos, volume diário e uma curva de aprendizado de lei de potência. Executado inteiramente no seu navegador."
   },
@@ -499,6 +501,179 @@
       "title": "Analisador csTimer",
       "desc": "Exporte suas sessões do csTimer e veja seus gráficos de progresso.",
       "cta": "Analisar meus tempos"
+    },
+    "rouxCard": {
+      "eyebrow": "Método",
+      "title": "Método Roux",
+      "desc": "Blocos, CMLL em duas etapas e LSE — todos os casos com um diagrama que você pode abrir neste cubo.",
+      "cta": "Explorar a biblioteca"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Método",
+    "title": "Método Roux (Amigável para iniciantes)",
+    "intro": "O método Roux tem quatro etapas: construir o bloco 1×2×3 esquerdo, construir o direito, resolver os cantos do topo (CMLL), e então finalizar as últimas seis arestas usando apenas movimentos M e U (LSE).",
+    "tabsLabel": "Etapas do Roux",
+    "tabs": {
+      "fb": "Primeiro bloco",
+      "sb": "Segundo bloco",
+      "cmll": "CMLL (duas etapas)",
+      "lse": "LSE"
+    },
+    "openInCube": "Detalhes",
+    "fb": {
+      "intro": "O primeiro bloco é um 1×2×3 à esquerda: a aresta DL, os dois cantos inferiores esquerdos e suas duas arestas. Não existem algoritmos fixos — você observa, emparelha um canto com sua aresta e insere. Estes são os movimentos manuais que surgem repetidamente. Segure o cubo com o bloco à esquerda e o espaço vazio na frente.",
+      "insert": {
+        "title": "Emparelhamento e inserção",
+        "desc": "Cada caso abre no cubo 3D com o par já na posição; observe onde as duas peças começam e como os movimentos as levam ao destino sem perturbar o restante do bloco.",
+        "cases": {
+          "pairLeft": {
+            "name": "Par no topo, lado esquerdo",
+            "hint": "Canto acima do espaço, aresta ao lado dele à esquerda. Mova o par para fora do caminho, abra o espaço, insira-o."
+          },
+          "mSlice": {
+            "name": "Emparelhe com a fatia M",
+            "hint": "Canto na parte de trás à esquerda do topo, aresta à direita. M traz a aresta para encontrá-lo, então F' insere o par."
+          },
+          "edgeOnTop": {
+            "name": "Canto na ranhura, aresta no topo",
+            "hint": "O canto já está em casa, a aresta fica à direita do topo. Retire o canto para encontrá-la, então F' insere ambos."
+          },
+          "misPaired": {
+            "name": "Par no topo, cores incompatíveis",
+            "hint": "A quina e a aresta estão uma ao lado da outra à direita do topo, mas não coincidem. F' abre o espaço, faça o par novamente com L' U' L U' L' U L, F' fecha-o."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "O segundo bloco espelha o primeiro à direita — mas agora o bloco esquerdo não deve se mover. Apenas movimentos R, r, M e U são seguros. O movimento largo r é o truque do Roux: ele move a camada direita e a fatia M juntas, para que você possa pegar arestas da parte inferior sem tocar na esquerda.",
+      "insert": {
+        "title": "Emparelhamento e inserção",
+        "desc": "Todos os quatro casos mantêm o bloco esquerdo intacto. A aresta DR é considerada resolvida; estes inserem o par canto-aresta frontal-direito.",
+        "cases": {
+          "pairRight": {
+            "name": "Par no topo, lado direito",
+            "hint": "Canto acima da fenda, aresta ao lado na direita. O espelho da inserção do primeiro bloco."
+          },
+          "mPair": {
+            "name": "Emparelhe com a fatia M",
+            "hint": "Peça de meio na parte traseira esquerda do topo, quina à direita. U e depois M trazem a peça de meio para a quina, R U' R' insere o par."
+          },
+          "cornerInSlot": {
+            "name": "Canto no encaixe, aresta no topo",
+            "hint": "O canto já está em casa, a aresta fica no topo. U R levanta o canto para fora, M traz a aresta até ele, U' R' coloca ambos dentro."
+          },
+          "twistedCorner": {
+            "name": "Canto no encaixe, torcido",
+            "hint": "O canto está no seu encaixe, mas virado. L F' L' retira-o através do bloco esquerdo e de volta, os movimentos M buscam a aresta, R U' R' insere."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Com ambos os blocos prontos, resolva os quatro cantos superiores de uma só vez. O CMLL completo tem 42 casos; o método de duas etapas divide em orientar e depois permutar, precisando de apenas nove algoritmos. Como a fatia M é corrigida depois, esses algoritmos podem perturbá-la livremente. Os adesivos amarelos mostram onde a cor do topo está; uma barra na parte externa significa que a cor do topo daquele canto está voltada para o lado.",
+      "orient": {
+        "title": "Passo 1 · Orientar os cantos",
+        "desc": "Conte quantos cantos superiores já mostram a cor do topo. 0 → H ou Pi. 1 → S ou AS. 2 → U, T ou L. Combine o padrão e gire a camada superior para que ela se alinhe com o diagrama."
+      },
+      "permute": {
+        "title": "Passo 2 · Permutar os cantos",
+        "desc": "Se um lado já coincidir — digamos que ambos os cantos em uma face sejam vermelhos — gire o topo para que esse par fique à esquerda, então use a troca adjacente. Se nenhum lado coincidir, use a troca diagonal.",
+        "cases": {
+          "adjacent": {
+            "name": "Troca adjacente",
+            "hint": "Coloque os dois cantos a serem trocados na direita."
+          },
+          "diagonal": {
+            "name": "Troca diagonal",
+            "hint": "Qualquer ângulo funciona."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Restam seis arestas, e apenas movimentos M e U são necessários. Três passos: oriente as arestas para que cada cor de topo/base esteja voltada para cima ou para baixo (EO), coloque as arestas UL e UR, depois finalize as quatro últimas. Os diagramas mostram as arestas da camada superior mais as duas arestas inferiores DF e DB; os cantos são deixados em branco porque já estão resolvidos.",
+      "eo": {
+        "title": "4a · Orientação das arestas",
+        "desc": "Uma aresta preenchida tem sua cor de topo/base voltada para cima ou para baixo — bom. Em branco significa ruim. Conte as arestas ruins no topo e na base; existem apenas alguns padrões e M' U M é o movimento que os altera.",
+        "cases": {
+          "arrow": {
+            "name": "Seta",
+            "tag": "3 acima · 1 abaixo",
+            "hint": "Gire o topo para que as três arestas ruins apontem para a aresta ruim da base, então M' U M corrige todas as quatro."
+          },
+          "twoTwo": {
+            "name": "Pares divididos",
+            "tag": "2 acima · 2 abaixo",
+            "hint": "Solução mais curta mostrada. O caminho manual: M' U2 M transforma em uma seta, depois finalize como acima."
+          },
+          "fourZero": {
+            "name": "Todos no topo",
+            "tag": "4 acima · 0 abaixo",
+            "hint": "Todas as quatro arestas superiores ruins. M U2 M troca um par para baixo formando uma seta, depois finalize."
+          },
+          "twoTop": {
+            "name": "Ambos no topo",
+            "tag": "2 acima · 0 abaixo",
+            "hint": "Não 0, não 4: M' U M cria quatro arestas ruins em formato de seta, U2 para mirar, M' U M para finalizar."
+          },
+          "oneOne": {
+            "name": "Um para cima, um para baixo",
+            "tag": "1 acima · 1 abaixo",
+            "hint": "A mesma ideia — o primeiro M U M cria a seta."
+          },
+          "twoBottom": {
+            "name": "Ambos na parte inferior",
+            "tag": "0 para cima · 2 para baixo",
+            "hint": "M U M os eleva em uma seta, então finalize como de costume."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL e UR",
+        "desc": "Amarelo no topo, branco na base, bloco vermelho à esquerda: as duas arestas que ainda faltam colocar são amarelo-vermelho e amarelo-laranja (emolduradas nos diagramas). Leve ambas para a base para que fiquem opostas uma à outra, gire o topo para alinhar, então M2 U ou M2 U'. Os centros acabam invertidos — o próximo passo corrige isso.",
+        "cases": {
+          "bothTop": {
+            "name": "Ambas no topo",
+            "hint": "Gire o topo até que fiquem opostos um ao outro (frente e trás). M2 afunda ambos, U' os alinha, M2 U' os coloca no lugar."
+          },
+          "oneBottom": {
+            "name": "Uma em cima, uma embaixo",
+            "hint": "U2 para alinhar, M U2 M' envia o de cima para baixo oposto ao outro; U' para alinhar, M2 U traz ambos para cima e os posiciona."
+          },
+          "bothBottom": {
+            "name": "Ambas na base",
+            "hint": "Gire o topo para alinhar, M2 as traz para cima, U as posiciona."
+          },
+          "bothBottomAlt": {
+            "name": "Ambas na base (outro modo)",
+            "hint": "O par fica na posição invertida: U2 para alinhar o topo, depois M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Últimas quatro arestas (apenas olhando)",
+        "cases": {
+          "needM2": {
+            "name": "Centros invertidos",
+            "hint": "O centro branco está no topo: M2 inverte-o de volta."
+          },
+          "oneWhite": {
+            "name": "Um branco no topo",
+            "hint": "Gire o topo para que a borda branca fique na frente, depois troque-a com a borda da base."
+          },
+          "twoWhite": {
+            "name": "Dois brancos no topo",
+            "hint": "Troque as bordas do topo e da base duas vezes, uma vez em cada lado."
+          },
+          "byLook": {
+            "name": "Resolver olhando",
+            "hint": "Sem branco no topo, mas as bordas frontal e traseira estão trocadas: M2, gire o topo, M2 de volta."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {

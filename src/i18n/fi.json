@@ -30,6 +30,8 @@
     "ebookTranslatorDescription": "Ilmainen AI-e-kirjakääntäjä, joka toimii kokonaan selaimessasi. Käännä EPUB- ja PDF-tiedostoja yli 40 kielelle kaksikielisellä rinnakkaisnäytöllä. Käytä omaa API-avaintasi.",
     "rubiksCubeTitle": "3D Rubikin kuutio — Philo Li",
     "rubiksCubeDescription": "Interaktiivinen 3D Rubikin kuutio. Aseta sekoitus ja ratkaisu, pelaa vaihe vaiheelta, piilota värejä tai sivuja muistiharjoittelua varten.",
+    "cubeRouxTitle": "Roux-menetelmä — Blockit, CMLL ja LSE",
+    "cubeRouxDescription": "Jokainen Roux-menetelmään tarvitsemasi algoritmi, yksi välilehti per vaihe: block-rakennuksen lisäykset, two-look CMLL sekä M/U-algoritmit reunojen suuntaamiseen, UL/UR ja viimeiset neljä reunaa. Jokaisella tapauksella on kaavio, ja se aukeaa interaktiiviseen 3D-kuutioon.",
     "cubeAnalyzerTitle": "csTimer Analyzer — Edistymiskaaviot Rubikin kuution ratkaisuille",
     "cubeAnalyzerDescription": "Pudota csTimer-vientitiedostosi ja näe edistymiskaaviot: Ao5/Ao12/Ao100-trendit, PB-historia, virstanpylväät, päivittäinen määrä ja potenssilakiin perustuva oppimiskäyrä. Toimii kokonaan selaimessasi."
   },
@@ -499,6 +501,179 @@
       "title": "csTimer Analyzer",
       "desc": "Vie csTimer-istuntosi ja näe edistymiskaaviosi.",
       "cta": "Analysoi ratkaisuni"
+    },
+    "rouxCard": {
+      "eyebrow": "Menetelmä",
+      "title": "Roux-menetelmä",
+      "desc": "Blockit, two-look CMLL ja LSE — jokainen tapaus kaaviona, jonka voit avata tässä kuutiossa.",
+      "cta": "Selaa kirjastoa"
+    }
+  },
+  "cubeRoux": {
+    "eyebrow": "Menetelmä",
+    "title": "Roux-menetelmä (aloittelijaystävällinen)",
+    "intro": "Roux-menetelmässä on neljä vaihetta: rakenna vasen 1×2×3-blokki, rakenna oikea blokki, ratkaise yläkulmat (CMLL) ja viimeistele loput kuusi särmää käyttäen vain M- ja U-siirtoja (LSE).",
+    "tabsLabel": "Roux-vaiheet",
+    "tabs": {
+      "fb": "Ensimmäinen block",
+      "sb": "Toinen block",
+      "cmll": "CMLL (kaksivaiheinen)",
+      "lse": "LSE"
+    },
+    "openInCube": "Tiedot",
+    "fb": {
+      "intro": "Ensimmäinen block on 1×2×3 vasemmalla: DL-reuna, kaksi alavasenta kulmaa ja niiden kaksi reunaa. Kiinteitä algoritmeja ei ole — katsot, yhdistät kulman sen reunaan ja asetat paikalleen. Nämä ovat kädenliikkeitä, jotka toistuvat kerta toisensa jälkeen. Pidä kuutiota niin, että block on vasemmalla ja tyhjä paikka edessä.",
+      "insert": {
+        "title": "Yhdistäminen ja asettaminen",
+        "desc": "Jokainen tapaus aukeaa 3D-kuutiossa pari valmiiksi asetettuna; seuraa, mistä kaksi palaa aloittavat ja miten käännökset tuovat ne perille häiritsemättä muuta blockia.",
+        "cases": {
+          "pairLeft": {
+            "name": "Pari päällä, vasen puoli",
+            "hint": "Kulma paikan yläpuolella, reuna sen vieressä vasemmalla. Siirrä pari pois tieltä, avaa paikka, pudota se sisään."
+          },
+          "mSlice": {
+            "name": "Yhdistä M-siivulla",
+            "hint": "Kulmapala takavasemmalla ylhäällä, särmäpala oikealla. M tuo särmäpalan sen luo, ja F' pudottaa parin paikalleen."
+          },
+          "edgeOnTop": {
+            "name": "Kulma kolossa, särmä päällä",
+            "hint": "Kulma on jo paikallaan, särmä on yläosan oikealla puolella. Ota kulma pois kohdataksesi sen, sitten F' asettaa molemmat."
+          },
+          "misPaired": {
+            "name": "Pari päällä, värit eivät täsmää",
+            "hint": "Kulma ja särmä ovat vierekkäin yläosan oikealla puolella, mutta eivät täsmää. F' avaa paikan, yhdistä uudelleen kaavalla L' U' L U' L' U L, F' sulkee sen."
+          }
+        }
+      }
+    },
+    "sb": {
+      "intro": "Toinen block peilaa ensimmäistä oikealla — mutta nyt vasen block ei saa liikkua. Vain R-, r-, M- ja U-käännöt ovat turvallisia. Leveä r-käännös on Roux-kikka: se liikuttaa oikeaa kerrosta ja M-siivua yhdessä, joten voit napata reunoja alhaalta koskematta vasempaan.",
+      "insert": {
+        "title": "Yhdistäminen ja asettaminen",
+        "desc": "Kaikki neljä tapausta pitävät vasemman blockin koskemattomana. DR-reunan oletetaan olevan ratkaistu; nämä asettavat oikean etukulman ja -reunan parin.",
+        "cases": {
+          "pairRight": {
+            "name": "Pari päällä, oikealla puolella",
+            "hint": "Kulma aukon yläpuolella, reuna sen vieressä oikealla. Ensimmäisen palikan vastakappale."
+          },
+          "mPair": {
+            "name": "Muodosta pari M-viipaleella",
+            "hint": "Särmä ylätason takavasemmalla, kulma oikealla. U ja sitten M tuo särmän kulman luo, R U' R' asettaa parin paikalleen."
+          },
+          "cornerInSlot": {
+            "name": "Kulma kolossa, särmä päällä",
+            "hint": "Kulma on jo kotona, särmä on päällä. U R nostaa kulman ulos, M tuo särmän sen luo, U' R' asettaa molemmat paikoilleen."
+          },
+          "twistedCorner": {
+            "name": "Kulma kolossa, kääntynyt",
+            "hint": "Kulma on kolossaan, mutta kääntyneenä. L F' L' kääntää sen ulos vasemman blokin läpi ja takaisin, M-siirrot hakevat särmän, R U' R' asettaa sen paikalleen."
+          }
+        }
+      }
+    },
+    "cmll": {
+      "shape": "{key}",
+      "intro": "Kun molemmat blokit ovat valmiina, ratkaise neljä yläkulmaa yhdellä kertaa. Täydellisessä CMLL:ssä on 42 tapausta; kaksivaiheinen menetelmä jakaa sen suuntaamiseen ja paikoilleen siirtämiseen, ja vaatii vain yhdeksän algoritmia. Koska M-siivu korjataan vasta lopuksi, nämä algoritmit saavat sekoittaa sen. Keltaiset tarrat näyttävät, missä yläväri on; palkki ulkopuolella tarkoittaa, että kyseisen kulman yläväri osoittaa sivulle.",
+      "orient": {
+        "title": "Vaihe 1 · Suuntaa kulmat",
+        "desc": "Laske, kuinka monessa yläkulmassa yläväri näkyy jo. 0 → H tai Pi. 1 → S tai AS. 2 → U, T tai L. Etsi vastaava kuvio ja käännä yläkerrosta niin, että se täsmää kaavion kanssa."
+      },
+      "permute": {
+        "title": "Vaihe 2 · Siirrä kulmat paikoilleen",
+        "desc": "Jos yksi sivu täsmää jo — eli molemmat kulmat yhdellä tahkolla ovat punaisia — käännä yläosaa niin, että pari on vasemmalla, ja käytä sitten vierekkäistä vaihtoa. Jos mikään sivu ei täsmää, käytä diagonaalista vaihtoa.",
+        "cases": {
+          "adjacent": {
+            "name": "Vierekkäinen vaihto",
+            "hint": "Aseta kaksi vaihdettavaa kulmaa oikealle."
+          },
+          "diagonal": {
+            "name": "Diagonaalinen vaihto",
+            "hint": "Mikä tahansa kulma käy."
+          }
+        }
+      }
+    },
+    "lse": {
+      "intro": "Kuusi reunaa on jäljellä, ja vain M- ja U-käännöt ovat tarpeen. Kolme vaihetta: suuntaa reunat niin, että jokainen ylä-/alaväri osoittaa ylös tai alas (EO), aseta UL- ja UR-reunat, ja viimeistele loput neljä. Kaaviot näyttävät yläkerroksen reunat sekä kaksi alareunaa DF ja DB; kulmat on jätetty tyhjiksi, koska ne on jo ratkaistu.",
+      "eo": {
+        "title": "4a · Reunojen suuntaus",
+        "desc": "Täytetty reuna tarkoittaa, että sen ylä-/alaväri osoittaa ylös tai alas — hyvä. Tyhjä tarkoittaa huonoa. Laske huonot reunat päältä ja alta; kuvioita on vain kourallinen ja M' U M on siirto, joka muuttaa niitä.",
+        "cases": {
+          "arrow": {
+            "name": "Nuoli",
+            "tag": "3 ylös · 1 alas",
+            "hint": "Käännä yläosaa niin, että kolme huonoa reunaa osoittavat huonoa alareunaa kohti, sitten M' U M korjaa kaikki neljä."
+          },
+          "twoTwo": {
+            "name": "Jaa parit",
+            "tag": "2 ylös · 2 alas",
+            "hint": "Lyhin ratkaisu näytetty. Käsin tehtävä reitti: M' U2 M muuttaa sen nuoleksi, sitten viimeistele kuten yllä."
+          },
+          "fourZero": {
+            "name": "Kaikki päällä",
+            "tag": "4 ylös · 0 alas",
+            "hint": "Kaikki neljä yläreunaa huonoja. M U2 M vaihtaa parin alas nuolen muotoon, sitten viimeistele."
+          },
+          "twoTop": {
+            "name": "Molemmat ylhäällä",
+            "tag": "2 ylös · 0 alas",
+            "hint": "Ei 0, ei 4: M' U M tekee siitä neljä huonoa reunaa nuolen muodossa, U2 tähtäämiseen, M' U M viimeistelyyn."
+          },
+          "oneOne": {
+            "name": "Yksi ylös, yksi alas",
+            "tag": "1 ylös · 1 alas",
+            "hint": "Sama idea — ensimmäinen M U M luo nuolen."
+          },
+          "twoBottom": {
+            "name": "Molemmat alhaalla",
+            "tag": "0 ylös · 2 alas",
+            "hint": "M U M nostaa ne nuoleksi, viimeistele sitten tavalliseen tapaan."
+          }
+        }
+      },
+      "ulur": {
+        "title": "4b · UL ja UR",
+        "desc": "Keltainen päällä, valkoinen alla, punainen palikka vasemmalla: kaksi sijoitettavaa särmää ovat kelta-punainen ja kelta-oranssi (kaavioissa kehystettyinä). Upota molemmat alas niin, että ne ovat vastakkain, käännä yläosaa kohdistaaksesi, sitten M2 U tai M2 U'. Keskustat päätyvät kääntyneiksi — seuraava vaihe korjaa sen.",
+        "cases": {
+          "bothTop": {
+            "name": "Molemmat päällä",
+            "hint": "Käännä yläosaa, kunnes ne ovat vastakkain (edessä ja takana). M2 upottaa molemmat, U' linjaa ne, M2 U' asettaa ne paikoilleen."
+          },
+          "oneBottom": {
+            "name": "Yksi ylhäällä, yksi alhaalla",
+            "hint": "U2 kohdistamiseen, M U2 M' lähettää ylimmän alas vastakkaiselle puolelle; U' kohdistamiseen, M2 U tuo molemmat ylös ja asettaa ne paikoilleen."
+          },
+          "bothBottom": {
+            "name": "Molemmat alhaalla",
+            "hint": "Käännä yläosaa kohdistaaksesi, M2 nostaa ne ylös, U asettaa ne paikoilleen."
+          },
+          "bothBottomAlt": {
+            "name": "Molemmat alhaalla (toinen tapa)",
+            "hint": "Pari asetetaan toisin päin: U2 linjaamaan yläosa, sitten M2 U'."
+          }
+        }
+      },
+      "l4e": {
+        "title": "4c · Neljä viimeistä särmää (pelkästään katsomalla)",
+        "cases": {
+          "needM2": {
+            "name": "Keskustat käännetty",
+            "hint": "Valkoinen keskusta on päällä: M2 kääntää sen takaisin."
+          },
+          "oneWhite": {
+            "name": "Yksi valkoinen päällä",
+            "hint": "Käännä yläosaa niin, että valkoinen särmä on edessä, ja vaihda se sitten alareunan kanssa."
+          },
+          "twoWhite": {
+            "name": "Kaksi valkoista päällä",
+            "hint": "Vaihda ylä- ja alareunat kahdesti, kerran kummallakin puolella."
+          },
+          "byLook": {
+            "name": "Ratkaise katsomalla",
+            "hint": "Ei valkoista päällä, mutta etu- ja takareunat ovat vaihtaneet paikkaa: M2, käännä yläosaa, M2 takaisin."
+          }
+        }
+      }
     }
   },
   "cubeAnalyzer": {
