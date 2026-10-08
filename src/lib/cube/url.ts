@@ -64,13 +64,28 @@ function unpackLearning(mask: number): LearningMode {
     hiddenColors,
     hiddenFaces,
     hiddenLayers,
-    // Per-cubie sets are not encoded in share URLs (would balloon the
-    // bitmask with up to 27 cubies × 2 states). Custom-hide is a session
-    // preference, persisted via localStorage instead.
+    // hiddenCubies / highlightedCubies are filled from the `c=` / `h=` params by
+    // decodeShareState; per-sticker hides are a session preference (localStorage).
     hiddenCubies: new Set<number>(),
     highlightedCubies: new Set<number>(),
     hiddenStickers: new Set<number>(),
   };
+}
+
+// Hidden (`c=`) and highlighted (`h=`) cubies travel as 27-bit masks over the
+// cubie's original index (see cubieIdx in scene.ts), so presets like "hide
+// everything but the corners, glow the bad edges" survive a share link.
+// Per-sticker hides stay local.
+function packCubies(cubies: Set<number>): number {
+  let mask = 0;
+  for (const c of cubies) if (c >= 0 && c < 27) mask |= 1 << c;
+  return mask;
+}
+
+function unpackCubies(mask: number): Set<number> {
+  const out = new Set<number>();
+  for (let i = 0; i < 27; i++) if (mask & (1 << i)) out.add(i);
+  return out;
 }
 
 export function encodeShareState(state: ShareState): string {
@@ -79,6 +94,10 @@ export function encodeShareState(state: ShareState): string {
   if (state.solution) parts.push(`p=${encodeURIComponent(state.solution)}`);
   const lmask = packLearning(state.learning);
   if (lmask !== 0) parts.push(`l=${encodeBase32(lmask)}`);
+  const cmask = packCubies(state.learning.hiddenCubies);
+  if (cmask !== 0) parts.push(`c=${encodeBase32(cmask)}`);
+  const hmask = packCubies(state.learning.highlightedCubies);
+  if (hmask !== 0) parts.push(`h=${encodeBase32(hmask)}`);
   if (state.step !== 0) parts.push(`t=${state.step}`);
   return parts.length ? '#' + parts.join('&') : '';
 }
@@ -90,11 +109,16 @@ export function decodeShareState(hash: string): ShareState | null {
   const scramble = params.get('s') ?? '';
   const solution = params.get('p') ?? '';
   const lmaskRaw = params.has('l') ? decodeBase32(params.get('l')!) : 0;
+  const cmaskRaw = params.has('c') ? decodeBase32(params.get('c')!) : 0;
+  const hmaskRaw = params.has('h') ? decodeBase32(params.get('h')!) : 0;
   const stepRaw = params.has('t') ? parseInt(params.get('t')!, 10) : 0;
+  const learning = unpackLearning(Number.isFinite(lmaskRaw) ? lmaskRaw : 0);
+  if (Number.isFinite(cmaskRaw) && cmaskRaw !== 0) learning.hiddenCubies = unpackCubies(cmaskRaw);
+  if (Number.isFinite(hmaskRaw) && hmaskRaw !== 0) learning.highlightedCubies = unpackCubies(hmaskRaw);
   return {
     scramble,
     solution,
-    learning: unpackLearning(Number.isFinite(lmaskRaw) ? lmaskRaw : 0),
+    learning,
     step: Number.isFinite(stepRaw) ? stepRaw : 0,
   };
 }

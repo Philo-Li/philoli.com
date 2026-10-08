@@ -49,6 +49,21 @@ describe('share state codec', () => {
     expect(decoded!.step).toBe(2);
   });
 
+  it('round-trips hidden cubies and leaves them empty when absent', () => {
+    const learning = emptyLearning();
+    learning.enabled = true;
+    learning.hiddenCubies = new Set([0, 7, 25, 26]);
+    learning.highlightedCubies = new Set([9, 17]);
+    const hash = encodeShareState({ scramble: '', solution: '', learning, step: 0 });
+    expect(hash).toContain('c=');
+    expect(hash).toContain('h=');
+    const decoded = decodeShareState(hash)!;
+    expect([...decoded.learning.hiddenCubies].sort((a, b) => a - b)).toEqual([0, 7, 25, 26]);
+    expect([...decoded.learning.highlightedCubies].sort((a, b) => a - b)).toEqual([9, 17]);
+    expect(decodeShareState('#t=1')!.learning.hiddenCubies.size).toBe(0);
+    expect(decodeShareState('#t=1')!.learning.highlightedCubies.size).toBe(0);
+  });
+
   it('omits empty fields', () => {
     const empty: ShareState = {
       scramble: '',

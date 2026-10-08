@@ -103,6 +103,8 @@ export class CubeScene {
   // External callbacks
   private onLayerMove: ((move: Move) => void) | undefined;
   private onCubieClick: ((originalCubieIndex: number) => void) | undefined;
+  /** Facelet indices sitting on each canonical slot (filled while building the cube). */
+  private slotStickers: number[][] = Array.from({ length: 27 }, () => []);
 
   // Dispose hooks
   private resizeObserver: ResizeObserver;
@@ -346,6 +348,7 @@ export class CubeScene {
           sticker.receiveShadow = true;
           cubie.add(sticker);
           this.stickers[cfg.face * 9 + row * 3 + col] = sticker;
+          this.slotStickers[cubieIdx(x, y, z)].push(cfg.face * 9 + row * 3 + col);
         }
       }
     }
@@ -376,9 +379,9 @@ export class CubeScene {
       const cubie = this.cubies[idx];
       const body = this.cubieBodies[idx];
       if (!cubie || !body) continue;
-      // `idx` IS the original cubie index by construction (buildCube indexes
-      // by the cubie's solved-state position).
-      const isHi = useHighlight && highlightedCubies!.has(idx);
+      // `idx` is the slot; the piece sitting there is identified from its colors,
+      // so a highlighted piece keeps glowing wherever the scramble has moved it.
+      const isHi = useHighlight && highlightedCubies!.has(this.pieceIdentityAt(idx, state));
       body.material = isHi ? this.highlightBodyMaterial : this.cubieBodyMaterial;
     }
 
@@ -393,12 +396,12 @@ export class CubeScene {
         else if (layers!.y.size > 0 && layers!.y.has(this.layerCoord(cubie, 'y'))) hidden = true;
         else if (layers!.z.size > 0 && layers!.z.has(this.layerCoord(cubie, 'z'))) hidden = true;
       }
-      // Per-cubie hide is keyed by the parent cubie's *original* index — its
-      // identity at build time. Stickers are permanently parented to their
-      // original cubie group, so reading userData here is stable.
+      // Per-cubie hide is keyed by piece identity (the slot the piece belongs to
+      // when solved), read from the colors currently painted on the slot, so hidden
+      // pieces stay hidden as the scramble and the solution move them around.
       if (!hidden && useHiddenCubies && cubie) {
-        const originalIdx = this.originalCubieIndex(cubie);
-        if (originalIdx >= 0 && hiddenCubies!.has(originalIdx)) hidden = true;
+        const slot = this.originalCubieIndex(cubie);
+        if (slot >= 0 && hiddenCubies!.has(this.pieceIdentityAt(slot, state))) hidden = true;
       }
       // Per-sticker hide: facelet index `i` matches the original sticker
       // identity because reset() has already snapped cubies to canonical
@@ -407,6 +410,27 @@ export class CubeScene {
       this.stickers[i].material = hidden ? this.hiddenMaterial : this.stickerMaterials[color];
     }
     this.markDirty();
+  }
+
+  /** Identity of the piece occupying `slot` in `state`: the slot it belongs to
+   * when solved, found by summing the face directions of its sticker colors
+   * (U=+y, R=+x, F=+z, D=−y, L=−x, B=−z). The core (no stickers) is its own slot. */
+  private pieceIdentityAt(slot: number, state: Facelets): number {
+    const stickers = this.slotStickers[slot];
+    if (!stickers || stickers.length === 0) return slot;
+    let x = 0, y = 0, z = 0;
+    for (const i of stickers) {
+      switch (state[i] as Color) {
+        case 0: y += 1; break;
+        case 1: x += 1; break;
+        case 2: z += 1; break;
+        case 3: y -= 1; break;
+        case 4: x -= 1; break;
+        case 5: z -= 1; break;
+      }
+    }
+    const clamp = (v: number) => Math.max(-1, Math.min(1, v));
+    return cubieIdx(clamp(x), clamp(y), clamp(z));
   }
 
   /** Convert a cubie group to its original (solved-state) index using the
@@ -746,7 +770,11 @@ export class CubeScene {
     ) {
       // No drag past the 8px threshold → treat as a tap on the picked cubie,
       // identified by its original (solved-state) index.
-      this.onCubieClick(this.hitOriginalCubieIdx);
+      // Report the identity of the piece that was tapped (not the slot), matching
+      // how hiddenCubies / highlightedCubies are interpreted.
+      this.onCubieClick(
+        this.currentState ? this.pieceIdentityAt(this.hitOriginalCubieIdx, this.currentState) : this.hitOriginalCubieIdx,
+      );
     }
     this.dragMode = 'none';
     this.hitFaceNormal = null;
