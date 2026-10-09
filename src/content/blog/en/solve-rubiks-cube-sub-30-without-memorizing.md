@@ -20,15 +20,15 @@ toc: true
 
 In my previous post, [How to Solve a Rubik's Cube Without Memorizing Algorithms](/blog/solve-rubiks-cube-without-formulas/), you learned to solve the cube with commutator logic, without memorizing a single algorithm. That article got a lot of warm feedback.
 
-If you followed along, you can probably solve it in two or three minutes now — a bit fumbling, but you get there. Then a new question comes up: how do I get faster?
+If you followed along step by step, you should already be able to stumble your way through a full solve. With a few hundred practice solves, getting under 1 minute is quite easy. But what if you want to get even faster?
 
-Search for "speedcubing," and every tutorial will tell you the same thing: to get under 30 seconds, you need to memorize the CFOP algorithms. That's 41 for F2L, 57 for OLL, and 21 for PLL — a grand total of 119 algorithms. Even if you do F2L intuitively, you can't escape the 78 algorithms for the top layer. No memorization, no speed.
+Search for "speedcubing," and every tutorial will tell you the same thing: to get under 30 seconds, you need to memorize over a hundred CFOP algorithms first.
 
 This article aims to show you that you can achieve sub-30 second solves without memorizing any algorithms at all.
 
 <!--more-->
 
-From my very first solve on May 7, 2026, to achieving an Ao100 under 30 seconds on August 4, it took me 89 days. Throughout this period, I didn't memorize a single CFOP algorithm; I simply enjoyed cubing in my spare time. Here's the timed data from my 4441 recorded solves.
+From my very first complete solve on May 7, 2026, to achieving an Ao100 under 30 seconds on August 4, it took me 89 days. Throughout this period, I didn't memorize a single CFOP algorithm; I simply enjoyed cubing in my spare time. Here's the timed data from my 4441 recorded solves.
 
 ![Performance curve for 4441 solves](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ This is why Roux can be done without memorizing algorithms: it compresses the me
 
 ## From 165 Seconds to 28 Seconds: Four Stages
 
-Here's the path I actually took. For each stage, I've marked the start and end points with data, then explained where I got stuck and what I practiced. Your specific sticking points might differ from mine, but the general progression will likely be similar.
-
 ![Time span of the four stages](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Figure: Time span of the four stages. Stage one: 3 weeks, Stage two: 11 days, Stage three: 2 months, Stage four: ongoing.*
 
 ### Stage One: 165 Seconds → 60 Seconds (Weeks 1–3)
 
-**Data**: May 7th to May 27th. My average for the first week was 165 seconds, dropping to 68 seconds by the third week.
+**Data**: May 7th to May 27th. My average for the first week was 165 seconds, dropping to 68 seconds by the third week. This is the transition from complete novice to beginner, gradually understanding through repetition what each move really does and which pieces are moving.
 
 **Sticking Point**: The left block was very unfamiliar; I'd spend a long time searching for each color pair. And after finding a pair, beginners always tend to pause and keep observing.
 
@@ -111,7 +109,7 @@ Don't learn any new algorithms at this stage. Your current bottleneck isn't algo
 
 ### Stage Two: 60 Seconds → 40 Seconds (Weeks 4–5)
 
-**Data**: May 27th to June 7th, 11 days. This was the fastest drop in my entire journey and also the period where I practiced the most, with 723 solves in the first week of June.
+**Data**: May 27th to June 7th, 11 days. This was the fastest drop in my entire journey. This stage offers the easiest positive feedback—every bit of learning and move optimization immediately reflects in your times, and the thrill of breaking personal records every single day is hard to match.
 
 **Sticking Point**: Choppy turning, and the cube kept catching.
 
@@ -130,7 +128,7 @@ At this stage, you need to optimize the movements for each step, building on you
 
 *Figure Left: View while building the right block. The left block is complete, and only R, r, M, and U moves are used to insert the corner-edge pairs on the right side, ensuring the left block is never disturbed. Figure Right: M' U M, one of the most frequently used move sequences in the latter half of Roux. Middle layer up, top layer turn, middle layer back—three moves to swap a pair of edges between the top and middle layers.*
 
-You can refer to my curated [Roux Method Algorithm Library](/projects/rubiks-cube/roux#cmll). The CMLL page features a two-step approach: 7 orientation algorithms + 2 permutation algorithms, totaling 9. This is a highly cost-effective way to boost speed and is easy to learn; mastering each set can shave off roughly 1-2 seconds. With a little practice, you'll quickly become proficient. Some of these were already introduced in the previous article, and you don't need to memorize all of them to get under 30 seconds.
+You can refer to my beginner-friendly, streamlined [Roux Algorithm Library](/projects/rubiks-cube/roux#cmll). The CMLL page features a two-step approach: 7 orientation algorithms + 2 permutation algorithms, totaling 9. This is a highly cost-effective way to boost speed and is easy to learn; mastering each set can shave off roughly 1-2 seconds. With a little practice, you'll quickly become proficient. Some of these were already introduced in the previous article, and you don't need to memorize all of them to get under 30 seconds.
 
 ![Two-step CMLL, first step: seven corner orientation cases](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ One more thing that will yield more immediate results than any practice: invest 
 
 ### Stage Three: 40 Seconds → 30 Seconds (Weeks 5–13, Two Months)
 
-**Data**: June 7th to August 4th. My Ao100 crawled from 39.8 seconds to 29.9 seconds, taking 58 days. During this stage you might occasionally dip below 30 seconds, but only on very lucky solves. And as your average solve time decreases, the difficulty of shaving off even one second increases exponentially.
+**Data**: June 7th to August 4th. My Ao100 crawled from 39.8 seconds to 29.9 seconds, taking 58 days. During this stage you might occasionally dip below 30 seconds, but only on very lucky solves. And as your average solve time decreases, the difficulty of shaving off even one second increases exponentially. (Ao100 represents the average time of the most recent 100 solves, trimming the fastest and slowest 5%).
 
 ![Daily average times](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Figure: Daily average times. After mid-June, the curve flattened significantly, lingering between 30–40 seconds for two months.*
-
-This is the plateau phase. Everyone encounters it, and I spent two months here.
 
 **Sticking Point**: Solving the six top-layer edges was very slow; I didn't understand the logic and relied on repeated trial and error, wasting a lot of time. Both the left and right blocks were still not fluent enough.
 
@@ -164,12 +160,13 @@ This is the plateau phase. Everyone encounters it, and I spent two months here.
 
 - **EO recognition.** As covered in the previous post, there are only a few cases for misoriented edges: 0; neither 0 nor 4; 4 with 2 on top and 2 on the bottom; 4 all on top; and 4 with 3 on top and 1 on the bottom. The goal at this stage is: the instant you finish building the blocks, you should be able to identify the case at a glance, without counting. The practice method is to scramble, solve only up to CMLL, then pause, state the number of bad edges, and then continue.
 - Many people don't understand what the moves here are for. The whole point of the EO stage is to build the "arrow": 3 misoriented edges on top and 1 on the bottom. Fully oriented edges are exactly one M' U M away from the arrow, so, thinking backwards, the arrow is the last stop before the edges are done. Whatever the count of misoriented edges, the goal is always to build an arrow. With 4 on top, swap one top/bottom pair to send one misoriented edge down and you have the arrow. With 2 on top and 2 on the bottom, swap one top/bottom pair to bring one up, and you have the arrow. With 1 on top and 1 on the bottom, or 2 on top, do M' U M first to turn it into one of the cases above, then build the arrow. With enough looking and thinking you can work out the best route for the 1/1 case yourself.
+
+  ![Arrow shape](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+  *Figure: Arrow shape. Three misoriented edges on the top layer (highlighted in cyan) form an arrow pointing to the misoriented edge on the bottom layer. From here a single M' U M fixes all four at once. [Open this state in the 3D cube](/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) to see it step by step.*
+
 - **Extensive look-ahead practice.** This is the most crucial thing for going from 40 to 30 seconds, and also the most counter-intuitive: turn a bit slower, look further ahead. When building the left block, don't watch the piece you're currently inserting; look for the next piece. It will feel very awkward at first, and your times will initially worsen, but stick with it for a week, and it will suddenly click.
 - **CMLL without hesitation.** If you have to think about a move every time before you dare to execute it, then it's not truly yours yet. Practice each move individually 50 times until your hand moves instinctively upon seeing the pattern.
-
-![Arrow shape](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Figure: Arrow shape. Three misoriented edges on the top layer (highlighted in cyan) form an arrow pointing to the misoriented edge on the bottom layer. From here a single M' U M fixes all four at once. [Open this state in the 3D cube](/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) to see it step by step.*
 
 ![Six EO cases](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,15 +196,9 @@ You'll then discover that once you push past the 30–35 second bottleneck, your
 
 Congratulations if you reach this stage—to beginners, you're already a seriously impressive cuber!
 
-## The Cost of Not Memorizing Algorithms
+## Taking the Next Step
 
-At this point, it's time to be honest. Not memorizing algorithms isn't a free pass.
-
-The CMLL stage is slower. Covering 42 cases with just 9 algorithms means some cases take two algorithms instead of one. Someone who knows full CMLL will be two to three seconds faster than me at this step.
-
-The M-layer technique has a higher barrier to entry. The latter half of Roux relies entirely on the M-layer, which is harder to turn than R or U, prone to snags, and places higher demands on the cube itself.
-
-Don't worry about the upper limit. Top cubers use Roux to reach world-class ranks; the method itself has no inherent upper ceiling. However, to get under 15 seconds, you'll most likely need to learn all 42 CMLL algorithms. But that's a goal for a different stage. To get under 30 seconds, it's not necessary.
+First, don't worry about the upper limit of the Roux method. Top cubers use Roux to reach world-class ranks; the method itself has no upper ceiling.
 
 Furthermore, almost every world-class one-handed cuber uses the Roux method because it's genuinely well-suited for single-handed operation.
 
@@ -217,11 +208,17 @@ Furthermore, almost every world-class one-handed cuber uses the Roux method beca
 - Average: 5.98 seconds, also by him, 2019, an Asian record at the time, and only the third official sub-6 average in history ([WCA Profile](https://www.worldcubeassociation.org/persons/2017VILL41))
 - He is also the [one-handed world record holder](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): average 8.09, single 6.05 (2024). The one-handed community widely considers Roux to be the optimal solving method.
 
-I find this trade-off incredibly worthwhile. You might spend an extra two or three seconds on CMLL, but in return, you gain: knowing what you're doing at every step, not forgetting how to solve even after three months away from the cube, and being able to figure out a solution for any unfamiliar cube you encounter.
+However, to get under 15 seconds, you'll need to transition from the current two-step CMLL to solving it in one step, which requires memorizing more complex algorithms.
+
+Still, I prefer exploring freely: thoroughly understanding algorithms through exploration—or even coming up with algorithms that feel ergonomic to you—is far more fun than rote memorization.
+
+The Rubik's Cube was originally a puzzle, not a memory game. Only by understanding the principles can you truly know what you're doing at every step, remember how to solve even after three months away from the cube, and figure out a solution for any unfamiliar cube you encounter.
 
 ## Summary
 
 ![Solve completed](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Figure: Solved.*
 
 Getting from being able to solve the cube to under 30 seconds isn't about memorizing algorithms; it's about training your hands, eyes, and brain to work in coordinated harmony.
 
@@ -231,7 +228,7 @@ Algorithms aren't the source of speed. Observation is.
 
 Learn to build positive feedback loops through progress in each stage. Even practice focused on fluency doesn't have to be monotonous, especially when you experience the thrill of breaking your record yet again. Particularly in the beginner and intermediate stages, you'll feel the joy of setting new personal bests almost daily.
 
-All algorithms and cases mentioned in this article are compiled in my [Roux Method Algorithm Library](/projects/rubiks-cube/roux). Refer back to it whenever you get stuck.
+All algorithms and cases mentioned in this article are compiled in my [Roux Method Algorithm Library](/projects/rubiks-cube/roux). You can refer back to it whenever you get stuck.
 
 The world of cubing offers endless enjoyment. Happy cubing!
 
@@ -266,8 +263,8 @@ The world of cubing offers endless enjoyment. Happy cubing!
 
 - **csTimer**: [cstimer.net](https://cstimer.net/). Enable Ao5 / Ao12 / Ao100 statistics; your Ao100 is your true skill level, while single best times are often luck.
 - **3D Rubik's Cube**: [philoli.com/zh/projects/rubiks-cube](/projects/rubiks-cube/). All algorithms in this article can be entered here to view animations.
-- **Roux Method Beginner-Friendly Algorithm Library**: [philoli.com/zh/projects/rubiks-cube/roux](/projects/rubiks-cube/roux). This includes common insertion techniques for the left and right blocks, the 9 two-step CMLL algorithms, and all LSE cases (EO, UL/UR, last four edges). Each image can be opened in the 3D cube, automatically hiding irrelevant pieces and highlighting the edges to be moved.
-- **csTimer Training Analyzer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/projects/rubiks-cube/analyzer). Drag and drop your exported csTimer file here to visualize your performance trends, Ao5/Ao12/Ao100 curves, PB progression, milestone table (when you first hit sub-60, sub-40, sub-30), and Power Law practice curve. All graphs in this article were generated here. Your data is processed only in your browser and is not uploaded. If you don't have an exported file, you can load my 4441 solve data to see it in action.
+- **Roux Method Beginner-Friendly Algorithm Library**: [philoli.com/zh/projects/rubiks-cube/roux](/projects/rubiks-cube/roux).
+- **csTimer Training Analyzer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/projects/rubiks-cube/analyzer). Drag and drop your exported csTimer file here to visualize your performance trends, Ao5/Ao12/Ao100 curves, PB progression, milestone table, and Power Law practice curve.
 
 *This article contains Amazon affiliate links: if you make a purchase through these links, I may earn a small commission at no extra cost to you.*
 

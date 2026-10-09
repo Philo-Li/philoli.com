@@ -20,15 +20,15 @@ toc: true
 
 Trong bài viết trước [《Làm thế nào để giải Rubik mà không cần học công thức》](/vi/blog/solve-rubiks-cube-without-formulas/), bạn đã học cách giải Rubik bằng logic hoán vị mà không cần ghi nhớ bất kỳ công thức nào. Bài viết đó đã nhận được rất nhiều phản hồi tích cực từ độc giả.
 
-Nếu bạn đã thực hành theo, bây giờ bạn có thể mất khoảng hai đến ba phút để giải, dù còn khá lúng túng. Sau đó, một câu hỏi mới sẽ nảy sinh: Làm thế nào để giải nhanh hơn?
+Nếu bạn từng bước làm theo, chắc hẳn bạn đã có thể giải hoàn chỉnh khối Rubik dù còn hơi lúng túng, chỉ cần luyện tập vài trăm lần là rất dễ đạt mốc dưới 1 phút. Nhưng nếu bạn vẫn muốn đạt tốc độ nhanh hơn nữa thì sao?
 
-Nếu bạn tìm kiếm "giải Rubik nhanh", tất cả các hướng dẫn sẽ nói với bạn cùng một điều: muốn xuống dưới 30 giây, bạn phải học thuộc tất cả các công thức của CFOP. F2L có 41 công thức, OLL 57, PLL 21, tổng cộng là 119 công thức. Ngay cả khi bạn làm F2L bằng trực giác, bạn vẫn không thể tránh khỏi 78 công thức cho tầng trên cùng. Không học thuộc được thì đừng nghĩ đến chuyện giải nhanh.
+Nếu bạn tìm kiếm "giải Rubik nhanh", tất cả các hướng dẫn sẽ nói với bạn cùng một điều: muốn xuống dưới 30 giây, trước tiên hãy học thuộc hàng trăm công thức của CFOP.
 
 Bài viết này muốn nói với bạn rằng, bạn hoàn toàn có thể giải Rubik dưới 30 giây mà không cần học thuộc bất kỳ công thức nào.
 
 <!--more-->
 
-Tôi bắt đầu giải Rubik lần đầu tiên vào ngày 7 tháng 5 năm 2026, và đến ngày 4 tháng 8, tôi đã đạt được Ao100 dưới 30 giây, tổng cộng mất 89 ngày. Trong suốt thời gian này, tôi không hề học thuộc bất kỳ công thức CFOP nào, chỉ đơn giản là chơi trong thời gian rảnh rỗi. Đây là dữ liệu thời gian của 4441 lần giải mà tôi đã ghi lại.
+Tôi bắt đầu giải hoàn chỉnh khối Rubik lần đầu tiên vào ngày 7 tháng 5 năm 2026, và đến ngày 4 tháng 8, tôi đã đạt được Ao100 dưới 30 giây, tổng cộng mất 89 ngày. Trong suốt thời gian này, tôi không hề học thuộc bất kỳ công thức CFOP nào, chỉ đơn giản là chơi trong thời gian rảnh rỗi. Đây là dữ liệu thời gian của 4441 lần giải mà tôi đã ghi lại.
 
 ![Đường cong thành tích của 4441 lần giải](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Trong bốn bước, có ba bước không yêu cầu bất kỳ công thức n�
 
 ## Từ 165 giây xuống 28 giây: Bốn giai đoạn
 
-Dưới đây là con đường thực tế mà tôi đã đi qua. Mỗi giai đoạn đều được tôi đánh dấu thời gian bắt đầu và kết thúc bằng dữ liệu, sau đó giải thích tôi đã gặp khó khăn ở đâu và luyện tập gì trong giai đoạn đó. Điểm nghẽn của bạn có thể khác tôi, nhưng trình tự thì rất có thể sẽ giống nhau.
-
 ![Khoảng thời gian của bốn giai đoạn](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Hình: Khoảng thời gian của bốn giai đoạn. Giai đoạn một 3 tuần, giai đoạn hai 11 ngày, giai đoạn ba hai tháng, giai đoạn bốn cho đến nay.*
 
 ### Giai đoạn một: 165 giây → 60 giây (Tuần 1–3)
 
-**Dữ liệu**: Từ 7 tháng 5 đến 27 tháng 5. Tuần đầu tiên trung bình 165 giây, tuần thứ ba 68 giây.
+**Dữ liệu**: Từ 7 tháng 5 đến 27 tháng 5. Tuần đầu tiên trung bình 165 giây, tuần thứ ba 68 giây. Giai đoạn này là bước chuyển từ người mới hoàn toàn sang nhập môn, qua việc lặp đi lặp lại để dần hiểu rõ từng động tác thực sự có ý nghĩa gì, những viên nào đang di chuyển.
 
 **Bạn gặp khó khăn ở đâu**: Khối đầu tiên còn rất lúng túng, phải tìm kiếm từng cặp góc-cạnh rất lâu. Sau khi tìm thấy một cặp, người mới chơi thường có xu hướng dừng lại để tiếp tục quan sát.
 
@@ -111,7 +109,7 @@ Dưới đây là con đường thực tế mà tôi đã đi qua. Mỗi giai đ
 
 ### Giai đoạn hai: 60 giây → 40 giây (Tuần 4–5)
 
-**Dữ liệu**: Từ 27 tháng 5 đến 7 tháng 6, 11 ngày. Đây là giai đoạn giảm thời gian nhanh nhất trong toàn bộ quá trình, và cũng là giai đoạn tôi luyện tập nhiều nhất, với 723 lần trong tuần đầu tiên của tháng 6.
+**Dữ liệu**: Từ 27 tháng 5 đến 7 tháng 6, 11 ngày. Đây là giai đoạn giảm thời gian nhanh nhất trong toàn bộ quá trình. Giai đoạn này cũng dễ nhận được phản hồi tích cực nhất: mỗi lần học hỏi và tối ưu động tác đều phản ánh tức thì lên thời gian, cảm giác mỗi ngày đều phá kỷ lục là điều mà hiếm thứ gì sánh được.
 
 **Bạn gặp khó khăn ở đâu**: Các động tác không liên tục. Khối Rubik bị kẹt.
 
@@ -130,7 +128,7 @@ Trong giai đoạn này, bạn cần tối ưu hóa các động tác ở từng
 
 *Hình trái: Góc nhìn khi xây Khối thứ hai. Khối đầu tiên đã hoàn thành, chỉ dùng bốn loại xoay R, r, M, U để chèn cặp góc-cạnh bên phải vào, Khối đầu tiên sẽ không bao giờ bị chạm vào. Hình phải: M' U M, một nhóm động tác được sử dụng nhiều nhất ở nửa sau của Roux. Tầng giữa lên, tầng trên xoay một chút, tầng giữa về vị trí cũ, ba bước này hoán đổi một cặp cạnh giữa tầng trên và tầng giữa.*
 
-Bạn có thể tham khảo [Thư viện công thức phương pháp Roux](/vi/projects/rubiks-cube/roux#cmll) mà tôi đã tổng hợp. Trang CMLL là hai bước: 7 công thức định hướng + 2 công thức hoán vị vị trí, tổng cộng 9 công thức. Đây là lựa chọn tối ưu về mặt chi phí-hiệu quả để tăng tốc, rất dễ học, mỗi khi thành thạo một nhóm bạn có thể nhanh hơn khoảng 1–2 giây. Chỉ cần luyện tập một chút, bạn sẽ nhanh chóng thành thạo, một số công thức đã được giới thiệu trong bài viết trước, bạn không cần phải nhớ tất cả để có thể đạt dưới 30 giây.
+Bạn có thể tham khảo phiên bản tinh giản rất thân thiện với người mới của [Thư viện công thức phương pháp Roux](/vi/projects/rubiks-cube/roux#cmll) mà tôi đã tổng hợp. Trang CMLL là hai bước: 7 công thức định hướng + 2 công thức hoán vị vị trí, tổng cộng 9 công thức. Đây là lựa chọn tối ưu về mặt chi phí-hiệu quả để tăng tốc, rất dễ học, mỗi khi thành thạo một nhóm bạn có thể nhanh hơn khoảng 1–2 giây. Chỉ cần luyện tập một chút, bạn sẽ nhanh chóng thành thạo, một số công thức đã được giới thiệu trong bài viết trước, bạn không cần phải nhớ tất cả để có thể đạt dưới 30 giây.
 
 ![Bước đầu tiên của CMLL hai giai đoạn, bảy kiểu định hướng góc](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Còn một điều nữa, hiệu quả hơn bất kỳ bài tập nào: hãy b�
 
 ### Giai đoạn ba: 40 giây → 30 giây (Tuần 5 – Tuần 13, hai tháng)
 
-**Dữ liệu**: Từ 7 tháng 6 đến 4 tháng 8. Ao100 từ 39.8 giây giảm xuống 29.9 giây, mất 58 ngày. Trong giai đoạn này, đôi khi có thể xuất hiện thành tích dưới 30 giây, nhưng đó chỉ là khi bạn rất may mắn. Hơn nữa, khi thời gian giải trung bình giảm xuống, độ khó để cải thiện 1 giây sẽ tăng theo cấp số nhân.
+**Dữ liệu**: Từ 7 tháng 6 đến 4 tháng 8. Ao100 từ 39.8 giây giảm xuống 29.9 giây, mất 58 ngày. Trong giai đoạn này, đôi khi có thể xuất hiện thành tích dưới 30 giây, nhưng đó chỉ là khi bạn rất may mắn. Hơn nữa, khi thời gian giải trung bình giảm xuống, độ khó để cải thiện 1 giây sẽ tăng theo cấp số nhân. (Ao100 đại diện cho thời gian giải trung bình của 100 lần gần nhất, sau khi đã loại bỏ 5% kết quả tốt nhất và tệ nhất)
 
 ![Thành tích trung bình hàng ngày](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Hình: Thành tích trung bình hàng ngày. Sau giữa tháng 6, đường cong gần như đi ngang, tôi đã "mài giũa" trong khoảng 30–40 giây suốt hai tháng.*
-
-Đây là giai đoạn "giậm chân tại chỗ". Ai cũng sẽ gặp phải, và tôi đã ở đây hai tháng.
 
 **Bạn gặp khó khăn ở đâu**: Sáu cạnh tầng trên cùng rất chậm để giải, không hiểu logic, mỗi lần đều phải thử đi thử lại, tốn rất nhiều thời gian. Khối đầu tiên và Khối thứ hai vẫn chưa đủ thành thạo.
 
@@ -164,12 +160,13 @@ Còn một điều nữa, hiệu quả hơn bất kỳ bài tập nào: hãy b�
 
 - Nhận diện EO (Định hướng cạnh). Như đã nói ở bài trước, chỉ có vài trường hợp cạnh sai định hướng: 0, không 0 không 4, 4 (2 trên 2 dưới), 4 (tất cả ở tầng trên), 4 (3 trên 1 dưới). Mục tiêu của giai đoạn này là: ngay khi xây xong hai khối, không cần đếm, nhìn một cái là biết ngay là trường hợp nào. Cách luyện tập là sau khi xáo trộn, chỉ giải đến hết CMLL, sau đó dừng lại, nói ra số lượng cạnh sai định hướng, rồi tiếp tục.
 - Nhiều người không hiểu các động tác ở đây. Giai đoạn EO cuối cùng đều nhằm mục đích tạo ra hình mũi tên với 3 cạnh sai định hướng ở tầng trên và 1 cạnh ở tầng dưới. Bởi vì trạng thái hoàn chỉnh chỉ cần xáo trộn một bước là sẽ ra hình mũi tên, nên suy nghĩ ngược lại, nó chính là bước cuối cùng trước khi hoàn thành. Vì vậy, bất kể có bao nhiêu cạnh sai định hướng, mục tiêu cuối cùng vẫn là tạo ra một mũi tên. Với 4 cạnh sai định hướng ở trên, hãy hoán đổi một cặp cạnh trên-dưới để đưa một cạnh sai định hướng xuống dưới, tạo thành mũi tên. Với 2 cạnh sai định hướng ở trên và 2 ở dưới, hãy hoán đổi một cặp cạnh trên-dưới để đưa một cạnh sai định hướng lên trên, tạo thành mũi tên. Nếu có 1 cạnh trên và 1 cạnh dưới, hoặc 2 cạnh trên, thì dùng M' U M để biến thành các trường hợp trước đó, rồi tạo mũi tên. Bạn có thể tự mình khám phá ra các bước tối ưu cho trường hợp 1/1 thông qua việc quan sát và suy nghĩ rất nhiều.
+
+  ![Dạng mũi tên](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+  *Hình: Dạng mũi tên. Ba cạnh sai định hướng ở tầng trên (màu xanh lam nổi bật) xếp thành một mũi tên, chỉ về cạnh sai định hướng ở tầng dưới. Lúc này, một động tác M' U M có thể đưa cả bốn cạnh về đúng vị trí cùng lúc. [Mở trạng thái này trong khối Rubik 3D](/vi/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) để xem từng bước.*
+
 - Luyện tập look-ahead (dự đoán trước) rất nhiều. Đây là điều quan trọng nhất để đi từ 40 giây xuống 30 giây, và cũng là điều phản trực giác nhất: xoay chậm hơn một chút, nhìn xa hơn một chút. Khi xây Khối đầu tiên, đừng nhìn vào khối đang được chèn vào, hãy nhìn xem khối tiếp theo ở đâu. Ban đầu sẽ rất khó chịu, thành tích có thể sẽ tệ hơn, nhưng hãy kiên trì một tuần, mọi thứ sẽ đột nhiên tốt lên.
 - CMLL không do dự. Nếu bạn vẫn phải suy nghĩ mỗi khi thực hiện một động tác, thì nó vẫn chưa phải là của bạn. Hãy luyện tập từng động tác riêng lẻ 50 lần, cho đến khi thấy hình dạng là tay tự động di chuyển.
-
-![Dạng mũi tên](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Hình: Dạng mũi tên. Ba cạnh sai định hướng ở tầng trên (màu xanh lam nổi bật) xếp thành một mũi tên, chỉ về cạnh sai định hướng ở tầng dưới. Lúc này, một động tác M' U M có thể đưa cả bốn cạnh về đúng vị trí cùng lúc. [Mở trạng thái này trong khối Rubik 3D](/vi/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) để xem từng bước.*
 
 ![Sáu dạng EO](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,14 +196,9 @@ Sau đó bạn sẽ nhận ra, sau khi vượt qua giai đoạn "giậm chân t�
 
 Đến giai đoạn này thì xin chúc mừng bạn, trong mắt người mới chơi, bạn đã là một người chơi rất giỏi rồi!
 
-## Cái giá của việc không học công thức
+## Nâng cao ở bước tiếp theo
 
-Nói đến đây, tôi phải thành thật một chút. Việc không học công thức không phải là miễn phí.
-
-- Giai đoạn CMLL chậm. 42 trường hợp được giải quyết bằng 9 công thức, điều này có nghĩa là một số trường hợp sẽ phải làm hai lần. Những người học thuộc toàn bộ CMLL sẽ nhanh hơn tôi hai ba giây ở bước này.
-- Kỹ thuật xoay tầng M có ngưỡng cao. Nửa sau của phương pháp Roux hoàn toàn dựa vào tầng M. Tầng M khó xoay hơn R và U, dễ xoay bị kẹt, và cũng đòi hỏi khối Rubik phải có chất lượng tốt hơn.
-
-Đừng lo lắng về giới hạn. Ngay cả trong số các tuyển thủ hàng đầu, cũng có người dùng Roux để lọt vào top thế giới, bản thân phương pháp này không có giới hạn. Nhưng để xuống dưới 15 giây, khả năng cao bạn sẽ phải học thuộc đầy đủ 42 công thức CMLL. Tuy nhiên, đó là chuyện của một giai đoạn khác. Để xuống dưới 30 giây, thì không cần.
+Trước hết, đừng lo lắng về giới hạn của phương pháp Roux. Ngay cả trong số các tuyển thủ hàng đầu, cũng có người dùng Roux để lọt vào top thế giới, bản thân phương pháp này không có giới hạn.
 
 Hơn nữa, hầu hết mọi người chơi giải Rubik một tay đẳng cấp thế giới đều sử dụng phương pháp Roux, vì nó thực sự rất phù hợp cho việc thao tác bằng một tay.
 
@@ -216,11 +208,17 @@ Hơn nữa, hầu hết mọi người chơi giải Rubik một tay đẳng cấ
 - Average 5.98 giây, cũng là anh ấy, năm 2019, lúc đó là kỷ lục châu Á, và là người thứ ba trong lịch sử đạt average sub-6 chính thức ([dữ liệu WCA](https://www.worldcubeassociation.org/persons/2017VILL41))
 - Anh ấy cũng là [người giữ kỷ lục thế giới một tay](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): average 8.09, single 6.05 (2024), cộng đồng chơi một tay thường cho rằng Roux là phương pháp tối ưu nhất.
 
-Tôi nghĩ đây là một cuộc trao đổi rất đáng giá. Bạn đổi lấy hai ba giây thời gian ở bước CMLL để có được: hiểu rõ mình đang làm gì ở mỗi bước, không quên cách giải dù không chạm vào Rubik ba tháng, và có thể tự suy luận ra cách giải cho bất kỳ khối Rubik nào chưa từng thấy.
+Nhưng để xuống dưới 15 giây, bạn cần chuyển từ CMLL hai bước hiện tại sang hoàn thành trong một bước, đòi hỏi phải ghi nhớ nhiều công thức phức tạp hơn.
+
+Dẫu vậy, tôi vẫn thích tự do khám phá hơn. Việc thông qua tìm tòi để hiểu thấu đáo các công thức, thậm chí sáng tạo ra những công thức thuận tay cho riêng mình, thú vị hơn nhiều so với việc học vẹt.
+
+Rubik vốn dĩ là một trò chơi trí tuệ, chứ không phải trò chơi ghi nhớ. Chỉ khi hiểu rõ nguyên lý, bạn mới có thể làm chủ từng bước và biết mình đang làm gì, không quên cách giải dù không chạm vào Rubik ba tháng, và có thể tự suy luận ra cách giải cho bất kỳ khối Rubik nào chưa từng thấy.
 
 ## Tóm tắt
 
 ![Hoàn thành giải](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Hình: Đã giải xong.*
 
 Để đi từ việc có thể giải được Rubik đến dưới 30 giây, đó không phải là một quá trình học thuộc công thức, mà là một quá trình rèn luyện sự phối hợp nhịp nhàng giữa tay, mắt và não bộ.
 
@@ -265,8 +263,8 @@ Thế giới Rubik có niềm vui bất tận, chúc bạn chơi vui vẻ.
 
 - **csTimer**: [cstimer.net](https://cstimer.net/). Mở thống kê Ao5 / Ao12 / Ao100, Ao100 mới là trình độ thực sự của bạn, thành tích single đôi khi là do may mắn.
 - **Rubik 3D**: [philoli.com/zh/projects/rubiks-cube](/vi/projects/rubiks-cube/). Tất cả các công thức trong bài viết này đều có thể nhập vào đây để xem hoạt ảnh.
-- **Thư viện công thức phương pháp Roux thân thiện với người mới**: [philoli.com/zh/projects/rubiks-cube/roux](/vi/projects/rubiks-cube/roux). Các cách chèn phổ biến cho Khối đầu tiên và Khối thứ hai, 9 công thức CMLL hai giai đoạn, và tất cả các trường hợp của LSE (EO, UL/UR, bốn cạnh cuối cùng). Mỗi hình đều có thể mở trong Rubik 3D, tự động ẩn các khối không liên quan và làm nổi bật các cạnh cần di chuyển.
-- **Công cụ phân tích luyện tập csTimer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/vi/projects/rubiks-cube/analyzer). Kéo thả file xuất từ csTimer vào đây, bạn sẽ thấy xu hướng thành tích của mình, đường cong Ao5/Ao12/Ao100, các lần phá PB, bảng cột mốc (ngày đầu tiên đạt sub-60, sub-40, sub-30 là khi nào) và đường cong luyện tập theo quy luật Power Law. Tất cả các hình trong bài viết này đều được tạo ra từ đây. Dữ liệu chỉ được xử lý trong trình duyệt của bạn, không được tải lên. Nếu không có file xuất, bạn có thể thử tải dữ liệu 4441 lần của tôi để xem hiệu quả.
+- **Thư viện công thức phương pháp Roux thân thiện với người mới**: [philoli.com/zh/projects/rubiks-cube/roux](/vi/projects/rubiks-cube/roux).
+- **Công cụ phân tích luyện tập csTimer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/vi/projects/rubiks-cube/analyzer). Kéo thả file xuất từ csTimer vào đây, bạn sẽ thấy xu hướng thành tích của mình, đường cong Ao5/Ao12/Ao100, các lần phá PB, bảng cột mốc và đường cong luyện tập theo quy luật Power Law.
 
 *Bài viết này chứa các liên kết liên kết Amazon: Khi bạn mua hàng qua các liên kết này, tôi sẽ nhận được một khoản hoa hồng nhỏ, giá của bạn không thay đổi.*
 

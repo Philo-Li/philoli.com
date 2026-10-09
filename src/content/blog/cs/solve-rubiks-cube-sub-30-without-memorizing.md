@@ -20,15 +20,15 @@ toc: true
 
 V mém předchozím článku [„Jak složit Rubikovu kostku bez algoritmů“](/cs/blog/solve-rubiks-cube-without-formulas/) ses naučil, jak kostku složit bez učení algoritmů, jen s logikou komutátorů. Ten článek získal mnoho nadšených ohlasů.
 
-Pokud jsi to zkusil, nejspíš ti to teď trvá dvě až tři minuty. Sice je to ještě trochu chaotické, ale už to zvládneš složit. A pak se vynoří nová otázka: Jak zrychlit?
+Pokud jsi postupoval krok za krokem, měl bys už být schopen, byť třeba kostrbatě, celou kostku složit. Po pár stovkách složení se snadno dostaneš pod 1 minutu. Co když ale chceš ještě větší rychlost?
 
-Když si vyhledáš „rychloskládání Rubikovy kostky“, všechny tutoriály ti řeknou to samé: Chceš-li se dostat pod 30 sekund, musíš se nejdřív naučit algoritmy CFOP. F2L 41 algoritmů, OLL 57, PLL 21, celkem 119. I když F2L děláš intuitivně, 78 algoritmů pro horní vrstvu se nevyhneš. Pokud se je nenaučíš nazpaměť, na rychlost zapomeň.
+Když si vyhledáš „rychloskládání Rubikovy kostky“, všechny tutoriály ti řeknou to samé: Chceš-li se dostat pod 30 sekund, musíš se nejdřív naučit nazpaměť stovky algoritmů CFOP.
 
 Tento článek ti ale chce ukázat, že se můžeš dostat pod 30 sekund, aniž bys ses musel učit jakékoli algoritmy nazpaměť.
 
 <!--more-->
 
-Od 7. května 2026, kdy jsem poprvé složil kostku, do 4. srpna, kdy jsem dosáhl Ao100 pod 30 sekund, mi to trvalo 89 dní. Během té doby jsem se nenaučil jediný CFOP algoritmus, jen jsem si s kostkou hrál ve volném čase. Toto jsou data z 4441 složení, která jsem si zaznamenával.
+Od 7. května 2026, kdy jsem poprvé kompletně složil kostku, do 4. srpna, kdy jsem dosáhl Ao100 pod 30 sekund, mi to trvalo 89 dní. Během té doby jsem se nenaučil jediný CFOP algoritmus, jen jsem si s kostkou hrál ve volném čase. Toto jsou data z 4441 složení, která jsem si zaznamenával.
 
 ![Křivka výsledků 4441 složení](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Proto Roux metoda nepotřebuje učení algoritmů: část, kterou je třeba si z
 
 ## Od 165 sekund k 28 sekundám: Čtyři fáze
 
-Níže je moje skutečná cesta. U každé fáze jsem daty označil začátek a konec a popsal, kde jsem se v dané fázi zasekával a co jsem trénoval. Tvé problematické body se mohou lišit od mých, ale pořadí bude s velkou pravděpodobností stejné.
-
 ![Časové rozpětí čtyř fází](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Obrázek: Časové rozpětí čtyř fází. Fáze jedna 3 týdny, fáze dvě 11 dní, fáze tři dva měsíce, fáze čtyři trvá dodnes.*
 
 ### Fáze jedna: 165 sekund → 60 sekund (1.–3. týden)
 
-**Data**: Od 7. května do 27. května. První týden průměr 165 sekund, třetí týden 68 sekund.
+**Data**: Od 7. května do 27. května. První týden průměr 165 sekund, třetí týden 68 sekund. V této fázi se z úplného začátečníka stává mírně pokročilý; opakováním postupně pochopíš, co který tah vlastně znamená a jaké dílky se pohybují.
 
 **Kde se zasekáváš**: První blok je velmi neohrabaný, hledání každého páru rohu a hrany trvá dlouho. A když nováček najde pár, rád se zastaví a dál pozoruje.
 
@@ -111,7 +109,7 @@ V této fázi se neuč žádné nové algoritmy. Tvé úzké místo teď není v
 
 ### Fáze dvě: 60 sekund → 40 sekund (4.–5. týden)
 
-**Data**: Od 27. května do 7. června, 11 dní. To byla nejrychlejší fáze poklesu v celém procesu a také ta, ve které jsem nejvíce trénoval, 723 složení v prvním červnovém týdnu.
+**Data**: Od 27. května do 7. června, 11 dní. To byla nejrychlejší fáze poklesu v celém procesu. V této fázi člověk nejsnáze získává pozitivní zpětnou vazbu – každé nové poznání a optimalizace pohybů se okamžitě projeví na čase a pocit z překonávání vlastních rekordů den co den se vyrovná jen máločemu.
 
 **Kde se zasekáváš**: Pohyby nejsou plynulé. Kostka se zadrhává.
 
@@ -130,7 +128,7 @@ V této fázi musíš optimalizovat pohyby v každé etapě a na základě poroz
 
 *Obrázek vlevo: Pohled při sestavování druhého bloku. První blok je hotový, a k vložení páru rohu a hrany na pravé straně se používají pouze čtyři tahy R, r, M, U, takže první blok zůstává nedotčen. Obrázek vpravo: M' U M, jedna z nejpoužívanějších sekvencí tahů v druhé polovině Roux metody. M-vrstva nahoru, horní vrstva otočit, M-vrstva zpět – tři kroky k výměně páru hran v horní a střední vrstvě.*
 
-Můžeš se podívat na mou [knihovnu algoritmů Roux metody](/cs/projects/rubiks-cube/roux#cmll), stránka CMLL je dvoufázová: 7 orientačních algoritmů + 2 permutační algoritmy, celkem 9. To je volba s nejlepším poměrem cena/výkon pro zvýšení rychlosti, snadno se je naučíš a s každou zvládnutou sadou můžeš zrychlit o 1–2 sekundy. S trochou praxe je brzy ovládneš, některé byly představeny již v předchozím článku a nemusíš si je pamatovat všechny, abys se dostal pod 30 sekund.
+Můžeš se podívat na mou zjednodušenou a pro začátečníky velmi přívětivou [knihovnu Roux algoritmů](/cs/projects/rubiks-cube/roux#cmll), stránka CMLL je dvoufázová: 7 orientačních algoritmů + 2 permutační algoritmy, celkem 9. To je volba s nejlepším poměrem cena/výkon pro zvýšení rychlosti, snadno se je naučíš a s každou zvládnutou sadou můžeš zrychlit o 1–2 sekundy. S trochou praxe je brzy ovládneš, některé byly představeny již v předchozím článku a nemusíš si je pamatovat všechny, abys se dostal pod 30 sekund.
 
 ![První krok dvoufázového CMLL, sedm orientací rohů](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ A ještě jedna věc, která má okamžitý účinek víc než jakýkoli trénin
 
 ### Fáze tři: 40 sekund → 30 sekund (5.–13. týden, dva měsíce)
 
-**Data**: Od 7. června do 4. srpna. Ao100 se mi podařilo snížit z 39.8 sekund na 29.9 sekund, což trvalo 58 dní. V této fázi se občas mohl objevit čas pod 30 sekund, ale jen s velkým štěstím. A s klesajícím průměrným časem složení se obtížnost zlepšení o jednu sekundu exponenciálně zvyšuje.
+**Data**: Od 7. června do 4. srpna. Ao100 se mi podařilo snížit z 39.8 sekund na 29.9 sekund, což trvalo 58 dní. V této fázi se občas mohl objevit čas pod 30 sekund, ale jen s velkým štěstím. A s klesajícím průměrným časem složení se obtížnost zlepšení o jednu sekundu exponenciálně zvyšuje. (Ao100 představuje průměrný čas z posledních 100 složení po odečtení 5 % nejlepších a nejhorších výsledků.)
 
 ![Denní průměrné výsledky](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Obrázek: Denní průměrné výsledky. Po polovině června se křivka téměř vyrovnala a dva měsíce se pohybovala mezi 30–40 sekundami.*
-
-Toto je fáze plošiny. Setká se s ní každý, já jsem tu strávil dva měsíce.
 
 **Kde se zasekáváš**: Skládání šesti hran horní vrstvy je velmi pomalé, nerozumíš logice, pokaždé se spoléháš na opakované pokusy a ztrácíš spoustu času. První a druhý blok stále nejsou dostatečně plynulé.
 
@@ -164,12 +160,13 @@ Toto je fáze plošiny. Setká se s ní každý, já jsem tu strávil dva měsí
 
 -   Rozpoznávání EO. V předchozím článku jsme si řekli, že špatně orientované hrany mají jen několik stavů: 0, ne 0 a ne 4, 4 (2 nahoře, 2 dole), 4 (všechny v horní vrstvě), 4 (3 nahoře, 1 dole). Cílem této fáze je: v okamžiku dokončení bloků, aniž bys počítal, na první pohled rozpoznat, o jaký typ jde. Trénink spočívá v tom, že po zamíchání dojdeš jen k dokončení CMLL, pak se zastavíš, řekneš počet špatně orientovaných hran a pokračuješ.
 -   Mnozí lidé zdejším pohybům nerozumí. Fáze EO je nakonec o vytvoření šipkovitého tvaru 3 nahoře, 1 dole, protože z plně složeného stavu je to jen jeden tah od šipkovitého tvaru. Takže, s inverzním myšlením, je to poslední krok před dokončením složení. Bez ohledu na počet špatně orientovaných hran je konečným cílem vytvořit šipku. Pokud jsou nahoře 4 špatně orientované hrany, vyměň jeden pár horních a dolních hran, abys jednu špatně orientovanou hranu přesunul dolů a vytvořil šipku. Pokud jsou 2 nahoře a 2 dole, vyměň jeden pár horních a dolních hran, abys jednu špatně orientovanou hranu přesunul nahoru a vytvořil šipku. Pokud je 1 nahoře a 1 dole, nebo 2 nahoře, použij M' U M, abys se nejprve dostal do předchozích situací a pak vytvořil šipku. Nejlepší kroky pro stav 1/1 můžeš objevit sám díky spoustě pozorování a přemýšlení.
+
+    ![Šipkovitý tvar](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+    *Obrázek: Šipkovitý tvar. Tři špatně orientované hrany horní vrstvy (zvýrazněné azurovou barvou) tvoří šipku, která směřuje k špatně orientované hraně spodní vrstvy. V tomto stavu stačí jeden M' U M a všechny čtyři se správně orientují. [Otevři si tento stav ve 3D kostce](/cs/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) a můžeš si to krok za krokem prohlédnout.*
+
 -   Hodně trénuj look-ahead. To je nejdůležitější věc pro posun z 40 na 30 sekund a zároveň ta nejvíce protichůdná intuici: otáčej pomaleji, dívej se dál. Při sestavování prvního bloku se nedívej na dílek, který zrovna vkládáš, ale na to, kde je další dílek. Zpočátku to bude velmi nepříjemné, výsledky se zhorší, ale po týdnu vytrvalosti se to náhle zlepší.
 -   CMLL bez váhání. Pokud musíš u každého pohybu vždy přemýšlet, než ho provedeš, pak ti ještě nepatří. Procvič si každý pohyb zvlášť 50krát, dokud se ruka nepohne, jakmile uvidíš tvar.
-
-![Šipkovitý tvar](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Obrázek: Šipkovitý tvar. Tři špatně orientované hrany horní vrstvy (zvýrazněné azurovou barvou) tvoří šipku, která směřuje k špatně orientované hraně spodní vrstvy. V tomto stavu stačí jeden M' U M a všechny čtyři se správně orientují. [Otevři si tento stav ve 3D kostce](/cs/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) a můžeš si to krok za krokem prohlédnout.*
 
 ![Šest stavů EO](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,29 +196,29 @@ Pak zjistíš, že jakmile překonáš období 30–35 sekund, tvá rychlost kle
 
 Gratuluji ti, v této fázi jsi už pro nováčky velmi pokročilý hráč!
 
-## Cena za neučení algoritmů
+## Jak se posunout dál
 
-Abych byl upřímný, neučení algoritmů není zadarmo.
-
-Fáze CMLL je pomalá. Pokrytí 42 situací devíti algoritmy znamená, že některé situace se musí provést dvakrát. Lidé, kteří umí celé CMLL, jsou v tomto kroku o dvě až tři sekundy rychlejší než já.
-
-Technika M-vrstvy má vyšší nároky. Druhá polovina Roux metody je zcela závislá na M-vrstvě, která se otáčí hůře než R a U, snadno se zasekává a klade vyšší nároky na samotnou kostku.
-
-Neměj obavy z horního limitu. I mezi špičkovými hráči jsou tací, kteří se s Roux metodou dostali do světové špičky; samotná metoda nemá žádný horní limit. Ale abys se dostal pod 15 sekund, s velkou pravděpodobností budeš muset doplnit všech 42 CMLL algoritmů. To je ale záležitost jiné fáze. Pro dosažení sub-30 to není potřeba.
+Předně se nemusíš obávat horního limitu Roux metody. I mezi špičkovými hráči jsou tací, kteří se s ní dostali do světové špičky – samotná metoda nemá žádný limit.
 
 Navíc téměř každý světový hráč, který skládá jednoruč, používá Roux metodu, protože je skutečně velmi vhodná i pro jednoruční skládání.
 
 **Nejrychlejší výsledky s Roux metodou na oficiálních soutěžích (WCA):**
 
--   Jeden sloh 4.11 sekundy, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipíny), Valenzuela Cubing Open 2023, uznaný jako nejrychlejší oficiální jednotlivý sloh s Roux metodou ([rekonstrukce videa](https://www.youtube.com/watch?v=5H4TRJSUm-U))
--   Průměr 5.98 sekundy, taktéž on, v roce 2019, tehdy asijský rekord a zároveň třetí oficiální průměr pod 6 sekund v historii ([WCA profil](https://www.worldcubeassociation.org/persons/2017VILL41))
--   Je také [držitelem světového rekordu v jednoručním skládání](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): průměr 8.09, jednotlivý sloh 6.05 (2024). V komunitě jednoručního skládání je Roux metoda všeobecně považována za optimální řešení.
+- Jeden sloh 4.11 sekundy, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipíny), Valenzuela Cubing Open 2023, uznaný jako nejrychlejší oficiální jednotlivý sloh s Roux metodou ([rekonstrukce videa](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+- Průměr 5.98 sekundy, taktéž on, v roce 2019, tehdy asijský rekord a zároveň třetí oficiální průměr pod 6 sekund v historii ([WCA profil](https://www.worldcubeassociation.org/persons/2017VILL41))
+- Je také [držitelem světového rekordu v jednoručním skládání](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): průměr 8.09, jednotlivý sloh 6.05 (2024). V komunitě jednoručního skládání je Roux metoda všeobecně považována za optimální řešení.
 
-Myslím, že tato dohoda se vyplatí. Za dvě až tři sekundy u CMLL získáš: vědomí, co děláš v každém kroku, nezapomeneš to, i když se kostky nedotkneš tři měsíce, a dokážeš vyřešit jakoukoli neznámou kostku.
+Ale pro dosažení sub-15 je potřeba přejít ze současného dvoufázového CMLL na jednofázové, což vyžaduje zapamatování si dalších složitějších algoritmů.
+
+Já však stále dávám přednost svobodnému objevování. Důkladně porozumět algoritmům skrze zkoumání, nebo si dokonce vytvořit takové, které ti nejlépe padnou do ruky, je mnohem větší zábava než bezduché biflování.
+
+Rubikova kostka byla odjakživa hlavolam, nikoli paměťová hra. Jen když pochopíš principy, budeš v každém kroku vědět, co děláš, nezapomeneš to, ani když se kostky tři měsíce nedotkneš, a dokážeš odvodit řešení pro jakoukoli neznámou kostku.
 
 ## Shrnutí
 
 ![Složeno](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Obrázek: Složeno.*
 
 Dostat se od prvního složení pod 30 sekund není proces učení algoritmů nazpaměť, ale proces tréninku koordinace rukou, očí a mozku.
 
@@ -231,7 +228,7 @@ Algoritmy nejsou zdrojem rychlosti. Pozorování je.
 
 Nauč se budovat pozitivní zpětnou vazbu z pokroku v každé fázi. I cvičení plynulosti nemusí být nudné, zvláště když objevíš radost z dalšího překonání rekordu. Zvláště v počátečních a středních fázích budeš každý den zažívat radost z překonávání rekordů.
 
-Všechny algoritmy a situace zmíněné v článku jsem shromáždil v [knihovně algoritmů Roux metody](/cs/projects/rubiks-cube/roux). Když se zasekneš, vrať se a podívej se.
+Všechny algoritmy a situace zmíněné v článku jsem shromáždil v [knihovně algoritmů Roux metody](/cs/projects/rubiks-cube/roux). Když se zasekneš, můžeš se sem vrátit a podívat se.
 
 Svět Rubikovy kostky je plný nekonečné zábavy, přeji ti, ať se ti daří.
 
@@ -266,8 +263,8 @@ Svět Rubikovy kostky je plný nekonečné zábavy, přeji ti, ať se ti daří.
 
 -   **csTimer**: [cstimer.net](https://cstimer.net/). Zapni si statistiky Ao5 / Ao12 / Ao100. Ao100 je tvá skutečná úroveň, jednotlivé časy jsou o štěstí.
 -   **3D Rubikova kostka**: [philoli.com/zh/projects/rubiks-cube](/cs/projects/rubiks-cube/). Všechny algoritmy z tohoto článku si zde můžeš zadat a prohlédnout si animace.
--   **Knihovna algoritmů Roux metody pro začátečníky**: [philoli.com/zh/projects/rubiks-cube/roux](/cs/projects/rubiks-cube/roux). Běžné vkládací techniky pro první a druhý blok, 9 algoritmů dvoufázového CMLL, a všechny situace LSE (EO, UL/UR, poslední čtyři hrany). Každý obrázek lze otevřít ve 3D kostce, automaticky skryje irelevantní dílky a zvýrazní hrany, které se mají pohybovat.
--   **csTimer Tréninkový analyzátor**: [philoli.com/zh/projects/rubiks-cube/analyzer](/cs/projects/rubiks-cube/analyzer). Přetáhni soubor exportovaný z csTimeru a uvidíš vývoj svých výsledků, křivky Ao5/Ao12/Ao100, posuny PB, tabulku milníků (kdy jsi poprvé dosáhl sub-60, sub-40, sub-30) a křivku tréninku podle Power Law. Všechny grafy v tomto článku pocházejí odsud. Data jsou zpracovávána pouze v tvém prohlížeči a nejsou nahrávána. Pokud nemáš exportovaný soubor, můžeš nejprve načíst mých 4441 dat a podívat se na efekty.
+-   **Knihovna algoritmů Roux metody pro začátečníky**: [philoli.com/zh/projects/rubiks-cube/roux](/cs/projects/rubiks-cube/roux).
+-   **csTimer Tréninkový analyzátor**: [philoli.com/zh/projects/rubiks-cube/analyzer](/cs/projects/rubiks-cube/analyzer). Přetáhni soubor exportovaný z csTimeru a uvidíš vývoj svých výsledků, křivky Ao5/Ao12/Ao100, posuny PB, tabulku milníků a křivku tréninku podle Power Law.
 
 *Tento článek obsahuje affiliate odkazy na Amazon: Při nákupu přes odkaz získám malou provizi, tvá cena zůstane stejná.*
 

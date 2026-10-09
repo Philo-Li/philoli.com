@@ -20,15 +20,15 @@ toc: true
 
 V prejšnjem članku [《Kako sestaviti Rubikovo kocko brez pomnjenja algoritmov》](/sl/blog/solve-rubiks-cube-without-formulas/) ste se naučili rešiti Rubikovo kocko brez pomnjenja algoritmov, z uporabo logike komutatorjev. Ta članek je prejel veliko pozitivnih odzivov.
 
-Če ste sledili navodilom, vam zdaj verjetno vzame dve ali tri minute, da sestavite kocko, čeprav se še vedno nekoliko lovite. Nato se bo pojavilo novo vprašanje: kako pospešiti?
+Če ste korak za korakom sledili navodilom, bi morali že znati, čeprav še z nekaj zatikanja, v celoti sestaviti kocko. Z malo vaje, po nekaj sto rešitvah, je zelo enostavno priti pod 1 minuto. Kaj pa, če bi radi še večjo hitrost?
 
-Če boste iskali "speedcubing Rubikove kocke", vam bodo vsi vodiči povedali eno in isto: če želite priti pod 30 sekund, si morate najprej zapomniti algoritme CFOP. 41 za F2L, 57 za OLL in 21 za PLL – skupaj 119 algoritmov. Tudi če F2L delate intuitivno, se 78 algoritmov za zgornjo plast ne boste mogli izogniti. Brez pomnjenja ne boste hitri.
+Če boste iskali "speedcubing Rubikove kocke", vam bodo vsi vodiči povedali eno in isto: če želite priti pod 30 sekund, si morate najprej zapomniti na stotine algoritmov CFOP.
 
 Ta članek vam želi pokazati, da lahko pridete pod 30 sekund, ne da bi si zapomnili en sam algoritem.
 
 <!--more-->
 
-Odkar sem 7. maja 2026 prvič sestavil Rubikovo kocko, do 4. avgusta, ko je moj Ao100 padel pod 30 sekund, je minilo 89 dni. V tem času si nisem zapomnil niti enega algoritma CFOP, ampak sem se s kocko igral v prostem času. To so časovni podatki mojih 4441 zabeleženih rešitev.
+Odkar sem 7. maja 2026 prvič v celoti sestavil Rubikovo kocko, do 4. avgusta, ko je moj Ao100 padel pod 30 sekund, je minilo 89 dni. V tem času si nisem zapomnil niti enega algoritma CFOP, ampak sem se s kocko igral v prostem času. To so časovni podatki mojih 4441 zabeleženih rešitev.
 
 ![Krivulja časov 4441 rešitev](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Zato Roux metoda ne zahteva pomnjenja algoritmov: del, ki zahteva pomnjenje, je 
 
 ## Od 165 sekund do 28 sekund: štiri faze
 
-Spodaj je moja resnična pot. Vsako fazo sem označil z datumom začetka in konca, nato pa opisal, kje se mi je v tej fazi zatikalo in kaj sem vadil. Vaše težave se morda razlikujejo od mojih, vendar bo vrstni red najverjetneje enak.
-
 ![Časovni razpon štirih faz](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Slika: Časovni razpon štirih faz. Prva faza 3 tedne, druga faza 11 dni, tretja faza dva meseca, četrta faza do danes.*
 
 ### Faza ena: 165 sekund → 60 sekund (1.–3. teden)
 
-**Podatki**: Od 7. maja do 27. maja. Prvi teden povprečno 165 sekund, tretji teden 68 sekund.
+**Podatki**: Od 7. maja do 27. maja. Prvi teden povprečno 165 sekund, tretji teden 68 sekund. Ta faza predstavlja prehod od popolnega začetnika do nekoga, ki razume osnove; skozi ponavljanje postopoma dojameš, kaj točno vsaka poteza pomeni in kateri kosi se premikajo.
 
 **Kje se zatika**: Prvi blok je zelo neizurjen, vsak vogalno-robni par iščem dolgo časa. Poleg tega se začetniki, ko najdejo par, pogosto ustavijo in nadaljujejo z opazovanjem.
 
@@ -111,7 +109,7 @@ V tej fazi se ne učite nobenih novih algoritmov. Vaša trenutna ovira ni v algo
 
 ### Faza dve: 60 sekund → 40 sekund (4.–5. teden)
 
-**Podatki**: Od 27. maja do 7. junija, 11 dni. To je bil najhitrejši padec v celotnem procesu, in tudi obdobje, ko sem največ vadil, v prvem tednu junija 723 rešitev.
+**Podatki**: Od 27. maja do 7. junija, 11 dni. To je bil najhitrejši padec v celotnem procesu. V tej fazi je najlažje dobiti pozitivno povratno informacijo – vsako učenje in optimizacija gibov se takoj odrazi na času, občutek postavljanja novih osebnih rekordov vsak dan pa se lahko kosa le z redkimi stvarmi.
 
 **Kje se zatika**: Gibi niso tekoči. Kocka se zatika.
 
@@ -130,7 +128,7 @@ V tej fazi morate optimizirati gibe v vsaki fazi, na podlagi razumevanja, in pov
 
 *Slika levo: Pogled pri sestavljanju drugega bloka. Prvi blok je že dokončan, z uporabo samo štirih obratov R, r, M, U vstavite vogalno-robni par na desni strani, prvi blok pa se nikoli ne dotakne. Slika desno: M' U M, eden najpogosteje uporabljenih nizov gibov v drugi polovici Roux metode. Srednja plast gor, zgornja plast obrat, srednja plast nazaj – trije koraki za zamenjavo para robov na zgornji in srednji plasti.*
 
-Ogledate si lahko mojo zbirko [algoritmov za Roux metodo](/sl/projects/rubiks-cube/roux#cmll). Stran CMLL je dvostopenjska: 7 algoritmov za orientacijo + 2 algoritma za permutacijo, skupaj 9 algoritmov. To je najbolj stroškovno učinkovita izbira za izboljšanje hitrosti, ki se je enostavno naučiti. Vsak naučen algoritem vam lahko prihrani približno 1–2 sekundi. Z malo vaje jih boste hitro obvladali, nekatere smo že predstavili v prejšnjem članku, in ne potrebujete vseh, da pridete pod 30 sekund.
+Ogledate si lahko mojo, začetnikom zelo prijazno zgoščeno [zbirko algoritmov za Roux metodo](/sl/projects/rubiks-cube/roux#cmll). Stran CMLL je dvostopenjska: 7 algoritmov za orientacijo + 2 algoritma za permutacijo, skupaj 9 algoritmov. To je najbolj stroškovno učinkovita izbira za izboljšanje hitrosti, ki se je enostavno naučiti. Vsak naučen algoritem vam lahko prihrani približno 1–2 sekundi. Z malo vaje jih boste hitro obvladali, nekatere smo že predstavili v prejšnjem članku, in ne potrebujete vseh, da pridete pod 30 sekund.
 
 ![Prvi korak dvostopenjskega CMLL, sedem orientacij vogalnih kosov](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Z veliko počasnega sestavljanja lahko razumete vsak nabor algoritmov. Ne obravn
 
 ### Faza tri: 40 sekund → 30 sekund (5.–13. teden, dva meseca)
 
-**Podatki**: Od 7. junija do 4. avgusta. Ao100 sem znižal s 39,8 sekunde na 29,9 sekunde, kar mi je vzelo 58 dni. V tej fazi so se občasno pojavili časi pod 30 sekund, vendar le ob izjemni sreči. Z zmanjševanjem povprečnega časa reševanja se bo težavnost izboljšanja za 1 sekundo eksponentno povečevala.
+**Podatki**: Od 7. junija do 4. avgusta. Ao100 sem znižal s 39,8 sekunde na 29,9 sekunde, kar mi je vzelo 58 dni. V tej fazi so se občasno pojavili časi pod 30 sekund, vendar le ob izjemni sreči. Z zmanjševanjem povprečnega časa reševanja se bo težavnost izboljšanja za 1 sekundo eksponentno povečevala. (Ao100 predstavlja povprečni čas zadnjih 100 rešitev, pri čemer se izloči 5 % najboljših in 5 % najslabših rezultatov.)
 
 ![Dnevni povprečni časi](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Slika: Dnevni povprečni časi. Po sredini junija se je krivulja skoraj poravnala in sem dva meseca ostal med 30 in 40 sekundami.*
-
-To je obdobje stagnacije. Vsakdo ga bo doživel, jaz sem v njem preživel dva meseca.
 
 **Kje se zatika**: Sestavljanje šestih robnih kosov zgornje plasti je zelo počasno, ne razumem logike, vsakič poskušam znova in znova, kar mi vzame veliko časa. Prvi in drugi blok še vedno nista dovolj izurjena.
 
@@ -164,12 +160,13 @@ To je obdobje stagnacije. Vsakdo ga bo doživel, jaz sem v njem preživel dva me
 
 -   Prepoznavanje EO. V prejšnjem članku sem omenil, da obstaja le nekaj primerov napačno orientiranih robov (EO): 0, ne-0 ne-4, 4 (2 zgoraj, 2 spodaj), 4 (vsi na zgornji plasti), 4 (3 zgoraj, 1 spodaj). Cilj te faze je: v trenutku, ko dokončate bloka, brez štetja, takoj prepoznati, kateri primer je. Vadite tako, da po premešanju kocke dokončate le CMLL, nato se ustavite, poveste število napačno orientiranih robov in nadaljujete.
 -   Mnogi ne razumejo gibov tukaj. Faza EO je končno namenjena ustvarjanju oblike puščice z 3 zgoraj in 1 spodaj, ker je popolna oblika le en premešan gib od oblike puščice, zato z obratnim razmišljanjem to predstavlja zadnji korak pred dokončanjem. Torej, ne glede na število napačno orientiranih robov, je končni cilj ustvariti puščico. Če so 4 napačno orientirani robovi zgoraj, zamenjajte par zgornjih in spodnjih robov, da enega spravite navzdol in ustvarite puščico. Če so 2 zgoraj in 2 spodaj, zamenjajte par zgornjih in spodnjih robov, da enega spravite navzgor in ustvarite puščico. Če sta 1 zgoraj in 1 spodaj, ali 2 zgoraj, potem z uporabo M' U M najprej preidite v prejšnjo situacijo in nato ustvarite puščico. Z veliko opazovanja in razmišljanja lahko sami odkrijete najboljše korake za primer 1/1.
+
+    ![Oblika puščice](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+    *Slika: Oblika puščice. Trije napačno orientirani robovi zgornje plasti (označeni s cian barvo) tvorijo puščico, ki kaže na napačno orientiran rob na spodnji plasti. V tem stanju lahko en M' U M hkrati poravna vse štiri. [Odprite to stanje v 3D kocki](/sl/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), da si ogledate korake.*
+
 -   Veliko vadbe look-ahead. To je najpomembnejša stvar za prehod iz 40 sekund na 30 sekund in tudi najbolj neintuitivna: obračajte malo počasneje, glejte malo dlje naprej. Ko sestavljate prvi blok, ne glejte na kos, ki ga vstavljate, ampak na to, kje je naslednji kos. Na začetku bo zelo neprijetno, rezultati se bodo sprva poslabšali, vendar se bodo po enem tednu nenadoma izboljšali.
 -   CMLL brez oklevanja. Če morate o gibu vsakič razmisliti, preden ga izvedete, potem vam še ni postal druga narava. Vadite vsak gib posebej 50-krat, dokler se roka ne premakne takoj, ko vidite obliko.
-
-![Oblika puščice](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Slika: Oblika puščice. Trije napačno orientirani robovi zgornje plasti (označeni s cian barvo) tvorijo puščico, ki kaže na napačno orientiran rob na spodnji plasti. V tem stanju lahko en M' U M hkrati poravna vse štiri. [Odprite to stanje v 3D kocki](/sl/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), da si ogledate korake.*
 
 ![Šest EO oblik](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,29 +196,29 @@ Potem boste ugotovili, da ste po prebitju ovire 30–35 sekund znova znižali sv
 
 Če ste dosegli to fazo, vam čestitam, v očeh začetnika ste že zelo dober igralec!
 
-## Cena ne pomnjenja algoritmov
+## Naslednji korak: napredovanje
 
-Če sem iskren, pomnjenje algoritmov ni zastonj.
-
-Faza CMLL je počasna. 42 primerov, pokritih z 9 algoritmi, pomeni, da je nekatere primere treba izvesti dvakrat. Tisti, ki obvladajo celoten CMLL, so v tem koraku dve ali tri sekunde hitrejši od mene.
-
-M-plast je težja za obvladanje. Druga polovica Roux metode je v celoti odvisna od M-plasti, ki jo je težje obračati kot R in U, pogosto se zatika, in zahteva boljšo kakovost kocke.
-
-Ne skrbite za zgornjo mejo. Tudi vrhunski tekmovalci uporabljajo Roux metodo in se uvrščajo med najboljše na svetu; sama metoda nima zgornje meje. Vendar pa boste za dosego časa pod 15 sekund verjetno morali dopolniti vseh 42 algoritmov CMLL. A to je zadeva druge faze. Za dosego časa pod 30 sekund to ni potrebno.
+Najprej ne skrbite za zgornjo mejo Roux metode. Tudi vrhunski tekmovalci uporabljajo Roux metodo in se uvrščajo med najboljše na svetu; sama metoda nima zgornje meje.
 
 Poleg tega skoraj vsak svetovno uveljavljen tekmovalec v sestavljanju z eno roko uporablja Roux metodo, saj je resnično zelo primerna tudi za upravljanje z eno roko.
 
 **Najhitrejši rezultati z Roux metodo na uradnih tekmovanjih (WCA):**
 
--   Posamezno 4,11 sekunde, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipinec), 2023 Valenzuela Cubing Open, priznan kot najhitrejši uradni čas z Roux metodo ( [rekonstrukcijski video](https://www.youtube.com/watch?v=5H4TRJSUm-U) )
--   Povprečje 5,98 sekunde, prav tako on, 2019, takrat azijski rekord in tretji uradni povprečni čas pod 6 sekund v zgodovini ( [WCA podatki](https://www.worldcubeassociation.org/persons/2017VILL41) )
--   Je tudi [svetovni rekorder v sestavljanju z eno roko](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): povprečje 8,09, posamezno 6,05 (2024). V skupnosti OH (one-handed) je Roux splošno priznana kot optimalna rešitev.
+- Posamezno 4,11 sekunde, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipinec), 2023 Valenzuela Cubing Open, priznan kot najhitrejši uradni čas z Roux metodo ([rekonstrukcijski video](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+- Povprečje 5,98 sekunde, prav tako on, 2019, takrat azijski rekord in tretji uradni povprečni čas pod 6 sekund v zgodovini ([WCA podatki](https://www.worldcubeassociation.org/persons/2017VILL41))
+- Je tudi [svetovni rekorder v sestavljanju z eno roko](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): povprečje 8,09, posamezno 6,05 (2024). V skupnosti OH (one-handed) je Roux splošno priznana kot optimalna rešitev.
 
-Mislim, da je ta kompromis zelo ugoden. Dve ali tri sekunde v fazi CMLL zamenjate za: razumevanje vsakega koraka, pomnjenje, ki ga ne boste pozabili niti po treh mesecih brez kocke, in sposobnost, da izpeljete rešitev za katero koli neznano kocko.
+Toda za dosego časa pod 15 sekund morate s trenutnega dvostopenjskega CMLL preiti na reševanje v enem koraku, kar zahteva pomnjenje več zapletenih algoritmov.
+
+Vendar sem še vedno bolj naklonjen svobodnemu raziskovanju. Popolno razumevanje algoritmov skozi raziskovanje ali celo ustvarjanje lastnih udobnih algoritmov prinaša veliko več veselja kot učenje na pamet.
+
+Rubikova kocka je bila od nekdaj miselna igra, ne pa igra spomina. Le z razumevanjem načel lahko dosežete, da pri vsakem koraku veste, kaj počnete, da ne boste ničesar pozabili niti po treh mesecih brez kocke in da boste sposobni izpeljati rešitev za katero koli neznano kocko.
 
 ## Povzetek
 
 ![Sestavljeno](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Slika: Sestavljena kocka.*
 
 Od prve sestave do časa pod 30 sekund ni proces pomnjenja algoritmov, temveč proces treniranja koordinacije rok, oči in možganov.
 
@@ -231,7 +228,7 @@ Algoritmi niso vir hitrosti. Opazovanje je.
 
 Naučite se ustvarjati pozitivne povratne informacije z napredovanjem v vsakem koraku. Tudi vadba spretnosti ni nujno dolgočasna, še posebej, ko presenečeno ugotovite, da ste znova presegli svoj rekord. Predvsem v začetnih in srednjih fazah boste vsak dan izkusili veselje, ki ga prinaša podiranje rekordov.
 
-Vsi algoritmi in primeri iz članka so zbrani v [zbirki algoritmov za Roux metodo](/sl/projects/rubiks-cube/roux). Vrnite se tja, če se vam kje zatika.
+Vsi algoritmi in primeri iz članka so zbrani v [zbirki algoritmov za Roux metodo](/sl/projects/rubiks-cube/roux). Lahko se vrnete tja, če se vam kje zatakne.
 
 Svet Rubikove kocke ponuja neskončno zabave, želim vam veliko užitkov pri igranju.
 
@@ -266,8 +263,8 @@ Svet Rubikove kocke ponuja neskončno zabave, želim vam veliko užitkov pri igr
 
 -   **csTimer**: [cstimer.net](https://cstimer.net/). Vklopite statistiko Ao5 / Ao12 / Ao100. Ao100 je vaše resnično znanje, posamezni časi so sreča.
 -   **3D Rubikova kocka**: [philoli.com/zh/projects/rubiks-cube](/sl/projects/rubiks-cube/). Vsi algoritmi iz tega članka si lahko ogledate kot animacijo.
--   **Zbirka algoritmov za Roux metodo, prijazna začetnikom**: [philoli.com/zh/projects/rubiks-cube/roux](/sl/projects/rubiks-cube/roux). Pogoste vstavljalne tehnike za prvi in drugi blok, 9 algoritmov dvostopenjskega CMLL, vsi primeri LSE (EO, UL/UR, zadnji štirje robovi). Vsak primer se lahko odpre v 3D kocki, z avtomatskim skrivanjem nepomembnih kosov in označevanjem robov, ki jih je treba premakniti.
--   **csTimer analizator vadbe**: [philoli.com/zh/projects/rubiks-cube/analyzer](/sl/projects/rubiks-cube/analyzer). Povlecite in spustite datoteko, izvoženo iz csTimerja, da si ogledate trend svojih rezultatov, krivulje Ao5/Ao12/Ao100, napredek PB, tabelo mejnikov (kdaj ste prvič dosegli sub-60, sub-40, sub-30) in krivuljo vadbe po zakonu moči. Vsi grafi v tem članku so bili ustvarjeni s tem orodjem. Podatki se obdelujejo samo v vašem brskalniku in se ne nalagajo. Če nimate izvožene datoteke, lahko najprej naložite mojih 4441 podatkov, da vidite učinek.
+-   **Zbirka algoritmov za Roux metodo, prijazna začetnikom**: [philoli.com/zh/projects/rubiks-cube/roux](/sl/projects/rubiks-cube/roux).
+-   **csTimer analizator vadbe**: [philoli.com/zh/projects/rubiks-cube/analyzer](/sl/projects/rubiks-cube/analyzer). Povlecite in spustite datoteko, izvoženo iz csTimerja, da si ogledate trend svojih rezultatov, krivulje Ao5/Ao12/Ao100, napredek PB, tabelo mejnikov in krivuljo vadbe po zakonu moči.
 
 *Ta članek vsebuje partnerske (affiliate) povezave Amazon: z nakupom preko povezave bom prejel majhno provizijo, vaša cena pa ostaja nespremenjena.*
 

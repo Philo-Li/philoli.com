@@ -20,15 +20,15 @@ toc: true
 
 Ankstesniame straipsnyje [„Kaip išspręsti Rubiko kubą be algoritmų“](/lt/blog/solve-rubiks-cube-without-formulas/) išmokote, kaip naudojant permutacijų logiką išspręsti Rubiko kubą neįsimenant algoritmų. Tas straipsnis sulaukė daugelio entuziastingų atsiliepimų.
 
-Jei vadovavotės nurodymais, dabar jums tikriausiai reikia dviejų ar trijų minučių, ir nors rankos gal dar ne visai paklūsta, kubą išspręsti galite. Tačiau netrukus iškils naujas klausimas: kaip pagreitėti?
+Jei žingsnis po žingsnio vadovavotės nurodymais, dabar jau turėtumėte gebėti, nors ir netvirtai, pilnai išspręsti kubą; šiek tiek pasipraktikavus kelis šimtus kartų, visai nesunku pasiekti sub-1 minutę. Tačiau ką daryti, jei norisi dar didesnio greičio?
 
-Ieškodami „greitojo kubo sprendimo“ (speedcubing), visose pamokose rasite tą patį atsakymą: jei norite pasiekti sub-30 (mažiau nei 30 sekundžių), pirmiausia turite išmokti CFOP algoritmus. Iš viso 119 algoritmų: 41 F2L, 57 OLL, 21 PLL. Net jei F2L atliekamas intuityviai, viršutiniojo sluoksnio 78 algoritmų vis tiek neišvengsite. Jei jų neįsiminsite, apie greitį negalvokite.
+Ieškodami „greitojo kubo sprendimo“ (speedcubing), visose pamokose rasite tą patį atsakymą: jei norite pasiekti sub-30, pirmiausia turite iškalti šimtus CFOP algoritmų.
 
 Šiame straipsnyje noriu jums pasakyti, kad galite visiškai nemokėti algoritmų ir vis tiek pasiekti sub-30.
 
 <!--more-->
 
-Nuo 2026 m. gegužės 7 d., kai pirmą kartą išsprendžiau kubą, iki rugpjūčio 4 d., kai mano Ao100 pasiekė sub-30, praėjo 89 dienos. Per visą šį laikotarpį neįsiminiau nė vieno CFOP algoritmo, tiesiog laisvalaikiu žaidžiau. Tai yra mano 4441 išsprendimų laiko duomenys, kuriuos įrašiau.
+Nuo 2026 m. gegužės 7 d., kai pirmą kartą pilnai išsprendžiau kubą, iki rugpjūčio 4 d., kai mano Ao100 pasiekė sub-30, praėjo 89 dienos. Per visą šį laikotarpį neįsiminiau nė vieno CFOP algoritmo, tiesiog laisvalaikiu žaidžiau. Tai yra mano 4441 išsprendimų laiko duomenys, kuriuos įrašiau.
 
 ![4441 išsprendimų rezultatų kreivė](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Iš keturių etapų trims nereikia jokių algoritmų. Vienintelis reikalingas CM
 
 ## Nuo 165 iki 28 sekundžių: keturi etapai
 
-Žemiau pateikiamas mano realus kelias. Kiekviename etape aš nurodžiau pradžią ir pabaigą duomenimis, o tada paaiškinau, kas tame etape mane stabdė ir ką aš treniravausi. Jūsų kliūtys gali skirtis nuo manųjų, tačiau seka greičiausiai bus tokia pati.
-
 ![Keturios etapų trukmės](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Pav.: Keturios etapų trukmės. Pirmasis etapas – 3 savaitės, antrasis – 11 dienų, trečiasis – du mėnesiai, ketvirtasis – iki dabar.*
 
 ### Pirmasis etapas: 165 sek. → 60 sek. (1–3 savaitės)
 
-**Duomenys**: Nuo gegužės 7 d. iki gegužės 27 d. Pirmą savaitę vidurkis buvo 165 sek., trečią – 68 sek.
+**Duomenys**: Nuo gegužės 7 d. iki gegužės 27 d. Pirmą savaitę vidurkis buvo 165 sek., trečią – 68 sek. Šis etapas yra kelias nuo visiško naujoko iki pradedančiojo, kai kartodamas pamažu pradedi suprasti, ką iš tiesų reiškia kiekvienas judesys ir kurios detalės juda.
 
 **Kur užstringama**: Kairysis blokas yra labai neįgudęs, kiekvienos kubelių poros tenka ilgai ieškoti. Be to, suradus kubelių porą, pradedantieji visada linkę sustoti ir toliau stebėti.
 
@@ -111,7 +109,7 @@ Nesimokykite jokių naujų algoritmų šiame etape. Jūsų dabartinė kliūtis n
 
 ### Antrasis etapas: 60 sek. → 40 sek. (4–5 savaitės)
 
-**Duomenys**: Nuo gegužės 27 d. iki birželio 7 d., 11 dienų. Tai buvo sparčiausiai sumažėjęs etapas per visą procesą, ir aš tuo metu treniravausi daugiausiai – 723 kartus per pirmą birželio savaitę.
+**Duomenys**: Nuo gegužės 27 d. iki birželio 7 d., 11 dienų. Tai buvo sparčiausiai sumažėjęs etapas per visą procesą. Šiame etape lengviausia pajusti teigiamą grįžtamąjį ryšį: kiekvienas išmoktas dalykas ir judesio optimizavimas iškart atsispindi laike, o kasdien patiriamam rekordų gerinimo džiaugsmui mažai kas prilygsta.
 
 **Kur užstringama**: Judesiai nėra sklandūs. Kubas stringa.
 
@@ -130,7 +128,7 @@ Nesimokykite jokių naujų algoritmų šiame etape. Jūsų dabartinė kliūtis n
 
 *Pav. kairėje: Dešiniojo bloko statybos perspektyva. Kairysis blokas jau baigtas, naudojami tik keturi judesiai R, r, M, U, kad įterptumėte dešiniojoje pusėje esančią kampo ir briaunos porą, kairysis blokas niekada nebus paliestas. Pav. dešinėje: M' U M – dažniausiai naudojama judesių grupė antroje Roux metodo dalyje. Vidurinis sluoksnis pakyla, viršutinis sluoksnis pasisuka, vidurinis sluoksnis grįžta – trys žingsniai, kuriais pakeičiama viršutiniojo ir viduriniojo sluoksnio briaunų pora.*
 
-Galite peržiūrėti mano sudarytą [Roux metodo algoritmų biblioteką](/lt/projects/rubiks-cube/roux#cmll). CMLL puslapyje yra dviejų etapų metodas: 7 orientacijos algoritmai + 2 pozicijos algoritmai, iš viso 9. Tai yra efektyviausias pasirinkimas greičio didinimui, juos lengva išmokti, ir kiekviena įvaldyta grupė gali pagreitinti procesą maždaug 1–2 sekundėmis. Šiek tiek pasipraktikavus, greitai juos įvaldysite, o kai kurie jau buvo pristatyti ankstesniame straipsnyje. Jums nereikia visų jų įsiminti, kad pasiektumėte sub-30.
+Galite peržiūrėti mano sudarytą pradedantiesiems itin draugišką ir glaustą [Roux algoritmų biblioteką](/lt/projects/rubiks-cube/roux#cmll). CMLL puslapyje yra dviejų etapų metodas: 7 orientacijos algoritmai + 2 pozicijos algoritmai, iš viso 9. Tai yra efektyviausias pasirinkimas greičio didinimui, juos lengva išmokti, ir kiekviena įvaldyta grupė gali pagreitinti procesą maždaug 1–2 sekundėmis. Šiek tiek pasipraktikavus, greitai juos įvaldysite, o kai kurie jau buvo pristatyti ankstesniame straipsnyje. Jums nereikia visų jų įsiminti, kad pasiektumėte sub-30.
 
 ![Dviejų etapų CMLL pirmasis žingsnis, septynios kampų orientacijos](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Dar vienas dalykas, kuris duoda akimirksniu duoda rezultatų, geriau nei bet kok
 
 ### Trečiasis etapas: 40 sek. → 30 sek. (5–13 savaitės, du mėnesiai)
 
-**Duomenys**: Nuo birželio 7 d. iki rugpjūčio 4 d. Ao100 nuo 39.8 sek. nušlifuotas iki 29.9 sek., tam prireikė 58 dienų. Šiame etape kartais pasitaiko rezultatų, trumpesnių nei 30 sekundžių, bet tik su didele sėkme. Be to, mažėjant vidutiniam sprendimo laikui, pagerinti rezultatą 1 sekunde taps eksponentiškai sunkiau.
+**Duomenys**: Nuo birželio 7 d. iki rugpjūčio 4 d. Ao100 nuo 39.8 sek. nušlifuotas iki 29.9 sek., tam prireikė 58 dienų. Šiame etape kartais pasitaiko rezultatų, trumpesnių nei 30 sekundžių, bet tik su didele sėkme. Be to, mažėjant vidutiniam sprendimo laikui, pagerinti rezultatą 1 sekunde taps eksponentiškai sunkiau. (Ao100 reiškia paskutinių 100 sprendimų vidutinį laiką, atmetus 5 % geriausių ir blogiausių rezultatų).
 
 ![Dienos vidutinis rezultatas](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Pav.: Dienos vidutinis rezultatas. Nuo birželio vidurio kreivė beveik išsilygino, du mėnesius svyravo tarp 30–40 sekundžių.*
-
-Tai stagnacijos laikotarpis. Kiekvienas su juo susiduria, aš jame praleidau du mėnesius.
 
 **Kur užstringama**: Viršutiniojo sluoksnio šešių briaunainių sprendimas yra labai lėtas, nesuvokiama logika, kiekvieną kartą bandoma vėl ir vėl, švaistant daug laiko. Kairysis ir dešinysis blokai vis dar nepakankamai įgudę.
 
@@ -164,12 +160,13 @@ Tai stagnacijos laikotarpis. Kiekvienas su juo susiduria, aš jame praleidau du 
 
 -   **EO (briaunų orientacijos) atpažinimas.** Ankstesniame straipsnyje aptarėme, kad neteisingai orientuotų briaunų yra tik kelios situacijos: 0, ne 0 ir ne 4, 4 (po 2 viršuje/apačioje), 4 (visos viršuje), 4 (3 viršuje, 1 apačioje). Šio etapo tikslas yra: iškart po blokų pastatymo, neskaičiuojant, iš pirmo žvilgsnio atpažinti, kuri tai situacija. Treniruojamasi taip: išmaišius kubą, sprendžiama iki CMLL pabaigos, tada sustojama, pasakomas neteisingai orientuotų briaunų skaičius ir tęsiama toliau.
 -   Daugelis nesupranta čia atliekamų veiksmų. EO etapo tikslas yra sukurti strėlytės formą su 3 neteisingai orientuotomis briaunomis viršuje ir 1 apačioje, nes pilna forma po vieno išmaišymo yra strėlytės forma. Todėl, mąstant atvirkščiai, tai yra paskutinis žingsnis prieš baigiant sprendimą. Taigi, nepriklausomai nuo neteisingai orientuotų briaunų skaičiaus, galiausiai siekiama sukurti strėlytę. Jei viršuje yra 4 neteisingai orientuotos briaunos, pakeiskite vieną viršutinę briauną su viena apatine, kad viena neteisingai orientuota briauna nukeliautų žemyn, taip sukuriant strėlytę. Jei viršuje yra 2 ir apačioje 2, pakeiskite vieną viršutinę briauną su viena apatine, kad viena neteisingai orientuota briauna pakiltų aukštyn, taip sukuriant strėlytę. Jei viršuje yra 1 ir apačioje 1, arba viršuje 2, naudokite M' U M, kad pirmiausia pasiektumėte ankstesnę situaciją, o tada sukurkite strėlytę. Galite daug stebėdami ir mąstydami patys atrasti geriausius žingsnius 1/1 situacijai.
+
+    ![Strėlytės forma](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+    *Pav.: Strėlytės forma. Trys neteisingai orientuoti viršutiniojo sluoksnio briaunainiai (pažymėti žalsva spalva) sudaro strėlytę, nukreiptą į apatiniojo sluoksnio neteisingai orientuotą briaunainį. Šiuo atveju vienas M' U M judesys gali vienu metu išspręsti visus keturis. [Atidarykite šią būseną 3D kubelyje](/lt/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), kad pamatytumėte žingsnis po žingsnio.*
+
 -   **Daug treniruotis numatymą (Look-ahead).** Tai svarbiausias dalykas, pereinant nuo 40 iki 30 sekundžių, ir tai labiausiai prieštarauja intuicijai: sukite lėčiau, žiūrėkite toliau. Statydami kairįjį bloką, akys neturi žiūrėti į dedamą kubelį, o ieškoti, kur yra kitas. Iš pradžių bus labai nepatogu, rezultatai pablogės, bet po savaitės staiga pagerės.
 -   **CMLL be dvejonių.** Jei kiekvieną judesį turite apgalvoti prieš darydami, jis dar nėra jūsų. Treniruokitės kiekvieną judesį atskirai 50 kartų, kol rankos pajuda, vos pamačius formą.
-
-![Strėlytės forma](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Pav.: Strėlytės forma. Trys neteisingai orientuoti viršutiniojo sluoksnio briaunainiai (pažymėti žalsva spalva) sudaro strėlytę, nukreiptą į apatiniojo sluoksnio neteisingai orientuotą briaunainį. Šiuo atveju vienas M' U M judesys gali vienu metu išspręsti visus keturis. [Atidarykite šią būseną 3D kubelyje](/lt/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), kad pamatytumėte žingsnis po žingsnio.*
 
 ![Šešios EO formos](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,29 +196,29 @@ Tada pamatysite, kad įveikus 30–35 sekundžių stagnacijos laikotarpį, greit
 
 Šiame etape jus sveikinu – pradedantiesiems jau esate labai pažangus žaidėjas!
 
-## Algoritmų nemokėjimo kaina
+## Kitas žingsnis tobulėjant
 
-Būkime atviri. Algoritmų nemokėjimas turi savo kainą.
-
-CMLL etapas yra lėtas. 42 situacijos, apimamos 9 algoritmais, reiškia, kad kai kurias situacijas reikia atlikti du kartus. Tie, kurie moka visus CMLL algoritmus, šiame žingsnyje mane lenkia dviem ar trimis sekundėmis.
-
-M sluoksnio pirštų judesiai reikalauja daugiau įgūdžių. Antroji Roux metodo pusė visiškai priklauso nuo M sluoksnio, o M sluoksnį sunkiau sukti nei R ar U, jis lengviau stringa, be to, kelia didesnius reikalavimus pačiam kubui.
-
-Nesijaudinkite dėl maksimalių galimybių. Tarp aukščiausio lygio žaidėjų yra ir tokių, kurie su Roux metodu pasiekia pasaulinio lygio rezultatus, pats metodas neturi viršutinės ribos. Tačiau norint pasiekti sub-15, greičiausiai teks įsiminti visus 42 CMLL algoritmus. Bet tai jau kito etapo reikalas. Norint pasiekti sub-30, to nereikia.
+Pirmiausia nesijaudinkite dėl Roux metodo ribų. Tarp aukščiausio lygio žaidėjų yra ir tokių, kurie su Roux metodu pasiekia pasaulio elitą – pats metodas viršutinės ribos neturi.
 
 Be to, beveik visi pasaulinio lygio vienos rankos sprendėjai naudoja Roux metodą, nes jis tikrai puikiai tinka ir sprendimui viena ranka.
 
 **Greičiausi oficialūs Roux metodo rezultatai WCA varžybose:**
 
--   Vienkartinis rezultatas 4.11 sekundės, [Seanas Patrickas Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipinai), 2023 m. Valenzuela Cubing Open, pripažintas greičiausias oficialus Roux metodo vienkartinis rezultatas ([atstatymo vaizdo įrašas](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+-   Vienkartinis rezultatas 4.11 sekundės, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipinai), 2023 m. Valenzuela Cubing Open, pripažintas greičiausias oficialus Roux metodo vienkartinis rezultatas ([rekonstrukcijos vaizdo įrašas](https://www.youtube.com/watch?v=5H4TRJSUm-U))
 -   Vidurkis 5.98 sekundės, taip pat jo, 2019 m., tuomet Azijos rekordas ir trečias oficialus sub-6 vidurkis istorijoje ([WCA duomenys](https://www.worldcubeassociation.org/persons/2017VILL41))
 -   Jis taip pat yra [vienos rankos pasaulio rekordininkas](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): vidurkis 8.09, vienkartinis 6.05 (2024 m.). Vienos rankos sprendėjų bendruomenė plačiai pripažįsta, kad Roux yra optimaliausias sprendimo metodas.
 
-Manau, kad tai labai geras sandoris. Už dvi ar tris CMLL etapo sekundes jūs gaunate: kiekviename žingsnyje žinote, ką darote, nepamiršite net tris mėnesius nelietę kubo, ir galėsite išspręsti bet kurį nematytą kubą.
+Tačiau norint pasiekti sub-15, dabartinį dviejų etapų CMLL teks pakeisti vieno etapo atlikimu, o tam reikės įsiminti daugiau sudėtingų algoritmų.
+
+Vis dėlto aš labiau linkstu prie laisvo tyrinėjimo: tyrinėjant iki galo suprasti algoritmus ar net susikurti sau patogius judesius teikia kur kas daugiau malonumo nei aklas kalimas mintinai.
+
+Rubiko kubas iš esmės yra galvosūkis, o ne atminties žaidimas. Tik supratus principus įmanoma pasiekti tai, kad kiekviename žingsnyje žinotum, ką darai, nepamirštum net tris mėnesius nelietęs kubo, ir galėtum išspręsti bet kurį dar nematytą kubą.
 
 ## Išvada
 
 ![Išspręsta](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Pav.: Sprendimas baigtas.*
 
 Nuo pirmo išsprendimo iki sub-30 tai nėra algoritmų įsiminimo procesas, o rankų, akių ir smegenų koordinacijos treniravimas.
 
@@ -231,7 +228,7 @@ Algoritmai nėra greičio šaltinis. Stebėjimas yra.
 
 Išmokite kurti teigiamą grįžtamąjį ryšį per kiekvieno etapo progresą. Net įgūdžių praktikavimas gali būti ne toks nuobodus, ypač kai vėl ir vėl džiaugiatės pagerintu rekordu. Ypač pradiniame ir vidutiniame etapuose, kiekvieną dieną patirsite rekordų gerinimo džiaugsmą.
 
-Visus straipsnyje aptartus algoritmus ir situacijas sudėjau į [Roux metodo algoritmų biblioteką](/lt/projects/rubiks-cube/roux). Kai užstrigsite, grįžkite ir pažiūrėkite.
+Visus straipsnyje aptartus algoritmus ir situacijas sudėjau į [Roux Method algoritmų biblioteką](/lt/projects/rubiks-cube/roux). Kai užstrigsite, galite sugrįžti ir pasitikrinti.
 
 Rubiko kubo pasaulis pilnas džiaugsmo, linkiu smagaus kubinimo!
 
@@ -266,8 +263,8 @@ Rubiko kubo pasaulis pilnas džiaugsmo, linkiu smagaus kubinimo!
 
 -   **csTimer**: [cstimer.net](https://cstimer.net/). Įjunkite Ao5 / Ao12 / Ao100 statistiką, nes Ao100 rodo jūsų tikrąjį lygį, o vienkartinis rezultatas yra sėkmė.
 -   **3D kubas**: [philoli.com/zh/projects/rubiks-cube](/lt/projects/rubiks-cube/). Visi šiame straipsnyje pateikti algoritmai gali būti įvesti čia ir peržiūrėti animacijoje.
--   **Roux metodo pradedantiesiems draugiškų algoritmų biblioteka**: [philoli.com/zh/projects/rubiks-cube/roux](/lt/projects/rubiks-cube/roux). Dažniausiai naudojamos kairiojo ir dešiniojo blokų įterpimo seka, 9 dviejų etapų CMLL algoritmai, visos LSE situacijos (EO, UL/UR, paskutiniai keturi briaunainiai). Kiekvieną iš jų galima atidaryti 3D kubelyje, automatiškai paslepiant nereikalingus kubelius ir paryškinant judinamus briaunainius.
--   **csTimer treniruočių analizatorius**: [philoli.com/zh/projects/rubiks-cube/analyzer](/lt/projects/rubiks-cube/analyzer). Įkelkite csTimer eksportuotą failą ir pamatysite savo rezultatų tendencijas, Ao5/Ao12/Ao100 kreives, PB gerinimus, pasiekimų lentelę (kada pirmą kartą pasiekėte sub-60, sub-40, sub-30) ir galios dėsnio praktikavimo kreivę. Visi šiame straipsnyje pateikti paveikslėliai gauti iš čia. Duomenys apdorojami tik jūsų naršyklėje ir nėra įkeliami. Jei neturite eksportuoto failo, galite pirmiausia įkelti mano 4441 duomenų įrašą ir pažiūrėti efektą.
+-   **Roux Method pradedantiesiems draugiška algoritmų biblioteka**: [philoli.com/zh/projects/rubiks-cube/roux](/lt/projects/rubiks-cube/roux).
+-   **csTimer treniruočių analizatorius**: [philoli.com/zh/projects/rubiks-cube/analyzer](/lt/projects/rubiks-cube/analyzer). Įkelkite csTimer eksportuotą failą ir pamatysite savo rezultatų tendencijas, Ao5/Ao12/Ao100 kreives, PB gerinimus, pasiekimų lentelę ir galios dėsnio praktikavimo kreivę.
 
 *Šiame straipsnyje yra Amazon partnerių nuorodų: pirkdami per nuorodas, aš gausiu nedidelį komisinį mokestį, o jūsų kaina išliks nepakitusi.*
 

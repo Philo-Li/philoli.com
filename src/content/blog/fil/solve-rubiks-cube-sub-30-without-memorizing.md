@@ -20,15 +20,15 @@ toc: true
 
 Sa nakaraang [《Paano Mag-solve ng Rubik's Cube Nang Hindi Nagme-memorize ng Algorithm》](/fil/blog/solve-rubiks-cube-without-formulas/), natutunan mo kung paano buuin ang isang Rubik's Cube gamit ang lohika ng commutators, nang hindi nagme-memorize ng algorithm. Maraming nagbigay ng magandang feedback sa artikulong iyon.
 
-Kung sinunod mo ang mga instructions, marahil ay tumatagal ka ngayon ng dalawa hanggang tatlong minuto para buuin ang cube, medyo magulo pa ang mga galaw, pero nagagawa mo nang i-solve. Pagkatapos nito, may bagong tanong na lilitaw: Paano bumilis?
+Kung sinunod mo ito nang hakbang-hakbang, malamang na nagagawa mo nang buuin ang Rubik's Cube kahit medyo nangangapa pa. Sa kaunting practice ng ilang daang beses, madali nang makapasok sa sub-1 minute. Pero paano kung gusto mo pa ng mas mabilis na bilis?
 
-Kapag nag-search ka ng "speedcubing", iisa lang ang sasabihin sa iyo ng lahat ng tutorial: kung gusto mong makapasok sa sub-30, kailangan mong imemorya muna ang mga CFOP algorithm. 41 para sa F2L, 57 para sa OLL, 21 para sa PLL — 119 algorithm sa kabuuan. Kahit pa gawin mo ang F2L nang intuitive, hindi mo pa rin maiiwasan ang 78 sa top layer. Kung hindi mo ma-memorize, huwag mo nang isipin na bibilis ka.
+Kapag nag-search ka ng "speedcubing", iisa lang ang sasabihin sa iyo ng lahat ng tutorial: kung gusto mong makapasok sa sub-30, kailangan mong imemorya muna ang mahigit isang daang CFOP algorithm.
 
 Gusto kong sabihin sa iyo sa artikulong ito na posible kang makapasok sa sub-30 kahit hindi ka magme-memorize ng kahit anong algorithm.
 
 <!--more-->
 
-Mula nang una kong ma-solve ang Rubik's Cube noong Mayo 7, 2026, hanggang sa maabot ko ang Ao100 na sub-30 noong Agosto 4, tumagal ito ng 89 na araw. Sa panahong iyon, wala akong ni isang CFOP algorithm na minemorya; naglaro lang ako sa aking libreng oras. Ito ang naitala kong data mula sa 4441 na solve.
+Mula nang una kong kumpletong ma-solve ang Rubik's Cube noong Mayo 7, 2026, hanggang sa maabot ko ang Ao100 na sub-30 noong Agosto 4, tumagal ito ng 89 na araw. Sa panahong iyon, wala akong ni isang CFOP algorithm na minemorya; naglaro lang ako sa aking libreng oras. Ito ang naitala kong data mula sa 4441 na solve.
 
 ![Performance curve ng 4441 na solve](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Ito ang dahilan kung bakit hindi kailangan ng algorithm sa Roux method: siniksik
 
 ## Mula 165 Segundo Hanggang 28 Segundo: Apat na Yugto
 
-Narito ang tunay na landas na tinahak ko. Ang bawat yugto ay nilagyan ko ng data ng simula at pagtatapos, at pagkatapos ay ipinaliwanag ko kung saan ako nahihirapan at ano ang aking pinraktis. Maaaring iba ang iyong mga pinaghihirapan, ngunit malamang na pareho ang pagkakasunud-sunod.
-
 ![Ang haba ng bawat yugto](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Larawan: Ang haba ng bawat yugto. Tatlong linggo sa Yugto Uno, 11 araw sa Yugto Dos, dalawang buwan sa Yugto Tres, at patuloy pa rin ang Yugto Kwatro.*
 
 ### Yugto Uno: 165 Segundo → 60 Segundo (Linggo 1–3)
 
-**Data**: Mayo 7 hanggang Mayo 27. Ang average ko sa unang linggo ay 165 segundo, at sa ikatlong linggo ay 68 segundo.
+**Data**: Mayo 7 hanggang Mayo 27. Ang average ko sa unang linggo ay 165 segundo, at sa ikatlong linggo ay 68 segundo. Ang yugtong ito ay ang paglipat mula sa pagiging baguhan patungo sa pagiging pamilyar, kung saan sa pamamagitan ng pag-uulit ay unti-unti mong nauunawaan kung ano talaga ang ibig sabihin ng bawat galaw at kung aling mga piraso ang gumagalaw.
 
 **Saan ka nahihirapan**: Napakabagal sa First Block (FB); matagal hanapin ang bawat corner-edge pair. Pagkatapos makahanap ng isang pair, kadalasan ay humihinto ang mga baguhan para magpatuloy sa pagmamasid.
 
@@ -111,7 +109,7 @@ Huwag matuto ng anumang bagong algorithm sa yugtong ito. Hindi ang algorithm ang
 
 ### Yugto Dos: 60 Segundo → 40 Segundo (Linggo 4–5)
 
-**Data**: Mayo 27 hanggang Hunyo 7, 11 araw. Ito ang pinakamabilis na pagbaba sa buong proseso, at ito rin ang yugto kung saan ako pinakamaraming nag-practice, 723 na solves noong unang linggo ng Hunyo.
+**Data**: Mayo 27 hanggang Hunyo 7, 11 araw. Ito ang pinakamabilis na pagbaba sa buong proseso. Ang yugtong ito ang pinakamadaling magbigay ng positibong feedback; ang bawat pagkatuto at pag-optimize ng galaw ay agad na makikita sa oras. Ang kasiyahan ng pagbasag ng sariling record araw-araw ay mahirap mapantayan ng maraming ibang bagay.
 
 **Saan ka nahihirapan**: Hindi tuloy-tuloy ang mga galaw. Nag-stuck ang cube.
 
@@ -130,7 +128,7 @@ Sa yugtong ito, kailangan mong i-optimize ang mga galaw sa bawat yugto. Sa batay
 
 *Larawan kaliwa: Ang view kapag nagtatayo ng Second Block (SB). Tapos na ang First Block (FB), at gagamitin lang ang R, r, M, U para ipasok ang corner-edge pair sa kanan, hindi kailanman matatamaan ang FB. Larawan kanan: M' U M, ang pinakamadalas gamitin na set ng galaw sa pangalawang kalahati ng Roux. Ang M-slice ay itataas, iikot ang top layer, ibabalik ang M-slice. Tatlong hakbang para palitan ang isang pares ng edge sa top layer at M-slice.*
 
-Maaari mong tingnan ang aking ginawang [Roux Method Algorithm Database](/fil/projects/rubiks-cube/roux#cmll). Ang pahina ng CMLL ay may dalawang bahagi: 7 algorithms para sa orientation + 2 algorithms para sa permutation, sa kabuuan ay 9. Ito ang pinaka-cost-effective na paraan para bumilis, at madaling matutunan. Ang bawat set na master mo ay makakapagpabilis ng 1-2 segundo. Sa kaunting practice, mabilis mong makakasanayan; ang ilan ay naipakita na sa nakaraang artikulo, at hindi mo kailangang imemorya lahat para makapasok sa sub-30.
+Maaari mong tingnan ang aking ginawang beginner-friendly at pinasimpleng [Roux Algorithm Database](/fil/projects/rubiks-cube/roux#cmll). Ang pahina ng CMLL ay may dalawang bahagi: 7 algorithms para sa orientation + 2 algorithms para sa permutation, sa kabuuan ay 9. Ito ang pinaka-cost-effective na paraan para bumilis, at madaling matutunan. Ang bawat set na master mo ay makakapagpabilis ng 1–2 segundo. Sa kaunting practice, mabilis mong makakasanayan; ang ilan ay naipakita na sa nakaraang artikulo, at hindi mo kailangang imemorya lahat para makapasok sa sub-30.
 
 ![Unang hakbang ng two-phase CMLL, pitong oryentasyon ng corner piece](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ May isa pang bagay na mas epektibo kaysa sa anumang practice: gumastos ng kaunti
 
 ### Yugto Tres: 40 Segundo → 30 Segundo (Linggo 5 – Linggo 13, dalawang buwan)
 
-**Data**: Hunyo 7 hanggang Agosto 4. Ang Ao100 ay bumaba mula 39.8 segundo hanggang 29.9 segundo, na tumagal ng 58 araw. Sa yugtong ito, maaaring paminsan-minsan ay makakuha ka ng oras na sub-30, ngunit swerte lang kung mangyari. At habang bumababa ang average solve time, ang hirap ng pagpapabuti ng 1 segundo ay tataas nang exponential.
+**Data**: Hunyo 7 hanggang Agosto 4. Ang Ao100 ay bumaba mula 39.8 segundo hanggang 29.9 segundo, na tumagal ng 58 araw. Sa yugtong ito, maaaring paminsan-minsan ay makakuha ka ng oras na sub-30, ngunit swerte lang kung mangyari. At habang bumababa ang average solve time, ang hirap ng pagpapabuti ng 1 segundo ay tataas nang exponential. (Ang Ao100 ay kumakatawan sa average time ng pinakahuling 100 solves, matapos alisin ang pinakamagagandang 5% at pinakamasasamang 5% na resulta.)
 
 ![Pang-araw-araw na average na oras](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Larawan: Pang-araw-araw na average na oras. Pagkatapos ng kalagitnaan ng Hunyo, halos patag na ang curve, at nanatili sa pagitan ng 30–40 segundo sa loob ng dalawang buwan.*
-
-Ito ang plateau phase. Lahat ay makakaranas nito; ako ay nanatili dito ng dalawang buwan.
 
 **Saan ka nahihirapan**: Napakabagal sa pagbuo ng anim na edge piece sa top layer; hindi naiintindihan ang lohika, at bawat oras ay umaasa sa paulit-ulit na pagsubok, na nag-aaksaya ng maraming oras. Hindi pa rin sapat ang kasanayan sa First Block at Second Block.
 
@@ -164,12 +160,13 @@ Ito ang plateau phase. Lahat ay makakaranas nito; ako ay nanatili dito ng dalawa
 
 -   **EO recognition.** Sa nakaraang artikulo, natalakay na mayroon lang ilang sitwasyon ng misoriented edges: 0, non-0 non-4, 4 (2 sa taas, 2 sa ilalim), 4 (lahat sa top layer), 4 (3 sa taas, 1 sa ilalim). Ang layunin sa yugtong ito ay: sa sandaling matapos ang blocks, hindi kailangang bilangin, makita agad kung aling sitwasyon ito. Ang practice ay scramble, gawin lang hanggang CMLL, pagkatapos ay huminto, sabihin ang bilang ng misoriented edges, pagkatapos ay magpatuloy.
 -   Maraming hindi nakakaintindi ng mga galaw dito. Ang EO phase ay sa huli para makabuo ng arrow shape (3 sa taas, 1 sa ilalim), dahil ang isang kumpletong solve ay isang galaw lang ang layo mula sa arrow shape. Kaya sa reverse thinking, ito ang huling hakbang bago matapos ang solve. Kaya, anuman ang bilang ng misoriented edges, ang layunin ay makabuo ng arrow. Kung may 4 na misoriented edges sa taas, palitan ang isang pares ng edge sa taas at ilalim para maibaba ang isang edge at makamit ang arrow. Kung may 2 sa taas at 2 sa ilalim, palitan ang isang pares ng edge sa taas at ilalim para maiakyat ang isang edge at makamit ang arrow. Kung may 1 sa taas at 1 sa ilalim, o 2 sa taas, gamitin ang M' U M para maging katulad ng mga naunang sitwasyon, pagkatapos ay buuin ang arrow. Maaari kang mag-explore at makahanap ng pinakamahusay na hakbang para sa 1/1 sa pamamagitan ng maraming observation at pag-iisip.
+
+    ![Arrow shape](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+    *Larawan: Arrow shape. Tatlong misoriented edge (naka-highlight ng cyan) sa top layer na nakaporma ng arrow, na nakaturo sa misoriented edge sa bottom layer. Sa sitwasyong ito, isang M' U M lang ang makakapag-orient sa apat na ito nang sabay-sabay. [Buksan ang estado na ito sa 3D Rubik's Cube](/fil/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) para makita ang bawat hakbang.*
+
 -   **Maraming practice ng look-ahead.** Ito ang pinakamahalagang bagay mula 40 segundo hanggang 30 segundo, at ito rin ang pinaka-counter-intuitive: magpihit nang mas mabagal, tumingin nang mas malayo. Kapag ginagawa ang First Block, huwag tumingin sa piraso na kasalukuyan mong ipinapasok, tingnan kung nasaan ang susunod na piraso. Sa simula ay magiging napakailang, at maaaring lumala ang iyong oras, ngunit pagkatapos ng isang linggo, bigla itong gaganda.
 -   **CMLL nang walang pag-aalinlangan.** Kung kailangan mong mag-isip sa bawat galaw bago gawin, hindi pa ito sa iyo. I-practice ang bawat galaw nang 50 beses nang magkahiwalay, hanggang sa gumalaw ang kamay mo sa sandaling makita mo ang pattern.
-
-![Arrow shape](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Larawan: Arrow shape. Tatlong misoriented edge (naka-highlight ng cyan) sa top layer na nakaporma ng arrow, na nakaturo sa misoriented edge sa bottom layer. Sa sitwasyong ito, isang M' U M lang ang makakapag-orient sa apat na ito nang sabay-sabay. [Buksan ang estado na ito sa 3D Rubik's Cube](/fil/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) para makita ang bawat hakbang.*
 
 ![Anim na uri ng EO](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,25 +196,23 @@ At pagkatapos ay malalaman mo, pagkatapos mong malampasan ang 30-35 segundo na b
 
 Sa yugtong ito, binabati kita! Para sa mga baguhan, isa ka nang napakahusay na player!
 
-## Ang Presyo ng Hindi Pagme-memorize ng Algorithm
+## Pagsulong sa Susunod na Antas
 
-Sa puntong ito, maging tapat tayo. Hindi libre ang hindi pagme-memorize ng algorithm.
-
-Mabagal ang CMLL phase. Ang paggamit ng 9 na algorithm para masakop ang 42 sitwasyon ay nangangahulugan na ang ilang sitwasyon ay kailangang gawin nang dalawang beses. Mas mabilis nang dalawa hanggang tatlong segundo ang mga gumagamit ng kumpletong CMLL kaysa sa akin sa hakbang na ito.
-
-Mataas ang hadlang sa finger tricks ng M-slice. Ang pangalawang kalahati ng Roux ay nakasalalay lahat sa M-slice, at mas mahirap iikot ang M-slice kaysa sa R at U. Madali itong mag-stuck, at mas mataas din ang pangangailangan nito sa cube mismo.
-
-Huwag kang mag-alala sa limitasyon. Mayroon ding mga top cubers na gumagamit ng Roux na nakapasok sa mga nangungunang puwesto sa mundo; walang limitasyon ang method mismo. Ngunit para makapasok sa sub-15, malamang na kailangan mong kumpletuhin ang 42 CMLL algorithm. Ngunit iyon ay para na sa ibang yugto. Para makapasok sa sub-30, hindi mo kailangan.
+Una sa lahat, huwag kang mag-alala sa limitasyon ng Roux method. Mayroon ding mga top cubers na gumagamit ng Roux na nakapasok sa mga nangungunang puwesto sa mundo; walang limitasyon ang method mismo.
 
 At halos lahat ng world-class na one-handed (OH) solver ay gumagamit ng Roux method, dahil talagang angkop din ito para sa one-handed operation.
 
 **Ang Pinakamabilis na Oras Gamit ang Roux sa Opisyal na Kompetisyon (WCA):**
 
--   Single 4.11 segundo, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Pilipino), 2023 Valenzuela Cubing Open, kinikilalang pinakamabilis na opisyal na single solve gamit ang Roux ([reconstruction video](https://www.youtube.com/watch?v=5H4TRJSUm-U))
--   Average 5.98 segundo, siya rin, 2019, noon ay Asian record, at pangatlo sa kasaysayan na opisyal na sub-6 average ([WCA profile](https://www.worldcubeassociation.org/persons/2017VILL41))
--   Siya rin ang [current world record holder sa one-handed](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): average 8.09, single 6.05 (2024), at pangkalahatang pinaniniwalaan sa one-handed community na ang Roux ang pinakamainam na method.
+- 单次 4.11 秒，[Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Pilipino), 2023 Valenzuela Cubing Open, kinikilalang pinakamabilis na opisyal na single solve gamit ang Roux ([reconstruction video](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+- 平均 5.98 秒，siya rin, 2019, noon ay Asian record, at pangatlo sa kasaysayan na opisyal na sub-6 average ([WCA profile](https://www.worldcubeassociation.org/persons/2017VILL41))
+- Siya rin ang [current world record holder sa one-handed](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): average 8.09, single 6.05 (2024), at pangkalahatang pinaniniwalaan sa one-handed community na ang Roux ang pinakamainam na method
 
-Sa tingin ko, sulit ang kapalit na ito. Ang dalawa hanggang tatlong segundong CMLL time na isinasakripisyo mo ay kapalit ng: alam mo kung ano ang ginagawa mo sa bawat hakbang, hindi mo makakalimutan kahit hindi mo hawakan ang cube ng tatlong buwan, at makakagawa ka ng solusyon sa anumang cube na hindi mo pa nakikita.
+Ngunit para makapasok sa sub-15, kailangang gawin nang isahang hakbang ang kasalukuyang two-phase CMLL, at kailangang magsaulo ng mas maraming komplikadong algorithm.
+
+Gayunpaman, mas gusto ko pa rin ang malayang pag-explore. Ang lubusang pag-unawa sa mga algorithm sa pamamagitan ng pagtuklas, o kahit ang paggawa ng sarili mong mga algorithm na kumportable sa kamay mo, ay mas masaya kaysa sa basta pagsasaulo lang.
+
+Sa simula pa lang, ang Rubik's Cube ay isang puzzle game, hindi isang memory game. Sa pamamagitan lamang ng pag-unawa sa mga prinsipyo maaari mong marating ang puntong alam mo kung ano ang ginagawa mo sa bawat hakbang, hindi mo makakalimutan kahit hindi mo hawakan ang cube ng tatlong buwan, at makakagawa ka ng solusyon sa anumang cube na hindi mo pa nakikita dati.
 
 ## Buod
 
@@ -233,7 +228,7 @@ Hindi ang algorithm ang pinagmulan ng bilis. Ang observation ang tunay na pinagm
 
 Matuto kang bumuo ng positive feedback sa pamamagitan ng pag-unlad sa bawat yugto. Kahit ang practice ng kasanayan ay hindi kailangang maging nakakabagot, lalo na kapag natuklasan mong muli kang nakabasag ng record. Lalo na sa mga baguhan at intermediate na yugto, mararanasan mo araw-araw ang saya na dulot ng pagbasag ng record.
 
-Lahat ng algorithm at sitwasyon sa artikulong ito ay inayos ko sa [Roux Method Algorithm Database](/fil/projects/rubiks-cube/roux). Balikan mo ito kapag nahihirapan ka.
+Lahat ng algorithm at sitwasyon sa artikulong ito ay inayos ko sa [Roux Method Algorithm Database](/fil/projects/rubiks-cube/roux). Maaari mo itong balikan kapag nahihirapan ka.
 
 Walang katapusan ang saya sa mundo ng Rubik's Cube. Sana ay masaya ka sa paglalaro.
 
@@ -268,8 +263,8 @@ Walang katapusan ang saya sa mundo ng Rubik's Cube. Sana ay masaya ka sa paglala
 
 -   **csTimer**: [cstimer.net](https://cstimer.net/). Buksan ang Ao5 / Ao12 / Ao100 stats; ang Ao100 ang tunay mong lebel, ang single time ay swerte lang.
 -   **3D Rubik's Cube**: [philoli.com/zh/projects/rubiks-cube](/fil/projects/rubiks-cube/). Lahat ng algorithm sa artikulong ito ay maaaring i-input dito para makita ang animation.
--   **Roux Method Beginner-Friendly Algorithm Database**: [philoli.com/zh/projects/rubiks-cube/roux](/fil/projects/rubiks-cube/roux). Mga karaniwang insertion tricks para sa First Block (FB) at Second Block (SB), ang 9 algorithm ng two-phase CMLL, lahat ng sitwasyon ng LSE (EO, UL/UR, huling apat na edge). Ang bawat page ay maaaring buksan sa 3D Rubik's Cube, awtomatikong itinatago ang mga hindi mahalagang piraso, at ina-highlight ang mga edge na kailangang galawin.
--   **csTimer Training Analyzer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/fil/projects/rubiks-cube/analyzer). I-drag ang exported file mula sa csTimer dito, at makikita mo ang iyong progress ng oras, Ao5/Ao12/Ao100 curve, PB progression, milestone table (kailan ang una mong sub-60, sub-40, sub-30), at Power Law practice curve. Lahat ng larawan sa artikulong ito ay mula dito. Ang data ay pino-proseso lang sa iyong browser, hindi ina-upload. Kung wala kang exported file, maaari mong i-load muna ang aking 4441 data para makita ang epekto.
+-   **Roux Method Beginner-Friendly Algorithm Database**: [philoli.com/zh/projects/rubiks-cube/roux](/fil/projects/rubiks-cube/roux).
+-   **csTimer Training Analyzer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/fil/projects/rubiks-cube/analyzer). I-drag ang exported file mula sa csTimer dito, at makikita mo ang iyong progress ng oras, Ao5/Ao12/Ao100 curve, PB progression, milestone table, at Power Law practice curve.
 
 *Ang artikulong ito ay naglalaman ng Amazon affiliate links: Sa pagbili sa pamamagitan ng link, makakakuha ako ng maliit na komisyon, ngunit hindi magbabago ang iyong presyo.*
 

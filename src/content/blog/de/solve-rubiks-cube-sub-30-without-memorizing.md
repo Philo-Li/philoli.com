@@ -20,15 +20,15 @@ toc: true
 
 In meinem letzten Beitrag [„Wie du den Zauberwürfel ohne Algorithmen löst“](/de/blog/solve-rubiks-cube-without-formulas/) hast du gelernt, wie man einen Würfel mithilfe der Logik von Kommutatoren und ohne Auswendiglernen von Algorithmen löst. Dieser Artikel erhielt viel begeistertes Feedback.
 
-Wenn du das befolgt hast, brauchst du jetzt wahrscheinlich zwei bis drei Minuten pro Lösung. Es mag noch etwas chaotisch sein, aber du schaffst es. Nun taucht eine neue Frage auf: Wie werde ich schneller?
+Wenn du Schritt für Schritt mitgemacht hast, solltest du den Zauberwürfel inzwischen vollständig – wenn auch noch etwas holprig – lösen können. Nach ein paar hundert Übungsdurchläufen kommst du leicht unter 1 Minute. Aber was, wenn du noch schneller werden willst?
 
-Wenn du nach "Speedcubing" suchst, werden dir alle Tutorials dasselbe sagen: Um unter 30 Sekunden zu kommen, musst du zuerst die CFOP-Algorithmen auswendig lernen. 41 für F2L, 57 für OLL, 21 für PLL – insgesamt 119 Algorithmen. Selbst wenn du F2L intuitiv löst, kommst du um die 78 Algorithmen für die oberste Ebene nicht herum. Wenn du sie nicht auswendig lernst, vergiss es, schnell zu werden.
+Wenn du nach „Speedcubing“ suchst, werden dir alle Tutorials dasselbe sagen: Um unter 30 Sekunden zu kommen, musst du zuerst über hundert CFOP-Algorithmen auswendig lernen.
 
 Dieser Artikel möchte dir zeigen, dass du auch komplett ohne das Auswendiglernen von Algorithmen unter 30 Sekunden kommen kannst.
 
 <!--more-->
 
-Vom 7. Mai 2026, als ich den Zauberwürfel zum ersten Mal löste, bis zum 4. August desselben Jahres, als mein Ao100 unter 30 Sekunden fiel, vergingen 89 Tage. In dieser Zeit habe ich keinen einzigen CFOP-Algorithmus auswendig gelernt, sondern einfach in meiner Freizeit gespielt. Hier sind die getimten Daten meiner 4441 aufgezeichneten Lösungen.
+Vom 7. Mai 2026, als ich den Zauberwürfel zum ersten Mal vollständig löste, bis zum 4. August, als mein Ao100 unter 30 Sekunden fiel, vergingen 89 Tage. In dieser Zeit habe ich keinen einzigen CFOP-Algorithmus auswendig gelernt, sondern einfach in meiner Freizeit gespielt. Hier sind die getimten Daten meiner 4441 aufgezeichneten Lösungen.
 
 ![Leistungskurve von 4441 Lösungen](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Deshalb kann die Roux-Methode ohne das Auswendiglernen von Algorithmen auskommen
 
 ## Von 165 auf 28 Sekunden: Die vier Phasen
 
-Hier ist der Weg, den ich tatsächlich gegangen bin. Für jede Phase habe ich den Anfang und das Ende mit Daten markiert und dann erklärt, wo ich in dieser Phase feststeckte und was ich geübt habe. Deine Stolpersteine mögen anders sein als meine, aber die Reihenfolge ist wahrscheinlich die gleiche.
-
 ![Zeitlicher Verlauf der vier Phasen](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Abb.: Zeitlicher Verlauf der vier Phasen. Phase eins dauerte 3 Wochen, Phase zwei 11 Tage, Phase drei zwei Monate, Phase vier bis heute.*
 
 ### Phase eins: 165 Sekunden → 60 Sekunden (Woche 1–3)
 
-**Daten**: 7. Mai bis 27. Mai. In der ersten Woche lag mein Durchschnitt bei 165 Sekunden, in der dritten Woche bei 68 Sekunden.
+**Daten**: 7. Mai bis 27. Mai. In der ersten Woche lag mein Durchschnitt bei 165 Sekunden, in der dritten Woche bei 68 Sekunden. Dies ist die Phase vom Neuling zum Einsteiger: Durch Wiederholung versteht man allmählich, was jede einzelne Bewegung eigentlich bewirkt und welche Steine sich bewegen.
 
 **Wo du feststeckst**: Der erste Block (FB) ist noch sehr ungewohnt, und du brauchst lange, um jedes Eck-Kanten-Paar zu finden. Nachdem ein Paar gefunden wurde, neigen Anfänger dazu, anzuhalten und weiter zu beobachten.
 
@@ -111,7 +109,7 @@ Lerne in dieser Phase keine neuen Algorithmen. Dein aktueller Engpass liegt nich
 
 ### Phase zwei: 60 Sekunden → 40 Sekunden (Woche 4–5)
 
-**Daten**: 27. Mai bis 7. Juni, 11 Tage. Dies war der schnellste Rückgang im gesamten Prozess und auch die Phase, in der ich am meisten geübt habe, mit 723 Lösungen in der ersten Juniwoche.
+**Daten**: 27. Mai bis 7. Juni, 11 Tage. Dies war der schnellste Rückgang im gesamten Prozess. In dieser Phase bekommt man am leichtesten positives Feedback: Jedes Lernen und jede Bewegungsoptimierung schlägt sich sofort in den Zeiten nieder. Das Hochgefühl, fast jeden Tag Rekorde zu brechen, ist mit wenigen Dingen vergleichbar.
 
 **Wo du feststeckst**: Unzusammenhängende Bewegungen. Der Würfel hakt.
 
@@ -130,7 +128,7 @@ In dieser Phase musst du die Bewegungen jeder Stufe optimieren und auf der Grund
 
 *Abb. links: Ansicht beim Bau des zweiten Blocks (SB). Der erste Block (FB) ist bereits fertiggestellt. Mit nur vier Zügen (R, r, M, U) wird das Eck-Kanten-Paar auf der rechten Seite eingefügt, der linke Block wird dabei nie berührt. Abb. rechts: M' U M, eine der am häufigsten verwendeten Zugfolgen in der zweiten Hälfte der Roux-Methode. Die M-Ebene kommt hoch, die U-Ebene dreht sich, die M-Ebene geht zurück. In drei Schritten wird ein Kantenpaar zwischen U- und M-Ebene getauscht.*
 
-Du kannst meine [Roux-Methode Algorithmen-Sammlung](/de/projects/rubiks-cube/roux#cmll) einsehen. Die CMLL-Seite ist zweistufig: 7 Algorithmen für die Orientierung + 2 Algorithmen für die Permutation, insgesamt 9 Algorithmen. Dies ist eine kostengünstige Option zur Geschwindigkeitssteigerung, die leicht zu erlernen ist. Jede gemeisterte Gruppe kann dir etwa 1–2 Sekunden einsparen. Mit etwas Übung wirst du schnell flüssig werden, und einige wurden bereits im vorherigen Artikel vorgestellt. Du musst sie nicht alle auswendig lernen, um unter 30 Sekunden zu kommen.
+Du kannst meine sehr anfängerfreundliche, kompakte [Roux-Methode Algorithmen-Sammlung](/de/projects/rubiks-cube/roux#cmll) einsehen. Die CMLL-Seite ist zweistufig: 7 Algorithmen für die Orientierung + 2 Algorithmen für die Permutation, insgesamt 9 Algorithmen. Dies ist eine kostengünstige Option zur Geschwindigkeitssteigerung, die leicht zu erlernen ist. Jede gemeisterte Gruppe kann dir etwa 1–2 Sekunden einsparen. Mit etwas Übung wirst du schnell flüssig werden, und einige wurden bereits im vorherigen Artikel vorgestellt. Du musst sie nicht alle auswendig lernen, um unter 30 Sekunden zu kommen.
 
 ![Zweistufiges CMLL, erster Schritt: Sieben Eckstück-Orientierungen](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Noch etwas, das schneller wirkt als jede Übung: Gib etwas Geld aus und hol dir 
 
 ### Phase drei: 40 Sekunden → 30 Sekunden (Woche 5–13, zwei Monate)
 
-**Daten**: 7. Juni bis 4. August. Mein Ao100 kämpfte sich von 39,8 Sekunden auf 29,9 Sekunden in 58 Tagen. In dieser Phase können gelegentlich Zeiten unter 30 Sekunden auftreten, aber nur mit sehr viel Glück. Und mit sinkender durchschnittlicher Lösungszeit steigt die Schwierigkeit, eine Sekunde zu verbessern, exponentiell an.
+**Daten**: 7. Juni bis 4. August. Mein Ao100 kämpfte sich von 39,8 Sekunden auf 29,9 Sekunden in 58 Tagen. In dieser Phase können gelegentlich Zeiten unter 30 Sekunden auftreten, aber nur mit sehr viel Glück. Und mit sinkender durchschnittlicher Lösungszeit steigt die Schwierigkeit, eine Sekunde zu verbessern, exponentiell an. (Ao100 steht für den Durchschnitt der letzten 100 Lösungen, bereinigt um die besten und schlechtesten 5 % der Ergebnisse.)
 
 ![Täglicher Durchschnitt](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Abb.: Täglicher Durchschnitt. Nach Mitte Juni flachte die Kurve fast ab und verharrte zwei Monate lang zwischen 30 und 40 Sekunden.*
-
-Dies ist die Plateauphase. Jeder wird sie erleben, und ich verbrachte hier zwei Monate.
 
 **Wo du feststeckst**: Das Lösen der sechs Kantenstücke der oberen Ebene ist sehr langsam. Das Verständnis der Logik fehlt, und jedes Mal wird viel Zeit mit wiederholtem Ausprobieren verschwendet. Der erste und zweite Block sind immer noch nicht flüssig genug.
 
@@ -164,12 +160,13 @@ Dies ist die Plateauphase. Jeder wird sie erleben, und ich verbrachte hier zwei 
 
 - EO-Erkennung (Edge Orientation). Im letzten Beitrag wurde erwähnt, dass es nur wenige Fälle von falsch orientierten Kanten gibt: 0, nicht 0 und nicht 4, 4 (jeweils 2 oben/unten), 4 (alle auf der U-Ebene), 4 (3 oben, 1 unten). Ziel in dieser Phase ist es, im Moment des Blockbaus sofort zu erkennen, welcher Fall vorliegt, ohne zu zählen. Die Übungsmethode ist: Scramble, nur bis zum Ende von CMLL lösen, dann pausieren, die Anzahl der falsch orientierten Kanten nennen und dann fortfahren.
 - Viele verstehen die Bewegungen hier nicht. Die EO-Phase dient letztendlich dazu, die Pfeilform (3 Kanten oben, 1 unten) zu konstruieren. Da der vollständig gelöste Zustand nur einen Scramble-Schritt von der Pfeilform entfernt ist, ist sie rückwärts betrachtet der letzte Schritt vor der vollständigen Lösung. Unabhängig von der Anzahl der falsch orientierten Kanten ist das Ziel immer, einen Pfeil zu konstruieren. Bei 4 falsch orientierten Kanten oben tauscht man ein Paar von oben und unten, um eine Kante nach unten zu bringen und den Pfeil zu erzeugen. Bei 2 oben und 2 unten tauscht man ein Paar von oben und unten, um eine Kante nach oben zu bringen und den Pfeil zu erzeugen. Wenn 1 oben und 1 unten oder 2 oben, dann verwendet man M' U M, um zuerst eine der vorherigen Situationen zu erzeugen und dann den Pfeil zu konstruieren. Du kannst durch viel Beobachtung und Nachdenken die optimalen Schritte für den 1/1-Fall selbst entdecken.
+
+  ![Pfeilform](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+  *Abb.: Pfeilform. Drei falsch orientierte Kanten (türkis hervorgehoben) auf der U-Ebene bilden einen Pfeil, der auf die falsch orientierte Kante auf der D-Ebene zeigt. Ein M' U M bringt dann alle vier gleichzeitig in die richtige Orientierung. [Öffne diesen Zustand im 3D-Würfel](/de/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), um die Schritte einzeln zu sehen.*
+
 - Viel Look-ahead üben. Dies ist das Wichtigste, um von 40 auf 30 Sekunden zu kommen, und auch das Kontraintuitivste: Drehe etwas langsamer, schau weiter voraus. Wenn du den ersten Block baust, schau nicht auf das Teil, das gerade eingesetzt wird, sondern schau, wo das nächste Teil ist. Am Anfang wird es sich sehr komisch anfühlen, und deine Zeiten werden sich zunächst verschlechtern, aber nach einer Woche wird es plötzlich viel besser werden.
 - CMLL ohne Zögern. Wenn du bei einer Bewegung jedes Mal nachdenken musst, bevor du sie ausführst, ist sie noch nicht "deine". Übe jede Bewegung einzeln 50 Mal, bis deine Hände sich von selbst bewegen, sobald du das Muster siehst.
-
-![Pfeilform](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Abb.: Pfeilform. Drei falsch orientierte Kanten (türkis hervorgehoben) auf der U-Ebene bilden einen Pfeil, der auf die falsch orientierte Kante auf der D-Ebene zeigt. Ein M' U M bringt dann alle vier gleichzeitig in die richtige Orientierung. [Öffne diesen Zustand im 3D-Würfel](/de/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), um die Schritte einzeln zu sehen.*
 
 ![Sechs EO-Fälle](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,15 +196,9 @@ Dann wirst du feststellen, dass deine Geschwindigkeit nach Überwindung des 30�
 
 Wenn du diese Phase erreichst, herzlichen Glückwunsch! Für Anfänger bist du bereits ein sehr beeindruckender Spieler!
 
-## Der Preis des algorithmusfreien Lösens
+## Nächste Schritte zur Fortgeschrittenenstufe
 
-An dieser Stelle muss ich ehrlich sein. Das algorithmusfreie Lösen ist nicht kostenlos.
-
-Die CMLL-Phase ist langsamer. 42 Fälle werden mit 9 Algorithmen abgedeckt, was bedeutet, dass einige Fälle zweimal ausgeführt werden müssen. Leute, die das vollständige CMLL beherrschen, sind in diesem Schritt zwei bis drei Sekunden schneller als ich.
-
-Die M-Ebenen-Fingertricks haben eine hohe Hürde. Die zweite Hälfte der Roux-Methode basiert vollständig auf der M-Ebene, die schwieriger zu drehen ist als R oder U, leicht hakt und höhere Anforderungen an den Würfel selbst stellt.
-
-Mach dir keine Sorgen um die Obergrenze. Es gibt auch Top-Spieler, die mit Roux in die Weltspitze vorgedrungen sind; die Methode selbst hat keine Obergrenze. Aber um unter 15 Sekunden zu kommen, wirst du wahrscheinlich die 42 CMLL-Algorithmen vervollständigen müssen. Das ist jedoch eine Sache für eine andere Phase. Um unter 30 Sekunden zu kommen, ist das nicht nötig.
+Mach dir zunächst keine Sorgen um die Obergrenze der Roux-Methode. Es gibt auch Top-Spieler, die mit Roux in die Weltspitze vorgedrungen sind; die Methode selbst hat kein Limit.
 
 Und fast jeder Weltklasse-Spieler, der einhändig löst, verwendet die Roux-Methode, weil sie sich wirklich auch sehr gut für die Einhandbedienung eignet.
 
@@ -217,11 +208,17 @@ Und fast jeder Weltklasse-Spieler, der einhändig löst, verwendet die Roux-Meth
 - Durchschnitt 5,98 Sekunden, ebenfalls er, 2019, damals Asienrekord und der dritte offizielle sub-6-Durchschnitt aller Zeiten ([WCA-Profil](https://www.worldcubeassociation.org/persons/2017VILL41))
 - Er ist auch der [einhändige Weltrekordhalter](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): Durchschnitt 8,09, Einzelzeit 6,05 (2024). In der One-Handed-Community gilt Roux weithin als die optimale Lösungsmethode.
 
-Ich finde diesen Kompromiss sehr lohnenswert. Du gibst zwei bis drei Sekunden in der CMLL-Phase auf und erhältst dafür: Du weißt genau, was du in jedem Schritt tust, du vergisst nichts, selbst wenn du den Würfel drei Monate lang nicht anfasst, und du kannst jede unbekannte Würfelkonfiguration lösen.
+Um jedoch unter 15 Sekunden zu kommen, muss man vom derzeitigen zweistufigen CMLL zu einer einstufigen Ausführung übergehen, wofür man mehr und komplexere Algorithmen lernen muss.
+
+Ich ziehe es jedoch vor, frei zu experimentieren. Algorithmen durch eigenes Erkunden wirklich zu verstehen oder sogar eigene, angenehmer zu greifende Algorithmen zu entwickeln, macht viel mehr Spaß als reines Auswendiglernen.
+
+Der Zauberwürfel ist im Grunde ein Denkspiel, kein Gedächtnisspiel. Nur wenn man die Prinzipien versteht, weiß man bei jedem Schritt genau, was man tut, vergisst selbst nach drei Monaten Pause nichts und kann für jede unbekannte Würfelkonfiguration eine Lösung finden.
 
 ## Zusammenfassung
 
 ![Lösung abgeschlossen](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Abb.: Gelöst.*
 
 Von der ersten Lösung bis unter 30 Sekunden ist es kein Prozess des Auswendiglernens von Algorithmen, sondern ein Training der Koordination von Händen, Augen und Gehirn.
 
@@ -231,7 +228,7 @@ Algorithmen sind nicht die Quelle der Geschwindigkeit. Beobachtung ist es.
 
 Lerne, durch Fortschritte in jedem Bereich positive Rückmeldungen zu erhalten. Selbst Geschicklichkeitsübungen müssen nicht langweilig sein, besonders wenn du die Überraschung erlebst, deinen Rekord erneut zu brechen. Besonders in den Anfänger- und mittleren Phasen wirst du jeden Tag die Freude spüren, einen neuen Rekord aufzustellen.
 
-Alle Algorithmen und Fälle aus diesem Artikel habe ich in der [Roux-Methode Algorithmen-Sammlung](/de/projects/rubiks-cube/roux) zusammengefasst. Schau dort nach, wenn du mal nicht weiterweißt.
+Alle Algorithmen und Fälle aus diesem Artikel habe ich in der [Roux-Methode Algorithmen-Sammlung](/de/projects/rubiks-cube/roux) zusammengefasst. Du kannst dort nachschlagen, wenn du mal nicht weiterweißt.
 
 Die Welt des Zauberwürfels bietet unendlichen Spaß. Ich wünsche dir viel Freude beim Lösen!
 
@@ -266,8 +263,8 @@ Die Welt des Zauberwürfels bietet unendlichen Spaß. Ich wünsche dir viel Freu
 
 - **csTimer**: [cstimer.net](https://cstimer.net/). Aktiviere die Ao5 / Ao12 / Ao100 Statistiken. Dein Ao100 spiegelt dein wahres Können wider, während Einzelzeiten oft Glückssache sind.
 - **3D Zauberwürfel**: [philoli.com/zh/projects/rubiks-cube](/de/projects/rubiks-cube/). Alle Algorithmen aus diesem Artikel können hier eingegeben und als Animation angesehen werden.
-- **Roux-Methode Algorithmen-Sammlung (anfängerfreundlich)**: [philoli.com/zh/projects/rubiks-cube/roux](/de/projects/rubiks-cube/roux). Häufige Einsetz-Routinen für den ersten und zweiten Block, die 9 zweistufigen CMLL-Algorithmen und alle LSE-Fälle (EO, UL/UR, die letzten vier Kanten). Jedes Bild kann im 3D-Würfel geöffnet werden, wobei irrelevante Teile automatisch ausgeblendet und die zu bewegenden Kanten hervorgehoben werden.
-- **csTimer Trainingsanalysator**: [philoli.com/zh/projects/rubiks-cube/analyzer](/de/projects/rubiks-cube/analyzer). Ziehe deine aus csTimer exportierte Datei hinein, um deine Leistungsentwicklung, Ao5-/Ao12-/Ao100-Kurven, PB-Fortschritte, Meilensteintabelle (erster sub-60, sub-40, sub-30 Tag) und Power-Law-Übungskurve zu sehen. Alle Grafiken in diesem Artikel stammen von hier. Die Daten werden nur in deinem Browser verarbeitet und nicht hochgeladen. Wenn du keine Exportdatei hast, kannst du zuerst meine 4441 Daten laden, um die Funktionalität zu sehen.
+- **Roux-Methode Algorithmen-Sammlung (anfängerfreundlich)**: [philoli.com/zh/projects/rubiks-cube/roux](/de/projects/rubiks-cube/roux).
+- **csTimer Trainingsanalysator**: [philoli.com/zh/projects/rubiks-cube/analyzer](/de/projects/rubiks-cube/analyzer). Ziehe deine aus csTimer exportierte Datei hinein, um deine Leistungsentwicklung, Ao5-/Ao12-/Ao100-Kurven, PB-Fortschritte, Meilensteintabelle und Power-Law-Übungskurve zu sehen.
 
 *Dieser Artikel enthält Amazon-Affiliate-Links: Wenn du über die Links kaufst, erhalte ich eine kleine Provision, dein Preis bleibt jedoch unverändert.*
 

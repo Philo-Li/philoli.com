@@ -20,15 +20,15 @@ toc: true
 
 W poprzednim artykule [„Jak ułożyć kostkę Rubika bez algorytmów”](/pl/blog/solve-rubiks-cube-without-formulas/) nauczyłeś się układać kostkę, bazując na logice komutatorów, bez zapamiętywania algorytmów. Ten wpis spotkał się z bardzo entuzjastycznym przyjęciem.
 
-Jeśli zastosowałeś się do tamtych wskazówek, prawdopodobnie potrzebujesz teraz około dwóch, trzech minut – może trochę nieporadnie, ale kostka się układa. Wtedy pojawia się nowe pytanie: jak przyspieszyć?
+Jeśli podążałeś za instrukcjami krok po kroku, powinieneś już być w stanie – choć może jeszcze trochę nieporadnie – w pełni ułożyć kostkę. Przy odrobinie praktyki i kilkuset ułożeniach łatwo zejść poniżej 1 minuty. Ale co, jeśli chcesz osiągnąć jeszcze większą prędkość?
 
-Gdy poszukasz „speedcubingu”, wszystkie poradniki powiedzą ci jedno: jeśli chcesz zejść poniżej 30 sekund, musisz nauczyć się algorytmów CFOP. 41 algorytmów F2L, 57 OLL, 21 PLL – w sumie 119. Nawet jeśli F2L robisz intuicyjnie, i tak nie unikniesz 78 algorytmów na górną warstwę. Bez ich opanowania, o szybkości zapomnij.
+Gdy poszukasz „speedcubingu”, wszystkie poradniki powiedzą ci jedno: jeśli chcesz zejść poniżej 30 sekund, musisz najpierw nauczyć się na pamięć ponad stu algorytmów CFOP.
 
 Ten artykuł ma na celu udowodnić, że możesz zejść poniżej 30 sekund, nie ucząc się ani jednego algorytmu.
 
 <!--more-->
 
-Od 7 maja 2026 roku, kiedy pierwszy raz ułożyłem kostkę, do 4 sierpnia, kiedy moje Ao100 spadło poniżej 30 sekund, minęło 89 dni. Przez cały ten czas nie nauczyłem się ani jednego algorytmu CFOP, po prostu bawiłem się kostką w wolnych chwilach. Oto dane z 4441 moich ułożeń.
+Od 7 maja 2026 roku, kiedy pierwszy raz w pełni ułożyłem kostkę, do 4 sierpnia, kiedy moje Ao100 spadło poniżej 30 sekund, minęło 89 dni. Przez cały ten czas nie nauczyłem się ani jednego algorytmu CFOP, po prostu bawiłem się kostką w wolnych chwilach. Oto dane z 4441 moich ułożeń.
 
 ![Krzywa wyników z 4441 ułożeń](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Dlatego właśnie metoda Roux pozwala na układanie bez zapamiętywania algorytm
 
 ## Od 165 do 28 sekund: Cztery etapy
 
-Poniżej przedstawiam moją prawdziwą ścieżkę. Dla każdego etapu zaznaczyłem początek i koniec danymi, a następnie opisałem, gdzie napotkałem trudności i co ćwiczyłem. Twoje punkty krytyczne mogą się różnić od moich, ale kolejność prawdopodobnie będzie taka sama.
-
 ![Rozpiętość czasowa czterech etapów](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Rys.: Rozpiętość czasowa czterech etapów. Etap pierwszy – 3 tygodnie, etap drugi – 11 dni, etap trzeci – dwa miesiące, etap czwarty – do dziś.*
 
 ### Etap pierwszy: 165 sekund → 60 sekund (tydzień 1–3)
 
-**Dane**: Od 7 do 27 maja. Średnia w pierwszym tygodniu wynosiła 165 sekund, w trzecim – 68 sekund.
+**Dane**: Od 7 do 27 maja. Średnia w pierwszym tygodniu wynosiła 165 sekund, w trzecim – 68 sekund. To etap przejścia od nowicjusza do poziomu początkującego: dzięki powtórzeniom stopniowo zaczynasz rozumieć, co tak naprawdę oznacza każdy ruch i które elementy się przemieszczają.
 
 **Gdzie napotkałem trudności**: Lewy blok był bardzo nieopanowany, szukałem każdej pary bloków bardzo długo. Po znalezieniu pary, początkujący zawsze mają tendencję do zatrzymywania się i dalszego obserwowania.
 
@@ -111,7 +109,7 @@ Nie ucz się żadnych nowych algorytmów na tym etapie. Twoje obecne wąskie gar
 
 ### Etap drugi: 60 sekund → 40 sekund (tydzień 4–5)
 
-**Dane**: Od 27 maja do 7 czerwca, 11 dni. To był najszybszy spadek czasu w całym procesie i okres, w którym ćwiczyłem najwięcej – 723 ułożenia w pierwszym tygodniu czerwca.
+**Dane**: Od 27 maja do 7 czerwca, 11 dni. To był najszybszy spadek czasu w całym procesie. Ten etap przynosi najwięcej natychmiastowej satysfakcji: każda nowa wiedza i optymalizacja ruchów od razu przekładają się na wynik czasowy, a frajda z bicia rekordów każdego dnia to uczucie, z którym mało co może się równać.
 
 **Gdzie napotkałem trudności**: Niespójne ruchy. Zacinanie się kostki.
 
@@ -130,7 +128,7 @@ Na tym etapie musisz zoptymalizować ruchy na każdym etapie, a na podstawie zro
 
 *Rys. lewy: Widok podczas budowania prawego bloku (SB). Lewy blok jest już ukończony, a do wstawienia par narożnik-krawędź po prawej stronie używa się tylko czterech ruchów: R, r, M, U, dzięki czemu lewy blok nigdy nie jest naruszony. Rys. prawy: M' U M, najczęściej używana sekwencja ruchów w drugiej połowie Roux. Warstwa środkowa idzie w górę, górna warstwa obraca się, warstwa środkowa wraca – trzy kroki, aby wymienić parę krawędzi z warstwy górnej i środkowej.*
 
-Możesz zajrzeć do mojej [biblioteki algorytmów metody Roux](/pl/projects/rubiks-cube/roux#cmll). Strona CMLL przedstawia dwuetapowe rozwiązanie: 7 algorytmów orientacji + 2 algorytmy permutacji, w sumie 9. To najbardziej opłacalny wybór pod kątem zwiększenia szybkości, łatwy do nauczenia, a opanowanie każdego zestawu może przyspieszyć cię o około 1-2 sekundy. Po krótkiej praktyce szybko staną się płynne; niektóre z nich zostały już omówione w poprzednim artykule. Nie musisz zapamiętywać ich wszystkich, aby zejść poniżej 30 sekund.
+Możesz zajrzeć do mojej bardzo przyjaznej dla początkujących, uproszczonej wersji [biblioteki algorytmów Roux](/pl/projects/rubiks-cube/roux#cmll). Strona CMLL przedstawia dwuetapowe rozwiązanie: 7 algorytmów orientacji + 2 algorytmy permutacji, w sumie 9. To najbardziej opłacalny wybór pod kątem zwiększenia szybkości, łatwy do nauczenia, a opanowanie każdego zestawu może przyspieszyć cię o około 1-2 sekundy. Po krótkiej praktyce szybko staną się płynne; niektóre z nich zostały już omówione w poprzednim artykule. Nie musisz zapamiętywać ich wszystkich, aby zejść poniżej 30 sekund.
 
 ![Pierwszy krok dwuetapowego CMLL, siedem orientacji narożników](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Jest jeszcze jedna rzecz, która przynosi natychmiastowe efekty, lepsze niż jak
 
 ### Etap trzeci: 40 sekund → 30 sekund (tydzień 5–13, dwa miesiące)
 
-**Dane**: Od 7 czerwca do 4 sierpnia. Obniżenie Ao100 z 39.8 sekundy do 29.9 sekundy zajęło 58 dni. Na tym etapie sporadycznie mogły pojawiać się wyniki poniżej 30 sekund, ale tylko przy bardzo dużym szczęściu. Co więcej, wraz ze spadkiem średniego czasu układania, trudność w poprawie o każdą sekundę będzie rosła wykładniczo.
+**Dane**: Od 7 czerwca do 4 sierpnia. Obniżenie Ao100 z 39.8 sekundy do 29.9 sekundy zajęło 58 dni. Na tym etapie sporadycznie mogły pojawiać się wyniki poniżej 30 sekund, ale tylko przy bardzo dużym szczęściu. Co więcej, wraz ze spadkiem średniego czasu układania, trudność w poprawie o każdą sekundę będzie rosła wykładniczo. (Ao100 oznacza średni czas z ostatnich 100 ułożeń, po odrzuceniu 5% najlepszych i 5% najgorszych wyników).
 
 ![Dzienne średnie wyniki](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Rys.: Dzienne średnie wyniki. Połowa czerwca to moment, gdy krzywa praktycznie się spłaszczyła, a ja szlifowałem umiejętności między 30 a 40 sekundami przez dwa miesiące.*
-
-To jest okres stagnacji. Każdy go doświadcza, ja spędziłem tu dwa miesiące.
 
 **Gdzie napotkałem trudności**: Układanie sześciu krawędzi górnej warstwy było bardzo powolne, brakowało mi zrozumienia logiki, za każdym razem polegałem na próbach i błędach, marnując mnóstwo czasu. Lewy i prawy blok wciąż nie były wystarczająco płynne.
 
@@ -164,12 +160,13 @@ To jest okres stagnacji. Każdy go doświadcza, ja spędziłem tu dwa miesiące.
 
 -   Rozpoznawanie orientacji krawędzi (EO). W poprzednim artykule wspomniano, że istnieją tylko pewne przypadki źle zorientowanych krawędzi: 0, nie 0 i nie 4, 4 (2 na górze, 2 na dole), 4 (wszystkie na górnej warstwie), 4 (3 na górze, 1 na dole). Celem na tym etapie jest: w momencie zakończenia budowania bloków, bez liczenia, od razu rozpoznać, który to przypadek. Metoda ćwiczenia polega na scramblowaniu, układaniu tylko do końca CMLL, następnie zatrzymaniu się, podaniu liczby źle zorientowanych krawędzi, a następnie kontynuowaniu.
 -   Wielu ludzi nie rozumie ruchów na tym etapie. Faza EO ostatecznie ma na celu stworzenie konfiguracji „strzałki” (3 na górze, 1 na dole), ponieważ pełne ułożenie jest tylko jeden ruch od konfiguracji strzałki. Myśląc wstecz, jest to ostatni krok przed ukończeniem układania. Niezależnie od liczby źle zorientowanych krawędzi, ostatecznym celem jest stworzenie strzałki. Jeśli masz 4 źle zorientowane krawędzie na górze, wymień jedną parę krawędzi góra-dół, aby jedną źle zorientowaną krawędź przenieść na dół, tworząc strzałkę. Jeśli masz 2 na górze i 2 na dole, wymień jedną parę krawędzi góra-dół, aby jedną źle zorientowaną krawędź przenieść na górę, tworząc strzałkę. Jeśli masz 1 na górze i 1 na dole, lub 2 na górze, użyj M' U M, aby najpierw przekształcić to w poprzednią sytuację, a następnie zbudować strzałkę. Możesz odkryć optymalne kroki dla przypadku 1/1 poprzez intensywną obserwację i myślenie.
+
+    ![Konfiguracja strzałki](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+    *Rys.: Konfiguracja strzałki. Trzy źle zorientowane krawędzie górnej warstwy (podświetlone na turkusowo) tworzą strzałkę wskazującą na jedną źle zorientowaną krawędź dolnej warstwy. W tym momencie jeden M' U M może ułożyć wszystkie cztery jednocześnie. [Otwórz ten stan w kostce 3D](/pl/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), aby zobaczyć krok po kroku.*
+
 -   Dużo ćwicz look-ahead (przewidywanie). To najważniejsza, a zarazem najbardziej sprzeczna z intuicją rzecz, aby zejść z 40 do 30 sekund: obracaj wolniej, patrz dalej. Kiedy budujesz lewy blok, nie patrz na klocek, który właśnie wstawiasz, patrz, gdzie jest następny. Na początku będzie to bardzo niewygodne, wyniki najpierw się pogorszą, ale po tygodniu nagle się poprawią.
 -   CMLL bez wahania. Jeśli za każdym razem musisz się zastanowić, zanim wykonasz ruch, to znaczy, że nie jest on jeszcze twój. Ćwicz każdy ruch osobno 50 razy, aż ręka zacznie się poruszać automatycznie na widok kształtu.
-
-![Konfiguracja strzałki](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Rys.: Konfiguracja strzałki. Trzy źle zorientowane krawędzie górnej warstwy (podświetlone na turkusowo) tworzą strzałkę wskazującą na jedną źle zorientowaną krawędź dolnej warstwy. W tym momencie jeden M' U M może ułożyć wszystkie cztery jednocześnie. [Otwórz ten stan w kostce 3D](/pl/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), aby zobaczyć krok po kroku.*
 
 ![Sześć konfiguracji EO](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,29 +196,29 @@ Wtedy odkryjesz, że po przejściu przez okres stagnacji na poziomie 30–35 sek
 
 Na tym etapie gratuluję! Z perspektywy początkującego jesteś już bardzo zaawansowanym graczem!
 
-## Cena układania bez algorytmów
+## Kolejny krok w rozwoju
 
-Bądźmy szczerzy. Układanie bez algorytmów nie jest darmowe.
-
-Etap CMLL jest wolniejszy. Pokrycie 42 przypadków za pomocą 9 algorytmów oznacza, że niektóre sytuacje trzeba rozwiązać dwukrotnie. Osoby znające pełny CMLL są na tym etapie o dwie, trzy sekundy szybsze ode mnie.
-
-Technika warstwy M ma wyższy próg wejścia. Druga połowa Roux opiera się całkowicie na warstwie M, która jest trudniejsza do obracania niż R czy U, łatwiej się zacina i wymaga lepszej jakości kostki.
-
-Nie martw się o górny limit. Wśród czołowych zawodników są też tacy, którzy używają Roux i osiągają światowe wyniki; sama metoda nie ma górnej granicy. Ale aby zejść poniżej 15 sekund, najprawdopodobniej będziesz musiał opanować wszystkie 42 algorytmy CMLL. To jednak kwestia na inny etap. Do zejścia poniżej 30 sekund nie jest to potrzebne.
+Przede wszystkim nie martw się o górny limit metody Roux. Wśród czołowych zawodników są też tacy, którzy używają Roux i osiągają światowe wyniki; sama metoda nie ma górnej granicy.
 
 Co więcej, niemal każdy światowej klasy gracz układający kostkę jedną ręką (OH) używa metody Roux, ponieważ jest ona naprawdę doskonale przystosowana do operowania jedną ręką.
 
 **Najszybsze wyniki metodą Roux w oficjalnych zawodach (WCA):**
 
--   Singiel 4.11 sekundy, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipiny), Valenzuela Cubing Open 2023, uznany za najszybszy oficjalny singiel Roux ([film z rekonstrukcją](https://www.youtube.com/watch?v=5H4TRJSUm-U))
--   Średnia 5.98 sekundy, również on, 2019 rok – wówczas rekord Azji i trzecia w historii oficjalna średnia sub-6 ([profil WCA](https://www.worldcubeassociation.org/persons/2017VILL41))
--   Jest także [aktualnym rekordzistą świata w układaniu jedną ręką (OH)](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): średnia 8.09, singiel 6.05 (2024). W środowisku OH powszechnie uważa się Roux za optymalną metodę.
+- Singiel 4.11 sekundy, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipiny), Valenzuela Cubing Open 2023, uznany za najszybszy oficjalny singiel Roux ([film z rekonstrukcją](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+- Średnia 5.98 sekundy, również on, 2019 rok – wówczas rekord Azji i trzecia w historii oficjalna średnia sub-6 ([profil WCA](https://www.worldcubeassociation.org/persons/2017VILL41))
+- Jest także [aktualnym rekordzistą świata w układaniu jedną ręką (OH)](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): średnia 8.09, singiel 6.05 (2024). W środowisku OH powszechnie uważa się Roux za optymalną metodę.
 
-Uważam, że ta wymiana jest bardzo korzystna. Za poświęcenie dwóch, trzech sekund na etapie CMLL zyskujesz: świadomość każdego swojego ruchu, brak zapominania metody nawet po trzech miesiącach bez kostki oraz umiejętność ułożenia każdej nieznanej kostki.
+Jednak aby zejść poniżej 15 sekund, trzeba przejść z obecnego dwuetapowego CMLL do rozwiązywania go za jednym razem, co wymaga zapamiętania większej liczby skomplikowanych algorytmów.
+
+Ja jednak wciąż wolę swobodne odkrywanie. Całkowite zrozumienie algorytmów poprzez eksperymentowanie, a nawet tworzenie własnych, wygodnych dla siebie ruchów, daje znacznie więcej frajdy niż bezmyślne wkuwanie na pamięć.
+
+Kostka Rubika od początku miała być łamigłówką logiczną, a nie testem pamięci. Tylko rozumiejąc zasady działania, osiągniesz stan, w którym przy każdym ruchu wiesz, co robisz, nie zapomnisz metody nawet po trzech miesiącach przerwy i będziesz w stanie znaleźć rozwiązanie dla każdej nowej kostki, jaka wpadnie ci w ręce.
 
 ## Podsumowanie
 
 ![Ułożona kostka](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Rys.: Ułożenie ukończone.*
 
 Od umiejętności ułożenia kostki do zejścia poniżej 30 sekund nie jest to proces zapamiętywania algorytmów, lecz trening koordynacji rąk, oczu i mózgu.
 
@@ -231,7 +228,7 @@ Algorytmy nie są źródłem szybkości. Obserwacja jest.
 
 Naucz się budować pozytywne wzmocnienie poprzez postępy na każdym etapie. Nawet ćwiczenia płynności mogą być mniej nużące, zwłaszcza gdy odkryjesz radość z kolejnego pobitego rekordu. Szczególnie na etapie początkowym i średniozaawansowanym, każdego dnia będziesz doświadczać satysfakcji z osiągania nowych rekordów.
 
-Wszystkie algorytmy i przypadki wspomniane w artykule zebrałem w [bibliotece algorytmów metody Roux](/pl/projects/rubiks-cube/roux). Wróć tu, gdy utkniesz.
+Wszystkie algorytmy i przypadki wspomniane w artykule zebrałem w [bibliotece algorytmów metody Roux](/pl/projects/rubiks-cube/roux). Możesz tu wrócić, gdy utkniesz.
 
 Świat kostki Rubika jest pełen nieskończonych przyjemności. Życzę udanej zabawy!
 
@@ -266,8 +263,8 @@ Wszystkie algorytmy i przypadki wspomniane w artykule zebrałem w [bibliotece al
 
 -   **csTimer**: [cstimer.net](https://cstimer.net/). Włącz statystyki Ao5 / Ao12 / Ao100. To Ao100 odzwierciedla twój prawdziwy poziom, pojedyncze czasy to kwestia szczęścia.
 -   **Kostka 3D**: [philoli.com/zh/projects/rubiks-cube](/pl/projects/rubiks-cube/). Wszystkie algorytmy z tego artykułu można tu wpisać i obejrzeć animację.
--   **Przyjazna dla początkujących biblioteka algorytmów metody Roux**: [philoli.com/zh/projects/rubiks-cube/roux](/pl/projects/rubiks-cube/roux). Zawiera popularne schematy wstawiania dla lewego i prawego bloku, 9 algorytmów dwuetapowego CMLL oraz wszystkie przypadki LSE (EO, UL/UR, ostatnie cztery krawędzie). Każdy przypadek można otworzyć w kostce 3D, która automatycznie ukrywa nieistotne klocki i podświetla te, którymi trzeba manipulować.
--   **Analizator treningu csTimer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/pl/projects/rubiks-cube/analyzer). Wystarczy przeciągnąć i upuścić plik eksportu z csTimer, aby zobaczyć swoje postępy, krzywe Ao5/Ao12/Ao100, rozwój PB, tabelę kamieni milowych (kiedy po raz pierwszy zszedłeś poniżej 60, 40, 30 sekund) oraz krzywą treningową prawa potęgowego. Wszystkie wykresy w tym artykule pochodzą stąd. Dane są przetwarzane wyłącznie w twojej przeglądarce i nie są przesyłane na serwer. Jeśli nie masz pliku eksportu, możesz załadować moje 4441 danych, aby zobaczyć, jak to działa.
+-   **Przyjazna dla początkujących biblioteka algorytmów metody Roux**: [philoli.com/zh/projects/rubiks-cube/roux](/pl/projects/rubiks-cube/roux).
+-   **Analizator treningu csTimer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/pl/projects/rubiks-cube/analyzer). Wystarczy przeciągnąć i upuścić plik eksportu z csTimer, aby zobaczyć swoje postępy, krzywe Ao5/Ao12/Ao100, rozwój PB, tabelę kamieni milowych oraz krzywą treningową prawa potęgowego.
 
 *Ten artykuł zawiera linki afiliacyjne Amazon: kupując przez te linki, otrzymam niewielką prowizję, a twoja cena pozostanie bez zmian.*
 

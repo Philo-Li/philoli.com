@@ -20,15 +20,15 @@ toc: true
 
 Az előző, [„Hogyan rakd ki a Rubik-kockát algoritmusok memorizálása nélkül”](/hu/blog/solve-rubiks-cube-without-formulas/) című cikkemben megtanultad, hogyan rakhatsz ki egy kockát algoritmusok nélkül, csupán a kommutátorok logikáját használva. Ez a cikk sok pozitív visszajelzést kapott.
 
-Ha követted az útmutatót, valószínűleg most két-három perc alatt kirakod a kockát, még ha kicsit ügyetlenül is, de a végére érsz. Ekkor azonban felmerül egy új kérdés: hogyan legyél gyorsabb?
+Ha lépésről lépésre követted az útmutatót, akkor mostanra valószínűleg már sikerül elejétől a végéig kiraknod a kockát, még ha kicsit döcögősen is. Néhány száz kirakásnyi gyakorlással könnyedén 1 perc alá lehet kerülni. De mi a helyzet, ha még ennél is gyorsabb szeretnél lenni?
 
-Ha rákeresel a "gyorskirakás Rubik-kocka" kifejezésre, minden útmutató ugyanazt fogja mondani: ha 30 másodperc alá akarsz kerülni, először tanuld meg a CFOP algoritmusokat. Ez 41 F2L, 57 OLL és 21 PLL algoritmust jelent, összesen 119-et. Még ha az F2L-t intuícióval is csinálod, a felső réteg 78 algoritmusát akkor sem úszod meg. Ha nem jegyzed meg őket, ne is álmodj a gyorsaságról.
+Ha rákeresel a "gyorskirakás Rubik-kocka" kifejezésre, minden útmutató ugyanazt fogja mondani: ha 30 másodperc alá akarsz kerülni, először tanuld meg a több mint száz CFOP algoritmust.
 
 Ez a cikk azonban azt szeretné megmutatni neked, hogy teljesen algoritmusok memorizálása nélkül is bekerülhetsz a 30 másodperc alatti kategóriába.
 
 <!--more-->
 
-Amikor 2026. május 7-én először raktam ki a Rubik-kockát, egészen augusztus 4-ig, az Ao100 30 másodperc alá kerüléséig 89 nap telt el. Ez idő alatt egyetlen CFOP algoritmust sem memorizáltam, csupán a szabadidőmben játszottam. Ez 4441 kirakás időadata a feljegyzéseim szerint.
+Amikor 2026. május 7-én először raktam ki teljesen a Rubik-kockát, egészen augusztus 4-ig, az Ao100 30 másodperc alá kerüléséig 89 nap telt el. Ez idő alatt egyetlen CFOP algoritmust sem memorizáltam, csupán a szabadidőmben játszottam. Ez 4441 kirakás időadata a feljegyzéseim szerint.
 
 ![4441 kirakás eredménygörbéje](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Ezért nem igényel a Roux algoritmusok memorizálását: a memorizálandó rés
 
 ## 165 másodpercről 28 másodpercre: Négy szakasz
 
-Ez az én valós utam volt. Minden szakaszt adatokkal jelöltem meg, majd elmagyaráztam, hol akadtam el, és mit gyakoroltam abban a fázisban. A te elakadási pontjaid eltérőek lehetnek, de a sorrend valószínűleg ugyanaz.
-
 ![A négy szakasz időtartama](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Kép: A négy szakasz időtartama. Az első szakasz 3 hét, a második 11 nap, a harmadik két hónap, a negyedik a mai napig tart.*
 
 ### Első szakasz: 165 másodperc → 60 másodperc (1–3. hét)
 
-**Adatok**: Május 7-től május 27-ig. Az első héten átlagosan 165 másodperc, a harmadik héten 68 másodperc.
+**Adatok**: Május 7-től május 27-ig. Az első héten átlagosan 165 másodperc, a harmadik héten 68 másodperc. Ez a szakasz a teljesen kezdőtől az alapszintig vezet: az ismétlések során fokozatosan megérted, hogy az egyes mozdulatok mit jelentenek valójában, és mely elemek mozognak.
 
 **Hol akadsz el**: Az első blokk (FB) nagyon ügyetlenül megy, minden él-sarok párt sokáig kell keresni. Aztán, amikor megtalálsz egy él-sarok párt, a kezdők hajlamosak megállni, és tovább nézelődni.
 
@@ -111,7 +109,7 @@ Ne tanulj új algoritmusokat ebben a szakaszban. A szűk keresztmetszeted most n
 
 ### Második szakasz: 60 másodperc → 40 másodperc (4–5. hét)
 
-**Adatok**: Május 27-től június 7-ig, 11 nap. Ez volt az egész folyamat leggyorsabb csökkenési szakasza, és ebben gyakoroltam a legtöbbet, június első hetében 723 alkalommal.
+**Adatok**: Május 27-től június 7-ig, 11 nap. Ez volt az egész folyamat leggyorsabb csökkenési szakasza. Ebben a szakaszban a legkönnyebb pozitív visszajelzést kapni: minden egyes új ismeret és mozdulatoptimalizálás azonnal meglátszik az időeredményeken, és az a mámor, hogy mindennap rekordot döntesz, kevés dologhoz fogható.
 
 **Hol akadsz el**: A mozdulatok nem folyamatosak. A kocka akadozik.
 
@@ -130,7 +128,7 @@ Ebben a szakaszban optimalizálnod kell az egyes szakaszok mozdulatait, és a me
 
 *Kép balra: Nézőpont a második blokk építésekor. Az első blokk kész, csak R, r, M, U forgatásokkal illeszd be a jobb oldali él-sarok párt, az első blokk soha nem sérül. Kép jobbra: M' U M, a Roux második felében leggyakrabban használt mozdulatsor. A középső réteg feljön, a felső réteg forog, a középső réteg vissza, három lépésben lecserélve a felső és középső réteg egy élpárját.*
 
-Megnézheted az általam összeállított [Roux módszer algoritmusgyűjteményt](/hu/projects/rubiks-cube/roux#cmll), a CMLL oldal kétlépcsős: 7 orientációs algoritmus + 2 pozíciós algoritmus, összesen 9. Ez a sebességnövelés szempontjából költséghatékony választás, könnyen megtanulható, és minden begyakorolt csoport körülbelül 1-2 másodperccel gyorsíthatja az idődet. Kis gyakorlással gyorsan belejössz, némelyiket már bemutattam az előző cikkben, és nem kell mindent megjegyezned ahhoz, hogy 30 másodperc alá kerülj.
+Megnézheted az általam összeállított, kezdőknek kifejezetten barátságos, leegyszerűsített [Roux algoritmusgyűjteményt](/hu/projects/rubiks-cube/roux#cmll). A CMLL oldal kétlépcsős: 7 orientációs algoritmus + 2 pozíciós algoritmus, összesen 9. Ez a sebességnövelés szempontjából a leghatékonyabb választás, könnyen megtanulható, és minden begyakorolt csoport körülbelül 1–2 másodperccel gyorsíthatja az idődet. Kis gyakorlással gyorsan belejössz, némelyiket már bemutattam az előző cikkben, és nem kell mindent megjegyezned ahhoz, hogy 30 másodperc alá kerülj.
 
 ![Kétlépcsős CMLL első lépés, hét sarokelem orientáció](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Még egy dolog, ami minden gyakorlatnál azonnal hatásosabb: költs egy kis pé
 
 ### Harmadik szakasz: 40 másodperc → 30 másodperc (5. hét – 13. hét, két hónap)
 
-**Adatok**: Június 7-től augusztus 4-ig. Az Ao100 39,8 másodpercről 29,9 másodpercre csiszolása 58 napot vett igénybe. Ebben a szakaszban alkalmanként előfordulhatnak 30 másodperc alatti idők, de csak nagyon jó szerencsével. Ráadásul az átlagos kirakási idő csökkenésével 1 másodperc javulás nehézsége exponenciálisan növekedni fog.
+**Adatok**: Június 7-től augusztus 4-ig. Az Ao100 39,8 másodpercről 29,9 másodpercre csiszolása 58 napot vett igénybe. Ebben a szakaszban alkalmanként előfordulhatnak 30 másodperc alatti idők, de csak nagyon jó szerencsével. Ráadásul az átlagos kirakási idő csökkenésével 1 másodperc javulás nehézsége exponenciálisan növekedni fog. (Az Ao100 a legutóbbi 100 kirakás vágott átlaga, a legjobb és legrosszabb 5% figyelmen kívül hagyásával.)
 
 ![Napi átlagidők](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Kép: Napi átlagidők. Június közepétől a görbe szinte ellaposodott, két hónapon át 30-40 másodperc között ingadozott.*
-
-Ez a plató fázis. Mindenki találkozik vele, én két hónapig voltam itt.
 
 **Hol akadsz el**: A felső réteg hat élének visszaállítása nagyon lassú, nem érted a logikát, minden alkalommal ismételt próbálkozásokra támaszkodsz, ami sok időt pazarol. Az első és második blokk még mindig nem elég rutinos.
 
@@ -164,12 +160,13 @@ Ez a plató fázis. Mindenki találkozik vele, én két hónapig voltam itt.
 
 -   **EO felismerés.** Az előző cikkben beszéltünk róla, hogy a rossz orientációjú élek csak néhány esetben fordulhatnak elő: 0, nem 0 és nem 4, 4 (felül és alul 2-2), 4 (mind a felső rétegben), 4 (felül 3, alul 1). Ennek a szakasznak a célja: a blokkok felépítésének pillanatában, számlálás nélkül, egy pillantással megmondani, melyik esetről van szó. A gyakorlás módja az, hogy megkevered, csak a CMLL végéig csinálod, majd megállsz, kimondod a rossz orientációjú élek számát, majd folytatod.
 -   Sokan nem értik az itteni mozdulatokat. Az EO szakasz végső célja, hogy kialakítsuk a 3 fent, 1 lent elrendezésű nyíl formát, mert a teljes formáció csak egy lépésre van a nyíl formától, így fordított gondolkodásmóddal ez az utolsó lépés a kirakás előtt. Tehát, függetlenül attól, hogy hány rossz él van, a végső cél egy nyíl kialakítása. Ha 4 rossz él van fent, akkor cserélj fel egy felül-lent élpárt, hogy egy rossz él lekerüljön, és így alakítsd ki a nyilat. Ha 2 rossz él van fent és 2 lent, akkor cserélj fel egy felül-lent élpárt, hogy egy rossz él felkerüljön, és így alakítsd ki a nyilat. Ha 1 fent és 1 lent, vagy 2 fent, akkor egy M' U M mozdulattal alakítsd át az előző esetek egyikévé, majd alakítsd ki a nyilat. Sok megfigyeléssel és gondolkodással magad is felfedezheted az 1 / 1 eset legjobb lépéseit.
+
+    ![Nyíl forma](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+    *Kép: Nyíl forma. A felső réteg három rossz orientációjú éle (cián kiemelve) nyilat alkotva mutat az alsó réteg egy rossz orientációjú élére. Ebben az állapotban egy M' U M mozdulattal mind a négy egyszerre kerül a helyére. [Nyisd meg ezt az állapotot a 3D kockában](/hu/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), hogy lépésről lépésre megnézhesd.*
+
 -   **Gyakorolj sokat look-ahead-et.** Ez a legfontosabb dolog ahhoz, hogy 40 másodpercről 30 másodpercre juss, és egyben a legkevésbé intuitív is: forgasd lassabban, nézz előrébb. Amikor az első blokkot építed, ne a beillesztendő elemre nézz, hanem arra, hogy hol van a következő. Eleinte nagyon furcsa lesz, az eredményeid romlani fognak, de egy hét kitartás után hirtelen javulni fognak.
 -   **CMLL habozás nélkül.** Ha egy mozdulatnál minden alkalommal gondolkodnod kell, mielőtt meg mered csinálni, akkor még nem a tiéd. Gyakorolj minden mozdulatot külön-külön 50-szer, amíg a kezed magától el nem indul, amint meglátod a formát.
-
-![Nyíl forma](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Kép: Nyíl forma. A felső réteg három rossz orientációjú éle (cián kiemelve) nyilat alkotva mutat az alsó réteg egy rossz orientációjú élére. Ebben az állapotban egy M' U M mozdulattal mind a négy egyszerre kerül a helyére. [Nyisd meg ezt az állapotot a 3D kockában](/hu/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), hogy lépésről lépésre megnézhesd.*
 
 ![EO hat formája](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,29 +196,29 @@ Ekkor fogod észrevenni, hogy miután átvészelted a 30-35 másodperces plató 
 
 Ebben a szakaszban gratulálok, a kezdők szemében már nagyon profi játékos vagy!
 
-## Az algoritmusok nélküli módszer ára
+## A továbblépés útja
 
-Most legyünk őszinték. Az algoritmusok nélküli módszernek is van ára.
+Először is, ne aggódj a Roux módszer felső határa miatt. A világ élvonalában is vannak olyan versenyzők, akik Roux-val érnek el csúcseredményeket; magának a módszernek nincs korlátja.
 
-A CMLL szakasz lassú. A 42 esetet 9 algoritmussal lefedni azt jelenti, hogy egyes eseteket kétszer kell megcsinálni. Azok, akik ismerik az összes CMLL algoritmust, két-három másodperccel gyorsabbak nálam ezen a lépésen.
+Ráadásul szinte minden világszínvonalú egykezes versenyző Roux módszert használ, mert rendkívül jól fekszik az egykezes kirakáshoz is.
 
-Az M-réteg technikája magasabb küszöböt jelent. A Roux második fele teljes mértékben az M-rétegre támaszkodik, az M-réteg nehezebben forgatható, könnyebben elakad, és magasabb követelményeket támaszt magával a kockával szemben is.
+**A Roux módszerrel elért leggyorsabb hivatalos (WCA) eredmények:**
 
-Ne aggódj a felső határ miatt. Vannak éljátékosok, akik Roux-val is bekerültek a világ élvonalába, maga a módszer nem korlátozza a sebességet. De ha 15 másodperc alá akarsz kerülni, valószínűleg ki kell egészítened a 42 CMLL algoritmust. Ez azonban egy másik szakasz kérdése. A 30 másodperc alá kerüléshez nincs rá szükség.
+- Egyetlen kirakás 4,11 másodperc, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Fülöp-szigetek), 2023-as Valenzuela Cubing Open, hivatalosan elismert leggyorsabb egyéni Roux idő ([rekonstrukciós videó](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+- Átlag 5,98 másodperc, szintén ő, 2019-ben, akkor ázsiai rekord, és a történelem harmadik hivatalos sub-6 átlaga ([WCA adatok](https://www.worldcubeassociation.org/persons/2017VILL41))
+- Ő az [egykezes világrekorder](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record) is: átlag 8,09, egyéni 6,05 (2024); az egykezes közösség általánosan a Roux-t tartja a legjobb megoldásnak
 
-Ráadásul szinte minden világszínvonalú egykezes kirakó Roux módszert használ, mert tényleg nagyon jól alkalmazható egykezes kezelésre is.
+Ám a 15 másodperc alá kerüléshez a mostani kétlépcsős CMLL-ről át kell állni az egylépéses megoldásra, ami több bonyolult algoritmus megtanulását igényli.
 
-**A Roux módszerrel elért leggyorsabb hivatalos WCA eredmények:**
+Én azonban továbbra is a szabad felfedezést részesítem előnyben: a kísérletezésen keresztül teljesen megérteni az algoritmusokat, sőt saját, kézre álló változatokat kitalálni sokkal szórakoztatóbb, mint a magolás.
 
--   Egyetlen kirakás 4,11 másodperc, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Fülöp-szigetek), 2023-as Valenzuela Cubing Open, elismert Roux hivatalos leggyorsabb egyéni idő ([rekonstrukciós videó](https://www.youtube.com/watch?v=5H4TRJSUm-U))
--   Átlag 5,98 másodperc, szintén ő, 2019-ben, akkor ázsiai rekord, és a történelem harmadik hivatalos sub-6 átlaga ([WCA adatok](https://www.worldcubeassociation.org/persons/2017VILL41))
--   Ő a [világrekorder egykezes kategóriában](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record) is: átlag 8,09, egyéni 6,05 (2024), az egykezes közösség általánosan a Roux-t tartja a legjobb megoldásnak
-
-Szerintem ez egy nagyon jó üzlet. Két-három másodperc CMLL-időért cserébe azt kapod, hogy minden lépésnél tudod, mit csinálsz, három hónapig sem felejted el a kockát, és bármilyen ismeretlen kockát meg tudsz oldani.
+A Rubik-kocka eredetileg is egy logikai játék, nem pedig memóriateszt. Csak a működési elvek megértésével érheted el, hogy minden egyes lépésnél pontosan tudd, mit miért csinálsz, hogy három hónap kihagyás után se felejtsd el a lépéseket, és bármilyen ismeretlen kockát a kezedbe véve képes legyél magadtól levezetni a megoldást.
 
 ## Összefoglalás
 
 ![Kirakva](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Kép: Kirakva.*
 
 A kirakástól a 30 másodperc alá jutásig nem egy algoritmusok memorizálásáról szóló folyamat, hanem a kéz, a szem és az agy koordinált együttműködésének edzéséről.
 
@@ -231,7 +228,7 @@ Az algoritmusok nem a sebesség forrásai. A megfigyelés az.
 
 Tanuld meg, hogyan építsd fel a pozitív visszajelzést minden egyes lépésben, még a rutin gyakorlás sem lesz unalmas, különösen, ha újra rekordot döntenél. Különösen a kezdő és középhaladó szakaszban minden nap megtapasztalhatod a rekorddöntés örömét.
 
-Az összes algoritmust és esetet rendszereztem a [Roux módszer algoritmusgyűjteményben](/hu/projects/rubiks-cube/roux). Ha elakadsz, térj vissza ide és nézd meg.
+Az összes algoritmust és esetet rendszereztem a [Roux módszer algoritmusgyűjteményben](/hu/projects/rubiks-cube/roux). Ha elakadsz, bármikor visszatérhetsz ide és megnézheted.
 
 A Rubik-kocka világa végtelenül szórakoztató, jó szórakozást kívánok!
 
@@ -266,8 +263,8 @@ A Rubik-kocka világa végtelenül szórakoztató, jó szórakozást kívánok!
 
 -   **csTimer**: [cstimer.net](https://cstimer.net/). Kapcsold be az Ao5 / Ao12 / Ao100 statisztikát, az Ao100 mutatja a valós szintedet, az egyéni idők a szerencsét.
 -   **3D Kocka**: [philoli.com/zh/projects/rubiks-cube](/hu/projects/rubiks-cube/). Az összes algoritmus beírható ide, és megnézheted az animációt.
--   **Roux módszer kezdőbarát algoritmusgyűjtemény**: [philoli.com/zh/projects/rubiks-cube/roux](/hu/projects/rubiks-cube/roux). Az első blokk (FB), második blokk (SB) gyakori beillesztési mintái, a kétlépcsős CMLL 9 algoritmusa, az LSE összes esete (EO, UL/UR, utolsó négy élél). Minden oldal megnyitható a 3D kockában, automatikusan elrejti a lényegtelen kockákat, és kiemeli a mozgó éleket.
--   **csTimer edzés elemző**: [philoli.com/zh/projects/rubiks-cube/analyzer](/hu/projects/rubiks-cube/analyzer). Húzd be a csTimerből exportált fájlt, és máris láthatod a saját eredményeid alakulását, az Ao5/Ao12/Ao100 görbéket, a PB-k javulását, a mérföldkő táblázatot (mikor volt az első sub-60, sub-40, sub-30) és a Power Law gyakorlási görbét. A cikkben szereplő összes kép innen származik. Az adatok csak a böngésződben kerülnek feldolgozásra, nem kerülnek feltöltésre. Ha nincs exportált fájlod, betöltheted az én 4441 adatomat, hogy lásd a hatást.
+-   **Roux módszer kezdőbarát algoritmusgyűjtemény**: [philoli.com/zh/projects/rubiks-cube/roux](/hu/projects/rubiks-cube/roux).
+-   **csTimer edzés elemző**: [philoli.com/zh/projects/rubiks-cube/analyzer](/hu/projects/rubiks-cube/analyzer). Húzd be a csTimerből exportált fájlt, és máris láthatod a saját eredményeid alakulását, az Ao5/Ao12/Ao100 görbéket, a PB-k javulását, a mérföldkő táblázatot és a Power Law gyakorlási görbét.
 
 *Ez a cikk Amazon affiliate linkeket tartalmaz: a linkeken keresztül történő vásárlás esetén kis jutalékot kapok, de az árad nem változik.*
 

@@ -20,15 +20,15 @@ toc: true
 
 Iepriekšējā rakstā [“Kā salikt Rubika kubu, neiemācoties algoritmus”](/lv/blog/solve-rubiks-cube-without-formulas/) jūs apguvāt Rubika kuba salikšanu, izmantojot komutatoru loģiku, bez nepieciešamības iegaumēt algoritmus. Šis raksts saņēma daudz pozitīvu atsauksmju.
 
-Ja sekojāt norādījumiem, tagad jums, iespējams, ir nepieciešamas divas vai trīs minūtes, un, lai gan tas ir neveikli, jūs spējat salikt kubu. Tad radīsies jauns jautājums: kā kļūt ātrākam?
+Ja soli pa solim sekojāt norādījumiem, tagad jums jau vajadzētu spēt, kaut arī neveikli, pilnībā salikt Rubika kubu. Pēc pāris simtiem mēģinājumu ir viegli tikt zem 1 minūtes. Bet ko darīt, ja vēlaties vēl lielāku ātrumu?
 
-Ja meklējat "Rubika kuba ātrsalikšana", visas pamācības jums teiks vienu un to pašu: ja vēlaties salikt kubu zem 30 sekundēm, vispirms iegaumējiet CFOP algoritmus. F2L – 41 algoritms, OLL – 57, PLL – 21, kopā 119 algoritmi. Pat ja F2L veicat intuitīvi, no 78 augšējā slāņa algoritmiem nevar izvairīties. Ja tos neiegaumēsiet, par ātru salikšanu varat aizmirst.
+Ja meklējat "Rubika kuba ātrsalikšana", visas pamācības jums teiks vienu un to pašu: ja vēlaties tikt zem 30 sekundēm, vispirms iegaumējiet simtiem CFOP algoritmu.
 
 Šis raksts vēlas jums pateikt, ka jūs varat salikt kubu zem 30 sekundēm, pilnībā neiemācoties nevienu algoritmu.
 
 <!--more-->
 
-No 2026. gada 7. maija, kad pirmo reizi saliku Rubika kubu, līdz 4. augustam, kad sasniedzu Ao100 zem 30 sekundēm, pagāja 89 dienas. Šajā laikā es neiemācījos nevienu CFOP algoritmu, vienkārši spēlējos brīvajā laikā. Šie ir mani reģistrētie 4441 salikšanas laika dati.
+No 2026. gada 7. maija, kad pirmo reizi pilnībā saliku Rubika kubu, līdz 4. augustam, kad sasniedzu Ao100 zem 30 sekundēm, pagāja 89 dienas. Šajā laikā es neiemācījos nevienu CFOP algoritmu, vienkārši spēlējos brīvajā laikā. Šie ir mani reģistrētie 4441 salikšanas laika dati.
 
 ![4441 salikšanas rezultātu līkne](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Tāpēc Roux metodei nav nepieciešams iegaumēt algoritmus: tā saspiež iegaum
 
 ## No 165 sekundēm līdz 28 sekundēm: četri posmi
 
-Zemāk ir mans patiesais ceļš. Katrā posmā esmu norādījis sākumu un beigas ar datiem, un tad aprakstījis, kur es iestrēgu un ko trenēju. Jūsu sastrēguma punkti var atšķirties no manējiem, bet secība, visticamāk, būs tāda pati.
-
 ![Četru posmu laika posms](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Attēls: Četru posmu laika posms. Pirmais posms 3 nedēļas, otrais posms 11 dienas, trešais posms divi mēneši, ceturtais posms līdz šim.*
 
 ### Pirmais posms: 165 sekundes → 60 sekundes (1.–3. nedēļa)
 
-**Dati**: No 7. maija līdz 27. maijam. Pirmajā nedēļā vidēji 165 sekundes, trešajā nedēļā 68 sekundes.
+**Dati**: No 7. maija līdz 27. maijam. Pirmajā nedēļā vidēji 165 sekundes, trešajā nedēļā 68 sekundes. Šis ir posms no iesācēja līdz pirmajām iemaņām, kur atkārtojumos pakāpeniski saprotat, ko patiesībā nozīmē katra kustība un kuri kauliņi pārvietojas.
 
 **Kur rodas grūtības**: Pirmais bloks ir ļoti neprasmīgs, katru stūra un malas pāri ir jāmeklē ļoti ilgi. Turklāt, atradis pāri, iesācējs parasti apstājas un turpina novērot.
 
@@ -111,7 +109,7 @@ Zemāk ir mans patiesais ceļš. Katrā posmā esmu norādījis sākumu un beiga
 
 ### Otrais posms: 60 sekundes → 40 sekundes (4.–5. nedēļa)
 
-**Dati**: No 27. maija līdz 7. jūnijam, 11 dienas. Šis bija visstraujākais kritums visā procesā, un es trenējos visvairāk tieši šajā posmā – jūnija pirmajā nedēļā 723 reizes.
+**Dati**: No 27. maija līdz 7. jūnijam, 11 dienas. Šis bija visstraujākais kritums visā procesā. Šajā posmā ir visvieglāk gūt pozitīvu atgriezenisko saiti — katra apgūtā lieta un kustību optimizācija tūlītēji atspoguļojas laikā, un sajūta, ka katru dienu labojat rekordus, ir grūti salīdzināma ar ko citu.
 
 **Kur rodas grūtības**: Kustības nav secīgas. Kubs iestrēgst.
 
@@ -130,7 +128,7 @@ Zemāk ir mans patiesais ceļš. Katrā posmā esmu norādījis sākumu un beiga
 
 *Attēls pa kreisi: Skats, veidojot otro bloku. Pirmais bloks ir pabeigts, un, izmantojot tikai R, r, M, U griezienus, labās puses stūra un malas pāris tiek ievietots, un pirmais bloks nekad netiek aizskarts. Attēls pa labi: M' U M, visbiežāk izmantotā darbību kombinācija Roux metodes otrajā pusē. Vidējais slānis nāk uz augšu, augšējais slānis tiek pagriezts, vidējais slānis atgriežas, trīs soļi apmaina augšējā un vidējā slāņa malu pāri.*
 
-Varat apskatīt manu [Roux metodes algoritmu bibliotēku](/lv/projects/rubiks-cube/roux#cmll). CMLL lapa ir divpakāpju: 7 orientācijas algoritmi + 2 pozīcijas algoritmi, kopā 9. Tā ir cenas un veiktspējas izvēle ātruma uzlabošanai, ko ir viegli apgūt, un katra apgūtā algoritmu grupa var paātrināt salikšanu par aptuveni 1-2 sekundēm. Ar nelielu praksi jūs ātri kļūstat prasmīgi, un daži no tiem jau tika iepazīstināti iepriekšējā rakstā. Jums nav jāiegaumē visi, lai sasniegtu zem 30 sekundēm.
+Varat apskatīt manu iesācējiem ļoti draudzīgo, saīsināto [Roux algoritmu bibliotēku](/lv/projects/rubiks-cube/roux#cmll). CMLL lapa ir divpakāpju: 7 orientācijas algoritmi + 2 pozīcijas algoritmi, kopā 9. Tā ir cenas un veiktspējas izvēle ātruma uzlabošanai, ko ir viegli apgūt, un katra apgūtā algoritmu grupa var paātrināt salikšanu par aptuveni 1–2 sekundēm. Ar nelielu praksi jūs ātri kļūsiet prasmīgi, un daži no tiem jau tika iepazīstināti iepriekšējā rakstā. Jums nav jāiegaumē visi, lai sasniegtu zem 30 sekundēm.
 
 ![Divpakāpju CMLL pirmais solis, septiņas stūru orientācijas](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Vēl viena lieta, kas dod tūlītējus rezultātus, labāk nekā jebkurš treni�
 
 ### Trešais posms: 40 sekundes → 30 sekundes (5.–13. nedēļa, divi mēneši)
 
-**Dati**: No 7. jūnija līdz 4. augustam. Ao100 tika noslīpēts no 39,8 sekundēm līdz 29,9 sekundēm, kas prasīja 58 dienas. Šajā posmā retumis var parādīties rezultāti zem 30 sekundēm, taču tas notiek tikai ļoti veiksmīgi. Turklāt, samazinoties vidējam salikšanas laikam, katras sekundes uzlabošanas grūtības pieaugs eksponenciāli.
+**Dati**: No 7. jūnija līdz 4. augustam. Ao100 tika noslīpēts no 39,8 sekundēm līdz 29,9 sekundēm, kas prasīja 58 dienas. Šajā posmā retumis var parādīties rezultāti zem 30 sekundēm, taču tas notiek tikai ļoti veiksmīgi. Turklāt, samazinoties vidējam salikšanas laikam, katras sekundes uzlabošanas grūtības pieaugs eksponenciāli. (Ao100 apzīmē pēdējo 100 salikšanas reižu vidējo laiku, atmetot labākos un sliktākos 5% rezultātu.)
 
 ![Dienas vidējais rezultāts](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Attēls: Dienas vidējais rezultāts. Pēc jūnija vidus līkne gandrīz izlīdzinās, divus mēnešus slīdot starp 30 un 40 sekundēm.*
-
-Šis ir plato periods. To piedzīvo ikviens, un es tajā pavadīju divus mēnešus.
 
 **Kur rodas grūtības**: Augšējā slāņa sešu malu gabalu salikšana ir ļoti lēna, nav izpratnes par loģiku, katru reizi paļaujos uz atkārtotiem mēģinājumiem, tērējot daudz laika. Pirmais un otrais bloks joprojām nav pietiekami prasmīgi.
 
@@ -164,12 +160,13 @@ Vēl viena lieta, kas dod tūlītējus rezultātus, labāk nekā jebkurš treni�
 
 - EO atpazīšana. Iepriekšējā rakstā jau minēju, ka nepareizi orientētām malām ir tikai dažas situācijas: 0, ne 0 ne 4, 4 (2 augšā, 2 apakšā), 4 (visi augšējā slānī), 4 (3 augšā, 1 apakšā). Šī posma mērķis ir: brīdī, kad bloks ir uzbūvēts, bez skaitīšanas, uzreiz atpazīt, kura situācija tā ir. Treniņa metode ir sajaukt, veikt līdz CMLL beigām, tad apstāties, nosaukt nepareizi orientēto malu skaitu un turpināt.
 - Daudzi nesaprot šeit veiktās darbības. EO posma galvenais mērķis ir izveidot bultas formu ar 3 malām augšā un 1 malu apakšā, jo pilna forma ir tikai viena sajaukta soļa attālumā no bultas formas. Tāpēc, domājot atpakaļgaitā, tas ir pēdējais solis pirms salikšanas pabeigšanas, un neatkarīgi no nepareizi orientēto malu skaita, galvenais ir izveidot bultu. Ja augšā ir 4 nepareizi orientētas malas, apmainiet vienu augšējo un vienu apakšējo malu, lai vienu nepareizi orientētu malu pārvietotu uz leju un izveidotu bultu. Ja augšā ir 2 un apakšā 2, apmainiet vienu augšējo un vienu apakšējo malu, lai vienu nepareizi orientētu malu pārvietotu uz augšu un izveidotu bultu. Ja augšā ir 1 un apakšā 1, vai augšā ir 2, izmantojiet M' U M, lai vispirms pārvērstu to iepriekšējā situācijā un tad izveidotu bultu. Jūs varat patstāvīgi izpētīt labākos soļus 1/1 situācijai, veicot daudz novērojumu un domājot.
+
+  ![Bultas forma](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+  *Attēls: Bultas forma. Trīs nepareizi orientētas malas (izceltas zilganzaļā krāsā) augšējā slānī veido bultu, kas norāda uz nepareizi orientēto malu apakšējā slānī. Šajā brīdī viens M' U M var visas četras atgriezt vietā vienlaicīgi. [Atveriet šo stāvokli 3D kubā](/lv/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), lai soli pa solim apskatītu.*
+
 - Daudz trenējieties look-ahead. Tā ir vissvarīgākā lieta, lai no 40 sekundēm nokļūtu līdz 30 sekundēm, un arī vispretrunīgākā: griezt lēnāk, skatīties tālāk. Veidojot pirmo bloku, neskatieties uz gabalu, ko ievietojat, bet gan uz nākamo gabalu. Sākumā tas būs ļoti neērti, un rezultāti sākumā pasliktināsies, taču, izturot nedēļu, tie pēkšņi uzlabosies.
 - CMLL bez vilcināšanās. Ja katru reizi jums ir jāpadomā, pirms uzdrošināties veikt kādu darbību, tad tā vēl nav jūsu. Trenējiet katru darbību atsevišķi 50 reizes, līdz roka kustas, redzot formu.
-
-![Bultas forma](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Attēls: Bultas forma. Trīs nepareizi orientētas malas (izceltas zilganzaļā krāsā) augšējā slānī veido bultu, kas norāda uz nepareizi orientēto malu apakšējā slānī. Šajā brīdī viens M' U M var visas četras atgriezt vietā vienlaicīgi. [Atveriet šo stāvokli 3D kubā](/lv/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), lai soli pa solim apskatītu.*
 
 ![EO sešas formas](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,15 +196,9 @@ Tad jūs atklāsiet, ka, pārvarot 30-35 sekunžu sastrēguma periodu, ātrums a
 
 Šajā posmā apsveicu, iesācējiem jūs jau šķitīsiet ļoti prasmīgs spēlētājs!
 
-## Cena par algoritmu neiegaumēšanu
+## Nākamie soļi meistarībā
 
-Runājot par to, jābūt godīgam. Algoritmu neiegaumēšana nav bez maksas.
-
-CMLL posms ir lēns. 42 situācijas, kas aptvertas ar 9 algoritmiem, nozīmē, ka dažas situācijas ir jāveic divreiz. Cilvēki, kas zina pilnu CMLL komplektu, šajā solī ir par divām vai trīs sekundēm ātrāki nekā es.
-
-M slāņa pirkstu paņēmieniem ir augsts slieksnis. Roux metodes otrais posms pilnībā balstās uz M slāni, un M slāni ir grūtāk pagriezt nekā R un U, tas viegli iestrēgst un prasa vairāk no paša kuba.
-
-Neuztraucieties par augšējo robežu. Starp labākajiem spēlētājiem ir arī tie, kas izmanto Roux metodi, lai iekļūtu pasaules topā; pašai metodei nav augšējās robežas. Taču, lai iekļūtu zem 15 sekundēm, jums, visticamāk, būs jāapgūst visi 42 CMLL algoritmi. Bet tas ir cits posms. Lai sasniegtu zem 30 sekundēm, tas nav nepieciešams.
+Pirmkārt, neuztraucieties par Roux metodes augšējo robežu. Starp labākajiem spēlētājiem ir arī tie, kas izmanto Roux metodi, lai iekļūtu pasaules topā; pašai metodei nav augšējās robežas.
 
 Turklāt gandrīz visi pasaules klases spēlētāji, kas saliek kubu ar vienu roku, izmanto Roux metodi, jo tā patiešām ir ļoti piemērota arī salikšanai ar vienu roku.
 
@@ -217,11 +208,17 @@ Turklāt gandrīz visi pasaules klases spēlētāji, kas saliek kubu ar vienu ro
 - Vidējais laiks 5,98 sekundes, tas pats viņš, 2019. gadā, toreiz Āzijas rekords, arī trešais oficiālais sub-6 vidējais laiks vēsturē ([WCA dati](https://www.worldcubeassociation.org/persons/2017VILL41))
 - Viņš ir arī [pasaules rekordists salikšanā ar vienu roku](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): vidēji 8,09, viens salikšanas laiks 6,05 (2024). Parasti tiek uzskatīts, ka Roux metode ir optimālākais risinājums salikšanai ar vienu roku.
 
-Manuprāt, šis darījums ir ļoti izdevīgs. Jūs par divām vai trīs CMLL sekundēm iegūstat: katrā solī zināt, ko darāt, neaizmirsīsiet, pat ja trīs mēnešus nepieskarsieties kubam, un varēsiet atrast risinājumu jebkuram neredzētam kubam.
+Taču, lai iekļūtu zem 15 sekundēm, pašreizējais divu soļu CMLL būs jānomaina pret viena soļa izpildi, kas prasīs iegaumēt daudz vairāk sarežģītu algoritmu.
+
+Tomēr es dodu priekšroku brīvai izpētei — pilnībā izprast algoritmus caur izpēti vai pat radīt sev ērtus algoritmus ir daudz aizraujošāk nekā iekalt no galvas.
+
+Rubika kubs sākotnēji ir prāta spēle, nevis atmiņas vingrinājums. Tikai izprotot principus, ir iespējams panākt, ka katrā solī precīzi zināt, ko darāt, neaizmirstat pat pēc trim mēnešiem bez kuba un spējat atrast risinājumu jebkuram iepriekš neredzētam kubam.
 
 ## Kopsavilkums
 
 ![Salikšana pabeigta](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Attēls: Salikšana pabeigta.*
 
 No kuba salikšanas līdz zem 30 sekundēm nav algoritmu iegaumēšanas process, bet gan roku, acu un smadzeņu koordinācijas treniņa process.
 
@@ -231,7 +228,7 @@ Algoritmi nav ātruma avots. Novērošana ir.
 
 Iemācieties veidot pozitīvu atgriezenisko saiti, progresējot katrā posmā. Pat veiklības treniņi var nebūt tik garlaicīgi, it īpaši, ja atklājat pārsteigumu, ka atkal labojat rekordu. It īpaši sākuma un vidējā posmā jūs katru dienu piedzīvosiet prieku, ko sniedz rekordu labošana.
 
-Visi rakstā minētie algoritmi un situācijas ir apkopoti [Roux metodes algoritmu bibliotēkā](/lv/projects/rubiks-cube/roux). Ja iestrēgsiet, atgriezieties un pārbaudiet.
+Visi rakstā minētie algoritmi un situācijas ir apkopoti [Roux metodes algoritmu bibliotēkā](/lv/projects/rubiks-cube/roux). Ja iestrēgsiet, varat atgriezties un pārbaudīt.
 
 Rubika kuba pasaule ir pilna ar bezgalīgu prieku. Lai jums jauka spēlēšana!
 
@@ -266,8 +263,8 @@ Rubika kuba pasaule ir pilna ar bezgalīgu prieku. Lai jums jauka spēlēšana!
 
 - **csTimer**: [cstimer.net](https://cstimer.net/). Atveriet Ao5 / Ao12 / Ao100 statistiku, Ao100 ir jūsu patiesais līmenis, viens salikšanas laiks ir veiksme.
 - **3D Rubika kubs**: [philoli.com/zh/projects/rubiks-cube](/lv/projects/rubiks-cube/). Visus šī raksta algoritmus var ievadīt šeit un skatīties animāciju.
-- **Roux metodes iesācējiem draudzīga algoritmu bibliotēka**: [philoli.com/zh/projects/rubiks-cube/roux](/lv/projects/rubiks-cube/roux). Pirmo bloku, otro bloku bieži lietotās ievietošanas metodes, divpakāpju CMLL 9 algoritmi, visas LSE situācijas (EO, UL/UR, pēdējās četras malas). Katru attēlu var atvērt 3D kubā, automātiski slēpjot neatbilstošus blokus un izceļot pārvietojamās malas.
-- **csTimer treniņu analizators**: [philoli.com/zh/projects/rubiks-cube/analyzer](/lv/projects/rubiks-cube/analyzer). Ievelciet eksportēto csTimer failu, un jūs redzēsiet savu rezultātu tendences, Ao5/Ao12/Ao100 līknes, PB uzlabojumus, svarīgākos posmus (kad pirmo reizi sasniedzāt sub-60, sub-40, sub-30) un potences likuma prakses līkni. Visi šī raksta attēli nāk no šejienes. Dati tiek apstrādāti tikai jūsu pārlūkprogrammā, tie netiek augšupielādēti. Ja jums nav eksportēta faila, varat vispirms ielādēt manus 4441 datus, lai redzētu efektu.
+- **Roux metodes iesācējiem draudzīga algoritmu bibliotēka**: [philoli.com/zh/projects/rubiks-cube/roux](/lv/projects/rubiks-cube/roux).
+- **csTimer treniņu analizators**: [philoli.com/zh/projects/rubiks-cube/analyzer](/lv/projects/rubiks-cube/analyzer). Ievelciet eksportēto csTimer failu, un jūs redzēsiet savu rezultātu tendences, Ao5/Ao12/Ao100 līknes, PB uzlabojumus, atskaites punktu tabulu un Power Law prakses līkni.
 
 *Šis raksts satur Amazon partneru saites: pērkot, izmantojot saites, es saņemu nelielu komisijas maksu, jūsu cena nemainās.*
 

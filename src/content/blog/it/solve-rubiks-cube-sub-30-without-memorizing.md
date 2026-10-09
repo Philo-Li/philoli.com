@@ -20,15 +20,15 @@ toc: true
 
 Nel mio precedente articolo [《Come risolvere il Cubo di Rubik senza imparare algoritmi》](/it/blog/solve-rubiks-cube-without-formulas/), hai imparato la logica degli scambiatori e come risolvere un cubo senza memorizzare algoritmi. Quell'articolo ha ricevuto un'accoglienza molto positiva.
 
-Se hai seguito le istruzioni, probabilmente ora ci metti due o tre minuti per risolverlo, magari in modo un po' impacciato, ma ci riesci. A questo punto, sorge una nuova domanda: come faccio a diventare più veloce?
+Se hai seguito i passaggi uno alla volta, dovresti già essere in grado di risolvere completamente il cubo, magari con qualche esitazione; con qualche centinaio di risoluzioni di pratica, è facile scendere sotto il minuto. Ma se volessi andare ancora più veloce?
 
-Se cerchi "speedcubing", tutti i tutorial ti diranno la stessa cosa: per scendere sotto i 30 secondi, devi prima memorizzare gli algoritmi CFOP. 41 per l'F2L, 57 per l'OLL, 21 per il PLL, per un totale di 119 algoritmi. Anche se l'F2L lo fai intuitivamente, i 78 algoritmi per l'ultimo strato (OLL+PLL) sono inevitabili. Se non li memorizzi, non potrai essere veloce.
+Se cerchi "speedcubing", tutti i tutorial ti diranno la stessa cosa: per scendere sotto i 30 secondi, devi prima memorizzare le centinaia di algoritmi del CFOP.
 
 Questo articolo vuole dimostrarti che puoi scendere sotto i 30 secondi senza memorizzare assolutamente alcun algoritmo.
 
 <!--more-->
 
-Dal 7 maggio 2026, quando ho risolto il cubo per la prima volta, al 4 agosto, quando il mio Ao100 è sceso sotto i 30 secondi, sono passati 89 giorni. In questo periodo non ho memorizzato un singolo algoritmo CFOP, mi sono solo divertito nel tempo libero. Questi sono i dati cronometrati delle mie 4441 risoluzioni registrate.
+Dal 7 maggio 2026, quando ho risolto completamente il cubo per la prima volta, al 4 agosto, quando il mio Ao100 è sceso sotto i 30 secondi, sono passati 89 giorni. In questo periodo non ho memorizzato un singolo algoritmo CFOP, mi sono solo divertito nel tempo libero. Questi sono i dati cronometrati delle mie 4441 risoluzioni registrate.
 
 ![Curva dei tempi di risoluzione per 4441 solve](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Ecco perché il Roux può essere eseguito senza memorizzare algoritmi: comprime 
 
 ## Da 165 a 28 secondi: le quattro fasi
 
-Ecco il percorso che ho realmente seguito. Per ogni fase ho indicato l'inizio e la fine con i dati, e ho spiegato dove mi sono bloccato e cosa ho praticato. I tuoi ostacoli potrebbero essere diversi dai miei, ma l'ordine sarà molto probabilmente lo stesso.
-
 ![Durata delle quattro fasi](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Fig.: Durata delle quattro fasi. Fase uno 3 settimane, fase due 11 giorni, fase tre due mesi, fase quattro fino ad oggi.*
 
 ### Fase uno: da 165 a 60 secondi (Settimane 1-3)
 
-**Dati**: Dal 7 al 27 maggio. La prima settimana la media era di 165 secondi, la terza settimana di 68 secondi.
+**Dati**: Dal 7 al 27 maggio. La prima settimana la media era di 165 secondi, la terza settimana di 68 secondi. Questa è la fase di transizione da principiante assoluto a iniziato: attraverso la ripetizione si comprende gradualmente cosa significhi davvero ogni mossa e quali pezzi si stiano muovendo.
 
 **Dove ti blocchi**: Il Primo Blocco è molto poco familiare, ci vuole molto tempo per trovare ogni coppia di pezzi. E una volta trovata una coppia, i principianti tendono sempre a fermarsi per continuare a osservare.
 
@@ -111,7 +109,7 @@ Non imparare nessun nuovo algoritmo in questa fase. Il tuo collo di bottiglia no
 
 ### Fase due: da 60 a 40 secondi (Settimane 4-5)
 
-**Dati**: Dal 27 maggio al 7 giugno, 11 giorni. Questa è stata la fase di miglioramento più rapida dell'intero processo, e anche quella in cui ho praticato di più, con 723 risoluzioni nella prima settimana di giugno.
+**Dati**: Dal 27 maggio al 7 giugno, 11 giorni. Questa è stata la fase di miglioramento più rapida dell'intero processo, ed è anche la fase in cui è più facile ricevere feedback positivi: ogni apprendimento e ottimizzazione dei movimenti si riflette immediatamente sui tempi. La soddisfazione di battere i propri record ogni singolo giorno è difficile da eguagliare con molte altre attività.
 
 **Dove ti blocchi**: Movimenti non fluidi. Il cubo si blocca.
 
@@ -130,7 +128,7 @@ In questa fase, devi ottimizzare i movimenti di ogni passaggio, aumentando la fl
 
 *Fig. a sinistra: Vista durante la costruzione del Secondo Blocco. Il Primo Blocco è completato, e si usano solo le quattro rotazioni R, r, M, U per inserire la coppia angolo-spigolo sul lato destro, senza mai toccare il Primo Blocco. Fig. a destra: M' U M, una delle sequenze di mosse più utilizzate nella seconda metà del Roux. Lo strato centrale sale, lo strato superiore ruota, lo strato centrale torna giù: tre mosse per scambiare una coppia di spigoli tra lo strato superiore e quello centrale.*
 
-Puoi consultare la mia [Libreria di algoritmi del Metodo Roux](/it/projects/rubiks-cube/roux#cmll), la pagina CMLL è a due fasi: 7 algoritmi di orientamento + 2 algoritmi di permutazione, per un totale di 9. Questa è l'opzione più conveniente per aumentare la velocità, sono facili da imparare e ogni set padroneggiato può farti guadagnare circa 1-2 secondi. Con un po' di pratica, diventerai rapidamente abile, e alcuni sono già stati introdotti nell'articolo precedente. Non è necessario memorizzarli tutti per scendere sotto i 30 secondi.
+Puoi consultare la mia [Libreria semplificata di algoritmi Roux](/it/projects/rubiks-cube/roux#cmll), molto adatta ai principianti. La pagina CMLL è a due fasi: 7 algoritmi di orientamento + 2 algoritmi di permutazione, per un totale di 9. Questa è l'opzione più conveniente per aumentare la velocità, sono facili da imparare e ogni set padroneggiato può farti guadagnare circa 1-2 secondi. Con un po' di pratica, diventerai rapidamente abile, e alcuni sono già stati introdotti nell'articolo precedente. Non è necessario memorizzarli tutti per scendere sotto i 30 secondi.
 
 ![CMLL a due fasi, primo passaggio: sette orientamenti degli angoli](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Un'altra cosa, più efficace di qualsiasi esercizio: spendi qualche soldo per un
 
 ### Fase tre: da 40 a 30 secondi (Settimane 5-13, due mesi)
 
-**Dati**: Dal 7 giugno al 4 agosto. Ci sono voluti 58 giorni per portare l'Ao100 da 39.8 secondi a 29.9 secondi. In questa fase, occasionalmente si potevano ottenere tempi sotto i 30 secondi, ma solo con molta fortuna. Inoltre, man mano che il tempo medio di risoluzione diminuisce, la difficoltà di migliorare di 1 secondo aumenta esponenzialmente.
+**Dati**: Dal 7 giugno al 4 agosto. Ci sono voluti 58 giorni per portare l'Ao100 da 39.8 secondi a 29.9 secondi. In questa fase, occasionalmente si potevano ottenere tempi sotto i 30 secondi, ma solo con molta fortuna. Inoltre, man mano che il tempo medio di risoluzione diminuisce, la difficoltà di migliorare di 1 secondo aumenta esponenzialmente. (L'Ao100 rappresenta il tempo medio delle ultime 100 risoluzioni, escludendo il 5% dei risultati migliori e peggiori)
 
 ![Media giornaliera dei tempi](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Fig.: Media giornaliera dei tempi. Dopo metà giugno, la curva si è quasi appiattita, stagnando tra i 30 e i 40 secondi per due mesi.*
-
-Questo è il plateau. Tutti lo incontrano, e io ci sono rimasto per due mesi.
 
 **Dove ti blocchi**: La risoluzione dei sei spigoli dello strato superiore è lenta, non si comprende la logica, e ogni volta si procede per tentativi, sprecando molto tempo. Il Primo e Secondo Blocco non sono ancora abbastanza fluidi.
 
@@ -164,12 +160,13 @@ Questo è il plateau. Tutti lo incontrano, e io ci sono rimasto per due mesi.
 
 - Riconoscimento EO (Edge Orientation). Nell'articolo precedente abbiamo parlato delle sole poche situazioni di spigoli mal orientati: 0, non 0 e non 4, 4 (2 sopra e 2 sotto), 4 (tutti nello strato U), 4 (3 sopra e 1 sotto). L'obiettivo di questa fase è: nell'istante in cui hai completato i blocchi, riconoscere a colpo d'occhio, senza contare, quale situazione si presenta. Il metodo di pratica è: scramble, fai solo fino alla fine del CMLL, poi metti in pausa, dichiara il numero di spigoli mal orientati, e poi continua.
 - Molti non capiscono i movimenti qui. La fase EO serve in ultima analisi a costruire la forma a freccia con 3 spigoli sopra e 1 sotto. Poiché lo stato risolto è a un solo passo dalla forma a freccia, pensando a ritroso, questa è l'ultima mossa prima di completare la risoluzione. Quindi, indipendentemente dal numero di spigoli mal orientati, l'obiettivo finale è costruire una freccia. Con 4 spigoli mal orientati sopra, scambia una coppia di spigoli (uno sopra e uno sotto) per portare uno spigolo mal orientato sotto, creando la freccia. Con 2 sopra e 2 sotto, scambia una coppia di spigoli (uno sopra e uno sotto) per portare uno spigolo mal orientato sopra, creando la freccia. Se c'è 1 sopra e 1 sotto, o 2 sopra, usa M' U M per trasformarlo in una delle situazioni precedenti e poi costruisci la freccia. Puoi esplorare i passaggi ottimali per la situazione 1/1 attraverso molta osservazione e riflessione.
+
+  ![Forma a freccia](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+  *Fig.: Forma a freccia. Tre spigoli mal orientati nello strato superiore (evidenziati in ciano) formano una freccia che punta allo spigolo mal orientato nello strato inferiore. Con una sola M' U M, tutti e quattro possono essere orientati contemporaneamente. [Apri questo stato nel cubo 3D](/it/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) per vederlo passo dopo passo.*
+
 - Praticare intensamente il look-ahead. Questa è la cosa più importante per passare da 40 a 30 secondi, ed è anche la più controintuitiva: gira più lentamente, guarda più avanti. Quando costruisci il Primo Blocco, non guardare il pezzo che stai inserendo, ma dove si trova il pezzo successivo. All'inizio sarà molto scomodo e i tuoi tempi peggioreranno, ma dopo una settimana di perseveranza miglioreranno improvvisamente.
 - CMLL senza esitazioni. Se ogni volta devi pensare a una mossa prima di farla, allora non è ancora tua. Esercita ogni singola mossa 50 volte, finché le tue mani non si muovono automaticamente appena vedi la forma.
-
-![Forma a freccia](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Fig.: Forma a freccia. Tre spigoli mal orientati nello strato superiore (evidenziati in ciano) formano una freccia che punta allo spigolo mal orientato nello strato inferiore. Con una sola M' U M, tutti e quattro possono essere orientati contemporaneamente. [Apri questo stato nel cubo 3D](/it/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) per vederlo passo dopo passo.*
 
 ![Le sei forme di EO](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,29 +196,29 @@ Scoprirai che, una volta superato il plateau dei 30-35 secondi, la tua velocità
 
 Arrivato a questa fase, congratulazioni! Agli occhi di un principiante, sei già un cuber molto bravo!
 
-## Il costo di non memorizzare algoritmi
+## I passi successivi per avanzare
 
-A questo punto, è giusto essere onesti. Non memorizzare algoritmi ha un costo.
+Per prima cosa, non preoccuparti del potenziale del metodo Roux. Ci sono cuber di livello mondiale che usano il Roux per posizionarsi ai vertici mondiali; il metodo in sé non ha limiti.
 
-La fase CMLL è più lenta. Coprire 42 casi con soli 9 algoritmi significa che in alcune situazioni dovrai eseguire due algoritmi. Chi conosce tutti gli algoritmi CMLL è due o tre secondi più veloce di me in questo passaggio.
-
-I finger tricks per lo strato M sono più impegnativi. La seconda metà del Roux si basa interamente sullo strato M, che è più difficile da girare rispetto a R o U, tende a bloccarsi più facilmente e richiede un cubo di qualità superiore.
-
-Non preoccuparti dei limiti superiori. Ci sono cuber di alto livello che usano il Roux e raggiungono le posizioni più alte nel mondo; il metodo stesso non ha limiti. Tuttavia, per scendere sotto i 15 secondi, è molto probabile che tu debba imparare tutti i 42 algoritmi CMLL. Ma quella è un'altra fase. Per scendere sotto i 30 secondi, non è necessario.
-
-Inoltre, quasi tutti i cuber di livello mondiale che risolvono il cubo con una mano (OH) utilizzano il metodo Roux, perché è davvero molto adatto anche per l'operazione a una mano.
+Inoltre, quasi tutti i cuber di livello mondiale che praticano la risoluzione a una mano (OH) usano il metodo Roux, proprio perché si adatta benissimo a questa disciplina.
 
 **I migliori tempi ufficiali (WCA) con il metodo Roux:**
 
 - Singolo 4.11 secondi, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filippine), Valenzuela Cubing Open 2023, riconosciuto come il solve singolo Roux più veloce ufficiale ([video della ricostruzione](https://www.youtube.com/watch?v=5H4TRJSUm-U))
 - Media 5.98 secondi, sempre lui, 2019, allora record asiatico e il terzo Ao5 ufficiale sotto i 6 secondi nella storia ([profilo WCA](https://www.worldcubeassociation.org/persons/2017VILL41))
-- È anche il [detentore del record mondiale con una mano](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): media 8.09, singolo 6.05 (2024). Nel mondo del cubing a una mano, il Roux è ampiamente considerato il metodo ottimale.
+- È anche il [detentore del record mondiale con una mano](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): media 8.09, singolo 6.05 (2024). Nel mondo del cubing a una mano, il Roux è ampiamente considerato il metodo ottimale
 
-Trovo che questo sia un ottimo compromesso. In cambio di due o tre secondi in più nel CMLL, ottieni: sapere cosa stai facendo a ogni passo, non dimenticare come risolvere il cubo anche dopo tre mesi senza toccarlo, e poter trovare una soluzione per qualsiasi cubo sconosciuto.
+Ma per scendere sotto i 15 secondi, bisogna passare dall'attuale CMLL a due fasi alla risoluzione in un unico passaggio, il che richiede di memorizzare algoritmi più complessi.
+
+Tuttavia, continuo a preferire l'esplorazione libera: comprendere a fondo gli algoritmi tramite l'esplorazione, o persino creare algoritmi con cui ci si trova più a proprio agio, è molto più divertente che imparare a memoria in modo meccanico.
+
+In fin dei conti, il cubo di Rubik è un rompicapo logico, non un gioco di memoria. Solo comprendendo i principi alla base è possibile sapere esattamente cosa si sta facendo a ogni passaggio, non dimenticare come risolverlo anche dopo tre mesi senza toccarlo, e riuscire a trovare una soluzione logica per qualsiasi cubo sconosciuto ci si trovi davanti.
 
 ## Riepilogo
 
 ![Risoluzione completata](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Fig.: Risoluzione completata.*
 
 Passare dalla capacità di risolvere il cubo a scendere sotto i 30 secondi non è un processo di memorizzazione di algoritmi, ma un processo di allenamento della coordinazione tra mani, occhi e cervello.
 
@@ -231,7 +228,7 @@ Gli algoritmi non sono la fonte della velocità. L'osservazione lo è.
 
 Impara a costruire un feedback positivo attraverso i progressi in ogni fase. Anche la pratica per la fluidità può essere meno noiosa, specialmente quando scopri di aver battuto un record personale ancora una volta. Soprattutto nelle fasi iniziali e intermedie, ogni giorno sperimenterai la gioia di battere un record.
 
-Tutti gli algoritmi e i casi menzionati nell'articolo sono stati organizzati nella [Libreria di algoritmi del Metodo Roux](/it/projects/rubiks-cube/roux). Torna a consultarla quando ti blocchi.
+Tutti gli algoritmi e i casi menzionati nell'articolo sono stati organizzati nella [Libreria di algoritmi del Metodo Roux](/it/projects/rubiks-cube/roux). Puoi tornare a consultarla quando ti blocchi.
 
 Il mondo del cubing è infinitamente divertente, ti auguro buon divertimento!
 
@@ -266,8 +263,8 @@ Il mondo del cubing è infinitamente divertente, ti auguro buon divertimento!
 
 - **csTimer**: [cstimer.net](https://cstimer.net/). Attiva le statistiche Ao5 / Ao12 / Ao100. L'Ao100 è il tuo vero livello, i tempi singoli sono questione di fortuna.
 - **Cubo 3D**: [philoli.com/zh/projects/rubiks-cube](/it/projects/rubiks-cube/). Tutti gli algoritmi di questo articolo possono essere inseriti qui per visualizzare l'animazione.
-- **Libreria di algoritmi del Metodo Roux (versione per principianti)**: [philoli.com/zh/projects/rubiks-cube/roux](/it/projects/rubiks-cube/roux). Include i pattern di inserimento comuni per il Primo Blocco e il Secondo Blocco, i 9 algoritmi del CMLL a due fasi, e tutti i casi LSE (EO, UL/UR, ultimi quattro spigoli). Ogni immagine può essere aperta nel cubo 3D, nascondendo automaticamente i pezzi irrilevanti e evidenziando gli spigoli da muovere.
-- **Analizzatore di allenamento csTimer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/it/projects/rubiks-cube/analyzer). Trascina qui il file esportato da csTimer per visualizzare l'andamento dei tuoi tempi, le curve Ao5/Ao12/Ao100, i progressi dei tuoi PB, la tabella dei traguardi (quando hai raggiunto per la prima volta sub-60, sub-40, sub-30) e la curva di pratica Power Law. Tutte le figure di questo articolo provengono da qui. I dati vengono elaborati solo nel tuo browser e non vengono caricati. Se non hai un file esportato, puoi caricare i miei 4441 dati per vedere come funziona.
+- **Libreria di algoritmi del Metodo Roux (versione per principianti)**: [philoli.com/zh/projects/rubiks-cube/roux](/it/projects/rubiks-cube/roux).
+- **Analizzatore di allenamento csTimer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/it/projects/rubiks-cube/analyzer). Trascina qui il file esportato da csTimer per visualizzare l'andamento dei tuoi tempi, le curve Ao5/Ao12/Ao100, i progressi dei tuoi PB, la tabella dei traguardi e la curva di pratica Power Law.
 
 *Questo articolo contiene link di affiliazione Amazon: acquistando tramite questi link, riceverò una piccola commissione, senza alcun costo aggiuntivo per te.*
 

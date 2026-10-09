@@ -20,15 +20,15 @@ toc: true
 
 Edellisessä [artikkelissa «Miten ratkaista Rubikin kuutio ilman algoritmeja»](/fi/blog/solve-rubiks-cube-without-formulas/) opit ratkaisemaan kuution ilman algoritmien ulkoa opettelua, kommutaattoreiden logiikkaa hyödyntäen. Artikkeli sai paljon innostunutta palautetta.
 
-Jos seurasit ohjeita, käytät luultavasti nyt kaksi tai kolme minuuttia ratkaisuun. Vaikka kätesi saattavatkin vielä sählätä, saat kuution kyllä ratkaistua. Sitten nousee esiin uusi kysymys: miten nopeutua?
+Jos seurasit ohjeita askel askeleelta, pystyt luultavasti nyt ratkaisemaan kuution kokonaan, vaikkakin vielä vähän takellellen. Muutaman sadan harjoituskerran jälkeen pääsee helposti alle 1 minuuttiin. Mutta entä jos haluat vieläkin enemmän nopeutta?
 
-Jos etsit «Rubikin kuution pikaratkaisua», kaikki tutoriaalit kertovat sinulle saman asian: jos haluat alle 30 sekunnin aikoihin, opettele ensin CFOP-algoritmit ulkoa. F2L:ään 41, OLL:ään 57, PLL:ään 21 – yhteensä 119 algoritmia. Vaikka F2L:n tekisi intuitiivisesti, yläkerroksen 78 algoritmia ovat väistämättömiä. Jos et opi niitä ulkoa, nopeudesta ei kannata haaveilla.
+Jos etsit «Rubikin kuution pikaratkaisua», kaikki tutoriaalit kertovat sinulle saman asian: jos haluat päästä alle 30 sekuntiin, opettele ensin toistasataa CFOP-algoritmia ulkoa.
 
 Tämä artikkeli pyrkii osoittamaan, että voit päästä alle 30 sekunnin aikoihin ilman yhtäkään ulkoa opeteltua algoritmia.
 
 <!--more-->
 
-Ensimmäisestä Rubikin kuution ratkaisustani 7. toukokuuta 2026 aina 4. elokuuta asti, jolloin Ao100-tulokseni laski alle 30 sekunnin, kului 89 päivää. Tänä aikana en opetellut yhtään CFOP-algoritmia ulkoa, vaan harjoittelin vain vapaa-ajallani. Tämä on kirjaamani data 4441 ratkaisusta.
+Ensimmäisestä Rubikin kuution täydellisestä ratkaisustani 7. toukokuuta 2026 aina 4. elokuuta asti, jolloin Ao100-tulokseni laski alle 30 sekunnin, kului 89 päivää. Tänä aikana en opetellut yhtään CFOP-algoritmia ulkoa, vaan harjoittelin vain vapaa-ajallani. Tämä on kirjaamani data 4441 ratkaisusta.
 
 ![4441 ratkaisun aikakäyrä](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Tästä syystä Roux-metodilla voi pärjätä ilman algoritmien ulkoa opettelua:
 
 ## 165 sekunnista 28 sekuntiin: Neljä vaihetta
 
-Seuraavaksi jaan oman matkani vaiheet. Jokaisesta vaiheesta on merkitty alku- ja loppupiste datan avulla, ja kerron, mihin siinä vaiheessa jumiuduin ja mitä harjoittelin. Sinun haasteesi saattavat olla erilaisia, mutta vaiheiden järjestys on todennäköisesti sama.
-
 ![Neljän vaiheen aikajänne](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Kuva: Neljän vaiheen aikajänne. Ensimmäinen vaihe 3 viikkoa, toinen vaihe 11 päivää, kolmas vaihe kaksi kuukautta, neljäs vaihe tähän päivään asti.*
 
 ### Vaihe yksi: 165 sekuntia → 60 sekuntia (viikot 1–3)
 
-**Data**: 7. toukokuuta – 27. toukokuuta. Ensimmäisen viikon keskiarvo oli 165 sekuntia, kolmannen viikon 68 sekuntia.
+**Data**: 7. toukokuuta – 27. toukokuuta. Ensimmäisen viikon keskiarvo oli 165 sekuntia, kolmannen viikon 68 sekuntia. Tämä oli vaihe vasta-alkajasta perusteiden hallintaan, jossa toistojen myötä alkaa vähitellen ymmärtää, mitä kukin liike todella tarkoittaa ja mitkä palat liikkuvat.
 
 **Mihin jumiudutaan**: Ensimmäinen lohko oli erittäin harjoittelematon, ja jokaista palaa etsi pitkään. Kun yksi palapari löytyi, aloittelijat usein pysähtyivät jatkamaan havainnointia.
 
@@ -111,7 +109,7 @@ Tässä vaiheessa suurin vihollinen ei ole hitaat kädet, vaan hitaat silmät. K
 
 ### Vaihe kaksi: 60 sekuntia → 40 sekuntia (viikot 4–5)
 
-**Data**: 27. toukokuuta – 7. kesäkuuta, 11 päivää. Tämä oli nopeimmin aikaa lyhentävä vaihe koko prosessissa, ja myös se, jossa harjoittelin eniten – kesäkuun ensimmäisellä viikolla 723 kertaa.
+**Data**: 27. toukokuuta – 7. kesäkuuta, 11 päivää. Tämä oli nopeimmin aikaa lyhentävä vaihe koko prosessissa. Tässä vaiheessa saa helpoiten positiivista palautetta: jokainen uusi oivallus ja liikkeiden hiominen näkyy heti ajoissa, ja iloa siitä, että tekee joka päivä uusia ennätyksiä, on vaikea verrata mihinkään muuhun.
 
 **Mihin jumiudutaan**: Liikkeet eivät ole sujuvia. Kuutio jumittaa.
 
@@ -130,7 +128,7 @@ Tässä vaiheessa sinun on optimoitava jokaisen vaiheen liikkeet ja lisättävä
 
 *Kuva vasemmalla: Toisen lohkon rakentamisen näkökulma. Ensimmäinen lohko on valmis, ja oikeanpuoleinen kulma-reunapari asetetaan paikalleen käyttäen vain R, r, M, U -siirtoja, jolloin ensimmäiseen lohkoon ei kosketa. Kuva oikealla: M' U M, yksi Rouxin loppuvaiheen yleisimmin käytetyistä liikesarjoista. Keskikerros ylös, yläkerros kääntyy, keskikerros alas – kolmella askeleella vaihdetaan ylä- ja keskikerroksen reunapari.*
 
-Voit katsoa kokoamani [Roux-metodin algoritmiarkiston](/fi/projects/rubiks-cube/roux#cmll). CMLL-sivulla on kaksivaiheinen järjestelmä: 7 orientointialgoritmia + 2 permutaatioalgoritmia, yhteensä 9 algoritmia. Tämä on erinomainen valinta nopeuden parantamiseen, helppo oppia, ja jokainen hallittu sarja nopeuttaa noin 1–2 sekuntia. Pienellä harjoittelulla ne oppii nopeasti, ja jotkut niistä on jo esitelty edellisessä artikkelissa. Sinun ei tarvitse muistaa niitä kaikkia päästäksesi alle 30 sekunnin aikoihin.
+Voit katsoa aloittelijoille erittäin ystävällistä, tiivistettyä kokoamaani [Roux-algoritmiarkistoa](/fi/projects/rubiks-cube/roux#cmll). CMLL-sivulla on kaksivaiheinen järjestelmä: 7 orientointialgoritmia + 2 permutaatioalgoritmia, yhteensä 9 algoritmia. Tämä on erinomainen valinta nopeuden parantamiseen, helppo oppia, ja jokainen hallittu sarja nopeuttaa noin 1–2 sekuntia. Pienellä harjoittelulla ne oppii nopeasti, ja jotkut niistä on jo esitelty edellisessä artikkelissa. Sinun ei tarvitse muistaa niitä kaikkia päästäksesi alle 30 sekunnin aikoihin.
 
 ![Kaksivaiheisen CMLL:n ensimmäinen vaihe, seitsemän kulmapalojen orientaatiota](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Yksi asia, joka tuottaa tuloksia nopeammin kuin mikään harjoittelu: investoi u
 
 ### Vaihe kolme: 40 sekuntia → 30 sekuntia (viikot 5–13, kaksi kuukautta)
 
-**Data**: 7. kesäkuuta – 4. elokuuta. Ao100-tuloksen hiomiseen 39,8 sekunnista 29,9 sekuntiin kului 58 päivää. Tässä vaiheessa saattoi joskus tulla alle 30 sekunnin tuloksia, mutta vain erittäin hyvällä tuurilla. Lisäksi keskimääräisten ratkaisuaikojen laskiessa yhden sekunnin parantaminen vaikeutuu eksponentiaalisesti.
+**Data**: 7. kesäkuuta – 4. elokuuta. Ao100-tuloksen hiomiseen 39,8 sekunnista 29,9 sekuntiin kului 58 päivää. Tässä vaiheessa saattoi joskus tulla alle 30 sekunnin tuloksia, mutta vain erittäin hyvällä tuurilla. Lisäksi keskimääräisten ratkaisuaikojen laskiessa yhden sekunnin parantaminen vaikeutuu eksponentiaalisesti. (Ao100 tarkoittaa viimeisimmän 100 ratkaisun keskiarvoa, josta on poistettu parhaat ja huonoimmat 5 % tuloksista.)
 
 ![Päivittäiset keskiarvotulokset](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Kuva: Päivittäiset keskiarvotulokset. Kesäkuun puolivälin jälkeen käyrä lähes tasoittui, ja harjoittelin kaksi kuukautta 30–40 sekunnin välillä.*
-
-Tämä on tasaantumisvaihe. Jokainen kohtaa sen, ja minä vietin tässä kaksi kuukautta.
 
 **Mihin jumiudutaan**: Yläkerroksen kuuden reunapalan ratkaiseminen on hidasta, logiikkaa ei ymmärretä, ja joka kerta kuluu paljon aikaa toistuvaan kokeiluun. Myös ensimmäinen ja toinen lohko ovat edelleen liian harjoittelemattomia.
 
@@ -164,12 +160,13 @@ Tämä on tasaantumisvaihe. Jokainen kohtaa sen, ja minä vietin tässä kaksi k
 
 - EO:n (Edge Orientation) tunnistaminen. Edellisessä artikkelissa käsittelimme, että huonosti suunnattuja reunapaloja on vain muutamia tilanteita: 0, muu kuin 0 tai 4, 4 (2 ylhäällä, 2 alhaalla), 4 (kaikki yläkerroksessa), 4 (3 ylhäällä, 1 alhaalla). Tämän vaiheen tavoitteena on tunnistaa heti lohkojen rakentamisen jälkeen, laskematta, mikä tilanne on kyseessä. Harjoittele siten, että sekoitat kuution, ratkaiset sen CMLL:ään asti, pysähdyt, sanot huonosti suunnattujen reunapalojen määrän ja jatkat sitten.
 - Monet eivät ymmärrä tämän vaiheen liikkeitä. EO-vaiheen lopullisena tavoitteena on luoda «nuolimuoto», jossa on 3 ylhäällä ja 1 alhaalla, koska täydellinen tila on vain yhden sekoituksen päässä nuolimuodosta. Käänteisen ajattelun mukaan tämä on viimeinen vaihe ennen ratkaisun valmistumista, joten riippumatta huonosti suunnattujen reunapalojen määrästä, tavoitteena on aina luoda nuolimuoto. Jos ylhäällä on 4 huonosti suunnattua reunaa, vaihda yksi ylä- ja alareunapari, jotta yksi huonosti suunnattu reuna siirtyy alas ja nuolimuoto syntyy. Jos ylhäällä on 2 ja alhaalla 2, vaihda yksi ylä- ja alareunapari, jotta yksi huonosti suunnattu reuna siirtyy ylös ja nuolimuoto syntyy. Jos ylhäällä on 1 ja alhaalla 1, tai ylhäällä 2, käytä M' U M -liikettä muuttaaksesi tilanteen ensin edellisiin tapauksiin ja sitten muodostaaksesi nuolen. Voit itse löytää parhaat askeleet 1/1-tilanteeseen tarkkailemalla ja miettimällä paljon.
+
+  ![Nuolimuoto](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+  *Kuva: Nuolimuoto. Yläkerroksen kolme huonosti suunnattua reunapalaa (turkoosilla korostettuna) muodostavat nuolen, joka osoittaa alakerroksen huonosti suunnattuun reunapalaan. Tässä tilassa yksi M' U M -liike asettaa kaikki neljä palaa paikalleen samanaikaisesti. [Avaa tämä tila 3D-kuutiossa](/fi/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) nähdäksesi sen vaihe vaiheelta.*
+
 - Harjoittele paljon ennakoimista (look-ahead). Tämä on tärkein ja epäintuitiivisin asia, kun haluat päästä 40 sekunnista 30 sekuntiin: käännä hitaammin, katso pidemmälle. Kun rakennat ensimmäistä lohkoa, älä katso palaa, jota olet juuri asettamassa, vaan katso, missä seuraava pala on. Alussa tämä tuntuu hyvin oudolta ja tulokset saattavat jopa huonontua, mutta viikon harjoittelun jälkeen ne paranevat yhtäkkiä.
 - CMLL ilman epäröintiä. Jos joudut miettimään jokaista liikettä ennen kuin uskallat tehdä sen, se ei ole vielä sinun hallussasi. Harjoittele jokaista liikettä erikseen 50 kertaa, kunnes kätesi liikkuvat automaattisesti nähdessäsi muodon.
-
-![Nuolimuoto](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Kuva: Nuolimuoto. Yläkerroksen kolme huonosti suunnattua reunapalaa (turkoosilla korostettuna) muodostavat nuolen, joka osoittaa alakerroksen huonosti suunnattuun reunapalaan. Tässä tilassa yksi M' U M -liike asettaa kaikki neljä palaa paikalleen samanaikaisesti. [Avaa tämä tila 3D-kuutiossa](/fi/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) nähdäksesi sen vaihe vaiheelta.*
 
 ![EO:n kuusi tilaa](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,15 +196,9 @@ Sitten huomaat, että kun olet päässyt yli 30–35 sekunnin pullonkaulasta, no
 
 Tässä vaiheessa onneksi olkoon, aloittelijoiden silmissä olet jo erittäin taitava pelaaja!
 
-## Hinta siitä, ettei opettele algoritmeja ulkoa
+## Askel eteenpäin
 
-Tässä vaiheessa on syytä olla rehellinen. Algoritmien ulkoa opettelun välttäminen ei ole ilmaista.
-
-CMLL-vaihe on hidas. 42 tapauksen kattaminen 9 algoritmilla tarkoittaa, että joissakin tilanteissa joudut tekemään liikkeen kahdesti. Koko CMLL:n osaavat ovat tässä vaiheessa kaksi tai kolme sekuntia nopeampia kuin minä.
-
-M-kerroksen tekniikka on haastava. Rouxin loppuvaihe perustuu kokonaan M-kerrokseen, ja M-kerrosta on vaikeampi kääntää kuin R- tai U-kerrosta, se jumittaa helpommin ja vaatii enemmän itse kuutiolta.
-
-Älä murehdi ylärajasta. Huippupelaajien joukossa on niitä, jotka käyttävät Roux-metodia ja ovat päässeet maailman kärkeen; itse menetelmässä ei ole ylärajaa. Mutta jos haluat alle 15 sekunnin aikoihin, sinun on todennäköisesti opittava kaikki 42 CMLL-algoritmia. Se on kuitenkin eri vaiheen asia. Alle 30 sekunnin pääsemiseen sitä ei tarvita.
+Älä aluksi murehdi Roux-metodin ylärajasta. Huippupelaajien joukossa on niitä, jotka käyttävät Roux-metodia ja ovat päässeet maailman kärkeen; itse menetelmässä ei ole ylärajaa.
 
 Lisäksi lähes kaikki maailmanluokan yhden käden (OH) ratkaisijat käyttävät Roux-metodia, koska se soveltuu todella hyvin myös yhden käden käyttöön.
 
@@ -217,11 +208,17 @@ Lisäksi lähes kaikki maailmanluokan yhden käden (OH) ratkaisijat käyttävät
 - Keskiarvo 5,98 sekuntia, sama henkilö, 2019, tuolloin Aasian ennätys ja historian kolmas virallinen alle 6 sekunnin keskiarvo ([WCA-tiedot](https://www.worldcubeassociation.org/persons/2017VILL41))
 - Hän on myös [yhden käden maailmanennätyksen haltija](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): keskiarvo 8,09, yksittäinen 6,05 (2024). Yhden käden ratkaisijoiden keskuudessa Roux-metodia pidetään yleisesti optimaalisena ratkaisuna.
 
-Mielestäni tämä kauppa on erittäin kannattava. Käytät kaksi tai kolme sekuntia CMLL-vaiheeseen, mutta vastineeksi tiedät, mitä teet jokaisessa vaiheessa, et unohda sitä, vaikka et koskisi kuutioon kolmeen kuukauteen, ja pystyt keksimään ratkaisun mihin tahansa tuntemattomaan kuutioon.
+Mutta jos haluat päästä alle 15 sekuntiin, nykyinen kaksivaiheinen CMLL on muutettava yhdellä kertaa suoritettavaksi, mikä vaatii monimutkaisempien algoritmien opettelua ulkoa.
+
+Itse suosin kuitenkin vapaata tutkimista. Algoritmien perinpohjainen ymmärtäminen kokeilemisen kautta – tai jopa itselle luontevien algoritmien luominen – on paljon hauskempaa kuin pelkkä mekaaninen ulkoa opettelu.
+
+Rubikin kuutio on alun perin älypeli, ei muistipeli. Vain periaatteet ymmärtämällä tiedät jokaisessa vaiheessa, mitä olet tekemässä, et unohda sitä, vaikka et koskisi kuutioon kolmeen kuukauteen, ja pystyt päättelemään ratkaisun mihin tahansa tuntemattomaan kuutioon.
 
 ## Yhteenveto
 
 ![Ratkaisu valmis](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Kuva: Ratkaisu valmis.*
 
 Kuution ratkaisemisesta alle 30 sekuntiin pääseminen ei ole algoritmien ulkoa opettelua, vaan käsien, silmien ja aivojen koordinaation harjoittelua.
 
@@ -266,8 +263,8 @@ Rubikin kuutioiden maailmassa on loputtomasti iloa. Pidä hauskaa!
 
 - **csTimer**: [cstimer.net](https://cstimer.net/). Ota käyttöön Ao5 / Ao12 / Ao100 -tilastot. Ao100 on todellinen tasosi, yksittäiset ajat ovat tuurista kiinni.
 - **3D-kuutio**: [philoli.com/zh/projects/rubiks-cube](/fi/projects/rubiks-cube/). Kaikki tämän artikkelin algoritmit voi syöttää tähän ja katsoa animaatiota.
-- **Roux-metodin aloittelijaystävällinen algoritmiarkisto**: [philoli.com/zh/projects/rubiks-cube/roux](/fi/projects/rubiks-cube/roux). Sisältää ensimmäisen ja toisen lohkon yleisimmät asettelut, kaksivaiheisen CMLL:n 9 algoritmia ja kaikki LSE-tilanteet (EO, UL/UR, viimeiset neljä reunaa). Jokainen tila voidaan avata 3D-kuutiossa, jolloin epäolennaiset palat piilotetaan ja liikuteltavat reunat korostetaan automaattisesti.
-- **csTimer-harjoitusanalysaattori**: [philoli.com/zh/projects/rubiks-cube/analyzer](/fi/projects/rubiks-cube/analyzer). Vedä csTimeristä viety tiedosto tähän, niin näet omat tuloskehityksesi, Ao5/Ao12/Ao100-käyräsi, PB-ennätysten kehityksen, merkkipaalulistan (milloin saavutit ensimmäisen kerran alle 60, alle 40, alle 30 sekuntia) ja Power Law -harjoittelukäyrän. Kaikki tämän artikkelin kuvat ovat peräisin täältä. Data käsitellään vain selaimessasi, eikä sitä ladata palvelimelle. Jos sinulla ei ole vientitiedostoa, voit ladata ensin omat 4441 ratkaisuni ja katsoa, miten se toimii.
+- **Roux-metodin aloittelijaystävällinen algoritmiarkisto**: [philoli.com/zh/projects/rubiks-cube/roux](/fi/projects/rubiks-cube/roux).
+- **csTimer-harjoitusanalysaattori**: [philoli.com/zh/projects/rubiks-cube/analyzer](/fi/projects/rubiks-cube/analyzer). Vedä csTimeristä viety tiedosto tähän, niin näet omat tuloskehityksesi, Ao5/Ao12/Ao100-käyräsi, PB-ennätysten kehityksen, merkkipaalulistan ja Power Law -harjoittelukäyrän.
 
 *Tämä artikkeli sisältää Amazonin affiliate-linkkejä: Jos ostat linkkien kautta, saan pienen provision, mutta hinta sinulle pysyy samana.*
 

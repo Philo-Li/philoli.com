@@ -20,15 +20,15 @@ toc: true
 
 I min forrige [artikel om at løse Rubiks terning uden algoritmer](/da/blog/solve-rubiks-cube-without-formulas/), lærte du at samle en terning ved hjælp af kommutator-logik, helt uden at skulle huske algoritmer. Den artikel har fået en masse positiv feedback.
 
-Hvis du har fulgt vejledningen, kan du sandsynligvis løse den på to-tre minutter nu. Det er måske lidt kluntet, men du får den samlet. Men så dukker et nyt spørgsmål op: Hvordan bliver jeg hurtigere?
+Hvis du følger det trin for trin, bør du allerede være i stand til at samle terningen helt, om end lidt tøvende. Med et par hundrede gennemførsler kommer du nemt under 1 minut. Men hvad nu, hvis du vil have endnu mere fart på?
 
-Søger du på "speedcubing", vil alle vejledninger fortælle dig det samme: Vil du under 30 sekunder, skal du lære CFOP-algoritmerne udenad. 41 til F2L, 57 til OLL, 21 til PLL – i alt 119 algoritmer. Selv hvis du laver F2L intuitivt, slipper du ikke udenom de 78 til toppen. Kan du ikke huske dem, kan du glemme alt om at blive hurtig.
+Søger du på "speedcubing", vil alle vejledninger fortælle dig det samme: Vil du under 30 sekunder, skal du først lære over hundrede CFOP-algoritmer udenad.
 
 Denne artikel vil vise dig, at du kan komme under 30 sekunder, helt uden at lære algoritmer udenad.
 
 <!--more-->
 
-Fra den 7. maj 2026, hvor jeg løste terningen for første gang, til den 4. august, hvor min Ao100 kom under 30 sekunder, gik der 89 dage. I den periode lærte jeg ikke en eneste CFOP-algoritme, men legede bare med terningen i min fritid. Her er mine tidsdata fra 4441 registrerede løsninger.
+Fra den 7. maj 2026, hvor jeg løste terningen helt for første gang, til den 4. august, hvor min Ao100 kom under 30 sekunder, gik der 89 dage. I den periode lærte jeg ikke en eneste CFOP-algoritme, men legede bare med terningen i min fritid. Her er mine tidsdata fra 4441 registrerede løsninger.
 
 ![Resultatkurve for 4441 løsninger](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Det er derfor, Roux-metoden kan bruges uden at lære algoritmer: Den komprimerer
 
 ## Fra 165 sekunder til 28 sekunder: Fire faser
 
-Her er den vej, jeg selv har fulgt. Jeg har markeret start og slut for hver fase med data og beskrevet, hvor jeg sad fast, og hvad jeg øvede i den periode. Dine flaskehalse kan være anderledes end mine, men rækkefølgen vil sandsynligvis være den samme.
-
 ![Tidsforløbet for de fire faser](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Figur: Tidsforløbet for de fire faser. Fase et: 3 uger, fase to: 11 dage, fase tre: to måneder, fase fire: indtil nu.*
 
 ### Fase et: 165 sekunder → 60 sekunder (uge 1–3)
 
-**Data**: 7. maj til 27. maj. Første uge i gennemsnit 165 sekunder, tredje uge 68 sekunder.
+**Data**: 7. maj til 27. maj. Første uge i gennemsnit 165 sekunder, tredje uge 68 sekunder. Denne fase markerer overgangen fra nybegynder til let øvet; gennem gentagelse forstår man gradvist, hvad hver enkelt bevægelse egentlig betyder, og hvilke brikker der flytter sig.
 
 **Hvor du sidder fast**: Første blok er meget uvant, og det tager lang tid at finde hvert hjørne-kant-par. Efter at have fundet et par, stopper begyndere ofte for at observere yderligere.
 
@@ -111,7 +109,7 @@ Lær ingen nye algoritmer i denne fase. Din nuværende flaskehals er ikke algori
 
 ### Fase to: 60 sekunder → 40 sekunder (uge 4–5)
 
-**Data**: 27. maj til 7. juni, 11 dage. Dette var den hurtigste nedgang i hele processen, og også den periode hvor jeg trænede mest, med 723 løsninger i den første uge af juni.
+**Data**: 27. maj til 7. juni, 11 dage. Dette var den hurtigste nedgang i hele processen. I denne fase oplever man lettest positiv feedback: Hver ny ting man lærer og hver optimering af en bevægelse slår straks igennem på tiden. Følelsen af at slå personlige rekorder hver evig eneste dag er svær at matche med ret meget andet.
 
 **Hvor du sidder fast**: Ikke-flydende bevægelser. Terningen sætter sig fast.
 
@@ -130,7 +128,7 @@ I denne fase skal du optimere bevægelserne i hvert trin og øge din fortrolighe
 
 *Figur venstre: Perspektiv når anden blok bygges. Første blok er færdig, og kun R, r, M, U drejninger bruges til at indsætte hjørne-kant-parret i højre side, så første blok aldrig røres. Figur højre: M' U M, en af de mest brugte bevægelsessekvenser i anden halvdel af Roux-metoden. M-laget op, U-laget drejes, M-laget ned – tre trin der udskifter et kantpar på U-laget og M-laget.*
 
-Du kan se min samling af [Roux-metodens algoritmer](/da/projects/rubiks-cube/roux#cmll). CMLL-siden er to-trins: 7 orienteringsalgoritmer + 2 permutationsalgoritmer, i alt 9. Dette er et yderst omkostningseffektivt valg for at øge hastigheden, let at lære, og hver mestret gruppe kan spare dig omkring 1-2 sekunder. Med lidt øvelse vil du hurtigt mestre dem. Nogle er allerede introduceret i den forrige artikel, og du behøver ikke huske dem alle for at komme under 30 sekunder.
+Du kan se min begyndervenlige og forenklede samling af [Roux-algoritmer](/da/projects/rubiks-cube/roux#cmll). CMLL-siden er to-trins: 7 orienteringsalgoritmer + 2 permutationsalgoritmer, i alt 9. Dette er et yderst omkostningseffektivt valg for at øge hastigheden, let at lære, og hver mestret gruppe kan spare dig omkring 1-2 sekunder. Med lidt øvelse vil du hurtigt mestre dem. Nogle er allerede introduceret i den forrige artikel, og du behøver ikke huske dem alle for at komme under 30 sekunder.
 
 ![To-trins CMLL, første trin: syv hjørneorienteringer](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Der er én ting mere, der giver øjeblikkelige resultater, bedre end nogen træn
 
 ### Fase tre: 40 sekunder → 30 sekunder (uge 5–13, to måneder)
 
-**Data**: 7. juni til 4. august. Min Ao100 faldt fra 39,8 sekunder til 29,9 sekunder over 58 dage. I denne fase kunne jeg indimellem få en tid under 30 sekunder, men kun med rigtig meget held. Og efterhånden som den gennemsnitlige løsningstid falder, vil det blive eksponentielt sværere at forbedre sig med blot ét sekund.
+**Data**: 7. juni til 4. august. Min Ao100 faldt fra 39,8 sekunder til 29,9 sekunder over 58 dage. I denne fase kunne jeg indimellem få en tid under 30 sekunder, men kun med rigtig meget held. Og efterhånden som den gennemsnitlige løsningstid falder, vil det blive eksponentielt sværere at forbedre sig med blot ét sekund. (Ao100 angiver gennemsnitstiden for de seneste 100 løsninger, frasorteret de bedste og værste 5 % af tiderne).
 
 ![Dagligt gennemsnitligt resultat](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Figur: Dagligt gennemsnitligt resultat. Efter midten af juni fladede kurven næsten ud og lå mellem 30-40 sekunder i to måneder.*
-
-Dette er plateau-fasen. Alle oplever den, og jeg tilbragte to måneder her.
 
 **Hvor du sidder fast**: Det tager lang tid at løse de seks kantbrikker på det øverste lag. Logikken er ikke forstået, og hver gang bruger man unødvendig tid på gentagne forsøg. Første og anden blok er stadig ikke flydende nok.
 
@@ -164,12 +160,13 @@ Dette er plateau-fasen. Alle oplever den, og jeg tilbragte to måneder her.
 
 -   EO-genkendelse. Som nævnt i den forrige artikel er der kun få tilfælde af fejlorienterede kanter: 0, ikke 0 og ikke 4, 4 (2 oppe, 2 nede), 4 (alle på U-laget), 4 (3 oppe, 1 nede). Målet i denne fase er: I det øjeblik blokkene er bygget, skal du uden at tælle straks kunne se, hvilken type det er. Øv dig ved at scramble terningen, udfør kun op til CMLL, hold derefter pause, sig antallet af fejlorienterede kanter, og fortsæt så.
 -   Mange forstår ikke bevægelserne her. EO-fasen handler i sidste ende om at konstruere en 'pil'-form med 3 fejlorienterede kanter på U-laget og 1 på D-laget. Fordi en fuldt orienteret tilstand kun er én scramble væk fra pil-formen, er pil-formen – tænkt baglæns – det sidste trin før en komplet løsning. Uanset antallet af fejlorienterede kanter er målet altid at skabe en pil. Hvis der er 4 fejlorienterede kanter på U-laget, kan du bytte et op- og ned-kantpar for at flytte en fejlorienteret kant ned og skabe pil-formen. Hvis der er 2 oppe og 2 nede, bytter du et op- og ned-kantpar for at flytte en fejlorienteret kant op og skabe pil-formen. Hvis der er 1 oppe og 1 nede, eller 2 oppe, kan du bruge M' U M til først at skabe en af de tidligere situationer og derefter konstruere pil-formen. Du kan gennem omfattende observation og overvejelser selv finde frem til de bedste trin for 1/1-situationen.
+
+    ![Pil-formen](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+    *Figur: Pil-formen. Tre fejlorienterede kanter på U-laget (fremhævet med cyan) danner en pil, der peger mod den fejlorienterede kant på D-laget. Med et M' U M kan alle fire placeres korrekt samtidigt. [Åbn denne tilstand i 3D-terningen](/da/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) for at se trin for trin.*
+
 -   Øv look-ahead intensivt. Dette er det vigtigste skridt fra 40 til 30 sekunder, og også det mest kontraintuitive: Drej langsommere, se længere frem. Når du bygger første blok, skal dine øjne ikke fokusere på den brik, du er ved at indsætte, men i stedet søge efter den næste brik. Det vil føles meget akavet i starten, og dine tider vil sandsynligvis blive dårligere. Men hold fast i en uge, og det vil pludselig forbedre sig markant.
 -   CMLL uden tøven. Hvis du skal tænke over en bevægelse, hver gang du skal udføre den, så sidder den ikke i fingrene endnu. Øv hver enkelt bevægelse 50 gange, indtil din hånd reagerer automatisk, når du ser mønsteret.
-
-![Pil-formen](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Figur: Pil-formen. Tre fejlorienterede kanter på U-laget (fremhævet med cyan) danner en pil, der peger mod den fejlorienterede kant på D-laget. Med et M' U M kan alle fire placeres korrekt samtidigt. [Åbn denne tilstand i 3D-terningen](/da/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) for at se trin for trin.*
 
 ![De seks EO-tilfælde](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,17 +196,11 @@ Derefter vil du opdage, at når du har passeret flaskehalsen på 30-35 sekunder,
 
 Når du når denne fase, så tillykke! I en nybegynders øjne er du allerede en meget dygtig spiller!
 
-## Prisen for at undgå algoritmer
+## Næste skridt mod videreudvikling
 
-Nu vi er ved det, skal vi være ærlige. At undgå algoritmer udenad er ikke gratis.
+For det første behøver du ikke bekymre dig om loftet for Roux-metoden. Blandt topspillere er der også dem, der bruger Roux til at nå verdenseliten; metoden i sig selv har ingen øvre grænse.
 
-CMLL-fasen er langsommere. At dække 42 tilfælde med 9 algoritmer betyder, at nogle situationer skal udføres to gange. Folk, der kender alle CMLL-algoritmer, er to-tre sekunder hurtigere end mig i dette trin.
-
-M-lags-fingertricks har en højere tærskel. Anden halvdel af Roux-metoden er helt afhængig af M-laget, som er sværere at dreje end R og U, lettere at sætte fast, og stiller højere krav til terningen selv.
-
-Bekymr dig ikke om loftet. Blandt topspillere er der også dem, der bruger Roux-metoden til at nå verdenseliten; metoden i sig selv har ingen øvre grænse. Men for at komme under 15 sekunder, skal du sandsynligvis lære alle 42 CMLL-algoritmer. Det er dog en anden fase. For at komme under 30 sekunder er det ikke nødvendigt.
-
-Desuden bruger næsten alle verdensklasse OH-cubere (én-hånds løsere) Roux-metoden, fordi den er yderst velegnet til én-hånds betjening.
+Desuden bruger næsten alle verdensklasse OH-cubere (én-hånds løsere) Roux-metoden, fordi den simpelthen også egner sig fænomenalt godt til én-hånds betjening.
 
 **Hurtigste resultater med Roux-metoden i officielle WCA-konkurrencer:**
 
@@ -217,11 +208,17 @@ Desuden bruger næsten alle verdensklasse OH-cubere (én-hånds løsere) Roux-me
 -   Gennemsnit 5,98 sekunder, også ham, 2019. Dengang var det en asiatisk rekord og også det tredje officielle sub-6 gennemsnit nogensinde ([WCA-profil](https://www.worldcubeassociation.org/persons/2017VILL41))
 -   Han er også [verdensrekordholder i én-hånds speedcubing](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): Gennemsnit 8,09, single 6,05 (2024). I OH-miljøet anses Roux generelt for at være den optimale løsningsmetode.
 
-Jeg synes, denne byttehandel er det værd. Du bytter to-tre sekunders CMLL-tid for at vide, hvad du gør i hvert trin, ikke at glemme det, selv efter tre måneder uden terningen, og at kunne udlede en løsning, uanset hvilken ukendt terning du får fat i.
+Men vil du under 15 sekunder, kræver det, at du går fra den nuværende to-trins CMLL til at klare det i ét hug, hvilket kræver at du lærer flere og mere komplekse algoritmer udenad.
+
+Jeg hælder dog stadig til fri udforskning. At opnå en dyb forståelse af algoritmerne gennem egen udforskning – og måske endda skabe algoritmer, der passer naturligt til ens egne hænder – er langt sjovere end ren udenadslære.
+
+Rubiks terning har altid været et tankespil, ikke et huskespil. Først når du forstår principperne bag, opnår du at vide præcis, hvad du gør i hvert eneste trin, at du ikke glemmer det selv efter tre måneder uden terningen, og at du kan udlede en løsning, uanset hvilken ukendt terning du får i hånden.
 
 ## Opsummering
 
 ![Løsning fuldført](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Figur: Terningen er løst.*
 
 At gå fra at kunne løse terningen til at komme under 30 sekunder er ikke en proces, der handler om at lære algoritmer udenad; det er en proces, der træner koordinationen mellem hænder, øjne og hjerne.
 
@@ -266,8 +263,8 @@ Verdenen af Rubiks terninger er fuld af uendelig glæde. Hav det sjovt!
 
 -   **csTimer**: [cstimer.net](https://cstimer.net/). Aktivér Ao5 / Ao12 / Ao100 statistik. Din Ao100 afspejler dit sande niveau; enkelte løsninger er held.
 -   **3D-terning**: [philoli.com/zh/projects/rubiks-cube](/da/projects/rubiks-cube/). Alle algoritmer i denne artikel kan indtastes her for at se animationer.
--   **Roux-metodens algoritmesamling for begyndere**: [philoli.com/zh/projects/rubiks-cube/roux](/da/projects/rubiks-cube/roux). Almindelige indsættelsesmetoder for første og anden blok, de 9 to-trins CMLL-algoritmer, og alle LSE-tilfælde (EO, UL/UR, de sidste fire kanter). Hvert tilfælde kan åbnes i 3D-terningen, hvor irrelevante brikker skjules, og de brikker, der skal flyttes, fremhæves automatisk.
--   **csTimer Træningsanalysator**: [philoli.com/zh/projects/rubiks-cube/analyzer](/da/projects/rubiks-cube/analyzer). Træk din eksporterede csTimer-fil ind her, og du kan se din resultatudvikling, Ao5/Ao12/Ao100-kurver, PB-fremskridt, en milepælstabel (hvornår du første gang nåede sub-60, sub-40, sub-30) og Power Law-træningskurven. Alle diagrammer i denne artikel kommer herfra. Data behandles kun i din browser og uploades ikke. Hvis du ikke har en eksporteret fil, kan du indlæse mine 4441 data for at se effekten.
+-   **Roux-metodens algoritmesamling for begyndere**: [philoli.com/zh/projects/rubiks-cube/roux](/da/projects/rubiks-cube/roux).
+-   **csTimer Træningsanalysator**: [philoli.com/zh/projects/rubiks-cube/analyzer](/da/projects/rubiks-cube/analyzer). Træk din eksporterede csTimer-fil ind her, og du kan se din resultatudvikling, Ao5/Ao12/Ao100-kurver, PB-fremskridt, en milepælstabel og Power Law-træningskurven.
 
 *Denne artikel indeholder Amazon affiliate-links: Ved køb via links modtager jeg en lille provision, uden at din pris ændres.*
 

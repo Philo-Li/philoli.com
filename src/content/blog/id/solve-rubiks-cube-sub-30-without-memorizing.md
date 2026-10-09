@@ -20,15 +20,15 @@ toc: true
 
 Pada artikel sebelumnya [《Cara Menyelesaikan Rubik Tanpa Menghafal Algoritma》](/id/blog/solve-rubiks-cube-without-formulas/), Anda telah belajar bagaimana menyelesaikan Kubus Rubik tanpa menghafal algoritma, hanya dengan memahami logika komutator. Artikel itu mendapat banyak pujian hangat.
 
-Jika Anda telah mencobanya, mungkin sekarang Anda membutuhkan sekitar dua hingga tiga menit untuk menyelesaikannya. Meskipun masih canggung, Anda sudah bisa menyelesaikannya. Lalu, sebuah pertanyaan baru akan muncul: bagaimana cara agar lebih cepat?
+Jika Anda mengikutinya langkah demi langkah, Anda seharusnya sudah bisa menyelesaikan Rubik secara lengkap meski masih terbata-bata. Dengan sedikit latihan beberapa ratus kali, sangat mudah untuk masuk ke bawah 1 menit. Namun, bagaimana jika Anda ingin kecepatan yang lebih tinggi lagi?
 
-Ketika Anda mencari "speedcubing Rubik", semua tutorial akan memberi tahu Anda hal yang sama: jika ingin masuk di bawah 30 detik, Anda harus menghafal algoritma CFOP terlebih dahulu. Ada 41 algoritma F2L, 57 OLL, dan 21 PLL—total 119 algoritma. Bahkan jika Anda melakukan F2L secara intuitif, 78 algoritma untuk lapisan atas tetap tidak bisa dihindari. Jika tidak dihafal, jangan harap bisa cepat.
+Ketika Anda mencari "speedcubing Rubik", semua tutorial akan memberi tahu Anda hal yang sama: jika ingin masuk ke bawah 30 detik, Anda harus menghafal ratusan algoritma CFOP terlebih dahulu.
 
 Artikel ini ingin memberi tahu Anda bahwa Anda bisa masuk di bawah 30 detik tanpa perlu menghafal algoritma sama sekali.
 
 <!--more-->
 
-Saya mulai menyelesaikan Kubus Rubik pertama kali pada 7 Mei 2026, dan pada 4 Agustus, Ao100 saya sudah di bawah 30 detik. Itu butuh 89 hari. Selama periode ini, saya tidak menghafal satu pun algoritma CFOP, saya hanya bermain di waktu luang. Berikut adalah data waktu dari 4441 solve yang saya catat.
+Saya mulai menyelesaikan Kubus Rubik secara lengkap untuk pertama kali pada 7 Mei 2026, dan pada 4 Agustus, Ao100 saya sudah di bawah 30 detik. Itu butuh 89 hari. Selama periode ini, saya tidak menghafal satu pun algoritma CFOP, saya hanya bermain di waktu luang. Berikut adalah data waktu dari 4441 solve yang saya catat.
 
 ![Kurva waktu 4441 solve](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Inilah mengapa Roux bisa dilakukan tanpa menghafal algoritma: metode ini memadat
 
 ## Dari 165 Detik menjadi 28 Detik: Empat Tahapan
 
-Berikut adalah perjalanan yang saya alami. Setiap tahapan saya tandai dengan data awal dan akhir, lalu menjelaskan di mana saya sering macet dan apa yang saya latih pada tahapan tersebut. Titik macet Anda mungkin berbeda dengan saya, tetapi urutannya kemungkinan besar sama.
-
 ![Rentang waktu empat tahapan](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Gambar: Rentang waktu empat tahapan. Tahap satu 3 minggu, tahap dua 11 hari, tahap tiga dua bulan, tahap empat hingga saat ini.*
 
 ### Tahap Satu: 165 Detik → 60 Detik (Minggu ke-1 hingga ke-3)
 
-**Data**: 7 Mei hingga 27 Mei. Minggu pertama rata-rata 165 detik, minggu ketiga 68 detik.
+**Data**: 7 Mei hingga 27 Mei. Minggu pertama rata-rata 165 detik, minggu ketiga 68 detik. Tahap ini adalah fase transisi dari pemula ke tingkat dasar, di mana melalui pengulangan Anda secara bertahap memahami arti sebenarnya dari setiap gerakan dan bagian mana saja yang sedang berpindah.
 
 **Di mana Anda sering macet**: First Block (FB) masih sangat belum mahir, setiap pasangan corner-edge membutuhkan waktu lama untuk ditemukan. Lalu, setelah menemukan satu pasangan, pemula cenderung berhenti untuk terus mengamati.
 
@@ -111,7 +109,7 @@ Jangan mempelajari algoritma baru pada tahap ini. Hambatan Anda saat ini bukan p
 
 ### Tahap Dua: 60 Detik → 40 Detik (Minggu ke-4 hingga ke-5)
 
-**Data**: 27 Mei hingga 7 Juni, 11 hari. Ini adalah periode penurunan tercepat dalam seluruh proses, dan juga periode di mana saya paling banyak berlatih, 723 kali pada minggu pertama Juni.
+**Data**: 27 Mei hingga 7 Juni, 11 hari. Ini adalah periode penurunan tercepat dalam seluruh proses. Tahap ini adalah fase yang paling mudah memberikan umpan balik positif; setiap pembelajaran dan optimalisasi gerakan akan langsung tercermin pada waktu penyelesaian. Sensasi memecahkan rekor setiap hari adalah hal yang sulit ditandingi oleh banyak aktivitas lain.
 
 **Di mana Anda sering macet**: Gerakan tidak berkesinambungan. Kubus macet.
 
@@ -130,7 +128,7 @@ Pada tahap ini, Anda perlu mengoptimalkan gerakan di setiap tahapan, dan di atas
 
 *Gambar kiri: Sudut pandang saat membangun Second Block (SB). First Block (FB) sudah selesai, hanya gunakan empat gerakan R, r, M, U untuk memasukkan pasangan corner-edge di sisi kanan, First Block (FB) tidak akan pernah tersentuh. Gambar kanan: M' U M, salah satu rangkaian gerakan yang paling sering digunakan di paruh kedua Roux. Lapisan tengah naik, lapisan atas berputar sekali, lapisan tengah kembali, tiga langkah ini menukar sepasang edge di lapisan atas dan tengah.*
 
-Anda bisa melihat [perpustakaan algoritma Metode Roux](/id/projects/rubiks-cube/roux) yang saya susun. Halaman CMLL berisi dua bagian: 7 algoritma orientasi + 2 algoritma permutasi, total 9 algoritma. Ini adalah pilihan paling hemat biaya untuk meningkatkan kecepatan, sangat mudah dipelajari, dan setiap kelompok yang mahir dapat mempercepat sekitar 1–2 detik. Dengan sedikit latihan, Anda akan segera mahir. Beberapa di antaranya sudah diperkenalkan di artikel sebelumnya, dan Anda tidak perlu mengingat semuanya untuk bisa masuk di bawah 30 detik.
+Anda bisa melihat versi ringkas dari [perpustakaan algoritma Roux](/id/projects/rubiks-cube/roux#cmll) yang sangat ramah pemula yang saya susun. Halaman CMLL berisi dua bagian: 7 algoritma orientasi + 2 algoritma permutasi, total 9 algoritma. Ini adalah pilihan paling hemat biaya untuk meningkatkan kecepatan, sangat mudah dipelajari, dan setiap kelompok yang mahir dapat mempercepat sekitar 1–2 detik. Dengan sedikit latihan, Anda akan segera mahir. Beberapa di antaranya sudah diperkenalkan di artikel sebelumnya, dan Anda tidak perlu mengingat semuanya untuk bisa masuk di bawah 30 detik.
 
 ![Langkah pertama CMLL dua bagian, tujuh orientasi corner](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Satu hal lagi, yang lebih efektif daripada latihan apa pun: investasikan sedikit
 
 ### Tahap Tiga: 40 Detik → 30 Detik (Minggu ke-5 hingga ke-13, dua bulan)
 
-**Data**: 7 Juni hingga 4 Agustus. Ao100 saya berkisar dari 39,8 detik hingga 29,9 detik, membutuhkan waktu 58 hari. Pada tahap ini, mungkin sesekali akan muncul waktu di bawah 30 detik, tetapi hanya jika keberuntungan sangat baik. Dan seiring penurunan waktu rata-rata solve, kesulitan untuk maju 1 detik akan meningkat secara eksponensial.
+**Data**: 7 Juni hingga 4 Agustus. Ao100 saya berkisar dari 39,8 detik hingga 29,9 detik, membutuhkan waktu 58 hari. Pada tahap ini, mungkin sesekali akan muncul waktu di bawah 30 detik, tetapi hanya jika keberuntungan sangat baik. Dan seiring penurunan waktu rata-rata solve, kesulitan untuk maju 1 detik akan meningkat secara eksponensial. (Ao100 menunjukkan rata-rata waktu dari 100 solve terakhir, setelah membuang 5% hasil terbaik dan terburuk)
 
 ![Rata-rata waktu harian](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Gambar: Rata-rata waktu harian. Setelah pertengahan Juni, kurva hampir mendatar, berkutat antara 30–40 detik selama dua bulan.*
-
-Ini adalah fase plateau. Setiap orang pasti akan mengalaminya, dan saya bertahan di sini selama dua bulan.
 
 **Di mana Anda sering macet**: Penyelesaian enam potongan edge lapisan atas sangat lambat, tidak memahami logikanya, setiap kali mengandalkan coba-coba berulang kali, membuang banyak waktu. First Block dan Second Block masih belum cukup mahir.
 
@@ -164,12 +160,13 @@ Ini adalah fase plateau. Setiap orang pasti akan mengalaminya, dan saya bertahan
 
 -   Identifikasi EO (Edge Orientation). Di artikel sebelumnya, kita sudah membahas bahwa edge yang salah orientasi (bad edges) hanya memiliki beberapa situasi: 0, non-0 non-4, 4 (2 di atas, 2 di bawah), 4 (semua di lapisan atas), 4 (3 di atas, 1 di bawah). Tujuan pada tahap ini adalah: begitu blok selesai, Anda bisa langsung melihat, tanpa menghitung, situasi mana yang terjadi. Cara latihannya adalah scramble, lalu lakukan hingga CMLL selesai, kemudian jeda, sebutkan jumlah edge yang salah orientasi, lalu lanjutkan.
 -   Banyak orang tidak memahami gerakan di sini. Tahap EO pada akhirnya selalu bertujuan untuk membentuk konfigurasi panah dengan 3 edge salah orientasi di lapisan atas dan 1 di lapisan bawah. Karena konfigurasi lengkap (semua edge benar) hanya satu langkah scramble dari konfigurasi panah, maka dengan pemikiran terbalik, ini adalah langkah terakhir sebelum menyelesaikan Rubik. Jadi, tidak peduli berapa jumlah edge yang salah orientasi, tujuannya selalu untuk membentuk panah. Jika ada 4 edge salah orientasi di atas, tukar sepasang edge atas-bawah untuk memindahkan satu edge salah orientasi ke bawah, sehingga membentuk panah. Jika ada 2 di atas dan 2 di bawah, tukar sepasang edge atas-bawah untuk memindahkan satu edge salah orientasi ke atas, sehingga membentuk panah. Jika ada 1 di atas dan 1 di bawah, atau 2 di atas, gunakan M' U M untuk mengubahnya menjadi situasi sebelumnya, lalu bentuk panah. Anda bisa menemukan langkah terbaik untuk situasi 1/1 melalui banyak observasi dan pemikiran.
+
+    ![Konfigurasi panah](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+    *Gambar: Konfigurasi panah. Tiga edge salah orientasi di lapisan atas (disorot biru kehijauan) membentuk panah, menunjuk ke edge salah orientasi di lapisan bawah. Pada titik ini, satu M' U M sudah cukup untuk menyelesaikan keempat edge tersebut secara bersamaan. [Buka kondisi ini di Rubik 3D](/id/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) untuk melihat langkah demi langkah.*
+
 -   Latihan look-ahead secara intensif. Ini adalah hal terpenting untuk beralih dari 40 detik ke 30 detik, dan juga hal yang paling tidak intuitif: putar sedikit lebih lambat, lihat sedikit lebih jauh. Saat membangun First Block, jangan melihat potongan yang sedang Anda masukkan, tetapi lihat di mana potongan berikutnya berada. Awalnya akan terasa sangat canggung, waktu Anda mungkin akan memburuk, tetapi setelah seminggu, tiba-tiba akan membaik.
 -   CMLL tanpa ragu. Jika setiap gerakan Anda masih harus berpikir sejenak sebelum berani melakukannya, itu berarti gerakan itu belum menjadi bagian dari Anda. Latih setiap gerakan secara terpisah 50 kali, sampai tangan Anda bergerak secara otomatis begitu melihat polanya.
-
-![Konfigurasi panah](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Gambar: Konfigurasi panah. Tiga edge salah orientasi di lapisan atas (disorot biru kehijauan) membentuk panah, menunjuk ke edge salah orientasi di lapisan bawah. Pada titik ini, satu M' U M sudah cukup untuk menyelesaikan keempat edge tersebut secara bersamaan. [Buka kondisi ini di Rubik 3D](/id/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) untuk melihat langkah demi langkah.*
 
 ![Enam bentuk EO](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,29 +196,29 @@ Lalu Anda akan menemukan, setelah melewati fase plateau 30–35 detik, kecepatan
 
 Selamat kepada Anda yang sudah mencapai tahap ini, di mata pemula, Anda sudah menjadi pemain yang sangat hebat!
 
-## Harga yang Harus Dibayar untuk Tidak Menghafal Algoritma
+## Langkah Peningkatan Berikutnya
 
-Sejujurnya, tidak menghafal algoritma bukanlah hal yang gratis.
-
-Fase CMLL menjadi lambat. 42 kasus dicakup oleh 9 algoritma, artinya beberapa kasus harus dilakukan dua kali. Pemain yang menghafal semua CMLL akan lebih cepat dua atau tiga detik dari saya di langkah ini.
-
-Kemahiran gerakan lapisan M memiliki ambang batas yang tinggi. Paruh kedua Roux sepenuhnya mengandalkan lapisan M, dan lapisan M lebih sulit diputar daripada R atau U, mudah macet, dan membutuhkan kualitas Rubik yang lebih baik.
-
-Jangan khawatir tentang batas atas (upper limit). Ada juga pemain top yang menggunakan Roux dan berhasil masuk ke jajaran teratas dunia, metode itu sendiri tidak memiliki batas atas. Namun, untuk masuk di bawah 15 detik, kemungkinan besar Anda perlu melengkapi 42 algoritma CMLL. Tapi itu adalah urusan tahap lain. Untuk masuk di bawah 30 detik, tidak perlu.
+Pertama-tama, jangan khawatir tentang batas atas (upper limit) dari metode Roux. Ada juga pemain top yang menggunakan Roux dan berhasil masuk ke jajaran teratas dunia, metode itu sendiri tidak memiliki batas atas.
 
 Dan hampir setiap pemain kelas dunia yang bermain one-handed (OH) menggunakan metode Roux, karena metode ini juga sangat cocok untuk operasi satu tangan.
 
 **Waktu tercepat menggunakan Roux dalam kompetisi resmi (WCA):**
 
--   Single 4,11 detik, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipina), Valenzuela Cubing Open 2023, diakui sebagai single Roux tercepat resmi ([video rekonstruksi](https://www.youtube.com/watch?v=5H4TRJSUm-U))
--   Average 5,98 detik, juga oleh dia, tahun 2019, saat itu adalah rekor Asia, dan juga average sub-6 resmi ketiga dalam sejarah ([data WCA](https://www.worldcubeassociation.org/persons/2017VILL41))
--   Dia juga [pemegang rekor dunia one-handed](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): average 8,09, single 6,05 (2024), di kalangan one-handed, Roux secara luas dianggap sebagai solusi terbaik.
+- 单次 4,11 detik, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipina), Valenzuela Cubing Open 2023, diakui sebagai single Roux tercepat resmi ([video rekonstruksi](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+- Rata-rata 5,98 detik, juga oleh dia, tahun 2019, saat itu adalah rekor Asia, dan juga average sub-6 resmi ketiga dalam sejarah ([data WCA](https://www.worldcubeassociation.org/persons/2017VILL41))
+- Dia juga [pemegang rekor dunia one-handed](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): average 8,09, single 6,05 (2024), di kalangan one-handed, Roux secara luas dianggap sebagai solusi terbaik
 
-Saya rasa pertukaran ini sangat sepadan. Anda menukar dua atau tiga detik waktu CMLL dengan: mengetahui apa yang Anda lakukan di setiap langkah, tidak akan lupa bahkan setelah tiga bulan tidak menyentuh Rubik, dan mampu mencari solusi untuk Rubik apa pun yang belum pernah Anda lihat.
+Namun untuk masuk ke bawah 15 detik, Anda perlu beralih dari CMLL dua tahap saat ini menjadi penyelesaian sekali jalan, yang membutuhkan hafalan algoritma yang lebih kompleks.
+
+Meski demikian, saya tetap lebih memilih eksplorasi bebas. Memahami algoritma secara menyeluruh lewat eksplorasi, atau bahkan menciptakan algoritma yang nyaman di tangan sendiri, jauh lebih menyenangkan daripada sekadar menghafal mati.
+
+Rubik pada dasarnya adalah teka-teki logika, bukan permainan mengasah memori. Hanya dengan memahami prinsipnya, Anda dapat benar-benar mengetahui apa yang sedang Anda lakukan di setiap langkah, tidak akan lupa bahkan setelah tiga bulan tidak menyentuh Rubik, dan mampu memikirkan solusinya untuk Rubik apa pun yang belum pernah Anda lihat.
 
 ## Ringkasan
 
 ![Selesai diselesaikan](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Gambar: Selesai.*
 
 Dari bisa menyelesaikan hingga di bawah 30 detik, ini bukanlah proses menghafal algoritma, melainkan proses melatih koordinasi tangan, mata, dan otak.
 
@@ -231,7 +228,7 @@ Algoritma bukanlah sumber kecepatan. Observasi adalah kuncinya.
 
 Belajarlah membangun umpan balik positif melalui kemajuan di setiap tahapan, bahkan latihan kemahiran pun tidak akan begitu membosankan, terutama ketika Anda menemukan kejutan karena memecahkan rekor lagi. Terutama pada tahap pemula dan menengah, Anda akan merasakan kebahagiaan memecahkan rekor setiap hari.
 
-Semua algoritma dan kasus dalam artikel ini, saya telah kumpulkan di [perpustakaan algoritma Metode Roux](/id/projects/rubiks-cube/roux). Kembali dan cek saat Anda macet.
+Semua algoritma dan kasus dalam artikel ini, saya telah kumpulkan di [perpustakaan algoritma Metode Roux](/id/projects/rubiks-cube/roux). Anda bisa kembali dan memeriksanya saat macet.
 
 Dunia Rubik memiliki kesenangan yang tak terbatas, semoga Anda bersenang-senang!
 
@@ -266,8 +263,8 @@ Dunia Rubik memiliki kesenangan yang tak terbatas, semoga Anda bersenang-senang!
 
 -   **csTimer**: [cstimer.net](https://cstimer.net/). Aktifkan statistik Ao5 / Ao12 / Ao100, Ao100 adalah level Anda yang sebenarnya, single result adalah keberuntungan.
 -   **Rubik 3D**: [philoli.com/zh/projects/rubiks-cube](/id/projects/rubiks-cube/). Semua algoritma dalam artikel ini bisa dimasukkan di sini untuk melihat animasinya.
--   **Perpustakaan Algoritma Metode Roux Ramah Pemula**: [philoli.com/zh/projects/rubiks-cube/roux](/id/projects/rubiks-cube/roux). Pola penyisipan umum untuk First Block, Second Block, 9 algoritma CMLL dua bagian, semua kasus LSE (EO, UL/UR, empat edge terakhir). Setiap gambar dapat dibuka di Rubik 3D, secara otomatis menyembunyikan potongan yang tidak relevan dan menyoroti edge yang akan digerakkan.
--   **csTimer Training Analyzer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/id/projects/rubiks-cube/analyzer). Seret file yang diekspor dari csTimer ke dalamnya, Anda akan melihat tren waktu Anda, kurva Ao5/Ao12/Ao100, kemajuan PB, tabel pencapaian (kapan pertama kali sub-60, sub-40, sub-30), dan kurva latihan Power Law. Semua gambar dalam artikel ini berasal dari sini. Data hanya diproses di browser Anda, tidak akan diunggah. Jika tidak memiliki file ekspor, Anda bisa memuat data 4441 solve saya untuk melihat efeknya.
+-   **Perpustakaan Algoritma Metode Roux Ramah Pemula**: [philoli.com/zh/projects/rubiks-cube/roux](/id/projects/rubiks-cube/roux).
+-   **csTimer Training Analyzer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/id/projects/rubiks-cube/analyzer). Seret file yang diekspor dari csTimer ke dalamnya, Anda akan melihat tren waktu Anda, kurva Ao5/Ao12/Ao100, kemajuan PB, tabel pencapaian, dan kurva latihan Power Law.
 
 *Artikel ini berisi tautan afiliasi Amazon: dengan membeli melalui tautan ini, saya akan mendapatkan sedikit komisi, harga untuk Anda tidak berubah.*
 

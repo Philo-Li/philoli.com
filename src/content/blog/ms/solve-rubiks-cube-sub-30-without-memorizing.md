@@ -20,15 +20,15 @@ toc: true
 
 Dalam artikel saya yang lepas [《Cara Menyelesaikan Kiub Rubik Tanpa Menghafal Algoritma》](/ms/blog/solve-rubiks-cube-without-formulas/), anda telah belajar cara menyelesaikan kiub Rubik tanpa menghafal algoritma, hanya dengan menggunakan logik komutator. Artikel itu mendapat sambutan yang sangat baik daripada ramai pembaca.
 
-Jika anda telah mencubanya, kini anda mungkin mengambil masa dua atau tiga minit untuk menyelesaikannya. Walaupun masih agak kekok, anda sudah mampu solf kiub itu. Kemudian, satu masalah baru akan timbul: bagaimana untuk menjadi lebih pantas?
+Jika anda mengikutinya langkah demi langkah, anda sepatutnya sudah mampu menyelesaikan kiub Rubik sepenuhnya walaupun masih agak kekok. Dengan sedikit latihan sebanyak beberapa ratus kali, sangat mudah untuk mencapai bawah 1 minit. Namun, bagaimana jika anda masih mahukan kelajuan yang lebih pantas?
 
-Anda mencari "speedcubing Rubik's Cube", dan semua tutorial akan memberitahu anda perkara yang sama: jika mahu mencapai bawah 30 saat, hafalkan dahulu algoritma CFOP. F2L ada 41 algoritma, OLL 57, dan PLL 21, menjadikan jumlah keseluruhan 119 algoritma. Walaupun F2L dilakukan secara intuitif, 78 algoritma untuk lapisan atas tetap tidak dapat dielakkan. Jika tidak hafal, jangan harap boleh pantas.
+Anda mencari "speedcubing Rubik's Cube", dan semua tutorial akan memberitahu anda perkara yang sama: jika mahu mencapai bawah 30 saat, hafalkan dahulu lebih seratus algoritma CFOP.
 
 Artikel ini ingin memberitahu anda bahawa anda boleh mencapai bawah 30 saat sepenuhnya tanpa menghafal sebarang algoritma.
 
 <!--more-->
 
-Saya mula menyelesaikan kiub Rubik pada 7 Mei 2026, dan pada 4 Ogos, saya mencapai Ao100 bawah 30 saat. Ini mengambil masa 89 hari. Sepanjang tempoh ini, saya tidak pernah menghafal satu pun algoritma CFOP, hanya bermain-main pada waktu lapang. Ini adalah data masa saya daripada 4441 kali solf yang direkodkan.
+Saya mula menyelesaikan kiub Rubik sepenuhnya pada 7 Mei 2026, dan pada 4 Ogos, saya mencapai Ao100 bawah 30 saat. Ini mengambil masa 89 hari. Sepanjang tempoh ini, saya tidak pernah menghafal satu pun algoritma CFOP, hanya bermain-main pada waktu lapang. Ini adalah data masa saya daripada 4441 kali solf yang direkodkan.
 
 ![Graf prestasi 4441 kali solf](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Inilah sebabnya Roux tidak memerlukan hafalan algoritma: ia memampatkan bahagian
 
 ## Dari 165 Saat ke 28 Saat: Empat Peringkat
 
-Berikut adalah perjalanan sebenar yang saya lalui. Setiap peringkat saya tandakan permulaan dan akhirnya dengan data, kemudian menerangkan di mana saya tersekat dan apa yang saya latih pada peringkat tersebut. Titik tersangkut anda mungkin berbeza daripada saya, tetapi urutan kemungkinannya sama.
-
 ![Jangka masa empat peringkat](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Gambar: Jangka masa empat peringkat. Peringkat satu 3 minggu, peringkat dua 11 hari, peringkat tiga dua bulan, peringkat empat sehingga kini.*
 
 ### Peringkat Satu: 165 Saat → 60 Saat (Minggu 1–3)
 
-**Data**: Dari 7 Mei hingga 27 Mei. Purata minggu pertama 165 saat, minggu ketiga 68 saat.
+**Data**: Dari 7 Mei hingga 27 Mei. Purata minggu pertama 165 saat, minggu ketiga 68 saat. Fasa ini adalah fasa peralihan daripada seorang pemula kepada peringkat asas, di mana melalui pengulangan kita beransur-ansur memahami maksud sebenar setiap pergerakan dan kepingan mana yang sedang bergerak.
 
 **Di mana anda tersekat**: Blok Pertama sangat tidak mahir, mengambil masa yang lama untuk mencari setiap pasangan corner-edge. Selepas mencari satu pasangan, pemula selalunya suka berhenti untuk terus memerhati.
 
@@ -111,7 +109,7 @@ Jangan belajar sebarang algoritma baru pada peringkat ini. Halangan anda sekaran
 
 ### Peringkat Dua: 60 Saat → 40 Saat (Minggu 4–5)
 
-**Data**: Dari 27 Mei hingga 7 Jun, 11 hari. Ini adalah tempoh penurunan terpantas dalam keseluruhan proses, dan juga tempoh saya paling banyak berlatih, 723 kali pada minggu pertama bulan Jun.
+**Data**: Dari 27 Mei hingga 7 Jun, 11 hari. Ini adalah tempoh penurunan terpantas dalam keseluruhan proses. Fasa ini adalah fasa yang paling mudah memberi maklum balas positif; setiap pembelajaran dan pengoptimuman pergerakan akan memberi kesan serta-merta pada catatan masa. Keterujaan memecahkan rekod peribadi setiap hari adalah sesuatu yang sukar ditandingi oleh banyak perkara lain.
 
 **Di mana anda tersekat**: Pergerakan tidak lancar. Kiub tersangkut-sangkut.
 
@@ -130,7 +128,7 @@ Pada peringkat ini, anda perlu mengoptimumkan pergerakan setiap peringkat, dan m
 
 *Gambar kiri: Pandangan semasa membina Blok Kedua. Blok Pertama telah selesai, hanya menggunakan empat jenis putaran R, r, M, U untuk memasukkan pasangan corner-edge di sebelah kanan, Blok Pertama tidak akan disentuh. Gambar kanan: M' U M, satu set pergerakan yang paling banyak digunakan pada separuh kedua Roux. M-slice naik, U-layer pusing sekali, M-slice turun, tiga langkah ini menukar sepasang edge di U-layer dan M-slice.*
 
-Anda boleh melihat [Pustaka Algoritma Kaedah Roux](/ms/projects/rubiks-cube/roux) yang saya susun, halaman CMLL mempunyai dua bahagian: 7 algoritma orientasi + 2 algoritma kedudukan, sejumlah 9 algoritma. Ini adalah pilihan terbaik untuk peningkatan kelajuan, sangat mudah dipelajari, dan setiap set yang mahir boleh mempercepatkan kira-kira 1–2 saat. Dengan sedikit latihan, anda akan cepat mahir, beberapa daripadanya telah diperkenalkan dalam artikel sebelumnya, dan anda tidak perlu menghafal kesemuanya untuk mencapai bawah 30 saat.
+Anda boleh melihat [Pustaka Algoritma Kaedah Roux](/ms/projects/rubiks-cube/roux#cmll) versi ringkas yang sangat mesra pemula yang saya susun, halaman CMLL mempunyai dua bahagian: 7 algoritma orientasi + 2 algoritma kedudukan, sejumlah 9 algoritma. Ini adalah pilihan terbaik untuk peningkatan kelajuan, sangat mudah dipelajari, dan setiap set yang mahir boleh mempercepatkan kira-kira 1–2 saat. Dengan sedikit latihan, anda akan cepat mahir, beberapa daripadanya telah diperkenalkan dalam artikel sebelumnya, dan anda tidak perlu menghafal kesemuanya untuk mencapai bawah 30 saat.
 
 ![Langkah pertama CMLL dua peringkat, tujuh orientasi kepingan corner](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Satu lagi perkara, yang lebih berkesan daripada sebarang latihan: belanjakan sed
 
 ### Peringkat Tiga: 40 Saat → 30 Saat (Minggu 5 – Minggu 13, dua bulan)
 
-**Data**: Dari 7 Jun hingga 4 Ogos. Ao100 berkisar dari 39.8 saat kepada 29.9 saat, mengambil masa 58 hari. Pada peringkat ini, kadang-kadang mungkin akan ada catatan masa bawah 30 saat, tetapi hanya jika nasib sangat baik. Dan seiring dengan penurunan purata masa solf, kesukaran untuk meningkatkan 1 saat akan meningkat secara eksponen.
+**Data**: Dari 7 Jun hingga 4 Ogos. Ao100 berkisar dari 39.8 saat kepada 29.9 saat, mengambil masa 58 hari. Pada peringkat ini, kadang-kadang mungkin akan ada catatan masa bawah 30 saat, tetapi hanya jika nasib sangat baik. Dan seiring dengan penurunan purata masa solf, kesukaran untuk meningkatkan 1 saat akan meningkat secara eksponen. (Ao100 mewakili purata masa daripada 100 kali solf terkini, selepas menyingkirkan 5% catatan terbaik dan terburuk)
 
 ![Purata catatan harian](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Gambar: Purata catatan harian. Selepas pertengahan Jun, graf hampir mendatar, berkisar antara 30–40 saat selama dua bulan.*
-
-Ini adalah tempoh dataran. Setiap orang akan mengalaminya, dan saya menghabiskan dua bulan di sini.
 
 **Di mana anda tersekat**: Enam kepingan edge lapisan atas sangat perlahan untuk diselesaikan, tidak memahami logik, setiap kali bergantung pada cuba jaya berulang kali, membazir banyak masa. Blok Pertama dan Blok Kedua masih belum cukup mahir.
 
@@ -164,12 +160,13 @@ Ini adalah tempoh dataran. Setiap orang akan mengalaminya, dan saya menghabiskan
 
 - Pengenalan EO. Dalam artikel sebelumnya, kita telah membincangkan bahawa edge yang salah orientasi hanya mempunyai beberapa keadaan: 0, bukan 0 bukan 4, 4 (2 di atas, 2 di bawah), 4 (semua di lapisan atas), 4 (3 di atas, 1 di bawah). Matlamat pada peringkat ini adalah: pada saat Blok Pertama dan Blok Kedua selesai dibina, tanpa perlu mengira, anda dapat melihat sepintas lalu keadaan tersebut. Cara latihannya adalah dengan scramble, kemudian hanya lakukan sehingga CMLL selesai, kemudian berhenti, nyatakan bilangan edge yang salah orientasi, dan teruskan.
 - Ramai orang tidak memahami pergerakan di sini. Peringkat EO akhirnya bertujuan untuk membina bentuk anak panah (arrow shape) dengan 3 edge yang salah orientasi di lapisan atas dan 1 di lapisan bawah, kerana bentuk lengkap hanya memerlukan satu putaran untuk menjadi bentuk anak panah. Jadi, dengan pemikiran terbalik, ia adalah langkah terakhir sebelum menyelesaikan kiub. Oleh itu, tidak kira berapa bilangan edge yang salah orientasi, matlamat akhirnya adalah untuk membina bentuk anak panah. Jika ada 4 edge yang salah orientasi di atas, tukarkan sepasang edge atas-bawah untuk membawa satu edge yang salah orientasi ke bawah, lalu capai bentuk anak panah. Jika ada 2 di atas dan 2 di bawah, tukarkan sepasang edge atas-bawah untuk membawa satu edge yang salah orientasi ke atas, lalu capai bentuk anak panah. Jika ada 1 di atas dan 1 di bawah, atau 2 di atas, gunakan M' U M untuk mengubahnya menjadi keadaan sebelumnya, kemudian bina bentuk anak panah. Anda boleh meneroka langkah terbaik untuk 1/1 melalui pemerhatian dan pemikiran yang banyak.
+
+  ![Bentuk anak panah](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+  *Gambar: Bentuk anak panah. Tiga edge yang salah orientasi di lapisan atas (diserlahkan dengan sian) membentuk anak panah, menunjuk ke edge yang salah orientasi di lapisan bawah. Pada ketika ini, satu M' U M boleh menyelesaikan keempat-empat edge secara serentak. [Buka keadaan ini dalam kiub 3D](/ms/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) untuk melihat langkah demi langkah.*
+
 - Latih look-ahead secara meluas. Ini adalah perkara paling penting untuk beralih dari 40 saat ke 30 saat, dan juga perkara yang paling tidak intuitif: pusing lebih perlahan, lihat lebih jauh. Semasa membina Blok Pertama, jangan lihat kepingan yang sedang dimasukkan, lihat di mana kepingan seterusnya berada. Pada mulanya akan terasa sangat janggal, prestasi akan merosot dahulu, tetapi setelah seminggu, ia akan tiba-tiba menjadi lebih baik.
 - CMLL tanpa ragu-ragu. Jika anda perlu berfikir setiap kali sebelum melakukan sesuatu pergerakan, itu bermakna ia belum menjadi milik anda. Latih setiap pergerakan secara berasingan sebanyak 50 kali, sehingga tangan anda bergerak secara automatik sebaik sahaja melihat bentuknya.
-
-![Bentuk anak panah](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Gambar: Bentuk anak panah. Tiga edge yang salah orientasi di lapisan atas (diserlahkan dengan sian) membentuk anak panah, menunjuk ke edge yang salah orientasi di lapisan bawah. Pada ketika ini, satu M' U M boleh menyelesaikan keempat-empat edge secara serentak. [Buka keadaan ini dalam kiub 3D](/ms/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) untuk melihat langkah demi langkah.*
 
 ![Enam bentuk EO](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,15 +196,9 @@ Kemudian anda akan dapati, selepas melepasi tempoh dataran 30-35 saat, kelajuan 
 
 Pada peringkat ini, tahniah! Di mata pemula, anda sudah menjadi pemain yang sangat hebat!
 
-## Harga Tidak Menghafal Algoritma
+## Langkah Peningkatan Seterusnya
 
-Sejujurnya, tidak menghafal algoritma ada harganya.
-
-Peringkat CMLL perlahan. 42 keadaan diliputi dengan 9 algoritma, bermakna beberapa keadaan perlu dilakukan dua kali. Orang yang menggunakan CMLL set lengkap lebih pantas dua hingga tiga saat daripada saya dalam langkah ini.
-
-Kemahiran M-slice mempunyai ambang yang tinggi. Separuh kedua Roux bergantung sepenuhnya pada M-slice. M-slice lebih sukar diputar daripada R dan U, mudah tersangkut, dan memerlukan kiub yang lebih berkualiti.
-
-Jangan bimbang tentang had atas. Terdapat juga pemain peringkat tertinggi yang menggunakan Roux untuk mencapai kedudukan teratas dunia; kaedah itu sendiri tidak mempunyai had atas. Tetapi untuk mencapai bawah 15 saat, anda kemungkinan besar perlu melengkapkan 42 algoritma CMLL. Namun, itu adalah untuk peringkat yang lain. Untuk mencapai bawah 30 saat, tidak perlu.
+Pertama sekali, jangan bimbang tentang had atas kaedah Roux. Terdapat juga pemain peringkat tertinggi yang menggunakan Roux untuk mencapai kedudukan teratas dunia; kaedah itu sendiri tidak mempunyai had atas.
 
 Dan hampir setiap pemain bertaraf dunia yang melakukan solf satu tangan menggunakan kaedah Roux, kerana ia benar-benar sangat sesuai untuk operasi satu tangan.
 
@@ -217,11 +208,17 @@ Dan hampir setiap pemain bertaraf dunia yang melakukan solf satu tangan mengguna
 - Average 5.98 saat, juga beliau, 2019, pada masa itu rekod Asia, juga average sub-6 rasmi ketiga dalam sejarah ([data WCA](https://www.worldcubeassociation.org/persons/2017VILL41))
 - Beliau juga [pemegang rekod dunia satu tangan](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): average 8.09, single 6.05 (2024). Dalam komuniti satu tangan, Roux secara amnya dianggap kaedah yang paling optimum.
 
-Saya rasa pertukaran ini sangat berbaloi. Anda menukar dua atau tiga saat masa CMLL dengan: mengetahui apa yang anda lakukan pada setiap langkah, tidak akan lupa walaupun tidak menyentuh kiub selama tiga bulan, dan dapat mencari penyelesaian untuk mana-mana kiub yang belum pernah dilihat.
+Tetapi untuk mencapai bawah 15 saat, anda perlu beralih daripada CMLL dua peringkat sekarang kepada penyelesaian satu langkah, yang memerlukan hafalan lebih banyak algoritma yang rumit.
+
+Namun, saya lebih suka meneroka secara bebas. Melalui penerokaan untuk benar-benar memahami algoritma, malah mencipta algoritma yang terasa selesa untuk tangan sendiri, jauh lebih menyeronokkan daripada menghafal secara membuta tuli.
+
+Kiub Rubik pada asalnya adalah permainan teka-teki minda, bukannya permainan ingatan. Hanya dengan memahami prinsipnya barulah anda boleh mengetahui apa yang anda lakukan pada setiap langkah, tidak akan lupa walaupun tidak menyentuh kiub selama tiga bulan, dan dapat mencari jalan penyelesaian untuk mana-mana kiub yang belum pernah dilihat.
 
 ## Ringkasan
 
 ![Solf selesai](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Gambar: Kiub berjaya diselesaikan.*
 
 Dari boleh menyelesaikan kiub hingga mencapai bawah 30 saat, ia bukanlah proses menghafal algoritma, tetapi proses melatih koordinasi tangan, mata, dan otak.
 
@@ -231,7 +228,7 @@ Algoritma bukanlah sumber kelajuan. Pemerhatianlah yang menjadi kuncinya.
 
 Belajarlah untuk membina maklum balas positif melalui setiap kemajuan, walaupun dalam latihan kemahiran, ia tidak perlu begitu membosankan, terutamanya apabila anda terkejut melihat rekod anda dipecahkan lagi. Terutama pada peringkat permulaan dan pertengahan, anda akan mengalami kegembiraan memecahkan rekod setiap hari.
 
-Semua algoritma dan keadaan dalam artikel ini, saya telah susun dalam [Pustaka Algoritma Kaedah Roux](/ms/projects/rubiks-cube/roux). Rujuklah apabila anda tersekat.
+Semua algoritma dan keadaan dalam artikel ini, saya telah susun dalam [Pustaka Algoritma Kaedah Roux](/ms/projects/rubiks-cube/roux). Anda boleh kembali merujuknya apabila tersekat.
 
 Keseronokan dunia kiub Rubik tidak terhingga, semoga anda berseronok.
 
@@ -266,8 +263,8 @@ Keseronokan dunia kiub Rubik tidak terhingga, semoga anda berseronok.
 
 - **csTimer**: [cstimer.net](https://cstimer.net/). Buka statistik Ao5 / Ao12 / Ao100, Ao100 adalah tahap sebenar anda, single adalah nasib.
 - **Kiub 3D**: [philoli.com/zh/projects/rubiks-cube](/ms/projects/rubiks-cube/). Semua algoritma dalam artikel ini boleh dimasukkan di sini untuk melihat animasinya.
-- **Pustaka Algoritma Kaedah Roux Mesra Pemula**: [philoli.com/zh/projects/rubiks-cube/roux](/ms/projects/rubiks-cube/roux). Rutin penyisipan biasa untuk Blok Pertama dan Blok Kedua, 9 algoritma CMLL dua peringkat, semua keadaan LSE (EO, UL/UR, empat edge terakhir). Setiap halaman boleh dibuka dalam kiub 3D, secara automatik menyembunyikan kepingan yang tidak berkaitan, dan menyerlahkan edge yang perlu digerakkan.
-- **Penganalisis Latihan csTimer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/ms/projects/rubiks-cube/analyzer). Seret fail yang dieksport dari csTimer ke dalamnya, dan anda akan dapat melihat trend prestasi anda sendiri, graf Ao5/Ao12/Ao100, peningkatan PB, jadual pencapaian (bilakah kali pertama sub-60, sub-40, sub-30) dan graf latihan Power Law. Semua gambar dalam artikel ini berasal dari sini. Data diproses hanya dalam pelayar anda, tidak akan dimuat naik. Jika tiada fail yang dieksport, anda boleh memuatkan data 4441 kali saya untuk melihat kesannya.
+- **Pustaka Algoritma Kaedah Roux Mesra Pemula**: [philoli.com/zh/projects/rubiks-cube/roux](/ms/projects/rubiks-cube/roux).
+- **Penganalisis Latihan csTimer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/ms/projects/rubiks-cube/analyzer). Seret fail yang dieksport dari csTimer ke dalamnya, dan anda akan dapat melihat trend prestasi anda sendiri, graf Ao5/Ao12/Ao100, peningkatan PB, jadual pencapaian dan graf latihan Power Law.
 
 *Artikel ini mengandungi pautan afiliasi Amazon: dengan pembelian melalui pautan ini, saya akan menerima komisen kecil, harga anda tidak berubah.*
 

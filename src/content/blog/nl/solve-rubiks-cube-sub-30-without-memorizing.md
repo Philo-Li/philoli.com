@@ -20,15 +20,15 @@ toc: true
 
 In de vorige blogpost [《Hoe je de Rubiks kubus oplost zonder algoritmes》](/nl/blog/solve-rubiks-cube-without-formulas/) heb je geleerd hoe je een Rubiks kubus kunt oplossen zonder algoritmes te memoriseren, puur gebaseerd op de logica van commutators. Dat artikel kreeg veel enthousiaste reacties.
 
-Als je het hebt gevolgd, kost het je nu waarschijnlijk twee tot drie minuten. Het is misschien nog wat onhandig, maar je kunt hem oplossen. Dan komt er een nieuwe vraag op: hoe word ik sneller?
+Als je het stap voor stap hebt gevolgd, zou je de Rubik's Cube nu al min of meer compleet moeten kunnen oplossen. Met een paar honderd keer oefenen kom je gemakkelijk onder de 1 minuut. Maar wat als je nog sneller wilt worden?
 
-Als je zoekt op "speedcubing", zullen alle tutorials je hetzelfde vertellen: om onder de 30 seconden te komen, moet je eerst de CFOP-algoritmes memoriseren. 41 F2L-algoritmes, 57 OLL-algoritmes, 21 PLL-algoritmes, een totaal van 119. Zelfs als je F2L intuïtief doet, ontkom je niet aan de 78 algoritmes voor de bovenlaag. Zonder ze te memoriseren, kun je niet snel worden.
+Als je zoekt op "speedcubing", zullen alle tutorials je hetzelfde vertellen: om onder de 30 seconden te komen, moet je eerst honderden CFOP-algoritmes memoriseren.
 
 Dit artikel wil je vertellen dat je de 30 seconden kunt halen zonder ook maar één algoritme te memoriseren.
 
 <!--more-->
 
-Vanaf mijn eerste oplossing op 7 mei 2026 tot mijn Ao100 onder de 30 seconden op 4 augustus, duurde het 89 dagen. Gedurende deze periode heb ik geen enkel CFOP-algoritme gememoriseerd; ik speelde er gewoon mee in mijn vrije tijd. Dit zijn de getimede gegevens van mijn 4441 geregistreerde oplossingen.
+Vanaf mijn eerste complete oplossing op 7 mei 2026 tot mijn Ao100 onder de 30 seconden op 4 augustus, duurde het 89 dagen. Gedurende deze periode heb ik geen enkel CFOP-algoritme gememoriseerd; ik speelde er gewoon mee in mijn vrije tijd. Dit zijn de getimede gegevens van mijn 4441 geregistreerde oplossingen.
 
 ![Prestatiecurve van 4441 oplossingen](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
@@ -83,15 +83,13 @@ Dit is waarom Roux zonder algoritmes kan: het comprimeert het geheugenvereiste d
 
 ## Van 165 seconden naar 28 seconden: De vier fases
 
-Hieronder beschrijf ik mijn eigen reis. Elk stadium heb ik met data gemarkeerd qua start en eind, waarna ik uitleg waar ik vastliep en wat ik heb geoefend. Jouw knelpunten kunnen anders zijn, maar de volgorde zal waarschijnlijk hetzelfde zijn.
-
 ![Tijdsduur van de vier fases](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
 *Figuur: Tijdsduur van de vier fases. Fase één 3 weken, fase twee 11 dagen, fase drie twee maanden, fase vier tot nu toe.*
 
 ### Fase één: 165 seconden → 60 seconden (Week 1–3)
 
-**Gegevens**: 7 mei tot 27 mei. Eerste week gemiddeld 165 seconden, derde week 68 seconden.
+**Gegevens**: 7 mei tot 27 mei. Eerste week gemiddeld 165 seconden, derde week 68 seconden. Dit is de fase van beginner naar basisniveau, waarin je door herhaling geleidelijk begrijpt wat elke beweging eigenlijk betekent en welke stukjes er bewegen.
 
 **Waar je vastloopt**: Het Eerste Blok is erg ongeoefend; elk hoek-randpaar kost veel tijd om te vinden. En eenmaal gevonden, stoppen beginners vaak om verder te observeren.
 
@@ -111,7 +109,7 @@ Leer in deze fase geen nieuwe algoritmes. Je knelpunt ligt nu niet bij algoritme
 
 ### Fase twee: 60 seconden → 40 seconden (Week 4–5)
 
-**Gegevens**: 27 mei tot 7 juni, 11 dagen. Dit was de snelste daling in het hele proces, en ook de periode waarin ik het meest oefende: 723 oplossingen in de eerste week van juni.
+**Gegevens**: 27 mei tot 7 juni, 11 dagen. Dit was de snelste daling in het hele proces. Deze fase geeft de meeste positieve feedback: elke leersessie en bewegingsoptimalisatie zie je direct terug in je tijden, en het heerlijke gevoel om elke dag records te breken is met weinig dingen te vergelijken.
 
 **Waar je vastloopt**: Onvloeiende bewegingen. De kubus blokkeert.
 
@@ -130,7 +128,7 @@ In deze fase moet je de bewegingen van elke stap optimaliseren en, op basis van 
 
 *Figuur links: Perspectief tijdens het bouwen van het Tweede Blok. Het Eerste Blok is voltooid; gebruik alleen de vier draaiingen R, r, M, U om de hoek-randparen aan de rechterkant in te voegen, zonder het Eerste Blok ooit aan te raken. Figuur rechts: M' U M, een van de meest gebruikte reeksen bewegingen in de tweede helft van Roux. De M-laag omhoog, de bovenlaag draaien, de M-laag terug, en in drie stappen wordt een paar randstukken van de boven- en middenlaag verwisseld.*
 
-Je kunt mijn [Roux Method algoritmebibliotheek](/nl/projects/rubiks-cube/roux#cmll) bekijken. De CMLL-pagina heeft twee stappen: 7 oriëntatie-algoritmes + 2 permutatie-algoritmes, in totaal 9. Dit is de meest kosteneffectieve keuze voor snelheidsverbetering, gemakkelijk te leren, en elke beheerste set kan je ongeveer 1-2 seconden sneller maken. Met een beetje oefening zul je snel bedreven zijn; sommige zijn al in het vorige artikel geïntroduceerd en je hoeft ze niet allemaal te onthouden om onder de 30 seconden te komen.
+Je kunt mijn beginnersvriendelijke, beknopte [Roux-algoritmebibliotheek](/nl/projects/rubiks-cube/roux#cmll) bekijken. De CMLL-pagina heeft twee stappen: 7 oriëntatie-algoritmes + 2 permutatie-algoritmes, in totaal 9. Dit is de meest kosteneffectieve keuze voor snelheidsverbetering, gemakkelijk te leren, en elke beheerste set kan je ongeveer 1–2 seconden sneller maken. Met een beetje oefening zul je snel bedreven zijn; sommige zijn al in het vorige artikel geïntroduceerd en je hoeft ze niet allemaal te onthouden om onder de 30 seconden te komen.
 
 ![Eerste stap van twee-staps CMLL, zeven hoekstukoriëntaties](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
@@ -150,13 +148,11 @@ Nog iets, wat effectiever is dan welke oefening dan ook: geef wat geld uit aan e
 
 ### Fase drie: 40 seconden → 30 seconden (Week 5–13, twee maanden)
 
-**Gegevens**: 7 juni tot 4 augustus. De Ao100 daalde van 39,8 seconden naar 29,9 seconden, wat 58 dagen kostte. In deze fase behaalde ik af en toe tijden onder de 30 seconden, maar alleen met veel geluk. En naarmate de gemiddelde oplostijd daalt, wordt het exponentieel moeilijker om 1 seconde te verbeteren.
+**Gegevens**: 7 juni tot 4 augustus. De Ao100 daalde van 39,8 seconden naar 29,9 seconden, wat 58 dagen kostte. In deze fase behaalde ik af en toe tijden onder de 30 seconden, maar alleen met veel geluk. En naarmate de gemiddelde oplostijd daalt, wordt het exponentieel moeilijker om 1 seconde te verbeteren. (Ao100 staat voor het gemiddelde van de laatste 100 oplossingen, na het weglaten van de beste en slechtste 5% van de tijden)
 
 ![Dagelijks gemiddelde resultaten](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
 *Figuur: Dagelijks gemiddelde resultaten. Na midden juni vlakte de curve bijna af, en bleef twee maanden hangen tussen de 30-40 seconden.*
-
-Dit is de plateauperiode. Iedereen komt die tegen; ik zat hier twee maanden.
 
 **Waar je vastloopt**: De laatste zes randstukken van de bovenlaag zijn erg langzaam; ik begreep de logica niet en probeerde het elke keer opnieuw, wat veel tijd verspilde. Het Eerste en Tweede Blok waren nog steeds niet vloeiend genoeg.
 
@@ -164,12 +160,13 @@ Dit is de plateauperiode. Iedereen komt die tegen; ik zat hier twee maanden.
 
 - EO-herkenning. In het vorige artikel sprak ik over de verschillende gevallen van verkeerd georiënteerde randen: 0, niet-0-niet-4, 4 (2 boven, 2 onder), 4 (allemaal in de bovenlaag), 4 (3 boven, 1 onder). Het doel in deze fase is: het moment dat het blok is gebouwd, zonder te tellen, in één oogopslag zien welk geval het is. De oefenmethode is om na het scramblen alleen tot het einde van CMLL te gaan, dan te pauzeren, het aantal verkeerd georiënteerde randen te benoemen, en dan verder te gaan.
 - Veel mensen begrijpen de bewegingen hier niet. De EO-fase is uiteindelijk gericht op het creëren van de pijl-vorm van 3 randen boven en 1 rand onder, want de complete vorm is slechts één scramble-stap verwijderd van de pijl-vorm. Dus, met omgekeerde logica, is dit de laatste stap vóór de volledige oplossing. Ongeacht het aantal verkeerd georiënteerde randen, is het uiteindelijke doel om een pijl te creëren. Als er 4 verkeerd georiënteerde randen boven zijn, verwissel je een paar bovenste en onderste randen om één rand naar beneden te brengen en zo de pijl te realiseren. Als er 2 boven en 2 onder zijn, verwissel je een paar bovenste en onderste randen om één rand naar boven te brengen en zo de pijl te realiseren. Als er 1 boven en 1 onder is, of 2 boven, gebruik je M' U M om eerst naar een van de vorige situaties te gaan, en dan de pijl te creëren. Je kunt door veel observatie en nadenken zelf de optimale stappen voor de 1/1-situatie ontdekken.
+
+  ![Pijl-vorm](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+
+  *Figuur: Pijl-vorm. Drie verkeerd georiënteerde randen in de bovenlaag (blauw gemarkeerd) vormen een pijl, wijzend naar de verkeerd georiënteerde rand in de onderste laag. In deze toestand kan één M' U M alle vier tegelijk op hun plaats zetten. [Open deze toestand in de 3D-kubus](/nl/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) om stap voor stap te zien.*
+
 - Veel oefenen met look-ahead. Dit is het belangrijkste voor de overgang van 40 naar 30 seconden, en ook het meest contra-intuïtieve: draai iets langzamer, kijk verder vooruit. Als je het Eerste Blok bouwt, kijk dan niet naar het stuk dat je net inbrengt, maar naar waar het volgende stuk is. In het begin zal dit erg onwennig zijn en zullen je tijden slechter worden, maar na een week zal het plotseling beter gaan.
 - CMLL zonder aarzeling. Als je bij een beweging elke keer moet nadenken voordat je hem durft uit te voeren, dan is hij nog niet van jou. Oefen elke beweging afzonderlijk 50 keer, totdat je hand beweegt zodra je de vorm ziet.
-
-![Pijl-vorm](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Figuur: Pijl-vorm. Drie verkeerd georiënteerde randen in de bovenlaag (blauw gemarkeerd) vormen een pijl, wijzend naar de verkeerd georiënteerde rand in de onderste laag. In deze toestand kan één M' U M alle vier tegelijk op hun plaats zetten. [Open deze toestand in de 3D-kubus](/nl/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) om stap voor stap te zien.*
 
 ![Zes EO-vormen](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
@@ -199,15 +196,9 @@ Dan zul je merken dat je, na het doorbreken van de 30-35 seconden barrière, wee
 
 Gefeliciteerd als je dit stadium bereikt hebt, want voor beginners ben je dan al een zeer indrukwekkende cuber!
 
-## De prijs van geen algoritmes leren
+## De volgende stap
 
-Nu, om eerlijk te zijn. Geen algoritmes leren is niet gratis.
-
-De CMLL-fase is langzaam. 42 gevallen worden afgedekt met 9 algoritmes, wat betekent dat sommige situaties twee keer moeten worden uitgevoerd. Mensen die de volledige CMLL kennen, zijn in deze stap twee of drie seconden sneller dan ik.
-
-Hoge drempel voor M-laag techniek. De tweede helft van Roux is volledig afhankelijk van de M-laag. De M-laag is moeilijker te draaien dan R en U, blokkeert gemakkelijker, en stelt hogere eisen aan de kubus zelf.
-
-Maak je geen zorgen over het plafond. Zelfs topspelers gebruiken Roux om de wereldtop te bereiken; de methode zelf heeft geen plafond. Maar om onder de 15 seconden te komen, zul je waarschijnlijk de 42 CMLL-algoritmes moeten aanvullen. Maar dat is iets voor een andere fase. Om onder de 30 seconden te komen, is het niet nodig.
+Maak je allereerst geen zorgen over het plafond van de Roux-methode. Zelfs topspelers gebruiken Roux om de wereldtop te bereiken; de methode zelf heeft geen plafond.
 
 Bovendien gebruiken bijna alle wereldklasse éénhandige oplossers de Roux-methode, omdat deze ook zeer geschikt is voor éénhandige bediening.
 
@@ -217,11 +208,17 @@ Bovendien gebruiken bijna alle wereldklasse éénhandige oplossers de Roux-metho
 - Average 5.98 seconden, eveneens hij, 2019, toen een Aziatisch record, en de derde officiële sub-6 average ooit ([WCA-gegevens](https://www.worldcubeassociation.org/persons/2017VILL41))
 - Hij is ook de [wereldrecordhouder éénhandig](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): gemiddeld 8.09, single 6.05 (2024), de éénhandige gemeenschap beschouwt Roux algemeen als de optimale methode.
 
-Ik vind deze ruil zeer de moeite waard. Je ruilt twee of drie seconden CMLL-tijd in voor: elke stap weten wat je doet, de kubus niet vergeten als je hem drie maanden niet aanraakt, en voor elke onbekende kubus de oplossing kunnen afleiden.
+Maar om onder de 15 seconden te komen, moet je van de huidige twee-staps CMLL overstappen naar het in één keer oplossen, en moet je meer complexe algoritmes memoriseren.
+
+Toch geef ik nog steeds de voorkeur aan vrij ontdekken. Door te experimenteren de algoritmes door en door begrijpen, of zelfs algoritmes creëren die prettig voor je voelen, brengt veel meer plezier dan domweg uit het hoofd leren.
+
+De Rubik's Cube is oorspronkelijk een puzzel, geen geheugenspel. Alleen door de principes te begrijpen, weet je bij elke stap wat je doet, vergeet je het niet als je de kubus drie maanden niet aanraakt, en kun je voor elke onbekende kubus de oplossing zelf afleiden.
 
 ## Samenvatting
 
 ![Oplossing voltooid](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+
+*Figuur: Oplossing voltooid.*
 
 Van het kunnen oplossen tot onder de 30 seconden is geen proces van algoritmes memoriseren, maar een proces van het trainen van hand-, oog- en hersencoördinatie.
 
@@ -231,7 +228,7 @@ Algoritmes zijn niet de bron van snelheid. Observatie wel.
 
 Leer om door de vooruitgang in elke stap positieve feedback op te bouwen, zelfs behendigheidsoefeningen hoeven niet saai te zijn, vooral wanneer je de verrassing ervaart van een nieuw record. Vooral in de begin- en middenfase zul je elke dag het plezier van het verbreken van records ervaren.
 
-Alle algoritmes en situaties in dit artikel heb ik georganiseerd in de [Roux Method algoritmebibliotheek](/nl/projects/rubiks-cube/roux). Raadpleeg deze als je vastloopt.
+Alle algoritmes en situaties in dit artikel heb ik georganiseerd in de [Roux Method algoritmebibliotheek](/nl/projects/rubiks-cube/roux). Je kunt deze raadplegen als je vastloopt.
 
 De wereld van de Rubiks kubus zit vol plezier. Veel plezier met spelen.
 
@@ -266,8 +263,8 @@ De wereld van de Rubiks kubus zit vol plezier. Veel plezier met spelen.
 
 - **csTimer**: [cstimer.net](https://cstimer.net/). Schakel Ao5 / Ao12 / Ao100 statistieken in; Ao100 is je ware niveau, individuele tijden zijn geluk.
 - **3D Rubiks kubus**: [philoli.com/zh/projects/rubiks-cube](/nl/projects/rubiks-cube/). Alle algoritmes in dit artikel kunnen hier worden ingevoerd om animaties te bekijken.
-- **Roux Method beginnersvriendelijke algoritmebibliotheek**: [philoli.com/zh/projects/rubiks-cube/roux](/nl/projects/rubiks-cube/roux). Veelgebruikte inbrengpatronen voor het Eerste Blok en Tweede Blok, de 9 algoritmes voor twee-staps CMLL, en alle gevallen voor LSE (EO, UL/UR, laatste vier randen). Elk geval kan worden geopend in de 3D-kubus, waarbij irrelevante blokken automatisch worden verborgen en de te bewegen randen worden gemarkeerd.
-- **csTimer trainingsanalysator**: [philoli.com/zh/projects/rubiks-cube/analyzer](/nl/projects/rubiks-cube/analyzer). Sleep het geëxporteerde csTimer-bestand hierheen om je eigen prestatiecurve, Ao5/Ao12/Ao100-curves, PB-verbeteringen, mijlpalen (eerste keer sub-60, sub-40, sub-30) en Power Law oefencurve te zien. Alle grafieken in dit artikel komen hiervandaan. De gegevens worden alleen in je browser verwerkt en niet geüpload. Als je geen exportbestand hebt, kun je mijn 4441 gegevens laden om het effect te zien.
+- **Roux Method beginnersvriendelijke algoritmebibliotheek**: [philoli.com/zh/projects/rubiks-cube/roux](/nl/projects/rubiks-cube/roux).
+- **csTimer trainingsanalysator**: [philoli.com/zh/projects/rubiks-cube/analyzer](/nl/projects/rubiks-cube/analyzer). Sleep het geëxporteerde csTimer-bestand hierheen om je eigen prestatiecurve, Ao5/Ao12/Ao100-curves, PB-verbeteringen, mijlpalentabel en Power Law oefencurve te zien.
 
 *Dit artikel bevat Amazon affiliate links: door via de links te kopen, ontvang ik een kleine commissie, jouw prijs blijft hetzelfde.*
 
