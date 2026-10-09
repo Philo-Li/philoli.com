@@ -1,278 +1,278 @@
 ---
 layout: blog
-title: "Rubik-kocka 30 mp alatt formulák nélkül: gyerekeknek is érthető"
+title: "Hogyan juss 30 másodperc alá a Rubik-kockával algoritmusok memorizálása nélkül: Akár egy kisiskolás is megérti"
 date: 2026-10-09 12:00:00
 tags:
   - Rubik-kocka
   - útmutató
-  - Roux-módszer
-  - gyorsforgatás
+  - Roux módszer
+  - gyorskirakás
   - tudatos gyakorlás
 categories: 日常折腾
-description: "89 nap alatt jutottam el az első kirakástól az Ao100 30 másodperc alá, egyetlen CFOP formulát sem memorizálva. 4441 mért kirakás adatait felhasználva bontom négy szakaszra a folyamatot: mi okozott nehézséget az egyes szakaszokban, mit gyakoroltam, és miért nem kell formulákat memorizálni a Roux-módszerhez."
+description: "89 nap alatt jutottam el az első kirakástól az Ao100 30 másodperc alá, egyetlen CFOP algoritmus memorizálása nélkül. 4441 mért idő alapján bontom négy szakaszra az utat: hol akadsz el az egyes fázisokban, mit gyakorolj, és miért nem kell algoritmusokat magolnod a Roux módszerhez."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="从 165 秒到 28 秒的四个阶段" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Négy szakasz 165 másodpercről 28 másodpercre" />
 </figure>
 
-*Kép: A négy szakasz 165 másodpercről 28 másodpercre. A második szakaszban volt a leggyorsabb a fejlődés, a harmadik volt a leghosszabb stagnálási időszak.*
+*Kép: Négy szakasz 165 másodpercről 28 másodpercre. A második szakasz volt a leggyorsabb csökkenés, a harmadik a leghosszabb fennsík.*
 
-Előző cikkemben, a [„Hogyan rakd ki a Rubik-kockát formulák nélkül: gyerekeknek is érthető?”](/zh/blog/solve-rubiks-cube-without-formulas/) című írásban megtanulhattad, hogyan rakhatod ki a kockát kommutátorok logikájával, formulák memorizálása nélkül. Az a cikk sokak lelkes elismerését kiváltotta.
+Az előző, [„Hogyan rakd ki a Rubik-kockát algoritmusok memorizálása nélkül”](/hu/blog/solve-rubiks-cube-without-formulas/) című cikkemben megtanultad, hogyan rakhatsz ki egy kockát algoritmusok nélkül, csupán a kommutátorok logikáját használva. Ez a cikk sok pozitív visszajelzést kapott.
 
-Ha követted az útmutatót, mostanra valószínűleg két-három perc alatt kirakod, bár még kapkodsz egy kicsit. Ekkor felmerül egy új kérdés: hogyan lehetne gyorsabban?
+Ha követted az útmutatót, valószínűleg most két-három perc alatt kirakod a kockát, még ha kicsit ügyetlenül is, de a végére érsz. Ekkor azonban felmerül egy új kérdés: hogyan legyél gyorsabb?
 
-Ha rákeresel a „Rubik-kocka gyorsforgatás” kifejezésre, minden útmutató ugyanazt fogja mondani: ha 30 másodperc alá akarsz kerülni, először is memorizáld a CFOP formuláit. F2L: 41, OLL: 57, PLL: 21, összesen 119 formula. Még ha az F2L-t ösztönből csinálod is, a felső réteg 78 formuláját akkor sem úszod meg. Ha nem jegyzed meg őket, ne is álmodj a sebességről.
+Ha rákeresel a "gyorskirakás Rubik-kocka" kifejezésre, minden útmutató ugyanazt fogja mondani: ha 30 másodperc alá akarsz kerülni, először tanuld meg a CFOP algoritmusokat. Ez 41 F2L, 57 OLL és 21 PLL algoritmust jelent, összesen 119-et. Még ha az F2L-t intuícióval is csinálod, a felső réteg 78 algoritmusát akkor sem úszod meg. Ha nem jegyzed meg őket, ne is álmodj a gyorsaságról.
 
-Ez a cikk azt szeretné megmutatni, hogy formulák memorizálása nélkül is bekerülhetsz a 30 másodperces határ alá.
+Ez a cikk azonban azt szeretné megmutatni neked, hogy teljesen algoritmusok memorizálása nélkül is bekerülhetsz a 30 másodperc alatti kategóriába.
 
 <!--more-->
 
-Én 2026. május 7-én raktam ki először a kockát, és augusztus 4-én, 89 nappal később jutottam el az Ao100-zal 30 másodperc alá. Ez idő alatt egyetlen CFOP formulát sem memorizáltam, csupán a szabadidőmben játszottam vele. Ez a 4441 dokumentált kirakásom időmérési adata.
+Amikor 2026. május 7-én először raktam ki a Rubik-kockát, egészen augusztus 4-ig, az Ao100 30 másodperc alá kerüléséig 89 nap telt el. Ez idő alatt egyetlen CFOP algoritmust sem memorizáltam, csupán a szabadidőmben játszottam. Ez 4441 kirakás időadata a feljegyzéseim szerint.
 
-![4441 次复原的成绩曲线](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
+![4441 kirakás eredménygörbéje](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
-*Kép: 4441 kirakás eredménygörbéje. A szürke vonal az egyes kirakások idejét mutatja, a sötét vonal az Ao100 trendjét, a piros pontok pedig azokat az alkalmakat jelölik, amikor új személyes rekordot állítottam fel. A legjobb Ao100 időm 28,22 másodperc.*
+*Kép: 4441 kirakás eredménygörbéje. A szürke vonal az egyes időket mutatja, a sötét vonal az Ao100 tendenciáját, a piros pontok pedig a személyes rekordok megdöntését. A legjobb Ao100 28,22 másodperc volt.*
 
-Tudatos, aktív gyakorlással, és a gyakorlás gyakoriságának fenntartásával bárki elérheti a nulláról a sub-30 szintet néhány hónapon belül.
+Tudatos és rendszeres gyakorlással bárki elérheti a nulláról a sub-30 szintet néhány hónap alatt.
 
-Mit is jelent a 30 másodperc alatti idő? Az [1982-es első Rubik-kocka Világbajnokságon](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship) a győztes ideje 22,95 másodperc volt, amit a WCA később az első hivatalos világrekordként ismert el; a 10. helyezett 29,11 másodperccel végzett, és ezt az időt maga Jessica Fridrich, a CFOP feltalálója érte el, akiről a következő részben lesz szó. Más szóval, egy mai amatőr, aki néhány hónap alatt éri el a sub-30 szintet, 1982-ben bekerülhetett volna a világ tíz legjobbja közé.
+Mit is jelent a 30 másodperc alatti idő? Az [1982-es első Rubik-kocka Világbajnokságon](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship) a bajnok eredménye 22,95 másodperc volt, amit később a WCA az első hivatalos világrekordként ismert el; a 10. helyezett 29,11 másodperccel Jessica Fridrich maga volt, a CFOP módszer feltalálója, akiről a következő szakaszban lesz szó. Más szóval, egy mai amatőr, aki néhány hónap alatt eléri a sub-30-at, 1982-ben a világ top tízébe került volna.
 
-A továbbiakban megosztom veled, hogyan jutottam el idáig lépésről lépésre, és teljes egészében bemutatom neked a gyakorlási módszert.
+A továbbiakban megosztom veled, hogyan jutottam el idáig lépésről lépésre, és teljes mértékben átadom neked a gyakorlási módszert.
 
-## Miért memorizálnak formulákat a gyorsforgatók?
+## Miért memorizál mindenki algoritmusokat a gyorskirakás világában?
 
-Először is tisztázzunk valamit: miért kapcsolódik össze a „gyorsaság” és a „formulák memorizálása” az emberek fejében?
+Először tisztázzunk egy dolgot: miért kapcsolódik össze az emberek fejében a "gyorsaság" és az "algoritmusok memorizálása"?
 
-Az 1980-as évek elején Jessica Fridrich cseh származású professzor (aki később a Binghamtoni Egyetemen digitális kriminalisztikát kutatott) rendszerezett egy rétegenkénti megoldási módszert, amit később CFOP-nak (Cross, F2L, OLL, PLL) neveztek el. Ennek a módszernek a lényege, hogy a felső réteg összes lehetséges állapotát számba veszi, és minden egyes állapothoz hozzárendel egy optimális formulát. Felismered az állapotot, végrehajtod a formulát, gondolkodás nélkül.
+Az 1980-as évek elején Jessica Fridrich cseh származású professzor (aki később az amerikai Binghamton Egyetemen digitális kriminalisztikát kutatott) rendszerezett egy rétegenkénti megoldási módszert, amelyet később CFOP-nak (Cross, F2L, OLL, PLL) neveztek el. Ennek a módszernek a lényege: a felső réteg összes lehetséges állapotát kimerítően felsorolja, és minden állapothoz hozzárendel egy optimális algoritmust. Felismered az állapotot, végrehajtod az algoritmust, és nem kell gondolkodnod.
 
-![Jessica Fridrich 和她办公室里的魔方](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
+![Jessica Fridrich és a kocka az irodájában](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
 
-*Kép: Jessica Fridrich és a Rubik-kocka az irodájában. 1982-ben 29,11 másodperccel a 10. helyen végzett az első világbajnokságon, a CFOP-t róla nevezték el (Fridrich-módszer).*
+*Kép: Jessica Fridrich és a kocka az irodájában. 1982-ben 29,11 másodperccel a 10. helyen végzett az első világbajnokságon, a CFOP módszert róla nevezték el (Fridrich Method).*
 
-Ez a módszer rendkívül gyors. Szinte az összes világrekordot CFOP-val érik el. Ezért minden oktatóanyag ezt tanítja, minden videó erről szól, a „gyorsforgatás megtanulása” egyenlő a „CFOP megtanulásával”, a CFOP megtanulása pedig egyenlő 119 formula memorizálásával.
+Ez a módszer rendkívül gyors. Szinte minden világrekord CFOP-pal született. Ezért minden útmutató ezt tanítja, minden videó erről szól, a "gyorskirakás tanulása" egyenlő a "CFOP tanulásával", a CFOP tanulása pedig egyenlő 119 algoritmus memorizálásával.
 
-De jegyezzük meg, a „formulák memorizálása” a CFOP módszer sajátossága, nem pedig magának a „gyorsaságnak” a jellemzője. A CFOP azért követeli meg a memorizálást, mert a teljes enumeráció (összes eset áttekintése) útját választotta. Az enumerációhoz memória szükséges, ez az ára.
+De figyelem: az "algoritmusok memorizálása" a CFOP módszer sajátossága, nem pedig a "gyorsaság" önmagában vett sajátossága. A CFOP azért igényel memorizálást, mert a kimerítő felsorolás útját választotta. A kimerítő felsorolás memóriát igényel, ez az ára.
 
-Van-e olyan módszer, ami nem ezt az enumerációs utat járja? Van.
+Létezik olyan módszer, ami nem a kimerítő felsorolás útját járja? Igen.
 
-## Formulák nélküli megoldás: a Roux-módszer (hidak)
+## Algoritmusok nélküli megoldás: A Roux módszer
 
-2003-ban Gilles Roux, egy francia úriember, egy teljesen más megközelítést mutatott be. Nem rétegenként építkezik, hanem először két 1×2×3-as „hidat” épít a bal és jobb oldalon, majd a felső réteg négy sarkával foglalkozik, végül pedig csak hat él marad, amit a középső (M) és a felső (U) réteg mozgatásával fejez be.
+2003-ban a francia Gilles Roux egy teljesen más megközelítést mutatott be. Nem rétegről rétegre építkezik, hanem először két 1×2×3-as "blokkot" (hidat) épít fel, majd a felső réteg négy sarkával foglalkozik, végül pedig hat élélet hagy, és az M és U rétegforgatásokkal fejezi be.
 
-![Gilles Roux 在比赛中](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
+![Gilles Roux verseny közben](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
 
-*Kép: Gilles Roux verseny közben. Egy korai versenyvideóból kivágva, a kép AI-val javítva és nagyítva.*
+*Kép: Gilles Roux verseny közben. Egy régi versenyvideóból kivágott kép, amelyet AI-val javítottak és nagyítottak.*
 
-Az előző cikkben már egyszer kiraktuk a kockát ezzel a kerettel. Nézzük át újra a négy lépését, ezúttal arra fókuszálva, hogy „mit kell megjegyezni az egyes lépéseknél”:
+Az előző cikkben már kiraktunk egy kockát ezzel a kerettel. Nézzük meg újra a négy lépést, ezúttal arra fókuszálva, hogy "mit kell megjegyezni minden lépésnél":
 
-| Lépés | Tartalom | Megjegyzendő formulák |
+| Lépés | Tartalom | Memorizálandó algoritmusok |
 | --- | --- | --- |
-| 1. Bal híd | Egy 1×2×3-as blokk építése | 0, tisztán megfigyelés |
-| 2. Jobb híd | Egy másik szimmetrikus blokk építése | 0, tisztán megfigyelés |
-| 3. CMLL | A felső réteg négy sarokelemének elrendezése | 9, mindegyik levezethető a hármas cserékből |
-| 4. LSE | Az utolsó hat élelem | 0, csak a felső és középső réteg (M és U) forgatásával |
+| 1. Első blokk (FB) | Egy 1×2×3-as blokk felépítése | 0, tiszta megfigyelés |
+| 2. Második blokk (SB) | Egy szimmetrikus blokk felépítése | 0, tiszta megfigyelés |
+| 3. CMLL | A felső réteg négy sarokelemének elhelyezése | 9, mind levezethető a hármas cserékből |
+| 4. LSE | Az utolsó hat élél | 0, csak a felső és középső réteg (M és U) forgatása |
 
-A négy lépésből háromhoz egyáltalán nincs szükség formulákra. Az egyetlen, amihez kell, a CMLL, ahol összesen 42 eset van, de neked nem kell 42 formulát megjegyezned. Az előző cikkben tárgyalt sarokelem hármas csere (R U' L' U R' U' L U), valamint annak tükörképe és néhány variációja lefedi az összes esetet, csak kicsit lassabban.
+A négy lépésből háromhoz egyáltalán nincs szükség algoritmusokra. Az egyetlen szükséges CMLL összesen 42 esetet tartalmaz, de nincs szükséged mind a 42-re. Az előző cikkben említett sarok hármas csere R U' L' U R' U' L U, plusz a tükörképe és néhány variációja, lefedi az összes esetet, csak kicsit lassabban.
 
-![Roux 的四步](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/05-roux-four-steps.webp)
+![A Roux négy lépése](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/05-roux-four-steps.webp)
 
-*Kép: A Roux-módszer négy lépése, minden lépésnél csak az addig elhelyezett blokkokat mutatva: Bal híd → Jobb híd → CMLL (felső négy sarok) → LSE (utolsó hat él). A 3D Rubik-kocka oldalam „megoldási” paneljéről kivágva.*
+*Kép: A Roux négy lépése, minden lépésnél csak az addig elhelyezett elemek láthatók: Első blokk → Második blokk → CMLL (felső réteg sarkai) → LSE (utolsó hat élél). Képernyőfelvétel a 3D kocka oldalam "Megoldások" paneljéről.*
 
-Ezért nem kell formulákat memorizálni a Roux-módszerhez: a memorizálandó részt egy nagyon kis sarokba szorítja, a többit pedig a megfigyelésre, megértésre és a gyakorlásra bízza.
+Ezért nem igényel a Roux algoritmusok memorizálását: a memorizálandó részt egy nagyon kis szegletre szorítja, a többit pedig teljes egészében a megfigyelésre, a megértésre és a gyakorlatra bízza.
 
-## 165 másodpercről 28 másodpercre: a négy szakasz
+## 165 másodpercről 28 másodpercre: Négy szakasz
 
-Ez az út, amit én jártam be. Minden szakaszt adatokkal jelöltem meg, majd elmagyaráztam, hol akadtam el és mit gyakoroltam. A te elakadásaid eltérhetnek az enyémektől, de a sorrend valószínűleg hasonló lesz.
+Ez az én valós utam volt. Minden szakaszt adatokkal jelöltem meg, majd elmagyaráztam, hol akadtam el, és mit gyakoroltam abban a fázisban. A te elakadási pontjaid eltérőek lehetnek, de a sorrend valószínűleg ugyanaz.
 
-![四个阶段的时间跨度](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
+![A négy szakasz időtartama](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
-*Kép: A négy szakasz időbeli kiterjedése. Az első szakasz 3 hét, a második 11 nap, a harmadik két hónap, a negyedik a mai napig tart.*
+*Kép: A négy szakasz időtartama. Az első szakasz 3 hét, a második 11 nap, a harmadik két hónap, a negyedik a mai napig tart.*
 
-### 1. szakasz: 165 másodpercről 60 másodpercre (1–3. hét)
+### Első szakasz: 165 másodperc → 60 másodperc (1–3. hét)
 
 **Adatok**: Május 7-től május 27-ig. Az első héten átlagosan 165 másodperc, a harmadik héten 68 másodperc.
 
-**Hol akadtam el**: A bal híd rendkívül lassan ment, minden egyes színblokkot sokáig kellett keresnem. Ráadásul, miután megtaláltam egy blokkot, a kezdők hajlamosak megállni és tovább figyelni.
+**Hol akadsz el**: Az első blokk (FB) nagyon ügyetlenül megy, minden él-sarok párt sokáig kell keresni. Aztán, amikor megtalálsz egy él-sarok párt, a kezdők hajlamosak megállni, és tovább nézelődni.
 
-![新手的时间都花在哪](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
+![Hol töltik az időt a kezdők](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
 
-*Kép: Mire fordítják az idejüket a kezdők. A kéz megáll, a szem pedig ide-oda vándorol a kockán, a „keresés” ideje többszöröse a „forgatás” idejének.*
+*Kép: Hol töltik az időt a kezdők. A kezük áll, a szemük a kockán jár-kel, a "keresés" ideje többszöröse a "forgatás" idejének.*
 
-**Mit gyakoroltam**:
+**Mit gyakorolj**:
 
-Ebben a szakaszban a legnagyobb ellenség nem a lassú kéz, hanem a lassú szem. Sokkal több időt töltesz „kereséssel”, mint „forgatással”. Ezért:
+Ebben a szakaszban a legnagyobb ellenség nem a lassú kéz, hanem a lassú szem. Sokkal több időt töltesz "kereséssel", mint "forgatással". Ezért:
 
-- Rögzítsd a megfigyelési pozíciót, ne forgasd a kockát. Ahogy az előző cikkben is említettem, a Roux-módszerben a megfigyelési szög fix. Ebben a szakaszban a „kocka forgatása nélküli” megfigyelést izommemóriává kell fejlesztened. Minden alkalommal, amikor meg akarnád fordítani a kockát, állj meg, és kérdezd meg magadtól: láthatom-e a keresett blokkot ebből a szögből?
-- Lassú forgatás. Ne mérd az időt, de a mozdulatok legyenek folyamatosak, ne legyenek megállások. Minden mozdulat lehet nagyon lassú, de ne állj meg. A lényeg, hogy amíg a kezed az előző mozdulatot végzi, a szemed már a következő mozdulatra figyeljen – ez a lassú forgatás magja. Ez lassulásnak tűnhet, de valójában arra edzi a szemed, hogy meglássa a blokk aktuális helyzete és a célhelyzete közötti összefüggést.
-- Csak az első hidat gyakorold. Keverd meg, építsd fel a bal hidat, majd keverd meg újra, és építsd fel megint a bal hidat. Ne menj tovább. Az első híd a Roux-módszer legszabadabb lépése, és ez fejleszti leginkább a megfigyelőképességet.
+-   **Fixáld a megfigyelési pozíciót, ne forgasd a kockát.** Ahogy az előző cikkben említettem, a Roux módszer megfigyelési szöge rögzített. Ebben a szakaszban a "kocka forgatásának mellőzését" izommemóriává kell tenni. Valahányszor meg akarnád forgatni a kockát, állj meg, és kérdezd meg magadtól: ebből a szögből látom-e a keresett elemet?
+-   **Lassú gyakorlás.** Ne mérd az időt, de a mozdulatok legyenek folyamatosak, ne legyenek megállások. Minden mozdulat lehet nagyon lassú, de ne állj meg. A lényeg, hogy miközben a kezed az előző mozdulatot végzi, a szemed már a következő mozdulatra figyeljen, ez a lassú gyakorlás lényege. Ez lassításnak tűnik, de valójában a szemedet edzed, hogy lássa az elemek helyzetét és a kívánt célhelyzet közötti kapcsolatot.
+-   **Csak az első blokkot gyakorold.** Keverd meg, építsd fel az első blokkot, keverd meg újra, építsd fel újra az első blokkot. Ne menj tovább. Az első blokk a Roux legszabadabb lépése, és a megfigyelést leginkább edző része.
 
-Ne tanulj új formulákat ebben a szakaszban. A jelenlegi szűk keresztmetszeted nem a formulákban van.
+Ne tanulj új algoritmusokat ebben a szakaszban. A szűk keresztmetszeted most nem az algoritmusokban van.
 
-### 2. szakasz: 60 másodpercről 40 másodpercre (4–5. hét)
+### Második szakasz: 60 másodperc → 40 másodperc (4–5. hét)
 
-**Adatok**: Május 27-től június 7-ig, 11 nap. Ez volt a leggyorsabb fejlődési szakasz az egész folyamatban, és ekkor gyakoroltam a legtöbbet is, június első hetében 723 alkalommal.
+**Adatok**: Május 27-től június 7-ig, 11 nap. Ez volt az egész folyamat leggyorsabb csökkenési szakasza, és ebben gyakoroltam a legtöbbet, június első hetében 723 alkalommal.
 
-**Hol akadtam el**: Akadozó mozdulatok. A kocka beragadt.
+**Hol akadsz el**: A mozdulatok nem folyamatosak. A kocka akadozik.
 
-**Mit gyakoroltam**:
+**Mit gyakorolj**:
 
-Ebben a szakaszban minden egyes lépés mozdulatait optimalizálnod kell, és a megértés alapján növelned kell az egyes mozdulatok rutinját.
+Ebben a szakaszban optimalizálnod kell az egyes szakaszok mozdulatait, és a megértés alapján növelned kell minden mozdulat jártasságát.
 
-- Második híd. A második híd nehezebb, mint az első, mert a rendelkezésre álló hely a felére csökken, és nem szabad tönkretenni az elkészült bal hidat. A kulcsfontosságú forgatások az R, r (jobb két réteg), M, U. Ebben a szakaszban meg kell tanulnod az r és M forgatásokat használni az R helyett a blokkok mozgatásához, így a bal híd soha nem sérül meg. A mozdulatok optimalizálása időt takarít meg. Például, ha valamit háromszor kellene az óramutató járásával megegyezően forgatni, az egyenlő egyszer az óramutató járásával ellentétesen forgatni.
-- Az M-réteg folyékony használata. A Roux-módszer utolsó lépései mind M és U mozdulatokat igényelnek, az M-réteg folyékonysága közvetlenül meghatározza a sebességed alsó határát. Gyakorold az M-réteg mozgatását gyűrűsujjal vagy középső ujjal, kezdd az M' U M' U ritmusokkal.
-- CMLL alakfelismerés. Az előző cikkben hármas cserékkel „próbáltuk ki” a négy sarkot. Mostantól előbb nézd meg, aztán csináld: mielőtt megfordítanád a felső réteget, vess egy pillantást a négy sarok sárga oldalára, és döntsd el, hogy 0, 1, 2 vagy 4 „jó” sarok van-e, majd hajtsd végre közvetlenül a megfelelő mozdulatot. Rendkívül kevés formula segítségével is jelentős hatékonyságnövekedést érhetsz el, ami nagyon kifizetődő. A formulák nagy részét nem kell bemagolni, inkább értsd meg őket, miközben csinálod.
+-   **Második blokk (SB).** A második blokk nehezebb, mint az első, mert a tér feleannyi, és a már elkészült első blokkot nem szabad tönkretenni. A kulcsfontosságú forgatások az R, r (jobb két réteg), M, U. Ebben a szakaszban meg kell tanulnod az r és M használatát az R helyett az elemek mozgatására, így az első blokk soha nem sérül. A mozdulatok optimalizálása időt takarít meg. Például ahelyett, hogy háromszor forgatnál az óramutató járásával megegyezően, egyszer fordíthatsz az óramutató járásával ellentétesen.
+-   **Gyakorold az M réteg használatát.** A Roux utolsó lépései mind M és U mozdulatokból állnak, és az M réteg sima forgatása közvetlenül meghatározza a sebességed alsó határát. Használd a gyűrűs- vagy középső ujjadat az M tolására, és kezdd el gyakorolni az M' U M' U típusú ritmusokat.
+-   **CMLL formafelismerés.** Az előző cikkben a hármas cserékkel "próbáltuk ki" a négy sarkot. Most el kell kezdeni először megnézni, majd megcsinálni: mielőtt megfordítod a felső réteget, vess egy pillantást a négy sarok sárga orientációjára, és döntsd el, hogy 0, 1, 2 vagy 4 jó sarok van-e, majd közvetlenül végezd el a megfelelő mozdulatot. Nagyon kevés algoritmussal is jelentős hatékonyságnövelést érhetsz el, ami nagyon megéri. Ezen algoritmusok nagy részét nem kell fejből megtanulni, csak csináld és értsd meg őket.
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="搭右桥时的视角" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="Nézőpont a második blokk építésekor" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/08-m-prime-u-m.webp" alt="M' U M" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
 </div>
 
-*Kép balra: Perspektíva a jobb híd építésekor. A bal híd elkészült, csak R, r, M, U négyféle forgatással illeszd be a jobb oldali sarok-él párt, a bal híd soha nem érintkezik. Kép jobbra: M' U M, a Roux-módszer második felében leggyakrabban használt mozdulatsor. A középső réteg feljön, a felső réteg forog egyet, a középső réteg visszamegy – három lépésben kicserélve egy élpárt a felső és középső rétegben.*
+*Kép balra: Nézőpont a második blokk építésekor. Az első blokk kész, csak R, r, M, U forgatásokkal illeszd be a jobb oldali él-sarok párt, az első blokk soha nem sérül. Kép jobbra: M' U M, a Roux második felében leggyakrabban használt mozdulatsor. A középső réteg feljön, a felső réteg forog, a középső réteg vissza, három lépésben lecserélve a felső és középső réteg egy élpárját.*
 
-Megnézheted az általam összeállított [Roux-módszer formulagyűjteményt](/zh/projects/rubiks-cube/roux#cmll). A CMLL oldal kétszakaszos: 7 orientációs formula + 2 permutációs formula, összesen 9 darab. Ez egy rendkívül költséghatékony választás a sebesség növelésére, könnyen megtanulható, és minden begyakorolt készlet körülbelül 1-2 másodperccel gyorsíthat. Egy kis gyakorlással gyorsan belejössz, némelyiket már az előző cikkben is bemutattam, és nem kell mindent bemagolnod ahhoz, hogy 30 másodperc alá kerülj.
+Megnézheted az általam összeállított [Roux módszer algoritmusgyűjteményt](/hu/projects/rubiks-cube/roux#cmll), a CMLL oldal kétlépcsős: 7 orientációs algoritmus + 2 pozíciós algoritmus, összesen 9. Ez a sebességnövelés szempontjából költséghatékony választás, könnyen megtanulható, és minden begyakorolt csoport körülbelül 1-2 másodperccel gyorsíthatja az idődet. Kis gyakorlással gyorsan belejössz, némelyiket már bemutattam az előző cikkben, és nem kell mindent megjegyezned ahhoz, hogy 30 másodperc alá kerülj.
 
-![两段式 CMLL 第一步，七种角块朝向](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
+![Kétlépcsős CMLL első lépés, hét sarokelem orientáció](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
-*Kép: Kétszakaszos CMLL első lépés, hétféle sarokelem-orientáció. A felülnézetben a sárga a felfelé néző felső szín, a külső kis csík pedig azt jelzi, hogy a sarok felső színe oldalra néz. Az alakfelismerés a sárga sarkok száma alapján történik: 0 H vagy Pi, 1 S vagy AS, 2 U, T vagy L.*
+*Kép: Kétlépcsős CMLL első lépés, hét sarokelem orientáció. Felülnézetben a sárga a felfelé mutató felső szín, a külső kis sávok azt jelzik, hogy a sarok felső színe oldalra mutat. A sárga sarkok száma alapján ismerd fel a formát: 0 H vagy Pi, 1 S vagy AS, 2 U, T vagy L.*
 
-Miután a sárga felső részt igazítottad, ezt a két formulát használhatod a sarokelemek oldalsó részeinek igazítására.
+A sárga felső oldal beállítása után használhatod ezt a két algoritmust a sarokelemek oldalainak beállítására.
 
-Ha egy oldal már színben megegyezik, például a piros már ugyanazon az oldalon van, forgasd azt balra, majd válaszd a szomszédos csere formulát. Ha egyetlen oldal sem egyezik színben, akkor válaszd az átlós csere formulát.
+Ha az egyik oldal már színben megegyezik, például a piros már ugyanazon az oldalon van, forgasd balra, majd választhatod a szomszédos csere algoritmust. Ha egyik oldal sem egyezik meg színben, akkor válaszd az átlós csere algoritmust.
 
-![两段式 CMLL 第二步，两种角块位置](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
+![Kétlépcsős CMLL második lépés, két sarokelem pozíció](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
 
-*Kép: Kétszakaszos CMLL második lépés, kétféle sarokelem-pozíció. A bal oldali képen a két bal sarok piros színe már megegyezik, itt szomszédos cserét használunk; a jobb oldali képen egyetlen oldal sem egyezik, itt átlós cserét használunk.*
+*Kép: Kétlépcsős CMLL második lépés, két sarokelem pozíció. A bal oldali képen a bal oldali két sarok pirosa már megegyezik, szomszédos cserét használj; a jobb oldali képen egyetlen oldal sem egyezik meg, átlós cserét használj.*
 
-Rengeteg lassú forgatással megértheted az egyes formula-csoportokat. Ne tekints rájuk formulaként, hanem bizonyos rögzített mozdulatokként, amiket lassan felfedezve te magad is ki tudnál találni, de itt felsorolva elkerülheted a felesleges kerülőutakat.
+Sok lassú gyakorlással megértheted az egyes algoritmusokat; ne tekints rájuk algoritmusként, hanem rögzített mozdulatokként. Magad is felfedezheted ezeket a mozdulatokat, de itt felsorolva elkerülheted a felesleges kerülőutakat.
 
-Van még valami, ami minden gyakorlásnál látványosabb eredményt hoz: költs egy kis pénzt egy új Rubik-kockára. Ha még mindig az a régi, kattogó, beragadó típus van a kezedben, vegyél egy modern, mágneses 3x3-ast. A legújabb kockákban megtapasztalhatod a mérnöki optimalizáció erejét: sima forgatás, automatikus igazítás, és szinte soha nem akadnak el. Már pusztán a kockacsere is akár 15 másodperccel is gyorsíthatja az átlagidődet. A legjobb ár-érték arányú választás a [MoYu RS3 M V5 (Maglev + Ball-Core változat)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20), körülbelül húsz dollárért, ami egészen a sub-20-ig elegendő lesz.
+Még egy dolog, ami minden gyakorlatnál azonnal hatásosabb: költs egy kis pénzt egy új kockára. Ha még mindig olyan régi kockád van, ami kattogva forog, és megakad, ha túlfordítod, vegyél egy mágneses, modern 3x3-ast. A legújabb kockák érezhetővé teszik a mérnöki optimalizálás erejét: simán forognak, automatikusan a helyükre állnak, és szinte sosem akadnak el. Már pusztán a kockacserével is akár 15 másodpercet javulhat az átlagidőd. Költséghatékony választás a [MoYu RS3 M V5 (Maglev + Ball-Core verzió)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20), húsz dollár körüli áron, ami sub-20-ig is elegendő.
 
-### 3. szakasz: 40 másodpercről 30 másodpercre (5–13. hét, két hónap)
+### Harmadik szakasz: 40 másodperc → 30 másodperc (5. hét – 13. hét, két hónap)
 
-**Adatok**: Június 7-től augusztus 4-ig. Az Ao100-at 39,8 másodpercről 29,9 másodpercre csiszoltam, ami 58 napomba telt. Ebben a szakaszban előfordultak néha 30 másodperc alatti idők, de csak rendkívül nagy szerencsével. Ráadásul, ahogy az átlagos kirakási idő csökken, 1 másodperc fejlődés nehézsége exponenciálisan növekszik.
+**Adatok**: Június 7-től augusztus 4-ig. Az Ao100 39,8 másodpercről 29,9 másodpercre csiszolása 58 napot vett igénybe. Ebben a szakaszban alkalmanként előfordulhatnak 30 másodperc alatti idők, de csak nagyon jó szerencsével. Ráadásul az átlagos kirakási idő csökkenésével 1 másodperc javulás nehézsége exponenciálisan növekedni fog.
 
-![每日平均成绩](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
+![Napi átlagidők](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
-*Kép: Napi átlagos eredmények. Június közepétől a görbe szinte ellaposodott, két hónapon keresztül 30–40 másodperc között „csiszoltam”.*
+*Kép: Napi átlagidők. Június közepétől a görbe szinte ellaposodott, két hónapon át 30-40 másodperc között ingadozott.*
 
-Ez a plató fázis. Mindenki találkozik vele, én két hónapot töltöttem itt.
+Ez a plató fázis. Mindenki találkozik vele, én két hónapig voltam itt.
 
-**Hol akadtam el**: A felső réteg hat élének elrendezése nagyon lassan ment, nem értettem a logikát, minden alkalommal ismételt próbálkozásokra hagyatkoztam, ami rengeteg időt pazarolt. A bal és jobb híd még mindig nem volt eléggé begyakorolva.
+**Hol akadsz el**: A felső réteg hat élének visszaállítása nagyon lassú, nem érted a logikát, minden alkalommal ismételt próbálkozásokra támaszkodsz, ami sok időt pazarol. Az első és második blokk még mindig nem elég rutinos.
 
-**Mit gyakoroltam**:
+**Mit gyakorolj**:
 
-- EO felismerés. Az előző cikkben említettem, hogy csak néhány rossz él eset létezik: 0, nem 0 és nem 4, 4 (2 fent, 2 lent), 4 (mind a felső rétegen), 4 (3 fent, 1 lent). Ebben a szakaszban a cél: abban a pillanatban, ahogy a híd elkészül, számolás nélkül, egy pillantással megmondani, melyik esetről van szó. A gyakorlás módja, hogy megkeverés után csak a CMLL végéig jutsz, majd megállsz, kimondod a rossz élek számát, és csak ezután folytatod.
-- Sokan nem értik az itteni mozdulatokat. Az EO szakasz végső célja, hogy kialakítsuk a 3 fent 1 lent nyíl alakzatot, mert a teljes alakzat egyetlen keverés után is nyíl alakzatot eredményez. Tehát fordított gondolkodással, ez az utolsó lépés a kirakás előtt. Így tehát, függetlenül attól, hány rossz él van, a végső cél mindig egy nyíl alakzat kialakítása. Ha 4 rossz él van felül, akkor egy élpár fel-le cseréjével egy rossz élet leviszünk, és nyíl alakzatot hozunk létre. Ha 2 felül és 2 alul van, akkor egy élpár fel-le cseréjével egy rossz élet felhozunk, és nyíl alakzatot hozunk létre. Ha 1 felül és 1 alul, vagy 2 felül van, akkor M' U M segítségével először az előző esetekké alakítjuk, majd kialakítjuk a nyíl alakzatot. Sok megfigyeléssel és gondolkodással magadtól is felfedezheted az 1/1 eset legjobb lépéseit.
-- Gyakorold sokat az előrelátást (Look-ahead). Ez a legfontosabb dolog a 40 másodpercről 30 másodpercre való eljutásban, és egyben a leginkább ellenintuitive is: forgasd lassabban, láss messzebbre. A bal híd építésekor ne a beillesztendő blokkot nézd, hanem azt, hol van a következő. Eleinte nagyon furcsa lesz, és az eredmények rosszabbodni fognak, de egy hét kitartás után hirtelen javulni fognak.
-- CMLL habozás nélkül. Ha egy mozdulatnál minden alkalommal gondolkodnod kell, mielőtt meg mered tenni, akkor az még nem a tiéd. Gyakorolj minden mozdulatot külön-külön 50-szer, amíg a kezed magától mozdul a forma láttán.
+-   **EO felismerés.** Az előző cikkben beszéltünk róla, hogy a rossz orientációjú élek csak néhány esetben fordulhatnak elő: 0, nem 0 és nem 4, 4 (felül és alul 2-2), 4 (mind a felső rétegben), 4 (felül 3, alul 1). Ennek a szakasznak a célja: a blokkok felépítésének pillanatában, számlálás nélkül, egy pillantással megmondani, melyik esetről van szó. A gyakorlás módja az, hogy megkevered, csak a CMLL végéig csinálod, majd megállsz, kimondod a rossz orientációjú élek számát, majd folytatod.
+-   Sokan nem értik az itteni mozdulatokat. Az EO szakasz végső célja, hogy kialakítsuk a 3 fent, 1 lent elrendezésű nyíl formát, mert a teljes formáció csak egy lépésre van a nyíl formától, így fordított gondolkodásmóddal ez az utolsó lépés a kirakás előtt. Tehát, függetlenül attól, hogy hány rossz él van, a végső cél egy nyíl kialakítása. Ha 4 rossz él van fent, akkor cserélj fel egy felül-lent élpárt, hogy egy rossz él lekerüljön, és így alakítsd ki a nyilat. Ha 2 rossz él van fent és 2 lent, akkor cserélj fel egy felül-lent élpárt, hogy egy rossz él felkerüljön, és így alakítsd ki a nyilat. Ha 1 fent és 1 lent, vagy 2 fent, akkor egy M' U M mozdulattal alakítsd át az előző esetek egyikévé, majd alakítsd ki a nyilat. Sok megfigyeléssel és gondolkodással magad is felfedezheted az 1 / 1 eset legjobb lépéseit.
+-   **Gyakorolj sokat look-ahead-et.** Ez a legfontosabb dolog ahhoz, hogy 40 másodpercről 30 másodpercre juss, és egyben a legkevésbé intuitív is: forgasd lassabban, nézz előrébb. Amikor az első blokkot építed, ne a beillesztendő elemre nézz, hanem arra, hogy hol van a következő. Eleinte nagyon furcsa lesz, az eredményeid romlani fognak, de egy hét kitartás után hirtelen javulni fognak.
+-   **CMLL habozás nélkül.** Ha egy mozdulatnál minden alkalommal gondolkodnod kell, mielőtt meg mered csinálni, akkor még nem a tiéd. Gyakorolj minden mozdulatot külön-külön 50-szer, amíg a kezed magától el nem indul, amint meglátod a formát.
 
-![箭头形态](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+![Nyíl forma](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
 
-*Kép: Nyíl alakzat. A felső réteg három rossz éle (cián kiemelve) nyíl alakzatban helyezkedik el, az alsó réteg rossz élére mutatva. Ekkor egy M' U M mozdulat mind a négyet egyszerre a helyére rakja. [Nyisd meg ezt az állapotot a 3D Rubik-kockában](/zh/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) lépésről lépésre.*
+*Kép: Nyíl forma. A felső réteg három rossz orientációjú éle (cián kiemelve) nyilat alkotva mutat az alsó réteg egy rossz orientációjú élére. Ebben az állapotban egy M' U M mozdulattal mind a négy egyszerre kerül a helyére. [Nyisd meg ezt az állapotot a 3D kockában](/hu/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), hogy lépésről lépésre megnézhesd.*
 
-![EO 的六种形态](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
+![EO hat formája](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
-*Kép: Az EO hatféle alakzata. A bal felső sarokban lévő címke a rossz élek számát mutatja (fent / lent), a sárga a „jó” éleket, a cián keret a „rossz” éleket. Csak a nyíl alakzathoz kell formula, a másik öt esetben először nyíl alakzattá kell alakítani.*
+*Kép: EO hat formája. A bal felső sarokban a címke a rossz orientációjú élek számát (felül / alul) jelöli, a sárga a jó orientációjú él, a ciánkék keret a rossz orientációjú él. Csak a nyíl formához kell algoritmus, a másik öt esetben először nyíl formává alakítjuk.*
 
-A bal és jobb élek elrendezéséhez vegyük példának, hogy a sárga van felül, a fehér alul, a bal híd pedig piros. Ekkor a sárga-piros élblokk + sárga-narancs élblokk (kiemelt részek) elrendezése szükséges. A fő gondolat az, hogy a sárga-piros élblokkot valahogyan fel-le élcserével az alsó rétegbe juttatjuk, a sárga-narancs élblokkot is az alsó rétegbe cseréljük. A két élblokk egymással szemben legyen az alsó rétegben, majd a felső réteget a megfelelő pozícióba forgatjuk, és egy M2 U vagy M2 U' mozdulattal helyreállíthatók az U-réteg bal és jobb élei.
+A bal és jobb élélek visszaállításához, ahol a sárga a felső, a fehér az alsó oldal, és a bal blokk piros színű, a sárga-piros élélet + a sárga-narancs élélet (kiemelt területek) kell tovább elhelyezni. A fő cél az, hogy a sárga-piros élélet, majd a sárga-narancs élélet is valamilyen módon az alsó oldalra kerüljön élcserével. Ezután, ha a két él az alsó oldalon egymással szemben van, a felső oldalt a megfelelő pozícióba forgatva M2 U vagy M2 U' mozdulattal visszaállíthatók az U-réteg bal és jobb élélei.
 
-A jobb megértés érdekében az EO hatféle alakzatát mind összegyűjtöttem a [Roux-módszer formulagyűjteményének LSE oldalán](/zh/projects/rubiks-cube/roux#lse). Minden képre kattintva a „részletek megtekintése” opcióval megnyitható az adott állapot a 3D Rubik-kockában, ahol a rossz élek automatikusan kiemelve jelennek meg. Ugyanezen az oldalon megtalálhatók a későbbi UL/UR elrendezések és az utolsó négy él összes esete is.
+A jobb megértés érdekében az EO mind a hat formáját összegyűjtöttem a [Roux módszer algoritmusgyűjtemény LSE oldalán](/hu/projects/rubiks-cube/roux#lse). Minden képre kattintva a "részletek megtekintése" gombbal megnyithatod a megfelelő állapotot a 3D kockában, ahol a rossz orientációjú élek automatikusan kiemelésre kerülnek. Ugyanezen az oldalon megtalálhatók a későbbi UL/UR elhelyezések és az utolsó négy él összes esete is.
 
-Ebben a szakaszban a gyakorlás mennyiségének csökkenése nem rossz dolog. A plató fázison nem lehet pusztán mennyiségi gyakorlással átjutni, hanem egy konkrét rossz szokás megváltoztatásával. Az én tapasztalatom szerint egyszerre csak egyet érdemes megváltoztatni.
+Ebben a szakaszban a gyakorlás mennyiségének csökkenése nem rossz dolog. A plató időszakot nem lehet puszta mennyiségi gyakorlással áttörni, hanem egy konkrét rossz szokás megváltoztatásával. Az én tapasztalatom szerint egyszerre csak egyet változtass meg.
 
-### 4. szakasz: 30 másodpercről 28 másodpercre (13. hét után)
+### Negyedik szakasz: 30 másodperc → 28 másodperc (13. hét után)
 
-**Adatok**: Augusztus 4. után. Szeptember egész hónapjában 122 rögzített gyakorlás volt, de valójában sok gyakorlás nem került rögzítésre. A Rubik-kocka már asztali játékká vált számomra, amit bármikor felkapok: ha jó a kedvem, ha feszült vagy szorongó vagyok, ha munka közben van egy kis szünetem, vagy ha unatkozom. A kockázás beépült a mindennapjaimba. Az Ao100 is fokozatosan csökkent 29,9-ről 28,2-re.
+**Adatok**: Augusztus 4. után. Szeptemberben az összesen feljegyzett gyakorlások száma 122 volt, bár valójában sok gyakorlás nem került rögzítésre. A kockát már asztali játékként kezelem, bármikor felkapom és játszom vele, ha jó kedvem van, ha ideges vagyok, ha szorongok, ha munka közben van egy kis szünetem, ha unatkozom. A kockázás beépült az életembe. Az Ao100 is fokozatosan csökkent 29,9-ről 28,2-re.
 
-**Hol akadtam el**: Nincs egyértelmű szűk keresztmetszet, egyszerűen nem voltam elég ügyes.
+**Hol akadsz el**: Nincs egyértelmű szűk keresztmetszet, egyszerűen nem vagyok elég rutinos.
 
-**Mit gyakoroltam**:
+**Mit gyakorolj**:
 
-Ha az átlagsebességed még mindig 30 másodperc felett van, akkor az egyetlen dolog, amit tenned kell, hogy továbbra is sokat gyakorolsz, ahelyett, hogy új formulákat memorizálnál.
+Ha az átlagsebességed még mindig 30 másodperc felett van, akkor az egyetlen dolog, amit tenned kell, az a további intenzív gyakorlás, nem pedig új algoritmusok memorizálása.
 
-Folyamatosan gyakorold az előrelátást lassú forgatással, és egyre gyorsabb leszel.
+Folyamatosan gyakorold a look-ahead-et lassú tekeréssel, és egyre gyorsabb leszel.
 
-Bármikor, ha van egy kis időd, vedd elő a Rubik-kockát és játssz vele. Tartsd a kockát olyan helyen, ahol könnyen elérheted, például az íróasztalodon, hogy munka közben is elővedd és játssz vele. Rendszeresen rögzítsd a kirakásaidról videót, nézd meg, melyik szakaszban töltesz a legtöbb időt, majd végezz célzott optimalizálást – ez a tudatos gyakorlás. A fejlődésed sebessége nem a szokásos gyakorlások számától függ, hanem a tudatos gyakorlások számától.
+Bármikor vedd elő a kockát és játssz vele, tartsd ott, ahol könnyen elérheted, például az íróasztalodon, hogy munka közben is elővedd. Gyakran vegyél fel videót a kirakásaidról, nézd meg, melyik szakaszban telik el a legtöbb idő, majd végezz célzott optimalizálást. Ez a tudatos gyakorlás, a fejlődésed sebessége nem a szokásos gyakorlások teljes számától függ, hanem a tudatos gyakorlások számától.
 
-Ekkor fogod észrevenni, hogy miután túljutottál a 30-35 másodperces szűk keresztmetszeten, a sebességed egy újabb szinttel javul.
+Ekkor fogod észrevenni, hogy miután átvészelted a 30-35 másodperces plató időszakot, a sebességed ismét egy szintet esett.
 
-Ha eljutottál ebbe a szakaszba, gratulálok! Kezdőként már rendkívül ügyes játékosnak számítasz!
+Ebben a szakaszban gratulálok, a kezdők szemében már nagyon profi játékos vagy!
 
-## A formulák memorizálásának hiányának ára
+## Az algoritmusok nélküli módszer ára
 
-Itt legyünk őszinték. A formulák memorizálásának hiánya nem ingyenes.
+Most legyünk őszinték. Az algoritmusok nélküli módszernek is van ára.
 
-A CMLL szakasz lassabb. 42 eset 9 formulával való lefedése azt jelenti, hogy bizonyos esetekben kétszer kell csinálni a mozdulatot. Azok, akik a teljes CMLL-t tudják, két-három másodperccel gyorsabbak nálam ezen a lépésen.
+A CMLL szakasz lassú. A 42 esetet 9 algoritmussal lefedni azt jelenti, hogy egyes eseteket kétszer kell megcsinálni. Azok, akik ismerik az összes CMLL algoritmust, két-három másodperccel gyorsabbak nálam ezen a lépésen.
 
-Az M-réteg technikája magasabb küszöböt állít. A Roux-módszer második fele teljesen az M-rétegre épül, az M-réteget nehezebb forgatni, mint az R-t vagy az U-t, könnyebben elakad, és a kockával szemben is magasabb követelményeket támaszt.
+Az M-réteg technikája magasabb küszöböt jelent. A Roux második fele teljes mértékben az M-rétegre támaszkodik, az M-réteg nehezebben forgatható, könnyebben elakad, és magasabb követelményeket támaszt magával a kockával szemben is.
 
-Ne aggódj a felső határ miatt. A legjobb versenyzők között is vannak, akik Roux-módszerrel kerültek a világ élvonalába, maga a módszer nem korlátozza a fejlődést. De ha 15 másodperc alá akarsz kerülni, valószínűleg ki kell egészítened a 42 CMLL formulát. Azonban az már egy másik szakasz. A 30 másodperc alá jutáshoz nincs rá szükség.
+Ne aggódj a felső határ miatt. Vannak éljátékosok, akik Roux-val is bekerültek a világ élvonalába, maga a módszer nem korlátozza a sebességet. De ha 15 másodperc alá akarsz kerülni, valószínűleg ki kell egészítened a 42 CMLL algoritmust. Ez azonban egy másik szakasz kérdése. A 30 másodperc alá kerüléshez nincs rá szükség.
 
-Ráadásul szinte minden világszínvonalú egykezes kirakó Roux-módszert használ, mert ez valóban nagyon alkalmas az egykezes kezelésre is.
+Ráadásul szinte minden világszínvonalú egykezes kirakó Roux módszert használ, mert tényleg nagyon jól alkalmazható egykezes kezelésre is.
 
-**A Roux-módszerrel elért leggyorsabb eredmények hivatalos (WCA) versenyeken:**
+**A Roux módszerrel elért leggyorsabb hivatalos WCA eredmények:**
 
-- Egyedi 4,11 másodperc, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Fülöp-szigetek), 2023-as Valenzuela Cubing Open, elismerten a Roux-módszerrel elért leggyorsabb hivatalos egyedi idő ([rekonstrukciós videó](https://www.youtube.com/watch?v=5H4TRJSUm-U))
-- Átlag 5,98 másodperc, szintén ő, 2019-ben, akkor ázsiai rekord volt, és a történelem harmadik hivatalos sub-6 átlagideje ([WCA adatok](https://www.worldcubeassociation.org/persons/2017VILL41))
-- Ő a [világrekorder egykezes kategóriában is](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): átlag 8,09, egyedi 6,05 (2024). Az egykezes körökben általánosan elfogadott, hogy a Roux a legoptimálisabb megoldási módszer.
+-   Egyetlen kirakás 4,11 másodperc, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Fülöp-szigetek), 2023-as Valenzuela Cubing Open, elismert Roux hivatalos leggyorsabb egyéni idő ([rekonstrukciós videó](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+-   Átlag 5,98 másodperc, szintén ő, 2019-ben, akkor ázsiai rekord, és a történelem harmadik hivatalos sub-6 átlaga ([WCA adatok](https://www.worldcubeassociation.org/persons/2017VILL41))
+-   Ő a [világrekorder egykezes kategóriában](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record) is: átlag 8,09, egyéni 6,05 (2024), az egykezes közösség általánosan a Roux-t tartja a legjobb megoldásnak
 
-Szerintem ez egy nagyon jó alku. Két-három másodperc CMLL időt cserélsz arra, hogy: minden lépésnél tudod, mit csinálsz, három hónap után is emlékszel rá, ha nem nyúlsz a kockához, és bármilyen, még nem látott kockához ki tudod találni a megoldást.
+Szerintem ez egy nagyon jó üzlet. Két-három másodperc CMLL-időért cserébe azt kapod, hogy minden lépésnél tudod, mit csinálsz, három hónapig sem felejted el a kockát, és bármilyen ismeretlen kockát meg tudsz oldani.
 
 ## Összefoglalás
 
-![复原完成](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+![Kirakva](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
 
-A kirakástól a 30 másodperc alá jutásig nem a formulák memorizálásáról szól a folyamat, hanem a kéz, a szem és az agy koordinált együttműködésének edzéséről.
+A kirakástól a 30 másodperc alá jutásig nem egy algoritmusok memorizálásáról szóló folyamat, hanem a kéz, a szem és az agy koordinált együttműködésének edzéséről.
 
-Négy szakasz, négy dolog: először tanuld meg forgatás nélkül nézni a kockát, aztán tanuld meg úgy felépíteni a jobb hidat, hogy ne tedd tönkre a balt, majd tanuld meg az aktuális lépés közben a következőre figyelni, végül pedig hagyd, hogy a kezed kövesse a szemedet.
+Négy szakasz, négy dolog: először tanuld meg forgatás nélkül nézni a kockát, aztán tanuld meg úgy felépíteni a második blokkot, hogy ne rombold le az elsőt, majd tanuld meg a következő lépést figyelni, miközben az aktuálisat csinálod, végül pedig hagyd, hogy a kezed utolérje a szemedet.
 
-A formulák nem a sebesség forrásai. A megfigyelés az.
+Az algoritmusok nem a sebesség forrásai. A megfigyelés az.
 
-Tanuld meg pozitív visszajelzéseket építeni az egyes szakaszok fejlődésével, még a rutin gyakorlása sem kell, hogy unalmas legyen, különösen akkor, ha újra rekordot döntesz. Különösen a kezdő és középhaladó szakaszban minden nap megtapasztalhatod a rekorddöntés örömét.
+Tanuld meg, hogyan építsd fel a pozitív visszajelzést minden egyes lépésben, még a rutin gyakorlás sem lesz unalmas, különösen, ha újra rekordot döntenél. Különösen a kezdő és középhaladó szakaszban minden nap megtapasztalhatod a rekorddöntés örömét.
 
-A cikkben említett összes formulát és esetet összegyűjtöttem a [Roux-módszer formulagyűjteményében](/zh/projects/rubiks-cube/roux). Ha elakadsz, térj vissza ide és nézz utána.
+Az összes algoritmust és esetet rendszereztem a [Roux módszer algoritmusgyűjteményben](/hu/projects/rubiks-cube/roux). Ha elakadsz, térj vissza ide és nézd meg.
 
 A Rubik-kocka világa végtelenül szórakoztató, jó szórakozást kívánok!
 
 ## 1. melléklet: Gyakorlási lista szakaszok szerint
 
-**1. szakasz (> 60 másodperc)**
+**Első szakasz (> 60 másodperc)**
 
-- Rögzített megfigyelési pozíció, a teljes kirakás során ne forgasd a kockát
-- Megállás nélkül találd meg a következő kívánt színt
-- Lassú forgatás, mondd ki az egyes lépések célját
-- Csak a bal hidat gyakorold, ismételd 50-szer
+-   Fixált megfigyelési pozíció, a teljes kirakás során ne forgasd a kockát
+-   Megállás nélkül találd meg a következő kívánt színt
+-   Lassú gyakorlás, minden lépésnél mondd ki a szándékot
+-   Csak az első blokkot gyakorold, ismételd meg 50-szer
 
-**2. szakasz (60 → 40 másodperc)**
+**Második szakasz (60 → 40 másodperc)**
 
-- A jobb hídhoz csak R, r, M, U mozdulatokat használj, ne érintsd a bal hidat
-- Kétszakaszos CMLL gyakorlatok
-- M' U M' U ritmusgyakorlat, naponta 5 perc
+-   A második blokkot (SB) csak R, r, M, U mozdulatokkal építsd, ne érintsd az első blokkot (FB)
+-   Kétlépcsős CMLL gyakorlás
+-   M' U M' U ritmus gyakorlása, napi 5 perc
 
-**3. szakasz (40 → 30 másodperc)**
+**Harmadik szakasz (40 → 30 másodperc)**
 
-- Amikor a CMLL elkészült, állj meg, és egy pillantással mondd meg a rossz élek számát
-- Lassú forgatás + előrelátás: a szemed mindig a következő blokkot nézze
-- Naponta legalább 20 minőségi kirakás
+-   CMLL végéig csináld, majd állj meg, egy pillantással mondd meg a rossz orientációjú élek számát
+-   Lassú gyakorlás + look-ahead: a szemed mindig a következő elemen legyen
+-   Naponta legalább 20 minőségi kirakás
 
-**4. szakasz (< 30 másodperc)**
+**Negyedik szakasz (< 30 másodperc)**
 
-- Készíts videókat a megakadások megtalálásához
-- Technikák: R U R' U' egyujjas technika, M-réteg gyűrűsujjal
-- Naponta 20 minőségi kirakás, ne csak a mennyiséget hajszold
+-   Videófelvétel készítése a megakadások felkutatására
+-   Ujjtechnikák: R U R' U' single finger trick, M-réteg gyűrűsujjal
+-   Naponta 20 minőségi kirakás, ne halmozd a mennyiséget
 
 ## 2. melléklet: Eszközök
 
-- **csTimer**: [cstimer.net](https://cstimer.net/). Nyisd meg az Ao5 / Ao12 / Ao100 statisztikákat, az Ao100 mutatja a valódi szintedet, az egyedi eredmények szerencse dolga.
-- **3D Rubik-kocka**: [philoli.com/zh/projects/rubiks-cube](/zh/projects/rubiks-cube/). A cikkben szereplő összes formula beírható ide, és megnézhető az animáció.
-- **Roux-módszer kezdőbarát formulagyűjtemény**: [philoli.com/zh/projects/rubiks-cube/roux](/zh/projects/rubiks-cube/roux). A bal és jobb hidak gyakori beillesztési mintái, a kétszakaszos CMLL 9 formulája, az LSE összes esete (EO, UL/UR, utolsó négy él). Minden lap megnyitható a 3D Rubik-kockában, automatikusan elrejti a nem releváns blokkokat, és kiemeli a mozgatandó éleket.
-- **csTimer edzés elemző**: [philoli.com/zh/projects/rubiks-cube/analyzer](/zh/projects/rubiks-cube/analyzer). Húzd be a csTimer exportált fájlját, és megnézheted az eredményeid alakulását, az Ao5/Ao12/Ao100 görbéket, a PB (személyes legjobb) előrehaladását, a mérföldkő táblázatot (mikor érted el először a sub-60, sub-40, sub-30 időt) és a Power Law gyakorlási görbét. A cikkben szereplő összes kép innen származik. Az adatok csak a böngésződben kerülnek feldolgozásra, nem töltődnek fel. Ha nincs exportált fájlod, betöltheted az én 4441 adatomat, hogy lásd a hatást.
+-   **csTimer**: [cstimer.net](https://cstimer.net/). Kapcsold be az Ao5 / Ao12 / Ao100 statisztikát, az Ao100 mutatja a valós szintedet, az egyéni idők a szerencsét.
+-   **3D Kocka**: [philoli.com/zh/projects/rubiks-cube](/hu/projects/rubiks-cube/). Az összes algoritmus beírható ide, és megnézheted az animációt.
+-   **Roux módszer kezdőbarát algoritmusgyűjtemény**: [philoli.com/zh/projects/rubiks-cube/roux](/hu/projects/rubiks-cube/roux). Az első blokk (FB), második blokk (SB) gyakori beillesztési mintái, a kétlépcsős CMLL 9 algoritmusa, az LSE összes esete (EO, UL/UR, utolsó négy élél). Minden oldal megnyitható a 3D kockában, automatikusan elrejti a lényegtelen kockákat, és kiemeli a mozgó éleket.
+-   **csTimer edzés elemző**: [philoli.com/zh/projects/rubiks-cube/analyzer](/hu/projects/rubiks-cube/analyzer). Húzd be a csTimerből exportált fájlt, és máris láthatod a saját eredményeid alakulását, az Ao5/Ao12/Ao100 görbéket, a PB-k javulását, a mérföldkő táblázatot (mikor volt az első sub-60, sub-40, sub-30) és a Power Law gyakorlási görbét. A cikkben szereplő összes kép innen származik. Az adatok csak a böngésződben kerülnek feldolgozásra, nem kerülnek feltöltésre. Ha nincs exportált fájlod, betöltheted az én 4441 adatomat, hogy lásd a hatást.
 
-*Ez a cikk Amazon affiliate linkeket tartalmaz: ha a linken keresztül vásárolsz, kis jutalékot kapok, miközben az ár számodra változatlan marad.*
+*Ez a cikk Amazon affiliate linkeket tartalmaz: a linkeken keresztül történő vásárlás esetén kis jutalékot kapok, de az árad nem változik.*
 
 ## További olvasnivaló
 
-- [Hogyan rakd ki a Rubik-kockát formulák nélkül: gyerekeknek is érthető](/zh/blog/solve-rubiks-cube-without-formulas)
+-   [Hogyan rakd ki a Rubik-kockát algoritmusok memorizálása nélkül: Akár egy kisiskolás is megérti](/hu/blog/solve-rubiks-cube-without-formulas)

@@ -1,278 +1,280 @@
 ---
 layout: blog
-title: "Paano Makapag-Rubik's Cube sa Ilalim ng 30 Segundo Nang Hindi Nagkakabisado ng Formula: Madaling Intindihin, Kahit ng mga Mag-aaral sa Elementarya"
+title: "Paano Makapasok sa sub-30 sa Rubik's Cube Nang Hindi Nagme-memorize ng Algorithm: Maiintindihan Kahit ng Elementary Student"
 date: 2026-10-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - Roux方法
-  - 速拧
-  - 刻意练习
+  - Rubik's Cube
+  - Tutorial
+  - Roux Method
+  - Speedcubing
+  - Deliberate Practice
 categories: 日常折腾
-description: "Mula sa unang pagkakataon na nabuo ko ang cube hanggang sa Ao100 na nakapasok sa 30 segundo, tumagal lang ng 89 na araw, at wala akong sinasaulong formula ng CFOP. Gamit ang datos mula sa 4441 na beses na pagbuo na may timer, susuriin natin ang apat na yugto: kung saan ka kadalasang nahihirapan, anong dapat mong sanayin, at kung bakit hindi kailangan ng Roux method ang pagsasaulo ng formula."
+description: "Mula sa unang solve hanggang sa Ao100 na sub-30, tumagal ng 89 na araw, nang hindi nagmememorya ng kahit isang CFOP algorithm. Gamit ang 4441 data ng solve time, hatiin natin sa apat na yugto: kung saan ka natigil, ano ang dapat i-practice sa bawat yugto, at bakit hindi kailangan ng algorithm sa Roux method."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Mula 165 Segundo Hanggang 28 Segundo: Ang Apat na Yugto" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Ang apat na yugto mula 165 segundo hanggang 28 segundo" />
 </figure>
 
-*Larawan: Mula 165 segundo hanggang 28 segundo: Ang apat na yugto. Pinakamabilis ang pagbaba sa Yugto Dalawa, habang ang Yugto Tatlo ang pinakamahabang plateau.*
+*Larawan: Ang apat na yugto mula 165 segundo hanggang 28 segundo. Ang Yugto Dos ang pinakamabilis na bumaba, at ang Yugto Tres ang pinakamahabang plateau phase.*
 
-Sa nakaraang blog post na [《Paano Makapag-Rubik's Cube Nang Hindi Nagsasaulo ng Formula》](/zh/blog/solve-rubiks-cube-without-formulas/), natutunan mo kung paano buuin ang isang Rubik's Cube gamit ang lohika ng 'commutator', nang hindi kailangang magsaulo ng anumang formula. Maraming humanga at nagbigay ng positibong feedback sa artikulong iyon.
+Sa nakaraang [《Paano Mag-solve ng Rubik's Cube Nang Hindi Nagme-memorize ng Algorithm》](/fil/blog/solve-rubiks-cube-without-formulas/), natutunan mo kung paano buuin ang isang Rubik's Cube gamit ang lohika ng commutators, nang hindi nagme-memorize ng algorithm. Maraming nagbigay ng magandang feedback sa artikulong iyon.
 
-Kung sinubukan mo 'yon, malamang ngayon ay nabubuo mo na ang cube, kahit pa umaabot ka pa ng dalawa o tatlong minuto at medyo kinakabahan. Pero pagkatapos niyan, may lilitaw na bagong tanong: paano bumilis?
+Kung sinunod mo ang mga instructions, marahil ay tumatagal ka ngayon ng dalawa hanggang tatlong minuto para buuin ang cube, medyo magulo pa ang mga galaw, pero nagagawa mo nang i-solve. Pagkatapos nito, may bagong tanong na lilitaw: Paano bumilis?
 
-Kung hahanapin mo ang "speedcubing ng Rubik's Cube", iisa lang ang sasabihin sa iyo ng lahat ng tutorial: kung gusto mong makabuo sa loob ng 30 segundo, kailangan mong kabisaduhin ang mga formula ng CFOP. May 41 na formula para sa F2L, 57 para sa OLL, at 21 para sa PLL – sa kabuuan, 119 na formula. Kahit pa gawin mo ang F2L nang intuitive, hindi mo pa rin maiiwasan ang 78 na formula para sa pinakataas na layer. Kung hindi mo makabisado, huwag mo nang isipin na bibilis ka.
+Kapag nag-search ka ng "speedcubing", iisa lang ang sasabihin sa iyo ng lahat ng tutorial: kung gusto mong makapasok sa sub-30, kailangan mong imemorya muna ang mga CFOP algorithm. 41 para sa F2L, 57 para sa OLL, 21 para sa PLL — 119 algorithm sa kabuuan. Kahit pa gawin mo ang F2L nang intuitive, hindi mo pa rin maiiwasan ang 78 sa top layer. Kung hindi mo ma-memorize, huwag mo nang isipin na bibilis ka.
 
-Ang blog post na ito ay nandito para sabihin sa iyo na, kaya mong makabuo sa loob ng 30 segundo nang hindi kinakailangang magsaulo ng anumang formula.
+Gusto kong sabihin sa iyo sa artikulong ito na posible kang makapasok sa sub-30 kahit hindi ka magme-memorize ng kahit anong algorithm.
 
 <!--more-->
 
-Mula nang una kong mabuo ang Rubik's Cube noong Mayo 7, 2026, hanggang sa Ao100 na nakapasok sa 30 segundo noong Agosto 4, tumagal ako ng 89 na araw. Sa buong panahong iyon, wala akong sinasaulong kahit isang formula ng CFOP; ginugol ko lang ang aking libreng oras sa paglalaro. Ito ang datos mula sa 4441 na beses na pagbuo na may timer na naitala ko.
+Mula nang una kong ma-solve ang Rubik's Cube noong Mayo 7, 2026, hanggang sa maabot ko ang Ao100 na sub-30 noong Agosto 4, tumagal ito ng 89 na araw. Sa panahong iyon, wala akong ni isang CFOP algorithm na minemorya; naglaro lang ako sa aking libreng oras. Ito ang naitala kong data mula sa 4441 na solve.
 
-![4441 na Beses na Curve ng Pag-solve](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
+![Performance curve ng 4441 na solve](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
-*Larawan: Curve ng oras ng pagbuo sa 4441 na beses. Ang kulay abong linya ay ang bawat oras ng pagbuo, ang madilim na linya ay ang trend ng Ao100, at ang pulang tuldok ay ang mga beses na na-break ang personal best. Ang pinakamahusay na Ao100 ay 28.22 segundo.*
+*Larawan: Performance curve ng 4441 na solve. Ang kulay abong linya ay ang oras sa bawat solve, ang madilim na linya ay ang trend ng Ao100, at ang pulang tuldok ay ang mga pagkakataong nag-set ako ng bagong personal best. Ang pinakamahusay na Ao100 ay 28.22 segundo.*
 
-Sa pamamagitan ng sadyang at aktibong pag-eensayo, at pagpapanatili ng regular na paglalaro, sinuman ay kayang makamit ang sub-30 mula sa pagiging baguhan sa loob lang ng ilang buwan.
+Sa pamamagitan ng sinasadya at tuloy-tuloy na pag-practice, at pagpapanatili ng dalas ng practice, kahit sino ay maaaring makamit ang sub-30 mula sa pagiging baguhan sa loob lamang ng ilang buwan.
 
-Ano ba ang ibig sabihin ng makabuo sa loob ng 30 segundo? Sa [unang World Rubik's Cube Championship noong 1982](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship), ang champion ay nakapagbuo sa loob ng 22.95 segundo, na kinilala kalaunan ng WCA bilang kauna-unahang opisyal na world record; ang ika-10 puwesto naman ay may oras na 29.11 segundo, at ang nakakuha nito ay walang iba kundi si Jessica Fridrich mismo, ang imbentor ng CFOP na tatalakayin natin sa susunod na bahagi. Sa madaling salita, ang sub-30 na makakamit ng isang amateur ngayon sa loob lang ng ilang buwan ay kayang makapasok sa top ten sa mundo noong 1982.
+Ano ang ibig sabihin ng sub-30? Sa [unang World Rubik's Cube Championship noong 1982](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship), ang championship time ay 22.95 segundo, na kinilala rin ng WCA bilang kauna-unahang opisyal na world record; ang ika-10 puwesto ay 29.11 segundo, at ang nakakuha ng oras na ito ay si Jessica Fridrich mismo, ang imbentor ng CFOP na tatalakayin natin sa susunod na seksyon. Sa madaling salita, ang sub-30 na nakukuha ng isang amateur ngayon sa loob ng ilang buwan ng pag-practice ay sapat na para makapasok sa top ten sa mundo noong 1982.
 
-Ngayon, ibabahagi ko sa iyo kung paano ko ito unti-unting nakamit, at ibibigay ko sa iyo ang kumpletong pamamaraan ng pag-eensayo.
+Ngayon, ibabahagi ko sa iyo kung paano ko ito unti-unting nakamit, at ibibigay ko sa iyo ang kumpletong set ng mga paraan ng pag-practice.
 
-## Bakit Nagsasaulo ng Formula ang Lahat sa Mundo ng Speedcubing?
+## Bakit Lahat ng Speedcubing World ay Nagme-memorize ng Algorithm
 
-Linawin muna natin ang isang bagay: bakit magkadugtong ang "bilis" at "pagsasaulo ng formula" sa isip ng maraming tao?
+Unawain muna natin ito: Bakit magkasama sa isip ng mga tao ang "bilis" at "pagme-memorize ng algorithm"?
 
-Noong unang bahagi ng 1980s, binuo ng propesor na si Jessica Fridrich (na kalaunan ay nag-aral ng digital forensics sa Binghamton University sa USA) ang isang layered solution method na tinawag kalaunan na CFOP (Cross, F2L, OLL, PLL). Ang ideya ng pamamaraang ito ay simple: ilista ang lahat ng posibleng sitwasyon para sa pinakataas na layer, at bigyan ng pinakamainam na formula ang bawat sitwasyon. Kapag nakilala mo ang sitwasyon, isasagawa mo lang ang formula, nang hindi na kailangang mag-isip.
+Noong unang bahagi ng 1980s, inayos ng propesor na si Jessica Fridrich (isang Czech na kalaunan ay nag-aral ng digital forensics sa Binghamton University sa Estados Unidos) ang isang layer-by-layer method na tinawag kalaunan na CFOP (Cross, F2L, OLL, PLL). Ang ideya sa likod ng method na ito ay: ilista ang lahat ng posibleng sitwasyon para sa top layer, at bigyan ang bawat sitwasyon ng pinakamahusay na algorithm. Kilalanin mo ang sitwasyon, gawin ang algorithm, at hindi mo na kailangan pang mag-isip.
 
-![Jessica Fridrich at ang kanyang Rubik's Cube sa kanyang opisina](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
+![Si Jessica Fridrich at ang Rubik's Cube sa kanyang opisina](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
 
-*Larawan: Si Jessica Fridrich at ang kanyang Rubik's Cube sa kanyang opisina. Noong 1982, nakuha niya ang ika-10 puwesto sa unang World Championship na may oras na 29.11 segundo. Ang CFOP ay ipinangalan sa kanya (Fridrich Method).*
+*Larawan: Si Jessica Fridrich at ang Rubik's Cube sa kanyang opisina. Noong 1982, nakakuha siya ng 29.11 segundo para sa ika-10 puwesto sa unang World Championship, at ipinangalan sa kanya ang CFOP (Fridrich Method).*
 
-Napakabilis ng pamamaraang ito. Halos lahat ng world records ay nakamit gamit ang CFOP. Kaya, lahat ng tutorial ay ito ang itinuturo, lahat ng video ay ito ang tinatalakay, at ang "pag-aaral ng speedcubing" ay naging katumbas ng "pag-aaral ng CFOP", na siya namang katumbas ng pagsasaulo ng 119 na formula.
+Napakabilis ng method na ito. Halos lahat ng world records ay nakukuha sa pamamagitan ng CFOP. Kaya lahat ng tutorial ay nagtuturo nito, lahat ng video ay nagpapaliwanag nito. Ang "pag-aaral ng speedcubing" ay naging "pag-aaral ng CFOP," at ang pag-aaral ng CFOP ay naging pagme-memorize ng 119 algorithm.
 
-Ngunit tandaan, ang "pagsasaulo ng formula" ay isang katangian ng CFOP method, hindi ng "bilis" mismo. Kailangang kabisaduhin ang CFOP dahil pinili nito ang paraan ng "exhaustion" o paglilista ng lahat ng posibleng sitwasyon. Ang paglilista ng lahat ay nangangailangan ng memorya, at iyon ang kapalit.
+Ngunit tandaan, ang "pagme-memorize ng algorithm" ay isang katangian ng CFOP method, hindi isang katangian ng "bilis" mismo. Kailangang i-memorize ang CFOP dahil pinili nito ang exhaustive approach. Kailangan ng memorya sa exhaustive approach; ito ang presyo na binabayaran nito.
 
-Mayroon bang paraan na hindi gumagamit ng "exhaustion"? Mayroon.
+Mayroon bang method na hindi gumagamit ng exhaustive approach? Mayroon.
 
-## Ang Solusyon Nang Hindi Nagsasaulo ng Formula: Roux Bridge Method
+## Ang Method na Hindi Kailangan ng Algorithm: Roux Method
 
-Noong 2003, inilabas ng Frenchman na si Gilles Roux ang isang ganap na naiibang diskarte. Hindi ito pagpapatong-patong ng layer, kundi pagbuo muna ng dalawang 1×2×3 "tulay" sa kaliwa at kanan, pagkatapos ay pag-aasikaso ng apat na sulok sa tuktok na layer, at sa huli ay ang natitirang anim na edge pieces, na tinatapos gamit ang pag-ikot ng M (middle layer) at U (top layer).
+Noong 2003, ipinakilala ng Pranses na si Gilles Roux ang isang ganap na naiibang diskarte. Hindi ito layer-by-layer, kundi sa halip ay nagsisimula sa pagtatayo ng dalawang 1×2×3 "blocks" sa kaliwa at kanan (First Block at Second Block), pagkatapos ay inaayos ang apat na corner piece sa top layer (CMLL), at sa huli ay ang anim na edge piece na lamang ang natitira (LSE), na tinatapos gamit ang M-slice at U-layer turns.
 
-![Si Gilles Roux sa kompetisyon](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
+![Si Gilles Roux sa isang kompetisyon](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
 
-*Larawan: Si Gilles Roux sa isang kompetisyon. Kinuha mula sa isang lumang video ng kompetisyon, na inayos at pinalaki gamit ang AI.*
+*Larawan: Si Gilles Roux sa isang kompetisyon. Kuha mula sa lumang video ng kompetisyon, na inayos at pinalaki gamit ang AI.*
 
-Sa nakaraang post, nabuo na natin ito gamit ang balangkas na ito. Tingnan natin muli ang apat na hakbang nito, at sa pagkakataong ito, tutukan natin kung "ano ang kailangang tandaan sa bawat hakbang":
+Sa nakaraang artikulo, ginamit na natin ang balangkas na ito para sa isang solve. Tingnan ulit natin ang apat na hakbang nito, at sa pagkakataong ito, tutukan natin ang "ano ang kailangan mong tandaan sa bawat hakbang":
 
-| Hakbang | Nilalaman | Formula na Kailangang Kabisaduhin |
+| Hakbang | Nilalaman | Bilang ng Algorithms na Kailangang I-memorize |
 | --- | --- | --- |
-| 1. Left Block | Buuin ang isang 1×2×3 block | 0, puro obserbasyon lang |
-| 2. Right Block | Buuin ang isa pa nang simetriko | 0, puro obserbasyon lang |
-| 3. CMLL | Ayusin ang apat na sulok sa tuktok na layer | 9, lahat ay maaaring makuha mula sa 3-cycle |
-| 4. LSE | Huling anim na edge pieces | 0, gamit lang ang pag-ikot ng top layer at middle layer (M at U) |
+| 1. First Block (FB) | Buuin ang isang 1×2×3 block | 0, puro observation |
+| 2. Second Block (SB) | Buuin ang isa pang block na simetriko sa nauna | 0, puro observation |
+| 3. CMLL | Ayusin ang apat na corner piece ng top layer | 9, lahat ay maaaring makuha mula sa 3-cycle |
+| 4. LSE | Ang huling anim na edge piece | 0, U-layer at M-slice turns lang ang ginagamit |
 
-Sa apat na hakbang, tatlo ay hindi nangangailangan ng anumang formula. Ang tanging kailangan ay sa CMLL, na may kabuuang 42 na sitwasyon, ngunit hindi mo kailangan ang 42 na formula. Ang 3-cycle ng corner pieces na tinalakay sa nakaraang post, ang R U' L' U R' U' L U, kasama ang mirror nito at ilang variants, ay sapat na para sakupin ang lahat ng sitwasyon, bagama't medyo mas mabagal.
+Sa apat na hakbang, tatlo ang hindi nangangailangan ng anumang algorithm. Ang tanging kailangan ay CMLL, na may 42 na sitwasyon sa kabuuan, ngunit hindi mo kailangan ng 42 algorithm. Ang 3-cycle ng corner pieces na R U' L' U R' U' L U na tinalakay sa nakaraang artikulo, kasama ang mirror nito at ilang variants, ay sapat na para masakop ang lahat ng sitwasyon, kahit na medyo mas mabagal.
 
 ![Ang apat na hakbang ng Roux](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/05-roux-four-steps.webp)
 
-*Larawan: Ang apat na hakbang ng Roux, kung saan ipinapakita lamang ang mga piraso na nasa tamang posisyon pagkatapos ng bawat hakbang: Left Block → Right Block → CMLL (apat na sulok sa tuktok) → LSE (huling anim na edge). Kinuha mula sa "Solution" panel ng aking 3D Rubik's Cube page.*
+*Larawan: Ang apat na hakbang ng Roux. Ipinapakita lang sa bawat hakbang ang mga piraso na naitama na: First Block → Second Block → CMLL (apat na corner sa top layer) → LSE (huling anim na edge). Kuha mula sa panel ng "Solutions" sa aking 3D Rubik's Cube page.*
 
-Ito ang dahilan kung bakit hindi kailangan ng Roux ng pagsasaulo ng formula: siniksik nito ang bahagi na kailangan ng memorya sa isang maliit na sulok, at ang natitira ay ibinigay sa obserbasyon, pag-unawa, at kasanayan.
+Ito ang dahilan kung bakit hindi kailangan ng algorithm sa Roux method: siniksik nito ang bahagi na nangangailangan ng memorya sa isang maliit na sulok, at ang natitira ay nakasalalay lahat sa observation, pag-unawa, at kasanayan.
 
-## Mula 165 Segundo Hanggang 28 Segundo: Ang Apat na Yugto
+## Mula 165 Segundo Hanggang 28 Segundo: Apat na Yugto
 
-Narito ang tunay na landas na tinahak ko. Para sa bawat yugto, ginamit ko ang data upang markahan ang simula at wakas, at ipinaliwanag kung saan ako nahirapan at ano ang aking isinagawa. Maaaring iba ang iyong pinaghihirapan sa akin, ngunit malamang na pareho ang pagkakasunod-sunod.
+Narito ang tunay na landas na tinahak ko. Ang bawat yugto ay nilagyan ko ng data ng simula at pagtatapos, at pagkatapos ay ipinaliwanag ko kung saan ako nahihirapan at ano ang aking pinraktis. Maaaring iba ang iyong mga pinaghihirapan, ngunit malamang na pareho ang pagkakasunud-sunod.
 
-![Tagal ng Apat na Yugto](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
+![Ang haba ng bawat yugto](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
-*Larawan: Ang tagal ng apat na yugto. Yugto Isa ay 3 linggo, Yugto Dalawa ay 11 araw, Yugto Tatlo ay dalawang buwan, at Yugto Apat ay hanggang ngayon.*
+*Larawan: Ang haba ng bawat yugto. Tatlong linggo sa Yugto Uno, 11 araw sa Yugto Dos, dalawang buwan sa Yugto Tres, at patuloy pa rin ang Yugto Kwatro.*
 
-### Yugto Isa: 165 Segundo → 60 Segundo (Ika-1–3 Linggo)
+### Yugto Uno: 165 Segundo → 60 Segundo (Linggo 1–3)
 
-**Datos**: Mayo 7 hanggang Mayo 27. Ang average sa unang linggo ay 165 segundo, at sa ikatlong linggo ay 68 segundo.
+**Data**: Mayo 7 hanggang Mayo 27. Ang average ko sa unang linggo ay 165 segundo, at sa ikatlong linggo ay 68 segundo.
 
-**Saan Nahihirapan**: Ang Left Block ay napakabagal pa, matagal hanapin ang bawat set ng kulay. At kapag nakakita na ng isang set, madalas huminto ang mga baguhan upang magpatuloy sa pagmamasid.
+**Saan ka nahihirapan**: Napakabagal sa First Block (FB); matagal hanapin ang bawat corner-edge pair. Pagkatapos makahanap ng isang pair, kadalasan ay humihinto ang mga baguhan para magpatuloy sa pagmamasid.
 
-![Saan Ginugugol ang Oras ng mga Baguhan](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
+![Saan napupunta ang oras ng isang baguhan](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
 
-*Larawan: Saan ginugugol ang oras ng mga baguhan. Nakahinto ang kamay, at ang mata ay paikot-ikot sa Rubik's Cube; mas matagal ang oras na ginugugol sa "paghahanap" kaysa sa "pag-ikot."*
+*Larawan: Saan napupunta ang oras ng isang baguhan. Nakahinto ang kamay, naghahanap ang mata sa cube, at ang oras sa "paghahanap" ay mas mahaba kaysa sa "pagpihit."*
 
-**Ano ang Sanayin**:
+**Ano ang dapat i-practice**:
 
-Ang pinakamalaking kalaban sa yugtong ito ay hindi ang mabagal na kamay, kundi ang mabagal na mata. Mas matagal ang oras na ginugugol mo sa "paghahanap" kaysa sa oras na ginugugol mo sa "pag-ikot". Kaya:
+Ang pinakamalaking kalaban sa yugtong ito ay hindi ang mabagal na kamay, kundi ang mabagal na mata. Ang oras na ginugugol mo sa "paghahanap" ay mas marami kaysa sa oras na ginugugol mo sa "pagpihit." Kaya:
 
-- Panatilihin ang nakapirming posisyon ng pagmamasid, huwag paikutin ang Rubik's Cube. Tulad ng nabanggit sa nakaraang post, ang anggulo ng pagmamasid sa Roux ay nakapirmi. Sa yugtong ito, kailangang maging muscle memory ang "hindi pag-ikot ng Rubik's Cube". Sa tuwing gugustuhin mong paikutin ang Rubik's Cube, huminto, at tanungin ang sarili: makikita ko ba ang piraso na kailangan ko mula sa anggulong ito?
-- Dahan-dahang paikutin (Slow turning). Huwag gumamit ng timer, ngunit ang mga galaw ay dapat na tuloy-tuloy at walang paghinto. Bawat galaw ay maaaring napakabagal, ngunit walang paghinto. Ang esensya ay habang ginagawa ng kamay ang nakaraang galaw, ang mata ay dapat nakatuon sa susunod na galaw. Ito ang puso ng slow turning. Mukha itong pagbagal, ngunit sa katunayan ay sinasanay nito ang iyong mata na makita ang relasyon sa pagitan ng posisyon ng piraso at kung saan ito dapat pumunta.
-- Sanayin lang ang First Block. I-scramble, buuin ang Left Block, i-scramble ulit, buuin ulit ang Left Block. Huwag magpatuloy sa susunod na hakbang. Ang First Block ang pinakamalaking kalayaan sa Roux, at ito rin ang pinakamahusay na hakbang para sanayin ang obserbasyon.
+-   **Panatilihin ang isang nakapirming anggulo ng pagtingin, huwag i-rotate ang cube.** Tulad ng nabanggit sa nakaraang artikulo, ang Roux method ay may nakapirming anggulo ng pagmamasid. Sa yugtong ito, gawing muscle memory ang "huwag i-rotate ang cube." Sa tuwing gusto mong i-rotate ang cube, huminto, at tanungin ang sarili: Makita ko ba ang piraso na kailangan ko mula sa anggulong ito?
+-   **Slow solving.** Huwag mag-timer, ngunit ang mga galaw ay dapat tuloy-tuloy, walang anumang paghinto. Maaaring napakabagal ng bawat galaw, ngunit walang paghinto. Ang susi ay habang ginagawa ng kamay ang nakaraang galaw, ang mata ay dapat nakatuon na sa susunod na galaw. Ito ang core ng slow solving. Parang nagpapabagal ka, ngunit sa totoo lang, sinasanay mo ang iyong mga mata na makita ang relasyon sa pagitan ng posisyon ng piraso at kung saan ito dapat pumunta.
+-   **First Block (FB) lang ang i-practice.** I-scramble, buuin ang FB, i-scramble ulit, buuin ulit ang FB. Huwag magpatuloy sa susunod na hakbang. Ang FB ang pinakamalaking kalayaan sa Roux, at ito rin ang pinakamahusay na paraan para sanayin ang observation.
 
-Huwag matuto ng anumang bagong formula sa yugtong ito. Ang iyong bottleneck ngayon ay wala sa formula.
+Huwag matuto ng anumang bagong algorithm sa yugtong ito. Hindi ang algorithm ang iyong bottleneck ngayon.
 
-### Yugto Dalawa: 60 Segundo → 40 Segundo (Ika-4–5 Linggo)
+### Yugto Dos: 60 Segundo → 40 Segundo (Linggo 4–5)
 
-**Datos**: Mayo 27 hanggang Hunyo 7, 11 araw. Ito ang pinakamabilis na pagbaba sa buong proseso, at ito rin ang pinakamaraming beses na nag-ensayo ako, 723 beses sa unang linggo ng Hunyo.
+**Data**: Mayo 27 hanggang Hunyo 7, 11 araw. Ito ang pinakamabilis na pagbaba sa buong proseso, at ito rin ang yugto kung saan ako pinakamaraming nag-practice, 723 na solves noong unang linggo ng Hunyo.
 
-**Saan Nahihirapan**: Hindi tuloy-tuloy ang mga galaw. Nagkakaroon ng paghinto ang Rubik's Cube.
+**Saan ka nahihirapan**: Hindi tuloy-tuloy ang mga galaw. Nag-stuck ang cube.
 
-**Ano ang Sanayin**:
+**Ano ang dapat i-practice**:
 
-Sa yugtong ito, kailangan mong i-optimize ang mga galaw sa bawat yugto, at batay sa pag-unawa, dagdagan ang kasanayan sa bawat galaw.
+Sa yugtong ito, kailangan mong i-optimize ang mga galaw sa bawat yugto. Sa batayan ng pag-unawa, dagdagan ang kasanayan sa bawat galaw.
 
-- Second Block. Mas mahirap ang Second Block kaysa First Block dahil kalahati na lang ang espasyo, at hindi mo pwedeng sirain ang nabuo nang Left Block. Ang mahahalagang pag-ikot ay R, r (kanang dalawang layer), M, U. Sa yugtong ito, kailangan mong matutunan kung paano gamitin ang r at M upang palitan ang R sa paglipat ng mga piraso, upang hindi masira ang Left Block. Ang pag-optimize ng mga galaw ay pagtitipid ng oras. Halimbawa, ang tatlong beses na pag-ikot nang clockwise ay katumbas ng isang beses na pag-ikot nang counter-clockwise.
-- Sanayin ang paggamit ng M layer. Ang huling hakbang ng Roux ay puro M at U, at ang kinis ng pag-ikot ng M layer ang direktang nagtatakda ng iyong minimum na bilis. Gamitin ang ring finger o middle finger para itulak ang M, at simulan ang pag-eensayo ng ritmo na M' U M' U.
-- CMLL pattern recognition. Sa nakaraang post, ginamit natin ang 3-cycle upang "subukan" ang apat na sulok. Ngayon, kailangan nating simulan ang pagtingin muna bago gawin: bago i-flip ang top layer, tingnan ang dilaw na oryentasyon ng apat na sulok, at tukuyin kung 0, 1, 2, o 4 ang "good corners", pagkatapos ay gawin agad ang kaukulang galaw. Maaari ka ring gumamit ng napakakaunting formula upang makamit ang malaking pagtaas sa kahusayan, na napaka-sulit. Karamihan sa mga formula ay hindi nangangailangan ng pagsasaulo; unawain habang ginagawa.
+-   **Second Block (SB).** Mas mahirap ang SB kaysa sa FB, dahil kalahati na lang ang espasyo, at hindi mo maaaring sirain ang nakumpletong FB. Ang mga pangunahing galaw ay R, r (kanang dalawang layer), M, U. Sa yugtong ito, kailangan mong matutong gumamit ng r at M sa halip na R para ilipat ang mga piraso, para hindi masira ang FB. Ang pag-optimize ng mga hakbang ay pagtitipid ng oras. Halimbawa, ang tatlong clockwise turns ay katumbas ng isang counter-clockwise turn.
+-   **Sanayin ang paggamit ng M-slice.** Ang huling hakbang ng Roux ay puro M at U, kaya ang kadalian ng pagpihit ng M-slice ang direktang nagtatakda ng iyong minimum na oras. Gamitin ang ring finger o middle finger para itulak ang M, at simulan ang pag-practice ng ritmo tulad ng M' U M' U.
+-   **CMLL pattern recognition.** Sa nakaraang artikulo, "sinubukan" natin ang apat na corner gamit ang 3-cycle. Ngayon, kailangan mong simulan ang pagtingin muna bago gawin: bago i-rotate ang top layer, tingnan ang oryentasyon ng dilaw sa apat na corner, at tukuyin kung 0, 1, 2, o 4 ang "good corners" (tamang oryentasyon), pagkatapos ay direktang gawin ang kaukulang galaw. Maaari ka ring magkaroon ng malaking pagtaas ng efficiency sa pamamagitan ng napakakaunting algorithm, na napakakapaki-pakinabang. Karamihan sa mga algorithm na ito ay hindi kailangan ng purong memorization; intindihin mo habang ginagawa.
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="Pananaw sa pagbuo ng Right Block" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="Ang view kapag nagtatayo ng Second Block" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/08-m-prime-u-m.webp" alt="M' U M" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
 </div>
 
-*Larawan kaliwa: Pananaw sa pagbuo ng Right Block. Tapos na ang Left Block, at gamit lang ang apat na pag-ikot ng R, r, M, U, ipasok ang mga corner at edge sa kanang bahagi, nang hindi kailanman sinasaling ang Left Block. Larawan kanan: M' U M, isa sa mga pinakamadalas gamitin na galaw sa ikalawang kalahati ng Roux. Ang pagtaas ng middle layer, isang pag-ikot ng top layer, at pagbaba ng middle layer ay tatlong hakbang upang palitan ang isang pares ng edge sa top at middle layer.*
+*Larawan kaliwa: Ang view kapag nagtatayo ng Second Block (SB). Tapos na ang First Block (FB), at gagamitin lang ang R, r, M, U para ipasok ang corner-edge pair sa kanan, hindi kailanman matatamaan ang FB. Larawan kanan: M' U M, ang pinakamadalas gamitin na set ng galaw sa pangalawang kalahati ng Roux. Ang M-slice ay itataas, iikot ang top layer, ibabalik ang M-slice. Tatlong hakbang para palitan ang isang pares ng edge sa top layer at M-slice.*
 
-Maaari mong tingnan ang [Roux Method formula library](/zh/projects/rubiks-cube/roux#cmll) na inayos ko. Ang pahina ng CMLL ay two-step: 7 orientation formulas + 2 position formulas, sa kabuuan ay 9 na formula. Ito ang pinakamahusay na pagpipilian para sa pagtaas ng bilis, madaling matutunan, at bawat set na master mo ay maaaring magpabilis ng 1-2 segundo. Sa kaunting pagsasanay, mabilis kang magiging bihasa, at ang ilan ay naipakilala na sa nakaraang artikulo; hindi mo kailangang kabisaduhin ang lahat upang makapasok sa 30 segundo.
+Maaari mong tingnan ang aking ginawang [Roux Method Algorithm Database](/fil/projects/rubiks-cube/roux#cmll). Ang pahina ng CMLL ay may dalawang bahagi: 7 algorithms para sa orientation + 2 algorithms para sa permutation, sa kabuuan ay 9. Ito ang pinaka-cost-effective na paraan para bumilis, at madaling matutunan. Ang bawat set na master mo ay makakapagpabilis ng 1-2 segundo. Sa kaunting practice, mabilis mong makakasanayan; ang ilan ay naipakita na sa nakaraang artikulo, at hindi mo kailangang imemorya lahat para makapasok sa sub-30.
 
-![Unang Hakbang ng Two-step CMLL, pitong oryentasyon ng corner pieces](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
+![Unang hakbang ng two-phase CMLL, pitong oryentasyon ng corner piece](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
-*Larawan: Unang Hakbang ng Two-step CMLL, pitong oryentasyon ng corner pieces. Sa top-down view, ang dilaw ay ang kulay sa tuktok na ibabaw, at ang maliit na guhit sa labas ay nagpapahiwatig ng oryentasyon ng kulay sa gilid ng corner. Kilalanin ang hugis batay sa bilang ng dilaw na corner: 0 ay H o Pi, 1 ay S o AS, 2 ay U, T o L.*
+*Larawan: Unang hakbang ng two-phase CMLL, pitong oryentasyon ng corner piece. Sa top-down view, ang dilaw ay ang kulay ng top face na nakaharap pataas, at ang maliliit na bar sa labas ay nagpapahiwatig ng oryentasyon ng top face ng corner na nakaharap sa gilid. Tukuyin ang pattern sa pamamagitan ng bilang ng dilaw na corner: 0 ay H o Pi, 1 ay S o AS, 2 ay U, T o L.*
 
-Pagkatapos ma-align ang dilaw na tuktok, maaaring gamitin ang dalawang formula na ito upang i-align ang mga gilid ng corner pieces.
+Pagkatapos i-align ang dilaw na top, maaari mong gamitin ang dalawang algorithm na ito para i-align ang mga gilid ng corner piece.
 
-Kung may isang side na pare-pareho na ang kulay, halimbawa, ang pula ay nasa iisang side na, paikutin ito sa kaliwa, at pagkatapos ay maaaring piliin ang 'adjacent swap formula'. Kung walang side na pare-pareho ang kulay, piliin ang 'diagonal swap formula'.
+Kung may isang side na magkapareho na ang kulay, halimbawa, pula na ang magkakasama sa isang side, i-rotate ito sa kaliwa, pagkatapos ay maaari mong piliin ang adjacent swap algorithm. Kung walang side na magkapareho ang kulay, piliin ang diagonal swap algorithm.
 
-![Ikalawang Hakbang ng Two-step CMLL, dalawang posisyon ng corner pieces](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
+![Ikalawang hakbang ng two-phase CMLL, dalawang posisyon ng corner piece](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
 
-*Larawan: Ikalawang Hakbang ng Two-step CMLL, dalawang posisyon ng corner pieces. Sa kaliwang larawan, pareho na ang kulay pula ng dalawang corner sa kaliwa, gamitin ang adjacent swap; sa kanang larawan, walang side na pareho ang kulay, gamitin ang diagonal swap.*
+*Larawan: Ikalawang hakbang ng two-phase CMLL, dalawang posisyon ng corner piece. Sa kaliwang larawan, ang pula ng dalawang corner sa kaliwa ay magkapareho na, gumamit ng adjacent swap; sa kanang larawan, walang side na magkapareho, gumamit ng diagonal swap.*
 
-Maaari mong maunawaan ang bawat set ng formula sa pamamagitan ng maraming slow turning. Huwag itong ituring na formula, kundi bilang ilang nakapirming galaw. Maaari mo ring matuklasan ang mga galaw na ito sa pamamagitan ng dahan-dahang paggalugad, ngunit ang paglista dito ay makakatulong sa iyo na maiwasan ang mga maling hakbang.
+Maaari mong intindihin ang bawat set ng algorithm sa pamamagitan ng maraming slow solving. Huwag itong tingnan bilang "algorithm," kundi bilang ilang "fixed movements." Maaari mo ring matuklasan ang mga galaw na ito sa pamamagitan ng pag-explore, ngunit ang paglista dito ay makakatulong sa iyo na maiwasan ang maling daan.
 
-May isa pang bagay na mas epektibo kaysa sa anumang pagsasanay: gumastos ng kaunting pera para bumili ng bagong Rubik's Cube. Kung ang hawak mo pa rin ay ang lumang Rubik's Cube na maingay at nagba-block kapag sobra ang ikot, bumili ng modernong 3x3 na may magnet. Ang pinakabagong Rubik's Cube ay magbibigay sa iyo ng pakiramdam ng kapangyarihan ng engineering optimization, makinis ang pag-ikot, awtomatikong bumabalik sa posisyon, at halos hindi nababara. Ang pagpapalit lang ng Rubik's Cube ay maaaring magpabilis ng average na oras ng 15 segundo. Ang sulit na pagpipilian ay ang [MoYu RS3 M V5 (MagLev + Ball-Core Edition)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20), na nasa humigit-kumulang dalawampung dolyar, at sapat na para sa sub-20.
+May isa pang bagay na mas epektibo kaysa sa anumang practice: gumastos ng kaunting pera para bumili ng bagong cube. Kung ang hawak mo pa rin ay yung lumang cube na maingay at nag-stuck kapag sobra ang pihit, bumili ng modernong 3x3 na may magnets. Ang pinakabagong mga cube ay magbibigay sa iyo ng pakiramdam ng engineering optimization. Makinis ang pagpihit, awtomatikong bumabalik sa posisyon, at halos hindi nag-stuck. Ang pagpapalit lang ng cube ay maaaring makapagpabilis ng iyong average na oras ng 15 segundo. Ang cost-effective na pagpipilian ay ang [MoYu RS3 M V5 (MagLev + Ball-Core Version)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20), nasa bandang $20, sapat na para makapasok sa sub-20.
 
-### Yugto Tatlo: 40 Segundo → 30 Segundo (Ika-5 Linggo–Ika-13 Linggo, Dalawang Buwan)
+### Yugto Tres: 40 Segundo → 30 Segundo (Linggo 5 – Linggo 13, dalawang buwan)
 
-**Datos**: Hunyo 7 hanggang Agosto 4. Ang Ao100 ay mula 39.8 segundo hanggang 29.9 segundo, tumagal ng 58 araw. Sa yugtong ito, maaaring paminsan-minsan ay makakuha ka ng oras na mas mababa sa 30 segundo, ngunit mangyayari lang ito kung napakasuwerte mo. At habang bumababa ang average na oras ng pagbuo, ang hirap ng pag-unlad ng 1 segundo ay tataas nang exponential.
+**Data**: Hunyo 7 hanggang Agosto 4. Ang Ao100 ay bumaba mula 39.8 segundo hanggang 29.9 segundo, na tumagal ng 58 araw. Sa yugtong ito, maaaring paminsan-minsan ay makakuha ka ng oras na sub-30, ngunit swerte lang kung mangyari. At habang bumababa ang average solve time, ang hirap ng pagpapabuti ng 1 segundo ay tataas nang exponential.
 
-![Pang-araw-araw na Average na Oras](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
+![Pang-araw-araw na average na oras](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
-*Larawan: Pang-araw-araw na average na oras. Halos naging flat ang curve pagkatapos ng kalagitnaan ng Hunyo, at tumagal ng dalawang buwan sa pagitan ng 30–40 segundo.*
+*Larawan: Pang-araw-araw na average na oras. Pagkatapos ng kalagitnaan ng Hunyo, halos patag na ang curve, at nanatili sa pagitan ng 30–40 segundo sa loob ng dalawang buwan.*
 
-Ito ang plateau phase. Lahat ay makakaranas nito, at ako ay nanatili dito ng dalawang buwan.
+Ito ang plateau phase. Lahat ay makakaranas nito; ako ay nanatili dito ng dalawang buwan.
 
-**Saan Nahihirapan**: Napakabagal ng pagbuo ng anim na edge pieces sa tuktok na layer, hindi naiintindihan ang lohika, bawat beses ay umaasa sa paulit-ulit na pagsubok, na nag-aaksaya ng maraming oras. Hindi pa rin bihasa ang Left Block at Right Block.
+**Saan ka nahihirapan**: Napakabagal sa pagbuo ng anim na edge piece sa top layer; hindi naiintindihan ang lohika, at bawat oras ay umaasa sa paulit-ulit na pagsubok, na nag-aaksaya ng maraming oras. Hindi pa rin sapat ang kasanayan sa First Block at Second Block.
 
-**Ano ang Sanayin**:
+**Ano ang dapat i-practice**:
 
-- EO recognition. Sa nakaraang post, nabanggit na mayroon lamang ilang sitwasyon para sa "bad edges": 0, non-0 non-4, 4 (2 sa itaas at 2 sa ibaba), 4 (lahat sa tuktok na layer), 4 (3 sa itaas at 1 sa ibaba). Ang layunin sa yugtong ito ay: sa sandaling matapos ang block, nang hindi binibilang, agad na makilala kung aling sitwasyon ito. Ang paraan ng pagsasanay ay i-scramble, gawin lang hanggang matapos ang CMLL, pagkatapos ay i-pause, sabihin ang bilang ng "bad edges", at pagkatapos ay magpatuloy.
-- Marami ang hindi nakakaintindi sa mga galaw dito. Ang EO stage ay sa huli ay upang bumuo ng "arrow shape" na may 3 sa itaas at 1 sa ibaba. Dahil ang kumpletong anyo ay isang hakbang lang na scrambled ay nagiging arrow shape, sa reverse thinking, ito ang huling hakbang bago matapos ang pagbuo. Kaya, anuman ang bilang ng "bad edges", ang layunin ay bumuo ng isang arrow. Kung may 4 na "bad edges" sa itaas, palitan ang isang pares ng itaas at ibabang edge upang ibaba ang isang "bad edge" at makamit ang arrow. Kung may 2 sa itaas at 2 sa ibaba, palitan ang isang pares ng itaas at ibabang edge upang itaas ang isang "bad edge" at makamit ang arrow. Kung may 1 sa itaas at 1 sa ibaba, o 2 sa itaas, gamitin ang M' U M, gawin muna ang naunang sitwasyon, pagkatapos ay bumuo ng arrow. Maaari mong tuklasin ang pinakamahusay na mga hakbang para sa 1/1 sa pamamagitan ng maraming obserbasyon at pag-iisip.
-- Maraming pagsasanay sa look-ahead. Ito ang pinakamahalagang bagay mula 40 segundo hanggang 30 segundo, at ito rin ang pinaka-counter-intuitive na bagay: dahan-dahang paikutin, tingnan nang mas malayo. Kapag ginagawa ang Left Block, huwag tingnan ang piraso na inilalagay, kundi tingnan kung nasaan ang susunod na piraso. Sa simula ay napaka-awkward, at ang iyong oras ay lalong babagal, ngunit kung magpapatuloy ka ng isang linggo, biglang bubuti.
-- Huwag mag-atubiling sa CMLL. Kung kailangan mong mag-isip bago gawin ang bawat galaw, hindi pa ito sa iyo. Sanayin ang bawat galaw nang 50 beses nang magkahiwalay, hanggang sa makita mo ang hugis at gumalaw na lang ang iyong kamay.
+-   **EO recognition.** Sa nakaraang artikulo, natalakay na mayroon lang ilang sitwasyon ng misoriented edges: 0, non-0 non-4, 4 (2 sa taas, 2 sa ilalim), 4 (lahat sa top layer), 4 (3 sa taas, 1 sa ilalim). Ang layunin sa yugtong ito ay: sa sandaling matapos ang blocks, hindi kailangang bilangin, makita agad kung aling sitwasyon ito. Ang practice ay scramble, gawin lang hanggang CMLL, pagkatapos ay huminto, sabihin ang bilang ng misoriented edges, pagkatapos ay magpatuloy.
+-   Maraming hindi nakakaintindi ng mga galaw dito. Ang EO phase ay sa huli para makabuo ng arrow shape (3 sa taas, 1 sa ilalim), dahil ang isang kumpletong solve ay isang galaw lang ang layo mula sa arrow shape. Kaya sa reverse thinking, ito ang huling hakbang bago matapos ang solve. Kaya, anuman ang bilang ng misoriented edges, ang layunin ay makabuo ng arrow. Kung may 4 na misoriented edges sa taas, palitan ang isang pares ng edge sa taas at ilalim para maibaba ang isang edge at makamit ang arrow. Kung may 2 sa taas at 2 sa ilalim, palitan ang isang pares ng edge sa taas at ilalim para maiakyat ang isang edge at makamit ang arrow. Kung may 1 sa taas at 1 sa ilalim, o 2 sa taas, gamitin ang M' U M para maging katulad ng mga naunang sitwasyon, pagkatapos ay buuin ang arrow. Maaari kang mag-explore at makahanap ng pinakamahusay na hakbang para sa 1/1 sa pamamagitan ng maraming observation at pag-iisip.
+-   **Maraming practice ng look-ahead.** Ito ang pinakamahalagang bagay mula 40 segundo hanggang 30 segundo, at ito rin ang pinaka-counter-intuitive: magpihit nang mas mabagal, tumingin nang mas malayo. Kapag ginagawa ang First Block, huwag tumingin sa piraso na kasalukuyan mong ipinapasok, tingnan kung nasaan ang susunod na piraso. Sa simula ay magiging napakailang, at maaaring lumala ang iyong oras, ngunit pagkatapos ng isang linggo, bigla itong gaganda.
+-   **CMLL nang walang pag-aalinlangan.** Kung kailangan mong mag-isip sa bawat galaw bago gawin, hindi pa ito sa iyo. I-practice ang bawat galaw nang 50 beses nang magkahiwalay, hanggang sa gumalaw ang kamay mo sa sandaling makita mo ang pattern.
 
-![Hugis ng Arrow](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+![Arrow shape](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
 
-*Larawan: Hugis ng arrow. Ang tatlong "bad edges" sa tuktok na layer (naka-highlight ng cyan) ay nakaayos sa hugis ng arrow, na nakaturo sa "bad edge" sa ibabang layer. Sa puntong ito, isang M' U M lang ang kailangan para mailagay ang apat sa tamang posisyon. [Buksan ang estado na ito sa 3D Rubik's Cube](/zh/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) para makita nang hakbang-hakbang.*
+*Larawan: Arrow shape. Tatlong misoriented edge (naka-highlight ng cyan) sa top layer na nakaporma ng arrow, na nakaturo sa misoriented edge sa bottom layer. Sa sitwasyong ito, isang M' U M lang ang makakapag-orient sa apat na ito nang sabay-sabay. [Buksan ang estado na ito sa 3D Rubik's Cube](/fil/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) para makita ang bawat hakbang.*
 
-![Anim na Uri ng EO](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
+![Anim na uri ng EO](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
-*Larawan: Anim na uri ng EO. Ang label sa kaliwang itaas ay ang bilang ng "bad edges" (itaas / ibaba), ang dilaw ay "good edges", at ang cyan box ay "bad edges". Ang hugis ng arrow lang ang nangangailangan ng formula; ang iba pang limang uri ay kailangang gawing hugis ng arrow muna.*
+*Larawan: Anim na uri ng EO. Ang label sa itaas na kaliwa ay ang bilang ng misoriented edges (itaas / ilalim), ang dilaw ay oriented edges, at ang cyan na frame ay misoriented edges. Ang arrow shape lang ang nangangailangan ng algorithm; ang iba pang limang uri ay kailangang gawing arrow muna.*
 
-Para sa pagbuo ng mga kaliwa at kanang edge pieces, dito ay kailangan nating gawing dilaw ang tuktok, puti ang ilalim, at ang Left Block ay pula bilang halimbawa. Kaya, ang kailangang ibalik sa posisyon ay ang yellow-red edge piece + yellow-orange edge piece (naka-highlight na bahagi). Ang pangunahing ideya ay, hanapin ang paraan upang ang yellow-red edge piece ay mapunta sa ilalim sa pamamagitan ng pagpapalit ng itaas at ibabang edge, at ang yellow-orange edge piece ay mapunta rin sa ilalim. Ang dalawang edge pieces ay magkaharap sa ilalim, pagkatapos ay paikutin ang tuktok na layer sa tamang posisyon, at ang M2 U o M2 U' ay makakapagbuo ng kaliwa at kanang edge pieces ng U layer.
+Para sa pagbuo ng kaliwa at kanang edge pieces, dito, ang dilaw ay ang top, puti ang bottom face, at ang First Block ay pula bilang halimbawa. Kaya ang kailangan pang buuin ay ang dilaw-pulang edge piece + dilaw-orange na edge piece (naka-highlight). Ang pangunahing ideya ay: hanapin ang dilaw-pulang edge piece, at sa pamamagitan ng pagpapalit ng mga edge sa taas at ilalim, dalhin ito sa bottom face. Hanapin din ang dilaw-orange na edge piece, at dalhin din ito sa bottom face. Ang dalawang edge piece ay dapat magkatapat sa bottom face, pagkatapos ay iikot ang top face sa tamang posisyon, at ang M2 U o M2 U' ay makakapagbuo sa kaliwa at kanang edge piece ng U-layer.
 
-Upang mas maintindihan ng lahat, inayos ko ang anim na uri ng EO sa [LSE page ng Roux Method formula library](/zh/projects/rubiks-cube/roux#lse). Sa pag-click sa "tingnan ang detalye" sa bawat larawan, bubuksan nito ang kaukulang estado sa 3D Rubik's Cube, at awtomatikong magha-highlight ang "bad edges". Sa parehong pahina, mayroon ding lahat ng sitwasyon para sa UL/UR placement at ang huling apat na edge pieces.
+Para mas maintindihan ng lahat, inayos ko ang lahat ng anim na EO cases sa [LSE page ng Roux Method Algorithm Database](/fil/projects/rubiks-cube/roux#lse). Sa bawat larawan, kapag pinindot ang "tingnan ang detalye," bubuksan nito ang kaukulang estado sa 3D Rubik's Cube, at awtomatikong i-highlight ang misoriented edges. Sa parehong pahina ay makikita mo rin ang lahat ng sitwasyon para sa UL/UR permutation at ang huling apat na edge.
 
-Ang pagbaba ng dami ng pagsasanay sa yugtong ito ay hindi masama. Hindi malalampasan ang plateau phase sa pamamagitan ng pagdami ng pagsasanay, kundi sa pamamagitan ng pagbabago ng isang partikular na masamang ugali. Ang aking karanasan ay, baguhin lamang ang isa sa bawat pagkakataon.
+Ang pagbaba ng dami ng practice sa yugtong ito ay hindi masama. Hindi malalampasan ang plateau phase sa pamamagitan lang ng pagdami ng practice; kailangan itong lampasan sa pamamagitan ng pagbabago ng isang partikular na masamang ugali. Ang aking karanasan ay isa lang ang baguhin sa bawat pagkakataon.
 
-### Yugto Apat: 30 Segundo → 28 Segundo (Pagkatapos ng Ika-13 Linggo)
+### Yugto Kwatro: 30 Segundo → 28 Segundo (Pagkatapos ng Linggo 13)
 
-**Datos**: Pagkatapos ng Agosto 4. Ang naitalang dami ng pagsasanay sa buong buwan ng Setyembre ay 122 beses, ngunit sa katunayan, maraming pagsasanay ang hindi naitala. Ginawa ko nang isang laruan sa mesa ang Rubik's Cube, dinadampot ko at nilalaro kapag gusto ko, kapag masaya ako, kapag naiinis o balisa, sa mga break sa trabaho, kapag nababagot ako, upang maisama ang paglalaro ng Rubik's Cube sa aking buhay. Ang Ao100 ay unti-unting bumaba mula 29.9 hanggang 28.2.
+**Data**: Pagkatapos ng Agosto 4. Ang naitalang bilang ng practice sa buong Setyembre ay 122, ngunit marami sa aking practice ay hindi naitala. Ginawa ko na ang cube bilang isang laruan sa aking desk; kinukuha ko lang ito at nilalaro kung maganda ang aking pakiramdam, kapag naiinis o balisa, sa mga pagitan ng trabaho, o kapag nababagot. Naging bahagi na ng buhay ko ang paglalaro ng cube. Ang Ao100 ay unti-unting bumaba mula 29.9 hanggang 28.2.
 
-**Saan Nahihirapan**: Walang malinaw na bottleneck, kulang lang sa kasanayan.
+**Saan ka nahihirapan**: Walang malinaw na bottleneck; hindi lang sapat ang kasanayan.
 
-**Ano ang Sanayin**:
+**Ano ang dapat i-practice**:
 
-Kung ang iyong average na bilis ay higit pa sa 30 segundo, ang tanging kailangan mong gawin ay magpatuloy sa maraming pagsasanay, sa halip na magsaulo ng bagong formula.
+Kung ang iyong average speed ay nasa itaas pa rin ng 30 segundo, ang tanging bagay na kailangan mong gawin ay ipagpatuloy ang maraming practice, sa halip na imemorya ang mga bagong algorithm.
 
-Patuloy na sanayin ang look-ahead sa pamamagitan ng slow turning, at lalo kang bibilis.
+Patuloy na mag-practice ng look-ahead sa pamamagitan ng slow solving, at mas bibilis ka.
 
-Kahit kailan, ilabas ang Rubik's Cube at maglaro. Ilagay ang Rubik's Cube sa lugar na madali mong maabot, tulad ng iyong desk, para makapaglaro ka sa pagitan ng trabaho. Maaari ka ring madalas na mag-record ng iyong mga video ng pagbuo upang makita kung saang yugto ka gumugugol ng pinakamaraming oras, at pagkatapos ay gumawa ng targeted optimization. Ito ang tinatawag na "deliberate practice", at ang bilis ng iyong pag-unlad ay hindi nakasalalay sa kabuuang bilang ng iyong ordinaryong pagsasanay, kundi sa bilang ng iyong "deliberate practice".
+Palaging kunin ang cube at maglaro, ilagay ang cube sa lugar na madali mong maabot, tulad ng iyong desk, para makalaro ka sa mga break sa trabaho. Maaari mo ring regular na i-record ang iyong mga solve video, tingnan kung saan ka pinakamatagal, at pagkatapos ay mag-optimize nang naaayon. Ito ang deliberate practice; ang bilis ng iyong pag-unlad ay hindi nakasalalay sa kabuuang bilang ng iyong ordinaryong practice, kundi sa bilang ng iyong deliberate practice.
 
-Pagkatapos ay mapapansin mo, matapos mong malampasan ang 30-35 segundong bottleneck, bumaba ulit ang iyong bilis ng isang antas.
+At pagkatapos ay malalaman mo, pagkatapos mong malampasan ang 30-35 segundo na bottleneck, ang iyong bilis ay bababa ulit ng isang antas.
 
-Sa yugtong ito, binabati kita! Para sa mga baguhan, isa ka nang napakagaling na manlalaro!
+Sa yugtong ito, binabati kita! Para sa mga baguhan, isa ka nang napakahusay na player!
 
-## Ang Kapalit ng Hindi Pagsasaulo ng Formula
+## Ang Presyo ng Hindi Pagme-memorize ng Algorithm
 
-Sa puntong ito, maging tapat tayo. Hindi libre ang hindi pagsasaulo ng formula.
+Sa puntong ito, maging tapat tayo. Hindi libre ang hindi pagme-memorize ng algorithm.
 
-Mabagal ang CMLL stage. Ang 42 na sitwasyon ay sakop ng 9 na formula, na nangangahulugang ang ilang sitwasyon ay kailangang gawin nang dalawang beses. Ang mga taong gumagamit ng kumpletong CMLL ay mas mabilis sa akin ng dalawa o tatlong segundo sa hakbang na ito.
+Mabagal ang CMLL phase. Ang paggamit ng 9 na algorithm para masakop ang 42 sitwasyon ay nangangahulugan na ang ilang sitwasyon ay kailangang gawin nang dalawang beses. Mas mabilis nang dalawa hanggang tatlong segundo ang mga gumagamit ng kumpletong CMLL kaysa sa akin sa hakbang na ito.
 
-Mataas ang hadlang sa M layer technique. Ang ikalawang bahagi ng Roux ay ganap na umaasa sa M layer. Mas mahirap paikutin ang M layer kaysa sa R at U, madaling bumara, at mas mataas ang kinakailangan para sa Rubik's Cube mismo.
+Mataas ang hadlang sa finger tricks ng M-slice. Ang pangalawang kalahati ng Roux ay nakasalalay lahat sa M-slice, at mas mahirap iikot ang M-slice kaysa sa R at U. Madali itong mag-stuck, at mas mataas din ang pangangailangan nito sa cube mismo.
 
-Huwag mag-alala sa limitasyon. Mayroon ding mga nangungunang manlalaro na gumagamit ng Roux upang makapasok sa pinakamataas na ranggo sa mundo; walang limitasyon ang mismong pamamaraan. Ngunit upang makapasok sa 15 segundo, malamang na kailangan mong kumpletuhin ang 42 na CMLL formula. Ngunit iyon ay para sa ibang yugto. Para makapasok sa 30 segundo, hindi mo kailangan.
+Huwag kang mag-alala sa limitasyon. Mayroon ding mga top cubers na gumagamit ng Roux na nakapasok sa mga nangungunang puwesto sa mundo; walang limitasyon ang method mismo. Ngunit para makapasok sa sub-15, malamang na kailangan mong kumpletuhin ang 42 CMLL algorithm. Ngunit iyon ay para na sa ibang yugto. Para makapasok sa sub-30, hindi mo kailangan.
 
-At halos bawat world-class player na naglalaro ng one-handed solving ay gumagamit ng Roux method, dahil talaga namang napakababagay nito sa one-handed operation.
+At halos lahat ng world-class na one-handed (OH) solver ay gumagamit ng Roux method, dahil talagang angkop din ito para sa one-handed operation.
 
-**Pinakamabilis na Oras Gamit ang Roux sa Opisyal na Paligsahan (WCA):**
+**Ang Pinakamabilis na Oras Gamit ang Roux sa Opisyal na Kompetisyon (WCA):**
 
-- Single 4.11 segundo, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Pilipinas), 2023 Valenzuela Cubing Open, kinikilalang pinakamabilis na opisyal na single ng Roux ([Reconstruction Video](https://www.youtube.com/watch?v=5H4TRJSUm-U))
-- Average 5.98 segundo, siya rin, 2019, noon ay Asian Record, at ikatlo sa kasaysayan na opisyal na sub-6 average ([WCA Profile](https://www.worldcubeassociation.org/persons/2017VILL41))
-- Siya rin ang [World Record Holder sa One-Handed](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): average 8.09, single 6.05 (2024), at karaniwang pinaniniwalaan sa one-handed community na ang Roux ang pinakamahusay na solusyon
+-   Single 4.11 segundo, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Pilipino), 2023 Valenzuela Cubing Open, kinikilalang pinakamabilis na opisyal na single solve gamit ang Roux ([reconstruction video](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+-   Average 5.98 segundo, siya rin, 2019, noon ay Asian record, at pangatlo sa kasaysayan na opisyal na sub-6 average ([WCA profile](https://www.worldcubeassociation.org/persons/2017VILL41))
+-   Siya rin ang [current world record holder sa one-handed](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): average 8.09, single 6.05 (2024), at pangkalahatang pinaniniwalaan sa one-handed community na ang Roux ang pinakamainam na method.
 
-Sa tingin ko, sulit ang palitan na ito. Ang dalawa o tatlong segundong oras sa CMLL ay kapalit ng: alam mo ang ginagawa mo sa bawat hakbang, hindi mo makakalimutan kahit tatlong buwan kang hindi humawak ng Rubik's Cube, at kaya mong makahanap ng solusyon sa anumang Rubik's Cube na hindi mo pa nakita.
+Sa tingin ko, sulit ang kapalit na ito. Ang dalawa hanggang tatlong segundong CMLL time na isinasakripisyo mo ay kapalit ng: alam mo kung ano ang ginagawa mo sa bawat hakbang, hindi mo makakalimutan kahit hindi mo hawakan ang cube ng tatlong buwan, at makakagawa ka ng solusyon sa anumang cube na hindi mo pa nakikita.
 
 ## Buod
 
-![Nabuo na ang cube](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+![Kumpleto na ang solve](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
 
-Mula sa kakayahang buuin hanggang sa mas mababa sa 30 segundo, hindi ito proseso ng pagsasaulo ng formula, kundi isang proseso ng pagtuturo sa kamay, mata, at utak na magtulungan.
+*Larawan: Kumpleto na ang solve.*
 
-Apat na yugto, apat na bagay: matuto muna kung paano tumingin nang hindi iniikot ang Rubik's Cube, pagkatapos ay matuto kung paano buuin ang Right Block nang hindi sinisira ang Left Block, pagkatapos ay matuto kung paano tingnan ang susunod na hakbang habang ginagawa ang kasalukuyang hakbang, at sa huli, hayaang sumunod ang kamay sa mata.
+Mula sa pagiging kayang buuin hanggang sa sub-30, hindi ito isang proseso ng pagme-memorize ng algorithm, kundi isang proseso ng pagsasanay sa koordinasyon ng kamay, mata, at utak.
 
-Ang formula ay hindi ang pinagmulan ng bilis. Ang obserbasyon ang siyang.
+Apat na yugto, apat na bagay: una, matuto kang tumingin nang hindi iniikot ang cube; pangalawa, matuto kang buuin ang Second Block nang hindi sinisira ang First Block; pangatlo, matuto kang tumingin sa susunod na hakbang habang ginagawa ang kasalukuyang hakbang; at panghuli, hayaan mong sumunod ang iyong kamay sa iyong mga mata.
 
-Matutong bumuo ng positibong feedback sa pamamagitan ng pag-unlad sa bawat yugto. Kahit na ang pagsasanay sa kasanayan ay hindi kailangang maging nakakainip, lalo na kapag natuklasan mo ang sorpresa ng pagbasag ng iyong sariling record muli. Lalo na sa mga beginner at intermediate stages, mararanasan mo araw-araw ang saya na dulot ng pagbasag ng record.
+Hindi ang algorithm ang pinagmulan ng bilis. Ang observation ang tunay na pinagmulan.
 
-Lahat ng formula at sitwasyon sa artikulong ito ay inayos ko sa [Roux Method formula library](/zh/projects/rubiks-cube/roux). Bumalik dito para tingnan kung nahihirapan ka.
+Matuto kang bumuo ng positive feedback sa pamamagitan ng pag-unlad sa bawat yugto. Kahit ang practice ng kasanayan ay hindi kailangang maging nakakabagot, lalo na kapag natuklasan mong muli kang nakabasag ng record. Lalo na sa mga baguhan at intermediate na yugto, mararanasan mo araw-araw ang saya na dulot ng pagbasag ng record.
+
+Lahat ng algorithm at sitwasyon sa artikulong ito ay inayos ko sa [Roux Method Algorithm Database](/fil/projects/rubiks-cube/roux). Balikan mo ito kapag nahihirapan ka.
 
 Walang katapusan ang saya sa mundo ng Rubik's Cube. Sana ay masaya ka sa paglalaro.
 
-## Apendiks 1: Checklist ng Pagsasanay para sa Bawat Yugto
+## Apendise 1: Checklist ng Practice sa Bawat Yugto
 
-**Yugto Isa (> 60 Segundo)**
+**Yugto Uno (> 60 segundo)**
 
-- Panatilihin ang nakapirming posisyon ng pagmamasid, huwag paikutin ang Rubik's Cube sa buong proseso ng pagbuo
-- Hanapin ang susunod na kulay na kailangan nang walang paghinto
-- Dahan-dahang paikutin (Slow turning), sabihin ang layunin sa bawat hakbang
-- Sanayin lang ang Left Block, ulitin nang 50 beses
+-   Panatilihin ang nakapirming anggulo ng pagtingin, huwag i-rotate ang cube sa buong solve
+-   Hanapin ang susunod na kulay na kailangan nang walang paghinto
+-   Slow solving, sabihin ang intensyon sa bawat galaw
+-   First Block (FB) lang ang i-practice, ulitin nang 50 beses
 
-**Yugto Dalawa (60 → 40 Segundo)**
+**Yugto Dos (60 → 40 segundo)**
 
-- Sa Right Block, gamitin lang ang R, r, M, U, huwag galawin ang Left Block
-- Pagsasanay sa Two-step CMLL
-- Pagsasanay sa ritmo ng M' U M' U, 5 minuto araw-araw
+-   Second Block (SB) gamit lang ang R, r, M, U, huwag galawin ang First Block (FB)
+-   Practice ng two-phase CMLL
+-   Practice ng ritmo ng M' U M' U, 5 minuto araw-araw
 
-**Yugto Tatlo (40 → 30 Segundo)**
+**Yugto Tres (40 → 30 segundo)**
 
-- Huminto pagkatapos ng CMLL, sabihin agad ang bilang ng "bad edges"
-- Slow turning + Look-ahead: Laging tingnan ang susunod na piraso
-- Hindi bababa sa 20 beses na de-kalidad na pagbuo araw-araw
+-   Huminto pagkatapos ng CMLL, sabihin agad ang bilang ng misoriented edges sa isang tingin
+-   Slow solving + look-ahead: ang mata ay laging nakatingin sa susunod na piraso
+-   Hindi bababa sa 20 high-quality solves araw-araw
 
-**Yugto Apat (< 30 Segundo)**
+**Yugto Kwatro (< 30 segundo)**
 
-- Mag-record ng video para makahanap ng mga paghinto
-- Mga technique: R U R' U' single-finger, M layer ring finger
-- 20 beses na de-kalidad na pagbuo araw-araw, hindi pagdami ng bilang
+-   Mag-record ng video para hanapin ang mga paghinto
+-   Finger tricks: R U R' U' single finger tricks, M-slice gamit ang ring finger
+-   20 high-quality solves araw-araw, hindi lang basta dumami ang bilang
 
-## Apendiks 2: Mga Kagamitan
+## Apendise 2: Mga Tool
 
-- **csTimer**: [cstimer.net](https://cstimer.net/). Buksan ang Ao5 / Ao12 / Ao100 statistics; ang Ao100 ang iyong tunay na lebel, ang single best time ay swerte lang.
-- **3D Rubik's Cube**: [philoli.com/zh/projects/rubiks-cube](/zh/projects/rubiks-cube/). Lahat ng formula sa artikulong ito ay maaaring i-input dito upang makita ang animation.
-- **Roux Method Newbie-Friendly Formula Library**: [philoli.com/zh/projects/rubiks-cube/roux](/zh/projects/rubiks-cube/roux). Karaniwang insertion methods para sa Left Block, Right Block, ang 9 na formula ng Two-step CMLL, at lahat ng sitwasyon ng LSE (EO, UL/UR, huling apat na edge pieces). Bawat isa ay maaaring buksan sa 3D Rubik's Cube, awtomatikong itatago ang mga hindi mahalagang piraso, at ha-highlight ang mga edge na kailangang galawin.
-- **csTimer Training Analyzer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/zh/projects/rubiks-cube/analyzer). I-drag ang na-export na file ng csTimer, at makikita mo ang iyong sariling trend ng oras, Ao5/Ao12/Ao100 curves, PB progression, milestone table (kailan ang una mong sub-60, sub-40, sub-30), at Power Law practice curve. Lahat ng larawan sa artikulong ito ay galing dito. Ang data ay pinoproseso lamang sa iyong browser, hindi ia-upload. Kung wala kang export file, maaari mong i-load muna ang aking 4441 na data upang makita ang epekto.
+-   **csTimer**: [cstimer.net](https://cstimer.net/). Buksan ang Ao5 / Ao12 / Ao100 stats; ang Ao100 ang tunay mong lebel, ang single time ay swerte lang.
+-   **3D Rubik's Cube**: [philoli.com/zh/projects/rubiks-cube](/fil/projects/rubiks-cube/). Lahat ng algorithm sa artikulong ito ay maaaring i-input dito para makita ang animation.
+-   **Roux Method Beginner-Friendly Algorithm Database**: [philoli.com/zh/projects/rubiks-cube/roux](/fil/projects/rubiks-cube/roux). Mga karaniwang insertion tricks para sa First Block (FB) at Second Block (SB), ang 9 algorithm ng two-phase CMLL, lahat ng sitwasyon ng LSE (EO, UL/UR, huling apat na edge). Ang bawat page ay maaaring buksan sa 3D Rubik's Cube, awtomatikong itinatago ang mga hindi mahalagang piraso, at ina-highlight ang mga edge na kailangang galawin.
+-   **csTimer Training Analyzer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/fil/projects/rubiks-cube/analyzer). I-drag ang exported file mula sa csTimer dito, at makikita mo ang iyong progress ng oras, Ao5/Ao12/Ao100 curve, PB progression, milestone table (kailan ang una mong sub-60, sub-40, sub-30), at Power Law practice curve. Lahat ng larawan sa artikulong ito ay mula dito. Ang data ay pino-proseso lang sa iyong browser, hindi ina-upload. Kung wala kang exported file, maaari mong i-load muna ang aking 4441 data para makita ang epekto.
 
 *Ang artikulong ito ay naglalaman ng Amazon affiliate links: Sa pagbili sa pamamagitan ng link, makakakuha ako ng maliit na komisyon, ngunit hindi magbabago ang iyong presyo.*
 
-## Para sa Karagdagang Pagbasa
+## Dagdag na Babasahin
 
-- [Paano Makapag-Rubik's Cube Nang Hindi Nagsasaulo ng Formula: Naiintindihan Kahit ng mga Bata](/zh/blog/solve-rubiks-cube-without-formulas)
+-   [Paano Mag-solve ng Rubik's Cube Nang Hindi Nagme-memorize ng Algorithm: Maiintindihan Kahit ng Elementary Student](/fil/blog/solve-rubiks-cube-without-formulas)

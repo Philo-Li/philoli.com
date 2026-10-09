@@ -1,278 +1,276 @@
 ---
 layout: blog
-title: "Hur du löser Rubiks kub på under 30 sekunder utan att lära dig formler: Även en grundskoleelev kan förstå det"
+title: "Hur du kommer under 30 sekunder på Rubiks kub utan att lära dig algoritmer: En guide för alla, även nybörjare"
 date: 2026-10-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - Roux方法
-  - 速拧
-  - 刻意练习
+  - Rubiks kub
+  - handledning
+  - Roux-metoden
+  - speedcubing
+  - medveten träning
 categories: 日常折腾
-description: "Det tog mig 89 dagar att gå från att lösa kuben för första gången till ett Ao100 under 30 sekunder, utan att memorera en enda CFOP-algoritm. Jag dissekerar fyra faser med hjälp av 4441 tidtagna lösningar: vad som är flaskhalsen i varje fas, vad man ska träna, och varför Roux-metoden inte kräver memorering av algoritmer."
+description: "Från första lösningen till ett Ao100 under 30 sekunder på 89 dagar, utan att memorera en enda CFOP-algoritm. Jag bryter ner fyra stadier med 4441 tidsmätningar: var du fastnar, vad du ska öva på i varje stadium, och varför Roux-metoden inte kräver memorisering av algoritmer."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Fyra faser från 165 sekunder till 28 sekunder" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="De fyra stegen från 165 sekunder till 28 sekunder" />
 </figure>
 
-*Bild: Fyra faser från 165 sekunder till 28 sekunder. Fas två såg den snabbaste förbättringen, medan fas tre var den längsta platåfasen.*
+*Figur: De fyra stegen från 165 sekunder till 28 sekunder. Steg två visade snabbast förbättring, medan steg tre var den längsta platåperioden.*
 
-I min förra artikel [”Hur du löser Rubiks kub utan att lära dig formler”](/zh/blog/solve-rubiks-cube-without-formulas/) lärde du dig hur man löser en Rubiks kub med hjälp av kommutatorlogik, utan att memorera några formler. Den artikeln fick mycket positiv respons.
+I den förra artikeln, [”Hur du löser Rubiks kub utan att lära dig algoritmer”](/sv/blog/solve-rubiks-cube-without-formulas/), lärde du dig att lösa en Rubiks kub utan att memorera algoritmer, genom att förstå logiken bakom att byta bitar. Den artikeln fick mycket positiv respons.
 
-Om du följde instruktionerna tar det dig förmodligen nu två till tre minuter att lösa kuben, även om det kanske känns lite klumpigt och osäkert. Men då dyker en ny fråga upp: Hur blir jag snabbare?
+Om du följde den, tar det dig förmodligen två till tre minuter att lösa den nu. Det kanske känns lite klumpigt, men du får ihop den. Då dyker en ny fråga upp: Hur blir jag snabbare?
 
-Om du söker på "speedcubing" kommer alla handledningar att berätta samma sak: Vill du komma under 30 sekunder, måste du först memorera CFOP-algoritmerna. 41 för F2L, 57 för OLL, 21 för PLL – totalt 119 algoritmer. Även om du gör F2L intuitivt, kommer du inte undan de 78 algoritmerna för det översta lagret. Ingen memorering, ingen snabbhet.
+Om du söker på "speedcubing" kommer alla handledningar att berätta samma sak: för att komma under 30 sekunder måste du memorera CFOP-algoritmerna. 41 för F2L, 57 för OLL, 21 för PLL – totalt 119 algoritmer. Även om du gör F2L intuitivt, kommer du inte undan de 78 algoritmerna för det översta lagret. Om du inte memorerar dem, kan du glömma att bli snabb.
 
 Den här artikeln vill visa dig att du kan komma under 30 sekunder utan att memorera en enda algoritm.
 
 <!--more-->
 
-Jag började lösa Rubiks kub för första gången den 7 maj 2026, och den 4 augusti nådde jag ett Ao100 under 30 sekunder. Det tog mig 89 dagar. Under den tiden memorerade jag inte en enda CFOP-algoritm, jag bara lekte med kuben på fritiden. Här är mina tidtagna data från 4441 lösningar.
+Från den 7 maj 2026, när jag löste Rubiks kub för första gången, tills den 4 augusti, då mitt Ao100 kom under 30 sekunder, tog det mig 89 dagar. Under den tiden memorerade jag inte en enda CFOP-algoritm, utan ägnade bara min fritid åt att leka med kuben. Detta är tidsdata från mina 4441 registrerade lösningar.
 
 ![Prestationskurva för 4441 lösningar](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
-*Bild: Prestationskurva för 4441 lösningar. Den grå linjen visar varje enskild tid, den mörka linjen är Ao100-trenden, och de röda punkterna markerar mina personbästa. Mitt bästa Ao100 var 28,22 sekunder.*
+*Figur: Prestationskurva för 4441 lösningar. Den grå linjen visar varje individuell tid, den mörka linjen är Ao100-trenden, och de röda punkterna markerar nya personbästa (PB). Mitt bästa Ao100 var 28,22 sekunder.*
 
-Genom medveten och regelbunden träning kan vem som helst gå från noll till sub-30 på några månader.
+Genom medveten och regelbunden övning kan vem som helst, på bara några månader, gå från nybörjare till sub-30.
 
-Vad betyder sub-30 sekunder? Vid [det första världsmästerskapet i Rubiks kub 1982](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship) var vinnartiden 22,95 sekunder, vilket senare erkändes av WCA som det första officiella världsrekordet. Tionde plats var 29,11 sekunder, och den tiden uppnåddes av ingen mindre än Jessica Fridrich, skaparen av CFOP-metoden som vi kommer att tala om i nästa avsnitt. Med andra ord, en sub-30-tid som en amatör uppnår idag efter några månaders träning, skulle ha placerat dem bland världens tio bästa år 1982.
+Vad innebär det att vara under 30 sekunder? Vid [det första Rubiks kub-världsmästerskapet 1982](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship) var vinnartiden 22,95 sekunder, vilket senare erkändes av WCA som det första officiella världsrekordet. Tiondeplatsen gick till Jessica Fridrich själv, upphovskvinnan bakom CFOP-metoden som vi ska prata om i nästa avsnitt, med en tid på 29,11 sekunder. Med andra ord, en amatör som idag tränar fram en sub-30 tid under några månader skulle ha kunnat placera sig bland världens tio bästa år 1982.
 
-Nu ska jag dela med mig av hur jag gick tillväga steg för steg, och ge dig hela träningsmetoden.
+Nu ska jag dela med mig av hur jag gick tillväga steg för steg, och ge dig hela min träningsmetod.
 
-## Varför hela speedcubing-världen memorerar algoritmer
+## Varför speedcubing-världen fokuserar på att memorera algoritmer
 
-Låt oss först klargöra en sak: Varför är "snabbhet" och "att memorera algoritmer" så sammankopplade i folks medvetande?
+Låt oss först reda ut en sak: Varför är "snabbhet" och "att memorera algoritmer" så starkt kopplade i folks medvetande?
 
-I början av 1980-talet utvecklade den tjeckisk-amerikanska professorn Jessica Fridrich (som senare forskade inom digital forensik vid Binghamton University) en lager-för-lager-lösningsmetod, som senare fick namnet CFOP (Cross, F2L, OLL, PLL). Idén med denna metod är att uttömmande lista alla möjliga fall för det översta lagret och tilldela varje fall en optimal algoritm. Du identifierar fallet, utför algoritmen och behöver inte tänka.
+I början av 1980-talet utvecklade den tjeckisk-amerikanska professorn Jessica Fridrich (som senare forskade inom digital forensik vid Binghamton University i USA) en lagermetod som senare kom att kallas CFOP (Cross, F2L, OLL, PLL). Idén bakom metoden är att systematiskt lista alla möjliga scenarion för det översta lagret och tilldela varje scenario en optimal algoritm. Du identifierar situationen, utför algoritmen och behöver inte tänka.
 
-![Jessica Fridrich och Rubiks kub på hennes kontor](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
+![Jessica Fridrich och hennes Rubiks kub på kontoret](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
 
-*Bild: Jessica Fridrich och Rubiks kub på hennes kontor. 1982 tog hon 10:e plats vid det första världsmästerskapet med 29,11 sekunder. CFOP är uppkallad efter henne (Fridrich Method).*
+*Figur: Jessica Fridrich och hennes Rubiks kub på kontoret. År 1982 kom hon på 10:e plats i det första världsmästerskapet med 29,11 sekunder, och CFOP-metoden är uppkallad efter henne (Fridrich Method).*
 
-Denna metod är extremt snabb. Nästan alla världsrekord har satts med CFOP. Därför undervisar alla handledningar i den, och alla videor handlar om den. Att "lära sig speedcubing" har blivit synonymt med att "lära sig CFOP", och att lära sig CFOP är synonymt med att memorera 119 algoritmer.
+Den här metoden är extremt snabb. Nästan alla världsrekord har satts med CFOP. Därför undervisar alla handledningar i den, alla videor handlar om den, och "att lära sig speedcubing" har blivit synonymt med "att lära sig CFOP", vilket i sin tur innebär att memorera 119 algoritmer.
 
-Men observera att "att memorera algoritmer" är en egenskap hos CFOP som metod, inte en egenskap hos "snabbhet" i sig. Anledningen till att CFOP kräver memorering är att den har valt vägen med uttömmande uppräkning. Uttömmande uppräkning kräver minne, det är priset den betalar.
+Men märk väl, "att memorera algoritmer" är en egenskap hos *CFOP-metoden*, inte av "snabbhet" i sig. Anledningen till att CFOP kräver memorisering är att den bygger på en uttömmande lista av fall. Uttömmande listor kräver minne, och det är priset man betalar.
 
-Finns det metoder som inte går vägen med uttömmande uppräkning? Ja.
+Finns det metoder som inte går den vägen? Ja.
 
 ## En lösningsmetod utan algoritmer: Roux-metoden
 
-År 2003 presenterade fransmannen Gilles Roux en helt annorlunda approach. Istället för att bygga lager för lager, bygger man först två 1×2×3 "broar" på vänster och höger sida, sedan hanterar man de fyra hörnen på det översta lagret, och slutligen återstår bara sex kantbitar som avslutas med bara M- och U-rörelser (mittlager och översta lager).
+År 2003 presenterade fransmannen Gilles Roux en helt annorlunda strategi. Istället för att bygga lager för lager, konstruerar man först två 1x2x3 "block" på vänster och höger sida (de så kallade "broarna"), hanterar sedan de fyra hörnbitarna i det översta lagret, och avslutar med de sex sista kantbitarna med hjälp av M- och U-rörelser.
 
 ![Gilles Roux under en tävling](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
 
-*Bild: Gilles Roux under en tävling. Klippt från en äldre tävlingsvideo, bilden har AI-förbättrats och förstorats.*
+*Figur: Gilles Roux under en tävling. Klippt från en äldre tävlingsvideo, bilden har förstärkts med AI.*
 
-I förra artikeln löste vi redan kuben med denna struktur. Låt oss nu titta på dess fyra steg igen, men den här gången fokuserar vi på "vad man behöver memorera i varje steg":
+I förra artikeln löste vi redan kuben med denna ram. Här går vi igenom dess fyra steg igen, men den här gången fokuserar vi på "vad som behöver memoreras i varje steg":
 
-| Steg | Innehåll | Antal algoritmer att memorera |
+| Steg | Innehåll | Algoritmer att memorera |
 | --- | --- | --- |
-| 1. Vänster bro | Bygg ett 1×2×3-block | 0, ren observation |
-| 2. Höger bro | Bygg det andra blocket symmetriskt | 0, ren observation |
-| 3. CMLL | Placera de fyra hörnen på det översta lagret | 9, alla kan härledas från 3-cykler |
-| 4. LSE | De sista sex kantbitarna | 0, använder endast U- och M-rörelser |
+| 1. Första blocket (FB) | Bygger ett 1x2x3-block | 0, ren observation |
+| 2. Andra blocket (SB) | Bygger ett symmetriskt block | 0, ren observation |
+| 3. CMLL | Orientering och placering av de fyra hörnbitarna i det översta lagret | 9, alla kan härledas från 3-cykler |
+| 4. LSE | De sista sex kantbitarna | 0, använder endast U- och M-lagerrotationer |
 
-Tre av de fyra stegen kräver inga algoritmer. Den enda delen som kräver CMLL, har totalt 42 möjliga fall, men du behöver inte 42 algoritmer. Den hörn-3-cykel som nämndes i förra artikeln, R U' L' U R' U' L U, tillsammans med dess spegelbild och några varianter, kan täcka alla fall, men det går lite långsammare.
+Tre av de fyra stegen kräver inga algoritmer. Det enda steget som kräver det är CMLL. Totalt finns det 42 fall, men du behöver inte 42 algoritmer. Den hörnbit-3-cykel vi gick igenom i förra artikeln, R U' L' U R' U' L U, tillsammans med dess spegelvändning och några varianter, kan täcka alla situationer, om än lite långsammare.
 
 ![Roux-metodens fyra steg](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/05-roux-four-steps.webp)
 
-*Bild: Roux-metodens fyra steg, där varje steg bara visar de bitar som är lösta upp till den punkten: Vänster bro → Höger bro → CMLL (övre hörnen) → LSE (sista sex kanterna). Klippt från min 3D Rubiks kub-sidas "Lösningsmetoder"-panel.*
+*Figur: Roux-metodens fyra steg. Varje steg visar endast de bitar som har placerats korrekt fram till det steget: Första blocket (FB) → Andra blocket (SB) → CMLL (översta lagrets fyra hörnbitar) → LSE (de sista sex kantbitarna). Klippt från "lösningspanelen" på min 3D-kubsida.*
 
-Det är därför Roux-metoden kan lösas utan att memorera algoritmer: den komprimerar det som behöver memoreras till ett mycket litet hörn, och resten handlar helt om observation, förståelse och skicklighet.
+Det är därför Roux-metoden inte kräver att du memorerar algoritmer: den komprimerar den del som kräver minne till ett litet hörn, och resten handlar om observation, förståelse och skicklighet.
 
-## Från 165 sekunder till 28 sekunder: Fyra faser
+## Från 165 sekunder till 28 sekunder: De fyra stegen
 
-Här är min faktiska resa. För varje fas har jag markerat start och slut med data, och sedan förklarat var jag fastnade och vad jag tränade på. Dina flaskhalsar kanske skiljer sig från mina, men ordningsföljden är med största sannolikhet densamma.
+Här är den väg jag faktiskt gick. För varje steg har jag markerat start och slut med data, och sedan förklarat var jag fastnade och vad jag övade på under den perioden. Dina egna hinder kan skilja sig från mina, men ordningsföljden är troligen densamma.
 
-![Tidsperiod för de fyra faserna](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
+![Tidslinje för de fyra stegen](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
-*Bild: Tidsperiod för de fyra faserna. Fas ett 3 veckor, fas två 11 dagar, fas tre två månader, fas fyra fram till idag.*
+*Figur: Tidslinje för de fyra stegen. Steg ett tog 3 veckor, steg två 11 dagar, steg tre två månader, och steg fyra pågår fortfarande.*
 
-### Fas ett: 165 sekunder → 60 sekunder (Vecka 1–3)
+### Steg ett: 165 sekunder → 60 sekunder (Vecka 1–3)
 
-**Data**: 7 maj till 27 maj. Första veckan snitt 165 sekunder, tredje veckan 68 sekunder.
+**Data**: Från 7 maj till 27 maj. Första veckan snittade jag 165 sekunder, tredje veckan 68 sekunder.
+**Var jag fastnade**: Första blocket (FB) var mycket ovant, och det tog lång tid att hitta varje hörn-kantpar. När jag väl hittade ett par tenderade nybörjare att stanna upp och fortsätta observera.
 
-**Flaskhals**: Den vänstra bron är mycket ovana, och det tar lång tid att hitta varje färgblock. Efter att ha hittat ett färgblock tenderar nybörjare att stanna upp och fortsätta observera.
+![Var nybörjare lägger sin tid](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
 
-![Var nybörjare spenderar sin tid](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
+*Figur: Var nybörjare lägger sin tid. Händerna är stilla medan ögonen letar runt på kuben; tiden som läggs på att "leta" är flera gånger längre än tiden som läggs på att "vrida".*
 
-*Bild: Var nybörjare spenderar sin tid. Händerna är stilla medan ögonen letar runt på kuben; "letande"-tiden är flera gånger längre än "vridande"-tiden.*
+**Vad man ska öva på**:
 
-**Vad man ska träna**:
+Den största fienden i det här steget är inte långsamma händer, utan långsamma ögon. Tiden du lägger på att "leta" är betydligt längre än tiden du lägger på att "vrida". Därför:
 
-Den största fienden i denna fas är inte långsamma händer, utan långsamma ögon. Du spenderar betydligt mer tid på att "leta" än på att "vrida". Därför:
+- Fixera din observationsposition, rotera inte kuben. Som nämndes i förra artikeln är Roux-metodens observationsvinkel fixerad. Under det här steget ska du träna upp muskelminnet att *inte* rotera hela kuben. Varje gång du känner för att rotera kuben, stanna upp och fråga dig själv: Kan jag se biten jag behöver från den här vinkeln?
+- Slow solving. Ta ingen tid, men rörelserna ska vara sammanhängande utan några stopp. Varje rörelse kan vara mycket långsam, men den får inte avbrytas. Nyckeln är att dina ögon ska fokusera på nästa drag medan händerna utför det nuvarande. Detta låter som att sakta ner, men i själva verket tränar du dina ögon att se relationen mellan var en bit är och var den ska vara.
+- Öva bara på första blocket (FB). Scramble, bygg FB, scramble igen, bygg FB igen. Gå inte vidare. Första blocket är det friaste steget i Roux-metoden och det bästa för att träna upp din observation.
 
--   **Fixerad observationsposition, vrid inte kuben.** Som jag nämnde i förra artikeln är Roux-metodens observationsvinkel fixerad. I denna fas ska du göra "att inte vrida kuben" till muskelminne. Varje gång du vill vrida kuben, stanna upp och fråga dig själv: Kan jag se biten jag behöver från den här vinkeln?
--   **Långsam lösning.** Ingen tidtagning, men rörelserna ska vara sammanhängande utan några pauser. Varje rörelse kan vara mycket långsam, men det får inte finnas några avbrott. Kärnan är att medan händerna utför den föregående rörelsen, ska ögonen fokusera på nästa rörelse. Detta låter som att sakta ner, men i själva verket tränar det dina ögon att se relationen mellan bitens position och dess avsedda destination.
--   **Träna bara den första bron.** Scramblea kuben, bygg den vänstra bron, scramblea igen, bygg den vänstra bron igen. Gå inte vidare. Den första bron är det friaste steget i Roux-metoden och det bästa för att träna observation.
+Lär dig inga nya algoritmer i det här steget. Din flaskhals ligger inte i algoritmerna just nu.
 
-Lär dig inga nya algoritmer i denna fas. Din flaskhals ligger inte i algoritmerna nu.
+### Steg två: 60 sekunder → 40 sekunder (Vecka 4–5)
 
-### Fas två: 60 sekunder → 40 sekunder (Vecka 4–5)
+**Data**: Från 27 maj till 7 juni, 11 dagar. Detta var den snabbaste förbättringsperioden under hela processen, och även den mest intensiva träningsperioden för mig, med 723 lösningar den första veckan i juni.
+**Var jag fastnade**: Osammanhängande rörelser. Kuben fastnade.
 
-**Data**: 27 maj till 7 juni, 11 dagar. Detta var den snabbaste förbättringsperioden i hela processen, och också den period jag tränade mest, med 723 lösningar under första veckan i juni.
+**Vad man ska öva på**:
 
-**Flaskhals**: Osammanhängande rörelser. Kuben fastnar.
+I det här steget behöver du optimera rörelserna i varje delmoment och, baserat på förståelse, öka din skicklighet i varje enskild rörelse.
 
-**Vad man ska träna**:
-
-I denna fas behöver du optimera rörelserna i varje steg, och på grundval av förståelse öka skickligheten i varje rörelse.
-
--   **Andra bron.** Den andra bron är svårare än den första eftersom utrymmet är halverat, och du får inte förstöra den redan färdiga vänstra bron. De avgörande rörelserna är R, r (höger två lager), M, U. I denna fas ska du lära dig att använda r och M istället för R för att flytta bitar, så att den vänstra bron aldrig förstörs. Att optimera rörelsestegen är att spara tid. Till exempel är tre medurs vridningar likvärdiga med en moturs vridning.
--   **Använd M-lagret skickligt.** Roux-metodens sista steg består helt av M och U, och hur smidigt M-lagret vrids direkt avgör din lägsta tid. Använd ringfingret eller långfingret för att trycka M, börja träna M' U M' U i den här rytmen.
--   **CMLL-mönsterigenkänning.** I förra artikeln "testade" vi oss fram till de fyra hörnen med en 3-cykel. Nu ska du börja titta först och sedan agera: Innan du vänder på det översta lagret, titta på de fyra hörnens gula orientering, bedöm om det är 0, 1, 2 eller 4 "bra" hörn, och utför sedan direkt den motsvarande rörelsen. Du kan också uppnå stora effektivitetsvinster med ett mycket litet antal algoritmer, vilket är mycket kostnadseffektivt. En stor del av dessa algoritmer behöver inte memoreras utantill, utan förstås medan du gör dem.
+- Andra blocket (SB). Andra blocket är svårare än första blocket eftersom utrymmet är halverat, och du får inte förstöra det redan byggda första blocket. Viktiga drag är R, r (höger två lager), M, U. I det här steget ska du lära dig att använda r och M istället för R för att flytta bitar, så att första blocket aldrig förstörs. Att optimera rörelsestegen handlar om att spara tid. Till exempel är att vrida medurs tre gånger detsamma som att vrida moturs en gång.
+- Flytande M-lager. Roux-metodens sista steg består helt av M och U. Hur smidigt du kan vrida M-lagret avgör din nedre gräns. Använd ringfingret eller långfingret för att trycka M, och börja öva på rytmen M' U M' U.
+- CMLL-igenkänning. I förra artikeln använde vi 3-cykeln för att "prova oss fram" med de fyra hörnbitarna. Nu ska du börja titta först och sedan agera: Innan du vänder det översta lagret, titta på de fyra hörnbitarnas gula sidor och avgör om det är 0, 1, 2 eller 4 orienterade hörnbitar. Utför sedan direkt den motsvarande rörelsen. Du kan uppnå en betydande effektivitetsökning med ett minimalt antal algoritmer, vilket är mycket givande. En stor del av dessa algoritmer behöver inte memoreras utantill, utan förstås medan du utför dem.
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="Perspektiv när du bygger höger bro" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="Vinkel vid byggandet av andra blocket" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/08-m-prime-u-m.webp" alt="M' U M" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
 </div>
 
-*Bild vänster: Perspektiv när du bygger den högra bron. Den vänstra bron är klar, och du använder bara R, r, M, U för att sätta in höger hörn-kantpar. Den vänstra bron kommer aldrig att röras. Bild höger: M' U M, den vanligaste rörelsekombinationen i Roux-metodens andra halva. Mittlagret upp, det översta lagret vrids, mittlagret tillbaka – tre steg för att byta ett par kanter i det översta och mellersta lagret.*
+*Figur vänster: Vinkel vid byggandet av andra blocket (SB). Första blocket (FB) är redan klart, och du använder bara R, r, M, U för att sätta in hörn-kantparet på höger sida. Första blocket kommer aldrig att röras. Figur höger: M' U M, en av de mest använda rörelsesekvenserna i Roux-metodens andra halva. M-lagret upp, U-lagret vrids, M-lagret ner – tre drag för att byta ett par kantbitar i U- och M-lagren.*
 
-Du kan titta på mitt sammanställda [Roux Method algoritmbibliotek](/zh/projects/rubiks-cube/roux#cmll). CMLL-sidan har en tvåstegsmetod: 7 orienteringsalgoritmer + 2 positioneringsalgoritmer, totalt 9 stycken. Detta är ett mycket prisvärt val för att öka hastigheten, lätt att lära sig, och varje algoritm du behärskar kan göra dig ungefär 1–2 sekunder snabbare. Med lite övning blir du snabbt skicklig, och vissa har redan introducerats i förra artikeln. Du behöver inte memorera alla för att komma under 30 sekunder.
+Du kan titta på mitt sammanställda [Roux Method-algoritmsamling](/sv/projects/rubiks-cube/roux#cmll). CMLL-sidan är tvåstegs: 7 orienteringsalgoritmer + 2 placeringsalgoritmer, totalt 9 stycken. Detta är ett kostnadseffektivt val för hastighetsökning, lätt att lära sig, och varje algoritm du blir flytande med kan spara dig ungefär 1–2 sekunder. Med lite övning blir du snabbt skicklig. Vissa har redan introducerats i den förra artikeln, och du behöver inte memorera alla för att komma under 30 sekunder.
 
-![CMLL första steget i tvåstegsmetoden, sju hörnorienteringar](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
+![CMLL i två steg, första delen: sju hörnbit-orienteringar](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
-*Bild: CMLL första steget i tvåstegsmetoden, sju hörnorienteringar. I översiktsbilden är gult den uppåtvända toppfärgen, och de små strecken på utsidan indikerar att hörnets toppfärg är vänd åt sidan. Känn igen mönstret efter antalet gula hörn: 0 är H eller Pi, 1 är S eller AS, 2 är U, T eller L.*
+*Figur: CMLL i två steg, första delen: sju hörnbit-orienteringar. I översikten är gult den uppåtvända toppfärgen, och de små strecken på utsidan indikerar att hörnbitens toppfärg vetter mot sidan. Identifiera mönstren efter antalet gula hörn: 0 är H eller Pi, 1 är S eller AS, 2 är U, T eller L.*
 
-Efter att ha orienterat de gula topparna kan du använda dessa två algoritmer för att placera hörnen korrekt på sidorna.
+Efter att ha orienterat den gula sidan uppåt, kan du använda dessa två algoritmer för att placera hörnbitarnas sidor korrekt.
 
-Om en sida redan har samma färg, till exempel rött redan är på samma sida, rotera den till vänster och välj sedan algoritmen för angränsande byte. Om ingen sida har samma färg, välj algoritmen för diagonal byte.
+Om en sida redan har matchande färger, till exempel om rött redan är på samma sida, rotera det till vänster och välj sedan algoritmen för att byta intilliggande hörn. Om ingen sida har matchande färger, välj algoritmen för att byta diagonala hörn.
 
-![CMLL andra steget i tvåstegsmetoden, två hörnpositioner](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
+![CMLL i två steg, andra delen: två hörnbit-placeringar](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
 
-*Bild: CMLL andra steget i tvåstegsmetoden, två hörnpositioner. Vänstra bilden: de två vänstra hörnen är redan röda, använd angränsande byte. Högra bilden: ingen sida är enhetlig, använd diagonal byte.*
+*Figur: CMLL i två steg, andra delen: två hörnbit-placeringar. I den vänstra bilden matchar de två hörnbitarnas röda sidor, använd intilliggande byte; i den högra bilden matchar ingen sida, använd diagonalt byte.*
 
-Du kan förstå varje algoritm genom att långsamt lösa kuben många gånger. Betrakta dem inte som formler, utan som specifika, fasta rörelser som du själv kan upptäcka genom att utforska, men att ha dem listade här kan spara dig tid och misstag.
+Du kan förstå varje uppsättning algoritmer genom omfattande slow solving. Se dem inte som formler, utan som specifika rörelsesekvenser som du gradvis kan upptäcka själv. Att lista dem här kan dock hjälpa dig att undvika omvägar.
 
-En annan sak, som ger mer omedelbart resultat än någon annan träning: spendera lite pengar och köp en ny Rubiks kub. Om du fortfarande har en gammal kub som klickar och fastnar när du vrider den, köp en modern 3x3-kub med magneter. De senaste kuberna kommer att låta dig uppleva kraften i ingenjörsoptimering; de vrider sig smidigt, återgår automatiskt till position, och fastnar nästan aldrig. Bara genom att byta kub kan din genomsnittliga tid förbättras med 15 sekunder. Ett prisvärt val är [MoYu RS3 M V5 (Maglev + Ball-core version)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20), för runt tjugo dollar, den räcker gott och väl tills du är sub-20.
+En annan sak som ger snabbare resultat än någon annan övning: investera i en ny kub. Om du fortfarande har en gammal kub som klickar och fastnar när du vrider den för långt, köp en modern 3x3-kub med magneter. De senaste kuberna kommer att låta dig uppleva kraften i ingenjörsoptimering – de snurrar smidigt, bitarna justeras automatiskt och de fastnar nästan aldrig. Bara genom att byta kub kan din genomsnittstid sänkas med kanske 15 sekunder. Ett prisvärt val är [MoYu RS3 M V5 (MagLev + Ball-Core Edition)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20), som kostar runt tjugo dollar och räcker tills du är under 20 sekunder.
 
-### Fas tre: 40 sekunder → 30 sekunder (Vecka 5 – Vecka 13, två månader)
+### Steg tre: 40 sekunder → 30 sekunder (Vecka 5 – vecka 13, två månader)
 
-**Data**: 7 juni till 4 augusti. Ao100 slipades från 39,8 sekunder till 29,9 sekunder, vilket tog 58 dagar. I denna fas kan du ibland få tider under 30 sekunder, men bara om du har extrem tur. Och när den genomsnittliga lösningstiden sjunker, kommer svårigheten att förbättras med 1 sekund att öka exponentiellt.
+**Data**: Från 7 juni till 4 augusti. Mitt Ao100 slipades ner från 39,8 sekunder till 29,9 sekunder, vilket tog 58 dagar. Under denna period kunde jag ibland få tider under 30 sekunder, men bara med mycket tur. Dessutom, i takt med att den genomsnittliga lösningstiden sjunker, kommer svårigheten att förbättras med 1 sekund att öka exponentiellt.
 
 ![Dagligt genomsnitt](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
-*Bild: Dagligt genomsnitt. Efter mitten av juni planade kurvan nästan ut, och jag kämpade i två månader mellan 30 och 40 sekunder.*
+*Figur: Dagligt genomsnitt. Efter mitten av juni planade kurvan nästan ut, och jag kämpade mellan 30–40 sekunder i två månader.*
 
 Det här är platåfasen. Alla kommer att stöta på den, och jag stannade här i två månader.
 
-**Flaskhals**: Lösningen av de sex kantbitarna i det översta lagret är mycket långsam, jag förstod inte logiken, och varje gång förlitade jag mig på upprepade försök, vilket slösade bort mycket tid. Vänster och höger bro var fortfarande inte tillräckligt skickliga.
+**Var jag fastnade**: Lösningen av de sex kantbitarna i det översta lagret var mycket långsam. Jag förstod inte logiken och förlitade mig på upprepade försök varje gång, vilket slösade bort mycket tid. Första och andra blocket var fortfarande inte tillräckligt flytande.
 
-**Vad man ska träna**:
+**Vad man ska öva på**:
 
--   **EO-igenkänning.** Som jag nämnde i förra artikeln finns det bara några få fall av felorienterade kanter: 0, icke-0 icke-4, 4 (2 uppe, 2 nere), 4 (alla på topplagret), 4 (3 uppe, 1 nere). Målet i denna fas är att i samma ögonblick som broarna är byggda, utan att räkna, omedelbart se vilken typ det är. Övningsmetoden är att scramblea, lösa fram till slutet av CMLL, pausa, säga hur många felorienterade kanter det finns, och sedan fortsätta.
--   **Många förstår inte rörelserna här.** EO-fasen syftar i slutändan alltid till att skapa en pilform med 3 uppe och 1 nere, eftersom den kompletta formen bara är ett steg från pilformen om den är scrambled. Så, med omvänd tankegång, är det det sista steget före den kompletta lösningen, och oavsett hur många felorienterade kanter det finns, är målet alltid att skapa en pil. Om det finns 4 felorienterade kanter uppe, byt ut ett par övre/nedre kanter för att flytta ner en felorienterad kant och skapa pilen. Om det är 2 uppe och 2 nere, byt ut ett par övre/nedre kanter för att flytta upp en felorienterad kant och skapa pilen. Om det är 1 uppe och 1 nere, eller 2 uppe, använd M' U M för att först transformera till ett av de tidigare fallen, och sedan skapa pilen. Genom mycket observation och tänkande kan du själv utforska de bästa stegen för 1/1-fallet.
--   **Öva mycket på förutseende (Look-ahead).** Detta är den viktigaste saken för att gå från 40 till 30 sekunder, och också den mest kontraintuitiva: vrid långsammare, se längre fram. När du bygger den vänstra bron, titta inte på biten du sätter in, utan på var nästa bit är. Det kommer att kännas väldigt konstigt i början, och tiderna kommer att bli sämre, men efter en vecka kommer det plötsligt att bli bättre.
--   **CMLL utan tvekan.** Om en rörelse du alltid måste tänka på innan du vågar göra den, är den ännu inte din. Träna varje rörelse 50 gånger separat tills din hand rör sig automatiskt när du ser formen.
+- EO-igenkänning (Edge Orientation). Som jag nämnde i förra artikeln finns det bara ett fåtal fall för felorienterade kantbitar: 0, icke-0 icke-4, 4 (2 uppe, 2 nere), 4 (alla i U-lagret), 4 (3 uppe, 1 nere). Målet i det här steget är att, i samma ögonblick som blocken är klara, kunna se vilken situation det är utan att behöva räkna. Öva genom att scramble, lösa fram till CMLL, pausa, säga hur många felorienterade kantbitar det finns, och sedan fortsätta.
+- Många förstår inte rörelserna här. EO-fasen syftar i slutändan till att skapa en "pil"-formation med 3 felorienterade kantbitar uppe och 1 nere. Eftersom en helt löst kub bara är ett drag bort från en pil-formation, är det sista steget innan fullständig lösning att tänka baklänges. Oavsett antalet felorienterade kantbitar är målet alltid att skapa en pil. Om det finns 4 felorienterade kantbitar uppe, byt ett par mellan U- och M-lagret för att få ner en felorienterad kantbit och skapa pilen. Om det är 2 uppe och 2 nere, byt ett par mellan U- och M-lagret för att få upp en felorienterad kantbit och skapa pilen. Om det är 1 uppe och 1 nere, eller 2 uppe, använd M' U M för att först transformera till de tidigare situationerna, och sedan skapa pilen. Du kan själv utforska de bästa stegen för 1/1-fallet genom mycket observation och eftertanke.
+- Öva intensivt på look-ahead. Detta är den viktigaste saken för att gå från 40 till 30 sekunder, och också den mest kontraintuitiva: vrid lite långsammare, titta lite längre fram. När du bygger första blocket (FB), titta inte på biten du precis sätter in, utan på var nästa bit är. Det kommer att kännas väldigt konstigt i början, och dina tider kommer först att bli sämre, men efter en vecka kommer det plötsligt att bli bättre.
+- CMLL utan tvekan. Om du måste tänka efter varje gång innan du utför en algoritm, då är den inte "din" ännu. Öva varje algoritm 50 gånger individuellt tills dina händer rör sig så fort du ser mönstret.
 
-![Pilform](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+![Pilformation](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
 
-*Bild: Pilform. Tre felorienterade kanter på det översta lagret (ljusblå markering) bildar en pil som pekar mot den felorienterade kanten i bottenlagret. Vid det här läget kan en M' U M flytta alla fyra på en gång. [Öppna detta tillstånd i 3D-kuben](/zh/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) för att se steg för steg.*
+*Figur: Pilformation. Tre felorienterade kantbitar i U-lagret (markerade i cyan) bildar en pil som pekar mot den felorienterade kantbiten i M-lagret. Vid detta tillfälle kan ett enda M' U M placera alla fyra korrekt samtidigt. [Öppna detta tillstånd i 3D-kuben](/sv/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) för att se det steg för steg.*
 
-![Sex EO-former](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
+![Sex EO-fall](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
-*Bild: Sex EO-former. Etiketten i övre vänstra hörnet visar antalet felorienterade kanter (uppe / nere), gult är korrekta kanter, ljusblå ram är felorienterade kanter. Endast pilformen kräver en algoritm, de andra fem transformeras först till pilformen.*
+*Figur: Sex EO-fall. Etiketten uppe till vänster visar antalet felorienterade kantbitar (uppe / nere), gult är rättorienterade kantbitar, cyanram är felorienterade kantbitar. Endast pilformationen kräver en algoritm; de andra fem omvandlas först till pilformationen.*
 
-För att lösa de vänstra och högra kantbitarna, med gult som topp och vitt som botten, och den vänstra bron som röd som exempel, måste vi sedan lösa de gulröda och gulorangea kantbitarna (markerade områden). Huvudidén är att på något sätt byta ner de gulröda och gulorangea kantbitarna till bottenlagret. När båda kantbitarna är i bottenlagret, mittemot varandra, rotera topplagret till rätt position, och sedan kan M2 U eller M2 U' lösa vänster och höger kantbitar i U-lagret.
+För att lösa de vänstra och högra kantbitarna, med gult som topp, vitt som botten och första blocket (FB) som rött som exempel, behöver vi placera gult-röd kantbit + gult-orange kantbit (markerade). Huvudidén är att på något sätt byta gult-röd kantbit till bottenlagret genom att byta kantbitar mellan U- och M-lagret, och göra samma sak med gult-orange kantbit. När de två kantbitarna är mittemot varandra i bottenlagret, vrider vi det översta lagret till rätt position, och sedan kan M2 U eller M2 U' lösa de vänstra och högra kantbitarna i U-lagret.
 
-För att hjälpa dig att bättre förstå har jag sammanställt alla sex EO-former i [Roux Method algoritmbibliotekets LSE-sida](/zh/projects/rubiks-cube/roux#lse). Varje bild har en "Visa detaljer"-länk som öppnar motsvarande tillstånd i 3D-kuben, med felorienterade kanter automatiskt markerade. På samma sida finns också alla fall för UL/UR-placering och de sista fyra kanterna.
+För att underlätta förståelsen har jag sammanställt alla sex EO-fall på [LSE-sidan i Roux Method-algoritmsamlingen](/sv/projects/rubiks-cube/roux#lse). Varje bild kan öppnas i 3D-kuben genom att klicka på "Visa detaljer", och de felorienterade kantbitarna markeras automatiskt. På samma sida finns även alla fall för UL/UR-placering och de sista fyra kantbitarna.
 
-Att träningsvolymen minskar i denna fas är inte dåligt. En platåfas kan inte övervinnas genom att bara öka volymen; den övervinns genom att ändra en specifik dålig vana. Min erfarenhet är att bara ändra en sak i taget.
+Att träningsmängden minskar i det här steget är ingen dålig sak. En platåfas kan inte övervinnas genom att bara öka mängden träning, utan genom att ändra en specifik dålig vana. Min erfarenhet är att man bara ändrar en sak i taget.
 
-### Fas fyra: 30 sekunder → 28 sekunder (Efter vecka 13)
+### Steg fyra: 30 sekunder → 28 sekunder (Efter vecka 13)
 
-**Data**: Efter 4 augusti. Under hela september var det registrerade antalet övningar 122 gånger, men många övningar registrerades faktiskt inte. Jag har nu integrerat kuben som en leksak på skrivbordet, plockar upp den och leker med den när jag känner för det, när jag är frustrerad eller orolig, under arbetspauser, eller när jag är uttråkad. Att leka med kuben har blivit en del av mitt liv. Ao100 har också gradvis sjunkit från 29,9 till 28,2.
+**Data**: Efter den 4 augusti. Under hela september var det registrerade antalet lösningar 122, men många övningar registrerades faktiskt inte. Jag har integrerat kuben i mitt liv som en leksak på skrivbordet; jag tar den när jag känner för det, löser några gånger när jag är på gott humör, några gånger när jag är frustrerad eller orolig, några gånger under arbetspauser, eller när jag är uttråkad. Mitt Ao100 sjönk också gradvis från 29,9 till 28,2 sekunder.
 
-**Flaskhals**: Ingen tydlig flaskhals, bara inte tillräckligt skicklig.
+**Var jag fastnade**: Inga tydliga flaskhalsar, bara inte tillräckligt flytande.
 
-**Vad man ska träna**:
+**Vad man ska öva på**:
 
-Om din genomsnittliga hastighet fortfarande är över 30 sekunder, är det enda du behöver göra att fortsätta träna mycket, inte att lära dig nya algoritmer.
+Om din genomsnittliga hastighet fortfarande är över 30 sekunder, är det enda du behöver göra att fortsätta öva intensivt, snarare än att memorera nya algoritmer.
 
-Genom att ständigt öva på look-ahead med långsam lösning kommer du att bli snabbare och snabbare.
+Genom att ständigt öva look-ahead med slow solving kommer du att bli snabbare och snabbare.
 
-Ta fram kuben och lek med den när som helst. Ha den där du lätt kan nå den, till exempel på skrivbordet, så att du kan leka med den under arbetspauser. Du kan också regelbundet spela in dina lösningar för att se var du spenderar mest tid, och sedan optimera specifikt för det. Det här är medveten träning; din framstegshastighet beror inte på det totala antalet vanliga övningar, utan på antalet medvetna övningar.
+Ta fram kuben och lek med den närhelst du har en stund över. Ha den lättillgänglig, till exempel på skrivbordet, så att du kan plocka upp den under arbetspauser. Du kan också regelbundet spela in dina lösningar för att se vilken fas som tar mest tid, och sedan optimera specifikt för den. Detta är medveten träning – din framstegshastighet beror inte på det totala antalet vanliga övningar, utan på antalet medvetna övningar.
 
-Då kommer du att märka att du, efter att ha passerat flaskhalsen på 30–35 sekunder, har sänkt din tid ytterligare ett snäpp.
+Då kommer du att märka att efter att du passerat flaskhalsen på 30–35 sekunder, har din hastighet sjunkit ytterligare ett snäpp.
 
-Grattis till att ha nått denna fas! Ur en nybörjares perspektiv är du redan en mycket imponerande spelare!
+Grattis om du nått det här steget – för nybörjare är du redan en mycket imponerande kubare!
 
 ## Priset för att inte memorera algoritmer
 
-Nu måste jag vara ärlig. Att inte memorera algoritmer är inte gratis.
+Nu ska vi vara ärliga. Att inte memorera algoritmer är inte gratis.
 
-CMLL-fasen är långsam. Att täcka 42 fall med 9 algoritmer innebär att vissa situationer måste göras två gånger. De som kan alla CMLL-algoritmer är två till tre sekunder snabbare än jag i detta steg.
+CMLL-steget blir långsamt. Att täcka 42 fall med 9 algoritmer innebär att vissa situationer måste göras i två steg. De som kan hela CMLL är två till tre sekunder snabbare än mig i detta steg.
 
-M-lagerstekniken har en högre tröskel. Roux-metodens andra halva bygger helt på M-lagret, och M-lagret är svårare att vrida än R och U, lättare att fastna, och ställer högre krav på själva kuben.
+M-lager-fingertricks har en hög tröskel. Roux-metodens andra halva bygger helt på M-lagret. M-lagret är svårare att vrida än R och U, fastnar lättare och ställer högre krav på själva kuben.
 
-Oroa dig inte för den övre gränsen. Bland toppspelare finns det de som använder Roux-metoden och når världseliten, så metoden i sig har ingen övre gräns. Men för att komma under 15 sekunder kommer du förmodligen att behöva lära dig alla 42 CMLL-algoritmer. Men det är en fråga för ett annat skede. För att komma under 30 sekunder behövs det inte.
+Oroa dig inte för den övre gränsen. Bland toppspelare finns det de som använder Roux-metoden och når världseliten; själva metoden har ingen övre gräns. Men för att komma under 15 sekunder är det troligt att du kommer att behöva lära dig alla 42 CMLL-algoritmer. Det är dock en annan fas. För att komma under 30 sekunder behövs det inte.
 
-Och nästan alla världsspelare som löser med en hand använder Roux-metoden, eftersom den verkligen är mycket lämplig för enhandsoperation.
+Dessutom använder nästan alla världsklass-enhands-kubare Roux-metoden, eftersom den verkligen är väl lämpad för enhandsgrepp.
 
-**Snabbaste officiella tiderna (WCA) med Roux-metoden:**
+**Snabbaste tider med Roux-metoden i officiella tävlingar (WCA):**
 
--   Singel 4,11 sekunder, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filippinerna), Valenzuela Cubing Open 2023, erkänd som den snabbaste officiella singeltiden med Roux ([rekonstruktionsvideo](https://www.youtube.com/watch?v=5H4TRJSUm-U))
--   Medel 5,98 sekunder, även han, 2019, då ett asiatiskt rekord och den tredje officiella sub-6-genomsnittet någonsin ([WCA-profil](https://www.worldcubeassociation.org/persons/2017VILL41))
--   Han är också [världsrekordhållare för enhandslösning](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): Medel 8,09, singel 6,05 (2024). I enhandsgemenskapen anses Roux allmänt vara den optimala lösningsmetoden.
+- Enkel lösning på 4,11 sekunder, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filippinerna), Valenzuela Cubing Open 2023, allmänt erkänd som det snabbaste officiella singelresultatet med Roux-metoden ([rekonstruktionsvideo](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+- Medel på 5,98 sekunder, även han, 2019, vilket då var ett asiatiskt rekord och det tredje officiella Ao5 under 6 sekunder någonsin ([WCA-profil](https://www.worldcubeassociation.org/persons/2017VILL41))
+- Han är också [världsrekordhållare för enhands](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): medel på 8,09, singel på 6,05 (2024). Inom enhands-speedcubing anses Roux-metoden allmänt vara den optimala lösningen.
 
-Jag tycker att den här kompromissen är mycket fördelaktig. Du byter två-tre sekunders CMLL-tid mot att: du vet vad du gör i varje steg, du glömmer inte hur man löser kuben även om du inte rört den på tre månader, och du kan härleda lösningen för vilken okänd kub som helst.
+Jag tycker att denna avvägning är mycket fördelaktig. Du byter två till tre sekunder i CMLL-steget mot att: veta vad du gör i varje steg, inte glömma hur man löser den även om du inte rör kuben på tre månader, och kunna härleda en lösning på vilken okänd kub som helst.
 
 ## Sammanfattning
 
-![Lösning klar](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+![Löst](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
 
-Att gå från att kunna lösa kuben till under 30 sekunder är inte en process av att memorera algoritmer, det är en process av att träna hand-, ögon- och hjärnkoordination.
+Att gå från att kunna lösa kuben till att komma under 30 sekunder handlar inte om att memorera algoritmer, utan om att träna koordinationen mellan händer, ögon och hjärna.
 
-Fyra faser, fyra saker: lär dig först att titta utan att vrida kuben, sedan lär dig att bygga den högra bron utan att förstöra den vänstra, sedan lär dig att titta på nästa steg medan du gör det nuvarande, och slutligen låt händerna följa ögonen.
+Fyra steg, fyra uppgifter: Lär dig först att titta utan att rotera kuben, lär dig sedan att bygga andra blocket (SB) utan att förstöra första blocket (FB), lär dig att titta på nästa steg medan du utför det nuvarande, och slutligen, låt händerna följa ögonen.
 
-Algoritmer är inte källan till hastighet. Observation är det.
+Algoritmer är inte källan till snabbhet. Observation är det.
 
-Lär dig att bygga positiv feedback genom framsteg i varje steg, även om det är ren färdighetsträning, behöver det inte vara tråkigt, särskilt när du upptäcker glädjen i att slå ett nytt rekord. Särskilt i de tidiga och mellersta stadierna kommer du att uppleva glädjen av att slå rekord varje dag.
+Lär dig att bygga upp positiv feedback genom framsteg i varje delmoment. Även övningar för flyt kan bli mindre tråkiga, särskilt när du upptäcker glädjen i att slå ditt personbästa igen. Särskilt i nybörjar- och mellanstadiet kommer du att uppleva glädjen av att slå rekord nästan varje dag.
 
-Alla algoritmer och situationer som nämns i texten har jag sammanställt i [Roux Method algoritmbibliotek](/zh/projects/rubiks-cube/roux). När du fastnar, kom tillbaka och slå upp dem.
+Alla algoritmer och situationer som nämns i artikeln har jag sammanställt i [Roux Method-algoritmsamlingen](/sv/projects/rubiks-cube/roux). Kom tillbaka och kolla där om du fastnar.
 
-Rubiks kub-världen är full av oändlig glädje, ha så kul!
+Rubiks kub-världen erbjuder oändlig glädje. Ha så kul!
 
-## Bilaga 1: Checklista för övning i varje fas
+## Bilaga 1: Träningslista för varje steg
 
-**Fas ett (> 60 sekunder)**
+**Steg ett (> 60 sekunder)**
 
--   Fixerad observationsposition, vrid inte kuben under hela lösningen
--   Hitta nästa önskade färgblock utan att pausa
--   Långsam lösning, säg ut avsikten med varje steg
--   Träna bara vänster bro, upprepa 50 gånger
+- Fixera observationspositionen, rotera inte hela kuben under lösningen
+- Hitta nästa önskade färg utan att pausa
+- Slow solving, säg högt din intention med varje drag
+- Öva endast första blocket (FB), upprepa 50 gånger
 
-**Fas två (60 → 40 sekunder)**
+**Steg två (60 → 40 sekunder)**
 
--   Höger bro använder endast R, r, M, U, rör inte vänster bro
--   Tvåstegs CMLL-övning
--   M' U M' U rytmövning, 5 minuter dagligen
+- Bygg andra blocket (SB) enbart med R, r, M, U, rör inte första blocket (FB)
+- Öva CMLL i två steg
+- Öva rytmen M' U M' U, 5 minuter dagligen
 
-**Fas tre (40 → 30 sekunder)**
+**Steg tre (40 → 30 sekunder)**
 
--   Stanna efter CMLL och säg omedelbart antalet felorienterade kanter
--   Långsam lösning + förutseende: ögonen tittar alltid på nästa bit
--   Minst 20 högkvalitativa lösningar dagligen
+- När CMLL är klart, pausa och säg antalet felorienterade kantbitar vid första ögonkastet
+- Slow solving + look-ahead: ögonen ska alltid titta på nästa bit
+- Minst 20 högkvalitativa lösningar varje dag
 
-**Fas fyra (< 30 sekunder)**
+**Steg fyra (< 30 sekunder)**
 
--   Spela in video för att hitta pauser
--   Teknik: R U R' U' enfingersmetod, M-lager med ringfinger
--   20 högkvalitativa lösningar dagligen, inte bara öka volymen
+- Spela in videor för att hitta pauser
+- Fingertricks: R U R' U' med ett finger, M-lager med ringfingret
+- 20 högkvalitativa lösningar varje dag, fokusera inte på kvantitet
 
 ## Bilaga 2: Verktyg
 
--   **csTimer**: [cstimer.net](https://cstimer.net/). Aktivera Ao5 / Ao12 / Ao100 statistik, Ao100 är din verkliga nivå, enskilda tider är tur.
--   **3D Rubiks kub**: [philoli.com/zh/projects/rubiks-cube](/zh/projects/rubiks-cube/). Alla algoritmer i denna artikel kan matas in här för att se animeringar.
--   **Roux Method nybörjarvänligt algoritmbibliotek**: [philoli.com/zh/projects/rubiks-cube/roux](/zh/projects/rubiks-cube/roux). Vanliga insättningsmönster för vänster och höger bro, 9 algoritmer för tvåstegs CMLL, och alla fall för LSE (EO, UL/UR, de sista fyra kanterna). Varje bild kan öppnas i 3D-kuben, med irrelevant block automatiskt dolda och relevanta kanter markerade.
--   **csTimer Träningsanalysator**: [philoli.com/zh/projects/rubiks-cube/analyzer](/zh/projects/rubiks-cube/analyzer). Dra och släpp din exporterade csTimer-fil för att se din resultatutveckling, Ao5/Ao12/Ao100-kurvor, PB-förbättringar, milstolpetabell (första sub-60, sub-40, sub-30, vilket datum) och Power Law-träningskurva. Alla bilder i denna artikel kommer härifrån. Data behandlas endast i din webbläsare och laddas inte upp. Om du inte har en exporterad fil kan du ladda min 4441-data för att se effekten.
+- **csTimer**: [cstimer.net](https://cstimer.net/). Aktivera Ao5 / Ao12 / Ao100-statistik; Ao100 är din verkliga nivå, enskilda tider är tur.
+- **3D-kub**: [philoli.com/zh/projects/rubiks-cube](/sv/projects/rubiks-cube/). Alla algoritmer i denna artikel kan matas in här för att se animationer.
+- **Roux Method Algoritmsamling (Nybörjarvänlig)**: [philoli.com/zh/projects/rubiks-cube/roux](/sv/projects/rubiks-cube/roux). Vanliga insättningsmönster för första blocket (FB) och andra blocket (SB), de 9 algoritmerna för tvåstegs CMLL, och alla LSE-fall (EO, UL/UR, de sista fyra kantbitarna). Varje illustration kan öppnas i 3D-kuben, med irrelevant bitar automatiskt dolda och de relevanta kantbitarna markerade.
+- **csTimer Träningsanalysator**: [philoli.com/zh/projects/rubiks-cube/analyzer](/sv/projects/rubiks-cube/analyzer). Dra och släpp din exporterade csTimer-fil för att se din resultatutveckling, Ao5/Ao12/Ao100-kurvor, PB-framsteg, milstolpar (första gången under 60, under 40, under 30 sekunder) och Power Law-träningskurva. Alla diagram i denna artikel kommer härifrån. Data bearbetas endast i din webbläsare och laddas inte upp. Om du inte har en exporterad fil kan du först ladda mina 4441 data för att se hur det fungerar.
 
-*Denna artikel innehåller Amazon-affiliatelänkar: Vid köp via länkarna får jag en liten provision, ditt pris påverkas inte.*
+*Denna artikel innehåller Amazon affiliatelänkar: Om du köper via länkarna får jag en liten provision, utan att priset ändras för dig.*
 
 ## Mer läsning
 
--   [Hur du löser Rubiks kub utan att lära dig formler: Även en grundskoleelev kan förstå det](/zh/blog/solve-rubiks-cube-without-formulas)
+- [Hur du löser Rubiks kub utan att lära dig algoritmer: En guide för alla, även nybörjare](/sv/blog/solve-rubiks-cube-without-formulas)

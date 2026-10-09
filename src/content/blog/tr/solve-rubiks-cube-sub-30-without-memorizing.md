@@ -1,15 +1,15 @@
 ---
 layout: blog
-title: "Formül Ezberlemeden Rubik Küpü'nü 30 Saniyenin Altına Nasıl İndirilir: İlkokul Öğrencileri Bile Anlayabilir"
+title: "Algoritma Ezberlemeden Rubik Küpünü 30 Saniye Altına Nasıl Çözersin: İlkokul Öğrencileri Bile Anlayabilir"
 date: 2026-10-09 12:00:00
 tags:
   - Rubik Küpü
   - Rehber
   - Roux Metodu
   - Hızlı Çözme
-  - Kasıtlı Pratik
+  - Bilinçli Pratik
 categories: 日常折腾
-description: "Rubik Küpü'nü ilk çözdüğüm andan Ao100 ortalamasında 30 saniyenin altına inmem 89 gün sürdü ve bu süreçte tek bir CFOP formülü ezberlemedim. 4441 zamanlama verisiyle dört aşamayı detaylandırıyorum: Her aşamada nerelerde takıldım, neler çalıştım ve Roux metodunun neden formül ezberlemeyi gerektirmediğini açıklıyorum."
+description: "İlk çözüşümden Ao100 ortalamasını 30 saniye altına düşürmem 89 gün sürdü ve hiç CFOP algoritması ezberlemedim. 4441 zamanlı çözüm verisini kullanarak dört aşamayı inceleyeceğiz: Her aşamada nerede takıldığını, ne pratik etmen gerektiğini ve Roux metodunun neden algoritma ezberlemeye ihtiyaç duymadığını."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true
 ---
@@ -18,261 +18,261 @@ toc: true
   <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="165 saniyeden 28 saniyeye dört aşama" />
 </figure>
 
-*Görsel: 165 saniyeden 28 saniyeye dört aşama. İkinci aşamada süre en hızlı düşerken, üçüncü aşama en uzun plato dönemini oluşturdu.*
+*Şekil: 165 saniyeden 28 saniyeye dört aşama. İkinci aşama en hızlı düşüşü sağlarken, üçüncü aşama en uzun plato dönemi oldu.*
 
-Önceki yazım olan [《Formül Ezberlemeden Rubik Küpü Nasıl Çözülür》](/zh/blog/solve-rubiks-cube-without-formulas/) başlıklı makalede, komütatör mantığını kullanarak, formül ezberlemeden bir Rubik Küpü'nü çözmeyi öğrenmiştiniz. O yazı birçok kişiden büyük beğeni toplamıştı.
+Önceki yazım olan [《Algoritma Ezberlemeden Rubik Küpünü Nasıl Çözersin》](/tr/blog/solve-rubiks-cube-without-formulas/)’da, komütatör mantığını kullanarak algoritma ezberlemeden bir küpü çözmeyi öğrenmiştin. O yazı birçok kişiden büyük beğeni toplamıştı.
 
-Eğer o yazıda anlatılanları uyguladıysanız, şimdi muhtemelen iki üç dakikada, biraz zorlansanız da küpü çözebiliyorsunuzdur. Ardından yeni bir soru ortaya çıkacaktır: Nasıl daha hızlı olabilirim?
+Eğer dediklerimi uyguladıysan, şu anda muhtemelen iki üç dakikada, biraz aceleci ve beceriksizce de olsa, küpü çözebiliyorsundur. Ardından yeni bir soru akla gelecektir: Nasıl hızlanabilirim?
 
-Rubik Küpü hızlı çözme (speedcubing) diye arama yaptığınızda, tüm rehberler size aynı şeyi söyleyecektir: 30 saniyenin altına inmek istiyorsanız, önce CFOP formüllerini ezberlemelisiniz. F2L için 41, OLL için 57, PLL için 21 formül, toplamda 119 formül. F2L'yi sezgisel yapsanız bile, üst katmanın 78 formülünden kaçış yok. Ezberleyemezseniz, hızlı olmayı aklınızdan bile geçirmeyin.
+"Rubik küpü hızlı çözme" diye arama yaptığında, tüm rehberler sana aynı şeyi söyleyecektir: 30 saniye altına inmek istiyorsan, önce CFOP algoritmalarını ezberle. F2L için 41, OLL için 57, PLL için 21 olmak üzere toplam 119 algoritma. F2L'i sezgisel olarak yapsan bile, üst katmanın 78 algoritmasından kaçamazsın. Ezberlemezsen, hızlanmayı unut.
 
-Bu yazı size, hiçbir formül ezberlemeden de 30 saniyenin altına inebileceğinizi göstermek istiyor.
+Bu yazı sana, hiç algoritma ezberlemeden de 30 saniye altına inebileceğini göstermek istiyor.
 
 <!--more-->
 
-Rubik Küpü'nü ilk kez 7 Mayıs 2026'da çözdüğüm andan, 4 Ağustos'ta Ao100 ortalamasında 30 saniyenin altına inene kadar 89 gün geçti. Bu süreçte tek bir CFOP formülü ezberlemedim, sadece boş zamanlarımda oynadım. İşte kayıt altına aldığım 4441 çözüme ait zamanlama verileri.
+Rubik küpünü ilk kez 7 Mayıs 2026'da çözdüğümden, 4 Ağustos'ta Ao100 ortalamasını 30 saniye altına düşürmeme kadar 89 gün sürdü. Bu süre zarfında tek bir CFOP algoritması bile ezberlemedim, sadece boş zamanlarımda oynadım. Bu, kayıtlı 4441 çözümümün zamanlama verileri.
 
-![4441 çözüme ait performans eğrisi](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
+![4441 çözümün performans eğrisi](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
-*Görsel: 4441 çözüme ait performans eğrisi. Gri çizgi her bir çözümün süresini, koyu renkli çizgi Ao100 trendini, kırmızı noktalar ise kişisel en iyi rekorumu kırdığım anları gösteriyor. En iyi Ao100 ortalamam 28.22 saniye.*
+*Şekil: 4441 çözümün performans eğrisi. Gri çizgi her bir çözümün süresi, koyu çizgi Ao100 trendi, kırmızı noktalar ise kişisel rekorun kırıldığı anlar. En iyi Ao100 ortalaması 28.22 saniye.*
 
-Bilinçli ve aktif bir şekilde pratik yaparak ve egzersiz sıklığını koruyarak, herkes birkaç ay içinde sıfırdan sub-30 seviyesine gelebilir.
+Bilinçli ve düzenli pratik yaparak, herkes birkaç ay içinde sıfırdan sub-30 seviyesine ulaşabilir.
 
-30 saniyenin altında olmak ne anlama geliyor? [1982'deki ilk Rubik Küpü Dünya Şampiyonası](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship)'nda şampiyonluk süresi 22.95 saniyeydi; bu, daha sonra WCA tarafından tanınan ilk resmi dünya rekoruydu. 10. sıradaki isim ise 29.11 saniye ile, bir sonraki bölümde bahsedeceğimiz CFOP yönteminin mucidi Jessica Fridrich'in ta kendisiydi. Başka bir deyişle, bugün bir amatörün birkaç ayda ulaştığı sub-30 seviyesi, 1982'de dünya ilk on arasına girmek anlamına geliyordu.
+30 saniyenin altı ne demek biliyor musun? [1982'deki ilk Rubik Küpü Dünya Şampiyonası](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship)'nda şampiyonun derecesi 22.95 saniyeydi, bu daha sonra WCA tarafından tanınan ilk resmi dünya rekoruydu; 10. sıradaki isim 29.11 saniye ile, bir sonraki bölümde bahsedeceğimiz CFOP'nin mucidi Jessica Fridrich'in ta kendisiydi. Başka bir deyişle, bugün bir amatörün birkaç ayda elde ettiği sub-30 derecesi, 1982'de dünya ilk onuna girebilirdi.
 
-Şimdi size, bunu adım adım nasıl başardığımı ve tüm pratik yöntemlerimi eksiksiz bir şekilde paylaşacağım.
+Şimdi sana, bunu adım adım nasıl başardığımı ve tüm bu pratik yöntemini eksiksiz bir şekilde paylaşacağım.
 
-## Hızlı Çözme Dünyası Neden Formül Ezberliyor?
+## Hızlı Çözme Dünyası Neden Algoritma Ezberliyor?
 
-Önce bir şeyi netleştirelim: Neden 'hız' ve 'formül ezberleme' insanların zihninde bu kadar iç içe geçmiş durumda?
+Önce bir şeyi açıklığa kavuşturalım: Neden "hız" ve "algoritma ezberleme" insanların zihninde bu kadar iç içe geçmiş durumda?
 
-1980'lerin başında, Çek asıllı Profesör Jessica Fridrich (daha sonra ABD'deki Binghamton Üniversitesi'nde dijital adli tıp üzerine çalıştı) katmanlı bir çözüm yöntemi geliştirdi ve bu yöntem daha sonra CFOP (Cross, F2L, OLL, PLL) olarak adlandırıldı. Bu metodun temel fikri şuydu: Üst katmandaki tüm olası durumları tek tek belirlemek ve her duruma en uygun formülü atamak. Durumu tanır, formülü uygularsınız, düşünmenize gerek kalmaz.
+1980'lerin başında, Çek asıllı profesör Jessica Fridrich (daha sonra ABD'deki Binghamton Üniversitesi'nde dijital adli tıp araştırmaları yaptı), katman katman bir çözüm yöntemi geliştirdi ve bu daha sonra CFOP (Cross, F2L, OLL, PLL) olarak adlandırıldı. Bu yöntemin fikri şuydu: Üst katmandaki tüm olası durumları listelemek ve her duruma en iyi algoritmayı atamak. Durumu tanır, algoritmayı uygularsın, düşünmene gerek kalmaz.
 
-![Jessica Fridrich ve ofisindeki Rubik Küpü](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
+![Jessica Fridrich ve ofisindeki Rubik küpü](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
 
-*Görsel: Jessica Fridrich ve ofisindeki Rubik Küpü. 1982'deki ilk Dünya Şampiyonası'nda 29.11 saniye ile 10. oldu ve CFOP (Fridrich Metodu) onun adıyla anılıyor.*
+*Şekil: Jessica Fridrich ve ofisindeki Rubik küpü. 1982'de ilk Dünya Şampiyonası'nda 29.11 saniye ile 10. sırayı aldı ve CFOP (Fridrich Metodu) onun adıyla anılmaktadır.*
 
-Bu yöntem inanılmaz hızlıdır. Neredeyse tüm dünya rekorları CFOP kullanılarak kırılmıştır. Bu yüzden tüm rehberler onu öğretir, tüm videolar ondan bahseder ve 'hızlı çözmeyi öğrenmek' eşittir 'CFOP öğrenmek', CFOP öğrenmek de 119 formülü ezberlemek anlamına gelir.
+Bu yöntem inanılmaz hızlı. Neredeyse tüm dünya rekorları CFOP ile kırılıyor. Bu yüzden tüm rehberler bunu öğretiyor, tüm videolar bunu anlatıyor, "hızlı çözme öğrenmek" demek "CFOP öğrenmek" demek haline geldi ve CFOP öğrenmek de 119 algoritma ezberlemek demek.
 
-Ancak dikkat edin, 'formül ezberlemek' CFOP'ye özgü bir özelliktir, 'hız'ın kendisinin bir özelliği değildir. CFOP'nin ezber gerektirmesinin nedeni, tümevarım (exhaustive search) yolunu seçmiş olmasıdır. Tümevarım, ezber gerektirir; bu da ödenen bedeldir.
+Ancak dikkat et, "algoritma ezberlemek" CFOP'nin bir özelliğidir, "hızın" kendisinin bir özelliği değildir. CFOP'nin ezber gerektirmesi, tümevarım yolunu seçmiş olmasındandır. Tümevarım ise hafıza gerektirir, bu da ödenen bedeldir.
 
-Peki, bu tümevarım yolunu seçmeyen bir yöntem var mı? Var.
+Peki, bu tümevarım yolunu izlemeyen bir yöntem var mı? Var.
 
-## Formül Ezberlemeden Çözüm: Roux Köprü Metodu
+## Algoritma Ezberlemeden Çözme Yöntemi: Roux Metodu
 
-2003 yılında Fransız Gilles Roux, tamamen farklı bir yaklaşım ortaya koydu. Katman katman çözmek yerine, önce sol ve sağda iki adet 1×2×3 'köprü' inşa ediliyor, ardından üst katmanın dört köşesi düzenleniyor ve son olarak sadece altı kenar kalıyor; bu kenarlar orta katman M ve üst katman U dönüşleriyle tamamlanıyor.
+2003 yılında, Fransız Gilles Roux tamamen farklı bir yaklaşım duyurdu. Katman katman çözmek yerine, önce sol ve sağda iki adet 1×2×3 "blok" oluşturur, ardından üst katmandaki dört köşeyi hizalar ve son olarak geriye kalan altı kenar parçayı orta katman (M) ve üst katman (U) hareketlerini kullanarak tamamlar.
 
-![Gilles Roux yarışırken](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
+![Gilles Roux yarışmada](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
 
-*Görsel: Gilles Roux yarışırken. Eski bir yarışma videosundan alınmıştır, görüntü yapay zeka ile onarılıp büyütülmüştür.*
+*Şekil: Gilles Roux yarışmada. Eski bir yarışma videosundan alınmıştır, görüntü yapay zeka ile iyileştirilmiştir.*
 
-Önceki yazımızda bu çerçeveyi kullanarak bir kez çözmüştük. Şimdi dört adımına yeniden göz atalım, bu kez 'her adımda ne ezberlememiz gerekiyor' konusuna odaklanarak:
+Önceki yazıda bu çerçeveyi kullanarak bir kez çözmüştük. Şimdi dört adımını tekrar gözden geçirelim, bu kez "her adımda ne ezberlemem gerekiyor" konusuna odaklanalım:
 
-| Adım | İçerik | Ezberlenecek Formül Sayısı |
+| Adım | İçerik | Ezberlenmesi Gereken Algoritma Sayısı |
 | --- | --- | --- |
-| 1. Sol Köprü | 1×2×3'lük bir blok oluşturma | 0, tamamen gözlem |
-| 2. Sağ Köprü | Simetrik olarak diğerini oluşturma | 0, tamamen gözlem |
-| 3. CMLL | Üst katmanın dört köşe parçasını yerine getirme | 9, hepsi üçlü döngülerden türetilebilir |
-| 4. LSE | Son altı kenar parçası | 0, sadece üst katman ve orta katman (M ve U) dönüşleri kullanılır |
+| 1. Sol Blok (FB) | 1×2×3'lük bir blok oluşturmak | 0, tamamen gözlem |
+| 2. Sağ Blok (SB) | Simetrik olarak diğerini oluşturmak | 0, tamamen gözlem |
+| 3. CMLL | Üst katman dört köşe parçasını hizalamak | 9, hepsi üçlü permütasyondan türetilebilir |
+| 4. LSE | Son altı kenar parça | 0, sadece üst katman ve orta katman (M ve U) hareketleri kullanılır |
 
-Dört adımdan üçü hiçbir formül gerektirmiyor. Tek ihtiyaç duyulan CMLL'de, tüm durumlar birleştiğinde 42 farklı varyasyon var, ancak 42 formül ezberlemenize gerek yok. Önceki yazımızda bahsettiğimiz köşe üçlü döngüsü R U' L' U R' U' L U, aynası ve birkaç varyantı ile tüm durumları kapsayabilir, sadece biraz daha yavaş olur.
+Dört adımın üçünde hiçbir algoritma gerekmiyor. İhtiyaç duyulan tek CMLL, tüm durumları topladığında 42 adettir, ancak 42 algoritmanın hepsine ihtiyacın yok. Önceki yazıda bahsettiğimiz köşe üçlü permütasyon algoritması olan R U' L' U R' U' L U, aynası ve birkaç varyantı ile tüm durumları kapsayabilir, sadece biraz daha yavaş olur.
 
-![Roux metodunun dört adımı](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/05-roux-four-steps.webp)
+![Roux'nun dört adımı](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/05-roux-four-steps.webp)
 
-*Görsel: Roux metodunun dört adımı; her adımda, o ana kadar yerine oturan parçalar gösterilmektedir: Sol Köprü → Sağ Köprü → CMLL (üst katman köşeleri) → LSE (son altı kenar). 3D Rubik Küpü sayfamdaki 'Çözüm' panelinden alınmıştır.*
+*Şekil: Roux'nun dört adımı. Her adım, o ana kadar hizalanmış parçaları gösterir: Sol Blok → Sağ Blok → CMLL (üst katman dört köşe) → LSE (son altı kenar). 3D küp sayfamdaki "Çözüm" panelinden alınmıştır.*
 
-Roux metodunun formül ezberlemeyi gerektirmemesinin nedeni budur: Ezberlenmesi gereken kısmı çok küçük bir alana sıkıştırır, geri kalan her şeyi gözleme, anlamaya ve pratik yapmaya bırakır.
+Roux'nun algoritma ezberlemeye ihtiyaç duymamasının nedeni budur: Ezber gerektiren kısmı çok küçük bir köşeye sıkıştırmış, geri kalan her şeyi gözlem, anlama ve pratik etmeye bırakmıştır.
 
 ## 165 Saniyeden 28 Saniyeye: Dört Aşama
 
-Aşağıda, benim bizzat geçtiğim yol bulunuyor. Her aşamayı başlangıç ve bitiş verileriyle işaretledim, o aşamada nerede takıldığımı ve neler çalıştığımı açıkladım. Sizin takıldığınız noktalar benden farklı olabilir, ancak sıralama büyük olasılıkla aynı olacaktır.
+Aşağıda benim gerçekten geçtiğim yol var. Her aşamayı verilerle başlangıç ve bitiş noktalarını belirttim, ardından o aşamada nerede takıldığımı ve ne pratik ettiğimi açıkladım. Senin takılma noktaların farklı olabilir, ancak sıralama büyük olasılıkla aynı olacaktır.
 
 ![Dört aşamanın zaman aralığı](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
-*Görsel: Dört aşamanın zaman aralığı. Birinci aşama 3 hafta, ikinci aşama 11 gün, üçüncü aşama iki ay, dördüncü aşama ise günümüze kadar devam ediyor.*
+*Şekil: Dört aşamanın zaman aralığı. Birinci aşama 3 hafta, ikinci aşama 11 gün, üçüncü aşama iki ay, dördüncü aşama bugüne kadar.*
 
 ### Aşama Bir: 165 Saniye → 60 Saniye (1-3. Haftalar)
 
-**Veriler**: 7 Mayıs'tan 27 Mayıs'a. İlk hafta ortalaması 165 saniye, üçüncü hafta 68 saniye.
+**Veri**: 7 Mayıs'tan 27 Mayıs'a kadar. İlk hafta ortalaması 165 saniye, üçüncü hafta 68 saniye.
 
-**Nerede Takıldım**: Sol köprüde çok acemiydim, her renk bloğunu bulmak uzun sürüyordu. Ayrıca bir blok grubunu bulduktan sonra, acemiler hep durup tekrar gözlemlemeye meyillidir.
+**Nerede Takılıyorsun**: Sol blok çok pratik değil, her bir köşe-kenar çiftini bulmak çok uzun sürüyor. Ve bir çifti bulduktan sonra, yeni başlayanlar her zaman durup gözlem yapmayı severler.
 
-![Acemilerin zamanı nereye harcadığı](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
+![Yeni başlayanlar zamanlarını nerede harcar](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
 
-*Görsel: Acemilerin zamanı nereye harcadığı. Eller dururken, gözler küp üzerinde ileri geri arama yapıyor; 'arama' süresi 'çevirme' süresinin kat kat fazlası.*
+*Şekil: Yeni başlayanlar zamanlarını nerede harcar. Eller durur, gözler küp üzerinde gezinir, "bakma" süresi "çevirme" süresinden kat kat fazladır.*
 
-**Neler Çalışmalı**:
+**Ne Pratik Etmeli**:
 
-Bu aşamada en büyük düşmanınız el yavaşlığı değil, göz yavaşlığıdır. 'Aramaya' harcadığınız zaman, 'çevirmeye' harcadığınız zamandan çok daha fazladır. Bu yüzden:
+Bu aşamada en büyük düşman yavaş eller değil, yavaş gözlerdir. "Bulmaya" harcadığın süre "çevirmeye" harcadığından çok daha fazladır. Bu yüzden:
 
-- Sabit bir gözlem pozisyonu kullanın, küpü döndürmeyin. Önceki yazımızda belirttiğimiz gibi, Roux metodunda gözlem açısı sabittir. Bu aşamada 'küpü döndürmeme' eylemini kas hafızanıza kazımalısınız. Küpü döndürmek istediğinizde durun ve kendinize sorun: Bu açıdan istediğim parçayı görebiliyor muyum?
-- Yavaş çevirme yapın. Zaman tutmayın, ancak hareketleriniz kesintisiz ve akıcı olsun, hiçbir duraklama olmasın. Her hareket çok yavaş olabilir, ama duraklamayın. Önemli olan, eliniz bir önceki hareketi yaparken gözünüzün bir sonraki harekete odaklanmasıdır; yavaş çevirmenin özü budur. Bu kulağa yavaşlamak gibi gelse de, aslında gözlerinizin parçaların konumunu ve gitmeleri gereken yeri görme ilişkisini eğitiyorsunuz.
-- Sadece ilk köprüyü çalışın. Küpü karıştırın, sol köprüyü yapın, tekrar karıştırın, tekrar sol köprüyü yapın. Diğer adımlara geçmeyin. İlk köprü, Roux metodundaki en serbest ve gözlem yeteneğini en çok geliştiren adımdır.
+- Sabit bir gözlem pozisyonu belirle, küpü çevirme. Önceki yazıda bahsettiğim gibi, Roux'da gözlem açısı sabittir. Bu aşamada "küpü döndürmeme"yi kas hafızana yerleştirmen gerekiyor. Her küpü döndürmek istediğinde dur, kendine sor: Bu açıdan istediğim parçayı görebiliyor muyum?
+- Yavaş çözme (slow solving). Zaman tutma, ama hareketlerin kesintisiz olsun, hiçbir duraklama olmasın; her hareket çok yavaş olabilir, ama duraklama olmasın. Önemli olan, elin bir önceki hareketi yaparken gözlerinin bir sonraki harekete odaklanmasıdır, bu yavaş çözmenin özüdür. Bu yavaşlıyormuş gibi görünse de, aslında gözlerinin parçaların konumunu ve gitmeleri gereken yeri görme yeteneğini geliştiriyorsun.
+- Sadece ilk bloğu pratik et. Küpü karıştır, sol bloğu yap, tekrar karıştır, tekrar sol bloğu yap. İleri gitme. İlk blok, Roux'daki en özgür adımdır ve gözlem becerilerini en çok geliştiren adımdır.
 
-Bu aşamada yeni formül öğrenmeye çalışmayın. Şu anki darboğazınız formüllerde değil.
+Bu aşamada yeni algoritma öğrenme. Şu anki darboğazın algoritmalarda değil.
 
 ### Aşama İki: 60 Saniye → 40 Saniye (4-5. Haftalar)
 
-**Veriler**: 27 Mayıs'tan 7 Haziran'a, 11 gün. Bu, tüm süreçteki en hızlı düşüş dönemiydi ve aynı zamanda en çok pratik yaptığım dönemdi; Haziran'ın ilk haftasında 723 çözüm yaptım.
+**Veri**: 27 Mayıs'tan 7 Haziran'a, 11 gün. Bu, tüm süreçteki en hızlı düşüş dönemiydi ve en çok pratik yaptığım dönemdi; Haziran'ın ilk haftasında 723 çözüm yaptım.
 
-**Nerede Takıldım**: Hareketler akıcı değildi. Küp takılıyordu.
+**Nerede Takılıyorsun**: Hareketler kesintisiz değil. Küp takılıyor.
 
-**Neler Çalışmalı**:
+**Ne Pratik Etmeli**:
 
-Bu aşamada, her adımın hareketlerini optimize etmeniz, anlama üzerine her hareketin akıcılığını artırmanız gerekir.
+Bu aşamada, her adımın hareketlerini optimize etmen, anlama üzerine her hareketin akıcılığını artırman gerekiyor.
 
-- İkinci Köprü. İkinci köprü, ilk köprüden daha zordur, çünkü alan yarıya iner ve tamamlanmış sol köprüyü bozamazsınız. Anahtar dönüşler R, r (sağ iki katman), M, U'dur. Bu aşamada, sol köprünün asla bozulmaması için r ve M'yi R yerine kullanarak parçaları hareket ettirmeyi öğrenmelisiniz. Hareket adımlarını optimize etmek, zaman kazanmaktır. Örneğin, saat yönünde üç kez döndürmek, saat yönünün tersine bir kez döndürmeye eşdeğerdir.
-- M katmanını akıcı kullanın. Roux metodunun son adımı tamamen M ve U dönüşlerinden oluşur. M katmanını ne kadar akıcı çevirdiğiniz, hızınızın alt sınırını doğrudan belirler. Yüzük parmağınızı veya orta parmağınızı kullanarak M'yi itin ve M' U M' U gibi ritimleri çalışmaya başlayın.
-- CMLL şekil tanıma. Önceki yazımızda, üçlü döngülerle dört köşeyi 'deneme yanılma' yoluyla bulmuştuk. Şimdi ise önce bakıp sonra yapmaya başlamalısınız: Üst katmanı çevirmeden önce, dört köşenin sarı yönelimine bir göz atın ve 0, 1, 2 veya 4 'iyi köşe' olup olmadığını belirleyin, ardından doğrudan ilgili hareketi yapın. Çok az sayıda formül kullanarak da verimlilikte büyük bir artış sağlayabilirsiniz, bu oldukça karlıdır. Bu formüllerin büyük bir kısmı ezberlemek yerine, yaparak ve anlayarak öğrenilebilir.
+- İkinci blok (SB). İkinci blok, alan yarıya indiği ve tamamlanmış sol bloğun bozulmaması gerektiği için ilk bloktan daha zordur. Anahtar hareketler R, r (sağ iki katman), M, U'dur. Bu aşamada, sol bloğun asla bozulmaması için parçaları hareket ettirmek için R yerine r ve M kullanmayı öğrenmelisin. Hareket adımlarını optimize etmek, zaman kazanmaktır. Örneğin, üç kez saat yönünde çevirmek, bir kez saat yönünün tersine çevirmeye denktir.
+- M katmanını akıcı kullan. Roux'nun son adımı tamamen M ve U hareketlerinden oluşur, M katmanını akıcı döndürüp döndürememen doğrudan alt sınırını belirler. Yüzük veya orta parmağını kullanarak M'yi it, M' U M' U gibi ritimleri pratik etmeye başla.
+- CMLL şekillerini tanıma. Önceki yazıda, üçlü permütasyon ile dört köşeyi "deneyerek" hizalamıştık. Şimdi önce bakıp sonra yapmaya başlaman gerekiyor: Üst katmanı döndürmeden önce, dört köşenin sarı yönelimine bir göz at, 0, 1, 2 veya 4 iyi köşe olup olmadığını belirle ve doğrudan ilgili hareketi yap. Çok az sayıda algoritma öğrenerek de verimlilikte büyük bir artış sağlayabilirsin, bu çok uygun maliyetlidir. Bu algoritmaların büyük bir kısmını ezberlemene gerek yok, yaptıkça anlarsın.
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="Sağ köprüyü yaparkenki bakış açısı" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/08-m-prime-u-m.webp" alt="M' U M" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="Sağ blok oluşturulurken bakış açısı" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
+  <img src="/uploads/images/images/solve-rubiks-cube-sub-30-without-memorizing/08-m-prime-u-m.webp" alt="M' U M" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
 </div>
 
-*Sol görsel: Sağ köprüyü yaparkenki bakış açısı. Sol köprü tamamlanmıştır ve sağdaki köşe-kenar çiftini yerleştirmek için sadece R, r, M, U dönüşleri kullanılır, sol köprüye asla dokunulmaz. Sağ görsel: M' U M, Roux metodunun ikinci yarısında en çok kullanılan hareket dizisi. Orta katman yukarı, üst katman bir kez döner, orta katman geri döner; bu üç adım, üst katman ve orta katmandaki bir kenar çiftini değiştirir.*
+*Şekil sol: Sağ blok oluşturulurken bakış açısı. Sol blok tamamlandı, sağdaki köşe-kenar çiftini yerleştirmek için sadece R, r, M, U dört hareketi kullanılır, sol bloğa asla dokunulmaz. Şekil sağ: M' U M, Roux'nun ikinci yarısında en çok kullanılan hareket dizisi. Orta katman yukarı, üst katman bir kez döner, orta katman geri döner, üç adımda üst katman ve orta katmandaki bir çift kenarı değiştirir.*
 
-Düzenlediğim [Roux Metodu Formül Kütüphanesi](/zh/projects/rubiks-cube/roux#cmll)'ne bakabilirsiniz. CMLL sayfası iki aşamalıdır: 7 yönelim formülü + 2 konumlandırma formülü, toplamda 9 formül. Bu, hız artışı için maliyet-etkin bir seçenektir, öğrenmesi kolaydır ve her bir setin ustalaşması yaklaşık 1-2 saniye kazandırabilir. Kısa bir pratikle hızla ustalaşırsınız ve bazıları zaten önceki yazıda tanıtılmıştı; hepsini ezberlemenize gerek kalmadan 30 saniyenin altına inmenizi sağlayacaktır.
+Düzenlediğim [Roux Metodu Algoritma Kütüphanesi](/tr/projects/rubiks-cube/roux#cmll)'na bakabilirsin. CMLL sayfası iki aşamalıdır: 7 yönelim algoritması + 2 konumlandırma algoritması, toplam 9 adet. Bu, hız artışı için çok uygun maliyetli bir seçenektir, kolayca öğrenilebilir ve her bir grubu akıcı hale getirdiğinde yaklaşık 1-2 saniye kazanabilirsin. Biraz pratikle, kısa sürede ustalaşacaksın, bazıları önceki makalede zaten tanıtılmıştı ve hepsini ezberlemene gerek kalmadan 30 saniye altına inmeni sağlayabilir.
 
-![İki aşamalı CMLL'nin ilk adımı, yedi köşe parçası yönelimi](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
+![İki aşamalı CMLL'nin ilk adımı, yedi köşe yönelimi](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
-*Görsel: İki aşamalı CMLL'nin ilk adımı, yedi köşe parçası yönelimi. Üstten görünümde sarı, yukarı bakan üst yüzey rengidir; dıştaki küçük çubuklar, o köşenin üst yüzey renginin yan tarafa baktığını gösterir. Sarı köşelerin sayısına göre şekli tanıyın: 0 köşe H veya Pi, 1 köşe S veya AS, 2 köşe U, T veya L.*
+*Şekil: İki aşamalı CMLL'nin ilk adımı, yedi köşe yönelimi. Üstten görünümde sarı, yukarı bakan üst yüzey rengidir, dıştaki küçük çubuklar o köşenin üst yüzey renginin yan tarafa doğru yönelimini gösterir. Sarı köşelerin sayısına göre şekli tanı: 0 ise H veya Pi, 1 ise S veya AS, 2 ise U, T veya L.*
 
-Sarı üst yüzeyler hizalandıktan sonra, köşe parçalarının yan yüzeylerini hizalamak için bu iki formülü kullanabilirsiniz.
+Sarı üst kısmı hizaladıktan sonra, köşe parçalarının yanlarını hizalamak için bu iki algoritmayı kullanabilirsin.
 
-Eğer bir yüzeyin renkleri zaten hizalanmışsa, örneğin kırmızı aynı yüzeyde ise, onu sola döndürün ve ardından bitişik takas formülünü seçebilirsiniz. Hiçbir yüzeyin rengi hizalı değilse, çapraz takas formülünü seçin.
+Eğer bir yüz zaten aynı renkteyse, örneğin kırmızı zaten aynı yüzdeyse, onu sola çevirip bitişik takas algoritmasını seçebilirsin. Hiçbir yüz aynı renkte değilse, çapraz takas algoritmasını seçmelisin.
 
-![İki aşamalı CMLL'nin ikinci adımı, iki köşe parçası konumu](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
+![İki aşamalı CMLL'nin ikinci adımı, iki köşe konumu](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
 
-*Görsel: İki aşamalı CMLL'nin ikinci adımı, iki köşe parçası konumu. Sol görseldeki sol taraftaki iki köşenin kırmızısı zaten hizalı, bitişik takas kullanılır; sağ görselde hiçbir yüzey hizalı değil, çapraz takas kullanılır.*
+*Şekil: İki aşamalı CMLL'nin ikinci adımı, iki köşe konumu. Sol resimde sol taraftaki iki köşenin kırmızısı zaten aynı, bitişik takas kullanılır; sağ resimde hiçbir yüz aynı değil, çapraz takas kullanılır.*
 
-Her bir formül grubunu bolca yavaş çevirme yaparak anlayabilirsiniz. Bunları formül olarak değil, belirli sabit hareketler olarak görün; yavaş yavaş keşfederek bu hareketleri kendiniz de bulabilirsiniz, ancak burada listelemek size zaman kazandıracaktır.
+Her algoritma grubunu anlamak için bolca yavaş çözme yapabilirsin, bunları algoritma olarak değil, belirli sabit hareketler olarak gör. Bu hareketleri yavaş yavaş kendin de keşfedebilirsin, ancak burada listelenmeleri sana kestirme yol sağlar.
 
-Bir de, her pratikten daha hızlı sonuç veren bir şey var: Biraz para harcayıp yeni bir Rubik Küpü alın. Eğer elinizdeki hala dönerken gıcırtı yapan, fazla çevrildiğinde takılan eski bir küpse, manyetik özellikli modern bir 3x3 küp alın. En yeni küpler size mühendislik optimizasyonunun gücünü hissettirecek; pürüzsüz döner, otomatik olarak yerine oturur, neredeyse hiç takılmaz. Sadece küp değiştirmekle bile ortalama süreniz bir anda 15 saniye kısalabilir. Fiyat-performans açısından [MoYu RS3 M V5 (manyetik süspansiyon + top çekirdekli versiyon)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20) idealdir, yirmi dolar civarındadır ve sub-20 seviyesine kadar size yeterli olacaktır.
+Bir şey daha var, her türlü pratikten daha etkili: Biraz para harca ve yeni bir küp al. Eğer elindeki hala dönerken takır tukur ses çıkaran, fazla döndürünce sıkışan eski bir küpse, manyetik özellikli modern bir 3x3 al. En yeni küpler, mühendislik optimizasyonunun gücünü hissettirecek; pürüzsüz dönüş, otomatik hizalama ve neredeyse hiç sıkışma yaşanmayacak. Sadece küp değiştirmek bile ortalama süreni bir anda 15 saniye kadar hızlandırabilir. Fiyat performans olarak en iyi seçenek [MoYu RS3 M V5 (manyetik süspansiyon + top çekirdekli versiyon)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20) yaklaşık yirmi dolar civarında ve sub-20 seviyesine kadar yeterli olacaktır.
 
-### Aşama Üç: 40 Saniye → 30 Saniye (5-13. Haftalar, İki Ay)
+### Aşama Üç: 40 Saniye → 30 Saniye (5. Hafta – 13. Hafta, İki Ay)
 
-**Veriler**: 7 Haziran'dan 4 Ağustos'a. Ao100 ortalamasını 39.8 saniyeden 29.9 saniyeye indirmek 58 gün sürdü. Bu aşamada nadiren 30 saniyenin altında süreler görülebilirdi, ancak bu sadece çok şanslı olduğunuzda olurdu. Ortalama çözüm süresi düştükçe, 1 saniye bile ilerlemenin zorluğu katlanarak artacaktır.
+**Veri**: 7 Haziran'dan 4 Ağustos'a kadar. Ao100 ortalaması 39.8 saniyeden 29.9 saniyeye düşmek 58 gün sürdü. Bu aşamada zaman zaman 30 saniyenin altında dereceler elde edilebilir, ancak bu sadece çok şanslı olunduğunda gerçekleşir. Ortalama çözüm süresi azaldıkça, 1 saniye ilerleme kaydetmenin zorluğu katlanarak artacaktır.
 
-![Günlük ortalama süreler](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
+![Günlük ortalama sonuçlar](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
-*Görsel: Günlük ortalama süreler. Haziran ortasından sonra eğri neredeyse düzleşti ve 30-40 saniye arasında iki ay boyunca takıldım.*
+*Şekil: Günlük ortalama sonuçlar. Haziran ortasından sonra eğri neredeyse düzleşti, 30-40 saniye arasında iki ay boyunca takıldı.*
 
-Bu plato dönemidir. Herkesin başına gelir, ben burada iki ay kaldım.
+Bu bir plato dönemi. Herkes bunu yaşar, ben burada iki ay kaldım.
 
-**Nerede Takıldım**: Üst katmanın altı kenar parçasını yerine getirmek çok yavaştı, mantığı anlamıyordum ve her seferinde tekrar tekrar denemeye çalışarak çok zaman kaybediyordum. Sol ve sağ köprüler hala yeterince akıcı değildi.
+**Nerede Takılıyorsun**: Üst katmandaki altı kenar parçayı çözmek çok yavaş, mantığını anlamıyorsun, her seferinde tekrar tekrar denemeye çalışıyorsun, bu da çok zaman kaybettiriyor. Sol blok ve sağ blok hala yeterince pratik değil.
 
-**Neler Çalışmalı**:
+**Ne Pratik Etmeli**:
 
-- EO (Edge Orientation) tanıma. Önceki yazımızda bahsettiğimiz gibi, yanlış kenarların (hatalı kenarlar) sadece birkaç durumu vardır: 0, 0 veya 4 olmayan, 4 (üstte 2 altta 2), 4 (hepsi üstte), 4 (üstte 3 altta 1). Bu aşamadaki hedefiniz şudur: Köprü tamamlandığı anda, saymadan, bir bakışta hangi durumda olduğunu anlamak. Pratik yöntemi, küpü karıştırıp sadece CMLL'yi bitirdikten sonra duraklamak, yanlış kenar sayısını söylemek ve sonra devam etmektir.
-- Birçok kişi buradaki hareketleri anlamaz. EO aşamasının nihai amacı, 'üstte 3 altta 1' şeklinde bir ok formu oluşturmaktır. Çünkü tam form, yalnızca bir hareketle ok formuna dönüşebilir, bu yüzden tersine mühendislik yaparak, bunun çözümden önceki son adım olduğunu düşünebiliriz. Dolayısıyla, kaç tane yanlış kenar olursa olsun, nihai amaç bir ok oluşturmaktır. Üstte 4 yanlış kenar varsa, bir çift üst ve alt kenarı değiştirerek bir yanlış kenarı aşağıya indirir ve oku oluşturursunuz. Üstte 2, altta 2 varsa, bir çift üst ve alt kenarı değiştirerek bir yanlış kenarı yukarıya çıkarır ve oku oluşturursunuz. Eğer üstte 1 altta 1, veya üstte 2 varsa, M' U M ile önce önceki duruma dönüştürür, sonra oku oluşturursunuz. Bolca gözlem ve düşünme yoluyla, 1/1 durumunun en iyi adımlarını kendiniz keşfedebilirsiniz.
-- Bolca öngörü (look-ahead) pratiği yapın. Bu, 40 saniyeden 30 saniyeye inmek için en önemli şeydir ve aynı zamanda en sezgi karşıtı olanıdır: Biraz daha yavaş çevirin, biraz daha uzağa bakın. Sol köprüyü yaparken gözünüzü yerleştirmekte olduğunuz parçaya değil, bir sonraki parçanın nerede olduğuna odaklayın. Başlangıçta çok garip hissettirecek, süreleriniz önce kötüleşecek, ancak bir hafta ısrar ederseniz aniden düzeldiğini göreceksiniz.
-- CMLL'de tereddüt etmeyin. Eğer bir hareketi her seferinde düşünmeden yapamıyorsanız, o hareket henüz size ait değildir. Her bir hareketi ayrı ayrı 50 kez pratik yapın, ta ki şekli gördüğünüzde eliniz kendiliğinden hareket edene kadar.
+- EO (Edge Orientation) tanıma. Önceki yazıda bahsetmiştim, yanlış yönlenmiş kenarların sadece birkaç durumu var: 0, 0 olmayan 4 olmayan, 4 (üstte 2, altta 2), 4 (hepsi üst katmanda), 4 (üstte 3, altta 1). Bu aşamada hedef: Blokları tamamladığın anda, saymadan, bir bakışta hangi durumda olduğunu anlamak. Pratik yöntemi, küpü karıştırıp sadece CMLL bitene kadar yapmak, sonra duraklayıp yanlış yönlenmiş kenar sayısını söylemek ve sonra devam etmek.
+- Birçok kişi buradaki hareketleri anlamıyor. EO aşamasının nihai amacı, üstte 3, altta 1 ok şeklini oluşturmaktır, çünkü tam form sadece bir karıştırma hareketiyle ok şekline dönüşür. Bu nedenle, tersine düşünülürse, bu, çözümü tamamlamadan önceki son adımdır. Bu yüzden, kaç tane yanlış yönlenmiş kenar olursa olsun, nihai amaç bir ok şekli oluşturmaktır. Üstte 4 yanlış yönlenmiş kenar varsa, bunlardan bir çift üst-alt kenarı değiştirerek birini aşağı indirip ok şeklini elde edersin. Üstte 2, altta 2 varsa, bunlardan bir çift üst-alt kenarı değiştirerek birini yukarı çıkarıp ok şeklini elde edersin. Eğer üstte 1, altta 1 veya üstte 2 varsa, M' U M kullanarak önce önceki duruma dönüştürür, sonra ok şeklini oluşturursun. Bolca gözlem ve düşünmeyle, 1/1 için en iyi adımları kendin keşfedebilirsin.
+- Bolca look-ahead (ileriyi görme) pratiği yap. 40 saniyeden 30 saniyeye inmek için en önemli şey budur ve aynı zamanda en sezgiye aykırı olanıdır: Biraz daha yavaş çevir, biraz daha uzağa bak. Sol bloğu yaparken, yerleştirdiğin parçaya değil, bir sonraki parçanın nerede olduğuna bak. Başlangıçta çok garip gelecek, derecelerin önce kötüleşecek, ama bir hafta ısrar edersen aniden iyileşecektir.
+- CMLL'de tereddüt etme. Eğer bir hareketi her seferinde düşünmeden yapamıyorsan, o henüz senin değildir. Her hareketi tek tek 50 kez pratik et, ta ki şekli gördüğünde elin hareket edene kadar.
 
 ![Ok şekli](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
 
-*Görsel: Ok şekli. Üst katmandaki üç yanlış kenar (açık mavi vurgulu) bir ok şeklinde sıralanmış ve alt katmandaki yanlış kenarı işaret ediyor. Bu durumda, tek bir M' U M hareketi dördünü birden yerine yerleştirebilir. [Bu durumu 3D küpte açarak](/zh/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) adım adım görebilirsiniz.*
+*Şekil: Ok şekli. Üst katmandaki üç yanlış yönlenmiş kenar (turkuaz vurgulu) bir ok şeklinde dizilmiş, alt katmandaki yanlış yönlenmiş kenarı işaret ediyor. Bu durumda bir M' U M hareketi dördünü birden hizalayabilir. [Bu durumu 3D küpte açarak](/tr/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) adım adım görebilirsin.*
 
 ![EO'nun altı durumu](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
-*Görsel: EO'nun altı durumu. Sol üst köşedeki etiket yanlış kenar sayısını (üst / alt) belirtir, sarı iyi kenarları, açık mavi çerçeve ise yanlış kenarları gösterir. Sadece ok şeklinde olan için formül gerekir, diğer beş durum önce ok şekline dönüştürülür.*
+*Şekil: EO'nun altı durumu. Sol üst köşedeki etiket, yanlış yönlenmiş kenar sayısını (üst / alt) gösterir, sarı iyi yönlenmiş kenarları, turkuaz çerçeve ise yanlış yönlenmiş kenarları belirtir. Sadece ok şeklindeki durum algoritma gerektirir, diğer beş durum önce oka dönüştürülür.*
 
-Sol ve sağ kenar parçalarını yerine getirmek için, burada üst yüzey sarı, alt yüzey beyaz ve sol köprü kırmızı renkte varsayılacaktır. Bu durumda, yerine getirilmesi gereken sarı-kırmızı kenar parçası + sarı-turuncu kenar parçasıdır (vurgulanan yerler). Ana fikir, sarı-kırmızı kenar parçasını üst-alt kenar takasıyla alt yüzeye indirmek, sarı-turuncu kenar parçasını da alt yüzeye indirmektir. İki kenar parçası alt yüzeyde karşı karşıya geldiğinde, üst yüzeyi uygun konuma çevirerek M2 U veya M2 U' ile U katmanının sol ve sağ kenar parçaları yerine oturtulabilir.
+Sol ve sağ kenar parçalarını hizalamak için, sarı üst, beyaz alt yüzey ve sol blok kırmızı olacak şekilde, hizalanması gerekenler sarı-kırmızı kenar parça + sarı-turuncu kenar parça (vurgulu yerler) olacaktır. Ana fikir, sarı-kırmızı kenar parçayı ve sarı-turuncu kenar parçayı, üst-alt kenar takası yoluyla alt yüzeye indirmektir. İki kenar parça alt yüzeyde karşı karşıya geldiğinde, üst yüzeyi uygun konuma çevirirsen, M2 U veya M2 U' ile U katmanının sol ve sağ kenar parçalarını hizalayabilirsin.
 
-Daha iyi anlaşılmasına yardımcı olmak için, EO'nun altı durumunu [Roux Metodu Formül Kütüphanesi'nin LSE sayfası](/zh/projects/rubiks-cube/roux#lse)nda derledim. Her bir görsele tıklayarak 'detaylı gör' seçeneğiyle 3D küpte ilgili durumu açabilir, yanlış kenarların otomatik olarak vurgulandığını görebilirsiniz. Aynı sayfada ayrıca sonraki UL/UR yerleştirme ve son dört kenarın tüm durumları da bulunmaktadır.
+Daha iyi anlamana yardımcı olmak için, EO'nun altı durumunu [Roux Metodu Algoritma Kütüphanesi'nin LSE sayfasında](/tr/projects/rubiks-cube/roux#lse) düzenledim. Her birine "detayları gör"e tıklayarak 3D küpte ilgili durumu açabilir, ilgisiz blokları otomatik olarak gizleyebilir ve hareket ettirilecek kenarları vurgulayabilirsin. Aynı sayfada UL/UR hizalama ve son dört kenarın tüm durumları da bulunur.
 
-Bu aşamada pratik miktarının azalması kötü bir şey değildir. Plato dönemini sadece tekrar sayısını artırarak aşamazsınız; belirli bir kötü alışkanlığı değiştirmekle aşarsınız. Benim deneyimim, her seferinde sadece bir şeyi değiştirmek oldu.
+Bu aşamada pratik miktarının azalması kötü bir şey değildir. Plato dönemi sadece nicelik artırarak geçilemez, belirli bir kötü alışkanlığı değiştirerek aşılır. Benim deneyimime göre, her seferinde sadece bir şeyi değiştirmek en iyisidir.
 
 ### Aşama Dört: 30 Saniye → 28 Saniye (13. Haftadan Sonra)
 
-**Veriler**: 4 Ağustos'tan sonra. Eylül ayının tamamında kayıtlı pratik sayısı 122 idi, ancak aslında birçok pratik kayıt altına alınmamıştı. Rubik Küpü'nü bir masaüstü oyuncağı haline getirdim; canım istediğinde birkaç kez oynuyorum, sinirli veya kaygılı olduğumda oynuyorum, iş aralarında oynuyorum, sıkıldığımda oynuyorum, yani küp çözmeyi hayatımın bir parçası haline getirdim. Ao100 ortalaması da yavaş yavaş 29.9'dan 28.2'ye düştü.
+**Veri**: 4 Ağustos'tan sonra. Eylül ayı boyunca kayıtlı pratik sayısı 122 idi, aslında birçok pratik kaydedilmedi. Küpü masamdaki bir oyuncak haline getirdim, elimi uzatıp oynuyorum; keyfim yerindeyken birkaç kez, gergin veya endişeliyken birkaç kez, iş aralarında birkaç kez, canım sıkıldığında birkaç kez oynuyorum, küp çözmeyi hayatımın bir parçası haline getirdim. Ao100 ortalaması da yavaş yavaş 29.9'dan 28.2'ye düştü.
 
-**Nerede Takıldım**: Belirgin bir darboğaz yoktu, sadece yeterince akıcı değildim.
+**Nerede Takılıyorsun**: Belirgin bir darboğaz yok, sadece yeterince pratik değil.
 
-**Neler Çalışmalı**:
+**Ne Pratik Etmeli**:
 
-Eğer ortalama hızınız hala 30 saniyenin üzerindeyse, yapmanız gereken tek şey daha fazla pratik yapmaya devam etmektir, yeni formüller ezberlemeye çalışmak değil.
+Eğer ortalama hızın hala 30 saniyenin üzerindeyse, yapman gereken tek şey yeni algoritmalar ezberlemek yerine bolca pratik etmeye devam etmektir.
 
-Sürekli yavaş çevirme yaparak öngörü pratiği yapın, böylece giderek hızlanacaksınız.
+Sürekli olarak yavaş çözme ile look-ahead pratiği yaparak daha da hızlanacaksın.
 
-Fırsat buldukça küpü elinize alıp oynayın, küpü çalışma masanız gibi kolayca ulaşabileceğiniz bir yere koyun, böylece iş aralarında oynayabilirsiniz. Ayrıca çözümlerinizin videolarını düzenli olarak kaydedin, hangi aşamada en çok zaman kaybettiğinizi görün ve buna yönelik optimizasyonlar yapın; işte bu kasıtlı pratik budur. İlerleme hızınız, normal pratiklerinizin toplam sayısına değil, kasıtlı pratiklerinizin sayısına bağlıdır.
+Küpü eline alıp oynamaya devam et, masan gibi kolayca ulaşabileceğin bir yere koy, böylece iş aralarında oynayabilirsin. Ayrıca sık sık kendi çözümlerinin videolarını çekerek hangi aşamada en çok zaman kaybettiğini görebilir ve buna yönelik optimizasyonlar yapabilirsin. İşte bu bilinçli pratiktir; ilerleme hızın, sıradan pratiklerinin toplam sayısına değil, bilinçli pratiklerinin sayısına bağlıdır.
 
-Sonra fark edeceksiniz ki, 30-35 saniyelik darboğaz dönemini atlattıktan sonra hızınız bir kademe daha düşmüş.
+Ve sonra fark edeceksin ki, 30-35 saniye darboğazını aştıktan sonra hızın bir basamak daha düşmüş.
 
-Bu aşamaya geldiyseniz sizi tebrik ederim, yeni başlayanlara göre artık çok yetenekli bir oyuncusunuz!
+Bu aşamaya ulaştıysan seni tebrik ederim, yeni başlayanlara göre artık çok yetenekli bir oyuncusun!
 
-## Formül Ezberlememenin Bedeli
+## Algoritma Ezberlemenin Bedeli
 
-Buraya gelmişken, dürüst olalım. Formül ezberlememek bedelsiz değildir.
+Buraya kadar gelmişken, biraz dürüst olalım. Algoritma ezberlememek bedelsiz değil.
 
-CMLL aşaması yavaştır. 42 durumu 9 formülle çözmek, bazı durumlarda iki kez işlem yapmak anlamına gelir. Tam set CMLL bilenler bu adımda benden iki üç saniye daha hızlıdır.
+CMLL aşaması yavaş. 42 durumu 9 algoritma ile kapsamak, bazı durumların iki kez yapılması gerektiği anlamına gelir. Tam set CMLL kullananlar bu adımda benden iki üç saniye daha hızlıdır.
 
-M katmanı tekniği eşiği yüksektir. Roux metodunun ikinci yarısı tamamen M katmanına dayanır ve M katmanı R ve U'dan daha zor döner, kolayca takılabilir ve küpün kendisine olan gereksinimleri de daha fazladır.
+M katmanı parmak hareketleri eşiği yüksek. Roux'nun ikinci yarısı tamamen M katmanına dayanır ve M katmanı R, U'dan daha zor döner, takılmaya daha meyillidir ve küpün kendisine olan gereksinimleri de daha yüksektir.
 
-Üst sınıra takılmayın. En iyi oyuncular arasında Roux metodunu kullanarak dünya sıralamasına girenler de var, metodun kendisinin bir üst sınırı yok. Ancak 15 saniyenin altına inmek istiyorsanız, büyük olasılıkla 42 CMLL formülünü tamamlamanız gerekecektir. Ama bu başka bir aşamanın konusudur. 30 saniyenin altına inmek için buna gerek yok.
+Üst sınıra gelme konusunda endişelenme. En iyi oyuncular arasında Roux kullanarak dünya sıralamasında üst sıralara çıkanlar da var, metodun kendisinin bir üst sınırı yok. Ancak 15 saniyeye inmek istiyorsan, büyük olasılıkla 42 CMLL algoritmasını tamamlaman gerekecek. Ama bu başka bir aşamanın meselesi. 30 saniye altına inmek için gerekmez.
 
-Üstelik, tek elle küp çözen neredeyse her dünya çapında oyuncu Roux metodunu kullanır, çünkü bu metot tek elle çözmek için de gerçekten çok uygundur.
+Üstelik, neredeyse her tek elle çözüm yapan dünya çapında oyuncu, Roux metodunu kullanıyor, çünkü gerçekten tek elle çözmek için de çok uygun.
 
-**Resmi Yarışmalarda (WCA) Roux ile En Hızlı Süreler:**
+**Resmi yarışmalarda (WCA) Roux kullanan en hızlı dereceler:**
 
-- Tekli çözüm 4.11 saniye, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipinler), 2023 Valenzuela Cubing Open'da, resmi olarak Roux ile kırılmış en hızlı tekli çözüm olarak kabul edilmektedir ([yeniden canlandırma videosu](https://www.youtube.com/watch?v=5H4TRJSUm-U)).
-- Ortalama 5.98 saniye, yine aynı kişi, 2019'da, o zamanlar Asya rekoruydu ve tarihteki üçüncü resmi sub-6 ortalamasıydı ([WCA verileri](https://www.worldcubeassociation.org/persons/2017VILL41)).
-- Kendisi aynı zamanda [tek el dünya rekoru sahibidir](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): Ortalama 8.09, tekli çözüm 6.05 (2024). Tek elle çözme camiasında Roux'nun en iyi çözüm yöntemi olduğu yaygın olarak kabul edilir.
+- Tek çözüm 4.11 saniye, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipinler), 2023 Valenzuela Cubing Open, Roux'nun resmi olarak tanınan en hızlı tek çözümü ([yeniden yapım videosu](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+- Ortalama 5.98 saniye, yine aynı kişi, 2019, o zaman Asya rekoruydu ve tarihteki üçüncü resmi sub-6 ortalamaydı ([WCA profili](https://www.worldcubeassociation.org/persons/2017VILL41))
+- Aynı zamanda [tek elle dünya rekoru sahibidir](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): Ortalama 8.09, tek çözüm 6.05 (2024). Tek elle çözüm yapanlar arasında Roux'nun en iyi çözüm yöntemi olduğu yaygın olarak kabul edilir.
 
-Bence bu takas çok karlı. CMLL'de harcadığınız iki üç saniyelik zaman karşılığında şunları elde edersiniz: Her adımda ne yaptığınızı bilmek, üç ay küpe dokunmasanız bile unutmamak ve daha önce hiç görmediğiniz herhangi bir küpü çözebilme yeteneği.
+Bence bu takas çok değerli. İki üç saniyelik CMLL zamanına karşılık şunları elde ediyorsun: Her adımda ne yaptığını bilme, üç ay küpe dokunmasan bile unutmayacaksın, hiç görmediğin bir küpü eline aldığında bile çözümünü çıkarabileceksin.
 
 ## Özet
 
 ![Çözüm tamamlandı](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
 
-Çözebilmekten 30 saniyenin altına inmek, bir formül ezberleme süreci değil, el, göz ve beynin koordinasyonunu geliştirme sürecidir.
+Küpü çözebilmekten 30 saniye altına inmek, algoritma ezberleme süreci değil, el, göz ve beynin koordinasyonunu eğitme sürecidir.
 
-Dört aşama, dört şey: Önce küpü döndürmeden bakmayı öğrenin, sonra sol köprüyü bozmadan sağ köprüyü yapmayı öğrenin, ardından bu adımı yaparken bir sonraki adımı görmeyi öğrenin ve son olarak ellerinizin gözlerinize yetişmesini sağlayın.
+Dört aşama, dört şey: Önce küpü çevirmeden bakmayı öğren, sonra sol bloğu bozmadan sağ bloğu yapmayı öğren, sonra bu adımı yaparken bir sonraki adımı görmeyi öğren ve son olarak elinin gözüne yetişmesini sağla.
 
-Hızın kaynağı formüller değildir. Gözlem yeteneğidir.
+Hızın kaynağı algoritmalar değil. Gözlem yeteneğidir.
 
-Her aşamadaki ilerlemenizle pozitif geri bildirim oluşturmayı öğrenin; akıcılık egzersizleri bile sıkıcı olmak zorunda değildir, özellikle de bir kez daha rekor kırdığınızdaki o sürprizi yaşadığınızda. Özellikle başlangıç ve orta seviyelerde, her gün rekor kırmanın getirdiği mutluluğu deneyimleyeceksiniz.
+Her aşamadaki ilerlemenle pozitif geri bildirim oluşturmayı öğren, böylece pratik sıkıcı olmaktan çıkar, özellikle de yeni bir rekor kırdığında yaşadığın sürpriz sevinçle. Özellikle başlangıç ve orta seviyelerde, her gün rekor kırmanın verdiği mutluluğu yaşayacaksın.
 
-Yazıdaki tüm formülleri ve durumları [Roux Metodu Formül Kütüphanesi](/zh/projects/rubiks-cube/roux)'nde derledim, takıldığınızda dönüp bakabilirsiniz.
+Yazıdaki tüm algoritmaları ve durumları [Roux Metodu Algoritma Kütüphanesi](/tr/projects/rubiks-cube/roux)'nda düzenledim, takıldığında dönüp bakabilirsin.
 
-Rubik Küpü dünyasının keyfi sonsuzdur, iyi eğlenceler dilerim.
+Rubik küpü dünyasının keyfi sonsuzdur, iyi eğlenceler dilerim.
 
-## Ek 1: Aşamalara Göre Pratik Listesi
+## Ek 1: Her Aşama İçin Pratik Listesi
 
 **Aşama Bir (> 60 saniye)**
 
-- Sabit gözlem pozisyonu kullanın, tüm çözüm boyunca küpü döndürmeyin.
-- Duraklamadan bir sonraki istenen rengi bulun.
-- Yavaş çevirme yapın, her adımda niyetinizi söyleyin.
-- Sadece sol köprüyü çalışın, 50 kez tekrarlayın.
+- Sabit gözlem pozisyonu, tüm çözüm süresince küpü döndürme
+- Bir sonraki istenen rengi duraklamadan bulma
+- Yavaş çözme, her adımda niyetini söyleme
+- Sadece sol bloğu pratik et, 50 kez tekrarla
 
 **Aşama İki (60 → 40 saniye)**
 
-- Sağ köprüyü sadece R, r, M, U kullanarak yapın, sol köprüye dokunmayın.
-- İki aşamalı CMLL pratiği yapın.
-- M' U M' U ritmini günde 5 dakika çalışın.
+- Sağ bloğu sadece R, r, M, U kullanarak yap, sol bloğa dokunma
+- İki aşamalı CMLL pratiği
+- M' U M' U ritim pratiği, günde 5 dakika
 
 **Aşama Üç (40 → 30 saniye)**
 
-- CMLL bitince duraklayın, yanlış kenar sayısını bir bakışta söyleyin.
-- Yavaş çevirme + öngörü: Gözleriniz her zaman bir sonraki parçayı görsün.
-- Günde en az 20 kez yüksek kaliteli çözüm yapın.
+- CMLL bitince durakla, yanlış yönlenmiş kenar sayısını bir bakışta söyle
+- Yavaş çözme + look-ahead: Gözlerin her zaman bir sonraki parçada olsun
+- Günde en az 20 kaliteli çözüm
 
 **Aşama Dört (< 30 saniye)**
 
-- Duraklamaları bulmak için video kaydedin.
-- Teknik: R U R' U' tek parmak tekniği, M katmanı için yüzük parmağı.
-- Günde 20 kez yüksek kaliteli çözüm yapın, sadece sayıya odaklanmayın.
+- Videolar çekerek duraklamaları bul
+- Parmak hareketleri: R U R' U' tek parmak hareketleri, M katmanı yüzük parmağı
+- Günde 20 kaliteli çözüm, nicelik değil nitelik
 
 ## Ek 2: Araçlar
 
-- **csTimer**: [cstimer.net](https://cstimer.net/). Ao5 / Ao12 / Ao100 istatistiklerini açın; gerçek seviyenizi Ao100 gösterir, tekli süreler şanstır.
-- **3D Rubik Küpü**: [philoli.com/zh/projects/rubiks-cube](/zh/projects/rubiks-cube/). Bu yazıdaki tüm formülleri buraya girerek animasyonlarını izleyebilirsiniz.
-- **Roux Metodu Yeni Başlayan Dostu Formül Kütüphanesi**: [philoli.com/zh/projects/rubiks-cube/roux](/zh/projects/rubiks-cube/roux). Sol köprü, sağ köprü için sık kullanılan yerleştirme rutinleri, iki aşamalı CMLL'nin 9 formülü ve LSE'nin tüm durumları (EO, UL/UR, son dört kenar). Her bir görsele tıklayarak 3D küpte açabilir, ilgili olmayan blokları otomatik olarak gizleyip hareket ettirilecek kenarları vurgulayabilirsiniz.
-- **csTimer Eğitim Analizcisi**: [philoli.com/zh/projects/rubiks-cube/analyzer](/zh/projects/rubiks-cube/analyzer). csTimer'dan dışa aktardığınız dosyayı buraya sürükleyerek kendi performans trendinizi, Ao5/Ao12/Ao100 eğrilerinizi, kişisel en iyilerinizi (PB), dönüm noktası tablonuzu (ilk sub-60, sub-40, sub-30'a ne zaman ulaştığınız) ve Güç Yasası pratik eğrisini görebilirsiniz. Bu yazıdaki tüm grafikler buradan alınmıştır. Veriler sadece tarayıcınızda işlenir, sunucuya yüklenmez. Dışa aktarılmış dosyanız yoksa, etkiyi görmek için benim 4441 çözüm verimi yükleyebilirsiniz.
+- **csTimer**: [cstimer.net](https://cstimer.net/). Ao5 / Ao12 / Ao100 istatistiklerini aç, Ao100 senin gerçek seviyeni gösterir, tek çözüm şanstır.
+- **3D Rubik Küpü**: [philoli.com/zh/projects/rubiks-cube](/tr/projects/rubiks-cube/). Bu makaledeki tüm algoritmaları buraya girerek animasyonunu izleyebilirsin.
+- **Roux Metodu Yeni Başlayan Dostu Algoritma Kütüphanesi**: [philoli.com/zh/projects/rubiks-cube/roux](/tr/projects/rubiks-cube/roux). Sol blok, sağ blok için yaygın yerleştirme rutinleri, iki aşamalı CMLL'nin 9 algoritması, LSE'nin tüm durumları (EO, UL/UR, son dört kenar). Her bir sayfa 3D küpte açılabilir, ilgisiz bloklar otomatik olarak gizlenir, hareket ettirilecek kenarlar vurgulanır.
+- **csTimer Eğitim Analizcisi**: [philoli.com/zh/projects/rubiks-cube/analyzer](/tr/projects/rubiks-cube/analyzer). csTimer'dan dışa aktardığın dosyayı buraya sürükle, kendi performans eğrini, Ao5/Ao12/Ao100 eğrilerini, PB gelişmelerini, dönüm noktası tablosunu (ilk sub-60, sub-40, sub-30 ne zaman) ve Power Law pratik eğrisini görebilirsin. Bu makaledeki tüm grafikler buradan alınmıştır. Veriler sadece tarayıcında işlenir, sunucuya yüklenmez. Dışa aktarılmış dosyan yoksa, önce benim 4441 çözümlük verimi yükleyip etkisini görebilirsin.
 
-*Bu yazı Amazon satış ortaklığı bağlantıları içermektedir: Bağlantılar aracılığıyla yapılan alışverişlerden küçük bir komisyon alırım, sizin fiyatınız değişmez.*
+*Bu makale Amazon iştirak bağlantıları içermektedir: Bağlantılar aracılığıyla yapılan satın alımlarda küçük bir komisyon alırım, senin fiyatın değişmez.*
 
-## Daha Fazla Oku
+## Daha Fazla Okuma
 
-- [Formül Ezberlemeden Rubik Küpü Nasıl Çözülür: İlkokul Öğrencileri Bile Anlayabilir](/zh/blog/solve-rubiks-cube-without-formulas)
+- [Algoritma Ezberlemeden Rubik Küpünü Nasıl Çözersin: İlkokul Öğrencileri Bile Anlayabilir](/tr/blog/solve-rubiks-cube-without-formulas)

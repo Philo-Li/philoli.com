@@ -1,278 +1,278 @@
 ---
 layout: blog
-title: "Cum să rezolvi Cubul Rubik sub 30 de secunde fără să memorezi formule: Chiar și un școlar poate înțelege"
+title: "Cum să rezolvi Cubul Rubik sub 30 de secunde fără să memorezi algoritmi: chiar și un elev de școală primară poate înțelege"
 date: 2026-10-09 12:00:00
 tags:
   - Cub Rubik
-  - tutorial
-  - metoda Roux
-  - speedcubing
-  - practică deliberată
+  - Tutorial
+  - Metoda Roux
+  - Speedcubing
+  - Practică deliberată
 categories: 日常折腾
-description: "Mi-au trebuit 89 de zile pentru a trece de la prima rezolvare la sub 30 de secunde (Ao100), fără să memorez nicio formulă CFOP. Analizăm patru etape bazate pe 4441 de date cronometrate: unde te blochezi, ce să exersezi în fiecare etapă și de ce metoda Roux nu necesită memorarea formulelor."
+description: "Mi-au luat 89 de zile să ajung de la prima rezolvare la un Ao100 sub 30 de secunde, fără să memorez niciun algoritm CFOP. Analizez 4441 de date cronometrate pentru a descompune patru etape: unde te blochezi în fiecare etapă, ce să exersezi și de ce metoda Roux nu necesită memorarea algoritmilor."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="从 165 秒到 28 秒的四个阶段" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Patru etape, de la 165 de secunde la 28 de secunde" />
 </figure>
 
-*Figură: Cele patru etape, de la 165 de secunde la 28 de secunde. Etapa a doua a înregistrat cea mai rapidă scădere, în timp ce etapa a treia a fost cea mai lungă perioadă de platou.*
+*Figură: Patru etape, de la 165 de secunde la 28 de secunde. Etapa a doua a înregistrat cel mai rapid progres, iar etapa a treia a fost cea mai lungă perioadă de platou.*
 
-În articolul precedent, [«Cum să rezolvi Cubul Rubik fără formule»](/zh/blog/solve-rubiks-cube-without-formulas/), ai învățat cum să reconstruiești un Cub Rubik fără să memorezi formule, folosind logica comutatorilor. Acel articol a primit numeroase aprecieri entuziaste.
+În articolul anterior [„Cum să rezolvi Cubul Rubik fără să memorezi algoritmi”](/ro/blog/solve-rubiks-cube-without-formulas/), ai învățat cum să rezolvi un Cub Rubik folosind logica comutatorilor, fără a memora algoritmi. Articolul a primit multe aprecieri entuziaste.
 
-Dacă ai urmat instrucțiunile, probabil că acum îți ia două-trei minute să-l rezolvi, chiar dacă te mai încurci. Apoi, apare o nouă întrebare: cum să devii mai rapid?
+Dacă ai urmat instrucțiunile, probabil că acum ai nevoie de două-trei minute pentru a-l rezolva, chiar dacă te mai încurci. Apoi, o nouă întrebare va apărea: cum să devii mai rapid?
 
-Dacă vei căuta „speedcubing”, toate tutorialele îți vor spune același lucru: ca să ajungi sub 30 de secunde, trebuie să memorezi formulele CFOP. 41 de formule pentru F2L, 57 pentru OLL, 21 pentru PLL – un total de 119 formule. Chiar dacă faci F2L intuitiv, nu poți evita cele 78 de formule pentru stratul superior. Dacă nu le memorezi, nu vei fi rapid.
+Dacă vei căuta „speedcubing Cub Rubik”, toate tutorialele îți vor spune același lucru: dacă vrei să ajungi sub 30 de secunde, trebuie să memorezi algoritmii CFOP. Asta înseamnă 41 de algoritmi pentru F2L, 57 pentru OLL și 21 pentru PLL, un total de 119 algoritmi. Chiar dacă faci F2L intuitiv, cei 78 de algoritmi pentru ultimul strat sunt inevitabili. Fără memorare, nu te poți aștepta să fii rapid.
 
-Acest articol vrea să-ți demonstreze că poți ajunge sub 30 de secunde fără să memorezi absolut nicio formulă.
+Acest articol vrea să-ți arate că poți ajunge sub 30 de secunde fără să memorezi absolut niciun algoritm.
 
 <!--more-->
 
-Mi-au trebuit 89 de zile, de la prima rezolvare a cubului Rubik pe 7 mai 2026, până pe 4 august, când am atins un Ao100 sub 30 de secunde. În tot acest timp, nu am memorat nicio formulă CFOP, ci doar m-am jucat în timpul liber. Acestea sunt datele cronometrate pentru cele 4441 de rezolvări înregistrate de mine.
+De la prima mea rezolvare a Cubului Rubik, pe 7 mai 2026, până pe 4 august, când am atins un Ao100 sub 30 de secunde, au trecut 89 de zile. În tot acest timp, nu am memorat niciun algoritm CFOP; doar m-am jucat în timpul liber. Acestea sunt datele cronometrate de la cele 4441 de rezolvări înregistrate.
 
-![4441 次复原的成绩曲线](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
+![Curba timpilor de rezolvare pentru 4441 de rezolvări](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
-*Figură: Curba performanței pentru 4441 de rezolvări. Linia gri reprezintă timpul pentru fiecare rezolvare, linia mai închisă indică tendința Ao100, iar punctele roșii marchează momentele în care am atins un nou record personal. Cel mai bun Ao100 a fost de 28.22 secunde.*
+*Figură: Curba timpilor de rezolvare pentru 4441 de rezolvări. Linia gri reprezintă timpul fiecărei rezolvări, linia mai închisă este tendința Ao100, iar punctele roșii marchează momentele în care mi-am îmbunătățit recordul personal (PB). Cel mai bun Ao100 a fost de 28.22 secunde.*
 
-Prin practică deliberată, conștientă și menținerea unei frecvențe constante a antrenamentelor, oricine poate ajunge de la zero la sub 30 de secunde în doar câteva luni.
+Prin practică conștientă și activă, menținând în același timp frecvența antrenamentelor, oricine poate trece de la zero la sub-30 de secunde în câteva luni.
 
-Ce înseamnă sub 30 de secunde? La [primul Campionat Mondial de Cub Rubik din 1982](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship), timpul campionului a fost de 22.95 secunde, recunoscut ulterior de WCA ca primul record mondial oficial; locul 10 a fost 29.11 secunde, iar această performanță a fost obținută chiar de Jessica Fridrich, inventatoarea metodei CFOP, despre care vom vorbi în secțiunea următoare. Cu alte cuvinte, un sub-30 de secunde, realizat de un amator în câteva luni astăzi, te-ar fi plasat în top 10 mondial în 1982.
+Ce înseamnă sub 30 de secunde? La [primul Campionat Mondial de Cub Rubik din 1982](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship), timpul câștigător a fost de 22.95 secunde, recunoscut ulterior de WCA ca primul record mondial oficial; locul 10 a fost 29.11 secunde, obținut chiar de Jessica Fridrich, inventatoarea metodei CFOP, despre care vom vorbi în secțiunea următoare. Cu alte cuvinte, un amator care reușește sub 30 de secunde în câteva luni astăzi, ar fi fost în top 10 la nivel mondial în 1982.
 
-În continuare, voi împărtăși cu tine cum am reușit pas cu pas și îți voi prezenta integral această metodă de antrenament.
+În continuare, voi împărtăși cu tine cum am reușit pas cu pas și îți voi prezenta întreaga metodă de antrenament.
 
-## De ce toată lumea memorează formule în lumea speedcubing-ului
+## De ce lumea speedcubingului se bazează pe memorarea algoritmilor
 
-Să clarificăm un lucru: de ce sunt „rapiditatea” și „memorarea formulelor” atât de strâns legate în mintea oamenilor?
+Mai întâi, să înțelegem un lucru: de ce "rapiditatea" și "memorarea algoritmilor" sunt atât de strâns legate în mintea oamenilor?
 
-La începutul anilor 1980, profesoara de origine cehă Jessica Fridrich (care ulterior a studiat criminalistica digitală la Universitatea Binghamton din SUA) a sistematizat o metodă de rezolvare pe straturi, cunoscută ulterior sub numele de CFOP (Cross, F2L, OLL, PLL). Ideea acestei metode este să enumere exhaustiv toate situațiile posibile pentru stratul superior, atribuind fiecăreia o formulă optimă. Recunoști situația, aplici formula, fără a fi nevoie să gândești.
+La începutul anilor 1980, profesoara cehă Jessica Fridrich (care mai târziu a cercetat criminalistica digitală la Universitatea Binghamton din SUA) a sistematizat o metodă de rezolvare pe straturi, cunoscută ulterior sub numele de CFOP (Cross, F2L, OLL, PLL). Ideea acestei metode este următoarea: se enumeră toate situațiile posibile pentru stratul de sus și fiecărei situații i se asociază un algoritm optim. Tu recunoști situația, execuți algoritmul și nu mai trebuie să gândești.
 
-![Jessica Fridrich 和她办公室里的魔方](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
+![Jessica Fridrich și Cubul Rubik din biroul ei](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
 
-*Figură: Jessica Fridrich și Cubul Rubik din biroul ei. În 1982, a obținut locul 10 la primul Campionat Mondial cu un timp de 29.11 secunde, iar CFOP a fost numită după ea (Metoda Fridrich).*
+*Figură: Jessica Fridrich și Cubul Rubik din biroul ei. În 1982, a obținut locul 10 la primul Campionat Mondial cu 29.11 secunde, iar metoda CFOP îi poartă numele (Metoda Fridrich).*
 
-Această metodă este extrem de rapidă. Aproape toate recordurile mondiale sunt stabilite folosind CFOP. Prin urmare, toate tutorialele o predau, toate videoclipurile o explică, iar „a învăța speedcubing” a devenit sinonim cu „a învăța CFOP”, ceea ce, la rândul său, înseamnă a memora cele 119 formule.
+Această metodă este extrem de rapidă. Aproape toate recordurile mondiale sunt obținute cu CFOP. Prin urmare, toate tutorialele o predau, toate videoclipurile o explică, iar "a învăța speedcubing" a devenit echivalent cu "a învăța CFOP", iar a învăța CFOP înseamnă a memora 119 algoritmi.
 
-Însă, rețineți că „memorarea formulelor” este o caracteristică a metodei CFOP, nu o proprietate inerentă a „rapidității” în sine. CFOP necesită memorare pentru că a ales calea enumerării exhaustive. Enumerarea exhaustivă implică memorarea, iar acesta este prețul pe care îl plătește.
+Dar atenție, "memorarea algoritmilor" este o caracteristică specifică metodei CFOP, nu o caracteristică a "rapidității" în sine. CFOP necesită memorare pentru că a ales calea enumerării. Enumerarea implică memorare, iar acesta este prețul pe care îl plătește.
 
-Există metode care nu merg pe calea enumerării exhaustive? Da.
+Există metode care nu urmează calea enumerării? Da.
 
-## Rezolvarea fără formule: Metoda Roux (poduri)
+## Metoda de rezolvare fără memorarea algoritmilor: Metoda Roux
 
-În 2003, francezul Gilles Roux a publicat o abordare complet diferită. În loc să construiască strat cu strat, metoda sa implică crearea a două „poduri” de 1×2×3 pe laterale, apoi rezolvarea celor patru colțuri ale stratului superior, lăsând la final doar șase muchii, care sunt rezolvate folosind doar mișcările M (strat mijlociu) și U (strat superior).
+În 2003, francezul Gilles Roux a publicat o abordare complet diferită. În loc să construiască strat cu strat, metoda sa începe prin construirea a două "blocuri" de 1x2x3 (Primul Bloc și Al Doilea Bloc), apoi rezolvă cele patru colțuri ale stratului de sus (CMLL) și, în final, se ocupă de cele șase muchii rămase, folosind doar mișcările stratului M (median) și stratului U (de sus).
 
-![Gilles Roux 在比赛中](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
+![Gilles Roux în timpul unei competiții](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
 
-*Figură: Gilles Roux în timpul unei competiții. Captură dintr-un videoclip de concurs din anii timpurii, imagine restaurată și mărită cu AI.*
+*Figură: Gilles Roux în timpul unei competiții. Extrase dintr-un videoclip vechi de la o competiție, imaginea a fost restaurată și mărită cu AI.*
 
-În articolul precedent, am rezolvat cubul folosind deja acest cadru. Aici, vom revedea cei patru pași, de data aceasta concentrându-ne pe „ce trebuie reținut pentru fiecare pas”:
+În articolul anterior, am folosit deja acest cadru pentru o rezolvare. Aici, vom revedea cei patru pași, de data aceasta concentrându-ne pe "ce trebuie memorat la fiecare pas":
 
-| Pas | Descriere | Formule de memorat |
+| Pas | Conținut | Algoritmi de memorat |
 | --- | --- | --- |
-| 1. Podul stâng | Construiește un bloc 1×2×3 | 0, pură observație |
-| 2. Podul drept | Construiește celălalt simetric | 0, pură observație |
-| 3. CMLL | Poziționează cele patru colțuri ale stratului superior | 9 formule, toate pot fi derivate din 3-ciclu |
-| 4. LSE | Ultimele șase muchii | 0, folosește doar mișcările stratului superior și mijlociu (M și U) |
+| 1. Primul Bloc | Construiește un bloc 1×2×3 | 0 algoritmi, pură observație |
+| 2. Al Doilea Bloc | Construiește celălalt bloc, simetric | 0 algoritmi, pură observație |
+| 3. CMLL | Așează cele patru colțuri ale stratului de sus | 9 algoritmi, toți pot fi derivați din permutările ciclice de 3 piese |
+| 4. LSE | Ultimele șase muchii | 0 algoritmi, se folosesc doar rotațiile stratului de sus și ale stratului M (M și U) |
 
-Trei dintre cei patru pași nu necesită nicio formulă. Singura parte care o cere, CMLL, are un total de 42 de cazuri, dar nu ai nevoie de 42 de formule. Ciclu de 3 colțuri R U' L' U R' U' L U, discutat în articolul anterior, împreună cu oglinda sa și câteva variante, poate acoperi toate situațiile, doar că este puțin mai lent.
+Trei din cei patru pași nu necesită niciun algoritm. Singurul pas care necesită CMLL, deși are 42 de cazuri în total, nu necesită memorarea a 42 de algoritmi. Permutarea ciclică de 3 colțuri, R U' L' U R' U' L U, explicată în articolul anterior, împreună cu varianta sa în oglindă și câteva variații, poate acoperi toate cazurile, chiar dacă va fi puțin mai lent.
 
-![Roux 的四步](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/05-roux-four-steps.webp)
+![Cei patru pași ai metodei Roux](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/05-roux-four-steps.webp)
 
-*Figură: Cei patru pași ai metodei Roux, fiecare pas arată doar blocurile deja rezolvate până la acel punct: Podul stâng → Podul drept → CMLL (cele patru colțuri superioare) → LSE (ultimele șase muchii). Captură de pe panoul «Metode» al paginii mele de Cub Rubik 3D.*
+*Figură: Cei patru pași ai metodei Roux, fiecare pas arată doar piesele deja rezolvate până la acel punct: Primul Bloc → Al Doilea Bloc → CMLL (cele patru colțuri ale stratului de sus) → LSE (ultimele șase muchii). Extrase din panoul „Metodă” al paginii mele 3D Cube.*
 
-De aceea, Roux poate fi folosită fără a memora formule: ea comprimă partea care necesită memorare într-un colț foarte mic, lăsând restul pe seama observației, înțelegerii și a dexterității.
+Acesta este motivul pentru care metoda Roux poate fi folosită fără memorarea algoritmilor: comprimă partea de memorare într-un colț foarte mic, lăsând restul pe seama observației, a înțelegerii și a exercițiului.
 
-## De la 165 de secunde la 28 de secunde: Cele patru etape
+## De la 165 de secunde la 28 de secunde: cele patru etape
 
-Iată drumul pe care l-am parcurs. Pentru fiecare etapă, am indicat începutul și sfârșitul cu date, apoi am explicat unde m-am blocat și ce am exersat. Punctele tale de blocaj pot fi diferite, dar ordinea va fi, cel mai probabil, aceeași.
+Mai jos este drumul pe care l-am parcurs. Am marcat începutul și sfârșitul fiecărei etape cu date și am explicat unde m-am blocat și ce am exersat în acea perioadă. Punctele tale de blocaj pot fi diferite de ale mele, dar ordinea va fi cel mai probabil aceeași.
 
-![四个阶段的时间跨度](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
+![Durata celor patru etape](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
-*Figură: Durata fiecărei etape. Etapa întâi 3 săptămâni, etapa a doua 11 zile, etapa a treia două luni, etapa a patra până în prezent.*
+*Figură: Durata celor patru etape. Etapa întâi 3 săptămâni, etapa a doua 11 zile, etapa a treia două luni, etapa a patra până în prezent.*
 
-### Etapa întâi: 165 secunde → 60 secunde (Săptămânile 1-3)
+### Etapa Unu: 165 secunde → 60 secunde (Săptămânile 1–3)
 
-**Date**: 7 mai – 27 mai. Media primei săptămâni 165 secunde, a treia săptămână 68 secunde.
+**Date**: De pe 7 mai până pe 27 mai. Media primei săptămâni a fost de 165 de secunde, iar a treia săptămână a fost de 68 de secunde.
 
-**Unde mă blocam**: Podul stâng era foarte neîndemânatic, îmi lua mult timp să găsesc fiecare grup de culori. Apoi, după ce găseam un grup, începătorii au tendința să se oprească și să observe în continuare.
+**Unde te blochezi**: Primul Bloc este foarte neîndemânatic, fiecare pereche colț-muchie necesită mult timp pentru a fi găsită. Apoi, după ce găsesc o pereche, începătorii au tendința de a se opri pentru a continua să observe.
 
-![新手的时间都花在哪](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
+![Unde își petrec timpul începătorii](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
 
-*Figură: Unde își petrec timpul începătorii. Mâinile stau pe loc, ochii caută pe cub, timpul de «căutare» este de câteva ori mai mare decât timpul de «rotire».*
+*Figură: Unde își petrec timpul începătorii. Mâinile stau pe loc, ochii caută pe cub, timpul de „căutare” este de câteva ori mai mare decât cel de „învârtire”.*
 
-**Ce am exersat**:
+**Ce să exersezi**:
 
-Cel mai mare inamic în această etapă nu este lentoarea mâinilor, ci lentoarea ochilor. Petreci mult mai mult timp căutând decât rotind. Prin urmare:
+Cel mai mare inamic în această etapă nu este lentoarea mâinilor, ci lentoarea ochilor. Petreci mult mai mult timp căutând decât învârtind. Prin urmare:
 
-- Menține o poziție fixă de observație, nu roti cubul. Așa cum am menționat în articolul anterior, unghiul de observație pentru Roux este fix. În această etapă, trebuie să transformi „a nu întoarce cubul” într-o memorie musculară. De fiecare dată când vrei să întorci cubul, oprește-te și întreabă-te: pot vedea piesa de care am nevoie din acest unghi?
-- Rotiri lente (slow-turning). Nu cronometra, dar asigură-te că mișcările sunt fluide și continue, fără nicio pauză. Fiecare mișcare poate fi foarte lentă, dar fără întreruperi. Esențialul este ca, în timp ce mâinile fac mișcarea curentă, ochii să fie deja concentrați pe următoarea. Acesta este miezul slow-turning-ului. Deși pare că încetinești, de fapt îți antrenezi ochii să perceapă relația dintre poziția unei piese și locul unde ar trebui să ajungă.
-- Exersează doar primul pod. Scramble, construiește podul stâng, scramble din nou, construiește podul stâng. Nu continua cu pașii următori. Primul pod este cel mai liber pas din Roux și cel care antrenează cel mai bine observația.
+-   Menține o poziție fixă de observare, nu roti cubul. Așa cum am menționat în articolul anterior, unghiul de observare al metodei Roux este fix. În această etapă, trebuie să transformi "a nu roti cubul" într-o memorie musculară. De fiecare dată când vrei să rotești cubul, oprește-te și întreabă-te: pot vedea piesa de care am nevoie din acest unghi?
+-   Slow solving. Nu cronometra, dar mișcările trebuie să fie consecutive, fără pauze, fiecare mișcare poate fi foarte lentă, dar fără întreruperi. Esența este ca, în timp ce mâinile tale execută mișcarea anterioară, ochii tăi să se concentreze pe mișcarea următoare. Aceasta este cheia slow solving-ului. Poate părea că încetinești, dar de fapt îți antrenezi ochii să vadă relația dintre poziția pieselor și unde ar trebui să ajungă.
+-   Exersează doar Primul Bloc. Amestecă, construiește Primul Bloc, apoi amestecă din nou și construiește iar Primul Bloc. Nu continua. Primul Bloc este cel mai liber pas în metoda Roux și cel mai bun pentru antrenarea observației.
 
-Nu învăța nicio formulă nouă în această etapă. Blocajul tău actual nu este legat de formule.
+Nu învăța algoritmi noi în această etapă. Blocajul tău actual nu este legat de algoritmi.
 
-### Etapa a doua: 60 secunde → 40 secunde (Săptămânile 4-5)
+### Etapa Doi: 60 secunde → 40 secunde (Săptămânile 4–5)
 
-**Date**: 27 mai – 7 iunie, 11 zile. Aceasta a fost perioada cu cea mai rapidă scădere din întregul proces și, de asemenea, cea în care am exersat cel mai mult, cu 723 de rezolvări în prima săptămână a lunii iunie.
+**Date**: De pe 27 mai până pe 7 iunie, 11 zile. Aceasta a fost cea mai rapidă scădere din întregul proces și perioada în care am exersat cel mai mult, cu 723 de rezolvări în prima săptămână a lunii iunie.
 
-**Unde mă blocam**: Mișcări neconcordante. Cubul se bloca.
+**Unde te blochezi**: Mișcări neconsecvente. Blocaje ale cubului.
 
-**Ce am exersat**:
+**Ce să exersezi**:
 
-În această etapă, trebuie să optimizezi mișcările din fiecare secțiune, sporind dexteritatea fiecărei acțiuni pe baza înțelegerii.
+În această etapă, trebuie să-ți optimizezi mișcările în fiecare fază și să crești fluența fiecărei mișcări, bazându-te pe înțelegere.
 
-- Al doilea pod. Al doilea pod este mai dificil decât primul, deoarece spațiul este redus la jumătate, iar podul stâng deja construit nu trebuie distrus. Mișcările cheie sunt R, r (cele două straturi din dreapta), M, U. În această etapă, trebuie să înveți să folosești r și M în locul lui R pentru a muta piesele, astfel încât podul stâng să rămână intact. Optimizarea pașilor înseamnă economie de timp. De exemplu, trei rotiri în sens orar sunt echivalente cu o rotire în sens antiorar.
-- Utilizarea fluentă a stratului M. Ultima etapă a metodei Roux se bazează în întregime pe mișcările M și U, iar fluiditatea mișcărilor stratului M determină direct nivelul tău minim de performanță. Începe să împingi M cu degetul inelar sau mijlociu și exersează ritmuri precum M' U M' U.
-- Recunoașterea formelor CMLL. În articolul precedent, am folosit ciclul de trei pentru a „ghici” cele patru colțuri. Acum, trebuie să începi să privești înainte de a acționa: înainte de a întoarce stratul superior, aruncă o privire la orientarea culorii galbene a celor patru colțuri, determină dacă sunt 0, 1, 2 sau 4 colțuri bine orientate, apoi efectuează direct mișcarea corespunzătoare. Poți obține o creștere semnificativă a eficienței cu un număr foarte mic de formule, ceea ce este extrem de avantajos. O mare parte dintre aceste formule nu necesită memorare oarbă, ci pot fi înțelese pe măsură ce le aplici.
+-   Al Doilea Bloc. Al Doilea Bloc este mai dificil decât Primul Bloc, deoarece spațiul este redus la jumătate și Primul Bloc deja construit nu trebuie distrus. Mișcările cheie sunt R, r (două straturi din dreapta), M, U. În această etapă, trebuie să înveți să folosești r și M în loc de R pentru a muta piesele, astfel încât Primul Bloc să nu fie niciodată afectat. Optimizarea pașilor înseamnă economisirea timpului. De exemplu, trei rotații în sensul acelor de ceasornic sunt echivalente cu o rotație în sens invers acelor de ceasornic.
+-   Folosirea fluidă a stratului M. Ultima etapă a metodei Roux se bazează în întregime pe M și U, iar fluiditatea rotației stratului M îți va determina direct limita inferioară. Folosește inelarul sau degetul mijlociu pentru a împinge M și începe să exersezi ritmuri precum M' U M' U.
+-   Recunoașterea cazurilor CMLL. În articolul anterior, am „încercat” să rezolvăm cele patru colțuri folosind permutări ciclice de 3 piese. Acum trebuie să începem să observăm înainte de a acționa: înainte de a roti stratul de sus, aruncă o privire la orientarea culorii galbene a celor patru colțuri, pentru a determina dacă sunt 0, 1, 2 sau 4 colțuri orientate corect, apoi execută direct mișcarea corespunzătoare. De asemenea, poți obține o îmbunătățire semnificativă a eficienței cu un număr foarte mic de algoritmi, ceea ce este foarte avantajos. Majoritatea acestor algoritmi nu necesită memorare pe de rost, ci pot fi înțeleși pe măsură ce îi exersezi.
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="搭右桥时的视角" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="Vedere la construirea celui de-al Doilea Bloc" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/08-m-prime-u-m.webp" alt="M' U M" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
 </div>
 
-*Figură stânga: Perspectiva la construirea podului drept. Podul stâng este deja complet, folosește doar mișcările R, r, M, U pentru a introduce perechile colț-muchie din dreapta, iar podul stâng nu va fi niciodată atins. Figură dreapta: M' U M, un set de mișcări folosit cel mai des în a doua jumătate a metodei Roux. Stratul mijlociu urcă, stratul superior se rotește o dată, stratul mijlociu revine, trei pași pentru a schimba o pereche de muchii din stratul superior și mijlociu.*
+*Figură stânga: Vedere la construirea celui de-al Doilea Bloc. Primul Bloc este deja finalizat, folosind doar R, r, M, U pentru a introduce perechile colț-muchie din dreapta, fără a atinge niciodată Primul Bloc. Figură dreapta: M' U M, una dintre cele mai folosite secvențe de mișcări în a doua jumătate a metodei Roux. Stratul M urcă, stratul U se rotește, stratul M revine, trei pași pentru a schimba o pereche de muchii între stratul de sus și stratul M.*
 
-Poți consulta [biblioteca de formule pentru Metoda Roux](/zh/projects/rubiks-cube/roux#cmll) pe care am compilat-o. Pagina CMLL prezintă o abordare în doi pași: 7 formule pentru orientare + 2 formule pentru permutare, un total de 9 formule. Aceasta este o alegere excelentă pentru a crește viteza, ușor de învățat, iar fiecare set stăpânit te poate ajuta să câștigi aproximativ 1-2 secunde. Cu puțină practică, le vei stăpâni rapid; unele au fost deja introduse în articolul precedent și nu este necesar să le memorezi pe toate pentru a ajunge sub 30 de secunde.
+Poți consulta [biblioteca mea de algoritmi Roux Method](/ro/projects/rubiks-cube/roux#cmll). Pagina CMLL este împărțită în două etape: 7 algoritmi de orientare + 2 algoritmi de permutare, un total de 9. Aceasta este cea mai bună opțiune pentru creșterea vitezei, foarte ușor de învățat, iar fiecare set de algoritmi stăpânit aduce o îmbunătățire de aproximativ 1-2 secunde. Cu puțină practică, vei deveni rapid priceput, iar unii dintre ei au fost deja introduși în articolul anterior. Nu este necesar să-i memorezi pe toți pentru a ajunge sub 30 de secunde.
 
-![两段式 CMLL 第一步，七种角块朝向](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
+![Prima etapă a CMLL în două etape, șapte orientări ale colțurilor](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
-*Figură: Primul pas al CMLL în doi pași, șapte orientări ale colțurilor. În vedere de sus, galbenul este culoarea feței superioare, iar barele mici de pe margini indică orientarea culorii feței superioare a colțului către o față laterală. Recunoaște forma după numărul de colțuri galbene: 0 este H sau Pi, 1 este S sau AS, 2 este U, T sau L.*
+*Figură: Prima etapă a CMLL în două etape, șapte orientări ale colțurilor. În vederea de sus, galbenul este culoarea feței superioare, iar barele mici de pe exterior indică orientarea culorii feței superioare a colțului către lateral. Recunoaște forma după numărul de colțuri galbene: 0 este H sau Pi, 1 este S sau AS, 2 este U, T sau L.*
 
-După ce ai orientat culoarea galbenă a stratului superior, poți folosi aceste două formule pentru a alinia fețele laterale ale colțurilor.
+După ce ai aliniat partea superioară galbenă, poți folosi acești doi algoritmi pentru a alinia părțile laterale ale colțurilor.
 
-Dacă o față are deja o culoare uniformă, de exemplu, roșul este deja pe aceeași față, rotește-o spre stânga și apoi poți alege formula de interschimbare adiacentă. Dacă nicio față nu are culori uniforme, alege formula de interschimbare diagonală.
+Dacă o față are deja o culoare consistentă, de exemplu roșul este deja pe aceeași față, rotește-o spre stânga, apoi poți alege algoritmul de schimb adiacent. Dacă nicio față nu are o culoare consistentă, alege algoritmul de schimb pe diagonală.
 
-![两段式 CMLL 第二步，两种角块位置](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
+![A doua etapă a CMLL în două etape, două poziții ale colțurilor](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
 
-*Figură: Al doilea pas al CMLL în doi pași, două poziții ale colțurilor. În imaginea din stânga, roșul celor două colțuri din stânga este deja aliniat, se folosește interschimbarea adiacentă; în imaginea din dreapta, nicio față nu este aliniată, se folosește interschimbarea diagonală.*
+*Figură: A doua etapă a CMLL în două etape, două poziții ale colțurilor. În imaginea din stânga, roșul celor două colțuri din stânga este deja consistent, se folosește schimbul adiacent; în imaginea din dreapta, nicio față nu este consistentă, se folosește schimbul pe diagonală.*
 
-Poți înțelege fiecare set de formule prin exersarea lentă. Nu le trata ca pe niște formule, ci ca pe anumite mișcări fixe pe care le poți descoperi singur explorând încet, dar listarea lor aici te poate scuti de ocoluri inutile.
+Poți înțelege fiecare set de algoritmi prin mult slow solving, nu le considera formule, ci anumite mișcări fixe pe care le-ai putea descoperi singur prin explorare, dar listarea lor aici te poate scuti de ocoluri.
 
-Un alt lucru, mai eficient decât orice exercițiu: investește într-un cub Rubik nou. Dacă încă folosești un cub vechi care scârțâie și se blochează, cumpără un cub 3x3 modern cu magneți. Cele mai noi cuburi îți vor arăta puterea optimizării inginerești: rotații fluide, auto-aliniere, aproape fără blocaje. Doar prin schimbarea cubului, timpul mediu se poate îmbunătăți brusc cu 15 secunde. O opțiune excelentă ca raport calitate-preț este [MoYu RS3 M V5 (Maglev + Ball-Core)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20), în jur de douăzeci de dolari, suficient pentru a ajunge sub 20 de secunde.
+Și încă ceva, mai eficient decât orice exercițiu: investește într-un cub nou. Dacă încă folosești un cub vechi care face zgomot la rotire și se blochează, cumpără un cub modern 3x3 magnetic. Cele mai noi cuburi îți vor arăta puterea optimizării inginerești: rotație fluidă, aliniere automată, aproape fără blocaje. Doar schimbarea cubului îți poate îmbunătăți media cu 15 secunde. O alegere cu un raport calitate-preț excelent este [MoYu RS3 M V5 (Maglev + Ball-Core)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20), în jur de douăzeci de dolari, suficient pentru a ajunge sub 20 de secunde.
 
-### Etapa a treia: 40 secunde → 30 secunde (Săptămânile 5-13, două luni)
+### Etapa Trei: 40 secunde → 30 secunde (Săptămâna 5 – Săptămâna 13, două luni)
 
-**Date**: 7 iunie – 4 august. Ao100 a scăzut de la 39.8 secunde la 29.9 secunde, durând 58 de zile. În această etapă, ocazional, puteau apărea rezultate sub 30 de secunde, dar doar cu foarte mult noroc. Pe măsură ce timpul mediu de rezolvare scade, dificultatea de a îmbunătăți cu o secundă crește exponențial.
+**Date**: De pe 7 iunie până pe 4 august. Am coborât Ao100 de la 39.8 secunde la 29.9 secunde, ceea ce a durat 58 de zile. În această etapă, ocazional puteau apărea timpi sub 30 de secunde, dar doar cu mult noroc. Pe măsură ce timpul mediu de rezolvare scade, dificultatea de a progresa cu o secundă crește exponențial.
 
-![每日平均成绩](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
+![Media zilnică a timpilor](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
-*Figură: Timpul mediu zilnic. După mijlocul lunii iunie, curba a stagnat aproape complet, rămânând între 30 și 40 de secunde timp de două luni.*
+*Figură: Media zilnică a timpilor. După mijlocul lunii iunie, curba aproape s-a aplatizat, rămânând între 30 și 40 de secunde timp de două luni.*
 
-Aceasta este perioada de platou. Toată lumea o întâlnește, iar eu am petrecut două luni aici.
+Acesta este platoul. Toată lumea îl întâlnește, iar eu am stat aici două luni.
 
-**Unde mă blocam**: Rezolvarea celor șase muchii ale stratului superior era foarte lentă, nu înțelegeam logica, și de fiecare dată mă bazam pe încercări repetate, pierzând mult timp. Podul stâng și podul drept încă nu erau suficient de bine stăpânite.
+**Unde te blochezi**: Rezolvarea celor șase muchii ale stratului de sus este foarte lentă, nu înțelegi logica, iar de fiecare dată te bazezi pe încercări repetate, pierzând mult timp. Primul și Al Doilea Bloc încă nu sunt suficient de fluide.
 
-**Ce am exersat**:
+**Ce să exersezi**:
 
-- Recunoașterea EO (Edge Orientation). Am menționat în articolul precedent că există doar câteva cazuri de muchii incorecte: 0, non-0 non-4, 4 (2 sus, 2 jos), 4 (toate pe stratul superior), 4 (3 sus, 1 jos). Scopul în această etapă este: în momentul în care podurile sunt construite, să recunoști dintr-o privire care este cazul, fără a număra. Metoda de exersare este să scramblezi, să rezolvi până la sfârșitul CMLL, apoi să pui pauză, să spui numărul de muchii incorecte și să continui.
-- Mulți nu înțeleg mișcările de aici. Faza EO are ca scop final crearea formei de săgeată cu 3 muchii incorecte sus și 1 jos, deoarece o formă completă este la doar un pas de forma de săgeată. Prin urmare, gândind invers, acesta este ultimul pas înainte de a finaliza rezolvarea. Așadar, indiferent de numărul de muchii incorecte, scopul final este să construiești o săgeată. Dacă sunt 4 muchii incorecte sus, schimbi o pereche de muchii sus-jos pentru a duce una jos și a obține săgeata. Dacă sunt 2 sus și 2 jos, schimbi o pereche de muchii sus-jos pentru a aduce una sus și a obține săgeata. Dacă este 1 sus, 1 jos, sau 2 sus, folosești M' U M pentru a ajunge la una dintre situațiile anterioare, apoi construiești săgeata. Poți descoperi singur cei mai buni pași pentru cazul 1/1 printr-o observație și gândire intensă.
-- Exersează intens anticiparea (Look-ahead). Acesta este cel mai important lucru pentru a trece de la 40 la 30 de secunde și, de asemenea, cel mai contraintuitiv: rotește mai încet, privește mai departe. Când construiești podul stâng, nu te uita la piesa pe care o inserezi, ci la unde este următoarea piesă. La început va fi foarte stângaci, performanța se va înrăutăți, dar după o săptămână de persistență, se va îmbunătăți brusc.
-- CMLL fără ezitare. Dacă te gândești de fiecare dată înainte de a face o mișcare, înseamnă că nu este încă a ta. Exersează fiecare mișcare individual de 50 de ori, până când mâna se mișcă automat la vederea formei.
+-   Recunoașterea EO. Am vorbit despre asta în articolul anterior: există doar câteva cazuri de muchii neorientate: 0, non-0 non-4, 4 (câte 2 sus și jos), 4 (toate pe stratul de sus), 4 (3 sus și 1 jos). Scopul acestei etape este: în momentul în care ai terminat de construit blocurile, să poți identifica numărul de muchii neorientate dintr-o privire, fără să le numeri. Metoda de antrenament este să amesteci cubul, să rezolvi până la CMLL, apoi să te oprești, să spui numărul de muchii neorientate și să continui.
+-   Mulți oameni nu înțeleg mișcările de aici. Etapa EO are ca scop final construirea unei forme de săgeată cu 3 muchii neorientate sus și 1 jos, deoarece forma completă este la un singur scramble distanță de forma de săgeată. Prin urmare, gândind invers, este ultimul pas înainte de finalizarea rezolvării. Deci, indiferent de numărul de muchii neorientate, scopul final este de a construi o săgeată. Dacă sunt 4 muchii neorientate sus, schimbi o pereche de muchii sus-jos pentru a coborî una neorientată și a crea săgeata. Dacă sunt 2 sus și 2 jos, schimbi o pereche de muchii sus-jos pentru a urca una neorientată și a crea săgeata. Dacă sunt 1 sus și 1 jos, sau 2 sus, folosești M' U M pentru a ajunge la situațiile anterioare, apoi construiești săgeata. Poți descoperi singur pașii optimi pentru cazul 1/1 prin multă observație și gândire.
+-   Exersează mult look-ahead. Acesta este cel mai important lucru pentru a trece de la 40 la 30 de secunde și cel mai contraintuitiv: rotește mai lent, privește mai departe. Când construiești Primul Bloc, nu te uita la piesa pe care o introduci, ci la unde este următoarea piesă. La început va fi foarte stângaci, iar timpii tăi vor scădea, dar dacă perseverezi o săptămână, vei observa o îmbunătățire bruscă.
+-   CMLL fără ezitare. Dacă un algoritm trebuie să-l gândești de fiecare dată înainte să-l execuți, atunci nu este încă al tău. Exersează fiecare algoritm individual de 50 de ori, până când mâna ta se mișcă automat la vederea formei.
 
-![箭头形态](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
+![Forma de săgeată](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
 
-*Figură: Forma de săgeată. Trei muchii incorecte (evidențiate cu albastru-verzui) pe stratul superior formează o săgeată care indică muchia incorectă de pe stratul inferior. În acest moment, o singură mișcare M' U M le poate rezolva pe toate patru simultan. [Deschide această stare în Cubul Rubik 3D](/zh/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) pentru a vedea pas cu pas.*
+*Figură: Forma de săgeată. Trei muchii neorientate (evidențiate cu albastru) formează o săgeată, indicând muchia neorientată din stratul de jos. În această situație, un singur M' U M poate orienta simultan toate cele patru muchii. [Deschide această stare în cubul 3D](/ro/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) pentru a vedea pas cu pas.*
 
-![EO 的六种形态](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
+![Cele șase forme de EO](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
-*Figură: Cele șase forme de EO. Eticheta din stânga sus indică numărul de muchii incorecte (sus / jos), galbenul reprezintă muchii corecte, iar chenarul albastru-verzui muchii incorecte. Doar forma de săgeată necesită o formulă, celelalte cinci sunt transformate mai întâi în săgeată.*
+*Figură: Cele șase forme de EO. Eticheta din stânga sus indică numărul de muchii neorientate (sus / jos), galbenul reprezintă muchii orientate, iar chenarul albastru muchii neorientate. Doar forma de săgeată necesită un algoritm, celelalte cinci se transformă mai întâi în săgeată.*
 
-Pentru rezolvarea muchiilor stânga-dreapta, luând galbenul ca față superioară, albul ca față inferioară și roșul ca pod stâng, trebuie să poziționăm muchia galben-roșie + muchia galben-portocalie (evidențiate). Ideea principală este de a muta muchia galben-roșie pe stratul inferior printr-o interschimbare sus-jos, și la fel pentru muchia galben-portocalie. Odată ce cele două muchii sunt pe stratul inferior, opuse una alteia, rotești stratul superior în poziția corectă, iar M2 U sau M2 U' va rezolva muchiile stânga-dreapta ale stratului U.
+Pentru rezolvarea muchiilor stânga și dreapta, având galbenul sus și albul jos, iar Primul Bloc roșu, trebuie să se orienteze muchiile galben-roșu + galben-portocaliu (zonele evidențiate). Ideea principală este de a schimba muchia galben-roșu și muchia galben-portocaliu pe stratul de jos, astfel încât cele două muchii să fie opuse pe stratul de jos. Apoi, stratul de sus este rotit în poziția corectă, iar un M2 U sau M2 U' va rezolva muchiile stânga-dreapta ale stratului U.
 
-Pentru a vă ajuta să înțelegeți mai bine, am organizat toate cele șase forme de EO pe [pagina LSE a bibliotecii de formule Metoda Roux](/zh/projects/rubiks-cube/roux#lse). Făcând clic pe „Vezi detalii” pentru fiecare imagine, se va deschide starea corespondentă în Cubul Rubik 3D, iar muchiile incorecte vor fi evidențiate automat. Aceeași pagină conține și toate cazurile pentru rezolvarea ulterioară a muchiilor UL/UR și a ultimelor patru muchii.
+Pentru a vă ajuta să înțelegeți mai bine, am organizat toate cele șase forme de EO în [biblioteca de algoritmi Roux Method, la pagina LSE](/ro/projects/rubiks-cube/roux#lse). Fiecare imagine, la apăsarea "Vezi detalii", va deschide starea corespunzătoare în cubul 3D, cu muchiile neorientate evidențiate automat. Pe aceeași pagină veți găsi și toate cazurile pentru orientarea UL/UR și ultimele patru muchii.
 
-Scăderea volumului de antrenament în această etapă nu este un lucru rău. Perioada de platou nu poate fi depășită prin acumulare de volum, ci prin corectarea unui anumit obicei prost. Experiența mea este să corectez un singur lucru deodată.
+Reducerea volumului de exerciții în această etapă nu este un lucru rău. Platoul nu poate fi depășit prin cantitate, ci prin corectarea unui obicei prost specific. Experiența mea este să corectez un singur lucru la un moment dat.
 
-### Etapa a patra: 30 secunde → 28 secunde (după săptămâna 13)
+### Etapa Patru: 30 secunde → 28 secunde (După săptămâna 13)
 
-**Date**: După 4 august. Numărul de antrenamente înregistrate pe parcursul lunii septembrie a fost de 122, dar, de fapt, multe antrenamente nu au fost înregistrate. Am transformat cubul Rubik într-o jucărie de birou, pe care o iau și mă joc cu ea când am chef, când sunt agitat sau anxios, în pauzele de la muncă, sau când mă plictisesc. Am integrat jocul cubului în viața mea. Ao100 a scăzut treptat de la 29.9 la 28.2 secunde.
+**Date**: După 4 august. În întreaga lună septembrie, numărul de sesiuni de antrenament înregistrate a fost de 122, deși multe sesiuni nu au fost înregistrate. Am transformat Cubul Rubik într-o jucărie de birou, pe care o iau în mână oricând, mă joc câteva ori când sunt bine dispus, când sunt stresat sau anxios, în pauzele de la muncă, când mă plictisesc. Am integrat jocul cu cubul în viața mea. Ao100 a scăzut treptat de la 29.9 la 28.2.
 
-**Unde mă blocam**: Nu exista un blocaj clar, pur și simplu nu eram suficient de priceput.
+**Unde te blochezi**: Nu există un blocaj clar, pur și simplu nu sunt suficient de antrenat.
 
-**Ce am exersat**:
+**Ce să exersezi**:
 
-Dacă viteza ta medie este încă peste 30 de secunde, singurul lucru pe care trebuie să-l faci este să continui să exersezi mult, nu să memorezi formule noi.
+Dacă viteza ta medie este încă peste 30 de secunde, singurul lucru pe care trebuie să-l faci este să continui să exersezi mult, nu să memorezi algoritmi noi.
 
-Continuă să exersezi anticiparea prin rotiri lente, și vei deveni din ce în ce mai rapid.
+Continuând să exersezi look-ahead prin slow solving, vei deveni din ce în ce mai rapid.
 
-Ia cubul și joacă-te cu el oricând, pune-l la îndemână, de exemplu pe birou, ca să te poți juca cu el în timpul pauzelor de la muncă. De asemenea, poți înregistra frecvent videoclipuri cu rezolvările tale pentru a vedea în ce etapă petreci cel mai mult timp, apoi să optimizezi specific. Aceasta este practica deliberată: viteza progresului tău nu depinde de numărul total de antrenamente obișnuite, ci de numărul de antrenamente deliberate.
+Ia cubul și joacă-te oricând, pune-l la îndemână, de exemplu pe birou, ca să te poți juca în timpul pauzelor de la muncă. De asemenea, poți înregistra frecvent videoclipuri cu rezolvările tale, pentru a vedea în ce etapă petreci cel mai mult timp și apoi să optimizezi țintit. Aceasta este practica deliberată; viteza ta de progres nu depinde de numărul total de exerciții obișnuite, ci de numărul de exerciții deliberate.
 
-Apoi vei descoperi că, după ce ai depășit blocajul de 30-35 de secunde, viteza ta a mai scăzut cu o treaptă.
+Apoi vei descoperi că, după ce ai depășit perioada de platou de 30-35 de secunde, viteza ta a mai scăzut cu o treaptă.
 
-Felicitări dacă ai ajuns în această etapă! Pentru un începător, ești deja un jucător foarte priceput!
+Felicitări, ai ajuns în această etapă! Din perspectiva unui începător, ești deja un jucător foarte priceput!
 
-## Prețul de a nu memora formule
+## Prețul de a nu memora algoritmi
 
-Fie vorba-ntre noi, trebuie să fim sinceri. A nu memora formule nu este gratuit.
+Până aici, trebuie să fiu sincer. A nu memora algoritmi nu este gratuit.
 
-Etapa CMLL este mai lentă. Acoperirea a 42 de cazuri cu 9 formule înseamnă că unele situații trebuie rezolvate de două ori. Cei care folosesc setul complet de CMLL sunt cu două-trei secunde mai rapizi decât mine în acest pas.
+Faza CMLL este lentă. Cele 42 de cazuri acoperite de 9 algoritmi înseamnă că unele situații trebuie făcute de două ori. Cei care știu întregul set de algoritmi CMLL sunt mai rapizi cu două-trei secunde la acest pas.
 
-Tehnica stratului M are un prag ridicat. A doua jumătate a metodei Roux se bazează în întregime pe stratul M, care este mai dificil de rotit decât R sau U, se blochează mai ușor și impune cerințe mai mari cubului în sine.
+Tehnica stratului M are un prag ridicat. A doua jumătate a metodei Roux se bazează în întregime pe stratul M. Stratul M este mai dificil de rotit decât R sau U, se blochează mai ușor și necesită un cub de o calitate mai bună.
 
-Nu te îngrijora de limite. Există jucători de top care folosesc Roux și ajung în fruntea clasamentelor mondiale; metoda în sine nu are o limită superioară. Însă, pentru a intra sub 15 secunde, probabil că va trebui să completezi toate cele 42 de formule CMLL. Dar asta este o chestiune pentru o altă etapă. Pentru a intra sub 30 de secunde, nu este necesar.
+Nu-ți face griji cu privire la limita superioară. Există și jucători de top care folosesc metoda Roux și se clasează printre primii din lume; metoda în sine nu are o limită superioară. Dar pentru a ajunge sub 15 secunde, probabil că va trebui să completezi toți cei 42 de algoritmi CMLL. Însă asta este o etapă diferită. Pentru a ajunge sub 30 de secunde, nu este necesar.
 
-Mai mult, aproape fiecare jucător de clasă mondială care rezolvă cubul cu o singură mână folosește metoda Roux, deoarece este într-adevăr foarte potrivită și pentru operațiuni cu o singură mână.
+Mai mult, aproape toți jucătorii de clasă mondială care rezolvă cu o singură mână folosesc metoda Roux, deoarece este într-adevăr foarte potrivită și pentru operațiuni one-handed.
 
-**Cele mai rapide rezultate folosind Roux în competițiile oficiale (WCA):**
+**Cele mai rapide rezultate cu metoda Roux în competițiile oficiale (WCA):**
 
-- Un singur timp de 4.11 secunde, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipine), la Valenzuela Cubing Open 2023, recunoscut oficial ca cel mai rapid timp unic cu metoda Roux ([video de reconstrucție](https://www.youtube.com/watch?v=5H4TRJSUm-U))
-- Medie de 5.98 secunde, tot el, în 2019, pe atunci record asiatic și al treilea cel mai rapid timp mediu oficial sub 6 secunde din istorie ([profil WCA](https://www.worldcubeassociation.org/persons/2017VILL41))
-- El este, de asemenea, [deținătorul recordului mondial la rezolvarea cu o singură mână](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): medie 8.09, timp unic 6.05 (2024). În cercurile de speedcubing cu o singură mână, Roux este considerată pe scară largă cea mai bună metodă.
+-   Single de 4.11 secunde, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipine), 2023 Valenzuela Cubing Open, recunoscut ca cel mai rapid single oficial cu Roux ([video de reconstrucție](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+-   Average de 5.98 secunde, tot el, 2019, pe atunci record asiatic și al treilea average sub-6 oficial din istorie ([profil WCA](https://www.worldcubeassociation.org/persons/2017VILL41))
+-   De asemenea, este [deținătorul recordului mondial la one-handed](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): average de 8.09, single de 6.05 (2024), iar în comunitatea one-handed se consideră că Roux este cea mai bună metodă.
 
-Cred că această tranzacție este foarte avantajoasă. Sacrifici două-trei secunde la CMLL, dar în schimb obții: să știi ce faci la fiecare pas, să nu uiți metoda chiar dacă nu atingi cubul trei luni, și să poți deduce rezolvarea pentru orice cub nou, indiferent cât de necunoscut ar fi.
+Cred că această tranzacție este foarte avantajoasă. În schimbul a două-trei secunde în plus la CMLL, primești: să știi ce faci la fiecare pas, să nu uiți metoda chiar dacă nu atingi cubul trei luni și să poți rezolva orice cub nou pe care îl întâlnești.
 
-## Concluzie
+## Sumar
 
-![复原完成](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+![Rezolvare completă](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
 
-Trecerea de la a putea rezolva cubul la a ajunge sub 30 de secunde nu este un proces de memorare a formulelor, ci unul de antrenare a coordonării mâinilor, ochilor și creierului.
+De la a putea rezolva cubul la a ajunge sub 30 de secunde nu este un proces de memorare a algoritmilor, ci un proces de antrenare a coordonării mâinilor, ochilor și creierului.
 
-Patru etape, patru lucruri: învață mai întâi să privești fără să rotești cubul, apoi învață să construiești podul drept fără să distrugi podul stâng, apoi învață să privești la pasul următor în timp ce execuți pasul curent, și în final, lasă mâinile să țină pasul cu ochii.
+Patru etape, patru lucruri: mai întâi învață să privești fără să rotești cubul, apoi învață să construiești Al Doilea Bloc fără să distrugi Primul Bloc, apoi învață să te uiți la pasul următor în timp ce faci pasul curent, iar în final, lasă mâinile să țină pasul cu ochii.
 
-Formulele nu sunt sursa vitezei. Observația este.
+Algoritmii nu sunt sursa vitezei. Observația este.
 
-Învață să creezi un feedback pozitiv prin progresul în fiecare etapă. Chiar și exercițiile de dexteritate pot fi mai puțin plictisitoare, mai ales când descoperi surpriza unui nou record personal. În special în etapele inițiale și intermediare, vei experimenta zilnic bucuria depășirii propriilor limite.
+Învață să-ți construiești un feedback pozitiv prin progresul fiecărei etape, chiar și exercițiile de fluență pot fi mai puțin plictisitoare, mai ales când descoperi bucuria de a-ți bate din nou recordul. În special în etapele inițiale și intermediare, vei experimenta în fiecare zi bucuria de a-ți doborî recordul.
 
-Toate formulele și situațiile menționate în articol sunt organizate de mine în [biblioteca de formule Metoda Roux](/zh/projects/rubiks-cube/roux). Când te blochezi, poți reveni aici să le consulți.
+Toți algoritmii și cazurile menționate în text sunt organizate în [biblioteca de algoritmi Roux Method](/ro/projects/rubiks-cube/roux). Când te blochezi, poți reveni să verifici.
 
-Lumea cubului Rubik este plină de bucurii. Îți urez distracție plăcută!
+Lumea Cubului Rubik este plină de distracție, îți urez să te bucuri de ea.
 
 ## Anexa 1: Lista de exerciții pentru fiecare etapă
 
-**Etapa întâi (> 60 secunde)**
+**Etapa unu (> 60 secunde)**
 
-- Menține o poziție fixă de observație, nu întoarce cubul pe durata întregii rezolvări
-- Găsește următoarea culoare dorită fără a te opri
-- Rotiri lente, verbalizează intenția fiecărei mișcări
-- Exersează doar podul stâng, repetă de 50 de ori
+-   Poziție fixă de observare, nu roti cubul pe parcursul întregii rezolvări
+-   Găsește următoarea piesă dorită fără pauze
+-   Slow solving, rostește intenția fiecărei mișcări
+-   Exersează doar Primul Bloc, repetă de 50 de ori
 
-**Etapa a doua (60 → 40 secunde)**
+**Etapa doi (60 → 40 secunde)**
 
-- Podul drept folosește doar R, r, M, U, fără a atinge podul stâng
-- Exerciții CMLL în doi pași
-- Exerciții de ritm M' U M' U, 5 minute zilnic
+-   Al Doilea Bloc se face doar cu R, r, M, U, fără a atinge Primul Bloc
+-   Exersează CMLL în două etape
+-   Exersează ritmul M' U M' U, 5 minute pe zi
 
-**Etapa a treia (40 → 30 secunde)**
+**Etapa trei (40 → 30 secunde)**
 
-- Oprește-te după CMLL și identifică imediat numărul de muchii incorecte
-- Rotiri lente + anticipare: ochii privesc întotdeauna la piesa următoare
-- Cel puțin 20 de rezolvări de calitate zilnic
+-   Oprește-te după CMLL și identifică imediat numărul de muchii neorientate
+-   Slow solving + look-ahead: ochii privesc întotdeauna la următoarea piesă
+-   Cel puțin 20 de rezolvări de înaltă calitate pe zi
 
-**Etapa a patra (< 30 secunde)**
+**Etapa patru (< 30 secunde)**
 
-- Înregistrează videoclipuri pentru a identifica pauzele
-- Tehnică: R U R' U' cu un singur deget, stratul M cu degetul inelar
-- 20 de rezolvări de calitate zilnic, nu volum excesiv
+-   Înregistrează-te pentru a găsi pauzele
+-   Fingertricks: tehnici de degete R U R' U', degetul inelar pentru stratul M
+-   20 de rezolvări de înaltă calitate pe zi, fără a forța cantitatea
 
 ## Anexa 2: Instrumente
 
-- **csTimer**: [cstimer.net](https://cstimer.net/). Activează statisticile Ao5 / Ao12 / Ao100; Ao100 reflectă nivelul tău real, un singur timp este noroc.
-- **Cub Rubik 3D**: [philoli.com/zh/projects/rubiks-cube](/zh/projects/rubiks-cube/). Toate formulele din acest articol pot fi introduse aici pentru a vizualiza animația.
-- **Biblioteca de formule Metoda Roux pentru începători**: [philoli.com/zh/projects/rubiks-cube/roux](/zh/projects/rubiks-cube/roux). Schemele comune de inserare pentru podul stâng și cel drept, cele 9 formule CMLL în doi pași, toate cazurile LSE (EO, UL/UR, ultimele patru muchii). Fiecare imagine poate fi deschisă în Cubul Rubik 3D, ascunzând automat blocurile irelevante și evidențiind muchiile de mutat.
-- **Analizor de antrenament csTimer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/zh/projects/rubiks-cube/analyzer). Trage și plasează fișierul exportat din csTimer pentru a vedea evoluția performanței tale, curbele Ao5/Ao12/Ao100, progresul PB-urilor, tabelul cu etape (când ai atins prima dată sub-60, sub-40, sub-30) și curba de practică Power Law. Toate graficele din acest articol provin de aici. Datele sunt procesate doar în browserul tău, nu sunt încărcate. Dacă nu ai un fișier exportat, poți încărca mai întâi datele mele de 4441 de rezolvări pentru a vedea cum funcționează.
+-   **csTimer**: [cstimer.net](https://cstimer.net/). Activează statisticile Ao5 / Ao12 / Ao100; Ao100 este nivelul tău real, timpii individuali sunt chestiune de noroc.
+-   **Cub 3D**: [philoli.com/zh/projects/rubiks-cube](/ro/projects/rubiks-cube/). Toți algoritmii din acest articol pot fi introduși aici pentru a vedea animația.
+-   **Biblioteca de algoritmi Roux Method prietenoasă cu începătorii**: [philoli.com/zh/projects/rubiks-cube/roux](/ro/projects/rubiks-cube/roux). Rutine comune de inserție pentru Primul Bloc și Al Doilea Bloc, 9 algoritmi pentru CMLL în două etape, și toate cazurile pentru LSE (EO, UL/UR, ultimele patru muchii). Fiecare imagine poate fi deschisă în cubul 3D, ascunzând automat blocurile irelevante și evidențiind muchiile de mutat.
+-   **Analizor de antrenament csTimer**: [philoli.com/zh/projects/rubiks-cube/analyzer](/ro/projects/rubiks-cube/analyzer). Trage și plasează fișierul exportat din csTimer pentru a vedea tendința timpilor tăi, curbele Ao5/Ao12/Ao100, progresul PB-urilor, tabelul cu etapele importante (prima dată sub-60, sub-40, sub-30) și curba de practică Power Law. Toate graficele din acest articol provin de aici. Datele sunt procesate doar în browserul tău și nu sunt încărcate. Dacă nu ai un fișier exportat, poți încărca datele mele de 4441 de rezolvări pentru a vedea efectul.
 
-*Acest articol conține linkuri de afiliere Amazon: dacă achiziționezi prin aceste linkuri, voi primi un mic comision, iar prețul pentru tine rămâne neschimbat.*
+*Acest articol conține linkuri de afiliere Amazon: prin achiziționarea prin intermediul linkurilor, voi primi o mică comision, iar prețul tău rămâne neschimbat.*
 
 ## Mai multe de citit
 
-- [Cum să rezolvi Cubul Rubik fără formule: Chiar și un școlar poate înțelege](/zh/blog/solve-rubiks-cube-without-formulas)
+-   [Cum să rezolvi Cubul Rubik fără să memorezi algoritmi: chiar și un elev de școală primară poate înțelege](/ro/blog/solve-rubiks-cube-without-formulas)

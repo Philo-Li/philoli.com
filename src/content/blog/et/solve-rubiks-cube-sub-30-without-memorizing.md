@@ -1,278 +1,278 @@
 ---
 layout: blog
-title: "Kuidas lahendada Rubiku kuubik alla 30 sekundiga valemeid pähe õppimata: Arusaadav ka algklassilapsele"
+title: "Kuidas jõuda Rubiku kuubiku lahendamisel alla 30 sekundi ilma algoritme pähe õppimata: arusaadav ka algklassilapsele"
 date: 2026-10-09 12:00:00
 tags:
-  - 魔方
-  - 教程
-  - Roux方法
-  - 速拧
-  - 刻意练习
+  - kuubik
+  - õpetus
+  - Roux' meetod
+  - kiirkuubimine
+  - teadlik harjutamine
 categories: 日常折腾
-description: "Alates esimesest lahendusest kuni Ao100 alla 30 sekundi jõudmiseni kulus mul 89 päeva, ilma et oleksin ühtegi CFOP valemit pähe õppinud. Kasutan 4441 ajastatud lahenduse andmeid, et jaotada protsess neljaks etapiks: millised on iga etapi takistused, mida harjutada ja miks Roux' meetod ei vaja valemite päheõppimist."
+description: "Esimest korda kuubikut lahendamast Ao100 alla 30 sekundi jõudmiseni kulus 89 päeva, ilma ühtegi CFOP algoritmi õppimata. Analüüsime 4441 ajastatud lahenduse andmeid neljas etapis: kus tekkis takistus, mida harjutada ja miks Roux' meetod ei vaja algoritmide päheõppimist."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="从 165 秒到 28 秒的四个阶段" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Neli etappi 165 sekundist 28 sekundini" />
 </figure>
 
-*Joonis: Neli etappi 165 sekundist 28 sekundini. Teises etapis toimus kõige kiirem langus, kolmas etapp oli pikim platoo.*
+*Joonis: Neli etappi 165 sekundist 28 sekundini. Teine etapp oli kõige kiirema edasiminekuga, kolmas etapp aga pikim platoo.*
 
-Eelmises postituses [«Kuidas lahendada Rubiku kuubik valemeid pähe õppimata»](/zh/blog/solve-rubiks-cube-without-formulas/) õppisid sa kasutama kommutatsioonide loogikat, et lahendada Rubiku kuubik ilma valemeid meelde jätmata. See artikkel sai paljudelt entusiastlikku tagasisidet.
+Eelmises postituses [„Kuidas lahendada Rubiku kuubikut ilma algoritme pähe õppimata”](/et/blog/solve-rubiks-cube-without-formulas/) õppisid sa kuubikut lahendama kommutatorite loogikat kasutades, ilma et peaksid mingeid algoritme pähe õppima. See artikkel sai väga palju positiivset tagasisidet.
 
-Kui sa seda proovisid, kulub sul ilmselt praegu kaks-kolm minutit ja oled küll kohmakas, kuid suudad kuubiku lahendada. Nüüd kerkib esile uus küsimus: kuidas kiiremini saada?
+Kui sa minu juhiseid järgisid, kulub sul ilmselt praegu kaks-kolm minutit kuubiku lahendamiseks. Kuigi see võib olla kohmakas, saad sa sellega hakkama. Ja siis tekib uus küsimus: kuidas saada kiiremaks?
 
-Kui otsid "kiirkuubimist", räägivad kõik õpetused sulle ühte ja sedasama: kui tahad saada alla 30 sekundi, pead esmalt CFOP-i valemid pähe õppima. F2L 41 valemit, OLL 57 valemit, PLL 21 valemit – kokku 119. Isegi kui F2L-i teed intuitiivselt, ei pääse sa 78 ülemise kihi valemist mööda. Kui neid pähe ei õpi, siis kiirust ei saa.
+Kui otsid „kiirkuubimine”, ütlevad kõik õpetused sulle sama asja: kui tahad jõuda alla 30 sekundi, pead esmalt CFOP algoritmid selgeks õppima. F2L-i jaoks 41, OLL-i jaoks 57, PLL-i jaoks 21 – kokku 119 algoritmi. Isegi kui F2L-i teed intuitiivselt, ei pääse sa ülemise kihi 78 algoritmist. Kui sa neid pähe ei õpi, ära unistagi kiireks saamisest.
 
-See artikkel tahab sulle öelda, et sa saad ilma ühtegi valemit pähe õppimata ikkagi alla 30 sekundi.
+Selle artikliga tahan sulle öelda, et sa saad jõuda alla 30 sekundi täiesti ilma algoritme pähe õppimata.
 
 <!--more-->
 
-Mina alustasin Rubiku kuubiku lahendamisega 7. mail 2026 ja kuni 4. augustil minu Ao100 tulemus alla 30 sekundi langes, kulus 89 päeva. Selle aja jooksul ei õppinud ma ühtegi CFOP valemit, vaid lihtsalt mängisin vabal ajal. Siin on minu 4441 registreeritud lahenduse ajastatud andmed.
+Alates esimesest kuubiku lahendamisest 7. mail 2026 kuni Ao100 alla 30 sekundi jõudmiseni 4. augustil kulus mul 89 päeva. Selle aja jooksul ei õppinud ma ühtegi CFOP algoritmi, vaid mängisin kuubikuga lihtsalt vabal ajal. Siin on minu 4441 registreeritud lahenduse ajastatud andmed.
 
-![4441 次复原的成绩曲线](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
+![4441 lahenduse tulemuste kõver](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/02-solve-times.webp)
 
-*Joonis: 4441 lahenduse tulemuste kõver. Hall joon näitab iga lahenduse aega, tume joon on Ao100 trend ja punased punktid tähistavad isiklike parimate tulemuste uuendusi. Parim Ao100 oli 28,22 sekundit.*
+*Joonis: 4441 lahenduse tulemuste kõver. Hall joon näitab iga lahenduse aega, tume joon Ao100 trendi ja punased punktid isikliku rekordi parandamise kordi. Parim Ao100 oli 28,22 sekundit.*
 
-Teadliku ja järjepideva harjutamisega saab igaüks nullist alla 30 sekundi tasemele jõuda paari kuuga.
+Teadliku ja järjepideva harjutamisega võib igaüks saavutada nullist alla 30 sekundi tulemuse vaid paari kuuga.
 
-Mida tähendab alla 30 sekundi? [1982. aasta esimesel Rubiku kuubiku maailmameistrivõistlusel](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship) oli võitja aeg 22,95 sekundit, mis on ka esimene WCA poolt ametlikult tunnustatud maailmarekord; 10. koha saavutas 29,11 sekundiga Jessica Fridrich isiklikult, kellest räägime järgmises osas ja kelle järgi on CFOP meetod nimetatud. Teisisõnu, kui tänapäeva harrastaja harjutab paar kuud ja saavutab alla 30 sekundi, oleks ta 1982. aastal maailma esikümnes olnud.
+Mida tähendab alla 30 sekundi? [1982. aasta esimesel Rubiku kuubiku maailmameistrivõistlustel](https://en.wikipedia.org/wiki/1982_World_Rubik%27s_Cube_Championship) oli võitja aeg 22,95 sekundit, mis on ka WCA poolt hiljem tunnustatud esimene ametlik maailmarekord; 10. koha saavutas 29,11 sekundiga Jessica Fridrich ise, kellest räägin järgmises jaotises CFOP loojana. Teisisõnu, tänapäeval amatööri poolt paari kuuga saavutatud alla 30 sekundi tulemus oleks 1982. aastal taganud koha maailma esikümnes.
 
-Järgnevalt jagan sinuga, kuidas ma samm-sammult selleni jõudsin, ja annan sulle kogu harjutusmeetodi täielikult edasi.
+Järgnevalt jagan sinuga, kuidas ma samm-sammult selleni jõudsin, ja annan sulle edasi kogu harjutamismeetodi.
 
-## Miks kiirkuubimise maailm valemeid pähe õpib?
+## Miks kiirkuubimise maailm õpib algoritme pähe
 
-Kõigepealt teeme ühe asja selgeks: miks on "kiirus" ja "valemite päheõppimine" inimeste peas omavahel seotud?
+Alustame sellest, et mõistame üht asja: miks on „kiirus” ja „algoritmide päheõppimine” inimeste meelest lahutamatult seotud?
 
-1980. aastate alguses töötas Tšehhi päritolu professor Jessica Fridrich (kes hiljem uurib digitaalset kohtuekspertiisi Binghamtoni ülikoolis) välja kihilise lahendusmeetodi, mida hiljem hakati nimetama CFOP-iks (Cross, F2L, OLL, PLL). Selle meetodi põhimõte on: loetleda kõik ülemise kihi võimalikud olukorrad ja igale olukorrale anda optimaalne valem. Sa tunned olukorra ära, sooritad valemi ja ei pea mõtlema.
+1980. aastate alguses süstematiseeris Tšehhi päritolu professor Jessica Fridrich (kes hiljem uuris digitaalset kohtuekspertiisi Binghamtoni ülikoolis) kiht-kihilt lahendamise meetodi, mida hakati hiljem kutsuma CFOP-ks (Cross, F2L, OLL, PLL). Selle meetodi põhimõte on: kaardistada kõik võimalikud olukorrad ülemisel kihil ja igale olukorrale omistada optimaalne algoritm. Sa tunned olukorra ära, sooritad algoritmi ja mõtlemist pole vaja.
 
-![Jessica Fridrich 和她办公室里的魔方](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
+![Jessica Fridrich ja Rubiku kuubik tema kontoris](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
 
-*Joonis: Jessica Fridrich ja Rubiku kuubik tema kontoris. 1982. aastal saavutas ta esimesel MM-il 29,11 sekundiga 10. koha ja CFOP on tema järgi nimetatud (Fridrichi meetod).*
+*Joonis: Jessica Fridrich ja Rubiku kuubik tema kontoris. 1982. aastal saavutas ta 29,11 sekundiga esimesel maailmameistrivõistlusel 10. koha. CFOP on tema järgi nimetatud (Fridrich Method).*
 
-See meetod on väga kiire. Peaaegu kõik maailmarekordid on saavutatud CFOP-iga. Seega õpetavad kõik õpetused seda, kõik videod räägivad sellest, "kiirkuubimise õppimine" võrdub "CFOP-i õppimisega" ja CFOP-i õppimine võrdub 119 valemi päheõppimisega.
+See meetod on äärmiselt kiire. Peaaegu kõik maailmarekordid on saavutatud CFOP-ga. Seepärast õpetavad seda kõik õpetused, räägivad sellest kõik videod, ja „kiirkuubimise õppimine” on võrdne „CFOP õppimisega”, mis omakorda võrdub 119 algoritmi päheõppimisega.
 
-Kuid pane tähele, "valemite päheõppimine" on CFOP-i meetodi eripära, mitte "kiiruse" enda tunnus. CFOP nõuab päheõppimist, sest see valis ammendava loendi tee. Ammendav loend nõuab mälu, ja see on selle hind.
+Kuid pane tähele, „algoritmide päheõppimine” on CFOP kui meetodi eripära, mitte kiiruse enda omadus. CFOP nõuab päheõppimist, sest see valis ammendava lähenemise. Ammendavus nõuab mälu, ja see on selle hind.
 
-Kas on olemas meetodeid, mis ei lähe seda ammendava loendi teed? On.
+Kas on olemas meetodeid, mis ei kasuta ammendavat lähenemist? On.
 
-## Lahendus ilma valemeid pähe õppimata: Roux' meetod (silla meetod)
+## Algoritmideta lahendus: Roux' meetod
 
-2003. aastal avaldas prantslane Gilles Roux täiesti erineva lähenemise. Selle asemel, et kihte üksteise peale laduda, ehitatakse kõigepealt kaks 1×2×3 "silda" (vasak ja parem), seejärel käsitletakse ülemise kihi nelja nurka ja lõpuks jääb alles kuus servatükki, mis lahendatakse keskmise (M) ja ülemise (U) kihi pööretega.
+2003. aastal avalikustas prantslane Gilles Roux täiesti erineva lähenemise. See ei ole kiht-kihilt ladumine, vaid kõigepealt ehitatakse kaks 1×2×3 „blokki” vasakule ja paremale, seejärel paigutatakse ülemise kihi neli nurgatükki ning lõpuks jääb alles ainult kuus servatükki, mis lahendatakse keskmise kihi M-pöörete ja ülemise kihi U-pööretega.
 
-![Gilles Roux 在比赛中](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
+![Gilles Roux võistlusel](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
 
-*Joonis: Gilles Roux võistlusel. Kärbitud varasest võistlusvideost, pilt on AI abil taastatud ja suurendatud.*
+*Joonis: Gilles Roux võistlusel. Kärbitud varajasest võistlusvideost, pilti on tehisintellekti abil taastatud ja suurendatud.*
 
-Eelmises postituses lahendasime me selle raamistiku abil juba korra. Vaatame nüüd selle nelja sammu uuesti, keskendudes seekord sellele, "mida igas etapis meelde jätta on vaja":
+Eelmises postituses lahendasime selle raamistiku abil juba korra kuubiku. Vaatame siin selle nelja etappi uuesti, keskendudes seekord sellele, „mida igas etapis meeles pidada”:
 
-| Etapp | Sisu | Valemeid, mida pähe õppida |
+| Samm | Sisu | Päheõppimiseks vajalikud algoritmid |
 | --- | --- | --- |
-| 1. Vasak sild | Ehita 1×2×3 plokk | 0, puhas vaatlus |
-| 2. Parem sild | Ehita sümmeetriliselt teine | 0, puhas vaatlus |
-| 3. CMLL | Ülemise kihi neli nurgatükki paika | 9, kõik tuletatavad 3-tsüklilistest vahetustest |
-| 4. LSE | Viimased kuus servatükki | 0, kasutatakse ainult ülemise ja keskmise kihi pöördeid (M ja U) |
+| 1. Esimene blokk | Ehita 1×2×3 blokk | 0, puhas vaatlus |
+| 2. Teine blokk | Ehita sümmeetriline blokk | 0, puhas vaatlus |
+| 3. CMLL | Ülemise kihi neli nurgatükki paika | 9, kõik tuletatavad kolmest tsükli algoritmist |
+| 4. LSE | Viimased kuus servatükki | 0, kasutatakse ainult ülemise ja keskmise kihi (M ja U) pöördeid |
 
-Kolm neljast sammust ei vaja ühtegi valemit. Ainus vajalik CMLL, mis hõlmab kokku 42 olukorda, ei nõua sinult 42 valemi päheõppimist. Eelmises postituses mainitud nurgatükkide 3-tsükliline vahetus R U' L' U R' U' L U, koos selle peegelpildi ja mõne variatsiooniga, katab kõik olukorrad, kuigi veidi aeglasemalt.
+Neljast sammust kolm ei vaja mingeid algoritme. Ainus vajalik CMLL, kus kõik olukorrad kokku on 42, kuid sa ei vaja 42 algoritmi. Eelmises postituses mainitud nurgatükkide kolme tsükli algoritm R U' L' U R' U' L U, lisaks selle peegelpilt ja mõned variandid, katavad kõik olukorrad, lihtsalt veidi aeglasemalt.
 
-![Roux 的四步](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/05-roux-four-steps.webp)
+![Roux' meetodi neli sammu](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/05-roux-four-steps.webp)
 
-*Joonis: Roux' meetodi neli etappi, kus igal sammul näidatakse ainult selleks ajaks paika pandud tükke: Vasak sild → Parem sild → CMLL (ülemise kihi nurgad) → LSE (viimased kuus serva). Kärbitud minu 3D Rubiku kuubiku lehe 'Lahendused' paneelilt.*
+*Joonis: Roux' meetodi neli sammu. Igas etapis on näidatud ainult need tükid, mis on selleks hetkeks juba paika saanud: Esimene blokk → Teine blokk → CMLL (ülemise kihi nurgad) → LSE (viimased kuus servatükki). Kärbitud minu 3D kuubiku lehe „Lahendus” paneelilt.*
 
-Just seepärast saab Roux' meetodiga hakkama ilma valemeid pähe õppimata: see surub meeldejätmise vajaduse väga väiksesse nurka, jättes ülejäänud osa vaatluse ja mõistmise ning vilumuse hooleks.
+See on põhjus, miks Roux' meetodiga saab ilma algoritme õppimata: see surub meeldejätmise vajaduse väga väiksesse nurka, jättes ülejäänu vaatlusele, mõistmisele ja harjutamisele.
 
 ## 165 sekundist 28 sekundini: neli etappi
 
-Allpool on minu teekond täpselt nii, nagu ma selle läbi käisin. Iga etapi algus ja lõpp on andmetega märgistatud, seejärel selgitan, kus ma takerdusin ja mida ma selles etapis harjutasin. Sinu takistused võivad olla minu omadest erinevad, kuid järjekord on suure tõenäosusega sama.
+Allpool on minu teekond. Igas etapis olen andmetega märkinud alguse ja lõpu, seejärel selgitanud, kus ma selles etapis takerdusin ja mida harjutasin. Sinu takistused võivad minu omadest erineda, kuid järjekord on suure tõenäosusega sama.
 
-![四个阶段的时间跨度](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
+![Nelja etapi ajaline ulatus](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp)
 
-*Joonis: Nelja etapi ajaline ulatus. Esimene etapp 3 nädalat, teine etapp 11 päeva, kolmas etapp kaks kuud, neljas etapp siiani.*
+*Joonis: Nelja etapi ajaline ulatus. Esimene etapp 3 nädalat, teine 11 päeva, kolmas kaks kuud, neljas siiani.*
 
-### Etapp üks: 165 sekundit → 60 sekundit (1.–3. nädal)
+### Esimene etapp: 165 sek → 60 sek (1.–3. nädal)
 
 **Andmed**: 7. maist 27. maini. Esimese nädala keskmine oli 165 sekundit, kolmandal nädalal 68 sekundit.
 
-**Kitsaskoht**: Vasak sild oli väga harjumatu, iga värviplokk võttis kaua aega. Ja kui plokk leiti, meeldis algajatele alati peatuda ja edasi vaadelda.
+**Kus takerdusin**: Esimene blokk oli väga ebakindel, iga nurgatüki-servatüki paari otsimine võttis kaua aega. Ja pärast paari leidmist kipuvad algajad alati peatuma ja edasi vaatlema.
 
-![新手的时间都花在哪](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
+![Kuhu algajad oma aega kulutavad](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/06-looking-vs-turning.webp)
 
-*Joonis: Kus algajad oma aega veedavad. Käed on paigal, silmad otsivad kuubikul edasi-tagasi, 'otsimise' aeg on mitu korda pikem kui 'pööramise' aeg.*
-
-**Mida harjutada**:
-
-Selle etapi suurim vaenlane pole aeglased käed, vaid aeglased silmad. Sa kulutad "otsimisele" tunduvalt rohkem aega kui "pööramisele". Seega:
-
-- Hoia vaatlusnurk fikseeritud, ära pööra kuubikut. Nagu eelmises postituses mainitud, on Roux' meetodi vaatlusnurk fikseeritud. Selles etapis tuleb "kuubiku mittepööramine" muuta lihasmäluks. Iga kord, kui tahad kuubikut pöörata, peatu ja küsi endalt: kas ma näen vajalikku tükki sellest nurgast?
-- Aeglane pööramine. Ära aja aega, kuid liigutused peavad olema sujuvad ja katkematud. Iga liigutus võib olla väga aeglane, kuid ilma pausideta. Oluline on, et samal ajal, kui käed teevad eelmist liigutust, peaksid silmad keskenduma järgmisele liigutusele – see on aeglase pööramise tuum. Kuigi see kõlab aeglustamisena, treenib see tegelikult sinu silmi nägema tüki asukoha ja selle õige asukoha vahelist suhet.
-- Harjuta ainult esimest silda. Sega kuubik, ehita vasak sild, sega uuesti, ehita vasak sild uuesti. Ära mine edasi. Esimene sild on Roux' meetodi kõige vabam samm ja ka samm, mis treenib vaatlust kõige paremini.
-
-Ära õpi selles etapis uusi valemeid. Sinu praegune kitsaskoht ei ole valemites.
-
-### Etapp kaks: 60 sekundit → 40 sekundit (4.–5. nädal)
-
-**Andmed**: 27. maist 7. juunini, 11 päeva. See oli kogu protsessi kiireim langusperiood ja ka periood, mil ma kõige rohkem harjutasin, juuni esimesel nädalal 723 korda.
-
-**Kitsaskoht**: Liigutused olid katkendlikud. Kuubik kiilus kinni.
+*Joonis: Kuhu algajad oma aega kulutavad. Käed on paigal, silmad otsivad kuubikul, ja „otsimise” aeg on kordades pikem kui „pööramise” aeg.*
 
 **Mida harjutada**:
 
-Selles etapis pead optimeerima iga etapi liigutusi, suurendama iga liigutuse vilumust mõistmise pinnalt.
+Selle etapi suurim vaenlane pole mitte aeglased käed, vaid aeglased silmad. Sa kulutad „otsimisele” palju rohkem aega kui „pööramisele”. Seega:
 
-- Teine sild. Teine sild on keerulisem kui esimene, sest ruumi on poole vähem ja juba valmis vasakut silda ei tohi lõhkuda. Peamised pöörded on R, r (parem kaks kihti), M, U. Selles etapis tuleb õppida kasutama r ja M R asemel tükkide liigutamiseks, nii et vasak sild ei puruneks kunagi. Liigutuste optimeerimine on aja säästmine. Näiteks kolm korda päripäeva pööramine on sama, mis üks kord vastupäeva pööramine.
-- Vilumuse omandamine M-kihiga. Roux' meetodi viimane samm on kõik M ja U, ning M-kihi sujuvus määrab otse sinu alampiiri. Lükka M-i nimetissõrme või keskmise sõrmega, hakka harjutama rütme nagu M' U M' U.
-- CMLL-i mustrite äratundmine. Eelmises postituses "proovisime" kolme tsüklilise vahetusega nelja nurka. Nüüd tuleb hakata enne tegemist vaatama: enne ülemise kihi pööramist viska pilk nelja nurga kollasele orientatsioonile, et hinnata, kas neid on 0, 1, 2 või 4 "head" nurka, ja seejärel sooritada kohe vastav liigutus. Saad ka väga väikese hulga valemite abil oluliselt efektiivsust tõsta, mis on väga tasuv. Suuremat osa valemitest ei pea pähe õppima, vaid neid tuleb harjutamise käigus mõista.
+-   Fikseeri vaatlusnurk, ära pööra kuubikut. Nagu eelmine kord mainitud, on Roux' meetodi vaatlusnurk fikseeritud. Selles etapis tuleb „kuubiku mitte pööramine” muuta lihasmäluks. Iga kord, kui tahad kuubikut pöörata, peatu ja küsi endalt: kas ma näen soovitud tükki sellest nurgast?
+-   Aeglane lahendamine (slow solving). Ära ajasta, kuid liigutused peavad olema pidevad, ilma igasuguste pausideta. Iga liigutus võib olla väga aeglane, kuid ärge tehke pause. Põhiline on see, et samal ajal, kui käed teevad eelmist liigutust, peavad silmad keskenduma järgmisele liigutusele – see on aeglase lahendamise tuum. See võib tunduda aeglustamisena, kuid tegelikult treenib see su silmi nägema tükkide asukoha ja nende õige asukoha vahelist seost.
+-   Harjuta ainult esimest blokki. Sega kuubik, ehita esimene blokk, sega uuesti, ehita uuesti esimene blokk. Ära tee edasi. Esimene blokk on Roux' meetodi kõige vabam samm ja samuti samm, mis kõige paremini treenib vaatlusoskust.
+
+Ära õpi selles etapis ühtegi uut algoritmi. Sinu praegune pudelikael ei ole algoritmides.
+
+### Teine etapp: 60 sek → 40 sek (4.–5. nädal)
+
+**Andmed**: 27. maist 7. juunini, 11 päeva. See oli kogu protsessi kõige kiirema langusega osa ja ka see, mida ma kõige rohkem harjutasin – juuni esimesel nädalal 723 korda.
+
+**Kus takerdusin**: Liigutused polnud sujuvad. Kuubik kiilus kinni.
+
+**Mida harjutada**:
+
+Selles etapis pead optimeerima iga etapi liigutusi, suurendades iga liigutuse vilumust arusaamise põhjal.
+
+-   Teine blokk (SB). Teine blokk on raskem kui esimene, sest ruumi on poole vähem ja juba valminud esimest blokki ei tohi lõhkuda. Peamised pöörded on R, r (parem kaks kihti), M, U. Selles etapis tuleb õppida kasutama r ja M R asemel tükkide liigutamiseks, nii et esimene blokk ei saa kunagi rikutud. Liigutuste optimeerimine tähendab aja säästmist. Näiteks kolm päripäeva pööret on samaväärne ühe vastupäeva pöördega.
+-   Harjuta M-kihi kasutamist. Roux' meetodi viimane samm on kõik M ja U pöörded, ja M-kihi sujuvus määrab otseselt sinu kiiruse alampiiri. Lükka M-kihti sõrmusesõrme või keskmise sõrmega ja hakka harjutama rütmi nagu M' U M' U.
+-   CMLL mustrite äratundmine. Eelmises postituses "proovisime" neli nurgatükki kolme tsükliga paika saada. Nüüd tuleb hakata enne tegemist vaatama: enne ülemise kihi pööramist vaata korraks nelja nurgatüki kollast orientatsiooni ja otsusta, kas tegemist on 0, 1, 2 või 4 õige nurgatükiga, ja seejärel soorita otse vastav liigutus. Väga väheste algoritmidega saad saavutada märkimisväärse efektiivsuse tõusu, mis on väga tasuv. Suuremat osa neist algoritmidest ei pea pähe tuupima, vaid neid saab õppida tehes ja mõistes.
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="搭右桥时的视角" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/07-second-block.webp" alt="Vaade teise bloki ehitamisel" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
   <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/08-m-prime-u-m.webp" alt="M' U M" style="flex: 1 1 0; min-width: 0; max-width: 50%;" />
 </div>
 
-*Joonis vasakul: Vaatenurk parema silla ehitamisel. Vasak sild on valmis, ja ainult R, r, M, U nelja pööret kasutatakse parempoolse nurga-serva paari sisestamiseks, vasak sild ei puutu kunagi. Joonis paremal: M' U M, Roux' meetodi teises pooles enim kasutatav liigutuste komplekt. Keskmine kiht üles, ülemine kiht pöörata, keskmine kiht tagasi – kolme sammuga vahetatakse ülemise ja keskmise kihi servapaar.*
+*Joonis vasakul: Vaade teise bloki ehitamisel. Esimene blokk on valmis, kasutatakse ainult R, r, M, U nelja tüüpi pöördeid, et parempoolsed nurgatüki-servatüki paarid paigutada, esimene blokk ei puutu kunagi. Joonis paremal: M' U M, kõige enam kasutatav liigutuste komplekt Roux' meetodi teises pooles. Keskmine kiht üles, ülemine kiht pööratakse, keskmine kiht tagasi – kolm sammu vahetavad ülemise ja keskmise kihi ühe servapaari.*
 
-Võid vaadata minu koostatud [Roux' meetodi valemite kogumit](/zh/projects/rubiks-cube/roux#cmll). CMLL lehel on kaheetapiline süsteem: 7 orientatsioonivalemit + 2 positsioonivalemit, kokku 9. See on kuluefektiivne valik kiiruse suurendamiseks, kergesti õpitav, ja iga harjutatud komplekt võib kiirustada umbes 1–2 sekundit. Väikese harjutamisega saad kiiresti vilunuks, mõned neist on juba eelmises artiklis tutvustatud, ja kõike ei pea meelde jätma, et jõuda alla 30 sekundi.
+Saad vaadata minu koostatud [Roux' meetodi algoritmide kogu](/et/projects/rubiks-cube/roux#cmll). CMLL-i leht on kaheosaline: 7 orientatsiooniajastatud algoritmi + 2 positsioneerimisalgoritmi, kokku 9. See on parim valik kiiruse suurendamiseks ja need on kergesti õpitavad. Iga harjutatud komplekt võib anda 1-2 sekundi võidu. Vähese harjutamisega saad need kiiresti selgeks, mõnda neist on juba eelmises artiklis tutvustatud, ja kõiki neid ei pea meelde jätma, et jõuda alla 30 sekundi.
 
-![两段式 CMLL 第一步，七种角块朝向](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
+![Kaheetapilise CMLL-i esimene samm, seitse nurgatükkide orientatsiooni](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/09-cmll-orient.webp)
 
-*Joonis: Kaheetapilise CMLL-i esimene samm, seitse nurgatükkide orientatsiooni. Ülemisel vaatel on kollane ülemine pind, väikesed ribad välisküljel näitavad nurga ülemise pinna suunda küljele. Tuvasta mustrid kollaste nurkade arvu järgi: 0 on H või Pi, 1 on S või AS, 2 on U, T või L.*
+*Joonis: Kaheetapilise CMLL-i esimene samm, seitse nurgatükkide orientatsiooni. Ülevalt vaates tähistab kollane ülespoole suunatud ülemise kihi värvi, välised väikesed ribad näitavad nurgatüki ülemise kihi värvi suunda küljele. Tunnusta kuju kollaste nurgatükkide arvu järgi: 0 on H või Pi, 1 on S või AS, 2 on U, T või L.*
 
-Pärast kollase ülemise osa joondamist saab nurkade külgede joondamiseks kasutada neid kahte valemit.
+Pärast kollaste ülemiste külgede joondamist saad kasutada neid kahte algoritmi nurgatükkide külgmiste külgede joondamiseks.
 
-Kui üks külg on juba värvilt ühtne, näiteks punane on juba samal küljel, pööra see vasakule ja seejärel saad valida külgnevate vahetuste valemi. Kui ükski külg pole värvilt ühtne, siis vali diagonaalsete vahetuste valem.
+Kui üks külg on juba värvilt ühtiv, näiteks punane on juba samal küljel, pööra see vasakule ja seejärel saad valida külgnevate vahetuse algoritmi. Kui ükski külg pole värvilt ühtiv, vali diagonaalide vahetuse algoritm.
 
-![两段式 CMLL 第二步，两种角块位置](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
+![Kaheetapilise CMLL-i teine samm, kaks nurgatükkide asendit](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/10-cmll-permute.webp)
 
-*Joonis: Kaheetapilise CMLL-i teine samm, kaks nurgatükkide asendit. Vasakul pildil on vasakpoolsete kahe nurga punane värv juba ühtne, kasutatakse külgnevat vahetust; paremal pildil pole ühtegi külge ühtne, kasutatakse diagonaalset vahetust.*
+*Joonis: Kaheetapilise CMLL-i teine samm, kaks nurgatükkide asendit. Vasakpoolsel pildil on vasakpoolsed kaks nurgatükki juba punaselt ühtivad, kasutatakse külgnevate vahetust; parempoolsel pildil pole ükski külg ühtiv, kasutatakse diagonaalide vahetust.*
 
-Saad iga valemikomplekti mõista, tehes palju aeglaseid pöördeid. Ära käsitle neid valemitena, vaid pigem kindlate liigutustena, mille sa avastaksid ka ise pikema uurimise käigus, kuid nende siin esitamine aitab sul otseteed leida.
+Saad neid algoritme paremini mõista suure hulga aeglase lahendamise abil. Ära käsitle neid algoritmide, vaid kindlate liigutustena. Sa võid need liigutused ka ise aegamisi avastada, kuid siin loetletud aitavad sul lühema teega edasi jõuda.
 
-Lisaks on veel üks asi, mis annab kohese ja märgatavama tulemuse kui ükski teine harjutus: investeeri uude Rubiku kuubikusse. Kui sul on ikka veel see vana kuubik, mis klõpsub ja kinni kiilub, osta endale magnetiline kaasaegne 3x3 kuubik. Uusimad kuubikud annavad sulle insenertehnilise optimeerimise jõu – sujuv pöörlemine, automaatne joondamine, peaaegu mitte kunagi kinni kiilumine. Ainuüksi kuubiku vahetamine võib su keskmist aega koheselt 15 sekundit kiirendada. Kuluefektiivne valik on [MoYu RS3 M V5 (MagLev + Ball-Core versioon)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20), umbes kahekümne dollari ringis, piisav kuni sub-20 tasemeni.
+Veel üks asi, mis on igast harjutusest kiirem: kuluta natuke raha ja osta uus kuubik. Kui sul on veel see vana kuubik, mis keerates klõpsub ja üle keerates kinni jääb, osta endale magnetiline kaasaegne 3x3. Uusimad kuubikud annavad sulle tunda inseneroptimaalse disaini jõudu: sujuvad pöörded, automaatne joondumine ja peaaegu mitte kunagi kinni jäämine. Ainuüksi kuubiku vahetamine võib su keskmist aega kohe 15 sekundit parandada. Parim hinna ja kvaliteedi suhte valik on [MoYu RS3 M V5 (Maglev + Ball-Core versioon)](https://www.amazon.com/dp/B0FH9NXF2P?tag=philoli-20), umbes kahekümne dollari eest, piisab kuni sub-20 tasemeni.
 
-### Etapp kolm: 40 sekundit → 30 sekundit (5.–13. nädal, kaks kuud)
+### Kolmas etapp: 40 sek → 30 sek (5.–13. nädal, kaks kuud)
 
-**Andmed**: 7. juunist 4. augustini. Ao100 lihviti 39,8 sekundilt 29,9 sekundile, mis võttis aega 58 päeva. Selles etapis võis aeg-ajalt esineda alla 30 sekundi tulemusi, kuid need olid ainult väga hea õnne korral. Ja keskmise lahendusaja langedes muutub 1 sekundi võrra paremaks saamine eksponentsiaalselt keerulisemaks.
+**Andmed**: 7. juunist 4. augustini. Ao100 lihviti 39,8 sekundilt 29,9 sekundile, mis võttis 58 päeva. Selles etapis võis aeg-ajalt ette tulla tulemusi alla 30 sekundi, kuid ainult väga hea õnne korral. Ja keskmise lahendusaja vähenedes kasvab 1 sekundi võrra paranemise raskus eksponentsiaalselt.
 
-![每日平均成绩](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
+![Igapäevased keskmised tulemused](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/11-daily-average.webp)
 
-*Joonis: Igapäevane keskmine tulemus. Juuni keskpaigast alates kõver peaaegu lamedus, lihvides kaks kuud 30–40 sekundi vahel.*
+*Joonis: Igapäevased keskmised tulemused. Juuni keskpaigast alates on kõver peaaegu tasane, lihvides end 30–40 sekundi vahel kaks kuud.*
 
-See on platookiht. Kõik kogevad seda, mina viibisin siin kaks kuud.
+See on platoo periood. Igaüks kohtab seda, ja mina veetsin siin kaks kuud.
 
-**Kitsaskoht**: Kuue ülemise servatüki lahendamine oli aeglane, loogikast ei saadud aru, iga kord prooviti korduvalt, raisates palju aega. Vasak ja parem sild ei olnud ikka veel piisavalt vilunud.
-
-**Mida harjutada**:
-
-- EO (Edge Orientation) äratundmine. Eelmises postituses rääkisime, et vales asendis servi on vaid mõned olukorrad: 0, mitte-0 mitte-4, 4 (2 üleval, 2 all), 4 (kõik ülemisel kihil), 4 (3 üleval, 1 all). Selle etapi eesmärk on: silla valmimise hetkel, ilma lugemata, pilguga ära tunda, milline olukord see on. Harjutusmeetod on: sega kuubik, tee ainult kuni CMLL lõpuni, seejärel peatu, ütle valesti orienteeritud servade arv ja jätka.
-- Paljud ei mõista siinseid liigutusi. EO etapi lõppeesmärk on alati luua ülemise kihi 3 ja alumise kihi 1 noolekuju, sest täielik kuju on vaid ühe liigutuse kaugusel noolekujust. Seega, tagurpidi mõeldes, on see viimane samm enne lahenduse lõpetamist. Seega, olenemata valesti orienteeritud servade arvust, on lõppeesmärk alati noolekuju loomine. Kui ülemisel kihil on 4 valesti orienteeritud serva, vahetatakse üks ülemine ja alumine serv, et üks vale serv alla viia ja noolekuju saavutada. Kui ülemisel kihil on 2 ja alumisel kihil 2, vahetatakse üks ülemine ja alumine serv, et üks vale serv üles tuua ja noolekuju saavutada. Kui ülemisel kihil on 1 ja alumisel kihil 1, või ülemisel kihil 2, siis kasutatakse M' U M-i, et muuta see eelmiseks olukorraks ja seejärel luua noolekuju. Saate palju vaadeldes ja mõeldes ise avastada 1/1 parimaid samme.
-- Harjuta palju ettevaatamist (Look-ahead). See on 40 sekundist 30 sekundini jõudmiseks kõige olulisem ja samas kõige vastuintuitiivsem asi: pööra veidi aeglasemalt, vaata kaugemale. Vasakut silda ehitades ära vaata sisestatavat tükki, vaid vaata, kus on järgmine tükk. Alguses on see väga ebamugav, tulemused halvenevad esmalt, kuid nädala pärast paranevad järsult.
-- CMLL-is ära kõhkle. Kui sa pead iga liigutuse puhul enne mõtlema, siis see pole veel sinu oma. Harjuta iga liigutust eraldi 50 korda, kuni käsi liigub iseenesest, kui kuju näed.
-
-![箭头形态](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
-
-*Joonis: Noolekuju. Ülemise kihi kolm valesti orienteeritud serva (sinine esiletõstetud) moodustavad noole, mis osutab alumise kihi valesti orienteeritud servale. Sel hetkel saab ühe M' U M liigutusega kõik neli korraga paika panna. [Ava see olek 3D kuubikul](/zh/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240), et näha samm-sammult.*
-
-![EO 的六种形态](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
-
-*Joonis: Kuus EO olekut. Ülemises vasakus nurgas on valesti orienteeritud servade arv (ülemine / alumine), kollased on õiged servad, sinised raamid on valed servad. Ainult noolekujuline vajab valemit, teised viis muudetakse esmalt noolekujuliseks.*
-
-Vasak- ja parempoolsete servatükkide lahendamisel, kui kollane on pealmine, valge alumine ja vasak sild punane, siis tuleb paika panna kollase-punase servatükk + kollase-oranži servatükk (esiletõstetud kohad). Peamine idee on viia kollase-punase servatükk ja kollase-oranži servatükk alumisele kihile, et need oleksid seal vastamisi. Seejärel pöörata ülemine kiht sobivasse asendisse, ja M2 U või M2 U' abil saab U-kihi vasak- ja parempoolsed servatükid paika.
-
-Et aidata kõigil paremini aru saada, olen ma kõik kuus EO olekut kogunud [Roux' meetodi valemite kogumiku LSE lehele](/zh/projects/rubiks-cube/roux#lse). Igal pildil klõpsates "Vaata üksikasju" avaneb vastav olek 3D kuubikul, kus valesti orienteeritud servad on automaatselt esile tõstetud. Samal lehel on ka hilisemad UL/UR paigutused ja kõik viimase nelja serva olukorrad.
-
-Selles etapis harjutamismahu vähenemine ei ole halb. Platookiht ei möödu lihtsalt mahu suurendamisega, vaid konkreetse halva harjumuse muutmisega. Minu kogemus on, et korraga tuleks muuta ainult ühte asja.
-
-### Etapp neli: 30 sekundit → 28 sekundit (pärast 13. nädalat)
-
-**Andmed**: Pärast 4. augustit. Septembris oli registreeritud harjutuskordade arv 122, kuigi tegelikult oli harjutamisi palju rohkem, mida ei registreeritud. Olen muutnud Rubiku kuubiku lauamänguks, mille võtan kätte igal vabal hetkel – mängin paar korda, kui tuju hea, kui olen ärritunud või ärev, tööpauside ajal, igavuse korral. Nii on kuubiku lahendamine muutunud osaks minu elust. Ao100 on samuti järk-järgult langenud 29,9-lt 28,2-le.
-
-**Kitsaskoht**: Pole selget kitsaskohta, lihtsalt pole piisavalt vilunud.
+**Kus takerdusin**: Ülemise kihi kuue servatüki paigutamine oli väga aeglane, ei mõistnud loogikat, iga kord proovisin korduvalt, raiskasin palju aega. Esimene ja teine blokk ei olnud ikka veel piisavalt vilunud.
 
 **Mida harjutada**:
 
-Kui sinu keskmine kiirus on endiselt üle 30 sekundi, siis ainus, mida pead tegema, on jätkata palju harjutamist, mitte õppida uusi valemeid.
+-   EO äratundmine. Eelmine kord rääkisin, et valesti orienteeritud servatükke on vaid mõned olukorrad: 0, mitte 0 ja mitte 4, 4 (2 üleval, 2 all), 4 (kõik ülemisel kihil), 4 (3 üleval, 1 all). Selle etapi eesmärk on: kohe pärast blokkide ehitamist, ilma lugemata, ühe pilguga ära tunda, millise olukorraga on tegu. Harjutamiseks sega kuubik, tee ainult CMLL-i lõpuni, seejärel peatu, ütle valesti orienteeritud servatükkide arv ja jätka.
+-   Paljud ei mõista siinseid liigutusi. EO etapi lõppeesmärk on alati konstrueerida ülemise 3 ja alumise 1 noolekujuline muster, sest täielik muster on juba ühe liigutuse kaugusel noolekujust. Seega, tagurpidi mõeldes, on see viimane samm enne lahendamist. Seega, olenemata valesti orienteeritud servatükkide arvust, on lõppeesmärk alati noolekuju konstrueerimine. Kui üleval on 4 valesti orienteeritud servatükki, vaheta üks paar ülemise ja alumise kihi vahel, et üks valesti orienteeritud servatükk alla viia ja noolekuju saavutada. Kui üleval on 2 ja all 2, vaheta üks paar ülemise ja alumise kihi vahel, et üks valesti orienteeritud servatükk üles tuua ja noolekuju saavutada. Kui üleval on 1 ja all 1, või üleval on 2, siis kasuta M' U M, et kõigepealt jõuda eelmiste olukordadeni ja seejärel konstrueerida noolekuju. Sa saad suure hulga vaatluse ja mõtlemise abil ise avastada 1/1 olukorra jaoks parimad sammud.
+-   Palju ettevaate (Look-ahead) harjutamist. See on kõige olulisem asi 40 sekundist 30 sekundini jõudmisel, ja ka kõige ebakindlam asi: pööra aeglasemalt, vaata kaugemale. Esimest blokki ehitades ära vaata sisestatavat tükki, vaata, kus on järgmine tükk. Alguses on see väga ebamugav ja tulemused halvenevad, kuid pärast nädalast harjutamist paranevad need järsku.
+-   CMLL-is ära kõhkle. Kui sa pead iga liigutuse puhul enne mõtlema, siis see pole veel sinu oma. Harjuta iga liigutust eraldi 50 korda, kuni käsi liigub kohe, kui kuju näed.
 
-Jätka aeglase pööramisega ettevaatamise harjutamist ja sa muutud järjest kiiremaks.
+![Noolekujuline muster](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/12-eo-arrow.webp)
 
-Võta kuubik kätte ja mängi sellega igal võimalikul hetkel. Hoia see kohas, kust saad selle kergesti kätte, näiteks oma töölaual, et saaksid seda tööpäeva vahepeal mängida. Samuti võid regulaarselt salvestada oma lahendusvideoid, et näha, millises etapis kulub kõige rohkem aega, ja seejärel sihipäraselt optimeerida – see on tahtlik harjutamine. Sinu edenemise kiirus ei sõltu mitte sinu tavaliste harjutuskordade koguarvust, vaid sinu tahtlike harjutuskordade arvust.
+*Joonis: Noolekujuline muster. Ülemisel kihil kolm valesti orienteeritud servatükki (sinise tooniga esile tõstetud) moodustavad noole, mis osutab alumisel kihil olevale valesti orienteeritud servatükile. Sel hetkel saab ühe M' U M-iga kõik neli korraga paika. [Ava see olek 3D kuubikul](/et/projects/rubiks-cube/#s=M'%20U'%20M&p=M'%20U%20M&l=400&c=2ZR0BZ&h=104240) ja vaata samm-sammult.*
 
-Ja siis avastad, et pärast 30–35 sekundi kitsaskohast ülesaamist on sinu kiirus jälle uuele tasemele langenud.
+![EO kuus mustrit](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/13-eo-cases.webp)
 
-Sellesse etappi jõudes õnnitlen sind – algajate silmis oled sa juba väga osav mängija!
+*Joonis: EO kuus mustrit. Ülemises vasakus nurgas on valesti orienteeritud servatükkide arv (ülemine / alumine), kollane tähistab õigesti orienteeritud servatükke, sinine raam tähistab valesti orienteeritud servatükke. Ainult noolekujuline muster vajab algoritmi, ülejäänud viis muudetakse esmalt noolekujuks.*
 
-## Valemite päheõppimata jätmise hind
+Vasak- ja parempoolsete servatükkide lahendamiseks peab kollane olema ülemine ja valge alumine külg, punane on näiteks esimese bloki värv. Siis tuleb paigutada kollase-punase servatüki + kollase-oranži servatüki (esile tõstetud kohad). Peamine idee on viia kollase-punase servatükk alumisele küljele ülemiste ja alumiste servatükkide vahetamise teel, samuti kollase-oranži servatükk alumisele küljele. Kaks servatükki on alumisel küljel vastamisi. Seejärel pööra ülemine külg sobivasse asendisse ja M2 U või M2 U' abil saab U-kihi vasak- ja parempoolsed servatükid paika.
 
-Selles punktis peame olema ausad. Valemite päheõppimata jätmine ei ole tasuta.
+Et aidata teil paremini aru saada, olen kõik kuus EO mustrit koondanud [Roux' meetodi algoritmide kogu LSE lehele](/et/projects/rubiks-cube/roux#lse). Igal pildil klõpsates „Vaata detailid” avatakse vastav olek 3D kuubikul, kus valesti orienteeritud servatükid on automaatselt esile tõstetud. Samal lehel on ka hilisem UL/UR paigutamine ja kõik viimaste nelja servatüki olukorrad.
 
-CMLL etapp on aeglane. 42 olukorda on kaetud 9 valemiga, mis tähendab, et mõnda olukorda tuleb lahendada kaks korda. Need, kes teevad täieliku CMLL-i, on selles etapis minust paar-kolm sekundit kiiremad.
+Selles etapis harjutusmahu langus pole halb. Plaatelt ei saa läbi minna pelgalt kvantiteediga, vaid tuleb vabaneda konkreetsest halvast harjumusest. Minu kogemuse kohaselt tuleks korraga muuta vaid ühte asja.
 
-M-kihi tehnika lävi on kõrge. Roux' meetodi teine pool tugineb täielikult M-kihile, mis on keerulisem pöörata kui R ja U ning kipub kinni kiiluma, seades ka kõrgemad nõudmised kuubikule endale.
+### Neljas etapp: 30 sek → 28 sek (pärast 13. nädalat)
 
-Ära muretse ülempiiri pärast. Tipptasemel mängijate seas on Roux' meetodit kasutades maailma tippu jõudnud mängijaid, meetodil endal pole piire. Kuid 15 sekundi piiri ületamiseks pead sa suure tõenäosusega kõik 42 CMLL-i valemit selgeks saama. Kuid see on juba teine etapp. Alla 30 sekundi jõudmiseks pole seda vaja.
+**Andmed**: Pärast 4. augustit. Septembris oli registreeritud treeningute arv 122 korda, kuid tegelikult oli palju treeninguid registreerimata. Olen muutnud kuubiku lauamänguasjaks, võtan selle suvaliselt kätte ja mängin – kui tuju hea, siis mitu korda, kui tühi või ärev, siis mitu korda, tööpausidel mitu korda, igavuse korral mitu korda. Lisan kuubikuga mängimise oma igapäevaellu. Ao100 on samuti järk-järgult langenud 29,9 sekundilt 28,2 sekundile.
 
-Peaaegu iga maailmatasemel ühe käega lahendaja kasutab Roux' meetodit, sest see sobib tõesti väga hästi ka ühe käega opereerimiseks.
+**Kus takerdusin**: Puudus selge pudelikael, lihtsalt puudus piisav vilumus.
 
-**Kiireimad Roux' meetodi tulemused ametlikel WCA võistlustel:**
+**Mida harjutada**:
 
-- Üksiklahendus 4,11 sekundit, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipiinid), 2023 Valenzuela Cubing Open, tunnustatud kiireim ametlik Roux' üksiklahendus ([Rekonstruktsioonivideo](https://www.youtube.com/watch?v=5H4TRJSUm-U))
-- Keskmine 5,98 sekundit, samuti tema, 2019. aastal, toona Aasia rekord ja ajaloo kolmas ametlik alla 6 sekundi keskmine ([WCA andmed](https://www.worldcubeassociation.org/persons/2017VILL41))
-- Ta on ka [ühe käega lahendamise maailmarekordi hoidja](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): keskmine 8,09, üksiklahendus 6,05 (2024). Ühe käega lahendamise ringkonnas peetakse Roux' meetodit üldiselt optimaalseks lahendusviisiks.
+Kui su keskmine kiirus on veel üle 30 sekundi, siis ainus asi, mida pead tegema, on jätkata hoogsalt harjutamist, mitte õppida uusi algoritme.
 
-Minu arvates on see tehing väga tasuv. Sa vahetad kaks-kolm sekundit CMLL-i aega selle vastu, et: tead igas etapis, mida sa teed, ei unusta seda ka kolme kuu pärast kuubikut puudutamata ja suudad lahendada iga tundmatu kuubiku.
+Jätka aeglase lahendamise abil ettevaate harjutamist ja sa muutud järjest kiiremaks.
+
+Võta kuubik välja ja mängi iga kord, kui sul on aega. Hoia kuubikut kohas, kus see on kergesti kättesaadav, näiteks töölaual, et saaksid seda tööpausidel mängida. Samuti võid sageli salvestada oma lahendamise videoid, et näha, millises etapis kulub kõige rohkem aega, ja seejärel sihipäraselt optimeerida. See on teadlik harjutamine – sinu progressi kiirus ei sõltu mitte tavaliste harjutuste koguarvust, vaid teadlike harjutuste arvust.
+
+Ja siis avastad, et pärast 30–35 sekundi pudelikaelast ülesaamist on su kiirus taas ühe astme võrra langenud.
+
+Selleni jõudes õnnitlen sind, algajate silmis oled sa juba väga osav mängija!
+
+## Algoritmideta lahendamise hind
+
+Olles siiani rääkinud, pean olema aus. Algoritmideta lahendamine ei ole tasuta.
+
+CMLL etapp on aeglane. 42 olukorra katmine 9 algoritmiga tähendab, et mõnda olukorda tuleb teha kaks korda. Need, kes kasutavad täiskomplekti CMLL-i, on selles etapis minust kaks-kolm sekundit kiiremad.
+
+M-kihi sõrmetehnika on keerulisem. Roux' meetodi teine pool sõltub täielikult M-kihist. M-kihti on raskem pöörata kui R- ja U-kihti, see kipub kinni jääma ja nõuab kuubikult endast ka rohkem.
+
+Ära muretse ülempiiri pärast. Tipptasemel mängijate seas on neid, kes kasutavad Roux' meetodit ja jõuavad maailma tippu – meetodil endal pole ülempiiri. Kuid alla 15 sekundi jõudmiseks pead suure tõenäosusega täiendama kõik 42 CMLL algoritmi. Kuid see on juba teise etapi asi. Alla 30 sekundi jõudmiseks pole seda vaja.
+
+Ja peaaegu iga maailmatasemel ühe käega lahendamise (OH) mängija kasutab Roux' meetodit, sest see sobib tõesti hästi ka ühe käega opereerimiseks.
+
+**Ametlikud võistlused (WCA) Roux' meetodiga kiireimad tulemused:**
+
+-   Üksiklahendus 4,11 sekundit, [Sean Patrick Villanueva](https://en.wikipedia.org/wiki/Sean_Patrick_Villanueva) (Filipiinid), 2023. aasta Valenzuela Cubing Open, tunnustatud Roux' meetodi ametlik kiireim üksiklahendus ([taastatud video](https://www.youtube.com/watch?v=5H4TRJSUm-U))
+-   Keskmine 5,98 sekundit, samuti tema, 2019. aastal, tollal Aasia rekord ja ka ajaloo kolmas ametlik sub-6 keskmine ([WCA andmed](https://www.worldcubeassociation.org/persons/2017VILL41))
+-   Ta on ka [ühe käega lahendamise maailmarekordi omanik](https://www.ateneo.edu/news/2024/07/02/sean-villanueva-achieves-total-domination-one-handed-speedcubing-new-world-record): keskmine 8,09, üksiklahendus 6,05 (2024). Ühe käega lahendamise ringkonnas peetakse Roux' meetodit üldiselt optimaalseks lahenduseks.
+
+Minu arvates on see tehing väga tasuv. Sa vahetad kaks-kolm sekundit CMLL-i ajast selle vastu, et: tead igas etapis, mida sa teed; sa ei unusta seda ka pärast kolmekuulist pausi kuubiku juurest; ja sa saad lahendada mis tahes kuubiku, mida sa pole varem näinud.
 
 ## Kokkuvõte
 
-![复原完成](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
+![Lahendatud](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/14-solved.webp)
 
-Lahendamisoskuse saavutamisest alla 30 sekundi pole tegemist valemite päheõppimise protsessiga, vaid käte, silmade ja aju koordinatsiooni treenimise protsessiga.
+Kuubiku lahendamisest alla 30 sekundi jõudmine ei ole algoritmide päheõppimise protsess, vaid käte, silmade ja aju koordineerimise ja koostöö treenimise protsess.
 
-Neli etappi, neli asja: kõigepealt õpi kuubikut pööramata vaatama, seejärel õpi ehitama paremat silda vasakut silda lõhkumata, siis õpi vaatama järgmist sammu samal ajal, kui teed praegust, ja lõpuks lase kätel silmadega sammu pidada.
+Neli etappi, neli asja: esmalt õpi kuubikut pööramata vaatama, seejärel õpi ehitama teist blokki esimest rikkumata, siis õpi vaatama järgmist sammu samal ajal, kui teed praegust, ja lõpuks lase kätel silmadega sammu pidada.
 
-Valemid ei ole kiiruse allikas. Vaatlus on.
+Algoritmid ei ole kiiruse allikas. Vaatlus on.
 
-Õpi looma positiivset tagasisidet iga etapi edusammude kaudu. Isegi vilumusharjutused ei pea olema igavad, eriti kui avastad end jälle rekordit purustamast. Eriti alg- ja kesktasemel koged sa iga päev rekordite purustamisega kaasnevat rõõmu.
+Õpi iga etapi edusammude kaudu positiivset tagasisidet looma. Isegi vilumuse harjutamine ei pea olema nii tüütu, eriti kui avastad end jälle uue rekordi tegemise rõõmu. Eriti alg- ja keskastmes koged iga päev rekordite purustamise rõõmu.
 
-Kõik artiklis mainitud valemid ja olukorrad olen ma koondanud [Roux' meetodi valemite kogumikku](/zh/projects/rubiks-cube/roux). Kui takerdud, tule ja otsi sealt abi.
+Kõik artiklis mainitud algoritmid ja olukorrad olen koondanud [Roux' meetodi algoritmide kogusse](/et/projects/rubiks-cube/roux). Kui takerdud, tule ja otsi sealt.
 
-Rubiku kuubiku maailm pakub lõputult rõõmu, soovin sulle meeldivat mängimist.
+Rubiku kuubiku maailm pakub lõputult rõõmu, nautige mängimist.
 
-## Lisa 1: Harjutuste nimekiri iga etapi jaoks
+## Lisa 1: Harjutuste nimekiri etappide kaupa
 
-**Etapp üks (> 60 sekundit)**
+**Esimene etapp (> 60 sek)**
 
-- Fikseeri vaatlusnurk, ära pööra kuubikut kogu lahendusprotsessi vältel.
-- Leia järgmine soovitud värvitükk ilma pausideta.
-- Aeglane pööramine, ütle iga sammu eesmärk.
-- Harjuta ainult vasakut silda, korda 50 korda.
+-   Fikseeri vaatlusnurk, ära pööra kuubikut kogu lahendamise vältel
+-   Leia järgmine soovitud värv ilma pausideta
+-   Aeglane lahendamine, ütle iga sammu kavatsus välja
+-   Harjuta ainult esimest blokki, korda 50 korda
 
-**Etapp kaks (60 → 40 sekundit)**
+**Teine etapp (60 → 40 sek)**
 
-- Parem sild ainult R, r, M, U abil, vasakut silda puudutamata.
-- Kaheetapilise CMLL-i harjutamine.
-- M' U M' U rütmi harjutamine, 5 minutit päevas.
+-   Teine blokk kasutab ainult R, r, M, U, esimest blokki ei puutu
+-   Kaheetapiline CMLL harjutus
+-   M' U M' U rütmiharjutus, 5 minutit päevas
 
-**Etapp kolm (40 → 30 sekundit)**
+**Kolmas etapp (40 → 30 sek)**
 
-- Peatu kohe pärast CMLL-i lõppu ja ütle pilguga valesti orienteeritud servade arv.
-- Aeglane pööramine + ettevaatamine: silmad vaatavad alati järgmist tükki.
-- Vähemalt 20 kvaliteetset lahendust päevas.
+-   Peatu kohe pärast CMLL-i lõppu, ütle ühe pilguga valesti orienteeritud servatükkide arv
+-   Aeglane lahendamine + ettevaade: silmad vaatavad alati järgmisele tükile
+-   Vähemalt 20 kvaliteetset lahendust päevas
 
-**Etapp neli (< 30 sekundit)**
+**Neljas etapp (< 30 sek)**
 
-- Salvesta videoid, et leida pause.
-- Tehnika: R U R' U' ühe sõrme tehnika, M-kiht nimetissõrmega.
-- 20 kvaliteetset lahendust päevas, mitte lihtsalt hulga tegemine.
+-   Salvesta videoid, et leida peatusi
+-   Sõrmetehnika: R U R' U' ühe sõrme tehnika, M-kihi sõrmusesõrme tehnika
+-   20 kvaliteetset lahendust päevas, ära kuhja mahtu
 
 ## Lisa 2: Tööriistad
 
-- **csTimer**: [cstimer.net](https://cstimer.net/). Ava Ao5 / Ao12 / Ao100 statistika. Ao100 näitab sinu tegelikku taset, üksikud tulemused on õnne küsimus.
-- **3D Rubiku kuubik**: [philoli.com/zh/projects/rubiks-cube](/zh/projects/rubiks-cube/). Kõik selles artiklis mainitud valemid saab siia sisestada ja animatsioone vaadata.
-- **Roux' meetodi algajasõbralik valemite kogumik**: [philoli.com/zh/projects/rubiks-cube/roux](/zh/projects/rubiks-cube/roux). Vasaku ja parema silla tavalised sisestusmustrid, kaheetapilise CMLL-i 9 valemit, kõik LSE olukorrad (EO, UL/UR, viimased neli serva). Iga leht avaneb 3D kuubikul, peites automaatselt mitteseotud klotsid ja tõstes esile liigutatavad servad.
-- **csTimer treeninganalüsaator**: [philoli.com/zh/projects/rubiks-cube/analyzer](/zh/projects/rubiks-cube/analyzer). Lohista sinna csTimerist eksporditud fail ja näed oma tulemuste trende, Ao5/Ao12/Ao100 kõveraid, PB edusamme, verstapostide tabelit (millal saavutasid esmakordselt alla 60, alla 40, alla 30 sekundi) ja Power Law harjutuskõverat. Kõik selle artikli joonised pärinevad siit. Andmeid töödeldakse ainult sinu brauseris, neid ei laadita üles. Kui sul pole eksporditud faili, võid laadida minu 4441 lahenduse andmed, et näha, kuidas see töötab.
+-   **csTimer**: [cstimer.net](https://cstimer.net/). Ava Ao5 / Ao12 / Ao100 statistika. Ao100 näitab sinu tegelikku taset, üksikud tulemused on õnn.
+-   **3D Rubiku kuubik**: [philoli.com/zh/projects/rubiks-cube](/et/projects/rubiks-cube/). Kõiki selles artiklis mainitud algoritme saab siia sisestada ja animatsioonina vaadata.
+-   **Roux' meetodi algajatele sobiv algoritmide kogu**: [philoli.com/zh/projects/rubiks-cube/roux](/et/projects/rubiks-cube/roux). Esimene blokk, teine blokk, tavalised sisestamisrutiinid, kaheetapilise CMLL-i 9 algoritmi, LSE kõik olukorrad (EO, UL/UR, viimased neli servatükki). Iga pilti saab avada 3D kuubikul, kus ebaolulised klotsid on peidetud ja liigutatavad servatükid esile tõstetud.
+-   **csTimer treeninganalüsaator**: [philoli.com/zh/projects/rubiks-cube/analyzer](/et/projects/rubiks-cube/analyzer). Lohista csTimerist eksporditud fail siia ja näed oma tulemuste trendi, Ao5/Ao12/Ao100 kõveraid, PB parandusi, verstapostide tabelit (millal esimene sub-60, sub-40, sub-30 saavutati) ja Power Law harjutuskõverat. Kõik käesoleva artikli joonised pärinevad siit. Andmeid töödeldakse ainult sinu brauseris, neid ei laeta üles. Kui sul pole eksporditud faili, saad esmalt laadida minu 4441 andmekogumi ja vaadata, kuidas see töötab.
 
-*See artikkel sisaldab Amazoni partnerlinke: ostes lingi kaudu, saan ma väikese vahendustasu, sinu hind jääb samaks.*
+*See artikkel sisaldab Amazoni partnerlinke: ostes lingi kaudu, saan väikese komisjonitasu, sinu hind jääb samaks.*
 
 ## Lisalugemist
 
-- [Kuidas lahendada Rubiku kuubik valemeid pähe õppimata: Mõistetav ka algklassilapsele](/zh/blog/solve-rubiks-cube-without-formulas)
+-   [Kuidas lahendada Rubiku kuubikut ilma algoritme pähe õppimata: arusaadav ka algklassilapsele](/et/blog/solve-rubiks-cube-without-formulas)
