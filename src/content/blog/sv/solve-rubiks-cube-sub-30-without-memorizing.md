@@ -10,15 +10,13 @@ tags:
   - medveten träning
 categories: Vardagspyssel
 description: "Från första lösningen till ett Ao100 under 30 sekunder på 89 dagar, utan att memorera en enda CFOP-algoritm. Jag bryter ner fyra stadier med 4441 tidsmätningar: var du fastnar, vad du ska öva på i varje stadium, och varför Roux-metoden inte kräver memorisering av algoritmer."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="De fyra stegen från 165 sekunder till 28 sekunder" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Hur du kommer under 30 sekunder på Rubiks kub utan att lära dig algoritmer: En guide för alla, även nybörjare" />
 </figure>
-
-*Figur: De fyra stegen från 165 sekunder till 28 sekunder. Steg två visade snabbast förbättring, medan steg tre var den längsta platåperioden.*
 
 I den förra artikeln, [”Hur du löser Rubiks kub utan att lära dig algoritmer”](/sv/blog/solve-rubiks-cube-without-formulas/), lärde du dig att lösa en Rubiks kub utan att memorera algoritmer, genom att förstå logiken bakom att byta bitar. Den artikeln fick mycket positiv respons.
 

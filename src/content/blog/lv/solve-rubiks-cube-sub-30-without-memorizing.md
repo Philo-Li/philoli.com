@@ -10,15 +10,13 @@ tags:
   - mērķtiecīga prakse
 categories: Ikdienas darbošanās
 description: "No pirmās salikšanas reizes līdz Ao100 zem 30 sekundēm pagāja 89 dienas, neiemācoties nevienu CFOP algoritmu. Izmantojot 4441 salikšanas laika datus, izanalizēju četras fāzes: kur katrā fāzē rodas grūtības, ko trenēt un kāpēc Roux metodei nav nepieciešams iegaumēt algoritmus."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Četras fāzes no 165 sekundēm līdz 28 sekundēm" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Kā salikt Rubika kubu zem 30 sekundēm, neiemācoties algoritmus: saprotams pat sākumskolēniem" />
 </figure>
-
-*Attēls: Četras fāzes no 165 sekundēm līdz 28 sekundēm. Otrajā fāzē laiks kritās visstraujāk, bet trešā fāze bija visgarākais plato periods.*
 
 Iepriekšējā rakstā [“Kā salikt Rubika kubu, neiemācoties algoritmus”](/lv/blog/solve-rubiks-cube-without-formulas/) jūs apguvāt Rubika kuba salikšanu, izmantojot komutatoru loģiku, bez nepieciešamības iegaumēt algoritmus. Šis raksts saņēma daudz pozitīvu atsauksmju.
 

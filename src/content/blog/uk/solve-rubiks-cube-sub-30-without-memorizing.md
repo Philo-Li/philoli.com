@@ -10,15 +10,13 @@ tags:
   - Усвідомлена практика
 categories: Щоденні клопоти
 description: "Від першої збірки до Ao100 менше 30 секунд за 89 днів, не вивчивши жодного алгоритму CFOP. Аналіз 4441 результату збірок: де ви застрягли на кожному з чотирьох етапів, що практикувати, і чому метод Ру не вимагає заучування алгоритмів."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Чотири етапи від 165 до 28 секунд" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Як зібрати кубик Рубіка менш ніж за 30 секунд, не заучуючи алгоритми: зрозуміло навіть школяреві" />
 </figure>
-
-*Рис.: Чотири етапи від 165 до 28 секунд. Етап два дав найшвидший прогрес, етап три був найдовшим плато.*
 
 У моїй попередній статті [«Як зібрати кубик Рубіка, не заучуючи алгоритми»](/uk/blog/solve-rubiks-cube-without-formulas/) ви навчилися розв’язувати кубик, використовуючи логіку комутаторів, без необхідності запам'ятовувати алгоритми. Ця стаття отримала багато захоплених відгуків.
 

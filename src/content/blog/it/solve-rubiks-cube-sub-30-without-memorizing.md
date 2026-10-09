@@ -10,15 +10,13 @@ tags:
   - Pratica deliberata
 categories: Esperimenti
 description: "Ci sono voluti 89 giorni dal primo solve al sub-30 di Ao100, senza memorizzare un singolo algoritmo CFOP. Analizzo quattro fasi usando i dati di 4441 risoluzioni cronometrate: dove ci si blocca, cosa praticare in ogni fase, e perché il metodo Roux non richiede la memorizzazione di algoritmi."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Le quattro fasi da 165 a 28 secondi" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Come scendere sotto i 30 secondi con il Cubo di Rubik senza imparare algoritmi: una guida per tutti, anche per i più piccoli" />
 </figure>
-
-*Fig.: Le quattro fasi da 165 a 28 secondi. La fase due è stata la più rapida, la fase tre il plateau più lungo.*
 
 Nel mio precedente articolo [《Come risolvere il Cubo di Rubik senza imparare algoritmi》](/it/blog/solve-rubiks-cube-without-formulas/), hai imparato la logica degli scambiatori e come risolvere un cubo senza memorizzare algoritmi. Quell'articolo ha ricevuto un'accoglienza molto positiva.
 

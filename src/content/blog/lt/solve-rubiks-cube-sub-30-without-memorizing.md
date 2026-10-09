@@ -10,15 +10,13 @@ tags:
   - sąmoningas praktikavimas
 categories: Kasdieniai bandymai
 description: "Nuo pirmojo kubo išsprendimo iki Ao100 per mažiau nei 30 sekundžių prireikė 89 dienų, neįsimenant nė vieno CFOP algoritmo. Išanalizuojant 4441 sprendimo laiko duomenis, suskirstome procesą į keturis etapus: kas kiekviename etape stabdo, ką treniruotis, ir kodėl Roux metodui nereikia jokių algoritmų."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Keturi etapai nuo 165 iki 28 sekundžių" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Kaip pasiekti, kad kubas būtų išspręstas per mažiau nei 30 sekundžių, nemokant algoritmų: supras net pradinukas" />
 </figure>
-
-*Pav.: Keturi etapai nuo 165 iki 28 sekundžių. Antrasis etapas buvo sparčiausio kritimo, trečiasis – ilgiausias stagnacijos laikotarpis.*
 
 Ankstesniame straipsnyje [„Kaip išspręsti Rubiko kubą be algoritmų“](/lt/blog/solve-rubiks-cube-without-formulas/) išmokote, kaip naudojant permutacijų logiką išspręsti Rubiko kubą neįsimenant algoritmų. Tas straipsnis sulaukė daugelio entuziastingų atsiliepimų.
 

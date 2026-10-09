@@ -10,15 +10,13 @@ tags:
   - ciljano vježbanje
 categories: Svakodnevno petljanje
 description: "Od prvog složenja do Ao100 ispod 30 sekundi trebalo mi je 89 dana, bez da sam naučio ijedan CFOP algoritam. Korištenjem podataka od 4441 mjerenja, analizirat ću četiri faze: gdje zapinje svaka faza, što vježbati te zašto Roux metoda ne zahtijeva učenje algoritama."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Četiri faze od 165 sekundi do 28 sekundi" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Kako složiti Rubikovu kocku ispod 30 sekundi bez učenja algoritama: razumljivo i za osnovnoškolce" />
 </figure>
-
-*Slika: Četiri faze od 165 sekundi do 28 sekundi. Faza dva je najbrže napredovala, faza tri je bila najduža faza platoa.*
 
 U prethodnom članku [«Kako složiti Rubikovu kocku bez algoritama»](/hr/blog/solve-rubiks-cube-without-formulas/) naučio si logiku komutatora i kako složiti kocku bez učenja algoritama. Taj je članak naišao na vrlo pozitivan prijem.
 

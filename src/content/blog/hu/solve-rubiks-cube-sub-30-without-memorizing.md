@@ -10,15 +10,13 @@ tags:
   - tudatos gyakorlás
 categories: Mindennapi pepecselés
 description: "89 nap alatt jutottam el az első kirakástól az Ao100 30 másodperc alá, egyetlen CFOP algoritmus memorizálása nélkül. 4441 mért idő alapján bontom négy szakaszra az utat: hol akadsz el az egyes fázisokban, mit gyakorolj, és miért nem kell algoritmusokat magolnod a Roux módszerhez."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Négy szakasz 165 másodpercről 28 másodpercre" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Hogyan juss 30 másodperc alá a Rubik-kockával algoritmusok memorizálása nélkül: Akár egy kisiskolás is megérti" />
 </figure>
-
-*Kép: Négy szakasz 165 másodpercről 28 másodpercre. A második szakasz volt a leggyorsabb csökkenés, a harmadik a leghosszabb fennsík.*
 
 Az előző, [„Hogyan rakd ki a Rubik-kockát algoritmusok memorizálása nélkül”](/hu/blog/solve-rubiks-cube-without-formulas/) című cikkemben megtanultad, hogyan rakhatsz ki egy kockát algoritmusok nélkül, csupán a kommutátorok logikáját használva. Ez a cikk sok pozitív visszajelzést kapott.
 

@@ -10,15 +10,13 @@ tags:
   - תרגול ממוקד
 categories: התעסקות יומיומית
 description: "89 ימים חלפו מהפתרון הראשון ועד ל-Ao100 מתחת ל-30 שניות, בלי לשנן אף אלגוריתם CFOP. נפרק ארבעה שלבים באמצעות 4441 נתוני מדידה: איפה נתקעים בכל שלב, מה לתרגל, ולמה שיטת רוקס לא מצריכה שינון אלגוריתמים."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="ארבעת השלבים מ-165 שניות ל-28 שניות" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="איך לפתור קובייה הונגרית מתחת ל-30 שניות בלי לשנן אלגוריתמים: גם תלמיד יסודי יבין" />
 </figure>
-
-*איור: ארבעת השלבים מיש 165 שניות ל-28 שניות. שלב שני הוא הירידה המהירה ביותר, ושלב שלישי הוא תקופת הרמה הארוכה ביותר.*
 
 בפוסט הקודם, [《איך לפתור קובייה הונגרית בלי אלגוריתמים》](/he/blog/solve-rubiks-cube-without-formulas/), למדתם איך לפתור קובייה בלי לשנן אלגוריתמים, באמצעות לוגיקת מחליפים. המאמר ההוא זכה לתשבחות רבות.
 

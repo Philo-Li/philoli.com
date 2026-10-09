@@ -10,15 +10,13 @@ tags:
   - gezieltes Training
 categories: Basteleien
 description: "Von der ersten Lösung bis zu einem Ao100 unter 30 Sekunden in 89 Tagen, ohne einen einzigen CFOP-Algorithmus auswendig zu lernen. Anhand von 4441 getimten Lösungen analysiere ich vier Phasen: Wo man in jeder Phase stecken bleibt, was man üben sollte und warum die Roux-Methode keine Algorithmen erfordert."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Vier Phasen von 165 Sekunden auf 28 Sekunden" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Wie du den Zauberwürfel ohne Algorithmen unter 30 Sekunden löst: Auch für Grundschüler verständlich" />
 </figure>
-
-*Abb.: Die vier Phasen von 165 auf 28 Sekunden. Phase zwei zeigte den schnellsten Rückgang, Phase drei war die längste Plateauphase.*
 
 In meinem letzten Beitrag [„Wie du den Zauberwürfel ohne Algorithmen löst“](/de/blog/solve-rubiks-cube-without-formulas/) hast du gelernt, wie man einen Würfel mithilfe der Logik von Kommutatoren und ohne Auswendiglernen von Algorithmen löst. Dieser Artikel erhielt viel begeistertes Feedback.
 

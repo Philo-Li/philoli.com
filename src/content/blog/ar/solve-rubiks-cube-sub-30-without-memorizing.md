@@ -10,15 +10,13 @@ tags:
   - التدريب الموجه
 categories: تجارب يومية
 description: "استغرقت 89 يومًا للانتقال من أول حل للمكعب إلى تحقيق متوسط 100 حل (Ao100) أقل من 30 ثانية، دون حفظ أي خوارزمية من CFOP. سنحلل أربع مراحل باستخدام بيانات توقيت 4441 حلًا: أين تكمن الصعوبة في كل مرحلة، وماذا تتدرب عليه، ولماذا لا تتطلب طريقة روكس (Roux) حفظ الخوارزميات."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="المراحل الأربع من 165 ثانية إلى 28 ثانية" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="كيف تحل مكعب روبيك في أقل من 30 ثانية دون حفظ الخوارزميات: دليل يسهل فهمه حتى لطلاب المدارس الابتدائية" />
 </figure>
-
-*شكل: المراحل الأربع للانتقال من 165 ثانية إلى 28 ثانية. المرحلة الثانية شهدت أسرع انخفاض، بينما كانت المرحلة الثالثة هي أطول فترة ثبات.*
 
 في المقال السابق، [«كيف تحل مكعب روبيك دون حفظ الخوارزميات»](/ar/blog/solve-rubiks-cube-without-formulas/)، تعلمت كيف تحل مكعب روبيك باستخدام منطق التبديلات دون الحاجة لحفظ الخوارزميات. وقد حظي ذلك المقال بإشادة واسعة من الكثيرين.
 

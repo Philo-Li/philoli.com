@@ -10,15 +10,13 @@ tags:
   - Målrettet træning
 categories: Dagligdags sysler
 description: "Det tog 89 dage at gå fra min første løsning til en Ao100 under 30 sekunder, uden at jeg lærte én eneste CFOP-algoritme. Jeg dissekerer fire faser baseret på 4441 tidsmålte løsninger: Hvor man typisk sidder fast i hver fase, hvad man skal øve, og hvorfor Roux-metoden ikke kræver memorisering af algoritmer."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="De fire faser fra 165 sekunder til 28 sekunder" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Hvordan du kommer under 30 sekunder på Rubiks terning uden at lære algoritmer: Også for begyndere" />
 </figure>
-
-*Figur: De fire faser fra 165 sekunder til 28 sekunder. Fase to viste den hurtigste forbedring, mens fase tre var den længste plateauperiode.*
 
 I min forrige [artikel om at løse Rubiks terning uden algoritmer](/da/blog/solve-rubiks-cube-without-formulas/), lærte du at samle en terning ved hjælp af kommutator-logik, helt uden at skulle huske algoritmer. Den artikel har fået en masse positiv feedback.
 

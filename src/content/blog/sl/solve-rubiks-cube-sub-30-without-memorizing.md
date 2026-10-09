@@ -10,15 +10,13 @@ tags:
   - Namenska vadba
 categories: Dnevno ukvarjanje
 description: "Od prve sestave do povprečja 100 rešitev pod 30 sekund mi je vzelo 89 dni, ne da bi si zapomnil en sam algoritem CFOP. S 4441 časovnimi podatki bom razdelal štiri faze: kje se v vsaki fazi zatika, kaj vaditi in zakaj Roux metoda ne potrebuje pomnjenja algoritmov."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Štiri faze od 165 sekund do 28 sekund" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Kako sestaviti Rubikovo kocko pod 30 sekund brez pomnjenja algoritmov: Razumljivo tudi za osnovnošolce" />
 </figure>
-
-*Slika: Štiri faze od 165 sekund do 28 sekund. Faza dve je padala najhitreje, faza tri je bila najdaljše obdobje stagnacije.*
 
 V prejšnjem članku [《Kako sestaviti Rubikovo kocko brez pomnjenja algoritmov》](/sl/blog/solve-rubiks-cube-without-formulas/) ste se naučili rešiti Rubikovo kocko brez pomnjenja algoritmov, z uporabo logike komutatorjev. Ta članek je prejel veliko pozitivnih odzivov.
 

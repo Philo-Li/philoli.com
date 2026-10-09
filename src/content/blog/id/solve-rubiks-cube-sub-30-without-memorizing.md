@@ -10,15 +10,13 @@ tags:
   - Latihan Disengaja
 categories: Kutak-katik Harian
 description: "Butuh 89 hari dari solve pertama hingga mencapai Ao100 di bawah 30 detik, tanpa menghafal satu pun algoritma CFOP. Saya membedah empat tahapan menggunakan data 4441 solve yang tercatat: di mana Anda sering macet, apa yang harus dilatih di setiap tahapan, dan mengapa Metode Roux tidak memerlukan hafalan algoritma."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Empat tahapan dari 165 detik hingga 28 detik" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Cara Menyelesaikan Rubik di Bawah 30 Detik Tanpa Menghafal Algoritma: Mudah Dipahami Anak SD" />
 </figure>
-
-*Gambar: Empat tahapan dari 165 detik hingga 28 detik. Tahap dua mengalami penurunan tercepat, sedangkan tahap tiga adalah fase plateau terpanjang.*
 
 Pada artikel sebelumnya [《Cara Menyelesaikan Rubik Tanpa Menghafal Algoritma》](/id/blog/solve-rubiks-cube-without-formulas/), Anda telah belajar bagaimana menyelesaikan Kubus Rubik tanpa menghafal algoritma, hanya dengan memahami logika komutator. Artikel itu mendapat banyak pujian hangat.
 

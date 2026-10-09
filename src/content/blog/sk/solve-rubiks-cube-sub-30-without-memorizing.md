@@ -10,15 +10,13 @@ tags:
   - cielený tréning
 categories: Každodenné záležitosti
 description: "Trvalo mi 89 dní, kým som sa od prvého poskladania dostal na Ao100 pod 30 sekúnd, a to bez učenia jediného CFOP algoritmu. Na základe 4441 časovaných riešení rozoberám štyri fázy: kde sa v každej fáze zaseknete, čo trénovať a prečo Roux metóda nevyžaduje učenie algoritmov."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Štyri fázy od 165 sekúnd po 28 sekúnd" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Ako sa dostať pod 30 sekúnd pri skladaní Rubikovej kocky bez učenia algoritmov: Rozumie tomu aj školák" />
 </figure>
-
-*Obr.: Štyri fázy od 165 sekúnd po 28 sekúnd. Fáza dva zaznamenala najrýchlejší pokles, fáza tri bola najdlhšia plošina.*
 
 V predchádzajúcom článku [„Ako poskladať Rubikovu kocku bez algoritmov“](/sk/blog/solve-rubiks-cube-without-formulas/) si sa naučil, ako poskladať kocku bez učenia algoritmov, len s logikou výmeny dielikov. Ten článok získal mnoho nadšených ohlasov.
 

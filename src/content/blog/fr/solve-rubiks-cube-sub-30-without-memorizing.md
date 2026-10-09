@@ -10,15 +10,13 @@ tags:
   - pratique délibérée
 categories: Bricolages
 description: "Il m'a fallu 89 jours pour passer de ma première résolution à une moyenne de 100 (Ao100) sous les 30 secondes, sans apprendre un seul algorithme CFOP. J'analyse ici 4441 données de chronométrage pour décomposer quatre phases : où l'on bloque à chaque étape, quoi pratiquer, et pourquoi la méthode Roux ne nécessite pas de mémorisation d'algorithmes."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Les quatre phases, de 165 secondes à 28 secondes" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Comment passer sous les 30 secondes au Rubik's Cube sans mémoriser d'algorithmes : même les enfants peuvent comprendre" />
 </figure>
-
-*Figure : Les quatre phases, de 165 secondes à 28 secondes. La phase deux a vu la baisse la plus rapide, tandis que la phase trois a été le plus long plateau.*
 
 Dans mon précédent article, [« Comment résoudre le Rubik's Cube sans mémoriser d'algorithmes »](/fr/blog/solve-rubiks-cube-without-formulas/), vous avez appris à résoudre un Rubik's Cube sans algorithmes, en vous basant sur la logique des commutateurs. Cet article a reçu un accueil très enthousiaste de la part de nombreuses personnes.
 

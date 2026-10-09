@@ -10,15 +10,13 @@ tags:
   - Bilinçli Pratik
 categories: Günlük Uğraşlar
 description: "İlk çözüşümden Ao100 ortalamasını 30 saniye altına düşürmem 89 gün sürdü ve hiç CFOP algoritması ezberlemedim. 4441 zamanlı çözüm verisini kullanarak dört aşamayı inceleyeceğiz: Her aşamada nerede takıldığını, ne pratik etmen gerektiğini ve Roux metodunun neden algoritma ezberlemeye ihtiyaç duymadığını."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="165 saniyeden 28 saniyeye dört aşama" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Algoritma Ezberlemeden Rubik Küpünü 30 Saniye Altına Nasıl Çözersin: İlkokul Öğrencileri Bile Anlayabilir" />
 </figure>
-
-*Şekil: 165 saniyeden 28 saniyeye dört aşama. İkinci aşama en hızlı düşüşü sağlarken, üçüncü aşama en uzun plato dönemi oldu.*
 
 Önceki yazım olan [《Algoritma Ezberlemeden Rubik Küpünü Nasıl Çözersin》](/tr/blog/solve-rubiks-cube-without-formulas/)’da, komütatör mantığını kullanarak algoritma ezberlemeden bir küpü çözmeyi öğrenmiştin. O yazı birçok kişiden büyük beğeni toplamıştı.
 

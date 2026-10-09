@@ -10,15 +10,13 @@ tags:
   - Practică deliberată
 categories: Experimente zilnice
 description: "Mi-au luat 89 de zile să ajung de la prima rezolvare la un Ao100 sub 30 de secunde, fără să memorez niciun algoritm CFOP. Analizez 4441 de date cronometrate pentru a descompune patru etape: unde te blochezi în fiecare etapă, ce să exersezi și de ce metoda Roux nu necesită memorarea algoritmilor."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Patru etape, de la 165 de secunde la 28 de secunde" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Cum să rezolvi Cubul Rubik sub 30 de secunde fără să memorezi algoritmi: chiar și un elev de școală primară poate înțelege" />
 </figure>
-
-*Figură: Patru etape, de la 165 de secunde la 28 de secunde. Etapa a doua a înregistrat cel mai rapid progres, iar etapa a treia a fost cea mai lungă perioadă de platou.*
 
 În articolul anterior [„Cum să rezolvi Cubul Rubik fără să memorezi algoritmi”](/ro/blog/solve-rubiks-cube-without-formulas/), ai învățat cum să rezolvi un Cub Rubik folosind logica comutatorilor, fără a memora algoritmi. Articolul a primit multe aprecieri entuziaste.
 

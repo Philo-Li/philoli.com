@@ -10,15 +10,13 @@ tags:
   - تمرین هدفمند
 categories: کارهای روزمره
 description: "از اولین حل تا رسیدن به Ao100 زیر ۳۰ ثانیه، ۸۹ روز طول کشید، بدون اینکه حتی یک الگوریتم CFOP حفظ کنم. با استفاده از داده‌های ۴۴۴۱ ثبت زمان، چهار مرحله را بررسی می‌کنیم: در هر مرحله کجا گیر کرده‌ایم، چه چیزی را تمرین کنیم و چرا روش رو نیازی به حفظ الگوریتم ندارد."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="چهار مرحله از ۱۶۵ ثانیه به ۲۸ ثانیه" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="چگونه بدون حفظ الگوریتم مکعب روبیک را زیر ۳۰ ثانیه حل کنیم: برای دانش‌آموزان ابتدایی هم قابل فهم است" />
 </figure>
-
-*شکل: چهار مرحله از ۱۶۵ ثانیه به ۲۸ ثانیه. مرحله دوم سریع‌ترین کاهش را داشت و مرحله سوم طولانی‌ترین دوره ثابت ماندن بود.*
 
 در پست قبلی [«چگونه بدون حفظ الگوریتم مکعب روبیک را حل کنیم»](/fa/blog/solve-rubiks-cube-without-formulas/)، یاد گرفتید که چگونه با منطق جابجایی‌ها، بدون حفظ هیچ الگوریتمی، یک مکعب روبیک را حل کنید. آن مقاله با استقبال گرم بسیاری از افراد مواجه شد.
 

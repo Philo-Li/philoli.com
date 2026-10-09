@@ -10,15 +10,13 @@ tags:
   - Целенасочена практика
 categories: Ежедневни занимания
 description: "От първото сглобяване до Ao100 под 30 секунди ми отне 89 дни, без да наизустя нито един CFOP алгоритъм. Анализирам 4441 записани времена, за да разбия четири етапа: къде се спъвате, какво да тренирате и защо методът Roux не изисква наизустяване на алгоритми."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Четирите етапа от 165 секунди до 28 секунди" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Как да сглобите куба под 30 секунди без да наизустявате алгоритми: разбираемо и за ученик" />
 </figure>
-
-*Фиг.: Четирите етапа от 165 секунди до 28 секунди. Етап две е с най-бърз спад, а етап три е най-дългият период на плато.*
 
 В предишната статия [„Как да сглобите кубчето на Рубик без да наизустявате алгоритми“](/bg/blog/solve-rubiks-cube-without-formulas/), научихте как да решавате куба, без да наизустявате алгоритми, използвайки логиката на комутаторите. Тази статия получи много ентусиазирани отзиви.
 

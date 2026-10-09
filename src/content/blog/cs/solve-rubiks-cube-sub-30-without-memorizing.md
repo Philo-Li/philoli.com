@@ -10,15 +10,13 @@ tags:
   - záměrné_cvičení
 categories: Denní záležitosti
 description: "Od prvního složení po Ao100 pod 30 sekund mi to trvalo 89 dní, aniž bych se naučil jediný CFOP algoritmus. Na základě dat z 4441 měřených složení rozebírám čtyři fáze: kde se v každé fázi zasekáváte, co trénovat a proč Roux metoda nevyžaduje učení algoritmů."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Čtyři fáze od 165 sekund k 28 sekundám" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Jak složit Rubikovu kostku pod 30 sekund bez učení algoritmů: Porozumí i školák" />
 </figure>
-
-*Obrázek: Čtyři fáze od 165 sekund k 28 sekundám. Fáze dvě přinesla nejrychlejší pokrok, fáze tři byla nejdelší plošinou.*
 
 V mém předchozím článku [„Jak složit Rubikovu kostku bez algoritmů“](/cs/blog/solve-rubiks-cube-without-formulas/) ses naučil, jak kostku složit bez učení algoritmů, jen s logikou komutátorů. Ten článek získal mnoho nadšených ohlasů.
 

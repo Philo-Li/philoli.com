@@ -10,15 +10,13 @@ tags:
   - luyện tập có chủ đích
 categories: Mày mò
 description: "Tôi mất 89 ngày để từ lần giải đầu tiên đến đạt Ao100 dưới 30 giây, mà không học bất kỳ công thức CFOP nào. Bài viết này sẽ phân tích bốn giai đoạn dựa trên 4441 lần giải có ghi thời gian: bạn sẽ mắc kẹt ở đâu, cần luyện gì ở mỗi giai đoạn, và tại sao phương pháp Roux không yêu cầu bạn phải học thuộc công thức."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Bốn giai đoạn từ 165 giây xuống 28 giây" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Làm thế nào để giải Rubik dưới 30 giây mà không cần học công thức: Ai cũng có thể hiểu" />
 </figure>
-
-*Hình: Bốn giai đoạn từ 165 giây xuống 28 giây. Giai đoạn hai giảm nhanh nhất, giai đoạn ba là thời gian 'giậm chân tại chỗ' dài nhất.*
 
 Trong bài viết trước [《Làm thế nào để giải Rubik mà không cần học công thức》](/vi/blog/solve-rubiks-cube-without-formulas/), bạn đã học cách giải Rubik bằng logic hoán vị mà không cần ghi nhớ bất kỳ công thức nào. Bài viết đó đã nhận được rất nhiều phản hồi tích cực từ độc giả.
 

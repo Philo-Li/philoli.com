@@ -10,15 +10,13 @@ tags:
   - Prática Deliberada
 categories: Experimentos
 description: "Levei 89 dias desde a primeira resolução até um Ao100 abaixo de 30 segundos, sem decorar um único algoritmo de CFOP. Analisando 4441 dados de cronometragem, detalho quatro fases: onde você pode travar em cada uma, o que praticar e por que o método Roux não exige memorização de algoritmos."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Quatro fases de 165 segundos a 28 segundos" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Como Resolver o Cubo Mágico Abaixo de 30 Segundos Sem Decorar Algoritmos: Fácil o Suficiente para Crianças" />
 </figure>
-
-*Figura: Quatro fases de 165 segundos a 28 segundos. A fase dois teve a queda mais rápida, enquanto a fase três foi o platô mais longo.*
 
 No meu último artigo, [“Como Resolver o Cubo Mágico Sem Decorar Algoritmos”](/pt/blog/solve-rubiks-cube-without-formulas/), você aprendeu a resolver um cubo mágico usando a lógica dos comutadores, sem a necessidade de memorizar algoritmos. Aquele post recebeu muitos elogios.
 

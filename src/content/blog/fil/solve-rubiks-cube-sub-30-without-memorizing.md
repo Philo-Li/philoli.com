@@ -10,15 +10,13 @@ tags:
   - Deliberate Practice
 categories: Pang-araw-araw na Pagkakalikot
 description: "Mula sa unang solve hanggang sa Ao100 na sub-30, tumagal ng 89 na araw, nang hindi nagmememorya ng kahit isang CFOP algorithm. Gamit ang 4441 data ng solve time, hatiin natin sa apat na yugto: kung saan ka natigil, ano ang dapat i-practice sa bawat yugto, at bakit hindi kailangan ng algorithm sa Roux method."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Ang apat na yugto mula 165 segundo hanggang 28 segundo" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Paano Makapasok sa sub-30 sa Rubik's Cube Nang Hindi Nagme-memorize ng Algorithm: Maiintindihan Kahit ng Elementary Student" />
 </figure>
-
-*Larawan: Ang apat na yugto mula 165 segundo hanggang 28 segundo. Ang Yugto Dos ang pinakamabilis na bumaba, at ang Yugto Tres ang pinakamahabang plateau phase.*
 
 Sa nakaraang [《Paano Mag-solve ng Rubik's Cube Nang Hindi Nagme-memorize ng Algorithm》](/fil/blog/solve-rubiks-cube-without-formulas/), natutunan mo kung paano buuin ang isang Rubik's Cube gamit ang lohika ng commutators, nang hindi nagme-memorize ng algorithm. Maraming nagbigay ng magandang feedback sa artikulong iyon.
 

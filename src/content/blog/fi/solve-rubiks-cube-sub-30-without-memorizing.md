@@ -10,15 +10,13 @@ tags:
   - tavoitteellinen harjoittelu
 categories: Arkipäivän puuhastelu
 description: "Ensimmäisestä ratkaisusta Ao100-tulokseen alle 30 sekunnissa kului 89 päivää, enkä opetellut yhtään CFOP-algoritmia ulkoa. Käytän 4441 aikaratkaisun dataa purkaakseni neljä vaihetta: mihin kussakin vaiheessa jumiudutaan, mitä kannattaa harjoitella ja miksi Roux-metodi ei vaadi algoritmien ulkoa opettelua."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Neljä vaihetta 165 sekunnista 28 sekuntiin" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Miten Rubikin kuutio ratkaistaan alle 30 sekunnissa ilman algoritmien ulkoa opettelua: Selkeä opas kaikille" />
 </figure>
-
-*Kuva: Neljä vaihetta 165 sekunnista 28 sekuntiin. Toisessa vaiheessa nopeus parani nopeimmin, ja kolmas vaihe oli pisin tasaantumisjakso.*
 
 Edellisessä [artikkelissa «Miten ratkaista Rubikin kuutio ilman algoritmeja»](/fi/blog/solve-rubiks-cube-without-formulas/) opit ratkaisemaan kuution ilman algoritmien ulkoa opettelua, kommutaattoreiden logiikkaa hyödyntäen. Artikkeli sai paljon innostunutta palautetta.
 

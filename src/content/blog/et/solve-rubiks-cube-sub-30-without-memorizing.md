@@ -10,15 +10,13 @@ tags:
   - teadlik harjutamine
 categories: Igapäevased toimetused
 description: "Esimest korda kuubikut lahendamast Ao100 alla 30 sekundi jõudmiseni kulus 89 päeva, ilma ühtegi CFOP algoritmi õppimata. Analüüsime 4441 ajastatud lahenduse andmeid neljas etapis: kus tekkis takistus, mida harjutada ja miks Roux' meetod ei vaja algoritmide päheõppimist."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Neli etappi 165 sekundist 28 sekundini" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Kuidas jõuda Rubiku kuubiku lahendamisel alla 30 sekundi ilma algoritme pähe õppimata: arusaadav ka algklassilapsele" />
 </figure>
-
-*Joonis: Neli etappi 165 sekundist 28 sekundini. Teine etapp oli kõige kiirema edasiminekuga, kolmas etapp aga pikim platoo.*
 
 Eelmises postituses [„Kuidas lahendada Rubiku kuubikut ilma algoritme pähe õppimata”](/et/blog/solve-rubiks-cube-without-formulas/) õppisid sa kuubikut lahendama kommutatorite loogikat kasutades, ilma et peaksid mingeid algoritme pähe õppima. See artikkel sai väga palju positiivset tagasisidet.
 

@@ -10,15 +10,13 @@ tags:
   - świadoma praktyka
 categories: Codzienne eksperymenty
 description: "Od pierwszego ułożenia do Ao100 poniżej 30 sekund minęło 89 dni, bez uczenia się choćby jednego algorytmu CFOP. Analizuję 4441 wyników czasowych, dzieląc proces na cztery etapy: gdzie napotkałem trudności, co ćwiczyłem i dlaczego metoda Roux nie wymaga zapamiętywania algorytmów."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Cztery etapy od 165 do 28 sekund" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Jak zejść poniżej 30 sekund w kostce Rubika bez uczenia się algorytmów: Zrozumiałe nawet dla ucznia szkoły podstawowej" />
 </figure>
-
-*Rys.: Cztery etapy od 165 do 28 sekund. Etap drugi przyniósł najszybszy spadek czasu, etap trzeci był najdłuższym okresem stagnacji.*
 
 W poprzednim artykule [„Jak ułożyć kostkę Rubika bez algorytmów”](/pl/blog/solve-rubiks-cube-without-formulas/) nauczyłeś się układać kostkę, bazując na logice komutatorów, bez zapamiętywania algorytmów. Ten wpis spotkał się z bardzo entuzjastycznym przyjęciem.
 

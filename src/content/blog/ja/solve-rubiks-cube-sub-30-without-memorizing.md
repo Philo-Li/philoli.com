@@ -10,15 +10,13 @@ tags:
   - 意図的練習
 categories: 日常の試行錯誤
 description: "初めてキューブを揃えてからAo100で30秒を切るまで89日。CFOPの手順は一つも覚えていません。4441回の計測データをもとに、四つの段階を解説します。それぞれの段階でどこでつまずき、何を練習すべきか、そしてルーメソッドがなぜ手順を覚える必要がないのかを解き明かします。"
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="165秒から28秒までの四つの段階" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="手順を覚えずに30秒を切るルービックキューブの揃え方：小学生にもわかる" />
 </figure>
-
-*図：165秒から28秒までの四つの段階。第二段階が最もタイムが短縮され、第三段階が最も長い停滞期でした。*
 
 前回の記事[『手順を覚えずにルービックキューブを揃える方法』](/ja/blog/solve-rubiks-cube-without-formulas/)では、交換子のロジックを使って、手順を覚えずにキューブを揃える方法を学びました。この記事は多くの方々から大変好評をいただきました。
 

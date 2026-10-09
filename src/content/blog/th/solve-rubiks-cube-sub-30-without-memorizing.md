@@ -10,15 +10,13 @@ tags:
   - การฝึกฝนอย่างตั้งใจ
 categories: เรื่องราวการปรับแต่ง
 description: "ใช้เวลา 89 วันตั้งแต่หมุนรูบิคได้ครั้งแรกจนทำ Ao100 ได้ต่ำกว่า 30 วินาที โดยไม่เคยจำสูตร CFOP เลยแม้แต่สูตรเดียว มาเจาะลึก 4 ช่วงของการฝึกฝนด้วยข้อมูลการจับเวลา 4441 ครั้ง: แต่ละช่วงติดตรงไหน ต้องฝึกอะไร และทำไมวิธี Roux ถึงไม่ต้องจำสูตร"
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="4 ช่วงเวลาที่ความเร็วลดลงจาก 165 วินาทีเป็น 28 วินาที" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="วิธีหมุนรูบิคให้ต่ำกว่า 30 วินาทีได้โดยไม่ต้องจำสูตร: แม้แต่เด็กประถมก็เข้าใจได้" />
 </figure>
-
-*ภาพ: 4 ช่วงเวลาที่ความเร็วลดลงจาก 165 วินาทีเป็น 28 วินาที ช่วงที่ 2 ความเร็วลดลงเร็วที่สุด ส่วนช่วงที่ 3 เป็นช่วงที่ความเร็วคงที่นานที่สุด*
 
 ในบทความก่อนหน้า [《วิธีแก้รูบิคโดยไม่ต้องจำสูตร》](/th/blog/solve-rubiks-cube-without-formulas/) คุณได้เรียนรู้การใช้หลักการของคอมมิวเตเตอร์เพื่อแก้รูบิคโดยไม่ต้องจำสูตรใดๆ บทความนั้นได้รับคำชมอย่างล้นหลามจากหลายๆ คน
 

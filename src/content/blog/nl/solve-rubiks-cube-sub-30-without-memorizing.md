@@ -10,15 +10,13 @@ tags:
   - Gerichte oefening
 categories: Dagelijkse bezigheden
 description: "89 dagen van eerste oplossing tot een Ao100 onder de 30 seconden, zonder één enkele CFOP-algoritme te memoriseren. Analyse van 4441 getimede oplossingen in vier fases: waar je vastloopt, wat je moet oefenen, en waarom de Roux-methode geen algoritmes vereist."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="De vier fases van 165 seconden naar 28 seconden" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Hoe je de Rubiks kubus onder de 30 seconden krijgt zonder algoritmes te leren: Begrijpelijk voor iedereen" />
 </figure>
-
-*Figuur: De vier fases van 165 seconden naar 28 seconden. Fase twee daalde het snelst, fase drie was de langste plateauperiode.*
 
 In de vorige blogpost [《Hoe je de Rubiks kubus oplost zonder algoritmes》](/nl/blog/solve-rubiks-cube-without-formulas/) heb je geleerd hoe je een Rubiks kubus kunt oplossen zonder algoritmes te memoriseren, puur gebaseerd op de logica van commutators. Dat artikel kreeg veel enthousiaste reacties.
 

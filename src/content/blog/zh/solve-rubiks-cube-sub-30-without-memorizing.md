@@ -10,15 +10,13 @@ tags:
   - 刻意练习
 categories: 日常折腾
 description: "从第一次复原到 Ao100 进入 30 秒用了 89 天，没背过一条 CFOP 公式。用 4441 次计时数据拆解四个阶段：每个阶段卡在哪、练什么，以及 Roux 桥式为什么不需要背公式。"
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="从 165 秒到 28 秒的四个阶段" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="如何不背公式让魔方进入 30 秒：小学生也能看懂" />
 </figure>
-
-*图：从 165 秒到 28 秒的四个阶段。阶段二掉得最快，阶段三是最长的平台期。*
 
 在上一篇[《如何不背公式解开魔方》](/zh/blog/solve-rubiks-cube-without-formulas/)里，你学会了用交换子的逻辑，不背公式复原一个魔方。那篇文章获得了许多人的热烈好评。
 

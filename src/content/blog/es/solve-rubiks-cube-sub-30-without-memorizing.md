@@ -10,15 +10,13 @@ tags:
   - práctica deliberada
 categories: Trasteos
 description: "89 días desde la primera resolución hasta un Ao100 sub-30, sin memorizar un solo algoritmo CFOP. Desglosamos cuatro etapas usando 4441 datos de resolución cronometrados: dónde te atascas en cada fase, qué practicar y por qué el método Roux no requiere memorizar algoritmos."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Las cuatro etapas de 165 a 28 segundos" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Cómo resolver el cubo de Rubik en sub-30 sin memorizar algoritmos: comprensible incluso para niños" />
 </figure>
-
-*Figura: Las cuatro etapas de 165 a 28 segundos. La etapa dos fue la más rápida en descender, la etapa tres fue la meseta más larga.*
 
 En mi publicación anterior, [«Cómo resolver el cubo de Rubik sin algoritmos»](/es/blog/solve-rubiks-cube-without-formulas/), aprendiste a resolver un cubo sin memorizar algoritmos, utilizando la lógica de los conmutadores. Ese artículo recibió muchos comentarios entusiastas.
 

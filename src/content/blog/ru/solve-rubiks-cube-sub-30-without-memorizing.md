@@ -10,15 +10,13 @@ tags:
   - осознанная практика
 categories: Эксперименты
 description: "От первой сборки до Ao100 из 30 секунд прошло 89 дней. Я не выучил ни одного алгоритма CFOP. На основе данных 4441 сборки я разбираю четыре этапа: где ты можешь застрять на каждом из них и что тренировать, а также почему Roux-метод не требует заучивания алгоритмов."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Четыре этапа от 165 до 28 секунд" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Как собирать кубик Рубика без алгоритмов и уложиться в 30 секунд: Понятно даже школьнику" />
 </figure>
-
-*Рис.: Четыре этапа от 165 до 28 секунд. На втором этапе скорость росла быстрее всего, а третий этап стал самой продолжительной стагнацией.*
 
 В предыдущей статье [«Как собрать кубик Рубика без алгоритмов»](/ru/blog/solve-rubiks-cube-without-formulas/) ты научился использовать логику перестановок и собирать кубик, не заучивая алгоритмов. Та статья получила множество восторженных отзывов.
 

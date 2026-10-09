@@ -10,15 +10,13 @@ tags:
   - målrettet trening
 categories: Hverdagsutfordringer
 description: "Det tok meg 89 dager fra første løsning til jeg nådde Ao100 under 30 sekunder, uten å ha pugget en eneste CFOP-algoritme. Basert på 4441 timede løsninger, bryter jeg ned fire faser: hva som var utfordrende, hva jeg øvde på i hver fase, og hvorfor Roux-metoden ikke krever at du pugger algoritmer."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Fire faser fra 165 sekunder til 28 sekunder" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Hvordan komme under 30 sekunder på Rubiks kube uten å pugge algoritmer: En enkel guide for alle" />
 </figure>
-
-*Figur: Fire faser fra 165 sekunder til 28 sekunder. Fase to viste den raskeste forbedringen, mens fase tre var den lengste platåfasen.*
 
 I forrige artikkel, [«Hvordan løse Rubiks kube uten å pugge algoritmer»](/no/blog/solve-rubiks-cube-without-formulas/), lærte du å løse en Rubiks kube uten å memorere algoritmer, ved å bruke logikken bak kommutatorer. Den artikkelen fikk mye positiv respons.
 

@@ -10,15 +10,13 @@ tags:
   - 의도적 연습
 categories: 이것저것
 description: "처음 큐브를 맞춘 날부터 Ao100으로 30초를 끊기까지 89일이 걸렸고, CFOP 공식은 단 한 번도 외우지 않았습니다. 4441회 타이머 데이터를 바탕으로 네 가지 단계를 분석합니다. 각 단계에서 막히는 지점, 연습 방법, 그리고 Roux 메서드가 왜 공식을 외울 필요가 없는지 알려드립니다."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="165초에서 28초까지의 네 가지 단계" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="공식 암기 없이 큐브 30초 안에 맞추기: 초등학생도 이해할 수 있어요" />
 </figure>
-
-*그림: 165초에서 28초까지의 네 가지 단계. 2단계에서 가장 빠르게 실력이 향상되었고, 3단계는 가장 긴 정체기였습니다.*
 
 지난 [「공식 암기 없이 큐브 맞추는 법」](/ko/blog/solve-rubiks-cube-without-formulas/) 글에서는 교환자의 논리를 활용해 공식을 외우지 않고 큐브를 맞추는 방법을 배웠습니다. 그 글은 많은 분께 뜨거운 호평을 받았습니다.
 

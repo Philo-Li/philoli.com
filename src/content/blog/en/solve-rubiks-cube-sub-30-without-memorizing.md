@@ -10,15 +10,13 @@ tags:
   - deliberate practice
 categories: Daily Tinkering
 description: "It took me 89 days to go from my first solve to an Ao100 under 30 seconds, all without memorizing a single CFOP algorithm. This post breaks down my journey using data from 4441 solves, detailing the sticking points and focus areas for each of the four stages, and explaining why the Roux method doesn't require memorization."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="The four stages from 165 seconds to 28 seconds" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="How to Solve a Rubik's Cube in 30 Seconds Without Memorizing: Even a Child Can Understand" />
 </figure>
-
-*Figure: The four stages from 165 seconds to 28 seconds. Stage two saw the fastest drop, while stage three was the longest plateau.*
 
 In my previous post, [How to Solve a Rubik's Cube Without Memorizing Algorithms](/blog/solve-rubiks-cube-without-formulas/), you learned to solve the cube with commutator logic, without memorizing a single algorithm. That article got a lot of warm feedback.
 

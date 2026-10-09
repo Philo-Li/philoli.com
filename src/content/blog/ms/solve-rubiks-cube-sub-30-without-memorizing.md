@@ -10,15 +10,13 @@ tags:
   - latihan sengaja
 categories: Urusan Harian
 description: "Dari solf pertama hingga Ao100 bawah 30 saat mengambil masa 89 hari, tanpa menghafal satu pun algoritma CFOP. Menggunakan data 4441 kali solf berjangka, artikel ini membongkar empat peringkat: di mana anda tersekat, apa yang perlu dilatih, dan mengapa kaedah Roux tidak memerlukan hafalan algoritma."
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="Empat peringkat dari 165 saat ke 28 saat" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="Cara Mencapai Bawah 30 Saat untuk Kiub Rubik Tanpa Menghafal Algoritma: Boleh Difahami Walaupun oleh Pelajar Sekolah Rendah" />
 </figure>
-
-*Gambar: Empat peringkat dari 165 saat ke 28 saat. Peringkat dua menunjukkan penurunan paling pantas, manakala peringkat tiga adalah tempoh dataran paling panjang.*
 
 Dalam artikel saya yang lepas [《Cara Menyelesaikan Kiub Rubik Tanpa Menghafal Algoritma》](/ms/blog/solve-rubiks-cube-without-formulas/), anda telah belajar cara menyelesaikan kiub Rubik tanpa menghafal algoritma, hanya dengan menggunakan logik komutator. Artikel itu mendapat sambutan yang sangat baik daripada ramai pembaca.
 

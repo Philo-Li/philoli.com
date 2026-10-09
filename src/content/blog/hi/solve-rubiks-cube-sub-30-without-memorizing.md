@@ -10,15 +10,13 @@ tags:
   - जानबूझकर अभ्यास
 categories: रोज़मर्रा की गतिविधियाँ
 description: "पहली बार क्यूब हल करने से लेकर Ao100 में 30 सेकंड से कम का समय हासिल करने में 89 दिन लगे, और मैंने एक भी CFOP एल्गोरिदम याद नहीं किया। 4441 टाइमिंग डेटा का उपयोग करके चार चरणों का विश्लेषण: हर चरण में कहाँ अटकते हैं, क्या अभ्यास करें, और रू मेथड में एल्गोरिदम याद करने की ज़रूरत क्यों नहीं पड़ती।"
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="165 सेकंड से 28 सेकंड तक के चार चरण" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="बिना एल्गोरिदम याद किए रूबिक क्यूब को 30 सेकंड से कम में कैसे हल करें: जो छोटे बच्चे भी समझ सकें" />
 </figure>
-
-*चित्र: 165 सेकंड से 28 सेकंड तक के चार चरण। दूसरा चरण सबसे तेज़ी से गिरा, तीसरा चरण सबसे लंबा पठारी दौर था।*
 
 मेरी पिछली पोस्ट [《बिना एल्गोरिदम याद किए रूबिक क्यूब को कैसे हल करें》](/hi/blog/solve-rubiks-cube-without-formulas/) में, आपने कम्यूटेटर के तर्क का उपयोग करके, बिना कोई एल्गोरिदम याद किए एक क्यूब को हल करना सीखा था। उस लेख को बहुत लोगों ने पसंद किया।
 

@@ -10,15 +10,13 @@ tags:
   - 刻意練習
 categories: 日常折騰
 description: "從第一次還原到 Ao100 進入 30 秒用了 89 天，沒背過任何一條 CFOP 公式。本文透過 4441 次計時數據，拆解魔術方塊學習的四個階段：每個階段的瓶頸點在哪、練習重點是什麼，以及 Roux 解法為什麼不需要背公式。"
-cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
+cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp
 toc: true
 ---
 
 <figure class="post-cover">
-  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp" alt="從 165 秒到 28 秒的四個階段" />
+  <img src="/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/00-cover.webp" alt="如何不背公式讓魔術方塊進入 30 秒：連小學生都能輕鬆理解" />
 </figure>
-
-*圖：從 165 秒到 28 秒的四個階段。第二階段進步最快，第三階段是最長的停滯期。*
 
 在上一篇[《如何不背公式解開魔術方塊》](/zh-TW/blog/solve-rubiks-cube-without-formulas/)中，你學會了運用交換子的邏輯，不需要背公式就能還原魔術方塊。那篇文章獲得了許多熱烈的迴響。
 
