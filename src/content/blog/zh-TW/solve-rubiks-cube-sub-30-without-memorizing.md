@@ -8,7 +8,7 @@ tags:
   - Roux解法
   - 速解
   - 刻意練習
-categories: 日常折腾
+categories: 日常折騰
 description: "從第一次還原到 Ao100 進入 30 秒用了 89 天，沒背過任何一條 CFOP 公式。本文透過 4441 次計時數據，拆解魔術方塊學習的四個階段：每個階段的瓶頸點在哪、練習重點是什麼，以及 Roux 解法為什麼不需要背公式。"
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

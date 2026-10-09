@@ -8,7 +8,7 @@ tags:
   - Roux metodas
   - greitasis sprendimas
   - sąmoningas praktikavimas
-categories: Kasdienės kūrybos išdaigos
+categories: Kasdieniai bandymai
 description: "Nuo pirmojo kubo išsprendimo iki Ao100 per mažiau nei 30 sekundžių prireikė 89 dienų, neįsimenant nė vieno CFOP algoritmo. Išanalizuojant 4441 sprendimo laiko duomenis, suskirstome procesą į keturis etapus: kas kiekviename etape stabdo, ką treniruotis, ir kodėl Roux metodui nereikia jokių algoritmų."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

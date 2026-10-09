@@ -8,7 +8,7 @@ tags:
   - Roux Method
   - Speedcubing
   - Deliberate Practice
-categories: 日常折腾
+categories: Pang-araw-araw na Pagkakalikot
 description: "Mula sa unang solve hanggang sa Ao100 na sub-30, tumagal ng 89 na araw, nang hindi nagmememorya ng kahit isang CFOP algorithm. Gamit ang 4441 data ng solve time, hatiin natin sa apat na yugto: kung saan ka natigil, ano ang dapat i-practice sa bawat yugto, at bakit hindi kailangan ng algorithm sa Roux method."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

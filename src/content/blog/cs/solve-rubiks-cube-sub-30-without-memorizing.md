@@ -8,7 +8,7 @@ tags:
   - Roux_metoda
   - rychloskládání
   - záměrné_cvičení
-categories: 日常折腾
+categories: Denní záležitosti
 description: "Od prvního složení po Ao100 pod 30 sekund mi to trvalo 89 dní, aniž bych se naučil jediný CFOP algoritmus. Na základě dat z 4441 měřených složení rozebírám čtyři fáze: kde se v každé fázi zasekáváte, co trénovat a proč Roux metoda nevyžaduje učení algoritmů."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

@@ -8,7 +8,7 @@ tags:
   - metoda Roux
   - speedcubing
   - świadoma praktyka
-categories: Codzienne zmagania
+categories: Codzienne eksperymenty
 description: "Od pierwszego ułożenia do Ao100 poniżej 30 sekund minęło 89 dni, bez uczenia się choćby jednego algorytmu CFOP. Analizuję 4441 wyników czasowych, dzieląc proces na cztery etapy: gdzie napotkałem trudności, co ćwiczyłem i dlaczego metoda Roux nie wymaga zapamiętywania algorytmów."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

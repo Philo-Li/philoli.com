@@ -8,7 +8,7 @@ tags:
   - Roux Metodu
   - Hızlı Çözme
   - Bilinçli Pratik
-categories: 日常折腾
+categories: Günlük Uğraşlar
 description: "İlk çözüşümden Ao100 ortalamasını 30 saniye altına düşürmem 89 gün sürdü ve hiç CFOP algoritması ezberlemedim. 4441 zamanlı çözüm verisini kullanarak dört aşamayı inceleyeceğiz: Her aşamada nerede takıldığını, ne pratik etmen gerektiğini ve Roux metodunun neden algoritma ezberlemeye ihtiyaç duymadığını."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

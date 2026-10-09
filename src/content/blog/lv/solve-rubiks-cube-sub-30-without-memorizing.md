@@ -8,7 +8,7 @@ tags:
   - Roux metode
   - ātrsalikšana
   - mērķtiecīga prakse
-categories: 日常折腾
+categories: Ikdienas darbošanās
 description: "No pirmās salikšanas reizes līdz Ao100 zem 30 sekundēm pagāja 89 dienas, neiemācoties nevienu CFOP algoritmu. Izmantojot 4441 salikšanas laika datus, izanalizēju četras fāzes: kur katrā fāzē rodas grūtības, ko trenēt un kāpēc Roux metodei nav nepieciešams iegaumēt algoritmus."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

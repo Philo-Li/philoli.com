@@ -8,7 +8,7 @@ tags:
   - Roux methode
   - Speedcubing
   - Gerichte oefening
-categories: 日常折腾
+categories: Dagelijkse bezigheden
 description: "89 dagen van eerste oplossing tot een Ao100 onder de 30 seconden, zonder één enkele CFOP-algoritme te memoriseren. Analyse van 4441 getimede oplossingen in vier fases: waar je vastloopt, wat je moet oefenen, en waarom de Roux-methode geen algoritmes vereist."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

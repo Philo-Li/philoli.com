@@ -8,7 +8,7 @@ tags:
   - méthode Roux
   - speedcubing
   - pratique délibérée
-categories: 日常折腾
+categories: Bricolages
 description: "Il m'a fallu 89 jours pour passer de ma première résolution à une moyenne de 100 (Ao100) sous les 30 secondes, sans apprendre un seul algorithme CFOP. J'analyse ici 4441 données de chronométrage pour décomposer quatre phases : où l'on bloque à chaque étape, quoi pratiquer, et pourquoi la méthode Roux ne nécessite pas de mémorisation d'algorithmes."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

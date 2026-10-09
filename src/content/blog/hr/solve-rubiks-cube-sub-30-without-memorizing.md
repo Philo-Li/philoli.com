@@ -8,7 +8,7 @@ tags:
   - Roux metoda
   - speedcubing
   - ciljano vježbanje
-categories: 日常折腾
+categories: Svakodnevno petljanje
 description: "Od prvog složenja do Ao100 ispod 30 sekundi trebalo mi je 89 dana, bez da sam naučio ijedan CFOP algoritam. Korištenjem podataka od 4441 mjerenja, analizirat ću četiri faze: gdje zapinje svaka faza, što vježbati te zašto Roux metoda ne zahtijeva učenje algoritama."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

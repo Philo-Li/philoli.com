@@ -8,7 +8,7 @@ tags:
   - teória grúp
   - matematika
   - Roux metóda
-categories: Každodenné experimenty
+categories: Každodenné záležitosti
 description: Naučte sa krok za krokom, ako poskladať Rubikovu kocku 3x3 bez jedinej formulky, pomocou teórie grúp (komutátorov) a metódy Roux (mostíky).
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

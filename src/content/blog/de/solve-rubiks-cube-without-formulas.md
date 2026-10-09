@@ -8,7 +8,7 @@ tags:
   - Gruppentheorie
   - Mathematik
   - Roux-Methode
-categories: 日常折腾
+categories: Basteleien
 description: Erfahre Schritt für Schritt, wie du einen 3x3 Zauberwürfel ohne eine einzige Formel lösen kannst, basierend auf der Idee der Kommutatoren aus der Gruppentheorie und der Roux-Brückenmethode.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

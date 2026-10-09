@@ -8,7 +8,7 @@ tags:
   - rühmateooria
   - matemaatika
   - Roux meetod
-categories: 日常折腾
+categories: Igapäevased toimetused
 description: Kasutades rühmateooria kommutaatorite põhimõtteid ja Roux' silla meetodit, õpetan sind samm-sammult, kuidas lahendada 3x3 Rubiku kuubikut nullist peale, ilma ühtegi valemit pähe õppimata.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

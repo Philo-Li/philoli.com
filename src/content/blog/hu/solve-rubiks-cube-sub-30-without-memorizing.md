@@ -8,7 +8,7 @@ tags:
   - Roux módszer
   - gyorskirakás
   - tudatos gyakorlás
-categories: 日常折腾
+categories: Mindennapi pepecselés
 description: "89 nap alatt jutottam el az első kirakástól az Ao100 30 másodperc alá, egyetlen CFOP algoritmus memorizálása nélkül. 4441 mért idő alapján bontom négy szakaszra az utat: hol akadsz el az egyes fázisokban, mit gyakorolj, és miért nem kell algoritmusokat magolnod a Roux módszerhez."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

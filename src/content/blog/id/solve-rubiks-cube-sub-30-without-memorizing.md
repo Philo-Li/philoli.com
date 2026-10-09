@@ -8,7 +8,7 @@ tags:
   - Metode Roux
   - Speedcubing
   - Latihan Disengaja
-categories: 日常折腾
+categories: Kutak-katik Harian
 description: "Butuh 89 hari dari solve pertama hingga mencapai Ao100 di bawah 30 detik, tanpa menghafal satu pun algoritma CFOP. Saya membedah empat tahapan menggunakan data 4441 solve yang tercatat: di mana Anda sering macet, apa yang harus dilatih di setiap tahapan, dan mengapa Metode Roux tidak memerlukan hafalan algoritma."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

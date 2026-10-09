@@ -8,7 +8,7 @@ tags:
   - phương pháp Roux
   - giải nhanh
   - luyện tập có chủ đích
-categories: 日常折腾
+categories: Mày mò
 description: "Tôi mất 89 ngày để từ lần giải đầu tiên đến đạt Ao100 dưới 30 giây, mà không học bất kỳ công thức CFOP nào. Bài viết này sẽ phân tích bốn giai đoạn dựa trên 4441 lần giải có ghi thời gian: bạn sẽ mắc kẹt ở đâu, cần luyện gì ở mỗi giai đoạn, và tại sao phương pháp Roux không yêu cầu bạn phải học thuộc công thức."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

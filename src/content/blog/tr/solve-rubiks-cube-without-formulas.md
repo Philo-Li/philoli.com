@@ -8,7 +8,7 @@ tags:
   - Grup teorisi
   - Matematik
   - Roux metodu
-categories: 日常折腾
+categories: Günlük Uğraşlar
 description: Grup teorisi komütatör mantığı ve Roux köprü yöntemiyle, sıfırdan başlayarak hiçbir formül ezberlemeden 3x3 Rubik Küpü'nü adım adım çözmeyi öğreneceksiniz.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

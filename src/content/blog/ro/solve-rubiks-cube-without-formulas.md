@@ -8,7 +8,7 @@ tags:
   - Teoria grupurilor
   - Matematică
   - Metoda Roux
-categories: 日常折腾
+categories: Experimente zilnice
 description: Învățați pas cu pas, de la zero, cum să rezolvați un Cub Rubik 3x3 fără a memora nicio formulă, folosind ideea comutatorilor din teoria grupurilor și metoda podului Roux.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

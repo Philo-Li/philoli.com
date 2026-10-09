@@ -8,7 +8,7 @@ tags:
   - grupu teorija
   - matemātika
   - Roux metode
-categories: 日常折腾
+categories: Ikdienas darbošanās
 description: Izmantojot grupu teorijas komutatoru principus un Roux tilta metodi, soli pa solim iemācīsim, kā atrisināt 3x3 Rubika kubu, neiegaumējot nevienu formulu.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

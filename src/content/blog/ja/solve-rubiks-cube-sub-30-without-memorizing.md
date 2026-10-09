@@ -8,7 +8,7 @@ tags:
   - ルーメソッド
   - スピードキュービング
   - 意図的練習
-categories: 日常折腾
+categories: 日常の試行錯誤
 description: "初めてキューブを揃えてからAo100で30秒を切るまで89日。CFOPの手順は一つも覚えていません。4441回の計測データをもとに、四つの段階を解説します。それぞれの段階でどこでつまずき、何を練習すべきか、そしてルーメソッドがなぜ手順を覚える必要がないのかを解き明かします。"
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

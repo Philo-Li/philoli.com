@@ -8,7 +8,7 @@ tags:
   - gruppeteori
   - matematikk
   - Roux-metoden
-categories: 日常折腾
+categories: Hverdagsutfordringer
 description: Lær trinn for trinn hvordan du løser en 3x3 Rubiks kube fra bunnen av, uten å pugge en eneste formel. Vi bruker konseptet med kommutatorer fra gruppeteori, kombinert med Roux' bro-løsning.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

@@ -8,7 +8,7 @@ tags:
   - Roux metoda
   - Spidkubing
   - Svesna vežba
-categories: Svakodnevna zanimacija
+categories: Svakodnevno petljanje
 description: "Trebalo mi je 89 dana od prvog slaganja do Ao100 ispod 30 sekundi, bez pamćenja ijednog CFOP algoritma. Koristeći podatke od 4441 slaganja, analiziram četiri faze: gde zapinješ u svakoj fazi, šta da vežbaš i zašto Roux metoda ne zahteva pamćenje algoritama."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

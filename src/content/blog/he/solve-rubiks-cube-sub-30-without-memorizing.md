@@ -8,7 +8,7 @@ tags:
   - שיטת רוקס
   - ספידקיובינג
   - תרגול ממוקד
-categories: התעסקויות יומיומיות
+categories: התעסקות יומיומית
 description: "89 ימים חלפו מהפתרון הראשון ועד ל-Ao100 מתחת ל-30 שניות, בלי לשנן אף אלגוריתם CFOP. נפרק ארבעה שלבים באמצעות 4441 נתוני מדידה: איפה נתקעים בכל שלב, מה לתרגל, ולמה שיטת רוקס לא מצריכה שינון אלגוריתמים."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

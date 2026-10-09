@@ -8,7 +8,7 @@ tags:
   - teoria dei gruppi
   - matematica
   - metodo Roux
-categories: 日常折腾
+categories: Esperimenti
 description: Impara a risolvere il Cubo di Rubik 3x3 da zero, senza memorizzare alcuna formula, ma comprendendo la logica dei commutatori della teoria dei gruppi e il metodo a ponte Roux.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

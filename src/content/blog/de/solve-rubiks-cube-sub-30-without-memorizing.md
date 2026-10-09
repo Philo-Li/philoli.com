@@ -8,7 +8,7 @@ tags:
   - Roux-Methode
   - Speedcubing
   - gezieltes Training
-categories: 日常折腾
+categories: Basteleien
 description: "Von der ersten Lösung bis zu einem Ao100 unter 30 Sekunden in 89 Tagen, ohne einen einzigen CFOP-Algorithmus auswendig zu lernen. Anhand von 4441 getimten Lösungen analysiere ich vier Phasen: Wo man in jeder Phase stecken bleibt, was man üben sollte und warum die Roux-Methode keine Algorithmen erfordert."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

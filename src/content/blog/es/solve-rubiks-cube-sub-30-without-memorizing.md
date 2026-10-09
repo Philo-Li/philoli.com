@@ -8,7 +8,7 @@ tags:
   - método Roux
   - speedcubing
   - práctica deliberada
-categories: 日常折腾
+categories: Trasteos
 description: "89 días desde la primera resolución hasta un Ao100 sub-30, sin memorizar un solo algoritmo CFOP. Desglosamos cuatro etapas usando 4441 datos de resolución cronometrados: dónde te atascas en cada fase, qué practicar y por qué el método Roux no requiere memorizar algoritmos."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

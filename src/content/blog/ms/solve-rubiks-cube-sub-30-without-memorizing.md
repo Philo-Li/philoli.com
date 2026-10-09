@@ -8,7 +8,7 @@ tags:
   - kaedah Roux
   - speedcubing
   - latihan sengaja
-categories: Projek Harian
+categories: Urusan Harian
 description: "Dari solf pertama hingga Ao100 bawah 30 saat mengambil masa 89 hari, tanpa menghafal satu pun algoritma CFOP. Menggunakan data 4441 kali solf berjangka, artikel ini membongkar empat peringkat: di mana anda tersekat, apa yang perlu dilatih, dan mengapa kaedah Roux tidak memerlukan hafalan algoritma."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

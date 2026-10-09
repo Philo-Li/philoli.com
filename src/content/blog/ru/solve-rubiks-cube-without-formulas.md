@@ -8,7 +8,7 @@ tags:
   - Теория групп
   - Математика
   - Метод Ру
-categories: 日常折腾
+categories: Эксперименты
 description: Шаг за шагом, с нуля, используя идеи коммутаторов из теории групп и мостовой метод Ру, я научу вас собирать кубик Рубика 3x3 без запоминания единой формулы.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

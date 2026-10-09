@@ -8,7 +8,7 @@ tags:
   - Grupių teorija
   - Matematika
   - Roux metodas
-categories: Kasdienės kūrybos išdaigos
+categories: Kasdieniai bandymai
 description: Naudodami grupės teorijos komutatorių ir Roux tilto metodą, žingsnis po žingsnio išmoksite išspręsti 3x3 Rubiko kubą, neįsimenant jokių formulių.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

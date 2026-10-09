@@ -8,7 +8,7 @@ tags:
   - Roux 메서드
   - 스피드큐빙
   - 의도적 연습
-categories: 日常折腾
+categories: 이것저것
 description: "처음 큐브를 맞춘 날부터 Ao100으로 30초를 끊기까지 89일이 걸렸고, CFOP 공식은 단 한 번도 외우지 않았습니다. 4441회 타이머 데이터를 바탕으로 네 가지 단계를 분석합니다. 각 단계에서 막히는 지점, 연습 방법, 그리고 Roux 메서드가 왜 공식을 외울 필요가 없는지 알려드립니다."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

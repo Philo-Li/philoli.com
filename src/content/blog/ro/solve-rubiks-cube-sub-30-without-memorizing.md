@@ -8,7 +8,7 @@ tags:
   - Metoda Roux
   - Speedcubing
   - Practică deliberată
-categories: 日常折腾
+categories: Experimente zilnice
 description: "Mi-au luat 89 de zile să ajung de la prima rezolvare la un Ao100 sub 30 de secunde, fără să memorez niciun algoritm CFOP. Analizez 4441 de date cronometrate pentru a descompune patru etape: unde te blochezi în fiecare etapă, ce să exersezi și de ce metoda Roux nu necesită memorarea algoritmilor."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

@@ -8,7 +8,7 @@ tags:
   - Lý thuyết nhóm
   - Toán học
   - Phương pháp Roux
-categories: 日常折腾
+categories: Mày mò
 description: Dựa trên ý tưởng về hoán vị nhóm và phương pháp Roux Bridge, bài viết này sẽ từng bước hướng dẫn bạn cách giải khối Rubik 3x3 mà không cần ghi nhớ bất kỳ công thức nào.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

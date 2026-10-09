@@ -8,7 +8,7 @@ tags:
   - Roux method
   - speedcubing
   - deliberate practice
-categories: Daily Shenanigans
+categories: Daily Tinkering
 description: "It took me 89 days to go from my first solve to an Ao100 under 30 seconds, all without memorizing a single CFOP algorithm. This post breaks down my journey using data from 4441 solves, detailing the sticking points and focus areas for each of the four stages, and explaining why the Roux method doesn't require memorization."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

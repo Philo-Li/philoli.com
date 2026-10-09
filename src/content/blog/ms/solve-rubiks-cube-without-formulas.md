@@ -8,7 +8,7 @@ tags:
   - Teori Kumpulan
   - Matematik
   - Kaedah Roux
-categories: Projek Harian
+categories: Urusan Harian
 description: Menggunakan konsep commutator teori kumpulan + kaedah jambatan Roux, panduan langkah demi langkah dari asas untuk menyelesaikan Kiub Rubik 3x3 tanpa perlu menghafal sebarang formula.
 cover: /uploads/images/solve-rubiks-cube-without-formulas/14-cube-solved.jpg
 toc: true

@@ -8,7 +8,7 @@ tags:
   - Roux-metodi
   - pikaratkaisu
   - tavoitteellinen harjoittelu
-categories: 日常折腾
+categories: Arkipäivän puuhastelu
 description: "Ensimmäisestä ratkaisusta Ao100-tulokseen alle 30 sekunnissa kului 89 päivää, enkä opetellut yhtään CFOP-algoritmia ulkoa. Käytän 4441 aikaratkaisun dataa purkaakseni neljä vaihetta: mihin kussakin vaiheessa jumiudutaan, mitä kannattaa harjoitella ja miksi Roux-metodi ei vaadi algoritmien ulkoa opettelua."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

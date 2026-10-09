@@ -8,7 +8,7 @@ tags:
   - Roux-metoden
   - speedcubing
   - målrettet trening
-categories: 日常折腾
+categories: Hverdagsutfordringer
 description: "Det tok meg 89 dager fra første løsning til jeg nådde Ao100 under 30 sekunder, uten å ha pugget en eneste CFOP-algoritme. Basert på 4441 timede løsninger, bryter jeg ned fire faser: hva som var utfordrende, hva jeg øvde på i hver fase, og hvorfor Roux-metoden ikke krever at du pugger algoritmer."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

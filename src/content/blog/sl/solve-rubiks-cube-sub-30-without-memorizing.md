@@ -8,7 +8,7 @@ tags:
   - Roux metoda
   - Speedcubing
   - Namenska vadba
-categories: Dnevne peripetije
+categories: Dnevno ukvarjanje
 description: "Od prve sestave do povprečja 100 rešitev pod 30 sekund mi je vzelo 89 dni, ne da bi si zapomnil en sam algoritem CFOP. S 4441 časovnimi podatki bom razdelal štiri faze: kje se v vsaki fazi zatika, kaj vaditi in zakaj Roux metoda ne potrebuje pomnjenja algoritmov."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true

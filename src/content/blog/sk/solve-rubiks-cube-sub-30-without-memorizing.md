@@ -8,7 +8,7 @@ tags:
   - Roux metóda
   - speedcubing
   - cielený tréning
-categories: Každodenné experimenty
+categories: Každodenné záležitosti
 description: "Trvalo mi 89 dní, kým som sa od prvého poskladania dostal na Ao100 pod 30 sekúnd, a to bez učenia jediného CFOP algoritmu. Na základe 4441 časovaných riešení rozoberám štyri fázy: kde sa v každej fáze zaseknete, čo trénovať a prečo Roux metóda nevyžaduje učenie algoritmov."
 cover: /uploads/images/solve-rubiks-cube-sub-30-without-memorizing/01-four-stages.webp
 toc: true
