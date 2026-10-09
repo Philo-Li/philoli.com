@@ -46,10 +46,6 @@ Nejdřív si ujasněme jednu věc: Proč jsou rychlost a učení algoritmů v my
 
 Na počátku 80. let 20. století uspořádala česko-americká profesorka Jessica Fridrich (později se zabývala digitální forenzní analýzou na Binghamton University) vrstvenou metodu, která byla později nazvána CFOP (Cross, F2L, OLL, PLL). Myšlenka této metody je následující: vyčíst všechny možné situace horní vrstvy a ke každé situaci přiřadit optimální algoritmus. Ty situaci rozpoznáš, provedeš algoritmus a nemusíš přemýšlet.
 
-![Jessica Fridrich a Rubikova kostka v její kanceláři](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Obrázek: Jessica Fridrich a Rubikova kostka v její kanceláři. V roce 1982 získala 10. místo na prvním mistrovství světa s časem 29.11 sekund, a právě po ní je pojmenována metoda CFOP (Fridrich Method).*
-
 Tato metoda je extrémně rychlá. Téměř všechny světové rekordy byly složeny pomocí CFOP. Proto ji učí všechny tutoriály, mluví o ní všechna videa, a „učit se rychloskládání“ se rovná „učit se CFOP“, což se zase rovná naučit se 119 algoritmů nazpaměť.
 
 Ale pozor, „učení algoritmů nazpaměť“ je vlastností metody CFOP, nikoli vlastností samotné „rychlosti“. Důvod, proč se CFOP musí učit nazpaměť, je ten, že si zvolila cestu vyčerpávajícího výčtu. A vyčerpávající výčet vyžaduje paměť, což je cena, kterou za to platí.
@@ -59,10 +55,6 @@ Existuje metoda, která nejde touto cestou vyčerpávajícího výčtu? Ano.
 ## Řešení bez učení algoritmů: Roux metoda
 
 V roce 2003 představil Francouz Gilles Roux zcela odlišný přístup. Místo skládání vrstvu po vrstvě se nejprve postaví dva 1×2×3 „bloky“ (levý a pravý), pak se vyřeší čtyři rohy horní vrstvy a nakonec zbývá šest hran, které se dokončí otáčením střední vrstvy M a horní vrstvy U.
-
-![Gilles Roux v akci během soutěže](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Obrázek: Gilles Roux v akci během soutěže. Snímek je z raného soutěžního videa, obraz byl opraven a zvětšen pomocí AI.*
 
 V předchozím článku jsme si už kostku jednou složili pomocí tohoto rámce. Pojďme se teď znovu podívat na jeho čtyři kroky, tentokrát se zaměříme na to, „co je třeba si zapamatovat v každém kroku“:
 

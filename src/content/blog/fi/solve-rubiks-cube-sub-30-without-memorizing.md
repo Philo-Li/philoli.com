@@ -46,10 +46,6 @@ Selvitetään ensin yksi asia: miksi «nopeus» ja «algoritmien ulkoa opettelu�
 
 1980-luvun alussa tšekkiläissyntyinen professori Jessica Fridrich (joka myöhemmin tutki digitaalista forensiikkaa Binghamtonin yliopistossa Yhdysvalloissa) kehitti kerroksittaisen ratkaisumenetelmän, jota kutsuttiin myöhemmin CFOP:ksi (Cross, F2L, OLL, PLL). Tämän menetelmän idea on luetella kaikki yläkerroksen mahdolliset tilanteet ja antaa jokaiselle tilanteelle optimaalinen algoritmi. Tunnistat tilanteen, suoritat algoritmin, eikä sinun tarvitse ajatella.
 
-![Jessica Fridrich ja hänen Rubikin kuutionsa toimistossaan](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Kuva: Jessica Fridrich ja hänen Rubikin kuutionsa toimistossaan. Vuonna 1982 hän sijoittui ensimmäisissä MM-kisoissa 10. sijalle ajalla 29,11 sekuntia, ja CFOP-metodi on nimetty hänen mukaansa (Fridrich Method).*
-
 Tämä metodi on erittäin nopea. Lähes kaikki maailmanennätykset on tehty CFOP:lla. Siksi kaikki tutoriaalit opettavat sitä, kaikki videot käsittelevät sitä, ja «pikaratkaisun opettelu» on sama kuin «CFOP:n opettelu», mikä taas tarkoittaa 119 algoritmin ulkoa opettelua.
 
 Huomaa kuitenkin, että «algoritmien ulkoa opettelu» on CFOP:n ominaisuus, ei nopeuden itsensä. CFOP vaatii ulkoa opettelua, koska se valitsi sen reitin – kaikkien tapausten luetteloinnin. Luettelointi vaatii muistia, ja se on hinta, joka siitä maksetaan.
@@ -59,10 +55,6 @@ Onko olemassa menetelmiä, jotka eivät kulje kaikkien tapausten luetteloinnin t
 ## Ratkaisumenetelmä ilman ulkoa opeteltavia algoritmeja: Roux-metodi
 
 Vuonna 2003 ranskalainen Gilles Roux julkaisi täysin erilaisen lähestymistavan. Sen sijaan, että kuutio ratkaistaisi kerros kerrokselta, siinä rakennetaan ensin kaksi 1×2×3-lohkoa (ensimmäinen ja toinen lohko), sitten käsitellään yläkerroksen neljä kulmapalaa, ja lopuksi jäljelle jääneet kuusi reunapalaa viimeistellään käyttäen vain M- ja U-siirtoja.
-
-![Gilles Roux kilpailussa](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Kuva: Gilles Roux kilpailussa. Kuva on otettu vanhasta kilpailuvideosta ja sitä on korjattu ja suurennettu tekoälyllä.*
 
 Edellisessä artikkelissa ratkaisimme kuution jo kerran tällä menetelmällä. Käydään sen neljä vaihetta nyt uudelleen läpi, keskittyen tällä kertaa siihen, «mitä kussakin vaiheessa pitää muistaa»:
 

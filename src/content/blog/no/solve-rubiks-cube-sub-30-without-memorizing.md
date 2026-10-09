@@ -46,10 +46,6 @@ La oss først avklare én ting: Hvorfor er "rask" og "pugge algoritmer" så ster
 
 På begynnelsen av 1980-tallet utviklet den tsjekkisk-amerikanske professoren Jessica Fridrich (som senere forsket på digital etterforskning ved Binghamton University i USA) en lag-for-lag-løsningsmetode. Denne ble senere kjent som CFOP (Cross, F2L, OLL, PLL). Tanken bak denne metoden er å liste opp alle mulige tilfeller for topplaget og gi en optimal algoritme for hver situasjon. Du identifiserer situasjonen, utfører algoritmen, og trenger ikke å tenke.
 
-![Jessica Fridrich og kuben på kontoret hennes](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Figur: Jessica Fridrich og kuben på kontoret hennes. I 1982 tok hun 10. plass i det første verdensmesterskapet med 29,11 sekunder. CFOP-metoden er oppkalt etter henne (Fridrich Method).*
-
 Denne metoden er ekstremt rask. Nesten alle verdensrekorder er satt med CFOP. Derfor underviser alle guider i den, alle videoer forklarer den, og "å lære speedcubing" ble synonymt med "å lære CFOP", som igjen ble synonymt med å pugge 119 algoritmer.
 
 Men legg merke til at "pugge algoritmer" er en egenskap ved CFOP-metoden, ikke en egenskap ved "hurtighet" i seg selv. Grunnen til at CFOP krever pugging, er at den har valgt uttømmende tilfeller som vei. Uttømming krever memorering, og det er prisen den betaler.
@@ -59,10 +55,6 @@ Finnes det metoder som ikke følger denne uttømmende veien? Ja, det gjør det.
 ## Løsningsmetoden uten pugging: Roux-metoden
 
 I 2003 presenterte franskmannen Gilles Roux en helt annen tilnærming. I stedet for å bygge lag for lag, starter man med å konstruere to 1×2×3 "blokker" (venstre og høyre), deretter håndteres de fire hjørnebrikkene på topplaget, og til slutt gjenstår bare seks kantbrikker som fullføres med M- og U-bevegelser.
-
-![Gilles Roux i konkurranse](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Figur: Gilles Roux i konkurranse. Klipp fra en eldre konkurransevideo, bildet er restaurert og forstørret med AI.*
 
 I forrige artikkel løste vi kuben en gang med denne rammen. La oss se på de fire trinnene igjen, men denne gangen fokuserer vi på "hva som må huskes i hvert trinn":
 

@@ -46,10 +46,6 @@ Låt oss först reda ut en sak: Varför är "snabbhet" och "att memorera algorit
 
 I början av 1980-talet utvecklade den tjeckisk-amerikanska professorn Jessica Fridrich (som senare forskade inom digital forensik vid Binghamton University i USA) en lagermetod som senare kom att kallas CFOP (Cross, F2L, OLL, PLL). Idén bakom metoden är att systematiskt lista alla möjliga scenarion för det översta lagret och tilldela varje scenario en optimal algoritm. Du identifierar situationen, utför algoritmen och behöver inte tänka.
 
-![Jessica Fridrich och hennes Rubiks kub på kontoret](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Figur: Jessica Fridrich och hennes Rubiks kub på kontoret. År 1982 kom hon på 10:e plats i det första världsmästerskapet med 29,11 sekunder, och CFOP-metoden är uppkallad efter henne (Fridrich Method).*
-
 Den här metoden är extremt snabb. Nästan alla världsrekord har satts med CFOP. Därför undervisar alla handledningar i den, alla videor handlar om den, och "att lära sig speedcubing" har blivit synonymt med "att lära sig CFOP", vilket i sin tur innebär att memorera 119 algoritmer.
 
 Men märk väl, "att memorera algoritmer" är en egenskap hos *CFOP-metoden*, inte av "snabbhet" i sig. Anledningen till att CFOP kräver memorisering är att den bygger på en uttömmande lista av fall. Uttömmande listor kräver minne, och det är priset man betalar.
@@ -59,10 +55,6 @@ Finns det metoder som inte går den vägen? Ja.
 ## En lösningsmetod utan algoritmer: Roux-metoden
 
 År 2003 presenterade fransmannen Gilles Roux en helt annorlunda strategi. Istället för att bygga lager för lager, konstruerar man först två 1x2x3 "block" på vänster och höger sida (de så kallade "broarna"), hanterar sedan de fyra hörnbitarna i det översta lagret, och avslutar med de sex sista kantbitarna med hjälp av M- och U-rörelser.
-
-![Gilles Roux under en tävling](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Figur: Gilles Roux under en tävling. Klippt från en äldre tävlingsvideo, bilden har förstärkts med AI.*
 
 I förra artikeln löste vi redan kuben med denna ram. Här går vi igenom dess fyra steg igen, men den här gången fokuserar vi på "vad som behöver memoreras i varje steg":
 

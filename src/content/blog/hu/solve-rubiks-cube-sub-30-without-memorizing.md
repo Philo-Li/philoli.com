@@ -46,10 +46,6 @@ Először tisztázzunk egy dolgot: miért kapcsolódik össze az emberek fejébe
 
 Az 1980-as évek elején Jessica Fridrich cseh származású professzor (aki később az amerikai Binghamton Egyetemen digitális kriminalisztikát kutatott) rendszerezett egy rétegenkénti megoldási módszert, amelyet később CFOP-nak (Cross, F2L, OLL, PLL) neveztek el. Ennek a módszernek a lényege: a felső réteg összes lehetséges állapotát kimerítően felsorolja, és minden állapothoz hozzárendel egy optimális algoritmust. Felismered az állapotot, végrehajtod az algoritmust, és nem kell gondolkodnod.
 
-![Jessica Fridrich és a kocka az irodájában](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Kép: Jessica Fridrich és a kocka az irodájában. 1982-ben 29,11 másodperccel a 10. helyen végzett az első világbajnokságon, a CFOP módszert róla nevezték el (Fridrich Method).*
-
 Ez a módszer rendkívül gyors. Szinte minden világrekord CFOP-pal született. Ezért minden útmutató ezt tanítja, minden videó erről szól, a "gyorskirakás tanulása" egyenlő a "CFOP tanulásával", a CFOP tanulása pedig egyenlő 119 algoritmus memorizálásával.
 
 De figyelem: az "algoritmusok memorizálása" a CFOP módszer sajátossága, nem pedig a "gyorsaság" önmagában vett sajátossága. A CFOP azért igényel memorizálást, mert a kimerítő felsorolás útját választotta. A kimerítő felsorolás memóriát igényel, ez az ára.
@@ -59,10 +55,6 @@ Létezik olyan módszer, ami nem a kimerítő felsorolás útját járja? Igen.
 ## Algoritmusok nélküli megoldás: A Roux módszer
 
 2003-ban a francia Gilles Roux egy teljesen más megközelítést mutatott be. Nem rétegről rétegre építkezik, hanem először két 1×2×3-as "blokkot" (hidat) épít fel, majd a felső réteg négy sarkával foglalkozik, végül pedig hat élélet hagy, és az M és U rétegforgatásokkal fejezi be.
-
-![Gilles Roux verseny közben](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Kép: Gilles Roux verseny közben. Egy régi versenyvideóból kivágott kép, amelyet AI-val javítottak és nagyítottak.*
 
 Az előző cikkben már kiraktunk egy kockát ezzel a kerettel. Nézzük meg újra a négy lépést, ezúttal arra fókuszálva, hogy "mit kell megjegyezni minden lépésnél":
 

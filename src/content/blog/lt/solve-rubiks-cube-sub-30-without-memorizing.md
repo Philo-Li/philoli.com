@@ -46,10 +46,6 @@ Pirmiausia išsiaiškinkime: kodėl „greitis“ ir „algoritmų mokymasis“ 
 
 Devintojo dešimtmečio pradžioje čekų kilmės profesorė Jessica Fridrich (vėliau Bingamtono universitete JAV tyrinėjusi skaitmeninę forensiką) sukūrė sluoksniais sprendimo metodą, kuris vėliau buvo pavadintas CFOP (Kryžius, F2L, OLL, PLL). Šio metodo idėja yra: išvardinti visas galimas viršutiniojo sluoksnio situacijas ir kiekvienai situacijai priskirti optimalų algoritmą. Atpažįstate situaciją, įvykdote algoritmą ir nereikia galvoti.
 
-![Jessica Fridrich ir Rubiko kubas jos biure](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Pav.: Jessica Fridrich ir Rubiko kubas jos biure. 1982 m. ji užėmė 10-ąją vietą pirmajame pasaulio čempionate su 29.11 sekundės rezultatu, o CFOP metodas pavadintas jos vardu (Fridrich metodas).*
-
 Šis metodas yra labai greitas. Beveik visi pasaulio rekordai pasiekti naudojant CFOP. Todėl visose pamokose jis mokomas, visuose vaizdo įrašuose apie jį kalbama, o „mokytis greitojo sprendimo“ tapo lygu „mokytis CFOP“, o mokytis CFOP reiškia įsiminti 119 algoritmų.
 
 Tačiau atkreipkite dėmesį, kad „algoritmų mokymasis“ yra CFOP, kaip metodo, savybė, o ne paties „greičio“ savybė. CFOP reikalauja įsiminti, nes jis pasirinko visų galimų situacijų išvardijimo kelią. Išsamus išvardijimas reikalauja atminties – tai jo kaina.
@@ -59,10 +55,6 @@ Ar yra metodų, kurie nesirenka šio kelio? Taip, yra.
 ## Sprendimo metodas be algoritmų: Roux metodas
 
 2003 m. prancūzas Gilles Roux paskelbė visiškai kitokį požiūrį. Vietoj to, kad statytumėte sluoksnį po sluoksnio, pirmiausia pastatomi du 1×2×3 „blokai“ (kairysis ir dešinysis), tada sprendžiami keturi viršutiniojo sluoksnio kampainiai, o galiausiai lieka tik šeši briaunainiai, kuriuos išsprendžiama naudojant viduriniojo sluoksnio M ir viršutiniojo sluoksnio U judesius.
-
-![Gilles Roux varžybose](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Pav.: Gilles Roux varžybose. Ištrauka iš ankstyvojo varžybų vaizdo įrašo, vaizdas atnaujintas ir padidintas AI pagalba.*
 
 Ankstesniame straipsnyje jau vieną kartą išsprendėme kubą naudodami šią struktūrą. Čia dar kartą peržiūrėkime keturis jo etapus, šįkart atkreipdami dėmesį į tai, „ką reikia įsiminti kiekviename etape“:
 

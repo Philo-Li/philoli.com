@@ -46,10 +46,6 @@ Vispirms noskaidrosim vienu lietu: kāpēc "ātrums" un "algoritmu iegaumēšana
 
 1980. gadu sākumā čehu izcelsmes profesore Jessica Fridrich (kura vēlāk Bingenamtonas universitātē pētīja digitālo kriminālistiku) izveidoja slāņu salikšanas metodi, kas vēlāk tika nosaukta par CFOP (Cross, F2L, OLL, PLL). Šīs metodes pamatā ir visu iespējamo augšējā slāņa situāciju izklāsts, katrai situācijai piešķirot optimālu algoritmu. Jūs atpazīstat situāciju, izpildāt algoritmu un jums nav jādomā.
 
-![Jessica Fridrich un Rubika kubs viņas birojā](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Attēls: Jessica Fridrich un Rubika kubs viņas birojā. 1982. gadā viņa ar 29,11 sekundēm ieguva 10. vietu pirmajā pasaules čempionātā, un CFOP metode ir nosaukta viņas vārdā (Fridrich Method).*
-
 Šī metode ir ļoti ātra. Gandrīz visi pasaules rekordi ir sasniegti, izmantojot CFOP. Tāpēc visas pamācības to māca, visi video par to stāsta, un "mācīties ātrsalikšanu" ir vienāds ar "mācīties CFOP", bet mācīties CFOP ir vienāds ar 119 algoritmu iegaumēšanu.
 
 Taču ņemiet vērā, ka "algoritmu iegaumēšana" ir CFOP metodes īpašība, nevis "ātruma" paša īpašība. CFOP ir jāiegaumē, jo tā izvēlējās izklāsta ceļu. Izklāsts prasa atmiņu, un tas ir tā cena.
@@ -59,10 +55,6 @@ Vai ir metodes, kas neiet šo izklāsta ceļu? Ir.
 ## Salikšana bez algoritmu iegaumēšanas: Roux metode
 
 2003. gadā francūzis Gilles Roux publicēja pilnīgi atšķirīgu pieeju. Tā nav slāņu slāņošana, bet gan vispirms divu 1x2x3 "bloku" veidošana (kreiso un labo), pēc tam četru augšējā slāņa stūru apstrāde un visbeidzot atlikušo sešu malu gabalu pabeigšana, izmantojot M-slāņa un U-slāņa griezienus.
-
-![Gilles Roux sacensībās](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Attēls: Gilles Roux sacensībās. Izgriezums no agrīnu sacensību video, attēls uzlabots ar AI.*
 
 Iepriekšējā rakstā mēs jau vienu reizi salikām kubu, izmantojot šo ietvaru. Šeit vēlreiz aplūkosim četrus soļus, šoreiz pievēršot uzmanību tam, "kas katrā solī ir jāiegaumē":
 

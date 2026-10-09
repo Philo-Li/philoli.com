@@ -46,10 +46,6 @@ First, let's clarify something: Why are "speed" and "memorizing algorithms" so i
 
 In the early 1980s, Czech-born professor Jessica Fridrich (who later researched digital forensics at Binghamton University in the US) organized a layer-by-layer solving method, which later became known as CFOP (Cross, F2L, OLL, PLL). The core idea of this method is to exhaustively list all possible top-layer situations and assign an optimal algorithm to each. You recognize the pattern, execute the algorithm, and no thinking is required.
 
-![Jessica Fridrich and a Rubik's Cube in her office](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Figure: Jessica Fridrich and a Rubik's Cube in her office. In 1982, she placed 10th at the first World Championship with a time of 29.11 seconds. CFOP is named after her (Fridrich Method).*
-
 This method is incredibly fast. Almost all world records are achieved using CFOP. Consequently, every tutorial teaches it, every video discusses it, equating "learning speedcubing" with "learning CFOP," and learning CFOP with memorizing 119 algorithms.
 
 However, it's crucial to note that "memorizing algorithms" is a characteristic of the CFOP method, not of speed itself. CFOP requires memorization because it takes the path of exhaustive enumeration. Enumeration demands memory—that's the price it pays.
@@ -59,10 +55,6 @@ Are there methods that don't rely on exhaustive enumeration? Yes, there are.
 ## The Algorithm-Free Method: Roux
 
 In 2003, Frenchman Gilles Roux published a completely different approach. Instead of solving the cube layer by layer, you start by building two 1×2×3 blocks on the left and right. Then you solve the four corners of the top layer, leaving only six edges, which are finished using nothing but M (middle slice) and U (top layer) moves.
-
-![Gilles Roux during a competition](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Figure: Gilles Roux during a competition. Screenshot from an early competition video, image upscaled and restored with AI.*
 
 We already used this framework to solve the cube once in the previous post. Let's revisit its four steps, this time focusing on "what needs to be memorized at each stage":
 

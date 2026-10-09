@@ -46,10 +46,6 @@ Primeiro, vamos esclarecer uma coisa: por que "velocidade" e "decorar algoritmos
 
 No início dos anos 1980, a professora tcheca Jessica Fridrich (que mais tarde pesquisaria forense digital na Binghamton University, EUA) organizou um método de resolução por camadas, que mais tarde foi chamado de CFOP (Cross, F2L, OLL, PLL). A ideia desse método é listar exaustivamente todas as situações possíveis na camada superior e associar a cada uma delas um algoritmo otimizado. Você reconhece a situação, executa o algoritmo e não precisa pensar.
 
-![Jessica Fridrich e o cubo mágico em seu escritório](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Figura: Jessica Fridrich e o cubo mágico em seu escritório. Em 1982, ela ficou em 10º lugar no primeiro Campeonato Mundial com 29.11 segundos. O CFOP foi nomeado em sua homenagem (Método Fridrich).*
-
 Este método é extremamente rápido. Quase todos os recordes mundiais são alcançados com CFOP. Por isso, todos os tutoriais o ensinam, todos os vídeos falam dele, e "aprender speedcubing" tornou-se sinônimo de "aprender CFOP", que, por sua vez, significa decorar 119 algoritmos.
 
 Mas atenção: "decorar algoritmos" é uma característica do CFOP, não da velocidade em si. O CFOP exige memorização porque optou pela abordagem exaustiva. A exaustão requer memória, e este é o preço a pagar.
@@ -59,10 +55,6 @@ Existe algum método que não siga essa abordagem exaustiva? Sim.
 ## A Solução Sem Algoritmos: Método Roux
 
 Em 2003, o francês Gilles Roux apresentou uma abordagem completamente diferente. Em vez de construir camada por camada, ele propôs montar primeiro dois "blocos" de 1×2×3 à esquerda e à direita (os "blocos"), depois resolver os quatro cantos da camada superior, e, por fim, lidar com as seis arestas restantes usando apenas os movimentos das camadas M (do meio) e U (superior) para finalizar.
-
-![Gilles Roux em competição](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Figura: Gilles Roux em competição. Captura de tela de um vídeo antigo de competição, imagem restaurada e ampliada por IA.*
 
 No artigo anterior, já usamos essa estrutura para resolver o cubo uma vez. Vamos rever as quatro etapas, desta vez focando no "que precisa ser lembrado em cada etapa":
 

@@ -46,10 +46,6 @@ Najprej pojasnimo eno stvar: zakaj sta "hitrost" in "pomnjenje algoritmov" v mis
 
 V zgodnjih 80. letih je češko-ameriška profesorica Jessica Fridrich (ki je kasneje na univerzi Binghamton v ZDA raziskovala digitalno forenziko) razvila metodo sestavljanja kocke po plasteh, ki je kasneje postala znana kot CFOP (Cross, F2L, OLL, PLL). Ideja te metode je bila: izčrpno našteti vse možne situacije na zgornji plasti in za vsako situacijo dodeliti optimalen algoritem. Ko prepoznate situacijo, izvedete algoritem, brez razmišljanja.
 
-![Jessica Fridrich in Rubikova kocka v njeni pisarni](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Slika: Jessica Fridrich in Rubikova kocka v njeni pisarni. Leta 1982 je z 29,11 sekunde osvojila 10. mesto na prvem svetovnem prvenstvu, po njej je poimenovana tudi CFOP metoda (Fridrichova metoda).*
-
 Ta metoda je izjemno hitra. Skoraj vsi svetovni rekordi so doseženi s CFOP metodo. Zato jo učijo vsi vodiči, o njej govorijo vsi videoposnetki, "učiti se speedcubinga" je postalo enako "učiti se CFOP", učenje CFOP pa je enako pomnjenju 119 algoritmov.
 
 Toda pozor, "pomnjenje algoritmov" je značilnost metode CFOP, ne pa značilnost same "hitrosti". CFOP zahteva pomnjenje, ker je izbrala pot izčrpnega naštevanja. Izčrpno naštevanje zahteva spomin, in to je cena, ki jo plača.
@@ -59,10 +55,6 @@ Ali obstaja metoda, ki ne gre po poti izčrpnega naštevanja? Da.
 ## Metoda brez pomnjenja algoritmov: Roux metoda
 
 Leta 2003 je Francoz Gilles Roux objavil popolnoma drugačen pristop. Namesto da bi kocko sestavljal plast za plastjo, najprej zgradi dva 1×2×3 "bloka" (mostova) na levi in desni strani, nato obdela štiri vogalne kose zgornje plasti in na koncu ostane le šest robnih kosov, ki jih reši z obračanjem srednje plasti (M-slice) in zgornje plasti (U-layer).
-
-![Gilles Roux na tekmovanju](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Slika: Gilles Roux na tekmovanju. Izsek iz starejšega tekmovalnega videa, slika je bila popravljena in povečana z umetno inteligenco.*
 
 V prejšnjem članku smo že enkrat sestavili kocko po tej metodi. Poglejmo si še enkrat njene štiri korake, tokrat s poudarkom na tem, "kaj si moramo zapomniti pri vsakem koraku":
 

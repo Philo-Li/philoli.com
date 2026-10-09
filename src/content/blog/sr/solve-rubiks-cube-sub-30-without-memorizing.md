@@ -46,10 +46,6 @@ Prvo da razjasnimo jednu stvar: zašto su „brzina“ i „pamćenje algoritama
 
 Početkom 1980-ih, profesorka češkog porekla Jessica Fridrich (kasnije je istraživala digitalnu forenziku na Univerzitetu Binghamton u SAD) sistematizovala je metodu slaganja po slojevima, koja je kasnije nazvana CFOP (Cross, F2L, OLL, PLL). Ideja ove metode je sledeća: sve moguće situacije u gornjem sloju su iscrpno popisane, a za svaku situaciju je dodeljen optimalan algoritam. Prepoznate situaciju, izvedete algoritam i ne morate da razmišljate.
 
-![Jessica Fridrich i Rubikova kocka u njenoj kancelariji](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Slika: Jessica Fridrich i Rubikova kocka u njenoj kancelariji. Godine 1982. osvojila je 10. mesto na prvom Svetskom prvenstvu sa 29.11 sekundi, a CFOP je nazvan po njoj (Fridrich metoda).*
-
 Ova metoda je izuzetno brza. Gotovo svi svetski rekordi su postignuti CFOP metodom. Zato je svi tutorijali predaju, svi video snimci je objašnjavaju, „učenje spidkubinga“ je postalo jednako „učenju CFOP-a“, a učenje CFOP-a je jednako pamćenju 119 algoritama.
 
 Ali obratite pažnju, „pamćenje algoritama“ je karakteristika CFOP metode, a ne karakteristika same „brzine“. CFOP zahteva pamćenje jer je izabrao put iscrpnog popisivanja. Iscrpno popisivanje zahteva memoriju, i to je cena koju ova metoda plaća.
@@ -59,10 +55,6 @@ Postoji li metoda koja ne ide ovim putem iscrpnog popisivanja? Postoji.
 ## Metoda slaganja bez pamćenja algoritama: Roux metoda
 
 Godine 2003., Francuz Gilles Roux objavio je potpuno drugačiji pristup. Umesto da slaže sloj po sloj, on prvo gradi dva 1×2×3 „bloka“ (mosta) – levi i desni, zatim rešava četiri ugla gornjeg sloja (CMLL), i na kraju ostaje samo šest ivičnih elemenata koje rešava koristeći samo M i U okrete.
-
-![Gilles Roux na takmičenju](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Slika: Gilles Roux na takmičenju. Isečak iz ranijeg takmičarskog videa, slika je AI restaurirana i uvećana.*
 
 U prethodnom članku smo već jednom složili kocku koristeći ovaj okvir. Ovde ćemo ponovo pogledati njegove četiri koraka, s fokusom na to „šta treba zapamtiti za svaki korak“:
 

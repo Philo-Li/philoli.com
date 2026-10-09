@@ -46,10 +46,6 @@ Najprv si ujasnime jednu vec: prečo sú v mysliach ľudí „rýchlosť“ a �
 
 Začiatkom 80. rokov profesorka českého pôvodu Jessica Fridrich (neskôr výskumníčka v oblasti digitálnej forenznej analýzy na Binghamton University v USA) usporiadala súpravu vrstvených riešení, ktorá sa neskôr nazvala CFOP (Cross, F2L, OLL, PLL). Myšlienkou tejto metódy je: vyčerpať všetky možné situácie pre vrchnú vrstvu a ku každej situácii priradiť optimálny algoritmus. Ty rozpoznáš situáciu, vykonáš algoritmus a nemusíš premýšľať.
 
-![Jessica Fridrich a Rubikova kocka v jej kancelárii](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Obr.: Jessica Fridrich a Rubikova kocka v jej kancelárii. V roku 1982 obsadila 10. miesto na prvých majstrovstvách sveta s časom 29,11 sekúnd. CFOP je pomenovaná po nej (Fridrich Method).*
-
 Táto metóda je extrémne rýchla. Takmer všetky svetové rekordy sú dosiahnuté pomocou CFOP. Preto ju učia všetky tutoriály, hovoria o nej všetky videá a „učiť sa speedcubing“ sa rovná „učiť sa CFOP“, a učiť sa CFOP sa rovná naučiť sa 119 algoritmov.
 
 Ale pozor, „učenie algoritmov“ je vlastnosťou práve metódy CFOP, nie vlastnosťou „rýchlosti“ samotnej. Dôvod, prečo si CFOP vyžaduje memorovanie, je, že si zvolila cestu vyčerpávajúceho zoznamu. Vyčerpávajúci zoznam si vyžaduje pamäť, a to je cena, ktorú platí.
@@ -59,10 +55,6 @@ Existuje metóda, ktorá nejde cestou vyčerpávajúceho zoznamu? Áno.
 ## Metóda bez učenia algoritmov: Roux metóda
 
 V roku 2003 Francúz Gilles Roux predstavil úplne odlišný prístup. Namiesto skladania vrstvy po vrstve najprv postavíš dva 1×2×3 „bloky“ na ľavej a pravej strane, potom vyriešiš štyri rohy vrchnej vrstvy a nakoniec zostane len šesť hrán, ktoré sa dokončia otáčaním strednej (M) a vrchnej (U) vrstvy.
-
-![Gilles Roux počas súťaže](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Obr.: Gilles Roux počas súťaže. Z raného súťažného videa, obraz vylepšený a zväčšený AI.*
 
 V predchádzajúcom článku sme už pomocou tohto rámca raz kocku vyriešili. Pozrime sa znova na jeho štyri kroky, tentoraz sa zamerajme na to, „čo si treba zapamätať v každom kroku“:
 

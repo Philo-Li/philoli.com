@@ -46,10 +46,6 @@ Commençons par clarifier une chose : pourquoi « rapidité » et « mémorisati
 
 Au début des années 1980, la professeure tchéco-américaine Jessica Fridrich (qui a ensuite fait de la criminalistique numérique à l'Université de Binghamton aux États-Unis) a mis au point une méthode de résolution par couches, qui sera plus tard appelée CFOP (Cross, F2L, OLL, PLL). L'idée de cette méthode est d'énumérer toutes les situations possibles pour la dernière couche et d'associer un algorithme optimal à chaque cas. Vous reconnaissez la situation, exécutez l'algorithme, sans avoir à réfléchir.
 
-![Jessica Fridrich et son Rubik's Cube dans son bureau](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Figure : Jessica Fridrich et son Rubik's Cube dans son bureau. En 1982, elle a terminé 10e au premier Championnat du Monde avec 29,11 secondes, et la méthode CFOP porte son nom (Fridrich Method).*
-
 Cette méthode est extrêmement rapide. Presque tous les records du monde sont réalisés avec CFOP. C'est pourquoi tous les tutoriels l'enseignent, toutes les vidéos en parlent, et « apprendre le speedcubing » est devenu synonyme de « apprendre CFOP », ce qui, à son tour, signifie mémoriser 119 algorithmes.
 
 Mais attention, la « mémorisation d'algorithmes » est une caractéristique de la méthode CFOP, et non de la « rapidité » en soi. Si CFOP exige cette mémorisation, c'est parce qu'elle a choisi la voie de l'énumération exhaustive. L'énumération exige de la mémoire, et c'est le prix à payer.
@@ -59,10 +55,6 @@ Existe-t-il des méthodes qui ne suivent pas cette voie d'énumération exhausti
 ## La méthode sans algorithmes : la méthode Roux
 
 En 2003, le Français Gilles Roux a dévoilé une approche complètement différente. Au lieu d'empiler couche par couche, il s'agit d'abord de construire deux « blocs » 1×2×3 (le premier et le second bloc), puis de résoudre les quatre coins de la couche supérieure, et enfin de ne laisser que six arêtes, à finir avec des rotations de la couche M et de la couche U.
-
-![Gilles Roux en compétition](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Figure : Gilles Roux en compétition. Tiré d'une ancienne vidéo de compétition, l'image a été restaurée et agrandie par IA.*
 
 Dans l'article précédent, nous avons déjà résolu le cube en utilisant ce cadre. Revoyons ici les quatre étapes, en nous concentrant cette fois sur ce qu'il faut mémoriser à chaque étape :
 

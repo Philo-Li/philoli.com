@@ -46,10 +46,6 @@ Alustame sellest, et mõistame üht asja: miks on „kiirus” ja „algoritmide
 
 1980. aastate alguses süstematiseeris Tšehhi päritolu professor Jessica Fridrich (kes hiljem uuris digitaalset kohtuekspertiisi Binghamtoni ülikoolis) kiht-kihilt lahendamise meetodi, mida hakati hiljem kutsuma CFOP-ks (Cross, F2L, OLL, PLL). Selle meetodi põhimõte on: kaardistada kõik võimalikud olukorrad ülemisel kihil ja igale olukorrale omistada optimaalne algoritm. Sa tunned olukorra ära, sooritad algoritmi ja mõtlemist pole vaja.
 
-![Jessica Fridrich ja Rubiku kuubik tema kontoris](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Joonis: Jessica Fridrich ja Rubiku kuubik tema kontoris. 1982. aastal saavutas ta 29,11 sekundiga esimesel maailmameistrivõistlusel 10. koha. CFOP on tema järgi nimetatud (Fridrich Method).*
-
 See meetod on äärmiselt kiire. Peaaegu kõik maailmarekordid on saavutatud CFOP-ga. Seepärast õpetavad seda kõik õpetused, räägivad sellest kõik videod, ja „kiirkuubimise õppimine” on võrdne „CFOP õppimisega”, mis omakorda võrdub 119 algoritmi päheõppimisega.
 
 Kuid pane tähele, „algoritmide päheõppimine” on CFOP kui meetodi eripära, mitte kiiruse enda omadus. CFOP nõuab päheõppimist, sest see valis ammendava lähenemise. Ammendavus nõuab mälu, ja see on selle hind.
@@ -59,10 +55,6 @@ Kas on olemas meetodeid, mis ei kasuta ammendavat lähenemist? On.
 ## Algoritmideta lahendus: Roux' meetod
 
 2003. aastal avalikustas prantslane Gilles Roux täiesti erineva lähenemise. See ei ole kiht-kihilt ladumine, vaid kõigepealt ehitatakse kaks 1×2×3 „blokki” vasakule ja paremale, seejärel paigutatakse ülemise kihi neli nurgatükki ning lõpuks jääb alles ainult kuus servatükki, mis lahendatakse keskmise kihi M-pöörete ja ülemise kihi U-pööretega.
-
-![Gilles Roux võistlusel](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Joonis: Gilles Roux võistlusel. Kärbitud varajasest võistlusvideost, pilti on tehisintellekti abil taastatud ja suurendatud.*
 
 Eelmises postituses lahendasime selle raamistiku abil juba korra kuubiku. Vaatame siin selle nelja etappi uuesti, keskendudes seekord sellele, „mida igas etapis meeles pidada”:
 

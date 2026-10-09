@@ -46,10 +46,6 @@ Prvo razjasnimo jednu stvar: zašto su "brzina" i "učenje algoritama napamet" t
 
 Početkom 1980-ih, češka profesorica Jessica Fridrich (koja je kasnije istraživala digitalnu forenziku na Sveučilištu Binghamton u SAD-u) osmislila je slojevitu metodu slaganja kocke, kasnije nazvanu CFOP (Cross, F2L, OLL, PLL). Ideja ove metode je da se iscrpno popišu sve moguće situacije na gornjem sloju, a za svaku situaciju dodijeli se optimalni algoritam. Prepoznaš situaciju, izvršiš algoritam i nemaš potrebe za razmišljanjem.
 
-![Jessica Fridrich i Rubikova kocka u njenom uredu](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Slika: Jessica Fridrich i Rubikova kocka u njenom uredu. 1982. godine osvojila je 10. mjesto na prvom Svjetskom prvenstvu s 29.11 sekundi, a CFOP metoda je nazvana po njoj (Fridrich Method).*
-
 Ova je metoda iznimno brza. Gotovo svi svjetski rekordi postignuti su CFOP metodom. Zato je svi tutoriali podučavaju, svi videi je objašnjavaju, "učenje speedcubinga" postalo je jednako "učenju CFOP-a", a učenje CFOP-a jednako učenju 119 algoritama napamet.
 
 No, imaj na umu da je "učenje algoritama napamet" specifičnost CFOP metode, a ne svojstvo same brzine. CFOP zahtijeva učenje napamet jer je odabrao put iscrpnog nabrajanja. Iscrpno nabrajanje zahtijeva pamćenje, i to je cijena koju plaća.
@@ -59,10 +55,6 @@ Postoji li metoda koja ne ide tim putem iscrpnog nabrajanja? Postoji.
 ## Roux metoda: slaganje bez učenja algoritama
 
 Godine 2003., Francuz Gilles Roux predstavio je potpuno drugačiji pristup. Umjesto slaganja sloj po sloj, prvo se grade dva 1×2×3 "bloka" (Prvi blok i Drugi blok), zatim se rješavaju četiri kutnjaka gornjeg sloja, a na kraju ostaje samo šest rubnjaka koji se završavaju okretanjem M i U slojeva.
-
-![Gilles Roux na natjecanju](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Slika: Gilles Roux na natjecanju. Izrezak iz starog videozapisa natjecanja, slika je AI-jem poboljšana i povećana.*
 
 U prethodnom članku smo već jednom složili kocku koristeći ovaj okvir. Ovdje ćemo ponovno proći kroz četiri koraka, s fokusom na "što treba zapamtiti za svaki korak":
 

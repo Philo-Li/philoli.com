@@ -46,10 +46,6 @@ Mai întâi, să înțelegem un lucru: de ce "rapiditatea" și "memorarea algori
 
 La începutul anilor 1980, profesoara cehă Jessica Fridrich (care mai târziu a cercetat criminalistica digitală la Universitatea Binghamton din SUA) a sistematizat o metodă de rezolvare pe straturi, cunoscută ulterior sub numele de CFOP (Cross, F2L, OLL, PLL). Ideea acestei metode este următoarea: se enumeră toate situațiile posibile pentru stratul de sus și fiecărei situații i se asociază un algoritm optim. Tu recunoști situația, execuți algoritmul și nu mai trebuie să gândești.
 
-![Jessica Fridrich și Cubul Rubik din biroul ei](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Figură: Jessica Fridrich și Cubul Rubik din biroul ei. În 1982, a obținut locul 10 la primul Campionat Mondial cu 29.11 secunde, iar metoda CFOP îi poartă numele (Metoda Fridrich).*
-
 Această metodă este extrem de rapidă. Aproape toate recordurile mondiale sunt obținute cu CFOP. Prin urmare, toate tutorialele o predau, toate videoclipurile o explică, iar "a învăța speedcubing" a devenit echivalent cu "a învăța CFOP", iar a învăța CFOP înseamnă a memora 119 algoritmi.
 
 Dar atenție, "memorarea algoritmilor" este o caracteristică specifică metodei CFOP, nu o caracteristică a "rapidității" în sine. CFOP necesită memorare pentru că a ales calea enumerării. Enumerarea implică memorare, iar acesta este prețul pe care îl plătește.
@@ -59,10 +55,6 @@ Există metode care nu urmează calea enumerării? Da.
 ## Metoda de rezolvare fără memorarea algoritmilor: Metoda Roux
 
 În 2003, francezul Gilles Roux a publicat o abordare complet diferită. În loc să construiască strat cu strat, metoda sa începe prin construirea a două "blocuri" de 1x2x3 (Primul Bloc și Al Doilea Bloc), apoi rezolvă cele patru colțuri ale stratului de sus (CMLL) și, în final, se ocupă de cele șase muchii rămase, folosind doar mișcările stratului M (median) și stratului U (de sus).
-
-![Gilles Roux în timpul unei competiții](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Figură: Gilles Roux în timpul unei competiții. Extrase dintr-un videoclip vechi de la o competiție, imaginea a fost restaurată și mărită cu AI.*
 
 În articolul anterior, am folosit deja acest cadru pentru o rezolvare. Aici, vom revedea cei patru pași, de data aceasta concentrându-ne pe "ce trebuie memorat la fiecare pas":
 

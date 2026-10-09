@@ -46,10 +46,6 @@ Laten we eerst één ding duidelijk maken: waarom zijn 'snelheid' en 'algoritmes
 
 Begin jaren tachtig ontwikkelde de Tsjechisch-Amerikaanse professor Jessica Fridrich (die later digitale forensische wetenschap onderzocht aan de Binghamton University in de VS) een gelaagde oplossingsmethode, die later CFOP (Cross, F2L, OLL, PLL) werd genoemd. De gedachte achter deze methode is: alle mogelijke situaties van de bovenlaag worden uitputtend opgesomd, en elke situatie krijgt een optimaal algoritme toegewezen. Je herkent de situatie, voert het algoritme uit, en hoeft niet na te denken.
 
-![Jessica Fridrich en een Rubiks kubus in haar kantoor](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Figuur: Jessica Fridrich en een Rubiks kubus in haar kantoor. In 1982 behaalde ze met 29,11 seconden de 10e plaats op het eerste wereldkampioenschap, en CFOP is naar haar vernoemd (Fridrich-methode).*
-
 Deze methode is extreem snel. Bijna alle wereldrecords worden met CFOP opgelost. Daarom onderwijzen alle tutorials het, alle video's leggen het uit, en 'speedcubing leren' staat gelijk aan 'CFOP leren', en CFOP leren staat gelijk aan het memoriseren van 119 algoritmes.
 
 Maar let op, 'algoritmes memoriseren' is een kenmerk van de CFOP-methode, niet van 'snelheid' zelf. CFOP vereist memorisatie omdat het de weg van uitputtende opsomming heeft gekozen. Uitputtende opsomming vereist geheugen, dat is de prijs die het betaalt.
@@ -59,10 +55,6 @@ Zijn er methoden die deze weg van uitputtende opsomming niet volgen? Ja.
 ## De Roux-methode: Oplossen zonder algoritmes
 
 In 2003 introduceerde de Fransman Gilles Roux een totaal andere benadering. In plaats van laag voor laag op te bouwen, bouw je eerst twee 1×2×3 'blokken' aan de linker- en rechterkant, dan pak je de vier hoekstukken van de bovenlaag aan, en ten slotte blijven er slechts zes randstukken over, die worden afgewerkt met M- en U-rotaties.
-
-![Gilles Roux tijdens een wedstrijd](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Figuur: Gilles Roux tijdens een wedstrijd. Afkomstig uit een oude wedstrijdvideo, beeld is verbeterd en vergroot met AI.*
 
 In het vorige artikel hebben we deze structuur al eens gebruikt om de kubus op te lossen. Laten we de vier stappen nogmaals bekijken, maar nu met de focus op 'wat moet er bij elke stap onthouden worden':
 

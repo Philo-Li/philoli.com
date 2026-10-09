@@ -46,10 +46,6 @@ Mari kita pahami dulu satu hal: mengapa "cepat" dan "menghafal algoritma" begitu
 
 Pada awal tahun 1980-an, seorang profesor keturunan Ceko bernama Jessica Fridrich (yang kemudian meneliti forensik digital di Binghamton University, AS) menyusun metode penyelesaian berlapis, yang kemudian dikenal sebagai CFOP (Cross, F2L, OLL, PLL). Ide di balik metode ini adalah: mengelompokkan semua kemungkinan situasi pada lapisan atas, dan setiap situasi dipasangkan dengan satu algoritma optimal. Anda mengenali situasinya, menjalankan algoritma, tanpa perlu berpikir.
 
-![Jessica Fridrich dan Rubik di kantornya](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Gambar: Jessica Fridrich dan Rubik di kantornya. Pada tahun 1982, ia meraih peringkat ke-10 di Kejuaraan Dunia pertama dengan 29,11 detik. CFOP dinamai menurut namanya (Fridrich Method).*
-
 Metode ini sangat cepat. Hampir semua rekor dunia dicapai dengan CFOP. Oleh karena itu, semua tutorial mengajarkannya, semua video membahasnya, "belajar speedcubing" sama dengan "belajar CFOP", dan belajar CFOP sama dengan menghafal 119 algoritma.
 
 Namun, perlu diingat, "menghafal algoritma" adalah ciri khas dari metode CFOP, bukan ciri khas dari "kecepatan" itu sendiri. CFOP memerlukan hafalan karena ia memilih jalur enumerasi (memetakan setiap kasus). Enumerasi membutuhkan memori, dan itulah harga yang harus dibayar.
@@ -59,10 +55,6 @@ Apakah ada metode yang tidak mengikuti jalur enumerasi ini? Ada.
 ## Metode Tanpa Menghafal Algoritma: Roux Bridge
 
 Pada tahun 2003, seorang Prancis bernama Gilles Roux memperkenalkan pendekatan yang sama sekali berbeda. Alih-alih menyusun lapis demi lapis, metode ini dimulai dengan membangun dua "jembatan" 1x2x3 di sisi kiri dan kanan, lalu menangani empat corner lapisan atas, dan akhirnya hanya menyisakan enam potongan edge, yang diselesaikan dengan gerakan lapisan tengah M dan lapisan atas U.
-
-![Gilles Roux dalam kompetisi](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Gambar: Gilles Roux dalam kompetisi. Cuplikan dari video kompetisi lama, gambar diperbaiki dan diperbesar dengan AI.*
 
 Pada artikel sebelumnya, kita sudah pernah menyelesaikan Rubik dengan kerangka ini. Mari kita lihat lagi keempat langkahnya, kali ini berfokus pada "apa yang perlu diingat di setiap langkah":
 

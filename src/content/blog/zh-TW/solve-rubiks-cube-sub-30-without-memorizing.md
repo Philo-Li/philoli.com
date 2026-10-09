@@ -46,10 +46,6 @@ toc: true
 
 1980 年代初期，捷克裔教授 Jessica Fridrich（後來在美國賓漢頓大學研究數位鑑識）整理出一套分層解法，後來被稱為 CFOP（Cross、F2L、OLL、PLL）。這套方法的思路是：將頂層的所有可能情況全部窮舉出來，每種情況都搭配一條最佳公式。你只需要辨識出是哪種情況，然後執行公式，完全不需要思考。
 
-![Jessica Fridrich 和她辦公室裡的魔術方塊](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*圖：Jessica Fridrich 和她辦公室裡的魔術方塊。1982 年她以 29.11 秒的成績，獲得首屆世錦賽第 10 名，CFOP 就是以她命名的（Fridrich Method）。*
-
 這套方法非常快。幾乎所有世界紀錄都是使用 CFOP 解出的。於是所有教學都教它，所有影片都講它，「學速解」就等於「學 CFOP」，而學 CFOP 就等於背 119 條公式。
 
 但請注意，「背公式」是 CFOP 這種方法的特性，並非「快」本身的特性。CFOP 之所以需要背，是因為它選擇了窮舉這條路。窮舉需要記憶，這是它所付出的代價。
@@ -59,10 +55,6 @@ toc: true
 ## 不背公式的解法：Roux 解法
 
 2003 年，法國人 Gilles Roux 公布了一套完全不同的思路。它不是一層一層堆疊，而是先搭建左右兩個 1×2×3 的「區塊」（Block），再處理頂層四個角塊，最後只剩下六個邊塊，利用中層 M 和頂層 U 兩種轉動來收尾。
-
-![Gilles Roux 在比賽中](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*圖：Gilles Roux 在比賽中。截自早年比賽影片，畫面經 AI 復原放大。*
 
 上一篇我們已經用這個框架還原過一次。這裡我們重新看一遍它的四個步驟，這次關注的是「每一步需要記什麼」：
 

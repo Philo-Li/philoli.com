@@ -46,10 +46,6 @@ Lad os først få én ting på plads: Hvorfor er "hurtighed" og "at lære algori
 
 I begyndelsen af 1980'erne udviklede den tjekkiskfødte professor Jessica Fridrich (senere forsker i digital retsvidenskab ved Binghamton University i USA) en lag-for-lag løsningsmetode, som senere blev kendt som CFOP (Cross, F2L, OLL, PLL). Idéen bag denne metode er at opregne alle mulige scenarier for det øverste lag og tildele hver situation en optimal algoritme. Du genkender situationen, udfører algoritmen og behøver ikke at tænke.
 
-![Jessica Fridrich og terningen på hendes kontor](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Figur: Jessica Fridrich og terningen på hendes kontor. I 1982 tog hun 10. pladsen ved det første verdensmesterskab med 29,11 sekunder, og CFOP er opkaldt efter hende (Fridrich-metoden).*
-
 Denne metode er ekstremt hurtig. Næsten alle verdensrekorder er sat med CFOP. Derfor underviser alle tutorials i den, alle videoer forklarer den, og "at lære speedcubing" er blevet synonymt med "at lære CFOP", hvilket igen er lig med at lære 119 algoritmer udenad.
 
 Men bemærk: "At lære algoritmer udenad" er en karakteristik for CFOP-metoden, ikke en egenskab ved hurtighed i sig selv. CFOP kræver memorisering, fordi den vælger udtømmende at dække alle tilfælde. Dette er prisen for den tilgang.
@@ -59,10 +55,6 @@ Findes der metoder, der ikke følger den udtømmende tilgang? Ja.
 ## Løsningen uden algoritmer: Roux-metoden
 
 I 2003 præsenterede franskmanden Gilles Roux en helt anderledes tilgang. I stedet for at bygge lag for lag handler det om først at konstruere to 1×2×3 "blokke" – en venstre og en højre – derefter at håndtere de fire hjørnebrikker på det øverste lag, og til sidst er der kun seks kantbrikker tilbage, som afsluttes med M- og U-drejninger.
-
-![Gilles Roux i konkurrence](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Figur: Gilles Roux i konkurrence. Udklip fra en ældre konkurrencevideo, billedet er AI-restaureret og forstørret.*
 
 I den forrige artikel løste vi den én gang ved hjælp af denne ramme. Lad os nu genopfriske de fire trin, men denne gang med fokus på, "hvad du skal huske i hvert trin":
 

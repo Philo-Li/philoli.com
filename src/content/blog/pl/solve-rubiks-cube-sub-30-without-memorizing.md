@@ -46,10 +46,6 @@ Najpierw wyjaśnijmy jedną rzecz: dlaczego „szybkość” i „zapamiętywani
 
 Na początku lat 80. profesor Jessica Fridrich (pochodzenia czeskiego, później zajmująca się kryminalistyką cyfrową na Uniwersytecie Binghamton w USA) opracowała warstwową metodę układania, później nazwaną CFOP (Cross, F2L, OLL, PLL). Idea tej metody polega na wyczerpującym wymienieniu wszystkich możliwych sytuacji na górnej warstwie i przypisaniu każdej z nich optymalnego algorytmu. Rozpoznajesz sytuację, wykonujesz algorytm i nie musisz myśleć.
 
-![Jessica Fridrich i kostka Rubika w jej biurze](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Rys.: Jessica Fridrich i kostka Rubika w jej biurze. W 1982 roku zajęła 10. miejsce na pierwszych Mistrzostwach Świata z wynikiem 29.11 sekundy. Metoda CFOP została nazwana jej imieniem (Metoda Fridrich).*
-
 Ta metoda jest niezwykle szybka. Niemal wszystkie rekordy świata zostały ustanowione z użyciem CFOP. Dlatego wszystkie tutoriale i filmy uczą właśnie jej, a „nauka speedcubingu” stała się równoznaczna z „nauką CFOP”, co z kolei oznacza zapamiętanie 119 algorytmów.
 
 Zwróć jednak uwagę: „zapamiętywanie algorytmów” jest cechą metody CFOP, a nie samej szybkości. CFOP wymaga pamięci, ponieważ obrała drogę wyczerpującego enumerowania wszystkich przypadków. To jest cena, jaką płaci.
@@ -59,10 +55,6 @@ Czy istnieje metoda, która nie idzie tą drogą wyczerpującego enumerowania? T
 ## Metoda Roux bez algorytmów
 
 W 2003 roku Francuz Gilles Roux przedstawił zupełnie inną koncepcję. Zamiast układać warstwa po warstrywie, najpierw buduje się dwa bloki 1×2×3 (tzw. „mostki”) po lewej i prawej stronie, następnie zajmuje się czterema narożnikami górnej warstwy, a na końcu pozostaje tylko sześć krawędzi, które układa się za pomocą ruchów warstwy środkowej M i górnej U.
-
-![Gilles Roux podczas zawodów](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Rys.: Gilles Roux podczas zawodów. Kadr z wczesnego nagrania z zawodów, obraz został odrestaurowany i powiększony przez AI.*
 
 W poprzednim artykule już raz ułożyliśmy kostkę, korzystając z tej struktury. Spójrzmy jeszcze raz na jej cztery kroki, tym razem skupiając się na tym, „co trzeba zapamiętać na każdym etapie”:
 

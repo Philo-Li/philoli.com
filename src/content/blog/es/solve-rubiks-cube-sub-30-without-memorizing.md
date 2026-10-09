@@ -46,10 +46,6 @@ Primero, aclaremos algo: ¿por qué la «velocidad» y «memorizar algoritmos» 
 
 A principios de los años 80, la profesora checa Jessica Fridrich (quien más tarde investigaría informática forense en la Universidad de Binghamton, EE. UU.) desarrolló un método de resolución por capas, que luego se conocería como CFOP (Cross, F2L, OLL, PLL). La idea detrás de este método es la siguiente: se enumeran todas las posibles situaciones de la última capa y se asigna un algoritmo óptimo a cada una. Así, reconoces la situación, ejecutas el algoritmo y no necesitas pensar.
 
-![Jessica Fridrich y el cubo de Rubik en su oficina](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Figura: Jessica Fridrich y el cubo de Rubik en su oficina. En 1982, obtuvo el 10º lugar en el primer Campeonato Mundial con 29.11 segundos, y el método CFOP lleva su nombre (Método Fridrich).*
-
 Este método es extremadamente rápido. Prácticamente todos los récords mundiales se han logrado con CFOP. Por eso, todos los tutoriales lo enseñan, todos los videos hablan de él, y «aprender speedcubing» se equipara a «aprender CFOP», lo cual, a su vez, significa memorizar 119 algoritmos.
 
 Pero ten en cuenta que «memorizar algoritmos» es una característica específica del método CFOP, no de la velocidad en sí. CFOP requiere memorización porque eligió el camino de la enumeración exhaustiva. La enumeración requiere memoria, y ese es el precio que paga.
@@ -59,10 +55,6 @@ Pero ten en cuenta que «memorizar algoritmos» es una característica específi
 ## El método sin algoritmos: Roux
 
 En 2003, el francés Gilles Roux publicó una aproximación completamente diferente. En lugar de construir capa por capa, primero se construyen dos «bloques» de 1×2×3 (uno a la izquierda y otro a la derecha), luego se resuelven las cuatro esquinas de la capa U, y finalmente, se terminan las seis aristas restantes utilizando solo giros de la capa M (capa media) y la capa U (capa superior).
-
-![Gilles Roux en competición](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Figura: Gilles Roux en competición. Extraído de un antiguo video de competición, la imagen ha sido restaurada y ampliada con IA.*
 
 En la publicación anterior, ya resolvimos el cubo usando este marco. Aquí revisaremos sus cuatro pasos, esta vez centrándonos en «qué memorizar en cada paso»:
 

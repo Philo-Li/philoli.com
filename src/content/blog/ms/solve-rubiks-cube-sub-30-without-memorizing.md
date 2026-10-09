@@ -46,10 +46,6 @@ Mari kita jelaskan satu perkara dahulu: mengapa "pantas" dan "hafalan algoritma"
 
 Pada awal tahun 1980-an, seorang profesor berketurunan Czech, Jessica Fridrich (kemudiannya mengkaji forensik digital di Universiti Binghamton, AS), menyusun satu kaedah penyelesaian berlapis, yang kemudiannya dikenali sebagai CFOP (Cross, F2L, OLL, PLL). Pendekatan kaedah ini adalah: menyenaraikan semua kemungkinan keadaan untuk lapisan atas, dan setiap keadaan dipadankan dengan satu algoritma yang paling optimum. Anda kenal pasti keadaan, laksanakan algoritma, tanpa perlu berfikir.
 
-![Jessica Fridrich dan kiub Rubik di pejabatnya](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Gambar: Jessica Fridrich dan kiub Rubik di pejabatnya. Pada tahun 1982, beliau menduduki tempat ke-10 dalam Kejohanan Dunia yang pertama dengan 29.11 saat, dan CFOP dinamakan sempena namanya (Fridrich Method).*
-
 Kaedah ini sangat pantas. Hampir semua rekod dunia dipecahkan menggunakan CFOP. Oleh itu, semua tutorial mengajarnya, semua video membincangkannya, "belajar speedcubing" menjadi sama dengan "belajar CFOP", dan belajar CFOP pula sama dengan menghafal 119 algoritma.
 
 Namun, perlu diingat, "menghafal algoritma" adalah ciri khusus kaedah CFOP ini, bukan ciri "kepantasan" itu sendiri. CFOP perlu dihafal kerana ia memilih pendekatan menyenaraikan semua kemungkinan. Pendekatan ini memerlukan memori, dan itulah harga yang perlu dibayar.
@@ -59,10 +55,6 @@ Adakah kaedah yang tidak melalui jalan menyenaraikan semua kemungkinan ini? Ada.
 ## Kaedah Tanpa Menghafal Algoritma: Kaedah Roux
 
 Pada tahun 2003, seorang warga Perancis, Gilles Roux, memperkenalkan pendekatan yang sama sekali berbeza. Ia tidak menyusun kiub lapis demi lapis, tetapi sebaliknya membina dua "blok" 1×2×3 di kiri dan kanan terlebih dahulu, kemudian menguruskan empat kepingan corner di lapisan atas, dan akhirnya hanya tinggal enam kepingan edge, yang diselesaikan dengan putaran M-slice dan U-layer.
-
-![Gilles Roux dalam pertandingan](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Gambar: Gilles Roux dalam pertandingan. Dipetik daripada video pertandingan lama, imej telah dibaik pulih dan diperbesarkan oleh AI.*
 
 Dalam artikel sebelumnya, kita sudah menyelesaikan kiub sekali menggunakan kerangka ini. Mari kita lihat semula empat langkahnya, kali ini memberi tumpuan kepada "apa yang perlu diingat pada setiap langkah":
 

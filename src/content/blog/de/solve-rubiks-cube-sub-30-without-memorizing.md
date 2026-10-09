@@ -46,10 +46,6 @@ Klären wir zunächst eines: Warum sind "Schnelligkeit" und "Algorithmen auswend
 
 Anfang der 1980er Jahre entwickelte die tschechisch-amerikanische Professorin Jessica Fridrich (später Forscherin für digitale Forensik an der Binghamton University in den USA) eine schichtbasierte Lösungsmethode, die später als CFOP (Cross, F2L, OLL, PLL) bekannt wurde. Die Idee dieser Methode ist es, alle möglichen Situationen der obersten Ebene aufzulisten und jeder Situation einen optimalen Algorithmus zuzuordnen. Du erkennst die Situation, führst den Algorithmus aus und musst nicht nachdenken.
 
-![Jessica Fridrich und ein Zauberwürfel in ihrem Büro](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Abb.: Jessica Fridrich und ein Zauberwürfel in ihrem Büro. 1982 belegte sie bei der ersten Weltmeisterschaft den 10. Platz mit 29,11 Sekunden. CFOP ist nach ihr benannt (Fridrich-Methode).*
-
 Diese Methode ist extrem schnell. Fast alle Weltrekorde werden mit CFOP aufgestellt. Daher lehren alle Tutorials und Videos sie, und "Speedcubing lernen" bedeutet gleich "CFOP lernen", was wiederum bedeutet, 119 Algorithmen auswendig zu lernen.
 
 Beachte jedoch: Das Auswendiglernen von Algorithmen ist eine Eigenschaft der CFOP-Methode, nicht der "Schnelligkeit" an sich. CFOP erfordert das Auswendiglernen, weil es den Weg der vollständigen Aufzählung gewählt hat. Vollständige Aufzählung erfordert Gedächtnis, und das ist der Preis dafür.
@@ -59,10 +55,6 @@ Gibt es eine Methode, die diesen Weg der Aufzählung nicht geht? Ja.
 ## Die algorithmusfreie Lösung: Die Roux-Methode
 
 Im Jahr 2003 stellte der Franzose Gilles Roux einen völlig anderen Ansatz vor. Anstatt Ebene für Ebene aufzubauen, werden zuerst zwei 1×2×3-Blöcke – der linke und der rechte Block – gebaut. Danach werden die vier Eckstücke der oberen Ebene gelöst, und zum Schluss bleiben nur noch sechs Kantenstücke übrig, die mit M- und U-Zügen abgeschlossen werden.
-
-![Gilles Roux im Wettbewerb](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Abb.: Gilles Roux im Wettbewerb. Aus einem frühen Wettkampfvideo, das Bild wurde per KI restauriert und vergrößert.*
 
 Im letzten Beitrag haben wir den Würfel bereits einmal mit diesem Rahmenwerk gelöst. Hier schauen wir uns die vier Schritte noch einmal an, diesmal mit dem Fokus darauf, "was man sich in jedem Schritt merken muss":
 

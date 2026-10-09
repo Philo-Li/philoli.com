@@ -46,10 +46,6 @@ Unawain muna natin ito: Bakit magkasama sa isip ng mga tao ang "bilis" at "pagme
 
 Noong unang bahagi ng 1980s, inayos ng propesor na si Jessica Fridrich (isang Czech na kalaunan ay nag-aral ng digital forensics sa Binghamton University sa Estados Unidos) ang isang layer-by-layer method na tinawag kalaunan na CFOP (Cross, F2L, OLL, PLL). Ang ideya sa likod ng method na ito ay: ilista ang lahat ng posibleng sitwasyon para sa top layer, at bigyan ang bawat sitwasyon ng pinakamahusay na algorithm. Kilalanin mo ang sitwasyon, gawin ang algorithm, at hindi mo na kailangan pang mag-isip.
 
-![Si Jessica Fridrich at ang Rubik's Cube sa kanyang opisina](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Larawan: Si Jessica Fridrich at ang Rubik's Cube sa kanyang opisina. Noong 1982, nakakuha siya ng 29.11 segundo para sa ika-10 puwesto sa unang World Championship, at ipinangalan sa kanya ang CFOP (Fridrich Method).*
-
 Napakabilis ng method na ito. Halos lahat ng world records ay nakukuha sa pamamagitan ng CFOP. Kaya lahat ng tutorial ay nagtuturo nito, lahat ng video ay nagpapaliwanag nito. Ang "pag-aaral ng speedcubing" ay naging "pag-aaral ng CFOP," at ang pag-aaral ng CFOP ay naging pagme-memorize ng 119 algorithm.
 
 Ngunit tandaan, ang "pagme-memorize ng algorithm" ay isang katangian ng CFOP method, hindi isang katangian ng "bilis" mismo. Kailangang i-memorize ang CFOP dahil pinili nito ang exhaustive approach. Kailangan ng memorya sa exhaustive approach; ito ang presyo na binabayaran nito.
@@ -59,10 +55,6 @@ Mayroon bang method na hindi gumagamit ng exhaustive approach? Mayroon.
 ## Ang Method na Hindi Kailangan ng Algorithm: Roux Method
 
 Noong 2003, ipinakilala ng Pranses na si Gilles Roux ang isang ganap na naiibang diskarte. Hindi ito layer-by-layer, kundi sa halip ay nagsisimula sa pagtatayo ng dalawang 1×2×3 "blocks" sa kaliwa at kanan (First Block at Second Block), pagkatapos ay inaayos ang apat na corner piece sa top layer (CMLL), at sa huli ay ang anim na edge piece na lamang ang natitira (LSE), na tinatapos gamit ang M-slice at U-layer turns.
-
-![Si Gilles Roux sa isang kompetisyon](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Larawan: Si Gilles Roux sa isang kompetisyon. Kuha mula sa lumang video ng kompetisyon, na inayos at pinalaki gamit ang AI.*
 
 Sa nakaraang artikulo, ginamit na natin ang balangkas na ito para sa isang solve. Tingnan ulit natin ang apat na hakbang nito, at sa pagkakataong ito, tutukan natin ang "ano ang kailangan mong tandaan sa bawat hakbang":
 

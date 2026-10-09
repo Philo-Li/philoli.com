@@ -46,10 +46,6 @@ Chiariamo subito una cosa: perché "velocità" e "memorizzare algoritmi" sono co
 
 All'inizio degli anni '80, la professoressa di origine ceca Jessica Fridrich (che in seguito studiò informatica forense all'Università di Binghamton, USA) sviluppò un metodo di risoluzione a strati, in seguito chiamato CFOP (Cross, F2L, OLL, PLL). L'idea alla base di questo metodo è: enumerare tutte le possibili situazioni dello strato superiore (U-layer) e associare a ciascuna la sequenza di mosse ottimale. Tu riconosci la situazione, esegui l'algoritmo, senza bisogno di pensare.
 
-![Jessica Fridrich e il Cubo di Rubik nel suo ufficio](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Fig.: Jessica Fridrich e il Cubo di Rubik nel suo ufficio. Nel 1982 ottenne il 10° posto al primo Campionato del Mondo con 29.11 secondi, e il CFOP prende il nome da lei (Metodo Fridrich).*
-
 Questo metodo è estremamente veloce. Quasi tutti i record mondiali sono stati ottenuti con il CFOP. Così, tutti i tutorial lo insegnano, tutti i video ne parlano, e "imparare lo speedcubing" è diventato sinonimo di "imparare il CFOP", che a sua volta significa memorizzare 119 algoritmi.
 
 Attenzione, però: la "memorizzazione degli algoritmi" è una caratteristica specifica del CFOP, non della "velocità" in sé. Il CFOP richiede la memorizzazione perché ha scelto la strada dell'enumerazione esaustiva. L'enumerazione richiede memoria, ed è questo il prezzo da pagare.
@@ -59,10 +55,6 @@ Esistono metodi che non seguono la strada dell'enumerazione esaustiva? Sì.
 ## La soluzione senza algoritmi: il Metodo Roux
 
 Nel 2003, il francese Gilles Roux ha presentato un approccio completamente diverso. Invece di risolvere il cubo strato per strato, si costruiscono prima due "blocchi" 1×2×3 (destro e sinistro), poi si sistemano i quattro angoli dello strato superiore, e infine si risolvono i sei spigoli rimanenti usando solo le mosse M (strato centrale) e U (strato superiore).
-
-![Gilles Roux in gara](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Fig.: Gilles Roux in gara. Immagine tratta da un vecchio video di competizione, restaurata e ingrandita con l'AI.*
 
 Nella lezione precedente abbiamo già risolto il cubo usando questa struttura. Rivediamo qui le sue quattro fasi, questa volta concentrandoci su "cosa bisogna memorizzare in ogni fase":
 

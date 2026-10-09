@@ -46,10 +46,6 @@ Bilinçli ve düzenli pratik yaparak, herkes birkaç ay içinde sıfırdan sub-3
 
 1980'lerin başında, Çek asıllı profesör Jessica Fridrich (daha sonra ABD'deki Binghamton Üniversitesi'nde dijital adli tıp araştırmaları yaptı), katman katman bir çözüm yöntemi geliştirdi ve bu daha sonra CFOP (Cross, F2L, OLL, PLL) olarak adlandırıldı. Bu yöntemin fikri şuydu: Üst katmandaki tüm olası durumları listelemek ve her duruma en iyi algoritmayı atamak. Durumu tanır, algoritmayı uygularsın, düşünmene gerek kalmaz.
 
-![Jessica Fridrich ve ofisindeki Rubik küpü](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Şekil: Jessica Fridrich ve ofisindeki Rubik küpü. 1982'de ilk Dünya Şampiyonası'nda 29.11 saniye ile 10. sırayı aldı ve CFOP (Fridrich Metodu) onun adıyla anılmaktadır.*
-
 Bu yöntem inanılmaz hızlı. Neredeyse tüm dünya rekorları CFOP ile kırılıyor. Bu yüzden tüm rehberler bunu öğretiyor, tüm videolar bunu anlatıyor, "hızlı çözme öğrenmek" demek "CFOP öğrenmek" demek haline geldi ve CFOP öğrenmek de 119 algoritma ezberlemek demek.
 
 Ancak dikkat et, "algoritma ezberlemek" CFOP'nin bir özelliğidir, "hızın" kendisinin bir özelliği değildir. CFOP'nin ezber gerektirmesi, tümevarım yolunu seçmiş olmasındandır. Tümevarım ise hafıza gerektirir, bu da ödenen bedeldir.
@@ -59,10 +55,6 @@ Peki, bu tümevarım yolunu izlemeyen bir yöntem var mı? Var.
 ## Algoritma Ezberlemeden Çözme Yöntemi: Roux Metodu
 
 2003 yılında, Fransız Gilles Roux tamamen farklı bir yaklaşım duyurdu. Katman katman çözmek yerine, önce sol ve sağda iki adet 1×2×3 "blok" oluşturur, ardından üst katmandaki dört köşeyi hizalar ve son olarak geriye kalan altı kenar parçayı orta katman (M) ve üst katman (U) hareketlerini kullanarak tamamlar.
-
-![Gilles Roux yarışmada](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Şekil: Gilles Roux yarışmada. Eski bir yarışma videosundan alınmıştır, görüntü yapay zeka ile iyileştirilmiştir.*
 
 Önceki yazıda bu çerçeveyi kullanarak bir kez çözmüştük. Şimdi dört adımını tekrar gözden geçirelim, bu kez "her adımda ne ezberlemem gerekiyor" konusuna odaklanalım:
 

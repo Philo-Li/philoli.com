@@ -46,10 +46,6 @@ Trước hết, hãy làm rõ một điều: tại sao "nhanh" và "học thuộ
 
 Vào đầu những năm 1980, giáo sư gốc Séc Jessica Fridrich (sau này nghiên cứu pháp y kỹ thuật số tại Đại học Binghamton, Hoa Kỳ) đã tổng hợp một bộ phương pháp giải theo từng tầng, sau này được gọi là CFOP (Cross, F2L, OLL, PLL). Ý tưởng của phương pháp này là: liệt kê tất cả các trường hợp có thể xảy ra ở tầng trên cùng, và gán cho mỗi trường hợp một công thức tối ưu. Bạn nhận diện trường hợp, thực hiện công thức, mà không cần suy nghĩ.
 
-![Jessica Fridrich và khối Rubik trong văn phòng của bà](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/03-jessica-fridrich.webp)
-
-*Hình: Jessica Fridrich và khối Rubik trong văn phòng của bà. Năm 1982, bà đạt 29.11 giây và xếp thứ 10 tại Giải vô địch thế giới đầu tiên, CFOP được đặt theo tên bà (Phương pháp Fridrich).*
-
 Phương pháp này cực kỳ nhanh. Hầu hết các kỷ lục thế giới đều được thiết lập bằng CFOP. Vì vậy, tất cả các hướng dẫn đều dạy nó, tất cả các video đều nói về nó, "học giải nhanh" đồng nghĩa với "học CFOP", và học CFOP đồng nghĩa với việc học thuộc 119 công thức.
 
 Nhưng hãy lưu ý, "học thuộc công thức" là đặc điểm của phương pháp CFOP, chứ không phải đặc điểm của "tốc độ" nói chung. CFOP yêu cầu học thuộc vì nó chọn con đường liệt kê tất cả các trường hợp. Liệt kê thì cần ghi nhớ, đây là cái giá phải trả.
@@ -59,10 +55,6 @@ Có phương pháp nào không đi theo con đường liệt kê này không? C�
 ## Phương pháp giải không cần học công thức: Phương pháp Roux
 
 Năm 2003, Gilles Roux, một người Pháp, đã công bố một cách tiếp cận hoàn toàn khác. Thay vì xếp từng tầng, phương pháp này bắt đầu bằng việc xây dựng hai "khối" 1×2×3 ở bên trái và bên phải, sau đó xử lý bốn góc tầng trên cùng, và cuối cùng chỉ còn sáu cạnh, được hoàn thành bằng cách sử dụng hai loại xoay là tầng giữa M và tầng trên U.
-
-![Gilles Roux trong một cuộc thi](/uploads/images/solve-rubiks-cube-sub-30-without-memorizing/04-gilles-roux.webp)
-
-*Hình: Gilles Roux trong một cuộc thi. Cắt từ video thi đấu những năm đầu, hình ảnh đã được phục hồi và phóng to bằng AI.*
 
 Trong bài viết trước, chúng ta đã giải Rubik một lần bằng khung này. Bây giờ, hãy xem lại bốn bước của nó, lần này tập trung vào "những gì cần ghi nhớ ở mỗi bước":
 
