@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Jednotlivé pokusy",
-        "desc": "Každý pokus v pořadí. Zvýrazněné body jsou nové osobní rekordy."
+        "desc": "Každé řešení v pořadí. Tmavá čára představuje trend Ao100; zvýrazněné body jsou nové osobní rekordy."
       },
       "ao": {
         "title": "Klouzavé průměry (Ao5 / Ao12 / Ao50 / Ao100)",

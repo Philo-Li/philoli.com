@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Yksittäiset suoritukset",
-        "desc": "Jokainen suoritus järjestyksessä. Korostetut kohdat ovat uusia henkilökohtaisia ennätyksiä."
+        "desc": "Jokainen ratkaisu järjestyksessä. Tumma viiva on Ao100-trendi; korostetut pisteet ovat uusia henkilökohtaisia ennätyksiä."
       },
       "ao": {
         "title": "Liukuvat keskiarvot (Ao5 / Ao12 / Ao50 / Ao100)",

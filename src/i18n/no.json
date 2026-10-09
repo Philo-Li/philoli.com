@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Enkeltløsninger",
-        "desc": "Hver løsning i rekkefølge. Uthevede punkter er nye personlige rekorder."
+        "desc": "Hver løsning i rekkefølge. Den mørke linjen er Ao100-trenden; uthevede punkter er nye personlige rekorder."
       },
       "ao": {
         "title": "Rullerende gjennomsnitt (Ao5 / Ao12 / Ao50 / Ao100)",

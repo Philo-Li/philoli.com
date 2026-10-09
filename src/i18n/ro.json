@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Rezolvări individuale",
-        "desc": "Fiecare rezolvare în ordine. Punctele evidențiate sunt noi recorduri personale."
+        "desc": "Fiecare rezolvare în ordine. Linia întunecată este tendința Ao100; punctele evidențiate sunt noile recorduri personale."
       },
       "ao": {
         "title": "Medii mobile (Ao5 / Ao12 / Ao50 / Ao100)",

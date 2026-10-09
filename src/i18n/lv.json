@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Atsevišķi mēģinājumi",
-        "desc": "Katrs mēģinājums secībā. Iezīmētie punkti ir jauni personīgie rekordi."
+        "desc": "Katrs risinājums pēc kārtas. Tumšā līnija ir Ao100 tendence; izceltie punkti ir jauni personīgie rekordi."
       },
       "ao": {
         "title": "Slīdošie vidējie (Ao5 / Ao12 / Ao50 / Ao100)",

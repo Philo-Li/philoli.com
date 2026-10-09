@@ -116,6 +116,7 @@ function base(p: Palette) {
 
 export function singlesConfig(
   singlesMs: (number | null)[],
+  ao100: (number | null)[],
   p: Palette,
   l: ChartLabels,
 ): ChartConfiguration<'line', (number | null)[], number> {
@@ -131,6 +132,8 @@ export function singlesConfig(
       labels,
       datasets: [
         { label: l.seriesSingle, data: singlesMs.map(sec), borderColor: p.single, borderWidth: 1, pointRadius: 0, tension: 0, spanGaps: false },
+        // The Ao100 trend on top of the noise is the picture people actually want to see.
+        { label: l.seriesAo100, data: ao100.map(sec), borderColor: p.text, borderWidth: 2.2, pointRadius: 0, tension: 0.2, spanGaps: true },
         { label: l.seriesPb, data: pb, showLine: false, pointRadius: 4, pointHoverRadius: 6, borderColor: p.accent, backgroundColor: p.accent, spanGaps: false },
       ],
     },

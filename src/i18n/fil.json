@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Mga solong solve",
-        "desc": "Bawat solve ayon sa pagkakasunod-sunod. Ang mga naka-highlight na puntos ay mga bagong personal best."
+        "desc": "Bawat solve ayon sa pagkakasunod-sunod. Ang madilim na linya ay ang trend ng Ao100; ang mga naka-highlight na puntos ay mga bagong personal best."
       },
       "ao": {
         "title": "Rolling averages (Ao5 / Ao12 / Ao50 / Ao100)",

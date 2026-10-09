@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Pojedinačna rešavanja",
-        "desc": "Svako rešavanje po redu. Istaknute tačke su novi lični rekordi."
+        "desc": "Svako rešavanje po redu. Tamna linija je trend Ao100; istaknute tačke su novi lični rekordi."
       },
       "ao": {
         "title": "Klizni proseci (Ao5 / Ao12 / Ao50 / Ao100)",

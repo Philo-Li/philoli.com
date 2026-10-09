@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Enkelvoudige solves",
-        "desc": "Elke solve op volgorde. Gemarkeerde punten zijn nieuwe persoonlijke records."
+        "desc": "Elke oplossing op volgorde. De donkere lijn is de Ao100-trend; gemarkeerde punten zijn nieuwe persoonlijke records."
       },
       "ao": {
         "title": "Voortschrijdende gemiddelden (Ao5 / Ao12 / Ao50 / Ao100)",

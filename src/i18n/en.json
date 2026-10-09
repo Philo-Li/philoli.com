@@ -648,7 +648,7 @@
     "charts": {
       "singles": {
         "title": "Single solves",
-        "desc": "Every solve in order. Highlighted points are new personal bests."
+        "desc": "Every solve in order. The dark line is the Ao100 trend; highlighted points are new personal bests."
       },
       "ao": {
         "title": "Rolling averages (Ao5 / Ao12 / Ao50 / Ao100)",

@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Einzelne Solves",
-        "desc": "Jeder Solve in der Reihenfolge. Hervorgehobene Punkte sind neue persönliche Bestleistungen."
+        "desc": "Jeder Solve in der Reihenfolge. Die dunkle Linie ist der Ao100-Trend; hervorgehobene Punkte sind neue persönliche Bestzeiten."
       },
       "ao": {
         "title": "Gleitende Durchschnitte (Ao5 / Ao12 / Ao50 / Ao100)",

@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Penyelesaian tunggal",
-        "desc": "Setiap penyelesaian mengikut urutan. Titik yang diserlahkan ialah rekod peribadi baharu."
+        "desc": "Setiap penyelesaian mengikut urutan. Garis gelap ialah trend Ao100; titik yang diserlahkan ialah rekod peribadi baharu."
       },
       "ao": {
         "title": "Purata bergerak (Ao5 / Ao12 / Ao50 / Ao100)",

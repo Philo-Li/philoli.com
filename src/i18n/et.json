@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Üksikud lahendused",
-        "desc": "Iga lahendus järjekorras. Esiletõstetud punktid on uued isiklikud rekordid."
+        "desc": "Iga lahendus järjekorras. Tume joon on Ao100 trend; esiletõstetud punktid on uued isiklikud rekordid."
       },
       "ao": {
         "title": "Libisevad keskmised (Ao5 / Ao12 / Ao50 / Ao100)",

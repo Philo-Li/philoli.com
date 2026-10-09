@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Pojedinačna rješenja",
-        "desc": "Svako rješenje redom. Istaknute točke su novi osobni rekordi."
+        "desc": "Svako rješenje redom. Tamna linija je trend Ao100; istaknute točke su novi osobni rekordi."
       },
       "ao": {
         "title": "Klizni prosjeci (Ao5 / Ao12 / Ao50 / Ao100)",

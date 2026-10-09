@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Resoluciones individuales",
-        "desc": "Cada resolución en orden. Los puntos resaltados son nuevos récords personales."
+        "desc": "Cada resolución en orden. La línea oscura es la tendencia de Ao100; los puntos resaltados son nuevos récords personales."
       },
       "ao": {
         "title": "Promedios móviles (Ao5 / Ao12 / Ao50 / Ao100)",

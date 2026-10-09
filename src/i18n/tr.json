@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Tekli çözümler",
-        "desc": "Sırasıyla her çözüm. Vurgulanan noktalar yeni kişisel rekorlardır."
+        "desc": "Her çözüm sırasıyla. Koyu renkli çizgi Ao100 trendini; vurgulanan noktalar ise yeni kişisel rekorları gösterir."
       },
       "ao": {
         "title": "Hareketli ortalamalar (Ao5 / Ao12 / Ao50 / Ao100)",

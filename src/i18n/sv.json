@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Enskilda lösningar",
-        "desc": "Varje lösning i ordning. Markerade punkter är nya personbästa."
+        "desc": "Varje lösning i ordning. Den mörka linjen är Ao100-trenden; markerade punkter är nya personbästa."
       },
       "ao": {
         "title": "Rullande genomsnitt (Ao5 / Ao12 / Ao50 / Ao100)",

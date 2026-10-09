@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Posamezni rešeni časi",
-        "desc": "Vsak poskus po vrsti. Označene točke so novi osebni rekordi."
+        "desc": "Vsak poskus po vrsti. Temna črta predstavlja trend Ao100; označene točke so novi osebni rekordi."
       },
       "ao": {
         "title": "Drsna povprečja (Ao5 / Ao12 / Ao50 / Ao100)",

@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Pojedyncze ułożenia",
-        "desc": "Każde ułożenie w kolejności. Wyróżnione punkty to nowe rekordy życiowe."
+        "desc": "Każde ułożenie w kolejności. Ciemna linia to trend Ao100; wyróżnione punkty to nowe rekordy życiowe."
       },
       "ao": {
         "title": "Średnie kroczące (Ao5 / Ao12 / Ao50 / Ao100)",

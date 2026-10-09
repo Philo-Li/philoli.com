@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Atskiri sprendimai",
-        "desc": "Kiekvienas sprendimas eilės tvarka. Išryškinti taškai yra nauji asmeniniai rekordai."
+        "desc": "Kiekvienas sprendimas iš eilės. Tamsi linija yra Ao100 tendencija; paryškinti taškai yra nauji asmeniniai rekordai."
       },
       "ao": {
         "title": "Slenkantys vidurkiai (Ao5 / Ao12 / Ao50 / Ao100)",

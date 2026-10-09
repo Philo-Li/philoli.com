@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Temps individuels",
-        "desc": "Chaque résolution dans l'ordre. Les points mis en évidence sont de nouveaux records personnels."
+        "desc": "Chaque résolution dans l'ordre. La ligne sombre représente la tendance Ao100 ; les points mis en évidence sont les nouveaux records personnels."
       },
       "ao": {
         "title": "Moyennes mobiles (M5 / M12 / M50 / M100)",

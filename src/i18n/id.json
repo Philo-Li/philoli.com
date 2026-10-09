@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Solusi tunggal",
-        "desc": "Setiap solusi secara berurutan. Poin yang disorot adalah rekor pribadi baru."
+        "desc": "Setiap penyelesaian secara berurutan. Garis gelap adalah tren Ao100; titik yang disorot adalah rekor pribadi baru."
       },
       "ao": {
         "title": "Rata-rata bergulir (Ao5 / Ao12 / Ao50 / Ao100)",

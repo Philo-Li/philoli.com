@@ -181,7 +181,7 @@ export default function CubeAnalyzer({ locale, sampleUrl, cubeHref, tutorial = n
   const configs = useMemo(() => {
     if (!analysis) return null;
     return {
-      singles: singlesConfig(analysis.singles, palette, labels),
+      singles: singlesConfig(analysis.singles, analysis.ao.ao100, palette, labels),
       ao: aoConfig(analysis.ao, aoScale, palette, labels),
       hist: histogramConfig(analysis.hist, palette, labels),
       dailyCount: dailyCountConfig(analysis.daily, palette, labels),

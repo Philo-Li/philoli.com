@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Các lần giải đơn lẻ",
-        "desc": "Mọi lần giải theo thứ tự. Các điểm được đánh dấu là kỷ lục cá nhân mới."
+        "desc": "Mọi lần giải theo thứ tự. Đường tối là xu hướng Ao100; các điểm được làm nổi bật là những kỷ lục cá nhân mới."
       },
       "ao": {
         "title": "Trung bình trượt (Ao5 / Ao12 / Ao50 / Ao100)",

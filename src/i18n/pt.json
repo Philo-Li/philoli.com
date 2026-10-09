@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Tempos únicos",
-        "desc": "Cada tempo em ordem. Os pontos destacados são novos recordes pessoais."
+        "desc": "Cada resolução em ordem. A linha escura é a tendência do Ao100; os pontos destacados são novos recordes pessoais."
       },
       "ao": {
         "title": "Médias móveis (Ao5 / Ao12 / Ao50 / Ao100)",

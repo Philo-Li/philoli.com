@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Risoluzioni singole",
-        "desc": "Ogni risoluzione in ordine. I punti evidenziati sono i nuovi record personali."
+        "desc": "Ogni risoluzione in ordine. La linea scura è il trend della Ao100; i punti evidenziati sono i nuovi record personali."
       },
       "ao": {
         "title": "Medie mobili (Ao5 / Ao12 / Ao50 / Ao100)",

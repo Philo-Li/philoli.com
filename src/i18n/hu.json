@@ -723,7 +723,7 @@
     "charts": {
       "singles": {
         "title": "Egyéni kirakások",
-        "desc": "Minden kirakás sorrendben. A kiemelt pontok új egyéni csúcsok."
+        "desc": "Minden megoldás sorrendben. A sötét vonal az Ao100 trendet mutatja; a kiemelt pontok az új egyéni csúcsok."
       },
       "ao": {
         "title": "Gördülő átlagok (Ao5 / Ao12 / Ao50 / Ao100)",
