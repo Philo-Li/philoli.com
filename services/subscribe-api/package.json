@@ -6,9 +6,6 @@
     "test": "vitest run",
     "test:watch": "vitest"
   },
-  "dependencies": {
-    "resend": "^4.0.0"
-  },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240605.0",
     "typescript": "^5.7.0",

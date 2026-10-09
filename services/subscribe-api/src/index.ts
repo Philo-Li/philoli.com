@@ -1,10 +1,9 @@
 import { sign, verify } from './lib/jwt';
 import { EMAIL_I18N, type SubscribeEmailStrings } from './i18n';
-import { Resend } from 'resend';
 
 interface Env {
   DB: D1Database;
-  RESEND_API_KEY: string;
+  GOSHIPFAST_API_KEY: string;
   JWT_SECRET: string;
   SITE_URL: string;
   WORKER_URL: string;
@@ -129,11 +128,25 @@ function renderConfirmEmail(lang: string, confirmUrl: string, unsubscribeUrl: st
   return { subject, html, text };
 }
 
+// Sends through the GoShipFast public email API. It takes a bare `from`
+// address plus `fromName`, and an HTML body only (no plain-text part).
+async function sendEmail(env: Env, to: string, subject: string, html: string): Promise<void> {
+  const match = env.FROM_EMAIL.match(/^s*(.*?)s*<([^<>s]+)>s*$/);
+  const sender = match ? { from: match[2], ...(match[1] ? { fromName: match[1] } : {}) } : { from: env.FROM_EMAIL };
+  const res = await fetch('https://api.goshipfast.com/api/v1/emails', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${env.GOSHIPFAST_API_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ...sender, to, subject, html }),
+  });
+  if (!res.ok) {
+    const detail = (await res.text().catch(() => '')).slice(0, 300);
+    throw new Error(`GoShipFast send failed: ${res.status} ${detail}`);
+  }
+}
+
 async function sendConfirmEmail(env: Env, to: string, lang: string, confirmUrl: string, unsubscribeUrl: string): Promise<void> {
-  const { subject, html, text } = renderConfirmEmail(lang, confirmUrl, unsubscribeUrl);
-  const resend = new Resend(env.RESEND_API_KEY);
-  const result = await resend.emails.send({ from: env.FROM_EMAIL, to, subject, html, text });
-  if (result.error) throw new Error(`Resend failed: ${result.error.message}`);
+  const { subject, html } = renderConfirmEmail(lang, confirmUrl, unsubscribeUrl);
+  await sendEmail(env, to, subject, html);
 }
 
 interface SubscriberRow {
@@ -327,16 +340,7 @@ async function sendWeeklyReport(env: Env, now: number): Promise<void> {
   </table>
 </body></html>`;
 
-  const textRows = recent.results.length
-    ? recent.results
-        .map((s) => `- ${s.email} (${s.lang}, ${s.status}, ${beijingDate(s.created_at)}${s.created_at >= since ? ', 本周' : ''})`)
-        .join('\n')
-    : '近 30 天没有新增订阅申请';
-  const text = `Newsletter 每周订阅汇总（${range}，北京时间）\n\n本周新增申请: ${newSignups}\n本周确认订阅: ${newConfirmed}\n过去 30 天新增申请: ${monthNewSignups}\n过去 30 天确认订阅: ${monthNewConfirmed}\n当前有效订阅: ${active}\n待确认: ${pending}\n已退订: ${unsubscribed}\n\n近 30 天新增明细:\n${textRows}\n`;
-
-  const resend = new Resend(env.RESEND_API_KEY);
-  const result = await resend.emails.send({ from: env.FROM_EMAIL, to: env.REPORT_EMAIL, subject, html, text });
-  if (result.error) throw new Error(`Resend failed: ${result.error.message}`);
+  await sendEmail(env, env.REPORT_EMAIL, subject, html);
 }
 
 export default {
