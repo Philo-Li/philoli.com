@@ -44,7 +44,7 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-const MODEL = 'gemini-2.5-flash';
+const MODEL = 'gemini-3.8-flash';
 
 // ---- Language map ----
 const LANGUAGES = {
@@ -95,6 +95,8 @@ const rawArgs = process.argv.slice(2);
 const positional = [];
 let force = false;
 let onlyFile = null;
+let glossaryPath = null;
+let translateTags = false;
 for (let i = 0; i < rawArgs.length; i++) {
   const a = rawArgs[i];
   if (a === '--force') {
@@ -103,6 +105,12 @@ for (let i = 0; i < rawArgs.length; i++) {
     onlyFile = rawArgs[++i];
   } else if (a.startsWith('--only=')) {
     onlyFile = a.slice('--only='.length);
+  } else if (a === '--glossary') {
+    glossaryPath = rawArgs[++i];
+  } else if (a.startsWith('--glossary=')) {
+    glossaryPath = a.slice('--glossary='.length);
+  } else if (a === '--translate-tags') {
+    translateTags = true;
   } else if (a.startsWith('--')) {
     console.error(`Unknown flag: ${a}`);
     process.exit(1);
@@ -111,8 +119,12 @@ for (let i = 0; i < rawArgs.length; i++) {
   }
 }
 
+// Optional domain glossary / style guide (markdown or plain text) appended to the system prompt,
+// e.g. scripts/glossaries/rubiks-cube.md for cubing posts.
+const glossaryText = glossaryPath ? readFileSync(resolve(ROOT, glossaryPath), 'utf8').trim() : '';
+
 if (positional.length === 0) {
-  console.error('Usage: node scripts/translate-blog.mjs <lang-code|all> [--only <filename>] [--force]');
+  console.error('Usage: node scripts/translate-blog.mjs <lang-code|all> [--only <filename>] [--force] [--glossary <file>] [--translate-tags]');
   console.error('Available languages:', Object.keys(LANGUAGES).join(', '));
   process.exit(1);
 }
@@ -153,12 +165,17 @@ Avoid: stiff word-for-word renderings, awkward calques, "translation-ese", overl
 
 RULES:
 - Translate ALL content faithfully. Do not summarize or skip sections.
-- Keep the YAML frontmatter structure but translate the title to ${targetName}. Keep date, tags, and categories as-is.
+- Keep the YAML frontmatter structure but translate the title and description to ${targetName}; wrap both values in double quotes. ${translateTags
+    ? `Translate each tag into the natural ${targetName} term a blogger in that community would use (keep the same number of tags, one per line). Keep date and categories as-is.`
+    : 'Keep date, tags, and categories as-is.'}
 - Keep <!--more--> markers in the same relative position.
 - Keep markdown formatting (headers, bold, italic, links, code blocks) intact.
 - Keep URLs, code snippets, and technical terms as-is.
 - Keep proper nouns as-is: "Philo Li", "Dopamind", "PhiloArt".
-- Output ONLY the translated markdown. No explanations or notes.`;
+- Output ONLY the translated markdown. No explanations or notes.${glossaryText ? `
+
+DOMAIN GLOSSARY AND STYLE GUIDE (follow strictly; it overrides your defaults):
+${glossaryText}` : ''}`;
 }
 
 // ---- Gemini API call ----
@@ -186,7 +203,19 @@ async function callGemini(content, targetName) {
 
   const data = await res.json();
   const text = data.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
-  return text.replace(/^```markdown\n?/, '').replace(/\n?```$/, '').trim();
+  return normalizeOutput(text);
+}
+
+// Strip a wrapping ```markdown fence, and repair the case where the model emits the
+// frontmatter as a ```yaml block (opening fence instead of ---, sometimes closing ``` too).
+function normalizeOutput(raw) {
+  let text = raw.replace(/^```markdown\n?/, '').replace(/\n?```$/, '').trim();
+  if (/^```ya?ml\r?\n/.test(text)) {
+    text = text.replace(/^```ya?ml\r?\n/, '---\n');
+    // close the frontmatter with --- if the model closed it with ```
+    text = text.replace(/^(---\n(?:(?!```$|---$)[^\n]*\n)*?)```\n/m, '$1---\n');
+  }
+  return text;
 }
 
 // ---- Process each post ----
