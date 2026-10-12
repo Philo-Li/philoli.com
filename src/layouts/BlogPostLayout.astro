@@ -215,6 +215,14 @@ const articleSchema = [
   .blog-post__content :global(p) {
     margin-bottom: var(--space-sm);
   }
+  .blog-post__content :global(ul),
+  .blog-post__content :global(ol) {
+    margin-bottom: var(--space-sm);
+  }
+  .blog-post__content :global(li > ul),
+  .blog-post__content :global(li > ol) {
+    margin-bottom: 0;
+  }
   .blog-post__content :global(a) {
     color: var(--color-accent);
     text-decoration: underline;
